@@ -51,6 +51,8 @@ def fit_fold(df,train_ix,cal_ix,test_ix,seed,fold,scheme,outdir,n_boot=8):
         mod=(MLPCensoredAFT(seed=seed,max_iter=1500) if model=='mlp' else LinearCensoredAFT(max_iter=1000)).fit(tx,y,event,w)
         fits.append(dict(model=model,**mod.status_.to_dict(),sigma=mod.sigma_,sigma_at_bound=mod.sigma_at_bound_))
         muc=mod.predict_location(cx);mut=mod.predict_location(qx)
+        plus=te.copy();minus=te.copy();plus['log_stress']+=.01;minus['log_stress']-=.01
+        stress_slope=(mod.predict_location(enc.transform(plus))-mod.predict_location(enc.transform(minus)))/.02
         basec=muc+norm.ppf(.1)*mod.sigma_;baset=mut+norm.ppf(.1)*mod.sigma_
         residual=basec-cal.log_life.to_numpy()
         qpool=conformal_quantile(residual)
@@ -59,7 +61,7 @@ def fit_fold(df,train_ix,cal_ix,test_ix,seed,fold,scheme,outdir,n_boot=8):
         for bound,shift in [('model_q10',0.),('endpoint_pooled',qpool),('cohort_max',qgroup)]:
             p=te[['row_id','dataset_id','source_id','group_id','event','runout','log_life','log_stress','stress_amplitude']].copy()
             p['seed']=seed;p['fold']=fold;p['scheme']=scheme;p['model']=model;p['bound']=bound
-            p['mu']=mut;p['sigma']=mod.sigma_;p['log_lower']=baset-shift
+            p['mu']=mut;p['sigma']=mod.sigma_;p['log_lower']=baset-shift;p['stress_slope']=stress_slope
             p['calibration_shift']=shift;p['n_calibration_groups']=len(maxima)
             p['distance']=dt;p['instability']=ut;p['combined']=ct
             for score in ['distance','instability','combined']:
@@ -75,8 +77,15 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--input',default='data/processed/primary.csv');ap.add_argument('--output',default='results/primary');ap.add_argument('--scheme',choices=['source','random'],default='source');ap.add_argument('--seeds',default='0,17,42');ap.add_argument('--bootstraps',type=int,default=8);ap.add_argument('--limit-folds',type=int);args=ap.parse_args()
     df=pd.read_csv(ROOT/args.input);out=ROOT/args.output;out.mkdir(parents=True,exist_ok=True);(out/'folds').mkdir(exist_ok=True)
     groups=np.sort(df.group_id.unique());seeds=[int(s) for s in args.seeds.split(',')]
-    assert len(groups)>=13,'Too few independent groups to fit after nine-source calibration; report a feasibility failure.'
+    assert len(groups)>=14,'Too few independent groups for >=4 fit groups after nine-source calibration; report feasibility failure.'
     outputs=[];started=time.time();data_hash=hashlib.sha256((ROOT/args.input).read_bytes()).hexdigest()
+    code_hash=hashlib.sha256(b''.join(p.read_bytes() for p in sorted((ROOT/'src').glob('*.py')))).hexdigest()
+    signature={'data_sha256':data_hash,'code_sha256':code_hash,'scheme':args.scheme,'bootstraps':args.bootstraps,'seeds':seeds}
+    manifest=out/'checkpoint_signature.json'
+    if manifest.exists(): assert json.loads(manifest.read_text())==signature,'Checkpoint signature mismatch: choose a new output directory.'
+    else:
+        assert not list(out.glob('pred_*.csv')),'Unsigned prior checkpoints: choose a new output directory.'
+        manifest.write_text(json.dumps(signature,indent=2))
     for seed in seeds:
         for i,g in enumerate(groups if args.scheme=='source' else ['random']):
             if args.limit_folds is not None and i>=args.limit_folds:break
@@ -86,6 +95,7 @@ def main():
             if args.scheme=='source':
                 other=groups[groups!=g];order=rng.permutation(other);ncal=max(9,int(np.ceil(.25*len(other))))
                 calgroups=order[:ncal];traingroups=order[ncal:]
+                assert len(traingroups)>=4
                 ti=df.index[df.group_id.isin(traingroups)];ci=df.index[df.group_id.isin(calgroups)];qi=df.index[df.group_id==g]
                 assert set(df.loc[ti].group_id).isdisjoint(df.loc[ci].group_id)
                 assert not (set(df.loc[ti].group_id)|set(df.loc[ci].group_id)) & set(df.loc[qi].group_id)

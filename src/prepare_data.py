@@ -71,6 +71,7 @@ def main():
             if d['fdata_type'].lower()!='sn': continue
             assert vals.shape[1]==3, (d['dataset_id'],vals.shape)
             for j,(n,s,r) in enumerate(vals):
+                assert r in (0.,1.), (d['dataset_id'],j,r)
                 rows.append(dict(d,row_id=f"{d['dataset_id']}_p{j:03d}",point_index=j,
                     cycles_observed=float(n),stress_amplitude=float(s),runout=int(r),
                     event=1-int(r),measurement_provenance='approximately digitized' if 'shape' in d['extraction_method'] or 'color' in d['extraction_method'] else 'database extraction; see method',
