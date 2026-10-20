@@ -1,0 +1,35 @@
+{
+  "documents": [
+    {
+      "file": "manuscript/arastirma_ozeti_tr.pdf",
+      "sha256": "cbb71343dad02e9b0d6e81b888905f30a5aee9d3636f3001cb8b361a6503eb3c",
+      "pages": 3,
+      "empty_pages": 0,
+      "replacement_characters": 0
+    },
+    {
+      "file": "manuscript/paper_draft_en.pdf",
+      "sha256": "837e76da75cbd7b4fe84bf7421cb3d890a8235eeb123e307e42a3a0fbe1c15d0",
+      "pages": 10,
+      "empty_pages": 0,
+      "replacement_characters": 0
+    },
+    {
+      "file": "manuscript/research_brief_en.pdf",
+      "sha256": "48c1bcf2c6487b2ce4352bf6ce348acfad947a742d7cd472c665b572c7044d42",
+      "pages": 1,
+      "empty_pages": 0,
+      "replacement_characters": 0
+    },
+    {
+      "file": "manuscript/supplementary_material.pdf",
+      "sha256": "effa7cdd85e4e0bfeb20f5536ff2bb476a86cb6350aebff77b92dd3d8fad63ae",
+      "pages": 6,
+      "empty_pages": 0,
+      "replacement_characters": 0
+    }
+  ],
+  "visual_scope": "All20pages rendered; root inspected all final contact sheets plus selected detailed figure/text pages. No external review implied.",
+  "one_page_brief_expected_pages": 1,
+  "visual_check": "No clipping, overlap, unreadable glyphs or empty pages observed in inspected scope."
+}
