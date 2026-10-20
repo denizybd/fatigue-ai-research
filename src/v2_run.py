@@ -41,8 +41,11 @@ def predict(model, query, support, method, alpha=.1):
         alphas=[alpha]),float).reshape(len(query),-1)[:,0]
 
 
-def run(dataset, output, panels=None, max_tasks=None, quadrature=41):
+def run(dataset, output, panels=None, max_tasks=None, quadrature=41, curved=False):
     from src.v2_models import CensoredBasquin, HierarchicalCensoredBasquin, FixedSlopeShiftPredictor
+    if curved:
+        from src.v2_curved_models import CensoredCurvedBasquin, HierarchicalCurvedBasquin
+        CensoredBasquin,HierarchicalCensoredBasquin=CensoredCurvedBasquin,HierarchicalCurvedBasquin
     dataset,output=Path(dataset),Path(output)
     output.mkdir(parents=True,exist_ok=True)
     frozen=dataset/'frozen_splits.json';cohort=dataset/'cohort.csv'
@@ -54,6 +57,8 @@ def run(dataset, output, panels=None, max_tasks=None, quadrature=41):
            [ROOT/'src/v2_run.py',ROOT/'src/v2_models.py',ROOT/'src/evaluation.py']},
          'quadrature':quadrature, 'models':['pooled','unpooled_shift','hierarchical'],
          'bound_types':['raw','endpoint_calibrated'], 'alpha':.1}
+    sig['curvature_sensitivity']=curved
+    if curved:sig['code']['src/v2_curved_models.py']=digest(ROOT/'src/v2_curved_models.py')
     sign=output/'signature.json'
     if sign.exists() and json.loads(sign.read_text())!=sig:
         raise RuntimeError('Checkpoint signature differs; use a fresh output folder')
@@ -84,6 +89,7 @@ def run(dataset, output, panels=None, max_tasks=None, quadrature=41):
                 raise RuntimeError(f'Unusable population fit {key}; receipt retained, no predictions made')
         models={'pooled':(pooled,'pooled'), 'unpooled_shift':(FixedSlopeShiftPredictor(pooled),'unpooled_shift'),
                 'hierarchical':(hier,'hierarchical')}
+        if curved:models={name+'_curved':value for name,value in models.items()}
         rows=[];calibrations=[]
         for modelname,(model,method) in models.items():
             for k in t['ks']:
@@ -134,4 +140,5 @@ if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--dataset',default=str(ROOT/'data/processed/v2/clean'))
     p.add_argument('--output',default=str(ROOT/'results/v2/main'));p.add_argument('--panels',nargs='+')
     p.add_argument('--max-tasks',type=int);p.add_argument('--quadrature',type=int,default=41)
-    a=p.parse_args();run(a.dataset,a.output,a.panels,a.max_tasks,a.quadrature)
+    p.add_argument('--curved',action='store_true')
+    a=p.parse_args();run(a.dataset,a.output,a.panels,a.max_tasks,a.quadrature,a.curved)
