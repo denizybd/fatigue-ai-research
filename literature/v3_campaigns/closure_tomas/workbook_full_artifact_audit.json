@@ -1,0 +1,3853 @@
+{
+  "audited_utc": "2026-10-20T16:34:45.425005+00:00",
+  "workbook": "data/external_v3/raw_repository/tomaszewski2023_data.xlsx",
+  "sha256": "30a45bb604d1b13f38f6e36047174fbcc2734f38019c683ba5dd149e1d4f4b35",
+  "md5": "a7a48f676be0bbdee8545f031c8996ae",
+  "sheets": [
+    {
+      "name": "Arkusz1",
+      "state": "visible",
+      "max_row": 245,
+      "max_column": 12,
+      "tables": [],
+      "merged_cells": "",
+      "autofilter": null,
+      "sheet_properties": "<openpyxl.worksheet.properties.WorksheetProperties object>\nParameters:\ncodeName=None, enableFormatConditionsCalculation=None, filterMode=None, published=None, syncHorizontal=None, syncRef=None, syncVertical=None, transitionEvaluation=None, transitionEntry=None, tabColor=None, outlinePr=<openpyxl.worksheet.properties.Outline object>\nParameters:\napplyStyles=None, summaryBelow=True, summaryRight=True, showOutlineSymbols=None, pageSetUpPr=<openpyxl.worksheet.properties.PageSetupProperties object>\nParameters:\nautoPageBreaks=None, fitToPage=None"
+    }
+  ],
+  "defined_names": "{}",
+  "properties": {
+    "contentStatus": "None",
+    "lastPrinted": "None",
+    "revision": "None",
+    "version": "None",
+    "creator": "None",
+    "lastModifiedBy": "None",
+    "modified": "2023-02-17 13:47:48",
+    "created": "2006-09-16 00:00:00",
+    "title": "None",
+    "subject": "None",
+    "description": "None",
+    "identifier": "None",
+    "language": "None",
+    "keywords": "None",
+    "category": "None"
+  },
+  "custom_properties": "CustomPropertyList containing []",
+  "comments": [],
+  "hyperlinks": [],
+  "formulas": [],
+  "hidden_rows_columns": [],
+  "text_cells": [
+    {
+      "sheet": "Arkusz1",
+      "cell": "A1",
+      "value": "Compilation of HCF data of selective laser melted 316L and AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A2",
+      "value": "The studies were financially supported from the project 2021/05/X/ST5/00076 funded by the National Science Centre, Poland. "
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A4",
+      "value": "CONSTANT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A5",
+      "value": "Specimen shape"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B5",
+      "value": "flat, unnotched"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A6",
+      "value": "Surface roughness"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B6",
+      "value": "as-received"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A7",
+      "value": "Specimen manufacturing method"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B7",
+      "value": "additive"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A8",
+      "value": "Loading"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B8",
+      "value": "uniaxial, sinusoidal "
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A9",
+      "value": "Avg. cyclic frequency [Hz]"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A10",
+      "value": "Control mode"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B10",
+      "value": "stress-controlled"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A11",
+      "value": "Failure criterion"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B11",
+      "value": "macrocrack"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A12",
+      "value": "Testing environment"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B12",
+      "value": "laboratory conditions"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A13",
+      "value": "Machine"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B13",
+      "value": "Instron 8874"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A15",
+      "value": "*Additive manufacturing along the specimen width (W) or length (L)"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B17",
+      "value": "INPUT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C17",
+      "value": "INPUT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "D17",
+      "value": "INPUT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "E17",
+      "value": "INPUT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "F17",
+      "value": "INPUT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "J17",
+      "value": "OUTPUT"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A18",
+      "value": "Specimen number"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B18",
+      "value": "Material"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C18",
+      "value": "Build direction*"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "D18",
+      "value": "Specimen thickness [mm]"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "E18",
+      "value": "Specimen width [mm]"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "F18",
+      "value": "Length of specimen working part"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "G18",
+      "value": "Max. stress [MPa]"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "H18",
+      "value": "Min. stress [MPa]"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "I18",
+      "value": "Stress ratio, R"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "J18",
+      "value": "Cycles to failure"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "K18",
+      "value": "Runout"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L18",
+      "value": "Other notes"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A19",
+      "value": "SS_A32W_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B19",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C19",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A20",
+      "value": "SS_A32W_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B20",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C20",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A21",
+      "value": "SS_A32W_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B21",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C21",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A22",
+      "value": "SS_A32W_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B22",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C22",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A23",
+      "value": "SS_A32W_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B23",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C23",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A24",
+      "value": "SS_A32W_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B24",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C24",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A25",
+      "value": "SS_A32W_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B25",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C25",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A26",
+      "value": "SS_A32W_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B26",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C26",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A27",
+      "value": "SS_A32W_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B27",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C27",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A28",
+      "value": "SS_A32W_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B28",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C28",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A29",
+      "value": "SS_A32W_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B29",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C29",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A30",
+      "value": "SS_A32W_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B30",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C30",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A31",
+      "value": "SS_A32W_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B31",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C31",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A32",
+      "value": "SS_A32W_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B32",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C32",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A33",
+      "value": "SS_A32W_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B33",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C33",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A34",
+      "value": "SS_A08W_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B34",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C34",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A35",
+      "value": "SS_A08W_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B35",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C35",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A36",
+      "value": "SS_A08W_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B36",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C36",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A37",
+      "value": "SS_A08W_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B37",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C37",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A38",
+      "value": "SS_A08W_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B38",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C38",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A39",
+      "value": "SS_A08W_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B39",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C39",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A40",
+      "value": "SS_A08W_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B40",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C40",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A41",
+      "value": "SS_A08W_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B41",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C41",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A42",
+      "value": "SS_A08W_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B42",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C42",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A43",
+      "value": "SS_A08W_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B43",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C43",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A44",
+      "value": "SS_A08W_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B44",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C44",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A45",
+      "value": "SS_A08W_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B45",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C45",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A46",
+      "value": "SS_A08W_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B46",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C46",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A47",
+      "value": "SS_A02W_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B47",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C47",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A48",
+      "value": "SS_A02W_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B48",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C48",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A49",
+      "value": "SS_A02W_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B49",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C49",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A50",
+      "value": "SS_A02W_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B50",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C50",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A51",
+      "value": "SS_A02W_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B51",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C51",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A52",
+      "value": "SS_A02W_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B52",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C52",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A53",
+      "value": "SS_A02W_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B53",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C53",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A54",
+      "value": "SS_A02W_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B54",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C54",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A55",
+      "value": "SS_A02W_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B55",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C55",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A56",
+      "value": "SS_A08W_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B56",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C56",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A57",
+      "value": "SS_A08W_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B57",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C57",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A58",
+      "value": "SS_A08W_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B58",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C58",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A59",
+      "value": "SS_A08W_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B59",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C59",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A60",
+      "value": "SS_A08W_19"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B60",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C60",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A61",
+      "value": "SS_A08W_20"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B61",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C61",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A62",
+      "value": "SS_A08W_21"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B62",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C62",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A63",
+      "value": "SS_A08W_22"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B63",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C63",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A64",
+      "value": "SS_A08W_23"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B64",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C64",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A65",
+      "value": "SS_A08W_24"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B65",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C65",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A66",
+      "value": "SS_A08W_25"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B66",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C66",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A67",
+      "value": "SS_A08W_26"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B67",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C67",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A68",
+      "value": "SS_A08W_27"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B68",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C68",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A69",
+      "value": "SS_A08W_28"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B69",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C69",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A70",
+      "value": "SS_A08W_29"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B70",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C70",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A71",
+      "value": "SS_A08W_30"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B71",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C71",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A72",
+      "value": "SS_A08W_31"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B72",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C72",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A73",
+      "value": "SS_A08W_32"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B73",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C73",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A74",
+      "value": "SS_A08W_33"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B74",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C74",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A75",
+      "value": "SS_A08W_34"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B75",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C75",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A76",
+      "value": "SS_A08W_35"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B76",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C76",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A77",
+      "value": "SS_A08W_36"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B77",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C77",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A78",
+      "value": "SS_A08W_37"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B78",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C78",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A79",
+      "value": "SS_A08W_38"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B79",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C79",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A80",
+      "value": "SS_A08W_39"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B80",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C80",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A81",
+      "value": "SS_A08W_40"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B81",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C81",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A82",
+      "value": "SS_A08W_41"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B82",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C82",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A83",
+      "value": "SS_A08W_42"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B83",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C83",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A84",
+      "value": "SS_A08W_43"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B84",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C84",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A85",
+      "value": "SS_A08W_44"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B85",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C85",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A86",
+      "value": "SS_A08W_45"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B86",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C86",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A87",
+      "value": "SS_A08W_46"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B87",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C87",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A88",
+      "value": "SS_A08W_47"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B88",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C88",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A89",
+      "value": "SS_A08W_48"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B89",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C89",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A90",
+      "value": "SS_A08W_49"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B90",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C90",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A91",
+      "value": "SS_A08W_50"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B91",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C91",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A92",
+      "value": "SS_A08W_51"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B92",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C92",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A93",
+      "value": "SS_A08W_52"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B93",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C93",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A94",
+      "value": "SS_A08W_53"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B94",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C94",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A95",
+      "value": "SS_A08W_54"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B95",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C95",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A96",
+      "value": "SS_A32L_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B96",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C96",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A97",
+      "value": "SS_A32L_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B97",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C97",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A98",
+      "value": "SS_A32L_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B98",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C98",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A99",
+      "value": "SS_A32L_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B99",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C99",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A100",
+      "value": "SS_A32L_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B100",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C100",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A101",
+      "value": "SS_A32L_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B101",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C101",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A102",
+      "value": "SS_A32L_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B102",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C102",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A103",
+      "value": "SS_A32L_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B103",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C103",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A104",
+      "value": "SS_A32L_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B104",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C104",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A105",
+      "value": "SS_A32L_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B105",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C105",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A106",
+      "value": "SS_A32L_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B106",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C106",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A107",
+      "value": "SS_A32L_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B107",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C107",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A108",
+      "value": "SS_A32L_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B108",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C108",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A109",
+      "value": "SS_A32L_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B109",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C109",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A110",
+      "value": "SS_A32L_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B110",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C110",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A111",
+      "value": "SS_A32L_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B111",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C111",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A112",
+      "value": "SS_A32L_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B112",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C112",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A113",
+      "value": "SS_A32L_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B113",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C113",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A114",
+      "value": "SS_A08L_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B114",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C114",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A115",
+      "value": "SS_A08L_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B115",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C115",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A116",
+      "value": "SS_A08L_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B116",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C116",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A117",
+      "value": "SS_A08L_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B117",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C117",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A118",
+      "value": "SS_A08L_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B118",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C118",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A119",
+      "value": "SS_A08L_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B119",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C119",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A120",
+      "value": "SS_A08L_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B120",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C120",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A121",
+      "value": "SS_A08L_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B121",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C121",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A122",
+      "value": "SS_A08L_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B122",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C122",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A123",
+      "value": "SS_A08L_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B123",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C123",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A124",
+      "value": "SS_A08L_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B124",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C124",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L124",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A125",
+      "value": "SS_A08L_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B125",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C125",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L125",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A126",
+      "value": "SS_A08L_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B126",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C126",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L126",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A127",
+      "value": "SS_A08L_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B127",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C127",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L127",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A128",
+      "value": "SS_A08L_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B128",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C128",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L128",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A129",
+      "value": "SS_A08L_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B129",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C129",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L129",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A130",
+      "value": "SS_A08L_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B130",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C130",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L130",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A131",
+      "value": "SS_A08L_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B131",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C131",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L131",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A132",
+      "value": "SS_A08L_19"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B132",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C132",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L132",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A133",
+      "value": "SS_A08L_20"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B133",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C133",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L133",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A134",
+      "value": "SS_A02L_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B134",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C134",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A135",
+      "value": "SS_A02L_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B135",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C135",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A136",
+      "value": "SS_A02L_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B136",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C136",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A137",
+      "value": "SS_A02L_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B137",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C137",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A138",
+      "value": "SS_A02L_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B138",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C138",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A139",
+      "value": "SS_A02L_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B139",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C139",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A140",
+      "value": "SS_A02L_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B140",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C140",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A141",
+      "value": "SS_A02L_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B141",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C141",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A142",
+      "value": "SS_A02L_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B142",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C142",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A143",
+      "value": "SS_A02L_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B143",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C143",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A144",
+      "value": "SS_A02L_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B144",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C144",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A145",
+      "value": "SS_A02L_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B145",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C145",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A146",
+      "value": "SS_A02L_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B146",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C146",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L146",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A147",
+      "value": "SS_A02L_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B147",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C147",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L147",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A148",
+      "value": "SS_A02L_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B148",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C148",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L148",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A149",
+      "value": "SS_A02L_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B149",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C149",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L149",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A150",
+      "value": "SS_A02L_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B150",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C150",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L150",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A151",
+      "value": "SS_A02L_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B151",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C151",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L151",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A152",
+      "value": "SS_A02L_19"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B152",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C152",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L152",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A153",
+      "value": "SS_A02L_20"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B153",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C153",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L153",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A154",
+      "value": "SS_A02L_21"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B154",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C154",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L154",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A155",
+      "value": "SS_A02L_22"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B155",
+      "value": "316L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C155",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "L155",
+      "value": "high defect density"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A156",
+      "value": "AL_A32W_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B156",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C156",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A157",
+      "value": "AL_A32W_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B157",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C157",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A158",
+      "value": "AL_A32W_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B158",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C158",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A159",
+      "value": "AL_A32W_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B159",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C159",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A160",
+      "value": "AL_A32W_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B160",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C160",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A161",
+      "value": "AL_A32W_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B161",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C161",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A162",
+      "value": "AL_A32W_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B162",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C162",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A163",
+      "value": "AL_A32W_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B163",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C163",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A164",
+      "value": "AL_A32W_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B164",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C164",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A165",
+      "value": "AL_A32W_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B165",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C165",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A166",
+      "value": "AL_A32W_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B166",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C166",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A167",
+      "value": "AL_A32W_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B167",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C167",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A168",
+      "value": "AL_A32W_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B168",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C168",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A169",
+      "value": "AL_A32W_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B169",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C169",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A170",
+      "value": "AL_A32W_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B170",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C170",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A171",
+      "value": "AL_A32W_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B171",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C171",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A172",
+      "value": "AL_A32W_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B172",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C172",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A173",
+      "value": "AL_A32W_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B173",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C173",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A174",
+      "value": "AL_A32W_19"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B174",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C174",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A175",
+      "value": "AL_A08W_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B175",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C175",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A176",
+      "value": "AL_A08W_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B176",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C176",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A177",
+      "value": "AL_A08W_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B177",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C177",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A178",
+      "value": "AL_A08W_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B178",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C178",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A179",
+      "value": "AL_A08W_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B179",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C179",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A180",
+      "value": "AL_A08W_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B180",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C180",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A181",
+      "value": "AL_A08W_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B181",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C181",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A182",
+      "value": "AL_A08W_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B182",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C182",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A183",
+      "value": "AL_A08W_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B183",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C183",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A184",
+      "value": "AL_A08W_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B184",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C184",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A185",
+      "value": "AL_A08W_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B185",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C185",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A186",
+      "value": "AL_A08W_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B186",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C186",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A187",
+      "value": "AL_A08W_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B187",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C187",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A188",
+      "value": "AL_A08W_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B188",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C188",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A189",
+      "value": "AL_A08W_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B189",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C189",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A190",
+      "value": "AL_A08W_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B190",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C190",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A191",
+      "value": "AL_A08W_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B191",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C191",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A192",
+      "value": "AL_A08W_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B192",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C192",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A193",
+      "value": "AL_A08W_19"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B193",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C193",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A194",
+      "value": "AL_A02W_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B194",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C194",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A195",
+      "value": "AL_A02W_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B195",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C195",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A196",
+      "value": "AL_A02W_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B196",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C196",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A197",
+      "value": "AL_A02W_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B197",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C197",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A198",
+      "value": "AL_A02W_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B198",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C198",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A199",
+      "value": "AL_A02W_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B199",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C199",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A200",
+      "value": "AL_A02W_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B200",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C200",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A201",
+      "value": "AL_A02W_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B201",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C201",
+      "value": "W"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A202",
+      "value": "AL_A32L_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B202",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C202",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A203",
+      "value": "AL_A32L_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B203",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C203",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A204",
+      "value": "AL_A32L_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B204",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C204",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A205",
+      "value": "AL_A32L_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B205",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C205",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A206",
+      "value": "AL_A32L_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B206",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C206",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A207",
+      "value": "AL_A32L_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B207",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C207",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A208",
+      "value": "AL_A32L_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B208",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C208",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A209",
+      "value": "AL_A32L_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B209",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C209",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A210",
+      "value": "AL_A32L_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B210",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C210",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A211",
+      "value": "AL_A32L_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B211",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C211",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A212",
+      "value": "AL_A32L_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B212",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C212",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A213",
+      "value": "AL_A32L_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B213",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C213",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A214",
+      "value": "AL_A32L_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B214",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C214",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A215",
+      "value": "AL_A32L_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B215",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C215",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A216",
+      "value": "AL_A32L_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B216",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C216",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A217",
+      "value": "AL_A08L_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B217",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C217",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A218",
+      "value": "AL_A08L_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B218",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C218",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A219",
+      "value": "AL_A08L_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B219",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C219",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A220",
+      "value": "AL_A08L_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B220",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C220",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A221",
+      "value": "AL_A08L_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B221",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C221",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A222",
+      "value": "AL_A08L_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B222",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C222",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A223",
+      "value": "AL_A08L_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B223",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C223",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A224",
+      "value": "AL_A08L_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B224",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C224",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A225",
+      "value": "AL_A08L_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B225",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C225",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A226",
+      "value": "AL_A08L_10"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B226",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C226",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A227",
+      "value": "AL_A08L_11"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B227",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C227",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A228",
+      "value": "AL_A08L_12"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B228",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C228",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A229",
+      "value": "AL_A08L_13"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B229",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C229",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A230",
+      "value": "AL_A08L_14"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B230",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C230",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A231",
+      "value": "AL_A08L_15"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B231",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C231",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A232",
+      "value": "AL_A08L_16"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B232",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C232",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A233",
+      "value": "AL_A08L_17"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B233",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C233",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A234",
+      "value": "AL_A08L_18"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B234",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C234",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A235",
+      "value": "AL_A08L_19"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B235",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C235",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A236",
+      "value": "AL_A08L_20"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B236",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C236",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A237",
+      "value": "AL_A02L_01"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B237",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C237",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A238",
+      "value": "AL_A02L_02"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B238",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C238",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A239",
+      "value": "AL_A02L_03"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B239",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C239",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A240",
+      "value": "AL_A02L_04"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B240",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C240",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A241",
+      "value": "AL_A02L_05"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B241",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C241",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A242",
+      "value": "AL_A02L_06"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B242",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C242",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A243",
+      "value": "AL_A02L_07"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B243",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C243",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A244",
+      "value": "AL_A02L_08"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B244",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C244",
+      "value": "L"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "A245",
+      "value": "AL_A02L_09"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "B245",
+      "value": " AlSi10Mg"
+    },
+    {
+      "sheet": "Arkusz1",
+      "cell": "C245",
+      "value": "L"
+    }
+  ],
+  "package_members": [
+    {
+      "name": "[Content_Types].xml",
+      "bytes": 1168,
+      "sha256": "bfa02ea1994b73dca866ea3b6596340fe00063d19eab5957c7d8e6a5fa10599a"
+    },
+    {
+      "name": "_rels/.rels",
+      "bytes": 588,
+      "sha256": "73e5a29f48d5ab979eeda062493bc7e679265c1344ef936978b8becec5549497"
+    },
+    {
+      "name": "xl/_rels/workbook.xml.rels",
+      "bytes": 698,
+      "sha256": "353383fbe90f202be596bdf0a86439c704d7024f4f8c19ebc9d06b42a341dba1"
+    },
+    {
+      "name": "xl/workbook.xml",
+      "bytes": 718,
+      "sha256": "26c778cec873a471043b7374831e510d00aae0cd33ec528cd10ff850786868d6"
+    },
+    {
+      "name": "xl/sharedStrings.xml",
+      "bytes": 7536,
+      "sha256": "dfde76084e66030d696db38fe5b323d1ae366c8d639f1219850c5943bc33bb75"
+    },
+    {
+      "name": "xl/theme/theme1.xml",
+      "bytes": 7168,
+      "sha256": "a3d5978bd55891cc7b63333647ca2c59df6d5856827724f92feba3af142d703b"
+    },
+    {
+      "name": "xl/styles.xml",
+      "bytes": 3412,
+      "sha256": "e48dfe0296f508389c7c16db9381765b726114027997b5f561ee90fcd1fa5667"
+    },
+    {
+      "name": "xl/worksheets/sheet1.xml",
+      "bytes": 91810,
+      "sha256": "bcdda9b9dbe2a2037f20bd46979a35bb408f12ad6b11ae17a19d6b5d25531390"
+    },
+    {
+      "name": "docProps/core.xml",
+      "bytes": 593,
+      "sha256": "3c3bff1ce8886e80f137eaf636a8a6a2321a210d6356a6a9ece20b36c73fdd92"
+    },
+    {
+      "name": "docProps/app.xml",
+      "bytes": 783,
+      "sha256": "dce3f69f68aabd5490325b0b484dad046ad50d06ff7e94c7c77b07f68ba63b26"
+    }
+  ],
+  "package_urls": {
+    "[Content_Types].xml": [
+      "http://schemas.openxmlformats.org/package/2006/content-types"
+    ],
+    "_rels/.rels": [
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+      "http://schemas.openxmlformats.org/package/2006/relationships",
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties"
+    ],
+    "xl/_rels/workbook.xml.rels": [
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet",
+      "http://schemas.openxmlformats.org/package/2006/relationships"
+    ],
+    "xl/workbook.xml": [
+      "http://schemas.microsoft.com/office/spreadsheetml/2010/11/main",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+      "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+    ],
+    "xl/sharedStrings.xml": [
+      "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+    ],
+    "xl/theme/theme1.xml": [
+      "http://schemas.openxmlformats.org/drawingml/2006/main"
+    ],
+    "xl/styles.xml": [
+      "http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac",
+      "http://schemas.microsoft.com/office/spreadsheetml/2009/9/main",
+      "http://schemas.microsoft.com/office/spreadsheetml/2010/11/main",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006",
+      "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+    ],
+    "xl/worksheets/sheet1.xml": [
+      "http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+      "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+    ],
+    "docProps/core.xml": [
+      "http://purl.org/dc/dcmitype/",
+      "http://purl.org/dc/elements/1.1/",
+      "http://purl.org/dc/terms/",
+      "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+      "http://www.w3.org/2001/XMLSchema-instance"
+    ],
+    "docProps/app.xml": [
+      "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+      "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"
+    ]
+  },
+  "package_rels": {
+    "_rels/.rels": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\"><Relationship Id=\"rId3\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties\" Target=\"docProps/app.xml\"/><Relationship Id=\"rId2\" Type=\"http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties\" Target=\"docProps/core.xml\"/><Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument\" Target=\"xl/workbook.xml\"/></Relationships>",
+    "xl/_rels/workbook.xml.rels": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\"><Relationship Id=\"rId3\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles\" Target=\"styles.xml\"/><Relationship Id=\"rId2\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme\" Target=\"theme/theme1.xml\"/><Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet\" Target=\"worksheets/sheet1.xml\"/><Relationship Id=\"rId4\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings\" Target=\"sharedStrings.xml\"/></Relationships>"
+  }
+}

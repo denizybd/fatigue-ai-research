@@ -1,0 +1,13 @@
+The included xls files contain quantitative parameters describing the microstructure, from EBSD, AFM and TEM analysis.
+
+
+
+File "Fig 2d_GB misorientation distribution.xls" contains: Grain boundary misorientation distribution as evaluated from GB map shown in Fig. S1a (section parallel to BD).
+
+File "Fig 9e_AFM extrusion-intrusion profiles.xls" contains: Extrusion/intrusion profiles in the cross-sections A and B as obtained using AFM and shown in Fig. 9e.
+
+File "Fig S3_Misorientation profile along Line 1.xls" contains: Misorientation profile running across two LAGBs, along Line 1 indicated in Fig. S3a.
+
+File "Fig S5_Nano-inclusion size_TEM raw data.xls" contains: Nano-inclusion size (diameter) in (nm) as evaluated from numerous TEM micrographs.
+
+File "Fig S7_PSB thickness_SEM + TEM raw data.xls" contains: Results of evaluation of PSB thickness from SEM and TEM micrographs. Thickness measured perpendicularly to a PSB.

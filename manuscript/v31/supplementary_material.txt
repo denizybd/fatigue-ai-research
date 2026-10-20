@@ -1,0 +1,124 @@
+SUPPLEMENT TO THE CURRENT PHASE 3/3.1 WORKING PAPER
+20 October 2026 — exploratory source recovery and replay
+
+S1. Scope and frozen records
+The main additional matched source is one Mérot author programme, not multiple independent campaigns. Nominal-stress air/20°C source: 43 physical specimens, 17 failures and 26 right-censors, three builds and two powder lots. Acquisition: 31 eligible specimens in three conditions, two builds and one common powder lot. Nine local-stress air records remain secondary; 18 saline/35°C records stay outside the air benchmark. Six Dastgerdi uninterrupted specimens remain a separate temperature-unstated pilot. Tomaszewski137/Diller29 remain specimen-identified but not individually build-qualified.
+
+The original phase-3 frozen planning cap is C=10^7; C=10^6 is the prespecified sensitivity. The recovered first-block survivors actually stop at 10^6. The source-matched sensitivity is not a replacement primary selected after results. No new source tests were conducted or fabricated.
+
+Frozen protocol SHA256:
+protocols/v3/frozen_design.txt
+46808419f7b6bdb1639c66da1d0cb266a58b3ef3b83624666db30f7208c1df1c
+
+Virgin-first-exposure extension including pre-fit source/stress addendum:
+protocols/v3/virgin_first_exposure_extension.txt
+1a85e8ae169e8f2432653614f5b20f3ad208e7844e3b94645ea61e80f1013ed9
+
+Raw source CSV SHA256:
+bb5e9ce46a7f7827aef50f2188f059c6833ca3dab9110cec1613c628a2e16b5e
+
+Exact source build/specimen crosswalk70 SHA256:
+79a1b20fcaedd05eb38ec22690d85bace5c7ffd650737ac1fce9448e3492d592
+
+The protocols were frozen locally. Public outcomes and earlier exploratory results had already been seen; no external registration or fresh blinded confirmation is claimed.
+
+S2. Raw-to-first-block normalization and quarantine
+The producer CSV has one units row and 262 numeric-step rows, 103 Sample aliases and 105 Step0 rows. s_amp equals s_max×(1−R)/2. Step is source loading stage; N is the cycle count of that stage. The recovered endpoint uses the initial stage's original N only.
+
+K2 has three Step0 rows. Do not choose its minimum stress or first row as a supposedly proven virgin observation. Detect repeated physical (plate, position) keys among ALL source aliases before filtering any alias. Ten collided physical keys affect 20 otherwise unique-Step0 aliases; D0 remains excluded because it shares its key with K2. Twelve aliases have incomplete plate/position metadata, including E8's missing position. All ambiguous Step0 rows are retained in a 35-row quarantine audit file. The exclusion sets are applied by identity and source semantics, not by model outcomes. Seventy distinct physical first blocks remain.
+
+Failure conversion: event=1 only when the original first block records fracture, at its untransformed N. Surviving first block: event=0 at its actual stopping N. Later-step failure, N_basquin, sum_N_basquin, corrected stresses, fractographic defect dimensions and postfailure morphology are forbidden model/acquisition fields. A quarantine audit may retain raw columns for traceability; that audit is not a model input.
+
+The thesis names PM-[plate]-[type][position] and connects plate02/03/04 to FS18-019/FS18-020/FS19-006, respectively. Powder lots are TLS0993/1/1 for the first two and TLS1051/1/1 for the third. Raw Batch denotes a preparation/treatment condition, not a manufacturing batch. Both readers verified the exact author references and physical table; identity recovery is a fixed source decision, not automated OCR inference.
+
+Nominal versus local stress is decided by thesis methods/Tables G.1/G.2, not by performance. Standard-geometry air rows use nominal gauge stress. Small-volume rows use local Kt-adjusted stress with specimen-specific elastic geometry. An optional unmodeled conversion crosswalk records rounded table ratios but does not enter the frozen primary fits. Rounding sensitivities are conditional formatting bounds, not measurement-confidence intervals; no universal Kt is assumed. Conflicting source coordinates such as C9 are not silently corrected.
+
+S3. New-cohort data dictionary
+Files in data/external_v3/continuation_papers/:
+- data_fatigue_merot.csv: immutable author CSV, CC BY4.0.
+- merot_first_exposure_unique_physical70_verified.csv: admitted initial blocks including both environments and stress panels.
+- merot_first_exposure_air_nominal43.csv: source-qualified primary nominal-stress table.
+- merot_first_exposure_air_localstress9_exploratory.csv: separate local-stress sensitivity.
+- merot_first_exposure_quarantine35.csv: ambiguous raw initial rows, audit only.
+
+Core source-table columns:
+Sample/source_specimen_id: short author alias; not alone proof of physical uniqueness.
+Step: source stage; retained model records must equal0.
+source_data_record_index: original producer row reference, not a newly measured quantity.
+source_plate_id/source_specimen_number_on_plate: original physical coordinates.
+source_physical_key/canonical_physical_key: audit keys for duplicate/collision checks.
+source_full_specimen_reference: exact long PM author reference from the thesis.
+source_thesis_plate_number/source_build_id/source_powder_batch_id: source-backed lineage; build and powder must remain distinct.
+treatment_batch_raw: original preparation/treatment label.
+environment/temperature_C: source air/saline condition and temperature.
+sigma_a_MPa/sigma_max_MPa/stress_ratio_R: first-block stress amplitude, maximum and minimum/maximum ratio.
+frequency_Hz: recorded first-block test frequency; not used to claim wall-clock savings.
+cycles_first_block/log10_cycles_first_block: untransformed initial block N and its base-10 log.
+event/endpoint_type: first-block failure1 or actual right-censor0; not final specimen fate.
+first_step_candidate_eligible/exclusion_reasons: fixed source eligibility and quarantine reasons.
+physical_plate_semantics_verified/primary_axial_control_mode_verified: explicit source-audit flags.
+primary_nominal_stress_eligible/stress_definition/stress_definition_evidence: nominal/local partition and primary evidence.
+source_doi/article_doi/source_sha256/source_thesis_id/source_thesis_pdf_page: traceability, not predictive features.
+population_training_exclusion_family: linked-source family removed from population training.
+confirmation_status: retrospective exploratory source recovery.
+material/process/machine/build_orientation/heat_treatment/control_mode: source-reported method fields, no fabricated missing parameters.
+build_mapping_evidence/method_evidence/precorrosion_method_note: source decisions and limitations.
+
+Imported data/processed/v3/firstblock/merot52.csv columns:
+row_id: canonical unique physical specimen key, build plus position.
+specimen_id/author_sample_alias/author_plate_number/author_position_on_plate: preserved author identity and coordinates.
+build_id/powder_batch_id: distinct source-backed lineage.
+dataset_id: build/treatment/environment condition used for splitting; not an independent campaign.
+campaign_id: shared Mérot author programme for uncertainty aggregation.
+group_id: condition identifier retained for model interface.
+panel/identity_gate: nominal primary or local-stress secondary and the verified source-gate status.
+doi/source_dataset_doi/fit_exclude_groups: publication trace and precautionary training-family exclusion.
+load_ratio/stress_amplitude/log_stress: initial stress ratio, amplitude MPa and base-10 stress log.
+cycles_observed/log_life/event: first-block observed N, log10 N and right-censor event.
+treatment_batch_raw/environment/temperature_C/frequency_Hz/endpoint_type: retained pretest/method/endpoint descriptors.
+source_data_record_index/source_sha256: exact producer reference.
+stress_definition/primary_nominal_stress_eligible: source stress semantics and panel gate.
+
+S4. Prediction model formulas and limitations
+All logs are base10. For a lognormal AFT model with conditional mean mu, scatter sigma, observed y and event e, each contribution is f(y|mu,sigma)^e × SF(y|mu,sigma)^(1−e), including the relevant target-effect integration. A runout contributes survival, not a density at a fictional failure time.
+
+The RFL uses log10 Gamma~Normal(mu_Gamma,tau_Gamma²). If Gamma<S, log10 N~Normal(a+b log10((S−Gamma)/Sref)+c(R−Rbar)+u,sigma²), b<0; otherwise N=infinity. Finite-failure mass p(S)=Phi((log10 S−mu_Gamma)/tau_Gamma). The marginal finite CDF integrates the conditional CDF only over Gamma<S; the survivor includes its complement and the infinity atom. A predictive alpha quantile is infinite if alpha>=p(S); otherwise it solves the marginal CDF at alpha. The target shift u has a proper normal prior SD fixed from training hierarchical tau and is integrated using revealed support outcomes. It changes finite-life location, not the fatigue-limit distribution. This is not a hierarchical RFL population posterior or a reproduction of Trombley's Weibull model.
+
+Source-balanced working likelihood, fixed penalties/bounds/starts and load-ratio terms are implementation choices. Population parameter uncertainty is omitted. Low-data identifiability is not guaranteed by numerical convergence. Selected fit diagnostics, all starts and fallback status are retained. The two extension population RFL fits converge without selected bound hits or fallback; earlier historical leave-source fits can hit bounds and remain flagged.
+
+S5. Acquisition information and allowed query knowledge
+Fixed hierarchical/censored-normal Fisher planning produces ONE selected-support sequence per policy/condition/seed. ALL SIX models receive that sequence; the planner is not independently retuned or optimized for RFL. Known query covariates (stress and R) are allowed as a transductive fixed prediction grid. Query outcomes are never exposed. Candidate unknown endpoints/events are never used before selection.
+
+For z=(log10 C−mu)/sigma, expected location information is I=[Phi(z)−z phi(z)+phi(z)^2/Phi(−z)]/sigma². With current intercept/slope covariance V, candidate x=(1,logS−center), and Q=mean(x_query x_query'), score=I×(x'VQVx)/(1+I×x'Vx). Prior center/scatter/intercept SD are training-derived; slope SD=max(1,|training slope|/2), fixed in advance. Current MAP/Hessian use selected supports only. This local linear/Gaussian criterion is approximate and established test-design ideas are not new by implementation.
+
+For support observation (N,e), y_C=log10 min(N,C), e_C=e×1(N<=C). Earlier author runouts remain censored at their own stop. Observed support exposure is sum min(N,C) for selected supports, not the expected duration of invented future tests. It excludes manufacture, machine time, frequency conversion and setup cost.
+
+S6. Risk, pairing, unavailable values and aggregation
+Absolute empirical risk is partially identified by r_low=mean[e×1(L>y)] and r_high=mean[1(L>y)]. For an unavailable L, use0 and1 respectively. Positive infinity is available, but unsafe for any observed finite failure. Report ordinary availability, finite availability and infinity rate separately.
+
+For two available bounds A and B on the same failure, paired difference d=1(A>y)−1(B>y) is exact. On the same right-censor, its lower limit is −1(B>A and B>y), and upper limit is1(A>B and A>y). If either prediction is unavailable, the limits are−1 and+1. These ranges exploit the shared unknown failure time; they are not sampling confidence intervals.
+
+Finite-pair utility is mean(A−B) on identical queries where both are finite; 10^utility is a geometric life ratio. It is not demonstrated safe-life improvement. Queries average within condition/seed, conditions within campaign/seed, then seeds within campaign; campaigns receive equal weight. Bootstrap2,000/seed231 applies at campaign level only when at least two campaigns exist. With one campaign lo95/hi95 remain missing, and success gates are NOT EVALUABLE. Do not convert missing-interval false flags into substantive failure counts.
+
+S7. Result CSV meanings
+predictions.csv: one row per query specimen, seed, policy, feasible k, model and cap. row_id/dataset_id/campaign_id/panel/identity_gate identify scientific units and gate. log_life,event are unchanged query endpoint/censor. log_stress/load_ratio are known query covariates. log_lower is proposed q10 in log cycles, possibly missing or +infinity. n_support_failure and support_cycles describe revealed support after truncation. fit_signature is computational cache metadata, not a scientific measurement. Repeated rows are not independent specimens.
+
+selections.csv: one row per selected candidate and acquisition rank. Its k is the sequential selection rank (1,2,...), so prefixes k<=3 or k<=5 define budgets. It is not a separate repeated experiment for each final budget. stress_amplitude is selected recorded MPa; revealed_event/revealed_log_life enter only after selection. selection_score records the design score or policy ordering. cap is the planning/truncation setting.
+
+summary.csv: equal condition/campaign/seed aggregate mean by panel/policy/model/k/cap/metric; n_campaigns counts author campaigns; lo95/hi95 are campaign bootstrap intervals when available. n_finite_campaigns counts finite metric means.
+
+paired_comparisons.csv: same-query comparisons versus_random or versus_k0. Metrics include paired/finite availability, finite log_life_gain, paired true_risk_change_lo/hi and support_cycle_change. Means are not independent query-row averages across campaigns.
+
+by_condition.csv: intermediate condition/campaign/seed means for heterogeneity inspection. success_gates.csv: numerical gate ingredients and booleans; missing campaign intervals mean non-evaluable. query_identity_checks.json: explicit common-query equality. run_receipt.json: data/protocol/code hashes, splits, training source sets and population fit diagnostics.
+
+S8. Reproducibility, prior art and source boundaries
+The extension has50 tasks per cap:30 nominal,10 local-stress and10 Dastgerdi pilot. Each cap has11,520 prediction instances and920 selected rows. Independent audits recompute1,728 absolute and2,304 paired means per cap, with maximum discrepancy9.31×10^−10 at cycle scale. Nineteen RFL/design synthetic tests pass. Same-schema fresh replay matches12 tables exactly. Portable367-row replay removes only unused Trombley129, preserving all selected tasks and scientific values; fit_signature changes because empty unrelated metadata columns were removed. Extracted-archive replay with a fresh cache also passes. None is independent physical replication.
+
+Original Centola data/BNN/Owen code were not obtained; no superiority or original-author error is inferred. Normal-normal RFL and information-based fatigue test design are established prior art. Wu109943 is reviewed only through publisher previews/bibliography; its full group keys, censor likelihood, acquisition and supplements remain unverified. Methodological novelty is therefore provisional.
+
+Public source follow-ups remain negative for the missing second matched campaign. Trombley's official open196-page dissertation confirms four Concept Laser builds but not individual specimen membership; ProX labels cannot be transferred. Diller and Tomaszewski renewed repository/thesis/workbook checks do not close their exact specimen/build inclusion keys. Solberg's real official open173-page PhD thesis was acquired in the final continuation: its316L paper section (PDF148–157) does not provide the missing specimen/build crosswalk; the fatigue table at PDF168 concerns18Ni300 maraging steel and is excluded. Do not retain the superseded claim that the Solberg PDF was unavailable. These negative access/source findings do not prove no public source can ever be found.
+
+The Mérot producer dataset is CC BY4.0 with attribution, source DOI and changes declared. The thesis has separate repository permissions and is linked, not redistributed wholesale. Historical digitization, unresolved campaign overlap and rounding are limitations in addition to censoring. No communications, external uploads, publication or physical tests occurred. The second independent, fully matched campaign remains a scientific dependency rather than a task that extra seeds on the present data can solve.
+
+S11. Zero-support reference for the matched-intercept label
+At k=0 the runner explicitly substitutes the hierarchical population prediction as a common starting reference. The target-only unpooled intercept is estimated only after supports are observed; for k>0 all-censored supports leave it unidentified. Therefore its versus_k0 contrast uses the hierarchical reference, rather than an otherwise undefined no-support local intercept. Main k3-versus-random tables are unaffected.

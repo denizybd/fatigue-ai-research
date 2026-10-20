@@ -1,0 +1,89 @@
+{
+  "audited_utc": "2026-10-20T16:40:23.773082+00:00",
+  "audit": "Independent source gate for official Solberg2021doctoral thesis; no parent files edited.",
+  "pdf_path": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/literature/v3_campaigns/closure_root/Solberg2021_thesis.pdf",
+  "pdf_sha256": "3422433900a61ceb9cb88083c35632cd0b1f855ca22bea519214567fb6a9cf13",
+  "page_count": 173,
+  "primary_record_path": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/literature/v3_campaigns/closure_root/solberg_thesis_record.json",
+  "checked_text_pages": [
+    36,
+    37,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    159,
+    160,
+    168
+  ],
+  "visual_checked_pages": [
+    36,
+    37,
+    149,
+    168
+  ],
+  "visual_receipts": [
+    {
+      "page": 36,
+      "path": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/literature/v3_campaigns/closure_root/independent_solberg_pdf36.png",
+      "sha256": "dcb2d32f8210f5c3b15d5a699f2932efef30a13f18a0c347dc6ca0715286fe8e"
+    },
+    {
+      "page": 37,
+      "path": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/literature/v3_campaigns/closure_root/independent_solberg_pdf37.png",
+      "sha256": "5386c475d753a047ceb34d9829ae8e5010a88acce2c518d7240760d4dceecc85"
+    },
+    {
+      "page": 149,
+      "path": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/literature/v3_campaigns/closure_root/independent_solberg_pdf149.png",
+      "sha256": "753390fd1fdcb3e2999dfb4a71f08f219aad8c0718fe64d5cbed3542d10c139d"
+    },
+    {
+      "page": 168,
+      "path": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/literature/v3_campaigns/closure_root/independent_solberg_pdf168.png",
+      "sha256": "7f5cd67ab9ed13795106956e4b3a306e194becfc55b2e78ed78b05cb54abdbb2"
+    }
+  ],
+  "source_material_partition": {
+    "general_overview": "PDF37/Table1.1 explicitly maps ArticleVI=316L, geometryf,90degreevertical,as-built. ArticleVII=18Ni300,geometryg,tenbuildangles,HT+machined/as-built.",
+    "316L_article": "PDF147names ArticleVI and links DOI10.1111/ffe.13077; appended fulltext PDF148–157 reproduces that article rather than establishing a new independent experiment.",
+    "maraging_article": "PDF159–160names ArticleVII, Directional fatigue behaviour of maraging steel grade300/18Ni300, DOI10.1016/j.ijfatigue.2021.106229.",
+    "outcome_table_PDF168": "Table1 has30individual geometry/stress/life records for ArticleVII MARAGING18Ni300. It is not316L. It also lacks a persistent author specimen-ID column."
+  },
+  "316L_verified_methods": {
+    "location": "PDF149/ArticleVI section2, independently visually checked",
+    "geometry": "Round hourglass,4.5mmgauge diameter,ASTME466-15;vertical build alongz;threecontours andinternalhatching.",
+    "loading": "Uniaxial load control;R=0.1;10Hz;servohydraulicMTS50kN.",
+    "stress_definition": "Maximum nominal stress sigma_max. For a future legitimate normalization, sigma_a=(1-R)*sigma_max/2=0.45*sigma_max.",
+    "runout_stop_cycles": 2000000,
+    "process_table": "layer50µm,hatch100µm,scan2400mm/s,power320W,energy26.7W/mm3 as printed.",
+    "generic_R0_warning": "PDF36 says most thesis tests useR0/10Hz; it cannot replace the explicit316L ArticleVI R0.1. General paragraph does not assign all specimens to onephysicalbuild.",
+    "room_temperature": "No explicit numeric room-temperature statement verified in the316L method passage; do not impute from generic laboratory setting."
+  },
+  "316L_identity_gate": {
+    "actual_author_specimen_IDs_linked_to_SN_outcomes": false,
+    "physical_build_or_batch_ID_join": false,
+    "explicit_single_build_for_all316L_records": false,
+    "author_ID_to_build_to_N_S_table": false,
+    "positive_scope_evidence": "ArticleVI material,verticalorientation,as-builtstate,geometry,loadcontrol,R,frequency,nominalstressbasisandrunoutthresholdareverified.",
+    "limiting_evidence": "Only anonymous fatigue/defect plots and representative fracture images were found for316L. No specimen inventory, actualID-to-outcome table, batchregister, productionplatecrosswalk or row-levelbuildjoin recovered."
+  },
+  "verdict": "NOT_ADMITTED_TO_IDENTITY_QUALIFIED316L_CAMPAIGN_PANEL",
+  "new_identity_qualified_316L_rows": 0,
+  "material_mix_prevention": "PDF168Table1 excluded from316L extraction. Numericoutcometable belongs to18Ni300 and must never be imported as316L.",
+  "source_overlap": "ArticleVI expressly identifies the preexisting2019DOI10.1111/ffe.13077. A thesis reprint is not a second independent campaign.",
+  "methodological_limitation": "The thesis expands primary source access but does not close specimen/build lineage. Graph digitization cannot create author specimenIDs or physicalbuildmapping.",
+  "no_actions": [
+    "No model fitting",
+    "No author correspondence",
+    "No source PDF redistribution",
+    "No edits to parent source metadata/PDF/text"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "retrieved_at": "2026-10-20T16:02:28.807747+00:00",
+  "scope": "new identity-qualified AM316L campaigns; no fits",
+  "queries": [
+    {
+      "service": "Figshare API",
+      "query": "316L fatigue",
+      "result": "33392110 surfaced; snapshot figshare_search.json"
+    },
+    {
+      "service": "Zenodo API",
+      "query": "broad 316L fatigue OR-style query, pages 2-3",
+      "result": "no newly qualified campaign; query embedded in retained response links"
+    },
+    {
+      "service": "primary web search",
+      "query": "316L reused powder fatigue specimen build data",
+      "result": "Wood/Kopec 2024 data-on-request"
+    },
+    {
+      "service": "primary web search",
+      "query": "316L powder contamination fatigue 2026",
+      "result": "2626647 rotating-bending outside scope"
+    },
+    {
+      "service": "primary web search",
+      "query": "Comprehensive fatigue assessment of as-built flat and cylindrical LPBF 316L stainless steel specimens for qualification testing",
+      "result": "Figshare exact dataset; manuscript DOI not found"
+    },
+    {
+      "service": "Crossref/OpenAlex",
+      "query": "exact Figshare-related manuscript title and author/funder variants",
+      "result": "metadata snapshots retained, no matching manuscript body retrieved"
+    },
+    {
+      "service": "Figshare API",
+      "query": "Quantifying predictive gain over physics baselines",
+      "result": "three unrelated results"
+    },
+    {
+      "service": "Figshare API",
+      "query": "Machine learning for fatigue life prediction additively manufactured alloys",
+      "result": "two unrelated results"
+    },
+    {
+      "service": "Figshare API",
+      "query": "Comprehensive fatigue assessment flat cylindrical",
+      "result": "33392110 only"
+    },
+    {
+      "service": "primary web search",
+      "query": "exact full title of Wu109943",
+      "result": "indexed ScienceDirect article abstract/introduction and section snippets; direct fetching 403"
+    },
+    {
+      "service": "primary web search",
+      "query": "site:sciencedirect.com/science/article/abs/pii/S0142112326004640 target60 / Code availability",
+      "result": "irrelevant results; not evidence; exact-title query succeeded instead"
+    }
+  ],
+  "qualified_campaigns": 0,
+  "root_priority": "33392110 only after early search",
+  "no_contact": true
+}

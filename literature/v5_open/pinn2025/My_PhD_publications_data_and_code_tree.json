@@ -1,0 +1,212 @@
+{
+  "sha": "8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e",
+  "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e",
+  "tree": [
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d38dd3864b7eeb1279a7e80fb44aeabfc4a772c0",
+      "size": 486171,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/d38dd3864b7eeb1279a7e80fb44aeabfc4a772c0"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5294c990945ec2f079812ff6d56e73d59cc3027f",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/5294c990945ec2f079812ff6d56e73d59cc3027f"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61406ecd55d5312d004c946e9ae904367c1a8974",
+      "size": 142,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/61406ecd55d5312d004c946e9ae904367c1a8974"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/code",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e1ee626667da0b3bcb47e42e3b1f5bec466f744",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/3e1ee626667da0b3bcb47e42e3b1f5bec466f744"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/code/new_Main_PINN.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "130f624a25484e9232e4565c333bd9acde33f211",
+      "size": 20293,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/130f624a25484e9232e4565c333bd9acde33f211"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/code/train and plot.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93e85bfd89e324cfb8055a45da06afa728a049b8",
+      "size": 147577,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/93e85bfd89e324cfb8055a45da06afa728a049b8"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "baf7db9c104d412f2b7aba3ddd03db8f5f6bf321",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/baf7db9c104d412f2b7aba3ddd03db8f5f6bf321"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/data/Fatigue_data.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b143b24e3c4627efc84f2f0cf303d7762c622359",
+      "size": 56398,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/b143b24e3c4627efc84f2f0cf303d7762c622359"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13c130a1fd3a9c6868765d70c25790d10f29af0c",
+      "size": 1126142,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/13c130a1fd3a9c6868765d70c25790d10f29af0c"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8dbf2bb79c92c4f87a047eab3522b2854d6d735",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/f8dbf2bb79c92c4f87a047eab3522b2854d6d735"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/code",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58b451f832bc5d89caaa1c8770abff77fdcbeaa8",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/58b451f832bc5d89caaa1c8770abff77fdcbeaa8"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/code/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b40fc8ea170cad8cfc5229541811bcbfc990cec1",
+      "size": 136,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/b40fc8ea170cad8cfc5229541811bcbfc990cec1"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/code/calculate_fatigue_life.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00608762b724701d229200846d609d699551cf5",
+      "size": 1135729,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/e00608762b724701d229200846d609d699551cf5"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/code/generate_inclusion.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ec8d6b0034734ae10a9da510f8021428426a571",
+      "size": 9904,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/3ec8d6b0034734ae10a9da510f8021428426a571"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/code/generate_sphere_pore.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66b23ff053f76b913eee88017e8d1216d14e636e",
+      "size": 46528,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/66b23ff053f76b913eee88017e8d1216d14e636e"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/code/generate_square_pore.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd95274f3f114b2346cbc6e3ade08aeb0a7d541c",
+      "size": 8692,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/cd95274f3f114b2346cbc6e3ade08aeb0a7d541c"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d9d5728ac7cd70f08c2c712cfade6c411ccc799",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/8d9d5728ac7cd70f08c2c712cfade6c411ccc799"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "558239ae5eed4dd638edf522ce2d4ae8cdea0c77",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/558239ae5eed4dd638edf522ce2d4ae8cdea0c77"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2ec60e82657920321f422f007081adde550f6a6",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/a2ec60e82657920321f422f007081adde550f6a6"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set1/delta_fip_by_model.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7dc88a94e30a3339245865188a300cb70ffc0cf",
+      "size": 1374,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/c7dc88a94e30a3339245865188a300cb70ffc0cf"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5ef04721f70ae1163130aab797cf597b20eae51",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/a5ef04721f70ae1163130aab797cf597b20eae51"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set2/delta_fip_by_model.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b98619fd266bb17160909dfd05c3741a4a21c65c",
+      "size": 1352,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/b98619fd266bb17160909dfd05c3741a4a21c65c"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cee3deb89c91f050a6618193343fe553a627d58",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/7cee3deb89c91f050a6618193343fe553a627d58"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set3/delta_fip_by_model.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a49c6cd0bb492b16391626426d0ad77e3b3d6e9",
+      "size": 1345,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/3a49c6cd0bb492b16391626426d0ad77e3b3d6e9"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7775d56adc18a332090469c7773cb3b97cc825e",
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/trees/f7775d56adc18a332090469c7773cb3b97cc825e"
+    },
+    {
+      "path": "2025_IJF_CP_for_fatigue/data/No_defects/Loading_set4/delta_fip_by_model.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "add20618476c62eecfaecb07f455bd0188751996",
+      "size": 1335,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/add20618476c62eecfaecb07f455bd0188751996"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8465ea710d618b7dac8b4b49bbeb6019e1209a6",
+      "size": 1104,
+      "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/git/blobs/c8465ea710d618b7dac8b4b49bbeb6019e1209a6"
+    }
+  ],
+  "truncated": false
+}

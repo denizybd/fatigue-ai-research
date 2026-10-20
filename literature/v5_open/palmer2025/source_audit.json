@@ -1,0 +1,137 @@
+{
+  "version": "v5_palmer2025_primary_table_curation_v1",
+  "completed_utc": "2026-10-20T19:55:17.243043+00:00",
+  "doi": "10.1007/s10853-025-11259-w",
+  "license": "CC BY4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_files": {
+    "pdf": "literature/v5_open/palmer2025/paper.pdf",
+    "pdf_sha256": "e3924d0e89803b8d30c2aac40dd2860f7f3d63787f735f3d688273299f5c26e5",
+    "publisher_table": "literature/v5_open/palmer2025/table2.html",
+    "table_sha256": "6d1aff3ecb5087d1f4305d598662354fdfb3e3df9d4b4ed4842d90fbc3515b48",
+    "nist_alternate": "literature/v5_open/palmer2025/nist_paper.pdf"
+  },
+  "numerical_audit": {
+    "table": 2,
+    "pdf_page": 8,
+    "printed_page": 18339,
+    "n": 12,
+    "events": 12,
+    "runouts": 0,
+    "by_angle": {
+      "90": 5,
+      "60": 4,
+      "45": 3
+    },
+    "exact_source_cells": true,
+    "pdf_and_html_match": true,
+    "nist_alternate_table_matches": true,
+    "visual_pdf_checked": true,
+    "no_graph_digitization": true,
+    "cycles_not_reversals": true,
+    "example_caption_joins": [
+      3713,
+      27855,
+      8240,
+      1112
+    ]
+  },
+  "method_gate": {
+    "material": "316L",
+    "process": "L-PBF",
+    "control": "strain controlled",
+    "frequency_Hz": 0.25,
+    "amplitudes_mm_per_mm": [
+      0.002,
+      0.003,
+      0.004,
+      0.006,
+      0.008
+    ],
+    "HIP": {
+      "temperature_C": 1050,
+      "pressure_MPa": 138,
+      "duration_h": 2.25,
+      "gas": "argon"
+    },
+    "fatigue_temperature_C": null,
+    "strain_ratio": null,
+    "stress_ratio": null,
+    "waveform": null,
+    "stress_conversion_performed": false,
+    "force_controlled_HCF_primary_admitted": 0
+  },
+  "identity_gate": {
+    "author_specimen_ids_recovered": 0,
+    "actual_build_ids_recovered": 0,
+    "physical_build_count_verified": false,
+    "powder_lot_ids_recovered": 0,
+    "strict_identity_qualified_n": 0,
+    "canonical_build_id_invented": false,
+    "table_row_extraction_ids_are_specimen_ids": false,
+    "source_quote_semantics": "Singular references to build plate and powder feedstock do not establish actual batch count or membership"
+  },
+  "evidence": [
+    {
+      "field": "numerical outcomes",
+      "location": "Table2 PDF8",
+      "status": "exact numerical rows"
+    },
+    {
+      "field": "manufacture and composition",
+      "location": "PDF4 Table1/Methods;PDF5",
+      "status": "process/supplier/composition known;physical lot/build keys absent"
+    },
+    {
+      "field": "control/frequency/endpoint",
+      "location": "PDF6 Methods",
+      "status": "strain0.25Hz;Nf distinct from Ni"
+    },
+    {
+      "field": "individual-row interpretation",
+      "location": "PDF6 Figure3,PDF10 Figure7",
+      "status": "named example life/angle/amplitude tuples match Table2"
+    },
+    {
+      "field": "temperature/ratio",
+      "location": "Methods and fullarticle",
+      "status": "not explicitly given for full fatigue campaign;do not impute process/preparation temperatures"
+    },
+    {
+      "field": "archival versus own data",
+      "location": "PDF3 Figure1;PDF8 Figure4/Table2",
+      "status": "own12Table2 only;archival curves and representative caption repeats excluded"
+    }
+  ],
+  "conservative_family": {
+    "id": "WietechaReiman_Palmer_HIP_strain_campaign",
+    "possible_versions": [
+      "10.2139/ssrn.4773097",
+      "2024Role_of_Manganese_Composition_conference"
+    ],
+    "reason": "same authors/material/mechanism;conservative block, exact individual preprint join unverified",
+    "archival_2024_MSEA146580": "separate archival-curation work, not12new own measurements"
+  },
+  "public_followup": {
+    "download_manifest": "literature/v5_open/palmer2025/download_manifest.json",
+    "followup_manifest": "literature/v5_open/palmer2025/followup_manifest.json",
+    "supplements_linked_in_publisher_html": false,
+    "pdf_embedded_attachments": 0,
+    "crossref_dataset_relations": {},
+    "datacite_exact_doi_records": 0,
+    "SSRN_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4773097",
+    "SSRN_access": "web direct403;search-index abstract accessible,nofullpreprint acquired",
+    "archival_2024_repo_url": "https://github.com/wietecha-reiman/Fatigue-AM-316L",
+    "archival_repo_status": 404,
+    "author_public_repositories": [
+      "wietecha-reiman/Archival_Ti6Al4V-2005_2023"
+    ]
+  },
+  "final_disposition": "12exact strain-controlled secondary outcomes;0physical specimen/build identified;0forcecontrolled primary admission;no fitting/contact/publication",
+  "independent_source_spot_check": {
+    "agent": "v3_methods_rfl",
+    "status": "PASS",
+    "scope": "All12 strain/angle/Nf triples visually compared with primary PDF8; exact CSV match. PDF6 confirms strain amplitudes and0.25Hz. Cycle/reversal and archival-duplicate distinctions confirmed.",
+    "physical_validation": false
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "folder": "results/v3/identity_cap1e7",
+    "prediction_rows": 11520,
+    "selection_rows": 920,
+    "tasks": 50,
+    "summary_cells_checked": 1728,
+    "max_summary_mean_abs_error": 9.313225746154785e-10,
+    "common_query_pool_identity_pass": true,
+    "paired_cells_checked": 2304,
+    "max_paired_mean_abs_error": 9.313225746154785e-10,
+    "support_cycle_recalculation_pass": true,
+    "training_source_exclusion_pass": true,
+    "multistress_covariate_subset_relation_pass": null,
+    "all_checks_pass": true
+  },
+  {
+    "folder": "results/v3/identity_cap1e6",
+    "prediction_rows": 11520,
+    "selection_rows": 920,
+    "tasks": 50,
+    "summary_cells_checked": 1728,
+    "max_summary_mean_abs_error": 9.313225746154785e-10,
+    "common_query_pool_identity_pass": true,
+    "paired_cells_checked": 2304,
+    "max_paired_mean_abs_error": 9.313225746154785e-10,
+    "support_cycle_recalculation_pass": true,
+    "training_source_exclusion_pass": true,
+    "multistress_covariate_subset_relation_pass": null,
+    "all_checks_pass": true
+  }
+]

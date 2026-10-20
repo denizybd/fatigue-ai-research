@@ -1,0 +1,12 @@
+repository,record,url,disposition,evidence,downloaded
+Mendeley,87hm5hwbpk.2,https://data.mendeley.com/datasets/87hm5hwbpk/2,defect_only,Official version2 explicitly describes2D defect-size measurements; no fatigue-life table claimed. Version1 abstract alone would misclassify it.,False
+Mendeley,83wh6zdpz9.1,https://data.mendeley.com/datasets/83wh6zdpz9/1,valid_metadata_highT_TMF_but_raw_access_failed,"Primary metadata: AM+rolled316L,550–750C,straincontrol,IP/OP,60s cycles. Direct page/files/bundle GET403; DataCite metadata saved. Do not claim raw files acquired.",False
+Mendeley,fjsnkcjp2v.1,https://data.mendeley.com/datasets/fjsnkcjp2v/1,XCT_images_only_in_metadata,"Primary description supplies stacked TIFF scans of notched specimens; no S,N or explicit316L identity table was retrieved.",False
+Mendeley,9yykp4dt26.1,https://data.mendeley.com/datasets/9yykp4dt26/1,quasi_static_not_fatigue,LPBF316L load-displacement under0.1mm/min displacementcontrol; static fracture locus dataset.,False
+Mendeley,63nj32hygs.1,https://data.mendeley.com/datasets/63nj32hygs/1,thermal_model_not_fatigue,"NCAME thermal numerical outputs, not cyclic life observations.",False
+Zenodo,21869496,https://zenodo.org/records/21869496,cyclic_Bauschinger_not_verified_AM_fatigue_lives,Polycrystalline316L hysteresis/model/EBSD package; AM provenance and Nf not established.,False
+Zenodo,13828238,https://zenodo.org/records/13828238,wrong_alloy,AlSi10Mg; never substitute as316L.,False
+Zenodo,10593243,https://zenodo.org/records/10593243,wrong_alloy,Inconel718 highTLCF; never substitute as316L.,False
+Zenodo,21704689,https://zenodo.org/records/21704689,dynamic_compression_not_fatigue_life,316L auxetic-lattice SHPB compression and models; no fatigue Nf retrieved.,False
+Zenodo,4312780,https://zenodo.org/records/4312780,texture_hardness_not_fatigue_life,DED316L microstructure/thermal data; no life data claimed.,False
+NIST/Dataverse/MaterialsCommons,targeted_public_queries,,no_new_raw_endpoint_identified_in_this_pass,Three repository-targeted query groups retained in search_log; no claim of exhaustive absence. Existing Trombley MaterialsCommons acquisition excluded from new-source counts.,False

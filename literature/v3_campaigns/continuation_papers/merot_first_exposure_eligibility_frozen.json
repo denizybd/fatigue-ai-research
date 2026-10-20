@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-10-20T16:00:51.287485+00:00",
+  "objective": "Recover author-identified virgin first-exposure records from Merot/Auffray family; no model fitting.",
+  "eligible_unit": "Exactly one initial cyclic loading block per author specimen.",
+  "endpoint": "Initial-block failure is event1 at directly recorded cycles to failure. Survival to the first scheduled block stop is event0 right censoring at that first stop.",
+  "forbidden": [
+    "Later stepped blocks",
+    "Miner-equivalent cycles",
+    "Summing prior blocks",
+    "Inventing author specimen IDs",
+    "Joining physical builds by matching counts, stress, plot positions, or filenames"
+  ],
+  "metadata_gate": "Retain author specimen IDs and source-backed physical production build/batch IDs; distinguish powder batch from physical production batch. No missing metadata imputation.",
+  "scope": "LPBF316L, axial force/stress-controlled constant amplitude for the initial block; environment/R and surface states explicit. Prior data exposure means retrospective validation, not outcome-blind confirmation.",
+  "leakage_gate": "Exclude all Merot/Auffray source family from population training, including historical derived/multistep records.",
+  "admission": "Raw first-exposure outcome table can be quarantined separately if physical build gate remains unverified."
+}

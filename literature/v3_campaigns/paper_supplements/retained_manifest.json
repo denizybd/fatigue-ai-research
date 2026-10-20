@@ -1,0 +1,87 @@
+[
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Dastgerdi2023.pdf",
+    "bytes": 21472551,
+    "sha256": "d95c1fed17d1ff360922a322d9dd3111bde6e1057c6023493bed724bbd0a4409"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Dastgerdi2023.txt",
+    "bytes": 86193,
+    "sha256": "3d28c216662493fb7077d3964c4f78793a3d76b9c616f0ff12add29e979871f1"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Dastgerdi2023_table1.png",
+    "bytes": 689220,
+    "sha256": "91e90ffb86b56e3da7af95614533f888bef6aa61878050d2bef1c2f944d1125c"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Hatami2020.pdf",
+    "bytes": 3435649,
+    "sha256": "e157160a78b0acc3c93344459dca8694b2a1ba81e87b199fb81e66b7a4e992f4"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Hatami2020.txt",
+    "bytes": 39093,
+    "sha256": "0098c04030d0b21a274960b61581698ce5369e13fd8082e406229712f225c5d3"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Manchili2026_ChemicalSurface.pdf",
+    "bytes": 4944947,
+    "sha256": "556607d851142c20712eacc00382c7974d7328595bfc7b3f09c0c130b8a1dfe1"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/Manchili2026_ChemicalSurface.txt",
+    "bytes": 44489,
+    "sha256": "fdbbc6e8ab99c1e2e7a29c475d539f1f3210084fc571d45fa24e3176b694793d"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/dastgerdi2023_prior_overlap.csv",
+    "bytes": 2036,
+    "sha256": "d0dd96d688d85bb5cf19d96b764b179ce5df695e13cc26358068b2f6867b921f"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/downloads.json",
+    "bytes": 2358,
+    "sha256": "4c728a8305e2d1265ba9151927185abd22d2717f3099d3b895b5fb3f10ce8a6f"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/liang2020_tableA3_text_transcription_quarantine.csv",
+    "bytes": 17108,
+    "sha256": "242df760fb356d0fafe326f45639f5c903a21e6cc7e8498d6466942b62ebddf7"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/liang_metadata_0.txt",
+    "bytes": 54820,
+    "sha256": "956ff5f2223e39c5ae222205613119357ffdf84dde836352995dc946421249ca"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/liang_metadata_1.txt",
+    "bytes": 650,
+    "sha256": "5a4712642ce53b61134d1973158559600f6d6d3942a61555204c84e6c80b2085"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/normalize_candidates.py",
+    "bytes": 5732,
+    "sha256": "a6278cc10a73ae1a6aab2af95c77e73ac294982cc4a6ade45cdc85619a3a4d3f"
+  },
+  {
+    "path": "literature/v3_campaigns/paper_supplements/paper_search_evidence.txt",
+    "bytes": 7360,
+    "sha256": "3c144c613820cf4c2932feec720b0f298568419be5777a33b9df2452c8f26a6f"
+  },
+  {
+    "path": "data/external_v3/paper_supplements/README_LOCAL_PROVENANCE.txt",
+    "bytes": 668,
+    "sha256": "7f217c27a2fafe17bf7aac567edf4f6e570e5c2aabb65416dbef60c002a3e13d"
+  },
+  {
+    "path": "data/external_v3/paper_supplements/dastgerdi2023_identity_records.csv",
+    "bytes": 8289,
+    "sha256": "cdfc15406eddb26eb84de7aa6c0ea83bb771d1c27a0351ab3df3434283e90c16"
+  },
+  {
+    "path": "data/external_v3/paper_supplements/dastgerdi2023_uninterrupted_pilot6.csv",
+    "bytes": 6353,
+    "sha256": "f8237cc8b3081c0d5300668895571534f6b4a679f41ac144f8ed66a400779f46"
+  }
+]

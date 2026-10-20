@@ -1,0 +1,57 @@
+{
+  "created_at_utc": "2026-10-20T16:55:38.906192+00:00",
+  "files": [
+    {
+      "path": "literature/v3_campaigns/closure_wu/closure_note.md",
+      "bytes": 1146,
+      "sha256": "5ae5e900566fa2e8eb5f1bec29a7fe3ee4a21f976b62e14540c6f06bb477b352"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/crossref_live.json",
+      "bytes": 14822,
+      "sha256": "e85948a06fe457aaf46af0b2de12d3c5436a746809b208a44f103b69b681c332"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/ntu_repository_home.html",
+      "bytes": 2113,
+      "sha256": "7dc8d976910f139d2d0b2f57514e91339b3d6c237ac5cd62d10a8630818a256f"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/official_access_outcome.json",
+      "bytes": 4564,
+      "sha256": "98496d97227157053c3c3de084edd8285a7dbfd4b1486a2912227d59e619da41"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/openalex_live.json",
+      "bytes": 14445,
+      "sha256": "ba1415aad919c7c16b124bb4092730d1f045933f10c3284298121469fbe2c888"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/publisher_public_api.xml",
+      "bytes": 1896,
+      "sha256": "024c347869c142af50c0672b235274a65762bfbe3e2ed88fbbbec69483cd8c63"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/request_receipts.json",
+      "bytes": 2289,
+      "sha256": "16f1a3ace8014c6ee03309b27838b1f2c246b91803d240f0d95cd13fb9e6aacc"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/search_access_log.json",
+      "bytes": 649,
+      "sha256": "f3a7352d92160cbd2bd778a54d5ed688aaf75dda2e728b6ae849df441e1f59b4"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/wu_orcid_person.json",
+      "bytes": 926,
+      "sha256": "b381257feb53040bb469d920bd73f078780639503fb05b238ded5755e1de869b"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_wu/wu_orcid_works.json",
+      "bytes": 3440,
+      "sha256": "841c4081712cd4902e3ab45c16e1b8985eb1b517b8fe04d3f945e1f57a91da6e"
+    }
+  ],
+  "file_count": 10,
+  "result": "NO_OFFICIAL_FULLTEXT_OR_SUPPLEMENT_OBTAINED"
+}

@@ -1,0 +1,203 @@
+{
+  "generated_utc": "2026-10-20T16:16:18.036509+00:00",
+  "extension_verified_physical_records": 70,
+  "extension_primary_air_nominal_rows": 43,
+  "raw_producer_md5_verified": true,
+  "files": [
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Agrawal_thesis.pdf",
+      "nbytes": 5404584,
+      "sha256": "b9477c67ad7511ca059f8b77b68580e1a9f4ad3d684a05e0b9c20ba28c514542"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Agrawal_thesis.txt",
+      "nbytes": 250901,
+      "sha256": "9266148b5d725ca74fec48eaf4f1e74d7c2ec011b09f5edfeeec09dfac12088a"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Busari2025_review.html",
+      "nbytes": 561202,
+      "sha256": "3e980febdff06a53f507f31342210d25b36629b22fba51eb37d80a3fdc1b4ae2"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Faue2022_fig11_page6.png",
+      "nbytes": 651679,
+      "sha256": "f23876d254c6886ecc1f28c49ad93a09571e62b9ec5172481bdd45f8da34c505"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Kopec2024.pdf",
+      "nbytes": 8126347,
+      "sha256": "aeaaec337d4418ccaf35ec53a5bc4bc0af2e3b6d01ff09de7400247e4c795dd0"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Kopec2024.txt",
+      "nbytes": 58319,
+      "sha256": "eb70c9dec20de16756fdfac2d2ed45be234609814f8f81eb15a2603e749b603b"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Kopec2024_buildlayout_page5.png",
+      "nbytes": 548082,
+      "sha256": "497ddcec25968d005c5c59e11c2985482d9da6214feec231fbdefa50a5c188f5"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Kopec2024_fatigue_page8.png",
+      "nbytes": 576837,
+      "sha256": "91f346f6cc4894f1190cf56f28b6107d2896510116f4b19cf3019e14654c52d0"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/LaserPolishing_NSF10357954.pdf",
+      "nbytes": 1015322,
+      "sha256": "43e248e3f600d5d5f306ef55525fb71bf91c21fcaa3f0c9638c7b3fd1b9aae84"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/LaserPolishing_NSF10357954.txt",
+      "nbytes": 33972,
+      "sha256": "8a854d303931e19e8776aabf1806b772c37594b05aff610a640721548c3ac602"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_buildtable_page85.png",
+      "nbytes": 274390,
+      "sha256": "88c0360ff67cea5de4dede53ece71654e18250aa8ba83fd308ef9131dfe97820"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_method_page115.png",
+      "nbytes": 342370,
+      "sha256": "52aeb0fdf79b2474146d017ee343a4149194801dbfcaca631979938a586a04d2"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_nomenclature_page84.png",
+      "nbytes": 563224,
+      "sha256": "7db7e9a200cffd66b64786fb89cd7cb7002b94acc9fb682547f171354198d2f1"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_pretest_treatments_page111.png",
+      "nbytes": 354078,
+      "sha256": "941f1135614271917b6f35a5d5304d6a42e95ad6b841ed968a6248d3f09d41c6"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_stress_semantics_page280.png",
+      "nbytes": 370595,
+      "sha256": "826cb98311dfe428fd856c35e1582bedd46048b28a9d92a4c4859d1c38e8b685"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_thesis.pdf",
+      "nbytes": 320573000,
+      "sha256": "8c858848ca1a27bcc42e04ca60cfbf146048b53f80b76d7d05ecef459b6ea26a"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot2021_thesis.txt",
+      "nbytes": 641788,
+      "sha256": "0420399c3be9ccbb81356e75785fcb7efa3ef9d27eb73d08e78e3ad5521e9f3d"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Merot_zenodo6653187_metadata.json",
+      "nbytes": 5555,
+      "sha256": "0eb1e7303e0942164c47be51988df375a41dbaf44991d632b529a1e67ca8e954"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/continuation_receipt.md",
+      "nbytes": 2965,
+      "sha256": "5f707083951aa1374866bd7a1f81e918b7a625a3715167714a75add7e0418eb2"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/continuation_source_gate.csv",
+      "nbytes": 4817,
+      "sha256": "1a8b6b316f2afa4116812de1673e1e0788362343ceabb5dc5e93e2ffa3ece1ef"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/downloads.json",
+      "nbytes": 4044,
+      "sha256": "22cd1b9af776f13fb21deba0fc8c99e2407555c63d8793317ee88449d08bd874"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/finalize_merot_first_exposure.py",
+      "nbytes": 10606,
+      "sha256": "4a929f025d60381680a9d6447f7dd0a42055147804c7e712b544ee0f8af067ba"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_final_method_limitations.md",
+      "nbytes": 3249,
+      "sha256": "83ccd57781296a00af6628ea49fec6e91be7a34b7ba8ab4a449c9bb6f69e2b3c"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_final_normalization_receipt.json",
+      "nbytes": 1196,
+      "sha256": "1e01824607739c87f2f504390e32c557d31a2b6b9c58b16a13ed7518227bf77b"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_first_exposure_eligibility_frozen.json",
+      "nbytes": 1344,
+      "sha256": "7f37c02bd38ac593e6a4b32075c23d1b0a5f34c607ec80e3817952a8d5d8d4ac"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_first_exposure_receipt.json",
+      "nbytes": 1519,
+      "sha256": "89a1c2292459f24f31c0dc61837e8c91a06e2f8719923b282cb967c42fefb2c9"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_identity_first_exposure_report.md",
+      "nbytes": 4444,
+      "sha256": "6c892020713d6c2b52d67498286035758e61a54d52acd11c7e950f35280c8433"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_primary_source_handoff.md",
+      "nbytes": 3498,
+      "sha256": "0cd91c65f3ff0867491f697fbc64bf0a72d558536ee6a3f87a603373d28c30ed"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_source_specimen_build_crosswalk70.csv",
+      "nbytes": 3288,
+      "sha256": "79a1b20fcaedd05eb38ec22690d85bace5c7ffd650737ac1fce9448e3492d592"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_thesis.html",
+      "nbytes": 95164,
+      "sha256": "9fc8b6866912b068c26f68047af8fe07d5d4dec42c082fc9eac78d710b8b9e61"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/merot_verified_method_excerpts.txt",
+      "nbytes": 28211,
+      "sha256": "cbac7b46a2057a1f62f1a3dc8203408f906bec5398582bdc12e7f7240d276269"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/README.txt",
+      "nbytes": 641,
+      "sha256": "10ed6723b15d58228a8f85ec68636fa80a86e2042816b2eb016f2a2dd9722dc8"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/data_fatigue_merot.csv",
+      "nbytes": 124800,
+      "sha256": "bb5e9ce46a7f7827aef50f2188f059c6833ca3dab9110cec1613c628a2e16b5e"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/merot_all_Step0_candidates105.csv",
+      "nbytes": 93860,
+      "sha256": "3f840e69ffb032fb491554d44cadfa940b5742998613aa6818935d5188e83f6d"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/merot_first_exposure_air_localstress9_exploratory.csv",
+      "nbytes": 8429,
+      "sha256": "8ff74e1c5e27fb8b5ffde7a983d40675941e5e6eb419574b018e3debcf0f1a1b"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/merot_first_exposure_air_nominal43.csv",
+      "nbytes": 37821,
+      "sha256": "b15ffdb8342ae14ab221aa53e9fd2a443b07f9a082413e0372f97b240cb58e53"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/merot_first_exposure_quarantine35.csv",
+      "nbytes": 32658,
+      "sha256": "b93aa22c72cd5ed3979a071ed3dabf04bbcac69c663a9f6700381e60ce94fa4c"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/merot_first_exposure_unique_physical70_pending_methods.csv",
+      "nbytes": 62425,
+      "sha256": "1f9dbf2b0b95fcd6c97f3e17de5171ec9cfd32cc165508deb81060ccce9a03d3"
+    },
+    {
+      "path": "data/external_v3/continuation_papers/merot_first_exposure_unique_physical70_verified.csv",
+      "nbytes": 60873,
+      "sha256": "2b6b775484ba5eb25f0d5a90ff944bac175f092c74ceb3387e00d18cf608e618"
+    }
+  ]
+}

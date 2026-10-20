@@ -1,0 +1,46 @@
+[
+  {
+    "name": "elangeswaran2019",
+    "url": "https://lirias.kuleuven.be/bitstream/123456789/644320/2/IJF_AM_revised_manuscript.pdf",
+    "status": 404,
+    "final_url": "https://lirias.kuleuven.be/bitstream/123456789/644320/2/IJF_AM_revised_manuscript.pdf",
+    "bytes": 196,
+    "is_pdf": false,
+    "path": "literature/v4_open/source_expansion/elangeswaran2019.html",
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+    "accessed_utc": "2026-10-20T19:04:32.084292+00:00"
+  },
+  {
+    "name": "elangeswaran2020",
+    "url": "https://re.public.polimi.it/retrieve/f20e4057-d42c-488d-9e0a-4a96fd07b986/1-s2.0-S0264127520304962-main.pdf",
+    "status": 403,
+    "final_url": "https://re.public.polimi.it/retrieve/f20e4057-d42c-488d-9e0a-4a96fd07b986/1-s2.0-S0264127520304962-main.pdf",
+    "bytes": 5764,
+    "is_pdf": false,
+    "path": "literature/v4_open/source_expansion/elangeswaran2020.html",
+    "sha256": "974612ed390ed7d2edfc6cf0322ed479819c3b720285e161884a46d790583b48",
+    "accessed_utc": "2026-10-20T19:04:32.034436+00:00"
+  },
+  {
+    "name": "zhang2019_hcf",
+    "url": "https://pure.coventry.ac.uk/ws/portalfiles/portal/22293800/Binder6.pdf",
+    "status": 200,
+    "final_url": "https://pure.coventry.ac.uk/ws/portalfiles/portal/22293800/Binder6.pdf",
+    "bytes": 4080249,
+    "is_pdf": true,
+    "path": "literature/v4_open/source_expansion/zhang2019_hcf.pdf",
+    "sha256": "59c6e0f8dde2950ddbb5a98c4266b42f7fac86cecc606326098382541d09e875",
+    "accessed_utc": "2026-10-20T19:04:32.498016+00:00"
+  },
+  {
+    "name": "liang_ffe2022",
+    "url": "https://sam.ensam.eu/bitstream/handle/10985/22221/LAMPA_FFEMS_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "status": 403,
+    "final_url": "https://sam.ensam.eu/bitstream/handle/10985/22221/LAMPA_FFEMS_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "bytes": 146,
+    "is_pdf": false,
+    "path": "literature/v4_open/source_expansion/liang_ffe2022.html",
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "accessed_utc": "2026-10-20T19:04:32.059302+00:00"
+  }
+]

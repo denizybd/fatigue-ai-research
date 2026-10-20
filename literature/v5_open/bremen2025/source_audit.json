@@ -1,0 +1,91 @@
+{
+  "source_title": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments",
+  "author": "Jun Zhang",
+  "institution": "University of Bremen / IWT",
+  "source_doi": "10.26092/elib/4986",
+  "stable_handle": "https://media.suub.uni-bremen.de/handle/elib/23339",
+  "source_urn": "urn:nbn:de:gbv:46-elib233395",
+  "published_exam_date": "2025-07-22",
+  "repository_availability": "2025-11-26T09:21:32Z",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "source_family_block": "jun_zhang_bremen_145651_4986",
+  "access": {
+    "old_provided_api_path": "404",
+    "current_rest_namespace": "/server discovered in official homepage configuration",
+    "current_api_pdf_GET": "200 application/pdf;9,538,416bytes",
+    "actual_pdf_retrieved": true,
+    "authentication_or_contact": false
+  },
+  "method_evidence": {
+    "316L_material": "PDF63/Table3.1",
+    "manufacturing": "PDF65–68/Tables3.3–3.4/Fig3.4",
+    "load_control_R_frequency_runout_retest": "PDF72–73/printed58–59",
+    "source_batch_semantics": "PDF80/printed66: separately manufactured batches due to limited manufacturing space",
+    "heat_treatment_mixed_batches": "PDF119/printed105: samples statistically collected across different batches"
+  },
+  "positive_evidence": [
+    "Actual316L original experimental chapter4.1 plus heat-treatment chapter5.1, not just a literature review.",
+    "Exact aggregate fracture-stress distribution values, method metadata and source group counts are openly available underCCBY4.",
+    "Source batch1/2/3 labels are physical manufacturing-batch groups for S10, but no lab specimen-to-batch crosswalk is published.",
+    "Distinct initial failure/runout status remains displayed for later fractography; higher-stress reloads do not justify calling every graph failure invalid."
+  ],
+  "admission_boundary": [
+    "No individual numeric Nf table found in the thesis. Figures4.6/5.4/8.3/8.4 contain overlapping plotted observations and fitted/summary marks.",
+    "Runouts at1e7 are reloaded at higher stress for fracture-origin analysis. No specimen/history keys permit certified per-point first-exposure separation yet.",
+    "Table8.1 values are fitted FRACTURE-STRESS quantiles, not observed life values or R90C90 confidence bounds. No pseudo-observations are manufactured.",
+    "No explicit fatigue temperature/environment or numericalKt is supplied in the inspected original methods. Blank fields cannot be replaced by25C/air/Kt1.",
+    "Chapter4.1 and DOI10.1016/j.msea.2023.145651 overlap explicitly; chapter5 uses a separate batch mix but remains in the same author-program source block.",
+    "Table3.5 repeats reference variants across investigation packages; Table8.1 includes pooled S10 plus nested batch subgroups. These counts are not additive.",
+    "This Jun Zhang Bremen program is not linked to the v4 Zhang2017/2019 family merely by surname."
+  ],
+  "concrete_next_route": [
+    "Source-only graph audit can test whether all displayed S-N markers correspond to initial tests by matching exact per-condition counts and marker semantics; digitize only an unambiguous first-block subset with coordinate uncertainty.",
+    "A public raw table or author specimen/history keys would resolve overlapping-marker multiplicity and initial/retest membership. No correspondence was sent."
+  ],
+  "repository_inventory": "ORIGINAL:1PDF;LICENSE:license.txt;TEXT:machine-extracted thesis;THUMBNAIL:cover image. No raw experiment table in these bundles.",
+  "supplement_search": {
+    "PDF_attachments": 0,
+    "Crossref_related_article_relations": {},
+    "DataCite_related_to_article_total": 0,
+    "DataCite_related_to_thesis_total": 0,
+    "publisher_article_public_access": "403 on normalGET",
+    "scope": "These checked routes are negative, not a claim that no public dataset exists anywhere."
+  },
+  "curated_assets": {
+    "table8_1_fatigue_strength_13.csv": 13,
+    "paper_thesis_reuse_links.csv": 1,
+    "table8_3_316L_status_counts_13.csv": 13,
+    "table3_5_316L_investigation_counts_13.csv": 13,
+    "condition_methods_11.csv": 11,
+    "candidate_SN_figure_inventory_5.csv": 5,
+    "316L_powder_composition_2.csv": 2
+  },
+  "current_frozen_model_changes": 0,
+  "current_aggregate_curation_status": "PASS",
+  "individual_CA_life_admission": "PENDING GRAPH/FIRST-BLOCK QUALIFICATION; not rejected merely for missinglabIDs",
+  "visual_pages_checked": [
+    72,
+    79,
+    121,
+    155,
+    156,
+    165,
+    166
+  ],
+  "validation_checks": {
+    "actual173pagePDF_retrieved_publicGET": true,
+    "officialMD5_matches": true,
+    "official_license_CCBY4": true,
+    "no_PDF_attachments": true,
+    "13_source_strength_rows": true,
+    "10LPBF_conditions_plus1reference": true,
+    "13_statusrows_preserve_basecounts": true,
+    "H13_not_imported": true,
+    "individualNf_not_manufactured": true,
+    "all_methods_life_ineligible_pendingpointreview": true,
+    "unknown_temp_Kt_IDs_preserved": true,
+    "methods_explicit_retest_statement": true,
+    "same_original_pdf_only_no_raw_supplement": true
+  },
+  "all_checks_pass": true
+}

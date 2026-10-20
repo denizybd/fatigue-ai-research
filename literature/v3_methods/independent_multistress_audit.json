@@ -1,0 +1,32 @@
+[
+  {
+    "folder": "results/v3/final_cap1e7/multistress",
+    "prediction_rows": 169440,
+    "selection_rows": 9080,
+    "tasks": 390,
+    "summary_cells_checked": 3024,
+    "max_summary_mean_abs_error": 7.450580596923828e-09,
+    "common_query_pool_identity_pass": true,
+    "paired_cells_checked": 4032,
+    "max_paired_mean_abs_error": 7.450580596923828e-09,
+    "support_cycle_recalculation_pass": true,
+    "training_source_exclusion_pass": true,
+    "multistress_covariate_subset_relation_pass": true,
+    "all_checks_pass": true
+  },
+  {
+    "folder": "results/v3/final_cap1e6/multistress",
+    "prediction_rows": 169440,
+    "selection_rows": 9080,
+    "tasks": 390,
+    "summary_cells_checked": 3024,
+    "max_summary_mean_abs_error": 4.656612873077393e-10,
+    "common_query_pool_identity_pass": true,
+    "paired_cells_checked": 4032,
+    "max_paired_mean_abs_error": 4.656612873077393e-10,
+    "support_cycle_recalculation_pass": true,
+    "training_source_exclusion_pass": true,
+    "multistress_covariate_subset_relation_pass": true,
+    "all_checks_pass": true
+  }
+]

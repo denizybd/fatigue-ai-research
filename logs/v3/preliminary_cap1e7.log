@@ -1,0 +1,6 @@
+Fitting 309 training rows
+Fits done 1.76s
+task 1/3 trombley2025_d1.5_a seed0 done
+task 2/3 trombley2025_d2.5_a seed0 done
+task 3/3 trombley2025_d5_a seed0 done
+{"prediction_rows": 4896, "selection_rows": 120}

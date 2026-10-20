@@ -1,0 +1,14 @@
+investigation_package,condition_id,source_tensile_count,source_fatigue_count,repeated_across_packages,additive_across_rows,record_type,source_doi,source_pdf_page,source_printed_page,source_table
+porosity_roughness,CH4_S10_0_highporosity,,7,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+porosity_roughness,CH4_S10_0_rough,6,6,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+porosity_roughness,CH4_S10_0_all,7,20,True,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+scan_pattern,CH4_S10_0_all,7,20,True,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+scan_pattern,CH4_S3_0,5,17,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+scan_pattern,CH4_C3_0,5,21,True,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+polar_angle,CH4_C3_0,5,21,True,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+polar_angle,CH4_C3_45,6,20,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+polar_angle,CH4_C3_90,5,19,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+heat_treatment,CH5_C3_0_AB,5,17,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+heat_treatment,CH5_C3_0_SR600,5,19,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+heat_treatment,CH5_C3_0_AN900,5,16,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5
+control,CS_annealed,5,33,False,False,reported_group_test_count,10.26092/elib/4986,72,58,3.5

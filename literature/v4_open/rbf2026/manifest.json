@@ -1,0 +1,98 @@
+{
+  "generated_utc": "2026-10-20T19:32:56.867922+00:00",
+  "scope": "Only RBF109365 acquisition and normalization; manifest excludes itself",
+  "files": [
+    {
+      "path": "literature/v4_open/rbf2026/crossref.json",
+      "bytes": 32294,
+      "sha256": "ffb9801437296c85e9841e23f5ee0b38376fd82c38ed815b09fcd5659b35f073"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/elsevier_xml.xml",
+      "bytes": 2077,
+      "sha256": "9cfb3c1df1b144c633afe8247233f14015b32cf5d603afa840b0f2e803d1a3b9"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/independent_audit.json",
+      "bytes": 4409,
+      "sha256": "9c4ef8e8677982d008ebd16aa206823d093e0eee51b25849c9de983542080cf6"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/normalization_receipt.json",
+      "bytes": 2067,
+      "sha256": "558d5fb874cbe601559f40821e7eae832e2ebc0e080ff991f4074dd98866cd7f"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/normalize_table1.py",
+      "bytes": 6434,
+      "sha256": "b673aed53a3286b2543468a582edb8c4033a8771b87cbfeafa0f0ec32ffa448f"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/openalex.json",
+      "bytes": 23534,
+      "sha256": "3d6061eeb3289e80896f54893653c06d7c4ec2e34de02aa2fb2bdd1bac088619"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/overlap_screen.json",
+      "bytes": 1143,
+      "sha256": "61229737e81110487c5f79aa0b1efadee16f75367c3b7f706531654bacb4237a"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/public_get_access_log.json",
+      "bytes": 1198,
+      "sha256": "04b362618a09b90dff8cc8882f317ed42cc2ede5d8db0094bdee1aba8270ec6c"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/publisher_indexed_methods_snapshot.json",
+      "bytes": 38853,
+      "sha256": "6589cc3114c6c12767aed9febfb9b24efd0d75fd1d24e66906e27865bb6df64b"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/publisher_indexed_reuse_access_snapshot.json",
+      "bytes": 71711,
+      "sha256": "5a673ca8bbc62d66e8cdeca6a407a7847f6aea6e84f2b1e319e8663bbf8dacf7"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/publisher_indexed_table_snapshot.json",
+      "bytes": 33718,
+      "sha256": "1ce0cd837572ac9484114917e95210386a536ccb8e95ad7b9483dfa04ff7091e"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/query_ledger.json",
+      "bytes": 1802,
+      "sha256": "7cfbd853d88336d3a209055be98b5e5deefc8f75aa481bfc3109c34f56717a00"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/report.md",
+      "bytes": 1760,
+      "sha256": "55ac7a98850b25482f7f88f6a4dd0353eb79075fd8c4984c6c7b8b8e25e6af72"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/source_audit.json",
+      "bytes": 3516,
+      "sha256": "130ef3063ff212b1c98adc8189ecdeb371421c123c43d2af7f6e274d6ba54369"
+    },
+    {
+      "path": "literature/v4_open/rbf2026/table1_transcription.json",
+      "bytes": 2999,
+      "sha256": "47149564ab4017c831c2a40b3a121b7fc59828a196f57eaf27d77f3f96f991f2"
+    },
+    {
+      "path": "data/external_v4/rbf2026/condition_counts.csv",
+      "bytes": 212,
+      "sha256": "c61c2112a85f232f26a3d8b19e026c9faeffc464f9521bcf3c67d7db7fec2f36"
+    },
+    {
+      "path": "data/external_v4/rbf2026/table1_not_reused_RTcurve42.csv",
+      "bytes": 37254,
+      "sha256": "1f13df623547e0ab7af635eefd9c7bdd43a9cc2f9a9be08dad9936523042b670"
+    },
+    {
+      "path": "data/external_v4/rbf2026/table1_rbf67.csv",
+      "bytes": 61279,
+      "sha256": "e10825d3ee90d8c17e4467b5c787dcd6883441e4ed46292793fecd7ef80d84ed"
+    }
+  ],
+  "file_count": 18,
+  "total_bytes": 326260
+}

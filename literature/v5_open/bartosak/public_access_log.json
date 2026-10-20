@@ -1,0 +1,99 @@
+[
+  {
+    "key": "openalex",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ijfatigue.2024.108608",
+    "retrieved_utc": "2026-10-20T19:41:08.343378+00:00",
+    "status": 200,
+    "bytes": 21448,
+    "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ijfatigue.2024.108608",
+    "content_type": "application/json",
+    "path": "literature/v5_open/bartosak/openalex.json"
+  },
+  {
+    "key": "conference2025",
+    "url": "https://experimentalni-mechanika.cz/cs/konference/konference/2025.html?download=3105%3A21",
+    "retrieved_utc": "2026-10-20T19:41:09.151002+00:00",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'experimentalni-mechanika.cz'. (_ssl.c:1129)>"
+  },
+  {
+    "key": "publisher",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0142112324004675",
+    "retrieved_utc": "2026-10-20T19:41:09.438043+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "ssrn",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4893130",
+    "retrieved_utc": "2026-10-20T19:41:09.514516+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "conference2025_www",
+    "url": "https://www.experimentalni-mechanika.cz/cs/konference/konference/2025.html?download=3105%3A21",
+    "retrieved_utc": "2026-10-20T19:41:36.199560+00:00",
+    "status": null,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.experimentalni-mechanika.cz'. (_ssl.c:1129)>"
+  },
+  {
+    "key": "ssrn_pdf",
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/4893130.pdf?abstractid=4893130",
+    "retrieved_utc": "2026-10-20T19:41:36.468512+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "ssrn_api",
+    "url": "https://api.elsevier.com/content/article/PII:S0142112324004675?httpAccept=text/xml",
+    "retrieved_utc": "2026-10-20T19:41:36.532756+00:00",
+    "status": 200,
+    "bytes": 1929,
+    "final_url": "https://api.elsevier.com/content/article/PII:S0142112324004675?httpAccept=text/xml",
+    "content_type": "text/xml;charset=UTF-8",
+    "path": "literature/v5_open/bartosak/ssrn_api.xml"
+  },
+  {
+    "key": "conference2025_http",
+    "url": "http://www.experimentalni-mechanika.cz/cs/konference/konference/2025.html?download=3105%3A21",
+    "retrieved_utc": "2026-10-20T19:41:52.558940+00:00",
+    "status": 200,
+    "bytes": 348578,
+    "final_url": "http://www.experimentalni-mechanika.cz/cs/konference/konference/2025.html?download=3105%3A21",
+    "content_type": "application/pdf",
+    "path": "literature/v5_open/bartosak/conference2025_http.pdf"
+  },
+  {
+    "key": "ssrn_named_pdf",
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/ac5705e8-bd86-43b9-a9a9-baf2bac9da4c-MECA.pdf?abstractid=4893130",
+    "retrieved_utc": "2026-10-20T19:41:53.873243+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "elsevier_explicit_full",
+    "url": "https://api.elsevier.com/content/article/pii/S0142112324004675?httpAccept=text/xml&view=FULL",
+    "retrieved_utc": "2026-10-20T19:42:49.495230+00:00",
+    "status": 401,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "key": "zenodo_latest",
+    "url": "https://zenodo.org/api/records/12515773/versions/latest",
+    "retrieved_utc": "2026-10-20T19:43:32.942917+00:00",
+    "status": 200,
+    "bytes": 6062,
+    "final_url": "https://zenodo.org/api/records/12515773",
+    "path": "literature/v5_open/bartosak/zenodo_latest.json"
+  },
+  {
+    "key": "zenodo_files",
+    "url": "https://zenodo.org/api/records/12515773/files",
+    "retrieved_utc": "2026-10-20T19:43:33.705188+00:00",
+    "status": 200,
+    "bytes": 871,
+    "final_url": "https://zenodo.org/api/records/12515773/files",
+    "path": "literature/v5_open/bartosak/zenodo_files.json"
+  }
+]

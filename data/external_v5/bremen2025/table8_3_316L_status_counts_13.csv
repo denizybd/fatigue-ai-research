@@ -1,0 +1,14 @@
+condition_id,source_fail_No,source_runout_No,source_all_No,excluded_or_unavailable_fail_a,excluded_or_unavailable_runout_a,additional_fail_fracture_origins_b,additional_runout_fracture_origins_b,individual_Nf_available,additive_across_conditions,initial_status_is_preserved_for_fractography,record_type,source_doi,source_pdf_page,source_printed_page,source_table
+CS_annealed,22,11,33,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_S10_0_highporosity,6,1,7,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_S10_0_rough,4,2,6,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_S10_0_all,12,8,20,0,2,0,1,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_S10_0_batches12,3,6,9,0,2,0,1,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_S10_0_batch3,9,2,11,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_S3_0,6,11,17,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_C3_0,11,10,21,0,0,0,1,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_C3_45,9,11,20,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH4_C3_90,14,6,20,1,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH5_C3_0_AB,10,10,20,5,4,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH5_C3_0_SR600,11,8,19,0,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3
+CH5_C3_0_AN900,11,9,20,4,0,0,0,False,False,True,aggregate_status_and_fractography_count,10.26092/elib/4986,166,152,8.3

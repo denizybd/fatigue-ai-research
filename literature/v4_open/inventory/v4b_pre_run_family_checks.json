@@ -1,0 +1,887 @@
+{
+  "all_checks_pass": true,
+  "tasks": [
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 0,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 1,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 2,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 3,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 4,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 5,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 6,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 7,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 8,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 9,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 0,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 1,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 2,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 3,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 4,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 5,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 6,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 7,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 8,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 9,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 0,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 1,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 2,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 3,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 4,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 5,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 6,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 7,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 8,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 9,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 0,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 1,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 2,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 3,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 4,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 5,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 6,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 7,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 8,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 9,
+      "family": "v4_elangeswaran_linked_experiments",
+      "expanded_training": "strict_plus_zhang403",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 0,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 1,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 2,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 3,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 4,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 5,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 6,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 7,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 8,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 9,
+      "family": "v4_zhang_linked_original_experiments",
+      "expanded_training": "strict_plus_elanges347",
+      "strict_and_expanded_no_target_family_rows_or_labels": true,
+      "query_pool_valid": true
+    }
+  ],
+  "scope": "Exact declared family graph and row-ID exclusion only; not proof of globally exhaustive physical specimen independence.",
+  "no_model_runs": true
+}

@@ -1,0 +1,25 @@
+{
+  "screen_type": "Read-only direct DOI plus exact stress/life-center pair screen; no independence proof",
+  "table_points": 67,
+  "old_all_material_rows": 15146,
+  "old316_rows": 1609,
+  "target_doi_hits_in_old316": 0,
+  "exact_point_pair_matches": [],
+  "limitations": [
+    "No specimen/build identifiers exist for this table, so physical reuse beyond the explicit previous-curve reuse cannot be excluded.",
+    "No manufacturing parameter or attribution inferred from dates or stress-grid similarity."
+  ],
+  "explicit_reuse_link": {
+    "statement_location": "Section3.4.1,25C as-built referencecurve from previous study[66]",
+    "reference66_from_primary_bibliography_crossref": {
+      "key": "10.1016/j.ijfatigue.2025.109365_b0330",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ijfatigue.2024.108491",
+      "article-title": "Synergistic impact of corrosion pitting on the rotating bending fatigue of additively manufactured 316L stainless steel: Integrated experimental and modeling analyses",
+      "volume": "188",
+      "author": "Behvar",
+      "year": "2024",
+      "journal-title": "Int J Fatigue"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "path": "literature/v5_open/palmer2025/paper.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10853-025-11259-w.pdf",
+    "final_url": "https://link.springer.com/content/pdf/10.1007/s10853-025-11259-w.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 7527167,
+    "sha256": "e3924d0e89803b8d30c2aac40dd2860f7f3d63787f735f3d688273299f5c26e5",
+    "accessed_utc": "2026-10-20T19:51:24.214774+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/article.html",
+    "url": "https://link.springer.com/article/10.1007/s10853-025-11259-w",
+    "final_url": "https://link.springer.com/article/10.1007/s10853-025-11259-w",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 491391,
+    "sha256": "b3fb0b85500d2929d28e9a904352357e46e92b4cc6dfe33a2ae8a51cb169541c",
+    "accessed_utc": "2026-10-20T19:50:46.997626+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/table2.html",
+    "url": "https://link.springer.com/article/10.1007/s10853-025-11259-w/tables/2",
+    "final_url": "https://link.springer.com/article/10.1007/s10853-025-11259-w/tables/2",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 222017,
+    "sha256": "6d1aff3ecb5087d1f4305d598662354fdfb3e3df9d4b4ed4842d90fbc3515b48",
+    "accessed_utc": "2026-10-20T19:50:48.448093+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/crossref.json",
+    "url": "https://api.crossref.org/works/10.1007/s10853-025-11259-w",
+    "final_url": "https://api.crossref.org/works/10.1007/s10853-025-11259-w",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 28213,
+    "sha256": "b0421e71c8146d07a7a7376799f62f4d428b29088481333c01427c3d82a72caa",
+    "accessed_utc": "2026-10-20T19:50:46.131326+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/datacite.json",
+    "url": "https://api.datacite.org/dois?query=10.1007%2Fs10853-025-11259-w&page%5Bsize%5D=25",
+    "final_url": "https://api.datacite.org/dois?query=10.1007%2Fs10853-025-11259-w&page%5Bsize%5D=25",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 161,
+    "sha256": "76405fd7089d2b66c8c3df1ef91d3f840f2ce9fc12ab68882320d72a5357c10f",
+    "accessed_utc": "2026-10-20T19:50:46.236766+00:00"
+  }
+]

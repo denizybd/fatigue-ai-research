@@ -1,0 +1,135 @@
+{
+  "completed_utc": "2026-10-20T19:55:30.270650+00:00",
+  "files": [
+    {
+      "path": "literature/v5_open/palmer2025/article.html",
+      "bytes": 491391,
+      "sha256": "b3fb0b85500d2929d28e9a904352357e46e92b4cc6dfe33a2ae8a51cb169541c"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/author_repo.json",
+      "bytes": 118,
+      "sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/author_repos.json",
+      "bytes": 6327,
+      "sha256": "a23a1a9de2a6992fe9d9ed3116a60c73ed364568bd84a30bdf5817d27737d4ea"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/crossref.json",
+      "bytes": 28213,
+      "sha256": "b0421e71c8146d07a7a7376799f62f4d428b29088481333c01427c3d82a72caa"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/datacite.json",
+      "bytes": 161,
+      "sha256": "76405fd7089d2b66c8c3df1ef91d3f840f2ce9fc12ab68882320d72a5357c10f"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/download_manifest.json",
+      "bytes": 2300,
+      "sha256": "081cbf8d21e8161965f59c63205dd01145cc4450ce3cb5d736aaac8459ad11c5"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/followup_manifest.json",
+      "bytes": 1944,
+      "sha256": "7e170c7984b292ddd9e9eef2258af35437f2a1952adc8cbc1cf0604f1863a535"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/handoff.txt",
+      "bytes": 3111,
+      "sha256": "4138d19efe3baad327d1a417baa2de73d169f4be5f2667da91a56356b0f52e0d"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/method_identity_search_hits.txt",
+      "bytes": 8086,
+      "sha256": "158da6064d718e07101f318ee0d76004afbef2150b79502ab310c9c5a22f7ed6"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/nist_paper.pdf",
+      "bytes": 7526990,
+      "sha256": "0a6d9718e31d2668aa66b5d2bb5a2ff98ed3213e264892822fd9b0ffad611bed"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/nist_paper.txt",
+      "bytes": 58845,
+      "sha256": "64ff940425f9c5bae4f306714909ba0551a6dcfd5016bf175033063c8f9c198b"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/nist_record.html",
+      "bytes": 83375,
+      "sha256": "325aa1e90eeb5f4b90132fa1e8a8d1cb459ccfd6c9a8c310027e6a7204c032bf"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/normalize_table2.py",
+      "bytes": 7302,
+      "sha256": "8560dd0852b9e12634ade4941fd55fb817d75a8d2ca847555577769a6ac7ed42"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/paper.pdf",
+      "bytes": 7527167,
+      "sha256": "e3924d0e89803b8d30c2aac40dd2860f7f3d63787f735f3d688273299f5c26e5"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/paper.txt",
+      "bytes": 59882,
+      "sha256": "21d698960733457576925e439b6a72e4e7a3f396257cefdbba63440e3312d638"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/paper_pdfpage04.png",
+      "bytes": 480359,
+      "sha256": "6a3f8386e0c42d9575010b45e19cbacf3800aed54b4f9a7386b536a687d4ed06"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/paper_pdfpage06.png",
+      "bytes": 492297,
+      "sha256": "f497fe3ba06184344962f607e4686b9865c4680de8d891fae9459808a65bd217"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/paper_pdfpage08.png",
+      "bytes": 463297,
+      "sha256": "beb100ef8cff97375ae8b664f011378e8474b3144e77e036a13cb3845e92c938"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/public_search_receipt.json",
+      "bytes": 1198,
+      "sha256": "6390786f6745da27dbdaa09756613a7cf315fb0c7115395d3cf28dcc5cc8b6a2"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/source_audit.json",
+      "bytes": 4859,
+      "sha256": "ab566b8c27a7a5fc216864a7df774dce10679dce2f7051ca0a8373c9ebfdadad"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/table2.html",
+      "bytes": 222017,
+      "sha256": "6d1aff3ecb5087d1f4305d598662354fdfb3e3df9d4b4ed4842d90fbc3515b48"
+    },
+    {
+      "path": "literature/v5_open/palmer2025/table2_source_cells.json",
+      "bytes": 626,
+      "sha256": "60dbbd3512abec3cc27e1c88c0de096365eb678a5aaadb230dad22ca6a086138"
+    },
+    {
+      "path": "data/external_v5/palmer2025/exclusion_and_interpretation_ledger.csv",
+      "bytes": 999,
+      "sha256": "cd43f9a5e47dfac4354a2e703a2f46b1e0e7a74f7b2c9cb9e7c8d36e970a6b17"
+    },
+    {
+      "path": "data/external_v5/palmer2025/normalization_receipt.json",
+      "bytes": 441,
+      "sha256": "cbe52299fc37927e6020d7c9ab1baeca1995f9ae6146c89a0e045e77bf42ec08"
+    },
+    {
+      "path": "data/external_v5/palmer2025/palmer2025_exact_strain_fatigue_table2.csv",
+      "bytes": 13560,
+      "sha256": "06297df71d8117c8790c52ed7c36b897b9e05b9d0cacd6743456ae3e81603f1a"
+    },
+    {
+      "path": "data/external_v5/palmer2025/palmer2025_powder_composition_table1.csv",
+      "bytes": 1798,
+      "sha256": "bebdec259c1edf7343b373c12b34b56f5ff9a7ebc3bdc891e93c7c880a640e9b"
+    }
+  ]
+}

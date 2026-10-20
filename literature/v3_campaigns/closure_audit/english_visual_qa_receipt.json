@@ -1,0 +1,23 @@
+{
+  "paper_pages": 8,
+  "brief_pages": 1,
+  "all_initial_pages_rendered_and_visually_inspected": true,
+  "latest_modified_paper_pages_reinspected": [
+    3,
+    4,
+    6,
+    7
+  ],
+  "other_current_pages_pixel_identical_to_inspected_versions": [
+    1,
+    2,
+    5,
+    8
+  ],
+  "inspection_chain": "All8originalpages inspected; subtitle/declaration changes1/6/7 inspected; k0/ref changes3/4/7 inspected; final local-archive wording6 inspected. Final8pages verified by pixel-identical comparisons for unchanged versions.",
+  "final_brief_content_and_layout_unchanged_from_inspected_one_page": true,
+  "paper_sha256": "d360ad31475a403d06ef8be9d3c8481bfd03c1130dbc0e7e70747740b7b952d3",
+  "brief_sha256": "a16d3d6e671b24152b448e897d293638e1744c5253f04f760d0278a56b19b2ab",
+  "source_json_sha256": "646f9efe0ddd7d3fd2fdc5b3ffcbf98ed4360e4def1fd5265495df69c90fbca8",
+  "scientific_changes": "No model/numeric changes; k0 common-reference behavior and dataset creator attributions disclosed/corrected."
+}

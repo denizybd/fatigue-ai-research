@@ -1,0 +1,57 @@
+{
+  "url": "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733/content",
+  "status": 200,
+  "bytes": 22283480,
+  "sha256": "3ea5b0bdff6609fade6502f0425a9740abaa21971e773c1894b070015fdcbeeb",
+  "pages": 196,
+  "accessStatus": "open.access",
+  "authenticated": false,
+  "mode": "ordinary streaming GET from advertised public content link",
+  "audited_utc": "2026-10-20T16:28:05.298960+00:00",
+  "title": "The Influence of Section Thickness on the Ultrasonic Fatigue Response of 316L Stainless Steel Manufactured via Laser Powder Bed Fusion",
+  "persistent_handle": "2027.42/194633",
+  "issue_date": [
+    {
+      "value": "2024",
+      "language": "",
+      "authority": null,
+      "confidence": -1,
+      "place": 0
+    }
+  ],
+  "result": "individual ConceptLaser specimen-to-one-of-four-build mapping not recovered",
+  "source_claim_scope": "four ConceptLaser builds stated; no author build IDs/crosswalk for MC2564 specimens located",
+  "source_pdf_pages_visually_verified": [
+    76,
+    159
+  ],
+  "source_page_printed_numbers": [
+    53,
+    136
+  ],
+  "crosswalk_prohibited_inferences": [
+    "prefix CCV1/CCVT1/CCVT2",
+    "specimen counts",
+    "gauge diameter",
+    "test date",
+    "ProX build labels transferred to ConceptLaser"
+  ],
+  "searchable_author_id_occurrences": {
+    "CCV1": 0,
+    "CCVT1": 0,
+    "CCVT2": 0
+  },
+  "other_build_labels": "Build1/Build3/Build6 occur for ProX data in Chapter4; not the ConceptLaser dataset2564 crosswalk",
+  "existing_asbuilt129_powder_crosswalk_unchanged": true,
+  "existing_frozen_data_or_results_modified": false,
+  "new_models_fitted": false,
+  "new_independent_campaigns_verified": 0,
+  "remaining_need": "original author specimen-to-physical-build table/workbook or accessible explicit process graph",
+  "download_provenance_files": [
+    "thesis_accessStatus_public.json",
+    "thesis_bundles_public.json",
+    "thesis_item_public.json",
+    "thesis_original_bitstreams_public.json",
+    "thesis_text_bitstreams_public.json"
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "status": "PASS with minor wording recommendations",
+  "date": "2026-10-20",
+  "scope": "Independent arithmetic reconstruction and gross-claim review of current v4 evidence JSON/render source. No model fit or rerun; no document edits. Separate RBF input source audit is in rbf2026/independent_audit.json.",
+  "checks": [
+    {
+      "check": "all24_main_risk_headlines_reconstructed_from_predictions",
+      "pass": true
+    },
+    {
+      "check": "all12_main_training_life_ratios_reconstructed",
+      "pass": true
+    },
+    {
+      "check": "source_fewshot6_risk_utility_headlines_reconstructed",
+      "pass": true
+    },
+    {
+      "check": "all24_policy_headlines_life_cost_and_paired_censor_risk_reconstructed",
+      "pass": true
+    },
+    {
+      "check": "prediction_selection_instance_counts",
+      "pass": true
+    },
+    {
+      "check": "RBF_not_in_frozen_prediction_panels",
+      "pass": true
+    },
+    {
+      "check": "84_replay_manifest_scientific_hashes_still_match",
+      "pass": true
+    },
+    {
+      "check": "headline_scientific_boundary_disclosures",
+      "pass": true
+    }
+  ],
+  "details": [
+    {
+      "name": "all24_main_risk_headlines_reconstructed_from_predictions",
+      "detail": {
+        "max_absolute_error": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "all12_main_training_life_ratios_reconstructed",
+      "detail": {
+        "max_absolute_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "source_fewshot6_risk_utility_headlines_reconstructed",
+      "detail": {
+        "max_absolute_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "all24_policy_headlines_life_cost_and_paired_censor_risk_reconstructed",
+      "detail": {
+        "max_absolute_error": 9.992007221626409e-15
+      }
+    },
+    {
+      "name": "prediction_selection_instance_counts",
+      "detail": {
+        "controlled_cap1e7": {
+          "prediction_rows": 23040,
+          "selection_rows": 480
+        },
+        "controlled_cap1e6": {
+          "prediction_rows": 23040,
+          "selection_rows": 480
+        },
+        "source_holdout_cap1e7": {
+          "prediction_rows": 59040,
+          "selection_rows": 2120
+        },
+        "source_holdout_cap1e6": {
+          "prediction_rows": 59040,
+          "selection_rows": 2120
+        }
+      }
+    },
+    {
+      "name": "84_replay_manifest_scientific_hashes_still_match",
+      "detail": {
+        "mismatches": [],
+        "scope": "Verified saved outputs against replay receipt; this child did not rerun fits."
+      }
+    },
+    {
+      "name": "headline_scientific_boundary_disclosures",
+      "detail": {
+        "no_certified_reliability_or_original_BNN_superiority": true,
+        "one_yankin_program_no_population_CIs": true,
+        "no_Centola_row_identity_claim": true,
+        "pool_exhaustion_limit_disclosed": true,
+        "no_fake_life_rows_from_response_histories": true,
+        "not_two_new_gold_campaigns_claim": true,
+        "RBF_reuse_and_no_fit_admission_disclosed": true
+      }
+    }
+  ],
+  "all_numeric_checks_pass": true,
+  "gross_scientific_issues": [],
+  "minor_recommendations": [
+    "Qualify no-correspondence language as this workflow sent no correspondence; user reports sending their own PoliTO email yesterday.",
+    "Mention that adding source families changes source-balanced working-likelihood weights; this is a controlled evidence expansion, not an isolated causal effect of row count/diversity."
+  ],
+  "policy_reconstruction": [
+    {
+      "cap": 10000000.0,
+      "model": "hierarchical",
+      "policy": "high_stress",
+      "life_ratio": 0.8717494350801323,
+      "cost_savings_percent": 70.57703453741381,
+      "risk_delta_pp": [
+        -0.7738095238095236,
+        -0.7738095238095236
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "curved_hierarchical",
+      "policy": "high_stress",
+      "life_ratio": 0.9491534590450484,
+      "cost_savings_percent": 70.57703453741381,
+      "risk_delta_pp": [
+        1.30952380952381,
+        1.30952380952381
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "rfl",
+      "policy": "high_stress",
+      "life_ratio": 0.6875859522263764,
+      "cost_savings_percent": 70.57703453741381,
+      "risk_delta_pp": [
+        -1.3095238095238093,
+        -1.3095238095238093
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "local_slope",
+      "policy": "high_stress",
+      "life_ratio": 0.8621634305874466,
+      "cost_savings_percent": 70.57703453741381,
+      "risk_delta_pp": [
+        2.291666666666667,
+        2.291666666666667
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "hierarchical",
+      "policy": "active_query_variance",
+      "life_ratio": 0.8974361009780359,
+      "cost_savings_percent": 26.554276025466283,
+      "risk_delta_pp": [
+        -2.0238095238095237,
+        -2.0238095238095237
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "curved_hierarchical",
+      "policy": "active_query_variance",
+      "life_ratio": 0.9207397203563055,
+      "cost_savings_percent": 26.554276025466283,
+      "risk_delta_pp": [
+        -1.5029761904761902,
+        -1.5029761904761902
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "rfl",
+      "policy": "active_query_variance",
+      "life_ratio": 0.8565427129803487,
+      "cost_savings_percent": 26.554276025466283,
+      "risk_delta_pp": [
+        -1.3095238095238093,
+        -1.3095238095238093
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "local_slope",
+      "policy": "active_query_variance",
+      "life_ratio": 0.9340441187941595,
+      "cost_savings_percent": 26.554276025466283,
+      "risk_delta_pp": [
+        -1.4583333333333333,
+        -1.4583333333333333
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "hierarchical",
+      "policy": "stress_span",
+      "life_ratio": 0.9847148978348075,
+      "cost_savings_percent": -5.592544409495415,
+      "risk_delta_pp": [
+        -1.5029761904761902,
+        -1.5029761904761902
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "curved_hierarchical",
+      "policy": "stress_span",
+      "life_ratio": 0.9876324122081638,
+      "cost_savings_percent": -5.592544409495415,
+      "risk_delta_pp": [
+        -1.0863095238095237,
+        -1.0863095238095237
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "rfl",
+      "policy": "stress_span",
+      "life_ratio": 0.9249102998206714,
+      "cost_savings_percent": -5.592544409495415,
+      "risk_delta_pp": [
+        -1.3095238095238093,
+        -1.3095238095238093
+      ]
+    },
+    {
+      "cap": 10000000.0,
+      "model": "local_slope",
+      "policy": "stress_span",
+      "life_ratio": 1.0021557249444037,
+      "cost_savings_percent": -5.592544409495415,
+      "risk_delta_pp": [
+        -1.3541666666666665,
+        -1.3541666666666665
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "hierarchical",
+      "policy": "high_stress",
+      "life_ratio": 0.8851615309106784,
+      "cost_savings_percent": 67.52653463509081,
+      "risk_delta_pp": [
+        0.05952380952380962,
+        0.05952380952380962
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "curved_hierarchical",
+      "policy": "high_stress",
+      "life_ratio": 0.963568384245105,
+      "cost_savings_percent": 67.52653463509081,
+      "risk_delta_pp": [
+        1.30952380952381,
+        1.30952380952381
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "rfl",
+      "policy": "high_stress",
+      "life_ratio": 0.6848964351895599,
+      "cost_savings_percent": 67.52653463509081,
+      "risk_delta_pp": [
+        -1.3095238095238093,
+        -1.3095238095238093
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "local_slope",
+      "policy": "high_stress",
+      "life_ratio": 0.8739662917873537,
+      "cost_savings_percent": 67.52653463509081,
+      "risk_delta_pp": [
+        2.291666666666667,
+        2.291666666666667
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "hierarchical",
+      "policy": "active_query_variance",
+      "life_ratio": 0.916702890245525,
+      "cost_savings_percent": 21.39029921504836,
+      "risk_delta_pp": [
+        -1.1904761904761902,
+        -1.1904761904761902
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "curved_hierarchical",
+      "policy": "active_query_variance",
+      "life_ratio": 0.9368966955652966,
+      "cost_savings_percent": 21.39029921504836,
+      "risk_delta_pp": [
+        -1.8154761904761902,
+        -1.8154761904761902
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "rfl",
+      "policy": "active_query_variance",
+      "life_ratio": 0.8608698374938537,
+      "cost_savings_percent": 21.39029921504836,
+      "risk_delta_pp": [
+        -1.3095238095238093,
+        -1.3095238095238093
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "local_slope",
+      "policy": "active_query_variance",
+      "life_ratio": 0.9491808834084063,
+      "cost_savings_percent": 21.39029921504836,
+      "risk_delta_pp": [
+        -1.4583333333333333,
+        -1.4583333333333333
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "hierarchical",
+      "policy": "stress_span",
+      "life_ratio": 0.9777998279561807,
+      "cost_savings_percent": -1.7290434966046986,
+      "risk_delta_pp": [
+        -1.0863095238095237,
+        -1.0863095238095237
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "curved_hierarchical",
+      "policy": "stress_span",
+      "life_ratio": 0.9807506013057168,
+      "cost_savings_percent": -1.7290434966046986,
+      "risk_delta_pp": [
+        -1.0863095238095237,
+        -1.0863095238095237
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "rfl",
+      "policy": "stress_span",
+      "life_ratio": 0.9309466094233877,
+      "cost_savings_percent": -1.7290434966046986,
+      "risk_delta_pp": [
+        -0.8928571428571428,
+        -0.8928571428571428
+      ]
+    },
+    {
+      "cap": 1000000.0,
+      "model": "local_slope",
+      "policy": "stress_span",
+      "life_ratio": 0.9960579882498062,
+      "cost_savings_percent": -1.7290434966046986,
+      "risk_delta_pp": [
+        -1.7708333333333333,
+        -1.7708333333333333
+      ]
+    }
+  ],
+  "input_sha256": {
+    "manuscript/v4/phase4_evidence.json": "92bb07a3d4f4237dd7aeb455ece3be23cf2a1d7d0731041ec77d4624b7e5a436",
+    "src/v4_documents.py": "4a4376bb1d73efbbdda5441772ed6dffbc1a8be11365f9f602aa9f0ea2a67913",
+    "results/v4/parent_replay_receipt.json": "67f940f367e194a8d5bb24af38c2359b2463a7f94d943f180438de3965a8cf8d"
+  },
+  "limitations": "This review independently reconstructs arithmetic from saved predictions. It does not supply external reliability validation, physical specimen independence, original-Centola equivalence, or a new protocol-confirmatory result.",
+  "all_checks_pass": true
+}

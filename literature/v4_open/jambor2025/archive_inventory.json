@@ -1,0 +1,222 @@
+[
+  {
+    "path": "Dataset/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/1 Fatigue_tests/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/1 Fatigue_tests/Cylindrical_specimen_LCF_tests_peak-valley.csv",
+    "bytes": 171518,
+    "compressed": 27410
+  },
+  {
+    "path": "Dataset/1 Fatigue_tests/Cylindrical_specimen_LCF_tests_whole-cycles.csv",
+    "bytes": 771370,
+    "compressed": 238920
+  },
+  {
+    "path": "Dataset/1 Fatigue_tests/Description.txt",
+    "bytes": 343,
+    "compressed": 206
+  },
+  {
+    "path": "Dataset/1 Fatigue_tests/Flat_specimen_LCF_tests_peak-valley.csv",
+    "bytes": 398184,
+    "compressed": 111829
+  },
+  {
+    "path": "Dataset/1 Fatigue_tests/Flat_specimen_LCF_tests_whole-cycles.csv",
+    "bytes": 6364908,
+    "compressed": 1936595
+  },
+  {
+    "path": "Dataset/2 Hardness_measurements/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/2 Hardness_measurements/Description.txt",
+    "bytes": 477,
+    "compressed": 277
+  },
+  {
+    "path": "Dataset/2 Hardness_measurements/Hardness_measurments.csv",
+    "bytes": 2049,
+    "compressed": 857
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.1 Etched samples/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.1 Etched samples/Description.txt",
+    "bytes": 232,
+    "compressed": 160
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.1 Etched samples/Figure_5a.tif",
+    "bytes": 22755314,
+    "compressed": 19094165
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.1 Etched samples/Figure_5b.tif",
+    "bytes": 22755446,
+    "compressed": 19039918
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.2 EBSD/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.2 EBSD/Description.txt",
+    "bytes": 302,
+    "compressed": 210
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.2 EBSD/EBSDdata_Fig2a.h5oina",
+    "bytes": 273919629,
+    "compressed": 146645638
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.2 EBSD/EBSDdata_Fig2b.h5oina",
+    "bytes": 198662058,
+    "compressed": 107520777
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Description.txt",
+    "bytes": 172,
+    "compressed": 129
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_5c.tif",
+    "bytes": 12597488,
+    "compressed": 4300183
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_5d.tif",
+    "bytes": 12597444,
+    "compressed": 3872418
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_5e.tif",
+    "bytes": 12597498,
+    "compressed": 4721347
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_5f.tif",
+    "bytes": 12597446,
+    "compressed": 4641744
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_6.tif",
+    "bytes": 12597486,
+    "compressed": 3918415
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_7a.tif",
+    "bytes": 12597496,
+    "compressed": 4966582
+  },
+  {
+    "path": "Dataset/3 Microstructure_observations/3.2 Transmission electron microscopy/Figure_7b.tif",
+    "bytes": 12597476,
+    "compressed": 4258626
+  },
+  {
+    "path": "Dataset/4 Surface_observations/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.1 Optical microscopy/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.1 Optical microscopy/Description.txt",
+    "bytes": 231,
+    "compressed": 156
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.1 Optical microscopy/Figure_8a.tif",
+    "bytes": 14786688,
+    "compressed": 8437777
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.1 Optical microscopy/Figure_8b.tif",
+    "bytes": 14786692,
+    "compressed": 10519366
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/",
+    "bytes": 0,
+    "compressed": 0
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Description.txt",
+    "bytes": 220,
+    "compressed": 148
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_10.tif",
+    "bytes": 11392410,
+    "compressed": 8890133
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_9a.tif",
+    "bytes": 11391594,
+    "compressed": 9000047
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_9b.tif",
+    "bytes": 11392324,
+    "compressed": 9288695
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_9c.tif",
+    "bytes": 11392694,
+    "compressed": 8936264
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_9d.tif",
+    "bytes": 11392542,
+    "compressed": 9233715
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_9e.tif",
+    "bytes": 11392282,
+    "compressed": 9254575
+  },
+  {
+    "path": "Dataset/4 Surface_observations/4.2 SEM/Figure_9f.tif",
+    "bytes": 11390500,
+    "compressed": 8598752
+  },
+  {
+    "path": "Dataset/Read me.txt",
+    "bytes": 1178,
+    "compressed": 635
+  }
+]

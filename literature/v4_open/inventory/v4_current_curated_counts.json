@@ -1,0 +1,18 @@
+{
+  "training_rows": 441,
+  "training_conditions": 48,
+  "training_publications": 14,
+  "training_source_blocks": 13,
+  "new_source_table_rows": 69,
+  "new_source_conditions": 14,
+  "new_source_publications": 1,
+  "train_target_rowIDs_disjoint": true,
+  "train_target_DOIs_disjoint": true,
+  "Centola_source_DOIs_overlap_training441": 8,
+  "point_identity_with_original518_established": false,
+  "condition_identity_with_original51_established": false,
+  "no_sum_as_unique_physical_specimens": true,
+  "baseline_catalog_source_DOIs": 46,
+  "catalog_plus_new_Yankin_source_DOIs": 47,
+  "corpus_role": "441training and69held-source records are different roles; do not call510training observations."
+}

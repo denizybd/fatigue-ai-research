@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "audit_date": "2026-10-20",
+  "auditor": "independent methods/source agent",
+  "source_doi": "10.1016/j.ijfatigue.2025.109365",
+  "source_url": "https://www.sciencedirect.com/science/article/pii/S0142112325005626",
+  "access_scope": "Retained indexed primary publisher full-text/Table1 snapshot, not a downloaded PDF; direct public article/PDF GET was denied. No authentication bypass.",
+  "audit_method": "Independently parsed original indexed Table1 payload directly; did not load table1_transcription.json or normalize_table1.py to derive expected values. Compared all 67 locators, conditions, stress centers, reported \u00b1, exponents, events, failure lives and censor lower bounds.",
+  "checks": {
+    "independent_primary_snapshot_parser_67": true,
+    "all_numeric_cells_exponents_event_uncertainty_match": true,
+    "unique_67_publication_locators": true,
+    "four_explicit_runouts": true,
+    "all_runouts_lower_bound5M_not_exact_stop": true,
+    "failure_140MPa_6070000_retained_event": true,
+    "R_minus1_bending_nominal_amplitude": true,
+    "42_subset_exactly_excludes_reused25": true,
+    "reuse25_reference_linked": true,
+    "reused_curve_not_given_unchecked_current_processing": true,
+    "no_author_specimen_build_or_powder_IDs_invented": true,
+    "gold_and_axial_eligibility_false": true,
+    "single_precautionary_source_family": true,
+    "primary_R_fully_reversed_and_minimumrunout_text": true,
+    "primary_explicit_prior_referencecurve": true,
+    "crossref_ref66_108491": true
+  },
+  "differences": [],
+  "condition_counts": [
+    {
+      "condition": "25C_As-built",
+      "rows": 25,
+      "failures": 24,
+      "runouts": 1,
+      "stress_levels": 13
+    },
+    {
+      "condition": "25C_HIP",
+      "rows": 19,
+      "failures": 18,
+      "runouts": 1,
+      "stress_levels": 12
+    },
+    {
+      "condition": "450C_HIP",
+      "rows": 11,
+      "failures": 10,
+      "runouts": 1,
+      "stress_levels": 8
+    },
+    {
+      "condition": "450C_As-built",
+      "rows": 12,
+      "failures": 11,
+      "runouts": 1,
+      "stress_levels": 7
+    }
+  ],
+  "total_points": 67,
+  "failures": 63,
+  "runouts": 4,
+  "explicit_reused_reference_points": 25,
+  "other_three_condition_points": 42,
+  "new_independent_physical_specimens": null,
+  "gold_identity_qualified": 0,
+  "current_frozen_model_rows_added": 0,
+  "interpretation": {
+    "runouts": "Methods defines survival without fracture to N >= 5e6. Four Runout tokens support a conservative censor lower bound at 5e6; their actual individual stop cycles are not given and remain blank.",
+    "beyond_threshold_failure": "450C as-built at 140 \u00b1 2 MPa reports 6.07e6 numerically; retain as failure. Minimum-survival runout definition does not prove mandatory termination at exactly 5e6. No contradiction/error allegation is justified.",
+    "stress_domain": "R=-1 nominal bending stress amplitude with a surface-to-center stress gradient; keep separate from uniform axial HCF pool.",
+    "reuse": "25C as-built reference S-N curve explicitly reused from authors previous study [66], Crossref bibliography DOI 10.1016/j.ijfatigue.2024.108491. The remaining42 are not this explicitly reused curve; no globally unique specimen/independence claim.",
+    "identity": "Generated Table1 row/column/point locators are publication locators only, never author lab/build/powder IDs. Fig1 build plates do not furnish a per-point physical-build crosswalk.",
+    "as_built": "Author condition label; current-paper samples were stress relieved 550C/6h before separation, with HIP subset at1150C/100MPa/4h. Prior reused curve processing is not silently transferred.",
+    "fit_status": "Separate curation panel, not used by frozen v4 models."
+  },
+  "input_sha256": {
+    "literature/v4_open/rbf2026/publisher_indexed_table_snapshot.json": "1ce0cd837572ac9484114917e95210386a536ccb8e95ad7b9483dfa04ff7091e",
+    "literature/v4_open/rbf2026/crossref.json": "ffb9801437296c85e9841e23f5ee0b38376fd82c38ed815b09fcd5659b35f073",
+    "data/external_v4/rbf2026/table1_rbf67.csv": "e10825d3ee90d8c17e4467b5c787dcd6883441e4ed46292793fecd7ef80d84ed",
+    "data/external_v4/rbf2026/table1_not_reused_RTcurve42.csv": "1f13df623547e0ab7af635eefd9c7bdd43a9cc2f9a9be08dad9936523042b670"
+  },
+  "reproduction_note": "The row parser was executed in the independent audit command; no raw/source/normalization files were changed."
+}

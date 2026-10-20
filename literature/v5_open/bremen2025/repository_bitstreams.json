@@ -1,0 +1,72 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/867acc3e-df72-4179-bb20-96549ca9d11f/bitstreams"
+    }
+  },
+  "_embedded": {
+    "bitstreams": [
+      {
+        "id": "bc5381b1-aece-4712-83d0-a7fe422a8663",
+        "uuid": "bc5381b1-aece-4712-83d0-a7fe422a8663",
+        "name": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments.pdf",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "Dissertation_Jun Zhang_Archiv.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments.pdf",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "ORIGINAL",
+        "sizeBytes": 9538416,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "630e2243d144c564df200666c4e3bd32"
+        },
+        "sequenceId": 3,
+        "type": "bitstream",
+        "uniqueType": "core.bitstream",
+        "_links": {
+          "content": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/content"
+          },
+          "bundle": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/bundle"
+          },
+          "accessStatus": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/accessStatus"
+          },
+          "format": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/format"
+          },
+          "thumbnail": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/thumbnail"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663"
+          }
+        }
+      }
+    ]
+  },
+  "page": {
+    "number": 0,
+    "size": 20,
+    "totalPages": 1,
+    "totalElements": 1
+  }
+}

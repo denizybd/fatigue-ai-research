@@ -1,0 +1,42 @@
+[
+  {
+    "path": "literature/v5_open/palmer2025/nist_paper.pdf",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957516",
+    "final_url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957516",
+    "status": 200,
+    "content_type": "application/pdf;charset=UTF-8",
+    "bytes": 7526990,
+    "sha256": "0a6d9718e31d2668aa66b5d2bb5a2ff98ed3213e264892822fd9b0ffad611bed",
+    "accessed_utc": "2026-10-20T19:51:32.720898+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/nist_record.html",
+    "url": "https://www.nist.gov/publications/contributions-sub-surface-intergranular-phases-fatigue-crack-initiation-additively",
+    "final_url": "https://www.nist.gov/publications/contributions-sub-surface-intergranular-phases-fatigue-crack-initiation-additively",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 83375,
+    "sha256": "325aa1e90eeb5f4b90132fa1e8a8d1cb459ccfd6c9a8c310027e6a7204c032bf",
+    "accessed_utc": "2026-10-20T19:51:31.584063+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/author_repo.json",
+    "url": "https://api.github.com/repos/wietecha-reiman/Fatigue-AM-316L",
+    "final_url": "https://api.github.com/repos/wietecha-reiman/Fatigue-AM-316L",
+    "status": 404,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 118,
+    "sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+    "accessed_utc": "2026-10-20T19:51:31.447163+00:00"
+  },
+  {
+    "path": "literature/v5_open/palmer2025/author_repos.json",
+    "url": "https://api.github.com/users/wietecha-reiman/repos?per_page=100",
+    "final_url": "https://api.github.com/users/wietecha-reiman/repos?per_page=100",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 6327,
+    "sha256": "a23a1a9de2a6992fe9d9ed3116a60c73ed364568bd84a30bdf5817d27737d4ea",
+    "accessed_utc": "2026-10-20T19:51:31.447395+00:00"
+  }
+]

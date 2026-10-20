@@ -1,0 +1,10 @@
+source_sheet,source_excel_row,specimen_id,material,build_direction_raw,thickness_mm,width_mm,working_length_mm,stress_max_MPa,stress_min_MPa,R,cycles_to_failure,runout,other_notes
+Arkusz1,47,SS_A02W_01,316L,W,1,2,0,400,-400,-1,34702,,
+Arkusz1,48,SS_A02W_02,316L,W,1,2,0,350,-350,-1,79763,,
+Arkusz1,49,SS_A02W_03,316L,W,1,2,0,300,-300,-1,143769,,
+Arkusz1,50,SS_A02W_04,316L,W,1,2,0,250,-250,-1,348942,,
+Arkusz1,51,SS_A02W_05,316L,W,1,2,0,400,-400,-1,23705,,
+Arkusz1,52,SS_A02W_06,316L,W,1,2,0,350,-350,-1,78827,,
+Arkusz1,53,SS_A02W_07,316L,W,1,2,0,250,-250,-1,266180,,
+Arkusz1,54,SS_A02W_08,316L,W,1,2,0,300,-300,-1,103147,,
+Arkusz1,55,SS_A02W_09,316L,W,1,2,0,400,-400,-1,19633,,

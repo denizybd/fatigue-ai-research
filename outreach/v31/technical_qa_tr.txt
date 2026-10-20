@@ -1,0 +1,53 @@
+GÜNCEL TEKNİK SORU–CEVAP
+20 Ekim 2026 — aşama 3/3.1 — mesaj gönderilmedi
+
+1. Tam olarak ne kazandık?
+Bir yeni yazar kampanyasının numune, gerçek üretim ve toz partisi zincirini doğruladık. Kaynakta 43 nominal gerilmeli ilk blok var. Ortak sorgulu deney seçimi bunların 31'ini, üç koşulu ve iki üretimi kapsıyor. İki üretim aynı toz partisini kullanıyor; tümü tek araştırma kampanyası. Henüz iki tam uyumlu bağımsız kampanya bulmuş değiliz.
+
+2. Basamaklı deney verisini neden kullanabiliyoruz?
+Yalnızca daha önce yorulma yükü görmemiş numunenin ilk sabit gerilmeli bloğunu kullanıyoruz. O blokta kırıldıysa gerçek ilk-blok ömrü kırılmadır; sağ kaldıysa gerçek durdurma çevrimi sağ sansürdür. Sonraki yük basamakları, son kırılma zamanı, eşdeğer ömür ve kırılma sonrası kusur bilgileri atılıyor. Önceden elenen dönüştürülmüş çok-basamaklı kayıtları geri almış olmadık.
+
+3. Numune kimliğinde neyi denetledik?
+Yalnız kısa numune adını yeterli saymadık. Tezdeki tam ad, üretim tablası ve konumu eşleştirdik. K2'nin üç Step0 satırı var; bazı farklı adlar aynı fiziksel koordinatı paylaşıyor. Çakışmalar K2 dahil TÜM adlarda bulundu; ardından çakışan ve kimliği eksik kayıtlar karantinaya alındı. Kimlikleri düzeltmedik, yeni numune uydurmadık. Yetmiş benzersiz ilk blok kaldı.
+
+4. Üretim, toz partisi ve kampanya aynı şey mi?
+Hayır. Tam nominal kaynak üç üretim ve iki toz partisi içeriyor. Ana seçim analizi iki üretim, tek ortak toz partisi ve tek yazar kampanyası içeriyor. Yüzey işlemi ayrı koşuldur; on rastgele bölme on bağımsız kampanya yaratmaz. Trombley'deki ortak toz bilgisi de tekil numuneleri dört üretime ayırmaya yetmiyor.
+
+5. Neden 43 değil 31 kayıt seçim deneyinde?
+Önceden sabitlenen kural, koşul başına en az altı kayıt ve önce ayrılan sorgu numuneleri gerektiriyor. Üç koşul bu kurala uyuyor. k=3 ve k=5 mümkün; k=10 mümkün değil. Ana seçim grubunun 21 numunesi ön korozyonlu, 10'u referans. Küçük koşullar kaynak dosyasında korunuyor ama seçim karşılaştırmasına zorla eklenmiyor.
+
+6. Dört seçim yöntemi ne yapıyor?
+Rastgele seçim, gerilme aralığını yayarak seçim, yüksek gerilmeden seçim ve beklenen bilgiye göre sıralı seçim. Hepsi aynı havuz ve sorguları kullanıyor. Aktif yöntem yalnız gerilmeleri, planlama sınırını ve daha önce seçilip sonucu açılmış destekleri görüyor. Seçilmemiş numunenin kırılma bilgisini veya sorgu sonucunu görmüyor. Yeni bir gerilmede deney sonucu üretmiyoruz; mevcut kayıtlarda geriye dönük seçim yapıyoruz.
+
+7. Altı model neden gerekli?
+Basit güçlü bir kontrolü yenmeden karmaşıklığı katkı sayamayız. Havuzlanmış Basquin, eşleşmiş yerel sabit terim, hiyerarşik Basquin, iki eğimli hiyerarşik Basquin, yerel eğim/sabit terim ve rastgele yorulma limiti modeli kullanılıyor. Hepsi sağ sansürü olasılık hesabında koruyor. Hangi gerilmeleri seçmenin yararlı olduğu modele göre değişebiliyor.
+
+8. RFL tam olarak ne?
+Her numunenin rastgele pozitif yorulma limiti var. Gerilme bu limitin üstündeyse koşullu log ömür normal; altındaysa model sonsuz ömür olasılığı veriyor. Bu olasılık runout hesabında ve tahmin yüzdeliklerinde korunuyor. Pascual–Meeker'in normal-normal seçeneğine dayalı bir uygulama; Trombley'nin Weibull modelinin birebir tekrarı değil. Hedefe uyarlama, eğitimden sabitlenen öncülle tek ömür kaymasıdır. Popülasyon parametre belirsizliği entegre edilmiyor.
+
+9. q10, R90C90 veya garanti demek mi?
+Hayır. q10 modelin tahmini yüzde 10 ömür yüzdeliğidir. R90C90 ayrı bir güven düzeyi şartı içerir. Yeni kaynağa aktarımda modelin doğru kapsama verdiğini kanıtlamadık. Sayısal uyumun yakınsaması da mühendislik güvenilirliğini kanıtlamaz. Sonsuz RFL tahmini varsa gizlenmiyor veya uygun sonlu sayıya kırpılmıyor.
+
+10. En iyi olumlu sonuç ne?
+Üç destek numunesinde yüksek gerilme seçimi, rastgeleye göre önerilen alt ömrü hiyerarşik modelde 1,336; RFL'de 1,085 kat yapıyor. Gözlenen destek çevrimi maliyeti yaklaşık yüzde 7,5 azalıyor. Bu gerçek yeni fiziksel test veya kanıtlanmış güvenli kullanım ömrü artışı değildir; mevcut kayıtlardaki model karşılaştırmasıdır.
+
+11. Neden güçlü güvenilirlik iddiası kurmuyoruz?
+Sağ sansür, numunenin daha sonra ne zaman kırılacağını bilinmez bırakıyor. Aynı sorgudaki eşleşmiş gerçek risk farkı, hiyerarşik model için +26,11; RFL için +6,67 yüzde puanına kadar artışa hâlâ izin veriyor. Bunlar sansürden gelen tanımlama sınırları; yüzde 95 güven aralığı değil. Her panel tek kampanya olduğu için kampanya güven aralığı hesaplanamıyor. NaN yüzünden geçmeyen kapılar “tüm yöntemler başarısız” değil, “istenen kanıt değerlendirilemiyor” demek.
+
+12. İki çevrim sınırı neden var?
+10^7 önceden sabitlenen ana planlama sınırı; 10^6 önceden belirtilen duyarlılık. Yeni kaynaktaki ilk-blok sağ kalanlar gerçekte 10^6'da duruyor. Her iki hesap gerçek erken durmayı koruyor. Bu yüzden 10^6 kaynağa daha uyumlu; fakat sonuçlara bakıp ana protokolün yerine geçirilmedi. Yalnız aktif seçim, varsaydığı planlama ufkuna göre değişebiliyor.
+
+13. Önceki yüzde 70 maliyet azalması nereye gitti?
+Başka, üretim kimliği tam doğrulanmamış iki kampanyanın farklı alt grubundaydı. Yeni kimlikli kampanyada karşılığı yüzde 7,5. Üstelik önceki grupta yüksek gerilme hiyerarşik alt ömrü artırırken RFL alt ömrünü azaltıyor. Sonuç bir evrensel politika üstünlüğü değil, veri ve modele bağlı bir ödünleşim.
+
+14. Centola veya Tridello'nun makalesini yanlışladık mı?
+Hayır. Özgün veri/kod gelmedi; BNN, SWT, risk hacmi ve Owen hedefleri birebir üretilmedi. Düzeltme kendi açık-veri kıyaslamamıza ait. Transfer ve bilgiye göre deney planlama tek başına yeni değil. Wu çalışmasının yalnız yayınevi önizlemesi elde edildi; tam yöntem farkı doğrulanmadı. Özgünlük iddiamız sınırlı kalmalı.
+
+15. Tekrar üretim neyi kanıtlıyor?
+On dokuz sentetik test, bağımsız hesap/kimlik/maliyet denetimi ve temiz tekrar sayısal işleyişi doğruluyor. Aynı şemalı tekrar 12 tabloyu tam eşliyor. Kullanılmayan eski kaynağı çıkaran taşınabilir tekrarda bilimsel değerler ve uyum parametreleri aynı; yalnız önbellek imzası metadatası değişiyor. Bunlar bağımsız fiziksel doğrulama veya yüzde 90 güvenilirlik kanıtı değil.
+
+16. Tridello'ya sunmaya değer mi?
+Sınırlarını açık söylediğimiz bir yöntem görüşmesi paketi olarak evet: ilk maruziyeti kurtarma, aynı sorguda seçim karşılaştırması ve sansürlü riskin nasıl raporlanacağı somut. Güçlü ve genel bir yeni algoritma diye sunmaya henüz değmez. Ondan sınırlı yöntem yorumu ve uygun bağımsız kampanya önerisi istenebilir. İkinci tam izlenebilir kampanya ve yeni/frozen değerlendirme güçlü sonraki adım. Hazırlanan e-posta taslağı gönderilmedi; gönderme için insanın açık onayı gerekir.
+
+Önselsiz yerel kayma modelinin k0 satırı ne demek?
+Kod, destek yokken ortak başlangıç olarak hiyerarşik nüfus tahminini kullanıyor. Hedefe ait önselsiz kayma destekler açıldıktan sonra kestiriliyor; k>0 iken tüm destekler sansürlüyse tanımsız kalıyor. Bu modelin k0 karşılaştırması o hiyerarşik başlangıca göredir; üç destekle rastgele/yüksek gerilme karşılaştırmasının sayıları değişmez.

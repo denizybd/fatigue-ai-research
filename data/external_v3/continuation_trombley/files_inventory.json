@@ -1,0 +1,362 @@
+[
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201902/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201906/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201910/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201933/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201939/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201943/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201902/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201903",
+        "name": "AM316_1.5_Defect Distribution.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201905",
+        "name": "AM316_5.0_Defect Distribution.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201904",
+        "name": "AM316_Trial Specimens_Defect Distribution_Qianying.xlsx"
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201901/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201906/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201901/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201907/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201910/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201901/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201911/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201924/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201933/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201901/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201934/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201936/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201939/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201901/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201940/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201943/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201901/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201944/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201901/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201902/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201906/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201910/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201933/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201939/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201943/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201907/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201906/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201908/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201911/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201915",
+        "name": "All_SN.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201915",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201916",
+        "name": "All_Staircase.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201916",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201918",
+        "name": "CCV-1.5_SN.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201918",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201914",
+        "name": "CCV-1.5_SNRFL.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201914",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201921",
+        "name": "CCV-2.5_SN.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201921",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201913",
+        "name": "CCV-2.5_SNRFL.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201913",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201922",
+        "name": "CCV-5.0_SN.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201922",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201912",
+        "name": "CCV-5.0_SNRFL.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201912",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201917",
+        "name": "CCV1-1.5_Staircase.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201917",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201920",
+        "name": "CCV1-2.5_SN.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201920",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201919",
+        "name": "CCV1-5.0_Staircase.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201919",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201923",
+        "name": "Trial Data_SN.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201923",
+        "name": ""
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201910/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201924/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201929",
+        "name": "Fatigue Testing_All Data.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201930",
+        "name": "Fatigue Testing_CCV1-1.5.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201932",
+        "name": "Fatigue Testing_CCV1-2.5.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201931",
+        "name": "Fatigue Testing_CCV1-5.0.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201928",
+        "name": "Fatigue Testing_Trial Specimens.xlsx"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201926",
+        "name": "RFL Analysis_CCV-1.5.xlsm"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201925",
+        "name": "RFL Analysis_CCV-2.5.xlsm"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201927",
+        "name": "RFL Analysis_CCV-5.0.xlsm"
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201910/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201934/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201935",
+        "name": "ResidualStressMeasurements_22036T.xls"
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201933/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201936/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201937",
+        "name": "DepthProfile_CCV2-5.0-02.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201937",
+        "name": ""
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201938",
+        "name": "SurfaceAxialStress.png"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201938",
+        "name": ""
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201933/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201940/show",
+    "status": 200,
+    "files": [],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201939/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201941/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201944/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201945",
+        "name": "CCV2-5.0-01_01.jpg"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201945",
+        "name": ""
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201943/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201908/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201909",
+        "name": "CCV1-5.0-01.B01.tif"
+      },
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201909",
+        "name": ""
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201907/show"
+    ]
+  },
+  {
+    "folder_url": "https://materialscommons.org/public/datasets/2564/folders/10201941/show",
+    "status": 200,
+    "files": [
+      {
+        "url": "https://materialscommons.org/public/datasets/2564/files/10201942",
+        "name": "DMI Report L-7932e.xlsx"
+      }
+    ],
+    "folders": [
+      "https://materialscommons.org/public/datasets/2564/folders/-1/show",
+      "https://materialscommons.org/public/datasets/2564/folders/10201940/show"
+    ]
+  }
+]

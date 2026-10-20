@@ -1,0 +1,19 @@
+{
+  "doi": "10.1038/s41598-025-89003-2",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11805919/fullTextXML",
+  "xml_sha256": "36a63cbfe9c9ce9179a531bf7e8aaacb390ca25326c4aa54bc4cf1a9ba49741b",
+  "pdf_sha256": "f826b49b8585bb7ecc542ceef96f5e394b1ebe680fc26176d67cb906879eea97",
+  "normalized_sha256": "0c18801450daddfefeb4ad7006c8412349fc4e0afb8de2aa9802692f8b6dd192",
+  "n": 69,
+  "failures": 64,
+  "runouts": 5,
+  "conditions": 14,
+  "identity": "No1..69 are publication test numbers, not author laboratory specimen codes.",
+  "missing": "Test ambient, explicit feedback control mode, Kt, specimen/build and powder lot IDs are not supplied in the retained primary article.",
+  "event_definition": "Tabulated fatigue failure; five explicit run outs remain right-censored.",
+  "endpoint": "1e6 nominal plot-derived stop, not an integer reported in Table3. Figs4/8 and PDF7 text checked.",
+  "exclusions": "No one-cycle UTS values, fitted S-N curve coordinates, predictions, tensile means or fracture-derived covariates imported.",
+  "split": "Hold whole author program out; single new source, not14 independent campaigns.",
+  "overlap": "2025 primary results absent from 2022 source window; whole source held out. This alone is not a specimen lineage proof.",
+  "redistribution": "Local factual extraction and acquisition script; do not bundle adapted article graphics or original XML/PDF into deliverable."
+}

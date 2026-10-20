@@ -1,0 +1,18 @@
+# Trombley public process/build provenance continuation
+
+20 October 2026. **A source-backed common powder-batch crosswalk is now explicit for the 129 analyzed as-built specimens. Specimen-to-physical-build assignment remains unresolved.** No raw or frozen phase-2/3 inputs were changed and no model was run.
+
+[Trombley et al. (2025), Materials and methods / Material properties (Sec3)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12008181/#Sec3) states that one CL20ES powder batch supplied all fabricated specimens. It also describes the use of virgin and sieved powder. [Specimen fabrication (Sec4)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12008181/#Sec4) reports four physical builds, each containing 32–40 samples. These statements establish one reported common powder batch, while leaving the correspondence between named specimens and the four builds unstated.
+
+The crosswalk `data/external_v3/continuation_trombley/asbuilt129_powder_batch_crosswalk.csv` preserves the author specimen name, repository entity ID, specimen URL and source evidence. Every row receives the canonical label `trombley2025:single_reported_CL20ES_powder_batch`; author powder-lot code and physical-build ID are blank. The label is an analyst identifier for the source's single-batch statement, **not a published manufacturer lot code**. The campaign remains one previously reviewed campaign, irrespective of its four physical builds. This does not supply two additional independent campaigns.
+
+The public [Materials Commons dataset 2564](https://materialscommons.org/public/datasets/2564) was investigated with ordinary unauthenticated GET requests only:
+
+- Its [workflow page](https://materialscommons.org/public/datasets/2564/workflows) returns HTTP 200 and explicitly lists zero documented workflows.
+- Its [overview](https://materialscommons.org/public/datasets/2564/overview) lists 157 Processing Conditions activities, consistent with one specimen-level settings record per sample. These activities are not four physical-build identities. All 157 existing specimen attribute dictionaries were reviewed: each names Concept Laser M2 and CL20ES powder, while none supplies a Build, Batch or Lot identity. Comments describe heat treatment rather than fabrication-build assignment.
+- Grouped specimen pages expose process settings and textual “From” process types. They contain no public activity-detail URL. The UI's explicit “Ungroup Processes” links for entities 67494, 67508 and 67509 were followed; all three return HTTP 500. Their responses are retained. Failure of these routes is an access limitation, not evidence that the underlying database lacks edges.
+- Seventeen explicitly linked public folder pages were traversed, exposing metadata for all 29 files. The [all-data workbook page](https://materialscommons.org/public/datasets/2564/files/10201929) returns HTTP 200 but states that login or registration is required to view the workbook. No workbook download or authentication bypass was attempted. Filename prefixes and test dates were not converted into build assignments.
+
+The retained public metadata cannot establish which specimen belongs to each build. The original workbook, an accessible process graph, or author-provided specimen/build table would be needed to recover that relation. The four builds share the reported powder batch and source campaign even if their mapping becomes available later.
+
+`audit_receipt.json` retains URLs, statuses, source hashes, reviewed attribute keys, the crosswalk hash and scope limits. Raw public HTML is retained locally under the owned continuation directory; the repository's unspecified dataset license was not changed or inferred from the article license.

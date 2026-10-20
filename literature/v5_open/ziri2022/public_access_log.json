@@ -1,0 +1,95 @@
+[
+  {
+    "key": "crossref",
+    "url": "https://api.crossref.org/works/10.70675/9d9ce3ceze624z48f1z8ff5zbc47a5a90c47",
+    "retrieved_utc": "2026-10-20T19:53:00.553414+00:00",
+    "status": 200,
+    "bytes": 53571,
+    "final_url": "https://api.crossref.org/works/10.70675/9d9ce3ceze624z48f1z8ff5zbc47a5a90c47",
+    "content_type": "application/json",
+    "path": "literature/v5_open/ziri2022/crossref.json"
+  },
+  {
+    "key": "doi_landing",
+    "url": "https://doi.org/10.70675/9d9ce3ceze624z48f1z8ff5zbc47a5a90c47",
+    "retrieved_utc": "2026-10-20T19:53:01.413543+00:00",
+    "status": 200,
+    "bytes": 722421,
+    "final_url": "https://theses.fr/2022ESAE0028",
+    "content_type": "text/html;charset=utf-8",
+    "path": "literature/v5_open/ziri2022/doi_landing.html"
+  },
+  {
+    "key": "official_mabru_page",
+    "url": "https://ica.cnrs.fr/author/cmabru/",
+    "retrieved_utc": "2026-10-20T19:53:03.361925+00:00",
+    "status": 200,
+    "bytes": 168899,
+    "final_url": "https://ica.cnrs.fr/author/cmabru/",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "literature/v5_open/ziri2022/official_mabru_page.html"
+  },
+  {
+    "key": "theses_public_client_bundle",
+    "url": "https://theses.fr/_nuxt/DDNpI9Hq.js",
+    "retrieved_utc": "2026-10-20T19:54:05.323678+00:00",
+    "status": 200,
+    "bytes": 437963
+  },
+  {
+    "key": "theses_public_notice_component",
+    "url": "https://theses.fr/_nuxt/B7_fKXOY.js",
+    "retrieved_utc": "2026-10-20T19:54:19.252627+00:00",
+    "status": 200,
+    "bytes": 46862
+  },
+  {
+    "key": "official_tef",
+    "url": "https://theses.fr/api/v1/export/xml/2022ESAE0028",
+    "retrieved_utc": "2026-10-20T19:54:29.867610+00:00",
+    "status": 200,
+    "bytes": 14142,
+    "content_type": "application/xml;charset=UTF-8"
+  },
+  {
+    "key": "official_rdf",
+    "url": "https://theses.fr/api/v1/export/rdf/2022ESAE0028",
+    "retrieved_utc": "2026-10-20T19:54:30.479052+00:00",
+    "status": 200,
+    "bytes": 14142,
+    "content_type": "application/xml;charset=UTF-8"
+  },
+  {
+    "key": "official_document_http",
+    "url": "http://www.theses.fr/2022ESAE0028/document",
+    "retrieved_utc": "2026-10-20T19:54:43.997094+00:00",
+    "status": 200,
+    "bytes": 70643551,
+    "final_url": "https://depozit.isae.fr/theses/2022/2022_Ziri_Sabrine.pdf",
+    "content_type": "application/pdf",
+    "sha256": "c888637fee7b4f6abfbb24386a810530a13556fdde98fa1970f79d8ee79f8fb7",
+    "path": "literature/v5_open/ziri2022/official_document_http.pdf"
+  },
+  {
+    "key": "official_document_https",
+    "url": "https://theses.fr/2022ESAE0028/document",
+    "retrieved_utc": "2026-10-20T19:56:49.962990+00:00",
+    "status": 200,
+    "bytes": 70643551,
+    "final_url": "https://depozit.isae.fr/theses/2022/2022_Ziri_Sabrine.pdf",
+    "content_type": "application/pdf",
+    "sha256": "c888637fee7b4f6abfbb24386a810530a13556fdde98fa1970f79d8ee79f8fb7",
+    "path": "literature/v5_open/ziri2022/official_document_https.pdf"
+  },
+  {
+    "key": "followon_hal",
+    "url": "https://hal.science/hal-04844098v1",
+    "retrieved_utc": "2026-10-20T19:59:06.717839+00:00",
+    "status": 200,
+    "bytes": 80317,
+    "final_url": "https://hal.science/hal-04844098v1",
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "a9a2e59aa2c6c33ad0e79d699f23be2f176d169eb56d5303a98cb2180e482d77",
+    "path": "literature/v5_open/ziri2022/followon_hal.html"
+  }
+]

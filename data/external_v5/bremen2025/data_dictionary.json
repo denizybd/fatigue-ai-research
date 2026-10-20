@@ -1,0 +1,12 @@
+{
+  "source_doi": "10.26092/elib/4986",
+  "scope": "AISI316L only; H13 intentionally excluded",
+  "table8_1": "One source fitted fracture-STRESS distribution per overlapping group; No is a reported count. Sigma10/50/90 are stress quantiles in MPa, never life quantiles.",
+  "table3_5": "Investigation-package counts; repeated S10/C3 controls are not extra samples.",
+  "table8_3": "Initial failure/runout group sizes used for later fractography. Minus footnotes mean unavailable/tapped-head specimens; plus footnotes mean extra origins, not specimens.",
+  "condition_methods": "Method and pretest-condition facts; unknown temperature/Kt/lab/build/powder identity stays blank. Common method values are source group summaries, not measured per specimen.",
+  "powder": "Source powder labelsA/B and nominal chemistry; no lot code or fatigue-condition crosswalk.",
+  "figures": "Potential future graph curation inventory, not additional observation rows.",
+  "point_counts_are_not_unique_physical_specimen_counts": true,
+  "readme": "No individual Nf values are fabricated from fitted stress quantiles or aggregate counts. No current model run uses these files."
+}

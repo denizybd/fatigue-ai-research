@@ -1,0 +1,59 @@
+[
+  {
+    "name": "crossref",
+    "url": "https://api.crossref.org/works/10.1016/j.mfglet.2022.07.083",
+    "final_url": "https://api.crossref.org/works/10.1016/j.mfglet.2022.07.083",
+    "status": 200,
+    "bytes": 4265,
+    "sha256": "7fb828f3a7fff6f937237a70079e4920487119fc587ac08513d0fb3aea2589a5",
+    "path": "literature/v5_open/faue/crossref.json",
+    "accessed_utc": "2026-10-20T19:44:01.591589+00:00",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2213846322001146?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2213846322001146?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "relation": {}
+  },
+  {
+    "name": "datacite_related",
+    "url": "https://api.datacite.org/dois?query=10.1016%2Fj.mfglet.2022.07.083&page%5Bsize%5D=25",
+    "final_url": "https://api.datacite.org/dois?query=10.1016%2Fj.mfglet.2022.07.083&page%5Bsize%5D=25",
+    "status": 200,
+    "bytes": 163,
+    "sha256": "a2f4265833ffa3a78c03429984d179dc52d2cd9d5c23f888519b2a34cda6b7d5",
+    "path": "literature/v5_open/faue/datacite_related.json",
+    "accessed_utc": "2026-10-20T19:44:02.378071+00:00",
+    "total_records": 0,
+    "titles": []
+  },
+  {
+    "name": "nsf_record",
+    "url": "https://par.nsf.gov/biblio/10357954",
+    "final_url": "https://par.nsf.gov/biblio/10357954",
+    "status": 200,
+    "bytes": 225545,
+    "sha256": "3617e2bc112b4d2e218fd266479a011c8491cbfbbab38e7bb17aab5e020b1931",
+    "path": "literature/v5_open/faue/nsf_record.html",
+    "accessed_utc": "2026-10-20T19:44:01.978775+00:00"
+  },
+  {
+    "name": "publisher_xml",
+    "url": "https://api.elsevier.com/content/article/pii/S2213846322001146?httpAccept=text/xml",
+    "final_url": "https://api.elsevier.com/content/article/pii/S2213846322001146?httpAccept=text/xml",
+    "status": 200,
+    "bytes": 1991,
+    "sha256": "4f43822201f391505f810d0c219e2392f1cdaeb4ff66818f82e9127538c78350",
+    "path": "literature/v5_open/faue/publisher_xml.xml",
+    "accessed_utc": "2026-10-20T19:44:01.366778+00:00"
+  }
+]

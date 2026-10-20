@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "existing_life_records_reannotated": 20,
+  "existing_defect_records_reannotated": 200,
+  "new_numeric_life_records": 0,
+  "new_source_evidence": "Acquired6-page EAN2025 primary PDF; CT acquisition timing before fatigue and P_SWT evaluation atNf/2 verified",
+  "loading_path_counts": {
+    "Proportional": 5,
+    "Axial": 7,
+    "Torsional": 8
+  },
+  "gold_build_qualified_records": 0,
+  "primary_force_axial_HCF_eligible_records": 0,
+  "new_model_fits": 0,
+  "input_workbook_sha256": "68c52e662d78a65d850bc49af96af54ea556d2ea07ac74fca14e22569c4e06ad",
+  "conference_pdf_sha256": "bbd300df77246f23e49f0dfba452135ff4a0bee30a8eb8f8c3c5f80f3eb826ca",
+  "output_sha256": {
+    "defects200_pretest_CT_evidence.csv": "fecf4039420eaccbacd0d457135dd96148c6b7b7319e0e6a2e77e14da3d9c889",
+    "specimen20_evidence_annotated.csv": "48142c0912270e3fc2fa1f37edf3c85cbbe4f85179de0fcebe39b4c985112a5c"
+  },
+  "run_command": "/Users/deniz2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 literature/v5_open/bartosak/annotate_recovered_evidence.py"
+}

@@ -1,0 +1,206 @@
+{
+  "dspaceUI" : "https://deepblue.lib.umich.edu",
+  "dspaceName" : "Deep Blue",
+  "dspaceServer" : "https://backend.production.deepblue-documents.lib.umich.edu/server",
+  "dspaceVersion" : "DSpace 7.6",
+  "type" : "root",
+  "_links" : {
+    "actuator" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/actuator"
+    },
+    "authn" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/authn"
+    },
+    "authorizations" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/authz/authorizations"
+    },
+    "bitstreamformats" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreamformats"
+    },
+    "bitstreams" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams"
+    },
+    "browses" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/discover/browses"
+    },
+    "bulkaccessconditionoptions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/bulkaccessconditionoptions"
+    },
+    "bundles" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles"
+    },
+    "claimedtasks" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/workflow/claimedtasks"
+    },
+    "claimedtasks-search" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/workflow/claimedtasks/search"
+    },
+    "collections" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/collections"
+    },
+    "communities" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/communities"
+    },
+    "discover" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/discover"
+    },
+    "dso" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/dso/find{?uuid}",
+      "templated" : true
+    },
+    "entitytypes" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/entitytypes"
+    },
+    "eperson-registration" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/eperson/registrations"
+    },
+    "epersons" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/eperson/epersons"
+    },
+    "externalsources" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/integration/externalsources"
+    },
+    "features" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/authz/features"
+    },
+    "feedbacks" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/tools/feedbacks"
+    },
+    "groups" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/eperson/groups"
+    },
+    "identifiers" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/pid/identifiers"
+    },
+    "itemrequests" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/tools/itemrequests"
+    },
+    "items" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items"
+    },
+    "itemtemplates" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/itemtemplates"
+    },
+    "metadatafields" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/metadatafields"
+    },
+    "metadataschemas" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/metadataschemas"
+    },
+    "oidc" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/authn"
+    },
+    "pid" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/pid/find{?id}",
+      "templated" : true
+    },
+    "pooltasks" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/workflow/pooltasks"
+    },
+    "pooltasks-search" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/workflow/pooltasks/search"
+    },
+    "processes" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/system/processes"
+    },
+    "properties" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/properties"
+    },
+    "registrations" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/eperson/registrations"
+    },
+    "relationships" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/relationships"
+    },
+    "relationshiptypes" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/relationshiptypes"
+    },
+    "resourcepolicies" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/authz/resourcepolicies"
+    },
+    "resourcepolicies-search" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/authz/resourcepolicies/search"
+    },
+    "scripts" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/system/scripts"
+    },
+    "self" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api"
+    },
+    "sites" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/sites"
+    },
+    "statistics" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/statistics"
+    },
+    "submissionaccessoptions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissionaccessoptions"
+    },
+    "submissioncclicenseUrls" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissioncclicenseUrls"
+    },
+    "submissioncclicenseUrls-search" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissioncclicenseUrls/search"
+    },
+    "submissioncclicenses" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissioncclicenses"
+    },
+    "submissiondefinitions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissiondefinitions"
+    },
+    "submissionforms" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissionforms"
+    },
+    "submissionsections" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissionsections"
+    },
+    "submissionuploads" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/submissionuploads"
+    },
+    "subscriptions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/subscriptions"
+    },
+    "subscriptions-search" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/subscriptions/search"
+    },
+    "supervisionorders" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/supervisionorders"
+    },
+    "systemwidealerts" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/system/systemwidealerts"
+    },
+    "usagereports" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/statistics/usagereports"
+    },
+    "versionhistories" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/versioning/versionhistories"
+    },
+    "versions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/versioning/versions"
+    },
+    "vocabularies" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/submission/vocabularies"
+    },
+    "vocabularyEntryDetails" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/submission/vocabularyEntryDetails"
+    },
+    "vocabularyEntryDetails-search" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/submission/vocabularyEntryDetails/search"
+    },
+    "workflowactions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/workflowactions"
+    },
+    "workflowdefinitions" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/workflowdefinitions"
+    },
+    "workflowitems" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/workflow/workflowitems"
+    },
+    "workflowsteps" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/config/workflowsteps"
+    },
+    "workspaceitems" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/submission/workspaceitems"
+    }
+  }
+}

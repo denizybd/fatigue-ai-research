@@ -1,0 +1,12 @@
+{
+  "dastgerdi_audit_records": 8,
+  "dastgerdi_uninterrupted_pilot_records": 6,
+  "unique_author_ids": 8,
+  "canonical_builds": 1,
+  "all_audit_events_failure": true,
+  "all_pilot_uninterrupted": true,
+  "strict_rt_admitted": 0,
+  "liang_raw_transcription_rows": 29,
+  "liang_physical_ids_verified": 0,
+  "trained_models": 0
+}

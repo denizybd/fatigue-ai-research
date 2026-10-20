@@ -1,0 +1,7 @@
+evidence_tier,rows,conditions,source_dois
+E0_catalog_pending_source_or_curve_audit,575,65,24
+E1_database_CA_candidate_reuse_family_pending,463,56,11
+E2_source_method_verified_CA_no_physical_ID,309,32,11
+Q_linked_curve_prefer_existing_representative,4,1,1
+Q_republished_curve_relink_original_before_use,24,3,1
+Q_variable_amplitude_transformed_not_CA,98,3,1

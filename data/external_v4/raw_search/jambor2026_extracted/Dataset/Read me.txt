@@ -1,0 +1,38 @@
+The dataset for publication: "On the origin of cyclic softening in fatigued 316L austenitic stainless steel with unique cellular solidification/dislocation substructure manufactured additively by selective laser melting". 
+
+Authors: 
+
+J. Mana (a), I. Šuláka (a), A. Chlupová (a), I. Kuběna (a), M. Jambor (a), T. Kruml (a), Š. Mikmeková (b),
+M. Šmíd (a), T. Babinský (a), J. Brůža (a,c), L. Douša (d), and J. Polák (a).
+
+a Institute of Physics of Materials, Czech Academy of Sciences, Žižkova 22, 616 00 Brno, Czech Republic
+b Institute of Scientific Instruments, Czech Academy of Sciences, Královopolská 147, 612 00 Brno, Czech Republic
+c Institute of Materials Science and Engineering, Brno University of Technology, Technická 2896/2, 616 69 Brno, Czech Republic
+d European Innovation Center (EIC), Hanon Systems Autopal Services s.r.o., Lužická 984/14, 741 01 Nový Jičín, Czech Republic
+
+contact person: M. Jambor (jambor@ipm.cz).
+
+
+The dataset contains data from mechanical tests  (LCF tests, the 1st quarter-cycle, and calculation of alternative loop shape parameter),  datasets on statistical treatment of microstructural features evaluated from SEM and TEM micrographs, and calculations of softening ratios related to the publication: "On the origin of cyclic softening in fatigued 316L austenitic stainless steel with unique cellular solidification/dislocation substructure manufactured additively by selective laser melting”. The data were collected between 1/2022 and 6/2025.
+
+Dataset structure:
+
+Dataset 
+	1 Fatigue tests
+		LCF data_Fig. 3
+		The first quarter loading cycle_Fig. S6
+		Parameter of hysteresis loop shape_Mughrabi & Pham_Fig. S8
+
+	2 Microstructure characterization   
+		Misorientation angle distribution_Fig. 2d
+		Misorientation profile across LAGBs_Fig. S3
+		AFM profiles of individual PSMs (extrusions and intrusions)_Fig. 9e
+		Mn-Si-O nano-inclusion size distribution as evaluated from TEM_Fig. S5
+		PSB thickness histogram as evaluated from SEM and TEM micrographs_Fig. S7
+
+	3 Softening ratio (SR) evaluation
+		3.1 SR data on cold-worked (CW) & SLM 316L steels_Fig. 6 & Table 2
+		3.2 SR data on various fcc alloys_Fig. 11
+
+	4 Tables
+		CSV file containing data from table 1.

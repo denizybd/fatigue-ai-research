@@ -1,0 +1,916 @@
+{
+  "audited_utc": "2026-10-20T19:24:52.889924+00:00",
+  "verdict": "PASS. Whole-family exclusion, shared supports, fit reuse and numerical summaries verified.",
+  "scope": "Independent post-run read-only code/numerical audit. No model fitting or experiment changes.",
+  "input_sha256": {
+    "src/v4_policy_extension.py": "0942c4098fa3aa40a21fb058fc548b6189f1970d4f0e12069f96aac24ce82517",
+    "src/v4_summarize.py": "7edab6c9dc169350210b24b57c420a7218e385a5c14db8c088dbd304f6fae52d",
+    "protocols/v4/source_holdout_policy_extension.txt": "8735975a007138ec51a8ef79adf32fa6e53d98be84fd5b1d7e56835c9e13b3a4",
+    "data/processed/v4/source_holdout/frozen_splits.json": "ba07bcbb8001f990a50866eac1103077563fc4c20b479aca0d75eca7132b47f2",
+    "data/processed/v4/source_holdout/target.csv": "22422c15505812d09561b33ed60ccf3b527c3b66533d0bc1a020f90a2f6029a6",
+    "data/external_v4/source_expansion/source_qualified_ca_expansion.csv": "1d0f6c03c9938b36f2450aedd9a45ed5900f087779fb3163963a9323c48c567c",
+    "data/processed/v4/controlled_expansion/frozen_splits.json": "b75c2fa8002ca9733e06d48555cf635f936b3b959f939cb4b0298c9918223aee"
+  },
+  "source_counts": {
+    "collected_rows": 132,
+    "eligible_rows": 115,
+    "eligible_conditions": 11,
+    "small_condition_rows_outside_replay": 17,
+    "conservative_source_family_blocks": 2
+  },
+  "exclusion_checks": [
+    {
+      "condition": "a0142_d006",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d006",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0142_d007",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 0,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 1,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 2,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 3,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 4,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 5,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 6,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 7,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 8,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d000",
+      "seed": 9,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 0,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 1,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 2,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 3,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 4,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 5,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 6,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 7,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 8,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d001",
+      "seed": 9,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 0,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 1,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 2,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 3,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 4,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 5,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 6,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 7,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 8,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d002",
+      "seed": 9,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 0,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 1,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 2,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 3,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 4,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 5,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 6,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 7,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 8,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0146_d003",
+      "seed": 9,
+      "target_family": "v4_elangeswaran_linked_experiments",
+      "B_training": "strict_plus_zhang403",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d000",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d001",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d002",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d003",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 0,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 1,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 2,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 3,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 4,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 5,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 6,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 7,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 8,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    },
+    {
+      "condition": "a0341_d004",
+      "seed": 9,
+      "target_family": "v4_zhang_linked_original_experiments",
+      "B_training": "strict_plus_elanges347",
+      "whole_family_absent_from_both_training_regimes": true
+    }
+  ],
+  "results": {
+    "1e7": {
+      "tasks": 110,
+      "prediction_rows": 59040,
+      "selection_rows": 2120,
+      "absolute_summary": {
+        "rows": 1296,
+        "max_abs_mean_error": 2.3283064365386963e-10,
+        "max_abs_CI_endpoint_error": 2.3283064365386963e-10,
+        "errors": [],
+        "source_families": 2,
+        "CI_interpretation": "Descriptive two-family bootstrap; not certified independent physical campaigns."
+      },
+      "policy_contrasts": {
+        "rows": 1728,
+        "max_abs_mean_error": 2.3283064365386963e-10,
+        "max_abs_CI_endpoint_error": 2.3283064365386963e-10,
+        "errors": [],
+        "source_families": 2,
+        "CI_interpretation": "Descriptive two-family bootstrap; not certified independent physical campaigns."
+      },
+      "training_contrasts": {
+        "rows": 720,
+        "max_abs_mean_error": 1.3010426069826053e-17,
+        "max_abs_CI_endpoint_error": 2.0816681711721685e-17,
+        "errors": [],
+        "source_families": 2,
+        "CI_interpretation": "Descriptive two-family bootstrap; not certified independent physical campaigns."
+      },
+      "all_queries_and_supports_identical_between_training_regimes": true,
+      "whole_family_exclusion_verified_for_every_task": true,
+      "support_events_stops_costs_reconstructed": true,
+      "max_support_cost_error": 4.656612873077393e-10,
+      "query_censoring_unchanged_across_caps": true,
+      "population_fit_checks": [
+        {
+          "training_name": "strict309",
+          "rows": 309,
+          "identical_fit_to_predeclared_main_regime": true,
+          "all_four_population_models_converged_without_fallback_or_bound_hits": true
+        },
+        {
+          "training_name": "strict_plus_elanges347",
+          "rows": 347,
+          "identical_fit_to_predeclared_main_regime": true,
+          "all_four_population_models_converged_without_fallback_or_bound_hits": true
+        },
+        {
+          "training_name": "strict_plus_zhang403",
+          "rows": 403,
+          "identical_fit_to_predeclared_main_regime": true,
+          "all_four_population_models_converged_without_fallback_or_bound_hits": true
+        }
+      ]
+    },
+    "1e6": {
+      "tasks": 110,
+      "prediction_rows": 59040,
+      "selection_rows": 2120,
+      "absolute_summary": {
+        "rows": 1296,
+        "max_abs_mean_error": 2.3283064365386963e-10,
+        "max_abs_CI_endpoint_error": 2.3283064365386963e-10,
+        "errors": [],
+        "source_families": 2,
+        "CI_interpretation": "Descriptive two-family bootstrap; not certified independent physical campaigns."
+      },
+      "policy_contrasts": {
+        "rows": 1728,
+        "max_abs_mean_error": 2.3283064365386963e-10,
+        "max_abs_CI_endpoint_error": 2.3283064365386963e-10,
+        "errors": [],
+        "source_families": 2,
+        "CI_interpretation": "Descriptive two-family bootstrap; not certified independent physical campaigns."
+      },
+      "training_contrasts": {
+        "rows": 720,
+        "max_abs_mean_error": 1.3877787807814457e-17,
+        "max_abs_CI_endpoint_error": 2.7755575615628914e-17,
+        "errors": [],
+        "source_families": 2,
+        "CI_interpretation": "Descriptive two-family bootstrap; not certified independent physical campaigns."
+      },
+      "all_queries_and_supports_identical_between_training_regimes": true,
+      "whole_family_exclusion_verified_for_every_task": true,
+      "support_events_stops_costs_reconstructed": true,
+      "max_support_cost_error": 4.656612873077393e-10,
+      "query_censoring_unchanged_across_caps": true,
+      "population_fit_checks": [
+        {
+          "training_name": "strict309",
+          "rows": 309,
+          "identical_fit_to_predeclared_main_regime": true,
+          "all_four_population_models_converged_without_fallback_or_bound_hits": true
+        },
+        {
+          "training_name": "strict_plus_elanges347",
+          "rows": 347,
+          "identical_fit_to_predeclared_main_regime": true,
+          "all_four_population_models_converged_without_fallback_or_bound_hits": true
+        },
+        {
+          "training_name": "strict_plus_zhang403",
+          "rows": 403,
+          "identical_fit_to_predeclared_main_regime": true,
+          "all_four_population_models_converged_without_fallback_or_bound_hits": true
+        }
+      ]
+    }
+  },
+  "static_cap_check": {
+    "selection_sequences_identical": true,
+    "prediction_rows_compared": 44280,
+    "rows_with_changed_cost_or_prediction": 1512,
+    "interpretation": "Elanges author runouts stop at 2e6. C1e6 truncates support censor stops. Static IDs agree, while static predictions/costs can change. Query censoring remains at 2e6."
+  },
+  "scientific_limits": [
+    "Exploratory extension added after main fits but before parent read main performance summaries, based on pool-size evidence.",
+    "Two source families are not two certified independent physical campaigns.",
+    "Bootstrap endpoints are descriptive; cannot establish safe-design generality.",
+    "Finite-pair utility excludes unavailable/infinite pairs; availability must accompany ratios.",
+    "No fresh numerical model replay performed by auditor."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "retrieved_at_utc": "2026-10-20T16:36:35.884022+00:00",
+  "requested_url": "https://datatagger.ub.tum.de/projects/0391cfc0-c86a-4411-848d-f13463ea1be6/folders/237f412f-0709-4074-9b7f-3ed561da08c9?q=%C2%B5CT",
+  "redirects": [
+    {
+      "status": 307,
+      "url": "https://datatagger.ub.tum.de/projects/0391cfc0-c86a-4411-848d-f13463ea1be6/folders/237f412f-0709-4074-9b7f-3ed561da08c9?q=%C2%B5CT",
+      "location": "/login"
+    }
+  ],
+  "final_url": "https://datatagger.ub.tum.de/login",
+  "final_status": 200,
+  "response_sha256": "3a714fb4eae122d8a96b51c885f55754afba1428dbad6023efcd3f6f67eee9ee",
+  "login_detected": true,
+  "no_login_or_access_bypass_attempted": true
+}

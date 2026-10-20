@@ -1,0 +1,14 @@
+DRAFT ONLY — NOT SENT
+Subject: Source-audited first-exposure benchmark for few-test fatigue transfer
+
+Dear Professor Tridello,
+
+Your work on probabilistic fatigue prediction and transfer learning motivated a public-data study of which few stress tests help when moving to a new production condition.
+
+We recovered traceable virgin first loading blocks from Mérot's stepped-load campaign and compared four selection policies with six censored models on identical queries. The acquisition subset is 31 specimens from two builds within one author campaign. High-stress selection increased proposed lower-life utility and reduced observed support cycles by 7.5%, but censoring still permits material risk increases. We therefore make no general reliability or policy-superiority claim and do not claim to reproduce or outperform your original BNN.
+
+Would you be willing to give brief methodological feedback on using first exposures and paired censoring-risk identification as an evaluation unit for source-transfer fatigue models? An independent specimen/build-traced campaign is the main missing validation step. A one-page brief and reproducible working draft are prepared for review.
+
+Best regards,
+[Name]
+[Affiliation or background, only if accurate]

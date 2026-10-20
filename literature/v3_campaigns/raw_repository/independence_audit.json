@@ -1,0 +1,274 @@
+{
+  "v2_strict309": {
+    "reference_rows": 309,
+    "near_coordinate_pairs_Rmatched_1pctstress_0p02logN": 23,
+    "near_pairs": [
+      {
+        "candidate_row_id": "diller2024_scan_\u00b53",
+        "reference_row_id": "a0577_d003_p003",
+        "reference_source": "10.3390/ma15186278",
+        "N_candidate": 189002,
+        "N_reference": 186718.2576063309,
+        "Sa_candidate": 175.0,
+        "Sa_reference": 173.45478240344747
+      },
+      {
+        "candidate_row_id": "diller2024_scan_\u00b521",
+        "reference_row_id": "a0577_d000_p005",
+        "reference_source": "10.3390/ma15186278",
+        "N_candidate": 278323,
+        "N_reference": 273853.7082220322,
+        "Sa_candidate": 175.0,
+        "Sa_reference": 175.84562779570624
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A32W_02",
+        "reference_row_id": "a0290_d000_p005",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 248082,
+        "N_reference": 258074.90512069408,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.91837848825108
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A32W_07",
+        "reference_row_id": "a0290_d001_p003",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 341997,
+        "N_reference": 343698.47147800995,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.89652442146792
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A32W_15",
+        "reference_row_id": "a0032_d002_p001",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 173251,
+        "N_reference": 176150.36724283776,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.99177112404703
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08W_03",
+        "reference_row_id": "a0290_d000_p003",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 178885,
+        "N_reference": 174299.0467864939,
+        "Sa_candidate": 300.0,
+        "Sa_reference": 300.00225715697724
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08W_06",
+        "reference_row_id": "a0032_d002_p001",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 183231,
+        "N_reference": 176150.36724283776,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.99177112404703
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08W_06",
+        "reference_row_id": "a0032_d003_p001",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 183231,
+        "N_reference": 191295.7046632871,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.61834351770705
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08W_07",
+        "reference_row_id": "a0290_d000_p000",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 32217,
+        "N_reference": 31750.97646462217,
+        "Sa_candidate": 400.0,
+        "Sa_reference": 400.05002664503826
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08W_10",
+        "reference_row_id": "a0295_d000_p000",
+        "reference_source": "10.1016/j.jmst.2021.10.006",
+        "N_candidate": 28211,
+        "N_reference": 29355.105819937395,
+        "Sa_candidate": 400.0,
+        "Sa_reference": 396.5312540306305
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02W_04",
+        "reference_row_id": "a0290_d001_p003",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 348942,
+        "N_reference": 343698.47147800995,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.89652442146792
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02W_07",
+        "reference_row_id": "a0290_d000_p005",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 266180,
+        "N_reference": 258074.90512069408,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.91837848825108
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02W_08",
+        "reference_row_id": "a0032_d003_p000",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 103147,
+        "N_reference": 99664.710731778,
+        "Sa_candidate": 300.0,
+        "Sa_reference": 299.83235600171395
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08L_01",
+        "reference_row_id": "a0032_d000_p000",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 85161,
+        "N_reference": 86687.68209350691,
+        "Sa_candidate": 350.0,
+        "Sa_reference": 348.7447888761801
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08L_01",
+        "reference_row_id": "a0290_d000_p001",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 85161,
+        "N_reference": 88373.73688944492,
+        "Sa_candidate": 350.0,
+        "Sa_reference": 349.8826642272152
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08L_06",
+        "reference_row_id": "a0295_d000_p000",
+        "reference_source": "10.1016/j.jmst.2021.10.006",
+        "N_candidate": 28953,
+        "N_reference": 29355.105819937395,
+        "Sa_candidate": 400.0,
+        "Sa_reference": 396.5312540306305
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08L_09",
+        "reference_row_id": "a0032_d003_p001",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 186361,
+        "N_reference": 191295.7046632871,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.61834351770705
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A08L_10",
+        "reference_row_id": "a0295_d000_p000",
+        "reference_source": "10.1016/j.jmst.2021.10.006",
+        "N_candidate": 29854,
+        "N_reference": 29355.105819937395,
+        "Sa_candidate": 400.0,
+        "Sa_reference": 396.5312540306305
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02L_01",
+        "reference_row_id": "a0032_d003_p000",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 95899,
+        "N_reference": 99664.710731778,
+        "Sa_candidate": 300.0,
+        "Sa_reference": 299.83235600171395
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02L_06",
+        "reference_row_id": "a0032_d003_p000",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 100618,
+        "N_reference": 99664.710731778,
+        "Sa_candidate": 300.0,
+        "Sa_reference": 299.83235600171395
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02L_07",
+        "reference_row_id": "a0290_d001_p003",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 331672,
+        "N_reference": 343698.47147800995,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.89652442146792
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02L_09",
+        "reference_row_id": "a0290_d000_p000",
+        "reference_source": "10.1016/j.jmst.2019.08.047",
+        "N_candidate": 31934,
+        "N_reference": 31750.97646462217,
+        "Sa_candidate": 400.0,
+        "Sa_reference": 400.05002664503826
+      },
+      {
+        "candidate_row_id": "tomaszewski2023_SS_A02L_10",
+        "reference_row_id": "a0032_d003_p001",
+        "reference_source": "10.1007/s40964-021-00164-8",
+        "N_candidate": 191261,
+        "N_reference": 191295.7046632871,
+        "Sa_candidate": 250.0,
+        "Sa_reference": 249.61834351770705
+      }
+    ],
+    "exact_source_DOI_matches": 0,
+    "note": "Proximity screening cannot certify independence; source author/DOI and process identity also checked.",
+    "Diller_exact_four_process_parameter_curve_matches": [],
+    "Tomaszewski_exact_four_process_parameter_curve_matches": []
+  },
+  "trombley2025": {
+    "reference_rows": 129,
+    "near_coordinate_pairs_Rmatched_1pctstress_0p02logN": 0,
+    "near_pairs": [],
+    "exact_source_DOI_matches": 0,
+    "note": "Proximity screening cannot certify independence; source author/DOI and process identity also checked."
+  },
+  "all_metadata618": {
+    "author_or_DOI_matches_Diller_Tomaszewski": "See author_matches and exact DOI/source screening; all_datasets.csv omits authors.",
+    "author_matches": {
+      "diller": [
+        {
+          "article_index": 47,
+          "doi": "10.1016/j.addma.2019.100980",
+          "title": "The influence of oxygen on the chemical composition and mechanical properties of Ti-6Al-4V during laser powder bed fusion (L-PBF)"
+        },
+        {
+          "article_index": 302,
+          "doi": "10.1016/j.matchar.2022.112153",
+          "title": "Cyclic plastic material behavior of 316L manufactured by laser powder bed fusion (PBF-LB/M)"
+        }
+      ],
+      "tomaszew": []
+    },
+    "Diller_exact_four_process_parameter_curve_matches": [],
+    "Tomaszewski_exact_four_process_parameter_curve_matches": [
+      "a0160_d000",
+      "a0160_d001",
+      "a0160_d002",
+      "a0160_d003",
+      "a0389_d000",
+      "a0573_d000",
+      "a0573_d001",
+      "a0573_d002"
+    ]
+  },
+  "candidate_counts": {
+    "Diller": 44,
+    "Tomaszewski": 137,
+    "strict_eligible": 0
+  },
+  "Tomaszewski_conditions": {
+    "tomaszewski2023_W_A32_L0_R-1": 15,
+    "tomaszewski2023_W_A08_L0_R-1": 13,
+    "tomaszewski2023_W_A02_L0_R-1": 9,
+    "tomaszewski2023_W_A08_L50_R0.01": 10,
+    "tomaszewski2023_W_A08_L20_R0.01": 10,
+    "tomaszewski2023_W_A08_L5_R0.01": 10,
+    "tomaszewski2023_W_A08_L0_R0.01": 10,
+    "tomaszewski2023_L_A32_L0_R-1": 18,
+    "tomaszewski2023_L_A08_L0_R-1": 10,
+    "tomaszewski2023_L_A08_L0_R-1_highdefect": 10,
+    "tomaszewski2023_L_A02_L0_R-1": 12,
+    "tomaszewski2023_L_A02_L0_R-1_highdefect": 10
+  }
+}

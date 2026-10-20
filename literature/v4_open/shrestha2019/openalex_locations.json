@@ -1,0 +1,46 @@
+[
+  {
+    "id": "doi:10.1016/j.addma.2019.04.011",
+    "doi": "https://doi.org/10.1016/j.addma.2019.04.011",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.addma.2019.04.011",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S2764842179",
+      "display_name": "Additive manufacturing",
+      "issn_l": "2214-7810",
+      "issn": [
+        "2214-7810",
+        "2214-8604"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-a",
+        "jufo-3",
+        "ki-jl-1",
+        "norway-1",
+        "poland-200",
+        "russia-white-list-1"
+      ],
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "acceptedVersion",
+    "is_accepted": true,
+    "is_published": false,
+    "raw_source_name": "Additive Manufacturing",
+    "raw_type": "journal-article"
+  }
+]

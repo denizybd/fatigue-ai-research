@@ -1,0 +1,3 @@
+author_powder_label,C_weight_pct,Cr_weight_pct,Ni_weight_pct,Mo_weight_pct,Si_weight_pct,Mn_weight_pct,P_weight_pct,S_weight_pct,material,author_powder_lot_code,condition_crosswalk_verified,provider_names_reported,provider_to_A_B_join_verified,source_pdf_page,source_printed_page,source_table,source_doi
+Powder A,0.02,17.3,12.1,2.1,0.5,0.65,,,AISI316L,,False,NMD New Materials Development GmbH;Deutsche Edelstahlwerke,False,63,49,3.1,10.26092/elib/4986
+Powder B,0.03,16.7,12.5,2.1,0.8,0.5,0.011,0.007,AISI316L,,False,NMD New Materials Development GmbH;Deutsche Edelstahlwerke,False,63,49,3.1,10.26092/elib/4986

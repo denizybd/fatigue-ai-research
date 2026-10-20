@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "tables": [
+    {
+      "cap": "1e7",
+      "table": "predictions.csv",
+      "rows": 11520,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [
+        "fit_signature"
+      ],
+      "original_sha256": "6bc7550921c0079d68a658e251098249020f62f7b2cb80a1f297bee6f766cf68",
+      "replay_sha256": "cb8910559bbd5c1445b01d31581fa8592b4f0ba0ab5082b0975dc61322964f79"
+    },
+    {
+      "cap": "1e7",
+      "table": "selections.csv",
+      "rows": 920,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "0ca9c5d312a428b0e0c05f0e5c9ee34ae5835aae78fbae8a32640911717e979e",
+      "replay_sha256": "0ca9c5d312a428b0e0c05f0e5c9ee34ae5835aae78fbae8a32640911717e979e"
+    },
+    {
+      "cap": "1e7",
+      "table": "summary.csv",
+      "rows": 1728,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "f57d9ca5d04d71f20a6d18e1c7e498ebdd00cb34190adf07d86d19d87b75b460",
+      "replay_sha256": "f57d9ca5d04d71f20a6d18e1c7e498ebdd00cb34190adf07d86d19d87b75b460"
+    },
+    {
+      "cap": "1e7",
+      "table": "paired_comparisons.csv",
+      "rows": 2304,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "5005057f615be17442ef5d95a7d329763d9f8d2209cb155391cda7157150d589",
+      "replay_sha256": "5005057f615be17442ef5d95a7d329763d9f8d2209cb155391cda7157150d589"
+    },
+    {
+      "cap": "1e7",
+      "table": "by_condition.csv",
+      "rows": 3360,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "36a75b48c4b25cffd7352ee499bd98677b1dc7791e91608eadc0a7f13cab4e8f",
+      "replay_sha256": "36a75b48c4b25cffd7352ee499bd98677b1dc7791e91608eadc0a7f13cab4e8f"
+    },
+    {
+      "cap": "1e7",
+      "table": "success_gates.csv",
+      "rows": 192,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "4fbda34f19097fe4f9f2a5a6e128960100bc30b0938a56b086bc955928ef4cff",
+      "replay_sha256": "4fbda34f19097fe4f9f2a5a6e128960100bc30b0938a56b086bc955928ef4cff"
+    },
+    {
+      "cap": "1e6",
+      "table": "predictions.csv",
+      "rows": 11520,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [
+        "fit_signature"
+      ],
+      "original_sha256": "b82573662889c916f851a672197dba258c1f57c6ce7c47c1104fb16edbb16690",
+      "replay_sha256": "641a653070b54490417c17b661dd27b97b144a3a7ae53fabf71dbbed64295f4c"
+    },
+    {
+      "cap": "1e6",
+      "table": "selections.csv",
+      "rows": 920,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "6a3a604aabde65878f277dbc5074141c97095ab79077c7bb4f67a54f956b2015",
+      "replay_sha256": "6a3a604aabde65878f277dbc5074141c97095ab79077c7bb4f67a54f956b2015"
+    },
+    {
+      "cap": "1e6",
+      "table": "summary.csv",
+      "rows": 1728,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "06ca6c00469d60e99be61065813551296d33d603babdbc06cf02107caaecec1c",
+      "replay_sha256": "06ca6c00469d60e99be61065813551296d33d603babdbc06cf02107caaecec1c"
+    },
+    {
+      "cap": "1e6",
+      "table": "paired_comparisons.csv",
+      "rows": 2304,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "da5943632bcebe506ce93e554fc44babd9cdbbd3c73086536c4940cdc163795d",
+      "replay_sha256": "da5943632bcebe506ce93e554fc44babd9cdbbd3c73086536c4940cdc163795d"
+    },
+    {
+      "cap": "1e6",
+      "table": "by_condition.csv",
+      "rows": 3360,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "f2bba28c5dc67ffd345dcbbc5a859633048068849af91df2ff4cc7badd751297",
+      "replay_sha256": "f2bba28c5dc67ffd345dcbbc5a859633048068849af91df2ff4cc7badd751297"
+    },
+    {
+      "cap": "1e6",
+      "table": "success_gates.csv",
+      "rows": 192,
+      "exact_values": true,
+      "excluded_cache_metadata_columns": [],
+      "original_sha256": "424f6236913a7e5832476e9906c25e6c4c03782448cc89ea6461b59a265bf69a",
+      "replay_sha256": "424f6236913a7e5832476e9906c25e6c4c03782448cc89ea6461b59a265bf69a"
+    }
+  ],
+  "n_tables": 12,
+  "max_numeric_difference": 0,
+  "population_fits_and_diagnostics_exact": true,
+  "scope": "Same audited source gate; unused earlier campaign omitted. Scientific values exact; prediction cache hash differs because empty unrelated metadata columns were omitted. Not independent physical replication."
+}

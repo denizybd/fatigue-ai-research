@@ -1,0 +1,367 @@
+{
+  "id": "e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6",
+  "uuid": "e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6",
+  "name": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments",
+  "handle": "elib/23339",
+  "metadata": {
+    "cris.virtual.department": [
+      {
+        "value": "Universit\u00e4t Bremen",
+        "language": null,
+        "authority": "ee105089-08eb-4555-b617-a49daf00551d",
+        "confidence": 0,
+        "place": 0
+      }
+    ],
+    "cris.virtual.orcid": [
+      {
+        "value": "0000-0001-9703-0836",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "cris.virtual.personName": [
+      {
+        "value": "#PLACEHOLDER_PARENT_METADATA_VALUE#",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "cris.virtualsource.department": [
+      {
+        "value": "c6275cd6-9c50-480d-8283-d54f785f346a",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "cris.virtualsource.orcid": [
+      {
+        "value": "c6275cd6-9c50-480d-8283-d54f785f346a",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "cris.virtualsource.personName": [
+      {
+        "value": "c6275cd6-9c50-480d-8283-d54f785f346a",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.contributor.author": [
+      {
+        "value": "Zhang, Jun",
+        "language": null,
+        "authority": "c6275cd6-9c50-480d-8283-d54f785f346a",
+        "confidence": 600,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.contributor.referee": [
+      {
+        "value": "Clausen, Brigitte",
+        "language": null,
+        "authority": "2cd5fa07-8086-4dbc-9b77-b74950403804",
+        "confidence": 600,
+        "place": 0,
+        "securityLevel": 0
+      },
+      {
+        "value": "Broeckmann, Christoph",
+        "language": null,
+        "authority": "will be generated::orcid::0000-0002-0790-8148",
+        "confidence": 600,
+        "place": 1,
+        "securityLevel": 0
+      }
+    ],
+    "dc.date.accessioned": [
+      {
+        "value": "2025-11-26T09:21:32Z",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.date.available": [
+      {
+        "value": "2025-11-26T09:21:32Z",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.date.issued": [
+      {
+        "value": "2025-07-22",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.description.abstract": [
+      {
+        "value": "As a promising and progressing additive manufacturing (AM) technique for fabricating serial metallic parts, laser powder bed fusion (LPBF) or laser beam melting (LBM) is most widely used in functional and structural metal material areas. For the two most commonly applied steels, austenitic stainless AISI 316L and carbon-bearing tool steel AISI H13, it is of great value for researchers to comprehensively study the dynamic properties of these steel parts produced via LBM. In this work, in-depth investigations on the influences of the LBM process parameters, on the resulting microstructure and mechanical properties, with a focus on the fatigue performance are performed. The individual effects of input energy density, scan pattern, and polar angle on the various occurring defect groups and microstructure load capacities are analyzed. Meanwhile, the influences of post-surface treatment as well as heat treatments are studied and evaluated. Results present generally inferior fatigue properties, which are impacted differently by the various defects depending on the shapes, sizes, and orientations. At the same time, inspiring results of comparable or even outperforming microstructure load capacities and fatigue strengths to the conventional values are observed. With further research and advancement in technology, the replacement of conventional 316L and H13 materials by additively generated parts can be realized.",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.identifier.doi": [
+      {
+        "value": "10.26092/elib/4986",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.identifier.uri": [
+      {
+        "value": "https://media.suub.uni-bremen.de/handle/elib/23339",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      },
+      {
+        "value": "https://doi.org/10.26092/elib/4986",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 1
+      }
+    ],
+    "dc.identifier.urn": [
+      {
+        "value": "urn:nbn:de:gbv:46-elib233395",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dc.language.iso": [
+      {
+        "value": "en",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.publisher.faculty": [
+      {
+        "value": "Fachbereich 04: Produktionstechnik, Maschinenbau & Verfahrenstechnik (FB 04)",
+        "language": null,
+        "authority": "4927a847-6744-4076-b3e5-38619b1a1592",
+        "confidence": 600,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.publisher.institute": [
+      {
+        "value": "Institut f\u00fcr Werkstofftechnik (IWT)",
+        "language": null,
+        "authority": "9cc85e3f-7581-4e7e-a4d1-3e1bdc599d8b",
+        "confidence": 600,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.publisher.institution": [
+      {
+        "value": "Universit\u00e4t Bremen",
+        "language": null,
+        "authority": "ee105089-08eb-4555-b617-a49daf00551d",
+        "confidence": 600,
+        "place": 0
+      }
+    ],
+    "dc.rights.uri": [
+      {
+        "value": "https://creativecommons.org/licenses/by/4.0/",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.subject": [
+      {
+        "value": "Laser powder bed fusion",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      },
+      {
+        "value": "316L",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 1
+      },
+      {
+        "value": "H13",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 2
+      },
+      {
+        "value": "heat treatments",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 3
+      },
+      {
+        "value": "fatigue properties",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 4
+      }
+    ],
+    "dc.subject.ddc": [
+      {
+        "value": "600 Technology::620 Engineering",
+        "language": null,
+        "authority": "ddc:62",
+        "confidence": 600,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.title": [
+      {
+        "value": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "dc.type": [
+      {
+        "value": "Dissertation",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "dspace.entity.type": [
+      {
+        "value": "Publication",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "suub.catalog": [
+      {
+        "value": "no",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0,
+        "securityLevel": 0
+      }
+    ],
+    "suub.hsb.crisentity": [
+      {
+        "value": "Hochschulbibliographie Universit\u00e4t Bremen (hsb)",
+        "language": null,
+        "authority": "658698c8-1412-4edb-ba9c-d2b5bafa1f45",
+        "confidence": 600,
+        "place": 0
+      }
+    ],
+    "suub.ishsb": [
+      {
+        "value": "yes",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ],
+    "suub.oai.show": [
+      {
+        "value": "true",
+        "language": null,
+        "authority": null,
+        "confidence": -1,
+        "place": 0
+      }
+    ]
+  },
+  "inArchive": true,
+  "discoverable": true,
+  "withdrawn": false,
+  "lastModified": "2025-11-27T02:03:24.855Z",
+  "entityType": "Publication",
+  "type": "item",
+  "uniqueType": "core.item",
+  "_links": {
+    "accessStatus": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/accessStatus"
+    },
+    "bundles": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/bundles"
+    },
+    "identifiers": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/identifiers"
+    },
+    "mappedCollections": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/mappedCollections"
+    },
+    "owningCollection": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/owningCollection"
+    },
+    "relationships": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/relationships"
+    },
+    "version": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/version"
+    },
+    "templateItemOf": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/templateItemOf"
+    },
+    "thumbnail": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/thumbnail"
+    },
+    "metrics": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/metrics"
+    },
+    "submitter": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/submitter"
+    },
+    "self": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6"
+    }
+  }
+}

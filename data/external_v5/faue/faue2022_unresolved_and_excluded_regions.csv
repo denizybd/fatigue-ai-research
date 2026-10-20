@@ -1,0 +1,9 @@
+region_id,amplitude_MPa,treatment,x_pixel_lower,x_pixel_upper,reason
+AMAB300_left_overlap,300,AM-AB,123,134,Potential black circle under left red diamond and fitted line cannot be separated securely; no observation added
+AMAB225_left_overlap,225,AM-AB,224,237,Potential black circle under left red diamond cannot be separated securely; no observation added
+AMAB150_diamond_overlap,150,AM-AB,430,446,Black contributions under red diamonds may include markers but exact centres and multiplicity unresolved; no observation added
+AMLP150_dense_overlap,150,AM-LP,447,457,One visually resolved diamond retained at451px; any additional overlapping diamond multiplicity not reconstructed
+reported_count_unreconciled,,all AM,,,"Paper reports22AM specimens (11each treatment);16resolved markers extracted, without locating or reconstructing the remaining accounting gap"
+all_conventional_M,,M-AB and M-LP,,,Conventional machined material excluded; black crosses/red squares are not LPBF
+fits_axes_legend_runout,,,,,"Fit lines, axes, grid, legend and2million-cycle reference are not experimental AM records"
+thesis_Figure22,,AM-AB and AM-LP,,,Same campaign; six representative or summary symbols are not independent additional specimens and are not joined to paper points

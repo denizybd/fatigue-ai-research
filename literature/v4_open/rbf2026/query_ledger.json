@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "scope": "One bounded exact-paper primary search; no broad repeated repository pass",
+  "queries": [
+    "\"10.1016/j.ijfatigue.2025.109365\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"Table\"",
+    "\"S0142112325005626\" \"ratio\" \"Hz\"",
+    "\"S0142112325005626\" \"Data availability\"",
+    "\"S0142112325005626\" \"66.\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"ratio\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"frequency\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"Data availability\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"66\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"[66]\" \"Mohammadi\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"66.\" \"Behvar\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"Runout\" \"Table 1\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"Synergistic\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"66]\" \"corrosion\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"frequency\" \"Hz\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"Synergistic impact of corrosion pitting\" \"108491\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"Supplementary\"",
+    "\"Ambient and high-temperature rotating bending fatigue\" \"frequency of\""
+  ],
+  "outcome": "Table1 andMethods2.1/2.3/3.4.1 publisher-indexed primary numeric evidence saved; direct GET outcomes separate",
+  "index_snapshot_caveat": "Indexedprimary versions expose different portions of the same paper; no PDF visual audit available. Crossref andElsevierAPI agreeDOI/title/license."
+}

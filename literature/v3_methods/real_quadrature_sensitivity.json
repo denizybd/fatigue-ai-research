@@ -1,0 +1,1694 @@
+{
+  "definition": "lexicographically first dataset and seed0 per campaign; all four policies and feasible budgets; population parameters unchanged",
+  "orders": [
+    96,
+    192
+  ],
+  "n_campaigns": 14,
+  "n_fit_sets": 11,
+  "n_quantiles": 1048,
+  "infinite_status_identical": true,
+  "max_abs_log10_quantile_difference": 8.918288330050927e-10,
+  "rows": [
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9738611573293383e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.423386432809821e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9738611573293383e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.423386432809821e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9738611573293383e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.423386432809821e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9738611573293383e-10
+    },
+    {
+      "campaign_id": "10.1002/adem.202200751",
+      "dataset_id": "a0000_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.423386432809821e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.5006663406657026e-11
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.4776626023358403e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.476987503996497e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.5006663406657026e-11
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.830980060432921e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.4935432324800786e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.5006663406657026e-11
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.2096726105000926e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.230092163330482e-10
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.5006663406657026e-11
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.602273951879397e-11
+    },
+    {
+      "campaign_id": "10.1007/s40964-021-00164-8",
+      "dataset_id": "a0032_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.205276127322577e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.5078873966986066e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.7544455605266194e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.5078873966986066e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.8476775665021705e-11
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.5078873966986066e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.7544455605266194e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.5078873966986066e-10
+    },
+    {
+      "campaign_id": "10.1016/j.ijfatigue.2022.107025",
+      "dataset_id": "a0239_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.7544455605266194e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.464340339742193e-12
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.822684391252551e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.0682301144224766e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.0300471586788262e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.464340339742193e-12
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.5925928071046656e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.143094756159371e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.0300471586788262e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.464340339742193e-12
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.5719428243273796e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.470290721452329e-11
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.0300471586788262e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.464340339742193e-12
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.95149690746166e-10
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.39577263477986e-11
+    },
+    {
+      "campaign_id": "10.1016/j.jmst.2019.08.047",
+      "dataset_id": "a0290_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.0300471586788262e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.6084869254059413e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.824318805025541e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.66508592972059e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.509210699803589e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.6084869254059413e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.7930368301222188e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.7668888574462471e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.509210699803589e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.6084869254059413e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.497513472756509e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.915667790010957e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.509201818019392e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.6084869254059413e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.756923743798325e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.899156718669474e-10
+    },
+    {
+      "campaign_id": "10.1016/j.msea.2020.140660",
+      "dataset_id": "a0367_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 10,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.509210699803589e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.274838261153491e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.693401554182856e-11
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.8200109742092536e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.274838261153491e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.9516299687438732e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.6250467638201371e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.274838261153491e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.866338443321183e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.70948605166177e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.274838261153491e-10
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 9.240608278560103e-12
+    },
+    {
+      "campaign_id": "10.1108/13552541311302932",
+      "dataset_id": "a0481_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 6,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.57909299156745e-11
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.4781422186824784e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.6419756927207345e-11
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.9162538222872172e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.4781422186824784e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.390541181147455e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 6.029567956034043e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.4781422186824784e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.2783907266111783e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.335056675268788e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.4781422186824784e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.918288330050927e-10
+    },
+    {
+      "campaign_id": "10.1111/ffe.13077",
+      "dataset_id": "a0496_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 5,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.6151881488422077e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.291695887559399e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9324009886977365e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.291695887559399e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9324009886977365e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.291695887559399e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9324009886977365e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.291695887559399e-10
+    },
+    {
+      "campaign_id": "10.3390/ma12244203",
+      "dataset_id": "a0554_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.9324009886977365e-10
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.261746345766369e-11
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.5502090156569466e-10
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.1662670829082344e-11
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.261746345766369e-11
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.94129215112116e-12
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.060885044372299e-10
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.261746345766369e-11
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.5084025401820327e-10
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.060885044372299e-10
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.261746345766369e-11
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.2433433716505533e-10
+    },
+    {
+      "campaign_id": "10.3390/ma13153293",
+      "dataset_id": "a0562_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.268132431344384e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.9261305317950246e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.894662535865791e-11
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.765032812770187e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.9261305317950246e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.6272317654729704e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.665689891045986e-11
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.9261305317950246e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.2882141454138036e-11
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.460485066218098e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.9261305317950246e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.4211299631815564e-10
+    },
+    {
+      "campaign_id": "10.3390/ma15186278",
+      "dataset_id": "a0577_d000",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.4496406559346724e-10
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.4848746938441764e-10
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.659739012893624e-11
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.4848746938441764e-10
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.659739012893624e-11
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.4848746938441764e-10
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.659739012893624e-11
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.4848746938441764e-10
+    },
+    {
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 3,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.659739012893624e-11
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.5565683731419995e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.1543122841194418e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.7070256319584587e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 10,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.3931080995207594e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.5565683731419995e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.1750158885633937e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.5828671706685782e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 10,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.743174741861367e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.5565683731419995e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.120543906083185e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.728324729645465e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "random",
+      "k": 10,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.992068980413933e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.5565683731419995e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.944400361888256e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.69252200932624e-10
+    },
+    {
+      "campaign_id": "diller_one_source_campaign",
+      "dataset_id": "diller2024_asbuilt",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 10,
+      "n_quantiles": 11,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 8.639959858669499e-10
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.084466181415337e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.8622437753256236e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.5632831674756744e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.084466181415337e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.8622437753256236e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.0771916691965089e-10
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.084466181415337e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.744355853678826e-10
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.523758896837535e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.084466181415337e-11
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.0290523988487621e-10
+    },
+    {
+      "campaign_id": "tomaszewski_one_source_campaign",
+      "dataset_id": "tomaszewski2023_L_A02_L0_R-1",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 4,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.9312818011485433e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 0,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.1114310300163197e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 3,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 1.6976109407096374e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 5,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.072289255281248e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "active_query_variance",
+      "k": 10,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.327951247911187e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 0,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.1114310300163197e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 3,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.1823343132609807e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 5,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 5.889608800657697e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "high_stress",
+      "k": 10,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 7.092468834457577e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "random",
+      "k": 0,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.1114310300163197e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "random",
+      "k": 3,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 3.5703262568631544e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "random",
+      "k": 5,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.063966940748287e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "random",
+      "k": 10,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.269979759716989e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 0,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 2.1114310300163197e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 3,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.090425775871154e-10
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 5,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.9245940658693144e-11
+    },
+    {
+      "campaign_id": "trombley2025_one_campaign",
+      "dataset_id": "trombley2025_d1.5_a",
+      "seed": 0,
+      "policy": "stress_span",
+      "k": 10,
+      "n_quantiles": 17,
+      "infinite_status_identical": true,
+      "max_abs_log10_quantile_difference": 4.977698253583185e-10
+    }
+  ]
+}

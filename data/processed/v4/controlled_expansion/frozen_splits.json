@@ -1,0 +1,778 @@
+{
+  "protocol_sha256": "b97687eb502c1dbeebad563c9b67a4150879a80243fd23e4ed8844a4405f01e5",
+  "inputs": {
+    "strict": {
+      "path": "data/processed/v2/strict_fulltraining/cohort.csv",
+      "sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3"
+    },
+    "increment": {
+      "path": "data/external_v4/source_expansion/source_qualified_ca_expansion.csv",
+      "sha256": "1d0f6c03c9938b36f2450aedd9a45ed5900f087779fb3163963a9323c48c567c"
+    },
+    "target": {
+      "path": "data/external_v4/yankin2025/table3_69.csv",
+      "sha256": "0c18801450daddfefeb4ad7006c8412349fc4e0afb8de2aa9802692f8b6dd192"
+    }
+  },
+  "regimes": {
+    "strict309": {
+      "rows": 309,
+      "conditions": 32,
+      "source_blocks": 11,
+      "sha256": "eb5591ac64c358bf066e221c8e72533e694c746ca6b0b59888635c3a0056f62b"
+    },
+    "expanded441": {
+      "rows": 441,
+      "conditions": 48,
+      "source_blocks": 13,
+      "sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3"
+    },
+    "strict_plus_elanges347": {
+      "rows": 347,
+      "conditions": 36,
+      "source_blocks": 12,
+      "sha256": "f178d2572c0cf224391bb37a076e94ecbaeef1cd454bc2ac36f547aed1ea611e"
+    },
+    "strict_plus_zhang403": {
+      "rows": 403,
+      "conditions": 44,
+      "source_blocks": 12,
+      "sha256": "871302864764ae971836d123d7aea9a57ab34303ba89f6f27a6a2e29a0fbeef7"
+    }
+  },
+  "target_sha256": "cca379a6c23dc24773d2dbbd15cbff5d693785b6c03d1e65862e691fb0361593",
+  "tasks": [
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 0,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_03",
+        "yankin2025_table3_04",
+        "yankin2025_table3_01"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_05",
+        "yankin2025_table3_02"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 1,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_03",
+        "yankin2025_table3_02"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_05",
+        "yankin2025_table3_01",
+        "yankin2025_table3_04"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 2,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_05",
+        "yankin2025_table3_03"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_02",
+        "yankin2025_table3_01",
+        "yankin2025_table3_04"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 3,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_03",
+        "yankin2025_table3_04"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_01",
+        "yankin2025_table3_02",
+        "yankin2025_table3_05"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 4,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_04",
+        "yankin2025_table3_01"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_05",
+        "yankin2025_table3_03",
+        "yankin2025_table3_02"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 5,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_02",
+        "yankin2025_table3_04"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_01",
+        "yankin2025_table3_05",
+        "yankin2025_table3_03"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 6,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_05",
+        "yankin2025_table3_03",
+        "yankin2025_table3_01"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_02",
+        "yankin2025_table3_04"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 7,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_01",
+        "yankin2025_table3_06",
+        "yankin2025_table3_02"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_05",
+        "yankin2025_table3_04",
+        "yankin2025_table3_03"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 8,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_01",
+        "yankin2025_table3_03",
+        "yankin2025_table3_04"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_06",
+        "yankin2025_table3_02",
+        "yankin2025_table3_05"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_00",
+      "seed": 9,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_03",
+        "yankin2025_table3_05",
+        "yankin2025_table3_06"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_02",
+        "yankin2025_table3_01",
+        "yankin2025_table3_04"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 0,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_17",
+        "yankin2025_table3_13",
+        "yankin2025_table3_15"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_14",
+        "yankin2025_table3_12",
+        "yankin2025_table3_16"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 1,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_13",
+        "yankin2025_table3_12",
+        "yankin2025_table3_16"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_14",
+        "yankin2025_table3_17",
+        "yankin2025_table3_15"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 2,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_17",
+        "yankin2025_table3_16",
+        "yankin2025_table3_15"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_13",
+        "yankin2025_table3_14",
+        "yankin2025_table3_12"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 3,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_15",
+        "yankin2025_table3_12",
+        "yankin2025_table3_14"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_16",
+        "yankin2025_table3_17",
+        "yankin2025_table3_13"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 4,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_16",
+        "yankin2025_table3_12",
+        "yankin2025_table3_17"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_13",
+        "yankin2025_table3_15",
+        "yankin2025_table3_14"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 5,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_16",
+        "yankin2025_table3_17",
+        "yankin2025_table3_13"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_15",
+        "yankin2025_table3_14",
+        "yankin2025_table3_12"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 6,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_13",
+        "yankin2025_table3_16",
+        "yankin2025_table3_12"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_14",
+        "yankin2025_table3_17",
+        "yankin2025_table3_15"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 7,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_13",
+        "yankin2025_table3_15",
+        "yankin2025_table3_12"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_14",
+        "yankin2025_table3_17",
+        "yankin2025_table3_16"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 8,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_14",
+        "yankin2025_table3_12",
+        "yankin2025_table3_13"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_15",
+        "yankin2025_table3_17",
+        "yankin2025_table3_16"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_55",
+      "seed": 9,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_16",
+        "yankin2025_table3_13",
+        "yankin2025_table3_17"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_12",
+        "yankin2025_table3_14",
+        "yankin2025_table3_15"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 0,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_29",
+        "yankin2025_table3_32",
+        "yankin2025_table3_31"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_28",
+        "yankin2025_table3_30",
+        "yankin2025_table3_33"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 1,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_32",
+        "yankin2025_table3_30",
+        "yankin2025_table3_28"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_29",
+        "yankin2025_table3_33",
+        "yankin2025_table3_31"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 2,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_29",
+        "yankin2025_table3_32",
+        "yankin2025_table3_33"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_28",
+        "yankin2025_table3_30",
+        "yankin2025_table3_31"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 3,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_29",
+        "yankin2025_table3_28",
+        "yankin2025_table3_32"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_31",
+        "yankin2025_table3_33",
+        "yankin2025_table3_30"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 4,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_28",
+        "yankin2025_table3_30",
+        "yankin2025_table3_33"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_32",
+        "yankin2025_table3_31",
+        "yankin2025_table3_29"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 5,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_32",
+        "yankin2025_table3_33",
+        "yankin2025_table3_30"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_28",
+        "yankin2025_table3_29",
+        "yankin2025_table3_31"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 6,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_31",
+        "yankin2025_table3_30",
+        "yankin2025_table3_33"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_32",
+        "yankin2025_table3_29",
+        "yankin2025_table3_28"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 7,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_30",
+        "yankin2025_table3_28",
+        "yankin2025_table3_33"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_32",
+        "yankin2025_table3_31",
+        "yankin2025_table3_29"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 8,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_29",
+        "yankin2025_table3_32",
+        "yankin2025_table3_31"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_33",
+        "yankin2025_table3_28",
+        "yankin2025_table3_30"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_AB_85",
+      "seed": 9,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_32",
+        "yankin2025_table3_31",
+        "yankin2025_table3_30"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_33",
+        "yankin2025_table3_28",
+        "yankin2025_table3_29"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 0,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_44",
+        "yankin2025_table3_50",
+        "yankin2025_table3_49"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_47",
+        "yankin2025_table3_46",
+        "yankin2025_table3_45",
+        "yankin2025_table3_48"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 1,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_46",
+        "yankin2025_table3_49",
+        "yankin2025_table3_45"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_47",
+        "yankin2025_table3_50",
+        "yankin2025_table3_48",
+        "yankin2025_table3_44"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 2,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_49",
+        "yankin2025_table3_44",
+        "yankin2025_table3_47"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_48",
+        "yankin2025_table3_45",
+        "yankin2025_table3_46",
+        "yankin2025_table3_50"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 3,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_44",
+        "yankin2025_table3_48",
+        "yankin2025_table3_47"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_49",
+        "yankin2025_table3_46",
+        "yankin2025_table3_45",
+        "yankin2025_table3_50"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 4,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_47",
+        "yankin2025_table3_50",
+        "yankin2025_table3_48"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_49",
+        "yankin2025_table3_46",
+        "yankin2025_table3_45",
+        "yankin2025_table3_44"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 5,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_49",
+        "yankin2025_table3_47",
+        "yankin2025_table3_44"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_46",
+        "yankin2025_table3_48",
+        "yankin2025_table3_45",
+        "yankin2025_table3_50"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 6,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_48",
+        "yankin2025_table3_45",
+        "yankin2025_table3_46"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_50",
+        "yankin2025_table3_47",
+        "yankin2025_table3_49",
+        "yankin2025_table3_44"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 7,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_48",
+        "yankin2025_table3_45",
+        "yankin2025_table3_47"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_46",
+        "yankin2025_table3_50",
+        "yankin2025_table3_49",
+        "yankin2025_table3_44"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 8,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_47",
+        "yankin2025_table3_49",
+        "yankin2025_table3_45"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_44",
+        "yankin2025_table3_48",
+        "yankin2025_table3_50",
+        "yankin2025_table3_46"
+      ]
+    },
+    {
+      "dataset_id": "yankin2025_HT_45",
+      "seed": 9,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "yankin2025_table3_47",
+        "yankin2025_table3_50",
+        "yankin2025_table3_45"
+      ],
+      "pool_ids": [
+        "yankin2025_table3_44",
+        "yankin2025_table3_49",
+        "yankin2025_table3_48",
+        "yankin2025_table3_46"
+      ]
+    }
+  ],
+  "timing": "Exploratory; all sources seen, freeze before v4 fitting.",
+  "planner": "strict309 hierarchical; selections reused identically across regimes"
+}

@@ -1,0 +1,799 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2026-04-28T16:11:52Z",
+      "timestamp": 1777392712080,
+      "version": "3.51.4"
+    },
+    "reference-count": 38,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2023-10-01T00:00:00Z",
+          "timestamp": 1696118400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "275999847"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "275999847"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Materials Science and Engineering: A"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.msea.2023.145651",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          1
+        ]
+      ],
+      "date-time": "2023-09-01T11:27:13Z",
+      "timestamp": 1693567633000
+    },
+    "page": "145651",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "special_numbering": "C",
+    "title": [
+      "Influence of laser beam scanning pattern and polar angle on the fatigue behavior of additively manufactured specimens made of steel 316L"
+    ],
+    "prefix": "10.1016",
+    "volume": "886",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9703-0836",
+        "authenticated-orcid": false,
+        "given": "Jun",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Michaela",
+        "family": "Zei\u00dfig",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Raik",
+        "family": "D\u00f6rfert",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Frank",
+        "family": "Jablonski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Reinhold",
+        "family": "Kienzler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5599-2340",
+        "authenticated-orcid": false,
+        "given": "Jens",
+        "family": "Schumacher",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Brigitte",
+        "family": "Clausen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5678-2182",
+        "authenticated-orcid": false,
+        "given": "Peer",
+        "family": "Woizeschke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Frank",
+        "family": "Vollertsen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.msea.2023.145651_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1038/s43246-020-00094-y",
+        "article-title": "Laser-metal interaction dynamics during additive manufacturing resolved by detection of thermally-induced electron emission",
+        "volume": "1",
+        "author": "Depond",
+        "year": "2020",
+        "journal-title": "Commun. Mater."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib2",
+        "series-title": "Metal Fatigue: Effects of Small Defects and Nonmetallic Inclusions",
+        "author": "Murakami",
+        "year": "2002"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib3",
+        "series-title": "Qualit\u00e4tssicherung beim Laserstrahlschmelzen durch schichtweise thermografische In-Process-\u00dcberwachung",
+        "author": "Krauss",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib4",
+        "series-title": "Proc. 2nd Int. Conf. Prog. Addit. Manuf. (Pro-AM 2016)",
+        "first-page": "563",
+        "article-title": "Review of the fatigue performance of stainless steel 316L parts manufactured by selective laser melting",
+        "author": "Zhang",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "2522",
+        "DOI": "10.1016/j.jmatprotec.2014.05.002",
+        "article-title": "Defect generation and propagation mechanism during additive manufacturing by selective beam melting",
+        "volume": "214",
+        "author": "Bauerei\u00df",
+        "year": "2014",
+        "journal-title": "J. Mater. Process. Technol."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "72",
+        "DOI": "10.1016/j.ijfatigue.2018.12.029",
+        "article-title": "Fatigue characteristics of steels manufactured by selective laser melting",
+        "volume": "122",
+        "author": "Afkhami",
+        "year": "2019",
+        "journal-title": "Int. J. Fatig."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "255",
+        "DOI": "10.1016/j.jmapro.2019.07.010",
+        "article-title": "Impact of the scanning strategy on the mechanical behavior of 316L steel synthesized by selective laser melting",
+        "volume": "45",
+        "author": "Salman",
+        "year": "2019",
+        "journal-title": "J. Manuf. Process."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1016/j.msea.2017.04.058",
+        "article-title": "Mechanical behavior of selective laser melted 316L stainless steel",
+        "volume": "696",
+        "author": "Suryawanshi",
+        "year": "2017",
+        "journal-title": "Mater. Sci. Eng., A"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "92",
+        "DOI": "10.1016/j.msea.2017.04.031",
+        "article-title": "Comparison on mechanical anisotropies of selective laser melted Ti-6Al-4V alloy and 304 stainless steel",
+        "volume": "695",
+        "author": "Yu",
+        "year": "2017",
+        "journal-title": "Mater. Sci. Eng., A"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "218",
+        "DOI": "10.1016/j.ijfatigue.2016.03.014",
+        "article-title": "Effects of building orientation and heat treatment on fatigue behavior of selective laser melted 17-4 PH stainless steel",
+        "volume": "94",
+        "author": "Yadollahi",
+        "year": "2017",
+        "journal-title": "Int. J. Fatig."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib11",
+        "series-title": "Proc. 27th Annu. Int. SFF Symp. - Addit. Manuf. Conf. (SFF 2016), Austin",
+        "article-title": "Effect of build orientation on the fatigue behavior of stainless steel 316L manufactured via a laser powder bed fusion process",
+        "author": "Shrestha",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "608",
+        "DOI": "10.1016/j.acme.2014.02.003",
+        "article-title": "Application of X-ray CT method for discontinuity and porosity detection in 316L stainless steel parts produced with SLM technology",
+        "volume": "14",
+        "author": "Zi\u00f3\u0142kowski",
+        "year": "2014",
+        "journal-title": "Arch. Civ. Mech. Eng."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.msea.2023.145651_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1108/13552540610707013",
+        "article-title": "Residual stresses in selective laser sintering and selective laser melting",
+        "volume": "12",
+        "author": "Mercelis",
+        "year": "2006",
+        "journal-title": "Rapid Prototyp. J."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib23",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.msea.2019.138633",
+        "article-title": "Steels in additive manufacturing: a review of their microstructure and properties",
+        "volume": "772",
+        "author": "Bajaj",
+        "year": "2020",
+        "journal-title": "Mater. Sci. Eng., A"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "345",
+        "DOI": "10.6028/jres.099.032",
+        "article-title": "Inclusion rating by statistics of extreme values and its application to fatigue strength prediction and quality control of materials",
+        "volume": "99",
+        "author": "Murakami",
+        "year": "1994",
+        "journal-title": "J. Res. Natl. Inst. Stan"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/j.engfracmech.2014.03.008",
+        "article-title": "On the fatigue crack growth behavior in 316L stainless steel manufactured by selective laser melting",
+        "volume": "120",
+        "author": "Riemer",
+        "year": "2014",
+        "journal-title": "Eng. Fract. Mech."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "88",
+        "DOI": "10.1108/13552541311302932",
+        "article-title": "Fatigue performance of additive manufacture metallic parts",
+        "volume": "19",
+        "author": "Spierings",
+        "year": "2013",
+        "journal-title": "Rapid Prototyp. J."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.msea.2023.145651_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "606",
+        "DOI": "10.1016/j.jmatprotec.2012.11.014",
+        "article-title": "Energy input effect on morphology and microstructure of selective laser melting single track from metallic powder",
+        "volume": "213",
+        "author": "Yadroitsev",
+        "year": "2013",
+        "journal-title": "J. Mater. Process. Technol."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1016/j.msea.2014.12.018",
+        "article-title": "Hardened austenite steel with columnar sub-grain structure formed by laser melting",
+        "volume": "625",
+        "author": "Saeidi",
+        "year": "2015",
+        "journal-title": "Mater. Sci. Eng., A"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib19",
+        "first-page": "12",
+        "article-title": "Microstructural and thermal stability of selective laser melted 316L stainless steel single tracks",
+        "volume": "28",
+        "author": "Krakhmalev",
+        "year": "2017",
+        "journal-title": "S. Afr. J. Ind. Eng."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib20",
+        "doi-asserted-by": "crossref",
+        "first-page": "63",
+        "DOI": "10.1038/nmat5021",
+        "article-title": "Additively manufactured hierarchical stainless steels with high strength and ductility",
+        "volume": "17",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "Nat. Mater."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.msea.2023.145651_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "195",
+        "DOI": "10.1108/13552541111124770",
+        "article-title": "Influence of the particle size distribution on surface quality and mechanical properties in AM steel parts",
+        "volume": "17",
+        "author": "Spierings",
+        "year": "2011",
+        "journal-title": "Rapid Prototyp. J."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "4203",
+        "DOI": "10.3390/ma12244203",
+        "article-title": "Influences of horizontal and vertical build orientations and post-fabrication processes on the fatigue behavior of stainless steel 316L produced by selective laser melting",
+        "volume": "12",
+        "author": "Wood",
+        "year": "2019",
+        "journal-title": "Materials"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "134",
+        "DOI": "10.1016/j.jnucmat.2005.03.019",
+        "article-title": "Fatigue properties of type 316LN stainless steel in air and mercury",
+        "volume": "343",
+        "author": "Strizak",
+        "year": "2005",
+        "journal-title": "J. Nucl. Mater."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "3183",
+        "DOI": "10.1007/s11665-020-04859-x",
+        "article-title": "Fatigue strength of 316 l stainless steel manufactured by selective laser melting",
+        "volume": "29",
+        "author": "Hatami",
+        "year": "2020",
+        "journal-title": "J. Mater. Eng. Perform."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "2043",
+        "DOI": "10.1111/ffe.13077",
+        "article-title": "Fatigue of additively manufactured 316L stainless steel: the influence of porosity and surface roughness",
+        "volume": "42",
+        "author": "Solberg",
+        "year": "2019",
+        "journal-title": "Fatig. Fract. Eng. Mater. Struct."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.msea.2023.145651_bib27",
+        "article-title": "Influence of the position and size of various deterministic defects on the high cycle fatigue resistance of a 316L steel manufactured by laser powder bed fusion",
+        "volume": "143",
+        "author": "Andreau",
+        "year": "2021",
+        "journal-title": "Int. J. Fatig."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "882",
+        "DOI": "10.1016/j.phpro.2016.08.092",
+        "article-title": "Influence of powder bed preheating on microstructure and mechanical properties of H13 tool steel SLM parts",
+        "volume": "83",
+        "author": "Mertens",
+        "year": "2016",
+        "journal-title": "Phys. Procedia"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib29",
+        "series-title": "Testing Pieces for 2t-Dynamometer, Test Instructions for Fatigue Investigations",
+        "author": "Amsler",
+        "year": "1957"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib30",
+        "series-title": "User's Manual Sartorius YDK 01, YDK 10-0D, YDK 01 LP, Density Determination Kit",
+        "author": "Sartorius",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1016/j.ijfatigue.2013.08.027",
+        "article-title": "Fatigue from defect under multiaxial loading, defect stress gradient (DSG) approach using ellipsoidal equivalent inclusion method",
+        "volume": "59",
+        "author": "Vincent",
+        "year": "2014",
+        "journal-title": "Int. J. Fatig."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib32",
+        "series-title": "Proc. Int. Conf. On Fatigue of Metals",
+        "first-page": "138",
+        "article-title": "Effect of large hydrostatic pressures on the torsional fatigue strength of an alloy steel",
+        "author": "Crossland",
+        "year": "1956"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib33",
+        "series-title": "Abaqus/CAE 2018",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib34",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1051/matecconf/20141208001",
+        "article-title": "A surface defect versus microstructure under fatigue loading: experimental and numerical approach",
+        "volume": "12",
+        "author": "Vincent",
+        "year": "2014",
+        "journal-title": "MATEC Web Conf."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.msea.2023.145651_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1016/j.prostr.2022.03.007",
+        "article-title": "Comparison of different approaches to model fatigue for additively manufactured specimens considering production-related characteristics",
+        "volume": "38",
+        "author": "Zei\u00dfig",
+        "year": "2022",
+        "journal-title": "Procedia Struct. Integr."
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib37",
+        "series-title": "Proc. 27th Annu. Int. SFF Symp. - Addit. Manuf. Conf. (SFF 2016), Austin",
+        "article-title": "Effect of heat treatment of 316L stainless steel produced by Selective Laser Melting (SLM)",
+        "author": "Montero Sistiaga",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.msea.2023.145651_bib36",
+        "doi-asserted-by": "crossref",
+        "first-page": "10457",
+        "DOI": "10.1007/s10853-023-08541-0",
+        "article-title": "A comprehensive study on the influence of the scan pattern in two porosity levels and surface roughness on the fatigue behavior of laser powder bed fusion manufactured specimens made of steel H13",
+        "volume": "58",
+        "author": "Zhang",
+        "year": "2023",
+        "journal-title": "J. Mater. Sci."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.msea.2023.145651_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "380",
+        "DOI": "10.1108/13552541111156504",
+        "article-title": "Comparison of density measurement techniques for additive manufactured metallic parts",
+        "volume": "17",
+        "author": "Spierings",
+        "year": "2011",
+        "journal-title": "Rapid Prototyp. J."
+      }
+    ],
+    "container-title": [
+      "Materials Science and Engineering: A"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0921509323010754?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0921509323010754?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2025-10-13T00:39:29Z",
+      "timestamp": 1760315969000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0921509323010754"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          10
+        ]
+      ]
+    },
+    "references-count": 38,
+    "alternative-id": [
+      "S0921509323010754"
+    ],
+    "URL": "https://doi.org/10.1016/j.msea.2023.145651",
+    "relation": {},
+    "ISSN": [
+      "0921-5093"
+    ],
+    "issn-type": [
+      {
+        "value": "0921-5093",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Influence of laser beam scanning pattern and polar angle on the fatigue behavior of additively manufactured specimens made of steel 316L",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Materials Science and Engineering: A",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.msea.2023.145651",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2023 Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "145651"
+  }
+}

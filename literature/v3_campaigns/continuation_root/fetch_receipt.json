@@ -1,0 +1,42 @@
+[
+  {
+    "file": "voloskov2023_wiley.html",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adem.202200831",
+    "status": 403,
+    "bytes": 5596,
+    "sha256": "c2b20a4313b869578cb84b6c159e0be38ff6feff5ffc72437fa6ffa4f5d1c3c6",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "file": "voloskov2023_openalex.json",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1002/adem.202200831",
+    "status": 200,
+    "bytes": 19270,
+    "sha256": "226a7e650de1f5739db5b54c3e45e14cc3e31d5477e711220ce6a00f635f19a5",
+    "content_type": "application/json"
+  },
+  {
+    "file": "spiller2025_openalex.json",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.msea.2025.148439",
+    "status": 200,
+    "bytes": 16435,
+    "sha256": "772bbef2ee0a6f3a870485032506a40a4141fc376b0f1981cef669d4ae375166",
+    "content_type": "application/json"
+  },
+  {
+    "file": "wu2026_crossref.json",
+    "url": "https://api.crossref.org/works/10.1016/j.ijfatigue.2026.109943",
+    "status": 200,
+    "bytes": 14822,
+    "sha256": "e85948a06fe457aaf46af0b2de12d3c5436a746809b208a44f103b69b681c332",
+    "content_type": "application/json"
+  },
+  {
+    "file": "prochaska2024_oa.xml",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC11443111",
+    "status": 404,
+    "bytes": 1588,
+    "sha256": "21451abfa712404c12f09f2087ac38036f85f5bb621a3dd814b215716384bff1",
+    "content_type": "text/html; charset=ISO-8859-1"
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "created": "2024-01-10T08:44:31.565142+00:00",
+  "modified": "2024-07-07T13:48:22.565901+00:00",
+  "id": 10477561,
+  "conceptrecid": "10477560",
+  "doi": "10.5281/zenodo.10477561",
+  "conceptdoi": "10.5281/zenodo.10477560",
+  "doi_url": "https://doi.org/10.5281/zenodo.10477561",
+  "metadata": {
+    "title": "Fatigue lifetime of both plain and notched components made of additively manufactured AISI 316L",
+    "doi": "10.5281/zenodo.10477561",
+    "publication_date": "2022-10-20",
+    "description": "<p><span>During last few years, the Additive Manufacturing (AM) technology has increasingly attracted the interest of both industries and researchers. <span>&nbsp;</span>In such a context, the present paper deals with the analysis of specimens made of additively manufactured AISI 316L stainless steel subjected to cyclic loading.<span>&nbsp; </span>More precisely, fatigue tests available in the literature and related to both plain and notched specimens are considered.<span>&nbsp; </span>The fatigue assessment of such specimens is performed by means of an analytical methodology, recently proposed by the present authors, consisting of the joint application of: a multiaxial stress-based fatigue criterion, named Carpinteri et al. criterion, which exploits the concept of the critical plane, and a stress averaging method, named Critical Direction Method, for the determination of the orientation of the critical plane.<span>&nbsp; </span>Satisfactory results are here obtained in terms of fatigue life for AM components, irrespective of both the specimen geometry and the degree of multiaxiality and non-proportionality.</span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zanichelli, Andrea",
+        "affiliation": null,
+        "orcid": "0000-0003-4152-8998"
+      },
+      {
+        "name": "RONCHEI, Camilla",
+        "affiliation": null,
+        "orcid": "0000-0001-5450-4448"
+      },
+      {
+        "name": "Scorza, Daniela",
+        "affiliation": null,
+        "orcid": "0000-0002-7376-4699"
+      },
+      {
+        "name": "Vantadori, Sabrina",
+        "affiliation": null,
+        "orcid": "0000-0002-1904-9301"
+      }
+    ],
+    "keywords": [
+      "AM metallic specimens",
+      "analytical methodology",
+      "fatigue life",
+      "notched specimen",
+      "stress-based criterion",
+      "uniaxial/biaxial loading"
+    ],
+    "version": "Pre-print",
+    "language": "eng",
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10477560"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Fatigue lifetime of both plain and notched components made of additively manufactured AISI 316L",
+  "links": {
+    "self": "https://zenodo.org/api/records/10477561",
+    "self_html": "https://zenodo.org/records/10477561",
+    "preview_html": "https://zenodo.org/records/10477561?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10477561",
+    "self_doi": "https://doi.org/10.5281/zenodo.10477561",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10477561",
+    "reserve_doi": "https://zenodo.org/api/records/10477561/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10477560",
+    "parent_html": "https://zenodo.org/records/10477560",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10477560",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10477560",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10477561/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10477561/sequence/default",
+    "files": "https://zenodo.org/api/records/10477561/files",
+    "media_files": "https://zenodo.org/api/records/10477561/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10477561:Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10477561:Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10477561:Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10477561:Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10477561:Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10477561:Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/10477561/versions/latest",
+    "latest_html": "https://zenodo.org/records/10477561/latest",
+    "versions": "https://zenodo.org/api/records/10477561/versions",
+    "draft": "https://zenodo.org/api/records/10477561/draft",
+    "access_links": "https://zenodo.org/api/records/10477561/access/links",
+    "access_grants": "https://zenodo.org/api/records/10477561/access/grants",
+    "access_users": "https://zenodo.org/api/records/10477561/access/users",
+    "access_request": "https://zenodo.org/api/records/10477561/access/request",
+    "access": "https://zenodo.org/api/records/10477561/access",
+    "communities": "https://zenodo.org/api/records/10477561/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10477561/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10477561/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10477561/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/10477561/quota-increase",
+    "requests": "https://zenodo.org/api/records/10477561/requests"
+  },
+  "updated": "2024-07-07T13:48:22.565901+00:00",
+  "recid": "10477561",
+  "revision": 6,
+  "files": [
+    {
+      "id": "af717f07-2e4e-44bc-9473-920d88ea9018",
+      "key": "Fatigue lifetime of both plain and notched specimens made of additively manufactured AISI 316L.pdf",
+      "size": 801859,
+      "checksum": "md5:b44c3cc8a945fbcc5a2458ff8dd6a5ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/10477561/files/Fatigue%20lifetime%20of%20both%20plain%20and%20notched%20specimens%20made%20of%20additively%20manufactured%20AISI%20316L.pdf/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "83513"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 70,
+    "unique_downloads": 66,
+    "views": 63,
+    "unique_views": 63,
+    "version_downloads": 70,
+    "version_unique_downloads": 66,
+    "version_unique_views": 63,
+    "version_views": 63
+  },
+  "state": "done",
+  "submitted": true
+}

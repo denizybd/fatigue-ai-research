@@ -1,0 +1,52 @@
+{
+  "audited_utc": "2026-10-20T16:37:28.489634+00:00",
+  "objective": "Targeted source closure for exact SS_A02W_01..09\u2192one production plate.",
+  "verdict": "NOT_ADMITTED: actual specimen\u2192physical build join remains absent.",
+  "new_identity_qualified_rows": 0,
+  "build_mapping_verified": false,
+  "source_preserved_sha256": "30a45bb604d1b13f38f6e36047174fbcc2734f38019c683ba5dd149e1d4f4b35",
+  "producer_md5_matches": true,
+  "raw_license": "cc-by-4.0",
+  "artifact_inventory": {
+    "visible_sheets": 1,
+    "hidden_sheets": 0,
+    "comments": 0,
+    "hyperlinks": 0,
+    "defined_names": 0,
+    "hidden_rows_columns": 0,
+    "external_links": 0,
+    "embedded_files": 0,
+    "custom_properties": 0,
+    "batch_or_build_columns": 0
+  },
+  "raw_316L_rows": 137,
+  "raw_standard_W_Rminus1_L0_counts": {
+    "A02": 9,
+    "A08": 13,
+    "A32": 15
+  },
+  "paper2023_singleplate_fatigue_counts": {
+    "A02": 9,
+    "A08": 9,
+    "A32": 10
+  },
+  "no_exact_author_id_match_in_papers": true,
+  "frequency_conflict_Hz": {
+    "workbook": 10,
+    "related_papers": 20
+  },
+  "temperature": "Workbook laboratory conditions; no numeric RT recovered.",
+  "positive_but_insufficient_evidence": [
+    "A02geometry, Worientation andn9match2023description",
+    "Same author and funding project",
+    "Same machine/process in related manuscripts"
+  ],
+  "blocking_fields": [
+    "Author specimen ID\u2192paper cohort/physical build crosswalk",
+    "Physical build scope statement covering the raw compilation",
+    "Reconciled10Hz/20Hz test metadata",
+    "Numeric RT evidence if the primary gate requires it"
+  ],
+  "required_source_closure": "An existing primary artifact naming the raw IDs as belonging to the article singleplate, or an author-issued specimen/build inventory with actual IDs. No correspondence authorized/performed.",
+  "scope_control": "No broad search, model fits, source modifications or author contact."
+}

@@ -1,0 +1,1320 @@
+{
+  "created_utc": "2026-10-20T19:54:18.169391+00:00",
+  "protocol_sha256": "3dfcb673d47ed201f01eedeea8e60b9e051e978e982eb96619ff386c1e4f91c8",
+  "code_sha256": {
+    "v5_rbf.py": "ae35cad81bdc81bbb2ac980c2fcf8284194309f660446f2bc0a00aa83e115d7c",
+    "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+    "v3_design.py": "dc6c2c625c1bf98dc5ff82ea5154b76f658ab89d0ce02b57de1ae6b12b0879db",
+    "v3_summarize.py": "2fa5242eeb7e9f00f262e2d85cb7f3757a1dea0fb5263467c5cca42d3d2592aa",
+    "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+    "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+    "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+  },
+  "inputs": {
+    "table": {
+      "path": "data/external_v4/rbf2026/table1_rbf67.csv",
+      "sha256": "e10825d3ee90d8c17e4467b5c787dcd6883441e4ed46292793fecd7ef80d84ed"
+    },
+    "source_audit": {
+      "path": "literature/v4_open/rbf2026/source_audit.json",
+      "sha256": "130ef3063ff212b1c98adc8189ecdeb371421c123c43d2af7f6e274d6ba54369"
+    },
+    "independent_audit": {
+      "path": "literature/v4_open/rbf2026/independent_audit.json",
+      "sha256": "9c4ef8e8677982d008ebd16aa206823d093e0eee51b25849c9de983542080cf6"
+    },
+    "strict_raw": {
+      "path": "data/processed/v2/strict_fulltraining/cohort.csv",
+      "sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3"
+    },
+    "increment_raw": {
+      "path": "data/external_v4/source_expansion/source_qualified_ca_expansion.csv",
+      "sha256": "1d0f6c03c9938b36f2450aedd9a45ed5900f087779fb3163963a9323c48c567c"
+    },
+    "strict309": {
+      "path": "data/processed/v4/controlled_expansion/strict309.csv",
+      "sha256": "eb5591ac64c358bf066e221c8e72533e694c746ca6b0b59888635c3a0056f62b"
+    },
+    "expanded441": {
+      "path": "data/processed/v4/controlled_expansion/expanded441.csv",
+      "sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3"
+    }
+  },
+  "regimes": {
+    "strict309": {
+      "rows": 309,
+      "conditions": 32,
+      "source_blocks": 11,
+      "sha256": "eb5591ac64c358bf066e221c8e72533e694c746ca6b0b59888635c3a0056f62b"
+    },
+    "expanded441": {
+      "rows": 441,
+      "conditions": 48,
+      "source_blocks": 13,
+      "sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3"
+    }
+  },
+  "target_sha256": "aa3f651934b761230b082df673bc36ddb18b583948dabea18d5664897cd54fe5",
+  "tasks": [
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row09.col2.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row11.col2.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row14.col2.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row11.col2.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row06.col2.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row08.col2.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row02.col2.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row14.col2.point3"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row01.col2.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row11.col2.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row02.col2.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row12.col2.point3"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row16.col2.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row11.col2.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row14.col2.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row01.col2.point2",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row10.col2.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row14.col2.point2",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row02.col2.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row01.col2.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_As-built",
+      "panel": "rbf_primary25C",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row16.col2.point1",
+        "rbf2026_Table1.row05.col2.point1",
+        "rbf2026_Table1.row03.col2.point2",
+        "rbf2026_Table1.row04.col2.point1",
+        "rbf2026_Table1.row06.col2.point2",
+        "rbf2026_Table1.row11.col2.point2",
+        "rbf2026_Table1.row02.col2.point1",
+        "rbf2026_Table1.row02.col2.point2",
+        "rbf2026_Table1.row14.col2.point1",
+        "rbf2026_Table1.row14.col2.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row09.col2.point1",
+        "rbf2026_Table1.row08.col2.point2",
+        "rbf2026_Table1.row12.col2.point3",
+        "rbf2026_Table1.row08.col2.point3",
+        "rbf2026_Table1.row09.col2.point2",
+        "rbf2026_Table1.row10.col2.point1",
+        "rbf2026_Table1.row03.col2.point1",
+        "rbf2026_Table1.row11.col2.point1",
+        "rbf2026_Table1.row06.col2.point1",
+        "rbf2026_Table1.row14.col2.point3",
+        "rbf2026_Table1.row01.col2.point1",
+        "rbf2026_Table1.row08.col2.point1",
+        "rbf2026_Table1.row12.col2.point1",
+        "rbf2026_Table1.row12.col2.point2",
+        "rbf2026_Table1.row01.col2.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row11.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row03.col3.point2",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row14.col3.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row16.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row03.col3.point2",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row10.col3.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row16.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row03.col3.point2",
+        "rbf2026_Table1.row11.col3.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row03.col3.point2",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row03.col3.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row10.col3.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row11.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row03.col3.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row03.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row07.col3.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row03.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row16.col3.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row10.col3.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row03.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row13.col3.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row13.col3.point1",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row03.col3.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row18.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row15.col3.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_25C_HIP",
+      "panel": "rbf_primary25C",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row17.col3.point1",
+        "rbf2026_Table1.row07.col3.point1",
+        "rbf2026_Table1.row16.col3.point2",
+        "rbf2026_Table1.row17.col3.point2",
+        "rbf2026_Table1.row11.col3.point1",
+        "rbf2026_Table1.row01.col3.point1",
+        "rbf2026_Table1.row13.col3.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row14.col3.point1",
+        "rbf2026_Table1.row15.col3.point1",
+        "rbf2026_Table1.row03.col3.point2",
+        "rbf2026_Table1.row05.col3.point1",
+        "rbf2026_Table1.row16.col3.point1",
+        "rbf2026_Table1.row13.col3.point2",
+        "rbf2026_Table1.row11.col3.point2",
+        "rbf2026_Table1.row07.col3.point2",
+        "rbf2026_Table1.row10.col3.point1",
+        "rbf2026_Table1.row10.col3.point2",
+        "rbf2026_Table1.row03.col3.point1",
+        "rbf2026_Table1.row18.col3.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row25.col5.point1",
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row16.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row24.col5.point1",
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row23.col5.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row25.col5.point1",
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row24.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row23.col5.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row24.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row25.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row17.col5.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row25.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row24.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row16.col5.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row24.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row25.col5.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row24.col5.point1",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row25.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row23.col5.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row25.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row24.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row22.col5.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row25.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row24.col5.point1",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row22.col5.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row23.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row22.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row24.col5.point1",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row17.col5.point1",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row25.col5.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_As-built",
+      "panel": "rbf_sensitivity450C",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row17.col5.point2",
+        "rbf2026_Table1.row24.col5.point1",
+        "rbf2026_Table1.row25.col5.point1",
+        "rbf2026_Table1.row23.col5.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row22.col5.point2",
+        "rbf2026_Table1.row23.col5.point2",
+        "rbf2026_Table1.row22.col5.point1",
+        "rbf2026_Table1.row19.col5.point2",
+        "rbf2026_Table1.row19.col5.point1",
+        "rbf2026_Table1.row16.col5.point1",
+        "rbf2026_Table1.row16.col5.point2",
+        "rbf2026_Table1.row17.col5.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row23.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row16.col4.point1",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row20.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row16.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row17.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row18.col4.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row16.col4.point1",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row20.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row21.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row16.col4.point1",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row18.col4.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row16.col4.point1",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row19.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row17.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row22.col4.point2"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row16.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row16.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row22.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row21.col4.point2"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row16.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row17.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row23.col4.point1",
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row16.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row22.col4.point1",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row21.col4.point1"
+      ]
+    },
+    {
+      "dataset_id": "rbf2026_450C_HIP",
+      "panel": "rbf_sensitivity450C",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "rbf2026_Table1.row16.col4.point1",
+        "rbf2026_Table1.row21.col4.point2",
+        "rbf2026_Table1.row17.col4.point1",
+        "rbf2026_Table1.row22.col4.point1"
+      ],
+      "pool_ids": [
+        "rbf2026_Table1.row18.col4.point1",
+        "rbf2026_Table1.row19.col4.point1",
+        "rbf2026_Table1.row21.col4.point1",
+        "rbf2026_Table1.row22.col4.point2",
+        "rbf2026_Table1.row20.col4.point1",
+        "rbf2026_Table1.row18.col4.point2",
+        "rbf2026_Table1.row23.col4.point1"
+      ]
+    }
+  ],
+  "target_source_families": 1,
+  "independence_CI": "not evaluable",
+  "target_family_excluded_from_training": true,
+  "planner": "strict309 hierarchical; shared support sequence for every regime/model",
+  "caps": {
+    "primary": 5000000.0,
+    "planning_sensitivity": 10000000.0
+  },
+  "source_scope": "As-reported RBF outcomes; virgin status and physical independence unverified",
+  "timing": "Protocol and all splits/code saved before any v5RBF fitting/prediction; source outcomes already seen"
+}

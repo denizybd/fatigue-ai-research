@@ -1,0 +1,162 @@
+{
+  "source_doi": "10.26092/elib/4986",
+  "source_pdf_md5_verified": true,
+  "files": {
+    "literature/v5_open/bremen2025/Zhang2025_Bremen_dissertation.pdf": {
+      "bytes": 9538416,
+      "sha256": "2438c2b822cdd3c1cfbc81e7863096a7db0041f0368300f1a25e64a4645ee83a"
+    },
+    "literature/v5_open/bremen2025/Zhang2025_Bremen_dissertation.txt": {
+      "bytes": 479017,
+      "sha256": "ca90927510922d9b8ec19844b7c79c2619a08ad31288d7319cd01f1c0be9fb16"
+    },
+    "literature/v5_open/bremen2025/api_endpoint_discovery.json": {
+      "bytes": 1746,
+      "sha256": "6ff669eec0966850da46cea1c1cf39a1b43528c76f23846bcdcd70f2b5fb58d7"
+    },
+    "literature/v5_open/bremen2025/bitstream_metadata.json": {
+      "bytes": 1917,
+      "sha256": "97712228a4250c49ef5c7e503c1cd32a11bfe14012ce8f0c3e483477de4a3ab0"
+    },
+    "literature/v5_open/bremen2025/bundle_LICENSE_bitstreams.json": {
+      "bytes": 2559,
+      "sha256": "26e13ac030159a26c3671804ae46d4c3f1b9e1ec1ef5288fac56f6165e06a284"
+    },
+    "literature/v5_open/bremen2025/bundle_ORIGINAL_bitstreams.json": {
+      "bytes": 2556,
+      "sha256": "26b089061fed90bd2e199c7ced4130942c10175f851787a23b60b7938bc592cf"
+    },
+    "literature/v5_open/bremen2025/bundle_TEXT_bitstreams.json": {
+      "bytes": 2866,
+      "sha256": "85a0cc75fe88d8c94d9072a47f4c888f80278afe253cf4efff54afb5acb46ff3"
+    },
+    "literature/v5_open/bremen2025/bundle_THUMBNAIL_bitstreams.json": {
+      "bytes": 2865,
+      "sha256": "d1899cb70f66f5c307798010481779e5bc1c4a707216e3655942407bf8695671"
+    },
+    "literature/v5_open/bremen2025/curate_bremen.py": {
+      "bytes": 14346,
+      "sha256": "550e7c3758a72c9500b424c272386879fab03d35677e1b3c465f46b609d544bc"
+    },
+    "literature/v5_open/bremen2025/curation_receipt.json": {
+      "bytes": 2773,
+      "sha256": "c3958215a84def6a7a0b9113ee87d2baff5327cf5bcb4f7dd3df684fd0863ebe"
+    },
+    "literature/v5_open/bremen2025/current_endpoint_access.json": {
+      "bytes": 380,
+      "sha256": "876f08001948e9c609f08a18bb1eab0ded269750b35b195ae9ddfcb4f613aa22"
+    },
+    "literature/v5_open/bremen2025/datacite_article_related.json": {
+      "bytes": 239,
+      "sha256": "48c78153b22fc526737e1950a5597053f29f25c7f53ef03a02571ae2c0381cbd"
+    },
+    "literature/v5_open/bremen2025/datacite_thesis_related.json": {
+      "bytes": 233,
+      "sha256": "f806f94dc5764cb573bf080000e7f139f3565d221b6bc5f4cdbfcaff4fdbbea8"
+    },
+    "literature/v5_open/bremen2025/initial_direct_access.json": {
+      "bytes": 781,
+      "sha256": "01126b2a1f257e42195c593491078cdef8cc6dca12bf391c179d26d5433f84df"
+    },
+    "literature/v5_open/bremen2025/item_bundles.json": {
+      "bytes": 4828,
+      "sha256": "f354fc1f257239b592acd63adf4e912678e2d37b40a4af04fb4e6dc46f2d41f5"
+    },
+    "literature/v5_open/bremen2025/original_bundle.json": {
+      "bytes": 941,
+      "sha256": "fd7344012a6aa90f4dbd3ae87b74335af895fc23ade68643f7822afbe6461851"
+    },
+    "literature/v5_open/bremen2025/related_article_crossref.json": {
+      "bytes": 24803,
+      "sha256": "d83406f56337f8a77ae7601d54c33edc411c07914406f6c520d1638118d98a4b"
+    },
+    "literature/v5_open/bremen2025/repository_bitstreams.json": {
+      "bytes": 2556,
+      "sha256": "26b089061fed90bd2e199c7ced4130942c10175f851787a23b60b7938bc592cf"
+    },
+    "literature/v5_open/bremen2025/repository_item.json": {
+      "bytes": 10984,
+      "sha256": "9c2b3060c21b489902cb6e0ec614919fea24035ab1380dda5c4ce0f686ecab20"
+    },
+    "literature/v5_open/bremen2025/site_1.txt": {
+      "bytes": 443745,
+      "sha256": "d71215b88d3d3f30415fb84836c9668ac8f61d00a8ef97e53661026492cef7f7"
+    },
+    "literature/v5_open/bremen2025/site_2.txt": {
+      "bytes": 162,
+      "sha256": "766c1d6bcb81d3e983fb7adbc19c616d7fc01dafb7893738edc242e2adc59c07"
+    },
+    "literature/v5_open/bremen2025/site_3.txt": {
+      "bytes": 166,
+      "sha256": "76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273"
+    },
+    "literature/v5_open/bremen2025/source_audit.json": {
+      "bytes": 5142,
+      "sha256": "80721497aa4c7845409d083c2dfe663dac207463a12fbc641bbcd4e2a9982677"
+    },
+    "literature/v5_open/bremen2025/visual/page121.png": {
+      "bytes": 534847,
+      "sha256": "f35d71393e9ab2a60283d50bf8affa33fa7814fc1017759cd5db2856f8ad6553"
+    },
+    "literature/v5_open/bremen2025/visual/page155.png": {
+      "bytes": 325447,
+      "sha256": "af9fdc481fa8164f47ccb279a6b811e41a288b849779589774e983dd34ff4209"
+    },
+    "literature/v5_open/bremen2025/visual/page156.png": {
+      "bytes": 209915,
+      "sha256": "7b498da2a2f3b9479b599a5c44bd7dfb01f75ca0d9beb3a40e98f84f05fdcd82"
+    },
+    "literature/v5_open/bremen2025/visual/page165.png": {
+      "bytes": 216470,
+      "sha256": "2292d774f1f8db815e093c1dbd3f3154b04fedd069c72ef1f3db27aebb637478"
+    },
+    "literature/v5_open/bremen2025/visual/page166.png": {
+      "bytes": 172760,
+      "sha256": "ff00732dfb34b5a592d32db43aa88ba6879ea252b4fb9e3d67b63b11d9ca80d1"
+    },
+    "literature/v5_open/bremen2025/visual/page72.png": {
+      "bytes": 370387,
+      "sha256": "64df5959aee643206adcc20aa06093da313e2dec79ecdc7a76e7384e5ce8994e"
+    },
+    "literature/v5_open/bremen2025/visual/page73.png": {
+      "bytes": 264277,
+      "sha256": "743f8f48f2a5650d96392936506d2588ca123a812c397c2227bc0166610b06b5"
+    },
+    "literature/v5_open/bremen2025/visual/page79.png": {
+      "bytes": 481717,
+      "sha256": "c1d06033dfa429b1b47124b87bb3ea758ce94f06074e466634b8df555bbf70ec"
+    },
+    "data/external_v5/bremen2025/316L_powder_composition_2.csv": {
+      "bytes": 614,
+      "sha256": "b22f88113ed22889df27e3d90355efa4d700853d67ee8b3d6cb1be14db71780c"
+    },
+    "data/external_v5/bremen2025/candidate_SN_figure_inventory_5.csv": {
+      "bytes": 1710,
+      "sha256": "c98936b1fcfa1b16839a6f75c09bdb508a18bde4e0cdb082dabff58f16e25085"
+    },
+    "data/external_v5/bremen2025/condition_methods_11.csv": {
+      "bytes": 5428,
+      "sha256": "c52050413feff7dac533e39edd10c4a9181af7ca4d75bbc36c8fd6dffe57b287"
+    },
+    "data/external_v5/bremen2025/data_dictionary.json": {
+      "bytes": 1160,
+      "sha256": "ae5f73024997a710336d18032ee8bd5af9e1d955ad64cf63a12b4b80cb854599"
+    },
+    "data/external_v5/bremen2025/paper_thesis_reuse_links.csv": {
+      "bytes": 447,
+      "sha256": "b7b4652bd1953ff0852749803256ec73a849c93868679d74fde31b814c4d5a75"
+    },
+    "data/external_v5/bremen2025/table3_5_316L_investigation_counts_13.csv": {
+      "bytes": 1491,
+      "sha256": "81dbfa31089f3a288c60596be8781aa00bace0141829391d985c247a44c6c51c"
+    },
+    "data/external_v5/bremen2025/table8_1_fatigue_strength_13.csv": {
+      "bytes": 3584,
+      "sha256": "182c5219dbefc7389b84267c7dbe39911bac1dabcb28485ddf12b131dd41f656"
+    },
+    "data/external_v5/bremen2025/table8_3_316L_status_counts_13.csv": {
+      "bytes": 1907,
+      "sha256": "17ca9d846f42966ae9b1d12181d18cdab5ddd237e5f10950e5856e3fc0ab6e3d"
+    }
+  }
+}

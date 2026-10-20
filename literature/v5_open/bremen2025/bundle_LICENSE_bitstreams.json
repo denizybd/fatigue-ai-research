@@ -1,0 +1,81 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/3be30bca-17bf-43ea-8f2e-882d638a675b/bitstreams"
+    }
+  },
+  "_embedded": {
+    "bitstreams": [
+      {
+        "id": "7c937daa-f1fe-4445-b029-3c8906383da1",
+        "uuid": "7c937daa-f1fe-4445-b029-3c8906383da1",
+        "name": "license.txt",
+        "handle": null,
+        "metadata": {
+          "dc.source": [
+            {
+              "value": "Written by org.dspace.content.LicenseUtils",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "license.txt",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dcterms.accessRights": [
+            {
+              "value": "2025-11-22T18:10:35Z",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "LICENSE",
+        "sizeBytes": 3609,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "225d8b86a158bac51af7d4a556b286a5"
+        },
+        "sequenceId": 2,
+        "type": "bitstream",
+        "uniqueType": "core.bitstream",
+        "_links": {
+          "content": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/7c937daa-f1fe-4445-b029-3c8906383da1/content"
+          },
+          "bundle": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/7c937daa-f1fe-4445-b029-3c8906383da1/bundle"
+          },
+          "accessStatus": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/7c937daa-f1fe-4445-b029-3c8906383da1/accessStatus"
+          },
+          "format": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/7c937daa-f1fe-4445-b029-3c8906383da1/format"
+          },
+          "thumbnail": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/7c937daa-f1fe-4445-b029-3c8906383da1/thumbnail"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/7c937daa-f1fe-4445-b029-3c8906383da1"
+          }
+        }
+      }
+    ]
+  },
+  "page": {
+    "number": 0,
+    "size": 20,
+    "totalPages": 1,
+    "totalElements": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "rows": 70,
+  "air_rows": 52,
+  "air_nominal_stress_primary_rows": 43,
+  "air_local_peak_stress_exploratory_rows": 9,
+  "salt_spray_separate_rows": 18,
+  "primary_builds": [
+    "FS18-019",
+    "FS18-020",
+    "FS19-006"
+  ],
+  "all70_reference_crosschecks": "Exact author long reference matches thesis for every eligible raw plate/specimen key.",
+  "air_events": {
+    "0": 29,
+    "1": 23
+  },
+  "nominal43_events": {
+    "0": 26,
+    "1": 17
+  },
+  "local9_events": {
+    "0": 3,
+    "1": 6
+  },
+  "collision_policy": "Physical keys collided across ANY raw author aliases are excluded, including D0 via K2.",
+  "stress_policy": "No Kt conversion invented. Nine local-stress small-volume specimens are separately marked and excluded from primary nominal-stress panel.",
+  "population_family_exclusion": [
+    "10.1016/j.ijfatigue.2021.106552",
+    "10.1016/j.engfracmech.2022.108883",
+    "10.1016/j.ijfatigue.2025.109107"
+  ],
+  "leakage_policy": "No later step, equivalent-life correction, final fracture stress or postfailure defect measurement retained in final eligible tables.",
+  "validation_status": "Retrospective recovery; no outcome-blind confirmation; no models fitted here."
+}

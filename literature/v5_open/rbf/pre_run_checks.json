@@ -1,0 +1,49 @@
+{
+  "status": "PASS;no models invoked",
+  "checks": {
+    "40frozen_tasks": true,
+    "queries_pools_exact_partition": true,
+    "no_cross_condition_pool": true,
+    "5M_cost_exact": true,
+    "10M_cost_interval": true,
+    "empty_support_cost_zero": true
+  },
+  "expected_counts": {
+    "rbf_primary25C": {
+      "tasks": 20,
+      "predictions_per_cap": 32640,
+      "selection_rows_per_cap": 800,
+      "pool_sizes": [
+        12,
+        15
+      ],
+      "query_sizes": [
+        7,
+        10
+      ]
+    },
+    "rbf_sensitivity450C": {
+      "tasks": 20,
+      "predictions_per_cap": 11520,
+      "selection_rows_per_cap": 400,
+      "pool_sizes": [
+        7,
+        8
+      ],
+      "query_sizes": [
+        4
+      ]
+    }
+  },
+  "code_sha256": {
+    "v5_rbf.py": "ae35cad81bdc81bbb2ac980c2fcf8284194309f660446f2bc0a00aa83e115d7c",
+    "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+    "v3_design.py": "dc6c2c625c1bf98dc5ff82ea5154b76f658ab89d0ce02b57de1ae6b12b0879db",
+    "v3_summarize.py": "2fa5242eeb7e9f00f262e2d85cb7f3757a1dea0fb5263467c5cca42d3d2592aa",
+    "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+    "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+    "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+  },
+  "protocol_sha256": "3dfcb673d47ed201f01eedeea8e60b9e051e978e982eb96619ff386c1e4f91c8",
+  "splits_sha256": "f63e5de48a9c60e63cb3a7428ee6ef812e912e88ceab923ae88c666747363394"
+}

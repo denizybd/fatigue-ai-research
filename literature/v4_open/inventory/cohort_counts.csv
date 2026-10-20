@@ -1,0 +1,7 @@
+cohort,path,rows,database_conditions,source_dois,failures,right_censors,interpretation
+ordinary1473,data/processed/ss316l_lpbf_all.csv,1473,160,46,1293,180,"All positive ordinary316L LPBF database S-N records, including unresolved/derived/reused records and nonaxial modes."
+old_primary1126,data/processed/primary.csv,1126,120,37,987,139,Database-filtered axial force20–30C Kt≈1 candidates; default fields are not certified primary-source measurements.
+strict309,data/processed/v2/strict_fulltraining/cohort.csv,309,32,11,262,47,Existing source-method-reviewed CA cohort; no need for specimen/build IDs to train or do source-family holdout.
+old_broader565,data/processed/v2/broader_fulltraining/cohort.csv,565,61,25,500,65,"Exploratory legacy sensitivity, not source-verified broad training; contains known republished/linked duplicate points."
+all_except_stepped1028,data/processed/v2/all/cohort.csv,1028,117,36,930,98,Legacy primary minus98 known stepped records; still includes other quarantine/reuse categories.
+coordinate_dedup_sensitivity942,data/processed/primary_deduplicated_sensitivity.csv,942,110,36,819,123,Geometric-coordinate sensitivity; not942 proven physical specimens.

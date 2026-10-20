@@ -1,0 +1,1 @@
+EBSD data used for Figure 2 (a-d). The surface of the specimens was electrolytically polished. Observations were made using Tescan Lyra 3 FED-SEM, operated at 20 kV, and the EBSD detector Oxford Symmetry. The EBSD data are in the standard channel5 format, used in the Oxford Instruments-based software.

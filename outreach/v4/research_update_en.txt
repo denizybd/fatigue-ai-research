@@ -1,0 +1,16 @@
+UNSENT RESEARCH UPDATE — for human review after the earlier data request
+
+Subject: Open-data fatigue benchmark: source-controlled training expansion and few-test design
+
+Dear Professor Tridello,
+
+While pursuing the data request for your SS316L probabilistic-learning study (10.1016/j.engfailanal.2024.109081), I have continued an open-data investigation with AI-assisted source tracing and reproducible coding. A method-reviewed training set now contains441 observations from14publications, grouped into13source blocks. A separate2025 numerical table and two source-family holdouts support controlled comparisons of six censored statistical/physical baselines and four few-test acquisition policies.
+
+The result is bounded: extra training evidence reduced zero-shot violations on one new source but did not establish90%design reliability after three local tests. High-stress selection reduced replay support cycles by about68–71% on two source families, while reducing the proposed lower-life utility relative to random selection. The attached addendum includes provenance limits, shared query/support controls, negative results and a clean numerical replay. It is not a reproduction of your unavailable518records or a demonstrated improvement over your BNN.
+
+If this question is relevant to your fatigue-design work, I would value brief feedback on whether this paired safety/utility/cost evaluation would be useful for testing on additional independently documented campaigns.
+
+Best regards,
+[Name and actual background to be supplied by the human]
+
+Do not send automatically. No personal credentials or institutional affiliation are inferred.

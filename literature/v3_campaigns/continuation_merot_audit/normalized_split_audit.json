@@ -1,0 +1,202 @@
+{
+  "audit_at_utc": "2026-10-20T16:16:05.908214+00:00",
+  "auditor": "independent v3_campaign_raw agent; no source/parent code modifications or fits",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "producer_units_row",
+      "pass": true
+    },
+    {
+      "check": "independent_unique_first_exposure_count70",
+      "pass": true
+    },
+    {
+      "check": "all_alias_collision_scan_includes_D0_K2",
+      "pass": true
+    },
+    {
+      "check": "verified70_equals_independently_eligible_aliases",
+      "pass": true
+    },
+    {
+      "check": "normalized52_equals_all_independently_eligible_air20C",
+      "pass": true
+    },
+    {
+      "check": "all52_raw_endpoint_stress_identity_and_source_checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "normalized_unique_row_alias_physical_keys",
+      "pass": true
+    },
+    {
+      "check": "no_later_step_equivalent_or_fractography_columns_in_normalized",
+      "pass": true
+    },
+    {
+      "check": "primary43_17failure26censor_and_local9_6failure3censor",
+      "pass": true
+    },
+    {
+      "check": "all_air_first_block_censors_recorded_at1e6",
+      "pass": true
+    },
+    {
+      "check": "cohort_unique_row_ids",
+      "pass": true
+    },
+    {
+      "check": "all52_cohort_values_equal_normalized_source",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "cohort_hash_matches_frozen",
+      "pass": true
+    },
+    {
+      "check": "all_frozen_input_hashes_current",
+      "pass": true
+    },
+    {
+      "check": "frozen_main_and_extension_protocol_hashes_current",
+      "pass": true
+    },
+    {
+      "check": "all_frozen_task_partitions_ranking_budgets_and_family_exclusion",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "merot_four_datasets_each10seeds",
+      "pass": true
+    },
+    {
+      "check": "runner_static_common_query_and_outcome_free_candidate_payload",
+      "pass": true
+    }
+  ],
+  "counts": {
+    "raw_loading_block_rows": 262,
+    "raw_aliases": 103,
+    "raw_physical_collision_keys": 10,
+    "independent_verified_first_exposures": 70,
+    "air20C_normalized": 52,
+    "primary_nominal": 43,
+    "local_stress_secondary": 9,
+    "source_programs": 1,
+    "physical_builds": 3,
+    "powder_lots": 2,
+    "frozen_all_rows": 496,
+    "frozen_all_tasks": 340,
+    "merot_tasks": 40,
+    "primary_replay_tasks": 30,
+    "local_replay_tasks": 10
+  },
+  "conditions": [
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "rows": 12,
+      "failures": 2,
+      "censors": 10,
+      "stress_levels": 6,
+      "replayed": true,
+      "panel": "external_identity_qualified_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "rows": 10,
+      "failures": 9,
+      "censors": 1,
+      "stress_levels": 5,
+      "replayed": true,
+      "panel": "external_identity_qualified_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "rows": 9,
+      "failures": 2,
+      "censors": 7,
+      "stress_levels": 3,
+      "replayed": true,
+      "panel": "external_identity_qualified_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS18-020_reference_air_Rminus1",
+      "rows": 5,
+      "failures": 3,
+      "censors": 2,
+      "stress_levels": 3,
+      "replayed": false,
+      "panel": "external_identity_qualified_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "rows": 9,
+      "failures": 6,
+      "censors": 3,
+      "stress_levels": 6,
+      "replayed": true,
+      "panel": "external_identity_localstress_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS19-006_edm_defect_air_Rminus1",
+      "rows": 4,
+      "failures": 0,
+      "censors": 4,
+      "stress_levels": 3,
+      "replayed": false,
+      "panel": "external_identity_qualified_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS19-006_precorroded_air_Rminus1",
+      "rows": 2,
+      "failures": 0,
+      "censors": 2,
+      "stress_levels": 2,
+      "replayed": false,
+      "panel": "external_identity_qualified_firstblock"
+    },
+    {
+      "dataset_id": "merot_FS19-006_reference_air_Rminus1",
+      "rows": 1,
+      "failures": 1,
+      "censors": 0,
+      "stress_levels": 1,
+      "replayed": false,
+      "panel": "external_identity_qualified_firstblock"
+    }
+  ],
+  "input_sha256": {
+    "data/external_v3/continuation_papers/data_fatigue_merot.csv": "bb5e9ce46a7f7827aef50f2188f059c6833ca3dab9110cec1613c628a2e16b5e",
+    "data/external_v3/continuation_papers/merot_first_exposure_unique_physical70_verified.csv": "2b6b775484ba5eb25f0d5a90ff944bac175f092c74ceb3387e00d18cf608e618",
+    "data/processed/v3/firstblock/merot52.csv": "c5213495915da06eacf6910fc6b9b3f167cabe162be5c40d14784c7c2d43b359",
+    "data/processed/v3/identity_extension/cohort.csv": "fe8a95b46ef8b36c35e929aeab095774e9ad214a1c087d71a19268df0d12743f",
+    "data/processed/v3/identity_extension/frozen_splits.json": "9c2ad40ae1a4a5e6df1ef96928850abde27b256b712b9775b86f34e7b1cf9af9",
+    "src/v3_firstblock_import.py": "3cffdeda1e6c26808f4223a9487a926954129c94fa7a95b76c1e137e19ca51d7",
+    "src/v3_prepare.py": "972914bfd286e36e8da3816c471d7a19bd773e220c3011c45caf28f73cb2cf1b",
+    "src/v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+    "src/v3_design.py": "dc6c2c625c1bf98dc5ff82ea5154b76f658ab89d0ce02b57de1ae6b12b0879db",
+    "protocols/v3/virgin_first_exposure_extension.txt": "1a85e8ae169e8f2432653614f5b20f3ad208e7844e3b94645ea61e80f1013ed9",
+    "literature/v3_campaigns/continuation_papers/Merot2021_thesis.pdf": "8c858848ca1a27bcc42e04ca60cfbf146048b53f80b76d7d05ecef459b6ea26a"
+  },
+  "source_evidence": {
+    "build_table": "Thesis PDF85/Table2.1 visually inspected independently;02/03 physical builds share powder lot",
+    "naming_and_long_refs": "PDF84 naming and PDF279-280 exact author long reference to short alias matches for all52",
+    "methods": "Primary PDF114-115 independently extracted: air\u224820C,R\u22121,forcecontrol,1e6blocks; nominal/local stress distinction",
+    "raw_endpoint": "Fracture oui/non and N from the same original Step0 record only"
+  },
+  "limits": [
+    "Retrospective source recovery; no evidence of outcome-blind confirmation.",
+    "One author research program, not three independent campaigns.",
+    "43 primary rows retained; only 31 rows in three conditions meet frozen n>=6 pilot threshold.",
+    "Nine local-stress rows are separate sensitivity; no Kt correction invented.",
+    "No feasible k10 in Merot replay tasks; only k0/3/5.",
+    "Population family exclusion is verified, but the three linked DOI groups are already absent from the309-row historical cohort; exclusion is thus precautionary.",
+    "Common query is verified from frozen split and runner code; this audit did not run models or inspect predicted outcomes.",
+    "At cap1e7, observed first-stop censoring remains1e6; planning availability misspecification must remain disclosed."
+  ]
+}

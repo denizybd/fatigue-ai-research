@@ -1,0 +1,57 @@
+{
+  "retrieved_at_utc": "2026-10-20T16:53:42.933194+00:00",
+  "requests": [
+    {
+      "file": "crossref_live.json",
+      "url": "https://api.crossref.org/works/10.1016/j.ijfatigue.2026.109943",
+      "status": 200,
+      "bytes": 14822,
+      "sha256": "e85948a06fe457aaf46af0b2de12d3c5436a746809b208a44f103b69b681c332",
+      "final_url": "https://api.crossref.org/works/10.1016/j.ijfatigue.2026.109943"
+    },
+    {
+      "file": "openalex_live.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ijfatigue.2026.109943",
+      "status": 200,
+      "bytes": 14445,
+      "sha256": "ba1415aad919c7c16b124bb4092730d1f045933f10c3284298121469fbe2c888",
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ijfatigue.2026.109943"
+    },
+    {
+      "file": "ntu_repository_home.html",
+      "url": "https://dr.ntu.edu.sg/",
+      "status": 405,
+      "bytes": 2113,
+      "sha256": "7dc8d976910f139d2d0b2f57514e91339b3d6c237ac5cd62d10a8630818a256f",
+      "final_url": "https://dr.ntu.edu.sg/",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "file": "wu_orcid_person.json",
+      "url": "https://pub.orcid.org/v3.0/0009-0001-8518-283X/person",
+      "status": 200,
+      "bytes": 926,
+      "sha256": "b381257feb53040bb469d920bd73f078780639503fb05b238ded5755e1de869b",
+      "final_url": "https://pub.orcid.org/v3.0/0009-0001-8518-283X/person",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "file": "wu_orcid_works.json",
+      "url": "https://pub.orcid.org/v3.0/0009-0001-8518-283X/works",
+      "status": 200,
+      "bytes": 3440,
+      "sha256": "841c4081712cd4902e3ab45c16e1b8985eb1b517b8fe04d3f945e1f57a91da6e",
+      "final_url": "https://pub.orcid.org/v3.0/0009-0001-8518-283X/works",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "file": "publisher_public_api.xml",
+      "url": "https://api.elsevier.com/content/article/PII:S0142112326004640?httpAccept=text/xml",
+      "status": 200,
+      "bytes": 1896,
+      "sha256": "024c347869c142af50c0672b235274a65762bfbe3e2ed88fbbbec69483cd8c63",
+      "final_url": "https://api.elsevier.com/content/article/PII:S0142112326004640?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8"
+    }
+  ]
+}

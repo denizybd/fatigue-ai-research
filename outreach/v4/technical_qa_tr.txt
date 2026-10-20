@@ -1,0 +1,31 @@
+V4 — açıklayabilmek için kısa soru/cevap
+
+Ne yaptım?
+Açık kaynaklardan veri ve yöntem kanıtı topladık; tekrarlanan yayınları, sansürü ve deney türlerini ayırıp aynı test nüfusunda eğitim/veri ve deney-seçimi karşılaştırması kurduk. Kaynak izleme ve kodlama AI yardımıyla yapıldı; çıktının doğruluğunu kaynak ve tekrar çalıştırma kayıtları destekliyor. Bilinmeyen kişisel uzmanlık iddiası yok.
+
+441 nereden geliyor?
+Önceki309kayda132yeni kaynak-doğrulaması yapıldı.132nokta zaten açık veri tabanındaydı; şimdi üç yayının özgün CA gözlemleri olarak doğrulandı ve iki kaynak ailesinde bloklandı. Toplam48koşul/14yayın/13blok. Bu441bağımsız parti anlamına gelmez.
+
+Yeni69gözlem nedir?
+2025YankinTablo3'teki64kırılma+5runout.25'i/dörtkoşulu n>=6 edinim kuralına uygun. Tablo numarası fiziksel laboratuvar/parti kimliği değildir. Test sıcaklığı ve açık geri-besleme kontrol türü bildirilmedi; bunları varsaymadık.
+
+Başardık mı?
+Açık veri toplama, denetimli veri seti ve yeniden çalıştırılabilir kıyas kurma bakımından evet. Genel güvenli AI veya her modelde üstün gerilme seçimi bakımından henüz hayır.
+
+Ek veri ne sağladı?
+Yeni kaynakta sıfır yerel deneyle hiyerarşik ihlal57.5%→46.7%;üçyereldeneyle iki rejimde de20%.10%hedefi sağlanmadı. Bu oranlar tekprogram/koşul-ortalamalı tekrar ölçümleri; genelleme güven aralığı yok.
+
+Neden yüksek gerilme her zaman iyi değil?
+Deneyi daha çabuk bitirebilir; fakat hedef gerilme aralığını yeterince temsil etmezse alt ömür tahmini kısalabilir. İki ailede k3 maliyet68–71%azalırken hiyerarşik ömür0.87–0.89×,RFL0.69×oldu.
+
+Ham milyonlarca ölçüm ne anlama geliyor?
+Bir numunenin çok sık kaydedilmiş kuvvet/gerinim zamanları. Bir milyon ölçüm bir milyon bağımsız deney değildir.7Jambor numunesi planlı olarak durdurulmuş; bu kayıtların son satırını kırılma ömrü saymadık.
+
+Orijinal518verinin aynısı mı?
+Hayır.441eğitim setinin17orijinal kaynağa DOIörtüşmesi8/17. Satır/koşul eşitliği yok; riskhacmi/SWT/Owenhedefi birebir kurulmadı.
+
+Güçlü taraf ve eksik taraf?
+Güçlü taraf kaynak denetimi, aynı sorgu/destekler, güçlü sansürlü baselines, negatif sonucun korunması ve84CSV'nin temiz ortamda birebir tekrarı. Eksik taraf bağımsız kampanya sayısı, kesin numune–parti eşlemesi, yeni kaynakta düşük risk ve tutarlı fayda.
+
+RBF67tablosu?
+Ayrı döner-eğme/sıcaklık verisi.25nokta önceki kaynaktan tekrar; diğer üç koşul42nokta. Mevcut eksenel modellere eklenmedi.

@@ -1,0 +1,3 @@
+Metadata-qualified pilot only, not a complete independent confirmatory validation.
+Eight named Dastgerdi2023 records have explicit single-build lineage; six uninterrupted pretests are separately exported. Two XCT records remain in the audit file only for interruption review. Test temperature is not explicitly stated. Entire Dastgerdi2022/2023 family must be removed from source training before any target experiment. Article/Table1 CC BY. No underlying CT raw data were obtained.
+Liang indexed table is not in this data directory because physical tray IDs are not color-verified; its transcription remains in literature/v3_campaigns/paper_supplements as quarantine.

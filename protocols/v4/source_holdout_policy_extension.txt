@@ -1,0 +1,34 @@
+V4B: SOURCE-FAMILY-HELD-OUT POLICY EXTENSION
+20 October2026. Added after the four training regimes of the v4 target-table
+comparison finished, but BEFORE parent inspected any v4 numerical summaries.
+Reason is design-only: three of four n6/n7 Yankin conditions exhaust their pool
+at k3. This limits its policy contrasts; its training-expansion comparison remains
+valid. Do not alter its existing outputs or pretend this extension was the first
+protocol. All public source outcomes were inspected during curation: exploratory.
+
+Target the132 newly source-qualified historical coordinates. All132 are retained;
+115records/11conditions satisfy the inherited n>=6/common-query acquisition rule,
+in TWO conservative source families.17records/five smallconditions are outside
+this policy replay, not invalidated or dropped from the collection/training.
+Same hash salt,seeds0..9,query=max(3,floor(.4*n)),feasiblek0/3/5/10, and bothcaps
+C1e7primary/C1e6sensitivity. No condition has enough support for k10. Outcomes
+and censoring use the primary-source-corrected132CSV. Numeric25C/Kt1 defaults
+were removed; ambient qualitative statements do not become exact measurements.
+
+PopulationA=strict309; populationB=441 MINUS THE ENTIRE TARGET FAMILY.
+Thus when Zhang family is queried B=347 (A+Elanges38); when Elanges family is
+queried B=403 (A+Zhang94). Never fit B to another condition/DOI of its target
+family. Those two populations and their fits were already predeclared in the
+main v4 source-omission sensitivity. No new model/hyperparameter choice is made.
+Use the SAME A309 hierarchical selection planner and identical revealed support
+sequences for both regimes and all six predictors, four unchanged policies.
+Models' k0 and matched-intercept semantics, metrics and limitations unchanged.
+
+Freeze targetrowIDs,query/pool IDs,input/protocol/codehashes before extension
+predictions. Compare policies on the samequeries/supportbudgets. Compare training
+B-vA on exactly the samequeries and supportsequences. Report source-specific
+heterogeneity; two-family bootstrap intervals are descriptive and cannot certify
+general safe design. Do not count3papers,11conditions or110hash tasks as those
+many independent campaigns. Distinguish these digitized/source-qualified curves
+from the newer numericalTable3 and the gold physical-lineage Mérot panel.
+No result-based exclusions,tuning or new success thresholds. No correspondence.

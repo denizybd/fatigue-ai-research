@@ -1,0 +1,8 @@
+{
+  "url": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/content",
+  "discovery": "REST namespace /server taken from current official HTML configuration",
+  "status": 200,
+  "content_type": "application/pdf;charset=UTF-8",
+  "bytes": 9538416,
+  "sha256": "2438c2b822cdd3c1cfbc81e7863096a7db0041f0368300f1a25e64a4645ee83a"
+}

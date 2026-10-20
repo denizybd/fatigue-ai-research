@@ -1,0 +1,16 @@
+{
+  "parser": "jmpio-python",
+  "commit": "5e9d49f",
+  "source": "https://github.com/martyblaber/jmpio-python",
+  "local_patch": "column.py casts each NumPy length scalar to Python int before byte-offset arithmetic; fixes NumPy2 overflow. Original downloaded source ZIP preserved.",
+  "all_table_rows": 231,
+  "all_table_columns": 47,
+  "named_APL_FY23_FY24_rows": 18,
+  "complete_rows": 14,
+  "failures": 11,
+  "runouts": 3,
+  "maximum_unit_conversion_absolute_residual_MPa": 0.0,
+  "strict_build_mapped_campaigns": 0,
+  "embedded_scripts_executed": false,
+  "no_model_fitting_performed": true
+}

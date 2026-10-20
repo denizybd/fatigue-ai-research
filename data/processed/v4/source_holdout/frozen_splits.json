@@ -1,0 +1,2803 @@
+{
+  "protocol_sha256": "8735975a007138ec51a8ef79adf32fa6e53d98be84fd5b1d7e56835c9e13b3a4",
+  "target_sha256": "22422c15505812d09561b33ed60ccf3b527c3b66533d0bc1a020f90a2f6029a6",
+  "source_sha256": "1d0f6c03c9938b36f2450aedd9a45ed5900f087779fb3163963a9323c48c567c",
+  "main_split_sha256": "b75c2fa8002ca9733e06d48555cf635f936b3b959f939cb4b0298c9918223aee",
+  "tasks": [
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p006",
+        "a0142_d006_p001",
+        "a0142_d006_p004",
+        "a0142_d006_p007"
+      ],
+      "pool_ids": [
+        "a0142_d006_p003",
+        "a0142_d006_p005",
+        "a0142_d006_p000",
+        "a0142_d006_p009",
+        "a0142_d006_p002",
+        "a0142_d006_p008"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p000",
+        "a0142_d006_p008",
+        "a0142_d006_p002",
+        "a0142_d006_p005"
+      ],
+      "pool_ids": [
+        "a0142_d006_p006",
+        "a0142_d006_p007",
+        "a0142_d006_p004",
+        "a0142_d006_p009",
+        "a0142_d006_p001",
+        "a0142_d006_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p003",
+        "a0142_d006_p008",
+        "a0142_d006_p005",
+        "a0142_d006_p007"
+      ],
+      "pool_ids": [
+        "a0142_d006_p000",
+        "a0142_d006_p004",
+        "a0142_d006_p001",
+        "a0142_d006_p002",
+        "a0142_d006_p006",
+        "a0142_d006_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p000",
+        "a0142_d006_p008",
+        "a0142_d006_p001",
+        "a0142_d006_p009"
+      ],
+      "pool_ids": [
+        "a0142_d006_p004",
+        "a0142_d006_p006",
+        "a0142_d006_p003",
+        "a0142_d006_p002",
+        "a0142_d006_p005",
+        "a0142_d006_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p004",
+        "a0142_d006_p003",
+        "a0142_d006_p000",
+        "a0142_d006_p006"
+      ],
+      "pool_ids": [
+        "a0142_d006_p008",
+        "a0142_d006_p001",
+        "a0142_d006_p009",
+        "a0142_d006_p005",
+        "a0142_d006_p002",
+        "a0142_d006_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p001",
+        "a0142_d006_p000",
+        "a0142_d006_p008",
+        "a0142_d006_p004"
+      ],
+      "pool_ids": [
+        "a0142_d006_p005",
+        "a0142_d006_p003",
+        "a0142_d006_p006",
+        "a0142_d006_p002",
+        "a0142_d006_p009",
+        "a0142_d006_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p008",
+        "a0142_d006_p000",
+        "a0142_d006_p002",
+        "a0142_d006_p007"
+      ],
+      "pool_ids": [
+        "a0142_d006_p006",
+        "a0142_d006_p009",
+        "a0142_d006_p003",
+        "a0142_d006_p005",
+        "a0142_d006_p001",
+        "a0142_d006_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p007",
+        "a0142_d006_p006",
+        "a0142_d006_p001",
+        "a0142_d006_p003"
+      ],
+      "pool_ids": [
+        "a0142_d006_p008",
+        "a0142_d006_p004",
+        "a0142_d006_p002",
+        "a0142_d006_p000",
+        "a0142_d006_p005",
+        "a0142_d006_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p004",
+        "a0142_d006_p003",
+        "a0142_d006_p007",
+        "a0142_d006_p006"
+      ],
+      "pool_ids": [
+        "a0142_d006_p008",
+        "a0142_d006_p001",
+        "a0142_d006_p009",
+        "a0142_d006_p000",
+        "a0142_d006_p005",
+        "a0142_d006_p002"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0142_d006_p005",
+        "a0142_d006_p004",
+        "a0142_d006_p002",
+        "a0142_d006_p003"
+      ],
+      "pool_ids": [
+        "a0142_d006_p001",
+        "a0142_d006_p009",
+        "a0142_d006_p007",
+        "a0142_d006_p006",
+        "a0142_d006_p008",
+        "a0142_d006_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p005",
+        "a0142_d007_p003",
+        "a0142_d007_p000"
+      ],
+      "pool_ids": [
+        "a0142_d007_p002",
+        "a0142_d007_p001",
+        "a0142_d007_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p003",
+        "a0142_d007_p000",
+        "a0142_d007_p002"
+      ],
+      "pool_ids": [
+        "a0142_d007_p001",
+        "a0142_d007_p005",
+        "a0142_d007_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p003",
+        "a0142_d007_p005",
+        "a0142_d007_p001"
+      ],
+      "pool_ids": [
+        "a0142_d007_p004",
+        "a0142_d007_p000",
+        "a0142_d007_p002"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p005",
+        "a0142_d007_p003",
+        "a0142_d007_p004"
+      ],
+      "pool_ids": [
+        "a0142_d007_p000",
+        "a0142_d007_p002",
+        "a0142_d007_p001"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p004",
+        "a0142_d007_p003",
+        "a0142_d007_p002"
+      ],
+      "pool_ids": [
+        "a0142_d007_p001",
+        "a0142_d007_p005",
+        "a0142_d007_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p002",
+        "a0142_d007_p005",
+        "a0142_d007_p000"
+      ],
+      "pool_ids": [
+        "a0142_d007_p003",
+        "a0142_d007_p001",
+        "a0142_d007_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p000",
+        "a0142_d007_p005",
+        "a0142_d007_p004"
+      ],
+      "pool_ids": [
+        "a0142_d007_p001",
+        "a0142_d007_p002",
+        "a0142_d007_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p000",
+        "a0142_d007_p002",
+        "a0142_d007_p005"
+      ],
+      "pool_ids": [
+        "a0142_d007_p004",
+        "a0142_d007_p003",
+        "a0142_d007_p001"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p004",
+        "a0142_d007_p003",
+        "a0142_d007_p002"
+      ],
+      "pool_ids": [
+        "a0142_d007_p001",
+        "a0142_d007_p000",
+        "a0142_d007_p005"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "a0142_d007_p001",
+        "a0142_d007_p005",
+        "a0142_d007_p000"
+      ],
+      "pool_ids": [
+        "a0142_d007_p002",
+        "a0142_d007_p003",
+        "a0142_d007_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p008",
+        "a0146_d000_p004",
+        "a0146_d000_p006",
+        "a0146_d000_p009"
+      ],
+      "pool_ids": [
+        "a0146_d000_p005",
+        "a0146_d000_p007",
+        "a0146_d000_p003",
+        "a0146_d000_p001",
+        "a0146_d000_p010",
+        "a0146_d000_p000",
+        "a0146_d000_p002"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p009",
+        "a0146_d000_p005",
+        "a0146_d000_p001",
+        "a0146_d000_p000"
+      ],
+      "pool_ids": [
+        "a0146_d000_p003",
+        "a0146_d000_p002",
+        "a0146_d000_p008",
+        "a0146_d000_p004",
+        "a0146_d000_p007",
+        "a0146_d000_p006",
+        "a0146_d000_p010"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p003",
+        "a0146_d000_p006",
+        "a0146_d000_p004",
+        "a0146_d000_p010"
+      ],
+      "pool_ids": [
+        "a0146_d000_p002",
+        "a0146_d000_p009",
+        "a0146_d000_p005",
+        "a0146_d000_p007",
+        "a0146_d000_p008",
+        "a0146_d000_p001",
+        "a0146_d000_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p004",
+        "a0146_d000_p010",
+        "a0146_d000_p002",
+        "a0146_d000_p001"
+      ],
+      "pool_ids": [
+        "a0146_d000_p006",
+        "a0146_d000_p005",
+        "a0146_d000_p000",
+        "a0146_d000_p007",
+        "a0146_d000_p003",
+        "a0146_d000_p008",
+        "a0146_d000_p009"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p008",
+        "a0146_d000_p006",
+        "a0146_d000_p000",
+        "a0146_d000_p003"
+      ],
+      "pool_ids": [
+        "a0146_d000_p010",
+        "a0146_d000_p009",
+        "a0146_d000_p005",
+        "a0146_d000_p001",
+        "a0146_d000_p007",
+        "a0146_d000_p002",
+        "a0146_d000_p004"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p000",
+        "a0146_d000_p005",
+        "a0146_d000_p009",
+        "a0146_d000_p006"
+      ],
+      "pool_ids": [
+        "a0146_d000_p004",
+        "a0146_d000_p007",
+        "a0146_d000_p003",
+        "a0146_d000_p002",
+        "a0146_d000_p001",
+        "a0146_d000_p010",
+        "a0146_d000_p008"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p005",
+        "a0146_d000_p007",
+        "a0146_d000_p006",
+        "a0146_d000_p003"
+      ],
+      "pool_ids": [
+        "a0146_d000_p008",
+        "a0146_d000_p001",
+        "a0146_d000_p009",
+        "a0146_d000_p002",
+        "a0146_d000_p004",
+        "a0146_d000_p010",
+        "a0146_d000_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p004",
+        "a0146_d000_p005",
+        "a0146_d000_p009",
+        "a0146_d000_p007"
+      ],
+      "pool_ids": [
+        "a0146_d000_p010",
+        "a0146_d000_p008",
+        "a0146_d000_p000",
+        "a0146_d000_p002",
+        "a0146_d000_p006",
+        "a0146_d000_p003",
+        "a0146_d000_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p000",
+        "a0146_d000_p005",
+        "a0146_d000_p001",
+        "a0146_d000_p010"
+      ],
+      "pool_ids": [
+        "a0146_d000_p002",
+        "a0146_d000_p004",
+        "a0146_d000_p009",
+        "a0146_d000_p006",
+        "a0146_d000_p007",
+        "a0146_d000_p003",
+        "a0146_d000_p008"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d000_p010",
+        "a0146_d000_p003",
+        "a0146_d000_p009",
+        "a0146_d000_p008"
+      ],
+      "pool_ids": [
+        "a0146_d000_p002",
+        "a0146_d000_p001",
+        "a0146_d000_p004",
+        "a0146_d000_p000",
+        "a0146_d000_p006",
+        "a0146_d000_p007",
+        "a0146_d000_p005"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p006",
+        "a0146_d001_p008",
+        "a0146_d001_p001",
+        "a0146_d001_p007"
+      ],
+      "pool_ids": [
+        "a0146_d001_p000",
+        "a0146_d001_p005",
+        "a0146_d001_p009",
+        "a0146_d001_p003",
+        "a0146_d001_p002",
+        "a0146_d001_p004"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p009",
+        "a0146_d001_p005",
+        "a0146_d001_p006",
+        "a0146_d001_p007"
+      ],
+      "pool_ids": [
+        "a0146_d001_p000",
+        "a0146_d001_p003",
+        "a0146_d001_p001",
+        "a0146_d001_p002",
+        "a0146_d001_p004",
+        "a0146_d001_p008"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p009",
+        "a0146_d001_p007",
+        "a0146_d001_p006",
+        "a0146_d001_p003"
+      ],
+      "pool_ids": [
+        "a0146_d001_p002",
+        "a0146_d001_p001",
+        "a0146_d001_p005",
+        "a0146_d001_p008",
+        "a0146_d001_p000",
+        "a0146_d001_p004"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p007",
+        "a0146_d001_p008",
+        "a0146_d001_p000",
+        "a0146_d001_p009"
+      ],
+      "pool_ids": [
+        "a0146_d001_p003",
+        "a0146_d001_p001",
+        "a0146_d001_p005",
+        "a0146_d001_p006",
+        "a0146_d001_p004",
+        "a0146_d001_p002"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p002",
+        "a0146_d001_p006",
+        "a0146_d001_p007",
+        "a0146_d001_p005"
+      ],
+      "pool_ids": [
+        "a0146_d001_p009",
+        "a0146_d001_p001",
+        "a0146_d001_p003",
+        "a0146_d001_p000",
+        "a0146_d001_p008",
+        "a0146_d001_p004"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p003",
+        "a0146_d001_p004",
+        "a0146_d001_p005",
+        "a0146_d001_p001"
+      ],
+      "pool_ids": [
+        "a0146_d001_p008",
+        "a0146_d001_p002",
+        "a0146_d001_p009",
+        "a0146_d001_p006",
+        "a0146_d001_p007",
+        "a0146_d001_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p000",
+        "a0146_d001_p002",
+        "a0146_d001_p001",
+        "a0146_d001_p004"
+      ],
+      "pool_ids": [
+        "a0146_d001_p009",
+        "a0146_d001_p005",
+        "a0146_d001_p003",
+        "a0146_d001_p006",
+        "a0146_d001_p007",
+        "a0146_d001_p008"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p005",
+        "a0146_d001_p008",
+        "a0146_d001_p000",
+        "a0146_d001_p007"
+      ],
+      "pool_ids": [
+        "a0146_d001_p006",
+        "a0146_d001_p004",
+        "a0146_d001_p001",
+        "a0146_d001_p009",
+        "a0146_d001_p003",
+        "a0146_d001_p002"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p003",
+        "a0146_d001_p006",
+        "a0146_d001_p000",
+        "a0146_d001_p002"
+      ],
+      "pool_ids": [
+        "a0146_d001_p009",
+        "a0146_d001_p001",
+        "a0146_d001_p007",
+        "a0146_d001_p004",
+        "a0146_d001_p008",
+        "a0146_d001_p005"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d001_p007",
+        "a0146_d001_p005",
+        "a0146_d001_p003",
+        "a0146_d001_p002"
+      ],
+      "pool_ids": [
+        "a0146_d001_p000",
+        "a0146_d001_p006",
+        "a0146_d001_p009",
+        "a0146_d001_p001",
+        "a0146_d001_p004",
+        "a0146_d001_p008"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p006",
+        "a0146_d002_p000",
+        "a0146_d002_p003"
+      ],
+      "pool_ids": [
+        "a0146_d002_p007",
+        "a0146_d002_p004",
+        "a0146_d002_p002",
+        "a0146_d002_p001",
+        "a0146_d002_p005"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p001",
+        "a0146_d002_p006",
+        "a0146_d002_p004"
+      ],
+      "pool_ids": [
+        "a0146_d002_p000",
+        "a0146_d002_p003",
+        "a0146_d002_p007",
+        "a0146_d002_p005",
+        "a0146_d002_p002"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p000",
+        "a0146_d002_p003",
+        "a0146_d002_p005"
+      ],
+      "pool_ids": [
+        "a0146_d002_p004",
+        "a0146_d002_p001",
+        "a0146_d002_p007",
+        "a0146_d002_p002",
+        "a0146_d002_p006"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p004",
+        "a0146_d002_p005",
+        "a0146_d002_p007"
+      ],
+      "pool_ids": [
+        "a0146_d002_p001",
+        "a0146_d002_p003",
+        "a0146_d002_p002",
+        "a0146_d002_p006",
+        "a0146_d002_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p002",
+        "a0146_d002_p006",
+        "a0146_d002_p001"
+      ],
+      "pool_ids": [
+        "a0146_d002_p005",
+        "a0146_d002_p004",
+        "a0146_d002_p000",
+        "a0146_d002_p003",
+        "a0146_d002_p007"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p001",
+        "a0146_d002_p003",
+        "a0146_d002_p005"
+      ],
+      "pool_ids": [
+        "a0146_d002_p006",
+        "a0146_d002_p000",
+        "a0146_d002_p002",
+        "a0146_d002_p004",
+        "a0146_d002_p007"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p007",
+        "a0146_d002_p003",
+        "a0146_d002_p004"
+      ],
+      "pool_ids": [
+        "a0146_d002_p006",
+        "a0146_d002_p002",
+        "a0146_d002_p005",
+        "a0146_d002_p000",
+        "a0146_d002_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p007",
+        "a0146_d002_p000",
+        "a0146_d002_p003"
+      ],
+      "pool_ids": [
+        "a0146_d002_p002",
+        "a0146_d002_p001",
+        "a0146_d002_p006",
+        "a0146_d002_p005",
+        "a0146_d002_p004"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p007",
+        "a0146_d002_p005",
+        "a0146_d002_p006"
+      ],
+      "pool_ids": [
+        "a0146_d002_p001",
+        "a0146_d002_p002",
+        "a0146_d002_p003",
+        "a0146_d002_p004",
+        "a0146_d002_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d002_p006",
+        "a0146_d002_p004",
+        "a0146_d002_p007"
+      ],
+      "pool_ids": [
+        "a0146_d002_p002",
+        "a0146_d002_p005",
+        "a0146_d002_p003",
+        "a0146_d002_p000",
+        "a0146_d002_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p000",
+        "a0146_d003_p004",
+        "a0146_d003_p008"
+      ],
+      "pool_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p007",
+        "a0146_d003_p006",
+        "a0146_d003_p005",
+        "a0146_d003_p002",
+        "a0146_d003_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p001",
+        "a0146_d003_p004",
+        "a0146_d003_p008"
+      ],
+      "pool_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p002",
+        "a0146_d003_p007",
+        "a0146_d003_p005",
+        "a0146_d003_p000",
+        "a0146_d003_p006"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p002",
+        "a0146_d003_p008",
+        "a0146_d003_p007"
+      ],
+      "pool_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p006",
+        "a0146_d003_p005",
+        "a0146_d003_p001",
+        "a0146_d003_p004",
+        "a0146_d003_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p004",
+        "a0146_d003_p008",
+        "a0146_d003_p007"
+      ],
+      "pool_ids": [
+        "a0146_d003_p001",
+        "a0146_d003_p002",
+        "a0146_d003_p006",
+        "a0146_d003_p003",
+        "a0146_d003_p005",
+        "a0146_d003_p000"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p002",
+        "a0146_d003_p006",
+        "a0146_d003_p004"
+      ],
+      "pool_ids": [
+        "a0146_d003_p008",
+        "a0146_d003_p003",
+        "a0146_d003_p007",
+        "a0146_d003_p000",
+        "a0146_d003_p005",
+        "a0146_d003_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p000",
+        "a0146_d003_p004",
+        "a0146_d003_p002"
+      ],
+      "pool_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p006",
+        "a0146_d003_p008",
+        "a0146_d003_p005",
+        "a0146_d003_p007",
+        "a0146_d003_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p007",
+        "a0146_d003_p001",
+        "a0146_d003_p005"
+      ],
+      "pool_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p004",
+        "a0146_d003_p002",
+        "a0146_d003_p000",
+        "a0146_d003_p006",
+        "a0146_d003_p008"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p004",
+        "a0146_d003_p008",
+        "a0146_d003_p005"
+      ],
+      "pool_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p002",
+        "a0146_d003_p000",
+        "a0146_d003_p006",
+        "a0146_d003_p001",
+        "a0146_d003_p007"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p003",
+        "a0146_d003_p006",
+        "a0146_d003_p004"
+      ],
+      "pool_ids": [
+        "a0146_d003_p008",
+        "a0146_d003_p000",
+        "a0146_d003_p005",
+        "a0146_d003_p002",
+        "a0146_d003_p001",
+        "a0146_d003_p007"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "campaign_id": "v4_elangeswaran_linked_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0146_d003_p005",
+        "a0146_d003_p006",
+        "a0146_d003_p002"
+      ],
+      "pool_ids": [
+        "a0146_d003_p004",
+        "a0146_d003_p000",
+        "a0146_d003_p003",
+        "a0146_d003_p008",
+        "a0146_d003_p007",
+        "a0146_d003_p001"
+      ],
+      "expanded_training": "strict_plus_zhang403"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p002",
+        "a0341_d000_p003",
+        "a0341_d000_p005",
+        "a0341_d000_p007"
+      ],
+      "pool_ids": [
+        "a0341_d000_p006",
+        "a0341_d000_p009",
+        "a0341_d000_p001",
+        "a0341_d000_p000",
+        "a0341_d000_p004",
+        "a0341_d000_p011",
+        "a0341_d000_p008",
+        "a0341_d000_p010"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p009",
+        "a0341_d000_p011",
+        "a0341_d000_p006",
+        "a0341_d000_p010"
+      ],
+      "pool_ids": [
+        "a0341_d000_p003",
+        "a0341_d000_p001",
+        "a0341_d000_p005",
+        "a0341_d000_p007",
+        "a0341_d000_p000",
+        "a0341_d000_p008",
+        "a0341_d000_p002",
+        "a0341_d000_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p011",
+        "a0341_d000_p009",
+        "a0341_d000_p005",
+        "a0341_d000_p007"
+      ],
+      "pool_ids": [
+        "a0341_d000_p008",
+        "a0341_d000_p002",
+        "a0341_d000_p004",
+        "a0341_d000_p006",
+        "a0341_d000_p003",
+        "a0341_d000_p000",
+        "a0341_d000_p010",
+        "a0341_d000_p001"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p011",
+        "a0341_d000_p001",
+        "a0341_d000_p004",
+        "a0341_d000_p002"
+      ],
+      "pool_ids": [
+        "a0341_d000_p005",
+        "a0341_d000_p008",
+        "a0341_d000_p000",
+        "a0341_d000_p003",
+        "a0341_d000_p009",
+        "a0341_d000_p006",
+        "a0341_d000_p010",
+        "a0341_d000_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p004",
+        "a0341_d000_p003",
+        "a0341_d000_p006",
+        "a0341_d000_p001"
+      ],
+      "pool_ids": [
+        "a0341_d000_p008",
+        "a0341_d000_p009",
+        "a0341_d000_p010",
+        "a0341_d000_p002",
+        "a0341_d000_p000",
+        "a0341_d000_p005",
+        "a0341_d000_p007",
+        "a0341_d000_p011"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p007",
+        "a0341_d000_p001",
+        "a0341_d000_p006",
+        "a0341_d000_p010"
+      ],
+      "pool_ids": [
+        "a0341_d000_p005",
+        "a0341_d000_p004",
+        "a0341_d000_p002",
+        "a0341_d000_p008",
+        "a0341_d000_p009",
+        "a0341_d000_p003",
+        "a0341_d000_p011",
+        "a0341_d000_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p002",
+        "a0341_d000_p001",
+        "a0341_d000_p000",
+        "a0341_d000_p010"
+      ],
+      "pool_ids": [
+        "a0341_d000_p004",
+        "a0341_d000_p008",
+        "a0341_d000_p007",
+        "a0341_d000_p005",
+        "a0341_d000_p009",
+        "a0341_d000_p011",
+        "a0341_d000_p006",
+        "a0341_d000_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p008",
+        "a0341_d000_p001",
+        "a0341_d000_p003",
+        "a0341_d000_p002"
+      ],
+      "pool_ids": [
+        "a0341_d000_p010",
+        "a0341_d000_p006",
+        "a0341_d000_p011",
+        "a0341_d000_p009",
+        "a0341_d000_p007",
+        "a0341_d000_p004",
+        "a0341_d000_p005",
+        "a0341_d000_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p009",
+        "a0341_d000_p002",
+        "a0341_d000_p011",
+        "a0341_d000_p010"
+      ],
+      "pool_ids": [
+        "a0341_d000_p006",
+        "a0341_d000_p008",
+        "a0341_d000_p007",
+        "a0341_d000_p001",
+        "a0341_d000_p005",
+        "a0341_d000_p004",
+        "a0341_d000_p000",
+        "a0341_d000_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d000_p001",
+        "a0341_d000_p003",
+        "a0341_d000_p006",
+        "a0341_d000_p000"
+      ],
+      "pool_ids": [
+        "a0341_d000_p009",
+        "a0341_d000_p005",
+        "a0341_d000_p011",
+        "a0341_d000_p008",
+        "a0341_d000_p004",
+        "a0341_d000_p010",
+        "a0341_d000_p007",
+        "a0341_d000_p002"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p004",
+        "a0341_d001_p000",
+        "a0341_d001_p006",
+        "a0341_d001_p008"
+      ],
+      "pool_ids": [
+        "a0341_d001_p002",
+        "a0341_d001_p001",
+        "a0341_d001_p010",
+        "a0341_d001_p007",
+        "a0341_d001_p011",
+        "a0341_d001_p005",
+        "a0341_d001_p003",
+        "a0341_d001_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p003",
+        "a0341_d001_p001",
+        "a0341_d001_p009",
+        "a0341_d001_p000"
+      ],
+      "pool_ids": [
+        "a0341_d001_p006",
+        "a0341_d001_p010",
+        "a0341_d001_p005",
+        "a0341_d001_p007",
+        "a0341_d001_p002",
+        "a0341_d001_p004",
+        "a0341_d001_p011",
+        "a0341_d001_p008"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p006",
+        "a0341_d001_p001",
+        "a0341_d001_p004",
+        "a0341_d001_p003"
+      ],
+      "pool_ids": [
+        "a0341_d001_p011",
+        "a0341_d001_p009",
+        "a0341_d001_p005",
+        "a0341_d001_p008",
+        "a0341_d001_p007",
+        "a0341_d001_p002",
+        "a0341_d001_p010",
+        "a0341_d001_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p005",
+        "a0341_d001_p002",
+        "a0341_d001_p008",
+        "a0341_d001_p004"
+      ],
+      "pool_ids": [
+        "a0341_d001_p000",
+        "a0341_d001_p010",
+        "a0341_d001_p003",
+        "a0341_d001_p009",
+        "a0341_d001_p001",
+        "a0341_d001_p011",
+        "a0341_d001_p006",
+        "a0341_d001_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p007",
+        "a0341_d001_p006",
+        "a0341_d001_p004",
+        "a0341_d001_p001"
+      ],
+      "pool_ids": [
+        "a0341_d001_p003",
+        "a0341_d001_p008",
+        "a0341_d001_p005",
+        "a0341_d001_p011",
+        "a0341_d001_p000",
+        "a0341_d001_p010",
+        "a0341_d001_p009",
+        "a0341_d001_p002"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p004",
+        "a0341_d001_p011",
+        "a0341_d001_p001",
+        "a0341_d001_p007"
+      ],
+      "pool_ids": [
+        "a0341_d001_p000",
+        "a0341_d001_p003",
+        "a0341_d001_p006",
+        "a0341_d001_p009",
+        "a0341_d001_p010",
+        "a0341_d001_p002",
+        "a0341_d001_p005",
+        "a0341_d001_p008"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p008",
+        "a0341_d001_p009",
+        "a0341_d001_p005",
+        "a0341_d001_p003"
+      ],
+      "pool_ids": [
+        "a0341_d001_p011",
+        "a0341_d001_p007",
+        "a0341_d001_p006",
+        "a0341_d001_p001",
+        "a0341_d001_p002",
+        "a0341_d001_p000",
+        "a0341_d001_p004",
+        "a0341_d001_p010"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p000",
+        "a0341_d001_p007",
+        "a0341_d001_p010",
+        "a0341_d001_p001"
+      ],
+      "pool_ids": [
+        "a0341_d001_p005",
+        "a0341_d001_p008",
+        "a0341_d001_p003",
+        "a0341_d001_p006",
+        "a0341_d001_p004",
+        "a0341_d001_p002",
+        "a0341_d001_p011",
+        "a0341_d001_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p007",
+        "a0341_d001_p005",
+        "a0341_d001_p008",
+        "a0341_d001_p010"
+      ],
+      "pool_ids": [
+        "a0341_d001_p006",
+        "a0341_d001_p011",
+        "a0341_d001_p004",
+        "a0341_d001_p003",
+        "a0341_d001_p009",
+        "a0341_d001_p000",
+        "a0341_d001_p001",
+        "a0341_d001_p002"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d001_p005",
+        "a0341_d001_p000",
+        "a0341_d001_p007",
+        "a0341_d001_p011"
+      ],
+      "pool_ids": [
+        "a0341_d001_p003",
+        "a0341_d001_p010",
+        "a0341_d001_p009",
+        "a0341_d001_p002",
+        "a0341_d001_p001",
+        "a0341_d001_p006",
+        "a0341_d001_p008",
+        "a0341_d001_p004"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p006",
+        "a0341_d002_p008",
+        "a0341_d002_p009",
+        "a0341_d002_p002"
+      ],
+      "pool_ids": [
+        "a0341_d002_p007",
+        "a0341_d002_p001",
+        "a0341_d002_p000",
+        "a0341_d002_p004",
+        "a0341_d002_p010",
+        "a0341_d002_p003",
+        "a0341_d002_p005"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p006",
+        "a0341_d002_p000",
+        "a0341_d002_p002",
+        "a0341_d002_p005"
+      ],
+      "pool_ids": [
+        "a0341_d002_p001",
+        "a0341_d002_p004",
+        "a0341_d002_p010",
+        "a0341_d002_p003",
+        "a0341_d002_p008",
+        "a0341_d002_p007",
+        "a0341_d002_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p005",
+        "a0341_d002_p002",
+        "a0341_d002_p001",
+        "a0341_d002_p007"
+      ],
+      "pool_ids": [
+        "a0341_d002_p006",
+        "a0341_d002_p004",
+        "a0341_d002_p008",
+        "a0341_d002_p010",
+        "a0341_d002_p000",
+        "a0341_d002_p009",
+        "a0341_d002_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p005",
+        "a0341_d002_p002",
+        "a0341_d002_p006",
+        "a0341_d002_p001"
+      ],
+      "pool_ids": [
+        "a0341_d002_p008",
+        "a0341_d002_p000",
+        "a0341_d002_p003",
+        "a0341_d002_p010",
+        "a0341_d002_p009",
+        "a0341_d002_p004",
+        "a0341_d002_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p001",
+        "a0341_d002_p002",
+        "a0341_d002_p006",
+        "a0341_d002_p003"
+      ],
+      "pool_ids": [
+        "a0341_d002_p007",
+        "a0341_d002_p008",
+        "a0341_d002_p004",
+        "a0341_d002_p009",
+        "a0341_d002_p000",
+        "a0341_d002_p010",
+        "a0341_d002_p005"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p000",
+        "a0341_d002_p010",
+        "a0341_d002_p007",
+        "a0341_d002_p009"
+      ],
+      "pool_ids": [
+        "a0341_d002_p005",
+        "a0341_d002_p003",
+        "a0341_d002_p008",
+        "a0341_d002_p004",
+        "a0341_d002_p001",
+        "a0341_d002_p002",
+        "a0341_d002_p006"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p009",
+        "a0341_d002_p005",
+        "a0341_d002_p010",
+        "a0341_d002_p004"
+      ],
+      "pool_ids": [
+        "a0341_d002_p008",
+        "a0341_d002_p006",
+        "a0341_d002_p002",
+        "a0341_d002_p001",
+        "a0341_d002_p007",
+        "a0341_d002_p000",
+        "a0341_d002_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p008",
+        "a0341_d002_p007",
+        "a0341_d002_p001",
+        "a0341_d002_p000"
+      ],
+      "pool_ids": [
+        "a0341_d002_p010",
+        "a0341_d002_p002",
+        "a0341_d002_p006",
+        "a0341_d002_p009",
+        "a0341_d002_p003",
+        "a0341_d002_p004",
+        "a0341_d002_p005"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p000",
+        "a0341_d002_p007",
+        "a0341_d002_p006",
+        "a0341_d002_p001"
+      ],
+      "pool_ids": [
+        "a0341_d002_p003",
+        "a0341_d002_p005",
+        "a0341_d002_p002",
+        "a0341_d002_p009",
+        "a0341_d002_p004",
+        "a0341_d002_p010",
+        "a0341_d002_p008"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d002_p004",
+        "a0341_d002_p005",
+        "a0341_d002_p001",
+        "a0341_d002_p008"
+      ],
+      "pool_ids": [
+        "a0341_d002_p009",
+        "a0341_d002_p007",
+        "a0341_d002_p002",
+        "a0341_d002_p010",
+        "a0341_d002_p006",
+        "a0341_d002_p000",
+        "a0341_d002_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p009",
+        "a0341_d003_p003",
+        "a0341_d003_p004",
+        "a0341_d003_p000"
+      ],
+      "pool_ids": [
+        "a0341_d003_p008",
+        "a0341_d003_p006",
+        "a0341_d003_p010",
+        "a0341_d003_p007",
+        "a0341_d003_p002",
+        "a0341_d003_p001",
+        "a0341_d003_p005",
+        "a0341_d003_p011"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p005",
+        "a0341_d003_p004",
+        "a0341_d003_p009",
+        "a0341_d003_p011"
+      ],
+      "pool_ids": [
+        "a0341_d003_p006",
+        "a0341_d003_p010",
+        "a0341_d003_p002",
+        "a0341_d003_p001",
+        "a0341_d003_p000",
+        "a0341_d003_p008",
+        "a0341_d003_p007",
+        "a0341_d003_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p009",
+        "a0341_d003_p010",
+        "a0341_d003_p003",
+        "a0341_d003_p011"
+      ],
+      "pool_ids": [
+        "a0341_d003_p008",
+        "a0341_d003_p000",
+        "a0341_d003_p005",
+        "a0341_d003_p004",
+        "a0341_d003_p001",
+        "a0341_d003_p006",
+        "a0341_d003_p007",
+        "a0341_d003_p002"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p002",
+        "a0341_d003_p009",
+        "a0341_d003_p007",
+        "a0341_d003_p005"
+      ],
+      "pool_ids": [
+        "a0341_d003_p000",
+        "a0341_d003_p011",
+        "a0341_d003_p001",
+        "a0341_d003_p010",
+        "a0341_d003_p004",
+        "a0341_d003_p008",
+        "a0341_d003_p003",
+        "a0341_d003_p006"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p007",
+        "a0341_d003_p004",
+        "a0341_d003_p006",
+        "a0341_d003_p010"
+      ],
+      "pool_ids": [
+        "a0341_d003_p009",
+        "a0341_d003_p008",
+        "a0341_d003_p011",
+        "a0341_d003_p002",
+        "a0341_d003_p005",
+        "a0341_d003_p001",
+        "a0341_d003_p000",
+        "a0341_d003_p003"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p003",
+        "a0341_d003_p000",
+        "a0341_d003_p008",
+        "a0341_d003_p010"
+      ],
+      "pool_ids": [
+        "a0341_d003_p009",
+        "a0341_d003_p005",
+        "a0341_d003_p002",
+        "a0341_d003_p006",
+        "a0341_d003_p007",
+        "a0341_d003_p011",
+        "a0341_d003_p004",
+        "a0341_d003_p001"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p003",
+        "a0341_d003_p010",
+        "a0341_d003_p008",
+        "a0341_d003_p007"
+      ],
+      "pool_ids": [
+        "a0341_d003_p006",
+        "a0341_d003_p002",
+        "a0341_d003_p004",
+        "a0341_d003_p011",
+        "a0341_d003_p000",
+        "a0341_d003_p005",
+        "a0341_d003_p001",
+        "a0341_d003_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p011",
+        "a0341_d003_p002",
+        "a0341_d003_p008",
+        "a0341_d003_p005"
+      ],
+      "pool_ids": [
+        "a0341_d003_p000",
+        "a0341_d003_p009",
+        "a0341_d003_p006",
+        "a0341_d003_p003",
+        "a0341_d003_p001",
+        "a0341_d003_p007",
+        "a0341_d003_p004",
+        "a0341_d003_p010"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p004",
+        "a0341_d003_p008",
+        "a0341_d003_p003",
+        "a0341_d003_p000"
+      ],
+      "pool_ids": [
+        "a0341_d003_p001",
+        "a0341_d003_p002",
+        "a0341_d003_p010",
+        "a0341_d003_p007",
+        "a0341_d003_p005",
+        "a0341_d003_p009",
+        "a0341_d003_p006",
+        "a0341_d003_p011"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d003_p010",
+        "a0341_d003_p006",
+        "a0341_d003_p001",
+        "a0341_d003_p003"
+      ],
+      "pool_ids": [
+        "a0341_d003_p009",
+        "a0341_d003_p002",
+        "a0341_d003_p007",
+        "a0341_d003_p008",
+        "a0341_d003_p004",
+        "a0341_d003_p005",
+        "a0341_d003_p000",
+        "a0341_d003_p011"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p000",
+        "a0341_d004_p013",
+        "a0341_d004_p004",
+        "a0341_d004_p010",
+        "a0341_d004_p011"
+      ],
+      "pool_ids": [
+        "a0341_d004_p008",
+        "a0341_d004_p002",
+        "a0341_d004_p007",
+        "a0341_d004_p005",
+        "a0341_d004_p001",
+        "a0341_d004_p003",
+        "a0341_d004_p012",
+        "a0341_d004_p006",
+        "a0341_d004_p009"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p006",
+        "a0341_d004_p012",
+        "a0341_d004_p011",
+        "a0341_d004_p004",
+        "a0341_d004_p010"
+      ],
+      "pool_ids": [
+        "a0341_d004_p003",
+        "a0341_d004_p001",
+        "a0341_d004_p008",
+        "a0341_d004_p007",
+        "a0341_d004_p005",
+        "a0341_d004_p002",
+        "a0341_d004_p009",
+        "a0341_d004_p013",
+        "a0341_d004_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p011",
+        "a0341_d004_p004",
+        "a0341_d004_p007",
+        "a0341_d004_p006",
+        "a0341_d004_p012"
+      ],
+      "pool_ids": [
+        "a0341_d004_p000",
+        "a0341_d004_p005",
+        "a0341_d004_p013",
+        "a0341_d004_p008",
+        "a0341_d004_p001",
+        "a0341_d004_p009",
+        "a0341_d004_p002",
+        "a0341_d004_p003",
+        "a0341_d004_p010"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p004",
+        "a0341_d004_p012",
+        "a0341_d004_p001",
+        "a0341_d004_p002",
+        "a0341_d004_p011"
+      ],
+      "pool_ids": [
+        "a0341_d004_p000",
+        "a0341_d004_p010",
+        "a0341_d004_p013",
+        "a0341_d004_p003",
+        "a0341_d004_p008",
+        "a0341_d004_p005",
+        "a0341_d004_p006",
+        "a0341_d004_p009",
+        "a0341_d004_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p002",
+        "a0341_d004_p001",
+        "a0341_d004_p005",
+        "a0341_d004_p012",
+        "a0341_d004_p007"
+      ],
+      "pool_ids": [
+        "a0341_d004_p004",
+        "a0341_d004_p009",
+        "a0341_d004_p003",
+        "a0341_d004_p006",
+        "a0341_d004_p010",
+        "a0341_d004_p013",
+        "a0341_d004_p011",
+        "a0341_d004_p008",
+        "a0341_d004_p000"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p009",
+        "a0341_d004_p005",
+        "a0341_d004_p012",
+        "a0341_d004_p010",
+        "a0341_d004_p002"
+      ],
+      "pool_ids": [
+        "a0341_d004_p008",
+        "a0341_d004_p000",
+        "a0341_d004_p007",
+        "a0341_d004_p013",
+        "a0341_d004_p004",
+        "a0341_d004_p001",
+        "a0341_d004_p011",
+        "a0341_d004_p003",
+        "a0341_d004_p006"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p008",
+        "a0341_d004_p002",
+        "a0341_d004_p009",
+        "a0341_d004_p013",
+        "a0341_d004_p003"
+      ],
+      "pool_ids": [
+        "a0341_d004_p012",
+        "a0341_d004_p011",
+        "a0341_d004_p010",
+        "a0341_d004_p004",
+        "a0341_d004_p005",
+        "a0341_d004_p001",
+        "a0341_d004_p000",
+        "a0341_d004_p007",
+        "a0341_d004_p006"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p001",
+        "a0341_d004_p000",
+        "a0341_d004_p006",
+        "a0341_d004_p009",
+        "a0341_d004_p008"
+      ],
+      "pool_ids": [
+        "a0341_d004_p005",
+        "a0341_d004_p012",
+        "a0341_d004_p002",
+        "a0341_d004_p003",
+        "a0341_d004_p004",
+        "a0341_d004_p013",
+        "a0341_d004_p007",
+        "a0341_d004_p010",
+        "a0341_d004_p011"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p006",
+        "a0341_d004_p005",
+        "a0341_d004_p002",
+        "a0341_d004_p004",
+        "a0341_d004_p008"
+      ],
+      "pool_ids": [
+        "a0341_d004_p011",
+        "a0341_d004_p001",
+        "a0341_d004_p010",
+        "a0341_d004_p013",
+        "a0341_d004_p000",
+        "a0341_d004_p003",
+        "a0341_d004_p009",
+        "a0341_d004_p012",
+        "a0341_d004_p007"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "campaign_id": "v4_zhang_linked_original_experiments",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "a0341_d004_p009",
+        "a0341_d004_p013",
+        "a0341_d004_p008",
+        "a0341_d004_p004",
+        "a0341_d004_p007"
+      ],
+      "pool_ids": [
+        "a0341_d004_p000",
+        "a0341_d004_p002",
+        "a0341_d004_p006",
+        "a0341_d004_p010",
+        "a0341_d004_p011",
+        "a0341_d004_p001",
+        "a0341_d004_p003",
+        "a0341_d004_p005",
+        "a0341_d004_p012"
+      ],
+      "expanded_training": "strict_plus_elanges347"
+    }
+  ],
+  "target_rows": 132,
+  "eligible_rows": 115,
+  "eligible_conditions": 11,
+  "source_families": 2,
+  "design_note": "Frozen after main fits but before parent inspected their numerical summaries; pool exhaustion identified from sample counts."
+}

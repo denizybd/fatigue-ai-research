@@ -1,0 +1,62 @@
+{
+  "created_at_utc": "2026-10-20T16:23:12.729439+00:00",
+  "scope": "One focused second-campaign pass: Wood/Kopec author/thesis route, independently suggested Chepkoech Howard route, and delegated Solberg official thesis spot check. Existing broad repository sweep not repeated.",
+  "new_identity_qualified_RT_campaigns": 0,
+  "no_fits_or_correspondence": true,
+  "routes": [
+    {
+      "source": "Kopec/Wood reused-powder fatigue",
+      "doi": "10.1007/s11340-024-01118-1",
+      "primary_url": "https://link.springer.com/article/10.1007/s11340-024-01118-1",
+      "evidence_access": "Full primary HTML; already retained raw file wood2024_springer.html",
+      "source_semantics": "Three orientations; force-controlled R\u22121/20Hz; reused powder25times; data-on-request statement confirmed in full publisher Data Availability section.",
+      "blocker": "No public per-specimen fatigue ID\u2192raw S,N\u2192physical build/powder table or linked author thesis located in this targeted pass. The geometry/orientation plot does not create individual IDs.",
+      "minimal_missing_packet": "Original fatigue specimen IDs with first/full constant-amplitude S,N,event, physical build identifier per specimen; explicit build inventory/powder link and no prior fatigue exposure.",
+      "rejection": "Not admitted; no anonymous graph points relabelled as specimens."
+    },
+    {
+      "source": "Chepkoech/Omoniyi/Owolabi Howard2024",
+      "doi": "10.3390/met14090988",
+      "primary_url": "https://www.mdpi.com/2075-4701/14/9/988",
+      "evidence_access": "Indexed primary article text; direct full-page and DOI open returned429. No full paper downloaded or supplementary identity table obtained.",
+      "independence": "Distinct Howard author group from Wood/Kopec; this is not proof of physical campaign independence.",
+      "source_semantics": "Primary abstract reports vertical LPBF stress control,R0.1,15Hz. Indexed results label92.94MPa amplitude versus185.87MPa maximum. These values would give83.6415MPa by (1\u2212R)Smax/2, so the amplitude convention requires resolution.",
+      "official_thesis_lead": "Howard2023 abstract book https://researchmonth.howard.edu/public/documents/Research-Month-Abstract-Book-2023.pdf confirms Melody Chepkoech graduate research on microstructure/fatigue and R0.1/15Hz, but does not supply per-specimen raw/build data.",
+      "blocker": "No official Howard thesis/appendix or per-specimen fatigue/build crosswalk located. Full body access unavailable in this pass; absence of a table in the full paper is not asserted.",
+      "minimal_missing_packet": "Primary full-text/supplementary S,N/specimen table, actual build/powder mapping, and authoritative stress-definition correction.",
+      "rejection": "Not admitted; mode-compatible lead only."
+    },
+    {
+      "source": "Klas Solberg2021 doctoral thesis route",
+      "linked_doi": "10.1111/ffe.13077",
+      "thesis_title": "Fatigue design for metallic components produced by additive manufacturing",
+      "official_article_handle": "https://hdl.handle.net/11250/2613836",
+      "official_article_NVA": "https://nva.sikt.no/registration/0198cc3f2d7b-0f2b3a33-885f-43e8-9457-c034402f823f",
+      "existing_primary_metadata_file": "literature/fresh_campaign_v2/solberg_nva_json.json",
+      "evidence_access": "Independent papers agent conducted three precise official-domain queries; no thesis PDF acquired. One adaptive exact-title query by this agent also failed to locate an official thesis file.",
+      "blocker": "Known official record is the2019 article, not the2021 thesis. No official doctoral appendix was obtained. Third-party mirrors were not used as primary evidence.",
+      "minimal_missing_packet": "Public author thesis PDF or appendix containing actual fatigue specimen IDs and raw S,N plus explicit single/multiple build source table. Exclude entire Solberg family from population training if recovered.",
+      "rejection": "Not admitted; thesis route remains an access lead, not a recovered campaign."
+    }
+  ],
+  "existing_candidate_shortest_closure": [
+    {
+      "source": "Diller2024",
+      "primary_urls": [
+        "https://zenodo.org/records/21105346",
+        "https://mediatum.ub.tum.de/doc/1739096/1739096.pdf"
+      ],
+      "already_recovered": "29 usable as-built \u00b5IDs with raw range,R,N,event; \u00b515 stress conflict excluded.",
+      "missing": "Author-backed \u00b5specimen\u2192physical build/powder mapping plus explicit ambient/control-mode confirmation. TUM DataTagger route redirected login; no public crosswalk.",
+      "minimal_closure": "An exact list stating all retained \u00b5IDs belong to one specified physical build/powder lot, or per-specimen build table. No filename-prefix inference."
+    },
+    {
+      "source": "Tomaszewski Zenodo7650061",
+      "primary_url": "https://zenodo.org/records/7650061",
+      "already_recovered": "137 actual specimen IDs; related2023 paper has single-build statement, but article n28 versus raw standard-length W subset n37.",
+      "missing": "Exact author ID\u21922023 single-build subset crosswalk. Nine SS_A02W_01 through SS_A02W_09 rows form the promising subset, but article membership is not proven.",
+      "minimal_closure": "Confirm SS_A02W_01 through SS_A02W_09 against the2023 single physical build, or provide an article/raw specimen inclusion list. Do not extend the single-build scope to all137."
+    }
+  ],
+  "interpretation": "Merot remains one additionally verified room-temperature author campaign. This pass supplies no second qualified campaign. A public PDF not located in this pass is not evidence that no public PDF exists."
+}

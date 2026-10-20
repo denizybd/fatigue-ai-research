@@ -1,0 +1,28 @@
+The dataset contains experimental data related to the article: "On microstructure evolution and damage onset in 316L steel produced by laser-powder bed fusion during the early stages of low cycle fatigue loading".
+
+If you have any questions, do not hesitate to contact the corresponding author - Dr. Michal Jambor, (jambor@ipm.cz), Institute of Physics of Materials, Czech Academy of Sciences, Zizkova 513/22, 616 00 Brno, Czech Republic.
+
+The data were acquired between 9/2023 and 7/2024.
+
+The dataset contains raw experimental data and figures used in the published articles. Results are stored separately for each experiment. Each folder contains a text file with a short description of the experimental conditions and the data file itself.
+
+The dataset has the following structure:
+
+
+1 Fatigue tests
+	data for cylindrical specimens
+	data for flat specimens
+
+2 Harness measurements
+	data from hardness measurements
+
+3 Microstructure observations
+	3.1 SEM
+		3.1.1 Etched samples	- raw figures
+		3.1.2 EBSD		- raw data in channel5 format
+	3.2 TEM  raw figures
+
+4 Surface observations
+	4.1 optical microscopy 	- raw figures
+	4.2 SEM			- raw figures
+		

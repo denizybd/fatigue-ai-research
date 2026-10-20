@@ -1,0 +1,2376 @@
+{
+  "cap": 10000000.0,
+  "n_tasks": 110,
+  "prediction_rows": 59040,
+  "selection_rows": 2120,
+  "source_families": 2,
+  "protocol_sha256": "8735975a007138ec51a8ef79adf32fa6e53d98be84fd5b1d7e56835c9e13b3a4",
+  "splits_sha256": "ba07bcbb8001f990a50866eac1103077563fc4c20b479aca0d75eca7132b47f2",
+  "code_sha256": "0942c4098fa3aa40a21fb058fc548b6189f1970d4f0e12069f96aac24ce82517",
+  "family_checks": [
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d006",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0142_d007",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d000",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d001",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d002",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0146_d003",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_elangeswaran_linked_experiments",
+      "training_name": "strict_plus_zhang403",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d000",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d001",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d002",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d003",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 0,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 0,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 1,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 1,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 2,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 2,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 3,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 3,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 4,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 4,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 5,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 5,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 6,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 6,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 7,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 7,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 8,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 8,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 9,
+      "regime": "strict309",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict309",
+      "target_family_absent": true
+    },
+    {
+      "dataset_id": "a0341_d004",
+      "seed": 9,
+      "regime": "expanded_family_excluded",
+      "excluded_family": "v4_zhang_linked_original_experiments",
+      "training_name": "strict_plus_elanges347",
+      "target_family_absent": true
+    }
+  ],
+  "fits": {
+    "strict309": {
+      "training_sources": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ],
+      "n_rows": 309,
+      "signature": "53f333febc11185f1355102b2d67c50f953080c996b0e09c0fa3e8c68c201233",
+      "code": {
+        "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+        "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+        "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+        "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+      },
+      "fits": {
+        "pooled": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 13,
+          "objective": 1.0113204463250034,
+          "gradient_inf": 2.823089294214272e-08,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "sigma_at_bound": false
+        },
+        "hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 14,
+          "objective": 6.701653673319042,
+          "gradient_inf": 8.625716325094679e-07,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "nodes": 41,
+          "conditions": 32,
+          "sources": 11,
+          "sigma_at_bound": false,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.701653673319042,
+              "n_iter": 14
+            },
+            {
+              "success": true,
+              "objective": 6.701653673377991,
+              "n_iter": 12
+            }
+          ]
+        },
+        "curved_hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "n_iter": 18,
+          "objective": 6.6260022072283284,
+          "gradient_inf": 3.6645908967208873e-06,
+          "knot_training_median_log_stress": 2.3024436139069997,
+          "stress_slopes_log10": [
+            -5.084575068298081,
+            -6.692172584194894
+          ],
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "ratio_all_missing_train": false,
+          "sigma_at_bound": false,
+          "model": "finite two-slope curve; not a fatigue-limit estimator",
+          "nodes": 41,
+          "conditions": 32,
+          "sources": 11,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.6260022072283284,
+              "n_iter": 18
+            },
+            {
+              "success": true,
+              "objective": 6.626002207242776,
+              "n_iter": 16
+            }
+          ]
+        },
+        "rfl": {
+          "model": "normal-normal RFL with load-ratio location extension",
+          "success": true,
+          "fallback_active": false,
+          "fallback_model": null,
+          "fallback_rule": "all three fixed training starts fail numerical convergence",
+          "n_train": 309,
+          "n_failures": 262,
+          "n_distinct_stresses": 303,
+          "n_source_blocks": 11,
+          "source_balanced_working_likelihood": true,
+          "regularization": 0.001,
+          "quadrature_nodes": 96,
+          "log_stress_ref_train": 2.2669799369723047,
+          "ratio_center_train": -0.23818770226537536,
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "shift_prior_sd_training_supplied": 0.593976135152927,
+          "population_uncertainty_integrated": false,
+          "bounds": {
+            "a": [
+              -30.0,
+              50.0
+            ],
+            "b": [
+              -40.0,
+              -0.02
+            ],
+            "c_R": [
+              -20.0,
+              20.0
+            ],
+            "log_sigma": [
+              -3.6888794541139363,
+              1.0986122886681098
+            ],
+            "mu_log10_gamma": [
+              -0.18324665577013155,
+              3.1021143036714234
+            ],
+            "log_tau_log10_gamma": [
+              -3.912023005428146,
+              -0.2876820724517809
+            ]
+          },
+          "bound_hits": [],
+          "identifiability_warning": false,
+          "starts": [
+            {
+              "success": true,
+              "objective": 1.0026599619847374,
+              "n_iter": 26,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.0001319611087764046,
+              "params": [
+                5.695555057197264,
+                -3.220018771647761,
+                -0.8245932798539705,
+                -0.4335126051390103,
+                -0.18324665577013155,
+                -2.0614237878099084
+              ]
+            },
+            {
+              "success": true,
+              "objective": 0.9583037612384465,
+              "n_iter": 24,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 1.5321077662842434e-06,
+              "params": [
+                5.420568932732961,
+                -2.7364277961922894,
+                -0.7451668142395322,
+                -0.7210739933024999,
+                1.111742408448181,
+                -0.39903790932415006
+              ]
+            },
+            {
+              "success": true,
+              "objective": 1.0026592161958128,
+              "n_iter": 31,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.00013076206790917831,
+              "params": [
+                5.695649998032939,
+                -3.2201568946964887,
+                -0.8245556775961325,
+                -0.43351062719188604,
+                -0.18324665577013155,
+                -2.301380201138973
+              ]
+            }
+          ],
+          "params": {
+            "a": 5.420568932732961,
+            "b": -2.7364277961922894,
+            "c_R": -0.7451668142395322,
+            "log_sigma": -0.7210739933024999,
+            "mu_log10_gamma": 1.111742408448181,
+            "log_tau_log10_gamma": -0.39903790932415006
+          }
+        }
+      },
+      "elapsed_seconds": 1.642127499999333
+    },
+    "strict_plus_elanges347": {
+      "training_sources": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign",
+        "v4_elangeswaran_linked_experiments"
+      ],
+      "n_rows": 347,
+      "signature": "4c5fe996bd38a344aceddad679a3ac36a176bdd54501a945b5a9969223821acc",
+      "code": {
+        "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+        "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+        "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+        "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+      },
+      "fits": {
+        "pooled": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 13,
+          "objective": 1.0157750331677082,
+          "gradient_inf": 1.1189747928588845e-08,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "sigma_at_bound": false
+        },
+        "hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 13,
+          "objective": 6.617445830525952,
+          "gradient_inf": 4.7388500289125e-07,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "nodes": 41,
+          "conditions": 36,
+          "sources": 12,
+          "sigma_at_bound": false,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.617445830535214,
+              "n_iter": 13
+            },
+            {
+              "success": true,
+              "objective": 6.617445830525952,
+              "n_iter": 13
+            }
+          ]
+        },
+        "curved_hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 20,
+          "objective": 6.5549312428999125,
+          "gradient_inf": 5.418956289804377e-07,
+          "knot_training_median_log_stress": 2.3221224352071923,
+          "stress_slopes_log10": [
+            -5.111174549715376,
+            -6.528442491255816
+          ],
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "ratio_all_missing_train": false,
+          "sigma_at_bound": false,
+          "model": "finite two-slope curve; not a fatigue-limit estimator",
+          "nodes": 41,
+          "conditions": 36,
+          "sources": 12,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.5549312428999125,
+              "n_iter": 20
+            },
+            {
+              "success": true,
+              "objective": 6.5549312429002,
+              "n_iter": 16
+            }
+          ]
+        },
+        "rfl": {
+          "model": "normal-normal RFL with load-ratio location extension",
+          "success": true,
+          "fallback_active": false,
+          "fallback_model": null,
+          "fallback_rule": "all three fixed training starts fail numerical convergence",
+          "n_train": 347,
+          "n_failures": 298,
+          "n_distinct_stresses": 339,
+          "n_source_blocks": 12,
+          "source_balanced_working_likelihood": true,
+          "regularization": 0.001,
+          "quadrature_nodes": 96,
+          "log_stress_ref_train": 2.290650832283388,
+          "ratio_center_train": -0.3216138328530288,
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "shift_prior_sd_training_supplied": 0.5886857846634499,
+          "population_uncertainty_integrated": false,
+          "bounds": {
+            "a": [
+              -30.0,
+              50.0
+            ],
+            "b": [
+              -40.0,
+              -0.02
+            ],
+            "c_R": [
+              -20.0,
+              20.0
+            ],
+            "log_sigma": [
+              -3.6888794541139363,
+              1.0986122886681098
+            ],
+            "mu_log10_gamma": [
+              -0.18324665577013155,
+              3.1021143036714234
+            ],
+            "log_tau_log10_gamma": [
+              -3.912023005428146,
+              -0.2876820724517809
+            ]
+          },
+          "bound_hits": [],
+          "identifiability_warning": false,
+          "starts": [
+            {
+              "success": true,
+              "objective": 1.0055610395235706,
+              "n_iter": 26,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.00012636558472934857,
+              "params": [
+                5.634197706831615,
+                -3.2801490838250746,
+                -0.7098561642496013,
+                -0.4325546493381182,
+                -0.18324665577013155,
+                -2.0329269654060584
+              ]
+            },
+            {
+              "success": true,
+              "objective": 0.9557122794549339,
+              "n_iter": 24,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 5.095923713999797e-06,
+              "params": [
+                5.363619648701613,
+                -2.781246852243633,
+                -0.625569173467282,
+                -0.7270579493204111,
+                1.098614050345565,
+                -0.37287100297658116
+              ]
+            },
+            {
+              "success": true,
+              "objective": 1.0055600744243263,
+              "n_iter": 32,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.0001243893877444756,
+              "params": [
+                5.6343132260723054,
+                -3.2803917390001724,
+                -0.7098671351697257,
+                -0.4325555007971837,
+                -0.18324665577013155,
+                -2.3672452396910066
+              ]
+            }
+          ],
+          "params": {
+            "a": 5.363619648701613,
+            "b": -2.781246852243633,
+            "c_R": -0.625569173467282,
+            "log_sigma": -0.7270579493204111,
+            "mu_log10_gamma": 1.098614050345565,
+            "log_tau_log10_gamma": -0.37287100297658116
+          }
+        }
+      },
+      "elapsed_seconds": 1.9423442500010424
+    },
+    "strict_plus_zhang403": {
+      "training_sources": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign",
+        "v4_zhang_linked_original_experiments"
+      ],
+      "n_rows": 403,
+      "signature": "deac5419e99c29c5af8fcbd42bc4cd6a15199a01b963c283790548c37a2ae473",
+      "code": {
+        "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+        "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+        "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+        "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+      },
+      "fits": {
+        "pooled": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 11,
+          "objective": 1.000036443851081,
+          "gradient_inf": 1.837375793178886e-08,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "sigma_at_bound": false
+        },
+        "hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 12,
+          "objective": 6.4360417244057215,
+          "gradient_inf": 2.2163050961143682e-07,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "nodes": 41,
+          "conditions": 44,
+          "sources": 12,
+          "sigma_at_bound": false,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.436041724405723,
+              "n_iter": 15
+            },
+            {
+              "success": true,
+              "objective": 6.4360417244057215,
+              "n_iter": 12
+            }
+          ]
+        },
+        "curved_hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "n_iter": 16,
+          "objective": 6.36476719846676,
+          "gradient_inf": 3.951675508311048e-06,
+          "knot_training_median_log_stress": 2.3005130444601374,
+          "stress_slopes_log10": [
+            -5.0938442167574385,
+            -6.631173736869049
+          ],
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "ratio_all_missing_train": false,
+          "sigma_at_bound": false,
+          "model": "finite two-slope curve; not a fatigue-limit estimator",
+          "nodes": 41,
+          "conditions": 44,
+          "sources": 12,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.3647671984804495,
+              "n_iter": 19
+            },
+            {
+              "success": true,
+              "objective": 6.36476719846676,
+              "n_iter": 16
+            }
+          ]
+        },
+        "rfl": {
+          "model": "normal-normal RFL with load-ratio location extension",
+          "success": true,
+          "fallback_active": false,
+          "fallback_model": null,
+          "fallback_rule": "all three fixed training starts fail numerical convergence",
+          "n_train": 403,
+          "n_failures": 344,
+          "n_distinct_stresses": 395,
+          "n_source_blocks": 12,
+          "source_balanced_working_likelihood": true,
+          "regularization": 0.001,
+          "quadrature_nodes": 96,
+          "log_stress_ref_train": 2.277021572267603,
+          "ratio_center_train": -0.17096774193548744,
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "shift_prior_sd_training_supplied": 0.5882627249892705,
+          "population_uncertainty_integrated": false,
+          "bounds": {
+            "a": [
+              -30.0,
+              50.0
+            ],
+            "b": [
+              -40.0,
+              -0.02
+            ],
+            "c_R": [
+              -20.0,
+              20.0
+            ],
+            "log_sigma": [
+              -3.6888794541139363,
+              1.0986122886681098
+            ],
+            "mu_log10_gamma": [
+              -0.18324665577013155,
+              3.1021143036714234
+            ],
+            "log_tau_log10_gamma": [
+              -3.912023005428146,
+              -0.2876820724517809
+            ]
+          },
+          "bound_hits": [],
+          "identifiability_warning": false,
+          "starts": [
+            {
+              "success": true,
+              "objective": 0.9825952208926586,
+              "n_iter": 28,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.00015517587223353585,
+              "params": [
+                5.612073680664414,
+                -3.2229674298923516,
+                -0.8198045627790186,
+                -0.4543856664870511,
+                -0.18324665577013155,
+                -2.048202404613436
+              ]
+            },
+            {
+              "success": true,
+              "objective": 0.9415538259068366,
+              "n_iter": 20,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 1.6031620395032228e-05,
+              "params": [
+                5.3513039717271,
+                -2.7062856858364523,
+                -0.7344588783508801,
+                -0.7239886207045314,
+                1.136572923809988,
+                -0.44604270221345577
+              ]
+            },
+            {
+              "success": true,
+              "objective": 0.9825942894741145,
+              "n_iter": 31,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.0001536548666889988,
+              "params": [
+                5.612171389345069,
+                -3.2232296200880635,
+                -0.8198116759902683,
+                -0.45437881014922493,
+                -0.18324665577013155,
+                -2.3121692006544903
+              ]
+            }
+          ],
+          "params": {
+            "a": 5.3513039717271,
+            "b": -2.7062856858364523,
+            "c_R": -0.7344588783508801,
+            "log_sigma": -0.7239886207045314,
+            "mu_log10_gamma": 1.136572923809988,
+            "log_tau_log10_gamma": -0.44604270221345577
+          }
+        }
+      },
+      "elapsed_seconds": 2.169905832997756
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "record": 12515773,
+    "repository_md5_verified": true,
+    "archive": "data/external_v4/raw_search/bartosak2024_Dataset.zip"
+  },
+  {
+    "record": 17985589,
+    "repository_md5_verified": true,
+    "archive": "data/external_v4/raw_search/jambor2026_Dataset.zip"
+  },
+  {
+    "record": 17086687,
+    "selected_members": [
+      {
+        "file": "AM_H_1am_2.csv",
+        "crc32_verified": true,
+        "sha256": "2280eed9490e04b8b9ceb6b112b568c7b975a7b60119b337a98bf5c7cc925e88"
+      },
+      {
+        "file": "AM_V_1am.csv",
+        "crc32_verified": true,
+        "sha256": "3af7ec7fd64b2e66dc0dd799939b29f44b99f1593f0e0d0a1f381a31a88734b6"
+      }
+    ],
+    "full_archive_downloaded_or_MD5_verified": false
+  }
+]

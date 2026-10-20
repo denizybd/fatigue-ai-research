@@ -1,0 +1,209 @@
+{
+  "audited_utc": "2026-10-20T16:59:59.864999+00:00",
+  "reviewer": "independent v3_campaign_papers agent",
+  "scope": "Read-only English claim review against current frozen CSV results, source producer metadata and independent method/source audit receipts. No draft edits, fitting, correspondence or upload.",
+  "input_sha256": {
+    "manuscript/v31/current_paper_source.json": "646f9efe0ddd7d3fd2fdc5b3ffcbf98ed4360e4def1fd5265495df69c90fbca8",
+    "outreach/v31/research_brief_en.txt": "515ff8f01b5a42332961bbab1ab8cd5519956e75b5da998d6d88e82353e92ef0",
+    "outreach/v31/email_draft_en.txt": "b4eb8514c52f4107e263896d3fe19dd3b01c9eb886db096038c376c50ec44119"
+  },
+  "verdict": "PASS. Final scientific claims, numerical tables, method disclosure, source-citation corrections and final source-to-visual-QA hash agreement verified.",
+  "table_audit": {
+    "T1_rows": 24,
+    "T2_rows": 8,
+    "errors": [],
+    "all_match_printed_precision": true,
+    "source": "results/v3/identity_cap1e7 and identity_cap1e6 summary.csv/paired_comparisons.csv"
+  },
+  "source_counts": {
+    "extension_total": 496,
+    "panels": {
+      "historical_reused": 309,
+      "external_previous_unmapped_build": 129,
+      "external_identity_qualified_firstblock": 43,
+      "external_identity_localstress_firstblock": 9,
+      "external_small_temperature_unstated": 6
+    },
+    "portable_total": 367,
+    "portable_removed_only_trombley": true,
+    "nominal_source_records": 43,
+    "acquisition_records": 31,
+    "acquisition_conditions": 3,
+    "acquisition_builds": 2,
+    "acquisition_powder_lots": 1,
+    "independent_author_campaigns": 1
+  },
+  "run_row_counts_per_cap": {
+    "1e7": {
+      "summary.csv": 1728,
+      "paired_comparisons.csv": 2304,
+      "predictions.csv": 11520,
+      "selections.csv": 920,
+      "by_condition.csv": 3360,
+      "success_gates.csv": 192
+    },
+    "1e6": {
+      "summary.csv": 1728,
+      "paired_comparisons.csv": 2304,
+      "predictions.csv": 11520,
+      "selections.csv": 920,
+      "by_condition.csv": 3360,
+      "success_gates.csv": 192
+    }
+  },
+  "campaign_ci_check": {
+    "all_panels_n_campaigns": 1,
+    "confidence_interval_columns_empty": true,
+    "interpretation": "Gates are not evaluable; repeated splits/builds are not additional independent campaigns."
+  },
+  "headline_primary": {
+    "hierarchical_high_vs_random_ratio": 1.3359624114972641,
+    "rfl_high_vs_random_ratio": 1.084805707892939,
+    "random_observed_support_cycles": 2306361.433333333,
+    "high_observed_support_cycles": 2133232.1666666665,
+    "observed_cycle_saving_percent": 7.50659736867203
+  },
+  "earlier_secondary": {
+    "1e7": {
+      "hierarchical_high_vs_random_ratio": 1.1996886178157635,
+      "rfl_high_vs_random_ratio": 0.7680844696199406,
+      "hierarchical_known_risk_high_percent": 0.4241071428571429,
+      "hierarchical_known_risk_random_percent": 0.4464285714285714,
+      "support_cycle_saving_percent": 70.17798059455806
+    },
+    "1e6": {
+      "hierarchical_high_vs_random_ratio": 1.140566813211458,
+      "rfl_high_vs_random_ratio": 0.7533459564550212,
+      "hierarchical_known_risk_high_percent": 0.4241071428571429,
+      "hierarchical_known_risk_random_percent": 0.4464285714285714,
+      "support_cycle_saving_percent": 66.1035697290301
+    }
+  },
+  "k0_code_check": {
+    "matched_intercept_equals_hierarchical_at_k0_in_both_caps": true,
+    "disclosure_needed": false,
+    "no_effect_on_main_k3_random_contrasts": true,
+    "disclosure_present_in_final_source": true
+  },
+  "scientific_scope_checks": {
+    "identified_vs_specimen_only_panels_distinguished": true,
+    "one_author_campaign_not_three_independent_campaigns": true,
+    "life_utility_not_demonstrated_safe_life": true,
+    "70_percent_secondary_saving_not_transferred_to_7_5_percent_primary": true,
+    "original_518row_BNN_SWT_Owen_not_reproduced_or_ranked": true,
+    "Wu109943_publisher_preview_access_limit_explicit": true,
+    "source_Solberg_official_thesis_negative_status_current": true,
+    "MARAGING18Ni300_table_not_used_for_316L": true,
+    "localstress_and_temperature_unstated_pilot_separate": true,
+    "public_outcomes_seen_and_exploratory_status_explicit": true,
+    "population_parameter_uncertainty_omitted_explicit": true,
+    "fresh_replay_not_physical_replication_explicit": true
+  },
+  "evidence_paths": [
+    "literature/v3_campaigns/continuation_merot_audit/identity_scope_and_fit_audit.json",
+    "literature/v3_campaigns/continuation_merot_audit/identity_results_independent_audit.json",
+    "literature/v3_methods/real_quadrature_sensitivity.json",
+    "literature/v3_methods/independent_code_review.md",
+    "results/v3/identity_full_replay_comparison.json",
+    "results/v3/identity_portable_replay_comparison.json",
+    "literature/v3_campaigns/continuation_raw/prior_art_109943_scope.md",
+    "literature/v3_campaigns/closure_root/closure_solberg_independent.json",
+    "literature/v3_campaigns/raw_repository/zenodo21105346_metadata.json",
+    "literature/v3_campaigns/raw_repository/zenodo7650061_metadata.json"
+  ],
+  "issues_reported_to_parent_before_any_source_edits": [
+    {
+      "id": "C1",
+      "severity": "minor_bibliography",
+      "location": "reference11",
+      "issue": "Zenodo21105346 producer creator order differs from draft. Dataset creators are Blankenhagen, Jakob; Siebert, Ludwig; Winkler, Michael; Diller, Johannes.",
+      "requested_change": "Use producer creator order, e.g. Blankenhagen J., Siebert L., Winkler M., Diller J.",
+      "status": "resolved_in_final_source"
+    },
+    {
+      "id": "C2",
+      "severity": "minor_bibliography",
+      "location": "reference10",
+      "issue": "Zenodo7650061 has sole creator Tomasz Tomaszewski; draft says Tomaszewski and coauthors.",
+      "requested_change": "Cite Tomaszewski T. for the dataset; distinguish any coauthored related article.",
+      "status": "resolved_in_final_source"
+    },
+    {
+      "id": "C3",
+      "severity": "minor_format",
+      "location": "reference4 and reference9 evidence_scope",
+      "issue": "DOI whitespace artifacts: 10.1038/s 41597-023-02150-x and 10.13011/m 3-c 93d-z 035.",
+      "requested_change": "Use 10.1038/s41597-023-02150-x and 10.13011/m3-c93d-z035.",
+      "status": "resolved_in_final_source"
+    },
+    {
+      "id": "M1",
+      "severity": "method_disclosure",
+      "location": "section4 matched_intercept",
+      "issue": "At k0 the run code substitutes the hierarchical prediction, whereas current prose describes target-only intercept behavior without this exception. Full CSV versus_k0 results therefore need an explicit shared starting reference disclosure.",
+      "source": "src/v3_run.py:80",
+      "requested_change": "At k=0, the matched-intercept label uses the hierarchical population prediction as a common starting reference; its target-only intercept is estimated only after supports are observed. For k>0 it is unavailable if every selected support is censored.",
+      "numeric_impact": "No change to k3-versus-random T1/T2 values.",
+      "status": "resolved_in_final_source"
+    },
+    {
+      "id": "E1",
+      "severity": "minor_editorial",
+      "location": "render_notes.current_snapshot",
+      "issue": "Pending Solberg wording is stale; source_followup_status correctly records the completed negative official-thesis audit.",
+      "requested_change": "Replace pending-lead note with audited-negative status.",
+      "status": "resolved_in_final_source"
+    },
+    {
+      "id": "E2",
+      "severity": "minor_editorial",
+      "location": "section8 reproducibility",
+      "issue": "Released archive may imply public distribution although declarations say no publication/upload.",
+      "requested_change": "Prefer prepared archive or supplied archive unless public release actually occurred.",
+      "status": "resolved_in_final_source"
+    }
+  ],
+  "unverified_claims_remaining": "No unresolved numerical, scientific-scope, bibliography or source/QA-hash issue found in reviewed final English sources. General reliability and a second matched independent campaign remain expressly unestablished.",
+  "previous_review_input_sha256": {
+    "manuscript/v31/current_paper_source.json": "2277243807383f78235c778a76d01fd70f4efba0071e135c5e800ab11b263231",
+    "outreach/v31/research_brief_en.txt": "515ff8f01b5a42332961bbab1ab8cd5519956e75b5da998d6d88e82353e92ef0",
+    "outreach/v31/email_draft_en.txt": "b4eb8514c52f4107e263896d3fe19dd3b01c9eb886db096038c376c50ec44119"
+  },
+  "final_refresh": {
+    "all_reported_issues_resolved": true,
+    "resolved_checks": {
+      "M1": true,
+      "C1": true,
+      "C2": true,
+      "C3": true,
+      "E1": true,
+      "E2": true
+    },
+    "supplement_k0_reference_explicit_in_S11": true,
+    "source_changes_scope": "k0 method disclosure, producer creator citations, DOI spacing, completed negative Solberg status and local-archive wording; numerical table rows unchanged.",
+    "source_json_matches_visual_qa_receipt": true,
+    "visual_qa_receipt_source_sha256": "646f9efe0ddd7d3fd2fdc5b3ffcbf98ed4360e4def1fd5265495df69c90fbca8",
+    "qa_receipt_mismatch_reported_to_parent": true,
+    "reviewer_did_not_edit_drafts_or_rerun_models": true,
+    "qa_receipt_mismatch_resolved": true,
+    "qa_receipt_current_sha256": "3a7bf7d355e7919b0b786ee2f2d0ff52598a0af44e999774d26c5aebe93ec011",
+    "final_visual_qa_coverage": {
+      "paper_pages": 8,
+      "brief_pages": 1,
+      "all_initial_pages_rendered_and_visually_inspected": true,
+      "latest_modified_paper_pages_reinspected": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "other_current_pages_pixel_identical_to_inspected_versions": [
+        1,
+        2,
+        5,
+        8
+      ],
+      "inspection_chain": "All8originalpages inspected; subtitle/declaration changes1/6/7 inspected; k0/ref changes3/4/7 inspected; final local-archive wording6 inspected. Final8pages verified by pixel-identical comparisons for unchanged versions."
+    }
+  }
+}

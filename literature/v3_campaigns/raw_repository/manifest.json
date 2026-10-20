@@ -1,0 +1,516 @@
+{
+  "retrieved_date": "2026-10-20",
+  "files": [
+    {
+      "path": "data/external_v3/raw_repository/all181_candidates.csv",
+      "bytes": 128474,
+      "sha256": "bd9698a76d58d50583747ed855644cf24c4fb49398ec4c4298966c8c2998aba7"
+    },
+    {
+      "path": "data/external_v3/raw_repository/diller2024_all44_candidate.csv",
+      "bytes": 23824,
+      "sha256": "8afa3faf1ddfcc1204a9d8789f892c38d8ec0d225d37739da8869b6f90c90cfc"
+    },
+    {
+      "path": "data/external_v3/raw_repository/diller2024_asbuilt29_secondary.csv",
+      "bytes": 15604,
+      "sha256": "7cc4120d18d141fa14d1294fdb3003cba3e25b08ac21b1b2cf882edfc96bae3a"
+    },
+    {
+      "path": "data/external_v3/raw_repository/superseded/README.txt",
+      "bytes": 276,
+      "sha256": "852e9353baa73a210b0e8234e91ae0436747a9b4a55d58caa6718d9610f89ad2"
+    },
+    {
+      "path": "data/external_v3/raw_repository/superseded/all180_candidates.csv",
+      "bytes": 128474,
+      "sha256": "bd9698a76d58d50583747ed855644cf24c4fb49398ec4c4298966c8c2998aba7"
+    },
+    {
+      "path": "data/external_v3/raw_repository/superseded/diller2024_all43_candidate.csv",
+      "bytes": 23824,
+      "sha256": "8afa3faf1ddfcc1204a9d8789f892c38d8ec0d225d37739da8869b6f90c90cfc"
+    },
+    {
+      "path": "data/external_v3/raw_repository/tomaszewski2023_a02w9_build_candidate.csv",
+      "bytes": 8094,
+      "sha256": "adb20742a602e5fd23b01e56aab731905c5a66c5606d612a459fdaf3bfeb5149"
+    },
+    {
+      "path": "data/external_v3/raw_repository/tomaszewski2023_all137_secondary.csv",
+      "bytes": 104794,
+      "sha256": "ab83fe9eb48f2350902e32c7c6ebf3300b2be56b56a431605281301c3b9eed13"
+    },
+    {
+      "path": "data/external_v3/raw_repository/tomaszewski2023_data.xlsx",
+      "bytes": 21603,
+      "sha256": "30a45bb604d1b13f38f6e36047174fbcc2734f38019c683ba5dd149e1d4f4b35"
+    },
+    {
+      "path": "data/external_v3/raw_repository/yin2026_secondary/Ar_vs_N2_JMP_Final.jmp",
+      "bytes": 229052,
+      "sha256": "0c3608512a34f0cb4013b8e7f377bb1a832a5cd5b8287c58353894acaef82eaf"
+    },
+    {
+      "path": "data/external_v3/raw_repository/yin2026_secondary/DED CycPol Curves_Summary_Submit.xlsx",
+      "bytes": 22084992,
+      "sha256": "6d760fbf17cd688eb1bb242501f16ba4747558d477817dea2b1576130804bdbc"
+    },
+    {
+      "path": "data/external_v3/raw_repository/yin2026_secondary/author_jmp_allrows_extracted.csv",
+      "bytes": 76632,
+      "sha256": "6b3351debfcb92296fab79711221d102f3cc7ae97a5facda28d453ab2a21414d"
+    },
+    {
+      "path": "data/external_v3/raw_repository/yin2026_secondary/yin_complete14_outside_scope.csv",
+      "bytes": 6360,
+      "sha256": "4eef2b8b8d2bb1db276c4d9c4e2f228774c06553ad9426cdcec947974cfb26bb"
+    },
+    {
+      "path": "data/external_v3/raw_repository/yin2026_secondary/yin_named18_outside_scope.csv",
+      "bytes": 7907,
+      "sha256": "5f2093b7bea4733702962dd6d3500902dc4b5564943c1b0562b369ab88c2e964"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/author_mapping_request_drafts.txt",
+      "bytes": 4614,
+      "sha256": "50901baad5931996023879ab7f89cc92e5bbfc07a0b70474b8ad720fc62589c8"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/diller2024_readme.txt",
+      "bytes": 2099,
+      "sha256": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/diller2024_thesis.pdf",
+      "bytes": 33192925,
+      "sha256": "f7d64559c08aca26176ffc0c1ac4ba7d6cb4116bd8592ac9f1c008b3100201af"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/diller2024_thesis.txt",
+      "bytes": 506349,
+      "sha256": "130407f0b2b00e80c3f8ab686308a51fbff69b5a3a0d364e1726e27f7baac475"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/diller_methods-134.png",
+      "bytes": 476777,
+      "sha256": "6b5a822b0a0fa057bc91080c232bd487cadaf5afcb31b3762e2c33422060a023"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/diller_methods-135.png",
+      "bytes": 593471,
+      "sha256": "bd7adfb67b0eb6e6482f05b92bb71687d84551bdafd836f792b3d9e283452b62"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/diller_results-142.png",
+      "bytes": 761751,
+      "sha256": "28251f2a95af40aae79567d75cf6d3d9bf2c33df07a8f9e79864e1f1f4379169"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/extract_yin_secondary.py",
+      "bytes": 3608,
+      "sha256": "d9cdd873d79522b817ec4bcc86b97f7d8956b44d70f798cca580b43212642f91"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/independence_audit.json",
+      "bytes": 9835,
+      "sha256": "5f736e8cc5462b07b7376eb7dc5826eee6200dc61af2d5613ad2e28f0a320cf9"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/independent_source_gate_review.json",
+      "bytes": 797,
+      "sha256": "1e4974c5e3aeeaccc06b8b12f122770ebfe19b28f7c5473edc72560a7b5a940d"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_source.zip",
+      "bytes": 52680,
+      "sha256": "76a0b2e538efd9b9e84198b06c9c9aeb3773895202b7d5c11701ea794203006e"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/.gitignore",
+      "bytes": 1947,
+      "sha256": "7433728ffcac88005cd2dab0ed0b4bff218ba5c9af8aaf39a5eb91f31f969cdc"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/README.md",
+      "bytes": 3730,
+      "sha256": "96fbc85364365415f2ce9d2f534e0d4e89d22833a5a8b39f841094acf4bd1b06"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/examples/roundtrip.py",
+      "bytes": 2591,
+      "sha256": "516656b24e7c15a440917b43359ad1b0bd305d34f4aa1ed04a2f35b6bdc4ad6a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/examples/simple.py",
+      "bytes": 2119,
+      "sha256": "08282a00a92d7b47f535da40022a0dfc7afcbef9fab8909023f7f9fdd47c8d0c"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/pyproject.toml",
+      "bytes": 1050,
+      "sha256": "7111e77e8560290364294cc54ec5faade9b6317fc7a9159edd0283de2f0854e6"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/ruff.toml",
+      "bytes": 1894,
+      "sha256": "6ebe7e395ca040faf2f8df12148f13552361c915adaf74f6f23942174139f198"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/setup.py",
+      "bytes": 272,
+      "sha256": "6065d634bfc176cbfefb9ff777b690555f6000b5baf9957c76b7bffdfae43da9"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/__init__.py",
+      "bytes": 340,
+      "sha256": "34449be8958e117ab2561a0079fd5076c86b96597d4c9bba04f5c38972723840"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/column.py",
+      "bytes": 17021,
+      "sha256": "15eb190b7d96853e0b93fc2c1071631595d45074947709fe96691763bc3d9b4b"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/constants.py",
+      "bytes": 2120,
+      "sha256": "de149677b7e1b4152bbdf744556a418585a6bfa1540268b809277ce9f66a23e3"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/metadata.py",
+      "bytes": 7013,
+      "sha256": "8a3126a134048eaa613ccda0f734f1dee6cbc9fbfc687d0184e298d57143aeff"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/reader.py",
+      "bytes": 7140,
+      "sha256": "68aba3f615c9c14e4878737b069baecde527841c6d1f61577f08b3d39a8232a7"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/types.py",
+      "bytes": 3340,
+      "sha256": "40ab4b2008d21836aa7aaea43a9f55d67b15b4b74a4bde907de5e7718f00258d"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/utils.py",
+      "bytes": 8433,
+      "sha256": "355d292359b18c369949d3d166ba7db6b2597072c24a1be71adf479296ef9831"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio/writer.py",
+      "bytes": 29255,
+      "sha256": "9bdb157e8f88a188c80e07fadec897ce0583c0797db2136054d1f3891b44c956"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio.egg-info/PKG-INFO",
+      "bytes": 3963,
+      "sha256": "15c78afe3aaa5d4fa35fd8ea5110f5b0de10802ce11b30227205c0e6007e1178"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio.egg-info/SOURCES.txt",
+      "bytes": 259,
+      "sha256": "efeb51ab35516c6b41da5c79800a2d8fedc10ab2d037edc6852e691079ecb1b4"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio.egg-info/requires.txt",
+      "bytes": 28,
+      "sha256": "f9966b381545978303b49dacf36c7fdb5e056bf07066084474c81524a1521710"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/src/jmpio.egg-info/top_level.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/conftest.py",
+      "bytes": 1210,
+      "sha256": "afb489b29a22c6fe3d7e20f9ff08095bde0b94aa2b6205e877f8f81381840819"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/byteintegers.jmp",
+      "bytes": 1105,
+      "sha256": "30a8be4c45eb4e6ccba92947fdbe8eb056a4abec7502bb1ebee382a94c9c624a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/byteintegers_notcompressed.jmp",
+      "bytes": 945,
+      "sha256": "de2e2dde335dba9b062c539433442b0dada5712272848442178ad8f1a414a5c6"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/byteintegers_withmissing.jmp",
+      "bytes": 1016,
+      "sha256": "8d436315b2b137c4128a0abfaf599397de8ecaae021d9c1756a9881385bdcac6"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/char.jmp",
+      "bytes": 1049,
+      "sha256": "ff553e9ace3f353eb9f0e3ab091b2ca37b048a4206484466d42104eac0aff34a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/compact.jmp",
+      "bytes": 2085,
+      "sha256": "967acc49e9ba8f2cb62f62de3dc656aae9fa023dbdcdd96711bce8b485d3814a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/compressed.jmp",
+      "bytes": 4918,
+      "sha256": "c724960a0db0e6992e0c6d6f7c3e0179506cd362a2037dd9ede66efbe0566bfc"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/currencies.jmp",
+      "bytes": 1905,
+      "sha256": "6d30c327eb7e5c54c532cbdd914f0ad9904406d079ac750588d6f77a24f0e72d"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/date.jmp",
+      "bytes": 1999,
+      "sha256": "2d24bf7232710e4498b4bb8e5bebdf7a2cf31d9a56c5d2e328854cc967452d65"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/duration.jmp",
+      "bytes": 1043,
+      "sha256": "357f74b8982033c8bec73467331586c09179308f11d0dafa6899152d9a84ef25"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/example1.jmp",
+      "bytes": 2108,
+      "sha256": "a93b5ff882d99b045fcc5e10af03d8f558be5ba0653b5a0f2f6a465200f2b468"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/geographic.jmp",
+      "bytes": 1538,
+      "sha256": "a393224520c55aafa9c718d742e7a98500a4c5aa01101f42784e31bc11809e5f"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/longcolumnnames.jmp",
+      "bytes": 4998,
+      "sha256": "9a70410fae47b111515369ecc808dce568882f47e36249ca5532e28ee04d3ece"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/rowstate.jmp",
+      "bytes": 995,
+      "sha256": "2baf2362d958cca4cd5833b1932a5ef7098e4f56dc34c345a3bf52fa3960d239"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/singlecolumnsinglerow.jmp",
+      "bytes": 685,
+      "sha256": "6b57b14c7d772054bf49427094fa7d5bb8056089db9df1271d0fed5f922b8b29"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_data/time.jmp",
+      "bytes": 2592,
+      "sha256": "0f1f48ecbe510d311639a2637fc16de6ab285feac1965cfb197435c2ca15c48b"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_reader.py",
+      "bytes": 12244,
+      "sha256": "deac63cee0fb9573fd5780817ed0428b851d217448332fcf05413516ec51afa5"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_utils.py",
+      "bytes": 5728,
+      "sha256": "8870a4eda154f4364a96003c813b63a567d589fd461d05e98ed4eaaef1fe582a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/jmpio_vendor/martyblaber-jmpio-python-5e9d49f/tests/test_writer.py",
+      "bytes": 9594,
+      "sha256": "5f0e7b814f2ca44ecf70cb5e66cdebb9a7997f700206979ae0cda3afdcbfb52d"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/mendeley_public_ui_bundle.js",
+      "bytes": 654883,
+      "sha256": "6dc1ed58657b306832db9f82de114a9f40f7db88f5ce494c10b3a558ad725658"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/mendeley_search.json",
+      "bytes": 159,
+      "sha256": "7ff32a7a9b13ad946d4dab5ba437df7413617fa8f0f2194df1168b20699d3250"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/normalization_receipt.json",
+      "bytes": 10337,
+      "sha256": "b1bd4e0ee9f67bce4ee2a99e7a4efc25948db518638b183b79a5bd8217359d69"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/normalize_raw_candidates.py",
+      "bytes": 11007,
+      "sha256": "3c2d2369e55d33c8ed175d70fac30c84ce34e557e109c3d14a331e2c366eb3f7"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/report.md",
+      "bytes": 11046,
+      "sha256": "e9d514315070b41a9d3c8767ac1c6b0402b789eab78c6582f793c96b355b688e"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/search_log.json",
+      "bytes": 2712,
+      "sha256": "f425ee0f8c8f81d43af82bfa2b6c5efd5a58383fed23b1e5f04e583fe48fe5f4"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/source_manifest.json",
+      "bytes": 3806,
+      "sha256": "473f9ef67efc50a024c1155438aa39a61ae769643e38e5e77f37059ff144cdf4"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tom2023-06.png",
+      "bytes": 266467,
+      "sha256": "994ce80eed6988995d6f0ae7993df8045faadcb5c5e5cb388a41f52552bd1dcc"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tom2023-07.png",
+      "bytes": 198433,
+      "sha256": "2961ffe0636a6ab5932ed9596f5c0252c293e98d06d7db0a566c97b6e8ad92f4"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tom2023-08.png",
+      "bytes": 269297,
+      "sha256": "e0fc97001ebc14246c4e0e8cfb7911d4c155c345d8a2798f6c2bf632c28d2697"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tom2023fig-09.png",
+      "bytes": 375477,
+      "sha256": "5ec55335a8baf8944a34cf3cf5e913802edfba29cc06216dbaee6f63484d391a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tom2023fig-10.png",
+      "bytes": 208260,
+      "sha256": "f8ea03b4444543e57a0ba17e313b0fb793aafb27b16a5f06e4e13855fe05aa74"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tom2024-04.png",
+      "bytes": 212096,
+      "sha256": "48ca7818b616448dab9f25affdefbe79a11b462dd8dad07e174b5b171391e086"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2023_article.pdf",
+      "bytes": 1903975,
+      "sha256": "ae3c0b1e60ea22f7841f07520f5da88f539f864543b93f82324e9368810d3b91"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2023_article.txt",
+      "bytes": 74839,
+      "sha256": "d3e09932e8780efd8a922dd3b0a8995811b8e5e377337b7a13145bec4b922923"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2024_article.pdf",
+      "bytes": 1972590,
+      "sha256": "1bfc6253cbdf594b1b7a427d036bd8d643f2c605236bb345874338c0c291e206"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2024_article.txt",
+      "bytes": 67833,
+      "sha256": "4d470b888a4959530683620a59a0c2503ff2d62b2697ff6d0d41c0a46233375c"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2024_repository.html",
+      "bytes": 24448,
+      "sha256": "4e59596d9509d5751b7973dacb415c3b9ff3bfeefa66df49a92cbc0e98ff352a"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tum_datatagger_landing.html",
+      "bytes": 52045,
+      "sha256": "3a714fb4eae122d8a96b51c885f55754afba1428dbad6023efcd3f6f67eee9ee"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_api_files.json",
+      "bytes": 191,
+      "sha256": "0bc5e715a25ec3912b19782b9313a60dd5e868b49121e0e50f416307fad3f7ff"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_api_snapshot.json",
+      "bytes": 185,
+      "sha256": "9925206f0782134c6dc5bd07a7439a73ee5e45bb26a6303960bbb8974e3234bc"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_extraction_receipt.json",
+      "bytes": 596,
+      "sha256": "74dacc25fd6fd85895fec4b6e62919fa641d9dc7af89902bae646fc032ba9b04"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_files_api.json",
+      "bytes": 1511,
+      "sha256": "9fddbecd80218379f9e16927e855694fb673d80e338f3ab4852e636644858d84"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_jmp_strings.txt",
+      "bytes": 172545,
+      "sha256": "933cb33d926ccbb6de3fe9271a2bc29b64a87c75fbe91d031784313b7c213328"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_mendeley_landing.html",
+      "bytes": 126802,
+      "sha256": "485021c8c0162fff95f2cd0bd60fd75604fe2b1c3d1fd2c918dfafdb309ba85f"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_public_files.json",
+      "bytes": 186,
+      "sha256": "f2c9e9a7fe01035f188464ae73b631d658f69ba9be97282fd92a99173755092e"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_public_metadata.json",
+      "bytes": 180,
+      "sha256": "f2ad43308bb8dd996d6584c9902b9e107cc44fe8d9f2fcd2352d241e32fb65f7"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/yin2026_secondary_report.md",
+      "bytes": 2895,
+      "sha256": "94692bc36d852223f2c6d621d45ac3496aadc7587e3221194472c24c6424af2c"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo10477561_metadata.json",
+      "bytes": 7328,
+      "sha256": "72cd0368f39e255a7b96afff069e91acce05e5ccbb572642bdb4dbd54eeb681c"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo21105346_metadata.json",
+      "bytes": 5933,
+      "sha256": "2b5013dbea08f3e19e90cf27ae8845a56dea833bc2a85e46077ed9c46a693c0d"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo6653187_metadata.json",
+      "bytes": 5555,
+      "sha256": "0eb1e7303e0942164c47be51988df375a41dbaf44991d632b529a1e67ca8e954"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo7650061_metadata.json",
+      "bytes": 4854,
+      "sha256": "f06a681a5ed4f9dd290885e8ef2afa6e1d7b0ca9ea26abd40da88e5d8d130b10"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo_query_4206397731663722720.json",
+      "bytes": 216558,
+      "sha256": "151a18746d325272125832ad06601edb77a2e05c974aa4e1fbb972648e63e0e9"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo_query_5115995854644032445.json",
+      "bytes": 275340,
+      "sha256": "04998956c842fbec22bff4b4d8398c67120673ac90511323c6ad0d6572faa711"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo_query_8523620618145319309.json",
+      "bytes": 82079,
+      "sha256": "cff1a6a00a0a7bb1d44cb6d5b03190cd74426908b0dc1dd2f6ad3f2ba1a5c847"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo_query_8753279944664579406.json",
+      "bytes": 7378,
+      "sha256": "13aeefbb63623b0634a6ac4da346a468de817aa43490618db22580e42e83d776"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/zenodo_search_316L_fatigue.json",
+      "bytes": 207,
+      "sha256": "8105c5098c3b8051ed4e35cc510a7c4af8dcca8edb46986c9a37ba5469c6985c"
+    }
+  ],
+  "superseded_files": "Generated wrong-count filename variants are confined to data/external_v3/raw_repository/superseded; current counts44/137/181."
+}

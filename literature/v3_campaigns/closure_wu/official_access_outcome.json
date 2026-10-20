@@ -1,0 +1,112 @@
+{
+  "audit_at_utc": "2026-10-20T16:55:38.906192+00:00",
+  "exact_target": {
+    "doi": "10.1016/j.ijfatigue.2026.109943",
+    "title": "Machine learning for fatigue life prediction of additively manufactured alloys: Quantifying predictive gain over physics baselines",
+    "authors": [
+      "Zicheng Wu",
+      "Yi Zhou",
+      "Ninian Sing Kok Ho",
+      "John Hock Lye Pang"
+    ],
+    "crossref_created": "2026-08-22T09:20:22Z",
+    "bibliographic_issue": [
+      [
+        2027,
+        1
+      ]
+    ],
+    "published_online_date": null,
+    "date_caution": "Record creation date is not publication-online proof;2027 is the assigned issue year."
+  },
+  "result": "NO_OFFICIAL_FULLTEXT_OR_SUPPLEMENT_OBTAINED",
+  "new_identity_qualified_fatigue_records": 0,
+  "metadata_identity_agreement": {
+    "crossref_openalex_orcid_exact_title_and_DOI": true,
+    "openalex_work": "https://openalex.org/W7203990861",
+    "first_author_orcid": "0009-0001-8518-283X"
+  },
+  "openalex_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "any_repository_has_fulltext": false,
+    "location_count": 1,
+    "repository_locations": [],
+    "pdf_urls": [],
+    "has_fulltext": false
+  },
+  "author_public_source": {
+    "official_orcid_work_source": "Crossref",
+    "work_URL": {
+      "value": "https://doi.org/10.1016/j.ijfatigue.2026.109943"
+    },
+    "researcher_URL_count": 0,
+    "outcome": "Exact work points only to DOI; no accepted-manuscript, supplement or author-repository URL exposed."
+  },
+  "official_NTU_access": {
+    "base": "https://dr.ntu.edu.sg/",
+    "normal_GET_status": 405,
+    "normal_GET_content": "Human Verification AWS WAF response; no challenge solved.",
+    "web_tool_home": "Normal public web open returned repository home shell at/home; scholarly content remained Loading.",
+    "exact_DOI_repository_search_URL": "https://dr.ntu.edu.sg/search?query=10.1016%2Fj.ijfatigue.2026.109943",
+    "exact_search_access": "Not accessible via public web tool.",
+    "exact_DOI_and_title_official_domain_queries": "No exact official NTU publication record/fulltext link surfaced.",
+    "exact_NTU_publication_metadata_obtained": false,
+    "no_auth_bypass": true
+  },
+  "publisher_public_metadata_GET": {
+    "URL": "https://api.elsevier.com/content/article/PII:S0142112326004640?httpAccept=text/xml",
+    "http_status": 200,
+    "contains_coredata": true,
+    "contains_article_body": false,
+    "contains_supplement_files": false,
+    "openaccess": "0",
+    "tags": [
+      "full-text-retrieval-response",
+      "coredata",
+      "url",
+      "identifier",
+      "eid",
+      "doi",
+      "pii",
+      "title",
+      "publicationName",
+      "aggregationType",
+      "issn",
+      "coverDate",
+      "coverDisplayDate",
+      "openaccess",
+      "openaccessArticle",
+      "openaccessType",
+      "openArchiveArticle",
+      "openaccessSponsorName",
+      "openaccessSponsorType",
+      "openaccessUserLicense",
+      "link",
+      "link"
+    ]
+  },
+  "primary_preview_boundary": {
+    "sources": [
+      "https://www.sciencedirect.com/science/article/pii/S0142112326004640",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0142112326004640"
+    ],
+    "access": "Indexed publisher previews reappeared in exact-title queries; these are not a downloaded full manuscript.",
+    "known_limited_scope": "Preview reports grouped versus random splitting, material-family extrapolation, target augmentation, external validation series, and author-request code/in-house data.",
+    "still_unknown": [
+      "Exact group key and whether physical-build holdout is performed.",
+      "Actual specimen/build identities and material/mode of every external validation series.",
+      "Target-point selection/acquisition protocol.",
+      "Exact censoring treatment and reliability-bound coverage.",
+      "Supplementary tables and full algorithm details."
+    ],
+    "novelty_caution": "Do not assert that this paper lacks adaptive stress selection, specimen/build splits, censor-aware updating or reliability guarantees without the full methods. Full-method novelty gap remains bounded."
+  },
+  "not_substituted": [
+    "Materials Letters140105",
+    "Figshare33392110",
+    "Other alloy publications by overlapping authors"
+  ],
+  "impasse": "Current exact-DOI metadata, public author ORCID and accessible official archive surface no full source. Progress requires an accessible accepted manuscript/supplement or authorized source clarification. This does not prove no manuscript exists anywhere.",
+  "no_correspondence_or_models": true
+}

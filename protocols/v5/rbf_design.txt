@@ -1,0 +1,82 @@
+PHASE5 EXPLORATORY ROTATING-BENDING MODE-TRANSFER PILOT
+Frozen20October2026 before any v5RBF fit/prediction/summary. All tabulated
+outcomes have been seen during source transcription/audit. This is exploratory,
+not a new unseen campaign or a confirmatory acquisition-algorithm validation.
+
+Primary source DOI10.1016/j.ijfatigue.2025.109365 Table1:67 reported outcomes,
+63numeric failures and4explicit Runout labels. Nominal bending stress amplitude
+MPa,R=-1,25C or450C. Source mode is rotating bending, with surface stress
+gradient, not uniform axial loading. The25C as-built reference curve25points is
+explicitly reused from DOI10.1016/j.ijfatigue.2024.108491. Keep all67 in ONE
+precautionary author-family block, including42outside that explicitly reused
+curve. Publication row/column locators are never laboratory specimen/build IDs.
+Per-point virgin status and physical independence remain unverified. The source
+reports stress/life S-N tests and stepwise stress choice across a test series;
+it does not explicitly establish within-specimen stepped exposure. Evaluate
+as-reported endpoints conditionally; do not claim gold virgin/build validation.
+
+Population comparison: identical six unchanged censored baselines trained on
+A309 versus B441, frozen v4 prepared training files. Neither target DOI nor
+the entire108491+109365 family may occur in either training population. No
+target outcome enters population fitting, hyperparameter tuning or planner
+training. Source-balanced weighting changes when families are added; this is
+an evidence-expansion comparison, not a matched-size causal data-count effect.
+Models:pooled Basquin,hierarchical Basquin,two-slope hierarchical Basquin,
+normal-normal RFL with infinity mass,target-intercept,local-slope MAP/Laplace.
+At k0,target-intercept uses the explicit hierarchical population reference.
+No original BNN/Weibull-paper replication; population parameter uncertainty is
+not propagated. No model or policy is selected by these target outcomes.
+
+Primary panel:25C,44reported records in2conditions,ONE author family.
+Separate sensitivity panel:450C,23records in2conditions,same author family.
+Use all source records without inventing thermal/lot/virgin identities.
+Known25C prior-curve manufacturing parameters remain unverified and are not
+silently transferred from the newer paper. Use stress centers, preserve source
+reported+/-2or5MPa as uncertainty metadata; no post-hoc stress perturbation.
+
+Common query/pool:inherit v3 rank salt v3-common-query,seeds0..9. For each
+condition n>=6,query=max(3,floor(.4*n)); the remaining observations are the
+support pool. Freeze query IDs and pools before fits. All models,policies and
+populations share each exact query set. Primary k0/3/5; k10 only where feasible
+as a separately labeled appendix (both25C pools permit it).450C permits0/3/5.
+Retrospective selectable rows, not fabricated new stress/outcome experiments.
+
+Four fixed policies:random,high_stress,stress_span,active_query_variance.
+Compute support sequences ONCE per task/policy/cap using only the A309
+hierarchical censored-normal Fisher planner, then reuse across populations and
+all six predictors. Query/candidate covariates logstress and R may be known;
+their life/event fields are absent from selector input. Only selected outcomes
+are revealed sequentially. The active planner is not model-specific/RFL-optimal.
+
+Primary planning/reveal cap5e6 cycles. Source runouts establish survival at
+least5e6; exact individual stops are unknown. Encode event0 at the known lower
+bound5e6. Numeric failure6.07e6 remains a source event1; when selected under
+5e6 cap its revealed support becomes censored at5e6. Earlier failures remain
+events. This cap makes min(T,5e6) support-cycle cost identifiable for all rows.
+Queries retain original source failure/censor information for evaluation;
+only selected support information is truncated. Predictive q10 is not clipped
+to the planning cap and is not a certified R90C90 bound.
+
+Sensitivity cap1e7 is a planning-horizon assumption. Runout likelihood remains
+censored at known5e6; never fabricate survival or an exact stop at1e7. For such
+supports cost lower bound=min(known5e6,cap),upper bound=cap. Numeric failures
+have exact truncated cost. Save both cumulative cost bounds. The inherited
+support_cycles field equals the LOWER bound for compatibility and must not be
+called measured exact cost in the1e7 panel. Save conservative policy savings
+identification intervals versus random using both cost bounds. No time cost
+is inferred because source rotation frequency is unstated.
+
+Report known/upper censor-risk identification bounds,exact paired policy and
+B-versus-A risk changes,finite-pair log-life utility,availability/infinity rate,
+failure shortfall,all-support-runout rate,cost bounds and selected stress IDs.
+Average queries within condition/seed,conditions within family/seed,seeds,
+then family. There is ONE family:population/bootstrap confidence intervals
+and a general safety/superiority gate are unavailable. Do not interpret NaN
+confidence gates as evidence of policy failure. Report k3 primary and k5
+supporting; k10 is appendix. No tuning after outcomes, no changes to v3/v4.
+
+Before running:source audit PASS,input hashes,protocol/code hashes and all40
+task query/pool lists saved. Parent independently reviews code/splits. After:
+check common queries,shared supports,whole-family exclusion,truncation/cost
+bounds,convergence receipts,paired arithmetic and primary/sensitivity roles.
+No new correspondence, publication or deployment is authorized.

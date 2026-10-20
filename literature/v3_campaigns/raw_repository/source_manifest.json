@@ -1,0 +1,80 @@
+{
+  "retrieved_date": "2026-10-20",
+  "sources": [
+    {
+      "file": "literature/v3_campaigns/raw_repository/diller2024_readme.txt",
+      "source_url": "https://zenodo.org/api/records/21105346/files/read%20me.txt/content",
+      "repository_doi": "10.5281/zenodo.21105346",
+      "license": "CC-BY-4.0 per official Zenodo metadata",
+      "repository_md5": "988fbec41eb89f289eb630475d2e04a2",
+      "bytes": 2099,
+      "sha256": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f"
+    },
+    {
+      "file": "literature/v3_campaigns/raw_repository/zenodo21105346_metadata.json",
+      "source_url": "https://zenodo.org/api/records/21105346",
+      "license": "CC-BY-4.0 metadata",
+      "bytes": 5933,
+      "sha256": "2b5013dbea08f3e19e90cf27ae8845a56dea833bc2a85e46077ed9c46a693c0d"
+    },
+    {
+      "file": "literature/v3_campaigns/raw_repository/diller2024_thesis.pdf",
+      "source_url": "https://mediatum.ub.tum.de/doc/1739096/1739096.pdf",
+      "license": "Public institutional thesis; no blanket redistribution license inferred for all included manuscripts",
+      "bytes": 33192925,
+      "sha256": "f7d64559c08aca26176ffc0c1ac4ba7d6cb4116bd8592ac9f1c008b3100201af"
+    },
+    {
+      "file": "data/external_v3/raw_repository/tomaszewski2023_data.xlsx",
+      "source_url": "https://zenodo.org/api/records/7650061/files/Data.xlsx/content",
+      "repository_doi": "10.5281/zenodo.7650061",
+      "license": "CC-BY-4.0 per official Zenodo metadata",
+      "bytes": 21603,
+      "sha256": "30a45bb604d1b13f38f6e36047174fbcc2734f38019c683ba5dd149e1d4f4b35"
+    },
+    {
+      "file": "literature/v3_campaigns/raw_repository/tomaszewski2023_article.pdf",
+      "source_url": "https://dlibra.pbs.edu.pl/Content/5098/Tomaszewski_Modelling_of_critical.pdf",
+      "article_doi": "10.1016/j.ijfatigue.2022.107378",
+      "license": "Public institutional author manuscript; do not infer entire dataset scope",
+      "bytes": 1903975,
+      "sha256": "ae3c0b1e60ea22f7841f07520f5da88f539f864543b93f82324e9368810d3b91"
+    },
+    {
+      "file": "literature/v3_campaigns/raw_repository/tomaszewski2024_article.pdf",
+      "source_url": "https://dlibra.pbs.edu.pl/Content/5100",
+      "article_doi": "10.1016/j.ijfatigue.2024.108225",
+      "license": "CC-BY-4.0 per institutional repository record",
+      "bytes": 1972590,
+      "sha256": "1bfc6253cbdf594b1b7a427d036bd8d643f2c605236bb345874338c0c291e206"
+    },
+    {
+      "file": "data/external_v3/raw_repository/yin2026_secondary/Ar_vs_N2_JMP_Final.jmp",
+      "source_url": "https://data.mendeley.com/public-files/datasets/h97k6w9vm5/files/1bd73b80-5241-4d21-9225-cb3e1d71b46f/file_downloaded",
+      "repository_doi": "10.17632/h97k6w9vm5.1",
+      "license": "CC-BY-4.0 per Mendeley metadata",
+      "bytes": 229052,
+      "sha256": "0c3608512a34f0cb4013b8e7f377bb1a832a5cd5b8287c58353894acaef82eaf",
+      "primary_scope": false
+    },
+    {
+      "file": "data/external_v3/raw_repository/yin2026_secondary/DED CycPol Curves_Summary_Submit.xlsx",
+      "source_url": "https://data.mendeley.com/public-files/datasets/h97k6w9vm5/files/e5bf1660-3275-40d8-a423-e8be8a1a6a0a/file_downloaded",
+      "repository_doi": "10.17632/h97k6w9vm5.1",
+      "license": "CC-BY-4.0 per Mendeley metadata",
+      "bytes": 22084992,
+      "sha256": "6d760fbf17cd688eb1bb242501f16ba4747558d477817dea2b1576130804bdbc",
+      "primary_scope": false
+    }
+  ],
+  "software_sources": [
+    {
+      "url": "https://api.github.com/repos/martyblaber/jmpio-python/zipball",
+      "repository": "https://github.com/martyblaber/jmpio-python",
+      "commit": "5e9d49f",
+      "license": "MIT per pyproject.toml",
+      "purpose": "read-only JMP decoding",
+      "local_scalar_fix": "See yin2026_extraction_receipt.json; original ZIP preserved."
+    }
+  ]
+}

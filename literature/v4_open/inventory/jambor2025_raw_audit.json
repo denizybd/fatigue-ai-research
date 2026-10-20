@@ -1,0 +1,40 @@
+{
+  "raw_source_checks": {
+    "producer_md5_match": true,
+    "archive_sha256_match": true,
+    "archive407468869bytes": true,
+    "Cylindrical_specimen_LCF_tests_peak-valley.csv_bytes_match_archive": true,
+    "Cylindrical_specimen_LCF_tests_whole-cycles.csv_bytes_match_archive": true,
+    "Flat_specimen_LCF_tests_peak-valley.csv_bytes_match_archive": true,
+    "Flat_specimen_LCF_tests_whole-cycles.csv_bytes_match_archive": true
+  },
+  "archive_md5": "442d4e23abc6ceff544843a02aa837b1",
+  "archive_sha256": "605da3a818688f82a954b04f4dc416a79019de34b16f813f3a709a1d4de4d20b",
+  "csv_history_views": 14,
+  "distinct_author_specimen_labels": 7,
+  "all_strain_amplitude_fraction": [
+    0.004
+  ],
+  "all_header_exposures": {
+    "cylindrical": [
+      5,
+      200,
+      3000
+    ],
+    "flat": [
+      5,
+      100,
+      1000,
+      4000
+    ]
+  },
+  "all_selected_bytes_match_original_archive": true,
+  "raw_numeric_record_total_in_both_views": 217368,
+  "not_independent_fatigue_life_rows": true,
+  "no_event_or_fracture_flag_column_present": true,
+  "source_related_article": "10.1016/j.matchar.2025.115448",
+  "source_dataset_doi": "10.5281/zenodo.14763342",
+  "Jambor2026_relation": "same author/research line, physical overlap unresolved; do not claim independent-union count.",
+  "waiting_normalized_history_output_for_comparison": true,
+  "no_models_or_source_edits": true
+}

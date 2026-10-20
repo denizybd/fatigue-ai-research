@@ -1,0 +1,79 @@
+PHASE 4: PUBLIC-DATA RECONSTRUCTION AND CONTROLLED TRAINING EXPANSION
+Recorded 20 October 2026 before any v4 fit/prediction. Exploratory evaluation:
+the source outcomes and earlier results have already been inspected. This is not
+a blinded prospective validation or a recreation of Centola's unavailable518 rows.
+
+User steering: independently gather usable public evidence without a physical
+data-collection budget while the human's author request is pending. Missing
+specimen/build IDs do not invalidate source-method-qualified CA training. Keep
+identity/build-qualified evidence distinct; do not infer missing build IDs.
+
+Primary estimand: effect of source-verified extra training evidence on exactly the
+same target queries and acquired supports. A=old corrected309/32curves/11source
+blocks; B=A+132 source-verified approximate graph coordinates,16curves,
+3publications/TWO conservative family blocks. No source or row intersection
+between A and increment. The full Zhang R.1 horizontal baseline curve is omitted
+from the newer paper in preference to its earlier experimental representative.
+No fitted/predicted curves, one-cycle tensile means, review data or additional
+caption anchors are observations. Preserve field transformations and exclusions.
+
+Sensitivity regimes, fixed before results: A+Elanges38 and A+Zhang94. These are
+source-omission checks, not matched-size evidence. B has more data and two new
+source families; no causal claim that source diversity alone caused a change.
+
+New held-out target: Yankin/Perveen/Talamona2025, DOI10.1038/s41598-025-89003-2,
+primary Table3:69 individual tabulated outcomes,64 failures/5 explicit runouts,
+14angle/treatmentconditions, ONE author program. Publication test numbers1..69
+are neither laboratory specimen codes nor build IDs. Stress is directly reported
+amplitude MPa, R=-1, push-pull tests1–20Hz. Temperature, feedback control mode,
+Kt and individual build/powder lineage remain unspecified. Evaluate this as a
+separate new-source/stress-specified/temperature-unstated panel, not certified
+room-temperature force-control batch generalization. All69 remain collected.
+Five runout stops use nominal1e6 from Figs4/8 and the stated one-million-cycle
+range; Table3 supplies the runout flag, not a numeric stop. Mark this as derived
+from the plot. Exclude all UTS-derived one-cycle points visible in the figures.
+Target source is NEVER population training, preprocessing, hyperparameter tuning
+or policy selection. All source outcomes have already been seen during curation.
+
+Inherit the v3 common-query rule, seeds0..9 and four policies without tuning.
+For each condition n>=6: query=max(3,floor(.4*n)), other rows form support pool.
+Hence25 target observations/fourconditions are acquisition eligible;44 other
+observations/tenconditions are retained in the dataset but outside this matched
+acquisition comparison. Feasible k=0,3 only; do not manufacture k5/10 results.
+Use the v3-common-query hash salt for new target rowIDs and freeze all queries
+before fitting. Every model, policy and training regime shares those queries.
+
+Population models: the same six properly right-censored baselines as v3:
+pooled Basquin; hierarchical Basquin; continuous two-slope hierarchical Basquin;
+normal-normal random-fatigue-limit with infinity mass; target-only intercept
+sharing training slope/scatter; target-local intercept/slope MAP/Laplace control.
+At k0, the target-only intercept shares the hierarchical starting prediction as
+an explicit reference; it is unpooled only after supports exist. No BNN ranking
+or OwenR90C90 reproduction. Population parameter uncertainty remains omitted.
+
+Support selections are computed ONCE per task/policy/cap using the A309-fitted
+hierarchical planner and revealed selected outcomes. Reuse the exact sequence
+for A,B,and both omissions. The static policies are random,high_stress,stress_span;
+the sequential Fisher-query-variance policy is the unchanged censored-normal
+approximation. It is not RFL-optimal. No candidate/query life or event enters
+the selector before selection. Known query stresses are permissible covariates.
+No planner is retrained on B; this isolates training from acquisition changes.
+C1e7 remains the inherited primary planning assumption; C1e6 is the prespecified
+source-matched sensitivity. Earlier original runouts remain censored at1e6.
+
+Metrics: known/upper bounds on true risk P(L>T), finite-pair log-life utility,
+availability, positive infinity rate, observed support cycles, all-support-runout
+rate, failure shortfall. Use exact paired query indices for B-vs-A,policy-vs-random
+and k3-vs-k0. Average within condition/seed, then conditions/seed, then seeds.
+Report one author program: no population bootstrap CIs or cross-campaign safety
+claim from repeated hash seeds. The inherited success gate cannot establish
+population superiority here. Larger predicted life alone is not improvement.
+
+Before run: independently audit132 source decisions and69table extraction; freeze
+canonical input hashes, source receipts, query IDs, code and protocol. After run:
+audit query equality, support equality between regimes, absence of target/family
+leakage, censoring arithmetic, fit diagnostics and a fresh numerical replay.
+No tuning after these results. Any new source admission is a dated later phase.
+Keep new rawLCF/multiaxial/SWT/interrupted histories as valuable separate datasets,
+with licenses and methods, rather than converting them to anonymous stress-life
+failures or calling them independent campaign counts. Do not contact or publish.

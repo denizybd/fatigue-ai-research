@@ -1,0 +1,42 @@
+[
+  {
+    "name": "rwth_download",
+    "url": "https://publications.rwth-aachen.de/record/1012208/files/1012208.pdf?download=1",
+    "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='publications.rwth-aachen.de', port=443): Read timed out. (read timeout=12)\"))"
+  },
+  {
+    "name": "rwth_http",
+    "url": "http://publications.rwth-aachen.de/record/1012208/files/1012208.pdf",
+    "error": "ConnectTimeout(MaxRetryError(\"HTTPConnectionPool(host='publications.rwth-aachen.de', port=80): Max retries exceeded with url: /record/1012208/files/1012208.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='publications.rwth-aachen.de', port=80) at 0x10699cb60>, 'Connection to publications.rwth-aachen.de timed out. (connect timeout=12)'))\"))"
+  },
+  {
+    "name": "mmc1_xlsx",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.xlsx",
+    "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.xlsx",
+    "status": 200,
+    "size": 56398,
+    "sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+    "content_type": "application/excel",
+    "head": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00\\xcf\\x1cd\\xe9\\x9d\\x01\\x00\\x00\\xdf\\n\\x00\\x00\\x13\\x00\\x08\\x02[Content_Types].xml \\xa2\\x04\\x02(\\xa0\\x00\\x02\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'"
+  },
+  {
+    "name": "mmc1_docx",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.docx",
+    "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.docx",
+    "status": 404,
+    "size": 189,
+    "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+    "content_type": "text/xml",
+    "head": "b'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><service-error><status><statusCode>NOT FOUND</statusCode><statusText>Attachment/Metadata missin'"
+  },
+  {
+    "name": "mmc1_pdf",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.pdf",
+    "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.pdf",
+    "status": 404,
+    "size": 189,
+    "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+    "content_type": "text/xml",
+    "head": "b'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><service-error><status><statusCode>NOT FOUND</statusCode><statusText>Attachment/Metadata missin'"
+  }
+]

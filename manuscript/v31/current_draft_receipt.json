@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-10-20T16:39:04.388927+00:00",
+  "paper": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/manuscript/v31/current_paper_source.json",
+  "scope": "Text/table assembly only; no new model fits or acquisition",
+  "source_files": [
+    "results/v3/identity_cap1e7/summary.csv",
+    "results/v3/identity_cap1e7/paired_comparisons.csv",
+    "results/v3/identity_cap1e6/summary.csv",
+    "results/v3/identity_cap1e6/paired_comparisons.csv",
+    "literature/v3_campaigns/continuation_merot_audit/identity_scope_and_fit_audit.json"
+  ],
+  "table_rows": {
+    "T1": 24,
+    "T2": 8
+  },
+  "paper_sha256": "646f9efe0ddd7d3fd2fdc5b3ffcbf98ed4360e4def1fd5265495df69c90fbca8",
+  "current_data_campaigns": 1,
+  "pending_source_lead_incorporated": false,
+  "figures": [
+    {
+      "id": "F1",
+      "path": "manuscript/v31/policy_tradeoff_en.png",
+      "vector_path": "manuscript/v31/policy_tradeoff_en.svg",
+      "after_section": "6. Results in the identity-qualified first-block campaign",
+      "caption": "Same-query k3 policy utility across six models and empirical risk identification for hierarchical Basquin/RFL in the nominal first-block panel. C=10^6 is the prespecified, source-matched sensitivity; frozen C=10^7 results are retained in Tables 1–2. Bars do not establish safe-life gain. Horizontal intervals describe censoring identification, not sampling confidence; one campaign cannot give population CIs."
+    },
+    {
+      "id": "F2",
+      "path": "manuscript/v31/stress_choices_en.png",
+      "vector_path": "manuscript/v31/stress_choices_en.svg",
+      "after_section": "3. Protocol and common-query acquisition",
+      "caption": "Recorded stress amplitudes selected over ten repeated splits at k3 from the same fixed candidate pools. Counts are repeated selections, not independent specimens or an optimum over continuous stresses. All six prediction models share the one sequence selected by each policy. Known query covariates are permitted; query outcomes are never revealed."
+    }
+  ],
+  "supplementary_material": "manuscript/v31/supplementary_material.txt",
+  "last_verified_utc": "2026-10-20T16:58:30.953649+00:00",
+  "parent_subtitle_spacing_update": "through 20 October 2026",
+  "final_editorial_changes": "Source creator attributions, internal DOI whitespace, k0 reference disclosure, current Solberg negative access status, archive wording and subtitle spacing. No numerical/model change."
+}

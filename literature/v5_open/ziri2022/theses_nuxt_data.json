@@ -1,0 +1,344 @@
+[
+  [
+    "ShallowReactive",
+    1
+  ],
+  {
+    "data": 2,
+    "state": 115,
+    "once": 119,
+    "_errors": 120,
+    "serverRendered": 114,
+    "path": 122
+  },
+  [
+    "ShallowReactive",
+    3
+  ],
+  {
+    "$fSLgVqb039ThHOJZjJZM-pBDXR5Dh4qob1ZhjNUaqvwo": 4
+  },
+  {
+    "titrePrincipal": 5,
+    "nnt": 6,
+    "doi": 7,
+    "numSujet": 8,
+    "dateSoutenance": 9,
+    "datePremiereInscriptionDoctorat": 8,
+    "discipline": 10,
+    "titres": 11,
+    "resumes": 13,
+    "etabSoutenance": 16,
+    "codeEtab": 19,
+    "etabCotutelle": 20,
+    "partenairesRecherche": 21,
+    "mapSujets": 33,
+    "membresJury": 69,
+    "rapporteurs": 86,
+    "auteurs": 89,
+    "directeurs": 94,
+    "langues": 103,
+    "cas": 105,
+    "accessible": 106,
+    "ecolesDoctorales": 107,
+    "presidentJury": 111,
+    "source": 112,
+    "status": 113,
+    "isSoutenue": 114
+  },
+  "Combined effect of powder properties and process parameters on the mechanical properties of stainless steel 316L elaborated by Laser Powder Bed Fusion",
+  "2022ESAE0028",
+  "10.70675/9d9ce3ceze624z48f1z8ff5zbc47a5a90c47",
+  null,
+  "23/05/2022",
+  "Génie mécanique, mécanique des matériaux",
+  {
+    "en": 5,
+    "fr": 12
+  },
+  "Effet combiné des propriétés de poudres et des paramètres du procédé sur les propriétés mécaniques de l'acier inoxydable 316L produit par fusion laser sur lit de poudre",
+  {
+    "en": 14,
+    "fr": 15
+  },
+  "Although the Laser Powder Bed Fusion (LPBF) is a fast-growing additive manufacturing technology with astonishing capabilities, only a few numbers of industrial parts are commercialized. Due to the limited size of the produced parts and the high manufacturing cost, the LPBF parts are dedicated to energy, aerospace, and biomedical sectors and should meet strict requirements (density, surface roughness, mechanical strength …). The major challenge of the LPBF process is to provide repeatable and guaranteed dimensional, mechanical and metallurgical properties. This can be achieved by, on one hand, understanding the building process and the involved parameters, and on the other hand, quantifying the impact of the possible manufacturing flows (surface integrity, defects, unstable microstructures …) on the mechanical properties and particularly the fatigue life.This thesis objective is to provide a better understanding of mechanisms driving the combined effect of powder properties and process parameters on the resulting LPBF stainless steel 316L properties and consequently investigate their influence on mechanical behavior and fatigue life. Variations of powders and process parameters are considered. Fine, standard, and coarse powders are used to test the full range of the commercial powders available for the LPBF process. A wide range of process parameters is used to cover the different melting regions reported in the literature: lack of fusion, keyhole, and conduction regions. Complete analyses of the density, surface roughness, and residual stresses were performed within the three melting regions. The sizes of the cellular/dendritic microstructures are estimated and correlated with the cooling rates. The cooling rates are estimated using analytically predicted temperature fields and experimentally determined dendritic arm spacing. The influence of the energy density and the powder properties on the cooling rates and dendritic arm spacing is investigated. A correlation between the melting modes, the energy density, and the powder properties is established. The powders adequate for the LPBF process are thus identified. The tensile properties and microstructure investigation is carried out using standard and coarse powders. The possible relationships between the resulting microstructures, static mechanical properties, powder characteristics, and process parameters are established. Finally, the fatigue limits of the nearly dense parts produced in the conduction and keyhole regions are investigated using two approaches. First, the fatigue limits are determined using the self-heating method. Then, the high cycle fatigue tests are performed. Finally, the fractographic analyses are conducted to determine the critical defects features (size, location) and correlate them with the initial melting modes, process parameters, and powder properties",
+  "Bien que la fusion laser sur lit de poudre (LPBF) soit le procédé de fabrication additive le plus abouti aujourd’hui, peu de pièces industrielles sont fabriquées avec ce procédé. Le coût de fabrication et la taille des pièces limitent le champ d’action de cette technologie aux secteurs de l’énergie, de l’aérospatiale, et du biomédical. Ces industries imposent des exigences strictes (densité, tenue mécanique, état de surface,…) auxquelles doivent répondre les pièces. L’enjeu majeur du procédé LPBF est la maîtrise des propriétés dimensionnelles, mécaniques et métallurgiques des pièces. Ceci impose, d’une part, la compréhension du procédé et la maitrise des paramètres qui le gouvernent, et d’autre part, la quantification de l’impact des avaries de fabrication (état de surface, défauts, microstructures instables,…) sur les propriétés mécaniques et particulièrement la tenue en fatigue des pièces.L'objectif de cette thèse est de fournir une meilleure compréhension des mécanismes à l’origine de l'effet combiné des propriétés de la poudre et des paramètres du procédé sur les propriétés de l'acier inoxydable 316L élaboré par LPBF et d'étudier l’influence de ces propriétés résultantes sur le comportement mécanique et la tenue en fatigue. Différentes poudres et divers paramètres procédé sont considérés. Des poudres fines, standards et grosses sont utilisées pour tester la gamme complète des poudres commerciales disponibles pour le procédé LPBF. Une large gamme de paramètres procédé est utilisée pour couvrir les trois régimes de fusion identifiés dans la littérature : « manque de fusion », « Keyhole » et « conduction ». Une analyse complète de la densité des échantillons, de leur rugosité de surface et des contraintes résiduelles générées a été réalisée pour ces trois régimes. Les tailles des microstructures cellulaires/dendritiques sont estimées et sont corrélées avec les taux de refroidissement. Ces taux de refroidissement sont estimés en utilisant les champs de température prédits analytiquement et l'espacement des bras dendritiques déterminé expérimentalement. L'influence de la densité d'énergie et des propriétés des poudres sur les taux de refroidissement et l'espacement des bras dendritiques est étudiée. Une corrélation entre les modes de fusion, la densité d'énergie et les propriétés de la poudre est établie. Par conséquent, les poudres adéquates pour le procédé LPBF sont identifiées. L'étude des propriétés mécaniques est ensuite réalisée en utilisant ces poudres. De possibles relations entre les microstructures obtenues, les propriétés mécaniques statiques, les caractéristiques de la poudre et les paramètres du procédé sont recherchées. Enfin, les limites de fatigue des pièces presque denses produites dans les régions de conduction et de Keyhole sont étudiées à l'aide de deux approches. Tout d'abord, les limites de fatigue sont déterminées en utilisant la méthode d'auto-échauffement. Ensuite, des essais de fatigue à grand nombre de cycles sont réalisés. Enfin, les analyses fractographiques ont permis de déterminer les défauts critiques et les corréler avec les modes de fusion initiaux, les paramètres du procédé et les propriétés des poudres.",
+  {
+    "ppn": 17,
+    "nom": 18,
+    "type": 8
+  },
+  "159330114",
+  "Toulouse, ISAE",
+  "ESAE",
+  [],
+  [
+    22,
+    26,
+    30
+  ],
+  {
+    "ppn": 23,
+    "nom": 24,
+    "type": 25
+  },
+  "157767337",
+  "Institut Clément Ader (Toulouse ; 2009-....)",
+  "Laboratoire",
+  {
+    "ppn": 27,
+    "nom": 28,
+    "type": 29
+  },
+  "263135640",
+  "Groupe Surface Usinage Matériaux et Outillages (Toulouse, Haute-Garonne)",
+  "Equipe de recherche",
+  {
+    "ppn": 31,
+    "nom": 32,
+    "type": 29
+  },
+  "164438459",
+  "Institut supérieur de l'aéronautique et de l'espace (Toulouse, Haute-Garonne). Département mécanique des structures et matériaux",
+  {
+    "en": 34,
+    "fr": 46
+  },
+  [
+    35,
+    38,
+    40,
+    42,
+    44
+  ],
+  {
+    "keyword": 36,
+    "type": 37,
+    "query": 36
+  },
+  "Fatigue limit",
+  "sujet",
+  {
+    "keyword": 39,
+    "type": 37,
+    "query": 39
+  },
+  "Mechanical properties",
+  {
+    "keyword": 41,
+    "type": 37,
+    "query": 41
+  },
+  "Process parameters",
+  {
+    "keyword": 43,
+    "type": 37,
+    "query": 43
+  },
+  "Powder properties SS 316L",
+  {
+    "keyword": 45,
+    "type": 37,
+    "query": 45
+  },
+  "Lpbf",
+  [
+    47,
+    51,
+    54,
+    57,
+    60,
+    62,
+    64,
+    66,
+    68
+  ],
+  {
+    "keyword": 48,
+    "type": 49,
+    "query": 50
+  },
+  "Usinage par laser",
+  "sujetsRameau",
+  "\"Usinage par laser\" ET 028600924",
+  {
+    "keyword": 52,
+    "type": 49,
+    "query": 53
+  },
+  "Métallurgie des poudres",
+  "\"Métallurgie des poudres\" ET 027702804",
+  {
+    "keyword": 55,
+    "type": 49,
+    "query": 56
+  },
+  "Fatigue des matériaux",
+  "\"Fatigue des matériaux\" ET 027282465",
+  {
+    "keyword": 58,
+    "type": 49,
+    "query": 59
+  },
+  "Matériaux -- Propriétés mécaniques",
+  "\"Matériaux -- Propriétés mécaniques\" ET 031364497",
+  {
+    "keyword": 61,
+    "type": 37,
+    "query": 61
+  },
+  "Limite de fatigue",
+  {
+    "keyword": 63,
+    "type": 37,
+    "query": 63
+  },
+  "Propriétés mécaniques",
+  {
+    "keyword": 65,
+    "type": 37,
+    "query": 65
+  },
+  "Paramètres procédé",
+  {
+    "keyword": 67,
+    "type": 37,
+    "query": 67
+  },
+  "Propriétés de poudres 316L",
+  {
+    "keyword": 45,
+    "type": 37,
+    "query": 45
+  },
+  [
+    70,
+    74,
+    78,
+    82
+  ],
+  {
+    "ppn": 71,
+    "nom": 72,
+    "prenom": 73
+  },
+  "139066705",
+  "Keller",
+  "Clément",
+  {
+    "ppn": 75,
+    "nom": 76,
+    "prenom": 77
+  },
+  "165475889",
+  "Deschaux-Beaume",
+  "Frédéric",
+  {
+    "ppn": 79,
+    "nom": 80,
+    "prenom": 81
+  },
+  "146204735",
+  "Pessard",
+  "Etienne",
+  {
+    "ppn": 83,
+    "nom": 84,
+    "prenom": 85
+  },
+  "184102596",
+  "Voisin",
+  "Thomas",
+  [
+    87,
+    88
+  ],
+  {
+    "ppn": 75,
+    "nom": 76,
+    "prenom": 77
+  },
+  {
+    "ppn": 79,
+    "nom": 80,
+    "prenom": 81
+  },
+  [
+    90
+  ],
+  {
+    "ppn": 91,
+    "nom": 92,
+    "prenom": 93
+  },
+  "263134466",
+  "Ziri",
+  "Sabrine",
+  [
+    95,
+    99
+  ],
+  {
+    "ppn": 96,
+    "nom": 97,
+    "prenom": 98
+  },
+  "14288149X",
+  "Mabru",
+  "Catherine",
+  {
+    "ppn": 100,
+    "nom": 101,
+    "prenom": 102
+  },
+  "153066288",
+  "Hor",
+  "Anis",
+  [
+    104
+  ],
+  "en",
+  "cas1",
+  "oui",
+  [
+    108
+  ],
+  {
+    "ppn": 109,
+    "nom": 110,
+    "type": 8
+  },
+  "142618039",
+  "École doctorale Aéronautique-Astronautique (Toulouse)",
+  {
+    "ppn": 71,
+    "nom": 72,
+    "prenom": 73
+  },
+  "star",
+  "soutenue",
+  true,
+  [
+    "Reactive",
+    116
+  ],
+  {
+    "$snuxt-i18n-meta": 117,
+    "$sopendys": 118,
+    "$sinterlignes": 118,
+    "$sjustification": 118
+  },
+  {},
+  false,
+  [
+    "Set"
+  ],
+  [
+    "ShallowReactive",
+    121
+  ],
+  {
+    "$fSLgVqb039ThHOJZjJZM-pBDXR5Dh4qob1ZhjNUaqvwo": 8
+  },
+  "/2022ESAE0028"
+]

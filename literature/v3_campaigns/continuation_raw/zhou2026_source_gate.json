@@ -1,0 +1,50 @@
+{
+  "dataset_rows": 14,
+  "named_CT_rows": 8,
+  "strict_eligible_rows": 0,
+  "qualified_campaigns": 0,
+  "raw_data_md5": "783ca9e2682bce1d5f917319b754d138",
+  "author_name_matches_in_618_metadata": [
+    {
+      "article_index": 362,
+      "doi": "10.1016/j.msea.2020.139049",
+      "title": "Fatigue behavior of ASTM A131 EH36 steel samples additively manufactured with selective laser melting",
+      "matched_names": [
+        "Liu, Tong"
+      ]
+    }
+  ],
+  "overlap_screen": {
+    "v2_strict309": {
+      "rows": 309,
+      "exact_Nf_matches": 0,
+      "source_identifier_matches": [],
+      "coordinate_stress_overlap_not_assessed": "Sr and R unverified; conversion would fabricate metadata"
+    },
+    "Trombley129": {
+      "rows": 129,
+      "exact_Nf_matches": 0,
+      "source_identifier_matches": [],
+      "coordinate_stress_overlap_not_assessed": "Sr and R unverified; conversion would fabricate metadata"
+    },
+    "Tomaszewski137": {
+      "rows": 137,
+      "exact_Nf_matches": 0,
+      "source_identifier_matches": [],
+      "coordinate_stress_overlap_not_assessed": "Sr and R unverified; conversion would fabricate metadata"
+    },
+    "Diller44": {
+      "rows": 44,
+      "exact_Nf_matches": 0,
+      "source_identifier_matches": [],
+      "coordinate_stress_overlap_not_assessed": "Sr and R unverified; conversion would fabricate metadata"
+    }
+  },
+  "source_family_reuse": {
+    "Wu140105": "Strong candidate family relation: shared authors; four exact flat XCT defect fractions in public preview and workbook. No fatigue-row linkage proven.",
+    "Wu109943": "Shared authors; no evidence yet connecting this dataset to validation series. Do not count as independent external evidence from this lab twice."
+  },
+  "single_build_claim_scope": "Wu140105 abstract confirms a single build in that paper; does not identify the14 anonymous fatigue rows in this different dataset.",
+  "no_fits_or_predictions_performed": true,
+  "source_doi_matches_in_618_metadata": []
+}

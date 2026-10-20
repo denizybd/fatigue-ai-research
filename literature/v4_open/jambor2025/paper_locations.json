@@ -1,0 +1,111 @@
+[
+  {
+    "id": "doi:10.1016/j.matchar.2025.115448",
+    "doi": "https://doi.org/10.1016/j.matchar.2025.115448",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.matchar.2025.115448",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S53842986",
+      "display_name": "Materials Characterization",
+      "issn_l": "1044-5803",
+      "issn": [
+        "1044-5803",
+        "1873-4189"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-a",
+        "jufo-1",
+        "ki-jl-1",
+        "norway-1",
+        "poland-100",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Materials Characterization",
+    "raw_type": "journal-article"
+  },
+  {
+    "id": "doi:10.2139/ssrn.5160360",
+    "doi": "https://doi.org/10.2139/ssrn.5160360",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.2139/ssrn.5160360",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4210172589",
+      "display_name": "SSRN Electronic Journal",
+      "issn_l": "1556-5068",
+      "issn": [
+        "1556-5068"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": false,
+      "listed_in": [],
+      "host_organization": "https://openalex.org/I1318003438",
+      "host_organization_name": "RELX Group (Netherlands)",
+      "host_organization_lineage": [
+        "https://openalex.org/I1318003438"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "acceptedVersion",
+    "is_accepted": true,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "posted-content"
+  },
+  {
+    "id": "pmh:oai:air.uniud.it:11390/1312473",
+    "doi": null,
+    "is_oa": true,
+    "landing_page_url": "https://hdl.handle.net/11390/1312473",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4306401163",
+      "display_name": "Institutional Research Information System (University of Udine)",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "listed_in": [],
+      "host_organization": "https://openalex.org/I129043915",
+      "host_organization_name": "University of Udine",
+      "host_organization_lineage": [
+        "https://openalex.org/I129043915"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "info:eu-repo/semantics/article"
+  }
+]

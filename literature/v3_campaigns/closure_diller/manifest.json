@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-10-20T16:38:10.356828+00:00",
+  "files": [
+    {
+      "path": "literature/v3_campaigns/closure_diller/closure_note.md",
+      "bytes": 1149,
+      "sha256": "74449b9dcfcc2adca8834f0bb3953bd6c969bdb57dec190f600162fed4ec8044"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/closure_receipt.json",
+      "bytes": 7707,
+      "sha256": "9116f2c80f7ce416eb338f27aa3f709c8626fd189c438c09b43407694d9878ae"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/datatagger_public_access_receipt.json",
+      "bytes": 681,
+      "sha256": "c7c7e68eb3acbdf0cca746fa3b898c0b63c4ae1247dba39a7b83671a2e0dc46a"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/missing_identity_method_fields_local_template29.csv",
+      "bytes": 2843,
+      "sha256": "8fee3ebbc7dc5963bbfafdad530ae063d088bb16b2cbfc6bb5cd4133ec5e64e4"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/pdf_keyword_coverage.json",
+      "bytes": 37432,
+      "sha256": "a82715f9abf699627ae33ecb340c4fb18c86c83e8c83f8d5711adc5d1f4d725c"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/readme_live.txt",
+      "bytes": 2099,
+      "sha256": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/tum_completed_theses_live.html",
+      "bytes": 87921,
+      "sha256": "4d82310881491a38349cb1206c8908f7f498ea670949c334bd4831a297728552"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/zenodo21105346_live_files.json",
+      "bytes": 785,
+      "sha256": "b88874af45af02104f3133df4d1e0522f03682018030d7d9db71586fbb4a7747"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/zenodo21105346_live_latest.json",
+      "bytes": 5933,
+      "sha256": "2b5013dbea08f3e19e90cf27ae8845a56dea833bc2a85e46077ed9c46a693c0d"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_diller/zenodo21105346_live_metadata.json",
+      "bytes": 5933,
+      "sha256": "2b5013dbea08f3e19e90cf27ae8845a56dea833bc2a85e46077ed9c46a693c0d"
+    }
+  ],
+  "file_count": 10,
+  "external_source_hashes": {
+    "literature/v3_campaigns/raw_repository/diller2024_thesis.pdf": "f7d64559c08aca26176ffc0c1ac4ba7d6cb4116bd8592ac9f1c008b3100201af",
+    "literature/v3_campaigns/raw_repository/diller2024_readme.txt": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f"
+  }
+}

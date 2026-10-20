@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-20T15:35:24.597118+00:00",
+  "command": ".venv/bin/python -m pytest -q tests/test_v3_rfl.py",
+  "result": "13 passed in 1.11s",
+  "exit_code": 0,
+  "only_synthetic_outcomes": true,
+  "real_campaign_fits_performed": false,
+  "sha256": {
+    "src/v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2",
+    "tests/test_v3_rfl.py": "6937ca537ffa8d4131965604c0b18596ea62c8598295cf548ef58270b420e3de"
+  }
+}

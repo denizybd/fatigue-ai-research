@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="csrf-token" content="RhMNW28xDrsOxKBTQl7crKRVK9wt8bW80dPzSZRG">
+
+            <META NAME="ROBOTS" CONTENT="NOINDEX">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+    <title>
+                    Public Data            </title>
+
+    <script type="text/javascript">const Ziggy={"url":"https:\/\/materialscommons.org","port":null,"defaults":{},"routes":{"default.livewire.update":{"uri":"livewire\/update","methods":["POST"]},"livewire.upload-file":{"uri":"livewire\/upload-file","methods":["POST"]},"livewire.preview-file":{"uri":"livewire\/preview-file\/{filename}","methods":["GET","HEAD"],"parameters":["filename"]},"api.projects.files.upload":{"uri":"api\/projects\/{project}\/files\/{file}\/upload","methods":["POST"],"parameters":["project","file"]},"api.projects.files.upload.named":{"uri":"api\/projects\/{project}\/files\/{file}\/upload\/{name}","methods":["POST"],"parameters":["project","file","name"]},"api.upload-camera-image":{"uri":"api\/upload-camera-image","methods":["POST"]},"api.projects.experiments.delete":{"uri":"api\/projects\/{project}\/experiments\/{experiment}","methods":["DELETE"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"api.projects.experiments.workflows.selection":{"uri":"api\/experiments\/{experiment}\/workflows\/selection","methods":["PUT"],"parameters":["experiment"],"bindings":{"experiment":"id"}},"projects.datasets.selection":{"uri":"api\/datasets\/{dataset}\/selection","methods":["PUT"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"api.projects.datasets.entities":{"uri":"api\/datasets\/{dataset}\/entities","methods":["PUT"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"api.projects.datasets.activities.selection":{"uri":"api\/datasets\/{dataset}\/activities\/selection","methods":["PUT"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"api.projects.datasets.workflows":{"uri":"api\/datasets\/{dataset}\/workflows","methods":["PUT"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"api.projects.datasets.show":{"uri":"api\/projects\/{project}\/datasets\/{dataset}","methods":["GET","HEAD"],"parameters":["project","dataset"]},"api.projects.datasets.index":{"uri":"api\/projects\/{project}\/datasets","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"api.communities.datasets.selection":{"uri":"api\/communities\/{community}\/datasets\/selection","methods":["PUT"],"parameters":["community"],"bindings":{"community":"id"}},"api.queries.find-matching-entities":{"uri":"api\/queries\/{project}\/find-matching-entities","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"welcome":{"uri":"\/","methods":["GET","HEAD"]},"about":{"uri":"about","methods":["GET","HEAD"]},"login":{"uri":"login","methods":["GET","HEAD"]},"logout":{"uri":"logout","methods":["POST"]},"logout-get":{"uri":"logout","methods":["GET","HEAD"]},"register":{"uri":"register","methods":["GET","HEAD"]},"reload-captcha":{"uri":"reload-captcha","methods":["GET","HEAD"]},"login-for-upload":{"uri":"login-for-upload","methods":["GET","HEAD"]},"login-for-dataset-zipfile-download":{"uri":"login-for-dataset-zipfile-download\/datasets\/{dataset}","methods":["GET","HEAD"],"parameters":["dataset"]},"login-for-dataset-globus-download":{"uri":"login-for-dataset-globus-download\/datasets\/{dataset}","methods":["POST"],"parameters":["dataset"]},"register-for-upload":{"uri":"register-for-upload","methods":["GET","HEAD"]},"password.request":{"uri":"password\/reset","methods":["GET","HEAD"]},"password.email":{"uri":"password\/email","methods":["POST"]},"password.reset":{"uri":"password\/reset\/{token}","methods":["GET","HEAD"],"parameters":["token"]},"password.update":{"uri":"password\/reset","methods":["POST"]},"verification.notice":{"uri":"email\/verify\/{id}","methods":["GET","HEAD"],"parameters":["id"]},"verification.verify":{"uri":"email\/verify\/{id}\/{hash}","methods":["GET","HEAD"],"parameters":["id","hash"]},"verification.resend":{"uri":"email\/verification-notification\/{email}","methods":["GET","HEAD"],"parameters":["email"]},"home":{"uri":"home","methods":["GET","HEAD"]},"datasets.show-by-doi":{"uri":"dois\/{doi}","methods":["GET","HEAD"],"wheres":{"doi":".*"},"parameters":["doi"]},"prototype.experiment-import.create":{"uri":"prototype\/experiment-import\/create","methods":["GET","HEAD"]},"prototype.experiment-import.update":{"uri":"prototype\/experiment-import\/update","methods":["GET","HEAD"]},"prototype.experiment-import.status":{"uri":"prototype\/experiment-import\/status","methods":["GET","HEAD"]},"prototype.browse-tree.index":{"uri":"prototype\/browse-tree","methods":["GET","HEAD"]},"public.index":{"uri":"public","methods":["GET","HEAD"]},"get_all_published_datasets":{"uri":"getAllPublishedDatasets","methods":["GET","HEAD"]},"get_all_published_test_datasets":{"uri":"getAllPublishedTestDatasets","methods":["GET","HEAD"]},"search.public":{"uri":"search","methods":["GET","HEAD"]},"public.search":{"uri":"public\/search","methods":["POST"]},"public.new.index":{"uri":"public\/new","methods":["GET","HEAD"]},"public.projects.index":{"uri":"public\/projects","methods":["GET","HEAD"]},"public.datasets.index":{"uri":"public\/datasets","methods":["GET","HEAD"]},"public.datasets.show":{"uri":"public\/datasets\/{dataset}","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.search":{"uri":"public\/datasets\/{dataset}\/search","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.overview.show":{"uri":"public\/datasets\/{dataset}\/overview","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.workflows.index":{"uri":"public\/datasets\/{dataset}\/workflows","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.download_zipfile":{"uri":"public\/datasets\/{dataset}\/zipfile","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.login.download.zipfile":{"uri":"public\/datasets\/{dataset}\/login\/download\/zipfile","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.create-account.download.zipfile":{"uri":"public\/datasets\/{dataset}\/create-account\/download\/zipfile","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.download_file":{"uri":"public\/datasets\/{dataset}\/files\/{file}\/download","methods":["GET","HEAD"],"parameters":["dataset","file"],"bindings":{"dataset":"id","file":"id"}},"public.datasets.download_globus":{"uri":"public\/datasets\/{dataset}\/globus","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.login.download.globus":{"uri":"public\/datasets\/{dataset}\/login\/download\/globus","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.create-account.download.globus":{"uri":"public\/datasets\/{dataset}\/create-account\/download\/globus","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.entities.index":{"uri":"public\/datasets\/{dataset}\/entities","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.activities.index":{"uri":"public\/datasets\/{dataset}\/activities","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.files.index":{"uri":"public\/datasets\/{dataset}\/files","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.comments.index":{"uri":"public\/datasets\/{dataset}\/comments","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.communities.index":{"uri":"public\/datasets\/{dataset}\/communities","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.import-into-project":{"uri":"public\/datasets\/{dataset}\/import-into\/projects\/{p}","methods":["GET","HEAD"],"parameters":["dataset","p"],"bindings":{"dataset":"id","p":"id"}},"public.datasets.entities.show-spread":{"uri":"public\/datasets\/{dataset}\/entities\/{entity}\/spread","methods":["GET","HEAD"],"parameters":["dataset","entity"],"bindings":{"dataset":"id"}},"public.datasets.entities.show":{"uri":"public\/datasets\/{dataset}\/entities\/{entity}","methods":["GET","HEAD"],"parameters":["dataset","entity"],"bindings":{"dataset":"id"}},"public.datasets.activities.show":{"uri":"public\/datasets\/{dataset}\/activities\/{activity}","methods":["GET","HEAD"],"parameters":["dataset","activity"],"bindings":{"dataset":"id"}},"public.datasets.files.show":{"uri":"public\/datasets\/{dataset}\/files\/{file}","methods":["GET","HEAD"],"parameters":["dataset","file"],"bindings":{"dataset":"id","file":"id"}},"public.datasets.files.display":{"uri":"public\/datasets\/{dataset}\/files\/{file}\/display","methods":["GET","HEAD"],"parameters":["dataset","file"],"bindings":{"dataset":"id","file":"id"}},"public.dt_get_dataset_activities":{"uri":"public\/datasets\/{dataset}\/datatables\/activities","methods":["GET","HEAD"],"parameters":["dataset"]},"public.dt_get_dataset_entities":{"uri":"public\/datasets\/{dataset}\/datatables\/entities","methods":["GET","HEAD"],"parameters":["dataset"]},"public.dt_get_published_dataset_files":{"uri":"public\/datasets\/{dataset}\/datatables\/files","methods":["GET","HEAD"],"parameters":["dataset"]},"public.datasets.comments.create":{"uri":"public\/datasets\/{dataset}\/comments\/create","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.comments.edit":{"uri":"public\/datasets\/{dataset}\/comments\/{comment}\/edit","methods":["GET","HEAD"],"parameters":["dataset","comment"],"bindings":{"dataset":"id","comment":"id"}},"public.datasets.comments.store":{"uri":"public\/datasets\/{dataset}\/comments\/store","methods":["POST"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.comments.update":{"uri":"public\/datasets\/{dataset}\/comments\/{comment}","methods":["PUT"],"parameters":["dataset","comment"],"bindings":{"dataset":"id","comment":"id"}},"public.datasets.comments.delete":{"uri":"public\/datasets\/{dataset}\/comments\/{comment}\/delete","methods":["GET","HEAD"],"parameters":["dataset","comment"],"bindings":{"dataset":"id","comment":"id"}},"public.datasets.comments.destroy":{"uri":"public\/datasets\/{dataset}\/comments\/{comment}","methods":["DELETE"],"parameters":["dataset","comment"],"bindings":{"dataset":"id","comment":"id"}},"public.datasets.notifications.mark-for-notification":{"uri":"public\/datasets\/{dataset}\/mark-for-notification","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.notifications.unmark-for-notification":{"uri":"public\/dataset\/{dataset}\/unmark-for-notification","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.folders.by-path":{"uri":"public\/datasets\/{dataset}\/folders\/by_path","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.folders.show":{"uri":"public\/datasets\/{dataset}\/folders\/{folder}\/show","methods":["GET","HEAD"],"parameters":["dataset","folder"]},"public.datasets.citations.papers":{"uri":"public\/datasets\/{dataset}\/citations\/papers","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.datasets.citations.dataset":{"uri":"public\/dataset\/{dataset}\/citations\/dataset","methods":["GET","HEAD"],"parameters":["dataset"],"bindings":{"dataset":"id"}},"public.communities.index":{"uri":"public\/communities","methods":["GET","HEAD"]},"public.communities.datasets.index":{"uri":"public\/communities\/{community}\/datasets","methods":["GET","HEAD"],"parameters":["community"]},"public.communities.show":{"uri":"public\/communities\/{community}","methods":["GET","HEAD"],"parameters":["community"]},"public.communities.files.show":{"uri":"public\/communities\/{community}\/files","methods":["GET","HEAD"],"parameters":["community"]},"public.communities.links.show":{"uri":"public\/communities\/{community}\/links","methods":["GET","HEAD"],"parameters":["community"]},"public.communities.search.tag":{"uri":"public\/communities\/{community}\/search\/tag","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"public.communities.search.author":{"uri":"public\/communities\/{community}\/search\/author","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"public.communities.dataset.request-added":{"uri":"public\/communities\/{community}\/datasets\/{dataset}\/request-added","methods":["GET","HEAD"],"parameters":["community","dataset"],"bindings":{"community":"id","dataset":"id"}},"public.publish.wizard.select_project":{"uri":"public\/publish\/wizard\/select_project","methods":["GET","HEAD"]},"public.publish.wizard.store_project":{"uri":"public\/publish\/wizard\/store_project","methods":["POST"]},"public.publish.wizard.create_workflow":{"uri":"public\/publish\/wizard\/{project}\/create_workflow","methods":["GET","HEAD"],"parameters":["project"]},"public.publish.wizard.choose_create_or_select_project":{"uri":"public\/publish\/wizard\/choose_create_or_select_project","methods":["GET","HEAD"]},"public.publish.wizard.create_project":{"uri":"public\/publish\/wizard\/create_project","methods":["GET","HEAD"]},"public.authors.index":{"uri":"public\/authors","methods":["GET","HEAD"]},"public.authors.search":{"uri":"public\/authors\/search","methods":["GET","HEAD"]},"public.authors.show":{"uri":"public\/authors\/{user}","methods":["GET","HEAD"],"parameters":["user"],"bindings":{"user":"id"}},"public.tags.index":{"uri":"public\/tags","methods":["GET","HEAD"]},"public.tags.search":{"uri":"public\/tags\/search","methods":["GET","HEAD"]},"public.openvisus.index":{"uri":"public\/openvisus\/index","methods":["GET","HEAD"]},"public.uhcsdb.show":{"uri":"public\/reference\/uhcsdb","methods":["GET","HEAD"]},"projects.search_all":{"uri":"app\/projects\/search-all","methods":["GET","HEAD"]},"projects.mark-as-active":{"uri":"app\/projects\/{project}\/mark-as-active","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.unmark-as-active":{"uri":"app\/projects\/{project}\/unmark-as-active","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.browse-tree.show":{"uri":"app\/projects\/{project}\/browse-tree","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.create":{"uri":"app\/projects\/create","methods":["GET","HEAD"]},"projects.store":{"uri":"app\/projects","methods":["POST"]},"projects.index":{"uri":"app\/projects","methods":["GET","HEAD"]},"projects.upload-files":{"uri":"app\/projects\/{project}\/upload","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.show":{"uri":"app\/projects\/{project}","methods":["GET","HEAD"],"parameters":["project"]},"projects.overview":{"uri":"app\/projects\/{project}\/overview","methods":["GET","HEAD"],"parameters":["project"]},"projects.research-overview":{"uri":"app\/projects\/{project}\/research-overview","methods":["GET","HEAD"],"parameters":["project"]},"projects.update":{"uri":"app\/projects\/{project}","methods":["PATCH"],"parameters":["project"],"bindings":{"project":"id"}},"projects.edit":{"uri":"app\/projects\/{project}\/edit","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.destroy":{"uri":"app\/projects\/{project}","methods":["DELETE"],"parameters":["project"],"bindings":{"project":"id"}},"projects.users.remove":{"uri":"app\/projects\/{project}\/users\/{user}\/remove","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.users.add":{"uri":"app\/projects\/{project}\/users\/{user}\/add","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.admins.remove":{"uri":"app\/projects\/{project}\/admins\/{user}\/remove","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.admins.add":{"uri":"app\/projects\/{project}\/admins\/{user}\/add","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.users.index":{"uri":"app\/projects\/{project}\/users","methods":["GET","HEAD"],"parameters":["project"]},"projects.users.edit":{"uri":"app\/projects\/{project}\/users\/edit","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.users.show":{"uri":"app\/projects\/{project}\/users\/{user}\/show","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.users.change-to-admin":{"uri":"app\/projects\/{project}\/users\/{user}\/change-to-admin","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.users.change-to-member":{"uri":"app\/projects\/{project}\/users\/{user}\/change-to-member","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.globus.uploads.store":{"uri":"app\/projects\/{project}\/globus\/uploads","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.uploads.create":{"uri":"app\/projects\/{project}\/globus\/uploads\/create","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.uploads.edit_account":{"uri":"app\/projects\/{project}\/globus\/uploads\/account\/edit","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.uploads.update_account":{"uri":"app\/projects\/{project}\/globus\/uploads\/account\/update","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.uploads.delete":{"uri":"app\/projects\/{project}\/globus\/uploads\/{globusUpload}\/delete","methods":["GET","HEAD"],"parameters":["project","globusUpload"],"bindings":{"project":"id","globusUpload":"id"}},"projects.globus.uploads.destroy":{"uri":"app\/projects\/{project}\/globus\/uploads\/{globusUpload}","methods":["DELETE"],"parameters":["project","globusUpload"],"bindings":{"project":"id","globusUpload":"id"}},"projects.globus.uploads.done":{"uri":"app\/projects\/{project}\/globus\/uploads\/{globusUpload}\/done","methods":["GET","HEAD"],"parameters":["project","globusUpload"],"bindings":{"project":"id","globusUpload":"id"}},"projects.globus.uploads.mark_done":{"uri":"app\/projects\/{project}\/globus\/uploads\/{globusUpload}\/mark_done","methods":["POST"],"parameters":["project","globusUpload"],"bindings":{"project":"id","globusUpload":"id"}},"projects.globus.uploads.index":{"uri":"app\/projects\/{project}\/globus\/uploads\/index","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.uploads.show":{"uri":"app\/projects\/{project}\/globus\/uploads\/{globusUpload}","methods":["GET","HEAD"],"parameters":["project","globusUpload"],"bindings":{"project":"id","globusUpload":"id"}},"projects.globus.downloads.store":{"uri":"app\/projects\/{project}\/globus\/downloads","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.downloads.create":{"uri":"app\/projects\/{project}\/globus\/downloads\/create","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.downloads.edit_account":{"uri":"app\/projects\/{project}\/globus\/downloads\/account\/edit","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.downloads.update_account":{"uri":"app\/projects\/{project}\/globus\/downloads\/account\/update","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.downloads.delete":{"uri":"app\/projects\/{project}\/globus\/downloads\/{globusDownload}\/delete","methods":["GET","HEAD"],"parameters":["project","globusDownload"],"bindings":{"project":"id","globusDownload":"id"}},"projects.globus.downloads.destroy":{"uri":"app\/projects\/{project}\/globus\/downloads\/{globusDownload}","methods":["DELETE"],"parameters":["project","globusDownload"],"bindings":{"project":"id","globusDownload":"id"}},"projects.globus.downloads.index":{"uri":"app\/projects\/{project}\/globus\/downloads\/index","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.downloads.show":{"uri":"app\/projects\/{project}\/globus\/downloads\/{globusDownload}","methods":["GET","HEAD"],"parameters":["project","globusDownload"],"bindings":{"project":"id","globusDownload":"id"}},"projects.globus.start":{"uri":"app\/projects\/{project}\/globus\/start","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.close":{"uri":"app\/projects\/{project}\/globus\/close","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.show-started":{"uri":"app\/projects\/{project}\/globus\/{globusTransfer}\/show-started","methods":["GET","HEAD"],"parameters":["project","globusTransfer"],"bindings":{"project":"id"}},"projects.data-dictionary.activities":{"uri":"app\/projects\/{project}\/data-dictionary\/activities","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.data-dictionary.entities":{"uri":"app\/projects\/{project}\/data-dictionary\/entities","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus2.start":{"uri":"app\/projects\/{project}\/globus2\/start","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus2.close":{"uri":"app\/projects\/{project}\/globus2\/close","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus2.show-started":{"uri":"app\/projects\/{project}\/globus2\/{globusTransfer}\/show-started","methods":["GET","HEAD"],"parameters":["project","globusTransfer"],"bindings":{"project":"id"}},"projects.dt.recently-uploaded":{"uri":"app\/projects\/{project}\/dt\/recently-uploaded","methods":["GET","HEAD"],"parameters":["project"]},"projects.search":{"uri":"app\/projects\/{project}\/search","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.search.legacy":{"uri":"app\/projects\/{project}\/search\/htmx","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.globus.bookmark":{"uri":"app\/projects\/{project}\/globus_bookmark","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.files.show-visus":{"uri":"app\/projects\/{project}\/files\/{file}\/visus","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.markdown-editor":{"uri":"app\/projects\/{project}\/markdown-editor","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.health-reports.show":{"uri":"app\/projects\/{project}\/health-reports\/show\/{date}","methods":["GET","HEAD"],"parameters":["project","date"],"bindings":{"project":"id"}},"projects.health-reports.index":{"uri":"app\/projects\/{project}\/health-reports","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.experiments.create":{"uri":"app\/projects\/{project}\/experiments\/create","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.experiments.store":{"uri":"app\/projects\/{project}\/experiments","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.experiments.upload-excel":{"uri":"app\/projects\/{project}\/experiments\/upload-excel","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.experiments.index":{"uri":"app\/projects\/{project}\/experiments","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.experiments.update":{"uri":"app\/projects\/{project}\/experiments\/{experiment}","methods":["PATCH"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.edit":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/edit","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.delete":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/delete","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.destroy":{"uri":"app\/projects\/{project}\/experiments\/{experiment}","methods":["DELETE"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.show":{"uri":"app\/projects\/{project}\/experiments\/{experiment}","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.experiments.entities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/entities","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.experiments.computations.entities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/computations\/entities","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.experiments.workflow":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/workflow","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.experiments.etl_runs":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/etl_runs","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.experiments.data-dictionary.activities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/data-dictionary\/activities","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id"}},"projects.experiments.data-dictionary.entities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/data-dictionary\/entities","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id"}},"projects.experiments.show-reload":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/reload","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.reload":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/reload","methods":["PUT"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"dt_get_experiment_entities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/datables\/entities","methods":["GET","HEAD"],"parameters":["project","experiment"]},"dt_get_experiment_activities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/datables\/activities","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.experiments.etl_run.show-log":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/etl_run\/{etlRun}\/log","methods":["GET","HEAD"],"parameters":["project","experiment","etlRun"],"bindings":{"project":"id","experiment":"id","etlRun":"id"}},"projects.experiments.etl_run.status":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/etl_run\/{etlRun}\/status","methods":["GET","HEAD"],"parameters":["project","experiment","etlRun"],"bindings":{"project":"id","experiment":"id","etlRun":"id"}},"projects.experiments.etl_run.show":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/etl_run\/{etlRun}","methods":["GET","HEAD"],"parameters":["project","experiment","etlRun"],"bindings":{"project":"id","experiment":"id","etlRun":"id"}},"projects.experiments.etl_run.search":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/etl_run\/{etlRun}\/search","methods":["GET","HEAD"],"parameters":["project","experiment","etlRun"],"bindings":{"project":"id","experiment":"id","etlRun":"id"}},"projects.entities.index":{"uri":"app\/projects\/{project}\/entities","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.computations.entities.index":{"uri":"app\/projects\/{project}\/computations\/entities","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dt_get_project_entities":{"uri":"app\/projects\/{project}\/datatables\/entities","methods":["GET","HEAD"],"parameters":["project"]},"projects.entities.compare":{"uri":"app\/projects\/{project}\/entities\/{entity1}\/compare\/{entity2}","methods":["GET","HEAD"],"parameters":["project","entity1","entity2"],"bindings":{"project":"id"}},"projects.activities.compare":{"uri":"app\/projects\/{project}\/activities\/compare","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.entities.create":{"uri":"app\/projects\/{project}\/entitites\/create","methods":["GET","HEAD"],"parameters":["project"]},"projects.entities.store":{"uri":"app\/projects\/{project}\/entities","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.entities.show-spread":{"uri":"app\/projects\/{project}\/entities\/{entity}\/spread","methods":["GET","HEAD"],"parameters":["project","entity"]},"projects.computations.entities.show-spread":{"uri":"app\/projects\/{project}\/computations\/entities\/{entity}\/spread","methods":["GET","HEAD"],"parameters":["project","entity"]},"projects.experiments.entities.by-name.spread":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/entities-by-name\/spread","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.computations.entities.by-name.spread":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/computations\/entities-by-name\/spread","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.entities.show":{"uri":"app\/projects\/{project}\/entities\/{entity}","methods":["GET","HEAD"],"parameters":["project","entity"]},"projects.computations.entities.show":{"uri":"app\/projects\/{project}\/computations\/entities\/{entity}","methods":["GET","HEAD"],"parameters":["project","entity"]},"projects.entities.files":{"uri":"app\/projects\/{project}\/entities\/{entity}\/files","methods":["GET","HEAD"],"parameters":["project","entity"],"bindings":{"project":"id"}},"projects.entities.attributes":{"uri":"app\/projects\/{project}\/entities\/{entity}\/attributes","methods":["GET","HEAD"],"parameters":["project","entity"],"bindings":{"project":"id"}},"projects.experiments.entities.show":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/entities\/{entity}","methods":["GET","HEAD"],"parameters":["project","experiment","entity"]},"projects.experiments.entities.files":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/entities\/{entity}\/files","methods":["GET","HEAD"],"parameters":["project","experiment","entity"],"bindings":{"project":"id"}},"projects.experiments.entities.attributes":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/entities\/{entity}\/attributes","methods":["GET","HEAD"],"parameters":["project","experiment","entity"],"bindings":{"project":"id"}},"projects.entities-export":{"uri":"app\/projects\/{project}\/export-entities","methods":["GET","HEAD"],"parameters":["project"]},"projects.entities.mql.show":{"uri":"app\/projects\/{project}\/mql-show","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.entities.mql.run":{"uri":"app\/projects\/{project}\/mql-run","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.activities.computations.index":{"uri":"app\/projects\/{project}\/activities\/computations","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.activities.computations.show":{"uri":"app\/projects\/{project}\/activities\/computations\/{activity}","methods":["GET","HEAD"],"parameters":["project","activity"],"bindings":{"project":"id","activity":"id"}},"projects.activities.index":{"uri":"app\/projects\/{project}\/activities","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dt_get_project_activities":{"uri":"app\/projects\/{project}\/datatables\/activities","methods":["GET","HEAD"],"parameters":["project"]},"projects.activities.show-by-name":{"uri":"app\/projects\/{project}\/activities\/byname\/{name}","methods":["GET","HEAD"],"parameters":["project","name"],"bindings":{"project":"id"}},"projects.activities.show":{"uri":"app\/projects\/{project}\/activities\/{activity}","methods":["GET","HEAD"],"parameters":["project","activity"],"bindings":{"project":"id"}},"projects.activities.files":{"uri":"app\/projects\/{project}\/activities\/{activity}\/files","methods":["GET","HEAD"],"parameters":["project","activity"],"bindings":{"project":"id"}},"projects.activities.entities":{"uri":"app\/projects\/{project}\/activities\/{activity}\/entities","methods":["GET","HEAD"],"parameters":["project","activity"],"bindings":{"project":"id"}},"projects.experiments.activities.show":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/activities\/{activity}","methods":["GET","HEAD"],"parameters":["project","experiment","activity"],"bindings":{"project":"id"}},"projects.experiments.activities.files":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/activities\/{activity}\/files","methods":["GET","HEAD"],"parameters":["project","experiment","activity"],"bindings":{"project":"id"}},"projects.experiments.activities.entities":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/activities\/{activity}\/entities","methods":["GET","HEAD"],"parameters":["project","experiment","activity"],"bindings":{"project":"id"}},"projects.experiments.workflows.update":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/workflows\/{workflow}\/update","methods":["PUT"],"parameters":["project","experiment","workflow"],"bindings":{"workflow":"id"}},"projects.experiments.workflows.create":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/workflows\/create","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.workflows.store":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/workflows","methods":["POST"],"parameters":["project","experiment"],"bindings":{"experiment":"id"}},"projects.experiments.workflows.edit":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/workflows\/{workflow}\/edit","methods":["GET","HEAD"],"parameters":["project","experiment","workflow"],"bindings":{"project":"id","experiment":"id","workflow":"id"}},"projects.experiments.workflows.attach":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/workflows\/attach","methods":["GET","HEAD"],"parameters":["project","experiment"]},"projects.workflows.index":{"uri":"app\/projects\/{project}\/workflows","methods":["GET","HEAD"],"parameters":["project"]},"projects.workflows.create":{"uri":"app\/projects\/{project}\/workflows\/create","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.workflows.store":{"uri":"app\/projects\/{project}\/workflows","methods":["POST"],"parameters":["project"]},"projects.workflows.edit":{"uri":"app\/projects\/{project}\/workflows\/{workflow}\/edit","methods":["GET","HEAD"],"parameters":["project","workflow"],"bindings":{"project":"id","workflow":"id"}},"projects.workflows.update":{"uri":"app\/projects\/{project}\/workflows\/{workflow}","methods":["PUT"],"parameters":["project","workflow"],"bindings":{"workflow":"id"}},"projects.workflows.delete":{"uri":"app\/projects\/{project}\/workflows\/{workflow}\/delete","methods":["GET","HEAD"],"parameters":["project","workflow"]},"projects.workflow.destroy":{"uri":"app\/projects\/{project}\/workflows\/{workflow}","methods":["DELETE"],"parameters":["project","workflow"]},"projects.workflows.show":{"uri":"app\/projects\/{project}\/workflows\/{workflow}","methods":["GET","HEAD"],"parameters":["project","workflow"],"bindings":{"project":"id","workflow":"id"}},"projects.files.upload":{"uri":"app\/projects\/{project}\/files\/{file}\/upload","methods":["POST"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.sheets.index":{"uri":"app\/projects\/{project}\/sheets\/index","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.files.sheets.resolve-google-sheet":{"uri":"app\/projects\/{project}\/files\/sheets\/resolve-google-sheet","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.files.sheets.add-google-sheet":{"uri":"app\/projects\/{project}\/files\/sheets\/add-google-sheet","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.files.by-path":{"uri":"app\/projects\/{project}\/files\/by-path","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.files.show":{"uri":"app\/projects\/{project}\/files\/{file}\/show","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.files.entities":{"uri":"app\/projects\/{project}\/files\/{file}\/entities","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.files.activities":{"uri":"app\/projects\/{project}\/files\/{file}\/activities","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.files.attributes":{"uri":"app\/projects\/{project}\/files\/{file}\/attributes","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.experiments":{"uri":"app\/projects\/{project}\/files\/{file}\/experiments","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.files.versions":{"uri":"app\/projects\/{project}\/files\/{file}\/versions","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.files.set-active":{"uri":"app\/projects\/{project}\/files\/{file}\/set-active","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.compare":{"uri":"app\/projects\/{project}\/files\/{file1}\/{file2}\/compare","methods":["GET","HEAD"],"parameters":["project","file1","file2"],"bindings":{"project":"id","file1":"id","file2":"id"}},"projects.files.display":{"uri":"app\/projects\/{project}\/files\/{file}\/display","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.display.thumbnail":{"uri":"app\/projects\/{project}\/files\/{file}\/display\/thumbnail","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.download":{"uri":"app\/projects\/{project}\/files\/{file}\/download","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"file":"id"}},"projects.files.run-script":{"uri":"app\/projects\/{project}\/files\/{file}\/run","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.run-script-with-folder-context":{"uri":"app\/projects\/{project}\/dir\/{dir}\/files\/{file}\/run","methods":["GET","HEAD"],"parameters":["project","dir","file"],"bindings":{"project":"id","dir":"id","file":"id"}},"projects.files.delete":{"uri":"app\/projects\/{project}\/files\/{file}\/delete","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.destroy":{"uri":"app\/projects\/{project}\/files\/{file}\/destroy","methods":["DELETE"],"parameters":["project","file"],"bindings":{"project":"id"}},"projects.files.rename":{"uri":"app\/projects\/{project}\/files\/{file}\/rename","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.rename.update":{"uri":"app\/projects\/{project}\/files\/{file}\/rename","methods":["PUT"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.edit":{"uri":"app\/projects\/{project}\/files\/{file}\/edit","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.save-edited":{"uri":"app\/projects\/{project}\/files\/{file}\/save-edited","methods":["POST"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.files.create-file":{"uri":"app\/projects\/{project}\/directory\/{dir}\/create-file","methods":["GET","HEAD"],"parameters":["project","dir"]},"projects.files.save-created":{"uri":"app\/projects\/{project}\/directory\/{dir}\/save-created-file","methods":["POST"],"parameters":["project","dir"]},"projects.files.create-experiment":{"uri":"app\/projects\/{project}\/files\/{file}\/create-experiment","methods":["POST"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.trashcan.index":{"uri":"app\/projects\/{project}\/trashcan","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.trashcan.empty":{"uri":"app\/projects\/{project}\/trashcan\/empty","methods":["DELETE"],"parameters":["project"],"bindings":{"project":"id"}},"projects.trashcan.dir.restore":{"uri":"app\/projects\/{project}\/trashcan\/dir\/{dir}\/restore","methods":["GET","HEAD"],"parameters":["project","dir"],"bindings":{"project":"id","dir":"id"}},"projects.trashcan.dir.delete":{"uri":"app\/projects\/{project}\/trashcan\/dir\/{dir}\/delete","methods":["GET","HEAD"],"parameters":["project","dir"],"bindings":{"project":"id","dir":"id"}},"projects.trashcan.file.restore":{"uri":"app\/projects\/{project}\/trashcan\/file\/{file}\/restore","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.trashcan.file.delete":{"uri":"app\/projects\/{project}\/trashcan\/file\/{file}\/delete","methods":["GET","HEAD"],"parameters":["project","file"],"bindings":{"project":"id","file":"id"}},"projects.folders.create":{"uri":"app\/projects\/{project}\/folders\/{folder}\/create","methods":["GET","HEAD"],"parameters":["project","folder"],"bindings":{"project":"id","folder":"id"}},"projects.folders.store":{"uri":"app\/projects\/{project}\/folders\/{folder}","methods":["POST"],"parameters":["project","folder"],"bindings":{"project":"id","folder":"id"}},"projects.folders.by_path":{"uri":"app\/projects\/{project}\/goto_folder_by_path","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.folders.index":{"uri":"app\/projects\/{project}\/folders","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.folders.show":{"uri":"app\/projects\/{project}\/folders\/{folder}","methods":["GET","HEAD"],"parameters":["project","folder"],"bindings":{"project":"id"}},"projects.folders.copy-to":{"uri":"app\/projects\/{project}\/folders\/{folder}\/copy","methods":["POST"],"parameters":["project","folder"],"bindings":{"project":"id"}},"projects.folders.show-for-copy":{"uri":"app\/projects\/{leftProject}\/{leftFolder}\/{rightProject}\/{rightFolder}\/show-for-copy","methods":["GET","HEAD"],"parameters":["leftProject","leftFolder","rightProject","rightFolder"],"bindings":{"leftProject":"id","leftFolder":"id","rightProject":"id","rightFolder":"id"}},"projects.folders.choose-project":{"uri":"app\/projects\/{project}\/folders\/{file}\/{copyType}\/choose-project","methods":["GET","HEAD"],"parameters":["project","file","copyType"],"bindings":{"project":"id","file":"id"}},"projects.folders.upload":{"uri":"app\/projects\/{project}\/folders\/{directory}\/upload","methods":["GET","HEAD"],"parameters":["project","directory"],"bindings":{"project":"id","directory":"id"}},"projects.folders.move":{"uri":"app\/projects\/{project}\/folders\/{folder}\/move","methods":["GET","HEAD"],"parameters":["project","folder"],"bindings":{"project":"id"}},"projects.folders.move.update":{"uri":"app\/projects\/{project}\/folders\/{folder}\/move","methods":["POST"],"parameters":["project","folder"],"bindings":{"project":"id"}},"projects.get_root_folder":{"uri":"app\/projects\/{project}\/getRootFolder","methods":["GET","HEAD"],"parameters":["project"]},"projects.get_folder":{"uri":"app\/projects\/{project}\/folder\/{folder}\/getFolder","methods":["GET","HEAD"],"parameters":["project","folder"]},"projects.folders.delete":{"uri":"app\/projects\/{project}\/folders\/{dir}\/delete","methods":["GET","HEAD"],"parameters":["project","dir"],"bindings":{"project":"id","dir":"id"}},"projects.folders.destroy":{"uri":"app\/projects\/{project}\/folders\/{dir}\/destroy","methods":["DELETE"],"parameters":["project","dir"],"bindings":{"project":"id"}},"projects.folders.rename":{"uri":"app\/projects\/{project}\/folders\/{dir}\/rename","methods":["GET","HEAD"],"parameters":["project","dir"],"bindings":{"project":"id","dir":"id"}},"projects.folders.rename.update":{"uri":"app\/projects\/{project}\/folders\/{dir}\/rename","methods":["PUT"],"parameters":["project","dir"],"bindings":{"project":"id","dir":"id"}},"projects.folders.index-images":{"uri":"app\/projects\/{project}\/folders\/{folder}\/index-images","methods":["GET","HEAD"],"parameters":["project","folder"],"bindings":{"project":"id","folder":"id"}},"projects.folders.add-url":{"uri":"app\/projects\/{project}\/folders\/{folder}\/add-url","methods":["GET","HEAD"],"parameters":["project","folder"],"bindings":{"project":"id","folder":"id"}},"projects.folders.store-url":{"uri":"app\/projects\/{project}\/folders\/{folder}\/store-url","methods":["POST"],"parameters":["project","folder"],"bindings":{"project":"id","folder":"id"}},"projects.folders.filter.by-user":{"uri":"app\/projects\/{project}\/filter\/folders\/by-user","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.folders.filter.show-for-user":{"uri":"app\/projects\/{project}\/filter\/folders\/show-for-user\/{user}","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.folders.filter.dt_get_files_for_user_filter":{"uri":"app\/projects\/{project}\/filter\/folders\/dt-show-for-user\/{user}","methods":["GET","HEAD"],"parameters":["project","user"],"bindings":{"project":"id","user":"id"}},"projects.datasets.index":{"uri":"app\/projects\/{project}\/datasets","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.datasets.create":{"uri":"app\/projects\/{project}\/datasets\/create","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.datasets.store":{"uri":"app\/projects\/{project}\/datasets","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.datasets.samples.edit":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/samples","methods":["GET","HEAD"],"parameters":["project","dataset"]},"projects.datasets.activities.edit":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/activities","methods":["GET","HEAD"],"parameters":["project","dataset"]},"projects.datasets.workflows.edit":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/workflows","methods":["GET","HEAD"],"parameters":["project","dataset"]},"projects.datasets.files.edit":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/files\/{folder?}","methods":["GET","HEAD"],"parameters":["project","dataset","folder"],"bindings":{"project":"id"}},"projects.datasets.edit":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.workflows.edit.create":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/workflows\/create","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.workflows.edit.store":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/workflows\/store","methods":["POST"],"parameters":["project","dataset"],"bindings":{"dataset":"id"}},"projects.datasets.workflows.edit.update":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/workflows\/{workflow}\/update","methods":["PUT"],"parameters":["project","dataset","workflow"],"bindings":{"dataset":"id","workflow":"id"}},"projects.datasets.workflows.edit.workflow":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/edit\/workflows\/{workflow}","methods":["GET","HEAD"],"parameters":["project","dataset","workflow"],"bindings":{"project":"id","dataset":"id","workflow":"id"}},"projects.datasets.samples.create-data":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/create-data\/samples","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.activities.create-data":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/create-data\/activities","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.workflows.create-data":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/create-data\/workflows","methods":["GET","HEAD"],"parameters":["project","dataset"]},"projects.datasets.create-data":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/create-data\/{folder?}","methods":["GET","HEAD"],"parameters":["project","dataset","folder"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.create-data.upload-files":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/create-data\/upload\/{directory}","methods":["GET","HEAD"],"parameters":["project","dataset","directory"],"bindings":{"project":"id","dataset":"id","directory":"id"}},"projects.datasets.files.upload":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/files\/{file}\/upload","methods":["POST"],"parameters":["project","dataset","file"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.create-data.create-directory":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/create-data\/create-directory\/{directory}","methods":["GET","HEAD"],"parameters":["project","dataset","directory"],"bindings":{"project":"id","dataset":"id","directory":"id"}},"projects.datasets.create-data.store-directory":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/store-directory","methods":["POST"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.show.overview":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/overview","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show":{"uri":"app\/projects\/{project}\/datasets\/{dataset}","methods":["GET","HEAD"],"parameters":["project","dataset"]},"projects.datasets.show.files":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/files","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show.next":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/next\/{folder}","methods":["GET","HEAD"],"parameters":["project","dataset","folder"],"bindings":{"project":"id"}},"projects.datasets.show.entities":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/entities","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show.activities":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/activities","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show.workflows":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/workflows","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show.communities":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/communities","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show.experiments":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/experiments","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.download_zipfile":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/zipfile","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.show.file_includes_excludes":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/file_includes_excludes","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.show.data-dictionary":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/data-dictionary","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id"}},"projects.datasets.update":{"uri":"app\/projects\/{project}\/datasets\/{dataset}","methods":["PATCH"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.delete":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/delete","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.destroy":{"uri":"app\/projects\/{project}\/datasets\/{dataset}","methods":["DELETE"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.assign-doi":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/assign-doi","methods":["PUT"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.create-doi":{"uri":"app\/projects\/{project}\/datasets\/create-doi","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.datasets.publish":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/publish","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.published-message":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/published-message","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.refresh":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/refresh","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.unpublish":{"uri":"app\/projects\/{project}\/datasets\/{dataset}\/unpublish","methods":["GET","HEAD"],"parameters":["project","dataset"],"bindings":{"project":"id","dataset":"id"}},"projects.datasets.import":{"uri":"app\/projects\/{p}\/datasets\/{dataset}\/import","methods":["POST"],"parameters":["p","dataset"],"bindings":{"p":"id","dataset":"id"}},"projects.datasets.import-into-project":{"uri":"app\/projects\/{p}\/datasets\/{dataset}\/import","methods":["GET","HEAD"],"parameters":["p","dataset"],"bindings":{"p":"id","dataset":"id"}},"accounts.show":{"uri":"app\/accounts\/show","methods":["GET","HEAD"]},"accounts.update.details":{"uri":"app\/accounts\/update\/details","methods":["POST"]},"accounts.update.globus":{"uri":"app\/accounts\/update\/globus","methods":["POST"]},"accounts.update.password":{"uri":"app\/accounts\/update\/password","methods":["POST"]},"accounts.update.email":{"uri":"app\/accounts\/update\/email","methods":["POST"]},"accounts.api-token.regenerate":{"uri":"app\/accounts\/api-token\/regenerate","methods":["GET","HEAD"]},"communities.index":{"uri":"app\/communities","methods":["GET","HEAD"]},"communities.create":{"uri":"app\/communities\/create","methods":["GET","HEAD"]},"communities.store":{"uri":"app\/communities","methods":["POST"]},"communities.show":{"uri":"app\/communities\/{community}","methods":["GET","HEAD"],"parameters":["community"]},"communities.files.show-files":{"uri":"app\/communities\/{community}\/files","methods":["GET","HEAD"],"parameters":["community"]},"communities.links.show-links":{"uri":"app\/communities\/{community}\/links","methods":["GET","HEAD"],"parameters":["community"]},"communities.datasets.show-datasets":{"uri":"app\/communities\/{community}\/datasets","methods":["GET","HEAD"],"parameters":["community"]},"communities.practices.show":{"uri":"app\/communities\/{community}\/practices","methods":["GET","HEAD"],"parameters":["community"]},"communities.edit":{"uri":"app\/communities\/{community}\/edit","methods":["GET","HEAD"],"parameters":["community"]},"communities.update":{"uri":"app\/communities\/{community}","methods":["PUT"],"parameters":["community"],"bindings":{"community":"id"}},"communities.delete":{"uri":"app\/communities\/{community}\/delete","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"communities.destroy":{"uri":"app\/communities\/{community}","methods":["DELETE"],"parameters":["community"],"bindings":{"community":"id"}},"communities.files.edit":{"uri":"app\/communities\/{community}\/edit\/files","methods":["GET","HEAD"],"parameters":["community"]},"communities.files.download":{"uri":"app\/communities\/{community}\/files\/{file}\/download","methods":["GET","HEAD"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.display":{"uri":"app\/communities\/{community}\/files\/{file}\/display","methods":["GET","HEAD"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.delete":{"uri":"app\/communities\/{community}\/files\/{file}\/delete","methods":["GET","HEAD"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.destroy":{"uri":"app\/communities\/{community}\/files\/{file}\/destroy","methods":["DELETE"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.show":{"uri":"app\/communities\/{community}\/files\/{file}\/show","methods":["GET","HEAD"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.edit-file":{"uri":"app\/communities\/{community}\/files\/{file}\/edit","methods":["GET","HEAD"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.update-file":{"uri":"app\/communities\/{community}\/files\/{file}\/update","methods":["PUT"],"parameters":["community","file"],"bindings":{"community":"id","file":"id"}},"communities.files.upload":{"uri":"app\/communities\/{community}\/files\/upload","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"communities.files.upload.store":{"uri":"app\/communities\/{community}\/files\/upload\/store","methods":["POST"],"parameters":["community"],"bindings":{"community":"id"}},"communities.datasets.update":{"uri":"app\/communities\/{community}\/update\/datasets","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"communities.links.edit":{"uri":"app\/communities\/{community}\/edit\/links","methods":["GET","HEAD"],"parameters":["community"]},"communities.links.edit-link":{"uri":"app\/communities\/{community}\/links\/{link}\/edit","methods":["GET","HEAD"],"parameters":["community","link"],"bindings":{"community":"id","link":"id"}},"communities.links.update-link":{"uri":"app\/communities\/{community}\/links\/{link}\/update","methods":["PUT"],"parameters":["community","link"],"bindings":{"community":"id","link":"id"}},"communities.links.create":{"uri":"app\/communities\/{community}\/links\/create","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"communities.links.store":{"uri":"app\/communities\/{community}\/links\/store","methods":["POST"],"parameters":["community"],"bindings":{"community":"id"}},"communities.links.delete":{"uri":"app\/communities\/{community}\/links\/{link}\/delete","methods":["GET","HEAD"],"parameters":["community","link"],"bindings":{"community":"id","link":"id"}},"communities.links.destroy":{"uri":"app\/communities\/{community}\/links\/{link}\/destroy","methods":["DELETE"],"parameters":["community","link"],"bindings":{"community":"id","link":"id"}},"communities.waiting-approval.index":{"uri":"app\/communities\/{community}\/waiting-approval\/index","methods":["GET","HEAD"],"parameters":["community"],"bindings":{"community":"id"}},"communities.waiting-approval.approve":{"uri":"app\/communities\/{community}\/waiting-approval\/{dataset}\/approve","methods":["GET","HEAD"],"parameters":["community","dataset"],"bindings":{"community":"id","dataset":"id"}},"communities.waiting-approval.reject":{"uri":"app\/communities\/{community}\/waiting-approval\/{dataset}\/reject","methods":["GET","HEAD"],"parameters":["community","dataset"],"bindings":{"community":"id","dataset":"id"}},"dashboard":{"uri":"app\/dashboard","methods":["GET","HEAD","POST","PUT","PATCH","DELETE","OPTIONS"]},"browse-tree.show":{"uri":"app\/browse-tree","methods":["GET","HEAD"]},"dashboard.projects.show":{"uri":"app\/dashboard\/projects","methods":["GET","HEAD"]},"dashboard.projects.archived.index":{"uri":"app\/dashboard\/projects\/archived","methods":["GET","HEAD"]},"dashboard.projects.trash.index":{"uri":"app\/dashboard\/projects\/trash","methods":["GET","HEAD"]},"dashboard.projects.trash.restore":{"uri":"app\/dashboard\/projects\/{project}\/trash\/restore","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dashboard.published-datasets.show":{"uri":"app\/dashboard\/published-datasets","methods":["GET","HEAD"]},"dashboard.data-dictionary.show":{"uri":"app\/dashboard\/data-dictionary","methods":["GET","HEAD"]},"dashboard.my-research.show":{"uri":"app\/dashboard\/my-research","methods":["GET","HEAD"]},"dashboard.my-research.research-summary.update":{"uri":"app\/dashboard\/my-research\/research-summary","methods":["PUT"]},"dashboard.projects.mark-as-active":{"uri":"app\/dashboard\/projects\/{project}\/mark-as-active","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dashboard.projects.unmark-as-active":{"uri":"app\/dashboard\/projects\/{project}\/unmark-as-active","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dashboard.projects.archive":{"uri":"app\/dashboard\/projects\/{project}\/archive","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dashboard.projects.unarchive":{"uri":"app\/dashboard\/projects\/{project}\/unarchive","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"dashboard.projects.trash.immediately-destroy":{"uri":"app\/dashboards\/projects\/{project}\/trash\/immediately-destroy","methods":["DELETE"],"parameters":["project"],"bindings":{"project":"id"}},"dashboards.webdav.reset-state":{"uri":"app\/dashboards\/webdav\/reset-state","methods":["GET","HEAD"]},"users.show":{"uri":"app\/users\/{user}","methods":["GET","HEAD"],"parameters":["user"],"bindings":{"user":"id"}},"projects.datadictionary.index":{"uri":"app\/projects\/{project}\/data-dictionary","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"datadictionary.index":{"uri":"app\/projects\/datadictionary","methods":["GET","HEAD"]},"projects.entity-attributes.show":{"uri":"app\/projects\/{project}\/entity-attributes\/show","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.activity-attributes.show":{"uri":"app\/projects\/{project}\/activity-attributes\/show","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.experiments.entity-attributes.show":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/entity-attributes\/show","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.experiments.activity-attributes.show":{"uri":"app\/projects\/{project}\/experiments\/{experiment}\/activity-attributes\/show","methods":["GET","HEAD"],"parameters":["project","experiment"],"bindings":{"project":"id","experiment":"id"}},"projects.activities.attributes.show-details-by-name":{"uri":"app\/projects\/{project}\/activities\/attributes\/{name}\/show-details-by-name","methods":["GET","HEAD"],"parameters":["project","name"],"bindings":{"project":"id"}},"projects.entities.attributes.show-details-by-name":{"uri":"app\/projects\/{project}\/entities\/attributes\/{name}\/show-details-by-name","methods":["GET","HEAD"],"parameters":["project","name"],"bindings":{"project":"id"}},"projects.attributes.close-details-by-name":{"uri":"app\/projects\/{project}\/attributes-by-name\/{name}\/close-details-by-name","methods":["GET","HEAD"],"parameters":["project","name"]},"teams.index":{"uri":"app\/teams","methods":["GET","HEAD"]},"teams.create":{"uri":"app\/teams\/create","methods":["GET","HEAD"]},"teams.store":{"uri":"app\/teams","methods":["POST"]},"teams.show":{"uri":"app\/teams\/{team}","methods":["GET","HEAD"],"parameters":["team"]},"teams.members.show":{"uri":"app\/teams\/{team}\/members","methods":["GET","HEAD"],"parameters":["team"]},"teams.admins.show":{"uri":"app\/teams\/{team}\/admins","methods":["GET","HEAD"],"parameters":["team"]},"teams.edit":{"uri":"app\/teams\/{team}\/edit","methods":["GET","HEAD"],"parameters":["team"]},"teams.update":{"uri":"app\/teams\/{team}\/update","methods":["PUT"],"parameters":["team"]},"teams.modify-users-projects":{"uri":"app\/teams\/{team}\/modify-users-projects","methods":["GET","HEAD"],"parameters":["team"]},"teams.delete":{"uri":"app\/teams\/{team}\/delete","methods":["GET","HEAD"],"parameters":["team"]},"teams.destroy":{"uri":"app\/teams\/{team}\/destroy","methods":["DELETE"],"parameters":["team"]},"projects.mql.store":{"uri":"app\/projects\/{project}\/mql\/store","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.mql.index":{"uri":"app\/projects\/{project}\/mql\/index","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.mql.run":{"uri":"app\/projects\/{project}\/mql\/{query}\/run","methods":["GET","HEAD"],"parameters":["project","query"],"bindings":{"project":"id","query":"id"}},"projects.mql.save.text":{"uri":"app\/projects\/{project}\/mql\/save\/text","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.query-builder.add-where":{"uri":"app\/projects\/{project}\/query-builder\/add-where\/{attrName}\/{attrType}\/{lastId}","methods":["GET","HEAD"],"parameters":["project","attrName","attrType","lastId"],"bindings":{"project":"id"}},"htmx.searchers.find-project":{"uri":"app\/htmx\/searchers\/find-project","methods":["GET","HEAD"]},"htmx.searchers.find-user":{"uri":"app\/htmx\/searchers\/find-user","methods":["GET","HEAD"]},"site.statistics":{"uri":"app\/site\/statistics","methods":["GET","HEAD"]},"projects.runs.index":{"uri":"app\/projects\/{project}\/runs\/index","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.runs.show":{"uri":"app\/projects\/{project}\/runs\/{run}\/show","methods":["GET","HEAD"],"parameters":["project","run"],"bindings":{"project":"id","run":"id"}},"projects.triggers.index":{"uri":"app\/projects\/{project}\/triggers","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.triggers.create":{"uri":"app\/projects\/{project}\/triggers\/create","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.triggers.store":{"uri":"app\/projects\/{project}\/xxxx\/triggers\/store","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.triggers.show":{"uri":"app\/projects\/{project}\/triggers\/{trigger}\/show","methods":["GET","HEAD"],"parameters":["project","trigger"],"bindings":{"project":"id","trigger":"id"}},"projects.triggers.edit":{"uri":"app\/projects\/{project}\/triggers\/{trigger}\/edit","methods":["GET","HEAD"],"parameters":["project","trigger"],"bindings":{"project":"id","trigger":"id"}},"projects.triggers.update":{"uri":"app\/projects\/{project}\/triggers\/{trigger}","methods":["PUT"],"parameters":["project","trigger"],"bindings":{"project":"id","trigger":"id"}},"projects.triggers.delete":{"uri":"app\/projects\/{project}\/triggers\/{trigger}\/delete","methods":["GET","HEAD"],"parameters":["project","trigger"],"bindings":{"project":"id","trigger":"id"}},"projects.triggers.destroy":{"uri":"app\/projects\/{project}\/triggers\/{trigger}","methods":["GET","HEAD"],"parameters":["project","trigger"],"bindings":{"project":"id","trigger":"id"}},"admin.dashboard":{"uri":"app\/admin\/dashboard","methods":["GET","HEAD"]},"admin.dashboard.mcfs.transfer-requests.show":{"uri":"app\/admin\/dashboard\/mcfs\/transfer-requests\/{transferRequest}","methods":["GET","HEAD"],"parameters":["transferRequest"],"bindings":{"transferRequest":"id"}},"admin.dashboard.mcfs.transfer-requests.create":{"uri":"app\/admin\/dashboard\/mcfs\/transfer-requests","methods":["POST"]},"admin.dashboard.mcfs.log.show":{"uri":"app\/admin\/dashboard\/mcfs\/log","methods":["GET","HEAD"]},"admin.dashboard.mcfs.log.set-log-level":{"uri":"app\/admin\/dashboard\/mcfs\/log\/update","methods":["POST"]},"admin.dashboard.mcfs.log.search":{"uri":"app\/admin\/dashboard\/mcfs\/log\/search","methods":["GET","HEAD"]},"admin.dashboard.mcfs.index":{"uri":"app\/dashboard\/admin\/mcfs\/index","methods":["GET","HEAD"]},"admin.dashboard.mcfs.show-log-viewer":{"uri":"app\/dashboard\/admin\/mcfs\/show-log-viewer","methods":["GET","HEAD"]},"admin.dashboard.mcfs.show-log":{"uri":"app\/dashboard\/admin\/mcfs\/show-log","methods":["GET","HEAD"]},"admin.dashboard.mcfs.search-log":{"uri":"app\/dashboard\/admin\/mcfs\/search-log","methods":["GET","HEAD"]},"projects.datahq.index":{"uri":"app\/projects\/{project}\/datahq","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.datahq.qb-attribute-details":{"uri":"app\/projects\/{project}\/qb-attribute-details","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.networkhq":{"uri":"app\/projects\/{project}\/datahq\/networkhq","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"projects.datahq.sampleshq.download-chart-data":{"uri":"app\/projects\/{project}\/datahq\/sampleshq\/download-chart-data","methods":["POST"],"parameters":["project"],"bindings":{"project":"id"}},"projects.queryhq.index":{"uri":"app\/projects\/{project}\/datahq\/queryhq","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"google-sheets.index":{"uri":"app\/google-sheets","methods":["GET","HEAD"]},"google-sheets.authorize":{"uri":"app\/google-sheets\/authorize","methods":["GET","HEAD"]},"google-sheets.callback":{"uri":"app\/google-sheets\/callback","methods":["GET","HEAD"]},"google-sheets.store-spreadsheet":{"uri":"app\/google-sheets\/spreadsheet","methods":["POST"]},"google-sheets.update-cell":{"uri":"app\/google-sheets\/update-cell","methods":["POST"]},"projects.desktops.show":{"uri":"app\/projects\/{project}\/desktops\/{desktop}\/{hostname}\/show","methods":["GET","HEAD"],"parameters":["project","desktop","hostname"],"bindings":{"project":"id"}},"projects.desktops.submit-test-upload":{"uri":"app\/projects\/{project}\/desktops\/{desktop}\/submit-test-upload","methods":["GET","HEAD"],"parameters":["project","desktop"],"bindings":{"project":"id"}},"get_users":{"uri":"app\/getUsers","methods":["GET","HEAD"]},"get_project_experiments":{"uri":"app\/projects\/{project}\/getProjectExperiments","methods":["GET","HEAD"],"parameters":["project"]},"projects.settings.index":{"uri":"app\/projects\/{project}\/settings","methods":["GET","HEAD"],"parameters":["project"],"bindings":{"project":"id"}},"tasks.index":{"uri":"app\/tasks","methods":["GET","HEAD"]},"tasks.create":{"uri":"app\/tasks\/create","methods":["GET","HEAD"]},"tasks.store":{"uri":"app\/tasks","methods":["POST"]},"tasks.show":{"uri":"app\/tasks\/{task}","methods":["GET","HEAD"],"parameters":["task"],"bindings":{"task":"id"}},"tasks.edit":{"uri":"app\/tasks\/{task}\/edit","methods":["GET","HEAD"],"parameters":["task"],"bindings":{"task":"id"}},"tasks.update":{"uri":"app\/tasks\/{task}","methods":["PUT","PATCH"],"parameters":["task"],"bindings":{"task":"id"}},"tasks.destroy":{"uri":"app\/tasks\/{task}","methods":["DELETE"],"parameters":["task"],"bindings":{"task":"id"}},"settings.index":{"uri":"app\/settings","methods":["GET","HEAD"]},"users.index":{"uri":"app\/users","methods":["GET","HEAD"]}}};!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t||self).route=e()}(this,function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,u(r.key),r)}}function e(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),Object.defineProperty(e,"prototype",{writable:!1}),e}function n(){return n=Object.assign?Object.assign.bind():function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)({}).hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},n.apply(null,arguments)}function r(t){return r=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(t){return t.__proto__||Object.getPrototypeOf(t)},r(t)}function o(){try{var t=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch(t){}return(o=function(){return!!t})()}function i(t,e){return i=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},i(t,e)}function u(t){var e=function(t){if("object"!=typeof t||!t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var n=e.call(t,"string");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(t);return"symbol"==typeof e?e:e+""}function f(t){var e="function"==typeof Map?new Map:void 0;return f=function(t){if(null===t||!function(t){try{return-1!==Function.toString.call(t).indexOf("[native code]")}catch(e){return"function"==typeof t}}(t))return t;if("function"!=typeof t)throw new TypeError("Super expression must either be null or a function");if(void 0!==e){if(e.has(t))return e.get(t);e.set(t,n)}function n(){return function(t,e,n){if(o())return Reflect.construct.apply(null,arguments);var r=[null];r.push.apply(r,e);var u=new(t.bind.apply(t,r));return n&&i(u,n.prototype),u}(t,arguments,r(this).constructor)}return n.prototype=Object.create(t.prototype,{constructor:{value:n,enumerable:!1,writable:!0,configurable:!0}}),i(n,t)},f(t)}const c=String.prototype.replace,l=/%20/g,a={RFC1738:function(t){return c.call(t,l,"+")},RFC3986:function(t){return String(t)}};var s="RFC3986";const p=Object.prototype.hasOwnProperty,y=Array.isArray,d=new WeakMap;var b=function(t,e){return d.set(t,e),t};function v(t){return d.has(t)}var h=function(t){return d.get(t)},m=function(t,e){d.set(t,e)};const g=function(){const t=[];for(let e=0;e<256;++e)t.push("%"+((e<16?"0":"")+e.toString(16)).toUpperCase());return t}(),w=function(t,e){const n=e&&e.plainObjects?Object.create(null):{};for(let e=0;e<t.length;++e)void 0!==t[e]&&(n[e]=t[e]);return n},j=function t(e,n,r){if(!n)return e;if("object"!=typeof n){if(y(e))e.push(n);else{if(!e||"object"!=typeof e)return[e,n];if(v(e)){var o=h(e)+1;e[o]=n,m(e,o)}else(r&&(r.plainObjects||r.allowPrototypes)||!p.call(Object.prototype,n))&&(e[n]=!0)}return e}if(!e||"object"!=typeof e){if(v(n)){for(var i=Object.keys(n),u=r&&r.plainObjects?{__proto__:null,0:e}:{0:e},f=0;f<i.length;f++)u[parseInt(i[f],10)+1]=n[i[f]];return b(u,h(n)+1)}return[e].concat(n)}let c=e;return y(e)&&!y(n)&&(c=w(e,r)),y(e)&&y(n)?(n.forEach(function(n,o){if(p.call(e,o)){const i=e[o];i&&"object"==typeof i&&n&&"object"==typeof n?e[o]=t(i,n,r):e.push(n)}else e[o]=n}),e):Object.keys(n).reduce(function(e,o){const i=n[o];return e[o]=p.call(e,o)?t(e[o],i,r):i,e},c)},O=1024,E=function(t,e,n,r){if(v(t)){var o=h(t)+1;return t[o]=e,m(t,o),t}var i=[].concat(t,e);return i.length>n?b(w(i,{plainObjects:r}),i.length-1):i},T=function(t,e){if(y(t)){const n=[];for(let r=0;r<t.length;r+=1)n.push(e(t[r]));return n}return e(t)},R=Object.prototype.hasOwnProperty,k={brackets:function(t){return t+"[]"},comma:"comma",indices:function(t,e){return t+"["+e+"]"},repeat:function(t){return t}},S=Array.isArray,I=Array.prototype.push,A=function(t,e){I.apply(t,S(e)?e:[e])},D=Date.prototype.toISOString,$={addQueryPrefix:!1,allowDots:!1,allowEmptyArrays:!1,arrayFormat:"indices",charset:"utf-8",charsetSentinel:!1,delimiter:"&",encode:!0,encodeDotInKeys:!1,encoder:function(t,e,n,r,o){if(0===t.length)return t;let i=t;if("symbol"==typeof t?i=Symbol.prototype.toString.call(t):"string"!=typeof t&&(i=String(t)),"iso-8859-1"===n)return escape(i).replace(/%u[0-9a-f]{4}/gi,function(t){return"%26%23"+parseInt(t.slice(2),16)+"%3B"});let u="";for(let t=0;t<i.length;t+=O){const e=i.length>=O?i.slice(t,t+O):i,n=[];for(let t=0;t<e.length;++t){let r=e.charCodeAt(t);45===r||46===r||95===r||126===r||r>=48&&r<=57||r>=65&&r<=90||r>=97&&r<=122||"RFC1738"===o&&(40===r||41===r)?n[n.length]=e.charAt(t):r<128?n[n.length]=g[r]:r<2048?n[n.length]=g[192|r>>6]+g[128|63&r]:r<55296||r>=57344?n[n.length]=g[224|r>>12]+g[128|r>>6&63]+g[128|63&r]:(t+=1,r=65536+((1023&r)<<10|1023&e.charCodeAt(t)),n[n.length]=g[240|r>>18]+g[128|r>>12&63]+g[128|r>>6&63]+g[128|63&r])}u+=n.join("")}return u},encodeValuesOnly:!1,format:s,formatter:a[s],indices:!1,serializeDate:function(t){return D.call(t)},skipNulls:!1,strictNullHandling:!1},N={},_=function(t,e,n,r,o,i,u,f,c,l,a,s,p,y,d,b,v,h){let m=t,g=h,w=0,j=!1;for(;void 0!==(g=g.get(N))&&!j;){const e=g.get(t);if(w+=1,void 0!==e){if(e===w)throw new RangeError("Cyclic object value");j=!0}void 0===g.get(N)&&(w=0)}if("function"==typeof l?m=l(e,m):m instanceof Date?m=p(m):"comma"===n&&S(m)&&(m=T(m,function(t){return t instanceof Date?p(t):t})),null===m){if(i)return c&&!b?c(e,$.encoder,v,"key",y):e;m=""}if("string"==typeof(O=m)||"number"==typeof O||"boolean"==typeof O||"symbol"==typeof O||"bigint"==typeof O||function(t){return!(!t||"object"!=typeof t||!(t.constructor&&t.constructor.isBuffer&&t.constructor.isBuffer(t)))}(m))return c?[d(b?e:c(e,$.encoder,v,"key",y))+"="+d(c(m,$.encoder,v,"value",y))]:[d(e)+"="+d(String(m))];var O;const E=[];if(void 0===m)return E;let R;if("comma"===n&&S(m))b&&c&&(m=T(m,c)),R=[{value:m.length>0?m.join(",")||null:void 0}];else if(S(l))R=l;else{const t=Object.keys(m);R=a?t.sort(a):t}const k=f?e.replace(/\./g,"%2E"):e,I=r&&S(m)&&1===m.length?k+"[]":k;if(o&&S(m)&&0===m.length)return I+"[]";for(let e=0;e<R.length;++e){const g=R[e],j="object"==typeof g&&void 0!==g.value?g.value:m[g];if(u&&null===j)continue;const O=s&&f?g.replace(/\./g,"%2E"):g,T=S(m)?"function"==typeof n?n(I,O):I:I+(s?"."+O:"["+O+"]");h.set(t,w);const k=new WeakMap;k.set(N,h),A(E,_(j,T,n,r,o,i,u,f,"comma"===n&&b&&S(m)?null:c,l,a,s,p,y,d,b,v,k))}return E},x=Object.prototype.hasOwnProperty,C=Array.isArray,P={allowDots:!1,allowEmptyArrays:!1,allowPrototypes:!1,allowSparse:!1,arrayLimit:20,charset:"utf-8",charsetSentinel:!1,comma:!1,decodeDotInKeys:!1,decoder:function(t,e,n){const r=t.replace(/\+/g," ");if("iso-8859-1"===n)return r.replace(/%[0-9a-f]{2}/gi,unescape);try{return decodeURIComponent(r)}catch(t){return r}},delimiter:"&",depth:5,duplicates:"combine",ignoreQueryPrefix:!1,interpretNumericEntities:!1,parameterLimit:1e3,parseArrays:!0,plainObjects:!1,strictNullHandling:!1},F=function(t){return t.replace(/&#(\d+);/g,function(t,e){return String.fromCharCode(parseInt(e,10))})},U=function(t,e){return t&&"string"==typeof t&&e.comma&&t.indexOf(",")>-1?t.split(","):t},q=function(t,e,n,r){if(!t)return;const o=n.allowDots?t.replace(/\.([^.[]+)/g,"[$1]"):t,i=/(\[[^[\]]*])/g;let u=n.depth>0&&/(\[[^[\]]*])/.exec(o);const f=u?o.slice(0,u.index):o,c=[];if(f){if(!n.plainObjects&&x.call(Object.prototype,f)&&!n.allowPrototypes)return;c.push(f)}let l=0;for(;n.depth>0&&null!==(u=i.exec(o))&&l<n.depth;){if(l+=1,!n.plainObjects&&x.call(Object.prototype,u[1].slice(1,-1))&&!n.allowPrototypes)return;c.push(u[1])}return u&&c.push("["+o.slice(u.index)+"]"),function(t,e,n,r){let o=r?e:U(e,n);for(let e=t.length-1;e>=0;--e){let r;const i=t[e];if("[]"===i&&n.parseArrays)r=v(o)?o:n.allowEmptyArrays&&(""===o||n.strictNullHandling&&null===o)?[]:E([],o,n.arrayLimit,n.plainObjects);else{r=n.plainObjects?Object.create(null):{};const t="["===i.charAt(0)&&"]"===i.charAt(i.length-1)?i.slice(1,-1):i,e=n.decodeDotInKeys?t.replace(/%2E/g,"."):t,u=parseInt(e,10);n.parseArrays||""!==e?!isNaN(u)&&i!==e&&String(u)===e&&u>=0&&n.parseArrays&&u<=n.arrayLimit?(r=[],r[u]=o):"__proto__"!==e&&(r[e]=o):r={0:o}}o=r}return o}(c,e,n,r)};function K(t,e){const n=function(t){if(!t)return P;if(void 0!==t.allowEmptyArrays&&"boolean"!=typeof t.allowEmptyArrays)throw new TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");if(void 0!==t.decodeDotInKeys&&"boolean"!=typeof t.decodeDotInKeys)throw new TypeError("`decodeDotInKeys` option can only be `true` or `false`, when provided");if(null!=t.decoder&&"function"!=typeof t.decoder)throw new TypeError("Decoder has to be a function.");if(void 0!==t.charset&&"utf-8"!==t.charset&&"iso-8859-1"!==t.charset)throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");const e=void 0===t.charset?P.charset:t.charset,n=void 0===t.duplicates?P.duplicates:t.duplicates;if("combine"!==n&&"first"!==n&&"last"!==n)throw new TypeError("The duplicates option must be either combine, first, or last");return{allowDots:void 0===t.allowDots?!0===t.decodeDotInKeys||P.allowDots:!!t.allowDots,allowEmptyArrays:"boolean"==typeof t.allowEmptyArrays?!!t.allowEmptyArrays:P.allowEmptyArrays,allowPrototypes:"boolean"==typeof t.allowPrototypes?t.allowPrototypes:P.allowPrototypes,allowSparse:"boolean"==typeof t.allowSparse?t.allowSparse:P.allowSparse,arrayLimit:"number"==typeof t.arrayLimit?t.arrayLimit:P.arrayLimit,charset:e,charsetSentinel:"boolean"==typeof t.charsetSentinel?t.charsetSentinel:P.charsetSentinel,comma:"boolean"==typeof t.comma?t.comma:P.comma,decodeDotInKeys:"boolean"==typeof t.decodeDotInKeys?t.decodeDotInKeys:P.decodeDotInKeys,decoder:"function"==typeof t.decoder?t.decoder:P.decoder,delimiter:"string"==typeof t.delimiter||(r=t.delimiter,"[object RegExp]"===Object.prototype.toString.call(r))?t.delimiter:P.delimiter,depth:"number"==typeof t.depth||!1===t.depth?+t.depth:P.depth,duplicates:n,ignoreQueryPrefix:!0===t.ignoreQueryPrefix,interpretNumericEntities:"boolean"==typeof t.interpretNumericEntities?t.interpretNumericEntities:P.interpretNumericEntities,parameterLimit:"number"==typeof t.parameterLimit?t.parameterLimit:P.parameterLimit,parseArrays:!1!==t.parseArrays,plainObjects:"boolean"==typeof t.plainObjects?t.plainObjects:P.plainObjects,strictNullHandling:"boolean"==typeof t.strictNullHandling?t.strictNullHandling:P.strictNullHandling};var r}(e);if(""===t||null==t)return n.plainObjects?Object.create(null):{};const r="string"==typeof t?function(t,e){const n={__proto__:null},r=(e.ignoreQueryPrefix?t.replace(/^\?/,""):t).split(e.delimiter,Infinity===e.parameterLimit?void 0:e.parameterLimit);let o,i=-1,u=e.charset;if(e.charsetSentinel)for(o=0;o<r.length;++o)0===r[o].indexOf("utf8=")&&("utf8=%E2%9C%93"===r[o]?u="utf-8":"utf8=%26%2310003%3B"===r[o]&&(u="iso-8859-1"),i=o,o=r.length);for(o=0;o<r.length;++o){if(o===i)continue;const t=r[o],f=t.indexOf("]="),c=-1===f?t.indexOf("="):f+1;let l,a;-1===c?(l=e.decoder(t,P.decoder,u,"key"),a=e.strictNullHandling?null:""):(l=e.decoder(t.slice(0,c),P.decoder,u,"key"),a=T(U(t.slice(c+1),e),function(t){return e.decoder(t,P.decoder,u,"value")})),a&&e.interpretNumericEntities&&"iso-8859-1"===u&&(a=F(a)),t.indexOf("[]=")>-1&&(a=C(a)?[a]:a);const s=x.call(n,l);s&&"combine"===e.duplicates?n[l]=E(n[l],a,e.arrayLimit,e.plainObjects):s&&"last"!==e.duplicates||(n[l]=a)}return n}(t,n):t;let o=n.plainObjects?Object.create(null):{};const i=Object.keys(r);for(let e=0;e<i.length;++e){const u=i[e],f=q(u,r[u],n,"string"==typeof t);o=j(o,f,n)}return!0===n.allowSparse?o:function(t){const e=[{obj:{o:t},prop:"o"}],n=[];for(let t=0;t<e.length;++t){const r=e[t],o=r.obj[r.prop],i=Object.keys(o);for(let t=0;t<i.length;++t){const r=i[t],u=o[r];"object"==typeof u&&null!==u&&-1===n.indexOf(u)&&(e.push({obj:o,prop:r}),n.push(u))}}return function(t){for(;t.length>1;){const e=t.pop(),n=e.obj[e.prop];if(y(n)){const t=[];for(let e=0;e<n.length;++e)void 0!==n[e]&&t.push(n[e]);e.obj[e.prop]=t}}}(e),t}(o)}var Z=/*#__PURE__*/function(){function t(t,e,n){var r,o;this.name=t,this.definition=e,this.bindings=null!=(r=e.bindings)?r:{},this.wheres=null!=(o=e.wheres)?o:{},this.config=n}var n=t.prototype;return n.matchesUrl=function(t){var e,n=this;if(!this.definition.methods.includes("GET"))return!1;var r=this.template.replace(/[.*+$()[\]]/g,"\\$&").replace(/(\/?){([^}?]*)(\??)}/g,function(t,e,r,o){var i,u="(?<"+r+">"+((null==(i=n.wheres[r])?void 0:i.replace(/(^\^)|(\$$)/g,""))||"[^/?]+")+")";return o?"("+e+u+")?":""+e+u}).replace(/^\w+:\/\//,""),o=t.replace(/^\w+:\/\//,"").split("?"),i=o[0],u=o[1],f=null!=(e=new RegExp("^"+r+"/?$").exec(i))?e:new RegExp("^"+r+"/?$").exec(decodeURI(i));if(f){for(var c in f.groups)f.groups[c]="string"==typeof f.groups[c]?decodeURIComponent(f.groups[c]):f.groups[c];return{params:f.groups,query:K(u)}}return!1},n.compile=function(t){var e=this;return this.parameterSegments.length?this.template.replace(/{([^}?]+)(\??)}/g,function(n,r,o){var i,u;if(!o&&[null,void 0].includes(t[r]))throw new Error("Ziggy error: '"+r+"' parameter is required for route '"+e.name+"'.");if(e.wheres[r]&&!new RegExp("^"+(o?"("+e.wheres[r]+")?":e.wheres[r])+"$").test(null!=(u=t[r])?u:""))throw new Error("Ziggy error: '"+r+"' parameter '"+t[r]+"' does not match required format '"+e.wheres[r]+"' for route '"+e.name+"'.");return encodeURI(null!=(i=t[r])?i:"").replace(/%7C/g,"|").replace(/%25/g,"%").replace(/\$/g,"%24")}).replace(this.config.absolute?/(\.[^/]+?)(\/\/)/:/(^)(\/\/)/,"$1/").replace(/\/+$/,""):this.template},e(t,[{key:"template",get:function(){var t=(this.origin+"/"+this.definition.uri).replace(/\/+$/,"");return""===t?"/":t}},{key:"origin",get:function(){return this.config.absolute?this.definition.domain?""+this.config.url.match(/^\w+:\/\//)[0]+this.definition.domain+(this.config.port?":"+this.config.port:""):this.config.url:""}},{key:"parameterSegments",get:function(){var t,e;return null!=(t=null==(e=this.template.match(/{[^}?]+\??}/g))?void 0:e.map(function(t){return{name:t.replace(/{|\??}/g,""),required:!/\?}$/.test(t)}}))?t:[]}}])}(),B=/*#__PURE__*/function(t){function r(e,r,o,i){var u;if(void 0===o&&(o=!0),(u=t.call(this)||this).t=null!=i?i:"undefined"!=typeof Ziggy?Ziggy:null==globalThis?void 0:globalThis.Ziggy,!u.t&&"undefined"!=typeof document&&document.getElementById("ziggy-routes-json")&&(globalThis.Ziggy=JSON.parse(document.getElementById("ziggy-routes-json").textContent),u.t=globalThis.Ziggy),u.t=n({},u.t,{absolute:o}),e){if(!u.t.routes[e])throw new Error("Ziggy error: route '"+e+"' is not in the route list.");u.i=new Z(e,u.t.routes[e],u.t),u.u=u.l(r)}return u}var o,u;u=t,(o=r).prototype=Object.create(u.prototype),o.prototype.constructor=o,i(o,u);var f=r.prototype;return f.toString=function(){var t=this,e=Object.keys(this.u).filter(function(e){return!t.i.parameterSegments.some(function(t){return t.name===e})}).filter(function(t){return"_query"!==t}).reduce(function(e,r){var o;return n({},e,((o={})[r]=t.u[r],o))},{});return this.i.compile(this.u)+function(t,e){let n=t;const r=function(t){if(!t)return $;if(void 0!==t.allowEmptyArrays&&"boolean"!=typeof t.allowEmptyArrays)throw new TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");if(void 0!==t.encodeDotInKeys&&"boolean"!=typeof t.encodeDotInKeys)throw new TypeError("`encodeDotInKeys` option can only be `true` or `false`, when provided");if(null!=t.encoder&&"function"!=typeof t.encoder)throw new TypeError("Encoder has to be a function.");const e=t.charset||$.charset;if(void 0!==t.charset&&"utf-8"!==t.charset&&"iso-8859-1"!==t.charset)throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");let n=s;if(void 0!==t.format){if(!R.call(a,t.format))throw new TypeError("Unknown format option provided.");n=t.format}const r=a[n];let o,i=$.filter;if(("function"==typeof t.filter||S(t.filter))&&(i=t.filter),o=t.arrayFormat in k?t.arrayFormat:"indices"in t?t.indices?"indices":"repeat":$.arrayFormat,"commaRoundTrip"in t&&"boolean"!=typeof t.commaRoundTrip)throw new TypeError("`commaRoundTrip` must be a boolean, or absent");return{addQueryPrefix:"boolean"==typeof t.addQueryPrefix?t.addQueryPrefix:$.addQueryPrefix,allowDots:void 0===t.allowDots?!0===t.encodeDotInKeys||$.allowDots:!!t.allowDots,allowEmptyArrays:"boolean"==typeof t.allowEmptyArrays?!!t.allowEmptyArrays:$.allowEmptyArrays,arrayFormat:o,charset:e,charsetSentinel:"boolean"==typeof t.charsetSentinel?t.charsetSentinel:$.charsetSentinel,commaRoundTrip:t.commaRoundTrip,delimiter:void 0===t.delimiter?$.delimiter:t.delimiter,encode:"boolean"==typeof t.encode?t.encode:$.encode,encodeDotInKeys:"boolean"==typeof t.encodeDotInKeys?t.encodeDotInKeys:$.encodeDotInKeys,encoder:"function"==typeof t.encoder?t.encoder:$.encoder,encodeValuesOnly:"boolean"==typeof t.encodeValuesOnly?t.encodeValuesOnly:$.encodeValuesOnly,filter:i,format:n,formatter:r,serializeDate:"function"==typeof t.serializeDate?t.serializeDate:$.serializeDate,skipNulls:"boolean"==typeof t.skipNulls?t.skipNulls:$.skipNulls,sort:"function"==typeof t.sort?t.sort:null,strictNullHandling:"boolean"==typeof t.strictNullHandling?t.strictNullHandling:$.strictNullHandling}}(e);let o,i;"function"==typeof r.filter?(i=r.filter,n=i("",n)):S(r.filter)&&(i=r.filter,o=i);const u=[];if("object"!=typeof n||null===n)return"";const f=k[r.arrayFormat],c="comma"===f&&r.commaRoundTrip;o||(o=Object.keys(n)),r.sort&&o.sort(r.sort);const l=new WeakMap;for(let t=0;t<o.length;++t){const e=o[t];r.skipNulls&&null===n[e]||A(u,_(n[e],e,f,c,r.allowEmptyArrays,r.strictNullHandling,r.skipNulls,r.encodeDotInKeys,r.encode?r.encoder:null,r.filter,r.sort,r.allowDots,r.serializeDate,r.format,r.formatter,r.encodeValuesOnly,r.charset,l))}const p=u.join(r.delimiter);let y=!0===r.addQueryPrefix?"?":"";return r.charsetSentinel&&(y+="iso-8859-1"===r.charset?"utf8=%26%2310003%3B&":"utf8=%E2%9C%93&"),p.length>0?y+p:""}(n({},e,this.u._query),{addQueryPrefix:!0,arrayFormat:"indices",encodeValuesOnly:!0,skipNulls:!0,encoder:function(t,e){return"boolean"==typeof t?Number(t):e(t)}})},f.p=function(t){var e=this;t?this.t.absolute&&t.startsWith("/")&&(t=this.v().host+t):t=this.h();var r={},o=Object.entries(this.t.routes).find(function(n){return r=new Z(n[0],n[1],e.t).matchesUrl(t)})||[void 0,void 0];return n({name:o[0]},r,{route:o[1]})},f.h=function(){var t=this.v(),e=t.pathname,n=t.search;return(this.t.absolute?t.host+e:e.replace(this.t.url.replace(/^\w*:\/\/[^/]+/,""),"").replace(/^\/+/,"/"))+n},f.current=function(t,e){var r=this.p(),o=r.name,i=r.params,u=r.query,f=r.route;if(!t)return o;var c=new RegExp("^"+t.replace(/\./g,"\\.").replace(/\*/g,".*")+"$").test(o);if([null,void 0].includes(e)||!c)return c;var l=new Z(o,f,this.t);e=this.l(e,l);var a=n({},i,u);if(Object.values(e).every(function(t){return!t})&&!Object.values(a).some(function(t){return void 0!==t}))return!0;var s=function(t,e){return Object.entries(t).every(function(t){var n=t[0],r=t[1];return Array.isArray(r)&&Array.isArray(e[n])?r.every(function(t){return e[n].includes(t)||e[n].includes(decodeURIComponent(t))}):"object"==typeof r&&"object"==typeof e[n]&&null!==r&&null!==e[n]?s(r,e[n]):e[n]==r||e[n]==decodeURIComponent(r)})};return s(e,a)},f.v=function(){var t,e,n,r,o,i,u="undefined"!=typeof window?window.location:{},f=u.host,c=u.pathname,l=u.search;return{host:null!=(t=null==(e=this.t.location)?void 0:e.host)?t:void 0===f?"":f,pathname:null!=(n=null==(r=this.t.location)?void 0:r.pathname)?n:void 0===c?"":c,search:null!=(o=null==(i=this.t.location)?void 0:i.search)?o:void 0===l?"":l}},f.has=function(t){return this.t.routes.hasOwnProperty(t)},f.l=function(t,e){var r=this;void 0===t&&(t={}),void 0===e&&(e=this.i),null!=t||(t={}),t=["string","number"].includes(typeof t)?[t]:t;var o=e.parameterSegments.filter(function(t){return!r.t.defaults[t.name]});if(Array.isArray(t))t=t.reduce(function(t,e,r){var i,u;return n({},t,o[r]?((i={})[o[r].name]=e,i):"object"==typeof e?e:((u={})[e]="",u))},{});else if(1===o.length&&!t.hasOwnProperty(o[0].name)&&(t.hasOwnProperty(Object.values(e.bindings)[0])||t.hasOwnProperty("id"))){var i;(i={})[o[0].name]=t,t=i}return n({},this.m(e),this.j(t,e))},f.m=function(t){var e=this;return t.parameterSegments.filter(function(t){return e.t.defaults[t.name]}).reduce(function(t,r,o){var i,u=r.name;return n({},t,((i={})[u]=e.t.defaults[u],i))},{})},f.j=function(t,e){var r=e.bindings,o=e.parameterSegments;return Object.entries(t).reduce(function(t,e){var i,u,f=e[0],c=e[1];if(!c||"object"!=typeof c||Array.isArray(c)||!o.some(function(t){return t.name===f}))return n({},t,((u={})[f]=c,u));var l=c.hasOwnProperty(r[f])?r[f]:c.hasOwnProperty("id")?"id":void 0;if(void 0===l)throw new Error("Ziggy error: object passed as '"+f+"' parameter is missing route model binding key '"+r[f]+"'.");return n({},t,((i={})[f]=c[l],i))},{})},f.valueOf=function(){return this.toString()},e(r,[{key:"params",get:function(){var t=this.p();return n({},t.params,t.query)}},{key:"routeParams",get:function(){return this.p().params}},{key:"queryParams",get:function(){return this.p().query}}])}(/*#__PURE__*/f(String));return function(t,e,n,r){var o=new B(t,e,n,r);return t?o.toString():o}});
+</script>
+    <script src="https://materialscommons.org/js/app.js"></script>
+
+    
+
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://materialscommons.org/css/app.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/2.3.4/css/dataTables.bootstrap5.min.css"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/fixedheader/4.0.4/css/fixedHeader.bootstrap5.min.css"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/rowreorder/1.5.0/css/rowReorder.bootstrap5.min.css"/>
+
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/fixedheader/4.0.4/js/dataTables.fixedHeader.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/fixedheader/4.0.4/js/fixedHeader.bootstrap5.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/rowreorder/1.5.0/js/dataTables.rowReorder.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/rowreorder/1.5.0/js/rowReorder.bootstrap5.min.js"></script>
+
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"
+            integrity="sha384-WF5+lGOoGjkbZWWZ4BM1wA/VJC6EbJLPKnFSIvO9Vxm7HxkN0qD5IvYmr6FVM4V/"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/5.0.5/js/dataTables.fixedColumns.js"
+            integrity="sha384-BPFbg0oSBJMoGXcby9UBo5gWRKTu8EHqGyw2Z3ZtrNOPA0pbmjHHXP9e/zOswmse"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.bootstrap5.css" rel="stylesheet">
+
+
+    
+
+    <link href="https://materialscommons.org/css/fa/css/all.css" rel="stylesheet">
+
+    
+    
+
+    <!-- Custom styles for this template -->
+<!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-nav fixed-top p-0">
+            <a class="navbar-brand col-sm-3 me-0 ps-3" href="https://materialscommons.org">
+            <img class="h-8 me-2" src="https://materialscommons.org/images/logo.svg" alt="Materials Commons logo"/>
+            Materials Commons 2.0
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar5">
+        <ul class="navbar-nav">
+            
+                        <li class="nav-item">
+                
+                
+                
+                
+                <a class="nav-link outline-none td-none navbar-brand help-color" data-bs-toggle="modal"
+                   href="#help-dialog">
+                    Help
+                </a>
+            </li>
+                    </ul>
+        <div class="flex-grow-1 px-3">
+    <button type="button"
+            id="global-search-button"
+            class="form-control form-rounded-search bg-white text-start d-flex align-items-center justify-content-between"
+            style="height: 38px;"
+            data-bs-toggle="modal"
+            data-bs-target="#global-search-modal"
+            aria-label="Open search">
+        <span class="text-muted">
+            <i class="fas fa-search me-1"></i>
+            Search published data...
+        </span>
+        <span class="text-muted small d-none d-lg-inline">
+            Ctrl K
+        </span>
+    </button>
+</div>
+                    <ul class="navbar-nav ps-4 pe-4">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link td-none" href="https://materialscommons.org/login">Sign in/Register</a>
+                </li>
+            </ul>
+            </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+            <nav class="col-md-2 col-sm-2 d-none d-md-block bg-grey-10x bg-whitex sidebar" style="background-color: #f5f5f5">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column mt-1 mb-3">
+
+            
+                            <li class="nav-item mt-2">
+                    <a class="nav-link fs-11 ms-2 text-muted" href="https://materialscommons.org">
+                        <i class="fa-fw fas fa-arrow-left me-2"></i>
+                        Home
+                    </a>
+                </li>
+            
+            
+            <li class="nav-item mt-2">
+                                    <a class="nav-link fs-11 ms-2" href="https://materialscommons.org/login-for-upload">
+                        <i class="fa-fw fas fa-file-export me-2"></i>
+                        Publish Your Data
+                    </a>
+                            </li>
+
+            
+            <li class="nav-item mt-3">
+                <span class="ms-3 fs-11"><i class="fas fa-globe me-2"></i>Published Data</span>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link fs-11 ms-3 active"
+                   href="https://materialscommons.org/public/datasets">
+                    <i class="fa-fw fas fa-database me-2"></i>
+                    Browse Datasets
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link fs-11 ms-3 "
+                   href="https://materialscommons.org/public/tags">
+                    <i class="fa-fw fas fa-tags me-2"></i>
+                    Browse by Tag
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link fs-11 ms-3 "
+                   href="https://materialscommons.org/public/authors">
+                    <i class="fa-fw fas fa-users me-2"></i>
+                    Browse Authors
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/public/communities">
+                    <i class="fa-fw fas fa-city me-2"></i>
+                    Browse Communities
+                </a>
+            </li>
+
+
+
+            
+            <li class="nav-item mt-3">
+                <span class="ms-3 fs-11"><i class="fas fa-layer-group me-2"></i>Special Collections</span>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link fs-11 ms-3 "
+                   href="https://materialscommons.org/public/openvisus/index?tag=OpenVisus">
+                    <i class="fa-fw fas fa-cube me-2"></i>
+                    OpenVisus Datasets
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link fs-11 ms-3 "
+                   href="/uhcsdb">
+                    <i class="fa-fw fas fa-atlas me-2"></i>
+                    UHCSDB
+                    <i class="fa-fw fas fa-question-circle ms-2"
+                       data-bs-toggle="tooltip"
+                       title="A dataset explorer of hierarchical structures in Ultrahigh carbon steel"></i>
+                </a>
+            </li>
+
+            
+            
+            
+            <li class="nav-item mt-3">
+    <span class="ms-3 fs-11 text-muted"><i class="fas fa-book-open me-2"></i>Resources</span>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3 text-muted" href="/mcdocs2" target="_blank">
+        <i class="fa-fw fas fa-book me-2"></i>
+        Documentation <i class="fas fa-external-link-alt ms-1" style="font-size:.6rem;"></i>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3 text-muted"
+       href="https://materials-commons.github.io/materials-commons-api/html/index.html"
+       target="_blank">
+        <i class="fa-fw fab fa-python me-2"></i>
+        Python API <i class="fas fa-external-link-alt ms-1" style="font-size:.6rem;"></i>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3 text-muted"
+       href="https://materials-commons.github.io/materials-commons-cli/html/index.html"
+       target="_blank">
+        <i class="fa-fw fas fa-terminal me-2"></i>
+        CLI Reference <i class="fas fa-external-link-alt ms-1" style="font-size:.6rem;"></i>
+    </a>
+</li>
+
+        </ul>
+    </div>
+</nav>
+
+        <main role="main" class="col-md-9 ms-md-auto col-lg-10 px-5 pb-4"
+              stylex="padding-right: 7rem; padding-left: 7rem">
+            
+            <div class="mt-4">
+                
+                <span wire:snapshot="{&quot;data&quot;:[],&quot;memo&quot;:{&quot;id&quot;:&quot;i8eIzu5Iz8GhoNpk3ByG&quot;,&quot;name&quot;:&quot;force-livewire-load&quot;,&quot;path&quot;:&quot;public\/datasets\/2564\/folders\/10201907\/show&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;fd9c7777867d3cdd28481ba9d9c1e6fe0804fbd675d1fd03df16f91f5ac2bc35&quot;}" wire:effects="[]" wire:id="i8eIzu5Iz8GhoNpk3ByG" style="display:none">
+    
+</span>                                <div class="d-flex justify-content-center">
+                    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+                                    <li class="breadcrumb-item"><a href="https://materialscommons.org/public/datasets">Datasets</a></li>
+                
+            
+                                    <li class="breadcrumb-item"><a href="https://materialscommons.org/public/datasets/2564">Dataset 1 - Concept Laser Samples</a></li>
+                
+            
+                                    <li class="breadcrumb-item active" aria-current="page">Files</li>
+                
+                    </ol>
+    </nav>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <h3 class="text-center">Dataset: Dataset 1 - Concept Laser Samples</h3>
+    <br/>
+    <div class="dropdown float-end me-5">
+                    <a class="action-link me-3 cursor-pointer" data-bs-toggle="modal" href="#cite-dataset-modal"><i
+                    class="fas fa-quote-left me-1"></i>Cite Dataset</a>
+                    </div>
+    <br/>
+
+    <ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link no-underline "
+           href="https://materialscommons.org/public/datasets/2564/overview">
+            Overview
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link no-underline active"
+           href="https://materialscommons.org/public/datasets/2564/folders/-1/show"> Files (29)</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link no-underline "
+           href="https://materialscommons.org/public/datasets/2564/entities">
+            Samples (157)
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link no-underline "
+           href="https://materialscommons.org/public/datasets/2564/workflows">
+            Workflows (0)
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link no-underline "
+           href="https://materialscommons.org/public/datasets/2564/communities">
+            Communities (0)
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link no-underline "
+           href="https://materialscommons.org/public/datasets/2564/comments">
+            Comments (0)
+        </a>
+    </li>
+</ul>
+
+    <br/>
+            <form>
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-info d-flex align-items-center gap-2 py-2 mt-2" role="alert">
+            <i class="fas fa-lock fa-fw"></i>
+            <span>
+                To download this dataset please
+                <a href="https://materialscommons.org/login" class="alert-link">Login</a>
+                or
+                <a href="https://materialscommons.org/register" class="alert-link">Register</a>.
+            </span>
+        </div>
+            </div>
+    </div>
+    
+    
+    
+    
+    
+    
+</form>
+<hr/>
+
+
+<div class="row g-2 mb-3">
+    <div class="col-6 col-sm-3">
+        <div class="card border-0 shadow-sm h-100 text-center py-2">
+            <div class="text-muted small">Files</div>
+            <div class="fw-bold fs-5 text-primary">0</div>
+            <div class="text-muted" style="font-size:.65rem;">in this folder</div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card border-0 shadow-sm h-100 text-center py-2">
+            <div class="text-muted small">Subdirectories</div>
+            <div class="fw-bold fs-5 text-info">1</div>
+            <div class="text-muted" style="font-size:.65rem;">sub-folders</div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card border-0 shadow-sm h-100 text-center py-2">
+            <div class="text-muted small">Total Size</div>
+            <div class="fw-bold fs-5 text-success">0 B</div>
+            <div class="text-muted" style="font-size:.65rem;">files in folder</div>
+        </div>
+    </div>
+    <div class="col-6 col-sm-3">
+        <div class="card border-0 shadow-sm h-100 text-center py-2">
+            <div class="text-muted small">Images</div>
+            <div class="fw-bold fs-5 text-warning">0</div>
+            <div class="text-muted" style="font-size:.65rem;">image files</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div>
+            <i class="fa fas fa-folder-open me-3"></i>
+                    <a class="action-link"
+               href="https://materialscommons.org/public/datasets/2564/folders/by_path?path=%2F">
+                /
+            </a>
+                    <a class="action-link"
+               href="https://materialscommons.org/public/datasets/2564/folders/by_path?path=%2FFractography">
+                Fractography/
+            </a>
+                    <a class="action-link"
+               href="https://materialscommons.org/public/datasets/2564/folders/by_path?path=%2FFractography%2FCCV1-5.0">
+                CCV1-5.0/
+            </a>
+            </div>
+<br/>
+    <a href="https://materialscommons.org/public/datasets/2564/folders/10201906/show" class="mb-3">
+        <i class="fa-fw fas fa-arrow-alt-circle-up me-2"></i>Go up one level
+    </a>
+    <br>
+    <br>
+
+<table id="files" class="table table-hover" style="width:100%">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Real Size</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td>
+                                    <a class="no-underline" href="https://materialscommons.org/public/datasets/2564/folders/10201908/show">
+                        <i class="fa-fw fas fa-folder me-2"></i> 01
+                    </a>
+                            </td>
+            <td>directory</td>
+                            <td></td>
+                        <td>0</td>
+            <td>
+                            </td>
+        </tr>
+        </tbody>
+</table>
+
+<div>
+    </div>
+
+    
+    <div class="modal fade" tabindex="-1" id="cite-dataset-modal" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-nav">
+                <h5 class="modal-title help-color">Cite Dataset: Dataset 1 - Concept Laser Samples</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+    <div class="col-7">
+        Megan Trombley, et al. "Dataset 1 - Concept Laser Samples", Materials Commons, dataset
+                (2025). doi:10.13011/m3-c93d-z035
+            </div>
+</div>
+                <br/>
+                <div>
+    <H5>Bibtex</H5>
+    <pre>
+    @misc&#123;mc2564Trombley2025,
+                    doi = &#123;10.13011/m3-c93d-z035&#125;,
+                url = &#123;https://materialscommons.org/public/datasets/2564&#125;,
+        author = &#123;&#123;Megan Trombley&#125;&#125;,
+        title = &#123;Dataset 1 - Concept Laser Samples&#125;,
+        publisher = {Materials Commons},
+                    year = &#123;2025&#125;
+            }
+</pre>
+</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    
+    <div class="modal fade" tabindex="-1" id="ds-download-zip" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-nav">
+                <h5 class="modal-title">Download Dataset</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="help-color">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" stylex="height: 675px">
+                <h4>Materials Commons Account Benefits</h4>
+                <p>
+                    You can optionally create an account on Materials Commons. Creating an account gives you many
+                    benefits, such as being able to follow a dataset. Following a dataset will
+                    let you know if the dataset has changed.
+                </p>
+                <div class="mt-4">
+                    <a class="btn btn-danger" href="#" data-bs-dismiss="modal">Cancel</a>
+                    <a class="btn btn-warning" href="#">Download</a>
+                    <a class="btn btn-success" href="">
+                        Create Account And Download
+                    </a>
+                    <a class="btn btn-primary" href="https://materialscommons.org/login-for-dataset-zipfile-download/datasets/2564">
+                        Login and Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" tabindex="-1" id="ds-download-globus" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-nav">
+                <h5 class="modal-title">Download Dataset</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="help-color">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" stylex="height: 675px">
+                <h4>Materials Commons Account Benefits</h4>
+                <p>
+                    You can optionally create an account on Materials Commons. Creating an account gives you many
+                    benefits, such as being able to follow a dataset. Following a dataset will
+                    let you know if the dataset has changed.
+                </p>
+                <div class="mt-4">
+                    <a class="btn btn-danger" href="#" data-bs-dismiss="modal">Cancel</a>
+                    <a class="btn btn-warning" href="#">Download</a>
+                    <a class="btn btn-success" href="">
+                        Create Account And Download
+                    </a>
+                    <a class="btn btn-primary" href="https://materialscommons.org/login-for-dataset-globus-download/datasets/2564">
+                        Login and Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                
+            </div>
+        </main>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="jupyter-dialog" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-nav">
+                <h5 class="modal-title help-color">Jupyter Notebooks</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body" style="height: 350px">
+                <p>
+                    You can now use Jupyter Notebooks with Materials Commons. Materials Commons provides the following
+                    benefits to Jupyter Notebooks:
+                </p>
+                <ul>
+                    <li>Easily save your data on Materials Commons</li>
+                    <li>Share your notebook with other team members</li>
+                    <li>Quickly download your data from Materials Commons</li>
+                    <li>Synchronize changes to Materials Commons</li>
+                </ul>
+                <p>
+                    To learn more, read our online
+                    <a href="https://materials-commons.github.io/materials-commons-cli/html/manual/jupyter.html"
+                       target="_blank">documentation</a>.
+                </p>
+                <p>
+                    To get started you can download one of our Jupyter Notebook templates:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://materials-commons.github.io/materials-commons-cli/html/examples/MaterialsCommons-Project-Example.ipynb">
+                            Python API Version
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://materials-commons.github.io/materials-commons-cli/html/examples/MaterialsCommons-Project-Shell-Example.ipynb">
+                            Materials Commons CLI Version
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="help-dialog" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-nav">
+                <h5 class="modal-title help-color">Materials Commons Help</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p class="font-weight-bold">Questions, suggestions or need help? You can
+                        <a href="mailto:materials-commons-help@umich.edu">email</a> us!
+                    </p>
+                </div>
+                <li class="nav-item mt-3">
+    <a class="nav-link fs-11 ms-3x"
+       data-bs-toggle="tooltip"
+       title=""
+       href="/mcdocs2">
+        Features and Documentation
+    </a>
+</li>
+<li class="nav-item mt-3">
+    <span class="ms-3 fs-11"><i class="fas fa-user-graduate me-2"></i>Getting Started</span>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/overview.html"
+       target="_blank">Overview</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/organizing.html"
+       target="_blank">Organizing Your Data</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/first_project.html"
+       target="_blank">Your First Project</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/cli.html" target="_blank">Setting
+        Up the CLI</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/uploading.html"
+       target="_blank">Upload Your First Files</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/create_study.html"
+       target="_blank">Creating A Study</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/getting_started/publishing.html"
+       target="_blank">Publishing Your Research</a>
+</li>
+
+
+
+
+
+
+<li class="nav-item mt-3">
+    <span class="ms-3 fs-11"><i class="fas fa-book-open me-2"></i>Guides</span>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/guides/best_practices.html" target="_blank">Best
+        Practices</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/guides/quick_guides/cli.html" target="_blank">Using
+        The CLI</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/guides/spreadsheets.html" target="_blank">How
+        To Use Spreadsheets For Data</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/guides/quick_guides/sample_multiple.html"
+       target="_blank">Example For Experimental Data</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/guides/quick_guides/computation_multiple.html"
+       target="_blank">Example For Computational Data</a>
+</li>
+<li class="nav-item mt-3">
+    <span class="ms-3 fs-11"><i class="fas fa-lightbulb me-2"></i>Help</span>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/documentation/uploading_files.html"
+       target="_blank">Uploading Files</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/documentation/projects.html" target="_blank">Projects</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/documentation/studies.html" target="_blank">Studies</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link fs-11 ms-3" href="https://materialscommons.org/mcdocs2/documentation/publishing.html" target="_blank">
+        Publishing Data
+    </a>
+</li>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-info" data-bs-toggle="modal" data-bs-dismiss="modal" href="#welcome-dialog">
+                    Welcome Dialog!
+                </a>
+                <a class="btn btn-secondary" href="/mcdocs2" target="_blank">Goto Docs</a>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+            </div>
+
+                    </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="welcome-dialog" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Welcome Aboard!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Welcome to Materials Commons!</h4>
+
+                <p>
+                    Materials Commons will help you to organize, track and publish your research.
+                <p>
+
+                <p>
+                    It can be confusing learning a new system. We have guides to help you get started. To start
+                    everything in Materials Commons is organized around
+                    a project. The "CREATE PROJECT" button will guide you through setting up your first project
+                    and using the system.
+                </p>
+
+                <p>
+                    If you are the type who prefers to start with documentation we've also included a link to our
+                    Getting Started guide. Don't worry about dismissing this dialog, you can always get back to it by
+                    clicking on the Help button. The help popup has a button titled "Welcome Dialog" that will bring
+                    this dialog up.
+                </p>
+
+                <form>
+                    <div>
+                        <a class="btn btn-primary" href="https://materialscommons.org/app/projects/create?show-overview=1">
+                            Create project
+                        </a>
+                        <a class="btn btn-info" href="https://materialscommons.org/mcdocs2/getting_started/overview.html" target="_blank">
+                            Read the getting started guide
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="no-tour-dialog" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-nav">
+                <h5 class="modal-title help-color">No Tour Available</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="font-weight-bold">
+                    No tour is available for this page.
+                <p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Dismiss</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div wire:snapshot="{&quot;data&quot;:{&quot;query&quot;:&quot;&quot;,&quot;scope&quot;:&quot;published&quot;,&quot;placeholder&quot;:&quot;Search published datasets and communities...&quot;,&quot;type&quot;:&quot;all&quot;,&quot;projectId&quot;:null,&quot;searchError&quot;:false,&quot;projectName&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;uKMHPi7zSFZ0xADDk8AU&quot;,&quot;name&quot;:&quot;search.global-search-modal&quot;,&quot;path&quot;:&quot;public\/datasets\/2564\/folders\/10201907\/show&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;release&quot;:&quot;a-a-a&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;4fbc9fd281d6e16734c13fd13667f3513630d3142bcb86787348b610190b9200&quot;}" wire:effects="[]" wire:id="uKMHPi7zSFZ0xADDk8AU">
+    <div class="modal fade"
+         id="global-search-modal"
+         tabindex="-1"
+         aria-labelledby="global-search-modal-title"
+         aria-hidden="true"
+         wire:ignore.self>
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="global-search-modal-title">
+                            <i class="fas fa-search me-2"></i>Search MaterialsCommons
+                        </h5>
+                        <div class="text-muted small">
+                            Search published datasets, this project, or your projects.
+                        </div>
+                    </div>
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+
+                <form onsubmit="submitGlobalSearchModal(event)"
+                      data-search-url="">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="global-search-query" class="form-label">Search query</label>
+                            <input type="text"
+                                   id="global-search-query"
+                                   class="form-control form-control-lg"
+                                   placeholder="Search published datasets and communities..."
+                                   wire:model.live.debounce.350ms="query"
+                                   autocomplete="off">
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 col-md-6">
+                                <label for="global-search-scope" class="form-label">Scope</label>
+                                <select id="global-search-scope"
+                                        class="form-select"
+                                        wire:model.live="scope">
+                                    <option value="published">Published data</option>
+
+                                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+                                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->                                </select>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="global-search-type" class="form-label">Result type</label>
+                                <select id="global-search-type"
+                                        class="form-select"
+                                        wire:model.live="type">
+                                    <option value="all">All result types</option>
+                                    <option value="files">Files</option>
+                                    <option value="experiments">Experiments</option>
+                                    <option value="entities">Samples</option>
+                                    <option value="activities">Processes</option>
+                                    <option value="datasets">Datasets</option>
+                                    <option value="communities">Communities</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div wire:loading.delay class="text-muted small mb-3">
+                            <i class="fas fa-spinner fa-spin me-1"></i> Searching...
+                        </div>
+
+                        <!--[if BLOCK]><![endif]-->                            <div class="alert alert-light border mb-0">
+                                Start typing to preview results. Press Enter to open the full results page.
+                            </div>
+                        <!--[if ENDBLOCK]><![endif]-->                    </div>
+
+                    <div class="modal-footer">
+                        <div class="me-auto text-muted small">
+                            Press <kbd style="color:black">Enter</kbd> to search. Press <kbd style="color:black">Esc</kbd> to close.
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="submit" class="btn btn-primary" disabled>
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+<script>
+    // MathJax = {
+    //     tex: {
+    //         inlineMath: [['$', '$'], ['\\(', '\\)']]
+    //     },
+    //     svg: {
+    //         fontCache: 'global'
+    //     }
+    // };
+    // $('div.alert').not('.alert-important').delay(2000).fadeOut(350);
+    $(document).ready(() => {
+        mcutil.autosizeTextareas();
+
+            });
+    window.mc_grids = [];
+
+    
+
+</script>
+
+    <script>
+        (function () {
+            const STORAGE_KEY = 'mc_pub_ds_2564_dir_10201907_analytics';
+            const panel = document.getElementById('ds-folder-analytics');
+            const toggle = document.getElementById('ds-folder-analytics-toggle');
+            const chevron = document.getElementById('ds-folder-analytics-chevron');
+
+            if (!panel) return;
+
+            if (localStorage.getItem(STORAGE_KEY) === 'true') {
+                panel.classList.add('show');
+                if (chevron) chevron.style.transform = 'rotate(90deg)';
+                if (toggle) toggle.setAttribute('aria-expanded', 'true');
+            }
+            panel.addEventListener('show.bs.collapse', () => {
+                if (chevron) chevron.style.transform = 'rotate(90deg)';
+                localStorage.setItem(STORAGE_KEY, 'true');
+            });
+            panel.addEventListener('hide.bs.collapse', () => {
+                if (chevron) chevron.style.transform = 'rotate(0deg)';
+                localStorage.setItem(STORAGE_KEY, 'false');
+            });
+            panel.addEventListener('shown.bs.collapse', () => {
+                panel.querySelectorAll('.js-plotly-plot').forEach(div => Plotly.Plots.resize(div));
+            });
+
+            const plotConfig = {responsive: true, displayModeBar: false};
+            const base = (extra) => Object.assign({
+                paper_bgcolor: 'transparent', plot_bgcolor: 'transparent',
+                font: {family: 'inherit', size: 11}, showlegend: false,
+            }, extra);
+
+            
+                    })();
+    </script>
+    <script>
+        $(document).ready(() => {
+            $('#files').DataTable({
+                pageLength: 100,
+                stateSave: true,
+                columnDefs: [
+                    {orderData: [3], targets: [2]},
+                    {targets: [3], visible: false},
+                ]
+            });
+        });
+    </script>
+                <script>
+                    $(document).ready(function () {
+                        if ('showDirectoryPicker' in window) {
+                            console.log('showDirectoryPicker is supported');
+                        } else {
+                            console.log('showDirectoryPicker is not supported');
+                        }
+
+                        
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    });
+                </script>
+                    <script>
+            function submitGlobalSearchModal(event) {
+                event.preventDefault();
+
+                const form = event.target;
+                const searchUrl = form.dataset.searchUrl;
+
+                if (!searchUrl) {
+                    return;
+                }
+
+                const modalElement = document.getElementById('global-search-modal');
+
+                if (modalElement && window.bootstrap) {
+                    const modal = window.bootstrap.Modal.getOrCreateInstance(modalElement);
+                    modal.hide();
+                }
+
+                document.querySelectorAll('.modal-backdrop').forEach((backdrop) => {
+                    backdrop.remove();
+                });
+
+                document.body.classList.remove('modal-open');
+                document.body.style.removeProperty('overflow');
+                document.body.style.removeProperty('padding-right');
+
+                window.location.href = searchUrl;
+            }
+
+            function openGlobalSearchFromShortcut() {
+                const button = document.getElementById('global-search-button');
+
+                if (button) {
+                    button.click();
+                }
+            }
+
+            document.addEventListener('shown.bs.modal', function (event) {
+                if (event.target.id !== 'global-search-modal') {
+                    return;
+                }
+
+                const input = document.getElementById('global-search-query');
+
+                if (input) {
+                    input.focus();
+                    input.select();
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                const target = event.target;
+                const isTyping = target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
+
+                if (isTyping) {
+                    return;
+                }
+
+                if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+                    event.preventDefault();
+                    openGlobalSearchFromShortcut();
+                }
+
+                if (event.key === '/') {
+                    event.preventDefault();
+                    openGlobalSearchFromShortcut();
+                }
+            });
+        </script>
+    <script src="/livewire/livewire.min.js?id=df86bb7e"   data-csrf="RhMNW28xDrsOxKBTQl7crKRVK9wt8bW80dPzSZRG" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "original_rows": 496,
+  "portable_rows": 367,
+  "removed_rows": 129,
+  "removed_only_unused_trombley": true,
+  "extension_tasks_exactly_identical": 50,
+  "all_retained_tasks_exactly_identical": 310,
+  "removed_unused_trombley_tasks": 30,
+  "retained_cohort_common_column_values_identical": true,
+  "retained_common_columns": 93,
+  "portable_manifest_inputs_exclude_trombley": true,
+  "source_change": "v3_prepare include_previous=False removes dependency only; defaultTrue preserved; no model/acquisition change",
+  "all_checks_pass": true
+}

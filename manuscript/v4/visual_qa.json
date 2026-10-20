@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "English_pages": 4,
+  "Turkish_pages": 3,
+  "all_final_pages_rendered_and_visually_inspected": true,
+  "unchanged_page_pixel_checks": {
+    "tr_1_unchanged_after_notation_fix": true,
+    "tr_2_unchanged_after_notation_fix": true,
+    "tr_3_unchanged_after_notation_fix": true,
+    "en_1_unchanged_after_notation_fix": true
+  },
+  "changed_English_pages": "Final2/3/4renderedandinspectedseparately",
+  "issues_fixed": "Numeric token309 must not become k3 09; scientific1e6notation preserved; humanpreviousmaildistinguished fromworkflowactions; sourceweightinglimitation stated.",
+  "pdf_sha256": {
+    "acik_veri_ilerleme_raporu_tr.pdf": "e03c0eae4ebd62a0ace84bed51ad19704fa499e2470cc19a3b163b11217175ba",
+    "public_data_addendum_en.pdf": "9bd41c751aaced40454b7f38ec4134bf39ef7838e1bcbff519206e97474a6da2"
+  }
+}

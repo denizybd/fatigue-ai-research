@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://media-api.suub.uni-bremen.de/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663",
+    "status": 404,
+    "content_type": "text/html",
+    "bytes": 162,
+    "body_prefix": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.24.0 (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+  },
+  {
+    "url": "https://media-api.suub.uni-bremen.de/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/content",
+    "status": 404,
+    "content_type": "text/html",
+    "bytes": 162,
+    "body_prefix": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.24.0 (Ubuntu)</center>\r\n</body>\r\n</html>\r\n"
+  }
+]

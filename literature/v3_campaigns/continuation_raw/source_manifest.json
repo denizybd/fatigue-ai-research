@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-10-20T16:03:03.763215+00:00",
+  "raw_sources": [
+    {
+      "path": "literature/v3_campaigns/continuation_raw/figshare33392110_metadata.json",
+      "url": "https://api.figshare.com/v2/articles/33392110",
+      "http_status": 200,
+      "content_status": "repository metadata",
+      "license": "CC BY 4.0",
+      "bytes": 4659,
+      "sha256": "ec55f3cc330d12dc958163db59b4dd4c8283cc2553c11b079927e2661302ffc3",
+      "md5": "568d6d9b88849754e9f6a7f8e04b4f21"
+    },
+    {
+      "path": "data/external_v3/continuation_raw/zhou2026_supporting.xlsx",
+      "url": "https://ndownloader.figshare.com/files/68048680",
+      "http_status": 200,
+      "content_status": "original author workbook",
+      "license": "CC BY 4.0",
+      "bytes": 17575,
+      "sha256": "e94e5774997fa90de061ce66cf204466cd33ecc6e48ca736c7af67190a5068c2",
+      "md5": "783ca9e2682bce1d5f917319b754d138"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wood2024_springer.html",
+      "url": "https://link.springer.com/article/10.1007/s11340-024-01118-1",
+      "http_status": 200,
+      "content_status": "publisher full HTML",
+      "license": "see publisher page",
+      "bytes": 462990,
+      "sha256": "f72faed628964c1abf234e9179cdc6a574231e82debe1bba1220f6091980eaac",
+      "md5": "d45b2dc82c72862679755d19e8c92959"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wood2024_repo.html",
+      "url": "unresolved secondary repository lead",
+      "http_status": 403,
+      "content_status": "error response; not article text",
+      "license": "not applicable",
+      "bytes": 5492,
+      "sha256": "86ad496ce62781e6b7f179953f18252615cb928a0f29727618da3ad54e332771",
+      "md5": "f571eb884e2109a8045b20df8e995374"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/rautiocontam2026.html",
+      "url": "https://doi.org/10.1080/17452759.2026.2626647",
+      "http_status": 403,
+      "content_status": "publisher error response",
+      "license": "not applicable",
+      "bytes": 5598,
+      "sha256": "eda35f16c689b12c4243db4561e6883873648e22b8c632c9d551136df141d66a",
+      "md5": "9dcdc17f062263d316f1f20d63d3f532"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/osti1668247_icme316L.html",
+      "url": "https://www.osti.gov/servlets/purl/1668247",
+      "http_status": 404,
+      "content_status": "HTML error response; not PDF",
+      "license": "not applicable",
+      "bytes": 264918,
+      "sha256": "552714b4bbc0a181e2ce017a45ba2edf0fd0ccf9453b3488f8802b58a6bec739",
+      "md5": "4b9f02277bd1524ad4ff3793bac70bf9"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_crossref.json",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.matlet.2026.140105",
+      "http_status": 200,
+      "content_status": "bibliographic metadata",
+      "license": "Crossref public metadata",
+      "bytes": 9255,
+      "sha256": "635e23ac77060d8aea221cf61bf4efbc498980a1a79f21c80993ebc0be5aa8fa",
+      "md5": "b800c50454a8bc53de317d02dbcb2538"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.matlet.2026.140105",
+      "http_status": 200,
+      "content_status": "bibliographic/OA location metadata",
+      "license": "OpenAlex public metadata",
+      "bytes": 17258,
+      "sha256": "5a0fe63882485c4a1fb6292a6892ece467e2d63786a05bba63d72de20e4a3a3c",
+      "md5": "2c76667dd5ddd373e05ccfdb29426884"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_ntu.html",
+      "url": "https://dr.ntu.edu.sg/handle/10356/211002",
+      "http_status": 405,
+      "content_status": "repository error response; no accepted manuscript obtained",
+      "license": "not applicable",
+      "bytes": 2113,
+      "sha256": "ece265620b091f5af9006975a7517a25edca453f72316e92debde7ae7ec59020",
+      "md5": "44d4b8bc8a0bebbad72eb427bcca0796"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_elsevier_api.html",
+      "url": "https://api.elsevier.com/content/article/PII:S0167577X26000637?httpAccept=text/xml",
+      "http_status": 200,
+      "content_status": "XML coredata only, filename extension is historical",
+      "license": "publisher metadata; no full-text license established",
+      "bytes": 1873,
+      "sha256": "242bbe6302e4e613f624437d2c191a91f34ef0d9ba49c133628487fcfd51152e",
+      "md5": "0de14c01888a34d049b7425bb8c36c04"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_crossref.json",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.ijfatigue.2026.109943",
+      "http_status": 200,
+      "content_status": "bibliographic metadata; no abstract",
+      "license": "Crossref public metadata",
+      "bytes": 14822,
+      "sha256": "e85948a06fe457aaf46af0b2de12d3c5436a746809b208a44f103b69b681c332",
+      "md5": "6aef53c30cdc3247fdd5ff24bb6bf450"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ijfatigue.2026.109943",
+      "http_status": 200,
+      "content_status": "bibliographic/OA location metadata",
+      "license": "OpenAlex public metadata",
+      "bytes": 14445,
+      "sha256": "ba1415aad919c7c16b124bb4092730d1f045933f10c3284298121469fbe2c888",
+      "md5": "ada09289c0c0dfb097c0bfb90cd2958e"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_elsevier_api.xml",
+      "url": "https://api.elsevier.com/content/article/PII:S0142112326004640?httpAccept=text/xml",
+      "http_status": 200,
+      "content_status": "XML coredata only; no body",
+      "license": "publisher metadata; no full-text license established",
+      "bytes": 1896,
+      "sha256": "024c347869c142af50c0672b235274a65762bfbe3e2ed88fbbbec69483cd8c63",
+      "md5": "2552f6cccc27072bacc378070864f3fd"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_publisher.html",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0142112326004640",
+      "http_status": 403,
+      "content_status": "ScienceDirect block/error HTML; not article text",
+      "license": "not applicable",
+      "bytes": 832806,
+      "sha256": "2a493efe93cc7efe83761b788c097ffe7a40cf942e4c5d6344c8c0c5a458ba4d",
+      "md5": "d511c993a2d30c902641f7f12ac7aea2"
+    }
+  ],
+  "figshare_repository_md5_verified": true,
+  "notes": [
+    "HTTP success with coredata does not mean a downloaded article body.",
+    "Indexed primary preview evidence is separately described in publisher_preview_evidence.json; no full paper was obtained.",
+    "Metadata URLs record the API requested; exact request query details may also be in response links."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "created_at_utc": "2026-10-20T19:20:10.408117+00:00",
+  "sources": [
+    {
+      "record_id": "12515773",
+      "doi": "10.5281/zenodo.12515773",
+      "title": "Data for \"Using physics-informed neural networks to predict the lifetime of laser powder bed fusion processed 316L stainless steel under multiaxial low-cycle fatigue loading\"",
+      "url": "https://zenodo.org/records/12515773",
+      "license": "cc-by-4.0",
+      "raw_zip": "data/external_v4/raw_search/bartosak2024_Dataset.zip",
+      "download_url": "https://zenodo.org/api/records/12515773/files/Dataset.zip/content",
+      "repository_md5": "md5:13a95a91aa960a632aab939a184bac75",
+      "repository_md5_verified": true,
+      "sha256": "30559dc3a1d2d1fd9a1a8dc2543f6e8a49abc98607f3ad4cb706a7ef303536c9",
+      "bytes": 26620,
+      "related_identifiers": [
+        {
+          "identifier": "10.1016/j.ijfatigue.2024.108608",
+          "relation": "isSupplementTo",
+          "resource_type": "publication-article",
+          "scheme": "doi"
+        }
+      ]
+    },
+    {
+      "record_id": "17985589",
+      "doi": "10.5281/zenodo.17985589",
+      "title": "Dataset for publication: On the origin of cyclic softening in fatigued 316L austenitic stainless steel with unique cellular solidification/dislocation substructure manufactured additively by selective laser melting",
+      "url": "https://zenodo.org/records/17985589",
+      "license": "cc-by-4.0",
+      "raw_zip": "data/external_v4/raw_search/jambor2026_Dataset.zip",
+      "download_url": "https://zenodo.org/api/records/17985589/files/Dataset.zip/content",
+      "repository_md5": "md5:41b6f7fb9d884d6fc9aab0afde4d9ceb",
+      "repository_md5_verified": true,
+      "sha256": "b220f86d500be560758fa61897f09fc49885cd227eae2e72abad9446b7ff558f",
+      "bytes": 2001189,
+      "related_identifiers": [
+        {
+          "identifier": "10.1016/j.msea.2026.150590",
+          "relation": "isSupplementTo",
+          "resource_type": "publication",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.2139/ssrn.6464846",
+          "relation": "isSupplementTo",
+          "resource_type": "publication-preprint",
+          "scheme": "doi"
+        }
+      ]
+    },
+    {
+      "record_id": "17086687",
+      "doi": "10.5281/zenodo.17086687",
+      "title": "Low cycle fatigue data of wrought and additively manufactured stainless steels for constiutive model development",
+      "url": "https://zenodo.org/records/17086687",
+      "license": "cc-by-4.0",
+      "full_zip_downloaded": false,
+      "full_zip_repository_md5_verified": false,
+      "retrieval": "public HTTP Range central-directory inventory and two selected compressed member payloads; original member CRC and SHA256 verified",
+      "member_receipt": "lcftest2025_selected_member_receipts.json",
+      "verification_pdf": "data/external_v4/raw_search/lcftest2025_Verification.pdf"
+    }
+  ],
+  "no_paid_access_or_private_correspondence": true
+}

@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-10-20T16:37:28.494244+00:00",
+  "original_sources_not_modified": [
+    {
+      "path": "data/external_v3/raw_repository/tomaszewski2023_data.xlsx",
+      "bytes": 21603,
+      "sha256": "30a45bb604d1b13f38f6e36047174fbcc2734f38019c683ba5dd149e1d4f4b35"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2023_article.pdf",
+      "bytes": 1903975,
+      "sha256": "ae3c0b1e60ea22f7841f07520f5da88f539f864543b93f82324e9368810d3b91"
+    },
+    {
+      "path": "literature/v3_campaigns/raw_repository/tomaszewski2024_article.pdf",
+      "bytes": 1972590,
+      "sha256": "1bfc6253cbdf594b1b7a427d036bd8d643f2c605236bb345874338c0c291e206"
+    }
+  ],
+  "audit_files": [
+    {
+      "path": "literature/v3_campaigns/closure_tomas/2023_single_plate_fig2_pdf6.png",
+      "bytes": 332867,
+      "sha256": "ebcabb5d911058be2128bb54c861160939f086f55ebd235ed67f87780020c1c1"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/2023_specimen_counts_table2_pdf8.png",
+      "bytes": 346100,
+      "sha256": "923414f532c3d8c4c0c6f40243a586debad34c9996de858ab139bc95cc8a0afe"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/2024_build_photo_pdf5.png",
+      "bytes": 491401,
+      "sha256": "9cb4fe169908cd29138a7481891ccf7d7588c89acb6bb6ff1e168e665d70cf67"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/A02W9_source_rows_readonly.csv",
+      "bytes": 689,
+      "sha256": "057e5fbbd4208f0bbd4d6a88f6d71a1616c0acb0a7171babcef150700d0b65ba"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/closure_report.md",
+      "bytes": 3131,
+      "sha256": "a27985f0ee3396e13c4600219232a87d783856adc1568e18bee9a2cd71644153"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/closure_verdict.json",
+      "bytes": 1928,
+      "sha256": "0947d5dbd7327adb58485ecde1567f8ddd8e1b5d3afb9a2fa8b76bd5e9614659"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/docProps_app.xml.txt",
+      "bytes": 783,
+      "sha256": "dce3f69f68aabd5490325b0b484dad046ad50d06ff7e94c7c77b07f68ba63b26"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/docProps_core.xml.txt",
+      "bytes": 593,
+      "sha256": "3c3bff1ce8886e80f137eaf636a8a6a2321a210d6356a6a9ece20b36c73fdd92"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/source_closure_evidence.json",
+      "bytes": 1681,
+      "sha256": "6f5c0735155c70b3d2c8e156ab30bf148cc195423f8a6b7f9fc6fe201014d8f5"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/workbook_full_artifact_audit.json",
+      "bytes": 70447,
+      "sha256": "a173d131b77b3a00332fb7d076de44c6afb2829a178bbd43c9a7d2974e85d15f"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/xl_workbook.xml.txt",
+      "bytes": 718,
+      "sha256": "26c778cec873a471043b7374831e510d00aae0cd33ec528cd10ff850786868d6"
+    },
+    {
+      "path": "literature/v3_campaigns/closure_tomas/zenodo7650061_metadata_recheck.json",
+      "bytes": 4320,
+      "sha256": "7e5666d549ab6a53f0f2f7301a22ce7ce14078fb5535d640fd1cd45d9eaf7fec"
+    }
+  ]
+}

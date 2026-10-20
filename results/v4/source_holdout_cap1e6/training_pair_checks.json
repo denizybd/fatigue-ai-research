@@ -1,0 +1,1442 @@
+[
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "random",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "expanded_family_excluded",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "random",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 0,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 3,
+    "cap": 1000000.0,
+    "pairs": 420,
+    "queries_equal": true,
+    "observed_support_equal": true
+  },
+  {
+    "regime": "strict309",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 5,
+    "cap": 1000000.0,
+    "pairs": 390,
+    "queries_equal": true,
+    "observed_support_equal": true
+  }
+]

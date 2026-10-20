@@ -1,0 +1,39 @@
+{
+  "result": "Three new public raw packets acquired or partially acquired, with source-specific normalization; no model fitting.",
+  "counts": {
+    "new_author_LCF_SWT_life_observations": 20,
+    "new_author_specimen_IDs_in_SWT_subset": 20,
+    "auxiliary_defect_rows": 200,
+    "RT_LCF_cyclic_histories": 3,
+    "valid_cycle_response_rows": 14499,
+    "orphan_source_rows_preserved_not_imputed": 115,
+    "separate_LCF_selected_raw_histories": 2,
+    "separate_raw_time_samples": 1087236,
+    "new_AM316L_force_controlled_HCF_rows_from_this_agent": 0,
+    "Zenodo_official_inventory_records": 57
+  },
+  "scientific_limits": [
+    "20Bartosak lives are aSection4 strain-controlled SWT subset, not ordinary prescribed-stress fatigue tests.",
+    "200defect measurements have no pretest timing confirmation and are not admitted as acquisition covariates.",
+    "Jambor17985589 is blocked with parent14763342 family unless physical independence is proven;14499cycle rows are not14499experiments.",
+    "Two Huo/Roy raw histories come from AM-stainless files, but the grade and test temperature are not explicitly established. No316L assignment is invented.",
+    "Last recorded cycles are not silently declared failure endpoints.",
+    "115orphan Jambor rows and missing loop-shape values remain visible.",
+    "Unrelated DED/other-alloy literature sheets in Jambor ZIP were excluded from original experimental-life counts.",
+    "Mendeley highT316L metadata were verified, but raw downloads were403 and are not counted as acquired."
+  ],
+  "readme_formats": "Original author README/text files remain alongside raw spreadsheets/archives.",
+  "reproduction_script": "normalize_open_acquisitions.py (bundled Python; openpyxl read-only plus pinned xlrd for missing legacy-XLS capability).",
+  "source_manifest": "source_manifest.json",
+  "no_changes_to_previous_gold_panel": true,
+  "no_fits": true,
+  "no_contact": true,
+  "reproduction": {
+    "acquisition": "acquire_open_packets.py",
+    "normalization": "normalize_open_acquisitions.py",
+    "runtime_used": "bundled Python3.12",
+    "raw_archives_and_members_reverified": true,
+    "normalized_outputs_regenerated_successfully": true,
+    "no_author_executable_scripts_run": true
+  }
+}

@@ -1,0 +1,8 @@
+test_type,load_control,temperature,kt,rows,conditions,sources
+bending fatigue,force,25.0,1.0,117,17,3
+bending fatigue; resonance,force,25.0,1.0,41,3,1
+rotating bending fatigue,force,25.0,1.0,126,13,5
+uniaxial,force,25.0,1.05,45,4,1
+uniaxial,strain,25.0,1.0,4,1,1
+uniaxial,strain,250.0,1.0,10,1,1
+uniaxial; VHCF,displacement,25.0,1.0,4,1,1

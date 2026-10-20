@@ -1,0 +1,108 @@
+{
+  "Centola_reported": {
+    "points": 518,
+    "conditions": 51,
+    "source_papers": 17,
+    "original_raw_and_cleaned_rows_obtained": false,
+    "source": "literature/primary_audit/source_publications.csv and table1_audit.json; original article DOI10.1016/j.engfailanal.2024.109081"
+  },
+  "existing_public_database": {
+    "ordinary1473": {
+      "rows": 1473,
+      "database_conditions": 160,
+      "source_dois": 46,
+      "failures": 1293,
+      "right_censors": 180
+    },
+    "old_primary1126": {
+      "rows": 1126,
+      "database_conditions": 120,
+      "source_dois": 37,
+      "failures": 987,
+      "right_censors": 139
+    },
+    "strict309": {
+      "rows": 309,
+      "database_conditions": 32,
+      "source_dois": 11,
+      "failures": 262,
+      "right_censors": 47
+    },
+    "old_broader565": {
+      "rows": 565,
+      "database_conditions": 61,
+      "source_dois": 25,
+      "failures": 500,
+      "right_censors": 65
+    },
+    "all_except_stepped1028": {
+      "rows": 1028,
+      "database_conditions": 117,
+      "source_dois": 36,
+      "failures": 930,
+      "right_censors": 98
+    },
+    "coordinate_dedup_sensitivity942": {
+      "rows": 942,
+      "database_conditions": 110,
+      "source_dois": 36,
+      "failures": 819,
+      "right_censors": 123
+    }
+  },
+  "DOI_overlap": {
+    "ordinary1473": 16,
+    "old_primary1126": 12,
+    "strict309": 8,
+    "old_broader565": 11,
+    "all_except_stepped1028": 12,
+    "coordinate_dedup_sensitivity942": 12
+  },
+  "point_identity_established": false,
+  "condition_identity_established": false,
+  "not_valid_comparisons": [
+    "1473 or1126 are not that many independent specimens or laboratories.",
+    "More database rows than518 does not demonstrate a larger validated training set or superior model.",
+    "160 or120 database curves are not proven equivalent to Centola51 process groups.",
+    "No original BNN/SWT/risk-volume/Owen R90C90 reproduction or model ranking follows."
+  ],
+  "documented_field_comparison": {
+    "original_Table1_fields": [
+      "orientation",
+      "power",
+      "scan_speed",
+      "hatch",
+      "layer_thickness",
+      "risk_volume_mm3",
+      "thermal_temperature",
+      "thermal_duration",
+      "surface_and_treatment_indicators"
+    ],
+    "public_database_available_fields": [
+      "source_DOI",
+      "curve_ID",
+      "N",
+      "stress_amplitude",
+      "runout",
+      "orientation",
+      "power",
+      "scan_speed",
+      "hatch",
+      "layer_thickness",
+      "surface",
+      "thermal",
+      "R",
+      "frequency",
+      "test_mode",
+      "temperature",
+      "Kt",
+      "specimen_size"
+    ],
+    "important_non_equivalence": [
+      "Public specimen_size is not validated risk_volume.",
+      "SWT transformation/target definition not reconstructed here.",
+      "Some database25C/air/Kt1/control-mode values are defaulted; measured status is not globally recoverable.",
+      "Author physical specimen/build IDs are absent from the database address schema."
+    ]
+  }
+}

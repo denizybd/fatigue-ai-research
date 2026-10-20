@@ -1,0 +1,36 @@
+{
+  "bartosak": {
+    "specimens": 20,
+    "author_loading_paths": {
+      "Proportional": 5,
+      "Axial": 7,
+      "Torsional": 8
+    },
+    "defect_measurements": 200,
+    "ordinary_stress_life_rows": 0,
+    "scope": "Published Section4 subset; do not claim complete experimental campaign."
+  },
+  "jambor": {
+    "histories": 3,
+    "cycle_response_rows": 14499,
+    "independent_Nf_observations_created": 0,
+    "orphan_source_rows_quarantined": 115,
+    "same_family_as_14763342": "precautionary block; no independent-campaign claim",
+    "excluded_from_original_experimental_rows": [
+      "Soft ratio_DED sheet contains cited literature.",
+      "Other softening-ratio workbooks include other published alloys/materials.",
+      "Microstructure-only sheets and composition table do not create fatigue lives."
+    ]
+  },
+  "lcftest2025": {
+    "raw_ZIP_member_inventory": 25,
+    "LPBF_history_members_listed": 10,
+    "selected_members_downloaded": 2,
+    "selected_raw_time_samples": 1087236,
+    "material_grade": "AM stainless grade not explicitly verified; not admitted as316L",
+    "source_file_aliases_are_not_physical_specimen_IDs": true,
+    "new_scalar_Nf_created": 0,
+    "metadata_time_sampling_caution": "Claimed10Hz versus selected records modal0.012s steps; original values retained."
+  },
+  "models_fitted": false
+}

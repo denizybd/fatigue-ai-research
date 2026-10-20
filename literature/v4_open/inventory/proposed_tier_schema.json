@@ -1,0 +1,66 @@
+{
+  "status": "proposal_not_frozen",
+  "entities": [
+    "acquisition_file",
+    "source_work",
+    "author_campaign",
+    "physical_build",
+    "powder_lot",
+    "condition",
+    "physical_specimen",
+    "loading_block",
+    "observation",
+    "reuse_edge"
+  ],
+  "field_provenance_enum": [
+    "author_numeric",
+    "source_reported",
+    "digitized_approximate",
+    "derived_with_equation",
+    "database_default",
+    "database_default_possible",
+    "assumed_explicitly_for_sensitivity",
+    "missing"
+  ],
+  "observation_required_for_fitting": [
+    "immutable_observation_key",
+    "source_work_id",
+    "source_locator",
+    "stress_canonical_value",
+    "stress_unit",
+    "stress_measure_amplitude_range_max",
+    "stress_nominal_or_local",
+    "observed_cycles",
+    "event_or_right_censor",
+    "loading_history_status",
+    "endpoint_definition",
+    "evidence_tier",
+    "method_admission_decision",
+    "source_family_block"
+  ],
+  "nullable_identifiers": [
+    "author_specimen_id",
+    "author_build_id",
+    "author_powder_lot_id"
+  ],
+  "identity_rule": "Null physical IDs do not block source-supported E2 training; synthetic database row/curve IDs cannot become author specimen/build IDs.",
+  "split_rules": [
+    "All declared source-family/reuse components on one side.",
+    "Same queries/pools/supports for controlled309-vs-expansion primary comparison.",
+    "Build holdout only where actual mapping supports it.",
+    "Gold-panel campaign uncertainty remains separate."
+  ],
+  "status_dimensions": [
+    "source_access",
+    "CA_validity",
+    "stress_definition",
+    "censor_definition",
+    "loading_mode",
+    "physical_identity",
+    "build_mapping",
+    "reuse_relation",
+    "digitization_precision",
+    "license"
+  ],
+  "no_model_runs_before_parent_freeze": true
+}

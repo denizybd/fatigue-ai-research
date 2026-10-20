@@ -1,0 +1,18 @@
+{
+  "rows": 12,
+  "events": 12,
+  "runouts": 0,
+  "angle_counts": {
+    "90": 5,
+    "60": 4,
+    "45": 3
+  },
+  "exact_source_cells": true,
+  "visual_pdf_page_checked": 8,
+  "pdf_text_vs_html_all_rows_agree": true,
+  "physical_IDs_recovered": 0,
+  "physical_builds_identified": 0,
+  "powder_lots_identified": 0,
+  "stress_controlled_primary_admitted": 0,
+  "csv_sha256": "06297df71d8117c8790c52ed7c36b897b9e05b9d0cacd6743456ae3e81603f1a"
+}

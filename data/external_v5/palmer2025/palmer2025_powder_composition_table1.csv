@@ -1,0 +1,25 @@
+source_doi,source_table,source_pdf_page,measurement,element,mass_fraction_percent_source_string,powder_lot_id,lot_identity_verified
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Fe,Balance,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Cr,17.5,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Ni,12.5,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Mo,2.32,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Mn,0.54,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Si,0.66,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,Cu,0.02,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,C,0.017,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,S,0.005,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,P,0.007,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,O,0.030,,False
+10.1007/s10853-025-11259-w,Table1,4,As-received powder,N,0.10,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Fe,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Cr,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Ni,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Mo,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Mn,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Si,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,Cu,,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,C,0.019,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,S,0.007,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,P,0.007,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,O,0.029,,False
+10.1007/s10853-025-11259-w,Table1,4,Post-HIP material,N,0.09,,False

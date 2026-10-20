@@ -1,0 +1,323 @@
+{
+  "created_at_utc": "2026-10-20T19:22:33.563591+00:00",
+  "files": [
+    {
+      "path": "literature/v4_open/raw_search/AM_H_1am_2.csv.summary.json",
+      "bytes": 1657,
+      "sha256": "9b969801ebcc83cfc64af914497951af5771dc11922646aab773dad4509b7e7b"
+    },
+    {
+      "path": "literature/v4_open/raw_search/AM_V_1am.csv.summary.json",
+      "bytes": 1664,
+      "sha256": "f2b1fc96370f8a4ead46c9e9e76e2cdc5d85847db0abe60855daad8b56cb3c1c"
+    },
+    {
+      "path": "literature/v4_open/raw_search/acquire_open_packets.py",
+      "bytes": 6343,
+      "sha256": "0cd45657ed40ad313b8a6598091ee84f3ca1dbdf0743e61b5e5f064e9875722a"
+    },
+    {
+      "path": "literature/v4_open/raw_search/acquisition_report.json",
+      "bytes": 2238,
+      "sha256": "6c91e22e9f74fc8e73655a02ea0df9e47cdaf613f0adba76b9bd3bcf9205cfad"
+    },
+    {
+      "path": "literature/v4_open/raw_search/babinsky_datacite.json",
+      "bytes": 14007,
+      "sha256": "4977ca7694398fa1fb97a3df019c33b211d6a567bfb25e8a15594cad0841e27d"
+    },
+    {
+      "path": "literature/v4_open/raw_search/bartosak2024_zenodo_metadata.json",
+      "bytes": 6062,
+      "sha256": "a0ad322d33b16c0330302f851b429260614a5389d64a6f62a93178689e9fc952"
+    },
+    {
+      "path": "literature/v4_open/raw_search/bartosak_crossref.json",
+      "bytes": 28232,
+      "sha256": "241c9a7cf22c1c93b8fb1a0bd6b54392dd7a5e987d4dff39b60cdaa0dd12793e"
+    },
+    {
+      "path": "literature/v4_open/raw_search/data_quality_verification.json",
+      "bytes": 517,
+      "sha256": "b2b9fc8f58edff3bc9403e43285f9705df3def6934be0448ff83e33806d67ec6"
+    },
+    {
+      "path": "literature/v4_open/raw_search/jambor2026_zenodo_metadata.json",
+      "bytes": 5027,
+      "sha256": "0631a5f10888b1084f3ab37c72950380288a6c55bac59d026391b48cb97dd777"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_associated_software_metadata.json",
+      "bytes": 4255,
+      "sha256": "8816610e6a8e0c5cb6c7dcbadd98118c214e3e413e52e878a7c4a371f6cfd831"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_author_CommonizedLCF_R1.pdf",
+      "bytes": 73727,
+      "sha256": "c371a28318a317b229c77cf172cff549d19f5fa3079ec6d0b5f9e030b7356355"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_author_CommonizedLCF_R1.txt",
+      "bytes": 1826,
+      "sha256": "ec3413f5188ce6eb820085deccb867a05bdc9c09bee2358af6a0c5ec7a7e2c3c"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_author_README.md",
+      "bytes": 1364,
+      "sha256": "cb5c9ee523abed7160080a73cb092b023cda61820a94741ac578f97035d088bb"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_author_repo_tree.json",
+      "bytes": 1521,
+      "sha256": "da3acfb443f282ab058042d7b629c74a01854d80faabe1cb1cad6dd0ad8536b7"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_remote_zip_inventory.json",
+      "bytes": 5099,
+      "sha256": "34a33252dfeabba728ddb31b92914d32d8a07671156db3527d048171db4e72fa"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_selected_member_receipts.json",
+      "bytes": 1205,
+      "sha256": "a711f97c35e9da405043960f979fd0d3f712f7c8b44cde2c2414a12f292c1e79"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_zenodo_metadata.json",
+      "bytes": 6166,
+      "sha256": "db921d993b0b0d38a293560e5d9bd0a540922ba4f9fd155fa347b353363d1010"
+    },
+    {
+      "path": "literature/v4_open/raw_search/lcftest2025_zip_central_directory.bin",
+      "bytes": 2333,
+      "sha256": "24b3023a07f5ec238077a39b238896be8ac3a48ad0abbdfaff9ea623a321e3ea"
+    },
+    {
+      "path": "literature/v4_open/raw_search/negative_or_separate_source_inventory.csv",
+      "bytes": 2198,
+      "sha256": "8153dc56fc11bdbf53382c6ef90fab17df90104ba429929fe84ffc6f9ceac052"
+    },
+    {
+      "path": "literature/v4_open/raw_search/normalization_receipt.json",
+      "bytes": 1340,
+      "sha256": "4a78609c82767daa14987c99a650ad0dee44332816ef2d38bef7e24ae6064a6c"
+    },
+    {
+      "path": "literature/v4_open/raw_search/normalize_open_acquisitions.py",
+      "bytes": 12154,
+      "sha256": "f953fa20facf04a66440987c61721764995d99ff245253ed6728174ce03c9a52"
+    },
+    {
+      "path": "literature/v4_open/raw_search/reacquisition_verification_receipt.json",
+      "bytes": 733,
+      "sha256": "d4d7ed32c32cd7fdec8982da5da5abba2a33217f94c9f573846bcd43fd8dc61f"
+    },
+    {
+      "path": "literature/v4_open/raw_search/search_log.json",
+      "bytes": 1684,
+      "sha256": "1f6ef40098ee76c5336806f417f9f8343cddd59f98cad24850b65bcbe59c5870"
+    },
+    {
+      "path": "literature/v4_open/raw_search/source_manifest.json",
+      "bytes": 2966,
+      "sha256": "dd904a5e5ce49abf2512f09c16073071efaa83d1ee4aa9eb8e529ce519ca6397"
+    },
+    {
+      "path": "literature/v4_open/raw_search/xlrd-2.0.2-py2.py3-none-any.whl",
+      "bytes": 96555,
+      "sha256": "ea762c3d29f4cca48d82df517b6d89fbce4db3107f9d78713e48cd321d5c9aa9"
+    },
+    {
+      "path": "literature/v4_open/raw_search/xlrd_LICENSE.txt",
+      "bytes": 3771,
+      "sha256": "b5a5dbce60265e305a815a6cb83ed07f24519d8ba644f2a307994488bced8815"
+    },
+    {
+      "path": "literature/v4_open/raw_search/xlrd_dependency_receipt.json",
+      "bytes": 402,
+      "sha256": "76f5db4c910eb95360938653356dbb9f0df0f062db8eed239352d0c251dfd4b6"
+    },
+    {
+      "path": "literature/v4_open/raw_search/zenodo_316L_AND_fatigue_inventory_page1.json",
+      "bytes": 169242,
+      "sha256": "e9edea81908bdac5cf982b9404d1e425a0126952d6fe0fd6de8d0936abb77e9c"
+    },
+    {
+      "path": "literature/v4_open/raw_search/zenodo_316L_AND_fatigue_inventory_page2.json",
+      "bytes": 295342,
+      "sha256": "cf085dbae0be49fcfa6381d1e1b33ca25c3f9381d6910edd1c3606be70b66b73"
+    },
+    {
+      "path": "literature/v4_open/raw_search/zenodo_316L_AND_fatigue_inventory_page3.json",
+      "bytes": 103109,
+      "sha256": "3554431134b84f407ddcf7679b935b2f4317125bd61bc9ac9e5b40c7f9ef1fbc"
+    },
+    {
+      "path": "literature/v4_open/raw_search/zenodo_public_inventory57.csv",
+      "bytes": 24157,
+      "sha256": "4831eed06987570bfe9b9a7a137b041f371ba7243d93c4a9978195a480a625c6"
+    },
+    {
+      "path": "literature/v4_open/raw_search/zenodo_search_error.json",
+      "bytes": 207,
+      "sha256": "8105c5098c3b8051ed4e35cc510a7c4af8dcca8edb46986c9a37ba5469c6985c"
+    },
+    {
+      "path": "data/external_v4/raw_search/bartosak2024_316L_fatigue_and_defects.xlsx",
+      "bytes": 32754,
+      "sha256": "68c52e662d78a65d850bc49af96af54ea556d2ea07ac74fca14e22569c4e06ad"
+    },
+    {
+      "path": "data/external_v4/raw_search/bartosak2024_Dataset.zip",
+      "bytes": 26620,
+      "sha256": "30559dc3a1d2d1fd9a1a8dc2543f6e8a49abc98607f3ad4cb706a7ef303536c9"
+    },
+    {
+      "path": "data/external_v4/raw_search/bartosak2024_LCF_SWT20.csv",
+      "bytes": 12250,
+      "sha256": "cbfb4dcdda018c61e4fa50a2002d357918c8aea3791695b80fc8e57efd60460d"
+    },
+    {
+      "path": "data/external_v4/raw_search/bartosak2024_defects200_auxiliary.csv",
+      "bytes": 34509,
+      "sha256": "603754a14eb6867f053ce6f7e5885dcff9d8cffe921bc9f52ebcb621fcc61aeb"
+    },
+    {
+      "path": "data/external_v4/raw_search/bartosak2024_read_me.txt",
+      "bytes": 2351,
+      "sha256": "814490e4f12be4c246b053cc5dfbab441889c83c672ea2f732131ae970341a5d"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_Dataset.zip",
+      "bytes": 2001189,
+      "sha256": "b220f86d500be560758fa61897f09fc49885cd227eae2e72abad9446b7ff558f"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_cyclic_response_history.csv",
+      "bytes": 4900178,
+      "sha256": "2ba99ed0620a529d577f002bce39364e119592d5ddb8fbb16a99e3e905e8c140"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/1. LCF data/Fig 3_LCF data.xls",
+      "bytes": 1733632,
+      "sha256": "5dc06b7edefca95f9465ef93cf1a34ce56789b4649f3f301571fb8bc94944bd4"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/1. LCF data/Fig S6_data on the 1st quarter-cycle.xls",
+      "bytes": 48640,
+      "sha256": "c0284da72d7ef3323161996cdbda496385d8abc389176e6ee5ed0675b93fef9a"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/1. LCF data/Fig S8_Vh parameter_Mughrabi & Pham.xls",
+      "bytes": 2558976,
+      "sha256": "0245515e7a7a2c1ae248b5241660016abaf7ad5cacd34bde638d3949372b9f05"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/1. LCF data/Read me - LCF data.txt",
+      "bytes": 529,
+      "sha256": "f89a08d6ed98db067b7826b75aac275332a2079d538f68c17db891c2f305836e"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/2. Microstructure characterization/Fig 2d_GB misorientation distribution.xls",
+      "bytes": 38400,
+      "sha256": "d2f11037a2cd269fefcdf626841798b41867045351d597281ba6e033a0d31155"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/2. Microstructure characterization/Fig 9e_AFM extrusion-intrusion profiles_.xls",
+      "bytes": 992256,
+      "sha256": "6a9304fa2c054604c5bb8aa8b6f921cfd4a90ee7fee5bbc33aa3969d0684731d"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/2. Microstructure characterization/Fig S3_Misorientation profile along Line 1.xls",
+      "bytes": 44032,
+      "sha256": "af152b2db75c4888a1dda403583841e46f8b877087c9e5d5edbe1a3dd670781d"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/2. Microstructure characterization/Fig S5_Nano-inclusion size_TEM raw data.xls",
+      "bytes": 61952,
+      "sha256": "0ce82a714ef8b906d629a38301e0edebe4f2cf23fd49e60f40ae88820ba305a3"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/2. Microstructure characterization/Fig S7_PSB thickness_SEM + TEM raw data.xls",
+      "bytes": 20992,
+      "sha256": "81f0c4d0ca43e46187ce6e7ffa3698aaa06df9d57295aee672fcf63a826633b0"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/2. Microstructure characterization/Read me - Microstructure characterization.txt",
+      "bytes": 942,
+      "sha256": "be4bca14ef77a3f1000d47a255364e1d4b4e6df15f4e70d99aae5ff249805e8b"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/3. Softening ratio (SR) evaluation/Fig 11_Softening ratio data_other SLM alloys_Fig 11.xls",
+      "bytes": 20992,
+      "sha256": "31df424b860612253f62791e0a953a1d90fd615b849c34fc7f8915fa72b0305c"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/3. Softening ratio (SR) evaluation/Fig 6_Softening ratio data_CW & SLM 316L steels_Fig 6.xls",
+      "bytes": 26112,
+      "sha256": "e8b3ac0adfd02d1faa71b3854794ac93e3e35e463ba8168b9746c6d1c369c404"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/3. Softening ratio (SR) evaluation/Read me - Softening ratio (SR) evaluation.txt",
+      "bytes": 88,
+      "sha256": "6526f39937629c6f08857818673ac14d076fd5dc2c0d5e1d5f2dd9ddab43e593"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/4. Tables/Read me - Tables.txt",
+      "bytes": 133,
+      "sha256": "d712bfe9651b9fbf9d4a3008e04c622268b729b7b198f5f9ca97ab63ea282d72"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/4. Tables/tables.csv",
+      "bytes": 344,
+      "sha256": "ed74fddc5e126b81767af5bb44043f55a4ecc2c7fc0233147a162ee3aa5fd0a9"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_extracted/Dataset/Read me.txt",
+      "bytes": 2266,
+      "sha256": "7ed819676b7fedd5d3899b173a7c4babdcbec9c4a5f45aafc02bce503c424959"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_orphan_cells_quarantined.csv",
+      "bytes": 14730,
+      "sha256": "c06f19d068a4c427255f6b94f886d94220d10755ba3c768203f69b8c826bda22"
+    },
+    {
+      "path": "data/external_v4/raw_search/jambor2026_series_catalog3.csv",
+      "bytes": 1239,
+      "sha256": "c701cc947a00b460391dff2c893afd7f30fb26b45982745a8c3e678cd0a581ef"
+    },
+    {
+      "path": "data/external_v4/raw_search/lcftest2025_Verification.pdf",
+      "bytes": 1481374,
+      "sha256": "52bcd5d4d9af3b36578f98c995dd2f2181098ec2c49f60b55713dbf24ec5cc8d"
+    },
+    {
+      "path": "data/external_v4/raw_search/lcftest2025_selected_members/AM_H_1am_2.csv",
+      "bytes": 25334495,
+      "sha256": "2280eed9490e04b8b9ceb6b112b568c7b975a7b60119b337a98bf5c7cc925e88"
+    },
+    {
+      "path": "data/external_v4/raw_search/lcftest2025_selected_members/AM_H_1am_2.csv.deflate",
+      "bytes": 7623034,
+      "sha256": "0e01593e03e3e832ac7c3e9c6077670514a4cd8300b8c81678986b4a34a5f9f5"
+    },
+    {
+      "path": "data/external_v4/raw_search/lcftest2025_selected_members/AM_V_1am.csv",
+      "bytes": 61918181,
+      "sha256": "3af7ec7fd64b2e66dc0dd799939b29f44b99f1593f0e0d0a1f381a31a88734b6"
+    },
+    {
+      "path": "data/external_v4/raw_search/lcftest2025_selected_members/AM_V_1am.csv.deflate",
+      "bytes": 18399194,
+      "sha256": "a7e477e8545edc8d439e34a1466feb40caf6d177d584aa6009594f975e9ad224"
+    },
+    {
+      "path": "data/external_v4/raw_search/lcftest2025_selected_trace_catalog2.csv",
+      "bytes": 1750,
+      "sha256": "2761785ca15f107ef4bf9de563b67c33ee8e4123725a538d87d31c9e1d1c2fb1"
+    }
+  ],
+  "file_count": 63,
+  "scientific_raw_sources": 3,
+  "all_versions_and_source_limits_explicit": true
+}

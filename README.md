@@ -1,8 +1,18 @@
 # Provenance-aware censored AM316L fatigue audit
 
-**Current phase: 2.** Start with `STATE.md`, `manuscript/v2/arastirma_ozeti_tr.pdf` or `manuscript/v2/research_note_en.pdf`. Source review found a stepped-load eligibility problem and label corrections in the old open-data pilot. Its earlier scientific interpretation and contact package require the phase-2 addendum.
+## Current phase4 open-data continuation
 
-Phase 2 tests 0/3/5/10 endpoints per new condition using strong censored monotone fatigue baselines, fixed queries, source holdouts, an acquired 129-specimen campaign, curvature/parameter sensitivities and a matched-population control. The intended reliable-and-useful criterion failed. No general hierarchical-method superiority is established. Reproduce it with `zsh run_v2.sh`; original phase-1 instructions remain below for historical audit.
+20 October2026. Latest addendum: `manuscript/v4/public_data_addendum_en.pdf` (4pages), Turkish explanation `manuscript/v4/acik_veri_ilerleme_raporu_tr.pdf` (3pages). Source-qualified training expands309→441 (48conditions/14DOIs/13blocks), with new numericalYankin69 held out, a115-row/two-family policy extension, and separate licensed rawLCF/SWT/interrupted-history collections. A separate67-point2026RBF table is collected (25explicitreuse/42otherconditions), not fitted. Frozen previous phases remain intact. Run `zsh run_v4.sh`; clean isolated replay matches84CSVs exactly,19tests pass and1156fixed-parameter RFL quadraturechecks pass. Source/condition qualification does not imply physical specimen/build mapping. New results do not establish general90%reliability or an originalBNN ranking. Read STATE.md and the new addendum for numerical findings and evidence limits. User-facing deliverables are in the current chat outputs/phase4. The human already requested author data; this workflow sends no correspondence.
+
+**Current phase: 3.1.** Start with `STATE.md` and `manuscript/v31/current_paper_source.json` (current English working draft) or the Turkish phase3.1 report delivered in the current chat. Earlier phase1/v2 papers and outreach files are historical; use `outreach/v31/` for the current unsent material.
+
+A source-audited virgin-first-block recovery yields43 nominal-stress Merot observations with real specimen/build/powder identifiers. The common-query acquisition benchmark uses31 specimens/3 conditions/2 physical builds, but ONE author campaign. Nine local-stress records and the six-specimen Dastgerdi pilot remain separate. Six censored baselines and four stress policies share exact query/pool splits at k0/3/5. Higher proposed q10 does not establish a safe improvement: at C1e6, high-stressk3 vs random gives hierarchical1.336x/RFL1.085x q10 and7.5% observed cycle savings, while paired risk identification still permits increases of26.11pp/6.67pp. A second fully matched independent campaign remains missing.
+
+Reproduce the current extension with `zsh run_v31.sh`. It needs only the367-row portable input bundle; unused previous Trombley records are not required. Same-cohort fresh replay matches12 tables exactly; portable replay matches all scientific values and population fits, with a documented cache-signature-only change.19 RFL/design tests pass. No correspondence or publication occurred.
+
+Phase2 and3 retain the previous source-family, censoring and acquisition analyses. Use `zsh run_v2.sh` / `zsh run_v3.sh` to replay them. Older phase1 instructions below are retained for historical audit and do not supersede current source corrections.
+
+## Historical phase1 record
 
 A reproducible public-data pilot. The prespecified combined rejection hypothesis failed. This work does not establish a new safe-design algorithm.
 

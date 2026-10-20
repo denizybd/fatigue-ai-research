@@ -1,0 +1,8 @@
+canonical_history_id,author_specimen_label,geometry,source_doi,source_family,total_strain_amplitude,planned_interruption_cycles,area_mm2,endpoint,build_id,powder_lot_id,material,manufacturing,primary_life_benchmark_eligible
+jambor2025_cylindrical_17,Cylindrical specimen 17,Cylindrical specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,5,78.53981634,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False
+jambor2025_cylindrical_18,Cylindrical specimen 18,Cylindrical specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,200,78.53981634,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False
+jambor2025_cylindrical_20,Cylindrical specimen 20,Cylindrical specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,3000,78.53981634,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False
+jambor2025_flat_1,Flat specimen 1,Flat specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,5,11.9483,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False
+jambor2025_flat_2,Flat specimen 2,Flat specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,100,12.0326,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False
+jambor2025_flat_3,Flat specimen 3,Flat specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,1000,11.9627,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False
+jambor2025_flat_4,Flat specimen 4,Flat specimen,10.5281/zenodo.14763342,jambor_pelegatti_316L_precautionary_family,0.004,4000,12.02532,planned_interruption_for_microstructure; not_failure_life,,,316L,LPBF,False

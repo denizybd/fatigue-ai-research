@@ -1,0 +1,145 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/items/e1f0f648-d264-4bfd-b55b-8dfe8cdb4dd6/bundles"
+    }
+  },
+  "_embedded": {
+    "bundles": [
+      {
+        "uuid": "3be30bca-17bf-43ea-8f2e-882d638a675b",
+        "name": "LICENSE",
+        "handle": null,
+        "metadata": {
+          "dc.title": [
+            {
+              "value": "LICENSE",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "type": "bundle",
+        "uniqueType": "core.bundle",
+        "_links": {
+          "item": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/3be30bca-17bf-43ea-8f2e-882d638a675b/item"
+          },
+          "bitstreams": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/3be30bca-17bf-43ea-8f2e-882d638a675b/bitstreams"
+          },
+          "primaryBitstream": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/3be30bca-17bf-43ea-8f2e-882d638a675b/primaryBitstream"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/3be30bca-17bf-43ea-8f2e-882d638a675b"
+          }
+        }
+      },
+      {
+        "uuid": "867acc3e-df72-4179-bb20-96549ca9d11f",
+        "name": "ORIGINAL",
+        "handle": null,
+        "metadata": {
+          "dc.title": [
+            {
+              "value": "ORIGINAL",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "type": "bundle",
+        "uniqueType": "core.bundle",
+        "_links": {
+          "item": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/867acc3e-df72-4179-bb20-96549ca9d11f/item"
+          },
+          "bitstreams": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/867acc3e-df72-4179-bb20-96549ca9d11f/bitstreams"
+          },
+          "primaryBitstream": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/867acc3e-df72-4179-bb20-96549ca9d11f/primaryBitstream"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/867acc3e-df72-4179-bb20-96549ca9d11f"
+          }
+        }
+      },
+      {
+        "uuid": "fc958305-6264-4ad5-8ef9-7ad9080f1a2f",
+        "name": "TEXT",
+        "handle": null,
+        "metadata": {
+          "dc.title": [
+            {
+              "value": "TEXT",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "type": "bundle",
+        "uniqueType": "core.bundle",
+        "_links": {
+          "item": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/fc958305-6264-4ad5-8ef9-7ad9080f1a2f/item"
+          },
+          "bitstreams": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/fc958305-6264-4ad5-8ef9-7ad9080f1a2f/bitstreams"
+          },
+          "primaryBitstream": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/fc958305-6264-4ad5-8ef9-7ad9080f1a2f/primaryBitstream"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/fc958305-6264-4ad5-8ef9-7ad9080f1a2f"
+          }
+        }
+      },
+      {
+        "uuid": "8549f2aa-90b0-4e6b-870c-8f20f33325ba",
+        "name": "THUMBNAIL",
+        "handle": null,
+        "metadata": {
+          "dc.title": [
+            {
+              "value": "THUMBNAIL",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "type": "bundle",
+        "uniqueType": "core.bundle",
+        "_links": {
+          "item": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/8549f2aa-90b0-4e6b-870c-8f20f33325ba/item"
+          },
+          "bitstreams": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/8549f2aa-90b0-4e6b-870c-8f20f33325ba/bitstreams"
+          },
+          "primaryBitstream": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/8549f2aa-90b0-4e6b-870c-8f20f33325ba/primaryBitstream"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/8549f2aa-90b0-4e6b-870c-8f20f33325ba"
+          }
+        }
+      }
+    ]
+  },
+  "page": {
+    "number": 0,
+    "size": 20,
+    "totalPages": 1,
+    "totalElements": 4
+  }
+}

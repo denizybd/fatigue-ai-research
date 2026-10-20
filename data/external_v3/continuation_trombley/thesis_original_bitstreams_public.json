@@ -1,0 +1,56 @@
+{
+  "_embedded" : {
+    "bitstreams" : [ {
+      "id" : "08a95d69-1bc6-40e8-a12c-91b3a07c5733",
+      "uuid" : "08a95d69-1bc6-40e8-a12c-91b3a07c5733",
+      "name" : "mltrombl_1.pdf",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "mltrombl_1.pdf",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "bundleName" : "ORIGINAL",
+      "sizeBytes" : 22283480,
+      "formatId" : 3,
+      "checkSum" : {
+        "checkSumAlgorithm" : "MD5",
+        "value" : "9612fd5773b9bbbe34fc3668ceb120ac"
+      },
+      "sequenceId" : 1,
+      "type" : "bitstream",
+      "_links" : {
+        "content" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733/content"
+        },
+        "bundle" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733/bundle"
+        },
+        "format" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733/format"
+        },
+        "thumbnail" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733/thumbnail"
+        },
+        "self" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733"
+        }
+      }
+    } ]
+  },
+  "page" : {
+    "number" : 0,
+    "size" : 20,
+    "totalPages" : 1,
+    "totalElements" : 1
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/8d4ed0e8-9a85-4c39-9935-6f78e8eea9ec/bitstreams"
+    }
+  }
+}

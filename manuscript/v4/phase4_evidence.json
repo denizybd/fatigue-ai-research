@@ -1,0 +1,364 @@
+{
+  "date": "20 October 2026",
+  "training": {
+    "old_rows": 309,
+    "new_rows": 441,
+    "conditions": 48,
+    "publications": 14,
+    "source_blocks": 13,
+    "failures": 380,
+    "censors": 61
+  },
+  "new_table": {
+    "rows": 69,
+    "conditions": 14,
+    "failures": 64,
+    "censors": 5,
+    "eligible_rows": 25,
+    "eligible_conditions": 4,
+    "programs": 1,
+    "lab_and_build_IDs": false
+  },
+  "source_holdout": {
+    "rows_collected": 132,
+    "eligible_rows": 115,
+    "eligible_conditions": 11,
+    "source_families": 2
+  },
+  "prediction_instances": 164160,
+  "selection_instances": 5200,
+  "main_risks": {
+    "strict309": {
+      "hierarchical": {
+        "0": 0.575,
+        "3": 0.2
+      },
+      "curved_hierarchical": {
+        "0": 0.6083333333333333,
+        "3": 0.1666666666666666
+      },
+      "rfl": {
+        "0": 0.4583333333333333,
+        "3": 0.2333333333333333
+      },
+      "local_slope": {
+        "0": 0.2333333333333333,
+        "3": 0.2083333333333333
+      },
+      "pooled": {
+        "0": 0.6083333333333333,
+        "3": 0.6083333333333333
+      },
+      "matched_intercept": {
+        "0": 0.575,
+        "3": 0.1916666666666666
+      }
+    },
+    "expanded441": {
+      "hierarchical": {
+        "0": 0.4666666666666666,
+        "3": 0.2
+      },
+      "curved_hierarchical": {
+        "0": 0.5166666666666666,
+        "3": 0.175
+      },
+      "rfl": {
+        "0": 0.3583333333333333,
+        "3": 0.2333333333333333
+      },
+      "local_slope": {
+        "0": 0.2333333333333333,
+        "3": 0.2166666666666666
+      },
+      "pooled": {
+        "0": 0.4999999999999999,
+        "3": 0.4999999999999999
+      },
+      "matched_intercept": {
+        "0": 0.4666666666666666,
+        "3": 0.2
+      }
+    }
+  },
+  "main_training_ratios": {
+    "hierarchical": {
+      "0": 0.8365224265163732,
+      "3": 0.9982431264826658
+    },
+    "curved_hierarchical": {
+      "0": 0.8740597929776259,
+      "3": 1.0007613358592031
+    },
+    "rfl": {
+      "0": 0.751587240870568,
+      "3": 0.9489339956259071
+    },
+    "local_slope": {
+      "0": 0.9351242194769428,
+      "3": 1.037305087720969
+    },
+    "pooled": {
+      "0": 0.7436236013093817,
+      "3": 0.7436236013093817
+    },
+    "matched_intercept": {
+      "0": 0.8365224265163732,
+      "3": 1.0303288599524212
+    }
+  },
+  "source_fewshot": {
+    "hierarchical": {
+      "risk_k0": 0.125,
+      "risk_k3": 0.0358630952380952,
+      "life_ratio_k3_vs_same_k0": 1.8864971681296503
+    },
+    "rfl": {
+      "risk_k0": 0.0125,
+      "risk_k3": 0.025595238095238,
+      "life_ratio_k3_vs_same_k0": 1.3327571585150697
+    }
+  },
+  "policy_headlines": [
+    {
+      "cap": 10000000.0,
+      "policy": "high_stress",
+      "model": "hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.8717494350801323,
+      "observed_cycle_savings_percent": 70.57703453741381,
+      "risk_change_lo_pp": -0.7738095238095201,
+      "risk_change_hi_pp": -0.7738095238095201
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "high_stress",
+      "model": "curved_hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9491534590450484,
+      "observed_cycle_savings_percent": 70.57703453741381,
+      "risk_change_lo_pp": 1.3095238095238,
+      "risk_change_hi_pp": 1.3095238095238
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "high_stress",
+      "model": "rfl",
+      "k": 3,
+      "life_multiplier_vs_random": 0.6875859522263764,
+      "observed_cycle_savings_percent": 70.57703453741381,
+      "risk_change_lo_pp": -1.3095238095238,
+      "risk_change_hi_pp": -1.3095238095238
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "high_stress",
+      "model": "local_slope",
+      "k": 3,
+      "life_multiplier_vs_random": 0.8621634305874468,
+      "observed_cycle_savings_percent": 70.57703453741381,
+      "risk_change_lo_pp": 2.29166666666666,
+      "risk_change_hi_pp": 2.29166666666666
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "active_query_variance",
+      "model": "hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.897436100978036,
+      "observed_cycle_savings_percent": 26.554276025466283,
+      "risk_change_lo_pp": -2.02380952380952,
+      "risk_change_hi_pp": -2.02380952380952
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "active_query_variance",
+      "model": "curved_hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9207397203563056,
+      "observed_cycle_savings_percent": 26.554276025466283,
+      "risk_change_lo_pp": -1.50297619047619,
+      "risk_change_hi_pp": -1.50297619047619
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "active_query_variance",
+      "model": "rfl",
+      "k": 3,
+      "life_multiplier_vs_random": 0.8565427129803488,
+      "observed_cycle_savings_percent": 26.554276025466283,
+      "risk_change_lo_pp": -1.3095238095238,
+      "risk_change_hi_pp": -1.3095238095238
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "active_query_variance",
+      "model": "local_slope",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9340441187941596,
+      "observed_cycle_savings_percent": 26.554276025466283,
+      "risk_change_lo_pp": -1.4583333333333302,
+      "risk_change_hi_pp": -1.4583333333333302
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "stress_span",
+      "model": "hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9847148978348076,
+      "observed_cycle_savings_percent": -5.592544409495415,
+      "risk_change_lo_pp": -1.50297619047619,
+      "risk_change_hi_pp": -1.50297619047619
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "stress_span",
+      "model": "curved_hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.987632412208164,
+      "observed_cycle_savings_percent": -5.592544409495415,
+      "risk_change_lo_pp": -1.08630952380952,
+      "risk_change_hi_pp": -1.08630952380952
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "stress_span",
+      "model": "rfl",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9249102998206714,
+      "observed_cycle_savings_percent": -5.592544409495415,
+      "risk_change_lo_pp": -1.3095238095238,
+      "risk_change_hi_pp": -1.3095238095238
+    },
+    {
+      "cap": 10000000.0,
+      "policy": "stress_span",
+      "model": "local_slope",
+      "k": 3,
+      "life_multiplier_vs_random": 1.0021557249444035,
+      "observed_cycle_savings_percent": -5.592544409495415,
+      "risk_change_lo_pp": -1.35416666666666,
+      "risk_change_hi_pp": -1.35416666666666
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "high_stress",
+      "model": "hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.8851615309106784,
+      "observed_cycle_savings_percent": 67.52653463509081,
+      "risk_change_lo_pp": 0.0595238095238,
+      "risk_change_hi_pp": 0.0595238095238
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "high_stress",
+      "model": "curved_hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9635683842451052,
+      "observed_cycle_savings_percent": 67.52653463509081,
+      "risk_change_lo_pp": 1.3095238095238,
+      "risk_change_hi_pp": 1.3095238095238
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "high_stress",
+      "model": "rfl",
+      "k": 3,
+      "life_multiplier_vs_random": 0.6848964351895599,
+      "observed_cycle_savings_percent": 67.52653463509081,
+      "risk_change_lo_pp": -1.3095238095238,
+      "risk_change_hi_pp": -1.3095238095238
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "high_stress",
+      "model": "local_slope",
+      "k": 3,
+      "life_multiplier_vs_random": 0.8739662917873539,
+      "observed_cycle_savings_percent": 67.52653463509081,
+      "risk_change_lo_pp": 2.29166666666666,
+      "risk_change_hi_pp": 2.29166666666666
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "active_query_variance",
+      "model": "hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9167028902455252,
+      "observed_cycle_savings_percent": 21.39029921504836,
+      "risk_change_lo_pp": -1.19047619047619,
+      "risk_change_hi_pp": -1.19047619047619
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "active_query_variance",
+      "model": "curved_hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9368966955652966,
+      "observed_cycle_savings_percent": 21.39029921504836,
+      "risk_change_lo_pp": -1.81547619047619,
+      "risk_change_hi_pp": -1.81547619047619
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "active_query_variance",
+      "model": "rfl",
+      "k": 3,
+      "life_multiplier_vs_random": 0.8608698374938538,
+      "observed_cycle_savings_percent": 21.39029921504836,
+      "risk_change_lo_pp": -1.3095238095238,
+      "risk_change_hi_pp": -1.3095238095238
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "active_query_variance",
+      "model": "local_slope",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9491808834084066,
+      "observed_cycle_savings_percent": 21.39029921504836,
+      "risk_change_lo_pp": -1.4583333333333302,
+      "risk_change_hi_pp": -1.4583333333333302
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "stress_span",
+      "model": "hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9777998279561808,
+      "observed_cycle_savings_percent": -1.7290434966046986,
+      "risk_change_lo_pp": -1.08630952380952,
+      "risk_change_hi_pp": -1.08630952380952
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "stress_span",
+      "model": "curved_hierarchical",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9807506013057168,
+      "observed_cycle_savings_percent": -1.7290434966046986,
+      "risk_change_lo_pp": -1.08630952380952,
+      "risk_change_hi_pp": -1.08630952380952
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "stress_span",
+      "model": "rfl",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9309466094233878,
+      "observed_cycle_savings_percent": -1.7290434966046986,
+      "risk_change_lo_pp": -0.89285714285714,
+      "risk_change_hi_pp": -0.89285714285714
+    },
+    {
+      "cap": 1000000.0,
+      "policy": "stress_span",
+      "model": "local_slope",
+      "k": 3,
+      "life_multiplier_vs_random": 0.9960579882498064,
+      "observed_cycle_savings_percent": -1.7290434966046986,
+      "risk_change_lo_pp": -1.7708333333333302,
+      "risk_change_hi_pp": -1.7708333333333302
+    }
+  ]
+}

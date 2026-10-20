@@ -1,0 +1,345 @@
+{
+  "scientific_csv_tables": 84,
+  "byte_identical": true,
+  "max_numeric_difference": 0,
+  "clean_fit_cache_in_separate_root": true,
+  "tables": [
+    {
+      "path": "results/v4/controlled_cap1e7/all_policy_contrasts.csv",
+      "sha256": "9775b7af5f883b37b991f8362a6bfe16ffef2ea3ce1321095940a1ba5834c243"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/all_regime_summary.csv",
+      "sha256": "408a1ec36c3a156e6e414362272f4100b46fa5cf2110440acd24c8ac26a7b119"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/expanded441/by_condition.csv",
+      "sha256": "9cf4ccc94cd0b8512e6c46a201d477453ff1d70ce53db46c5ad971d87c378b67"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/expanded441/paired_comparisons.csv",
+      "sha256": "034d5bff30b608f3dc21d7ea8bbaeea98a5e289d444c05782bf75c71a2ac19ab"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/expanded441/predictions.csv",
+      "sha256": "7db13275ffa589cefcb9a69d5b9641b96099e07bb880d79da3a2cda62266545e"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/expanded441/success_gates.csv",
+      "sha256": "4fa6752301caebdb3c6b0cd79b99d0f0ab12a48e4587d10ba3570c7761432686"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/expanded441/summary.csv",
+      "sha256": "3c38b2aca31309213b304ae49ed1bcc56be9526c6be02ea77846761ce1c6636d"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/predictions.csv",
+      "sha256": "6dd33e2a71f49091e716e7f207807714608a80e26a149ba243a59c486ad45af9"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/selections.csv",
+      "sha256": "f49a48268d27e39b103a47a6054e4872bbf85b2e5b47aabab12acd31e48237cb"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict309/by_condition.csv",
+      "sha256": "75580a42c2b3f952e55d93c95da3bed98018f172ee97bc449340235c08527c56"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict309/paired_comparisons.csv",
+      "sha256": "833458075a450ddcba4f0727b58588df3659b587f6dbc845c8507253b69c6e0e"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict309/predictions.csv",
+      "sha256": "3e56fc5f6ee24b73d2920e94fcb7c40c7e68e3178f26616ae4ab311f7b0dd102"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict309/success_gates.csv",
+      "sha256": "4fa6752301caebdb3c6b0cd79b99d0f0ab12a48e4587d10ba3570c7761432686"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict309/summary.csv",
+      "sha256": "590984769c4904bef190185090c3875c809e359c02e661454e7f0537aaff2db1"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_elanges347/by_condition.csv",
+      "sha256": "de64734f6f8aaaba25cb1702206c2665c83d532e70cfa8ba99ac8ba842125183"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_elanges347/paired_comparisons.csv",
+      "sha256": "c92cc7ef5f294649db20a3878dfedd5d18ca22d85aa1ec9077a9faa1975918c8"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_elanges347/predictions.csv",
+      "sha256": "59003199023d37e9dacef485a59e818255c6521a4433823ff89f667c643e8ee4"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_elanges347/success_gates.csv",
+      "sha256": "4fa6752301caebdb3c6b0cd79b99d0f0ab12a48e4587d10ba3570c7761432686"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_elanges347/summary.csv",
+      "sha256": "658751fd249ddfc51b59091db8db068dfdbddb43a0b3ef208f1743a103238348"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_zhang403/by_condition.csv",
+      "sha256": "5f23e7babfff5ea695914a1e1a8b9f26323004e6df96119a3d8664ed6de3ccc0"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_zhang403/paired_comparisons.csv",
+      "sha256": "36232061edbda352922ad70ff1a15eed47d051b5df977bbdc70e256d572e5d71"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_zhang403/predictions.csv",
+      "sha256": "12dc20f51849ccfad99e9a41ccd351b7357bf46a3eca3d6ae3ad661538027f56"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_zhang403/success_gates.csv",
+      "sha256": "4fa6752301caebdb3c6b0cd79b99d0f0ab12a48e4587d10ba3570c7761432686"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/strict_plus_zhang403/summary.csv",
+      "sha256": "ac6b6193a37d2ee1dee9aa346cbaa4ebe40c5453b97b4ffb19514686e3bbcbbc"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/training_by_condition.csv",
+      "sha256": "326136b26d12948eda2b3cc08a641d49df9acc133a1bdf29ac666de84bc6d80e"
+    },
+    {
+      "path": "results/v4/controlled_cap1e7/training_contrasts.csv",
+      "sha256": "a594ff49e63c25d1549aeeafbfb46d39e1df6230f4516b978b35cc9e550004a5"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/all_policy_contrasts.csv",
+      "sha256": "466d76593e4145bc4127ac1afc88b7b9d5e9c8b7068341524d0c66d40506c3e6"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/all_regime_summary.csv",
+      "sha256": "fbb9128be7ffd54717766a28b6b78408182a49c6191351bebab4ecaeec86395f"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/expanded441/by_condition.csv",
+      "sha256": "aa4a8edd1973eb5b4f50a700371a0a91a40d3c4e680a42b8b5b8eaa25109110a"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/expanded441/paired_comparisons.csv",
+      "sha256": "ae5084350f31cc4ccf60564e0b82eeeb7012ffcbe4a7dc0c8b939a210240ecff"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/expanded441/predictions.csv",
+      "sha256": "327ce80c53d951b8753feb4e7f260a15febecf93eda96d91044b4dab3702e6a1"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/expanded441/success_gates.csv",
+      "sha256": "244b6ec468b96e739479324e833c62a915a3a4162b5d5cb0488af224faad49cd"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/expanded441/summary.csv",
+      "sha256": "b096b2f5445135c06f14536c40c197c77faa60f67984a0b7875d4ab91a64087b"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/predictions.csv",
+      "sha256": "3f7343666fa40e1a25254059a26da9a0bc221f1de52d95fb5798665426ab8282"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/selections.csv",
+      "sha256": "af8e50930632fbdd15f7f501ce7298c8766a839e172bf1ff89a56f1903af3146"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict309/by_condition.csv",
+      "sha256": "9224b7043ebacb9894b55882c6ed7fab80220018853ae3352b20939039310d9b"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict309/paired_comparisons.csv",
+      "sha256": "99572af4cae0f7df3a6d2e9e7e8c491895a6c46240d697ed15506385000a6aca"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict309/predictions.csv",
+      "sha256": "88388014a1847c3d2d81d6e6b5a56c88cb92b71d0b26ff9ad4e33c336e96dad7"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict309/success_gates.csv",
+      "sha256": "244b6ec468b96e739479324e833c62a915a3a4162b5d5cb0488af224faad49cd"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict309/summary.csv",
+      "sha256": "6934a43f2cb4dad4f5917b2adc0707fe1ce9e57e41b8f3220ad4e5af898fdf5b"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_elanges347/by_condition.csv",
+      "sha256": "cc34a20689a604c9e79a40b151e11c594ed74ba5777c8c3a2967ace8fe89968b"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_elanges347/paired_comparisons.csv",
+      "sha256": "6a9b12ae31c26393cc6a84a44e5d0af0d4bd8e6f3d889263bef688202075fdf8"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_elanges347/predictions.csv",
+      "sha256": "585ab58e7a0b3c81fcd74aa2274969630804d9d406932d34bf116d1f586887c5"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_elanges347/success_gates.csv",
+      "sha256": "244b6ec468b96e739479324e833c62a915a3a4162b5d5cb0488af224faad49cd"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_elanges347/summary.csv",
+      "sha256": "217a94ea482d33b9e3d5c7ad97af843afb830b27d2b7f53bf6d6c8bf9d5fdafc"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_zhang403/by_condition.csv",
+      "sha256": "76dfd0a289998a364a4e2a40b3d7770b7c0ebcf96c53f5ea10f161b90813d187"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_zhang403/paired_comparisons.csv",
+      "sha256": "be1b2af0b63a0f39128af42ee0320eb749087be831d4f35b159aaffeadb3db2a"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_zhang403/predictions.csv",
+      "sha256": "826c7ad8900f72a1857a8869338064f4acdea8777f479b0b783d2c41470d63ea"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_zhang403/success_gates.csv",
+      "sha256": "244b6ec468b96e739479324e833c62a915a3a4162b5d5cb0488af224faad49cd"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/strict_plus_zhang403/summary.csv",
+      "sha256": "9ad237f0a02099c393c59e24783d93890a3379ae389438e9a29c099bcdffbefe"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/training_by_condition.csv",
+      "sha256": "939ba8eb5ef68bff9802b5e84a26574d12e46b32556c2a2bf72ac25be7f2c07f"
+    },
+    {
+      "path": "results/v4/controlled_cap1e6/training_contrasts.csv",
+      "sha256": "0ccf429f6b5ff9540edf635f86375c9e0267177b67bd1cf684ed7db87a4271c8"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/all_policy_contrasts.csv",
+      "sha256": "214d0983c21d9f3c9c44aa51636445805efffc26d495b10ff5818f39c69763bc"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/all_regime_summary.csv",
+      "sha256": "d9aa2fc50b071927fd627283171e9b401f0b151e9b6e6ac9de45ceeec6c21bec"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/expanded_family_excluded/by_condition.csv",
+      "sha256": "52e4fb495b13b8c22c1b7d71adce1044b2c0cea99cedab60cdb383f7d368d4a0"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/expanded_family_excluded/paired_comparisons.csv",
+      "sha256": "03c2bd27ee1aaf72b6496b1ce384d4be2e3668a948b625351487502fe84c9a92"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/expanded_family_excluded/predictions.csv",
+      "sha256": "595101dffe32f9f1f563f7b4ee98679a9b392c5062b1639d06d4bf2a263fd351"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/expanded_family_excluded/success_gates.csv",
+      "sha256": "b9ec993c920312ee039b285d9c4f7f8276ddead94fb26c32cd67a73f1f1aebf7"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/expanded_family_excluded/summary.csv",
+      "sha256": "1714378ac7ec5c5af03fabdbcdac5d2ea8b117a24e8cf31225096d0e7dad50fa"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/predictions.csv",
+      "sha256": "415573fd2d288eaae3361212e9c759972cab8d7a914a1bd83f8124b79245f673"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/selections.csv",
+      "sha256": "374b450521af5a30c2b62aa84be5bb29c3658078ffaea78a30bf2f63a4468dae"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/strict309/by_condition.csv",
+      "sha256": "ea5287a6f362acd05630840d86030ac5af508746e9025c794327d8980bf16155"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/strict309/paired_comparisons.csv",
+      "sha256": "8f9b170bdc30a3e3479c5b45e5d7095329302be7a1b9aeaaa402d71708fdce03"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/strict309/predictions.csv",
+      "sha256": "bef234dc012d977381cddbc73245224d31611504436b861d281a07aebbad32f1"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/strict309/success_gates.csv",
+      "sha256": "31fb903de71112821fe6fb85a2804d32ae753225aec5fa571c6e88030df43f85"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/strict309/summary.csv",
+      "sha256": "a4e4316b28a6c49d7159bfc10f1a241783d124ff4df0ebf2f1ca78739c83168a"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/training_by_condition.csv",
+      "sha256": "b2bc4a0908b780d755fc2fb6f3101b92b1639dd8ddf504693d4cfd2bfd17db4a"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e7/training_contrasts.csv",
+      "sha256": "3b51d5ab17212841da2da4e80bccb36aa1e50daff981ceb86431b54ddacc5441"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/all_policy_contrasts.csv",
+      "sha256": "bd2633349fe4eac10c7d4fe8fd6c6fbe5da91780fd61f556e4c970b93481115a"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/all_regime_summary.csv",
+      "sha256": "3db429e486f937aad208ea0c191e271b28e9cba2f6d6b945e04922583ac3eee7"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/expanded_family_excluded/by_condition.csv",
+      "sha256": "c11d2f91aa0f75921497f6dc71cd83e104bb52bc199f8d212707f75efa9dce60"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/expanded_family_excluded/paired_comparisons.csv",
+      "sha256": "0cbd632aff3152a258765fac0d23d9d477e0af28e75987cc8295e0c70272adea"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/expanded_family_excluded/predictions.csv",
+      "sha256": "eed0f5c5476e8996d8ffce61933773a20af2242f70d7cbfaf25330aedd861044"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/expanded_family_excluded/success_gates.csv",
+      "sha256": "fb6c42ac4364a7fd974635f89bf40f58c7315bab95c78e03576c0a75a5968404"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/expanded_family_excluded/summary.csv",
+      "sha256": "2d15ecb0559cd56d3ff0296350cd20635407e91bf7a60451da74680c37ba2d3c"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/predictions.csv",
+      "sha256": "eeba88cb444936d53edd1a225bd750e8151dcb6d2bc055bc80971dc4e0f8b362"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/selections.csv",
+      "sha256": "adff0b9537dfd39dff08e2167f2141a011e1b9c17d831e2f2bb9a82daaf6f898"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/strict309/by_condition.csv",
+      "sha256": "3b5f7f42f9aeb78879d4c8db1cac0b9b86f44598f3b83ddaa26e9b23727c95af"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/strict309/paired_comparisons.csv",
+      "sha256": "88e22f71ddb2daf844b7e1c2e09d14d41f4b6562bd116a3d8d137a451af8ec42"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/strict309/predictions.csv",
+      "sha256": "46523b5c76aaffec0dcb622de57ebad9ef5442288c5e174420f75de0c2507c9a"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/strict309/success_gates.csv",
+      "sha256": "9ec2d49fe945a57d55107873ca8f79f0742c94cd9b50ec737aa205d880f10b53"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/strict309/summary.csv",
+      "sha256": "577bee702fb81c886a26f7900ab102a746ebb9ba7b0f85ff534a2b8efa9c0031"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/training_by_condition.csv",
+      "sha256": "0d1229c956cb3b3a8d0b650fdfcf1c5d515f020028dab66e886613b5f6f67375"
+    },
+    {
+      "path": "results/v4/source_holdout_cap1e6/training_contrasts.csv",
+      "sha256": "396bf0885f34dd775cb3e0f7e52a680d15d3d22300885191b16c39dbe89f5616"
+    }
+  ],
+  "synthetic_tests": "19passed: test_v3_design.py andtest_v3_rfl.py"
+}

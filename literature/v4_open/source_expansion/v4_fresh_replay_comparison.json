@@ -1,0 +1,629 @@
+{
+  "audited_utc": "2026-10-20T19:28:25.459848+00:00",
+  "verdict": "PASS",
+  "scope": "Independent artifact comparison of parent-completed isolated fresh replay; this auditor did not fit or rerun models.",
+  "folders": [
+    "controlled_cap1e7",
+    "controlled_cap1e6",
+    "source_holdout_cap1e7",
+    "source_holdout_cap1e6"
+  ],
+  "n_scientific_CSV_tables": 84,
+  "all_CSV_bytes_identical": true,
+  "max_numeric_difference": 0.0,
+  "fit_parameters_and_diagnostics_match": true,
+  "fit_checks": [
+    {
+      "folder": "controlled_cap1e7",
+      "population_fit_parameters_and_diagnostics_equal_excluding_elapsed_times": true,
+      "n_fitsets": 4
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "population_fit_parameters_and_diagnostics_equal_excluding_elapsed_times": true,
+      "n_fitsets": 4
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "population_fit_parameters_and_diagnostics_equal_excluding_elapsed_times": true,
+      "n_fitsets": 3
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "population_fit_parameters_and_diagnostics_equal_excluding_elapsed_times": true,
+      "n_fitsets": 3
+    }
+  ],
+  "issues": [],
+  "tables": [
+    {
+      "folder": "controlled_cap1e7",
+      "file": "all_policy_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "all_regime_summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "expanded441/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "expanded441/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "expanded441/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "expanded441/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "expanded441/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "selections.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict309/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict309/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict309/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict309/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict309/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_elanges347/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_elanges347/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_elanges347/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_elanges347/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_elanges347/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_zhang403/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_zhang403/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_zhang403/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_zhang403/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "strict_plus_zhang403/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "training_by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e7",
+      "file": "training_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "all_policy_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "all_regime_summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "expanded441/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "expanded441/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "expanded441/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "expanded441/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "expanded441/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "selections.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict309/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict309/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict309/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict309/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict309/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_elanges347/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_elanges347/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_elanges347/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_elanges347/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_elanges347/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_zhang403/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_zhang403/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_zhang403/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_zhang403/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "strict_plus_zhang403/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "training_by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "controlled_cap1e6",
+      "file": "training_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "all_policy_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "all_regime_summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "expanded_family_excluded/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "expanded_family_excluded/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "expanded_family_excluded/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "expanded_family_excluded/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "expanded_family_excluded/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "selections.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "strict309/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "strict309/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "strict309/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "strict309/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "strict309/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "training_by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e7",
+      "file": "training_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "all_policy_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "all_regime_summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "expanded_family_excluded/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "expanded_family_excluded/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "expanded_family_excluded/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "expanded_family_excluded/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "expanded_family_excluded/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "selections.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "strict309/by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "strict309/paired_comparisons.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "strict309/predictions.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "strict309/success_gates.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "strict309/summary.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "training_by_condition.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    },
+    {
+      "folder": "source_holdout_cap1e6",
+      "file": "training_contrasts.csv",
+      "byte_identical": true,
+      "max_numeric_difference": 0.0,
+      "different_non_numeric_columns": []
+    }
+  ],
+  "interpretation": "Computational reproducibility only; not independent physical experiments or reliability confirmation."
+}

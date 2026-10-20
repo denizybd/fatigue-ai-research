@@ -1,0 +1,1 @@
+Superseded generated extracts. Diller actually has44 raw rows and union181. These earlier names contained44/181 rows despite their incorrect filenames. Do not use them. Source bytes were never modified. Current names: diller2024_all44_candidate.csv and all181_candidates.csv.

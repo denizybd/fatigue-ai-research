@@ -1,0 +1,26 @@
+STRESS SELECTION FOR FEW-TEST FATIGUE TRANSFER
+Current research brief — 20 October 2026 — exploratory, unsubmitted
+
+Question
+When adapting a fatigue predictor to a new production condition, which few recorded stress tests improve proposed lower-life bounds without increasing failure risk? We compare four acquisition policies and six censored statistical models on identical held-out specimens. The motivation is reliable experimental allocation before using fatigue predictions as design constraints.
+
+What is new in the evidence
+A public Mérot dataset was joined to the original thesis specimen/build/powder table. We recovered only untouched first loading blocks, discarding later steps, equivalent lives and postfailure features. Seventy physically unique first blocks are traceable; 43 nominal-stress records were tested in air at 20°C (17 failures, 26 right-censors). The acquisition subset is 31 specimens, three conditions, two physical builds, one shared powder lot and ONE author campaign. Twenty-one specimens are precorroded, ten are reference. Nine local-stress records and a six-specimen temperature-unstated Dastgerdi pilot remain separate.
+
+What was tested
+Random, stress spanning, high stress and sequential expected-information selection share fixed queries and pools over ten deterministic splits. Six proper right-censored baselines include hierarchical/curved Basquin, matched local controls and normal-normal random-fatigue-limit (RFL) prediction. k=3/5 are feasible; k=10 is not. The frozen primary planning cap is 10^7 cycles. A prespecified 10^6 sensitivity matches the actual first-block censor horizon more closely. Earlier censors remain at their real stops.
+
+Main result and limit
+At k=3, high stress versus random raises proposed lower-life utility by 1.336× for hierarchical Basquin and 1.085× for RFL, with 7.5% fewer observed support cycles. Paired censoring identification nevertheless permits risk increases up to 26.11 and 6.67 percentage points. These ranges are not confidence intervals. Each panel has one author campaign, so campaign-bootstrap intervals and reliability/usefulness gates are not evaluable. The larger approximately 70% cost reduction in an earlier, incompletely build-qualified secondary panel does not transfer to this cohort. Model-dependent policy reversals also prevent a general superiority claim.
+
+Why this may be useful
+The output is a reproducible way to audit first-exposure eligibility and weigh life utility against unresolved risk and test exposure. It is relevant to source transfer and fatigue-constrained design, but q10 is not an R90C90 guarantee. We did not reproduce or outperform the original Centola BNN, and these corrections concern our own benchmark. Information-based planning and transfer are established ideas; novelty relative to Wu et al. remains unverified because only a publisher preview was obtained.
+
+Requested methods feedback
+Would first-exposure recovery plus paired censoring-risk identification be a useful evaluation unit for source-transfer fatigue models, and which independently traceable campaign would provide the most informative next test? The intended second fully matched independent campaign is still missing.
+
+Reproducibility
+Nineteen synthetic RFL/design tests and independent arithmetic checks pass. Fresh replay reproduces 12 tables; portable replay preserves all scientific values, with an explicitly changed cache-signature metadata column. No new physical experiment or correspondence occurred.
+
+Primary sources
+Mérot dataset: 10.5281/zenodo.6653187 (CC BY 4.0); thesis: https://pastel.hal.science/tel-03688021v1, Table 2.1 and methods. Pascual & Meeker RFL: 10.1080/00401706.1999.10485925. Centola et al.: 10.1016/j.engfailanal.2024.109081 and transfer continuation 10.1016/j.engfailanal.2026.111075. Wu et al. preview: 10.1016/j.ijfatigue.2026.109943.

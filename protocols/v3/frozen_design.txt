@@ -1,0 +1,88 @@
+PHASE 3: COMMON-QUERY STRESS ACQUISITION, EXPLORATORY REPLAY
+Recorded before phase-3 model fitting or prediction; public source outcomes and
+phase-2 results have already been read. This is not a blinded prospective trial.
+
+Question: With the same held-out physical specimens, do 3/5/10 selected tests
+improve 10th-percentile life predictions, observed conservative-bound risk,
+availability and cycle cost over random selection and strong censored models?
+
+Source gate: require author specimen IDs and a source-supported specimen-to-build
+or production-batch mapping for the identity-qualified external panel. A paper
+explicitly stating one build is acceptable as a source-backed canonical mapping,
+and must be distinguished from an author-assigned build ID. Keep missing batch
+identity, ambiguous stress units, interrupted tests, reused specimens and uncertain
+physical overlap in separate panels. Do not treat database curve IDs as builds.
+Primary scope: AM316L LPBF, room-temperature axial constant-amplitude force tests.
+Different frequency/endpoints are displayed and are not exchangeability evidence.
+
+Data: historical 309-point/11-source phase-2 strict cohort is training population.
+Historical leave-one-source-out replay is explicitly reused exploratory evidence.
+Trombley is one previously examined external campaign, not a fresh confirmation.
+New identity-qualified campaigns are held out of all population fitting. Small
+campaigns are retained as pilots rather than excluded by a manufactured n>=15 rule.
+All campaign reuse relations must be audited before labeling independent data.
+
+For each condition and seeds 0..9, SHA256-sort specimen IDs with seed/condition.
+Fix query IDs first: n_query=max(3,floor(.4*n)). All remaining specimens form the
+acquisition pool; all policies/models share the identical query set and pool.
+Budget k=0,3,5,10 only if at least that many acquisition candidates exist.
+Conditions with n<6 do not enter acquisition comparisons. Two batches of the same
+campaign are retained separately but are NOT independent campaigns for uncertainty.
+Primary per-test administrative cap C=10^7 cycles; sensitivity C=10^6. Support
+endpoints are truncated at C. Earlier author runouts remain right-censored at their
+actual endpoint. Expected-information planning uses C, not an unrevealed endpoint.
+Queries preserve original censoring. C is a replay intervention, not a new test.
+
+Acquisition policies (nested prefixes; ties broken by outcome-blind SHA256 ranks):
+1 random: hash order of pool.
+2 stress_span: highest stress, lowest stress, then farthest log-stress from selected
+  stresses. This covers the observed candidate stress range; no candidate y/event.
+3 high_stress: decreasing stress. Cheap-failure control, not a presumed optimum.
+4 active_query_variance: sequential expected Fisher information reduction of
+  mean prediction variance on the known query stress covariates, using a target
+  intercept/slope Gaussian prior and censored lognormal straight Basquin likelihood.
+  Prior mean/fixed scatter/intercept SD come from historical hierarchical fit;
+  slope SD=max(1,abs(training slope)/2), fixed in advance. Current target MAP and
+  observed Hessian use selected supports only. For candidate x=(1,logS-Scenter),
+  z=(logC-mu)/sigma, expected location information is
+  [Phi(z)-z*phi(z)+phi(z)^2/Phi(-z)]/sigma^2.
+  Score = I*(x' V Q V x)/(1+I*x' V x), Q=mean(x_query*x_query').
+  No unknown candidate endpoint, query endpoint, or candidate runout flag is used.
+  This policy and its design criterion are existing statistical design ideas;
+  implementing a policy is not a novelty claim.
+
+Prediction models, all fitted with proper right-censor likelihood:
+pooled lognormal monotone Basquin; target-only intercept MLE sharing training
+hierarchical slope/scatter (unavailable if all supports run out); hierarchical
+censored Basquin; hierarchical continuous two-slope Basquin with train median knot;
+normal-normal random-fatigue-limit model (finite failures plus mass at infinity),
+with a target life-shift prior SD fixed to training hierarchical tau; and the
+intercept/slope Gaussian-prior local MAP/Laplace approximation used by acquisition.
+Model population parameter uncertainty is omitted and explicitly acknowledged.
+RFL is not the exact published Weibull model; no exact reproduction claim.
+No outcome-driven hyperparameter or policy selection. Failed/nonidentified fits
+are reported, never silently replaced by another model. Infinite RFL lower bounds
+count as available but unsafe whenever a finite query fails; their rate is shown.
+
+Metrics at alpha=.10: known risk=mean(event*(logL>logY)), upper risk=mean(logL>logY),
+so right-censored true risk lies between these. Include interval identification
+limits for paired differences. Utility is mean log10 lower-life gain on common
+finite available query pairs, with availability/positive infinity reported beside
+it. Also report conservative log-life shortfall for observed failures, observed
+support cycles, stress choices and all-runout support rate. Never infer benefit
+from larger L alone. Per condition->campaign->seed averaging avoids treating all
+specimens/seeds as independent campaigns. Paired campaign bootstrap 2000, seed231;
+CI unavailable for one independent campaign, and weak with two or three campaigns.
+
+Success gate: a policy must improve mean lower-life utility versus random while
+its paired true-risk increase upper 95% endpoint is <=.02, and availability >=.95.
+Absolute reliability also requires upper-risk upper 95% endpoint <=.10.
+If data cannot support these gates, report insufficient evidence or failure, not
+safe/guaranteed/useful generalization. Repeated query splits are sensitivity, not
+additional independent experiments. No conformal population guarantee is claimed.
+
+Sensitivities: same protocol with 10^6 cap; remove ambiguous/unverified batches;
+separate ultrasonic Trombley; RFL quadrature convergence and bound diagnostics;
+compare identical query IDs across policies; candidate-outcome perturbation test
+must leave the next choice unchanged before revealing the candidate endpoint.
+Hash this protocol, normalized inputs, split IDs, code and fit receipts in output.

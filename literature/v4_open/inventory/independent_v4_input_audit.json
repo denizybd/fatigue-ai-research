@@ -1,0 +1,101 @@
+{
+  "audited_utc": "2026-10-20T19:17:00.369648+00:00",
+  "scope": "Independent extraction/source/schema review before any v4 model fit. No importer/model source edited.",
+  "Yankin69_checks": {
+    "69unique_contiguous_publication_numbers": true,
+    "69XMLrecords_independent": true,
+    "all_stress_amplitudes_exact": true,
+    "all_angles_exact": true,
+    "all_treatments_exact": true,
+    "all_event_flags_exact": true,
+    "all64failure_cycles_exact": true,
+    "five_runout_publication_numbers_correct": true,
+    "runout_stops_nominal_1e6_and_provenance_derived": true,
+    "Rminus1_all": true,
+    "14conditions": true,
+    "25eligible_rows4conditions": true,
+    "temperature_control_Kt_unstated_not_imputed": true,
+    "lab_specimen_build_powder_IDs_not_invented": true,
+    "hatch100um_layer50um_common_schema": true,
+    "log_values_correct": true
+  },
+  "expansion132_checks": {
+    "132unique_rows16conditions3DOIs2families": true,
+    "source_counts_exact": true,
+    "118failures14rightcensors": true,
+    "disjoint_rowIDs_from309": true,
+    "disjoint_sourceDOIs_from309": true,
+    "all132_are_existing_database_rows": true,
+    "416all_candidate_row_decisions_unique": true,
+    "admitted_rows_exactly_match_decisions": true,
+    "stress_R_events_preserved": true,
+    "all118failure_lives_unchanged": true,
+    "all14censor_stops_match_source_methods": true,
+    "logs_consistent": true,
+    "uncertified_numeric_temperature_and_Kt_removed": true,
+    "original_temperature_Kt_and_digitizedN_preserved": true,
+    "no_author_specimen_build_powder_IDs_invented": true,
+    "278declared_changes_only": true,
+    "horizontal_asbuilt_R01_HCF_curve_fully_omitted": true,
+    "caption_anchors_not_additional_observations": true,
+    "failure_over_nominal_stop_preserved_and_flagged": true
+  },
+  "protocol_code_checks": {
+    "four_training_regimes_predeclared": true,
+    "same_support_outside_regime_loop": true,
+    "strict309_planner_explicit": true,
+    "selector_covariates_only": true,
+    "target_not_training_assertions_present": true,
+    "protocol_input_split_hash_checks_present": true,
+    "protocol_unknown_ambient_control_and_derived_censor_disclosed": true,
+    "one_program_no_CIs_disclosed": true
+  },
+  "all_checks_pass": true,
+  "unit_bug_found_and_fixed_by_parent": "Initial Yankin hatch/layer were0.1/0.05mm in sharedµm columns. Parent fixed to100/50µm and declared process_units before auditPASS.",
+  "Yankin_endpoint_limit": "Five censor stops are nominal plot-derived1e6, not numericTable3 stopping times. This audit checks event flags/exact failure values against XML. Parent visually inspected originalPDF9/10/12; own independent XML review confirms no explicit numeric test temperature/control-mode statement. Derived endpoint uncertainty remains a scientific limitation, not a measured exact stop.",
+  "expansion_visual_source_review": {
+    "viewed_primary_pages": [
+      "literature/v4_open/source_expansion/zhang_msea2017_p6.png",
+      "literature/v4_open/source_expansion/zhang_msea2017_p13.png",
+      "literature/v4_open/source_expansion/zhang_hcf2019_p5.png",
+      "literature/v4_open/source_expansion/zhang_hcf2019_Fig2a_detail.png",
+      "literature/v4_open/source_expansion/elangeswaran2019_p5.png",
+      "literature/v4_open/source_expansion/elangeswaran2019_p9.png"
+    ],
+    "MSEA2017": "Force-controlled sinusoidalR0.1/5Hz under ambient conditions;1e6runout. Figure8maxstress converted in originaldatabase toSa=0.45Smax; preserve amplitude, no double conversion. Figure9 extrapolated point excluded.",
+    "HCF2019": "Load-controlledsinusoidal5Hz,R−1/.1/.7,ambient;1e6 nominalrunout. Figure2experimental markers kept. Horizontalas-builtR0.1curve omitted conservatively. One unarrowed marker beyond1e6 retained as plotted failure and explicitly flagged; no silent event recoding.",
+    "Elanges2019": "Explicitforce-controlledconstantamplitude60Hz,R−1,tofracture or2e6runout. Figure5own4conditions distinguish borrowed conventional overlays and fittedlines. Only own extracted observations retained.",
+    "physical_identity_claim": "None. Source/condition-qualified CA observations are fit-eligible under broadened scope without specimen/build IDs; no gold RT/build generalization is implied."
+  },
+  "training_regime_counts": {
+    "A": 309,
+    "A_plus_Elanges": 347,
+    "A_plus_Zhang": 403,
+    "B": 441
+  },
+  "increment_independence": "132 previously catalogued database coordinates newly source-qualified, not132 newly acquired physical tests or independentlaboratories.3papers form2conservativefamilies.",
+  "held_target_counts": {
+    "source_rows": 69,
+    "failures": 64,
+    "censors": 5,
+    "conditions": 14,
+    "acquisition_rows": 25,
+    "acquisition_conditions": 4,
+    "tasks_at10seeds": 40,
+    "feasible_k": [
+      0,
+      3
+    ],
+    "independent_author_programs": 1
+  },
+  "inputs_sha256": {
+    "data/external_v4/yankin2025/table3_69.csv": "0c18801450daddfefeb4ad7006c8412349fc4e0afb8de2aa9802692f8b6dd192",
+    "data/external_v4/source_expansion/source_qualified_ca_expansion.csv": "1d0f6c03c9938b36f2450aedd9a45ed5900f087779fb3163963a9323c48c567c",
+    "protocols/v4/frozen_training_expansion.txt": "b97687eb502c1dbeebad563c9b67a4150879a80243fd23e4ed8844a4405f01e5",
+    "src/v4_expansion.py": "e05249182010c1ec0081a0b05f2a88d633a3e2ff000ff120d1ecbe719e3c4fe0",
+    "src/v4_yankin_import.py": "c4f87c32b2665b5ce6f56d73aa5b9593223c11242c674f6be5a2c09dcae3062a"
+  },
+  "no_model_runs_performed_by_audit": true,
+  "no_correspondence": true,
+  "blocking_findings_remaining": []
+}

@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-20T19:22:33.505622+00:00",
+  "checks": {
+    "SWT20_unique_author_IDs_and_no_fake_Sa": true,
+    "defects200_timing_not_invented": true,
+    "Jambor3_histories_not3_certified_Nf": true,
+    "unknown_AM_grade_and_Nf_remain_unknown": true,
+    "no_model_outputs_generated": true
+  },
+  "status": "PASS",
+  "normalization_script_successfully_rerun": true,
+  "reacquisition_verifier_successfully_run_on_preserved_payloads": true,
+  "full_download_from_empty_directory_not_repeated": true
+}

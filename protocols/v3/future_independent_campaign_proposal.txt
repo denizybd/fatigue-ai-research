@@ -1,0 +1,49 @@
+PROSPECTIVE INDEPENDENT CAMPAIGN PROPOSAL — NOT EXECUTED OR PUBLICLY REGISTERED
+Prepared after all current exploratory outcomes. No new physical test is claimed.
+
+Question: on a genuinely new specimen/build-traceable AM316L production program,
+can a fixed stress-selection policy improve useful lower-life proposals over random
+selection without an unacceptable increase in the censoring-identified violation rate?
+
+Admission: use source-backed author specimen IDs and build/powder inventory; log
+nominal maximum/amplitude/range convention, R, axial force control, environment,
+actual temperature/frequency, surface/heat treatment and first-exposure history.
+Do not mix local Kt stress or stepped outcomes with nominal virgin CA lifetimes.
+Every eligible tested specimen must appear in the inventory, including runouts.
+Separate physical build, powder lot, treatment and author program. Exclude any
+linked historical source family from training before seeing the new outcomes.
+
+Keep the existing six models, four policies and k0/3/5 protocol. Use k10 only when
+candidate pool size permits. Hold population hyperparameters/planner fixed from
+historical training; perform no outcome-guided tuning on the new program. Preserve
+identical query locations and candidate pools across policies. Expose only stress/R
+covariates before selection; reveal N/event only for each selected support. The
+information planner is the existing censored-normal/hierarchical planner, not an
+RFL-specific optimized acquisition. Query outcomes remain sealed during selection.
+
+For actual physical validation, randomly allocate separately manufactured replicate
+specimens to query and prospective policy arms. Pure replay on a complete historic
+cohort reuses specimens across policy arms and is exploratory; repeated split seeds
+are not new physical tests. A feasible inventory/sample-size calculation needs the
+lab's available specimen budget and target violation resolution; no arbitrary power
+claim follows from the present31-specimen/one-program result.
+
+Stopping horizon and censor protocol must be set by the laboratory BEFORE outcome
+collection. Match planning cap to actual censoring. If useful lower-life proposals
+extend beyond1e6, include actual CA follow-up beyond that horizon where feasible;
+do not infer virgin low-stress survival from later high-stress fracture. Frequency,
+wall-clock capacity and budget must be recorded, not inferred from cycle counts.
+
+Primary decision criteria remain those of frozen_design.txt: paired finite log-life
+utility, availability, censor-identified risk change and absolute risk bounds, plus
+observed support cycles. A higher q10 alone is not success. Report unidentified
+censored comparisons, unavailable/infinite bounds and all-runout support. Aggregate
+condition→author-program; uncertainty needs truly independent programs, not renamed
+builds/treatments/seeds. A second program improves external evidence but does not
+by itself certify90% coverage or R90C90 reliability. Report sampling uncertainty
+and model-parameter uncertainty separately from censoring identification.
+
+No stress MPa value is a universal recommendation. Within observed Merot pools,
+325MPa reference and175–275MPa pre-corroded high-stress selections were explored;
+use only a source/lab-supported stress grid for a new material/build and prespecify
+it. No high-stress or active policy has earned general superiority in current data.

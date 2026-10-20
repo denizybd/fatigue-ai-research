@@ -1,0 +1,70 @@
+{
+  "_embedded" : {
+    "bitstreams" : [ {
+      "id" : "2c2034f5-0955-49e5-baf1-f798f7362bcf",
+      "uuid" : "2c2034f5-0955-49e5-baf1-f798f7362bcf",
+      "name" : "mltrombl_1.pdf.txt",
+      "handle" : null,
+      "metadata" : {
+        "dc.description" : [ {
+          "value" : "Extracted text",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ],
+        "dc.source" : [ {
+          "value" : "Written by FormatFilter org.dspace.app.mediafilter.PDFFilter on 2025-05-16T09:10:14Z (GMT).",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ],
+        "dc.title" : [ {
+          "value" : "mltrombl_1.pdf.txt",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "bundleName" : "TEXT",
+      "sizeBytes" : 364636,
+      "formatId" : 5,
+      "checkSum" : {
+        "checkSumAlgorithm" : "MD5",
+        "value" : "6905d84d2618495e86989b8c9c267a4a"
+      },
+      "sequenceId" : 3,
+      "type" : "bitstream",
+      "_links" : {
+        "content" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/2c2034f5-0955-49e5-baf1-f798f7362bcf/content"
+        },
+        "bundle" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/2c2034f5-0955-49e5-baf1-f798f7362bcf/bundle"
+        },
+        "format" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/2c2034f5-0955-49e5-baf1-f798f7362bcf/format"
+        },
+        "thumbnail" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/2c2034f5-0955-49e5-baf1-f798f7362bcf/thumbnail"
+        },
+        "self" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/2c2034f5-0955-49e5-baf1-f798f7362bcf"
+        }
+      }
+    } ]
+  },
+  "page" : {
+    "number" : 0,
+    "size" : 20,
+    "totalPages" : 1,
+    "totalElements" : 1
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/03ebf44a-ce94-45df-b2a1-5adca9aa99f7/bitstreams"
+    }
+  }
+}

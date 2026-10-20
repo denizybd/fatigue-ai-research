@@ -1,0 +1,17 @@
+{
+  "status": "input_audit_pass;parent_freezes/runs",
+  "old_inventory_is_baseline_snapshot": true,
+  "newly_source_qualified_existing_database_rows": 132,
+  "newly_acquired_table_observations": 69,
+  "training441": {
+    "rows": 441,
+    "conditions": 48,
+    "publications": 14,
+    "source_blocks": 13,
+    "failures": 380,
+    "right_censors": 61
+  },
+  "gold_panel_changed": false,
+  "counts_not_physical_specimen_identity": true,
+  "source_inventory_update": "Three admittedDOIs now qualify as E2A under broader metadata-aware scope; original1473row catalog is unchanged. The69Yankin observations are new beyond thatdatabase source window, not populationtraining."
+}

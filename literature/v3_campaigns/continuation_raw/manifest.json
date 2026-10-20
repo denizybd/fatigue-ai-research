@@ -1,0 +1,179 @@
+{
+  "created_at": "2026-10-20T16:23:12.729439+00:00",
+  "scope": [
+    "literature/v3_campaigns/continuation_raw",
+    "data/external_v3/continuation_raw"
+  ],
+  "files": [
+    {
+      "path": "literature/v3_campaigns/continuation_raw/evidence_ledger.md",
+      "bytes": 5531,
+      "sha256": "1d97b75e0fc475d5ca3ee0a2d95d73a39f3800e9eec52ac8cfd16ada79982e69"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/figshare33392110_metadata.json",
+      "bytes": 4659,
+      "sha256": "ec55f3cc330d12dc958163db59b4dd4c8283cc2553c11b079927e2661302ffc3"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/figshare_related_141990343186112904.json",
+      "bytes": 1079,
+      "sha256": "3452d612da457096d694cf919a43cb5947b2d378a2abfb31605788865a1a3fbf"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/figshare_related_5041586176836060893.json",
+      "bytes": 3431,
+      "sha256": "64bd365501bcd4450ad02816c6b9bf76e8af66005a369151b8c318dea16422e8"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/figshare_related_5054814725276273885.json",
+      "bytes": 2649,
+      "sha256": "beb60b892ee1ac9c082d029a808e4ed04fcec4306c433206270d896c32629e46"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/figshare_search.json",
+      "bytes": 44886,
+      "sha256": "20e8e59b2cf3b5ac9cc7bfac3572e0ee2e64c231ba19c7d7cbbfae6171059fcb"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/normalize_zhou_quarantine.py",
+      "bytes": 6891,
+      "sha256": "a8f27ea94a3b412e3e70fb1749351e7d2a1ae6a5dd1c1790d0db01c620d73dd8"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/osti1668247_icme316L.html",
+      "bytes": 264918,
+      "sha256": "552714b4bbc0a181e2ce017a45ba2edf0fd0ccf9453b3488f8802b58a6bec739"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/prior_art_109943_scope.md",
+      "bytes": 2017,
+      "sha256": "c55d7da2328e3fd32996c360e3dcac2bb8a5da091a3f92609f4d21af0fdf33e8"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/publisher_preview_evidence.json",
+      "bytes": 1335,
+      "sha256": "319d8353bbaf5681d347de916e260362b23584f713810f64a7b3fe94786442fc"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/rautiocontam2026.html",
+      "bytes": 5598,
+      "sha256": "eda35f16c689b12c4243db4561e6883873648e22b8c632c9d551136df141d66a"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/search_log.json",
+      "bytes": 2348,
+      "sha256": "dfb21bd22c24da14ba8c7a77a29048af3ba91867731a5788841014a741845cea"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/second_campaign_focused_search_receipt.json",
+      "bytes": 5654,
+      "sha256": "1a9d38dd9bae162fc129ce29e72d52478a38e1b1942573a9ebfd2bdddc0ef5a8"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/source_manifest.json",
+      "bytes": 6844,
+      "sha256": "457c86ed740151d39bcc22162bc7ddaeead9a077fae4e4a9077cf61f7a6f2217"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wood2024_repo.html",
+      "bytes": 5492,
+      "sha256": "86ad496ce62781e6b7f179953f18252615cb928a0f29727618da3ad54e332771"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wood2024_springer.html",
+      "bytes": 462990,
+      "sha256": "f72faed628964c1abf234e9179cdc6a574231e82debe1bba1220f6091980eaac"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_crossref.json",
+      "bytes": 14822,
+      "sha256": "e85948a06fe457aaf46af0b2de12d3c5436a746809b208a44f103b69b681c332"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_elsevier_api.xml",
+      "bytes": 1896,
+      "sha256": "024c347869c142af50c0672b235274a65762bfbe3e2ed88fbbbec69483cd8c63"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_openalex.json",
+      "bytes": 14445,
+      "sha256": "ba1415aad919c7c16b124bb4092730d1f045933f10c3284298121469fbe2c888"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_109943_publisher.html",
+      "bytes": 832806,
+      "sha256": "2a493efe93cc7efe83761b788c097ffe7a40cf942e4c5d6344c8c0c5a458ba4d"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_crossref.json",
+      "bytes": 9255,
+      "sha256": "635e23ac77060d8aea221cf61bf4efbc498980a1a79f21c80993ebc0be5aa8fa"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_elsevier_api.html",
+      "bytes": 1873,
+      "sha256": "242bbe6302e4e613f624437d2c191a91f34ef0d9ba49c133628487fcfd51152e"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_ntu.html",
+      "bytes": 2113,
+      "sha256": "ece265620b091f5af9006975a7517a25edca453f72316e92debde7ae7ec59020"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/wu2026_placement_openalex.json",
+      "bytes": 17258,
+      "sha256": "5a0fe63882485c4a1fb6292a6892ece467e2d63786a05bba63d72de20e4a3a3c"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/zenodo_page2.json",
+      "bytes": 184477,
+      "sha256": "3e7b9eeb2bd9244db4561b6af35f5ba561429c5d2e65f3b93f66e00d80fa8177"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/zenodo_page3.json",
+      "bytes": 224143,
+      "sha256": "108e08eaefbc78b15cd8151f732e27303bac587f8209bef5b11d0000c14eb709"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/zhou2026_crossref_funder.json",
+      "bytes": 335034,
+      "sha256": "7f06305305880f9e43c77f804c4f66599e0dc936aca8047e879b35581828071a"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/zhou2026_crossref_title.json",
+      "bytes": 107303,
+      "sha256": "28540acf2cc829fd1bf8436b84df5e26911512aa56d4b30bd0acc2c5569e1289"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/zhou2026_openalex_title.json",
+      "bytes": 194674,
+      "sha256": "a9f633230658ae4c8b05e1946813d425b11d0440a6c32be57f2a73df63a1a9ea"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_raw/zhou2026_source_gate.json",
+      "bytes": 1991,
+      "sha256": "83e6cac4aa4eaaf1e74c44cd28f760445300f1e97b06de2cd5f6c238d2d3e5ad"
+    },
+    {
+      "path": "data/external_v3/continuation_raw/zhou2026_fatigue14_quarantined.csv",
+      "bytes": 4970,
+      "sha256": "1c9309f8fabf4aec08038c367fea615a4694f644d665a6b5da49eba732b1f5e2"
+    },
+    {
+      "path": "data/external_v3/continuation_raw/zhou2026_named_CT8_no_fatigue_crosswalk.csv",
+      "bytes": 1049,
+      "sha256": "4054d13d1cf7787dfe43df2697aa3744dc48021cab968377b7be052d37c32c8a"
+    },
+    {
+      "path": "data/external_v3/continuation_raw/zhou2026_supporting.xlsx",
+      "bytes": 17575,
+      "sha256": "e94e5774997fa90de061ce66cf204466cd33ecc6e48ca736c7af67190a5068c2"
+    }
+  ],
+  "file_count": 33,
+  "qualified_new_campaigns": 0,
+  "quarantined_fatigue_rows": 14,
+  "named_CT_rows_without_crosswalk": 8,
+  "no_fitting": true
+}

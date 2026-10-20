@@ -1,0 +1,15 @@
+dataset_id,thermal,direction,n,failures,stress_levels
+yankin2025_AB_00,AB,0,6,5,6
+yankin2025_AB_45,AB,45,5,5,5
+yankin2025_AB_55,AB,55,6,6,6
+yankin2025_AB_65,AB,65,5,5,5
+yankin2025_AB_75,AB,75,5,5,5
+yankin2025_AB_85,AB,85,6,6,6
+yankin2025_AB_90,AB,90,5,5,5
+yankin2025_HT_00,HT,0,5,5,5
+yankin2025_HT_45,HT,45,7,6,7
+yankin2025_HT_55,HT,55,4,3,3
+yankin2025_HT_65,HT,65,4,3,4
+yankin2025_HT_75,HT,75,2,2,2
+yankin2025_HT_85,HT,85,4,4,4
+yankin2025_HT_90,HT,90,5,4,5

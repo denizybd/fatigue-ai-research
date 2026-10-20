@@ -1,0 +1,42 @@
+{
+  "version": "v5_Faue_conservative_resolved_markers_v1",
+  "source_reported_AM_n": 22,
+  "source_reported_AM_AB_n": 11,
+  "source_reported_AM_LP_n": 11,
+  "extracted_markers_n": 16,
+  "extracted_by_treatment": {
+    "AM-AB": 6,
+    "AM-LP": 10
+  },
+  "source_count_gap": 6,
+  "gap_meaning": "Accounting difference only; no claim to know number or positions of all hidden overlapping markers",
+  "original_raster": {
+    "path": "literature/v5_open/faue/paper_Figure11.png",
+    "width": 738,
+    "height": 592,
+    "sha256": "d1aee3d34325475d16ccbe1120f2783b943982c328c156e8743056ec114735c9"
+  },
+  "calibration": {
+    "x_at_1e5": 182.5,
+    "x_at_1e6": 522.5,
+    "x_scale": "log10",
+    "stress_source": "exact reported stress amplitude levels, not digitized y",
+    "x_error_pixels": 3.0,
+    "relative_pixel_error_upper": 0.020524720915259254,
+    "calibration_crosscheck": "2million reference line near625px agrees with expected624.85px within one raster pixel"
+  },
+  "author_individual_IDs_recovered": 0,
+  "author_build_labels_recovered": 0,
+  "explicit_single_build_statement": true,
+  "physically_identified_samples": false,
+  "experimental_protocol_complete": false,
+  "strict_method_admitted_n": 0,
+  "primary_training_admitted_n": 0,
+  "candidate_panel": "E2_method_uncertain_digitized_candidate",
+  "independent_visual_spot_check": {
+    "agent": "v3_methods_rfl",
+    "status": "agrees on resolved-marker choices and conservative exclusion of under-diamond black regions",
+    "limitation": "Visual digitization check, not independent physical fatigue validation"
+  },
+  "normalized_csv_sha256": "3019b7026a3c1674d0bd7de5be77038cfcdf89eae3148d20dd0a437e7a862d1e"
+}

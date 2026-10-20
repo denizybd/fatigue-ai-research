@@ -1,0 +1,434 @@
+{
+  "type" : "Publication",
+  "identifier" : "0198e8b03b32-5a0eea6c-6bb3-443b-967c-240de172354d",
+  "status" : "PUBLISHED",
+  "resourceOwner" : {
+    "owner" : "ntnu@194.0.0.0",
+    "ownerAffiliation" : "https://api.nva.unit.no/cristin/organization/194.0.0.0"
+  },
+  "publisher" : {
+    "type" : "Organization",
+    "id" : "https://api.nva.unit.no/customer/7509c2b8-dcaf-463e-a041-88dd89435f59"
+  },
+  "createdDate" : "2025-08-26T23:22:00.370506264Z",
+  "modifiedDate" : "2025-08-26T23:22:00.370506264Z",
+  "publishedDate" : "2025-08-26T23:22:00.370506264Z",
+  "entityDescription" : {
+    "type" : "EntityDescription",
+    "mainTitle" : "Fatigue design for metallic components produced by additive manufacturing",
+    "alternativeTitles" : { },
+    "language" : "http://lexvo.org/id/iso639-3/eng",
+    "publicationDate" : {
+      "type" : "PublicationDate",
+      "year" : "2021"
+    },
+    "contributors" : [ {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "name" : "Filippo Berto",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ ],
+      "role" : {
+        "type" : "Supervisor"
+      },
+      "sequence" : 1,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "name" : "Jan Torgersen",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ ],
+      "role" : {
+        "type" : "Supervisor"
+      },
+      "sequence" : 2,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "name" : "Klas Solberg",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/194.64.92.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 3,
+      "correspondingAuthor" : false
+    } ],
+    "alternativeAbstracts" : { },
+    "tags" : [ ],
+    "reference" : {
+      "type" : "Reference",
+      "publicationContext" : {
+        "type" : "Degree",
+        "series" : {
+          "type" : "Series",
+          "id" : "https://api.nva.unit.no/publication-channels-v2/serial-publication/9CAF9CF8-3A8F-4229-9981-D8C36210C8F9/2021"
+        },
+        "seriesNumber" : "2021:25",
+        "publisher" : {
+          "type" : "Publisher",
+          "id" : "https://api.nva.unit.no/publication-channels-v2/publisher/D61B0D47-C78A-48DC-8537-3AD87DEF4D5B/2021",
+          "valid" : true
+        },
+        "isbnList" : [ "9788232663330" ],
+        "additionalIdentifiers" : [ ]
+      },
+      "publicationInstance" : {
+        "type" : "DegreePhd",
+        "pages" : {
+          "type" : "MonographPages",
+          "illustrated" : false
+        },
+        "submittedDate" : {
+          "type" : "PublicationDate",
+          "year" : "2021"
+        },
+        "related" : [ {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 7: \r\nSolberg, Klas; Hovig, Even Wiberg; Sørby, Knut; Berto, Filippo. \r\nDirectional fatigue behaviour of maragin steel grade 300 produced by laser powder bed fusion.\r\nThe final published version is available in \r\nInternational Journal of Fatigue \r\nhttps://doi.org/10.1016/j.ijfatigue.2021.106229 \r\nThis is an open access article under the terms of the Creative Commons Attribution License (CC BY 4.0)",
+          "sequence" : 7
+        }, {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 2: Solberg, Klas; Berto, Filippo. Notch-Defect Interaction in Additively Manufactured Inconel 718. International Journal of Fatigue 2019 ;Volum 122. s. 35-45\r\nhttps://doi.org/10.1016/j.ijfatigue.2018.12.021",
+          "sequence" : 2
+        }, {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 5: \r\nSolberg, Klas; Wan, Di; Berto, Filippo. Fatigue assessment of as‐built and heat‐treated Inconel 718 specimens produced by additive manufacturing including notch effects. Fatigue & Fracture of Engineering Materials & Structures (FFEMS) 2020 ;Volum 43.(10) s. 2326-2336\r\nhttps://doi.org/10.1111/ffe.13300\r\nThis is an open access article under the terms of the Creative Commons Attribution License (CC BY 4.0)",
+          "sequence" : 5
+        }, {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 1: Solberg, Klas; Berto, Filippo. What is going on with fatigue of additively manufactured metals?. Material Design & Processing Communications (MDPC) 2019\r\nhttps://doi.org/10.1002/mdp2.84\r\nThis is an open access article under the terms of the Creative Commons Attribution License (CC BY 4.0)",
+          "sequence" : 1
+        }, {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 6: Solberg, Klas; Guan, Shuai; Javad Razavi, Seyed Mohammad; Welo, Torgeir; Chan, Kang Cheung; Berto, Filippo. \r\nFatigue of additively manufactured 316L stainless steel: The influence of porosity and surface roughness. \r\nFatigue & Fracture of Engineering Materials & Structures (FFEMS) 2019 ;Volum 42.(9) s. 2043-2052\r\nhttps://doi.org/10.1111/ffe.13077\r\nThis is an open access article under the terms of the Creative Commons Attribution License (CC BY 4.0)",
+          "sequence" : 6
+        }, {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 3: Solberg, Klas; Berto, Filippo. \r\nA diagram for capturing and predicting failure locations in notch geometries produced by additive manufacturing. International Journal of Fatigue 2020 ;Volum 134.\r\nhttps://doi.org/10.1016/j.ijfatigue.2019.105428\r\nThis is an open access article under the terms of the Creative Commons Attribution License (CC BY 4.0)",
+          "sequence" : 3
+        }, {
+          "type" : "UnconfirmedDocument",
+          "text" : "Paper 4: Solberg, Klas; Berto, Filippo. \r\nThe effect of defects and notches in quasi-static and fatigue loading of Inconel 718 specimens produced by selective laser melting. International Journal of Fatigue 2020 ;Volum 137\r\nhttps://doi.org/10.1016/j.ijfatigue.2020.105637\r\nThis is an open access article under the terms of the Creative Commons Attribution License (CC BY 4.0)",
+          "sequence" : 4
+        } ]
+      }
+    },
+    "abstract" : "Additive manufacturing is a fast-rising manufacturing that brings new possibilities in terms of what has previously been possible in manufacturing. Additive manufacturing is a computer-controlled process where the material is added rather than forming or subtracting, which is common in most conventional manufacturing methods. The method allows for manufacturing on-demand, few geometric constraints and tailored designs. However, the characteristics of the materials are not fully understood and defects deriving from the manufacturing process are often found to reduce the performance of the materials. For metals produced by additive manufacturing, the fatigue behaviour is in particular sensitive to the defects. This thesis aims to increase the understanding of how the defects deriving from the manufacturing process influence the fatigue behaviour and how to take them into account when designing components. The thesis is divided into two main parts; one part giving a brief review of the main results and findings and one part where the articles published in the project are appended. The first part is divided into several sections; first, the main topics of the thesis are introduced along with a description of the structure of the thesis and the main methods used. Then follows a part with the experimental results and discussions around the factors influencing the fatigue behaviour. After this, different fatigue assessment models used for correlating or predicting results are presented followed by some recommendations on fatigue design. Finally, a conclusion and a summary are given. In the experimental work, three materials were investigated; the superalloy Inconel 718, the stainless steel 316L and the maraging steel 18Ni300. Different notch geometries of Inconel 718 was investigated in the as-built and heat-treated state. The 316L specimens were also investigated in the as-built state. The 18Ni300 specimens were heat-treated, partly machined and tested at different build orientations. The experimental results showed that the fatigue behaviour of the materials is strongly influenced by defects deriving from the manufacturing process. By analysing the fatigue behaviour at different load levels it was found that different defects and geometric features are critical at different load levels. In the fatigue assessment part, concepts such as the √ area-method, the theory of critical distance and strain energy density are used to correlate the defects and geometrical aspects to the fatigue behaviour. In the design part, three main design approaches of AM components for structural applications are proposed along with a framework for fatigue design of AM metallic components."
+  },
+  "projects" : [ ],
+  "fundings" : [ ],
+  "subjects" : [ ],
+  "associatedArtifacts" : [ {
+    "identifier" : "63f79689-af9c-4354-b3c4-a416934e1d78",
+    "type" : "OpenFile",
+    "name" : "Klas Solberg_PhD.pdf",
+    "mimeType" : "application/pdf",
+    "size" : 34930864,
+    "license" : "https://nva.sikt.no/license/copyright-act/1.0",
+    "rightsRetentionStrategy" : {
+      "type" : "NullRightsRetentionStrategy",
+      "configuredType" : "Unknown"
+    },
+    "publishedDate" : "2025-08-26T23:21:59.983672295Z",
+    "uploadDetails" : {
+      "type" : "ImportUploadDetails",
+      "source" : "Brage",
+      "archive" : "NTNU",
+      "uploadedDate" : "2025-08-26T23:21:58.969196219Z"
+    },
+    "allowedOperations" : [ "read-metadata", "download" ]
+  } ],
+  "importDetails" : [ ],
+  "additionalIdentifiers" : [ {
+    "type" : "CristinIdentifier",
+    "sourceName" : "nva@null",
+    "value" : "10016518"
+  }, {
+    "type" : "HandleIdentifier",
+    "sourceName" : "brage@ntnu",
+    "value" : "https://hdl.handle.net/11250/2737244"
+  } ],
+  "allowedOperations" : [ ],
+  "pendingOpenFileCount" : 0,
+  "@context" : {
+    "@vocab" : "https://nva.sikt.no/ontology/publication#",
+    "activeFrom" : {
+      "@type" : "xsd:dateTime"
+    },
+    "activeTo" : {
+      "@type" : "xsd:dateTime"
+    },
+    "additionalIdentifiers" : {
+      "@container" : "@set",
+      "@id" : "additionalIdentifier"
+    },
+    "administrativeAgreement" : {
+      "@id" : "administrativeAgreement",
+      "@type" : "xsd:boolean"
+    },
+    "affiliations" : {
+      "@container" : "@set",
+      "@id" : "affiliation",
+      "@context" : {
+        "institutionId" : {
+          "@id" : "affiliationInstitutionId"
+        }
+      }
+    },
+    "alternativeAbstracts" : {
+      "@container" : "@language",
+      "@id" : "alternativeAbstract"
+    },
+    "alternativeTitles" : {
+      "@container" : "@language",
+      "@id" : "alternativeTitle"
+    },
+    "amount" : {
+      "@type" : "xsd:integer"
+    },
+    "approvalStatus" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/publication#"
+      },
+      "@type" : "@vocab"
+    },
+    "approvals" : {
+      "@container" : "@set",
+      "@id" : "approval"
+    },
+    "approvedBy" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/approvals-body#"
+      },
+      "@type" : "@vocab"
+    },
+    "architectureOutput" : {
+      "@container" : "@set",
+      "@id" : "architectureOutput"
+    },
+    "associatedArtifacts" : {
+      "@container" : "@set",
+      "@id" : "associatedArtifact"
+    },
+    "compliesWith" : {
+      "@container" : "@set",
+      "@id" : "compliesWith"
+    },
+    "concertProgramme" : {
+      "@container" : "@set",
+      "@id" : "concertProgramme"
+    },
+    "contributorCristinIds" : null,
+    "contributorsPreview" : {
+      "@container" : "@set"
+    },
+    "contributorOrganizations" : {
+      "@container" : "@set",
+      "@id" : "contributorOrganization",
+      "@type" : "@id"
+    },
+    "contributors" : {
+      "@container" : "@set",
+      "@id" : "contributor"
+    },
+    "correspondingAuthor" : {
+      "@type" : "xsd:boolean"
+    },
+    "countryCode" : {
+      "@id" : "country"
+    },
+    "createdDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "curatingInstitutions" : null,
+    "days" : {
+      "@type" : "xsd:integer"
+    },
+    "doi" : {
+      "@type" : "@id"
+    },
+    "duplicateOf" : {
+      "@type" : "@id"
+    },
+    "embargoDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "extent" : {
+      "@type" : "xsd:integer"
+    },
+    "from" : {
+      "@type" : "xsd:dateTime"
+    },
+    "fundings" : {
+      "@container" : "@set",
+      "@id" : "funding"
+    },
+    "handle" : {
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@container" : "@set"
+    },
+    "hours" : {
+      "@type" : "xsd:integer"
+    },
+    "id" : "@id",
+    "illustrated" : {
+      "@type" : "xsd:boolean"
+    },
+    "importDetails" : {
+      "@container" : "@set",
+      "@id" : "importDetail"
+    },
+    "indexedDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "isbnList" : {
+      "@container" : "@set",
+      "@id" : "isbn"
+    },
+    "labels" : {
+      "@container" : "@language",
+      "@id" : "label"
+    },
+    "language" : {
+      "@type" : "@id"
+    },
+    "license" : {
+      "@type" : "@id"
+    },
+    "link" : {
+      "@type" : "@id"
+    },
+    "manifestations" : {
+      "@container" : "@set",
+      "@id" : "manifestation"
+    },
+    "metadataSource" : {
+      "@type" : "@id"
+    },
+    "minutes" : {
+      "@type" : "xsd:integer"
+    },
+    "modifiedDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "musicalWorks" : {
+      "@container" : "@set",
+      "@id" : "musicalWork"
+    },
+    "nameType" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/publication#"
+      },
+      "@type" : "@vocab"
+    },
+    "outputs" : {
+      "@container" : "@set",
+      "@id" : "output"
+    },
+    "ownerAffiliation" : {
+      "@type" : "@id"
+    },
+    "partOf" : {
+      "@container" : "@set"
+    },
+    "premiere" : {
+      "@type" : "xsd:boolean"
+    },
+    "projects" : {
+      "@container" : "@set",
+      "@id" : "project"
+    },
+    "publicationNotes" : {
+      "@container" : "@set",
+      "@id" : "publicationNote"
+    },
+    "publishedDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "ranking" : {
+      "@type" : "xsd:integer"
+    },
+    "referencedBy" : {
+      "@container" : "@set",
+      "@id" : "referencedBy"
+    },
+    "related" : {
+      "@container" : "@set",
+      "@id" : "related"
+    },
+    "role" : {
+      "@id" : "role"
+    },
+    "sequence" : {
+      "@type" : "xsd:integer"
+    },
+    "size" : {
+      "@type" : "xsd:integer"
+    },
+    "source" : {
+      "@type" : "@id"
+    },
+    "status" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/publication#"
+      },
+      "@type" : "@vocab"
+    },
+    "subjects" : {
+      "@container" : "@set",
+      "@id" : "subject",
+      "@type" : "@id"
+    },
+    "tags" : {
+      "@container" : "@set",
+      "@id" : "tag"
+    },
+    "to" : {
+      "@type" : "xsd:dateTime"
+    },
+    "topLevelOrganizations" : {
+      "@container" : "@set",
+      "@id" : "topLevelOrganization"
+    },
+    "trackList" : {
+      "@container" : "@set",
+      "@id" : "trackList"
+    },
+    "type" : "@type",
+    "userAgreesToTermsAndConditions" : {
+      "@type" : "xsd:boolean"
+    },
+    "valid" : {
+      "@type" : "xsd:boolean"
+    },
+    "venues" : {
+      "@container" : "@set",
+      "@id" : "venue"
+    },
+    "visibleForNonOwner" : {
+      "@type" : "xsd:boolean"
+    },
+    "weeks" : {
+      "@type" : "xsd:integer"
+    },
+    "pendingOpenFileCount" : {
+      "@type" : "xsd:integer"
+    },
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  },
+  "id" : "https://api.nva.unit.no/publication/0198e8b03b32-5a0eea6c-6bb3-443b-967c-240de172354d"
+}

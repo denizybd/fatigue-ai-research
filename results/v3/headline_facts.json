@@ -1,0 +1,796 @@
+{
+  "1e7": {
+    "hier0": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.1616071428571428,
+        "lo95": 0.0,
+        "hi95": 0.3232142857142857
+      },
+      "upper_risk": {
+        "mean": 0.1616071428571428,
+        "lo95": 0.0,
+        "hi95": 0.3232142857142857
+      },
+      "finite_log_lower": {
+        "mean": 4.699126830482385,
+        "lo95": 4.56770084007737,
+        "hi95": 4.830552820887401
+      },
+      "failure_shortfall": {
+        "mean": 0.5367417573354684,
+        "lo95": 0.2601664116600151,
+        "hi95": 0.8133171030109215
+      },
+      "support_cycles": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3random": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "upper_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "finite_log_lower": {
+        "mean": 4.643798337400257,
+        "lo95": 4.229335261176425,
+        "hi95": 5.05826141362409
+      },
+      "failure_shortfall": {
+        "mean": 0.5186485694496757,
+        "lo95": 0.4516886286251192,
+        "hi95": 0.5856085102742322
+      },
+      "support_cycles": {
+        "mean": 1153486.35625,
+        "lo95": 274871.5125,
+        "hi95": 2032101.2
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3high": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0042410714285714,
+        "lo95": 0.0,
+        "hi95": 0.0084821428571428
+      },
+      "upper_risk": {
+        "mean": 0.0042410714285714,
+        "lo95": 0.0,
+        "hi95": 0.0084821428571428
+      },
+      "finite_log_lower": {
+        "mean": 4.7228668758539625,
+        "lo95": 4.233014867040492,
+        "hi95": 5.212718884667433
+      },
+      "failure_shortfall": {
+        "mean": 0.4394934459866547,
+        "lo95": 0.4311510392308896,
+        "hi95": 0.4478358527424199
+      },
+      "support_cycles": {
+        "mean": 343992.925,
+        "lo95": 96197.55,
+        "hi95": 591788.2999999999
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3active": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "upper_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "finite_log_lower": {
+        "mean": 4.63516297780394,
+        "lo95": 4.226292531091192,
+        "hi95": 5.044033424516689
+      },
+      "failure_shortfall": {
+        "mean": 0.5270626770494791,
+        "lo95": 0.4542888547173249,
+        "hi95": 0.5998364993816333
+      },
+      "support_cycles": {
+        "mean": 1247532.7000000002,
+        "lo95": 207662.0,
+        "hi95": 2287403.4000000004
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier5active": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0035714285714285,
+        "lo95": 0.0,
+        "hi95": 0.0071428571428571
+      },
+      "upper_risk": {
+        "mean": 0.0035714285714285,
+        "lo95": 0.0,
+        "hi95": 0.0071428571428571
+      },
+      "finite_log_lower": {
+        "mean": 4.657103702998105,
+        "lo95": 4.211130786789999,
+        "hi95": 5.103076619206211
+      },
+      "failure_shortfall": {
+        "mean": 0.5050947965147041,
+        "lo95": 0.4693962883372971,
+        "hi95": 0.5407933046921112
+      },
+      "support_cycles": {
+        "mean": 1952704.4937500004,
+        "lo95": 426582.7875,
+        "hi95": 3478826.2000000007
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3high_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.0790685384537046,
+        "lo95": 0.0036796058640667,
+        "hi95": 0.1544574710433425
+      },
+      "true_risk_change_lo": {
+        "mean": -0.0002232142857142,
+        "lo95": -0.0004464285714285,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.0002232142857142,
+        "lo95": -0.0004464285714285,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -809493.43125,
+        "lo95": -1440312.9,
+        "hi95": -178673.96249999997
+      }
+    },
+    "rfl3high_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": -0.1145910160719169,
+        "lo95": -0.1497267926040855,
+        "hi95": -0.0794552395397483
+      },
+      "true_risk_change_lo": {
+        "mean": -0.0191220238095238,
+        "lo95": -0.0382440476190476,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.0191220238095238,
+        "lo95": -0.0382440476190476,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -809493.43125,
+        "lo95": -1440312.9,
+        "hi95": -178673.96249999997
+      }
+    },
+    "hier3active_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": -0.0086353595963167,
+        "lo95": -0.014227989107401,
+        "hi95": -0.0030427300852324
+      },
+      "true_risk_change_lo": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": 94046.3437500002,
+        "lo95": -67209.51249999998,
+        "hi95": 255302.20000000036
+      }
+    },
+    "curved5active_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.012049662058823,
+        "lo95": 0.0029992537064478,
+        "hi95": 0.0211000704111983
+      },
+      "true_risk_change_lo": {
+        "mean": -0.0052678571428571,
+        "lo95": -0.0105357142857142,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.0052678571428571,
+        "lo95": -0.0105357142857142,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": 16659.76250000018,
+        "lo95": -41744.27500000001,
+        "hi95": 75063.80000000037
+      }
+    },
+    "local3active_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.0169742728951911,
+        "lo95": 0.0122015804864157,
+        "hi95": 0.0217469653039666
+      },
+      "true_risk_change_lo": {
+        "mean": -0.015625,
+        "lo95": -0.03125,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.015625,
+        "lo95": -0.03125,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": 94046.3437500002,
+        "lo95": -67209.51249999998,
+        "hi95": 255302.20000000036
+      }
+    }
+  },
+  "1e6": {
+    "hier0": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.1616071428571428,
+        "lo95": 0.0,
+        "hi95": 0.3232142857142857
+      },
+      "upper_risk": {
+        "mean": 0.1616071428571428,
+        "lo95": 0.0,
+        "hi95": 0.3232142857142857
+      },
+      "finite_log_lower": {
+        "mean": 4.699126830482385,
+        "lo95": 4.56770084007737,
+        "hi95": 4.830552820887401
+      },
+      "failure_shortfall": {
+        "mean": 0.5367417573354684,
+        "lo95": 0.2601664116600151,
+        "hi95": 0.8133171030109215
+      },
+      "support_cycles": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3random": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "upper_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "finite_log_lower": {
+        "mean": 4.665746144979431,
+        "lo95": 4.229335261176425,
+        "hi95": 5.102157028782436
+      },
+      "failure_shortfall": {
+        "mean": 0.496700761870503,
+        "lo95": 0.4516886286251192,
+        "hi95": 0.5417128951158867
+      },
+      "support_cycles": {
+        "mean": 1014835.25625,
+        "lo95": 274871.5125,
+        "hi95": 1754799.0
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3high": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0042410714285714,
+        "lo95": 0.0,
+        "hi95": 0.0084821428571428
+      },
+      "upper_risk": {
+        "mean": 0.0042410714285714,
+        "lo95": 0.0,
+        "hi95": 0.0084821428571428
+      },
+      "finite_log_lower": {
+        "mean": 4.7228668758539625,
+        "lo95": 4.233014867040492,
+        "hi95": 5.212718884667433
+      },
+      "failure_shortfall": {
+        "mean": 0.4394934459866547,
+        "lo95": 0.4311510392308896,
+        "hi95": 0.4478358527424199
+      },
+      "support_cycles": {
+        "mean": 343992.925,
+        "lo95": 96197.55,
+        "hi95": 591788.2999999999
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3active": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "upper_risk": {
+        "mean": 0.0044642857142857,
+        "lo95": 0.0,
+        "hi95": 0.0089285714285714
+      },
+      "finite_log_lower": {
+        "mean": 4.684182345825839,
+        "lo95": 4.227153139315223,
+        "hi95": 5.141211552336455
+      },
+      "failure_shortfall": {
+        "mean": 0.4780433090275811,
+        "lo95": 0.4534282464932943,
+        "hi95": 0.5026583715618679
+      },
+      "support_cycles": {
+        "mean": 788778.68125,
+        "lo95": 203286.6625,
+        "hi95": 1374270.7
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier5active": {
+      "availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "positive_infinite": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "known_risk": {
+        "mean": 0.0035714285714285,
+        "lo95": 0.0,
+        "hi95": 0.0071428571428571
+      },
+      "upper_risk": {
+        "mean": 0.0035714285714285,
+        "lo95": 0.0,
+        "hi95": 0.0071428571428571
+      },
+      "finite_log_lower": {
+        "mean": 4.675424299398648,
+        "lo95": 4.211449026703204,
+        "hi95": 5.139399572094092
+      },
+      "failure_shortfall": {
+        "mean": 0.4867742001141619,
+        "lo95": 0.4690780484240929,
+        "hi95": 0.5044703518042309
+      },
+      "support_cycles": {
+        "mean": 1568923.2000000002,
+        "lo95": 422983.3,
+        "hi95": 2714863.100000001
+      },
+      "all_support_runout": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      }
+    },
+    "hier3high_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.0571207308745318,
+        "lo95": 0.0036796058640667,
+        "hi95": 0.110561855884997
+      },
+      "true_risk_change_lo": {
+        "mean": -0.0002232142857142,
+        "lo95": -0.0004464285714285,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.0002232142857142,
+        "lo95": -0.0004464285714285,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -670842.3312499999,
+        "lo95": -1163010.7,
+        "hi95": -178673.96249999997
+      }
+    },
+    "rfl3high_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": -0.123005538440186,
+        "lo95": -0.1497267926040855,
+        "hi95": -0.0962842842762865
+      },
+      "true_risk_change_lo": {
+        "mean": -0.0191220238095238,
+        "lo95": -0.0382440476190476,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.0191220238095238,
+        "lo95": -0.0382440476190476,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -670842.3312499999,
+        "lo95": -1163010.7,
+        "hi95": -178673.96249999997
+      }
+    },
+    "hier3active_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.0184362008464085,
+        "lo95": -0.0021821218612018,
+        "hi95": 0.0390545235540188
+      },
+      "true_risk_change_lo": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": 0.0,
+        "lo95": 0.0,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -226056.57499999995,
+        "lo95": -380528.29999999993,
+        "hi95": -71584.84999999999
+      }
+    },
+    "curved5active_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.0071347278605462,
+        "lo95": 0.0028410627924985,
+        "hi95": 0.011428392928594
+      },
+      "true_risk_change_lo": {
+        "mean": -0.0052678571428571,
+        "lo95": -0.0105357142857142,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.0052678571428571,
+        "lo95": -0.0105357142857142,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -146621.98125,
+        "lo95": -247900.2,
+        "hi95": -45343.7625
+      }
+    },
+    "local3active_vs_random": {
+      "paired_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "paired_finite_availability": {
+        "mean": 1.0,
+        "lo95": 1.0,
+        "hi95": 1.0
+      },
+      "log_life_gain": {
+        "mean": 0.0286324709464844,
+        "lo95": 0.0203645348028519,
+        "hi95": 0.0369004070901169
+      },
+      "true_risk_change_lo": {
+        "mean": -0.015625,
+        "lo95": -0.03125,
+        "hi95": 0.0
+      },
+      "true_risk_change_hi": {
+        "mean": -0.015625,
+        "lo95": -0.03125,
+        "hi95": 0.0
+      },
+      "support_cycle_change": {
+        "mean": -226056.57499999995,
+        "lo95": -380528.29999999993,
+        "hi95": -71584.84999999999
+      }
+    }
+  }
+}

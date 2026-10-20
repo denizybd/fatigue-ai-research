@@ -1,0 +1,81 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://media-api.suub.uni-bremen.de/server/api/core/bundles/fc958305-6264-4ad5-8ef9-7ad9080f1a2f/bitstreams"
+    }
+  },
+  "_embedded": {
+    "bitstreams": [
+      {
+        "id": "4744afef-aa28-4b17-bc5a-0240405090cd",
+        "uuid": "4744afef-aa28-4b17-bc5a-0240405090cd",
+        "name": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments.pdf.txt",
+        "handle": null,
+        "metadata": {
+          "dc.description": [
+            {
+              "value": "Extracted text",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.source": [
+            {
+              "value": "Written by FormatFilter org.dspace.app.mediafilter.TikaTextExtractionFilter on 2025-11-27T02:01:23Z (GMT).",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ],
+          "dc.title": [
+            {
+              "value": "Fatigue investigations of laser powder bed fusion generated austenitic and tool steel samples with consideration of heat treatments.pdf.txt",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "bundleName": "TEXT",
+        "sizeBytes": 100695,
+        "checkSum": {
+          "checkSumAlgorithm": "MD5",
+          "value": "b25cfae2094d01ed2529f940677c4588"
+        },
+        "sequenceId": 4,
+        "type": "bitstream",
+        "uniqueType": "core.bitstream",
+        "_links": {
+          "content": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/4744afef-aa28-4b17-bc5a-0240405090cd/content"
+          },
+          "bundle": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/4744afef-aa28-4b17-bc5a-0240405090cd/bundle"
+          },
+          "accessStatus": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/4744afef-aa28-4b17-bc5a-0240405090cd/accessStatus"
+          },
+          "format": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/4744afef-aa28-4b17-bc5a-0240405090cd/format"
+          },
+          "thumbnail": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/4744afef-aa28-4b17-bc5a-0240405090cd/thumbnail"
+          },
+          "self": {
+            "href": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/4744afef-aa28-4b17-bc5a-0240405090cd"
+          }
+        }
+      }
+    ]
+  },
+  "page": {
+    "number": 0,
+    "size": 20,
+    "totalPages": 1,
+    "totalElements": 1
+  }
+}

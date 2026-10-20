@@ -1,0 +1,15 @@
+source_gate_status,rows,conditions,sources
+eligible_methods_and_graph_spotchecked,15,2,2
+eligible_methods_verified,294,30,9
+exclude_republished_316l_curves,24,3,1
+exclude_variable_amplitude,98,3,1
+quarantine_curve_selection_unverified,73,7,3
+quarantine_figure_mapping_unverified,13,1,1
+quarantine_full_methods_unavailable,43,2,1
+quarantine_fulltext_methods_unverified,14,3,1
+quarantine_fulltext_unverified,12,1,1
+quarantine_nearcurve_family,463,56,11
+quarantine_possible_related_stepped_campaign,10,1,1
+quarantine_reuse_prefer_JMST_representative,4,1,1
+quarantine_source_or_endpoint_unverified,55,9,3
+quarantine_stress_definition_conflict,8,1,1

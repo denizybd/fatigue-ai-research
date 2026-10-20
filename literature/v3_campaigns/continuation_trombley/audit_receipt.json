@@ -1,0 +1,329 @@
+{
+  "created_utc": "2026-10-20T15:56:20.845622+00:00",
+  "dataset_url": "https://materialscommons.org/public/datasets/2564",
+  "article_doi": "10.1038/s41598-025-97031-1",
+  "status": "source-backed single common powder batch; physical build mapping not recovered",
+  "specimen_attribute_records_reviewed": 157,
+  "eligible_asbuilt_crosswalk_rows": 129,
+  "source_powder_value_all157": "Concept Laser CL 20ES 316L",
+  "source_machine_value_all157": "Concept Laser M2",
+  "article_reports_single_powder_batch": true,
+  "article_reports_physical_builds": 4,
+  "author_powder_lot_code_available": false,
+  "specimen_to_physical_build_mapping_available": false,
+  "public_workflow_count": 0,
+  "public_processing_conditions_activity_count": 157,
+  "activity_detail_links_in157_grouped_entity_pages": 0,
+  "public_ungroup_route_failures": [
+    {
+      "url": "https://materialscommons.org/public/datasets/2564/entities/67494/spread",
+      "http_status": 500
+    },
+    {
+      "url": "https://materialscommons.org/public/datasets/2564/entities/67508/spread",
+      "http_status": 500
+    },
+    {
+      "url": "https://materialscommons.org/public/datasets/2564/entities/67509/spread",
+      "http_status": 500
+    }
+  ],
+  "all_data_workbook_public_file_page": {
+    "url": "https://materialscommons.org/public/datasets/2564/files/10201929",
+    "http_status": 200,
+    "access_text": "To view this file please Login or Register",
+    "workbook_download_attempted": false
+  },
+  "retrieval": "public GET only, no authentication or download bypass, no guessed private API endpoints",
+  "attribute_names_reviewed": [
+    "Actual depth of material removed [um]",
+    "Amplifiers",
+    "Angular position",
+    "As-built surface roughness Ra [um]",
+    "As-built surface roughness Sa [um]",
+    "As-measured stress 1",
+    "As-measured stress 2",
+    "As-measured stress 3",
+    "Atmosphere",
+    "Average Area",
+    "Average Diameter",
+    "Average Edge Distance",
+    "Avg Area Size [um^2]",
+    "Avg RSm [um]",
+    "Avg Ra [um]",
+    "Avg Rc [um]",
+    "Avg Rdq",
+    "Avg Rku",
+    "Avg Rp [um]",
+    "Avg Rq [um]",
+    "Avg Rsk",
+    "Avg Rt [um]",
+    "Avg Rv [um]",
+    "Avg Rz [um]",
+    "Avg RzJIS [um]",
+    "Avg Sa [um]",
+    "Avg Sku",
+    "Avg Sp [um]",
+    "Avg Sq [um]",
+    "Avg Ssk",
+    "Avg Sv [um]",
+    "Avg Sz [um]",
+    "Beam Intensity",
+    "Beam Voltage",
+    "Bragg Angle, 2\u03b8",
+    "Build Orientation",
+    "Comments",
+    "Condition",
+    "Constraint",
+    "Control Unit",
+    "Cooling",
+    "Crystallographic Plane",
+    "Date",
+    "Depth of material removed [um]",
+    "Depth of measurement 1",
+    "Depth of measurement 2",
+    "Depth of measurement 3",
+    "Distribution",
+    "Double Gaussian",
+    "End Effect Correction",
+    "Equipment",
+    "Final diameter [mm]",
+    "From",
+    "Furnace",
+    "Gauge Size",
+    "Geometry",
+    "Gradient & depth corrected stress 1",
+    "Gradient & depth corrected stress 2",
+    "Gradient & depth corrected stress 3",
+    "Gradient corrected stress 1",
+    "Gradient corrected stress 2",
+    "Gradient corrected stress 3",
+    "Image Date",
+    "Initial diameter [mm]",
+    "Input",
+    "Instrument",
+    "L-filter",
+    "Laser Power Used",
+    "Laser Spot Size",
+    "Laser Type",
+    "Layer Thickness",
+    "Lc Measurement",
+    "Lf Measurement",
+    "Lower Frequency Limit",
+    "Ls Measurement",
+    "Machine",
+    "Max Strain",
+    "Max Stress",
+    "Mean",
+    "Measured stress at angular position 0 deg",
+    "Measured stress at angular position 120 deg",
+    "Measured stress at angular position 180 deg",
+    "Measured stress at angular position 240 deg",
+    "Measured stress at angular position 300 deg",
+    "Measured stress at angular position 60 deg",
+    "Measurements",
+    "Method",
+    "Number of Cycles",
+    "Number of Defects Measured",
+    "Number of Measurements",
+    "Pause",
+    "Poisson Ratio",
+    "Power Control Setting",
+    "Power Percentage",
+    "Pre Adjust Setting",
+    "Pulse",
+    "R Ratio",
+    "Resonant Frequency",
+    "Runout or Failure?",
+    "S-filter",
+    "SEM Lab",
+    "SEM Machine",
+    "Sample Geometry",
+    "Scan Pattern",
+    "Scan Strategies",
+    "Sensitivity",
+    "Smoothed surface roughness Sa [um]",
+    "Soak Duration [hr]",
+    "Source",
+    "Source Lab",
+    "Source Powder",
+    "Standard Deviation",
+    "Supplier",
+    "Surface Roughness Filter",
+    "Target",
+    "Target depth of material removed [um]",
+    "Temperature [C]",
+    "Test Amplitude",
+    "Test Date",
+    "Tests",
+    "Type",
+    "Upper Frequency Limit",
+    "Velocity",
+    "X-Ray Elastic Constant",
+    "Young's Modulus"
+  ],
+  "crosswalk_sha256": "c23cf7e485f49860feafff61b7dded141edac682090aac524c65cb0b2516d84f",
+  "unresolved": "Which specimen belongs to each of the four physical builds; manufacturer powder lot identifier",
+  "campaign_interpretation": "one previously examined campaign, one reported common powder batch, four physical builds with unresolved specimen edges; not two additional independent campaigns",
+  "model_runs_performed": false,
+  "prior_raw_and_frozen_files_modified": false,
+  "files": [
+    {
+      "path": "data/external_v3/continuation_trombley/asbuilt129_powder_batch_crosswalk.csv",
+      "sha256": "c23cf7e485f49860feafff61b7dded141edac682090aac524c65cb0b2516d84f",
+      "bytes": 132903
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/file_10201929.html",
+      "sha256": "2f7c3127c81c741930d9f83ccb2d45413e3b8d695ccc5da4efe9090c388f2517",
+      "bytes": 125509
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/file_10201929.txt",
+      "sha256": "c382111c30290dbe36772be0a8112423a64319d7d1b70859aabfd316595603f7",
+      "bytes": 2716
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/files_index.html",
+      "sha256": "ffaefaa4d0ede0d19e81ca9ff8d6732bb8a847b663fbc43937bc3aa288100304",
+      "bytes": 137495
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/files_inventory.json",
+      "sha256": "d99d7a73a6c01a68ed76ffd9490ae83dfaa523d43150ef57a6ba91eda0a12a6e",
+      "bytes": 12987
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201901.html",
+      "sha256": "e90f72abf8ae7e9347e6b702159c08c33e75d65837c5703ac1c358026b6a5670",
+      "bytes": 137507
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201902.html",
+      "sha256": "065a8fb44f0f0b36bbb82d77b8a4ee884045d86c95a0b5cb70ce28343ece2479",
+      "bytes": 141113
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201906.html",
+      "sha256": "a583045896d858c9ed33c87904e1cdd2d8e93c5819267a2d2a3d79ddc9962961",
+      "bytes": 135669
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201907.html",
+      "sha256": "4ae530d442d06b02e6f2061e9829c35063c2afb1d85a7ad18deb40bccfedfd63",
+      "bytes": 135870
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201908.html",
+      "sha256": "3ec9ab326cb372db4d93015bc1f27269382ada6ea148db17dfec6d22553aeda0",
+      "bytes": 140484
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201910.html",
+      "sha256": "345a98ea242e704ff7336df6423b483c072cb0039e9028e0bad75af3bce716e7",
+      "bytes": 136147
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201911.html",
+      "sha256": "ad3f1c8122742028283d49df6a2ed8b84f2d8ce7d095714d53f20f1b3066c96e",
+      "bytes": 150162
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201924.html",
+      "sha256": "c39587e8bef036674a17d9a7d99ea9e51416332c5c4cd04ee79914d73607585f",
+      "bytes": 144288
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201933.html",
+      "sha256": "ce2adedfd152a5bfec61877ea41b82332f1df3e0c6a154a41d2944af927ad429",
+      "bytes": 136147
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201934.html",
+      "sha256": "b58c0f406b83d80df2f9fc8713829230e928f9a342ac01f805544bacdc01e1c1",
+      "bytes": 139969
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201936.html",
+      "sha256": "5bb1163771dda31bc37fcab290b1dd12449435df7a68e52f887c7c730e9f50db",
+      "bytes": 141226
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201939.html",
+      "sha256": "f8d0e2ed4201241af2470519bceb8373c39876357f4d1359dd490f59719b240f",
+      "bytes": 135692
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201940.html",
+      "sha256": "d9b10e94d3ac38ebb3d124f6a7758ac425a736fbe9352dab37aa37ad4b60793e",
+      "bytes": 135914
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201941.html",
+      "sha256": "d22e45b6df4554abe4a053f161d299c31553bc5a05616fbdecd960dc7f684da6",
+      "bytes": 140296
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201943.html",
+      "sha256": "8c2c23abf5f59ded12b891d9e5826f36ab16dbd266e52abbfc10eb5c49eb2d7e",
+      "bytes": 135673
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/folder_10201944.html",
+      "sha256": "d271819fe58153030bd53b6db54fa356b27432d6aaef10f58d67ac38205dff3c",
+      "bytes": 140289
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/overview.html",
+      "sha256": "e1d6fe110d453e45c6ace33c40cc35516846cb62ff71e15b2ddd68b123bdb760",
+      "bytes": 159724
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/overview.txt",
+      "sha256": "b6543da60f45f0b9fc0ded01abc0241a6de0ffff9a750b42b0ce2b528459c463",
+      "bytes": 6757
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/spread_67494.html",
+      "sha256": "366ab0dedf3f3a7cd044a7f2935c8154608f9b6121ed3e9ed0d87ae403067b3f",
+      "bytes": 11699
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/spread_67494.txt",
+      "sha256": "2095272eafe558673eab88be3f04c05fa68987362f0ca6ef3fd424bd29570edc",
+      "bytes": 6244
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/spread_67508.html",
+      "sha256": "366ab0dedf3f3a7cd044a7f2935c8154608f9b6121ed3e9ed0d87ae403067b3f",
+      "bytes": 11699
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/spread_67508.txt",
+      "sha256": "07e041deb41278b563c1b1314e7b546a7ef2877cb1acab523d030de7f32ef317",
+      "bytes": 31
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/spread_67509.html",
+      "sha256": "366ab0dedf3f3a7cd044a7f2935c8154608f9b6121ed3e9ed0d87ae403067b3f",
+      "bytes": 11699
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/spread_67509.txt",
+      "sha256": "2095272eafe558673eab88be3f04c05fa68987362f0ca6ef3fd424bd29570edc",
+      "bytes": 6244
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/workflows.html",
+      "sha256": "c80577df158a9da063cfed49dc7a5a1677e078eab07acaa3a3b2da22b22ae6a1",
+      "bytes": 134853
+    },
+    {
+      "path": "data/external_v3/continuation_trombley/workflows.txt",
+      "sha256": "dd8ea86eb509306f27f1ae977d022967010a9f6fa82d0747f3c41453af403516",
+      "bytes": 3753
+    }
+  ],
+  "identity_crosswalk_matches_existing129_author_names_and_entity_ids": true,
+  "article_links_repository_dataset_doi": true
+}

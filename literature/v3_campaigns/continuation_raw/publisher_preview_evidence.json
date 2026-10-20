@@ -1,0 +1,30 @@
+{
+  "retrieved_at": "2026-10-20T16:02:28.807747+00:00",
+  "method": "web search exact title; indexed publisher preview, not direct full text",
+  "query": "\"Machine learning for fatigue life prediction of additively manufactured alloys: Quantifying predictive gain over physics baselines\"",
+  "primary_results": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0142112326004640",
+      "parts_seen": [
+        "highlights",
+        "abstract",
+        "introduction"
+      ]
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0142112326004640",
+      "parts_seen": [
+        "Data and methodology snippet",
+        "ML lift across scopes snippet",
+        "Conclusions snippet",
+        "Code availability snippet"
+      ]
+    }
+  ],
+  "bibliography_verified_separately_by": "wu2026_109943_crossref.json",
+  "direct_fetch_http_status": 403,
+  "elsevier_api_fulltext": false,
+  "fulltext_obtained": false,
+  "evidence_notes": "See prior_art_109943_scope.md; no full-text method claim is made. A search result can expose the indexed primary preview although direct open fails.",
+  "reproduction_warning": "Search engine indexing may change. Original publisher body was not archived. Notes and local raw metadata are hashed; these hashes do not establish a downloaded full paper."
+}

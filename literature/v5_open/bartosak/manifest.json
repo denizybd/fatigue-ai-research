@@ -1,0 +1,128 @@
+{
+  "generated_utc": "2026-10-20T19:46:37.716192+00:00",
+  "file_count": 24,
+  "total_bytes": 1634233,
+  "files": [
+    {
+      "path": "literature/v5_open/bartosak/annotate_recovered_evidence.py",
+      "bytes": 5521,
+      "sha256": "5f1e80fccda9ef3b6bd08e43ee3e0c009908072a847c131ac7cb246581621efb"
+    },
+    {
+      "path": "literature/v5_open/bartosak/bartosak2024_zenodo_metadata.json",
+      "bytes": 6062,
+      "sha256": "a0ad322d33b16c0330302f851b429260614a5389d64a6f62a93178689e9fc952"
+    },
+    {
+      "path": "literature/v5_open/bartosak/bartosak_crossref.json",
+      "bytes": 28232,
+      "sha256": "241c9a7cf22c1c93b8fb1a0bd6b54392dd7a5e987d4dff39b60cdaa0dd12793e"
+    },
+    {
+      "path": "literature/v5_open/bartosak/conference2025_http.pdf",
+      "bytes": 348578,
+      "sha256": "bbd300df77246f23e49f0dfba452135ff4a0bee30a8eb8f8c3c5f80f3eb826ca"
+    },
+    {
+      "path": "literature/v5_open/bartosak/conference2025_http.txt",
+      "bytes": 18966,
+      "sha256": "afebdb04198af7ddc5492db56ebb7bb6dd80dfc2946b16ab875751ff08f8c7d6"
+    },
+    {
+      "path": "literature/v5_open/bartosak/conference_page2.png",
+      "bytes": 365767,
+      "sha256": "3f58c3aed8401a9ae3549d36e53d8a2b4bbd0dbb26d3c397eb41f75e9ce276c5"
+    },
+    {
+      "path": "literature/v5_open/bartosak/conference_page4.png",
+      "bytes": 371630,
+      "sha256": "7f374eba20c6f20ff28b6ec8994c02cbbbdde6245bab505347be1942187c8aaa"
+    },
+    {
+      "path": "literature/v5_open/bartosak/evidence_ledger.json",
+      "bytes": 5012,
+      "sha256": "a74607bd99f56f3b7990489e27913ec8356c856783eb09df1626c0fbb0564be2"
+    },
+    {
+      "path": "literature/v5_open/bartosak/followup_search_snapshots.json",
+      "bytes": 130784,
+      "sha256": "a9a8525580ea37b56400426d4ed99ff4d47d3e37967b64a6288dc792b8444a05"
+    },
+    {
+      "path": "literature/v5_open/bartosak/normalization_receipt.json",
+      "bytes": 1085,
+      "sha256": "003ec614d78eaed2e83b9449ed59885b74078d67ab5586dccf49570c7e345a22"
+    },
+    {
+      "path": "literature/v5_open/bartosak/openalex.json",
+      "bytes": 21448,
+      "sha256": "3a8790c20a0332df42aa07baeb6179f03a9be8b41d59ee66df3271652e66d41e"
+    },
+    {
+      "path": "literature/v5_open/bartosak/primary_search_snapshots.json",
+      "bytes": 161549,
+      "sha256": "fb9e91c796d7dd3285ce816c8839ffb5e07400be2cd9849ebf093f313453844e"
+    },
+    {
+      "path": "literature/v5_open/bartosak/public_access_log.json",
+      "bytes": 4004,
+      "sha256": "34bcd641511f0b96ac6cfb6d612385a49d4aed36f50f9298800e3ebb08200238"
+    },
+    {
+      "path": "literature/v5_open/bartosak/query_ledger.json",
+      "bytes": 2498,
+      "sha256": "bead656cbb9a9dd6e3e0c72b2cead3d30deda3565217e0e6b43ea7bb18fbf00b"
+    },
+    {
+      "path": "literature/v5_open/bartosak/report.md",
+      "bytes": 1927,
+      "sha256": "9feb4bfe9da3abb88ccca9fee80141da50acea88c551375183378f5060842f23"
+    },
+    {
+      "path": "literature/v5_open/bartosak/ssrn_api.xml",
+      "bytes": 1929,
+      "sha256": "3d69a8a53db771cf91cd7311fa9606532fbd0bee5911af60814516dbf31bc4a2"
+    },
+    {
+      "path": "literature/v5_open/bartosak/verification_receipt.json",
+      "bytes": 525,
+      "sha256": "42936ff4d4def1108d370ee5e311ee2d1f434879c1fbbef229fd6757335c6b68"
+    },
+    {
+      "path": "literature/v5_open/bartosak/zenodo_files.json",
+      "bytes": 871,
+      "sha256": "af438d53d6e40ca8bcfade75c7edb4aee3c923c8d7f3816f84b5665f3b01e2fa"
+    },
+    {
+      "path": "literature/v5_open/bartosak/zenodo_latest.json",
+      "bytes": 6062,
+      "sha256": "a0ad322d33b16c0330302f851b429260614a5389d64a6f62a93178689e9fc952"
+    },
+    {
+      "path": "data/external_v5/bartosak/defects200_pretest_CT_evidence.csv",
+      "bytes": 72341,
+      "sha256": "fecf4039420eaccbacd0d457135dd96148c6b7b7319e0e6a2e77e14da3d9c889"
+    },
+    {
+      "path": "data/external_v5/bartosak/raw/bartosak2024_316L_fatigue_and_defects.xlsx",
+      "bytes": 32754,
+      "sha256": "68c52e662d78a65d850bc49af96af54ea556d2ea07ac74fca14e22569c4e06ad"
+    },
+    {
+      "path": "data/external_v5/bartosak/raw/bartosak2024_Dataset.zip",
+      "bytes": 26620,
+      "sha256": "30559dc3a1d2d1fd9a1a8dc2543f6e8a49abc98607f3ad4cb706a7ef303536c9"
+    },
+    {
+      "path": "data/external_v5/bartosak/raw/bartosak2024_read_me.txt",
+      "bytes": 2351,
+      "sha256": "814490e4f12be4c246b053cc5dfbab441889c83c672ea2f732131ae970341a5d"
+    },
+    {
+      "path": "data/external_v5/bartosak/specimen20_evidence_annotated.csv",
+      "bytes": 17717,
+      "sha256": "48142c0912270e3fc2fa1f37edf3c85cbbe4f85179de0fcebe39b4c985112a5c"
+    }
+  ],
+  "excludes_itself": true
+}

@@ -1,0 +1,53 @@
+{
+  "source_doi": "10.1016/j.engfracmech.2025.111136",
+  "publisher_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.xlsx",
+  "author_repository": "https://github.com/spellbookrz/My_PhD_publications_data_and_code",
+  "publisher_and_author_workbook_sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+  "source_sheet": "Case 2 SLM 316l",
+  "source_range": "A2:E45",
+  "rows": 44,
+  "actual_author_specimen_ids": 0,
+  "actual_row_batch_links": 0,
+  "new_independent_campaigns_proven": 0,
+  "reported_manufacturing_batches": 3,
+  "source_family": "Feng_Zhou_108486_127098_111136",
+  "explicit_reuse": "EFM Section1/2 identifies316L data from prior work ref40=108486; ESWA snippet also reuses original316L dataset.",
+  "ranges": {
+    "reported_stress_mpa": {
+      "min": 180.0,
+      "max": 400.0
+    },
+    "reported_Nf_cycles": {
+      "min": 123424,
+      "max": 3296187
+    },
+    "deltaK_reported_mpa_sqrtm": {
+      "min": 1.84,
+      "max": 5.93
+    },
+    "Dmax_reported": {
+      "min": 32.0,
+      "max": 282.0
+    },
+    "L_Leff_reported": {
+      "min": 0.92,
+      "max": 1.23
+    }
+  },
+  "source_discrepancy_flags": 4,
+  "interpretation": "All44 rows are numerical reportedNf with postfracture defect descriptors. The complete original campaign and any omitted runouts are not established.",
+  "row_order": "Stress resets at Excel15/33 are NOT batch labels and are not used to assign groups.",
+  "exclusion": "No fitted curves, generated observations, otheralloy rows, prospective postfracturecovariates or inferredbatchIDs.",
+  "normalization": "Retain original5values and exactExcelcelllocators. Sa=.45*Smax derived separately; alloriginaldiscrepancies retained.",
+  "article_access": "Official RWTH PDF indexed primary methods and publisher abstract consulted; local direct PDFGET returned248byteJS challenge, not PDF; no visualPDFcheck claimed.",
+  "code_access": "Author code and notebook acquired read-only. Notebook is S,T LZ50example depending on absentFatigue_life.csv; not executed and not an exact316Lreproduction.",
+  "license": "ArticleCCBYNCND4; factualnumericextractiononly in packet. Authorrepository has no explicitcode license; originalcode/workbook not redistributed.",
+  "fit_performed": false,
+  "frozen_v4_inputs_changed": false,
+  "outputs": {
+    "original_cell_values44.csv": "1df4e0b0834d5747080aebdc194969e8e39d33c17e0ae0d30722314ab43596f3",
+    "reported_316L_44.csv": "c5c64a29600db20bee4843060c25f394df6cfd5e60842531084c8637028fc4ef",
+    "source_discrepancy_flags.csv": "92231cb89e7f0133c270e08e842251e214e0a54774951eb0d027167b720976b6"
+  },
+  "script_sha256": "83cfd36758e7b3410fbb343cb259e353d2c8f65cfc88dcd1de3f0204548d5a20"
+}

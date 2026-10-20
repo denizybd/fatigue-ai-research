@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "life20": true,
+    "defects200": true,
+    "each_specimen_ten_defects": true,
+    "author_labels_1_to20": true,
+    "physical_build_blank": true,
+    "powderlot_blank": true,
+    "temperature_blank": true,
+    "no_free_SWT_pretest": true,
+    "raw_packet_copy_unchanged": true,
+    "life_SWT_path_unchanged_vs_v4": true
+  },
+  "source_visual_check": "conference pages2and4 inspected; original journal fullpaper not acquired",
+  "no_new_numeric_experiments": true,
+  "no_fits": true
+}

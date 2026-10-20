@@ -1,0 +1,53 @@
+CURRENT TECHNICAL QUESTIONS AND ANSWERS
+20 October 2026 — phase 3/3.1 — no correspondence sent
+
+1. What did the source recovery actually add?
+One additional room-temperature axial fatigue author campaign with exact specimen, physical build and powder identities. The source table has 43 nominal-stress virgin first blocks; 31 specimens in three sufficiently large conditions enter acquisition. They span two builds sharing one powder lot. This is one campaign, not three laboratories. The broader objective of multiple fully matched independent campaigns remains open.
+
+2. How can a stepped-load experiment yield a constant-amplitude observation?
+Only its initial block, before any prior fatigue exposure, qualifies. A specimen failing there contributes its original first-block failure time; one surviving the block contributes right censoring at that actual stop. Every later loading step, later fracture, equivalent life and postfailure defect field is discarded. This does not rehabilitate the previously excluded transformed multi-step records.
+
+3. Why were some aliases excluded rather than choosing their earliest row?
+K2 has three Step0 rows. Other aliases share the same physical plate/position. Collisions were detected across ALL aliases before exclusions, including D0's collision with K2; missing coordinates were also quarantined. We did not assume that alias changes create fresh specimens or correct conflicting coordinates by judgment. The retained 70 physical identities match thesis specimen references and the source build table.
+
+4. Why are 43 source records reduced to 31 in the main acquisition experiment?
+The frozen rule requires at least six records per condition, then fixes max(3,floor(0.4n)) query specimens before constructing a disjoint acquisition pool. Three nominal-stress conditions pass. k=3 and 5 are feasible; k=10 is not. The same queries and pool are used for every model/policy. Ten seeds repeat these physical specimens; they do not create ten campaigns.
+
+5. What is meant by “batch” here?
+A physical build and a powder lot are distinct. The full nominal source has three documented builds and two powder lots. The main acquisition subset has two builds, one common lot and one author campaign. Separate surface treatments are conditions, not manufacturing batches. Common powder alone cannot recover individual build membership in the Trombley cohort.
+
+6. What makes the comparison fair?
+Queries are fixed before acquisition. Four policies choose only among the same actual candidate stresses, with outcome-blind tie ranks. The active policy receives candidate covariates, the planning cap and only previously revealed support outcomes. It cannot use an unselected failure flag or stopping time. Every prediction model receives the same selected support sequence. No unknown-stress outcome is fabricated.
+
+7. What are the six models and the role of RFL?
+Pooled monotone lognormal Basquin; matched target intercept with shared training slope/scatter; hierarchical Basquin; continuous two-slope hierarchical Basquin; local intercept/slope MAP/Laplace; normal-normal RFL. RFL has a specimen-specific positive fatigue limit, a conditional normal log-life distribution above it and probability mass at infinite life below it. Failure and runout likelihoods both include the mixture correctly. This is supported by Pascual–Meeker's distributional options, not a reproduction of Trombley's Weibull RFL. Its scalar target life shift uses the training hierarchical tau as prior SD; it is not a hierarchical RFL population posterior.
+
+8. Does q10 mean “90% safe with 90% confidence”?
+No. q10 is a fitted predictive tenth percentile under the working model. R90C90 adds a distinct confidence requirement, and uncertainty in population parameters is omitted here. An RFL q10 may even be infinite when its finite-failure mass is below 0.1; infinity is reported, not clipped. Neither successful optimization nor nominal quantile labeling proves coverage under a new source.
+
+9. How is reliability evaluated with runouts?
+For a failure, whether the proposed lower life exceeds the observed failure time is known. For a runout, later failure time is unknown. Averaging event×1(L>y) and 1(L>y) gives lower/upper empirical risk identification limits, with unavailable predictions handled conservatively. Paired risk-change limits use the two bounds' ordering for the SAME censored specimen. These identification limits are not confidence intervals and do not include digitization or undiscovered reuse uncertainty.
+
+10. What is the strongest positive finding, and what prevents a reliability claim?
+At k=3, high stress versus random raises proposed lower-life utility by 1.336× for hierarchical Basquin and 1.085× for RFL, while observed support exposure falls by 7.5%. The paired true-risk-change identification upper limits remain +26.11 and +6.67 percentage points. Thus longer proposed life and fewer cycles do not rule out a material risk increase. One author campaign cannot support campaign-bootstrap confidence intervals; missing-interval gates are not evaluable, rather than scientific proof that every policy failed.
+
+11. Why are there two cycle caps?
+10^7 cycles is the frozen primary planning cap, and 10^6 the prespecified sensitivity. Mérot first-block survivors actually stopped at 10^6. Earlier censors stay at their actual stops in both runs. The 10^6 scenario is more source-matched, but was not retrospectively promoted to replace the frozen primary. Static policies and their predictions/costs agree across caps; the active policy can change because its expected-information calculation uses the assumed planning horizon.
+
+12. Is high-stress or active selection now the best method?
+No general ranking is established. The earlier Tomaszewski/Diller multistress subset lacks certified individual build lineage and shows hierarchical benefit but an RFL life-utility reversal for high stress. Its roughly 70% cycle reduction is cohort-specific; the identity-qualified recovery gives only 7.5%. The active criterion is a straight-Basquin local approximation shared by all predictors, not an optimizer tailored to RFL. Existing information-based test planning is prior art.
+
+13. Why are Dastgerdi and Trombley not counted as the missing second campaign?
+Dastgerdi's six uninterrupted named specimens have a source-backed common physical build, but test temperature is unstated; the related source family is excluded from training and it remains a separate pilot. Trombley was previously examined, has a different ultrasonic crack-related endpoint and lacks individual mapping to its four stated builds even after the public dissertation audit. Neither supplies the required new, matched independent room-temperature confirmation.
+
+14. Was the original Centola study disproved or its BNN beaten?
+No. Original data/code were not obtained, and original BNN, SWT/risk-volume and Owen R90C90 calculations were not recreated. Eligibility corrections apply to our own public-data cohort. Existing transfer/topology studies motivate the question. Wu et al.'s publisher preview overlaps physics baselines, group splits and target augmentation; full-text novelty comparison remains incomplete. We cannot claim these ideas are new or missing from that paper.
+
+15. What does reproducibility prove here?
+Nineteen synthetic tests, independent arithmetic/split/cost audits and converged RFL receipts support execution correctness. A fresh same-schema replay matches 12 tables exactly. A portable 367-row replay removes only an unused source dependency; scientific values and population fits match, but a cache-signature metadata column changes. A fresh extracted-archive replay also passes. These checks do not establish independent scientific replication, new physical fatigue testing or population coverage.
+
+16. What should happen before using this in engineering design?
+Obtain at least one more independent, room-temperature, specimen/build-traced campaign with unambiguous first exposure and stress/censor definitions. Freeze the next model/policy decision before inspecting its outcomes. Evaluate identical queries with risk, availability, life utility and actual test exposure together. More random seeds on the same campaign cannot replace that evidence. Method feedback can be sought with the current bounded package, but no message may be sent without the human user's explicit authorization.
+
+What does matched-intercept k0 mean?
+It uses the hierarchical population prediction as an explicit common starting reference. The target-only intercept is fitted after supports; for k>0 all-censored support leaves it unidentified. Its versus_k0 contrast must be read against that reference.

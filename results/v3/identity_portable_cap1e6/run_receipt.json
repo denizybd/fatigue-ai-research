@@ -1,0 +1,2317 @@
+{
+  "created_utc": "2026-10-20T16:23:33.869690+00:00",
+  "cap": 1000000.0,
+  "tasks": [
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 0,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample1-1"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample2-3",
+        "dastgerdi2023:sample1-2"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 1,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample1-1",
+        "dastgerdi2023:sample2-2"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample2-3",
+        "dastgerdi2023:sample1-2"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 2,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample2-1"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-1",
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample2-3"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 3,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample2-2"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample2-3",
+        "dastgerdi2023:sample1-1"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 4,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample2-3"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-1",
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample1-2"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 5,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample1-1"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample2-3"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 6,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample1-1",
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample2-3"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample1-3"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 7,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample2-3",
+        "dastgerdi2023:sample2-2"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-1",
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample2-1"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 8,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample1-1",
+        "dastgerdi2023:sample1-3"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample2-3"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "dastgerdi2023_uninterrupted",
+      "campaign_id": "dastgerdi2022_2023_precautionary",
+      "panel": "external_small_temperature_unstated",
+      "identity_gate": "source_backed_single_build_no_author_build_code",
+      "seed": 9,
+      "ks": [
+        0,
+        3
+      ],
+      "query_ids": [
+        "dastgerdi2023:sample2-2",
+        "dastgerdi2023:sample1-3",
+        "dastgerdi2023:sample2-3"
+      ],
+      "pool_ids": [
+        "dastgerdi2023:sample1-2",
+        "dastgerdi2023:sample2-1",
+        "dastgerdi2023:sample1-1"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position34"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position37"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position29"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position18"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position32"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position37"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position32"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position29"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position15"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position25"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position15"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position28"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position32"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position18"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position34"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position7"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position34"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position37",
+        "merot_FS18-019_position7",
+        "merot_FS18-019_position35"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position41",
+        "merot_FS18-019_position32",
+        "merot_FS18-019_position18",
+        "merot_FS18-019_position37"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position15",
+        "merot_FS18-019_position28",
+        "merot_FS18-019_position25",
+        "merot_FS18-019_position35",
+        "merot_FS18-019_position29",
+        "merot_FS18-019_position11",
+        "merot_FS18-019_position34",
+        "merot_FS18-019_position7"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position10"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position31",
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position17"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position10"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position31",
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position17"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position10",
+        "merot_FS18-019_position40"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position17",
+        "merot_FS18-019_position31"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position40"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position10",
+        "merot_FS18-019_position17",
+        "merot_FS18-019_position31"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position17"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position10",
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position31"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position31",
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position45"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position10",
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position17",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position13"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position31",
+        "merot_FS18-019_position40"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position10",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position17",
+        "merot_FS18-019_position4"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position17"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position10",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position31"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position31",
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position17",
+        "merot_FS18-019_position10"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position45"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-019_reference_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-019_position45",
+        "merot_FS18-019_position13",
+        "merot_FS18-019_position38",
+        "merot_FS18-019_position17"
+      ],
+      "pool_ids": [
+        "merot_FS18-019_position22",
+        "merot_FS18-019_position4",
+        "merot_FS18-019_position40",
+        "merot_FS18-019_position20",
+        "merot_FS18-019_position31",
+        "merot_FS18-019_position10"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position17"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position30",
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position16"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position30"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position16"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position30"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position19"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position30"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position28"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position28"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position30"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position30"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position7"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position17"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position30"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position39"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position30",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position24"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position28"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position16",
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position19",
+        "merot_FS18-020_position30",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position39"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_precorroded_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_qualified_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position39",
+        "merot_FS18-020_position17",
+        "merot_FS18-020_position16"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position30",
+        "merot_FS18-020_position28",
+        "merot_FS18-020_position7",
+        "merot_FS18-020_position24",
+        "merot_FS18-020_position21",
+        "merot_FS18-020_position19"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 0,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position36",
+        "merot_FS18-020_position1"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position29"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 1,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position11"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position36"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 2,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position1"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position36"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 3,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position42"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position36",
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position1"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 4,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position22"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position36",
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position44"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 5,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position12"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position36",
+        "merot_FS18-020_position22"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 6,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position12"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position36"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 7,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position36"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position42",
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position29"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 8,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position36"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position44",
+        "merot_FS18-020_position42"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    },
+    {
+      "dataset_id": "merot_FS18-020_small_volume_air_Rminus1",
+      "campaign_id": "merot2021_2022_one_author_program",
+      "panel": "external_identity_localstress_firstblock",
+      "identity_gate": "author_sample_plate_position_build_and_powder_crosswalk_verified",
+      "seed": 9,
+      "ks": [
+        0,
+        3,
+        5
+      ],
+      "query_ids": [
+        "merot_FS18-020_position12",
+        "merot_FS18-020_position26",
+        "merot_FS18-020_position42"
+      ],
+      "pool_ids": [
+        "merot_FS18-020_position1",
+        "merot_FS18-020_position29",
+        "merot_FS18-020_position22",
+        "merot_FS18-020_position36",
+        "merot_FS18-020_position11",
+        "merot_FS18-020_position44"
+      ],
+      "fit_blocks": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ]
+    }
+  ],
+  "fits": {
+    "6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c": {
+      "training_sources": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ],
+      "n_rows": 283,
+      "signature": "6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c",
+      "code": {
+        "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+        "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+        "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+        "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+      },
+      "fits": {
+        "pooled": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 12,
+          "objective": 1.0506624636208255,
+          "gradient_inf": 2.321926496559601e-08,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "sigma_at_bound": false
+        },
+        "hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 13,
+          "objective": 7.133677256624435,
+          "gradient_inf": 5.60186293740994e-07,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "nodes": 41,
+          "conditions": 28,
+          "sources": 10,
+          "sigma_at_bound": false,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 7.133677256633932,
+              "n_iter": 13
+            },
+            {
+              "success": true,
+              "objective": 7.133677256624435,
+              "n_iter": 13
+            }
+          ]
+        },
+        "curved_hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "n_iter": 20,
+          "objective": 7.066148503134232,
+          "gradient_inf": 6.997289822674446e-06,
+          "knot_training_median_log_stress": 2.3075300375480814,
+          "stress_slopes_log10": [
+            -5.289755391360109,
+            -6.8322468050987775
+          ],
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "ratio_all_missing_train": false,
+          "sigma_at_bound": false,
+          "model": "finite two-slope curve; not a fatigue-limit estimator",
+          "nodes": 41,
+          "conditions": 28,
+          "sources": 10,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 7.066148503217392,
+              "n_iter": 23
+            },
+            {
+              "success": true,
+              "objective": 7.066148503134232,
+              "n_iter": 20
+            }
+          ]
+        },
+        "rfl": {
+          "model": "normal-normal RFL with load-ratio location extension",
+          "success": true,
+          "fallback_active": false,
+          "fallback_model": null,
+          "fallback_rule": "all three fixed training starts fail numerical convergence",
+          "n_train": 283,
+          "n_failures": 236,
+          "n_distinct_stresses": 277,
+          "n_source_blocks": 10,
+          "source_balanced_working_likelihood": true,
+          "regularization": 0.001,
+          "quadrature_nodes": 96,
+          "log_stress_ref_train": 2.2715617665569514,
+          "ratio_center_train": -0.26925795053003904,
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "shift_prior_sd_training_supplied": 0.6304256203620516,
+          "population_uncertainty_integrated": false,
+          "bounds": {
+            "a": [
+              -30.0,
+              50.0
+            ],
+            "b": [
+              -40.0,
+              -0.02
+            ],
+            "c_R": [
+              -20.0,
+              20.0
+            ],
+            "log_sigma": [
+              -3.6888794541139363,
+              1.0986122886681098
+            ],
+            "mu_log10_gamma": [
+              -0.18324665577013155,
+              3.1021143036714234
+            ],
+            "log_tau_log10_gamma": [
+              -3.912023005428146,
+              -0.2876820724517809
+            ]
+          },
+          "bound_hits": [],
+          "identifiability_warning": false,
+          "starts": [
+            {
+              "success": true,
+              "objective": 1.0426104491951151,
+              "n_iter": 24,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.00011954881535456208,
+              "params": [
+                5.719212303302944,
+                -3.2244342876640983,
+                -0.8125048543137471,
+                -0.3862330573118798,
+                -0.18324665577013155,
+                -2.0026747184098213
+              ]
+            },
+            {
+              "success": true,
+              "objective": 1.0022394352178456,
+              "n_iter": 19,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 1.0547118798038795e-05,
+              "params": [
+                5.403594663252316,
+                -2.670153857950608,
+                -0.7459752474652024,
+                -0.6758325080651548,
+                1.2471884117183958,
+                -0.5029457195665266
+              ]
+            },
+            {
+              "success": true,
+              "objective": 1.0426095309622394,
+              "n_iter": 29,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.00011788348081674778,
+              "params": [
+                5.719330905811051,
+                -3.2247921081607616,
+                -0.812502722114693,
+                -0.3862221932730601,
+                -0.18324665577013155,
+                -2.3265284826300827
+              ]
+            }
+          ],
+          "params": {
+            "a": 5.403594663252316,
+            "b": -2.670153857950608,
+            "c_R": -0.7459752474652024,
+            "log_sigma": -0.6758325080651548,
+            "mu_log10_gamma": 1.2471884117183958,
+            "log_tau_log10_gamma": -0.5029457195665266
+          }
+        }
+      },
+      "elapsed_seconds": 1.5839339579997613
+    },
+    "9d2baa273e0cc7d13b5fce80cc6ef451b49b4eee1d5e3e5d92abf9ffd5599ce2": {
+      "training_sources": [
+        "10.1002/adem.202200751",
+        "10.1007/s40964-021-00164-8",
+        "10.1016/j.ijfatigue.2022.107025",
+        "10.1016/j.jmst.2019.08.047",
+        "10.1016/j.msea.2020.140660",
+        "10.1108/13552541311302932",
+        "10.1111/ffe.13077",
+        "10.3390/ma12244203",
+        "10.3390/ma13153293",
+        "10.3390/ma15186278",
+        "cui_linked_campaign"
+      ],
+      "n_rows": 309,
+      "signature": "9d2baa273e0cc7d13b5fce80cc6ef451b49b4eee1d5e3e5d92abf9ffd5599ce2",
+      "code": {
+        "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+        "v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+        "v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+        "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2"
+      },
+      "fits": {
+        "pooled": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 13,
+          "objective": 1.0113204463250034,
+          "gradient_inf": 2.823089294214272e-08,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "sigma_at_bound": false
+        },
+        "hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "n_iter": 14,
+          "objective": 6.701653673319042,
+          "gradient_inf": 8.625716325094679e-07,
+          "ratio_median_train": 0.1,
+          "ratio_all_missing_train": false,
+          "ratio_missing_train": 0,
+          "nodes": 41,
+          "conditions": 32,
+          "sources": 11,
+          "sigma_at_bound": false,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.701653673319042,
+              "n_iter": 14
+            },
+            {
+              "success": true,
+              "objective": 6.701653673377991,
+              "n_iter": 12
+            }
+          ]
+        },
+        "curved_hierarchical": {
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "n_iter": 18,
+          "objective": 6.6260022072283284,
+          "gradient_inf": 3.6645908967208873e-06,
+          "knot_training_median_log_stress": 2.3024436139069997,
+          "stress_slopes_log10": [
+            -5.084575068298081,
+            -6.692172584194894
+          ],
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "ratio_all_missing_train": false,
+          "sigma_at_bound": false,
+          "model": "finite two-slope curve; not a fatigue-limit estimator",
+          "nodes": 41,
+          "conditions": 32,
+          "sources": 11,
+          "tau_at_bound": false,
+          "training_start_receipts": [
+            {
+              "success": true,
+              "objective": 6.6260022072283284,
+              "n_iter": 18
+            },
+            {
+              "success": true,
+              "objective": 6.626002207242776,
+              "n_iter": 16
+            }
+          ]
+        },
+        "rfl": {
+          "model": "normal-normal RFL with load-ratio location extension",
+          "success": true,
+          "fallback_active": false,
+          "fallback_model": null,
+          "fallback_rule": "all three fixed training starts fail numerical convergence",
+          "n_train": 309,
+          "n_failures": 262,
+          "n_distinct_stresses": 303,
+          "n_source_blocks": 11,
+          "source_balanced_working_likelihood": true,
+          "regularization": 0.001,
+          "quadrature_nodes": 96,
+          "log_stress_ref_train": 2.2669799369723047,
+          "ratio_center_train": -0.23818770226537536,
+          "ratio_median_train": 0.1,
+          "ratio_missing_train": 0,
+          "shift_prior_sd_training_supplied": 0.593976135152927,
+          "population_uncertainty_integrated": false,
+          "bounds": {
+            "a": [
+              -30.0,
+              50.0
+            ],
+            "b": [
+              -40.0,
+              -0.02
+            ],
+            "c_R": [
+              -20.0,
+              20.0
+            ],
+            "log_sigma": [
+              -3.6888794541139363,
+              1.0986122886681098
+            ],
+            "mu_log10_gamma": [
+              -0.18324665577013155,
+              3.1021143036714234
+            ],
+            "log_tau_log10_gamma": [
+              -3.912023005428146,
+              -0.2876820724517809
+            ]
+          },
+          "bound_hits": [],
+          "identifiability_warning": false,
+          "starts": [
+            {
+              "success": true,
+              "objective": 1.0026599619847374,
+              "n_iter": 26,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.0001319611087764046,
+              "params": [
+                5.695555057197264,
+                -3.220018771647761,
+                -0.8245932798539705,
+                -0.4335126051390103,
+                -0.18324665577013155,
+                -2.0614237878099084
+              ]
+            },
+            {
+              "success": true,
+              "objective": 0.9583037612384465,
+              "n_iter": 24,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 1.5321077662842434e-06,
+              "params": [
+                5.420568932732961,
+                -2.7364277961922894,
+                -0.7451668142395322,
+                -0.7210739933024999,
+                1.111742408448181,
+                -0.39903790932415006
+              ]
+            },
+            {
+              "success": true,
+              "objective": 1.0026592161958128,
+              "n_iter": 31,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "gradient_inf": 0.00013076206790917831,
+              "params": [
+                5.695649998032939,
+                -3.2201568946964887,
+                -0.8245556775961325,
+                -0.43351062719188604,
+                -0.18324665577013155,
+                -2.301380201138973
+              ]
+            }
+          ],
+          "params": {
+            "a": 5.420568932732961,
+            "b": -2.7364277961922894,
+            "c_R": -0.7451668142395322,
+            "log_sigma": -0.7210739933024999,
+            "mu_log10_gamma": 1.111742408448181,
+            "log_tau_log10_gamma": -0.39903790932415006
+          }
+        }
+      },
+      "elapsed_seconds": 1.6991755830003967
+    }
+  },
+  "splits_sha256": "5051e88d6c2240e8293c52244588939e4881ec230fb202e1e2c2d7f335823b9f",
+  "protocol_sha256": "46808419f7b6bdb1639c66da1d0cb266a58b3ef3b83624666db30f7208c1df1c",
+  "code_sha256": {
+    "v3_package.py": "af7b8afd0f861e0aa550574d0baa85c430411e5926460533349be00cebe80927",
+    "v31_compare.py": "41116dedcab8c061021e7d348b766e5c18c55b34438d1a61fff846df3b5727da",
+    "v3_import.py": "e08af4235b184cd35dad24f0070c4ee441c582fc475a20327116aecb9521db6c",
+    "v3_firstblock_import.py": "3cffdeda1e6c26808f4223a9487a926954129c94fa7a95b76c1e137e19ca51d7",
+    "v3_design.py": "dc6c2c625c1bf98dc5ff82ea5154b76f658ab89d0ce02b57de1ae6b12b0879db",
+    "v3_artifacts.py": "7f86b16c8870b266ea563f7eb30c1859edef7338a94a287c2ca6737e26264b49",
+    "v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2",
+    "v3_multistress.py": "103dbddcc144c3e7a22897587004e9ed81d83671fa4e2f2dbb600b672444f096",
+    "v31_source_check.py": "20810c1f15b0e495402c2e587d2d4a3c25e1c440ae1c1ebd7a7b96f4563586e5",
+    "v3_run.py": "044b4580165dda0bbb0c2929086a25ffd89f4e7680156deb0364f2fa1c0d2791",
+    "v3_prepare.py": "b0630a08ad19d4ac2c744075ed50986cdd8dd0918676ee03646175d7c801ea3b",
+    "v31_artifacts.py": "fa19b4ef5f0b591a67bf35603ef9afae18367daa01d0800abd331c8c0f567ff1",
+    "v31_package.py": "e2713e501e4c3fcc693d61ffc88cbae56f8853e3bbfe3a4784b0a9f09042a24b",
+    "v3_summarize.py": "2fa5242eeb7e9f00f262e2d85cb7f3757a1dea0fb5263467c5cca42d3d2592aa"
+  },
+  "prediction_rows": 11520,
+  "selection_rows": 920
+}

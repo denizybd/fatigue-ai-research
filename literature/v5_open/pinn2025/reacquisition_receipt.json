@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "original_supplement.xlsx",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.xlsx",
+    "bytes": 56398,
+    "sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+    "cached": true
+  },
+  {
+    "filename": "author_Fatigue_data.xlsx",
+    "url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e/2025_EFM_PINN_for_fatigue_life/data/Fatigue_data.xlsx",
+    "bytes": 56398,
+    "sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+    "cached": true
+  }
+]

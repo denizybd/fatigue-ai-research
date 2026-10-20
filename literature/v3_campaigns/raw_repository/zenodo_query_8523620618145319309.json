@@ -1,0 +1,1076 @@
+{
+  "hits": {
+    "hits": [
+      {
+        "created": "2026-07-23T12:38:07.072800+00:00",
+        "modified": "2026-07-23T12:38:07.313581+00:00",
+        "id": 21105346,
+        "conceptrecid": "21105345",
+        "doi": "10.5281/zenodo.21105346",
+        "conceptdoi": "10.5281/zenodo.21105345",
+        "doi_url": "https://doi.org/10.5281/zenodo.21105346",
+        "metadata": {
+          "title": "An integrated approach for detecting and classifying pores and surface topology for fatigue assessment 316L manufactured by powder bed fusion of metals using a laser beam using  \u00b5CT and machine learning algorithms - Data",
+          "doi": "10.5281/zenodo.21105346",
+          "publication_date": "2026-07-01",
+          "description": "<p>Description: This dataset contains micro-computed tomography (&micro;CT) scans and fatigue test data for specimens manufactured from 316L stainless steel using laser-based powder bed fusion of metals (PBF-LB/M). All specimens were scanned by &micro;CT and subsequently subjected to fatigue testing. The dataset links the fatigue test results of each specimen to the corresponding &micro;CT scan, enabling the investigation of relationships between internal manufacturing defects, specimen characteristics, and fatigue performance. The specimen geometry, manufacturing conditions, experimental procedures, and evaluation methods are described in the related journal publication.</p>\n<p>Related Journal publication: Diller J, Siebert L, Winkler M, et al. An integrated approach for detecting and classifying pores and surface topology for fatigue assessment 316L manufactured by powder bed fusion of metals using a laser beam using &mu;CT and machine learning algorithms. Fatigue Fract Eng Mater Struct. 2024;47(9):3392-3407. doi:10.1111/ffe.14375</p>",
+          "access_right": "open",
+          "creators": [
+            {
+              "name": "Blankenhagen, Jakob",
+              "affiliation": "Technical University of Munich",
+              "orcid": "0000-0001-6954-6421"
+            },
+            {
+              "name": "Siebert, Ludwig",
+              "affiliation": null,
+              "orcid": "0009-0009-0535-7280"
+            },
+            {
+              "name": "Winkler, Michael",
+              "affiliation": "Bundesanstalt f\u00fcr Materialforschung und-pr\u00fcfung (BAM)",
+              "orcid": "0000-0003-3719-4817"
+            },
+            {
+              "name": "Diller, Johannes",
+              "affiliation": null,
+              "orcid": "0000-0002-0059-0544"
+            }
+          ],
+          "keywords": [
+            "Additive Manufacturing in Construction",
+            "PBF-LB/M"
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "10.1111/ffe.14375",
+              "relation": "isPublishedIn",
+              "resource_type": "publication-journal",
+              "scheme": "doi"
+            }
+          ],
+          "resource_type": {
+            "title": "Dataset",
+            "type": "dataset"
+          },
+          "alternate_identifiers": [
+            {
+              "identifier": "https://datatagger.ub.tum.de/projects/0391cfc0-c86a-4411-848d-f13463ea1be6/folders/237f412f-0709-4074-9b7f-3ed561da08c9?q=%C2%B5CT"
+            }
+          ],
+          "license": {
+            "id": "cc-by-4.0"
+          },
+          "grants": [
+            {
+              "code": "414265976",
+              "internal_id": "018mejw64::414265976",
+              "funder": {
+                "name": "Deutsche Forschungsgemeinschaft"
+              },
+              "title": "TRR 277: Additive Manufacturing in Construction (AMC)",
+              "url": "https://gepris.dfg.de/gepris/projekt/414265976?context=projekt&task=showDetail&id=414265976&"
+            }
+          ],
+          "communities": [
+            {
+              "id": "trr277-amc"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "index": 0,
+                "is_last": true,
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "21105345"
+                }
+              }
+            ]
+          }
+        },
+        "title": "An integrated approach for detecting and classifying pores and surface topology for fatigue assessment 316L manufactured by powder bed fusion of metals using a laser beam using  \u00b5CT and machine learning algorithms - Data",
+        "links": {
+          "self": "https://zenodo.org/api/records/21105346",
+          "self_html": "https://zenodo.org/records/21105346",
+          "preview_html": "https://zenodo.org/records/21105346?preview=1",
+          "doi": "https://doi.org/10.5281/zenodo.21105346",
+          "self_doi": "https://doi.org/10.5281/zenodo.21105346",
+          "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.21105346",
+          "reserve_doi": "https://zenodo.org/api/records/21105346/draft/pids/doi",
+          "parent": "https://zenodo.org/api/records/21105345",
+          "parent_html": "https://zenodo.org/records/21105345",
+          "parent_doi": "https://doi.org/10.5281/zenodo.21105345",
+          "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.21105345",
+          "self_iiif_manifest": "https://zenodo.org/api/iiif/record:21105346/manifest",
+          "self_iiif_sequence": "https://zenodo.org/api/iiif/record:21105346/sequence/default",
+          "files": "https://zenodo.org/api/records/21105346/files",
+          "media_files": "https://zenodo.org/api/records/21105346/media-files",
+          "latest": "https://zenodo.org/api/records/21105346/versions/latest",
+          "latest_html": "https://zenodo.org/records/21105346/latest",
+          "versions": "https://zenodo.org/api/records/21105346/versions",
+          "draft": "https://zenodo.org/api/records/21105346/draft",
+          "access_links": "https://zenodo.org/api/records/21105346/access/links",
+          "access_grants": "https://zenodo.org/api/records/21105346/access/grants",
+          "access_users": "https://zenodo.org/api/records/21105346/access/users",
+          "access_request": "https://zenodo.org/api/records/21105346/access/request",
+          "access": "https://zenodo.org/api/records/21105346/access",
+          "communities": "https://zenodo.org/api/records/21105346/communities",
+          "communities-suggestions": "https://zenodo.org/api/records/21105346/communities-suggestions",
+          "request_deletion": "https://zenodo.org/api/records/21105346/request-deletion",
+          "file_modification": "https://zenodo.org/api/records/21105346/file-modification",
+          "quota_increase": "https://zenodo.org/api/records/21105346/quota-increase",
+          "requests": "https://zenodo.org/api/records/21105346/requests"
+        },
+        "updated": "2026-07-23T12:38:07.313581+00:00",
+        "recid": "21105346",
+        "revision": 4,
+        "files": [
+          {
+            "id": "77453dd3-2089-4efe-bab6-159e38c441a6",
+            "key": "read me.txt",
+            "size": 2099,
+            "checksum": "md5:988fbec41eb89f289eb630475d2e04a2",
+            "links": {
+              "self": "https://zenodo.org/api/records/21105346/files/read%20me.txt/content"
+            }
+          }
+        ],
+        "swh": null,
+        "owners": [
+          {
+            "id": "1239372"
+          }
+        ],
+        "status": "published",
+        "stats": {
+          "downloads": 82,
+          "unique_downloads": 69,
+          "views": 134,
+          "unique_views": 126,
+          "version_downloads": 82,
+          "version_unique_downloads": 69,
+          "version_unique_views": 126,
+          "version_views": 134
+        },
+        "state": "done",
+        "submitted": true
+      },
+      {
+        "created": "2025-08-28T13:11:30.505492+00:00",
+        "modified": "2025-08-28T13:11:30.934793+00:00",
+        "id": 16984382,
+        "conceptrecid": "16984381",
+        "doi": "10.30841/2708-8731.3.2025.331540",
+        "doi_url": "https://doi.org/10.30841/2708-8731.3.2025.331540",
+        "metadata": {
+          "title": "Peculiarities of the psychoemotional state of pregnant women with congenital heart diseases",
+          "doi": "10.30841/2708-8731.3.2025.331540",
+          "publication_date": "2025-05-23",
+          "description": "<p>Congenital heart disease (CHD) is a pathology which is characterized by heart structure malformations. Pregnant women with CHD require the medical help of a doctor&rsquo;s multidisciplinary team before, during and after pregnancy. The number of pregnant women with CHD has increased over the past decades. Stress is an integral part of the present time, and people with CHD have a higher risk of emotional, behavioral and social problems. Current results indicate the need for a holistic approach focused on pregnant women with CHD during the whole pregnancy.<br>The objective: to analyze the psychoemotional state of pregnant women with CHD.<br>Materials and methods. 180 pregnant women with CHD were examined. The main group (MG) &ndash; 150 women: subgroup A &ndash;<br>30 pregnant women with unoperated heart defects and heart failure (HF)&nbsp;II&ndash;III functional class&nbsp;(FC) of the New York Heart Association (NYHA) and pulmonary hypertension, subgroup B &ndash; 60 pregnant women with operated CHD and HF&nbsp;II&ndash;III&nbsp;FC, subgroup C &ndash; 60 pregnant women with unoperated heart defects and HF&nbsp;I&nbsp;FC. Control group (CG) &ndash; 30 women with a physiological course of pregnancy without cardiac pathology. For psychological testing the observation, conversation, interview and methods for determination of the levels of depression (PHQ-9 test), anxiety (Spilberger test) and the formation of emotional attachment between mother and fetus. Statistical processing of results and graphic design were carried out using Microsoft&nbsp;Excel&nbsp;2016 and Statistica&nbsp;10 for Windows.<br>Results. 74% of women (n&nbsp;=&nbsp;37) in subgroup B had low mood and tearfulness, which can mostly be explained by a long stay in the hospital. Women in the CG were characterized by an increased level of reactive anxiety with a normal level of personal anxiety. In subgroup A 100% of pregnant women had a fear of death during childbirth or after childbirth. 33.3% (n&nbsp;=&nbsp;10) of women in this subgroup practically did not make plans for the future, 66.7% (n&nbsp;=&nbsp;20) of pregnant women were confident that everything will be fine, but constantly hoped for help from the partners. 18% (n&nbsp;=&nbsp;27) of women in the MG had increased depression indicators according to the PHQ-9 test, and 22% (n&nbsp;=&nbsp;33) of pregnant women in this group had borderline values. Having analyzed the pictures of women, we can conclude that there are common features in all the results: anxiety, self-doubt, conflict.<br>Conclusions. The psycho-emotional state of pregnant women with CHD requires both medical and psychological support. In this regard, there is an urgent need to develop a program of psychological support and comprehensive preparation for childbirth for women with this pathology.</p>",
+          "access_right": "open",
+          "creators": [
+            {
+              "name": "Ogorodnyk, K.M.",
+              "affiliation": "SI \"Ukrainian Center of \u041caternity and Childhood of NAMS of Ukraine\", Kyiv, Ukraine",
+              "orcid": "0000-0002-1326-6495"
+            },
+            {
+              "name": "Ogorodnyk, A.O.",
+              "affiliation": "Kyiv Regional Perinatal Center, Kyiv, Ukraine",
+              "orcid": "0000-0002-6871-7935"
+            },
+            {
+              "name": "Husieva, A.Ye.",
+              "affiliation": "SI \"Ukrainian Center of \u041caternity and Childhood of NAMS of Ukraine\", Kyiv, Ukraine",
+              "orcid": "0000-0003-3785-8425"
+            },
+            {
+              "name": "Hrytsai, I.M.",
+              "affiliation": "SI \"Ukrainian Center of \u041caternity and Childhood of NAMS of Ukraine\", Kyiv, Ukraine",
+              "orcid": "0000-0001-6214-9685"
+            }
+          ],
+          "keywords": [
+            "pregnancy",
+            "congenital heart disease",
+            "childbirth",
+            "psychoemotional reactions",
+            "anxiety",
+            "depression",
+            "fear",
+            "heart failure"
+          ],
+          "references": [
+            "American Heart Association. About Congenital Heart Defects [Internet]. American Heart Association; 2023. Available from: https://www.heart.org/en/health-topics/congenital-heart-defects/about-congenital-heart-defects.",
+            "Canobbio MM, Warnes CA, Aboulhosn J, Connolly HM, Khanna A, Koos BJ, et al. Management of Pregnancy in Patients With Complex Congenital Heart Disease: A Scientific Statement for Healthcare Professionals From the American Heart Association. Circulation. 2017;135(8):e50-87. doi: 10.1161/CIR.0000000000000458.",
+            "Bottega N, Malham\u00e9 I, Guo L, Ionescu-Ittu R, Therrien J, Marelli A. Secular trends in pregnancy rates, delivery outcomes, and related health care utilization among women with congenital heart disea-  se. Congenit Heart Dis. 2019;14(5):735-44. doi: 10.1111/chd.12811.",
+            "Van Hagen IM, Roos-Hesselink JW. Pregnancy in congenital heart disease: risk prediction and counselling. Heart. 2020;106(23):1853-61. doi: 10.1136/heartjnl-2019-314702.",
+            "Perry H, Lehmann H, Mantovani E, Thilaganathan B, Khalil A. Are maternal hemodynamic indices markers of fetal growth restriction in pregnancies with a small-for-gestational-age fetus? Ultrasound Obstet Gynecol. 2020;55(2):210-16. doi: 10.1002/uog.20419.",
+            "Vinayagam D, Thilaganathan B, Stirrup O, Mantovani E, Khalil A. Maternal hemodynamics in normal pregnancy: reference ranges and role of maternal characteristics. Ultrasound Obstet Gynecol. 2018;51(5):665-71. doi: 10.1002/uog.17504.",
+            "Phillips RA, Ma Z, Kong B, Gao L. Maternal Hypertension, Advanced Doppler Haemodynamics and Therapeutic Precision: Principles and Illustrative Cases. Curr Hypertens Rep. 2020;22(7):49. doi: 10.1007/s11906-020-01060-2.",
+            "Khairy P, Ouyang DW, Fernandes SM, Lee-Parritz A, Economy KE, Landzberg MJ. Pregnancy outcomes in women with congenital heart disease. Circulation. 2006;113(4):517-24. doi: 10.1161/CIRCULATIONAHA.105.589655.",
+            "Gelson E, Curry R, Gatzoulis MA, Swan L, Lupton M, Steer P, et al. Effect of maternal heart disease on fetal growth. Obstet Gynecol. 2011;117(4):886-91. doi: 10.1097/AOG.0b013e31820cab69.",
+            "Diller GP, Uebing A. Predicting the risks of pregnancy in congenital heart disease: the importance of external validation. Heart. 2014;100(17):1311-2. doi: 10.1136/heartjnl-2014-306060.",
+            "Regitz-Zagrosek V, Roos-Hesselink JW, Bauersachs J, Blomstr\u00f6m-  Lundqvist C, C\u00edfkov\u00e1 R, De BM, et al. 2018 ESC Guidelines for the managment of cardiovascular diseases during pregnancy. Eur Heart J. 2018;39(34):3165-241. doi: 10.1093/eurheartj/ehy340.",
+            "Balci A, Sollie-Szarynska KM, van der Bijl AG, Ruys TP, Mulder BJ, Roos-Hesselink JW, et al. Prospective validation and assessment of cardiovascular and offspring risk models for pregnant women with congenital heart disease. Heart. 2014;100(17):1373-81. doi: 10.1136/heartjnl-2014-305597.",
+            "Biber S, Andonian C, Beckmann J, Ewert P, Freilinger S, Nagdyman N, et al. Current research status on the psychological situation of parents of children with congenital heart disease. Cardiovasc Diagn Ther. 2019;9(2):369-76. doi: 10.21037/cdt.2019.07.07.",
+            "Chou FH, Kuo SH, Wang RH. A longitudinal study of nausea and vomiting, fatigue and perceived stress in, and social support for, pregnant women through the three trimesters. Kaohsiung J Med Sci. 2008;24(6):306-14. doi: 10.1016/S1607-551X(08)70157-8.",
+            "Kovacs AH, Brouillette J, Ibeziako P, Jackson JL, Kasparian NA, Kim YY, et al. Psychological Outcomes and Interventions for Individuals With Congenital Heart Disease: A Scientific Statement From the American Heart Association. Circ Cardiovasc Qual Outcomes. 2022;15(8):e000110. doi: 10.1161/HCQ.0000000000000110.",
+            "Patel I, Dev A. What is prenatal stress? A scoping review of how prenatal stress is defined and measured within the context of food insecurity, housing instability, and immigration in the United States. Womens Health  (Lond). 2023;(19):17455057231191091 doi: 10.1177/17455057231191091.",
+            "Dunkel SC, Rahal D, Ponting C, Julian M, Ramos I, Hobel CJ, et al. Anxiety in pregnancy and length of gestation: Findings from the healthy babies before birth study. Health Psychol. 2022;41(12):894-903. doi: 10.1037/hea0001210.",
+            "Wu Y, De Asis-Cruz J, Limperopoulos C.  Brain structural and functional outcomes in the offspring of women experiencing psychological distress during pregnancy. Mol Psychiatry. 2024;29(7):2223-40. doi: 10.1038/s41380-024-02449-0.",
+            "Syusyuka VG. Level of biogenic amines for pregnant women with psycho-emotional disorders stipulated by anxiety. Reprod Health Woman. 2020;1(1):15-8. doi: 10.30841/2708-8731.1.2020.209330.",
+            "Tumanova L, Kolomiiets O. Features of the psychoemotional state of pregnant women with different types of infertility in history. Reprod Health Woman. 2022;(1):52-8. doi: 10.30841/2708-8731.1.2022.258139.",
+            "Husieva A. Pregnancy and psycho-  emotional stress reactions. Age factor.  Reprod Health Woman. 2023;(4):35-43. doi: 10.30841/2708-8731.4.2023.285762.",
+            "Senobari M, Azmoude E, Mousavi M. The relationship between body mass index, body image, and sexual function: A survey on Iranian pregnant women.  Int J Reprod Biomed. 2019;17(7):503-12. doi: 10.18502/ijrm.v17i7.4862.",
+            "Keramat A, Malary M, Moosazadeh M, Bagherian N, Rajabi-  Shakib MR. Factors influencing stress, anxiety, and depression among Iranian pregnant women: the role of sexual distress and genital self-image. BMC Pregnancy Childbirth. 2021;21(1):87. doi: 10.1186/s12884-021-03575-1.",
+            "Freiberger A, Beckmann J, Freilinger S, Kaemmerer H, Huber M,  Nagdyman N, et al. Psychosocial well-being in postpartum women with congenital heart disease. Cardiovasc Diagn Ther. 2022;12(4):389-99. doi: 10.21037/cdt-22-213.",
+            "Chauhan A, Potdar J. Maternal Mental Health During Pregnancy: A Critical Review. Cureus. 2022;14(10):e30656. doi: 10.7759/cureus.30656."
+          ],
+          "language": "ukr",
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "journal": {
+            "issue": "3",
+            "pages": "90\u201395",
+            "title": "Reproductive Health of Woman"
+          },
+          "license": {
+            "id": "cc-by-4.0"
+          },
+          "relations": {
+            "version": [
+              {
+                "index": 0,
+                "is_last": true,
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "16984381"
+                }
+              }
+            ]
+          },
+          "notes": "<p><a href=\"https://repro-health.com.ua/article/view/331540\">https://repro-health.com.ua/article/view/331540</a></p>"
+        },
+        "title": "Peculiarities of the psychoemotional state of pregnant women with congenital heart diseases",
+        "links": {
+          "self": "https://zenodo.org/api/records/16984382",
+          "self_html": "https://zenodo.org/records/16984382",
+          "preview_html": "https://zenodo.org/records/16984382?preview=1",
+          "doi": "https://doi.org/10.30841/2708-8731.3.2025.331540",
+          "self_doi": "https://doi.org/10.30841/2708-8731.3.2025.331540",
+          "self_doi_html": "https://zenodo.org/doi/10.30841/2708-8731.3.2025.331540",
+          "reserve_doi": "https://zenodo.org/api/records/16984382/draft/pids/doi",
+          "parent": "https://zenodo.org/api/records/16984381",
+          "parent_html": "https://zenodo.org/records/16984381",
+          "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16984382/manifest",
+          "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16984382/sequence/default",
+          "files": "https://zenodo.org/api/records/16984382/files",
+          "media_files": "https://zenodo.org/api/records/16984382/media-files",
+          "thumbnails": {
+            "10": "https://zenodo.org/api/iiif/record:16984382:Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/full/%5E10,/0/default.jpg",
+            "50": "https://zenodo.org/api/iiif/record:16984382:Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/full/%5E50,/0/default.jpg",
+            "100": "https://zenodo.org/api/iiif/record:16984382:Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/full/%5E100,/0/default.jpg",
+            "250": "https://zenodo.org/api/iiif/record:16984382:Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/full/%5E250,/0/default.jpg",
+            "750": "https://zenodo.org/api/iiif/record:16984382:Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/full/%5E750,/0/default.jpg",
+            "1200": "https://zenodo.org/api/iiif/record:16984382:Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/full/%5E1200,/0/default.jpg"
+          },
+          "latest": "https://zenodo.org/api/records/16984382/versions/latest",
+          "latest_html": "https://zenodo.org/records/16984382/latest",
+          "versions": "https://zenodo.org/api/records/16984382/versions",
+          "draft": "https://zenodo.org/api/records/16984382/draft",
+          "access_links": "https://zenodo.org/api/records/16984382/access/links",
+          "access_grants": "https://zenodo.org/api/records/16984382/access/grants",
+          "access_users": "https://zenodo.org/api/records/16984382/access/users",
+          "access_request": "https://zenodo.org/api/records/16984382/access/request",
+          "access": "https://zenodo.org/api/records/16984382/access",
+          "communities": "https://zenodo.org/api/records/16984382/communities",
+          "communities-suggestions": "https://zenodo.org/api/records/16984382/communities-suggestions",
+          "request_deletion": "https://zenodo.org/api/records/16984382/request-deletion",
+          "file_modification": "https://zenodo.org/api/records/16984382/file-modification",
+          "quota_increase": "https://zenodo.org/api/records/16984382/quota-increase",
+          "requests": "https://zenodo.org/api/records/16984382/requests"
+        },
+        "updated": "2025-08-28T13:11:30.934793+00:00",
+        "recid": "16984382",
+        "revision": 4,
+        "files": [
+          {
+            "id": "460cfeea-72df-4e0b-b903-e1df028ce64e",
+            "key": "Peculiarities of the psychoemotional state of pregnant women with congenital heart diseases.pdf",
+            "size": 487063,
+            "checksum": "md5:67225e0de8f4db92b7c10d6615c24045",
+            "links": {
+              "self": "https://zenodo.org/api/records/16984382/files/Peculiarities%20of%20the%20psychoemotional%20state%20of%20pregnant%20women%20with%20congenital%20heart%20diseases.pdf/content"
+            }
+          }
+        ],
+        "swh": null,
+        "owners": [
+          {
+            "id": "122656"
+          }
+        ],
+        "status": "published",
+        "stats": {
+          "downloads": 85,
+          "unique_downloads": 81,
+          "views": 22,
+          "unique_views": 22,
+          "version_downloads": 85,
+          "version_unique_downloads": 81,
+          "version_unique_views": 22,
+          "version_views": 22
+        },
+        "state": "done",
+        "submitted": true
+      },
+      {
+        "created": "2021-09-04T05:01:54.667754+00:00",
+        "modified": "2024-07-18T13:57:37.113529+00:00",
+        "id": 5437111,
+        "conceptrecid": "5437110",
+        "doi": "10.1046/j.1096-3642.2002.00041.x",
+        "doi_url": "https://doi.org/10.1046/j.1096-3642.2002.00041.x",
+        "metadata": {
+          "title": "Locomotion in terrestrial mammals: the influence of body mass, limb length and bone proportions on speed",
+          "doi": "10.1046/j.1096-3642.2002.00041.x",
+          "publication_date": "2002-12-31",
+          "description": "Christiansen, Per (2002): Locomotion in terrestrial mammals: the influence of body mass, limb length and bone proportions on speed. Zoological Journal of the Linnean Society 136 (4): 685-714, DOI: 10.1046/j.1096-3642.2002.00041.x, URL: https://academic.oup.com/zoolinnean/article-lookup/doi/10.1046/j.1096-3642.2002.00041.x",
+          "access_right": "open",
+          "creators": [
+            {
+              "name": "Christiansen, Per",
+              "affiliation": null
+            }
+          ],
+          "keywords": [
+            "Biodiversity",
+            "Taxonomy"
+          ],
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.5437113",
+              "relation": "hasPart",
+              "resource_type": "image-figure",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.5437115",
+              "relation": "hasPart",
+              "resource_type": "image-figure",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.5437117",
+              "relation": "hasPart",
+              "resource_type": "image-figure",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.5437119",
+              "relation": "hasPart",
+              "resource_type": "image-figure",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.5437121",
+              "relation": "hasPart",
+              "resource_type": "image-figure",
+              "scheme": "doi"
+            }
+          ],
+          "references": [
+            "Alexander RMcN. 1976. Estimates of speeds in dinosaurs. Nature 261: 129-130.",
+            "Alexander RMcN. 1977. Allometry of the limbs of antelopes (Bovidae). Journal of Zoology, London 183: 125-146.",
+            "Alexander RMcN. 1983. Animal Mechanics. Oxford: Blackwell Scientific Publications.",
+            "Alexander RMcN. 1984a. Elastic energy stores in running vertebrates. American Zoologist 24: 85-94.",
+            "Alexander RMcN. 1984b. Optimum strengths for bones liable to fatigue and accidental fracture. Journal of Theoretical Biology 109: 621-636.",
+            "Alexander RMcN. 1989a. Dynamics of Dinosaurs and Other Extinct Giants. New York: Columbia University Press.",
+            "Alexander RMcN. 1989b. Optimization and gaits in the locomotion of vertebrates. Physiological Review 69: 1199- 1227.",
+            "Alexander RMcN. 1991. How dinosaurs ran. Scientific American 264: 62-68.",
+            "Alexander RMcN, Dimery NJ, Ker RF. 1985. Elastic structures in the back and their role in galloping in some mammals. Journal of Zoology, London 207: 467-482.",
+            "Alexander RMcN, Jayes AS. 1983. A dynamic similarity hypothesis for the gaits of quadrupedal mammals. Journal of Zoology, London 201: 135-152.",
+            "Alexander RMcN, Langman VA, Jayes AS. 1977. Fast locomotion of some African ungulates. Journal of Zoology, London 183: 291-300.",
+            "Alexander RMcN, Maloiy GMO, Hunter B, Jayes AS, Nturibi J. 1979. Mechanical stresses in fast locomotion of buffalo (Syncerus caffer) and elephant (Loxodonta africana). Journal of Zoology, London 189: 135-144.",
+            "Anderson AE, Wallmo OC. 1984. Mammalian species no. 219: Odocoileus hemionus. New York: The American Society of Mammalogists.",
+            "Anyonge W. 1993. Body mass in large extant and extinct carnivores. Journal of Zoology, London 231: 339-350.",
+            "Archibald JD. 1996. Fossil evidence for a Late Cretaceous origin of 'hoofed' mammals. Science 272: 1150-1153.",
+            "Bailey TN. 1993. The African Leopard. Ecology and Behavior of a Solitary Felid. New York: Columbia University Press.",
+            "Bakker RT. 1983. The deer flees, the wolf pursues: incongruences in predator-prey coevolution. In: Futuyama DI, Slatkin M, eds. Coevolution. Massachusetts: Sinauer Associated Incorporated, 350-382.",
+            "Bekoff M. 1977. Mammalian species no. 79: Canis latrans. New York: The American Society of Mammalogists.",
+            "Belsley DA, Kuh E, Welsch RE. 1980. Regression Diagnostics: Identifying Influential Data and Sources of Collinearity. New York: John Wiley & Sons.",
+            "Bennett DK. 1980. Stripes do not a zebra make, part 1: a cladistic analysis of Equus. Systematic Zoology 29: 272-287.",
+            "Bertram JEA, Biewener AA. 1990. Differential scaling of the long bones in the terrestrial Carnivora and other mammals. Journal of Morphology 204: 157-169.",
+            "Biewener AA. 1983. Allometry of quadrupedal locomotion: The scaling of duty factor, bone curvature and limb orientation to body size. Journal of Experimental Biology 105: 147- 171.",
+            "Biewener AA. 1989a. Scaling body support in mammals: limb posture and muscle mechanics. Science 245: 45-48.",
+            "Biewener AA. 1989b. Mammalian terrestrial locomotion and size. Mechanical design principles define limits. Bioscience 39: 776-783.",
+            "Biewener AA. 1990. Biomechanics of mammalian terrestrial locomotion. Science 250: 1097-1103.",
+            "Biewener AA, Baudinette RV. 1995. In vivo muscle force and elastic energy storage during steady-speed hopping in tammar wallabies (Macropus eugenii). Journal of Experimental Biology 198: 1829-1841.",
+            "Biewener AA, Konieczynski DD, Baudinette RV. 1998. In vivo muscle force-length behavior during steady-speed hopping in tammar wallabies. Journal of Experimental Biology 201: 1681-1694.",
+            "Biewener AA, Taylor CR. 1986. Bone strain: a determinant of gait and speed? Journal of Experimental Biology 123: 383- 400.",
+            "Biewener AA, Thomason JJ, Goodship A, Lanyon LE. 1983. Bone stress in the horse forelimb during locomotion at different gaits: a comparison of two experimental methods. Journal of Biomechanics 16: 565-576.",
+            "Bonine KE, Garland T Jr. 1999. Sprint performance of phrynosomatid lizards, measured on a high-speed treadmill, correlates with hind limb length. Journal of Zoology, London 248: 255-265.",
+            "Bou J, Casinos A, Ocana J. 1987. Allometry of the limb long bones of insectivores and rodents. Journal of Morphology 192: 113-123.",
+            "Caro TM. 1994. Cheetahs of the Serengeti Plains. Group Living in an Asocial Species. Chicago: University of Chicago Press.",
+            "Carrano MT. 1998. Locomotion in non-avian dinosaurs: Integrating data from hind limb kinematics, in vivo strains, and bone morphology. Paleobiology 24: 450-469.",
+            "Cavagna GA, Kaneko M. 1977. Mechanical work and efficiency in level walking and running. Journal of Physiology 268: 467-481.",
+            "Christiansen P. 1997. Locomotion in sauropod dinosaurs. GAIA 14: 45-75.",
+            "Christiansen P. 1998. Strength indicator values of theropod long bones, with comments on limb proportions and cursorial potential. GAIA 15: 241-255.",
+            "Christiansen P. 1999a. What size were Arctodus simus and Ursus spelaeus (Carnivora: Ursidae)? Annals Zoologici Fennici 36: 93-102.",
+            "Christiansen P. 1999b. Scaling of the limb long bones to body mass in terrestrial mammals. Journal of Morphology 239: 167-190.",
+            "Christiansen P. 1999c. Scaling of mammalian long bones: small and large mammals compared. Journal of Zoology, London 247: 333-348.",
+            "Christiansen P. 2000. Speed and appendicular anatomy in mammals. 48th Symposium of Vertebrate Palaeontology and Comparative Anatomy: 12. Portsmouth: University of Portsmouth.",
+            "Christiansen P. 2002. Mass allometry of the appendicular skeleton in terrestrial mammals. Journal of Morphology 251: 195-209.",
+            "Christiansen P, Bonde N. 2002. Limb proportions and avian terrestrial locomotion. Journal of Ornithology 143: 356-371.",
+            "Christiansen P, Paul GS. 2001. Limb bone scaling, limb proportions and bone strength in neoceratopsian dinosaurs. GAIA 16: 13-29.",
+            "Coombs WP Jr. 1978. Theoretical aspects of cursorial adaptations in dinosaurs. The Quarterly Review of Biology 53: 393-418.",
+            "Dagg AI. 1971. Mammalian species no. 5: Giraffa camelopardalis. New York: The American Society of Mammalogists.",
+            "Dimery NJ, Alexander RMcN, Ker RF. 1986. Elastic extension of leg tendons in the locomotion of horses (Equus caballus). Journal of Zoology, London 210: 415-425.",
+            "Elliott JP, McTaggart Cowan I, Holling CS. 1977. Prey capture by the African Lion. Canadian Journal of Zoology 55: 1811-1828.",
+            "Feldhamer GA, Farris-Renner KC, Barker CM. 1988. Mammalian species no. 317: Dama dama. New York: The American Society of Mammalogists.",
+            "Felsenstein J. 1985. Phylogenies and the comparative method. American Naturalist 125: 1-15.",
+            "Flynn JJ. 1996. Carnivora phylogeny and the rates of evolution: Morphological, taxic, and molecular. In: Gittleman JL, ed. Carnivore Behavior, Ecology, and Evolution. Ithaca: Cornell University Press, 542-581.",
+            "Flynn JJ, Neff NA, Tedford RH. 1988. Phylogeny of the Carnivora. In: Benton MJ, ed. The Phylogeny and Classification of the Tetrapods. Oxford: Clarendon Press, 73- 116.",
+            "Foote M, Hunter JP, Janis CM, Sepkoski JJ Jr. 1999. Evolutionary and preservational constraints on origins of biologic groups: divergence times of eutherian mammals. Science 283: 1310-1314.",
+            "Fortelius M, Kappelman J. 1993. The largest land mammals ever imagined. Zoological Journal of the Linnean Society 107: 85-101.",
+            "Fritzell EK, Haroldson KJ. 1982. Mammalian species no. 189: Urocyon cineroargenteus. New York: The American Society of Mammalogists.",
+            "Gambaryan PP. 1974. How Mammals Run. New York: John Wiley & Sons.",
+            "Garland TR Jr. 1983. The relation between maximal running speed and body mass in terrestrial mammals. Journal of Zoology, London 199: 157-170.",
+            "Garland T Jr, Harvey PH, Ives AR. 1992. Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41: 18-32.",
+            "Garland T Jr, Ives AR. 2000. Using the past to predict the present: Confidence intervals for regression equations in phylogenetic comparative methods. American Naturalist 155: 346-364.",
+            "Garland T Jr, Janis CM. 1993. Does metatarsal/femur ratio predict the maximal running speed in cursorial mammals? Journal of Zoology, London 229: 133-151.",
+            "Garland T Jr, Midford PE, Ives AR. 1999. An introduction to phylogenetically based statistical methods, with a new method for confidence intervals on ancestral states. American Zoologist 39: 374-388.",
+            "Garrutt VE, Nikolskaja VN. 1988. Uber das Skelett vom Steppenelefanten aus Edersleben. Beitrage zur Heimatsforschung 9: 3-13.",
+            "Geffen A, Mercure A, Girman DJ, MacDonald DW, Wayne RK. 1992. Phylogenetic relationships of the fox-like canids: mitochondrial DNA restriction fragment site and cytochrome b sequence analysis. Journal of Zoology 228: 27- 39.",
+            "Gentry AW, Hooker JJ. 1988. The phylogeny of the Artiodactyla. In: Benton MJ, ed. The Phylogeny and Classification of the Tetrapods. Oxford: Clarendon Press, 235-272.",
+            "Georgiadis NJ, Kat PW, Oketch H. 1990. Allozyme divergence within the Bovidae. Evolution 44: 2135-2149.",
+            "Gheerbrant E, Sudre J, Capetta H. 1996. Oldest proboscidean from the Late Paleocene of Morocco. Journal of Vertebrate Paleontology Supplement 3: 37A.",
+            "Goldspink G, Larson RE, Davies RE. 1970. The immediate energy supply and the cost of maintenance of isometric tension for different muscles in the hamster. Zeitschrift fur Vergleichende Physiologie 66: 389-397.",
+            "Gompper ME. 1995. Mammalian species no. 487: Nasua narica. New York: The American Society of Mammalogists.",
+            "Gonyea WJ. 1976. Adaptive differences in the body proportions of large felids. Acta Anatomica 96: 81-96.",
+            "Grafen A. 1989. The phylogenetic regression. Philosophical Transactions of the Royal Society of London (Series B) 326: 119-157.",
+            "Gregory WD. 1912. Notes on the principles of quadrupedal locomotion and on the mechanism of the limbs in hoofed animals. Annals of the New York Academy of Science 22: 287- 294.",
+            "Groves CP. 1972. Mammalian species no. 8: Ceratotherium simum. New York: The American Society of Mammalogists.",
+            "Groves CP. 1974. Horses, Asses and Zebras in the Wild. Hollywood: Ralph Curtis Books.",
+            "Halstead LB, Halstead J. 1981. Dinosaurs. Dorset: Blandford Press.",
+            "Haltenroth T, Diller H. 1977. Saugetiere Afrikas und Madagaskars. Munich: BLV-Verlagsgesellschaft.",
+            "Harris MA, Steudel K. 1997. Ecological correlates of hindlimb length in the Carnivora. Journal of Zoology, London 241: 381-408.",
+            "Harrison DFN, Denny S. 1985. The possible influence of laryngeal and tracheal size on the running speed of mammals. Acta Otolaryngologica (Stockholm) 99: 229-235.",
+            "Hedges SB, Parker PH, Sibley CG, Kuma S. 1996. Continental breakup and the ordinal diversification of birds and mammals. Nature 281: 226-229.",
+            "Heglund NC, Cavagna GA. 1985. Efficiency of vertebrate locomotory muscles. Journal of Experimental Biology 115: 283-292.",
+            "Heglund NC, Cavagna GA. 1987. Mechanical work, oxygen consumption and efficiency in isolated frog and rat striated muscle. American Journal of Physiology 22: C22-C29.",
+            "Heglund NC, Taylor CR. 1988. Speed, stride frequency and energy cost per stride: How do they change with body size and gait? Journal of Experimental Biology 138: 301-318.",
+            "Heglund NC, Taylor CR, McMahon TA. 1974. Scaling stride frequency and gait to animal size: Mice to horses. Science 186: 1112-1113.",
+            "Hildebrand M. 1959. Motions of the running cheetah and horse. Journal of Mammalogy 40: 481-495.",
+            "Hildebrand M. 1961. Further studies on locomotion of the cheetah. Journal of Mammalogy 42: 84-91.",
+            "Hildebrand M. 1988. Analysis of Vertebrate Structure. New York: John Wiley & Sons.",
+            "Hildebrand M, Hurley JP. 1985. Energy of the oscillating legs of fast-moving cheetah, pronghorn, jackrabbit and elephant. Journal of Morphology 184: 23-31.",
+            "Holtz TR Jr. 1994. The arctometatarsalian pes, an unusual structure of the metatarsus of Cretaceous Theropoda (Dinosauria: Saurischia). Journal of Vertebrate Paleontology 14: 480-519.",
+            "Howell AB. 1944. Speed in Animals. Their Specialization for Running and Leaping. Chicago: University of Chicago Press.",
+            "Hoyt DF, Taylor CR. 1981. Gait and energetics of locomotion in horses. Nature 292: 239-240.",
+            "Hunt RM Jr. 1996. Biogeography of the order Carnivora. In: Gittleman JL, ed. Carnivore Behavior, Ecology, and Evolution. Ithaca: Cornell University Press, 485-541.",
+            "Janis CM. 1982. Evolution of horns in ungulates. Ecology and Paleoecology. Biological Reviews 57: 261-318.",
+            "Janis CM, Scott KM. 1987. The interrelationship of higher ruminant families with special emphasis on the members of the Cervoidea. American Museum Novitates 2893: 1- 85.",
+            "Janis CM, Wilhelm PB. 1993. Were there mammalian pursuit predators in the Tertiary? Dances with wolf avatars. Journal of Mammal Evolution 1: 103-125.",
+            "Johnston IA. 1985. Sustained force development: specializations and variation among the vertebrates. Journal of Experimental Biology 115: 239-251.",
+            "Kielan-Jaworowska Z, Brown TM, Lillegraven JA. 1979. Eutheria. In: Lillegraven JA, Kielan-Jaworowska Z, Clemens WA, eds. Mesozoic Mammals. Berkeley: University of California Press, 221-254.",
+            "Kingdon J. 1982. East African Mammals, Vols 3C & D. New York: Academic Press.",
+            "Kingswood SC, Blank DA. 1996. Mammalian species no. 518: Gazella subgutturosa. New York: The American Society of Mammalogists.",
+            "Kingswood SC, Kumamoto AT. 1997. Mammalian species no. 569: Madoqua kirkii. New York: The American Society of Mammalogists.",
+            "Kurten B. 1967. Pleistocene bears of North America. 2. Genus Arctodus, short-faced bears. Acta Zoologica Fennica 117: 1- 60.",
+            "Lababera M. 1989. Analyzing body size as a factor in ecology and evolution. Annual Review of Ecology and Systematics 20: 97-117.",
+            "Lanave C, Preparata G, Saccone C. 1985. Mammalian genes as molecular clocks? Journal of Molecular Evolution 21: 346-350.",
+            "Madsen O, Scally M, Douady CJ, Kao DJ, DeBry RW, Adkins R, Amrine HM, Stanhope MJ, de Jong WW, Springer MS. 2001. Parallel adaptive radiations in tow major clades of placental mammals. Nature 409: 610- 614.",
+            "Marshall CR. 1990. The fossil record and estimation of divergence times between lineages: maximum divergence times and the importance of reliable phylogenies. Journal of Molecular Evolution 30: 400-408.",
+            "Martins EP, Garland T Jr. 1991. Phylogenetic analysis of the correlated evolution of continuous characters: a simulation study. Evolution 45: 534-557.",
+            "Mayer JJ, Wetzel RM. 1987. Mammalian species no. 293: Tayassu pecari. New York: The American Society of Mammalogists.",
+            "Maynard Smith J, Savage RJG. 1956. Some locomotory adaptations in mammals. Journal of the Linnean Society 42: 603-622.",
+            "McKenna MC, Bell SK. 1998. Classification of Mammals Above the Species Level. New York: Columbia University Press.",
+            "Meagher M. 1986. Mammalian species no. 266: Bison bison. New York: The American Society of Mammalogists.",
+            "Miyamoto MM, Kraus F, Ryder OA. 1990. Phylogeny and evolution of antlered deer determined from mitochondrial DNA sequences. Proceedings of the National Academy of Science 87: 6127-6131.",
+            "Mol D, van Essen H. 1992. De mammoet. Sporen uit de ijstijd. s\u00a2-Gravenhage: Uitgeverij BZZToH, .",
+            "Murphy WJ, Eizirik E, Johnson WE, Zhang AP, Ryder OA, O'Brien SJ. 2001. Molecular phylogenetics and the origins of placental mammals. Nature 409: 614-618.",
+            "Novacek MJ. 1992a. Mammalian phylogeny. Shaking the tree. Nature 356: 121-125.",
+            "Novacek MJ. 1992b. Fossils, topologies, missing data, and the higher level phylogeny of eutherian mammals. Systematic Biology 41: 58-73.",
+            "Novacek MJ, Wyss AR, McKenna MC. 1988. The major groups of eutherian mammals. In: Benton MJ, ed. The Phylogeny and Classification of the Tetrapods. Oxford: Clarendon Press, 31-71.",
+            "Nowak RM. 1991. Walker's Mammals of the World. Baltimore: John Hopkins University Press.",
+            "Osborn HF. 1910. The Age of Mammals in Europe, Asia and North America. New York: MacMillan.",
+            "Padmadisastra S. 1988. Estimating divergence times. Theoretical Population Biology 34: 297-319.",
+            "Paul GS. 1997. Dinosaur models: The good, the bad, and using them to estimate the mass of dinosaurs. In: Wolberg DL, Stump E, Rosenberg GD, eds. DinoFest International. Proceedings. Philadelphia: Academy of Natural Sciences, 129- 154.",
+            "Paul GS, Christiansen P. 2000. Forelimb posture in neoceratopsian dinosaurs: Implications for gait and locomotion. Paleobiology 26: 450-465.",
+            "Penny D, Hasegawa M, Waddell PJ, Hendy MD. 1999. Mammalian evolution: timing and implications from using the LogDeterminant transform for proteins of differing amino acid composition. Systematic Biology 48: 76-93.",
+            "Pennycuick CJ. 1975. On the running of the gnu (Connochaetes taurinus) and other animals. Journal of Experimental Biology 63: 775-799.",
+            "Penzhorn BI. 1988. Mammalian species no. 314: Equus zebra. New York: The American Society of Mammalogists.",
+            "Pridmore PA. 1992. Trunk movements during locomotion in the marsupial Monodelphis domestica (Didelpidae). Journal of Morphology 211: 137-146.",
+            "Prothero DR, Manning EM, Fischer M. 1988. The phylogeny of the ungulates. In: Benton MJ, ed. The Phylogeny and Classification of the Tetrapods. Oxford: Clarendon Press, 201-234.",
+            "von Richter W. 1974. Mammalian species no. 50: Connochaetes gnou. New York: The American Society of Mammalogists.",
+            "Roberts TJ, Marsh RL, Weyand PG, Taylor CR. 1997. Muscular force in running turkeys: the economy of minimizing work. Science 275: 1113-1115.",
+            "Rowe T. 1999. At the root of the mammalian family tree. Nature 398: 283-284.",
+            "Rubin CT, Lanyon LE. 1982. Limb mechanics as a function of speed and gait. Journal of Experimental Biology 101: 187- 211.",
+            "Savage RJG. 1977. Evolution in carnivorous mammals. Palaeontology 20: 237-271.",
+            "Savage DE, Russel DE. 1983. Mammalian Paleofaunas of the World. London: Addison-Wesley Publications.",
+            "Schaller GB. 1968. Hunting behaviour of the Cheetah in the Serengeti National Park in Tanzania. East African Wildlife Journal 6: 95-100.",
+            "Schenkel R. 1966. On sociology and behaviour in Impala (Aepyceros melampus suara Matschie). Zeitschrift fur Saugetierkunde 31: 177-205.",
+            "Sempere AJ, Sokolov VE, Danilkin AA. 1996. Mammalian species no. 538: Capreolus capreolus. New York: The American Society of Mammalogists.",
+            "Seshadri B. 1969. The Twilight of India's Wildlife. London: John Baker.",
+            "Shackleton DM. 1985. Mammalian species no. 230: Ovis canadensis. New York: The American Society of Mammalogists.",
+            "Sharp NCC. 1997. Time running speed of a cheetah (Acinonyx jubatus). Journal of Zoology, London 241: 493-494.",
+            "Shoshani J. 1986. Mammalian phylogeny: comparison of morphological and molecular results. Molecular Biological Evolution 3: 222-242.",
+            "Shoshani J, Lee PC, Sukumar R, Barnett J, de Alwis L, Lahari-Choudhury DK, Luxmoore RA. 1991. The Illustrated Encyclopedia of Elephants. London: Salamander Books Ltd.",
+            "Silva M, Downing JA. 1995. Handbook of Mammalian Body Masses. Boca Raton: CRC Press.",
+            "Simons RS. 1996. Lung morphology of cursorial and noncursorial mammals: lagomorphs as a case study for a pneumatic stabilization hypothesis. Journal of Morphology 230: 299-316.",
+            "Simpson GG. 1945. The principles of classification and a classification of mammals. Bulletin of the American Museum of Natural History 85: 1-350.",
+            "Skinner JD, Louw GN. 1996. The Springbuk Antidorcas Marsupialis (Zimmermann, 1780). Transvaal Museum Monographs no. 10. Pretoria: Transvaal Museum.",
+            "Smith WP. 1991. Mammalian species no. 388: Odocoileus virginianus. New York: The American Society of Mammalogists.",
+            "Sokal RR, Rohlf FJ. 1995. Biometry. New York: W H Freeman & Company.",
+            "Sokolov VE. 1974. Mammalian species no. 38: Saiga tatarica. New York: The American Society of Mammalogists.",
+            "Stephens DW, Krebs JR. 1986. Foraging Theory. Princeton: Princeton University Press.",
+            "Steudel K, Beattie J. 1993. Scaling of cursoriality in mammals. Journal of Morphology 217: 55-63.",
+            "Steudel K, Beattie J. 1995. Does limb length predict the relative energetic cost of locomotion in mammals? Journal of Zoology, London 235: 501-514.",
+            "Strang KT, Steudel K. 1990. Explaining the scaling of transport costs: The role of stride frequency and stride length. Journal of Zoology, London 221: 343-358.",
+            "Tassy P, Shoshani J. 1988. The Tethytheria: elephants and their relatives. In: Benton, MJ, ed. The Phylogeny and Classification of the Tetrapods. Oxford: Clarendon Press, 283- 315.",
+            "Taylor CR. 1985. Force development during sustained locomotion: a determinant of gait, speed and metabolic power. Journal of Experimental Biology 115: 253-262.",
+            "Taylor CR, Heglund NC, Maloiy GMO. 1982. Energetics and mechanics of terrestrial locomotion. I. Metabolic energy consumption as a function of speed and body size in birds and mammals. Journal of Experimental Biology 97: 1- 21.",
+            "Taylor CR, Heglund NC, McMahon TA, Looney TR. 1980. Energetic cost of generating muscular force during running: a comparison of large and small mammals. Journal of Experimental Biology 86: 9-18.",
+            "Thomason JJ. 1985. Estimation of locomotory forces and stresses in the limb bones of recent and extinct equids. Paleobiology 11: 209-220.",
+            "Thulborn RA. 1982. Speeds and gaits of dinosaurs. Palaeogeography, Palaeoclimatology, Palaeoecology 38: 227-256.",
+            "Tucker V. 1970. Energetic cost of locomotion in animals. Comparative Biochemistry and Physiology 34: 841-846.",
+            "Turner A. 1997. The Big Cats and their Fossil Relatives. An Illustrated Guide to Their Evolution and Natural History. New York: Columbia University Press.",
+            "Van Valkenburgh B. 1987. Skeletal indicators of locomotor behavior in living and extinct carnivores. Journal of Vertebrate Paleontology 7: 162-182.",
+            "Wayne RK, O'Brien SJ. 1987. Allozyme divergence within the Canidae. Systematic Zoology 36: 339-355.",
+            "Weyand PG, Sternlight DB, Bellizzi MJ, Wright S. 2000. Faster top running speeds are achieved with greater ground forces not more rapid leg movements. Journal of Applied Physiology 89: 1991-1999.",
+            "Whitehead GK. 1993. The Whitehead Encyclopedia of Deer. Shrewsbury: Swan-Hill Press.",
+            "Wyss AR, Flynn JJ. 1993. A phylogenetic analysis and definition of the Carnivora. In: Szalay FS, Novacek MJ, McKenna MC, eds. Mammal Phylogeny. New York: Springer Verlag, 32-52.",
+            "Yom-Tov Y, Mendelssohn H, Groves CP. 1995. Mammalian species no. 491: Gazella dorcas. New York: The American Society of Mammalogists.",
+            "Young IS, Warren RD, Altringham JD. 1992. Some properties of the mammalian locomotory and respiratory systems in relation to body mass. Journal of Experimental Biology 164: 283-294.",
+            "Zarrugh MY, Todd FN, Ralston JH. 1974. Optimization of energy expenditure during level walking. European Journal of Applied Physiology and Occupational Physiology 33: 293-306."
+          ],
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "journal": {
+            "issue": "4",
+            "pages": "685-714",
+            "title": "Zoological Journal of the Linnean Society",
+            "volume": "136"
+          },
+          "alternate_identifiers": [
+            {
+              "identifier": "urn:lsid:plazi.org:pub:FF70FFC4744C1260FF91FFC0FFEFFFC5"
+            }
+          ],
+          "license": {
+            "id": "cc-by-4.0"
+          },
+          "communities": [
+            {
+              "id": "biosyslit"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "index": 0,
+                "is_last": true,
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "5437110"
+                }
+              }
+            ]
+          }
+        },
+        "title": "Locomotion in terrestrial mammals: the influence of body mass, limb length and bone proportions on speed",
+        "links": {
+          "self": "https://zenodo.org/api/records/5437111",
+          "self_html": "https://zenodo.org/records/5437111",
+          "preview_html": "https://zenodo.org/records/5437111?preview=1",
+          "doi": "https://doi.org/10.1046/j.1096-3642.2002.00041.x",
+          "self_doi": "https://doi.org/10.1046/j.1096-3642.2002.00041.x",
+          "self_doi_html": "https://zenodo.org/doi/10.1046/j.1096-3642.2002.00041.x",
+          "reserve_doi": "https://zenodo.org/api/records/5437111/draft/pids/doi",
+          "parent": "https://zenodo.org/api/records/5437110",
+          "parent_html": "https://zenodo.org/records/5437110",
+          "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5437111/manifest",
+          "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5437111/sequence/default",
+          "files": "https://zenodo.org/api/records/5437111/files",
+          "media_files": "https://zenodo.org/api/records/5437111/media-files",
+          "thumbnails": {
+            "10": "https://zenodo.org/api/iiif/record:5437111:source.pdf/full/%5E10,/0/default.jpg",
+            "50": "https://zenodo.org/api/iiif/record:5437111:source.pdf/full/%5E50,/0/default.jpg",
+            "100": "https://zenodo.org/api/iiif/record:5437111:source.pdf/full/%5E100,/0/default.jpg",
+            "250": "https://zenodo.org/api/iiif/record:5437111:source.pdf/full/%5E250,/0/default.jpg",
+            "750": "https://zenodo.org/api/iiif/record:5437111:source.pdf/full/%5E750,/0/default.jpg",
+            "1200": "https://zenodo.org/api/iiif/record:5437111:source.pdf/full/%5E1200,/0/default.jpg"
+          },
+          "latest": "https://zenodo.org/api/records/5437111/versions/latest",
+          "latest_html": "https://zenodo.org/records/5437111/latest",
+          "versions": "https://zenodo.org/api/records/5437111/versions",
+          "draft": "https://zenodo.org/api/records/5437111/draft",
+          "access_links": "https://zenodo.org/api/records/5437111/access/links",
+          "access_grants": "https://zenodo.org/api/records/5437111/access/grants",
+          "access_users": "https://zenodo.org/api/records/5437111/access/users",
+          "access_request": "https://zenodo.org/api/records/5437111/access/request",
+          "access": "https://zenodo.org/api/records/5437111/access",
+          "communities": "https://zenodo.org/api/records/5437111/communities",
+          "communities-suggestions": "https://zenodo.org/api/records/5437111/communities-suggestions",
+          "request_deletion": "https://zenodo.org/api/records/5437111/request-deletion",
+          "file_modification": "https://zenodo.org/api/records/5437111/file-modification",
+          "quota_increase": "https://zenodo.org/api/records/5437111/quota-increase",
+          "requests": "https://zenodo.org/api/records/5437111/requests"
+        },
+        "updated": "2024-07-18T13:57:37.113529+00:00",
+        "recid": "5437111",
+        "revision": 6,
+        "files": [
+          {
+            "id": "ca4161ac-bb2f-41c6-a15b-331246f472be",
+            "key": "source.pdf",
+            "size": 738569,
+            "checksum": "md5:ff70a2c4744c1260aa91c8c04def7bc5",
+            "links": {
+              "self": "https://zenodo.org/api/records/5437111/files/source.pdf/content"
+            }
+          }
+        ],
+        "swh": null,
+        "owners": [
+          {
+            "id": "1161"
+          }
+        ],
+        "status": "published",
+        "stats": {
+          "downloads": 1101,
+          "unique_downloads": 1083,
+          "views": 134,
+          "unique_views": 128,
+          "version_downloads": 1101,
+          "version_unique_downloads": 1083,
+          "version_unique_views": 128,
+          "version_views": 134
+        },
+        "state": "done",
+        "submitted": true
+      },
+      {
+        "created": "2025-10-30T08:21:30.294340+00:00",
+        "modified": "2025-10-30T08:21:30.617569+00:00",
+        "id": 17481690,
+        "conceptrecid": "17481689",
+        "doi": "10.5281/zenodo.17481690",
+        "conceptdoi": "10.5281/zenodo.17481689",
+        "doi_url": "https://doi.org/10.5281/zenodo.17481690",
+        "metadata": {
+          "title": "Congenital Heart Diseases: Explaining Shunts and the Fallot Complex",
+          "doi": "10.5281/zenodo.17481690",
+          "publication_date": "2025-10-29",
+          "description": "<ul>\n<li>Congenital Heart Diseases: Explaining Shunts and the Fallot Complex&nbsp;</li>\n</ul>\n<p>Author: Abhinav Kumar Sharma Hrishikesh Rathod and Kartikay Dhillon</p>\n<p>Under the Guidance of Abdiraimov Isakender sir</p>\n<p>Abstract</p>\n<p>Background: Congenital heart diseases (CHDs) are the most common type of birth defect, and critical types of them present during the neonatal period or infancy. It is important for medical students across all specialties to be familiar with the embryology, pathophysiology, and clinical significance of common CHDs.</p>\n<p>Objective: This is a broad overview of the three general categories of CHDs: left-to-right shunts (Atrial and Ventricular Septal Defects) and the complex cyanotic lesion, Tetralogy of Fallot. It attempts to bridge foundational knowledge with clinical practice, highlighting the \"why\" of the physical exam findings and management strategies.</p>\n<p>Key Insights: Atrial Septal Defect (ASD) and Ventricular Septal Defect (VSD) are acyanotic defects that initially create left-to-right shunts, leading to right heart volume overload and secondary pulmonary hypertension. In contrast, Tetralogy of Fallot is cyanotic with a right-to-left shunt due to right ventricular outflow tract obstruction. Its clinical course is characterized by hypercyanotic \"tet\" spells. Management ranges from observation in small ASDs to percutaneous or surgical closure of large defects and VSDs, to infant corrective surgery for Tetralogy of Fallot.</p>\n<p>This knowledge of the classic CHD models allows the student to think through any complex heart defect by taking into account the shunting direction, the effects on hemodynamics, and the pressure/resistance relationship. Early recognition and intervention are paramount to preventing chronic complications like Eisenmenger's syndrome and ensuring survival to adulthood.</p>\n<p>1. Introduction</p>\n<p>Congenital heart diseases are a consequence of cardiac embryogenesis mistakes, more precisely between weeks 3-8 of pregnancy. They are present in roughly 1% of live births and contribute significantly to morbidity and mortality in children. For students of medicine, pathophysiologic classification of CHDs&mdash;i.e., whether there is or is not cyanosis and the direction of the shunt&mdash;is a most helpful organizing principle. The most common acyanotic shunts (ASD, VSD) and the ubiquitous cyanotic defect, Tetralogy of Fallot, and its variants will be addressed in this article.</p>\n<p>2. Embryological Basis</p>\n<p>The heart develops from two endocardial tubes coming together to create a primitive heart tube, which then undergoes looping and septation. Key structures for our interests:</p>\n<p>&middot; Atrial Septum: Formed by the septum primum and septum secundum to create the foramen ovale.</p>\n<p>&middot; Ventricular Septum: A muscular part develops up from the apex, and a membranous part closes the final gap. VSDs most commonly occur in the membranous septum.</p>\n<p>&middot; Conotruncal Septum: Divides the primitive truncus arteriosus into pulmonary artery and aorta. Abnormal development of the conotruncus provides the basis for Tetralogy of Fallot.</p>\n<p>3. Acyanotic Congenital Heart Diseases: Left-to-Right Shunts</p>\n<p>These defects allow oxygenated blood to shunt from systemic (left) to pulmonary (right) circulation, resulting in increased pulmonary flow without initial cyanosis. The most significant long-term complication is the onset of pulmonary hypertension.</p>\n<p>3.1. Atrial Septal Defect (ASD)</p>\n<p>An ASD is an interatrial communication. The Ostium Secundum ASD (70%) is the most frequent and occurs in the region of the fossa ovalis.</p>\n<p>Pathophysiology:</p>\n<p>&middot; After birth, left atrial pressure (8-10 mmHg) is higher than that of the right atrium (3-5 mmHg), and thus there is a left-to-right shunt.</p>\n<p>&middot; It leads to volume overload of the right atrium and right ventricle, both of which become enlarged.</p>\n<p>&middot; Increased pulmonary blood flow, but normally low pulmonary vascular resistance for decades.</p>\n<p>Clinical Features:</p>\n<p>&middot; Most often asymptomatic in children. Dyspnea on exertion, fatigue, palpitations may arise in adults.</p>\n<p>&middot; Auscultation: A fixed and wide S2 splitting is the typical finding. A low-pitched mid-systolic (ejection) murmur is heard over the pulmonary area due to increased flow across the pulmonary valve.</p>\n<p>&middot; Complications: Right heart failure, atrial arrhythmias, and, if untreated, Eisenmenger's syndrome (shunt reversal to right-to-left).</p>\n<p>Management:</p>\n<p>&middot; Small defects may close spontaneously. Larger defects or those causing right heart dilation must be closed, either percutaneously with a device or surgically.</p>\n<p>3.2. Ventricular Septal Defect (VSD)</p>\n<p>A VSD is a communication between the ventricles. The most common type is the Perimembranous VSD (80%), in the membranous septum near the aortic valve.</p>\n<p>Pathophysiology:</p>\n<p>&middot; During systole, high-pressure left ventricular blood is shunted to the right ventricle and into pulmonary circulation.</p>\n<p>&middot; Right ventricle volume and pressure overloading and severe left atrial and ventricular volume overloading (as the blood gets returned on the left side via the lungs).</p>\n<p>&middot; The shunt size will depend on the defect size and pulmonary to systemic vascular resistance ratio (PVR/SVR).</p>\n<p>Clinical Features:</p>\n<p>&middot; Presentation is size-dependent. Large VSDs present with heart failure in infancy: tachypnea, poor feeding, repeated pulmonary infections, and failure to thrive.</p>\n<p>&middot; Auscultation: Harsh, loud holosystolic murmur best heard at the left lower sternal border. In the event of a large shunt, mitral diastolic rumble can be heard at the apex.</p>\n<p>&middot; Complications: Congestive heart failure, infective endocarditis, and Eisenmenger's syndrome.</p>\n<p>Management:</p>\n<p>&middot; Small muscular VSDs close spontaneously. Large symptomatic VSDs must be surgically repaired, typically in the initial year of life to prevent pulmonary vascular disease.</p>\n<p>4. Cyanotic Congenital Heart Disease: Tetralogy of Fallot</p>\n<p>The most common cyanotic CHD after infancy is Tetralogy of Fallot (TOF). It is due to a solitary embryological defect: anterior and superior displacement of the infundibular septum. This results in four characteristic features, recalled using the mnemonic PROV:</p>\n<p>1. Pulmonary Stenosis (Right Ventricular Outflow Tract Obstruction): Most significant abnormality deciding severity.</p>\n<p>2. Right Ventricular Hypertrophy: Secondary to the pressure overload due to pulmonary stenosis.</p>\n<p>3. Overriding Aorta: The aorta overrides the VSD and receives blood supply from both ventricles.</p>\n<p>4. Ventricular Septal Defect: Usually a large, non-restrictive defect.</p>\n<p>4.1. Pathophysiology and Clinical Presentation</p>\n<p>The clinical presentation is overshadowed by the severity of right ventricular outflow tract obstruction (RVOTO).</p>\n<p>&middot; Right-to-Left Shunt: The obstructed pulmonary stenosis leads to increased right ventricular pressure. When RV pressure is greater than LV pressure, deoxygenated blood is shunted from the VSD into the aorta, causing cyanosis.</p>\n<p>&middot; Hypercyanotic Spells (\"Tet Spells\"): Acute, potentially life-threatening spells of cyanosis and dyspnea. Triggers are crying, defecation, or feeding. The pathophysiology is sudden increase in RVOTO (infundibular spasm) and/or decrease in SVR, increasing the right-to-left shunting.</p>\n<p>&middot; Physical Exam:</p>\n<p>&nbsp; &middot; Cyanosis and Clubbing (older, unrepaired children).</p>\n<p>&nbsp; &middot; Auscultation: A harsh systolic ejection murmur (crescendo-decrescendo) due to pulmonary stenosis. Significantly, the VSD itself is silent because it is large and non-restrictive (no pressure gradient). During a tet spell, the murmur may become softer or disappear because less blood runs through the stenotic valve.</p>\n<p>4.2. Variants: Triad and Pentad of Fallot</p>\n<p>&middot; Triad of Fallot: Variant which comprises Pulmonary Stenosis, Right Ventricular Hypertrophy, and an Atrial Septal Defect (or Patent Foramen Ovale). It shares the same pathophysiology as TOF but with an atrial-level shunt.</p>\n<p>&middot; Pentad of Fallot: Refers to the classical tetrad with an Atrial Septal Defect or Patent Foramen Ovale.</p>\n<p>4.3. Treatment</p>\n<p>&middot; Medical: Propranolol or atenolol to prevent tet spells by blocking infundibular spasm.</p>\n<p>&middot; Surgical: Cured with definitive repair, typically performed in the first few months of life. It involves 1) VSD closure and 2) RVOTO relief (resection of obstructive muscle and pulmonary valve patching, if necessary).</p>\n<p>5. Diagnostic Tools</p>\n<p>1. Chest X-Ray (CXR):</p>\n<p>&nbsp; &nbsp;&middot; ASD/VSD: Cardiomegaly, dilated pulmonary arteries, increased pulmonary vascular markings.</p>\n<p>&middot; TOF: \"Boot-shaped heart\" (coeur en sabot) due to RVH and an inverted apex, with oligemic (decreased) lung fields.</p>\n<p>2. Electrocardiogram (ECG):</p>\n<p>&nbsp; &nbsp;&middot; ASD: Right axis deviation, partial RBBB pattern (rSR' in V1).</p>\n<p>&nbsp; &nbsp;&middot; VSD: Biventricular hypertrophy.</p>\n<p>&nbsp; &nbsp;&middot; TOF: Right axis deviation, right ventricular hypertrophy.</p>\n<p>3. Echocardiography: Gold standard for diagnosis. Provides absolute anatomical and functional assessment, such as direction of the shunt and pressure gradients.</p>\n<p>4. Cardiac Catheterization: Used in the event of complicated anatomy, to measure pulmonary pressures, or for therapeutic intervention (e.g., device closure of an atrial septal defect).</p>\n<p>6. The Dire Complication: Eisenmenger's Syndrome</p>\n<p>This is an obstructive condition that develops due to a long-standing left-to-right shunt (due to a large ASD, VSD, or PDA) resulting in extensive pulmonary vascular obstructive disease. Pulmonary hypertension that develops becomes greater than the systemic resistance, and the shunt is reversed to right-to-left. The patient develops cyanosis and has a poor long-term prognosis. It is a big reminder of the necessity of early intervention in CHD.</p>\n<p>7. Conclusion</p>\n<p>For the medical student, an understanding of ASD, VSD, and Tetralogy of Fallot forms a cornerstone of clinical cardiology. The distinction between acyanotic and cyanotic lesions relies on the direction of shunting, which in turn relies on the interdependence of pressures and resistances of the heart and pulmonary circulation. From the fixed-split S2 of ASD to the hypercyanotic spell of TOF, clinical presentation is a precise reflection of the hemodynamics. The appreciation of these principles allows a rational and effective management of any congenital heart lesion.</p>\n<p>References</p>\n<p>1. Sadler, T. W. (2018). Langman's Medical Embryology (14th ed.). Wolters Kluwer. (Embryological basis of cardiac defects).</p>\n<p>2. Braunwald, E. (2022). Congenital Heart Disease in the Adult. In Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine (12th ed.). Elsevier. (Extensive pathophysiology and treatment).</p>\n<p>3. Park, M. K. (2021). Park's Pediatric Cardiology for Practitioners (7th ed.). Elsevier. (Timeless clinical observations and diagnostic results).</p>\n<p>4. Van der Linde, D., et al. (2011). Birth prevalence of congenital heart disease worldwide: a systematic review and meta-analysis. Journal of the American College of Cardiology, 58(21), 2241-2247. (Epidemiology of CHD).</p>\n<p>5. Geva, T. (2011). Atrial septal defects. The Lancet, 377(9778), 1770-1781. (In-depth review of ASDs).</p>\n<p>6. Penny, D. J., &amp; Vick, G. W. (2011). Ventricular septal defect. The Lancet, 377(9771), 1103-1112. (In-depth review of VSDs).</p>\n<p>7. Apitz, C., Webb, G. D., &amp; Redington, A. N. (2009). Tetralogy of Fallot. The Lancet, 374(9699), 1462-1471. (Multifaceted review of TOF).</p>\n<p>8. Garson, A., et al. (1993). The science and practice of pediatric cardiology (2nd ed.). Williams &amp; Wilkins. (Original text on clinical presentation).</p>\n<p>9. Brickner, M. E., Hillis, L. D., &amp; Lange, R. A. (2000). Congenital heart disease in adults. New England Journal of Medicine, 342(4), 256-263. (Highlights adult presentation of CHD).</p>\n<p>10. Baumgartner, H., et al. (2020). 2020 ESC Guidelines for the management of adult congenital heart disease. European Heart Journal, 42(6), 563-645. (Current management guidelines).</p>\n<p>11. Warnes, C. A., et al. (2008). ACC/AHA 2008 Guidelines for the Management of Adults with Congenital Heart Disease. Journal of the American College of Cardiology, 52(23), e143-e263. (US landmark guidelines).</p>\n<p>12. Lillehei, C. W., et al. (1955). The first open-heart repairs of ventricular septal defect, atrioventricular communis, and tetralogy of Fallot using extracorporeal circulation. Annals of Thoracic Surgery, 79(2), S-1-S-10. (Surgical historical context).</p>\n<p>13. Stout, K. K., et al. (2019). 2018 AHA/ACC Guideline for the Management of Adults With Congenital Heart Disease. Journal of the American College of Cardiology, 73(12), e81-e192. (Most up-to-date US guidelines).</p>\n<p>14. Marelli, A. J., et al. (2007). Congenital heart disease in the general population: changing prevalence and age distribution. Circulation, 115(2), 163-172. (Evolving epidemiology and survival).</p>\n<p>15. Diller, G. P., &amp; Gatzoulis, M. A. (2007). Pulmonary vascular disease in adults with congenital heart disease. Circulation, 115(8), 1039-1050. (Extensive pathophysiology of Eisenmenger's syndrome).</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+          "access_right": "open",
+          "creators": [
+            {
+              "name": "Abdiraimov Isakender",
+              "affiliation": "Osh State University"
+            },
+            {
+              "name": "Abhinav Kumar Sharma",
+              "affiliation": null
+            },
+            {
+              "name": "Hrishikesh Rathod",
+              "affiliation": null
+            },
+            {
+              "name": "Kartikay Dhillon",
+              "affiliation": null
+            }
+          ],
+          "resource_type": {
+            "title": "Journal article",
+            "type": "publication",
+            "subtype": "article"
+          },
+          "license": {
+            "id": "cc-by-4.0"
+          },
+          "relations": {
+            "version": [
+              {
+                "index": 0,
+                "is_last": true,
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "17481689"
+                }
+              }
+            ]
+          }
+        },
+        "title": "Congenital Heart Diseases: Explaining Shunts and the Fallot Complex",
+        "links": {
+          "self": "https://zenodo.org/api/records/17481690",
+          "self_html": "https://zenodo.org/records/17481690",
+          "preview_html": "https://zenodo.org/records/17481690?preview=1",
+          "doi": "https://doi.org/10.5281/zenodo.17481690",
+          "self_doi": "https://doi.org/10.5281/zenodo.17481690",
+          "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17481690",
+          "reserve_doi": "https://zenodo.org/api/records/17481690/draft/pids/doi",
+          "parent": "https://zenodo.org/api/records/17481689",
+          "parent_html": "https://zenodo.org/records/17481689",
+          "parent_doi": "https://doi.org/10.5281/zenodo.17481689",
+          "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17481689",
+          "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17481690/manifest",
+          "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17481690/sequence/default",
+          "files": "https://zenodo.org/api/records/17481690/files",
+          "media_files": "https://zenodo.org/api/records/17481690/media-files",
+          "latest": "https://zenodo.org/api/records/17481690/versions/latest",
+          "latest_html": "https://zenodo.org/records/17481690/latest",
+          "versions": "https://zenodo.org/api/records/17481690/versions",
+          "draft": "https://zenodo.org/api/records/17481690/draft",
+          "access_links": "https://zenodo.org/api/records/17481690/access/links",
+          "access_grants": "https://zenodo.org/api/records/17481690/access/grants",
+          "access_users": "https://zenodo.org/api/records/17481690/access/users",
+          "access_request": "https://zenodo.org/api/records/17481690/access/request",
+          "access": "https://zenodo.org/api/records/17481690/access",
+          "communities": "https://zenodo.org/api/records/17481690/communities",
+          "communities-suggestions": "https://zenodo.org/api/records/17481690/communities-suggestions",
+          "request_deletion": "https://zenodo.org/api/records/17481690/request-deletion",
+          "file_modification": "https://zenodo.org/api/records/17481690/file-modification",
+          "quota_increase": "https://zenodo.org/api/records/17481690/quota-increase",
+          "requests": "https://zenodo.org/api/records/17481690/requests"
+        },
+        "updated": "2025-10-30T08:21:30.617569+00:00",
+        "recid": "17481690",
+        "revision": 4,
+        "files": [
+          {
+            "id": "265c70fb-4e50-48f1-821e-f2de85b01640",
+            "key": "CHD Article.docx",
+            "size": 20876,
+            "checksum": "md5:584611550690456abeb837897ac5fce7",
+            "links": {
+              "self": "https://zenodo.org/api/records/17481690/files/CHD%20Article.docx/content"
+            }
+          }
+        ],
+        "swh": null,
+        "owners": [
+          {
+            "id": "1284993"
+          }
+        ],
+        "status": "published",
+        "stats": {
+          "downloads": 9,
+          "unique_downloads": 9,
+          "views": 23,
+          "unique_views": 17,
+          "version_downloads": 9,
+          "version_unique_downloads": 9,
+          "version_unique_views": 17,
+          "version_views": 23
+        },
+        "state": "done",
+        "submitted": true
+      }
+    ],
+    "total": 4
+  },
+  "aggregations": {
+    "publication_date": {
+      "buckets": [
+        {
+          "key": "2002",
+          "doc_count": 1,
+          "label": "2002",
+          "is_selected": false
+        },
+        {
+          "key": "2003",
+          "doc_count": 0,
+          "label": "2003",
+          "is_selected": false
+        },
+        {
+          "key": "2004",
+          "doc_count": 0,
+          "label": "2004",
+          "is_selected": false
+        },
+        {
+          "key": "2005",
+          "doc_count": 0,
+          "label": "2005",
+          "is_selected": false
+        },
+        {
+          "key": "2006",
+          "doc_count": 0,
+          "label": "2006",
+          "is_selected": false
+        },
+        {
+          "key": "2007",
+          "doc_count": 0,
+          "label": "2007",
+          "is_selected": false
+        },
+        {
+          "key": "2008",
+          "doc_count": 0,
+          "label": "2008",
+          "is_selected": false
+        },
+        {
+          "key": "2009",
+          "doc_count": 0,
+          "label": "2009",
+          "is_selected": false
+        },
+        {
+          "key": "2010",
+          "doc_count": 0,
+          "label": "2010",
+          "is_selected": false
+        },
+        {
+          "key": "2011",
+          "doc_count": 0,
+          "label": "2011",
+          "is_selected": false
+        },
+        {
+          "key": "2012",
+          "doc_count": 0,
+          "label": "2012",
+          "is_selected": false
+        },
+        {
+          "key": "2013",
+          "doc_count": 0,
+          "label": "2013",
+          "is_selected": false
+        },
+        {
+          "key": "2014",
+          "doc_count": 0,
+          "label": "2014",
+          "is_selected": false
+        },
+        {
+          "key": "2015",
+          "doc_count": 0,
+          "label": "2015",
+          "is_selected": false
+        },
+        {
+          "key": "2016",
+          "doc_count": 0,
+          "label": "2016",
+          "is_selected": false
+        },
+        {
+          "key": "2017",
+          "doc_count": 0,
+          "label": "2017",
+          "is_selected": false
+        },
+        {
+          "key": "2018",
+          "doc_count": 0,
+          "label": "2018",
+          "is_selected": false
+        },
+        {
+          "key": "2019",
+          "doc_count": 0,
+          "label": "2019",
+          "is_selected": false
+        },
+        {
+          "key": "2020",
+          "doc_count": 0,
+          "label": "2020",
+          "is_selected": false
+        },
+        {
+          "key": "2021",
+          "doc_count": 0,
+          "label": "2021",
+          "is_selected": false
+        },
+        {
+          "key": "2022",
+          "doc_count": 0,
+          "label": "2022",
+          "is_selected": false
+        },
+        {
+          "key": "2023",
+          "doc_count": 0,
+          "label": "2023",
+          "is_selected": false
+        },
+        {
+          "key": "2024",
+          "doc_count": 0,
+          "label": "2024",
+          "is_selected": false
+        },
+        {
+          "key": "2025",
+          "doc_count": 2,
+          "label": "2025",
+          "is_selected": false
+        },
+        {
+          "key": "2026",
+          "doc_count": 1,
+          "label": "2026",
+          "is_selected": false
+        }
+      ],
+      "label": "Publication date"
+    },
+    "access_status": {
+      "buckets": [
+        {
+          "key": "open",
+          "doc_count": 4,
+          "label": "Open",
+          "is_selected": false
+        }
+      ],
+      "label": "Access status"
+    },
+    "resource_type": {
+      "buckets": [
+        {
+          "key": "publication",
+          "doc_count": 3,
+          "label": "Publication",
+          "is_selected": false,
+          "inner": {
+            "buckets": [
+              {
+                "key": "publication-article",
+                "doc_count": 3,
+                "label": "Journal article",
+                "is_selected": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "dataset",
+          "doc_count": 1,
+          "label": "Dataset",
+          "is_selected": false,
+          "inner": {
+            "buckets": []
+          }
+        }
+      ],
+      "label": "Resource types"
+    },
+    "subject": {
+      "buckets": [
+        {
+          "key": "Additive Manufacturing in Construction",
+          "doc_count": 1,
+          "label": "Additive Manufacturing in Construction",
+          "is_selected": false
+        },
+        {
+          "key": "Biodiversity",
+          "doc_count": 1,
+          "label": "Biodiversity",
+          "is_selected": false
+        },
+        {
+          "key": "PBF-LB/M",
+          "doc_count": 1,
+          "label": "PBF-LB/M",
+          "is_selected": false
+        },
+        {
+          "key": "Taxonomy",
+          "doc_count": 1,
+          "label": "Taxonomy",
+          "is_selected": false
+        },
+        {
+          "key": "anxiety",
+          "doc_count": 1,
+          "label": "anxiety",
+          "is_selected": false
+        },
+        {
+          "key": "childbirth",
+          "doc_count": 1,
+          "label": "childbirth",
+          "is_selected": false
+        },
+        {
+          "key": "congenital heart disease",
+          "doc_count": 1,
+          "label": "congenital heart disease",
+          "is_selected": false
+        },
+        {
+          "key": "depression",
+          "doc_count": 1,
+          "label": "depression",
+          "is_selected": false
+        },
+        {
+          "key": "fear",
+          "doc_count": 1,
+          "label": "fear",
+          "is_selected": false
+        },
+        {
+          "key": "heart failure",
+          "doc_count": 1,
+          "label": "heart failure",
+          "is_selected": false
+        }
+      ],
+      "label": "Subjects"
+    },
+    "file_type": {
+      "buckets": [
+        {
+          "key": "pdf",
+          "doc_count": 2,
+          "label": "PDF",
+          "is_selected": false
+        },
+        {
+          "key": "docx",
+          "doc_count": 1,
+          "label": "DOCX",
+          "is_selected": false
+        },
+        {
+          "key": "txt",
+          "doc_count": 1,
+          "label": "TXT",
+          "is_selected": false
+        }
+      ],
+      "label": "File type"
+    }
+  },
+  "links": {
+    "self": "https://zenodo.org/api/records?page=1&q=%22fatigue%22+AND+%22Diller%22&size=25&sort=bestmatch"
+  }
+}

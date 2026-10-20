@@ -1,0 +1,78 @@
+{
+  "filename": "AM_V_1am.csv",
+  "fields": [
+    "Total Time (s)",
+    "Cycle Elapsed Time (s)",
+    "Total Cycles",
+    "Elapsed Cycles",
+    "Step",
+    "Total Cycle Count(8800MTB25266 Linear Waveform)",
+    "Position (mm)",
+    "Force (kN)",
+    "Strain 1 (%)",
+    "Stress"
+  ],
+  "count": 768913,
+  "min": {
+    "Total Time (s)": 0.0,
+    "Total Cycles": 1.0,
+    "Total Cycle Count(8800MTB25266 Linear Waveform)": 0.0,
+    "Strain 1 (%)": -1.023772111,
+    "Force (kN)": -9.69146961,
+    "Stress": -487.1463957
+  },
+  "max": {
+    "Total Time (s)": 9249.945,
+    "Total Cycles": 593.0,
+    "Total Cycle Count(8800MTB25266 Linear Waveform)": 592.0,
+    "Strain 1 (%)": 1.026209044,
+    "Force (kN)": 10.40963127,
+    "Stress": 523.2451382
+  },
+  "first": {
+    "Total Time (s)": "0",
+    "Cycle Elapsed Time (s)": "0",
+    "Total Cycles": "1",
+    "Elapsed Cycles": "1",
+    "Step": "1",
+    "Total Cycle Count(8800MTB25266 Linear Waveform)": "0",
+    "Position (mm)": "29.58531978",
+    "Force (kN)": "0.082104829",
+    "Strain 1 (%)": "-0.002944443",
+    "Stress": "4.127038844"
+  },
+  "last": {
+    "Total Time (s)": "9249.945",
+    "Cycle Elapsed Time (s)": "0.015",
+    "Total Cycles": "593",
+    "Elapsed Cycles": "593",
+    "Step": "1",
+    "Total Cycle Count(8800MTB25266 Linear Waveform)": "592",
+    "Position (mm)": "29.69572926",
+    "Force (kN)": "6.862647267",
+    "Strain 1 (%)": "-0.009104325",
+    "Stress": "344.9542758"
+  },
+  "time_delta_mode": [
+    [
+      0.012,
+      754992
+    ],
+    [
+      0.013,
+      1814
+    ],
+    [
+      0.014,
+      1545
+    ],
+    [
+      0.015,
+      1354
+    ],
+    [
+      0.016,
+      1313
+    ]
+  ]
+}

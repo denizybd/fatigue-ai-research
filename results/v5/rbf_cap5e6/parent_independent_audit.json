@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "cap": 5000000.0,
+  "predictions": 44160,
+  "selections": 1200,
+  "tasks": 40,
+  "query_support_budget_groups": 560,
+  "source_family_count": 1,
+  "physical_independence_proven": false,
+  "source_truth_query_and_all_support_exposure_reconstructed": true,
+  "all_models_and_populations_share_supports": true,
+  "all_absolute_metric_cells_reconstructed": 3024,
+  "maximum_absolute_metric_difference": 2.220446049250313e-16,
+  "cost_bounds_and_policy_savings_reconstructed": true,
+  "confidence_gates_explicitly_not_evaluable": true,
+  "input_hashes": {
+    "predictions.csv": "5fc32dff994f75227631ac65be068707193e3cf0a63bb163c0cb0d2c52983090",
+    "selections.csv": "5faa09930979c35c831eeb72094c33db8792a0ab9a89d24ab846dcbad37b2f59",
+    "all_regime_summary.csv": "3afe1f125015e8eb007eed201da7d85d16e819b1243a2326ac60617d1a99935e",
+    "policy_cost_savings_bounds.csv": "18617274bb57fae749bafac50c558c8a7051109aecd2e118df6a52120c4efb82"
+  },
+  "audit_code_sha256": "ee6b4a453e70fcdc9f3588d80786bc3a0b6e31ebcdfb3402670bab0005430244",
+  "limit": "Arithmetic/source consistency; does not prove population validity or a second physical campaign."
+}

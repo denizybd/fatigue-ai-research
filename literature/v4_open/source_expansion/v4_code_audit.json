@@ -1,0 +1,403 @@
+{
+  "audited_utc": "2026-10-20T19:21:32.332337+00:00",
+  "verdict": "PASS for current v4 code and numerical execution; pool exhaustion limits stress-policy informativeness.",
+  "scope": "Independent read-only code and numerical audit after the parent completed the runs. No auditor model fits or model reruns.",
+  "source_sha256": {
+    "src/v4_expansion.py": "e05249182010c1ec0081a0b05f2a88d633a3e2ff000ff120d1ecbe719e3c4fe0",
+    "src/v4_summarize.py": "7edab6c9dc169350210b24b57c420a7218e385a5c14db8c088dbd304f6fae52d",
+    "src/v3_design.py": "dc6c2c625c1bf98dc5ff82ea5154b76f658ab89d0ce02b57de1ae6b12b0879db",
+    "src/v3_summarize.py": "2fa5242eeb7e9f00f262e2d85cb7f3757a1dea0fb5263467c5cca42d3d2592aa",
+    "protocols/v4/frozen_training_expansion.txt": "b97687eb502c1dbeebad563c9b67a4150879a80243fd23e4ed8844a4405f01e5",
+    "data/processed/v4/controlled_expansion/frozen_splits.json": "b75c2fa8002ca9733e06d48555cf635f936b3b959f939cb4b0298c9918223aee"
+  },
+  "source_leakage": {
+    "strict309": {
+      "rows": 309,
+      "conditions": 32,
+      "source_blocks": 11,
+      "target_observation_or_program_overlap": false
+    },
+    "expanded441": {
+      "rows": 441,
+      "conditions": 48,
+      "source_blocks": 13,
+      "target_observation_or_program_overlap": false
+    },
+    "strict_plus_elanges347": {
+      "rows": 347,
+      "conditions": 36,
+      "source_blocks": 12,
+      "target_observation_or_program_overlap": false
+    },
+    "strict_plus_zhang403": {
+      "rows": 403,
+      "conditions": 44,
+      "source_blocks": 12,
+      "target_observation_or_program_overlap": false
+    }
+  },
+  "design": {
+    "eligible_target_rows": 25,
+    "eligible_conditions": 4,
+    "target_author_programs": 1,
+    "query_per_condition": 3,
+    "pool_sizes": {
+      "3": 30,
+      "4": 10
+    },
+    "k": [
+      0,
+      3
+    ],
+    "policy_informativeness_limit": "At k3, three of four conditions fully exhaust the pool; only HT45 (n7) can have a support-set choice. Policy contrasts are not broad stress-selection confirmation.",
+    "selection_outcome_boundary": "The selector receives only row_id, log_stress and load_ratio for candidates and queries. Support outcomes are revealed after selection.",
+    "predictor_query_outcomes": "Allquantilepathwaysinspected;querydesignusesoutcomes=Falseor_xcovariates,supportlikelihoodusesonlyrevealedoutcomes.",
+    "same_sequence_training_regimes": "One A309 hierarchical planner and one shared selection loop. Support sequences and observed costs are identical between four training regimes.",
+    "independence": "One Yankin author program. Repeated seeds are not new campaigns; campaign confidence intervals are unavailable.",
+    "training_estimator": "Source-balanced working likelihood: adding evidence also changes family weights. This is not a matched-size causal effect of diversity."
+  },
+  "small_checks": {
+    "command": ".venv/bin/python -m pytest -q tests/test_v3_design.py",
+    "tests": 6,
+    "passed": 6,
+    "elapsed_seconds": 0.46
+  },
+  "result_checks": {
+    "1e7": {
+      "prediction_rows": 23040,
+      "selection_rows": 480,
+      "tasks": 40,
+      "absolute_summary": {
+        "rows": 1728,
+        "max_abs_mean_error": 5.820766091346741e-11,
+        "errors": [],
+        "all_one_campaign_and_empty_CI": true
+      },
+      "policy_contrasts": {
+        "rows": 2304,
+        "max_abs_mean_error": 5.820766091346741e-11,
+        "errors": [],
+        "all_one_campaign_and_empty_CI": true
+      },
+      "training_contrasts": {
+        "rows": 960,
+        "max_abs_mean_error": 1.3877787807814457e-16,
+        "errors": [],
+        "all_one_campaign_and_empty_CI": true
+      },
+      "query_and_support_equality_across_regimes": true,
+      "support_reveal_and_cap_truncation_verified": true,
+      "max_support_cost_reconstruction_error": 5.820766091346741e-11,
+      "matched_intercept_k0_equals_hierarchical": true,
+      "pooled_is_support_independent": true,
+      "population_fit_diagnostics": [
+        {
+          "regime": "strict309",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 2.823089294214272e-08
+        },
+        {
+          "regime": "strict309",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 8.625716325094679e-07
+        },
+        {
+          "regime": "strict309",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 3.6645908967208873e-06
+        },
+        {
+          "regime": "strict309",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        },
+        {
+          "regime": "expanded441",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 5.02552333499673e-07
+        },
+        {
+          "regime": "expanded441",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 9.408534190624707e-08
+        },
+        {
+          "regime": "expanded441",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 1.2289750297989066e-06
+        },
+        {
+          "regime": "expanded441",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 1.1189747928588845e-08
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 4.7388500289125e-07
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 5.418956289804377e-07
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 1.837375793178886e-08
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 2.2163050961143682e-07
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 3.951675508311048e-06
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        }
+      ],
+      "protocol_splits_and_runtime_code_hashes_match": true
+    },
+    "1e6": {
+      "prediction_rows": 23040,
+      "selection_rows": 480,
+      "tasks": 40,
+      "absolute_summary": {
+        "rows": 1728,
+        "max_abs_mean_error": 5.820766091346741e-11,
+        "errors": [],
+        "all_one_campaign_and_empty_CI": true
+      },
+      "policy_contrasts": {
+        "rows": 2304,
+        "max_abs_mean_error": 5.820766091346741e-11,
+        "errors": [],
+        "all_one_campaign_and_empty_CI": true
+      },
+      "training_contrasts": {
+        "rows": 960,
+        "max_abs_mean_error": 1.3877787807814457e-16,
+        "errors": [],
+        "all_one_campaign_and_empty_CI": true
+      },
+      "query_and_support_equality_across_regimes": true,
+      "support_reveal_and_cap_truncation_verified": true,
+      "max_support_cost_reconstruction_error": 5.820766091346741e-11,
+      "matched_intercept_k0_equals_hierarchical": true,
+      "pooled_is_support_independent": true,
+      "population_fit_diagnostics": [
+        {
+          "regime": "strict309",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 2.823089294214272e-08
+        },
+        {
+          "regime": "strict309",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 8.625716325094679e-07
+        },
+        {
+          "regime": "strict309",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 3.6645908967208873e-06
+        },
+        {
+          "regime": "strict309",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        },
+        {
+          "regime": "expanded441",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 5.02552333499673e-07
+        },
+        {
+          "regime": "expanded441",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 9.408534190624707e-08
+        },
+        {
+          "regime": "expanded441",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 1.2289750297989066e-06
+        },
+        {
+          "regime": "expanded441",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 1.1189747928588845e-08
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 4.7388500289125e-07
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 5.418956289804377e-07
+        },
+        {
+          "regime": "strict_plus_elanges347",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "pooled",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 1.837375793178886e-08
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 2.2163050961143682e-07
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "curved_hierarchical",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": 3.951675508311048e-06
+        },
+        {
+          "regime": "strict_plus_zhang403",
+          "model": "rfl",
+          "success": true,
+          "fallback": false,
+          "bound_hit": false,
+          "gradient_inf": null
+        }
+      ],
+      "protocol_splits_and_runtime_code_hashes_match": true
+    }
+  },
+  "static_policy_cap_comparison": {
+    "rows_compared": 17280,
+    "different_rows": 0
+  },
+  "not_done": [
+    "No model fit",
+    "No changed experiment choices",
+    "No fresh numerical replay;parentreplayremainsseparate",
+    "No physical independence or reliability certification"
+  ],
+  "issues": [
+    {
+      "severity": "design limitation, not a code bug",
+      "issue": "Three of four target conditions exhaust their candidate pools at k3.",
+      "status": "Reported to parent before headline interpretation; parent accepted and froze the separate v4b design from counts."
+    }
+  ],
+  "fit_signatures_identical_between_caps": true
+}

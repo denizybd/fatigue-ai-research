@@ -1,0 +1,22 @@
+{
+  "status": "PASS_BEFORE_FIRST_RBF_RUN",
+  "created_utc": "2026-10-20T19:54:57.826326+00:00",
+  "protocol_sha256": "3dfcb673d47ed201f01eedeea8e60b9e051e978e982eb96619ff386c1e4f91c8",
+  "code_sha256": "ae35cad81bdc81bbb2ac980c2fcf8284194309f660446f2bc0a00aa83e115d7c",
+  "splits_sha256": "f63e5de48a9c60e63cb3a7428ee6ef812e912e88ceab923ae88c666747363394",
+  "checks": {
+    "source67_numeric63_and4censors": true,
+    "source_family_excluded": true,
+    "query_hashes_and_pools_independently_rederived": true,
+    "all40_tasks_checked": true,
+    "covariate_only_selector_static_review": true,
+    "one_selected_support_sequence_reused_by12_predictors": true,
+    "original_query_truth_and_support_only_truncation": true,
+    "primary5e6cost_identifiable": true,
+    "sensitivity1e7cost_bounds": true,
+    "temperature_panels_separate": true,
+    "one_family_gate_explicitly_not_evaluable": true,
+    "prior_source_outcomes_seen_exploratory_label": true
+  },
+  "limits": "As-reported cross-mode pilot; unverified physical virgin/build identity. No new safety or superiority claim authorized by this receipt."
+}

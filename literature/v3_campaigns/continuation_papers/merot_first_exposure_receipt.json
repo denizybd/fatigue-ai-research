@@ -1,0 +1,84 @@
+{
+  "generated_utc": "2026-10-20T16:05:19.316312+00:00",
+  "raw_rows_excluding_units": 262,
+  "author_sample_aliases": 103,
+  "Step0_rows": 105,
+  "unique_Step0_aliases": 103,
+  "physical_collision_groups": {
+    "2:27": [
+      "D5",
+      "I5"
+    ],
+    "2:6": [
+      "E5",
+      "I7"
+    ],
+    "3:23": [
+      "D0",
+      "K2"
+    ],
+    "3:32": [
+      "B5",
+      "E9"
+    ],
+    "3:43": [
+      "C9",
+      "J2"
+    ],
+    "3:6": [
+      "B6",
+      "D7"
+    ],
+    "3:9": [
+      "D4",
+      "E0"
+    ],
+    "4:13": [
+      "F7",
+      "J1"
+    ],
+    "4:16": [
+      "D8",
+      "F2",
+      "J4"
+    ],
+    "4:26": [
+      "F5",
+      "J7"
+    ]
+  },
+  "strict_unique_physical_candidates": 70,
+  "strict_condition_counts": {
+    "Référence air": 16,
+    "Corrodé air": 23,
+    "Référence BS": 11,
+    "Corrodé BS": 7,
+    "Electroérodé air": 4,
+    "Petit volume air": 9
+  },
+  "strict_environment_counts": {
+    "air": 52,
+    "salt_spray_BS": 18
+  },
+  "strict_events": {
+    "0": 35,
+    "1": 35
+  },
+  "strict_by_plate": {
+    "3": 26,
+    "2": 24,
+    "4": 20
+  },
+  "strict_air_condition_plate_counts": {
+    "Référence air|3": 5,
+    "Référence air|2": 10,
+    "Corrodé air|2": 12,
+    "Corrodé air|3": 9,
+    "Corrodé air|4": 2,
+    "Electroérodé air|4": 4,
+    "Référence air|4": 1,
+    "Petit volume air|3": 9
+  },
+  "admitted_primary_rows": 0,
+  "pending": "Physical plateau semantics and primary axial control mode verification. Treat files as candidates, no model fitting."
+}

@@ -1,0 +1,1442 @@
+[
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "random",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 420,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 390,
+    "same_queries": true
+  },
+  {
+    "panel": "source_qualified_expansion_holdout",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 5,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 390,
+    "same_queries": true
+  }
+]

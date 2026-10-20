@@ -1,0 +1,75 @@
+{
+  "status": "Recovered without numerical/model/protocol changes",
+  "recorded_utc": "2026-10-20T19:58:30.617228+00:00",
+  "original_root": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research",
+  "recovered_root": "/Users/deniz2/Desktop/fatigue-ai-research",
+  "move_origin": "External relocation; parent did not initiate relocation",
+  "cap5M_initial_failure": "All40tasks and prediction/selection CSVs completed; finalreceipt digest(PROTOCOL) raised FileNotFoundError for old absolute root",
+  "original_traceback": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/src/v5_rbf.py\", line 262, in <module>\n  File \"/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/src/v5_rbf.py\", line 189, in run\n  File \"/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/src/v3_prepare.py\", line 10, in digest\n  File \"/Users/deniz2/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py\", line 1019, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/deniz2/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/protocols/v5/rbf_design.txt'\ntask1/40 rbf2026_25C_As-built seed0\ntask2/40 rbf2026_25C_As-built seed1\ntask3/40 rbf2026_25C_As-built seed2\ntask4/40 rbf2026_25C_As-built seed3\ntask5/40 rbf2026_25C_As-built seed4\ntask6/40 rbf2026_25C_As-built seed5\ntask7/40 rbf2026_25C_As-built seed6\ntask8/40 rbf2026_25C_As-built seed7\ntask9/40 rbf2026_25C_As-built seed8\ntask10/40 rbf2026_25C_As-built seed9\ntask11/40 rbf2026_25C_HIP seed0\ntask12/40 rbf2026_25C_HIP seed1\ntask13/40 rbf2026_25C_HIP seed2\ntask14/40 rbf2026_25C_HIP seed3\ntask15/40 rbf2026_25C_HIP seed4\ntask16/40 rbf2026_25C_HIP seed5\ntask17/40 rbf2026_25C_HIP seed6\ntask18/40 rbf2026_25C_HIP seed7\ntask19/40 rbf2026_25C_HIP seed8\ntask20/40 rbf2026_25C_HIP seed9\ntask21/40 rbf2026_450C_As-built seed0\ntask22/40 rbf2026_450C_As-built seed1\ntask23/40 rbf2026_450C_As-built seed2\ntask24/40 rbf2026_450C_As-built seed3\ntask25/40 rbf2026_450C_As-built seed4\ntask26/40 rbf2026_450C_As-built seed5\ntask27/40 rbf2026_450C_As-built seed6\ntask28/40 rbf2026_450C_As-built seed7\ntask29/40 rbf2026_450C_As-built seed8\ntask30/40 rbf2026_450C_As-built seed9\ntask31/40 rbf2026_450C_HIP seed0\ntask32/40 rbf2026_450C_HIP seed1\ntask33/40 rbf2026_450C_HIP seed2\ntask34/40 rbf2026_450C_HIP seed3\ntask35/40 rbf2026_450C_HIP seed4\ntask36/40 rbf2026_450C_HIP seed5\ntask37/40",
+  "cap5M_recovery": "New process at Desktop reloaded same40frozen task shards and completed receipt; no model/prediction change",
+  "cap10M": "Original process exited0 with fullreceipt",
+  "frozen_v5_code_sha256": "ae35cad81bdc81bbb2ac980c2fcf8284194309f660446f2bc0a00aa83e115d7c",
+  "frozen_splits_sha256": "f63e5de48a9c60e63cb3a7428ee6ef812e912e88ceab923ae88c666747363394",
+  "completed": {
+    "5e6": {
+      "predictions": 44160,
+      "selections": 1200,
+      "fits": {
+        "strict309": {
+          "signature": "53f333febc11185f1355102b2d67c50f953080c996b0e09c0fa3e8c68c201233",
+          "n_rows": 309,
+          "fit_status": {
+            "pooled": true,
+            "hierarchical": true,
+            "curved_hierarchical": true,
+            "rfl": true
+          },
+          "fallback": null,
+          "fit_elapsed_seconds_original": 1.642127499999333
+        },
+        "expanded441": {
+          "signature": "ecbe203a98fc363344cabd2df58749f0f9d4478edd26d4536ec8489075aea388",
+          "n_rows": 441,
+          "fit_status": {
+            "pooled": true,
+            "hierarchical": true,
+            "curved_hierarchical": true,
+            "rfl": true
+          },
+          "fallback": null,
+          "fit_elapsed_seconds_original": 2.463174707998405
+        }
+      }
+    },
+    "1e7": {
+      "predictions": 44160,
+      "selections": 1200,
+      "fits": {
+        "strict309": {
+          "signature": "53f333febc11185f1355102b2d67c50f953080c996b0e09c0fa3e8c68c201233",
+          "n_rows": 309,
+          "fit_status": {
+            "pooled": true,
+            "hierarchical": true,
+            "curved_hierarchical": true,
+            "rfl": true
+          },
+          "fallback": null,
+          "fit_elapsed_seconds_original": 1.642127499999333
+        },
+        "expanded441": {
+          "signature": "ecbe203a98fc363344cabd2df58749f0f9d4478edd26d4536ec8489075aea388",
+          "n_rows": 441,
+          "fit_status": {
+            "pooled": true,
+            "hierarchical": true,
+            "curved_hierarchical": true,
+            "rfl": true
+          },
+          "fallback": null,
+          "fit_elapsed_seconds_original": 2.463174707998405
+        }
+      }
+    }
+  }
+}

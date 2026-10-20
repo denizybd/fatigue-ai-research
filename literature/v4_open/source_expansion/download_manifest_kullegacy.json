@@ -1,0 +1,38 @@
+[
+  {
+    "name": "elanges_thesis_legacy",
+    "url": "https://lirias2repo.kuleuven.be/handle/123456789/675937",
+    "final_url": "https://lirias2repo.kuleuven.be/handle/123456789/675937",
+    "status": 200,
+    "bytes": 724,
+    "sha256": "143f231a827f42c9a4784eee1419fe16dfd59809f636e218f97d40efed98ab4f",
+    "path": "literature/v4_open/source_expansion/elanges_thesis_legacy.html"
+  },
+  {
+    "name": "elanges2019_retrieve_legacy",
+    "url": "https://lirias2repo.kuleuven.be/retrieve/1ee43236-45c1-4dee-9f39-d2251e9b0b33",
+    "final_url": "https://lirias2repo.kuleuven.be/retrieve/1ee43236-45c1-4dee-9f39-d2251e9b0b33",
+    "status": 200,
+    "bytes": 724,
+    "sha256": "143f231a827f42c9a4784eee1419fe16dfd59809f636e218f97d40efed98ab4f",
+    "path": "literature/v4_open/source_expansion/elanges2019_retrieve_legacy.html"
+  },
+  {
+    "name": "elanges2020_record",
+    "url": "https://lirias.kuleuven.be/3119474",
+    "final_url": "https://kuleuven.limo.libis.be/discovery/search?query=any,contains,LIRIAS3119474&tab=LIRIAS&search_scope=lirias_profile&vid=32KUL_KUL:Lirias&offset=0",
+    "status": 200,
+    "bytes": 4784,
+    "sha256": "830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8",
+    "path": "literature/v4_open/source_expansion/elanges2020_record.html"
+  },
+  {
+    "name": "elanges2022_record",
+    "url": "https://lirias.kuleuven.be/handle/20.500.12942/686212",
+    "final_url": "https://kuleuven.limo.libis.be/discovery/search?query=any,contains,LIRIAS3655570&tab=LIRIAS&search_scope=lirias_profile&vid=32KUL_KUL:Lirias&offset=0",
+    "status": 200,
+    "bytes": 4784,
+    "sha256": "830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8",
+    "path": "literature/v4_open/source_expansion/elanges2022_record.html"
+  }
+]

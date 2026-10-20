@@ -1,0 +1,100 @@
+{
+  "_embedded" : {
+    "bundles" : [ {
+      "uuid" : "8d4ed0e8-9a85-4c39-9935-6f78e8eea9ec",
+      "name" : "ORIGINAL",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "ORIGINAL",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/8d4ed0e8-9a85-4c39-9935-6f78e8eea9ec/item"
+        },
+        "bitstreams" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/8d4ed0e8-9a85-4c39-9935-6f78e8eea9ec/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/8d4ed0e8-9a85-4c39-9935-6f78e8eea9ec/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/8d4ed0e8-9a85-4c39-9935-6f78e8eea9ec"
+        }
+      }
+    }, {
+      "uuid" : "348bf1b6-5589-4f95-bdda-9bd6d033e26d",
+      "name" : "LICENSE",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "LICENSE",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/348bf1b6-5589-4f95-bdda-9bd6d033e26d/item"
+        },
+        "bitstreams" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/348bf1b6-5589-4f95-bdda-9bd6d033e26d/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/348bf1b6-5589-4f95-bdda-9bd6d033e26d/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/348bf1b6-5589-4f95-bdda-9bd6d033e26d"
+        }
+      }
+    }, {
+      "uuid" : "03ebf44a-ce94-45df-b2a1-5adca9aa99f7",
+      "name" : "TEXT",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "TEXT",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/03ebf44a-ce94-45df-b2a1-5adca9aa99f7/item"
+        },
+        "bitstreams" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/03ebf44a-ce94-45df-b2a1-5adca9aa99f7/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/03ebf44a-ce94-45df-b2a1-5adca9aa99f7/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bundles/03ebf44a-ce94-45df-b2a1-5adca9aa99f7"
+        }
+      }
+    } ]
+  },
+  "page" : {
+    "number" : 0,
+    "size" : 20,
+    "totalPages" : 1,
+    "totalElements" : 3
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/bundles"
+    }
+  }
+}

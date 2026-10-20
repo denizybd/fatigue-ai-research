@@ -1,0 +1,42 @@
+[
+  {
+    "name": "rwth_pdf",
+    "url": "https://publications.rwth-aachen.de/record/1012208/files/1012208.pdf",
+    "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='publications.rwth-aachen.de', port=443): Read timed out. (read timeout=12)\"))"
+  },
+  {
+    "name": "rwth_files",
+    "url": "https://publications.rwth-aachen.de/record/1012208/files/?ln=en",
+    "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='publications.rwth-aachen.de', port=443): Read timed out. (read timeout=12)\"))"
+  },
+  {
+    "name": "elsevier_xml",
+    "url": "https://api.elsevier.com/content/article/pii/S0013794425003376?httpAccept=text/xml",
+    "final_url": "https://api.elsevier.com/content/article/pii/S0013794425003376?httpAccept=text/xml",
+    "status": 200,
+    "size": 2056,
+    "sha256": "6357c1420ce27d1ce655dab01f1edd3f598dcdb32da61160e58954d704f6fc20",
+    "content_type": "text/xml;charset=UTF-8",
+    "head": "b'<full-text-retrieval-response xmlns=\"http://www.elsevier.com/xml/svapi/article/dtd\" xmlns:bk=\"http://www.elsevier.com/xml/bk/dtd\" xmlns:cals=\"http://www.elsevier.com/xml/common/cals/dtd\" xmlns:ce=\"http://www.elsevier.com/xml/common/dtd\" xmlns:ja=\"http://www.elsevier.com/xml/ja/dtd\" xmlns:mml=\"http:/'"
+  },
+  {
+    "name": "publisher",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0013794425003376",
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S0013794425003376",
+    "status": 403,
+    "size": 832805,
+    "sha256": "662b7331d3de6ffd5f1bc24eef55780fe7e307bcc59028575d58b239b9131eb7",
+    "content_type": "text/html; charset=UTF-8",
+    "head": "b'<!DOCTYPE html>\\n<html lang=\\'en-us\\'>\\n<head>\\n  <meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\" >\\n  <meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\" >\\n  <meta content=\"1\" name=\"tdm-reservation\" >\\n  <meta content=\"https://www.elsevier.com/tdm/tdmrep-policy.json\" name=\"tdm-policy\" '"
+  },
+  {
+    "name": "cdn_mmc1",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.zip",
+    "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0013794425003376-mmc1.zip",
+    "status": 404,
+    "size": 189,
+    "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+    "content_type": "text/xml",
+    "head": "b'<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><service-error><status><statusCode>NOT FOUND</statusCode><statusText>Attachment/Metadata missing</statusText></status></service-error>'"
+  }
+]

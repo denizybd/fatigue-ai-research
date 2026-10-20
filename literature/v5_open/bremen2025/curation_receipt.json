@@ -1,0 +1,40 @@
+{
+  "status": "PASS for aggregate/method curation; individual life admission not yet qualified",
+  "source_doi": "10.26092/elib/4986",
+  "source_url": "https://media-api.suub.uni-bremen.de/server/api/core/bitstreams/bc5381b1-aece-4712-83d0-a7fe422a8663/content",
+  "source_family_block": "jun_zhang_bremen_145651_4986",
+  "material_scope": "AISI316L only; H13 intentionally excluded",
+  "aggregate_fatigue_strength_rows": 13,
+  "LPBF_aggregate_strength_rows": 12,
+  "distinct_LPBF_conditions_without_nested_subgroups": 10,
+  "conventional_reference_conditions": 1,
+  "unique_author_specimen_IDs_recovered": 0,
+  "specimen_build_or_lot_crosswalks_recovered": 0,
+  "individual_numeric_failure_life_rows_imported": 0,
+  "individual_life_training_rows_added": 0,
+  "source_condition_batch_information": true,
+  "source_fatigue_temperature_explicit": false,
+  "no_raw_supplement_in_original_bundle": true,
+  "no_PDF_attachments": true,
+  "methods": "Load-controlled R=-1 resonance;316L124+/-11Hz;first runout1e7 then higher-stress reloads",
+  "graph_scope": "Visible failure/runout symbols preserve initial status, so no assertion that every graph failure is retested. Pointwise history separation remains to be verified.",
+  "fitted_parameter_scope": "Table8.1 source-fitted fracture-stress distribution parameters, not observed Nf and not reliability confidence bounds",
+  "non_additive_counts": true,
+  "unresolved_source_count_differences": [
+    "CH5_C3_0_AB:Table3.5 fatigue count17;Table8.1No16;Table8.3all20 with exclusions9 for fracture-origin availability.",
+    "CH4_S10_0_batches12:Table8.1No7;Table8.3base9, excluding2 unavailable/tapped-head specimens and allowing1 extra fracture origin.",
+    "CH4_C3_90:Table3.5/Table8.1No19;Table8.3base20 with1excluded.",
+    "CH5_C3_0_AN900:Table8.1No16;Table8.3base20 with4excludedfailures."
+  ],
+  "exclusions_are_not_source_error_allegations": true,
+  "source_pdf_sha256": "2438c2b822cdd3c1cfbc81e7863096a7db0041f0368300f1a25e64a4645ee83a",
+  "output_sha256": {
+    "316L_powder_composition_2.csv": "b22f88113ed22889df27e3d90355efa4d700853d67ee8b3d6cb1be14db71780c",
+    "candidate_SN_figure_inventory_5.csv": "c98936b1fcfa1b16839a6f75c09bdb508a18bde4e0cdb082dabff58f16e25085",
+    "condition_methods_11.csv": "c52050413feff7dac533e39edd10c4a9181af7ca4d75bbc36c8fd6dffe57b287",
+    "paper_thesis_reuse_links.csv": "b7b4652bd1953ff0852749803256ec73a849c93868679d74fde31b814c4d5a75",
+    "table3_5_316L_investigation_counts_13.csv": "81dbfa31089f3a288c60596be8781aa00bace0141829391d985c247a44c6c51c",
+    "table8_1_fatigue_strength_13.csv": "182c5219dbefc7389b84267c7dbe39911bac1dabcb28485ddf12b131dd41f656",
+    "table8_3_316L_status_counts_13.csv": "17ca9d846f42966ae9b1d12181d18cdab5ddd237e5f10950e5856e3fc0ab6e3d"
+  }
+}

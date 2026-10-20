@@ -1,0 +1,43 @@
+{
+  "scope": "Open raw repository expansion; prior gold panel unchanged",
+  "queries": [
+    "site:data.mendeley.com 316L fatigue Shamsaei data",
+    "site:zenodo.org 316L fatigue raw dataset -Diller -Merot -Jambor",
+    "site:dataverse.harvard.edu 316L fatigue",
+    "site:data.nist.gov316L fatigue additive",
+    "site:data.mendeley.com316L fatigue Nima",
+    "site:data.mendeley.com316L fatigue Data for",
+    "site:data.nist.gov fatigue additive",
+    "site:materialscommons.org316L fatigue",
+    "site:data.mendeley.com316L fatigue dataset",
+    "site:data.mendeley.com316L Shrestha",
+    "316L fatigue raw data repository",
+    "316L fatigue Dataverse",
+    "316L fatigue NCAME data available",
+    "site:zenodo.org316L_fatigue_and_defects.xls",
+    "site:zenodo.org108608",
+    "site:zenodo.org316L fatigue Bartosak",
+    "10.1016/j.ijfatigue.2024.108608 temperature",
+    "site:zenodo.org316L fatigue Dataset.zip -12515773 -14763342",
+    "site:figshare.com316L fatigue Data",
+    "site:dataverse.org316L fatigue"
+  ],
+  "structured_query": {
+    "endpoint": "https://zenodo.org/api/records",
+    "q": "316L AND fatigue",
+    "page_size": 25,
+    "pages": 3,
+    "total_returned": 57,
+    "auth": false,
+    "limit_respected": "An initial100/page request returned documented validation400; reduced to public25/page, no authentication attempted."
+  },
+  "prior_acquisitions_excluded_from_new_counts": [
+    "Zenodo7650061",
+    "Zenodo21105346",
+    "Merot6653187",
+    "TrombleyMaterialsCommons",
+    "Figshare33392110",
+    "YinMendeleyh97k6w9vm5"
+  ],
+  "separate_scope": "Strain-control/highT/cyclic-response catalogs are not pooled into the force-controlled HCF panel."
+}

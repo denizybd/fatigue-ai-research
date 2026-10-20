@@ -1,0 +1,962 @@
+[
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "active_query_variance",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "high_stress",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "random",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "curved_hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "hierarchical",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "local_slope",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "matched_intercept",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "pooled",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 0,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_random",
+    "n_pairs": 120,
+    "same_queries": true
+  },
+  {
+    "panel": "new_source_temperature_unstated",
+    "policy": "stress_span",
+    "model": "rfl",
+    "k": 3,
+    "cap": 10000000.0,
+    "comparison": "versus_k0",
+    "n_pairs": 120,
+    "same_queries": true
+  }
+]

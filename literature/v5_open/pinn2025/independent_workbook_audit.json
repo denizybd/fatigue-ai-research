@@ -1,0 +1,781 @@
+{
+  "status": "PASS_WITH_SOURCE_QUALIFICATION_LIMITS",
+  "auditor": "independent child /root/v3_campaign_raw",
+  "input_path": "literature/v5_open/pinn2025/mmc1_xlsx.zip",
+  "input_bytes": 56398,
+  "input_sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+  "access_method": "Read-only ZIP/XML parser and independent openpyxl BytesIO read; no workbook execution or modification",
+  "checks": {
+    "source_bytes_and_sha_match": true,
+    "xlsx_container_valid": true,
+    "twelve_visible_sheets": true,
+    "no_hidden_sheets": true,
+    "no_defined_names": true,
+    "no_comment_parts": true,
+    "no_macros": true,
+    "no_external_data_links": true,
+    "XML_and_openpyxl_all_cell_values_agree": true,
+    "all_sheet_data_numeric_complete": true,
+    "one_explicit316L_sheet44rows": true,
+    "316L_all5columns_numeric_finite": true,
+    "316L_stress_and_Nf_positive": true,
+    "316L_lives_integer_valued": true,
+    "316L_full_rows_unique": true,
+    "316L_SN_pairs_unique": true,
+    "no_formula_cells": true,
+    "total1421_data_rows": true
+  },
+  "workbook_inventory": [
+    {
+      "name": "Case 1 LZ50 steel",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet1.xml",
+      "dimension": "A1:D64",
+      "headers": [
+        "Stress/MPa",
+        "Fatigue life/cycles",
+        "log life",
+        "temperature/K"
+      ],
+      "nonempty_data_rows": 63,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 2 SLM 316l",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet2.xml",
+      "dimension": "A1:E45",
+      "headers": [
+        "Stress(MPa)",
+        "Î”K (MPaâˆšm)",
+        "Dmax",
+        "L/Leff",
+        "Nf"
+      ],
+      "nonempty_data_rows": 44,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 3 7075_T6_ratio",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet3.xml",
+      "dimension": "A1:C134",
+      "headers": [
+        "S/Mpa",
+        "R-ratio",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 133,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 4 Al2024_T4",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet4.xml",
+      "dimension": "A1:D121",
+      "headers": [
+        "σ/Mpa",
+        "R-ratio",
+        "Kt",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 120,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 4 Al7175_T7511",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet5.xml",
+      "dimension": "A1:D267",
+      "headers": [
+        "S/Mpa",
+        "R-ratio",
+        "Kt",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 266,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 4 Ti-4.5Al-3V-2Fe-2Mo",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet6.xml",
+      "dimension": "A1:D62",
+      "headers": [
+        "S/Mpa",
+        "R-ratio",
+        "Kt",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 61,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case4 ZK60A-T5",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet7.xml",
+      "dimension": "A1:D88",
+      "headers": [
+        "S/Mpa",
+        "R-ratio",
+        "Kt",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 87,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 5 AMS 5707",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet8.xml",
+      "dimension": "A1:D184",
+      "headers": [
+        "Sa/Mpa",
+        "N",
+        "R",
+        "T"
+      ],
+      "nonempty_data_rows": 183,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 1,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 6 Inconel 718",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet9.xml",
+      "dimension": "A1:E140",
+      "headers": [
+        "S/MPa",
+        "R-ratio",
+        "Kt",
+        "T",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 139,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 7 7075_T6_mean",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet10.xml",
+      "dimension": "A1:D275",
+      "headers": [
+        "S/MPa",
+        "Mean_stress/Mpa",
+        "Kt",
+        "fatigue life"
+      ],
+      "nonempty_data_rows": 274,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 1,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case 8 Al-Mg4.5-Mn",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet11.xml",
+      "dimension": "A1:D22",
+      "headers": [
+        "Stress(MPa)",
+        "Defect size (μm)",
+        "Defect position (μm)",
+        "Fatigue life"
+      ],
+      "nonempty_data_rows": 21,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    },
+    {
+      "name": "Case Ti-6.5Al-2Zr-Mo-V",
+      "state": "visible",
+      "worksheet_xml": "xl/worksheets/sheet12.xml",
+      "dimension": "A1:D31",
+      "headers": [
+        "Stress(MPa)",
+        "Defect size (μm)",
+        "Defect position (μm)",
+        "Fatigue life"
+      ],
+      "nonempty_data_rows": 30,
+      "data_rows_with_missing_cells": [],
+      "data_rows_with_nonnumeric_cells": [],
+      "exact_duplicate_full_row_occurrences_beyond_first": 0,
+      "hidden_row_count": 0,
+      "hidden_column_count": 0
+    }
+  ],
+  "total_data_rows_all_materials": 1421,
+  "metadata": {},
+  "metadata_caution": "Workbook creation/modification timestamps and author working-directory metadata are not specimen manufacturing dates, IDs, or batch correspondence. Local author working path intentionally not reproduced.",
+  "defined_names": [],
+  "comment_parts": [],
+  "hidden_rows": [],
+  "hidden_columns": [],
+  "formula_count": 0,
+  "external_relationships": [],
+  "xml_vs_openpyxl_mismatches": [],
+  "Case1_stored_log10_life_max_absolute_rounding_error": 4.974980427618902e-10,
+  "SLM316L": {
+    "sheet": "Case 2 SLM 316l",
+    "excel_rows": "2–45 inclusive",
+    "record_count": 44,
+    "raw_headers": [
+      "Stress(MPa)",
+      "Î”K (MPaâˆšm)",
+      "Dmax",
+      "L/Leff",
+      "Nf"
+    ],
+    "header_repair_note": "Second source string is mojibake; likelyΔK(MPa√m). Preserve raw header; no numerical conversion performed. Dmax has no unit stated in workbook.",
+    "column_ranges": [
+      {
+        "raw_header": "Stress(MPa)",
+        "min": 180,
+        "max": 400,
+        "missing": 0
+      },
+      {
+        "raw_header": "Î”K (MPaâˆšm)",
+        "min": 1.84,
+        "max": 5.93,
+        "missing": 0
+      },
+      {
+        "raw_header": "Dmax",
+        "min": 32,
+        "max": 282,
+        "missing": 0
+      },
+      {
+        "raw_header": "L/Leff",
+        "min": 0.92,
+        "max": 1.23,
+        "missing": 0
+      },
+      {
+        "raw_header": "Nf",
+        "min": 123424,
+        "max": 3296187,
+        "missing": 0
+      }
+    ],
+    "unique_stress_values_mpa": [
+      180,
+      210,
+      240,
+      265,
+      270,
+      300,
+      330,
+      360,
+      400
+    ],
+    "records": [
+      {
+        "excel_row": 2,
+        "Stress_MPa": 400,
+        "raw_deltaK_header": 4.05,
+        "Dmax": 95,
+        "L_over_Leff": 1.01,
+        "Nf": 256343
+      },
+      {
+        "excel_row": 3,
+        "Stress_MPa": 400,
+        "raw_deltaK_header": 4.54,
+        "Dmax": 117,
+        "L_over_Leff": 1,
+        "Nf": 197813
+      },
+      {
+        "excel_row": 4,
+        "Stress_MPa": 360,
+        "raw_deltaK_header": 3.34,
+        "Dmax": 80,
+        "L_over_Leff": 1,
+        "Nf": 386505
+      },
+      {
+        "excel_row": 5,
+        "Stress_MPa": 360,
+        "raw_deltaK_header": 4.29,
+        "Dmax": 132,
+        "L_over_Leff": 1,
+        "Nf": 325494
+      },
+      {
+        "excel_row": 6,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 1.95,
+        "Dmax": 32,
+        "L_over_Leff": 1.03,
+        "Nf": 685035
+      },
+      {
+        "excel_row": 7,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 2.78,
+        "Dmax": 65,
+        "L_over_Leff": 1.01,
+        "Nf": 1132450
+      },
+      {
+        "excel_row": 8,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 3.19,
+        "Dmax": 87,
+        "L_over_Leff": 1,
+        "Nf": 2070000
+      },
+      {
+        "excel_row": 9,
+        "Stress_MPa": 300,
+        "raw_deltaK_header": 2.77,
+        "Dmax": 80,
+        "L_over_Leff": 1.01,
+        "Nf": 1693514
+      },
+      {
+        "excel_row": 10,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.69,
+        "Dmax": 171,
+        "L_over_Leff": 1.06,
+        "Nf": 531367
+      },
+      {
+        "excel_row": 11,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.26,
+        "Dmax": 131,
+        "L_over_Leff": 1.04,
+        "Nf": 3203250
+      },
+      {
+        "excel_row": 12,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.09,
+        "Dmax": 122,
+        "L_over_Leff": 1.02,
+        "Nf": 1177378
+      },
+      {
+        "excel_row": 13,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.02,
+        "Dmax": 116,
+        "L_over_Leff": 1,
+        "Nf": 1740238
+      },
+      {
+        "excel_row": 14,
+        "Stress_MPa": 265,
+        "raw_deltaK_header": 3.51,
+        "Dmax": 159,
+        "L_over_Leff": 0.97,
+        "Nf": 844247
+      },
+      {
+        "excel_row": 15,
+        "Stress_MPa": 400,
+        "raw_deltaK_header": 3.17,
+        "Dmax": 59,
+        "L_over_Leff": 1.05,
+        "Nf": 158626
+      },
+      {
+        "excel_row": 16,
+        "Stress_MPa": 400,
+        "raw_deltaK_header": 4.3,
+        "Dmax": 99,
+        "L_over_Leff": 1.03,
+        "Nf": 160147
+      },
+      {
+        "excel_row": 17,
+        "Stress_MPa": 360,
+        "raw_deltaK_header": 4.31,
+        "Dmax": 134,
+        "L_over_Leff": 1,
+        "Nf": 139849
+      },
+      {
+        "excel_row": 18,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 3.66,
+        "Dmax": 114,
+        "L_over_Leff": 1.07,
+        "Nf": 217438
+      },
+      {
+        "excel_row": 19,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 3.91,
+        "Dmax": 85,
+        "L_over_Leff": 1.04,
+        "Nf": 457527
+      },
+      {
+        "excel_row": 20,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 4.05,
+        "Dmax": 99,
+        "L_over_Leff": 0.92,
+        "Nf": 224054
+      },
+      {
+        "excel_row": 21,
+        "Stress_MPa": 300,
+        "raw_deltaK_header": 3.58,
+        "Dmax": 132,
+        "L_over_Leff": 1.03,
+        "Nf": 428313
+      },
+      {
+        "excel_row": 22,
+        "Stress_MPa": 300,
+        "raw_deltaK_header": 3.33,
+        "Dmax": 115,
+        "L_over_Leff": 1.05,
+        "Nf": 1105656
+      },
+      {
+        "excel_row": 23,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.1,
+        "Dmax": 122,
+        "L_over_Leff": 1.01,
+        "Nf": 848214
+      },
+      {
+        "excel_row": 24,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.83,
+        "Dmax": 187,
+        "L_over_Leff": 1.1,
+        "Nf": 404326
+      },
+      {
+        "excel_row": 25,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.1,
+        "Dmax": 114,
+        "L_over_Leff": 1.02,
+        "Nf": 485825
+      },
+      {
+        "excel_row": 26,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 2.74,
+        "Dmax": 74,
+        "L_over_Leff": 0.94,
+        "Nf": 740100
+      },
+      {
+        "excel_row": 27,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 2.98,
+        "Dmax": 81,
+        "L_over_Leff": 1.05,
+        "Nf": 586142
+      },
+      {
+        "excel_row": 28,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 2.87,
+        "Dmax": 99,
+        "L_over_Leff": 1.03,
+        "Nf": 581094
+      },
+      {
+        "excel_row": 29,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.49,
+        "Dmax": 109,
+        "L_over_Leff": 0.98,
+        "Nf": 490186
+      },
+      {
+        "excel_row": 30,
+        "Stress_MPa": 240,
+        "raw_deltaK_header": 1.93,
+        "Dmax": 60,
+        "L_over_Leff": 1,
+        "Nf": 2041391
+      },
+      {
+        "excel_row": 31,
+        "Stress_MPa": 210,
+        "raw_deltaK_header": 2.2,
+        "Dmax": 94,
+        "L_over_Leff": 1.01,
+        "Nf": 3026567
+      },
+      {
+        "excel_row": 32,
+        "Stress_MPa": 180,
+        "raw_deltaK_header": 1.84,
+        "Dmax": 81,
+        "L_over_Leff": 1.02,
+        "Nf": 3296187
+      },
+      {
+        "excel_row": 33,
+        "Stress_MPa": 360,
+        "raw_deltaK_header": 3.82,
+        "Dmax": 105,
+        "L_over_Leff": 0.99,
+        "Nf": 134677
+      },
+      {
+        "excel_row": 34,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 4.07,
+        "Dmax": 141,
+        "L_over_Leff": 1.13,
+        "Nf": 271413
+      },
+      {
+        "excel_row": 35,
+        "Stress_MPa": 330,
+        "raw_deltaK_header": 3.93,
+        "Dmax": 112,
+        "L_over_Leff": 1.01,
+        "Nf": 123424
+      },
+      {
+        "excel_row": 36,
+        "Stress_MPa": 300,
+        "raw_deltaK_header": 3.45,
+        "Dmax": 123,
+        "L_over_Leff": 0.97,
+        "Nf": 565665
+      },
+      {
+        "excel_row": 37,
+        "Stress_MPa": 300,
+        "raw_deltaK_header": 5.93,
+        "Dmax": 282,
+        "L_over_Leff": 1.17,
+        "Nf": 201498
+      },
+      {
+        "excel_row": 38,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.55,
+        "Dmax": 161,
+        "L_over_Leff": 1.16,
+        "Nf": 429904
+      },
+      {
+        "excel_row": 39,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 2.88,
+        "Dmax": 91,
+        "L_over_Leff": 0.95,
+        "Nf": 333762
+      },
+      {
+        "excel_row": 40,
+        "Stress_MPa": 270,
+        "raw_deltaK_header": 3.4,
+        "Dmax": 116,
+        "L_over_Leff": 1.03,
+        "Nf": 332434
+      },
+      {
+        "excel_row": 41,
+        "Stress_MPa": 240,
+        "raw_deltaK_header": 3.12,
+        "Dmax": 157,
+        "L_over_Leff": 1.23,
+        "Nf": 487626
+      },
+      {
+        "excel_row": 42,
+        "Stress_MPa": 240,
+        "raw_deltaK_header": 3.06,
+        "Dmax": 139,
+        "L_over_Leff": 0.98,
+        "Nf": 655955
+      },
+      {
+        "excel_row": 43,
+        "Stress_MPa": 240,
+        "raw_deltaK_header": 3.36,
+        "Dmax": 138,
+        "L_over_Leff": 1.01,
+        "Nf": 546557
+      },
+      {
+        "excel_row": 44,
+        "Stress_MPa": 240,
+        "raw_deltaK_header": 2.73,
+        "Dmax": 78,
+        "L_over_Leff": 1.11,
+        "Nf": 929952
+      },
+      {
+        "excel_row": 45,
+        "Stress_MPa": 210,
+        "raw_deltaK_header": 2.66,
+        "Dmax": 127,
+        "L_over_Leff": 1.07,
+        "Nf": 608116
+      }
+    ],
+    "missing_fields": [
+      "author specimenID",
+      "physicalbuild/plateID",
+      "powderlot/batchID",
+      "per-row processing group",
+      "event/runout flag",
+      "R",
+      "temperature",
+      "frequency",
+      "load controller",
+      "stress maximum-versus-amplitude definition"
+    ],
+    "batch_assignment_rule": "No three-batch membership inferred from row order,stress resets,row ranges or numeric clustering. No styles/comments/hidden fields provide such a crosswalk.",
+    "event_rule": "Nf is reported but workbook has no censor/event field; do not deduce allfailure solely from header or a missingrunoutflag.",
+    "other_material_rule": "All11other worksheets are separatelynamedothermaterials; do not append them to316L.",
+    "stress_definition_from_primary_Table2": "Case2 is placed under sigma_max (maximum applied stress), notsigma_a. This resolves maximum-versus-amplitude semantics at caselevel; R is still needed for any amplitudeconversion.",
+    "stress_definition_workbook_only": "Generic Stress(MPa); parent must retain primaryTable2 provenance if sigma_max assigned."
+  },
+  "primary_source_timing": {
+    "paper_doi": "10.1016/j.engfracmech.2025.111136",
+    "official_source_url": "https://publications.rwth-aachen.de/record/1012208/files/1012208.pdf",
+    "evidence_access": "Official institutionalprimaryPDF indexedtext obtained through exacttitle searches; webPDFopen timeout; no downloadedPDF or visualinspectionclaimed.",
+    "location": "Printedpage4,Section2.2,paragraph precedingEq1 andFigure2(c)",
+    "exact_quote": "The size and shape of the defects were analyzed using scanning electron microscopy (SEM) for each fractured sample.",
+    "inference": "SEM fracturedefect size/shape measurements are postfailure for the sourcecases. ΔK Eq1 depends on measured defect√area. These cannot be freelyknownpretest acquisitioncovariates.",
+    "no_paper_error_claim": true,
+    "source_range_checks": [
+      {
+        "quantity": "ΔK",
+        "paper_range": [
+          1.84,
+          5.93
+        ],
+        "workbook_range": [
+          1.84,
+          5.93
+        ],
+        "status": "agree"
+      },
+      {
+        "quantity": "L/Leff",
+        "paper_range": [
+          0.95,
+          1.23
+        ],
+        "workbook_range": [
+          0.92,
+          1.23
+        ],
+        "status": "reportedrangemismatch; retain source values",
+        "below_paper_min_rows": [
+          20,
+          26
+        ]
+      },
+      {
+        "quantity": "Paper√area versusworkbookDmax",
+        "paper_range": [
+          59,
+          282
+        ],
+        "workbook_Dmax_range": [
+          32,
+          282
+        ],
+        "status": "quantity/header mapping notexplicit inworkbook; apparent lowend mismatch must not be corrected silently",
+        "Dmax_min_excel_row": 6
+      },
+      {
+        "quantity": "Maximum applied stress sigma_max (Table2)",
+        "source_location": "Printedpage6,Table2,Case2",
+        "paper_range_mpa": [
+          210,
+          400
+        ],
+        "workbook_range_mpa": [
+          180,
+          400
+        ],
+        "status": "reported range mismatch; preserve180,do not correct or discard",
+        "below_paper_min_excel_rows": [
+          32
+        ]
+      }
+    ]
+  },
+  "E2_merged44_feasibility": {
+    "admissible_now": "A reproducible catalog of44 tabulated Nf records and descriptive source-level S,N analysis. Preserve the source ranges and discrepancies; no new physical campaign count inferred.",
+    "stress_definition": "Primary Table2 identifies maximum stress sigma_max. Amplitude conversion requires a source-supported R; no R is supplied by this workbook.",
+    "not_admissible_without_more_evidence": [
+      "Treating the44 rows as an exhaustive uncensored three-batch fatigue campaign",
+      "Splitting or adapting by invented per-row manufacturing batch or physical build labels",
+      "Fitting a censor-aware reliability/coverage claim from absence of a runout column",
+      "Acquisition/selection using post-fracture Dmax,L/Leff or dependentDeltaK as free pretest covariates"
+    ],
+    "merged_source_panel_limit": "Even if R,roomtemperature andconstant-amplitude forcecontrol are verified in primarymethods, unknown batchmembership andunknown omittedrunouts mean the44-row merge is a mixed-condition/source sensitivity panel,not clean new-condition or build-qualified confirmation.",
+    "event_semantics": "The Nf column and fractured-sample SEM description support44 tabulated Nf records. They do not prove the complete experimental program omitted no runouts or rejected tests.",
+    "family_exclusion": "Related108486 and127098 require a conservative shared source-family block pending parent reuse audit; no independenceclaim here.",
+    "future_minimum_evidence": [
+      "Row-to-actual processing/build/powder crosswalk or explicit scope-covering singlebuild/lot statement",
+      "Original program sampling/runout/omission accounting",
+      "Source-supported temperature,R,controller and virgin constant-amplitude status"
+    ],
+    "code_attribution_boundary": "No author notebook inspected by this workbook audit. Do not attribute preprocessing or splitting seen in a separate LZ50 example to the exact316L paper workflow.",
+    "fits_performed": 0
+  },
+  "source_unchanged_after_audit": true,
+  "primary_source_queries": [
+    "\"A general physics-informed neural network framework\" \"fractured\"",
+    "\"A general physics-informed neural network framework\" \"size and shape\"",
+    "\"A general physics-informed neural network framework\" \"three batches\"",
+    "\"A general physics-informed neural network framework\" \"210\" \"316L\"",
+    "\"A general physics-informed neural network framework\" \"SLM 316L\" \"Table 2\""
+  ]
+}

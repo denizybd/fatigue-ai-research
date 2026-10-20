@@ -1,0 +1,164 @@
+{
+  "audit_at_utc": "2026-10-20T16:38:10.356828+00:00",
+  "question": "Does the existing public Diller source chain close at least six RT force-controlled virgin constant-amplitude specimen\u2192physical build/powder observations?",
+  "result": "NO_PUBLIC_CLOSURE_FOUND",
+  "new_primary_eligible_rows": 0,
+  "retained_secondary_rows": 29,
+  "scope_boundary": "Targeted local full-dissertation and official Diller source-chain revalidation only; no broad campaign search, fits, login, bypass or correspondence.",
+  "public_endpoints": [
+    {
+      "url": "https://zenodo.org/api/records/21105346",
+      "status": 200,
+      "updated": "2026-07-23T12:38:07.313581+00:00",
+      "doi": "10.5281/zenodo.21105346",
+      "file_count": 1,
+      "license": "cc-by-4.0"
+    },
+    {
+      "url": "https://zenodo.org/api/records/21105346/files",
+      "status": 200,
+      "entries": [
+        {
+          "key": "read me.txt",
+          "size": 2099,
+          "checksum": "md5:988fbec41eb89f289eb630475d2e04a2",
+          "metadata": {},
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "url": "https://zenodo.org/api/records/21105346/versions/latest",
+      "status": 200,
+      "record_id": 21105346,
+      "newer_version_found": false
+    },
+    {
+      "url": "https://datatagger.ub.tum.de/projects/0391cfc0-c86a-4411-848d-f13463ea1be6/folders/237f412f-0709-4074-9b7f-3ed561da08c9?q=%C2%B5CT",
+      "status": 307,
+      "final_url": "https://datatagger.ub.tum.de/login",
+      "login_detected": true
+    },
+    {
+      "url": "https://www.cee.ed.tum.de/metallbau/abschlussarbeiten/abgeschlossene-arbeiten/",
+      "status": 200,
+      "student_rows": [
+        {
+          "author": "Michael Winkler",
+          "row_has_any_href": false,
+          "public_download_link_found": false
+        },
+        {
+          "author": "Ludwig Siebert",
+          "row_has_any_href": false,
+          "public_download_link_found": false
+        }
+      ],
+      "access_instruction": "Official page directs interested readers to the chair secretariat; it is a catalog, not a public thesis PDF."
+    }
+  ],
+  "dissertation_coverage": {
+    "source": "https://mediatum.ub.tum.de/doc/1739096/1739096.pdf",
+    "pdf_pages": 157,
+    "all_pages_text_extracted_and_keyword_searched": true,
+    "embedded_files": [],
+    "fulltext_keyword_inventory": "pdf_keyword_coverage.json; includes batch, physical-build phrases, \u03bcnumeric IDs, equipment and mode/RT terms. Negative search alone is not used as proof.",
+    "close_read_sections": [
+      {
+        "pdf_pages": "11\u201312",
+        "content": "Contents: no standalone specimen inventory or separate experimental-build appendix."
+      },
+      {
+        "pdf_pages": "49\u201351",
+        "content": "Chapter6.2 integrates publication-specific methods; no manufacturing specimen crosswalk."
+      },
+      {
+        "pdf_pages": "56\u201358",
+        "content": "Publication4/5 summaries and author contributions; student thesis involvement is explicit, but no build/lot mapping."
+      },
+      {
+        "pdf_pages": "77\u201380",
+        "content": "Appendix is student thesis list and author publication list; exact P5 student leads identified."
+      },
+      {
+        "pdf_pages": "134\u2013135",
+        "content": "P5 Methods and Tables1\u20133: manufacturing parameters, CT parameters, defect features, R.1 and stress ranges; no physical-build inventory, powder lot or mapping to \u03bcIDs."
+      },
+      {
+        "pdf_pages": "141\u2013145",
+        "content": "P5 Tables4\u20135, results/captions and data availability: surface statistics and ML results, not a build crosswalk; data available by author request."
+      }
+    ],
+    "not_transferable_statements": [
+      {
+        "pdf_pages": "96",
+        "scope": "Publication2, DOI10.1016/j.matchar.2022.112153",
+        "reason": "A36-fatigue-specimen build job is explicit, but it is the distinct strain-control campaign; cannot assign P5 \u03bcIDs to it."
+      },
+      {
+        "pdf_pages": "120\u2013122",
+        "scope": "Publication4, DOI10.1016/j.ijfatigue.2023.108025",
+        "reason": "78fatigue specimens in six treatment groups,192W/750mm/s and18Hz; different P5 manufacturing parameters, no exact specimen crosswalk. Singular build-plate wording is not transferable."
+      },
+      {
+        "pdf_pages": "152\u2013153",
+        "scope": "Publication6, construction-node study",
+        "reason": "Two additional tensile build jobs and node fatigue tests; no \u03bcseries link."
+      },
+      {
+        "pdf_pages": "26",
+        "scope": "General fatigue fundamentals",
+        "reason": "Generic force-controlled S\u2013N description is not an experiment-specific control-mode statement."
+      }
+    ],
+    "student_source_leads": [
+      {
+        "author": "Ludwig Siebert",
+        "year": 2022,
+        "topic": "\u03bcCT fatigue-defect analysis with machine learning",
+        "evidence": "PDF57,78 and official TUM completed-work catalog; no public thesis file retrieved"
+      },
+      {
+        "author": "Michael Winkler",
+        "year": 2023,
+        "topic": "Fatigue-limit estimate from \u03bcCT surface defects in AM316L",
+        "evidence": "PDF57,78 and official TUM completed-work catalog; no public thesis file retrieved"
+      }
+    ]
+  },
+  "still_verified": [
+    "Author scan/specimen IDs and S,N exist in the public readme.",
+    "P5 stress is a range and R=0.1; amplitude conversion remains \u0394\u03c3/2.",
+    "The29 retained as-built records preserve raw outcomes; \u00b515 remains excluded for the existing stress conflict."
+  ],
+  "missing_fields": [
+    {
+      "field": "physical build membership",
+      "needed": "For at least6 named usable specimens in one condition: actual build identifier per ID, or an explicit source statement naming that exact set as one physical build. A statement that48 specimens were manufactured is insufficient."
+    },
+    {
+      "field": "powder batch lineage",
+      "needed": "Powder lot per build or an explicit common-lot statement covering those exact specimens. Oerlikon Metco is a supplier, not a powder-lot identifier."
+    },
+    {
+      "field": "test environment/temperature",
+      "needed": "Explicit RT or measured temperature applying to the named set; do not infer from unstated ambient conditions."
+    },
+    {
+      "field": "control and loading history",
+      "needed": "Explicit force/stress control and virgin constant-amplitude protocol for the named set. Do not import18Hz or other Methods from Publication4."
+    }
+  ],
+  "impasse_assessment": {
+    "diller_public_chain": "The accessible dissertation, current deposited table and official student-work catalog do not contain the missing crosswalk. The only linked richer repository requires login; catalog access is by secretariat. Repeating these public reads cannot manufacture the missing fields.",
+    "what_would_change_status": "A public authorized build/method crosswalk, publicly released student thesis/appendix, or user-authorized source clarification. No contact has been made.",
+    "bounded_claim": "This is an impasse for this verified public source chain, not proof that no relevant file exists anywhere."
+  },
+  "source_sha256": {
+    "literature/v3_campaigns/raw_repository/diller2024_thesis.pdf": "f7d64559c08aca26176ffc0c1ac4ba7d6cb4116bd8592ac9f1c008b3100201af",
+    "literature/v3_campaigns/raw_repository/diller2024_readme.txt": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f"
+  },
+  "local_unsent_template": "missing_identity_method_fields_local_template29.csv",
+  "no_identity_inference_from_counts_prefixes_or_parameter_similarity": true,
+  "no_models_fitted": true
+}

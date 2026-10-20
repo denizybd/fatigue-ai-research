@@ -1,0 +1,5 @@
+row_id,source_cell,value,issue,action
+pinn2025_case2_xlsx_row06,C6,32.0,Dmax below paper sqrtarea range59..282; quantity identity not specified in workbook header,preserve original Dmax label and value; unit/quantity mapping remains open
+pinn2025_case2_xlsx_row20,D20,0.92,Workbook L/Leff below Table2 reported0.95..1.23 range,preserve original; no clipping
+pinn2025_case2_xlsx_row26,D26,0.94,Workbook L/Leff below Table2 reported0.95..1.23 range,preserve original; no clipping
+pinn2025_case2_xlsx_row32,A32,180.0,Workbook stress below Table2 reported 210..400MPa range,preserve180; no correction or inferred batch

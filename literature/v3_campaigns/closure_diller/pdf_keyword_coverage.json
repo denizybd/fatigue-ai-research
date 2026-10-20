@@ -1,0 +1,1736 @@
+{
+  "source_pdf": "literature/v3_campaigns/raw_repository/diller2024_thesis.pdf",
+  "source_pdf_sha256": "f7d64559c08aca26176ffc0c1ac4ba7d6cb4116bd8592ac9f1c008b3100201af",
+  "page_count": 157,
+  "page_coverage": [
+    {
+      "pdf_page": 1,
+      "text_characters": 225,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 2,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 3,
+      "text_characters": 156,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 4,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 5,
+      "text_characters": 780,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 6,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 7,
+      "text_characters": 3754,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 8,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 9,
+      "text_characters": 1168,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 10,
+      "text_characters": 391,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 11,
+      "text_characters": 3801,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 12,
+      "text_characters": 3441,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 13,
+      "text_characters": 4075,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 14,
+      "text_characters": 1567,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 15,
+      "text_characters": 2624,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 16,
+      "text_characters": 4120,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 17,
+      "text_characters": 3026,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 1
+      }
+    },
+    {
+      "pdf_page": 18,
+      "text_characters": 1466,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 1,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 1
+      }
+    },
+    {
+      "pdf_page": 19,
+      "text_characters": 2843,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 20,
+      "text_characters": 1974,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 21,
+      "text_characters": 3438,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 22,
+      "text_characters": 1277,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 23,
+      "text_characters": 2512,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 24,
+      "text_characters": 3074,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 25,
+      "text_characters": 2011,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 26,
+      "text_characters": 2216,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 1
+      }
+    },
+    {
+      "pdf_page": 27,
+      "text_characters": 2465,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 28,
+      "text_characters": 1610,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 29,
+      "text_characters": 2202,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 30,
+      "text_characters": 3832,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 31,
+      "text_characters": 5002,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 32,
+      "text_characters": 3156,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 33,
+      "text_characters": 4490,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 34,
+      "text_characters": 1923,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 35,
+      "text_characters": 1522,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 36,
+      "text_characters": 2329,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 37,
+      "text_characters": 2583,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 38,
+      "text_characters": 1996,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 39,
+      "text_characters": 2121,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 40,
+      "text_characters": 1064,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 41,
+      "text_characters": 3767,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 42,
+      "text_characters": 3803,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 43,
+      "text_characters": 1976,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 44,
+      "text_characters": 3916,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 45,
+      "text_characters": 2365,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 46,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 47,
+      "text_characters": 1931,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 48,
+      "text_characters": 3474,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 49,
+      "text_characters": 2178,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 50,
+      "text_characters": 4855,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 51,
+      "text_characters": 3920,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 52,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 53,
+      "text_characters": 2788,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 54,
+      "text_characters": 3429,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 55,
+      "text_characters": 3646,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 56,
+      "text_characters": 3555,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 57,
+      "text_characters": 3864,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 58,
+      "text_characters": 272,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 59,
+      "text_characters": 3040,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 60,
+      "text_characters": 1903,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 61,
+      "text_characters": 4919,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 62,
+      "text_characters": 685,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 63,
+      "text_characters": 3630,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 64,
+      "text_characters": 4106,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 65,
+      "text_characters": 574,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 66,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 67,
+      "text_characters": 2826,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 68,
+      "text_characters": 3216,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 69,
+      "text_characters": 3616,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 70,
+      "text_characters": 3397,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 71,
+      "text_characters": 3504,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 72,
+      "text_characters": 3672,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 73,
+      "text_characters": 3869,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 74,
+      "text_characters": 3975,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 75,
+      "text_characters": 2339,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 76,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 77,
+      "text_characters": 555,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 78,
+      "text_characters": 2625,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 79,
+      "text_characters": 3525,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 80,
+      "text_characters": 1305,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 81,
+      "text_characters": 283,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 82,
+      "text_characters": 0,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 83,
+      "text_characters": 4688,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 84,
+      "text_characters": 4633,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 85,
+      "text_characters": 2981,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 86,
+      "text_characters": 3629,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 87,
+      "text_characters": 2396,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 88,
+      "text_characters": 2786,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 89,
+      "text_characters": 2903,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 90,
+      "text_characters": 2773,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 91,
+      "text_characters": 3295,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 92,
+      "text_characters": 5844,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 93,
+      "text_characters": 3038,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 94,
+      "text_characters": 283,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 95,
+      "text_characters": 4638,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 96,
+      "text_characters": 8187,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 1,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 5,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 97,
+      "text_characters": 3864,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 98,
+      "text_characters": 2270,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 99,
+      "text_characters": 1070,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 100,
+      "text_characters": 4598,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 101,
+      "text_characters": 7870,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 102,
+      "text_characters": 2946,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 103,
+      "text_characters": 6818,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 104,
+      "text_characters": 2715,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 105,
+      "text_characters": 5983,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 106,
+      "text_characters": 2327,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 107,
+      "text_characters": 9166,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 108,
+      "text_characters": 7183,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 109,
+      "text_characters": 293,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 110,
+      "text_characters": 6006,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 111,
+      "text_characters": 9352,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 1,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 3,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 112,
+      "text_characters": 3038,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 113,
+      "text_characters": 4405,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 114,
+      "text_characters": 1505,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 115,
+      "text_characters": 4831,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 116,
+      "text_characters": 6197,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 117,
+      "text_characters": 6197,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 118,
+      "text_characters": 363,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 119,
+      "text_characters": 5106,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 120,
+      "text_characters": 4632,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 3,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 121,
+      "text_characters": 3812,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 1,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 122,
+      "text_characters": 7824,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 4,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 123,
+      "text_characters": 4312,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 124,
+      "text_characters": 2708,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 125,
+      "text_characters": 5566,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 126,
+      "text_characters": 4683,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 127,
+      "text_characters": 1122,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 128,
+      "text_characters": 7993,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 129,
+      "text_characters": 7096,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 130,
+      "text_characters": 7947,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 2
+      }
+    },
+    {
+      "pdf_page": 131,
+      "text_characters": 411,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 132,
+      "text_characters": 2987,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 133,
+      "text_characters": 5615,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 134,
+      "text_characters": 3513,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 3,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 135,
+      "text_characters": 4861,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 2,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 136,
+      "text_characters": 3917,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 137,
+      "text_characters": 5024,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 138,
+      "text_characters": 3515,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 139,
+      "text_characters": 2129,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 140,
+      "text_characters": 2629,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 141,
+      "text_characters": 3636,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 142,
+      "text_characters": 4167,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 143,
+      "text_characters": 3612,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 144,
+      "text_characters": 3900,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 145,
+      "text_characters": 5353,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 146,
+      "text_characters": 6831,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 147,
+      "text_characters": 1285,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 148,
+      "text_characters": 333,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 149,
+      "text_characters": 4220,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 150,
+      "text_characters": 2728,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 151,
+      "text_characters": 3297,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 152,
+      "text_characters": 3550,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 1,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 153,
+      "text_characters": 4123,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 3,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 154,
+      "text_characters": 1046,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 155,
+      "text_characters": 3180,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 156,
+      "text_characters": 1686,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    },
+    {
+      "pdf_page": 157,
+      "text_characters": 3920,
+      "matches": {
+        "batch": 0,
+        "physical_build_phrases": 0,
+        "scan_specimen_IDs": 0,
+        "campaign_equipment": 0,
+        "mode_RT": 0
+      }
+    }
+  ],
+  "pdf_embedded_files": [],
+  "warning": "Keyword absence alone is not source-gate proof; full relevant sections and visual pages were also inspected."
+}

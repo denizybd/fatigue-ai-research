@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "source_doi": "10.1016/j.ijfatigue.2025.109365",
+  "reported_points": 67,
+  "failure_points": 63,
+  "runout_points": 4,
+  "reported_points_not_from_reused_25C_asbuilt_curve": 42,
+  "reported_points_reused_from_108491": 25,
+  "verified_unique_physical_specimens": null,
+  "gold_identity_qualified_records": 0,
+  "current_fit_rows_added": 0,
+  "condition_counts": [
+    {
+      "condition": "25C_As-built",
+      "reported_points": 25,
+      "failure_points": 24,
+      "runout_points": 1,
+      "stress_levels": 13,
+      "reused_prior_reference_curve": true
+    },
+    {
+      "condition": "25C_HIP",
+      "reported_points": 19,
+      "failure_points": 18,
+      "runout_points": 1,
+      "stress_levels": 12,
+      "reused_prior_reference_curve": false
+    },
+    {
+      "condition": "450C_HIP",
+      "reported_points": 11,
+      "failure_points": 10,
+      "runout_points": 1,
+      "stress_levels": 8,
+      "reused_prior_reference_curve": false
+    },
+    {
+      "condition": "450C_As-built",
+      "reported_points": 12,
+      "failure_points": 11,
+      "runout_points": 1,
+      "stress_levels": 7,
+      "reused_prior_reference_curve": false
+    }
+  ],
+  "censor_rule": "Runout label -> event0 and lower-bound5e6 from methods; exact individual stop remains blank",
+  "beyond_threshold_rule": "Table reports450CAs-built140MPa6.07e6 failure; kept event1. Survival threshold\u22655e6 does not prove mandatory stop at5e6, so no source-error claim.",
+  "identity_rule": "Generated table point locators are never author specimen/build/powder identities",
+  "run_command": "python3 literature/v4_open/rbf2026/normalize_table1.py",
+  "input_sha256": "47149564ab4017c831c2a40b3a121b7fc59828a196f57eaf27d77f3f96f991f2",
+  "output_sha256": {
+    "condition_counts.csv": "c61c2112a85f232f26a3d8b19e026c9faeffc464f9521bcf3c67d7db7fec2f36",
+    "table1_not_reused_RTcurve42.csv": "1f13df623547e0ab7af635eefd9c7bdd43a9cc2f9a9be08dad9936523042b670",
+    "table1_rbf67.csv": "e10825d3ee90d8c17e4467b5c787dcd6883441e4ed46292793fecd7ef80d84ed"
+  }
+}

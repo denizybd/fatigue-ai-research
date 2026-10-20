@@ -1,0 +1,147 @@
+{
+  "created": "2022-06-16T15:13:14.960982+00:00",
+  "modified": "2022-06-17T01:51:53.017331+00:00",
+  "id": 6653187,
+  "conceptrecid": "6653186",
+  "doi": "10.5281/zenodo.6653187",
+  "conceptdoi": "10.5281/zenodo.6653186",
+  "doi_url": "https://doi.org/10.5281/zenodo.6653187",
+  "metadata": {
+    "title": "316L L-PBF fatigue dataset",
+    "doi": "10.5281/zenodo.6653187",
+    "publication_date": "2022-06-16",
+    "description": "<p>This file contains 316L Laser Powder Bed Fusion fatigue tests dataset.</p>\n\n<p>Experiments were carried on a MTS Landmark 100 kN servohydraulic fatigue test machine.</p>\n\n<p>This experimental campaign took place in the context of a PhD grant from the French region Pays de la Loire (see https://pastel.archives-ouvertes.fr/tel-03688021 for the thesis manuscript).</p>\n\n<p>Fatigue tests were carried :</p>\n\n<p>- in air or in salt-spray</p>\n\n<p>- on different batches (polished, pre-corroded, with artificial defects,...)</p>\n\n<p>- at R=-1 and R=0.1</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "MEROT, Pierre",
+        "affiliation": "LAMPA, Arts et M\u00e9tiers, Angers, France"
+      },
+      {
+        "name": "GALLEGOS MAYORGA, Linamaria",
+        "affiliation": "LAMPA, Arts et M\u00e9tiers, Angers, France"
+      },
+      {
+        "name": "MOREL, Franck",
+        "affiliation": "LAMPA, Arts et M\u00e9tiers, Angers, France"
+      },
+      {
+        "name": "PESSARD, Etienne",
+        "affiliation": "LAMPA, Arts et M\u00e9tiers, Angers, France"
+      },
+      {
+        "name": "BUTTIN, Paul",
+        "affiliation": "CEA, CTREG, DGDO, Bouguenais, France"
+      },
+      {
+        "name": "BAFFIE, Thierry",
+        "affiliation": "CEA-LITEN, Univ.Grenoble Alpes, Grenoble, France"
+      }
+    ],
+    "keywords": [
+      "Fatigue",
+      "316L",
+      "L-PBF",
+      "Additive Manufacturing",
+      "Defects",
+      "Salt-Spray",
+      "Corrosion"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.ijfatigue.2021.106552",
+        "relation": "isSourceOf",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1",
+    "language": "fra",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6653186"
+          }
+        }
+      ]
+    },
+    "notes": "PhD grant from the French region Pays de la Loire"
+  },
+  "title": "316L L-PBF fatigue dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/6653187",
+    "self_html": "https://zenodo.org/records/6653187",
+    "preview_html": "https://zenodo.org/records/6653187?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6653187",
+    "self_doi": "https://doi.org/10.5281/zenodo.6653187",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6653187",
+    "reserve_doi": "https://zenodo.org/api/records/6653187/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6653186",
+    "parent_html": "https://zenodo.org/records/6653186",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6653186",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6653186",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6653187/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6653187/sequence/default",
+    "files": "https://zenodo.org/api/records/6653187/files",
+    "media_files": "https://zenodo.org/api/records/6653187/media-files",
+    "latest": "https://zenodo.org/api/records/6653187/versions/latest",
+    "latest_html": "https://zenodo.org/records/6653187/latest",
+    "versions": "https://zenodo.org/api/records/6653187/versions",
+    "draft": "https://zenodo.org/api/records/6653187/draft",
+    "access_links": "https://zenodo.org/api/records/6653187/access/links",
+    "access_grants": "https://zenodo.org/api/records/6653187/access/grants",
+    "access_users": "https://zenodo.org/api/records/6653187/access/users",
+    "access_request": "https://zenodo.org/api/records/6653187/access/request",
+    "access": "https://zenodo.org/api/records/6653187/access",
+    "communities": "https://zenodo.org/api/records/6653187/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6653187/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6653187/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6653187/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/6653187/quota-increase",
+    "requests": "https://zenodo.org/api/records/6653187/requests"
+  },
+  "updated": "2022-06-17T01:51:53.017331+00:00",
+  "recid": "6653187",
+  "revision": 2,
+  "files": [
+    {
+      "id": "5301d19a-089c-44fd-944a-f910f5a6446f",
+      "key": "data_fatigue_merot.csv",
+      "size": 124800,
+      "checksum": "md5:18785df9588f397a5c7f37756730704c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6653187/files/data_fatigue_merot.csv/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "362481"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 256,
+    "unique_downloads": 211,
+    "views": 625,
+    "unique_views": 595,
+    "version_downloads": 255,
+    "version_unique_downloads": 210,
+    "version_unique_views": 594,
+    "version_views": 624
+  },
+  "state": "done",
+  "submitted": true
+}

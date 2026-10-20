@@ -1,0 +1,26 @@
+[
+  {
+    "source": "Zenodo7650061 freshly refreshed metadata",
+    "locator": "metadata.description, metadata.related_identifiers absent",
+    "supports": "Uniaxial stress-controlled HCF compilation of316L andAlSi10Mg; specimen dimensions/orientation vary; project2021/05/X/ST5/00076.",
+    "missing": "No producer build identifiers, physical build count, worksheet batch inventory, raw specimen ID→article/plate crosswalk, or scope statement tying all W/R=-1 rows to a single manufacturing run."
+  },
+  {
+    "source": "Data.xlsx",
+    "locator": "Arkusz1 A1:L245 plus all ZIPparts",
+    "supports": "Actual author row IDs including SS_A02W_01..09; W/L explicitly mean width/length build direction.137316L fatigue records, one visible sheet.",
+    "missing": "No plate/build/batch/date/position columns; no hidden artifact metadata providing that join."
+  },
+  {
+    "source": "2023primary107378",
+    "locator": "PDF6/Fig2, PDF7Sec2.2, PDF8/Table2",
+    "supports": "Paper specimens were manufactured on one build plate. Fatigue geometry groups A02/A08/A32 have9/9/10specimens. Build direction lies along specimen width inFig4.",
+    "missing": "No actual author individual specimen IDs, no SS_A02W_01..09 text, no producer workbook link, and no table tying them to the paper plate."
+  },
+  {
+    "source": "2024primary108225",
+    "locator": "PDF4–8Sec2 and PDF12–13/Table3",
+    "supports": "SLM125HL and constant manufacturing parameters; length groups L00/L05/L20/L50; some individually named Lxx_nn outcomes.",
+    "missing": "No SS_A02WIDs or explicit A02W9→singleplate map; a buildplate photo and shared process settings do not prove physicalrun identity."
+  }
+]

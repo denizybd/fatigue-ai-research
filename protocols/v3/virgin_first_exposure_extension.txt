@@ -1,0 +1,52 @@
+RECOVERY OF VIRGIN FIRST EXPOSURES FROM A STEPPED-LOAD CAMPAIGN
+Recorded 20 October2026 before extracting/fitting this recovered cohort. Earlier
+Merot aggregated/multistep records have already been seen and excluded. This is
+source-audited exploratory recovery, not fresh blinded confirmation.
+
+A physical specimen's earliest constant-amplitude block, before any prior fatigue
+exposure, is a valid failure or right-censored observation at that initial stress.
+This does NOT license later step endpoints as virgin constant-amplitude lives.
+
+Admission requirements:
+- Actual author specimen identifier, source-backed material and production-build
+  or batch mapping; explicitly distinguish common powder lot from physical build.
+- Initial stress amplitude and block stop recoverable from the original record
+  or a fully specified author protocol. Report any deterministic reconstruction
+  as derived, with source equation/increment and no silent imputation.
+- One and only one first-exposure row per physical specimen. Same-specimen repeats
+  across papers must be joined, never counted as independent campaigns.
+- Failure during first block: event1 at its observed untransformed first-block N.
+- Survival of first block: event0 at that block's actual stop. Later loading,
+  later fracture, and damage-equivalent N are discarded for support AND query.
+- If only final stress/equivalent life is available and initial exposure cannot
+  be proven from the author protocol, quarantine the specimen.
+- Postfailure fractography, final failure stress and later-step endpoints cannot
+  be acquisition covariates. Manufactured geometry/initial surface are permitted.
+
+Use the existing four policies, six models, common-query split rule, ten seeds,
+k0/3/5/10 where feasible and C1e7/C1e6 replay budgets WITHOUT retuning. Historical
+training remains the309-point phase2 strict cohort. Exclude the entire linked
+Merot/Auffray family from training, even when only some family curves are targeted.
+Retain original source runouts earlier than the planning cap as right censoring.
+Because these first stops may be1e6, C1e7 planning sensitivity is intentionally
+misspecified relative to availability; disclose this rather than inventing tests.
+
+Separate recovered physical-build-qualified panels from missing-build cohorts.
+Do not count separate treatments, powders, builds or papers as independent author
+campaigns without physical-source evidence. Evaluate risk/availability and utility
+together; all-runout support legitimately leaves unpooled intercept unidentified.
+This extension is scientifically motivated by valid first exposures, not model
+performance. No recovered model outcome has been inspected at recording time.
+
+PREFIT SOURCE-HARMONIZATION ADDENDUM (same day, before any recovered-model fit):
+Two independent readers verified thesis Table2.1 physical-build and powder-lot
+crosswalk, and Methods uniaxial force control/20C air. Detect physical coordinate
+collisions using ALL source aliases, including the ambiguous repeated-Step0 K2;
+exclude every alias on those coordinates, plus missing plate/position metadata.
+This leaves52 air/20C records. Of these,43 standard-geometry rows use nominal
+macroscopic gauge stress (sigma_nom=sigma_max in source G.1/G.2 tables). The9
+Petit-volume rows use local Kt-adjusted stress, with specimen-specific Kt not
+available exactly. Keep43 nominal rows as PRIMARY identity-qualified input and
+9 small-volume rows as explicitly local-stress SECONDARY sensitivity. Do not
+invent exact Kt or rescale first stresses using rounded final-fracture stresses.
+Eligibility and stress partition use source semantics, not predictive outcomes.

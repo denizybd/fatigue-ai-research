@@ -1,0 +1,21 @@
+{
+  "rule": "Holdout all listed papers together for any future training/evaluation. These are conservative source reuse blocks, not certified independent physical campaigns.",
+  "families": {
+    "v4_zhang_linked_original_experiments": [
+      "10.1016/j.msea.2017.07.071",
+      "10.1016/j.matdes.2018.02.054",
+      "10.1016/j.ijfatigue.2018.12.016",
+      "10.1016/j.ijfatigue.2019.105194",
+      "10.1051/matecconf/201816522006",
+      "10.1007/s11837-017-2640-z",
+      "https://hdl.handle.net/2152/89829"
+    ],
+    "v4_elangeswaran_linked_experiments": [
+      "10.1016/j.ijfatigue.2019.01.013",
+      "10.1016/j.matdes.2020.108962",
+      "10.1016/j.addma.2021.102570",
+      "10.1007/978-3-030-05861-6_36"
+    ]
+  },
+  "source_link_evidence": "JOMandSFFlinksareexplicitprimarybibliographyrelationsinMatDes2018refs51/52;ML2019\u00a72andrefs27/41\u201343explicitlyidentifypriorfatiguedata. Notallpapersarecertifiedexactphysicalrecordduplicates."
+}

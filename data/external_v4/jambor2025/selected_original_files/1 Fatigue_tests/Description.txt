@@ -1,0 +1,1 @@
+The dataset contains fatigue data in the form of strain and load (stress) - used for Figure 4 (a) and (b). The CSV files contain peak-valley data (total strain and axial force) for each loading cycle and whole hysteresis loops for selected cycles. CSV files also contain the cross-sections for each specimen, in order to derive stress values. 

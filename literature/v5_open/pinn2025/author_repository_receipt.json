@@ -1,0 +1,51 @@
+{
+  "repository": "https://github.com/spellbookrz/My_PhD_publications_data_and_code",
+  "branch": "main",
+  "commit_tree_sha": "8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e",
+  "license_metadata": null,
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/main/README.md",
+      "status": 200,
+      "bytes": 1104,
+      "sha256": "d491355643fa3fd769940dba2432dd5e4eafa3be0c875a217fbfbf1cd2864a87",
+      "local": "author_root_README.md"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/README.md",
+      "url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/main/2025_EFM_PINN_for_fatigue_life/README.md",
+      "status": 200,
+      "bytes": 142,
+      "sha256": "6897c3ca9430b04fc3012290b2280b9f8320bce56485a8ab7acac120d38c727e",
+      "local": "author_README.md"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/code/new_Main_PINN.py",
+      "url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/main/2025_EFM_PINN_for_fatigue_life/code/new_Main_PINN.py",
+      "status": 200,
+      "bytes": 20293,
+      "sha256": "57f42e83ac52787cdb90cbbac6517b6faeeb949daa7d60a24d8e7e4d816add7d",
+      "local": "author_new_Main_PINN.py"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/code/train and plot.ipynb",
+      "url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/main/2025_EFM_PINN_for_fatigue_life/code/train%20and%20plot.ipynb",
+      "status": 200,
+      "bytes": 147577,
+      "sha256": "de6866ab13606fb4cec282c4bc06a48b14c96717a99633de0002fe1d4cbd5ea7",
+      "local": "author_train_and_plot.ipynb"
+    },
+    {
+      "path": "2025_EFM_PINN_for_fatigue_life/data/Fatigue_data.xlsx",
+      "url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/main/2025_EFM_PINN_for_fatigue_life/data/Fatigue_data.xlsx",
+      "status": 200,
+      "bytes": 56398,
+      "sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+      "local": "author_Fatigue_data.xlsx"
+    }
+  ],
+  "commit_sha": "8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e",
+  "actual_tree_sha": "e1b1a19e5c42fd64f3970f3a09c0cf0c1ea01deb",
+  "commit_tree_sha_note": "Earlier tree endpoint response.sha is resolved commit; verified separate commit/tree identities via commits/main."
+}

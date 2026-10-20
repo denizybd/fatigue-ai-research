@@ -1,0 +1,23 @@
+[
+  {
+    "name": "prior_mmc1_xlsx",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S014211232400344X-mmc1.xlsx",
+    "status": 404,
+    "size": 189,
+    "content_type": "text/xml"
+  },
+  {
+    "name": "prior_mmc1_docx",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S014211232400344X-mmc1.docx",
+    "status": 404,
+    "size": 189,
+    "content_type": "text/xml"
+  },
+  {
+    "name": "prob_xml",
+    "url": "https://api.elsevier.com/content/article/doi/10.1016/j.eswa.2025.127098?httpAccept=text/xml",
+    "status": 200,
+    "size": 1877,
+    "content_type": "text/xml;charset=UTF-8"
+  }
+]

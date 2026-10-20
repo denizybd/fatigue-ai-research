@@ -1,0 +1,56 @@
+{
+  "review_date":"2026-10-20",
+  "target_doi":"10.1016/j.ijfatigue.2024.108608",
+  "target_dataset_doi":"10.5281/zenodo.12515773",
+  "result":"New public primary evidence acquired; build/powder identity closure not achieved",
+  "new_public_source":{
+    "title":"Predicting the Fatigue Lifetime of Laser Powder Bed Fusion-processed Alloys Using Physics-informed Neural Networks",
+    "authors":["Jiří Halamka","Ondřej Stránský","Libor Beránek","Michal Bartošák"],
+    "publication":"EAN2025,63rd Conference onExperimental Stress Analysis,Proceedings ofFull Papers,pp37–42",
+    "isbn":"978-80-7494-763-6",
+    "public_url":"http://www.experimentalni-mechanika.cz/cs/konference/konference/2025.html?download=3105%3A21",
+    "access":"Normal public HTTP GET200; advertised official HTTP address. HTTPS hostname mismatch was not bypassed.",
+    "local_pdf":"literature/v5_open/bartosak/conference2025_http.pdf",
+    "pages":6,
+    "license":"No explicit reuse license recovered; do not inherit Zenodo data CC BY4.0 for the separate conference manuscript",
+    "source_identity_match":"Page2 same20SS316L specimens7axial/8torsion/5proportional; page6 reference1 exact108608DOI",
+    "visual_checks":["PDF page2 rendered and visually inspected","PDF page4 rendered and visually inspected"]
+  },
+  "claims":[
+    {"claim":"Raw CT defect acquisition preceded fatigue loading for the same20-specimen316Ldataset","source":"EAN2025 PDFpage2,Section3","short_quote":"Prior to fatigue testing, defects within the specimens were characterised using X-ray computed tomography.","status":"verified"},
+    {"claim":"The supplied SWT loading parameter is evaluated at the midlife cycleNf/2","source":"EAN2025 PDFpage4,Section5,Eq9 and next sentence","short_quote":"are evaluated on the mid-life cycle, Nf/2.","status":"verified"},
+    {"claim":"CT features are provided per author specimen label1–20,tenlargest defect rows each","source":"Zenodo12515773 workbookFatigue andSpecimen_1…20 plusread_me","status":"verified"},
+    {"claim":"The data are strain-controlled multiaxialLCF,with sevenaxial specimens","source":"108608 primarypublisherabstract plusEAN2025page2","status":"verified; adjacent scope,notforceHCF"},
+    {"claim":"Twenty author labels are mapped to explicit physicalbuild andpowder lot","source":"not recovered","status":"unverified;fieldsblank"},
+    {"claim":"The20specimens share a singlephysicalbuild/powderlot","source":"not recovered","status":"unverified;no count-based inference"},
+    {"claim":"The alloy was tested at roomtemperature","source":"not recovered from accessiblemethods","status":"unverified;temperatureblank"}
+  ],
+  "feature_validity":{
+    "raw_CT_timing":"confirmedpretest",
+    "SWT_in_pretest_prediction":"Not a freelyavailable prescribedstress input; suppliedvalue usesmeasuredcyclicstress/strainatNf/2. A conditionalcyclic-state lifetime model is different from pretestprediction.",
+    "not_an_error_allegation":"This is a prediction-time boundary,not evidence theauthors' conditional fatigue-law evaluation is wrong.",
+    "projected_defect_area":"The projection usesmaximumtensilestrainplane; thetemporal availability ofthecompletecritical-planeprojectionmust be checkedbeforea newacquisitionprotocol usesit.",
+    "no_model_fits":true
+  },
+  "public_packet_inspection":{
+    "latest_record_id":12515773,
+    "latest_api_checked":"2026-10-20",
+    "files":["Dataset.zip"],
+    "zip_members":["316L_fatigue_and_defects.xlsx","read_me.txt"],
+    "workbook_sheets":21,
+    "hidden_sheets":0,
+    "defined_names":0,
+    "cell_comments":0,
+    "physicalbuild_orpowder_crosswalk_in_packet":"notfound",
+    "collection_years":"2021–2024;notmanufacturingbatchidentity"
+  },
+  "remaining_source_access":{
+    "journal_paper":"Publisher HTML403; ElsevierpublicAPIcoredataonly;explicitFULLview401. Methods2.1 preparationdetails notacquired.",
+    "accepted_version":"OpenAlexlistsSSRN4893130,28pages;exactpubliclandingandPDFdeliverylinks403. No auth oraccessbypass attempted.",
+    "official_institutional_pages":"CTU,VSB andCOMTES confirmexactpaperbut no independentpublicfulltextdownload recovered;COMTESlink isinstitutionalproxy,notfollowed.",
+    "Halamka_thesis":"Official2021Masterthesis handle10467/96993 identified byexacttitle. Metadata concernsconstitutivemodelimplementation;fullentityGET429. No316Lspecimenbuildmappingclaimed fromthisthesis.",
+    "conference":"Fullsixpagesinspected;page2defersspecimenpreparationtomethods in108608 anddoesnotnamephysicalbuild/powderIDs."
+  },
+  "minimum_closure_fields":["Specimen labels1–20 tophysicalbuild/plate IDs,or explicitMethodsstatementthatall20camefromonespecifiedbuild","Build-to-powderbatch/lot mapping,or anexplicitone-lotstatement coveringthese20specimens","AccessibleMethods2.1/2.2 andanyspecimenlist toverifytemperature,R,strainamplitude andpriorloading"],
+  "counts":{"life_records_reannotated":20,"defect_records_reannotated":200,"new_numeric_experiments":0,"new_buildqualified_records":0,"new_fits":0}
+}

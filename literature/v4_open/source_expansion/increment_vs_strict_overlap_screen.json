@@ -1,0 +1,11 @@
+{
+  "strict_rows": 309,
+  "increment_rows": 132,
+  "exact_observation_id_overlap": [],
+  "coordinate_screen_tolerances": {
+    "cycles_relative": 0.025,
+    "stress_relative": 0.001
+  },
+  "candidate_curve_pairs_at_least3matches": [],
+  "interpretation": "Negative screen does not prove physical independence; whole related-publication family blocking still required."
+}

@@ -1,0 +1,118 @@
+{
+  "completed_utc": "2026-10-20T19:50:17.447495+00:00",
+  "files": [
+    {
+      "path": "literature/v5_open/faue/crossref.json",
+      "bytes": 4265,
+      "sha256": "7fb828f3a7fff6f937237a70079e4920487119fc587ac08513d0fb3aea2589a5"
+    },
+    {
+      "path": "literature/v5_open/faue/datacite_related.json",
+      "bytes": 163,
+      "sha256": "a2f4265833ffa3a78c03429984d179dc52d2cd9d5c23f888519b2a34cda6b7d5"
+    },
+    {
+      "path": "literature/v5_open/faue/extract_resolved_markers.py",
+      "bytes": 9668,
+      "sha256": "d669864a3a2afd0c5f35a6668721e0fc075da81f28db9fb4960c50f6705534aa"
+    },
+    {
+      "path": "literature/v5_open/faue/extraction_log.json",
+      "bytes": 1683,
+      "sha256": "999c87f59c025aab35d50fbdc9f2f4e6b795de8691dfd6bb84f898bcdb4aabef"
+    },
+    {
+      "path": "literature/v5_open/faue/handoff.txt",
+      "bytes": 6146,
+      "sha256": "d6331c7e5eab3f3362abbe2d94b5ceff01133d9abca70164ad15baea245dd826"
+    },
+    {
+      "path": "literature/v5_open/faue/nsf_record.html",
+      "bytes": 225545,
+      "sha256": "3617e2bc112b4d2e218fd266479a011c8491cbfbbab38e7bb17aab5e020b1931"
+    },
+    {
+      "path": "literature/v5_open/faue/nsf_record_visible_text.txt",
+      "bytes": 7918,
+      "sha256": "cc1c89c4127bf424fa9af4728fb13c6b9b5ec12780410d6851f1a0cc99bb83d2"
+    },
+    {
+      "path": "literature/v5_open/faue/paper_150MPa_marker_review.png",
+      "bytes": 84391,
+      "sha256": "ab8fd30cf1dc6db0e289c13fc2e24739d036e9752abe09e633d110c85e1f2b28"
+    },
+    {
+      "path": "literature/v5_open/faue/paper_225MPa_marker_review.png",
+      "bytes": 107526,
+      "sha256": "2e2e1d192833b449b3dd227e427e52605808986ca86ca5e1a897867a5d4a753e"
+    },
+    {
+      "path": "literature/v5_open/faue/paper_300MPa_marker_review.png",
+      "bytes": 95118,
+      "sha256": "3c18fda6ea2f0e68e9085a6eaf9b460784dc13fe1e401e7d30d3b80631d58e3f"
+    },
+    {
+      "path": "literature/v5_open/faue/paper_300MPa_marker_review_complete.png",
+      "bytes": 163308,
+      "sha256": "a9c47cda5b086751e74e75ffbb7cb2abbfe631c328c6ef14992b401dee231810"
+    },
+    {
+      "path": "literature/v5_open/faue/paper_Figure11.png",
+      "bytes": 155656,
+      "sha256": "d1aee3d34325475d16ccbe1120f2783b943982c328c156e8743056ec114735c9"
+    },
+    {
+      "path": "literature/v5_open/faue/public_followup_receipts.json",
+      "bytes": 2295,
+      "sha256": "06635a53a938e4d5fa7f92ea7f1ccebfa1d0c6580e482e6e8b64b398926dada9"
+    },
+    {
+      "path": "literature/v5_open/faue/publisher_xml.xml",
+      "bytes": 1991,
+      "sha256": "4f43822201f391505f810d0c219e2392f1cdaeb4ff66818f82e9127538c78350"
+    },
+    {
+      "path": "literature/v5_open/faue/source_audit.json",
+      "bytes": 5068,
+      "sha256": "898115f3cb4d410a4dbddee1c4ca3a9140a1aca0793c2324c55c3044e1a751c8"
+    },
+    {
+      "path": "literature/v5_open/faue/thesis_Figure22.png",
+      "bytes": 89802,
+      "sha256": "f072bcbca7acbb6167fa4a52e17fc5695dcff30cacfe8252c7f751aadf56d894"
+    },
+    {
+      "path": "data/external_v5/faue/extraction_receipt.json",
+      "bytes": 1683,
+      "sha256": "999c87f59c025aab35d50fbdc9f2f4e6b795de8691dfd6bb84f898bcdb4aabef"
+    },
+    {
+      "path": "data/external_v5/faue/faue2022_resolved_AM_markers_E2_candidate.csv",
+      "bytes": 22331,
+      "sha256": "3019b7026a3c1674d0bd7de5be77038cfcdf89eae3148d20dd0a437e7a862d1e"
+    },
+    {
+      "path": "data/external_v5/faue/faue2022_unresolved_and_excluded_regions.csv",
+      "bytes": 1270,
+      "sha256": "ef2554aa72ab91d9280ad69c742bdf07e131b9233112ecf0d378c9f531212093"
+    }
+  ],
+  "original_pdf_sources": [
+    {
+      "path": "literature/v3_campaigns/continuation_papers/LaserPolishing_NSF10357954.pdf",
+      "url": "https://par.nsf.gov/servlets/purl/10357954",
+      "bytes": 1015322,
+      "sha256": "43e248e3f600d5d5f306ef55525fb71bf91c21fcaa3f0c9638c7b3fd1b9aae84",
+      "license": "CC BY-NC-ND4.0 per publisher metadata; no separate numerical-data license found",
+      "role": "primary scatter and explicit single-build statement"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Agrawal_thesis.pdf",
+      "url": "https://asset.library.wisc.edu/1711.dl/3KCUCC3YJU4LG8D/R/file-977d6.pdf",
+      "bytes": 5404584,
+      "sha256": "b9477c67ad7511ca059f8b77b68580e1a9f4ad3d684a05e0b9c20ba28c514542",
+      "license": "Copyright2022AnkurKumarAgrawal;all rights reserved",
+      "role": "same-campaign overlap evidence; stress amplitude semantics"
+    }
+  ]
+}

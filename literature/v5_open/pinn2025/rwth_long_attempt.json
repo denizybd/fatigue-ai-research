@@ -1,0 +1,9 @@
+{
+  "url": "https://publications.rwth-aachen.de/record/1012208/files/1012208.pdf?ln=en",
+  "final_url": "https://publications.rwth-aachen.de/record/1012208/files/1012208.pdf?ln=en",
+  "status": 200,
+  "bytes": 248,
+  "elapsed": 20.4,
+  "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561",
+  "head": "b'<html>\\n  <head>\\n    <link href=\"/fast-challenge/style.css\" rel=\"stylesheet\"/>\\n    <script src=\"/fast-challenge/index.js\"></script>\\n  </head>\\n  <body>\\n    <div class=\"loading-overlay\">\\n      <div class=\"spinner\"></div>\\n    </div>\\n  </body>\\n</html>\\n\\n'"
+}

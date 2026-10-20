@@ -1,0 +1,27 @@
+{
+  "Diller29": {
+    "rows": 29,
+    "exact_specimen_stress_R_cycles_event_join": true,
+    "panel": "external_new_specimen_only",
+    "all_build_IDs_blank": true,
+    "strict_eligible_rows": 0
+  },
+  "Tomaszewski137": {
+    "rows": 137,
+    "exact_specimen_stress_R_cycles_event_join": true,
+    "panel": "external_new_specimen_only",
+    "all_build_IDs_blank": true,
+    "strict_eligible_rows": 0
+  },
+  "claim_review": "Root claim of zero new identity-qualified campaigns is consistent with the inspected source gate. No physical-build independence claim is justified for Diller or the full Tomaszewski137.",
+  "Diller_retained_stress_range_levels_MPa": [
+    225.0,
+    250.0,
+    275.0,
+    300.0,
+    325.0,
+    350.0,
+    375.0
+  ],
+  "fits_or_predictions_performed_by_this_agent": false
+}

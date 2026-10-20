@@ -1,0 +1,35 @@
+{
+  "source_primary_records": 43,
+  "source_primary_builds": 3,
+  "acquisition_primary_records": 31,
+  "acquisition_primary_builds": 2,
+  "acquisition_primary_conditions": 3,
+  "acquisition_primary_tasks": 30,
+  "acquisition_primary_campaigns": 1,
+  "acquisition_primary_powder_lots": 1,
+  "primary_k": [
+    0,
+    3,
+    5
+  ],
+  "k10_feasible": false,
+  "static_policy_prediction_rows_equal_across_caps": 8640,
+  "static_policy_bound_and_cost_equality_across_caps": true,
+  "all_panel_confidence_intervals_unavailable_for_one_campaign": true,
+  "zero_gate_passes_interpretation": "not_evaluable_due_to_missing_campaign_sampling_intervals; not_a_policy_failure_label",
+  "rfl_population_fits": [
+    {
+      "n_training_rows": 283,
+      "success": true,
+      "fallback": false,
+      "bound_hits": []
+    },
+    {
+      "n_training_rows": 309,
+      "success": true,
+      "fallback": false,
+      "bound_hits": []
+    }
+  ],
+  "all_checks_pass": true
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "elanges2019_repo",
+    "url": "https://lirias.kuleuven.be/handle/123456789/644320",
+    "final_url": "https://kuleuven.limo.libis.be/discovery/search?query=any,contains,LIRIAS2371829&tab=LIRIAS&search_scope=lirias_profile&vid=32KUL_KUL:Lirias&offset=0",
+    "status": 200,
+    "bytes": 4784,
+    "sha256": "830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8",
+    "path": "literature/v4_open/source_expansion/elanges2019_repo.xml",
+    "accessed_utc": "2026-10-20T19:05:02.020023+00:00",
+    "preview": "<!DOCTYPE html><html id=\"primoExploreRoot\" lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"initial-scale=1,width=device-width,shrink-to-fit=no\"><meta http-equi"
+  },
+  {
+    "name": "elanges2020_api",
+    "url": "https://api.elsevier.com/content/article/pii/S0264127520304962?httpAccept=text/xml",
+    "final_url": "https://api.elsevier.com/content/article/pii/S0264127520304962?httpAccept=text/xml",
+    "status": 200,
+    "bytes": 1999,
+    "sha256": "2d6acf578badf33d6f100319c0d4841383c63e8230f2c92e32026ea11c0c1f38",
+    "path": "literature/v4_open/source_expansion/elanges2020_api.xml",
+    "accessed_utc": "2026-10-20T19:05:02.139835+00:00",
+    "preview": "<full-text-retrieval-response xmlns=\"http://www.elsevier.com/xml/svapi/article/dtd\" xmlns:bk=\"http://www.elsevier.com/xml/bk/dtd\" xmlns:cals=\"http://www.elsevier.com/xml/common/cal"
+  },
+  {
+    "name": "elanges2022_api",
+    "url": "https://api.elsevier.com/content/article/pii/S221486042100717X?httpAccept=text/xml",
+    "final_url": "https://api.elsevier.com/content/article/pii/S221486042100717X?httpAccept=text/xml",
+    "status": 200,
+    "bytes": 1900,
+    "sha256": "9743d7334e6c587c1031fd55b8a950c07cfeabdd09f1ec805e85739b91428cf9",
+    "path": "literature/v4_open/source_expansion/elanges2022_api.xml",
+    "accessed_utc": "2026-10-20T19:05:02.374091+00:00",
+    "preview": "<full-text-retrieval-response xmlns=\"http://www.elsevier.com/xml/svapi/article/dtd\" xmlns:bk=\"http://www.elsevier.com/xml/bk/dtd\" xmlns:cals=\"http://www.elsevier.com/xml/common/cal"
+  },
+  {
+    "name": "elanges2019_api",
+    "url": "https://api.elsevier.com/content/article/pii/S0142112319300143?httpAccept=text/xml",
+    "final_url": "https://api.elsevier.com/content/article/pii/S0142112319300143?httpAccept=text/xml",
+    "status": 200,
+    "bytes": 1877,
+    "sha256": "65360ba1979bbf348692705d4c8f6c856849f03899c8034175018bead68f6c83",
+    "path": "literature/v4_open/source_expansion/elanges2019_api.xml",
+    "accessed_utc": "2026-10-20T19:05:02.190469+00:00",
+    "preview": "<full-text-retrieval-response xmlns=\"http://www.elsevier.com/xml/svapi/article/dtd\" xmlns:bk=\"http://www.elsevier.com/xml/bk/dtd\" xmlns:cals=\"http://www.elsevier.com/xml/common/cal"
+  }
+]

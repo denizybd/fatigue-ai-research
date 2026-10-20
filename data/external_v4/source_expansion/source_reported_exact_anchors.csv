@@ -1,0 +1,5 @@
+doi,source_locator,source_condition,stress_amplitude_MPa,cycles,nearest_database_row,use
+10.1016/j.ijfatigue.2019.01.013,PDF10Figure6caption,ABNM,350,28161,a0146_d000_p001,source-reported exact numeric anchors only; not additional specimens and not substituted into normalized digitized data without physical ID join
+10.1016/j.ijfatigue.2019.01.013,PDF10Figure6caption,SRNM,250,148663,a0146_d001_p006,source-reported exact numeric anchors only; not additional specimens and not substituted into normalized digitized data without physical ID join
+10.1016/j.ijfatigue.2019.01.013,PDF11Figure8caption,ABM,350,254980,a0146_d002_p005,source-reported exact numeric anchors only; not additional specimens and not substituted into normalized digitized data without physical ID join
+10.1016/j.ijfatigue.2019.01.013,PDF11Figure8caption,SRM,350,217990,a0146_d003_p006,source-reported exact numeric anchors only; not additional specimens and not substituted into normalized digitized data without physical ID join

@@ -1,0 +1,31 @@
+{
+  "audited_utc": "2026-10-20T19:22:13.009177+00:00",
+  "all_checks_pass": true,
+  "checks": {
+    "217368records_exact": true,
+    "all14views_same7author_specimens": true,
+    "order_and_source_key_preserved": true,
+    "all_force_strain_cycle_values_preserved": true,
+    "all_force_area_derived_stress_correct": true,
+    "no_Nf_event_or_fixed_stressR_columns": true,
+    "all7primary_life_benchmark_ineligible": true,
+    "no_build_powder_ID_invented": true,
+    "source_family_precautionary_not_independence_claim": true,
+    "all7header_metadata_match": true,
+    "all14history_summary_rows_match": true
+  },
+  "numeric_stress_max_abs_error_MPa": 5.684341886080802e-14,
+  "source_data_domain": "Seven specimens at total-strain amplitude 0.4% yield 217368 repeated cyclic-response samples, with geometry-qualified author labels and recorded exposure headers.",
+  "header_endpoint_limit": "Number of cycles is an exposure header; no fracture/event flag is supplied by theseCSV files. Treat as interrupted response histories and make no Nf/right-censor assertion from the CSV alone.",
+  "duplicate_view_limit": "Peak-valley and selected whole-cycle data are overlapping views of same7specimens. Flat3/4 peak-valley have2007/8024records; preserve duplicates/samples rather than forcing2points/cycle.",
+  "stress_ratio_limit": "Fixed total-strain amplitude does not imply stressR=-1. Force/stress responses evolve and are asymmetric. No fixed stressR imported.",
+  "Jambor2026_reuse_limit": "No exact cross-dataset specimen join has been established; do not sum2025+2026as independent physical specimen union or independent campaigns. Shared precautionary family is correct.",
+  "original_zip_check": "jambor2025_raw_audit.json verifies producerMD5 and all4selectedCSV bytes against original407468869byteZIP.",
+  "input_hashes": {
+    "data/external_v4/jambor2025/cyclic_response_long.csv.gz": "fa7c741faea118e52b35aa8d230e9088ad73394356cda5a77cf8f5b6c3f4282c",
+    "data/external_v4/jambor2025/seven_interrupted_specimens.csv": "2d3daa01a65e0df8f8291e4f19a5cdaace43249654805f801f70218fb7f99c35",
+    "data/external_v4/jambor2025/history_inventory.csv": "493d421a9159cc934d4d1bebc1e8c66b720c6b56057089455882e38763838201",
+    "src/v4_jambor_import.py": "14a9d427818d6c9b6c215dd2604030d3e52355d8b30fac19197d0e8a6a450c59"
+  },
+  "no_model_runs_or_source_edits": true
+}

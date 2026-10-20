@@ -1,0 +1,209 @@
+{
+  "zip_url": "https://zenodo.org/api/records/17086687/files/LCF_test_results.zip/content",
+  "zip_size": 3363924643,
+  "repository_checksum": "md5:0fa710c7782bf9d86906145ec2da52c9",
+  "central_directory_offset": 3363922288,
+  "central_directory_size": 2333,
+  "entries": [
+    {
+      "name": "AM_H_04am.csv",
+      "compressed_size": 524623687,
+      "size": 1809017642,
+      "compression": 8,
+      "local_header_offset": 0,
+      "crc32": 1915602169
+    },
+    {
+      "name": "AM_H_06am.csv",
+      "compressed_size": 474928611,
+      "size": 1608845923,
+      "compression": 8,
+      "local_header_offset": 524623730,
+      "crc32": 4221252013
+    },
+    {
+      "name": "AM_H_08am.csv",
+      "compressed_size": 38368960,
+      "size": 122488198,
+      "compression": 8,
+      "local_header_offset": 999552384,
+      "crc32": 3767322036
+    },
+    {
+      "name": "AM_H_08am_2.csv",
+      "compressed_size": 38641488,
+      "size": 123648186,
+      "compression": 8,
+      "local_header_offset": 1037921387,
+      "crc32": 833057924
+    },
+    {
+      "name": "AM_H_1am.csv",
+      "compressed_size": 13036383,
+      "size": 41150945,
+      "compression": 8,
+      "local_header_offset": 1076562920,
+      "crc32": 443437494
+    },
+    {
+      "name": "AM_H_1am_2.csv",
+      "compressed_size": 7623034,
+      "size": 25334495,
+      "compression": 8,
+      "local_header_offset": 1089599345,
+      "crc32": 537251693
+    },
+    {
+      "name": "AM_V_04am.csv",
+      "compressed_size": 322905707,
+      "size": 1066046020,
+      "compression": 8,
+      "local_header_offset": 1097222423,
+      "crc32": 2145241151
+    },
+    {
+      "name": "AM_V_06am.csv",
+      "compressed_size": 146340961,
+      "size": 476702178,
+      "compression": 8,
+      "local_header_offset": 1420128173,
+      "crc32": 2724539192
+    },
+    {
+      "name": "AM_V_08am.csv",
+      "compressed_size": 52214030,
+      "size": 166861649,
+      "compression": 8,
+      "local_header_offset": 1566469177,
+      "crc32": 3413160153
+    },
+    {
+      "name": "AM_V_1am.csv",
+      "compressed_size": 18399194,
+      "size": 61918181,
+      "compression": 8,
+      "local_header_offset": 1618683250,
+      "crc32": 2540207855
+    },
+    {
+      "name": "A_05am.csv",
+      "compressed_size": 1220095,
+      "size": 4001950,
+      "compression": 8,
+      "local_header_offset": 1637082486,
+      "crc32": 1364921985
+    },
+    {
+      "name": "A_06am.csv",
+      "compressed_size": 147079386,
+      "size": 473252081,
+      "compression": 8,
+      "local_header_offset": 1638302621,
+      "crc32": 2492707059
+    },
+    {
+      "name": "A_08am.csv",
+      "compressed_size": 24874037,
+      "size": 84196648,
+      "compression": 8,
+      "local_header_offset": 1785382047,
+      "crc32": 1606829843
+    },
+    {
+      "name": "A_08am_2.csv",
+      "compressed_size": 39092022,
+      "size": 124427582,
+      "compression": 8,
+      "local_header_offset": 1810256124,
+      "crc32": 2517980078
+    },
+    {
+      "name": "A_1am.csv",
+      "compressed_size": 14385410,
+      "size": 49267202,
+      "compression": 8,
+      "local_header_offset": 1849348188,
+      "crc32": 1044284931
+    },
+    {
+      "name": "A_1am_2.csv",
+      "compressed_size": 39092022,
+      "size": 124427582,
+      "compression": 8,
+      "local_header_offset": 1863733637,
+      "crc32": 2517980078
+    },
+    {
+      "name": "B_04am.csv",
+      "compressed_size": 542111875,
+      "size": 1796846981,
+      "compression": 8,
+      "local_header_offset": 1902825700,
+      "crc32": 2873027647
+    },
+    {
+      "name": "B_06am.csv",
+      "compressed_size": 119073133,
+      "size": 385430613,
+      "compression": 8,
+      "local_header_offset": 2444937615,
+      "crc32": 1479155525
+    },
+    {
+      "name": "B_08am.csv",
+      "compressed_size": 32941320,
+      "size": 104625220,
+      "compression": 8,
+      "local_header_offset": 2564010788,
+      "crc32": 1052831222
+    },
+    {
+      "name": "B_08am_2.csv",
+      "compressed_size": 150505436,
+      "size": 494831566,
+      "compression": 8,
+      "local_header_offset": 2596952148,
+      "crc32": 1574963981
+    },
+    {
+      "name": "B_1am.csv",
+      "compressed_size": 21102199,
+      "size": 66561263,
+      "compression": 8,
+      "local_header_offset": 2747457626,
+      "crc32": 3609152635
+    },
+    {
+      "name": "C_04am.csv",
+      "compressed_size": 365602287,
+      "size": 1201225124,
+      "compression": 8,
+      "local_header_offset": 2768559864,
+      "crc32": 211542377
+    },
+    {
+      "name": "C_06am.csv",
+      "compressed_size": 162631523,
+      "size": 523677543,
+      "compression": 8,
+      "local_header_offset": 3134162191,
+      "crc32": 557800780
+    },
+    {
+      "name": "C_08am.csv",
+      "compressed_size": 44886449,
+      "size": 142181784,
+      "compression": 8,
+      "local_header_offset": 3296793754,
+      "crc32": 1016202337
+    },
+    {
+      "name": "C_1am.csv",
+      "compressed_size": 22242006,
+      "size": 71115643,
+      "compression": 8,
+      "local_header_offset": 3341680243,
+      "crc32": 910540940
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "1",
+    "doi": "10.1016/j.engfailanal.2024.109081",
+    "status": 200,
+    "primary_title": [
+      "Probabilistic Machine Learning for preventing fatigue failures in Additively Manufactured SS316L"
+    ],
+    "primary_author": [
+      "Centola",
+      "Ciampaglia",
+      "Paolino",
+      "Tridello"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2
+        ]
+      ]
+    },
+    "rendered_citation": "Centola A., Ciampaglia A., Paolino D.S., Tridello A. Probabilistic Machine Learning for preventing fatigue failures in Additively Manufactured SS316L. Engineering Failure Analysis 168 (2025),109081.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "2",
+    "doi": "10.1016/j.engfailanal.2026.111075",
+    "status": 429,
+    "primary_title": null,
+    "primary_author": [],
+    "issued": null,
+    "rendered_citation": "Centola A., Ciampaglia A., Paolino D.S., Tridello A. Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process–structure–property relationship. Engineering Failure Analysis (2026),111075.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "3",
+    "doi": "10.1016/j.ijfatigue.2026.109481",
+    "status": 200,
+    "primary_title": [
+      "Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components"
+    ],
+    "primary_author": [
+      "Centola",
+      "Ciampaglia",
+      "Boursier Niutta",
+      "Berto",
+      "Paolino",
+      "Tridello"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "rendered_citation": "Centola A. et al. Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components. International Journal of Fatigue (2026),109481.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "7",
+    "doi": "10.1080/00401706.1999.10485925",
+    "status": 200,
+    "primary_title": [
+      "Estimating Fatigue Curves With the Random Fatigue-Limit Model"
+    ],
+    "primary_author": [
+      "Pascual",
+      "Meeker"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          11
+        ]
+      ]
+    },
+    "rendered_citation": "Pascual F.G., Meeker W.Q. Estimating Fatigue Curves With the Random Fatigue-Limit Model. Technometrics 41(4) (1999),277–289.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "8",
+    "doi": "10.1198/004017003188618760",
+    "status": 200,
+    "primary_title": [
+      "Theory for Optimal Test Plans for the Random Fatigue-Limit Model"
+    ],
+    "primary_author": [
+      "Pascual"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          5
+        ]
+      ]
+    },
+    "rendered_citation": "Pascual F.G. Theory for Optimal Test Plans for the Random Fatigue-Limit Model. Technometrics 45(2) (2003),130–141.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "9",
+    "doi": "10.1038/s41598-025-97031-1",
+    "status": 200,
+    "primary_title": [
+      "The influence of section diameter on the ultrasonic fatigue response of 316L stainless steel manufactured via laser powder bed fusion"
+    ],
+    "primary_author": [
+      "Trombley",
+      "Birnbaum",
+      "Allison"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          18
+        ]
+      ]
+    },
+    "rendered_citation": "Trombley M.L., Birnbaum A.J., Allison J.E. The influence of section diameter on the ultrasonic fatigue response of 316L stainless steel manufactured via laser powder bed fusion. Scientific Reports (2025).",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "12",
+    "doi": "10.1016/j.addma.2023.103559",
+    "status": 429,
+    "primary_title": null,
+    "primary_author": [],
+    "issued": null,
+    "rendered_citation": "Nafar Dastgerdi J., Jaberi O., Remes H., Lehto P., Hosseini Toudeshky H., Kuva J. Fatigue damage process of additively manufactured 316L steel using X-ray computed tomography imaging. Additive Manufacturing 70 (2023),103559.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  },
+  {
+    "id": "14",
+    "doi": "10.1016/j.ijfatigue.2026.109943",
+    "status": 200,
+    "primary_title": [
+      "Machine learning for fatigue life prediction of additively manufactured alloys: Quantifying predictive gain over physics baselines"
+    ],
+    "primary_author": [
+      "Wu",
+      "Zhou",
+      "Ho",
+      "Pang"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2027,
+          1
+        ]
+      ]
+    },
+    "rendered_citation": "Wu Z., Zhou Y., Ho N.S.K., Pang J.H.L. Machine learning for fatigue life prediction of additively manufactured alloys: Quantifying predictive gain over physics baselines. International Journal of Fatigue (January 2027 issue),109943.",
+    "source": "Crossref DOI metadata, bibliography only; not fulltextmethod verification"
+  }
+]

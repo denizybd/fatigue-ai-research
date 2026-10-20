@@ -1,0 +1,145 @@
+{
+  "comparisons": [
+    {
+      "cap": "1e7",
+      "subset": "all",
+      "table": "predictions.csv",
+      "rows": 180960,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "all",
+      "table": "summary.csv",
+      "rows": 3024,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "all",
+      "table": "paired_comparisons.csv",
+      "rows": 4032,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "all",
+      "table": "success_gates.csv",
+      "rows": 336,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "all",
+      "table": "by_condition.csv",
+      "rows": 31200,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "multistress",
+      "table": "predictions.csv",
+      "rows": 169440,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "multistress",
+      "table": "summary.csv",
+      "rows": 3024,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "multistress",
+      "table": "paired_comparisons.csv",
+      "rows": 4032,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "multistress",
+      "table": "success_gates.csv",
+      "rows": 336,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e7",
+      "subset": "multistress",
+      "table": "by_condition.csv",
+      "rows": 28320,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "all",
+      "table": "predictions.csv",
+      "rows": 180960,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "all",
+      "table": "summary.csv",
+      "rows": 3024,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "all",
+      "table": "paired_comparisons.csv",
+      "rows": 4032,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "all",
+      "table": "success_gates.csv",
+      "rows": 336,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "all",
+      "table": "by_condition.csv",
+      "rows": 31200,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "multistress",
+      "table": "predictions.csv",
+      "rows": 169440,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "multistress",
+      "table": "summary.csv",
+      "rows": 3024,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "multistress",
+      "table": "paired_comparisons.csv",
+      "rows": 4032,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "multistress",
+      "table": "success_gates.csv",
+      "rows": 336,
+      "exact_equal": true
+    },
+    {
+      "cap": "1e6",
+      "subset": "multistress",
+      "table": "by_condition.csv",
+      "rows": 28320,
+      "exact_equal": true
+    }
+  ],
+  "all_exact": true
+}

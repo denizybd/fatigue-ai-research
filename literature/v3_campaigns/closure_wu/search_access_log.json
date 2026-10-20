@@ -1,0 +1,13 @@
+{
+  "scope": "Exact DOI109943 only; no broad literature sweep",
+  "queries": [
+    "\"10.1016/j.ijfatigue.2026.109943\" site:dr.ntu.edu.sg",
+    "\"Quantifying predictive gain over physics baselines\" \"NTU\"",
+    "\"Machine learning for fatigue life prediction of additively manufactured alloys\" manuscript",
+    "\"109943\" \"Wu\" \"Pang\" site:ntu.edu.sg",
+    "\"Quantifying predictive gain\" site:ntu.edu.sg",
+    "\"Machine learning for fatigue life prediction\" \"Zicheng\" repository"
+  ],
+  "outcome": "No official accepted-manuscript link found; publisher previews are separately bounded.",
+  "no_other_source_families_imported": true
+}

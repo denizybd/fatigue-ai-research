@@ -1,0 +1,32 @@
+{
+  "queries": [
+    "10.1007/s10853-025-11259-w data dataset supplementary",
+    "Wietecha-Reiman fatigue thesis build powder",
+    "site.nist.gov Contributions of sub-surface intergranular phases",
+    "Wietecha-Reiman11259supplementary dataset",
+    "Wietecha-Reiman thesis316Lmanganese",
+    "site.etda.libraries.psu.edu Wietecha",
+    "Role of Manganese Composition pdf fatigue123402",
+    "4773097pdfWietecha",
+    "Wietecha-Reiman fatigue build plate"
+  ],
+  "primary_findings": [
+    {
+      "url": "https://www.nist.gov/publications/contributions-sub-surface-intergranular-phases-fatigue-crack-initiation-additively",
+      "result": "official alternatepaper retained"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4773097",
+      "result": "38pagepreprint indexed;direct403;no actual ID data recovered"
+    },
+    {
+      "url": "https://api.github.com/repos/wietecha-reiman/Fatigue-AM-316L",
+      "result": "404"
+    },
+    {
+      "url": "https://api.github.com/users/wietecha-reiman/repos?per_page=100",
+      "result": "onepublicTi6Al4Varchive,not316L"
+    }
+  ],
+  "limit": "Bounded public search;not proof of nonexistence of further author data"
+}

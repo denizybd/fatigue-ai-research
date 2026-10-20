@@ -1,0 +1,5 @@
+condition,reported_points,failure_points,runout_points,stress_levels,reused_prior_reference_curve
+25C_As-built,25,24,1,13,True
+25C_HIP,19,18,1,12,False
+450C_HIP,11,10,1,8,False
+450C_As-built,12,11,1,7,False

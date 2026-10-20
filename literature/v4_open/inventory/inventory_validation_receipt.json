@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-10-20T19:13:13.062856+00:00",
+  "scope": "Existing-data inventory only; no models, no source-gate promotion, no frozen-v4 cohort.",
+  "validation_checks": {
+    "base_unique_database_addresses": true,
+    "base160conditions": true,
+    "base46DOIs": true,
+    "primary1126_subset": true,
+    "strict309_subset_primary": true,
+    "gate37sources_matches_primary": true,
+    "gate_rows_sum1126": true,
+    "gate_eligible_rows309": true,
+    "scope347_complement": true,
+    "strict_rowset_equals_existing_eligible_gate": true,
+    "raw_condition_metadata160": true,
+    "all_positive_finite_N_S": true,
+    "event_runout_complement_database": true
+  },
+  "all_checks_pass": true,
+  "cohort_counts": [
+    {
+      "cohort": "ordinary1473",
+      "path": "data/processed/ss316l_lpbf_all.csv",
+      "rows": 1473,
+      "database_conditions": 160,
+      "source_dois": 46,
+      "failures": 1293,
+      "right_censors": 180,
+      "interpretation": "All positive ordinary316L LPBF database S-N records, including unresolved/derived/reused records and nonaxial modes."
+    },
+    {
+      "cohort": "old_primary1126",
+      "path": "data/processed/primary.csv",
+      "rows": 1126,
+      "database_conditions": 120,
+      "source_dois": 37,
+      "failures": 987,
+      "right_censors": 139,
+      "interpretation": "Database-filtered axial force20–30C Kt≈1 candidates; default fields are not certified primary-source measurements."
+    },
+    {
+      "cohort": "strict309",
+      "path": "data/processed/v2/strict_fulltraining/cohort.csv",
+      "rows": 309,
+      "database_conditions": 32,
+      "source_dois": 11,
+      "failures": 262,
+      "right_censors": 47,
+      "interpretation": "Existing source-method-reviewed CA cohort; no need for specimen/build IDs to train or do source-family holdout."
+    },
+    {
+      "cohort": "old_broader565",
+      "path": "data/processed/v2/broader_fulltraining/cohort.csv",
+      "rows": 565,
+      "database_conditions": 61,
+      "source_dois": 25,
+      "failures": 500,
+      "right_censors": 65,
+      "interpretation": "Exploratory legacy sensitivity, not source-verified broad training; contains known republished/linked duplicate points."
+    },
+    {
+      "cohort": "all_except_stepped1028",
+      "path": "data/processed/v2/all/cohort.csv",
+      "rows": 1028,
+      "database_conditions": 117,
+      "source_dois": 36,
+      "failures": 930,
+      "right_censors": 98,
+      "interpretation": "Legacy primary minus98 known stepped records; still includes other quarantine/reuse categories."
+    },
+    {
+      "cohort": "coordinate_dedup_sensitivity942",
+      "path": "data/processed/primary_deduplicated_sensitivity.csv",
+      "rows": 942,
+      "database_conditions": 110,
+      "source_dois": 36,
+      "failures": 819,
+      "right_censors": 123,
+      "interpretation": "Geometric-coordinate sensitivity; not942 proven physical specimens."
+    }
+  ],
+  "inputs_sha256": {
+    "data/processed/ss316l_lpbf_all.csv": "2253993e5b0f938cc0563b104475c03f6b4978f6cb1b37f512fc3f31db0e7b24",
+    "data/processed/primary.csv": "24d668df78dfa084859f34e81ddc29a24136d50f0799d08b80346908011683ed",
+    "data/processed/v2/strict_fulltraining/cohort.csv": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3",
+    "data/processed/v2/broader_fulltraining/cohort.csv": "7736493145708f1a76bcce8e987cec92fe916a9f7bb5e9af700e0bf1e784846a",
+    "data/processed/v2/all/cohort.csv": "44c53db9e23d2cf4e44607aac2ca679d3baffdc9d3ee82e6bbad8fb80ea4f5d7",
+    "data/processed/primary_deduplicated_sensitivity.csv": "ed28cacef0dcca7224f2a52e05d7c97cdf765ff6cb2935adad89e426c0b6c207",
+    "data/raw/FatigueData-AM2022.mat": "79fa8f4e62a57faaaf07b02dcf080e10893601ada8aefeedffdd6152d20d4b42",
+    "literature/provenance_v2/final_source_gate.csv": "8fb1bd00df9b21f7e6bf56dda7cf488e209ffc224f856292a4405922c2da48a5",
+    "literature/provenance_v2/frozen_point_corrections.csv": "bbca60f034b9d57a65c4d2b422906993bdf13faf078a5961027e751fdd35db41",
+    "data/processed/centola_source_overlap.csv": "8da7de57ac6322348c061c6ca104b745fb3c84244b3eb2fe8bb32c1798eb85a3"
+  },
+  "external_sets_are_nested_not_summed": true,
+  "same_database_addresses_do_not_prove_physical_specimen_identity": true,
+  "parent_must_freeze_v4_before_fits": true,
+  "no_correspondence": true,
+  "expanded_metadata_validation": {
+    "raw_am_machine_all120_legacy_equal": true,
+    "raw_scan_pattern_all120_legacy_equal": true
+  },
+  "raw_machine_conditions_present": 139,
+  "new_v4_models_fitted": false,
+  "proposal_protocol_sha256": "7d51e20c0c76de766f30e891b117d2e20bfc20671e709807a66a928e6f3f891f"
+}

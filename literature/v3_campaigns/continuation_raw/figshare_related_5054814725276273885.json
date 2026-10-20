@@ -1,0 +1,53 @@
+[
+  {
+    "project_id": null,
+    "id": 29923466,
+    "title": "Automated Structural Integrity Assessment of Additively Manufactured Titanium Alloys via Multi-Modal Fusion and HyperScore-Driven Anomaly Detection",
+    "doi": "10.6084/m9.figshare.29923466.v1",
+    "handle": "",
+    "url": "https://api.figshare.com/v2/articles/29923466",
+    "published_date": "2025-08-16T01:06:42Z",
+    "thumb": "",
+    "defined_type": 6,
+    "defined_type_name": "journal contribution",
+    "group_id": 0,
+    "url_private_api": "https://api.figshare.com/v2/account/articles/29923466",
+    "url_public_api": "https://api.figshare.com/v2/articles/29923466",
+    "url_private_html": "https://figshare.com/account/articles/29923466",
+    "url_public_html": "https://figshare.com/articles/journal_contribution/Automated_Structural_Integrity_Assessment_of_Additively_Manufactured_Titanium_Alloys_via_Multi-Modal_Fusion_and_HyperScore-Driven_Anomaly_Detection/29923466",
+    "timeline": {
+      "posted": "2025-08-16T01:06:42",
+      "firstOnline": "2025-08-16"
+    },
+    "resource_title": "",
+    "resource_doi": "",
+    "created_date": "2025-08-16T01:06:42Z",
+    "modified_date": "2025-08-16T01:06:42Z"
+  },
+  {
+    "project_id": null,
+    "id": 24147718,
+    "title": "Supplementary material for 'High-cycle fatigue life prediction of L-PBF AlSi10Mg alloys: A domain knowledge-guided symbolic regression approach'",
+    "doi": "10.6084/m9.figshare.24147718.v1",
+    "handle": "",
+    "url": "https://api.figshare.com/v2/articles/24147718",
+    "published_date": "2023-09-15T14:33:06Z",
+    "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-rs-5954818599357/42366460/thumb.png",
+    "defined_type": 6,
+    "defined_type_name": "journal contribution",
+    "group_id": 5727,
+    "url_private_api": "https://api.figshare.com/v2/account/articles/24147718",
+    "url_public_api": "https://api.figshare.com/v2/articles/24147718",
+    "url_private_html": "https://figshare.com/account/articles/24147718",
+    "url_public_html": "https://rs.figshare.com/articles/journal_contribution/Supplementary_material_for_High-cycle_fatigue_life_prediction_of_L-PBF_AlSi10Mg_alloys_A_domain_knowledge-guided_symbolic_regression_approach_/24147718",
+    "timeline": {
+      "posted": "2023-09-15T14:33:06",
+      "firstOnline": "2023-09-15",
+      "publisherAcceptance": "2023-07-27T00:00:00"
+    },
+    "resource_title": "High-cycle fatigue life prediction of L-PBF AlSi10Mg alloys: a domain knowledge-guided symbolic regression approach",
+    "resource_doi": "10.1098/rsta.2022.0383",
+    "created_date": "2023-09-15T14:33:07Z",
+    "modified_date": "2026-02-17T14:33:09Z"
+  }
+]

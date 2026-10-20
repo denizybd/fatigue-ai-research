@@ -1,0 +1,9 @@
+{
+  "static_policy_selection_ids_identical_across_caps": true,
+  "n_static_selection_rows": 7410,
+  "lower_cap_revealed_endpoints_never_later": true,
+  "lower_cap_failure_flags_never_increase_on_same_selected_specimens": true,
+  "zero_shot_quantiles_identical_across_caps": true,
+  "zero_shot_prediction_rows": 54480,
+  "query_outcomes_identical": true
+}

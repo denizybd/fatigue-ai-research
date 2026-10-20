@@ -1,0 +1,78 @@
+[
+  {
+    "project_id": null,
+    "id": 33702643,
+    "title": "Benchmark Matrix: Building Envelope Thermal Transmission, Fenestration SHGC, and Infiltration Sizing per ACCA Manual J",
+    "doi": "10.6084/m9.figshare.33702643.v1",
+    "handle": "",
+    "url": "https://api.figshare.com/v2/articles/33702643",
+    "published_date": "2026-09-13T14:02:57Z",
+    "thumb": "",
+    "defined_type": 3,
+    "defined_type_name": "dataset",
+    "group_id": 0,
+    "url_private_api": "https://api.figshare.com/v2/account/articles/33702643",
+    "url_public_api": "https://api.figshare.com/v2/articles/33702643",
+    "url_private_html": "https://figshare.com/account/articles/33702643",
+    "url_public_html": "https://figshare.com/articles/dataset/Benchmark_Matrix_Building_Envelope_Thermal_Transmission_Fenestration_SHGC_and_Infiltration_Sizing_per_ACCA_Manual_J/33702643",
+    "timeline": {
+      "posted": "2026-09-13T14:02:57"
+    },
+    "resource_title": "",
+    "resource_doi": "",
+    "created_date": "2026-09-13T14:02:57Z",
+    "modified_date": "2026-09-13T14:02:58Z"
+  },
+  {
+    "project_id": null,
+    "id": 31463689,
+    "title": "Burden of disease and benefits of exercise in fixed airway obstruction asthma",
+    "doi": "",
+    "handle": "20.500.11937/2536",
+    "url": "https://api.figshare.com/v2/articles/31463689",
+    "published_date": "2026-03-03T19:48:26Z",
+    "thumb": "https://s3.ap-southeast-2.amazonaws.com/figshare-production-eu-curtin-previews0711-ap-southeast-2/62349406/thumb.png",
+    "defined_type": 8,
+    "defined_type_name": "thesis",
+    "group_id": 59872,
+    "url_private_api": "https://api.figshare.com/v2/account/articles/31463689",
+    "url_public_api": "https://api.figshare.com/v2/articles/31463689",
+    "url_private_html": "https://figshare.com/account/articles/31463689",
+    "url_public_html": "https://curate.curtin.edu.au/articles/thesis/Burden_of_disease_and_benefits_of_exercise_in_fixed_airway_obstruction_asthma/31463689",
+    "timeline": {
+      "posted": "2026-03-03T19:48:26",
+      "firstOnline": "2017-01-30",
+      "publisherPublication": "2009-01-01T00:00:00"
+    },
+    "resource_title": "",
+    "resource_doi": "",
+    "created_date": "2026-03-03T19:48:26Z",
+    "modified_date": "2026-03-27T17:14:15Z"
+  },
+  {
+    "project_id": null,
+    "id": 23205863,
+    "title": "Predictors and health effects of smoking transitions in young adults",
+    "doi": "10.25959/23205863.v1",
+    "handle": "",
+    "url": "https://api.figshare.com/v2/articles/23205863",
+    "published_date": "2023-05-26T00:57:54Z",
+    "thumb": "https://s3-ap-southeast-2.amazonaws.com/figshare-production-eu-utas-previews4731-ap-southeast-2/40902374/thumb.png",
+    "defined_type": 8,
+    "defined_type_name": "thesis",
+    "group_id": 48118,
+    "url_private_api": "https://api.figshare.com/v2/account/articles/23205863",
+    "url_public_api": "https://api.figshare.com/v2/articles/23205863",
+    "url_private_html": "https://figshare.com/account/articles/23205863",
+    "url_public_html": "https://figshare.utas.edu.au/articles/thesis/Predictors_and_health_effects_of_smoking_transitions_in_young_adults/23205863",
+    "timeline": {
+      "posted": "2023-05-26T00:57:54",
+      "firstOnline": "2018-05-01",
+      "publisherPublication": "2017-01-01T00:00:00"
+    },
+    "resource_title": "",
+    "resource_doi": "",
+    "created_date": "2023-05-26T00:57:54Z",
+    "modified_date": "2026-03-23T09:10:35Z"
+  }
+]

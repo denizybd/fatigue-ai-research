@@ -1,0 +1,879 @@
+{
+  "audited_utc": "2026-10-20T17:01:06.578576+00:00",
+  "scope": "Independent read-only completion/impasse audit against original goal and current phase3.1; no model reruns or source mutations.",
+  "objective_not_shrunk": "The plural identity-qualified independent-campaign requirement remains part of the objective. Merot recovery does not redefine completion as one campaign.",
+  "platform_goal_visibility": "Child get_goal returned null; parent is responsible for actual goal status. This report evaluates supplied original scope and current artifacts, not a fabricated child goal.",
+  "overall_objective_complete": false,
+  "requirements": [
+    {
+      "id": "R01",
+      "requirement": "Preserve author data provenance and source-backed physical specimen/build identity.",
+      "status": "PASS_FOR_ONE_NEW_PRIMARY_CAMPAIGN",
+      "evidence": [
+        "data/external_v3/continuation_papers/data_fatigue_merot.csv",
+        "literature/v3_campaigns/continuation_papers/merot_source_specimen_build_crosswalk70.csv",
+        "literature/v3_campaigns/continuation_merot_audit/extraction_audit_receipt.json"
+      ],
+      "interpretation": "70 physically unique first blocks; 43 nominal-stress air/20°C primary records. Powder-only labels or curve IDs must not be promoted to physical builds."
+    },
+    {
+      "id": "R02",
+      "requirement": "Find additional fully matched independent campaigns, plural.",
+      "status": "INCOMPLETE_EXTERNAL_SOURCE_DEPENDENCY",
+      "evidence": [
+        "STATE.md",
+        "literature/v3_campaigns/closure_tomas/closure_verdict.json",
+        "literature/v3_campaigns/closure_diller/closure_receipt.json",
+        "literature/v3_campaigns/closure_root/closure_solberg_independent.json",
+        "literature/v3_campaigns/continuation_trombley/thesis_lineage_audit_receipt.json"
+      ],
+      "interpretation": "Only one newly qualified RT author campaign is available. Three builds, treatment groups or ten seeds do not supply a second independent campaign. No source closure was invented."
+    },
+    {
+      "id": "R03",
+      "requirement": "Use valid constant-amplitude first exposure and preserve right censoring; quarantine uncertain history/stress.",
+      "status": "PASS",
+      "evidence": [
+        "protocols/v3/virgin_first_exposure_extension.txt",
+        "src/v3_firstblock_import.py",
+        "literature/v3_campaigns/continuation_merot_audit/extraction_audit_receipt.json"
+      ],
+      "interpretation": "Later blocks, equivalent lives and postfailure fields are excluded. Collisions across all aliases, including K2/D0, are quarantined. Nine local-stress and eighteen saline records stay separate."
+    },
+    {
+      "id": "R04",
+      "requirement": "Compare acquisition policies on identical outcome-hidden queries/candidate pools.",
+      "status": "PASS",
+      "evidence": [
+        "literature/v3_methods/independent_code_review.md",
+        "literature/v3_campaigns/continuation_merot_audit/identity_results_independent_audit.json"
+      ],
+      "interpretation": "Queries precede acquisition. Known stress/R covariates are allowed; outcomes remain hidden. All six models share the same selected sequence, so no RFL-specific optimizer is claimed."
+    },
+    {
+      "id": "R05",
+      "requirement": "Use six strong proper censored baselines and four fixed acquisition policies.",
+      "status": "PASS_WITH_FEASIBILITY_LIMIT",
+      "evidence": [
+        "protocols/v3/frozen_design.txt",
+        "results/v3/identity_cap1e7/run_receipt.json",
+        "results/v3/identity_cap1e6/run_receipt.json"
+      ],
+      "interpretation": "Six models, four policies and ten splits are present. Primary k=0/3/5 are feasible; k=10 is impossible under the fixed pools. Normal-normal RFL is not a Weibull reproduction; population parameter uncertainty is omitted."
+    },
+    {
+      "id": "R06",
+      "requirement": "Keep target campaigns and linked source families outside population fitting.",
+      "status": "PASS_WITH_PROVENANCE_LIMIT",
+      "evidence": [
+        "literature/v3_campaigns/continuation_merot_audit/identity_results_independent_audit.json",
+        "results/v3/identity_cap1e6/run_receipt.json"
+      ],
+      "interpretation": "Historical training has 309 records. Removing the related Dastgerdi family leaves 283 for that pilot. Known family exclusions pass; undiscovered physical overlap in historical digitization cannot be ruled out."
+    },
+    {
+      "id": "R07",
+      "requirement": "Assess risk, paired utility, availability, censor ambiguity and test cost together.",
+      "status": "PASS",
+      "evidence": [
+        "src/v3_summarize.py",
+        "literature/v3_campaigns/continuation_merot_audit/identity_results_independent_audit.json"
+      ],
+      "interpretation": "Paired censoring identification and equal condition/campaign/seed weighting are audited. Identification ranges are not sampling CIs. Cycle cost is recorded exposure, not wall-clock or manufacturing cost."
+    },
+    {
+      "id": "R08",
+      "requirement": "Run frozen cap sensitivity, convergence and appropriate numerical checks.",
+      "status": "PASS",
+      "evidence": [
+        "results/v3/identity_cap1e7/run_receipt.json",
+        "results/v3/identity_cap1e6/run_receipt.json",
+        "literature/v3_methods/synthetic_test_receipt.json",
+        "literature/v3_methods/real_quadrature_sensitivity.json"
+      ],
+      "interpretation": "Both caps are complete. Nineteen synthetic tests pass. Two extension RFL fits converge without fallback or selected bound hits. The broader 96/192-node check passes. No unresolved issue requires a full new fit."
+    },
+    {
+      "id": "R09",
+      "requirement": "Quantify independent-campaign uncertainty without treating repeated splits/builds as independence.",
+      "status": "CORRECTLY_LIMITED_BY_DATA",
+      "evidence": [
+        "literature/v3_campaigns/continuation_merot_audit/identity_scope_and_fit_audit.json",
+        "results/v3/identity_cap1e6/summary.csv"
+      ],
+      "interpretation": "Each extension panel has one campaign. Sampling CIs are unavailable, so success gates are not evaluable. This is insufficient evidence, not a substantive failure result for every policy."
+    },
+    {
+      "id": "R10",
+      "requirement": "Complete critical independent arithmetic, source, leakage and cost review.",
+      "status": "PASS",
+      "evidence": [
+        "literature/v3_methods/independent_code_review.md",
+        "literature/v3_campaigns/continuation_merot_audit/identity_results_independent_audit.json",
+        "literature/v3_campaigns/continuation_merot_audit/identity_scope_and_fit_audit.json"
+      ],
+      "interpretation": "Each cap has 50 tasks, 11,520 repeated predictions and 920 selections. All 1,728 absolute and 2,304 paired means were independently checked. Numerical agreement is not physical validation."
+    },
+    {
+      "id": "R11",
+      "requirement": "Supply a genuinely rerunnable current package and verify clean replay.",
+      "status": "PASS_FOR_CURRENT_DELIVERED_PACKAGE",
+      "evidence": [
+        "outputs/phase3-1/TESLIM_KAYDI.json",
+        "outputs/phase3-1/arsivden-temiz-tekrar.json",
+        "outputs/phase3-1/tasinabilir-tekrar-denetimi.json"
+      ],
+      "interpretation": "The current 23-file manifest and 102-entry ZIP CRC were verified. Twelve clean-replay tables agree. Portable predictions differ only in fit_signature cache metadata; scientific values and parameters are exact. Parent will refresh delivery for the English documents."
+    },
+    {
+      "id": "R12",
+      "requirement": "State model-dependent tradeoffs and generalization limits honestly.",
+      "status": "PASS",
+      "evidence": [
+        "STATE.md",
+        "literature/v3_campaigns/continuation_merot_audit/identity_result_claim_review.md",
+        "manuscript/v31/current_paper_source.json"
+      ],
+      "interpretation": "No general 90% guarantee, new optimal policy or original-BNN superiority is claimed. The new-cohort 7.5% cycle saving is distinct from the earlier secondary approximately 70%. The primary acquisition subset contains 21 precorroded and 10 reference specimens."
+    },
+    {
+      "id": "R13",
+      "requirement": "Check novelty against physical-baseline/group-transfer/test-planning prior art.",
+      "status": "BOUNDED_EXTERNAL_ACCESS_LIMIT_AFTER_TARGETED_CLOSURE",
+      "evidence": [
+        "literature/v3_methods/rfl_and_stress_design_review.md",
+        "literature/v3_campaigns/continuation_raw/prior_art_109943_scope.md",
+        "literature/v3_campaigns/closure_wu/official_access_outcome.json",
+        "literature/v3_campaigns/closure_wu/official_access_outcome.json"
+      ],
+      "interpretation": "RFL, information-based planning and transfer are established. Exact official Wu metadata/ORCID/NTU/publisher checks recovered no full text or supplement. Novelty remains limited to what the publisher preview supports; no unsupported absence claim is made. No further concrete readily accessible primary lead is currently documented."
+    },
+    {
+      "id": "R14",
+      "requirement": "Produce a current English scientific draft/supplement, brief, email draft and technicalQ&A.",
+      "status": "PASS_CURRENT_DELIVERED_DRAFTS_AND_QA",
+      "evidence": [
+        "manuscript/v31/current_paper_source.json",
+        "manuscript/v31/supplementary_material.txt",
+        "outreach/v31/research_brief_en.txt",
+        "outreach/v31/email_draft_en.txt",
+        "outreach/v31/technical_qa_tr.txt",
+        "outputs/phase3-1/english-update/TESLIM_KAYDI.json",
+        "outputs/phase3-1/english-update/visual_qa_receipt.json",
+        "literature/v3_campaigns/closure_audit/english_claim_review.json",
+        "outputs/phase3-1/english-update/TESLIM_KAYDI.json",
+        "outputs/phase3-1/english-update/visual_qa_receipt.json",
+        "literature/v3_campaigns/closure_audit/english_claim_review.json"
+      ],
+      "interpretation": "Current 8-page English scientific paper, 1-page brief, supplementary methods/data dictionary, email draft and Turkish/English Q&A are delivered. All 17 manifest file hashes/bytes match. Final PDF/source hashes agree with the complete visual inspection chain. An independent reader verifies all 32 table rows, source limits, k0 reference disclosure and corrected creator attributions. No correspondence was sent."
+    },
+    {
+      "id": "R15",
+      "requirement": "Keep project entrypoints current and do not send correspondence/publications.",
+      "status": "PASS_CURRENT_STATE_ENTRYPOINT_AND_NO_CORRESPONDENCE",
+      "evidence": [
+        "README.md",
+        "STATE.md",
+        "outreach/v31/email_draft_en.txt"
+      ],
+      "interpretation": "README leads with phase3.1/current outreach and marks older material historical; STATE retains the missing-second-campaign condition. All current drafts remain unsent. No external upload, publication or physical test was performed."
+    }
+  ],
+  "current_compute": [
+    {
+      "name": "identity_cap1e6",
+      "tasks": 50,
+      "prediction_instances": 11520,
+      "selection_rows": 920,
+      "models": [
+        "curved_hierarchical",
+        "hierarchical",
+        "local_slope",
+        "matched_intercept",
+        "pooled",
+        "rfl"
+      ],
+      "policies": [
+        "active_query_variance",
+        "high_stress",
+        "random",
+        "stress_span"
+      ],
+      "budgets": [
+        0,
+        3,
+        5
+      ],
+      "one_campaign_per_panel": true,
+      "all_sampling_CIs_missing": true,
+      "gates_not_evaluable_due_to_missing_CIs": true,
+      "core_code_matches_run_receipt": {
+        "v3_run.py": true,
+        "v3_design.py": true,
+        "v3_rfl.py": true,
+        "v3_summarize.py": true
+      },
+      "rfl": [
+        {
+          "n_train": 283,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        },
+        {
+          "n_train": 309,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        }
+      ]
+    },
+    {
+      "name": "identity_cap1e7",
+      "tasks": 50,
+      "prediction_instances": 11520,
+      "selection_rows": 920,
+      "models": [
+        "curved_hierarchical",
+        "hierarchical",
+        "local_slope",
+        "matched_intercept",
+        "pooled",
+        "rfl"
+      ],
+      "policies": [
+        "active_query_variance",
+        "high_stress",
+        "random",
+        "stress_span"
+      ],
+      "budgets": [
+        0,
+        3,
+        5
+      ],
+      "one_campaign_per_panel": true,
+      "all_sampling_CIs_missing": true,
+      "gates_not_evaluable_due_to_missing_CIs": true,
+      "core_code_matches_run_receipt": {
+        "v3_run.py": true,
+        "v3_design.py": true,
+        "v3_rfl.py": true,
+        "v3_summarize.py": true
+      },
+      "rfl": [
+        {
+          "n_train": 283,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        },
+        {
+          "n_train": 309,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        }
+      ]
+    },
+    {
+      "name": "identity_portable_cap1e6",
+      "tasks": 50,
+      "prediction_instances": 11520,
+      "selection_rows": 920,
+      "models": [
+        "curved_hierarchical",
+        "hierarchical",
+        "local_slope",
+        "matched_intercept",
+        "pooled",
+        "rfl"
+      ],
+      "policies": [
+        "active_query_variance",
+        "high_stress",
+        "random",
+        "stress_span"
+      ],
+      "budgets": [
+        0,
+        3,
+        5
+      ],
+      "one_campaign_per_panel": true,
+      "all_sampling_CIs_missing": true,
+      "gates_not_evaluable_due_to_missing_CIs": true,
+      "core_code_matches_run_receipt": {
+        "v3_run.py": true,
+        "v3_design.py": true,
+        "v3_rfl.py": true,
+        "v3_summarize.py": true
+      },
+      "rfl": [
+        {
+          "n_train": 283,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        },
+        {
+          "n_train": 309,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        }
+      ]
+    },
+    {
+      "name": "identity_portable_cap1e7",
+      "tasks": 50,
+      "prediction_instances": 11520,
+      "selection_rows": 920,
+      "models": [
+        "curved_hierarchical",
+        "hierarchical",
+        "local_slope",
+        "matched_intercept",
+        "pooled",
+        "rfl"
+      ],
+      "policies": [
+        "active_query_variance",
+        "high_stress",
+        "random",
+        "stress_span"
+      ],
+      "budgets": [
+        0,
+        3,
+        5
+      ],
+      "one_campaign_per_panel": true,
+      "all_sampling_CIs_missing": true,
+      "gates_not_evaluable_due_to_missing_CIs": true,
+      "core_code_matches_run_receipt": {
+        "v3_run.py": true,
+        "v3_design.py": true,
+        "v3_rfl.py": true,
+        "v3_summarize.py": true
+      },
+      "rfl": [
+        {
+          "n_train": 283,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        },
+        {
+          "n_train": 309,
+          "success": true,
+          "fallback": false,
+          "bound_hits": []
+        }
+      ]
+    }
+  ],
+  "delivered_manifest_checks": [
+    {
+      "name": "1e6-by_condition.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e6-paired_comparisons.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e6-success_gates.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e6-summary.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e7-by_condition.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e7-paired_comparisons.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e7-success_gates.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "1e7-summary.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "BASLANGIC.txt",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "ana-karsilastirma.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "arsivden-temiz-tekrar.json",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "asama3-1-kimlik-ve-gerilme.pdf",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "asama3-1-tekrar-uretim.zip",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "bagimsiz-hesap-denetimi.json",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "dogrulanmis-ilk-blok43.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "gerilme-secim-sayilari.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "hangi-gerilme.png",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "ilk-blok-ek-protokolu.txt",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "kaynak-kapisi.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "numune-uretim-toz-eslemesi70.csv",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "sansur-ve-risk.png",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "sayisal-bulgular.json",
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "name": "tasinabilir-tekrar-denetimi.json",
+      "bytes_match": true,
+      "sha256_match": true
+    }
+  ],
+  "all_current_manifest_hashes_match": true,
+  "zip_check": {
+    "entries": 102,
+    "crc_bad_entry": null
+  },
+  "fresh_archive_replay": {
+    "status": "PASS",
+    "n_tables": 12,
+    "max_numeric_difference": 0,
+    "population_fits_exact": true
+  },
+  "paper_table_checks": [
+    {
+      "table": "T1",
+      "model": "pooled",
+      "policy": "random",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "pooled",
+      "policy": "high_stress",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "pooled",
+      "policy": "stress_span",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "pooled",
+      "policy": "active_query_variance",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "matched_intercept",
+      "policy": "random",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "matched_intercept",
+      "policy": "high_stress",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "matched_intercept",
+      "policy": "stress_span",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "matched_intercept",
+      "policy": "active_query_variance",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "hierarchical",
+      "policy": "random",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "hierarchical",
+      "policy": "high_stress",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "hierarchical",
+      "policy": "stress_span",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "hierarchical",
+      "policy": "active_query_variance",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "curved_hierarchical",
+      "policy": "random",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "curved_hierarchical",
+      "policy": "high_stress",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "curved_hierarchical",
+      "policy": "stress_span",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "curved_hierarchical",
+      "policy": "active_query_variance",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "rfl",
+      "policy": "random",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "rfl",
+      "policy": "high_stress",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "rfl",
+      "policy": "stress_span",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "rfl",
+      "policy": "active_query_variance",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "local_slope",
+      "policy": "random",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "local_slope",
+      "policy": "high_stress",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "local_slope",
+      "policy": "stress_span",
+      "matches": true
+    },
+    {
+      "table": "T1",
+      "model": "local_slope",
+      "policy": "active_query_variance",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "hierarchical",
+      "policy": "high_stress",
+      "cap": "1e7",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "hierarchical",
+      "policy": "active_query_variance",
+      "cap": "1e7",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "rfl",
+      "policy": "high_stress",
+      "cap": "1e7",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "rfl",
+      "policy": "active_query_variance",
+      "cap": "1e7",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "hierarchical",
+      "policy": "high_stress",
+      "cap": "1e6",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "hierarchical",
+      "policy": "active_query_variance",
+      "cap": "1e6",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "rfl",
+      "policy": "high_stress",
+      "cap": "1e6",
+      "matches": true
+    },
+    {
+      "table": "T2",
+      "model": "rfl",
+      "policy": "active_query_variance",
+      "cap": "1e6",
+      "matches": true
+    }
+  ],
+  "all_paper_table_values_match_frozen_results": true,
+  "remaining_computational_scientific_work_without_new_identities": {
+    "new_full_model_runs_needed": false,
+    "unresolved_specific_numerical_issue": null,
+    "same_data_more_seeds_would_complete_goal": false,
+    "existing_secondary_promotions_permitted": false,
+    "remaining_routine_work": [],
+    "fulltext_literature_limit": "Wu fulltext access remains incomplete; future legitimate public access may refine novelty. It does not solve campaign lineage or justify an invented method-level gap.",
+    "optional_future_research_not_repairs": [
+      "Integrating population-parameter uncertainty or devising a different planner could be explored under a new labeled protocol; these were explicitly omitted, not silently claimed complete.",
+      "Such extensions cannot create independent physical campaigns, evaluate one-campaign population CIs, or satisfy the plural source-lineage requirement. No unresolved specific defect requires them before the current result is delivered."
+    ],
+    "pending_scientific_checks_under_frozen_protocol": []
+  },
+  "blocking_condition": {
+    "condition": "A second additional independent RT LPBF316L campaign with exact author specimen-to-physical-build/production-batch mapping and valid virgin constant-amplitude outcomes remains unverified.",
+    "recurrence_phases": [
+      "Original phase3 source/acquisition turn: zero additional fully qualified campaigns.",
+      "Mérot continuation turn: one additional fully qualified campaign; the second remains missing.",
+      "Current targeted closure turn: Diller/Tomaszewski/Solberg/Trombley checks add zero; the second remains missing."
+    ],
+    "recurrence_count_reported": 3,
+    "recurrence_basis": "Parent identified these three goal turns; retained STATE/history support the scientific dependency. Local artifact timestamps alone do not establish distinct platform goal-turn IDs.",
+    "meaningful_progress_during_recurrence": "Mérot recovery and the current English package were real progress. They are now delivered but do not fulfill the plural-campaign requirement. The impasse recommendation is made after that independent work is finished, not merely because the source search is difficult.",
+    "current_public_closure_receipts_negative": true,
+    "no_global_nonexistence_claim": "Reviewed public source chains are exhausted without a key; this is not proof no relevant public source exists anywhere.",
+    "what_changes_status": [
+      "A public primary specimen/build key or released appendix covering eligible actual specimen IDs.",
+      "User-authorized source clarification or an author response supplying the missing identities and methods.",
+      "A new independent campaign with the required measurements and provenance."
+    ],
+    "status_recommendation": "Recommend blocked, not complete: the same missing-second-campaign source-lineage dependency recurs across the three parent-identified goal turns; all required computations, current drafts, audits and concrete currently available source leads are finished. Final parent bundling of these audit files may proceed without any new scientific run. Progress on the unmet primary requirement needs newly available primary identity/method evidence or explicitly authorized source clarification. Parent must set and report the actual goal status.",
+    "not_authorized_by_audit": [
+      "Sending messages or emails",
+      "Logging into restricted repositories",
+      "Inventing identity mapping from prefixes/counts/plots",
+      "New experiments fabricated from source rows",
+      "Repeated fullfits without a specific unresolved numerical issue"
+    ],
+    "bounded_compute_statement": "No required computational work remains under the frozen comparisons, rather than a claim that all further scientific computation is impossible.",
+    "all_current_concrete_source_closure_routes_complete_negative": [
+      "Diller public deposit/dissertation/student-catalog build crosswalk",
+      "Tomaszewski exact raw-ID/article single-build inclusion key",
+      "Solberg official 173-page thesis: 316L section lacks identity key; maraging table excluded",
+      "Trombley official 196-page thesis/public process edges: common powder only, no four-build individual join",
+      "Wu109943 exact official fulltext/supplement access route"
+    ],
+    "external_evidence_only_not_compute_capacity": true
+  },
+  "new_source_closure_summary": {
+    "tomas_new_rows": 0,
+    "diller_new_rows": 0,
+    "solberg_new_campaigns": 0,
+    "solberg_pdf_now_acquired": true,
+    "solberg_maraging_table_excluded": true,
+    "wu_official_fulltext_or_supplement_obtained": false,
+    "wu_new_qualified_records": 0
+  },
+  "current_document_state": {
+    "source_texts": "complete",
+    "rendering": "complete",
+    "delivery_manifest": "verified17/17",
+    "paper_pages": 8,
+    "brief_pages": 1,
+    "current_source_sha256": "646f9efe0ddd7d3fd2fdc5b3ffcbf98ed4360e4def1fd5265495df69c90fbca8",
+    "QAs": "Current Turkish and English versions, local unsent drafts."
+  },
+  "path_roots": {
+    "research": "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research",
+    "user_delivery": "/Users/deniz2/Documents/Codex/2026-10-20/bu-konuda-s-seviye-bir-al",
+    "path_rule": "Evidence paths beginning outputs/ resolve under user_delivery; other relative evidence paths resolve under research."
+  },
+  "english_delivery_final": {
+    "manifest": "/Users/deniz2/Documents/Codex/2026-10-20/bu-konuda-s-seviye-bir-al/outputs/phase3-1/english-update/TESLIM_KAYDI.json",
+    "manifest_sha256": "1170c52051cf449c0d4242536878b225cc277bb33d522bf803a9537995b44e4b",
+    "checks": [
+      {
+        "name": "current_paper_source.json",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "current_working_paper_en.pdf",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "diller29-missing-source-fields.csv",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "email_draft_en.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "future_campaign_protocol.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "gereken-kaynak-kaniti.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "policy_tradeoff_en.png",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "policy_tradeoff_en.svg",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "research_brief_en.pdf",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "research_brief_en.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "stress_choices_en.png",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "stress_choices_en.svg",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "supplementary_material.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "technical_qa_en.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "technical_qa_tr.txt",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "tomaszewski9-missing-source-fields.csv",
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      {
+        "name": "visual_qa_receipt.json",
+        "bytes_match": true,
+        "sha256_match": true
+      }
+    ],
+    "all17files_hashes_and_sizes_match": true,
+    "paper_pages": 8,
+    "brief_pages": 1,
+    "source_json_sha256": "646f9efe0ddd7d3fd2fdc5b3ffcbf98ed4360e4def1fd5265495df69c90fbca8",
+    "visual_qa_receipt_hash": "3a7bf7d355e7919b0b786ee2f2d0ff52598a0af44e999774d26c5aebe93ec011",
+    "final_PDF_hashes_match_visual_receipt": true,
+    "all8paper_pages_covered_by_inspection_or_pixel_identity": true,
+    "brief_inspected_layout_retained": true,
+    "independent_claim_review_pass": "PASS. Final scientific claims, numerical tables, method disclosure, source-citation corrections and final source-to-visual-QA hash agreement verified."
+  },
+  "final_verdict": "AVAILABLE_CURRENT_WORK_DELIVERED; BROADER_OBJECTIVE_INCOMPLETE; RECURRING_EXTERNAL_SOURCE_DEPENDENCY_SUPPORTS_BLOCKED"
+}

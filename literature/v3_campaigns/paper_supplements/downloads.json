@@ -1,0 +1,56 @@
+[
+  {
+    "filename": "Hatami2020.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1007/s11665-020-04859-x.pdf",
+    "status": 200,
+    "is_pdf": true,
+    "bytes": 3435649,
+    "sha256": "e157160a78b0acc3c93344459dca8694b2a1ba81e87b199fb81e66b7a4e992f4"
+  },
+  {
+    "filename": "Manchili2026_ChemicalSurface.pdf",
+    "url": "https://research.chalmers.se/publication/550247/file/550247_Fulltext.pdf",
+    "status": 200,
+    "is_pdf": true,
+    "bytes": 4944947,
+    "sha256": "556607d851142c20712eacc00382c7974d7328595bfc7b3f09c0c130b8a1dfe1"
+  },
+  {
+    "filename": "Jaskari2025.pdf",
+    "url": "https://oulurepo.oulu.fi/bitstream/10024/53882/1/nbnfioulu-202501281372.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "Santoro2024.pdf",
+    "url": "https://iris.polito.it/retrieve/e07e0781-940e-4801-a1b1-471d5ca54c3d/1-s2.0-S1350630724004928-main.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "Liang2022_FFEMS.pdf",
+    "url": "https://sam.ensam.eu/bitstream/handle/10985/22221/LAMPA_FFEMS_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "Jaskari2025_Juser.pdf",
+    "url": "https://juser.fz-juelich.de/record/1039178/files/1-s2.0-S0921509325000863-main.pdf",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "filename": "ANL2021.pdf",
+    "url": "https://publications.anl.gov/anlpubs/2021/08/170306.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "filename": "Dastgerdi2023.pdf",
+    "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/aa7054e1-c952-4c30-aed1-ab32a7e2a106/content",
+    "status": 200,
+    "is_pdf": true,
+    "bytes": 21472551,
+    "sha256": "d95c1fed17d1ff360922a322d9dd3111bde6e1057c6023493bed724bbd0a4409"
+  },
+  {
+    "filename": "Liang2020_thesis.pdf",
+    "url": "https://www.researchgate.net/profile/Xiaoyu-Liang-5/publication/344425485_high_cycle_fatigue_behavior_of_additive_manufactured_stainless_steel_316L_free_surface_effect_and_microstructural_heterogeneity/links/61c175d94b318a6970f83a4d/high-cycle-fatigue-behavior-of-additive-manufactured-stainless-steel-316L-free-surface-effect-and-microstructural-heterogeneity.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "url": "https://api.github.com/repos/spellbookrz/My_PhD_publications_data_and_code/commits/main",
+  "commit_sha": "8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e",
+  "tree_sha": "e1b1a19e5c42fd64f3970f3a09c0cf0c1ea01deb",
+  "workbook_url": "https://raw.githubusercontent.com/spellbookrz/My_PhD_publications_data_and_code/8286fc1bfcefcef13cbc0bf054ed8f639ddbd22e/2025_EFM_PINN_for_fatigue_life/data/Fatigue_data.xlsx",
+  "workbook_status": 200,
+  "workbook_sha256": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2"
+}

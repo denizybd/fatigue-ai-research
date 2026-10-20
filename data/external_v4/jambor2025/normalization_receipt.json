@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "data/external_v4/jambor2025/selected_original_files/1 Fatigue_tests/Cylindrical_specimen_LCF_tests_peak-valley.csv": "fa651ec39e6f41dc156f6562a8c8718df8a234ae0b45e02096cedcf14ffe27c1",
+    "data/external_v4/jambor2025/selected_original_files/1 Fatigue_tests/Cylindrical_specimen_LCF_tests_whole-cycles.csv": "fc35c1538b7b438544888d6a13eeb84a79b8f41ce37e13bebb35ef8552054e4e",
+    "data/external_v4/jambor2025/selected_original_files/1 Fatigue_tests/Flat_specimen_LCF_tests_peak-valley.csv": "c8df6183ec698f11402d0f831c33a3ffeb0a4fd278d7c6fdcee1b1a0065034ec",
+    "data/external_v4/jambor2025/selected_original_files/1 Fatigue_tests/Flat_specimen_LCF_tests_whole-cycles.csv": "e8157fa1883d07d2baaec1b80baa77d1cfa24f53bcb0849f21039a2bf20414c1"
+  },
+  "specimens": 7,
+  "force_record_rows": 217368,
+  "independent_Nf_rows_created": 0,
+  "transformation": "Nominal stress MPa = reported axial force kN*1000/reported cross-section mm2; total strain remains dimensionless.",
+  "identity": "Geometry-qualified author labels; analyst canonical keys, no specimen-to-build/powder crosswalk.",
+  "endpoint": "CSV Number of cycles is the planned interrupted exposure, not cycles to failure. These remain strain-control histories.",
+  "reuse": "Same author program as Zenodo17985589 conservatively; do not sum as independent campaigns or assume distinct specimen union.",
+  "license": "CC-BY-4.0; Jambor et al. Dataset DOI10.5281/zenodo.14763342. Changes: CSVs reshaped and nominal stress derived.",
+  "outputs": {
+    "cyclic_response_long.csv.gz": "fa7c741faea118e52b35aa8d230e9088ad73394356cda5a77cf8f5b6c3f4282c",
+    "seven_interrupted_specimens.csv": "2d3daa01a65e0df8f8291e4f19a5cdaace43249654805f801f70218fb7f99c35",
+    "history_inventory.csv": "493d421a9159cc934d4d1bebc1e8c66b720c6b56057089455882e38763838201"
+  }
+}

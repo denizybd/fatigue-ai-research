@@ -1,0 +1,9 @@
+{
+  "status" : "open.access",
+  "type" : "accessStatus",
+  "_links" : {
+    "self" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/accessStatus"
+    }
+  }
+}

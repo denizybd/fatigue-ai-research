@@ -1,0 +1,16 @@
+{
+  "target_doi": "10.1016/j.addma.2019.04.011",
+  "original_missing_source_in_open_database": true,
+  "official_auburn_publications_page": "https://eng.auburn.edu/ncame/publications",
+  "official_download_link_status": "404 on20Oct2026; no full2019 manuscript acquired",
+  "OpenAlex": "Only publisher DOI location, no open PDF location returned",
+  "related2016_primary_acquired": {
+    "url": "https://utw10945.utweb.utexas.edu/sites/default/files/2016/046-Shrestha.pdf",
+    "sha256": "3cb3f0a89ed5162ae12dcd97153deef8b87b814e3f903fa996fc0bd52d2f52c8",
+    "bytes": 1167870,
+    "pages": 12
+  },
+  "related_source_methods": "Room-temperature fully-reversed STRAIN-control, total strain amplitude0.1\u20130.4%, machined/polished H/V/D,400W/1000mm/s/100um/30um.",
+  "not_substitutable": "Centola2019 condition source reports350W and five surface/orientation conditions. The2016 conference has400W and three machined conditions. Neither row identity nor equivalence is established. Do not silently copy2016 data as the missing2019 training rows.",
+  "phase4_model_rows_added_from2016": 0
+}

@@ -1,0 +1,133 @@
+{
+  "status": "PASS_WITH_XML_SERIALIZATION_NOTE",
+  "auditor": "/root/v3_campaign_raw independent read-only audit",
+  "checks": {
+    "three_original_workbook_hashes_match": true,
+    "source44_and_normalized44_rows": true,
+    "all44_excel_rows2to45_present": true,
+    "all220_XML_numeric_values_exact_in_both_CSVs": true,
+    "all44_original_source_cell_ranges_preserved": true,
+    "Sa_conversion_all44": true,
+    "log10_stress_and_life_all44": true,
+    "R_01_all44": true,
+    "all44_actual_identity_fields_blank": true,
+    "all44_reported_batch_count3_without_membership": true,
+    "all44_manufacturing_and_thermal_assignment_blank": true,
+    "all44_unknown_temperature_and_feedback_blank": true,
+    "four_flags_exact_cells_and_values": true,
+    "all4_flagged_values_retained_in_raw_and_normalized": true,
+    "all44_complete_campaign_censoring_unknown_explicit": true,
+    "no_binary_event_or_runout_column_imputed": true,
+    "all44_gate_fields_false": true,
+    "all44_postfracture_covariates_not_pretest": true,
+    "all44_common_family_tag_includes3papers": true,
+    "normalization_receipt_family_and_fit_flags_agree": true,
+    "receipt_hashes_match_current_outputs_and_script": true,
+    "importer_is_curation_not_fitting_code": true,
+    "all_input_hashes_unchanged_during_audit": true
+  },
+  "checks_passed": 23,
+  "source_records": 44,
+  "source_numeric_cells_checked": 220,
+  "normalized_numeric_cells_checked": 220,
+  "XML_numeric_difference_count": 0,
+  "XML_numeric_differences": [],
+  "XML_lexical_decimal_serialization_difference_count": 6,
+  "XML_lexical_decimal_serialization_differences": [
+    {
+      "cell": "B17",
+      "xml_token": "4.3099999999999996",
+      "raw_csv_roundtrip_token": "4.31"
+    },
+    {
+      "cell": "D24",
+      "xml_token": "1.1000000000000001",
+      "raw_csv_roundtrip_token": "1.1"
+    },
+    {
+      "cell": "B31",
+      "xml_token": "2.2000000000000002",
+      "raw_csv_roundtrip_token": "2.2"
+    },
+    {
+      "cell": "D34",
+      "xml_token": "1.1299999999999999",
+      "raw_csv_roundtrip_token": "1.13"
+    },
+    {
+      "cell": "D38",
+      "xml_token": "1.1599999999999999",
+      "raw_csv_roundtrip_token": "1.16"
+    },
+    {
+      "cell": "D44",
+      "xml_token": "1.1100000000000001",
+      "raw_csv_roundtrip_token": "1.11"
+    }
+  ],
+  "serialization_note": "Six XML long decimal representations are emitted as shorter round-trip float strings in CSV. All220 numerical IEEE/Excel values are identical; no correction occurred. The immutable original workbook preserves literal XML tokens. Do not claim literal XML text identity for the CSV.",
+  "Sa_max_absolute_error_mpa": 0.0,
+  "log10_max_absolute_error": 0.0,
+  "source_four_flags": [
+    {
+      "row_id": "pinn2025_case2_xlsx_row06",
+      "source_cell": "C6",
+      "value": "32.0",
+      "issue": "Dmax below paper sqrtarea range59..282; quantity identity not specified in workbook header",
+      "action": "preserve original Dmax label and value; unit/quantity mapping remains open"
+    },
+    {
+      "row_id": "pinn2025_case2_xlsx_row20",
+      "source_cell": "D20",
+      "value": "0.92",
+      "issue": "Workbook L/Leff below Table2 reported0.95..1.23 range",
+      "action": "preserve original; no clipping"
+    },
+    {
+      "row_id": "pinn2025_case2_xlsx_row26",
+      "source_cell": "D26",
+      "value": "0.94",
+      "issue": "Workbook L/Leff below Table2 reported0.95..1.23 range",
+      "action": "preserve original; no clipping"
+    },
+    {
+      "row_id": "pinn2025_case2_xlsx_row32",
+      "source_cell": "A32",
+      "value": "180.0",
+      "issue": "Workbook stress below Table2 reported 210..400MPa range",
+      "action": "preserve180; no correction or inferred batch"
+    }
+  ],
+  "primary_method_evidence": {
+    "source_url": "https://publications.rwth-aachen.de/record/1012208/files/1012208.pdf",
+    "access": "Official primary PDF indexed text; no local PDF or visual-check claim",
+    "R_frequency_mode": "Printedpage3 Section2.2 independently confirms R0.1,30Hz,tensilefatigue; Table2printedpage6 placesCase2 stress under sigma_max",
+    "conversion": "Sa=sigma_max*(1-R)/2=0.45sigma_max; no source number overwritten",
+    "postfracture_measurements": "Section2.2printedpage4 confirms SEM on fractured samples; no additional long quote repeated"
+  },
+  "source_family_assessment": {
+    "family_tag": "Feng_Zhou_108486_127098_111136",
+    "DOIs_to_keep_together": [
+      "10.1016/j.ijfatigue.2024.108486",
+      "10.1016/j.eswa.2025.127098",
+      "10.1016/j.engfracmech.2025.111136"
+    ],
+    "encoded_in_every_row": true,
+    "training_exclusion_executed": false,
+    "limitation": "These44 rows are not admitted to any fit or frozen training. Metadata consistently encodes the shared family; actual future training/holdout exclusion must use this family block. No current fit-based independence claim is validated here."
+  },
+  "admissibility": "Factual reported44Nf source catalog only. Missing batch/sample crosswalk and complete-program censoring/sampling remain explicit. All44 reliability/acquisition eligibility flags false; no build-level or uncensored-campaign claim.",
+  "files_audited_sha256": {
+    "src/v5_pinn_import.py": "83cfd36758e7b3410fbb343cb259e353d2c8f65cfc88dcd1de3f0204548d5a20",
+    "literature/v5_open/pinn2025/mmc1_xlsx.zip": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+    "literature/v5_open/pinn2025/original_supplement.xlsx": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+    "literature/v5_open/pinn2025/author_Fatigue_data.xlsx": "310b9ebcf313a63d1cd679958873fe8bf6fea9a7f8a2ac2efecd6dff539d3ff2",
+    "data/external_v5/pinn2025/reported_316L_44.csv": "c5c64a29600db20bee4843060c25f394df6cfd5e60842531084c8637028fc4ef",
+    "data/external_v5/pinn2025/original_cell_values44.csv": "1df4e0b0834d5747080aebdc194969e8e39d33c17e0ae0d30722314ab43596f3",
+    "data/external_v5/pinn2025/source_discrepancy_flags.csv": "92231cb89e7f0133c270e08e842251e214e0a54774951eb0d027167b720976b6",
+    "data/external_v5/pinn2025/normalization_receipt.json": "16fb0e657c66216f66af4991ebe643b0467943791766e135a9730087b339742f"
+  },
+  "parent_source_or_curated_files_edited": false,
+  "fits_run": false,
+  "timestamp_utc": "2026-10-20T19:52:16.739795+00:00"
+}

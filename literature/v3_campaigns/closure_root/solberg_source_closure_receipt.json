@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-20T16:40:39.771055+00:00",
+  "source": "Solberg2021 doctoral thesis, Fatigue design for metallic components produced by additive manufacturing",
+  "primary_record": "https://nva.sikt.no/registration/0198e8b03b32-5a0eea6c-6bb3-443b-967c-240de172354d",
+  "metadata_api": "https://api.nva.unit.no/publication/0198e8b03b32-5a0eea6c-6bb3-443b-967c-240de172354d",
+  "public_file_id": "63f79689-af9c-4354-b3c4-a416934e1d78",
+  "access_evidence": "NVA OpenFile explicitly allows read-metadata and download; Accept application/json for public metadata and filelink.",
+  "download_endpoint": "https://api.nva.unit.no/publication/0198e8b03b32-5a0eea6c-6bb3-443b-967c-240de172354d/filelink/63f79689-af9c-4354-b3c4-a416934e1d78",
+  "pdf_bytes": 34930864,
+  "pdf_sha256": "3422433900a61ceb9cb88083c35632cd0b1f855ca22bea519214567fb6a9cf13",
+  "pdf_pages": 173,
+  "license": "General Terms of Use / copyright-act1.0 for thesis; not redistributed. Underlying paperVI is separately CC BY4.0.",
+  "scope_review": {
+    "PDF36_37": "General methods/specimen geometry collection, multiple materials. No specimen-to-production inventory.",
+    "PDF148_157": "316L PaperVI is the previously studied2019 FFEMS13077 paper; nominal force control,R0.1,10Hz,censor2e6. No additional raw author-ID/build/powder crosswalk located.",
+    "PDF154": "Pypdf stream-token limit; page rendered and visually inspected: Fig8 initiation-location and Fig9 XCT plots, no hidden fatigue table.",
+    "PDF168": "Table1 detailed specimen dimensions/fatigue data belongs to18Ni300 maraging steel PaperVII; cannot admit as316L."
+  },
+  "new_eligible_316L_campaigns": 0,
+  "interpretation": "New primary full-text access corrects prior access limitation, not a new independent316Lcampaign. Absence of a public crosswalk in reviewed document does not establish that no other public source exists.",
+  "no_fits_or_correspondence": true
+}

@@ -1,0 +1,83 @@
+{
+  "task": "independent read-only review of raw_repository normalization",
+  "date": "2026-10-20",
+  "tomaszewski": {
+    "source_workbook": "data/external_v3/raw_repository/tomaszewski2023_data.xlsx",
+    "read_method": "openpyxl independent of normalizer XML parser",
+    "rows": 137,
+    "unique_author_ids": 137,
+    "numeric_comparison_errors": 0,
+    "runout_field_blank_all": 137,
+    "event_status": "cycles-to-failure with blank runout; normalized all event1 correctly",
+    "stress_amplitude": "(max-min)/2",
+    "r_check": "min/max matches authorR",
+    "conditions": 12,
+    "raw_frequency_hz": 10,
+    "paper_frequency_hz": 20,
+    "temperature": "laboratory conditions; no numeric RT imputed",
+    "build_id_mapping": "NOT certified: 28-paper-sample single-plate statement is not joined to137-row compilation; A02W9 count+geometry match alone insufficient"
+  },
+  "diller": {
+    "source": "literature/v3_campaigns/raw_repository/diller2024_readme.txt",
+    "all_tested_rows": 44,
+    "polished_rows": 14,
+    "polished_censored_stop_rows": 4,
+    "asbuilt_raw_rows": 30,
+    "asbuilt_retained": 29,
+    "asbuilt_retained_events": 29,
+    "stress_amplitude": "explicit Stress-range-in-MPa /2",
+    "stress_max": "stress_range/(1-R),R=.1",
+    "stress_levels_retained": 7,
+    "excluded": "mu15 range200 conflicts with paper fractography300 at sameN2519896; polished group held entirely",
+    "temperature": "not stated; no imputation",
+    "frequency": "not stated; no imputation",
+    "build_mapping": "not verified",
+    "force_control": "article uses Instron8800+stress-ranges; explicit control mode not stated; retainedflag is appropriate"
+  },
+  "independence": {
+    "tom_diller_doi_author_matches_historical": 0,
+    "near_coordinates": "23 across strict309; source/parameter differences make coincidence plausible; proximity neither proves reuse nor independence",
+    "tomaszewski_four_parameter_matches": "maraging material2019; high-temperatureLCF2022; shot-peening2022; none in historical strict309; record candidates without claimingcertifiedindependence",
+    "dastgerdi": "same2022/2023 family excluded training"
+  },
+  "manifest": {
+    "stale_paths": [
+      "literature/v3_campaigns/raw_repository/normalization_receipt.json",
+      "literature/v3_campaigns/raw_repository/normalize_raw_candidates.py"
+    ],
+    "reason": "manifest created before final receipt/script write; refresh at packaging"
+  },
+  "verdict": "Numeric tables PASS. Source-supported physical build qualification NOT established for Tomaszewski137/Diller29/A02W9. Use separated specimen-only exploratory panels.",
+  "edited_raw_repository": false,
+  "root_normalized_inputs_review": {
+    "directory": "data/processed/v3/new_candidates",
+    "status": "PASS numeric preservation and gate separation",
+    "counts": {
+      "tomaszewski": 137,
+      "diller": 29,
+      "dastgerdi": 6
+    },
+    "comparison_errors_to_raw_normalizations": 0,
+    "positive_logs_checked": true,
+    "no_silent_temperature_imputation": true,
+    "tomaszewski_diller_build_ids_remain_empty": true,
+    "tomaszewski_diller_gate": "author_specimen_id_no_verified_build_mapping",
+    "dastgerdi_gate": "source_backed_single_build_no_author_build_code",
+    "dastgerdi_family_exclusion": "10.1016/j.ijfatigue.2022.107025; matches actual historical group_id",
+    "input_hashes": {
+      "dastgerdi.csv": "cb76dcfaf7de5e18cc48a5f9db7a88aeaaacff617fbd4b9e07af80847fcebfda",
+      "tomaszewski.csv": "99755c86b045c5f96f56c6984214dad6d6c4de6a17c7a7dea1e08d0a0516b8c7",
+      "diller.csv": "321945531cd4f5a80926fb8f3136317877b96b16ce01fcc61b66b5e08433d853"
+    }
+  },
+  "MEAM_Spiller2025_lead": {
+    "doi": "10.1016/j.msea.2025.148439",
+    "source_url": "https://www.research.unipd.it/retrieve/6f76da99-f93b-467d-8925-ae8b36dd1ea1/5-small-scale_316_SS.pdf",
+    "source_indexed_fulltext": "author-upload ResearchGate and primary ScienceDirect/UniPD indexed text",
+    "identity_lineage": "named twin specimen to slice to cuboid explicit; numerical table not retrieved",
+    "supplement": "ScienceDirect lists2MBWord; main text describes representativefractographs; content not retrieved",
+    "data_availability": "on request",
+    "retrieval_status": "normal UniPD PDF and ScienceDirect fullpage403; no bypass attempted",
+    "verdict": "outsideLPBF supplementarylead only; not claimed acquiredoutcome dataset"
+  }
+}

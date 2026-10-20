@@ -1,0 +1,1 @@
+You can also find all of the data from the appendix of my publication on the following link: https://doi.org/10.1016/j.engfracmech.2025.111136

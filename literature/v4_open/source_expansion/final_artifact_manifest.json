@@ -1,0 +1,235 @@
+{
+  "created_utc": "2026-10-20T19:16:41.501623+00:00",
+  "n_full_primary_texts_read": 6,
+  "n_full_primary_sources_admitted": 3,
+  "n_included_rows": 132,
+  "no_model_fit": true,
+  "no_contact_or_upload": true,
+  "ownership": "Onlyliterature/v4_open/source_expansionanddata/external_v4/source_expansionmodified",
+  "files": {
+    "literature/v4_open/source_expansion/zhang_msea2017_p13.png": {
+      "bytes": 237283,
+      "sha256": "c247a43635a239f70644f9d3e23264cb89c23b95d803d54309c0978885039e70"
+    },
+    "literature/v4_open/source_expansion/elanges2022_api.xml": {
+      "bytes": 1900,
+      "sha256": "9743d7334e6c587c1031fd55b8a950c07cfeabdd09f1ec805e85739b91428cf9"
+    },
+    "literature/v4_open/source_expansion/liang_ffe2022.html": {
+      "bytes": 146,
+      "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019_p4.png": {
+      "bytes": 179436,
+      "sha256": "4a22cae5cf7352c54e856674437a7db85e16aba9900b3c2ec76ef979dc34160f"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019_p5.png": {
+      "bytes": 192581,
+      "sha256": "8b8d11eee576abebd0cd0d396252a381dbdb91b7177f823475754dffc5869bc4"
+    },
+    "literature/v4_open/source_expansion/nva_elanges2022.json": {
+      "bytes": 285,
+      "sha256": "7b8d85ea17030dd10cfb08e7db66951bffc7d32ad61c9a67f77e683d8064fd26"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2020.html": {
+      "bytes": 5764,
+      "sha256": "974612ed390ed7d2edfc6cf0322ed479819c3b720285e161884a46d790583b48"
+    },
+    "literature/v4_open/source_expansion/zhang_msea2017_p6.png": {
+      "bytes": 256027,
+      "sha256": "3d808e7d4b2e27114128288ed34b16eccd81b755c1ccfad0bb15ca4514f0b0e1"
+    },
+    "literature/v4_open/source_expansion/elanges2020_record.html": {
+      "bytes": 4784,
+      "sha256": "830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8"
+    },
+    "literature/v4_open/source_expansion/nva_elanges2019.json": {
+      "bytes": 9866,
+      "sha256": "4689d2f2ff8300e9c931b5e3ccb83e4be4e4f5a31ef94d70d0d22745726ec7a0"
+    },
+    "literature/v4_open/source_expansion/zhang_hcf2019_Fig2a_detail.png": {
+      "bytes": 533363,
+      "sha256": "1137c8787635b94140524ab77f4ff705c01128b2b4d5551094d827f8b1a98cd5"
+    },
+    "literature/v4_open/source_expansion/zhang2017_sff_thickness.txt": {
+      "bytes": 30149,
+      "sha256": "25f875dbe1b29f4c0f90f2b83605b8377e68f0ab4ec33c6992afddacc8db72dd"
+    },
+    "literature/v4_open/source_expansion/expansion_receipt.json": {
+      "bytes": 2057,
+      "sha256": "eed4be5c08cc347f444f113327d84b350fcd5bb409d8f0a66cedd24bce302f79"
+    },
+    "literature/v4_open/source_expansion/zhang2019_hcf.pdf": {
+      "bytes": 4080249,
+      "sha256": "59c6e0f8dde2950ddbb5a98c4266b42f7fac86cecc606326098382541d09e875"
+    },
+    "literature/v4_open/source_expansion/primo_3119474.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019.txt": {
+      "bytes": 40758,
+      "sha256": "add36fc27f0e57eb75b13c51e45a2f6f1c1cbf680e3693ab534be171fa90cebd"
+    },
+    "literature/v4_open/source_expansion/elanges2019_openalex.json": {
+      "bytes": 20547,
+      "sha256": "078db5be3a0e7ef53b3a58bf8435e6b438be31c50d9713fb2f60ff90583013dc"
+    },
+    "literature/v4_open/source_expansion/zhang_sff2017_p6.png": {
+      "bytes": 379742,
+      "sha256": "cbc04d405d0a8b17d6b14ad68b9aadaa2c94b87ff66f7733a089427da80a1266"
+    },
+    "literature/v4_open/source_expansion/elanges2020_openalex.json": {
+      "bytes": 20475,
+      "sha256": "eb78f29542dd87313ef58be83995681ead97fc9f5765faa158fd6e93501775cf"
+    },
+    "literature/v4_open/source_expansion/zhang2019_hcf.txt": {
+      "bytes": 74183,
+      "sha256": "c3307bf6d8b3c0c966698658cb76d3d1b5c735c9539cae5aed749eeca3f1167b"
+    },
+    "literature/v4_open/source_expansion/primo_3655570.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019.pdf": {
+      "bytes": 9714298,
+      "sha256": "5f0a2e9e5208f110651ef929b358d897f34693140a656e6c3a8fd917a7ce08cb"
+    },
+    "literature/v4_open/source_expansion/elanges2020_api.xml": {
+      "bytes": 1999,
+      "sha256": "2d6acf578badf33d6f100319c0d4841383c63e8230f2c92e32026ea11c0c1f38"
+    },
+    "literature/v4_open/source_expansion/source_audit_ledger.csv": {
+      "bytes": 3286,
+      "sha256": "ffb8006f377866d205d5ef2013bbc26c84b236bb9ee57a2e04fca123d0568642"
+    },
+    "literature/v4_open/source_expansion/zhang2017_sff_thickness.pdf": {
+      "bytes": 1439117,
+      "sha256": "6f8c4b75830ac4fd5bd328627e5cea515c443aa0633016e9b06c466e61ff4ba9"
+    },
+    "literature/v4_open/source_expansion/elanges2022_openalex.json": {
+      "bytes": 30514,
+      "sha256": "b5c2e230c6260237bfef569cb39a37e195d184ff179746ad79ba9b55ab987616"
+    },
+    "literature/v4_open/source_expansion/download_manifest_initial.json": {
+      "bytes": 2096,
+      "sha256": "eaf62a9db9d866c8c874b919f486d069a65116f7290f83942d06361e6afdd1c3"
+    },
+    "literature/v4_open/source_expansion/zhang_hcf2019_p7.png": {
+      "bytes": 375665,
+      "sha256": "c95d3afcdd9703bb95c7166e5c78cb80dd978bfdf919f3974a38f0ac3c74fd42"
+    },
+    "literature/v4_open/source_expansion/elanges2019_retrieve_legacy.html": {
+      "bytes": 724,
+      "sha256": "143f231a827f42c9a4784eee1419fe16dfd59809f636e218f97d40efed98ab4f"
+    },
+    "literature/v4_open/source_expansion/zhang_matdes2018_p17.png": {
+      "bytes": 347688,
+      "sha256": "613d051428b73e4d240620857f371cf792e00dcd112f44f40fb1a5ba7d5e36eb"
+    },
+    "literature/v4_open/source_expansion/liang2022_openalex.json": {
+      "bytes": 28120,
+      "sha256": "6ee4864309ec51df3bdc094b225e6f05d49dc2a944420136577a6be883a987c9"
+    },
+    "literature/v4_open/source_expansion/zhang_hcf2019_p5.png": {
+      "bytes": 227271,
+      "sha256": "722148bd12640d93c1c9bf4392e671af9ee140644951251aea20e861b1210686"
+    },
+    "literature/v4_open/source_expansion/zhang_matdes2018_p14.png": {
+      "bytes": 685494,
+      "sha256": "2de8b5dad9e49d81920ca428348421b57a99a547ee0f2a9dd03b66e4772b894e"
+    },
+    "literature/v4_open/source_expansion/download_manifest_kullegacy.json": {
+      "bytes": 1766,
+      "sha256": "361c16a00d9a1e4d6df2478aebb41af576ad4c1c82eac33fef032b509b0e9392"
+    },
+    "literature/v4_open/source_expansion/increment_vs_strict_overlap_screen.json": {
+      "bytes": 371,
+      "sha256": "8bc3c8d119d4de3b33fff370dcafdc071ebf75a0a4beec8fd7bb947c05893e46"
+    },
+    "literature/v4_open/source_expansion/elanges2019_repo.xml": {
+      "bytes": 4784,
+      "sha256": "830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8"
+    },
+    "literature/v4_open/source_expansion/audit_handoff.txt": {
+      "bytes": 3525,
+      "sha256": "3f933472cb664adf1b2c73cc16a94ea9cac52a1514d7e3ca319d27ef3ed9b9a9"
+    },
+    "literature/v4_open/source_expansion/source_family_blocks.json": {
+      "bytes": 955,
+      "sha256": "0ca90f79f2cde5a299f75fceb58efc34700c149ee9d45df63a0abaed03e5328f"
+    },
+    "literature/v4_open/source_expansion/elanges_thesis_legacy.html": {
+      "bytes": 724,
+      "sha256": "143f231a827f42c9a4784eee1419fe16dfd59809f636e218f97d40efed98ab4f"
+    },
+    "literature/v4_open/source_expansion/download_manifest_api.json": {
+      "bytes": 2805,
+      "sha256": "ac0fd4c6259840433fbb541bcaaad41eec68e8c4126d181ab5b505233238386c"
+    },
+    "literature/v4_open/source_expansion/elanges2019_api.xml": {
+      "bytes": 1877,
+      "sha256": "65360ba1979bbf348692705d4c8f6c856849f03899c8034175018bead68f6c83"
+    },
+    "literature/v4_open/source_expansion/nva_elanges_thesis.json": {
+      "bytes": 285,
+      "sha256": "4f778eb76ebc12afbbf585005e971fbf9c9a1f0d80a1e8c19fb162fd16235669"
+    },
+    "literature/v4_open/source_expansion/build_source_expansion.py": {
+      "bytes": 10993,
+      "sha256": "51d18a8c8dd3e0557d1d4573d84ad2a293896b28c30b10e09654c6eeee61cc3c"
+    },
+    "literature/v4_open/source_expansion/nva_elanges2020.json": {
+      "bytes": 86586,
+      "sha256": "e01600dd6ac5818ee819060ed605a6c7aa15afa6dbb484943bd56e7ea6019102"
+    },
+    "literature/v4_open/source_expansion/zhang2017_sff_download.json": {
+      "bytes": 384,
+      "sha256": "8b12c8e29c8fcf22674cff2dd3d71660575943ed3d3bb5c766f7c398d5c7fa95"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019.html": {
+      "bytes": 196,
+      "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+    },
+    "literature/v4_open/source_expansion/elanges2022_record.html": {
+      "bytes": 4784,
+      "sha256": "830bf9af6721ca20830deabaa6e70015ae3d0da048fa277f6914257c9cb7a4f8"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019_p8.png": {
+      "bytes": 258348,
+      "sha256": "84ba45013d5631be9d356be829dd0db6ea6ad4319a39f9902ff116b76596348c"
+    },
+    "literature/v4_open/source_expansion/elangeswaran2019_p9.png": {
+      "bytes": 302826,
+      "sha256": "a35113c45452557a546b1f506f9191312ce16afd99fc6cbce95e89ba46674be9"
+    },
+    "literature/v4_open/source_expansion/elanges2019_recovered_manifest.json": {
+      "bytes": 347,
+      "sha256": "6ee0ec63497abf1140005114e98d91908c7896650cec294b369a2d914a964cde"
+    },
+    "literature/v4_open/source_expansion/primo_3441505.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/external_v4/source_expansion/source_qualified_ca_expansion.csv": {
+      "bytes": 210633,
+      "sha256": "1d0f6c03c9938b36f2450aedd9a45ed5900f087779fb3163963a9323c48c567c"
+    },
+    "data/external_v4/source_expansion/row_correction_ledger.csv": {
+      "bytes": 50905,
+      "sha256": "efa8c1bd9c0a6ff69c7d690f7b6783d636a7ed1bf7d391a2d1a3c160e87b8ba0"
+    },
+    "data/external_v4/source_expansion/unchanged_public_database_source_packet.json": {
+      "bytes": 196697,
+      "sha256": "fb9e645c024ba9e610f5178b8b9ab15b3c7f79ba4ba0ea1c5e79a20eeab1eb1c"
+    },
+    "data/external_v4/source_expansion/source_reported_exact_anchors.csv": {
+      "bytes": 1007,
+      "sha256": "fde6e7335bc0d949126ae8cf0740d616dbc82c6910c3fda025a6da1d389cc9e9"
+    },
+    "data/external_v4/source_expansion/row_exclusion_ledger.csv": {
+      "bytes": 119656,
+      "sha256": "271d9714871cdd874847537079406b567f656ca4eb83f3fb93ea8c1a736e9b37"
+    }
+  }
+}

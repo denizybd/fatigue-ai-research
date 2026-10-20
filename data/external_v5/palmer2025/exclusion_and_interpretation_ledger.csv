@@ -1,0 +1,9 @@
+source_region,disposition,reason
+Figure1a,not imported,"Archival strain-controlled source data, not new own specimens"
+Figure1b,not imported,Archival stress data converted using elastic moduli; not own strain-controlled measurements
+Figure4 markers,not separately imported,Same12Table2 outcomes; no double counting
+Figure4 bands and curves,not imported,"Archival comparison bands and fitted curves, not individual own outcomes"
+Figure3 and Figure7 example captions,crosscheck only,Representative lives3713/27855/8240/1112 match Table2; not new rows
+ANCOVA Equation3/Table3,not imported as outcomes,Regression uses2Nf; Table2 reports Nf cycles and must retain its unit
+HIP temperature1050C and metallography etching97C,not fatigue temperature,Process and specimen-preparation temperatures cannot be assigned to fatigue testing
+SSRN4773097/conference versions,conservative same-family block pending full-text join,Same authors and material/mechanism; not counted as independent new specimens

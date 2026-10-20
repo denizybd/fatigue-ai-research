@@ -1,0 +1,24 @@
+{
+  "doi": "10.5281/zenodo.14763342",
+  "url": "https://zenodo.org/records/14763342",
+  "original_zip_bytes": 407468869,
+  "sha256": "605da3a818688f82a954b04f4dc416a79019de34b16f813f3a709a1d4de4d20b",
+  "producer_md5": "442d4e23abc6ceff544843a02aa837b1",
+  "license": "CC-BY-4.0",
+  "scope": "Interrupted strain-controlled LCF0.4% and microscopy; never import every recorded cycle as independent fatigue-life observations.",
+  "selected_files": {
+    "selected_original_files/Read me.txt": "5794809c981a31ed88faa77f7f4307d29db767e329cba3a6829a6b7350cb677b",
+    "selected_original_files/1 Fatigue_tests/Cylindrical_specimen_LCF_tests_whole-cycles.csv": "fc35c1538b7b438544888d6a13eeb84a79b8f41ce37e13bebb35ef8552054e4e",
+    "selected_original_files/1 Fatigue_tests/Flat_specimen_LCF_tests_peak-valley.csv": "c8df6183ec698f11402d0f831c33a3ffeb0a4fd278d7c6fdcee1b1a0065034ec",
+    "selected_original_files/1 Fatigue_tests/Cylindrical_specimen_LCF_tests_peak-valley.csv": "fa651ec39e6f41dc156f6562a8c8718df8a234ae0b45e02096cedcf14ffe27c1",
+    "selected_original_files/1 Fatigue_tests/Description.txt": "f7c9ea5db2f14bf0b63ee2dd003523cbc0262b836b9768802c6a15fabe22c875",
+    "selected_original_files/1 Fatigue_tests/Flat_specimen_LCF_tests_whole-cycles.csv": "e8157fa1883d07d2baaec1b80baa77d1cfa24f53bcb0849f21039a2bf20414c1",
+    "selected_original_files/2 Hardness_measurements/Description.txt": "a393f81caaad527f02064404a1e64bf62b08f2e47e8a8370693a3acf7e690407",
+    "selected_original_files/2 Hardness_measurements/Hardness_measurments.csv": "949550f3e612b74d38d90692a27c5c640e465fac6d68638755889a8593de2dab",
+    "selected_original_files/4 Surface_observations/4.2 SEM/Description.txt": "5edbacca234f76eba36385cfd7ebab84cb21caf7a1566f6f1904eab08f2cbac1",
+    "selected_original_files/4 Surface_observations/4.1 Optical microscopy/Description.txt": "99e09ff84f75da1d1ab063208827b76114b6944622485baa96f7d35920b16007",
+    "selected_original_files/3 Microstructure_observations/3.2 Transmission electron microscopy/Description.txt": "d0708c072a11671890b191917bd4945f462bfc1c7572dab170f099ba4aa76bde",
+    "selected_original_files/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.2 EBSD/Description.txt": "279736b6155afff3f743406e03fba71e3d2e70bff64703ab93b1c01e406192c3",
+    "selected_original_files/3 Microstructure_observations/3.1 Scanning electron microscopy/3.1.1 Etched samples/Description.txt": "0fd557ccd26356e8b21979bee91bb6cdaa0b204ea5ccfc0a66791d1f838ff055"
+  }
+}

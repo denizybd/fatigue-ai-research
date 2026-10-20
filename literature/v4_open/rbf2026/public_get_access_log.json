@@ -1,0 +1,33 @@
+[
+  {
+    "key": "publisher",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0142112325005626",
+    "retrieved_utc": "2026-10-20T19:27:42.310296+00:00",
+    "error": "HTTP Error 403: Forbidden",
+    "status": 403
+  },
+  {
+    "key": "elsevier_xml",
+    "url": "https://api.elsevier.com/content/article/PII:S0142112325005626?httpAccept=text/xml",
+    "retrieved_utc": "2026-10-20T19:27:42.738242+00:00",
+    "status": 200,
+    "content_type": "text/xml;charset=UTF-8",
+    "bytes": 2077,
+    "final_url": "https://api.elsevier.com/content/article/PII:S0142112325005626?httpAccept=text/xml",
+    "saved": "literature/v4_open/rbf2026/elsevier_xml.xml"
+  },
+  {
+    "key": "elsevier_plain",
+    "url": "https://api.elsevier.com/content/article/PII:S0142112325005626?httpAccept=text/plain",
+    "retrieved_utc": "2026-10-20T19:27:43.349661+00:00",
+    "error": "HTTP Error 400: Bad Request",
+    "status": 400
+  },
+  {
+    "key": "publisher_pdf",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0142112325005626/pdfft?isDTMRedir=true&download=true",
+    "retrieved_utc": "2026-10-20T19:27:43.785171+00:00",
+    "error": "HTTP Error 403: Forbidden",
+    "status": 403
+  }
+]

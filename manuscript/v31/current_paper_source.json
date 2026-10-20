@@ -1,0 +1,504 @@
+{
+  "schema_version": 1,
+  "title": "Stress selection for few-test fatigue transfer: a source-audited first-exposure benchmark for LPBF316L",
+  "subtitle": "Exploratory working paper — current evidence through 20 October 2026",
+  "date": "2026-10-20",
+  "status": "Unsubmitted draft. One fully lineaged additional RT author campaign; second independent matched campaign unresolved.",
+  "authorship": "[Author name and affiliation to be confirmed by the human author]",
+  "abstract": "Few-test adaptation can lengthen proposed fatigue-life bounds while leaving their reliability unresolved. We recover valid virgin first loading blocks from a public stepped-load 316L campaign by joining author specimen coordinates to thesis build and powder records, and compare stress acquisition on fixed common queries. Of 70 physically unique initial blocks, 43 use nominal stress in air at 20°C; 31 specimens in 3 conditions from 2 builds enter acquisition, all within one author campaign. Four policies and six right-censored models use 10 deterministic query splits and feasible support budgets k3/5. The frozen 10^7-cycle planning scenario and 10^6 sensitivity preserve actual earlier censor stops. At k3, high-stress selection versus random increases proposed lower-life utility by 1.336× for hierarchical Basquin and 1.085× for normal-normal RFL, while reducing observed support cycles by 7.5%. Paired censoring identification still permits risk increases of 26.11 and 6.67 percentage points. One campaign cannot provide campaign-bootstrap confidence intervals, so reliability/usefulness gates are not evaluable. A separate specimen-only panel shows model-dependent policy reversals. Independent arithmetic, 19 synthetic tests and clean replay verify execution, not physical reliability. The contribution is an auditable source-recovery and evaluation case study; no general 90% design guarantee, new optimal policy, original-BNN superiority or completed multi-campaign confirmation is established.",
+  "keywords": [
+    "fatigue",
+    "LPBF316L",
+    "right censoring",
+    "random fatigue limit",
+    "few-test transfer",
+    "stress selection",
+    "physical provenance"
+  ],
+  "sections": [
+    {
+      "heading": "1. Question and scope",
+      "paragraphs": [
+        "Can a few fatigue tests at selected stress levels improve useful lower-life predictions after a change of production condition without increasing unsafe predictions? This question is relevant when a prediction model is used as a design constraint: a longer proposed life has practical value only if its reliability, availability and experimental cost are assessed together. The probabilistic SS316L work of Centola and colleagues, and their subsequent transfer-learning and topology-optimization studies, provide the motivation [1–3]. Our experiment evaluates related censored statistical baselines on public data. It neither reproduces their unavailable original 518-row dataset and code nor establishes a ranking against their Bayesian neural network, SWT processing, risk-volume calculation or Owen R90C90 targets.",
+        "The study has two connected parts. First, a source audit asks whether individual test records represent distinct, previously unexposed physical specimens and whether manufacturing-build identities can be established. Second, an exploratory replay compares four acquisition policies and six censored predictors on exactly the same held-out specimens. The main new evidence is a recovery of valid first loading blocks from the public Mérot campaign. Earlier damage-equivalent, stepped-load observations were excluded from our constant-amplitude cohort; recovering an untouched specimen's initial block does not make its later blocks eligible.",
+        "The intended external scope is LPBF 316L, room-temperature axial force-controlled fatigue, with author specimen identities and source-backed production lineage. We distinguish author campaigns, physical builds, powder lots, surface treatments and repeated query splits. Several builds or papers from one author programme are not independent campaigns. We have verified one additional matched campaign, not the intended plurality of independent matched campaigns. The outcome is a source-audited benchmark and a bounded model/policy comparison, rather than a validated safe-design algorithm."
+      ]
+    },
+    {
+      "heading": "2. Data recovery and physical lineage",
+      "paragraphs": [
+        "The historical training population is the phase-2 strict cohort: 309 digitized observations, 32 curves and 11 method-reviewed source blocks derived from FatigueData-AM2022 [4]. These source blocks are precautionary reuse groups, not certified independent laboratories or exhaustively identified physical specimens. Known linked publications are assigned together. Target campaigns do not contribute to population fitting; the related Dastgerdi family is removed when its pilot is targeted. The linked Mérot/Auffray family is excluded from training. This evaluation therefore checks source separation within the audited provenance graph; it cannot exclude every undiscovered reuse relation.",
+        "The Mérot raw CSV contains specimen alias, loading step, maximum stress, stress amplitude, load ratio, frequency, fracture flag, cycles, plate number and specimen position [5]. The thesis defines full PM specimen references and maps plate 02 to build FS18-019, plate 03 to FS18-020 and plate 04 to FS19-006; the first two share powder TLS0993/1/1 and the third uses TLS1051/1/1 [6, Table 2.1]. Two readers checked the naming, table and methods, including rendered source pages. These physical build IDs are author records, not labels inferred from fatigue-curve membership or file-name prefixes.",
+        "Identity screening precedes outcome analysis. There are 103 short aliases and 105 Step0 rows. Alias K2 has three Step0 rows and is ambiguous. Physical plate/position collisions are detected across all aliases before excluding K2, so D0, which shares its coordinate, is also quarantined. Incomplete coordinates and all collided identities remain excluded. Seventy records have unique physical identity and one initial block. Their original first-block cycles and fracture flags are retained directly: a fracture is an event; survival of that block is right censoring at its actual stop. Later stresses, later fracture times, equivalent lives and postfailure defect measurements are discarded for support and query alike.",
+        "Of the 70 eligible physical specimens, 52 were tested in air at 20°C and 18 in a saline environment at 35°C. The air set comprises 43 standard-geometry observations using nominal macroscopic stress, with 17 first-block failures and 26 censors, and 9 small-volume observations using a local stress concentration correction. The thesis defines local maximum stress through specimen-specific elastic geometry; an exact common conversion factor is not available. The 9 local-stress observations remain a separate sensitivity. No rounded final-stage stress ratio is used to alter the primary nominal-stress input.",
+        "The frozen common-query rule admits 31 of the 43 nominal observations to acquisition comparisons: three conditions across two builds, one shared powder lot and one author campaign. Twenty-one specimens are precorroded and ten are reference specimens. Small conditions are retained in the source table but do not enter acquisition. The 31 eligible specimens must not be described as 31 independent campaigns, and the full 43-record source table must not be confused with the acquisition subset. All surviving first blocks in the air cohort stop at 10^6 cycles."
+      ]
+    },
+    {
+      "heading": "3. Protocol and common-query acquisition",
+      "paragraphs": [
+        "The phase-3 protocol was recorded before phase-3 fitting, but public outcomes and prior exploratory results had already been inspected. The virgin-first-exposure extension and its source-harmonization addendum were frozen before fitting the recovered cohort. Consequently all reported results are exploratory replay, not fresh blinded confirmation. Local hashes and receipts preserve the actual protocol and input versions; they are not public preregistration timestamps.",
+        "Within each condition and each seed 0–9, specimen IDs are deterministically SHA256-ranked. Query identities are fixed first, with n_query=max(3,floor(0.4n)); remaining specimens form the acquisition pool. A condition needs at least 6 observations. The same query and candidate IDs are used by every policy, model and cycle-cap run. Budgets are k=0,3,5,10 per condition whenever feasible. The primary Mérot subset supports k3 and k5; k10 is infeasible. A replay selects among actual recorded stresses and reveals the selected recorded outcome. It cannot fabricate an outcome at a new stress or establish the performance of a new physical experiment.",
+        "The four policies are random hash order; stress_span, which starts with the highest and lowest observed stresses and then maximizes separation in log stress; high_stress, which selects decreasing stress as a cheap-failure control; and active_query_variance, a sequential expected-information approximation. Outcome-blind hashes break ties, and selected prefixes are nested. The active policy updates a local intercept/slope MAP using only revealed supports, and scores expected reduction in average prediction variance at the known query stress covariates. It uses a censored lognormal straight-Basquin working model, training-derived priors and fixed scatter. Its criterion is shared across all six prediction models, including RFL; it is not RFL-optimal acquisition. Known query stress/load-ratio covariates are allowed as a transductive fixed prediction grid; query outcomes remain hidden.",
+        "For normal location scatter sigma and z=(log10 C−mu)/sigma, expected information is [Phi(z)−z phi(z)+phi(z)^2/Phi(−z)]/sigma^2. A rank-one covariance update provides the query-variance reduction score. The calculation uses the planning cap, candidate stress and revealed supports, not the candidate's unknown stopping time, event flag or query response. Independent integration and outcome-perturbation tests check this information/revelation boundary. Information-based fatigue test planning is established prior art [7,8]; implementing this approximation is not itself a novelty claim.",
+        "C=10^7 cycles is the frozen primary planning scenario; C=10^6 is the prespecified sensitivity and is more directly matched to the recovered campaign's actual initial-block stops. Support observations are administratively truncated at C, while earlier author censors retain their earlier stops and query censoring remains unchanged. Thus 10^7 planning does not turn a 10^6 runout into an observed 10^7 test. The two caps expose sensitivity of adaptive planning to its assumed test horizon; the 10^6 results are not a post-result replacement of the frozen 10^7 primary scenario."
+      ]
+    },
+    {
+      "heading": "4. Six censored prediction models",
+      "paragraphs": [
+        "All models use right-censor likelihoods rather than treating runouts as failures. The pooled monotone lognormal Basquin model is a population-only control and ignores target supports. The matched_intercept model fits a target intercept while sharing historical hierarchical slope/scatter; for k>0 it is unavailable if every selected support is censored. At k=0, the matched-intercept label uses the hierarchical population prediction as a common starting reference; its target-only intercept is estimated only after supports are observed. The hierarchical Basquin model shares population stress effects and integrates a target intercept using a normal prior. The curved_hierarchical model uses a continuous two-slope stress curve with its knot fixed to the training median stress. The local_slope model updates target intercept and slope under a fixed Gaussian prior and a MAP/Laplace approximation. These are deliberately small, interpretable controls rather than an outcome-tuned architecture search.",
+        "The sixth baseline is a normal-normal random-fatigue-limit model supported by the distributional choices of Pascual and Meeker [7]. For positive specimen fatigue limit Gamma, log10 Gamma is normal. If S>Gamma, conditional log10 life is normal with mean a+b log10((S−Gamma)/Sref)+c(R−Rbar)+u, with b<0; otherwise life is infinite. The finite-failure mass is Phi((log10 S−mu_Gamma)/tau_Gamma), and its complement is a literal atom at infinity. Censored likelihood includes both finite-life survival and that atom. A predictive quantile is infinite when its probability exceeds the finite-failure mass; it is not silently clipped to a convenient finite value.",
+        "Our RFL implementation adds load-ratio location adjustment, a source-balanced working likelihood and a scalar target life-shift adapter whose prior SD is fixed to the training hierarchical tau. It does not infer a hierarchical RFL population posterior, adapt the fatigue-limit distribution using the target, or integrate uncertainty in fitted population parameters. It is not a reproduction of the Weibull RFL fit reported by Trombley and colleagues [9]. Fit receipts contain predetermined starts, bounds, convergence and fallback flags. The best converged training likelihood selects the start; query performance never selects a fit. The two population fits used by this extension converge with no fallback or selected parameter-bound hits. Convergence alone does not establish identifiability.",
+        "The RFL integral uses a transformed truncated-normal quadrature with 96 nodes. Synthetic tests check density/CDF consistency, monotonicity, right-censor survival, infinite quantiles, predictive inversion, no-support convolution and support-only posterior updating. A fixed-parameter 96/192-node check in the broader phase-3 replay covers 1,048 q10 values from all 11 training fitsets; infinity classifications agree and the largest finite log10 difference is 8.92×10^−10. This is integration accuracy at fitted parameters, not a test of the population uncertainty that has been omitted."
+      ]
+    },
+    {
+      "heading": "5. Reliability, utility and statistical limits",
+      "paragraphs": [
+        "For observed log life y, event e and proposed lower log life L, known violations are e·1(L>y); an upper identification bound is 1(L>y). A right-censored specimen may fail later, so its true violation indicator is only partially known. Unavailable predictions contribute zero to the lower risk bound and one to the upper bound. Availability, finite availability and positive-infinity rates are reported separately. An infinite prediction is available but is unsafe for any finite observed failure; it cannot improve a finite-utility average by favorable clipping.",
+        "Utility is the paired mean log10 lower-life gain on identical query specimens where both predictions are finite. Its exponent is a geometric life ratio, not an increase in demonstrated safe service life. We also report conservative log-life shortfall on observed failures, all-runout support rate and observed support cycles. Cycle cost sums recorded support exposure after the administrative truncation; it excludes specimen manufacture, machine setup, test frequency, wall-clock time and sunk costs. A pooled predictor can be used at k0, so paying a support budget does not improve that control.",
+        "Paired true-risk-change identification limits exploit the ordering of both proposed bounds for the same censored query, rather than subtracting two unrelated absolute intervals. Means first average queries within condition, then conditions within campaign, then seeds within campaign. Campaign bootstrap intervals use 2,000 resamples and seed 231 only when at least two campaigns exist. Repeated splits and models do not increase the number of independent campaigns. The identified risk range is not a 95% confidence interval; bootstrap variation and censoring ambiguity answer different questions.",
+        "The frozen relative gate requires a positive lower 95% utility endpoint, an upper 95% endpoint for paired true-risk increase no greater than 2 percentage points, and at least 95% paired availability. Absolute reliability additionally requires an upper-risk upper 95% endpoint no greater than 10%. Each extension panel contains only one author campaign. Campaign confidence intervals are therefore unavailable and all such gates are not evaluable. A machine-readable false gate with missing intervals must not be read as proof that every policy failed. Conversely a favorable observed risk or point identification bound cannot establish a general 90% guarantee. Predictive q10 is not an R90C90 design bound."
+      ]
+    },
+    {
+      "heading": "6. Results in the identity-qualified first-block campaign",
+      "paragraphs": [
+        "Each cap run comprises 50 tasks, 11,520 repeated prediction instances and 920 selected-test rows across the nominal primary, local-stress sensitivity and Dastgerdi pilot panels. The nominal primary contributes 30 condition/seed tasks. No new physical specimens were tested. Independent arithmetic recomputes all 1,728 absolute and 2,304 paired summary means per cap; maximum absolute discrepancy is 9.31×10^−10, arising at the cycle-count scale. Query/pool identity, support costs and training-family exclusions pass independent checks.",
+        "At k3, high-stress selection versus random raises hierarchical Basquin's proposed lower-life utility by 0.125794 log10 decades, a ratio of 1.336, and RFL's by 0.035352 decades, a ratio of 1.085. These static-policy values are identical at both caps because actual first-block censor stops are no later than 10^6. Mean observed support exposure decreases from 2.306 million cycles for random to 2.133 million for high stress, a 7.5% saving. This is a cost result for the recovered cohort, not the roughly 70% reduction observed in different, incompletely build-qualified secondary campaigns.",
+        "The corresponding absolute risk identification ranges for high-stress k3 are 5.00–38.89% for hierarchical Basquin and 1.67–9.17% for RFL. The paired true-risk-change ranges relative to random are−4.44 to+26.11 percentage points and−1.67 to+6.67 points, respectively. These limits allow material risk increases despite longer life predictions. RFL's empirical upper identification bound below 10% for one policy/campaign is not a population reliability confidence statement. Full result tables retain all models, policies and feasible budgets rather than selecting this contrast as a newly frozen winner.",
+        "Active planning depends on the assumed cap. At k3 with the frozen 10^7 cap, its life ratios versus random are 1.205 for hierarchical Basquin and 1.125 for RFL; paired risk-change upper identification limits are+16.11 and+12.22 points. At the 10^6 sensitivity, ratios are 1.306 and 1.084, with upper limits+26.11 and+8.33 points. High stress, stress spanning and random are static, so their 8,640 prediction instances, support identities and costs match exactly across caps. The changed active choices demonstrate planning-horizon sensitivity rather than additional source testing.",
+        "Sparse all-runout supports expose another limit. At k3 in the 10^6 scenario, matched_intercept availability is 73.33% for random, 83.33% for high stress and 80.00% for active acquisition. Its apparent risk must be interpreted together with this inability to provide a finite target estimate. All primary k3 RFL and hierarchical pairs used in the headline contrasts are available and finite; availability still does not resolve their censored-risk ambiguity. Budget k5 results are retained in the complete tables; k10 cannot be assessed under the fixed acquisition pool."
+      ]
+    },
+    {
+      "heading": "7. Secondary evidence and what it cannot establish",
+      "paragraphs": [
+        "The earlier phase-3 replay contains 137 author-identified Tomaszewski records and 29 retained Diller records, a 166-record specimen-only panel [10,11]. Neither source currently provides a certified per-specimen build/powder crosswalk for the retained fatigue cohort. Forty Tomaszewski records have only one stress per condition. A documented post-result, covariate-only multistress subset excludes those conditions without changing fitted models, splits or predictions. It contains 126 records in 9 conditions across the two source campaigns. This subset is useful exploratory evidence about stress choice; it is not a substitute for the missing identity-qualified external campaigns.",
+        "In that earlier multistress panel at 10^7 and k3, high-stress selection raises hierarchical q10 by a factor 1.200 relative to random, with observed known risk about 0.42% versus 0.45% and roughly 70% fewer observed support cycles. Under RFL the same policy lowers q10 to 0.768 of random while lowering risk. The 10^6 analysis preserves this RFL reversal. These differences show that apparent utility depends on the predictive model and cohort. Two-campaign resampling is descriptive and cannot support strong population assurance, and the larger cycle saving cannot be transferred to the newly recovered Mérot subset.",
+        "A separate six-specimen Dastgerdi pilot has actual specimen IDs and a source-backed common physical build but unstated test temperature [12]. Interrupted imaging specimens are excluded, and the related 2022/2023 family is removed from training. The pilot remains outside the fully matched room-temperature panel. The previously examined Trombley campaign contains 129 named specimens, a common source-supported powder batch and four stated Concept Laser builds, but no individual specimen-to-build crosswalk was recovered from public process pages or the 196-page dissertation [9,13]. Its ultrasonic crack-related endpoint is also different. It is neither a newly unseen campaign nor a second matched room-temperature axial confirmation."
+      ]
+    },
+    {
+      "heading": "8. Contribution, reproducibility and next decisive evidence",
+      "paragraphs": [
+        "The defensible contribution is the combination of source-audited first-exposure recovery, a censor-aware common-query acquisition benchmark and an explicit demonstration that life utility, identifiable risk and cycle cost must be evaluated together. It corrects the eligibility of our own open-data benchmark. It does not prove that an unavailable original dataset was processed incorrectly. The current evidence supports a methodological case study and a negative boundary for strong reliability claims; a generally superior acquisition policy has not been established.",
+        "Novelty remains bounded. Hierarchical fatigue modelling, physical baselines, transfer and information-based stress planning predate this work [2,7,8]. The publisher preview for Wu and colleagues describes physics-baseline comparisons, grouped splits and target-data augmentation [14]. Its full methods, supplementary material, exact group key, acquisition rules and censor treatment were not obtained. We therefore cannot claim that our combination is absent from that study, or that grouped evaluation and transfer are new. A full-text comparison and another independent, traceable campaign are prerequisites for a stronger publication claim.",
+        "For Tridello's reliability agenda, the practical output is an auditable way to ask which additional stress tests change a proposed design constraint, at what experimental exposure cost, and with what unresolved failure-risk ambiguity. This can support a narrowly scoped methods discussion about experimental validation and source-transfer evaluation. It does not yet justify feeding the longer proposed q10 into topology optimization as a certified fatigue constraint. A useful next experiment would freeze an acquisition policy and model on development campaigns, then evaluate it on new specimen/build-traced campaign data with a prespecified censoring horizon and common queries.",
+        "Nineteen RFL/design synthetic tests pass. A fresh same-schema replay reproduces 12 extension tables exactly. A portable 367-row replay removes only the unused earlier Trombley dependency and retains the same 50 tasks, query/pool IDs and training sets; all scientific table values and population-fit parameters agree exactly. The prediction fit_signature cache metadata changes because unrelated empty columns were omitted. A fresh extraction of the local archive and a fresh model cache reproduces the same scientific values. These are computational reproducibility checks, not independent physical replication.",
+        "Raw inputs, transformations, hashes, frozen splits, fit diagnostics, complete result tables and independent audit scripts are retained. The portable package distributes the CC BY 4.0 Mérot CSV and attribution, plus the manually source-verified identity gate; it links the primary thesis instead of redistributing its PDF. The remaining scientific dependency is a second independent, fully matched campaign with exact specimen-to-build lineage and valid first-exposure outcomes. Current source searches have not closed it. No correspondence, external upload, publication or new physical experiment was performed. Authorship, affiliations and personal background remain for human confirmation."
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "T1",
+      "title": "Nominal first-block primary panel at k3, frozen C=10^7 planning scenario. Equal condition/campaign weighting.",
+      "columns": [
+        "Model",
+        "Policy",
+        "Life ratio vs random",
+        "Risk identification (%)",
+        "Availability (%)",
+        "Support cycles (million)"
+      ],
+      "rows": [
+        [
+          "pooled",
+          "random",
+          "1.000",
+          "0.00–0.00",
+          "100.0",
+          "2.306"
+        ],
+        [
+          "pooled",
+          "high_stress",
+          "1.000",
+          "0.00–0.00",
+          "100.0",
+          "2.133"
+        ],
+        [
+          "pooled",
+          "stress_span",
+          "1.000",
+          "0.00–0.00",
+          "100.0",
+          "2.387"
+        ],
+        [
+          "pooled",
+          "active_query_variance",
+          "1.000",
+          "0.00–0.00",
+          "100.0",
+          "2.285"
+        ],
+        [
+          "matched_intercept",
+          "random",
+          "1.000",
+          "0.83–40.83",
+          "73.3",
+          "2.306"
+        ],
+        [
+          "matched_intercept",
+          "high_stress",
+          "1.395",
+          "3.06–46.94",
+          "83.3",
+          "2.133"
+        ],
+        [
+          "matched_intercept",
+          "stress_span",
+          "0.912",
+          "0.83–35.28",
+          "76.7",
+          "2.387"
+        ],
+        [
+          "matched_intercept",
+          "active_query_variance",
+          "0.998",
+          "0.00–39.44",
+          "63.3",
+          "2.285"
+        ],
+        [
+          "hierarchical",
+          "random",
+          "1.000",
+          "5.83–36.94",
+          "100.0",
+          "2.306"
+        ],
+        [
+          "hierarchical",
+          "high_stress",
+          "1.336",
+          "5.00–38.89",
+          "100.0",
+          "2.133"
+        ],
+        [
+          "hierarchical",
+          "stress_span",
+          "0.993",
+          "5.00–35.00",
+          "100.0",
+          "2.387"
+        ],
+        [
+          "hierarchical",
+          "active_query_variance",
+          "1.205",
+          "5.00–37.22",
+          "100.0",
+          "2.285"
+        ],
+        [
+          "curved_hierarchical",
+          "random",
+          "1.000",
+          "6.67–41.11",
+          "100.0",
+          "2.306"
+        ],
+        [
+          "curved_hierarchical",
+          "high_stress",
+          "1.387",
+          "6.67–43.06",
+          "100.0",
+          "2.133"
+        ],
+        [
+          "curved_hierarchical",
+          "stress_span",
+          "0.988",
+          "6.67–38.61",
+          "100.0",
+          "2.387"
+        ],
+        [
+          "curved_hierarchical",
+          "active_query_variance",
+          "1.246",
+          "7.50–43.89",
+          "100.0",
+          "2.285"
+        ],
+        [
+          "rfl",
+          "random",
+          "1.000",
+          "1.67–4.17",
+          "100.0",
+          "2.306"
+        ],
+        [
+          "rfl",
+          "high_stress",
+          "1.085",
+          "1.67–9.17",
+          "100.0",
+          "2.133"
+        ],
+        [
+          "rfl",
+          "stress_span",
+          "0.991",
+          "0.83–9.72",
+          "100.0",
+          "2.387"
+        ],
+        [
+          "rfl",
+          "active_query_variance",
+          "1.125",
+          "1.67–14.72",
+          "100.0",
+          "2.285"
+        ],
+        [
+          "local_slope",
+          "random",
+          "1.000",
+          "5.00–30.00",
+          "100.0",
+          "2.306"
+        ],
+        [
+          "local_slope",
+          "high_stress",
+          "1.289",
+          "5.00–31.39",
+          "100.0",
+          "2.133"
+        ],
+        [
+          "local_slope",
+          "stress_span",
+          "1.009",
+          "5.00–26.39",
+          "100.0",
+          "2.387"
+        ],
+        [
+          "local_slope",
+          "active_query_variance",
+          "1.194",
+          "5.00–29.44",
+          "100.0",
+          "2.285"
+        ]
+      ],
+      "note": "One author campaign. Risk ranges are censoring identification limits, not confidence intervals. All models, policies and feasible k are retained in the supplementary CSVs. Life ratios use paired finite bounds."
+    },
+    {
+      "id": "T2",
+      "title": "Paired k3 contrasts versus random in the nominal first-block primary panel.",
+      "columns": [
+        "Planning cap",
+        "Model",
+        "Policy",
+        "Life ratio",
+        "True-risk-change identification (pp)"
+      ],
+      "rows": [
+        [
+          "1e7",
+          "hierarchical",
+          "high_stress",
+          "1.336",
+          "-4.44 to 26.11"
+        ],
+        [
+          "1e7",
+          "hierarchical",
+          "active_query_variance",
+          "1.205",
+          "-10.00 to 16.11"
+        ],
+        [
+          "1e7",
+          "rfl",
+          "high_stress",
+          "1.085",
+          "-1.67 to 6.67"
+        ],
+        [
+          "1e7",
+          "rfl",
+          "active_query_variance",
+          "1.125",
+          "-1.67 to 12.22"
+        ],
+        [
+          "1e6",
+          "hierarchical",
+          "high_stress",
+          "1.336",
+          "-4.44 to 26.11"
+        ],
+        [
+          "1e6",
+          "hierarchical",
+          "active_query_variance",
+          "1.306",
+          "-4.44 to 26.11"
+        ],
+        [
+          "1e6",
+          "rfl",
+          "high_stress",
+          "1.085",
+          "-1.67 to 6.67"
+        ],
+        [
+          "1e6",
+          "rfl",
+          "active_query_variance",
+          "1.084",
+          "0.00 to 8.33"
+        ]
+      ],
+      "note": "C1e7 is the frozen primary planning scenario; C1e6 is the prespecified, source-matched sensitivity. No campaign confidence interval is available. Actual earlier censors are preserved."
+    }
+  ],
+  "references": [
+    {
+      "id": "1",
+      "citation": "Centola A., Ciampaglia A., Paolino D.S., Tridello A. Probabilistic Machine Learning for preventing fatigue failures in Additively Manufactured SS316L. Engineering Failure Analysis 168 (2025),109081.",
+      "doi": "10.1016/j.engfailanal.2024.109081",
+      "url": "https://doi.org/10.1016/j.engfailanal.2024.109081",
+      "evidence_scope": "Reviewed original article; original data/code not obtained."
+    },
+    {
+      "id": "2",
+      "citation": "Centola A., Ciampaglia A., Paolino D.S., Tridello A. Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process–structure–property relationship. Engineering Failure Analysis (2026),111075.",
+      "doi": "10.1016/j.engfailanal.2026.111075",
+      "url": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+      "evidence_scope": "Bibliography and accessed author/publisher material reviewed; access limits retained."
+    },
+    {
+      "id": "3",
+      "citation": "Centola A. et al. Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components. International Journal of Fatigue (2026),109481.",
+      "doi": "10.1016/j.ijfatigue.2026.109481",
+      "url": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+      "evidence_scope": "Bibliography and accessed author/publisher material reviewed; not a new-part physical validation claim."
+    },
+    {
+      "id": "4",
+      "citation": "Zhang and Xu. FatigueData-AM2022, version 2; data descriptor in Scientific Data (2023).",
+      "doi": "10.6084/m9.figshare.22337629.v2",
+      "url": "https://doi.org/10.6084/m9.figshare.22337629.v2",
+      "evidence_scope": "CC BY 4.0 raw data; descriptor DOI 10.1038/s41597-023-02150-x."
+    },
+    {
+      "id": "5",
+      "citation": "Mérot P., Gallegos Mayorga L., Morel F., Pessard E., Buttin P., Baffie T. 316L L-PBF fatigue dataset. Version 1,16June2022.",
+      "doi": "10.5281/zenodo.6653187",
+      "url": "https://doi.org/10.5281/zenodo.6653187",
+      "evidence_scope": "CC BY 4.0 source CSV and producer metadata; first-block filtering and build join are our transformations."
+    },
+    {
+      "id": "6",
+      "citation": "Mérot P. Effet des défauts de fabrication et de corrosion sur le comportement en fatigue d’un acier 316L obtenu par fabrication additive. HESAM doctoral thesis (2021),NNT 2021HESAE076, tel-03688021v1.",
+      "doi": "",
+      "url": "https://pastel.hal.science/tel-03688021v1",
+      "evidence_scope": "Full primary thesis and rendered pages 84–85,114–115,279–280 checked; URL https://pastel.hal.science/tel-03688021v1."
+    },
+    {
+      "id": "7",
+      "citation": "Pascual F.G., Meeker W.Q. Estimating Fatigue Curves With the Random Fatigue-Limit Model. Technometrics 41(4) (1999),277–289.",
+      "doi": "10.1080/00401706.1999.10485925",
+      "url": "https://doi.org/10.1080/00401706.1999.10485925",
+      "evidence_scope": "Primary full text; normal-normal choice and censored likelihood reviewed."
+    },
+    {
+      "id": "8",
+      "citation": "Pascual F.G. Theory for Optimal Test Plans for the Random Fatigue-Limit Model. Technometrics 45(2) (2003),130–141.",
+      "doi": "10.1198/004017003188618760",
+      "url": "https://doi.org/10.1198/004017003188618760",
+      "evidence_scope": "Official publisher abstract inspected; full text not obtained. Cited only for established planning prior art."
+    },
+    {
+      "id": "9",
+      "citation": "Trombley M.L., Birnbaum A.J., Allison J.E. The influence of section diameter on the ultrasonic fatigue response of 316L stainless steel manufactured via laser powder bed fusion. Scientific Reports (2025).",
+      "doi": "10.1038/s41598-025-97031-1",
+      "url": "https://doi.org/10.1038/s41598-025-97031-1",
+      "evidence_scope": "Primary full text; Weibull RFL and endpoint distinction. Data DOI 10.13011/m3-c93d-z035; repository license unspecified."
+    },
+    {
+      "id": "10",
+      "citation": "Tomaszewski T. Public fatigue data workbook, Zenodo 7650061; related International Journal of Fatigue article 107378.",
+      "doi": "10.5281/zenodo.7650061",
+      "url": "https://doi.org/10.5281/zenodo.7650061",
+      "evidence_scope": "Author workbook and primary paper DOI 10.1016/j.ijfatigue.2022.107378; single-build paper/raw subset join unresolved."
+    },
+    {
+      "id": "11",
+      "citation": "Blankenhagen J., Siebert L., Winkler M., Diller J. Public µCT-linked 316L fatigue data, Zenodo 21105346; related publication DOI 10.1111/ffe.14375.",
+      "doi": "10.5281/zenodo.21105346",
+      "url": "https://doi.org/10.5281/zenodo.21105346",
+      "evidence_scope": "Author data/readme plus institutional thesis; specimen-to-build crosswalk unresolved."
+    },
+    {
+      "id": "12",
+      "citation": "Nafar Dastgerdi J., Jaberi O., Remes H., Lehto P., Hosseini Toudeshky H., Kuva J. Fatigue damage process of additively manufactured 316L steel using X-ray computed tomography imaging. Additive Manufacturing 70 (2023),103559.",
+      "doi": "10.1016/j.addma.2023.103559",
+      "url": "https://doi.org/10.1016/j.addma.2023.103559",
+      "evidence_scope": "Primary table/methods; interrupted specimens excluded; temperature unstated."
+    },
+    {
+      "id": "13",
+      "citation": "Trombley M.L. The Influence of Section Thickness on the Ultrasonic Fatigue Response of 316L Stainless Steel Manufactured via Laser Powder Bed Fusion. University of Michigan doctoral dissertation (2024).",
+      "doi": "10.7302/23981",
+      "url": "https://doi.org/10.7302/23981",
+      "evidence_scope": "Official open 196-page dissertation; pages 76 and 159 visually checked; no individual Concept Laser build crosswalk located."
+    },
+    {
+      "id": "14",
+      "citation": "Wu Z., Zhou Y., Ho N.S.K., Pang J.H.L. Machine learning for fatigue life prediction of additively manufactured alloys: Quantifying predictive gain over physics baselines. International Journal of Fatigue (January 2027 issue),109943.",
+      "doi": "10.1016/j.ijfatigue.2026.109943",
+      "url": "https://doi.org/10.1016/j.ijfatigue.2026.109943",
+      "evidence_scope": "Publisher preview and bibliographic record only; full text/supplement not obtained. No claim of a verified method-level difference."
+    }
+  ],
+  "declarations": [
+    "No correspondence, external upload, publication or new physical testing was performed.",
+    "No original BNN/Owen reproduction or allegation of error in unavailable original data is made.",
+    "Population parameter uncertainty is omitted; no conformal or R90C90 guarantee is claimed.",
+    "Source recovery and all reported policies are exploratory; public outcomes had already been seen."
+  ],
+  "render_notes": {
+    "target_pages": "6–8",
+    "tables": "T1 may be moved to supplement if needed, but retain all6 models/4 policies in the released CSVs. T2 is central.",
+    "source_references": "Cite [numbers] near the relevant claims. Evidence_scope records access limits and should be retained in the supplement or source note.",
+    "current_snapshot": "Official Solberg2021 thesis retrieved and independently checked; no additional316Lspecimen/build crosswalk recovered. Table168belongs to18Ni300and is excluded. No new data/model result incorporated.",
+    "figure_placement": "Explicit F1/F2 mappings above. Preserve caption C1e6 sensitivity role. Use English figures generated by src/v31_english_figures.py; no re-fitting is needed."
+  },
+  "figures": [
+    {
+      "id": "F1",
+      "path": "manuscript/v31/policy_tradeoff_en.png",
+      "vector_path": "manuscript/v31/policy_tradeoff_en.svg",
+      "after_section": "6. Results in the identity-qualified first-block campaign",
+      "caption": "Same-query k3 policy utility across six models and empirical risk identification for hierarchical Basquin/RFL in the nominal first-block panel. C=10^6 is the prespecified, source-matched sensitivity; frozen C=10^7 results are retained in Tables 1–2. Bars do not establish safe-life gain. Horizontal intervals describe censoring identification, not sampling confidence; one campaign cannot give population CIs."
+    },
+    {
+      "id": "F2",
+      "path": "manuscript/v31/stress_choices_en.png",
+      "vector_path": "manuscript/v31/stress_choices_en.svg",
+      "after_section": "3. Protocol and common-query acquisition",
+      "caption": "Recorded stress amplitudes selected over ten repeated splits at k3 from the same fixed candidate pools. Counts are repeated selections, not independent specimens or an optimum over continuous stresses. All six prediction models share the one sequence selected by each policy. Known query covariates are permitted; query outcomes are never revealed."
+    }
+  ],
+  "supplementary_material": "manuscript/v31/supplementary_material.txt",
+  "source_followup_status": "Official Solberg 173-page thesis now acquired and independently audited negative for the needed 316L specimen/build key; maraging 18Ni300 table excluded. Diller/Tomas renewed closure checks also negative. No new eligible campaign added."
+}

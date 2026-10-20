@@ -1,0 +1,11 @@
+Recorded after final predictions were computed and the overall gate-pass count
+was seen, before root inspected per-policy numerical summary metrics. The source
+audit identified 40 Tomaszewski records in four
+conditions with only one stress level each. A policy contrast in these groups
+selects specimen identities, not stress levels. No outcome-based filter is used.
+Keep complete original summaries and add MULTISTRESS summaries restricted to
+conditions with at least two distinct stress amplitudes. These use the same
+frozen fits, supports, queries and predictions; do not refit or redesign splits.
+The original full summaries and their gates remain intact. Main discussion of
+stress-choice evidence must use this covariate-defined multistress subset and
+state that all new large campaigns still lack certified build mapping.

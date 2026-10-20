@@ -1,0 +1,10 @@
+{
+  "url": "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/bitstreams/08a95d69-1bc6-40e8-a12c-91b3a07c5733/content",
+  "status": 200,
+  "bytes": 22283480,
+  "sha256": "3ea5b0bdff6609fade6502f0425a9740abaa21971e773c1894b070015fdcbeeb",
+  "pages": 196,
+  "accessStatus": "open.access",
+  "authenticated": false,
+  "mode": "ordinary streaming GET from advertised public content link"
+}

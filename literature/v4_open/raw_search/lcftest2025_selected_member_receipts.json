@@ -1,0 +1,29 @@
+{
+  "zip_url": "https://zenodo.org/api/records/17086687/files/LCF_test_results.zip/content",
+  "members": [
+    {
+      "filename": "AM_H_1am_2.csv",
+      "range_start": 1089599389,
+      "range_end": 1097222422,
+      "compressed_bytes": 7623034,
+      "raw_bytes": 25334495,
+      "member_crc32": 537251693,
+      "crc32_verified": true,
+      "compressed_sha256": "0e01593e03e3e832ac7c3e9c6077670514a4cd8300b8c81678986b4a34a5f9f5",
+      "raw_sha256": "2280eed9490e04b8b9ceb6b112b568c7b975a7b60119b337a98bf5c7cc925e88",
+      "zip_repository_MD5_not_verified": "Only selected members acquired; no claim of full archive checksum verification."
+    },
+    {
+      "filename": "AM_V_1am.csv",
+      "range_start": 1618683292,
+      "range_end": 1637082485,
+      "compressed_bytes": 18399194,
+      "raw_bytes": 61918181,
+      "member_crc32": 2540207855,
+      "crc32_verified": true,
+      "compressed_sha256": "a7e477e8545edc8d439e34a1466feb40caf6d177d584aa6009594f975e9ad224",
+      "raw_sha256": "3af7ec7fd64b2e66dc0dd799939b29f44b99f1593f0e0d0a1f381a31a88734b6",
+      "zip_repository_MD5_not_verified": "Only selected members acquired; no claim of full archive checksum verification."
+    }
+  ]
+}

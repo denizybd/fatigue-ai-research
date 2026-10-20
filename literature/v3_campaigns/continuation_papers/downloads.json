@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Tian2024_ssrn.pdf",
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/106f20f4-803e-4d4a-a963-ae5edbb74cc9-MECA.pdf?abstractid=4664238&mirid=1",
+    "error": "HTTP Error 403: Forbidden",
+    "license": "SSRN indexed metadata: all rights reserved; no reuse allowed without permission."
+  },
+  {
+    "name": "LaserPolishing_NSF10357954.pdf",
+    "url": "https://par.nsf.gov/servlets/purl/10357954",
+    "status": 200,
+    "pdf": true,
+    "nbytes": 1015322,
+    "sha256": "43e248e3f600d5d5f306ef55525fb71bf91c21fcaa3f0c9638c7b3fd1b9aae84",
+    "license": "CC BY-NC-ND 4.0, PDF page1."
+  },
+  {
+    "name": "Auffray2025_supplement.pdf",
+    "url": "https://sam.ensam.eu/bitstream/handle/10985/26641/LAMPA_IJF_2025_Auffray_supplementary_data.pdf?isAllowed=y&sequence=2",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "Auffray2025_record.html",
+    "url": "https://sam.ensam.eu/handle/10985/26641",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "Kopec2024.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1007/s11340-024-01118-1.pdf",
+    "status": 200,
+    "pdf": true,
+    "nbytes": 8126347,
+    "sha256": "aeaaec337d4418ccaf35ec53a5bc4bc0af2e3b6d01ff09de7400247e4c795dd0",
+    "license": "CC BY4.0, PDF page15."
+  },
+  {
+    "name": "Gunputh2025.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1007/s00170-025-15954-5.pdf",
+    "status": 200,
+    "pdf": false,
+    "nbytes": 561202,
+    "sha256": "3e980febdff06a53f507f31342210d25b36629b22fba51eb37d80a3fdc1b4ae2",
+    "retained_as": "Busari2025_review.html",
+    "note": "Returned HTML for a critical review, not a PDF or primary campaign."
+  },
+  {
+    "name": "Douglas2024.pdf",
+    "url": "https://cronfa.swan.ac.uk/Record/cronfa66598/Download/66598__30628__4907fc2fa8394917b5a5ffd9975843f8.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "Agrawal_thesis.pdf",
+    "url": "https://asset.library.wisc.edu/1711.dl/3KCUCC3YJU4LG8D/R/file-977d6.pdf",
+    "status": 200,
+    "pdf": true,
+    "nbytes": 5404584,
+    "sha256": "b9477c67ad7511ca059f8b77b68580e1a9f4ad3d684a05e0b9c20ba28c514542",
+    "license": "Copyright Ankur Kumar Agrawal2022, all rights reserved, PDF page5."
+  },
+  {
+    "name": "Lyu2025_thesis.pdf",
+    "url": "https://publications.rwth-aachen.de/record/1023175/files/1023175.pdf",
+    "status": 200,
+    "pdf": false,
+    "nbytes": 248,
+    "retained": false,
+    "note": "Prior normal-HTTP attempt returned 248 bytes; web PDF reader found59,497,427 bytes above reader size limit. Chapter6 indexed as quasi-in-situ bending, outside axial benchmark."
+  },
+  {
+    "name": "data_fatigue_merot.csv",
+    "url": "https://zenodo.org/api/records/6653187/files/data_fatigue_merot.csv/content",
+    "status": 200,
+    "nbytes": 124800,
+    "sha256": "bb5e9ce46a7f7827aef50f2188f059c6833ca3dab9110cec1613c628a2e16b5e",
+    "retained_path": "data/external_v3/continuation_papers/data_fatigue_merot.csv",
+    "pdf": false,
+    "license": "CC BY4.0, producer Zenodo6653187 metadata."
+  },
+  {
+    "name": "merot_thesis.html",
+    "url": "https://theses.hal.science/tel-03688021",
+    "status": 200,
+    "nbytes": 95164,
+    "sha256": "9fc8b6866912b068c26f68047af8fe07d5d4dec42c082fc9eac78d710b8b9e61",
+    "retained_path": "literature/v3_campaigns/continuation_papers/merot_thesis.html",
+    "pdf": false
+  },
+  {
+    "name": "Auffray2025_main.pdf",
+    "url": "https://sam.ensam.eu/bitstream/handle/10985/26641/LAMPA_IJF_2025_Auffray.pdf?sequence=1&isAllowed=y",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "Merot2021_thesis.pdf",
+    "url": "https://pastel.hal.science/tel-03688021v1/file/96074_MEROT_2021_archivage.pdf",
+    "status": 200,
+    "nbytes": 320573000,
+    "sha256": "8c858848ca1a27bcc42e04ca60cfbf146048b53f80b76d7d05ecef459b6ea26a",
+    "pdf": true,
+    "retained_path": "literature/v3_campaigns/continuation_papers/Merot2021_thesis.pdf",
+    "license": "HAL Authorisation v1, source repository metadata; no broad Creative Commons license asserted."
+  }
+]

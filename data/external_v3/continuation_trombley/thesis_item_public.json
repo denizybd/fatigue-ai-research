@@ -1,0 +1,242 @@
+{
+  "id" : "54ca27ea-fa55-41ea-aada-c019e0635a53",
+  "uuid" : "54ca27ea-fa55-41ea-aada-c019e0635a53",
+  "name" : "The Influence of Section Thickness on the Ultrasonic Fatigue Response of 316L Stainless Steel Manufactured via Laser Powder Bed Fusion",
+  "handle" : "2027.42/194633",
+  "metadata" : {
+    "dc.contributor.affiliationumcampus" : [ {
+      "value" : "Ann Arbor",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.contributor.author" : [ {
+      "value" : "Trombley, Megan",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.contributor.committeemember" : [ {
+      "value" : "Allison, John",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Gordon, Jerard V",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Misra, Amit",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    }, {
+      "value" : "Taub, Alan",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 3
+    } ],
+    "dc.date.accessioned" : [ {
+      "value" : "2024-09-03T18:41:11Z",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.available" : [ {
+      "value" : "2024-09-03T18:41:11Z",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.issued" : [ {
+      "value" : "2024",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.submitted" : [ {
+      "value" : "2024",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.abstract" : [ {
+      "value" : "Metal additive manufacturing (AM) is an important modern manufacturing method that offers many advantages over conventional manufacturing. Due to its complex thermal history, metal AM is still the focus of active research directed at fully understanding process-structure-property (PSP) relationships. In the age of integrated computational materials engineering (ICME), understanding the mechanisms that drive PSP relationships are critical in enabling robust modeling and optimization of AM processes. The AM processing parameters largely dictate the thermal history, which in turn influences the microstructure, macrostructure, and mechanical properties. In this dissertation, the fatigue behavior of 316L stainless steel made via laser-powder bed fusion (L-PBF) was investigated. There is a particular lack of research addressing the influence of part geometry on fatigue behavior. With the goal being to accelerate the design process, it is imperative to understand how mechanical behavior changes with section thickness to accurately predict when and where failure will occur in large, complex parts. The focus of this dissertation is on the effects of section thickness and AM machine on high cycle fatigue behavior in AM 316L stainless steel.\n\tThe high cycle fatigue (HCF) behavior was characterized using ultrasonic fatigue (UF) testing. Specimens with a gauge diameter of 5.0 mm, 2.5 mm, and 1.5 mm were fabricated  on a GE Additive Concept Laser M2 machine. Specimens with a gauge diameter of 5.0 mm and 1.5 mm were fabricated on a 3D Systems ProX DMP 200 machine. Additionally, selected samples were subjected to a stress relieving heat treatment and others were tested with the as-built surface removed. A random fatigue limit (RFL) model informed by the maximum likelihood estimation (MLE) was used to quantify statistical variability and estimate an S-N curve fit along with fatigue strength at 10^8 cycles. \n\tIt was observed that HCF behavior is improved as the gauge diameter is reduced for both AM machines. Thorough investigation revealed that the surface condition and residual stress state are the primary factors influencing the observed section thickness effects on HCF. The influence of AM machine on HCF was modest. Removal of the as-built surface led to a substantial improvement in HCF properties.  Stress relieving heat treatment led to an improvement in the HCF properties compared to as-built samples. The residual stress state was determined to be tensile on the surface of the as-built samples with higher stresses in the 5.0 mm specimens compared to the 1.5 mm specimens. There was also a significant difference in residual stress magnitude between the CL M2 and ProX 200 specimens despite showing a similar fatigue response. \n\tThe small fatigue crack growth (FCG) behavior of 316L made on both the CL M2 and ProX 200 were compared. No significant difference in FCG behavior was observed when altering processing parameters, build orientation, or feedstock supplier. Despite different types of defects and residual stress states, small crack growth rates (CGR) are largely the same. When crack initiation in HCF specimens occurs sub-surface, crack growth begins in vacuum at multiple orders of magnitude slower CGRs, leading to longer fatigue lives. A model for the prediction of HCF behavior informed by CGRs and defect sizes was verified for each condition.\n        The results from this investigation can be used to design new AM processing routes and post-processing routines for improving the predictability of the HCF response of AM fabricated components.",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.bitstreamurl" : [ {
+      "value" : "http://deepblue.lib.umich.edu/bitstream/2027.42/194633/1/mltrombl_1.pdf",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.thesisdegreediscipline" : [ {
+      "value" : "Materials Science and Engineering",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.thesisdegreegrantor" : [ {
+      "value" : "University of Michigan, Horace H. Rackham School of Graduate Studies",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.thesisdegreename" : [ {
+      "value" : "PhD",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.doi" : [ {
+      "value" : "https://dx.doi.org/10.7302/23981",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.name-orcid" : [ {
+      "value" : "Trombley, Megan; 0000-0003-3971-015X",
+      "language" : "en_US",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.orcid" : [ {
+      "value" : "0000-0003-3971-015X",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.uri" : [ {
+      "value" : "https://hdl.handle.net/2027.42/194633",
+      "language" : null,
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.language.iso" : [ {
+      "value" : "en_US",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.subject" : [ {
+      "value" : "High cycle fatigue behavior",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "short fatigue crack growth behavior",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Additive manufacturing",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 2
+    }, {
+      "value" : "Gauge diameter size effects",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 3
+    }, {
+      "value" : "AISI 316L stainless steel",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 4
+    } ],
+    "dc.subject.hlbsecondlevel" : [ {
+      "value" : "Materials Science and Engineering",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.subject.hlbtoplevel" : [ {
+      "value" : "Engineering",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.title" : [ {
+      "value" : "The Influence of Section Thickness on the Ultrasonic Fatigue Response of 316L Stainless Steel Manufactured via Laser Powder Bed Fusion",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.type" : [ {
+      "value" : "Thesis",
+      "language" : "",
+      "authority" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ]
+  },
+  "inArchive" : true,
+  "discoverable" : true,
+  "withdrawn" : false,
+  "lastModified" : "2025-11-25T21:09:59.052+00:00",
+  "entityType" : null,
+  "type" : "item",
+  "_links" : {
+    "accessStatus" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/accessStatus"
+    },
+    "bundles" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/bundles"
+    },
+    "identifiers" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/identifiers"
+    },
+    "mappedCollections" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/mappedCollections"
+    },
+    "owningCollection" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/owningCollection"
+    },
+    "relationships" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/relationships"
+    },
+    "version" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/version"
+    },
+    "templateItemOf" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/templateItemOf"
+    },
+    "thumbnail" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53/thumbnail"
+    },
+    "self" : {
+      "href" : "https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/54ca27ea-fa55-41ea-aada-c019e0635a53"
+    }
+  }
+}

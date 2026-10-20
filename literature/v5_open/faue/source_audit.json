@@ -1,0 +1,118 @@
+{
+  "audit_version": "v5_Faue_source_closure_v1",
+  "completed_utc": "2026-10-20T19:50:17.445718+00:00",
+  "doi": "10.1016/j.mfglet.2022.07.083",
+  "primary_sources": [
+    {
+      "path": "literature/v3_campaigns/continuation_papers/LaserPolishing_NSF10357954.pdf",
+      "url": "https://par.nsf.gov/servlets/purl/10357954",
+      "bytes": 1015322,
+      "sha256": "43e248e3f600d5d5f306ef55525fb71bf91c21fcaa3f0c9638c7b3fd1b9aae84",
+      "license": "CC BY-NC-ND4.0 per publisher metadata; no separate numerical-data license found",
+      "role": "primary scatter and explicit single-build statement"
+    },
+    {
+      "path": "literature/v3_campaigns/continuation_papers/Agrawal_thesis.pdf",
+      "url": "https://asset.library.wisc.edu/1711.dl/3KCUCC3YJU4LG8D/R/file-977d6.pdf",
+      "bytes": 5404584,
+      "sha256": "b9477c67ad7511ca059f8b77b68580e1a9f4ad3d684a05e0b9c20ba28c514542",
+      "license": "Copyright2022AnkurKumarAgrawal;all rights reserved",
+      "role": "same-campaign overlap evidence; stress amplitude semantics"
+    }
+  ],
+  "source_evidence": [
+    {
+      "field": "one_physical_build",
+      "status": "verified",
+      "source": "Faue PDF3 Section2",
+      "evidence": "All AM samples from one build; EOSM290 horizontal build, EDM removed"
+    },
+    {
+      "field": "reported_test_counts",
+      "status": "verified",
+      "source": "Faue PDF3 Section2",
+      "evidence": "22AM,11AM-AB/11AM-LP;18conventionally machined excluded"
+    },
+    {
+      "field": "surface_and_heat_treatment",
+      "status": "verified_with_limitation",
+      "source": "Faue PDF3 Section2",
+      "evidence": "No prior heat treatment; manually removed supports and locally mechanically polished rough support attachment regions"
+    },
+    {
+      "field": "stress_amplitude",
+      "status": "verified",
+      "source": "Faue PDF6 discussion;Agrawal PDF67 printed52",
+      "evidence": "150,225,300MPa explicitly stress amplitudes"
+    },
+    {
+      "field": "physical_specimen_ID_to_outcome",
+      "status": "not_recovered",
+      "source": "Full8pagepaper and thesis Section3.6, Figure22,Appendix1",
+      "evidence": "No actual author sample labels or individual outcome table recovered"
+    },
+    {
+      "field": "load_ratio_frequency_waveform_temperature_feedback_mode",
+      "status": "unreported_for_this_campaign",
+      "source": "Faue fullpaper;Agrawal Section3.6",
+      "evidence": "R0.1 in paper introduction belongs to a cited Ti alloy study; ASTM E466 cited for specimen design only"
+    },
+    {
+      "field": "constant_amplitude",
+      "status": "not_explicitly_verified",
+      "source": "Faue PDF6 Section3.4",
+      "evidence": "S-N tests at fixed labelled stress levels reported, but no explicit waveform/protocol statement found"
+    },
+    {
+      "field": "endpoint",
+      "status": "reported_fatigue_failure",
+      "source": "Faue PDF6 Sections3.4/3.5",
+      "evidence": "All resolvedAMmarkers below2million; source describes fracture surfaces and allAMfailure initiation; conventional runouts excluded"
+    },
+    {
+      "field": "loading_stress_homogeneity",
+      "status": "material_limitation",
+      "source": "Faue PDF4 Section3.1;PDF6discussion",
+      "evidence": "Warped AM pieces straightened by gripping, inducing unquantified additional tensile stress at top surface"
+    },
+    {
+      "field": "thesis_independence",
+      "status": "same_source_family",
+      "source": "Agrawal PDF51 printed36 andPDF68 Figure22",
+      "evidence": "Thesis explicitly attributes Section3.6 to same Faue publication; six plotted representative/summary symbols do not identify22individuals"
+    }
+  ],
+  "public_followup": {
+    "receipt": "literature/v5_open/faue/public_followup_receipts.json",
+    "nsf_record": "bibliographic exports only;no numerical packet linked",
+    "crossref_relation": {},
+    "datacite_exact_doi_matches": 0,
+    "publisher_response": "bibliographic core metadata only",
+    "search_scope": "Focused DOI/data/supplement and author/dataset queries; no complete specimen-labelled raw dataset found; bounded negative result"
+  },
+  "admission": {
+    "physical_identity_qualified_n": 0,
+    "method_qualified_primary_n": 0,
+    "E2_candidate_digitized_markers_n": 16,
+    "author_specimen_IDs_recovered": 0,
+    "canonical_build": "Faue2022_single_AM_build",
+    "canonical_build_is_author_label": false,
+    "reported_n": 22,
+    "count_gap_not_reconstructed": 6
+  },
+  "source_overlap": {
+    "family_id": "Faue2022_Agrawal2022_same_campaign",
+    "previous_gate": "literature/v3_campaigns/continuation_papers/continuation_source_gate.csv",
+    "new_contribution": "Conservative plotted-marker extraction, not newly discovered independent physical campaign",
+    "whole_family_block_required": true
+  },
+  "forbidden_imputations": [
+    "No inferred R0.1",
+    "No imputed room temperature",
+    "No imputed forcecontrol or frequency",
+    "No invented specimen IDs",
+    "No forced22row reconciliation",
+    "No thesis representative-point duplication"
+  ],
+  "no_models_or_contacts": true
+}

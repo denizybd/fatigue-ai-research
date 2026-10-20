@@ -1,0 +1,202 @@
+{"raw_sha256": "bb5e9ce46a7f7827aef50f2188f059c6833ca3dab9110cec1613c628a2e16b5e", "frozen_source_gate_sha256": "2b6b775484ba5eb25f0d5a90ff944bac175f092c74ceb3387e00d18cf608e618", "first_step_rows": 105, "retained_physical_specimens": 70, "status": "PASS", "manual_source_fact": "Thesis build/long-ID map independently visually audited; no model-based inference"}
+{
+  "source": "data/external_v3/continuation_papers/merot_first_exposure_unique_physical70_verified.csv",
+  "source_sha256": "2b6b775484ba5eb25f0d5a90ff944bac175f092c74ceb3387e00d18cf608e618",
+  "output": "data/processed/v3/firstblock/merot52.csv",
+  "output_sha256": "c5213495915da06eacf6910fc6b9b3f167cabe162be5c40d14784c7c2d43b359",
+  "rows": 52,
+  "failures": 23,
+  "right_censors": 29,
+  "build_ids": [
+    "FS18-019",
+    "FS18-020",
+    "FS19-006"
+  ],
+  "powder_batch_ids": [
+    "TLS0993/1/1",
+    "TLS1051/1/1"
+  ],
+  "author_campaigns": 1,
+  "conditions": {
+    "merot_FS18-019_precorroded_air_Rminus1": 12,
+    "merot_FS18-019_reference_air_Rminus1": 10,
+    "merot_FS18-020_precorroded_air_Rminus1": 9,
+    "merot_FS18-020_reference_air_Rminus1": 5,
+    "merot_FS18-020_small_volume_air_Rminus1": 9,
+    "merot_FS19-006_edm_defect_air_Rminus1": 4,
+    "merot_FS19-006_precorroded_air_Rminus1": 2,
+    "merot_FS19-006_reference_air_Rminus1": 1
+  },
+  "panels": {
+    "external_identity_localstress_firstblock": 9,
+    "external_identity_qualified_firstblock": 43
+  },
+  "source_build_table": "Merot2021 thesis printedp61/Table2.1 (PDFp85); source audit retained separately",
+  "timing": "exploratory source recovery; fixed first-exposure protocol before extraction/fits",
+  "protocol_extension_sha256": "1a85e8ae169e8f2432653614f5b20f3ad208e7844e3b94645ea61e80f1013ed9"
+}
+{
+  "created_utc": "2026-10-20T16:17:45.341662+00:00",
+  "timing": "exploratory; source outcomes and phase-2 results already read",
+  "protocol_sha256": "46808419f7b6bdb1639c66da1d0cb266a58b3ef3b83624666db30f7208c1df1c",
+  "inputs": [
+    {
+      "path": "data/processed/v2/strict_fulltraining/cohort.csv",
+      "sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3"
+    },
+    {
+      "path": "data/processed/v3/firstblock/merot52.csv",
+      "sha256": "c5213495915da06eacf6910fc6b9b3f167cabe162be5c40d14784c7c2d43b359"
+    },
+    {
+      "path": "data/processed/v3/new_candidates/dastgerdi.csv",
+      "sha256": "cb76dcfaf7de5e18cc48a5f9db7a88aeaaacff617fbd4b9e07af80847fcebfda"
+    }
+  ],
+  "cohort_sha256": "8dfcbfaf8e7f034cd8aef4461cb3c5d5bfe4c0fe0496702e6267cd4e39f90317",
+  "common_query_assertion": "Each task has one query/pool shared by every policy/model/cap",
+  "n_rows": 367,
+  "n_tasks": 310,
+  "extension_protocols": {
+    "protocols/v3/virgin_first_exposure_extension.txt": "1a85e8ae169e8f2432653614f5b20f3ad208e7844e3b94645ea61e80f1013ed9"
+  }
+}
+Fitting 283 training rows
+Fits done 1.58s
+task 1/50 dastgerdi2023_uninterrupted seed0 done
+task 2/50 dastgerdi2023_uninterrupted seed1 done
+task 3/50 dastgerdi2023_uninterrupted seed2 done
+task 4/50 dastgerdi2023_uninterrupted seed3 done
+task 5/50 dastgerdi2023_uninterrupted seed4 done
+task 6/50 dastgerdi2023_uninterrupted seed5 done
+task 7/50 dastgerdi2023_uninterrupted seed6 done
+task 8/50 dastgerdi2023_uninterrupted seed7 done
+task 9/50 dastgerdi2023_uninterrupted seed8 done
+task 10/50 dastgerdi2023_uninterrupted seed9 done
+Fitting 309 training rows
+Fits done 1.7s
+task 11/50 merot_FS18-019_precorroded_air_Rminus1 seed0 done
+task 12/50 merot_FS18-019_precorroded_air_Rminus1 seed1 done
+task 13/50 merot_FS18-019_precorroded_air_Rminus1 seed2 done
+task 14/50 merot_FS18-019_precorroded_air_Rminus1 seed3 done
+task 15/50 merot_FS18-019_precorroded_air_Rminus1 seed4 done
+task 16/50 merot_FS18-019_precorroded_air_Rminus1 seed5 done
+task 17/50 merot_FS18-019_precorroded_air_Rminus1 seed6 done
+task 18/50 merot_FS18-019_precorroded_air_Rminus1 seed7 done
+task 19/50 merot_FS18-019_precorroded_air_Rminus1 seed8 done
+task 20/50 merot_FS18-019_precorroded_air_Rminus1 seed9 done
+task 21/50 merot_FS18-019_reference_air_Rminus1 seed0 done
+task 22/50 merot_FS18-019_reference_air_Rminus1 seed1 done
+task 23/50 merot_FS18-019_reference_air_Rminus1 seed2 done
+task 24/50 merot_FS18-019_reference_air_Rminus1 seed3 done
+task 25/50 merot_FS18-019_reference_air_Rminus1 seed4 done
+task 26/50 merot_FS18-019_reference_air_Rminus1 seed5 done
+task 27/50 merot_FS18-019_reference_air_Rminus1 seed6 done
+task 28/50 merot_FS18-019_reference_air_Rminus1 seed7 done
+task 29/50 merot_FS18-019_reference_air_Rminus1 seed8 done
+task 30/50 merot_FS18-019_reference_air_Rminus1 seed9 done
+task 31/50 merot_FS18-020_precorroded_air_Rminus1 seed0 done
+task 32/50 merot_FS18-020_precorroded_air_Rminus1 seed1 done
+task 33/50 merot_FS18-020_precorroded_air_Rminus1 seed2 done
+task 34/50 merot_FS18-020_precorroded_air_Rminus1 seed3 done
+task 35/50 merot_FS18-020_precorroded_air_Rminus1 seed4 done
+task 36/50 merot_FS18-020_precorroded_air_Rminus1 seed5 done
+task 37/50 merot_FS18-020_precorroded_air_Rminus1 seed6 done
+task 38/50 merot_FS18-020_precorroded_air_Rminus1 seed7 done
+task 39/50 merot_FS18-020_precorroded_air_Rminus1 seed8 done
+task 40/50 merot_FS18-020_precorroded_air_Rminus1 seed9 done
+task 41/50 merot_FS18-020_small_volume_air_Rminus1 seed0 done
+task 42/50 merot_FS18-020_small_volume_air_Rminus1 seed1 done
+task 43/50 merot_FS18-020_small_volume_air_Rminus1 seed2 done
+task 44/50 merot_FS18-020_small_volume_air_Rminus1 seed3 done
+task 45/50 merot_FS18-020_small_volume_air_Rminus1 seed4 done
+task 46/50 merot_FS18-020_small_volume_air_Rminus1 seed5 done
+task 47/50 merot_FS18-020_small_volume_air_Rminus1 seed6 done
+task 48/50 merot_FS18-020_small_volume_air_Rminus1 seed7 done
+task 49/50 merot_FS18-020_small_volume_air_Rminus1 seed8 done
+task 50/50 merot_FS18-020_small_volume_air_Rminus1 seed9 done
+{"prediction_rows": 11520, "selection_rows": 920}
+{"prediction_rows": 11520, "query_identity_checks": 384, "query_pairs_checked": 23040, "summary_rows": 1728, "paired_rows": 2304, "relative_gates_passed": 0, "full_gates_passed": 0}
+task 1/50 dastgerdi2023_uninterrupted seed0 done
+task 2/50 dastgerdi2023_uninterrupted seed1 done
+task 3/50 dastgerdi2023_uninterrupted seed2 done
+task 4/50 dastgerdi2023_uninterrupted seed3 done
+task 5/50 dastgerdi2023_uninterrupted seed4 done
+task 6/50 dastgerdi2023_uninterrupted seed5 done
+task 7/50 dastgerdi2023_uninterrupted seed6 done
+task 8/50 dastgerdi2023_uninterrupted seed7 done
+task 9/50 dastgerdi2023_uninterrupted seed8 done
+task 10/50 dastgerdi2023_uninterrupted seed9 done
+task 11/50 merot_FS18-019_precorroded_air_Rminus1 seed0 done
+task 12/50 merot_FS18-019_precorroded_air_Rminus1 seed1 done
+task 13/50 merot_FS18-019_precorroded_air_Rminus1 seed2 done
+task 14/50 merot_FS18-019_precorroded_air_Rminus1 seed3 done
+task 15/50 merot_FS18-019_precorroded_air_Rminus1 seed4 done
+task 16/50 merot_FS18-019_precorroded_air_Rminus1 seed5 done
+task 17/50 merot_FS18-019_precorroded_air_Rminus1 seed6 done
+task 18/50 merot_FS18-019_precorroded_air_Rminus1 seed7 done
+task 19/50 merot_FS18-019_precorroded_air_Rminus1 seed8 done
+task 20/50 merot_FS18-019_precorroded_air_Rminus1 seed9 done
+task 21/50 merot_FS18-019_reference_air_Rminus1 seed0 done
+task 22/50 merot_FS18-019_reference_air_Rminus1 seed1 done
+task 23/50 merot_FS18-019_reference_air_Rminus1 seed2 done
+task 24/50 merot_FS18-019_reference_air_Rminus1 seed3 done
+task 25/50 merot_FS18-019_reference_air_Rminus1 seed4 done
+task 26/50 merot_FS18-019_reference_air_Rminus1 seed5 done
+task 27/50 merot_FS18-019_reference_air_Rminus1 seed6 done
+task 28/50 merot_FS18-019_reference_air_Rminus1 seed7 done
+task 29/50 merot_FS18-019_reference_air_Rminus1 seed8 done
+task 30/50 merot_FS18-019_reference_air_Rminus1 seed9 done
+task 31/50 merot_FS18-020_precorroded_air_Rminus1 seed0 done
+task 32/50 merot_FS18-020_precorroded_air_Rminus1 seed1 done
+task 33/50 merot_FS18-020_precorroded_air_Rminus1 seed2 done
+task 34/50 merot_FS18-020_precorroded_air_Rminus1 seed3 done
+task 35/50 merot_FS18-020_precorroded_air_Rminus1 seed4 done
+task 36/50 merot_FS18-020_precorroded_air_Rminus1 seed5 done
+task 37/50 merot_FS18-020_precorroded_air_Rminus1 seed6 done
+task 38/50 merot_FS18-020_precorroded_air_Rminus1 seed7 done
+task 39/50 merot_FS18-020_precorroded_air_Rminus1 seed8 done
+task 40/50 merot_FS18-020_precorroded_air_Rminus1 seed9 done
+task 41/50 merot_FS18-020_small_volume_air_Rminus1 seed0 done
+task 42/50 merot_FS18-020_small_volume_air_Rminus1 seed1 done
+task 43/50 merot_FS18-020_small_volume_air_Rminus1 seed2 done
+task 44/50 merot_FS18-020_small_volume_air_Rminus1 seed3 done
+task 45/50 merot_FS18-020_small_volume_air_Rminus1 seed4 done
+task 46/50 merot_FS18-020_small_volume_air_Rminus1 seed5 done
+task 47/50 merot_FS18-020_small_volume_air_Rminus1 seed6 done
+task 48/50 merot_FS18-020_small_volume_air_Rminus1 seed7 done
+task 49/50 merot_FS18-020_small_volume_air_Rminus1 seed8 done
+task 50/50 merot_FS18-020_small_volume_air_Rminus1 seed9 done
+{"prediction_rows": 11520, "selection_rows": 920}
+{"prediction_rows": 11520, "query_identity_checks": 384, "query_pairs_checked": 23040, "summary_rows": 1728, "paired_rows": 2304, "relative_gates_passed": 0, "full_gates_passed": 0}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/src/v31_compare.py", line 19, in <module>
+    if __name__=='__main__':compare()
+                            ^^^^^^^^^
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/src/v31_compare.py", line 12, in compare
+    pd.testing.assert_frame_equal(x,y,check_exact=True)
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/.venv/lib/python3.12/site-packages/pandas/util/_decorators.py", line 220, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/.venv/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 1347, in assert_frame_equal
+    assert_series_equal(
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/.venv/lib/python3.12/site-packages/pandas/util/_decorators.py", line 193, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/.venv/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 1037, in assert_series_equal
+    assert_extension_array_equal(
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/.venv/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 846, in assert_extension_array_equal
+    _testing.assert_almost_equal(
+  File "pandas/_libs/testing.pyx", line 53, in pandas._libs.testing.assert_almost_equal
+  File "pandas/_libs/testing.pyx", line 171, in pandas._libs.testing.assert_almost_equal
+  File "/Users/deniz2/Documents/ChatGPT/fatigue-ai-research/.venv/lib/python3.12/site-packages/pandas/_testing/asserters.py", line 619, in raise_assert_detail
+    raise AssertionError(msg)
+AssertionError: DataFrame.iloc[:, 18] (column name="fit_signature") are different
+
+DataFrame.iloc[:, 18] (column name="fit_signature") values are different (100.0 %)
+[index]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, ...]
+[left]:  [035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e, ...]
+[right]: [6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c, ...]
+At positional index 0, first diff: 035849a7f4469e0f149f5b81bf29a0907bc3010a0b46a0f9c35a78a272f4a70e != 6314c7d9d4a1e924a2bc92749f7f33d79bb7f4a5cef285ff4537b8eaa58d785c
