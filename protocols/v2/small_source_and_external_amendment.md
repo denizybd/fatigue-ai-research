@@ -1,0 +1,15 @@
+# Limited verified sources and external order sensitivity
+
+2026-10-20, before any v2 real-data fit.
+
+The source gate substantially reduces the available corpus. Keep at least four source blocks for population fitting; reserve at most nine other eligible blocks for endpoint calibration. If fewer than nine remain, retain the literal zero-life 90% conformal bound and flag it as vacuous. Do not use a lower empirical rank to manufacture a finite guarantee. The original calibrated primary claim criterion remains recorded and can fail/infeasible because data cannot support it.
+
+Run an explicitly secondary raw-model full-training track that fits all other verified source blocks (no calibration holdout). This measures the empirical behavior of model-based borrowing from small historical data. Its pointwise 10th percentiles are not certified 90% bounds. Use exactly the same support/query IDs and the same risk/utility metrics. Report the original criterion for this raw track only as a descriptive target, not a replacement confirmatory primary claim. No real-data outcomes prompted this addition.
+
+For the external campaign, freeze two support mechanisms before fitting: (a) three seeded outcome-blind random permutations; (b) chronological specimen test date, ties broken by SHA256 specimen ID. Both reserve the first ten support candidates and use every remaining specimen as the common query set at k=0,3,5,10. Date format is author-provided US month/day/year and must be parsed, not lexicographically sorted. Chronological supports correspond to the existing campaign sequence but do not establish an optimized experimental design; mixed original testing protocols and imperfect build mapping remain.
+
+For external episode calibration, choose one condition with at least eleven endpoints from each historical calibration source, take ten support candidates and one disjoint query, and apply the same k. This population differs from the external three diameter groups; do not assume it repairs cross-source/endpoint shifts. Reserve up to nine calibration sources while retaining at least four fitting sources. The full-training model-based external track uses all verified historical data and remains secondary. The external source and all its conditions never enter population fitting or calibration.
+
+Population-parameter sensitivity: draw 20 training-source bootstrap populations with a fixed seed, refit the hierarchical population, update using the same external supports, and invert the equally weighted mixture predictive CDF (not the mean of quantiles). This is a finite computational sensitivity, not a rigorous confidence or tolerance bound. Record convergence and failed replicates without selective deletion. If any replicate is unusable, report the ensemble as unavailable until numerical issues are resolved under a dated amendment.
+
+The source paper's Weibull random-fatigue-limit model remains an important unimplemented comparator. Results here test the stated Basquin-based borrowing question and cannot establish best available fatigue prediction or superiority to the original RFL analysis.

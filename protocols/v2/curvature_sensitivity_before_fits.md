@@ -1,0 +1,7 @@
+# Finite curvature sensitivity
+
+2026-10-20, before the first phase-2 real-data fit. The external source uses a random fatigue-limit model. To check whether the straight Basquin working curve alone drives conclusions, add one finite curvature sensitivity: continuous two-slope log-stress/log-life regression with a knot at the TRAINING median log stress, two nonpositive slopes and an R coefficient, proper censored likelihood and the same condition-random-intercept posterior predictive calculation. Fit its parameters on the same training partition only. No target-query optimization or knot search is allowed.
+
+Run this against the main straight hierarchical model on the full-training raw tracks, with the identical supports and queries, and report all results. This is a physical monotonicity/curvature control, not a reproduction of the original Weibull random-fatigue-limit model, not a fatigue-limit infinity guarantee, and not a new method novelty claim. It remains secondary and cannot rescue a failed primary calibration criterion.
+
+Pre-fit pipeline review also requires reporting the paired censoring identification interval for the true risk change. A difference between two upper identification endpoints alone does not bound the true paired risk change. Retain the original primary criterion and add a necessary safety guard: the descriptive upper 95% bootstrap endpoint for the upper identified true risk change must be <=2 percentage points. This stricter requirement is recorded before outcomes.

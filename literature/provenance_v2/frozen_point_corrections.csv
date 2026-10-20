@@ -1,0 +1,30 @@
+row_id,field,corrected_value,source_url,locator
+a0577_d003_p000,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p001,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p002,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p003,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p004,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p005,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p006,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p007,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p008,thermal,NHT,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment
+a0577_d003_p000,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p001,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p002,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p003,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p004,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p005,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p006,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p007,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p008,heat_temperature,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p000,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p001,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p002,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p003,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p004,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p005,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p006,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p007,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0577_d003_p008,heat_time,,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h
+a0554_d006_p004,runout,0,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6947212/fullTextXML,Section3.4.1 latter extended ZX-SP-NSR sample broke;Figure14
+a0554_d006_p004,event,1,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6947212/fullTextXML,Derived 1-runout from source correction

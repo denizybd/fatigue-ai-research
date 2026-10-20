@@ -1,0 +1,7 @@
+{
+  "final_source_gate_sha256": "8fb1bd00df9b21f7e6bf56dda7cf488e209ffc224f856292a4405922c2da48a5",
+  "point_corrections_sha256": "bbca60f034b9d57a65c4d2b422906993bdf13faf078a5961027e751fdd35db41",
+  "n_eligible_sources": 11,
+  "n_corrected_cells": 29,
+  "qualification": "Source methods verified; approximate points are not comprehensively matched to original physical specimen IDs."
+}
