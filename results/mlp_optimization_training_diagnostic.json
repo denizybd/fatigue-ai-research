@@ -1,0 +1,14 @@
+{
+  "status": {
+    "success": true,
+    "status": 0,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "n_iter": 4464,
+    "n_function_evaluations": 4744,
+    "objective": 0.2879151979483143,
+    "gradient_inf_norm": 0.00010034230460827243
+  },
+  "sigma": 0.2506977635167786,
+  "duration_s": 0.6443378925323486,
+  "train_only": "No test predictions in this diagnostic; stopping cap is numerical, not chosen for test error."
+}

@@ -1,0 +1,25 @@
+Publication shift and the cost of conservative fatigue-life bounds
+Working research brief | 20 October 2026
+
+Question
+How reliable are lower-life recommendations on an unseen literature source? This pilot complements Centola et al.'s R90C90 design curves and the group's topology/transfer-learning agenda. It evaluates related open-data methods; it neither reproduces nor falsifies the original BNN.
+
+Data and protocol
+FatigueData-AM2022 v2 supplies 1,126 database-labeled force-controlled, unnotched, room-temperature uniaxial LPBF 316L observations: 987 failures and 139 runouts, across 120 conditions and 37 DOIs. Three multi-DOI near-curve-reuse families yield 29 conservative provenance blocks, including singleton publications. These are precautionary evaluation units, rather than 29 independently verified physical campaigns. Physical specimen identity remains unresolved; all coordinates are approximately digitized, and some metadata are database defaults.
+
+A locally registered protocol fixes leave-block-out evaluation, three seeds, separate whole-block calibration, provenance-block-balanced likelihood, and censored lognormal models. Failures contribute density and runouts survival probability. Test outcomes determine neither preprocessing nor gate thresholds. Violation identification intervals distinguish known overoptimistic recommendations from ambiguous runouts; they are not sampling confidence intervals.
+
+Frozen rich-linear AFT results
+For this particular model, the provenance-block-balanced empirical violation interval is 28.97–30.77% for the model-based q10 bound and 14.50–15.40% after pooled endpoint calibration. Source-maximum calibration gives 0.197% mean specimen violations, with at least one known violation in 4.60% of complete held-out cohorts. Its mean of block-wise median model-median-to-bound offsets is 3.54 log10-life decades, versus 1.13 for pooled calibration. This cost uses the model median, not observed median lifetime; low violations alone do not establish useful design lives.
+
+Robustness matters
+A weaker-edge grouping/split sensitivity raises complete-cohort violations to 17.86%; calibration membership changes too, so this is not an isolated causal effect of grouping. Pooled endpoint specimen-risk intervals are 16.03–16.88% there and 15.00–15.72% after approximate deduplication. These results do not validate a safe design algorithm.
+
+The combined support/instability gate fails its preregistered superiority rule. At the primary 80% matched acceptance target, combined minus distance-only known violations is +0.13 percentage points (paired descriptive 95% block-bootstrap interval −0.64 to +0.89). Other comparator intervals cross zero. Actual mean availability is 83.4% after integer rounding.
+
+All 87 MLP fits converged under a separate 12,000-iteration cap, reaching at most 9,183 iterations. Their specimen-risk intervals are 40.17–44.93% for q10, 9.30–10.06% for pooled endpoints and 0.234–0.246% for cohort calibration. This post-result numerical sensitivity does not replace the frozen analysis or establish an architecture ranking.
+
+Contribution and request
+The present contribution is a reproducible provenance/reliability/utility pilot and negative gate result, with modest methodological novelty. Expert feedback on the proposed source families and a source-to-condition map for the original 518-point corpus would clarify the most useful next validation step. No future-source safety or physical-part validation is claimed.
+
+Sources: 10.1016/j.engfailanal.2024.109081; 10.1016/j.ijfatigue.2026.109481; 10.1016/j.engfailanal.2026.111075; 10.1038/s41597-023-02150-x; 10.6084/m9.figshare.22337629.v2.

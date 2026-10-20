@@ -1,0 +1,14 @@
+{
+  "data_sha256": "55180c53b940f8f69c14eebf58714d39db851f124e59ba7a527aa13cc8a236b6",
+  "code_sha256": "75079d16adba880c18af5b47b8f8c3446a51319ebdf9716cba211d9c8ff5410a",
+  "scheme": "source",
+  "bootstraps": 8,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "models": "basquin,linear,mlp",
+  "naive_events": false,
+  "mlp_maxiter": 1500
+}

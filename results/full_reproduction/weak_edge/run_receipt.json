@@ -1,0 +1,22 @@
+{
+  "arguments": {
+    "input": "data/processed/primary_weak_edge.csv",
+    "output": "results/full_reproduction/weak_edge",
+    "scheme": "source",
+    "seeds": "0,17,42",
+    "bootstraps": 8,
+    "limit_folds": null,
+    "models": "linear",
+    "naive_events": false,
+    "mlp_maxiter": 1500
+  },
+  "data_sha256": "bec010804d5b7771d1a4b6d6e1975a0ede738c21b0856af7477a44e2591b066d",
+  "groups": 28,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "duration_seconds": 21.31508994102478,
+  "completed_folds": 84
+}

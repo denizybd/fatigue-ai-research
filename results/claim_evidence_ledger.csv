@@ -1,0 +1,9 @@
+claim,evidence,limitation
+1126points/120conditions/37DOIs/29blocks/139runouts,data/processed/grouping_report.json; primary.csv,"Database labels/defaults, approximate coordinates, unverified specimen identity"
+Main rich-linear q10/end/cohort risk and utility,results/primary/summary.csv; source_seed_metrics.csv,Censoring interval only; cohort target differs from specimen target
+Combined gate strongclaim fails,protocols/v1_2_prefit_claim_rule.md; results/primary/paired_contrasts.csv; results/independent_audit.json,Frozen gate/representation only; no general impossibility claim
+Weak grouping/split sensitivity changes cohort result,results/sensitivity_comparison.csv; data/processed/primary_weak_edge.csv,"Grouping, sample weighting and seeded train/calibration composition all change"
+87/87extended MLPfits converge,results/mlp_extended/fit_statuses.csv filtermodel=mlp; protocols/v1_5_postresult_numerical_sensitivity.md,"Postresult numerical sensitivity, no primaryreplacement"
+Exact fullcomputationalreplay,results/full_reproduction_comparison.json,Pinned local software/hardware; no independent experimental validation
+Original and followon claims audited,literature/primary_paper_audit.md; followon_audit.md; novelty_audit.md,Fulltext/visual/code access limits stated per source
+No communication sent,outreach/email_draft_en.txt; STATE.md,Human approval/name/background needed before send

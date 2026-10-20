@@ -44,7 +44,9 @@ Source: [Very High Cycle Fatigue Behavior of Additively Manufactured 316L Stainl
 
 Figure3 p5 distinguishes the current study's blue filled HCF markers (R=0.1, 30Hz) and blue open VHCF markers (R=−1, approximately20kHz). The figure also overlays literature points from Spierings2013, Leuders2014, and Xiong2019. Those other symbols are **not new Voloskov specimens**.
 
-Independent visual expected values were recorded before obtaining the final database subset in `Voloskov_Fig3_manual_expected.csv`: nine HCF observations, including two runouts around 1e7 cycles at sigma_max275 and250MPa, and four VHCF failure markers around (4e7,270), (1.4e8,260), (4e8,250), (1.1e9,255), in cycles/MPa maximum stress. HCF amplitudes require factor0.45; VHCF amplitudes equal maximum stresses. **Database comparison remains pending until this article's MAT/complete JSON rows are available.**
+Independent visual expected values were recorded before obtaining the final database subset in `Voloskov_Fig3_manual_expected.csv`: nine HCF observations, including two runouts around 1e7 cycles at sigma_max275 and250MPa, and four VHCF failure markers around (4e7,270), (1.4e8,260), (4e8,250), (1.1e9,255), in cycles/MPa maximum stress. HCF amplitudes require factor0.45; VHCF amplitudes equal maximum stresses.
+
+**Completed MAT-derived comparison:** all13 study points match the13 database observations, with zero runout disagreements and no unmatched database rows. Largest differences from manual graph readings are2.60% in cycles and0.25% in stress. `Voloskov_Fig3_spotcheck.csv` records the matched row IDs and differences; `source_spotcheck.py` regenerates this comparison from `all_sn_observations.csv`. The source's borrowed comparison series were therefore not found as extra records under this DOI. This targeted result does not establish absence of repeated records elsewhere.
 
 §2.1/Table1 verifies vertical specimens, 113W power, 600mm/s traverse speed, hatch0.08mm=80µm, layer0.020mm=20µm, machining, and no heat treatment. §2.2 gives a VHCF surface-temperature range15–45°C, so replacing it with exact25°C discards reported information. Figure3's blue-arrow runouts can independently test the flag polarity.
 
@@ -58,12 +60,37 @@ Verified reuse clue: Voloskov Figure3 deliberately reproduces other publications
 
 Potential Shrestha2019/2021 overlap was investigated through the [official Auburn NCAME publication list](https://eng.auburn.edu/ncame/publications). Both articles are listed; a displayed 2021 DOI link is mismatched with its title. No campaign/record equivalence has been established. **Do not merge source groups on shared authors alone.** Further investigation requires actual full text or near-identical curve evidence.
 
-Conservative current rule: preserve canonical publication DOIs and dataset indices, flag candidate reuse, and join publications only when repeated specimens or reused source curves are documented. A source-family sensitivity can be added after evidence is recorded. The [17-publication Centola map](primary_audit/source_publications.csv) is a linkage starting point, not proof of row correspondence with the open database.
+Conservative current rule: preserve canonical publication DOIs and dataset indices, flag candidate reuse, and join publications only when repeated specimens or reused source curves are documented or near-identical curve correspondence is demonstrated. The [17-publication Centola map](primary_audit/source_publications.csv) is a linkage starting point, not proof of row correspondence with the open database.
+
+### Completed pre-fit curve-reuse screen
+
+The read-only `duplicate_curve_audit.py` compared160 ordinary-316L L-PBF datasets from46DOIs. Same load ratio, mode, and runout status were required; matched coordinates were within2% in cycles and1% in amplitude. Unique greedy matching prevents one point from representing several observations. A screen of at least3 matches and50% of the smaller dataset yielded30 candidate curve pairs and no exactly identical numerical coordinate pairs. Approximate matches are expected when the same original graph is independently digitized.
+
+For conservative pre-fit grouping, use the stronger subset with at least5 unique near matches and85% smaller-curve coverage. This yields the following connected publication components. These are **near-identical-curve families**, not proof of specimen identity, and no rows are removed by this audit.
+
+| Family | Canonical source DOIs | Quantitative evidence |
+|---|---|---|
+| Elangeswaran/post-treatment | 10.1007/978-3-030-05861-6_36; 10.1016/j.addma.2021.102570; 10.1016/j.ijfatigue.2019.01.013; 10.1016/j.matdes.2020.108962 | Multiple11/11 and10/10 matches; shared smaller curves5/5 to7/7 link the fourth source. |
+| Zhang/process/fatigue | 10.1016/j.ijfatigue.2018.12.016; 10.1016/j.ijfatigue.2019.105194; 10.1016/j.matdes.2018.02.054; 10.1016/j.msea.2017.07.071; 10.1051/matecconf/201816522006 | 11/11,12/13,10/11,9/9,8/8 and6/7 matches form the connected component. |
+| Liang/surface/cyclic | 10.1016/j.ijfatigue.2022.106843; 10.1111/ffe.13684 | Independent conditions12/12 and11/11 matched. |
+
+An unconfirmed weaker pair, 10.1016/j.ijplas.2021.103172 versus10.1016/j.jmst.2021.10.006, has3/4 matches. It does not meet the strong-family rule. Retain it as a sensitivity candidate; do not call it confirmed reuse. DOI-only and stronger-family grouping should both be reportable, with the family-aware version used to avoid known near-identical curves crossing training/test boundaries.
+
+`duplicate_curve_candidates.csv` includes exact dataset/row links. `duplicate_curve_examples.png` overlays three strong examples directly from the open data. This screen does not test author intent, and it does not show that Centola's private518-row corpus contains the same duplicates.
+
+### Load-control eligibility issue
+
+The primary candidate table contains4 rows from `a0517_d002` (10.1111/ffe.13684) marked as S–N but `load_control=strain`. The paper's methods explicitly include both strain-controlled LCF and stress-controlled HCF experiments. For a prospectively stress-controlled primary benchmark, exclude the strain-control rows before fitting and retain them in the broader raw table. Do not treat a stress amplitude extracted from a strain-controlled cycle as the same prospective covariate as an imposed stress amplitude.
+
+### Advertised alternative repository
+
+The OSTI manuscript for DOI10.1016/j.msea.2024.146580 advertises `https://github.com/wietecha-reiman/Fatigue-AM-316L`. On2026-10-20 that URL, GitHub's repository API, and its contents API returned404. No flat file was acquired; a published link is insufficient evidence of current public access. This dataset was not combined with the present benchmark or treated as independent validation.
 
 ## Deliverables and remaining check
 
 - `data_source_validation/manifest.json`: source URLs, access timestamps, licenses, SHA256, and verification status.
 - Original PDFs/XML; page renders and embedded figure extracts.
 - Stern six-point comparison CSV and source-article JSON snapshot.
-- Voloskov thirteen-point independent expected-value CSV; final row comparison pending.
+- Voloskov thirteen-point independent expected-value CSV and completed matched-row comparison.
+- Cross-publication near-duplicate screening script, candidate table, and strong-family overlay figure.
 - No source measurements were inferred for unreported fields; no experimental rows were deleted or changed by this audit.

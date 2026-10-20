@@ -12,7 +12,23 @@
     "size": 5820607,
     "sha256": "79fa8f4e62a57faaaf07b02dcf080e10893601ada8aefeedffdd6152d20d4b42",
     "md5": "1f66b2a5e48146c2d5a27739ad24ff30",
-    "accessed_utc": "2026-10-20T12:39:12.278426+00:00",
-    "notes": "Raw bytes retained; MAT downloaded as smaller equivalent official format. JSON optional download still pending."
+    "accessed_utc": "2026-10-20T13:07:38.585138+00:00",
+    "notes": "Original MAT bytes, no modification; pinning v2/file41023478."
+  },
+  {
+    "source_url": "https://ndownloader.figshare.com/files/41023481",
+    "metadata_url": "https://api.figshare.com/v2/articles/22337629",
+    "doi": "10.6084/m9.figshare.22337629.v2",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "file": "data/raw/FatigueData-AM2022.json",
+    "size": 69558939,
+    "sha256": "36a5ed57538739c37056bc956880f7c89bed009090999ea214d42612cf2c40de",
+    "md5": "f0d565902c000b277480bb6fa2e5f711",
+    "accessed_utc": "2026-10-20T12:57:24.783266+00:00",
+    "notes": "Raw downloaded bytes retained; no transformations."
   }
 ]

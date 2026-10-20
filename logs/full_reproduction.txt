@@ -1,0 +1,824 @@
+{
+  "source_url": "https://ndownloader.figshare.com/files/41023478",
+  "metadata_url": "https://api.figshare.com/v2/articles/22337629",
+  "doi": "10.6084/m9.figshare.22337629.v2",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "file": "data/raw/FatigueData-AM2022.mat",
+  "size": 5820607,
+  "sha256": "79fa8f4e62a57faaaf07b02dcf080e10893601ada8aefeedffdd6152d20d4b42",
+  "md5": "1f66b2a5e48146c2d5a27739ad24ff30",
+  "accessed_utc": "2026-10-20T13:07:38.585138+00:00",
+  "notes": "Original MAT bytes, no modification; pinning v2/file41023478."
+}
+{
+  "all_sn": {
+    "rows": 15146,
+    "datasets": 1610,
+    "sources": 459,
+    "failures": 13295,
+    "runouts": 1851
+  },
+  "ss316l_lpbf": {
+    "rows": 1473,
+    "datasets": 160,
+    "sources": 46,
+    "failures": 1293,
+    "runouts": 180
+  },
+  "primary_uniaxial_room_unnotched": {
+    "rows": 1126,
+    "datasets": 120,
+    "sources": 37,
+    "failures": 987,
+    "runouts": 139
+  },
+  "invalid_primary_candidate_rows": 0,
+  "ss316l_test_types": {
+    "uniaxial": 1185,
+    "rotating bending fatigue": 126,
+    "bending fatigue": 117,
+    "bending fatigue; resonance": 41,
+    "uniaxial; VHCF": 4
+  },
+  "ss316l_load_control": {
+    "force": 1455,
+    "strain": 14,
+    "displacement": 4
+  },
+  "ss316l_surfaces": {
+    "machine;polish": 220,
+    "as-built": 438,
+    "polish only": 40,
+    "polish": 34,
+    "machine": 343,
+    "manually grind": 46,
+    "EDM;manual grind": 77,
+    "EDM defect;machine;polish": 17,
+    "corrosion;machine;polish": 39,
+    "polish simple": 27,
+    "polish total": 11,
+    "EDM;electropolish;grind": 30,
+    "EDM;grind": 61,
+    "high-frequency mechanical impact": 7,
+    "unknown": 12,
+    "vibratory finish": 14,
+    "electropolish;manually grind": 12,
+    "electropolish": 13,
+    "EDM": 20,
+    "shot peen": 12
+  },
+  "ss316l_thermal": {
+    "NHT": 514,
+    "HT": 537,
+    "HIP": 62,
+    "unknown": 360
+  },
+  "source_default_caveat": "Descriptor assigns uniaxial,25C,air,Kt1 when not stated. These cannot be certified source-measured from this database alone.",
+  "no_equivalence": "No row identity with original Centola518 corpus claimed; source overlap only.",
+  "centola_source_doi_overlap": {
+    "in_open_sn": 16,
+    "in_ss316l_lpbf": 16,
+    "in_primary": 12
+  }
+}
+{
+  "input": "data/processed/ss316l_lpbf_all.csv",
+  "datasets": 160,
+  "sources": 46,
+  "screening_tolerance": {
+    "cycles_relative": 0.02,
+    "stress_relative": 0.01
+  },
+  "candidate_curves": 30,
+  "exact_coordinate_pairs": 0,
+  "caveat": "No automatic grouping or row removal. Negative screen cannot exclude overlap at other digitization tolerances."
+}
+{
+  "stern": {
+    "points": 6,
+    "max_relative_N_difference": 0.003990913681930785,
+    "max_relative_sigma_difference": 0.0009566278069014291
+  },
+  "voloskov": {
+    "status": "matched",
+    "manual_points": 13,
+    "database_points": 13,
+    "matched": 13,
+    "unmatched_database_row_ids": [],
+    "runout_disagreements": [],
+    "max_relative_N_difference": 0.025920910211683745,
+    "max_relative_sigma_difference": 0.0024834100580386487
+  }
+}
+{
+  "rows": 1126,
+  "conditions": 120,
+  "source_dois": 37,
+  "conservative_blocks": 29,
+  "runouts": 139,
+  "families": [
+    [
+      "10.1007/978-3-030-05861-6_36",
+      "10.1016/j.addma.2021.102570",
+      "10.1016/j.ijfatigue.2019.01.013",
+      "10.1016/j.matdes.2020.108962"
+    ],
+    [
+      "10.1016/j.ijfatigue.2018.12.016",
+      "10.1016/j.ijfatigue.2019.105194",
+      "10.1016/j.matdes.2018.02.054",
+      "10.1016/j.msea.2017.07.071",
+      "10.1051/matecconf/201816522006"
+    ],
+    [
+      "10.1016/j.ijfatigue.2022.106843",
+      "10.1111/ffe.13684"
+    ]
+  ],
+  "dedup_sensitivity_rows": 942,
+  "removed_near_coincident_rows": 184,
+  "weak_edge_blocks": 28,
+  "qualification": "Near-identical digitized curves define conservative leakage blocks; physical specimen identity not established."
+}
+................                                                         [100%]
+16 passed in 0.51s
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 0, "n_train": 746, "n_cal": 374, "n_test": 6, "elapsed_s": 0.43}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 0, "n_train": 740, "n_cal": 374, "n_test": 12, "elapsed_s": 0.99}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 0, "n_train": 700, "n_cal": 374, "n_test": 52, "elapsed_s": 1.69}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 0, "n_train": 700, "n_cal": 416, "n_test": 10, "elapsed_s": 3.06}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 0, "n_train": 682, "n_cal": 416, "n_test": 28, "elapsed_s": 4.98}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 0, "n_train": 682, "n_cal": 423, "n_test": 21, "elapsed_s": 6.12}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 0, "n_train": 675, "n_cal": 423, "n_test": 28, "elapsed_s": 7.09}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 0, "n_train": 675, "n_cal": 432, "n_test": 19, "elapsed_s": 7.87}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 0, "n_train": 596, "n_cal": 432, "n_test": 98, "elapsed_s": 8.61}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 0, "n_train": 651, "n_cal": 432, "n_test": 43, "elapsed_s": 9.48}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 0, "n_train": 668, "n_cal": 432, "n_test": 26, "elapsed_s": 10.35}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 0, "n_train": 668, "n_cal": 454, "n_test": 4, "elapsed_s": 11.13}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 0, "n_train": 668, "n_cal": 428, "n_test": 30, "elapsed_s": 11.91}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 0, "n_train": 685, "n_cal": 428, "n_test": 13, "elapsed_s": 13.07}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 0, "n_train": 649, "n_cal": 428, "n_test": 49, "elapsed_s": 14.13}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 0, "n_train": 690, "n_cal": 428, "n_test": 8, "elapsed_s": 14.99}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 0, "n_train": 674, "n_cal": 428, "n_test": 24, "elapsed_s": 15.74}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 0, "n_train": 674, "n_cal": 444, "n_test": 8, "elapsed_s": 16.49}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 0, "n_train": 658, "n_cal": 444, "n_test": 24, "elapsed_s": 17.24}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 0, "n_train": 669, "n_cal": 444, "n_test": 13, "elapsed_s": 17.97}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 0, "n_train": 669, "n_cal": 421, "n_test": 36, "elapsed_s": 18.64}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 0, "n_train": 691, "n_cal": 421, "n_test": 14, "elapsed_s": 19.29}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 0, "n_train": 691, "n_cal": 421, "n_test": 14, "elapsed_s": 19.87}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 0, "n_train": 649, "n_cal": 421, "n_test": 56, "elapsed_s": 20.43}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 0, "n_train": 696, "n_cal": 421, "n_test": 9, "elapsed_s": 21.0}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 0, "n_train": 687, "n_cal": 421, "n_test": 18, "elapsed_s": 21.58}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 0, "n_train": 488, "n_cal": 421, "n_test": 217, "elapsed_s": 22.08}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 0, "n_train": 488, "n_cal": 439, "n_test": 199, "elapsed_s": 22.61}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 0, "n_train": 488, "n_cal": 591, "n_test": 47, "elapsed_s": 23.1}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 17, "n_train": 492, "n_cal": 628, "n_test": 6, "elapsed_s": 23.55}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 17, "n_train": 486, "n_cal": 628, "n_test": 12, "elapsed_s": 24.06}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 17, "n_train": 446, "n_cal": 628, "n_test": 52, "elapsed_s": 24.72}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 17, "n_train": 488, "n_cal": 628, "n_test": 10, "elapsed_s": 25.6}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 17, "n_train": 488, "n_cal": 610, "n_test": 28, "elapsed_s": 26.44}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 17, "n_train": 488, "n_cal": 617, "n_test": 21, "elapsed_s": 27.44}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 17, "n_train": 488, "n_cal": 610, "n_test": 28, "elapsed_s": 28.17}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 17, "n_train": 488, "n_cal": 619, "n_test": 19, "elapsed_s": 28.91}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 17, "n_train": 409, "n_cal": 619, "n_test": 98, "elapsed_s": 29.58}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 17, "n_train": 464, "n_cal": 619, "n_test": 43, "elapsed_s": 30.31}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 17, "n_train": 481, "n_cal": 619, "n_test": 26, "elapsed_s": 31.09}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 17, "n_train": 503, "n_cal": 619, "n_test": 4, "elapsed_s": 31.98}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 17, "n_train": 477, "n_cal": 619, "n_test": 30, "elapsed_s": 32.77}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 17, "n_train": 477, "n_cal": 636, "n_test": 13, "elapsed_s": 33.56}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 17, "n_train": 441, "n_cal": 636, "n_test": 49, "elapsed_s": 34.42}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 17, "n_train": 482, "n_cal": 636, "n_test": 8, "elapsed_s": 35.14}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 17, "n_train": 466, "n_cal": 636, "n_test": 24, "elapsed_s": 35.9}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 17, "n_train": 482, "n_cal": 636, "n_test": 8, "elapsed_s": 36.55}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 17, "n_train": 466, "n_cal": 636, "n_test": 24, "elapsed_s": 37.08}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 17, "n_train": 477, "n_cal": 636, "n_test": 13, "elapsed_s": 37.59}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 17, "n_train": 454, "n_cal": 636, "n_test": 36, "elapsed_s": 38.06}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 17, "n_train": 476, "n_cal": 636, "n_test": 14, "elapsed_s": 38.52}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 17, "n_train": 476, "n_cal": 636, "n_test": 14, "elapsed_s": 39.06}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 17, "n_train": 476, "n_cal": 594, "n_test": 56, "elapsed_s": 39.64}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 17, "n_train": 523, "n_cal": 594, "n_test": 9, "elapsed_s": 40.3}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 17, "n_train": 514, "n_cal": 594, "n_test": 18, "elapsed_s": 40.87}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 17, "n_train": 514, "n_cal": 395, "n_test": 217, "elapsed_s": 41.49}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 17, "n_train": 514, "n_cal": 413, "n_test": 199, "elapsed_s": 42.08}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 17, "n_train": 514, "n_cal": 565, "n_test": 47, "elapsed_s": 42.65}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 42, "n_train": 828, "n_cal": 292, "n_test": 6, "elapsed_s": 43.26}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 42, "n_train": 822, "n_cal": 292, "n_test": 12, "elapsed_s": 43.95}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 42, "n_train": 782, "n_cal": 292, "n_test": 52, "elapsed_s": 44.55}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 42, "n_train": 824, "n_cal": 292, "n_test": 10, "elapsed_s": 45.07}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 42, "n_train": 806, "n_cal": 292, "n_test": 28, "elapsed_s": 45.64}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 42, "n_train": 813, "n_cal": 292, "n_test": 21, "elapsed_s": 46.18}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 42, "n_train": 813, "n_cal": 285, "n_test": 28, "elapsed_s": 46.83}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 42, "n_train": 822, "n_cal": 285, "n_test": 19, "elapsed_s": 47.46}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 42, "n_train": 822, "n_cal": 206, "n_test": 98, "elapsed_s": 48.09}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 42, "n_train": 877, "n_cal": 206, "n_test": 43, "elapsed_s": 48.91}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 42, "n_train": 894, "n_cal": 206, "n_test": 26, "elapsed_s": 49.86}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 42, "n_train": 894, "n_cal": 228, "n_test": 4, "elapsed_s": 50.63}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 42, "n_train": 868, "n_cal": 228, "n_test": 30, "elapsed_s": 51.28}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 42, "n_train": 885, "n_cal": 228, "n_test": 13, "elapsed_s": 51.99}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 42, "n_train": 849, "n_cal": 228, "n_test": 49, "elapsed_s": 52.68}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 42, "n_train": 890, "n_cal": 228, "n_test": 8, "elapsed_s": 53.31}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 42, "n_train": 874, "n_cal": 228, "n_test": 24, "elapsed_s": 53.83}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 42, "n_train": 874, "n_cal": 244, "n_test": 8, "elapsed_s": 54.38}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 42, "n_train": 874, "n_cal": 228, "n_test": 24, "elapsed_s": 54.88}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 42, "n_train": 885, "n_cal": 228, "n_test": 13, "elapsed_s": 55.53}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 42, "n_train": 862, "n_cal": 228, "n_test": 36, "elapsed_s": 56.32}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 42, "n_train": 884, "n_cal": 228, "n_test": 14, "elapsed_s": 57.0}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 42, "n_train": 884, "n_cal": 228, "n_test": 14, "elapsed_s": 57.66}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 42, "n_train": 884, "n_cal": 186, "n_test": 56, "elapsed_s": 58.53}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 42, "n_train": 884, "n_cal": 233, "n_test": 9, "elapsed_s": 59.44}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 42, "n_train": 884, "n_cal": 224, "n_test": 18, "elapsed_s": 60.17}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 42, "n_train": 685, "n_cal": 224, "n_test": 217, "elapsed_s": 60.8}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 42, "n_train": 703, "n_cal": 224, "n_test": 199, "elapsed_s": 61.45}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 42, "n_train": 703, "n_cal": 376, "n_test": 47, "elapsed_s": 62.16}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 0, "n_train": 773, "n_cal": 347, "n_test": 6, "elapsed_s": 0.6}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-05861-6_36", "seed": 0, "n_train": 758, "n_cal": 347, "n_test": 21, "elapsed_s": 1.25}
+{"fold": 2, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 0, "n_train": 767, "n_cal": 347, "n_test": 12, "elapsed_s": 1.98}
+{"fold": 3, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 0, "n_train": 767, "n_cal": 307, "n_test": 52, "elapsed_s": 2.62}
+{"fold": 4, "heldout_group": "10.1016/j.addma.2021.102570", "seed": 0, "n_train": 767, "n_cal": 232, "n_test": 127, "elapsed_s": 3.29}
+{"fold": 5, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 0, "n_train": 767, "n_cal": 349, "n_test": 10, "elapsed_s": 3.96}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2018.12.016", "seed": 0, "n_train": 733, "n_cal": 349, "n_test": 44, "elapsed_s": 4.68}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2019.01.013", "seed": 0, "n_train": 739, "n_cal": 349, "n_test": 38, "elapsed_s": 5.31}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 0, "n_train": 749, "n_cal": 349, "n_test": 28, "elapsed_s": 5.87}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2019.105194", "seed": 0, "n_train": 736, "n_cal": 349, "n_test": 41, "elapsed_s": 6.51}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 0, "n_train": 756, "n_cal": 349, "n_test": 21, "elapsed_s": 7.14}
+{"fold": 11, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 0, "n_train": 749, "n_cal": 349, "n_test": 28, "elapsed_s": 7.78}
+{"fold": 12, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 0, "n_train": 749, "n_cal": 358, "n_test": 19, "elapsed_s": 8.37}
+{"fold": 13, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 0, "n_train": 670, "n_cal": 358, "n_test": 98, "elapsed_s": 8.98}
+{"fold": 14, "heldout_group": "10.1016/j.ijfatigue.2022.106843", "seed": 0, "n_train": 744, "n_cal": 358, "n_test": 24, "elapsed_s": 9.63}
+{"fold": 15, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 0, "n_train": 725, "n_cal": 358, "n_test": 43, "elapsed_s": 10.23}
+{"fold": 16, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 0, "n_train": 742, "n_cal": 358, "n_test": 26, "elapsed_s": 10.97}
+{"fold": 17, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 0, "n_train": 764, "n_cal": 358, "n_test": 4, "elapsed_s": 11.61}
+{"fold": 18, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 0, "n_train": 738, "n_cal": 358, "n_test": 30, "elapsed_s": 12.4}
+{"fold": 19, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 0, "n_train": 755, "n_cal": 358, "n_test": 13, "elapsed_s": 13.01}
+{"fold": 20, "heldout_group": "10.1016/j.matdes.2018.02.054", "seed": 0, "n_train": 735, "n_cal": 358, "n_test": 33, "elapsed_s": 13.65}
+{"fold": 21, "heldout_group": "10.1016/j.matdes.2020.108962", "seed": 0, "n_train": 735, "n_cal": 360, "n_test": 31, "elapsed_s": 14.2}
+{"fold": 22, "heldout_group": "10.1016/j.msea.2017.07.071", "seed": 0, "n_train": 735, "n_cal": 330, "n_test": 61, "elapsed_s": 14.78}
+{"fold": 23, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 0, "n_train": 747, "n_cal": 330, "n_test": 49, "elapsed_s": 15.38}
+{"fold": 24, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 0, "n_train": 788, "n_cal": 330, "n_test": 8, "elapsed_s": 15.96}
+{"fold": 25, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 0, "n_train": 772, "n_cal": 330, "n_test": 24, "elapsed_s": 16.59}
+{"fold": 26, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 0, "n_train": 788, "n_cal": 330, "n_test": 8, "elapsed_s": 17.2}
+{"fold": 27, "heldout_group": "10.1051/matecconf/201816502006", "seed": 0, "n_train": 788, "n_cal": 314, "n_test": 24, "elapsed_s": 17.72}
+{"fold": 28, "heldout_group": "10.1051/matecconf/201816522006", "seed": 0, "n_train": 792, "n_cal": 314, "n_test": 20, "elapsed_s": 18.21}
+{"fold": 29, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 0, "n_train": 799, "n_cal": 314, "n_test": 13, "elapsed_s": 18.75}
+{"fold": 30, "heldout_group": "10.1108/13552541311302932", "seed": 0, "n_train": 776, "n_cal": 314, "n_test": 36, "elapsed_s": 19.59}
+{"fold": 31, "heldout_group": "10.1111/ffe.13029", "seed": 0, "n_train": 776, "n_cal": 336, "n_test": 14, "elapsed_s": 20.23}
+{"fold": 32, "heldout_group": "10.1111/ffe.13077", "seed": 0, "n_train": 776, "n_cal": 336, "n_test": 14, "elapsed_s": 20.78}
+{"fold": 33, "heldout_group": "10.1111/ffe.13684", "seed": 0, "n_train": 767, "n_cal": 336, "n_test": 23, "elapsed_s": 21.28}
+{"fold": 34, "heldout_group": "10.3390/ma12244203", "seed": 0, "n_train": 734, "n_cal": 336, "n_test": 56, "elapsed_s": 21.8}
+{"fold": 35, "heldout_group": "10.3390/ma13153293", "seed": 0, "n_train": 734, "n_cal": 383, "n_test": 9, "elapsed_s": 22.3}
+{"fold": 36, "heldout_group": "10.3390/ma15186278", "seed": 0, "n_train": 725, "n_cal": 383, "n_test": 18, "elapsed_s": 22.74}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 17, "n_train": 788, "n_cal": 332, "n_test": 6, "elapsed_s": 23.16}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-05861-6_36", "seed": 17, "n_train": 773, "n_cal": 332, "n_test": 21, "elapsed_s": 23.58}
+{"fold": 2, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 17, "n_train": 782, "n_cal": 332, "n_test": 12, "elapsed_s": 24.03}
+{"fold": 3, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 17, "n_train": 742, "n_cal": 332, "n_test": 52, "elapsed_s": 24.46}
+{"fold": 4, "heldout_group": "10.1016/j.addma.2021.102570", "seed": 17, "n_train": 742, "n_cal": 257, "n_test": 127, "elapsed_s": 24.91}
+{"fold": 5, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 17, "n_train": 859, "n_cal": 257, "n_test": 10, "elapsed_s": 25.36}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2018.12.016", "seed": 17, "n_train": 859, "n_cal": 223, "n_test": 44, "elapsed_s": 25.8}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2019.01.013", "seed": 17, "n_train": 859, "n_cal": 229, "n_test": 38, "elapsed_s": 26.24}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 17, "n_train": 869, "n_cal": 229, "n_test": 28, "elapsed_s": 26.67}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2019.105194", "seed": 17, "n_train": 856, "n_cal": 229, "n_test": 41, "elapsed_s": 27.12}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 17, "n_train": 876, "n_cal": 229, "n_test": 21, "elapsed_s": 27.58}
+{"fold": 11, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 17, "n_train": 869, "n_cal": 229, "n_test": 28, "elapsed_s": 28.18}
+{"fold": 12, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 17, "n_train": 878, "n_cal": 229, "n_test": 19, "elapsed_s": 28.67}
+{"fold": 13, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 17, "n_train": 799, "n_cal": 229, "n_test": 98, "elapsed_s": 29.1}
+{"fold": 14, "heldout_group": "10.1016/j.ijfatigue.2022.106843", "seed": 17, "n_train": 873, "n_cal": 229, "n_test": 24, "elapsed_s": 29.57}
+{"fold": 15, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 17, "n_train": 873, "n_cal": 210, "n_test": 43, "elapsed_s": 30.05}
+{"fold": 16, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 17, "n_train": 890, "n_cal": 210, "n_test": 26, "elapsed_s": 30.52}
+{"fold": 17, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 17, "n_train": 890, "n_cal": 232, "n_test": 4, "elapsed_s": 30.97}
+{"fold": 18, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 17, "n_train": 864, "n_cal": 232, "n_test": 30, "elapsed_s": 31.42}
+{"fold": 19, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 17, "n_train": 881, "n_cal": 232, "n_test": 13, "elapsed_s": 31.88}
+{"fold": 20, "heldout_group": "10.1016/j.matdes.2018.02.054", "seed": 17, "n_train": 881, "n_cal": 212, "n_test": 33, "elapsed_s": 32.37}
+{"fold": 21, "heldout_group": "10.1016/j.matdes.2020.108962", "seed": 17, "n_train": 883, "n_cal": 212, "n_test": 31, "elapsed_s": 32.84}
+{"fold": 22, "heldout_group": "10.1016/j.msea.2017.07.071", "seed": 17, "n_train": 853, "n_cal": 212, "n_test": 61, "elapsed_s": 33.3}
+{"fold": 23, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 17, "n_train": 865, "n_cal": 212, "n_test": 49, "elapsed_s": 33.77}
+{"fold": 24, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 17, "n_train": 906, "n_cal": 212, "n_test": 8, "elapsed_s": 34.26}
+{"fold": 25, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 17, "n_train": 890, "n_cal": 212, "n_test": 24, "elapsed_s": 34.8}
+{"fold": 26, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 17, "n_train": 906, "n_cal": 212, "n_test": 8, "elapsed_s": 35.38}
+{"fold": 27, "heldout_group": "10.1051/matecconf/201816502006", "seed": 17, "n_train": 890, "n_cal": 212, "n_test": 24, "elapsed_s": 35.98}
+{"fold": 28, "heldout_group": "10.1051/matecconf/201816522006", "seed": 17, "n_train": 890, "n_cal": 216, "n_test": 20, "elapsed_s": 36.57}
+{"fold": 29, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 17, "n_train": 897, "n_cal": 216, "n_test": 13, "elapsed_s": 37.16}
+{"fold": 30, "heldout_group": "10.1108/13552541311302932", "seed": 17, "n_train": 874, "n_cal": 216, "n_test": 36, "elapsed_s": 37.73}
+{"fold": 31, "heldout_group": "10.1111/ffe.13029", "seed": 17, "n_train": 896, "n_cal": 216, "n_test": 14, "elapsed_s": 38.31}
+{"fold": 32, "heldout_group": "10.1111/ffe.13077", "seed": 17, "n_train": 896, "n_cal": 216, "n_test": 14, "elapsed_s": 38.84}
+{"fold": 33, "heldout_group": "10.1111/ffe.13684", "seed": 17, "n_train": 887, "n_cal": 216, "n_test": 23, "elapsed_s": 39.44}
+{"fold": 34, "heldout_group": "10.3390/ma12244203", "seed": 17, "n_train": 854, "n_cal": 216, "n_test": 56, "elapsed_s": 40.13}
+{"fold": 35, "heldout_group": "10.3390/ma13153293", "seed": 17, "n_train": 854, "n_cal": 263, "n_test": 9, "elapsed_s": 40.92}
+{"fold": 36, "heldout_group": "10.3390/ma15186278", "seed": 17, "n_train": 845, "n_cal": 263, "n_test": 18, "elapsed_s": 41.74}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 42, "n_train": 947, "n_cal": 173, "n_test": 6, "elapsed_s": 42.56}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-05861-6_36", "seed": 42, "n_train": 932, "n_cal": 173, "n_test": 21, "elapsed_s": 43.25}
+{"fold": 2, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 42, "n_train": 941, "n_cal": 173, "n_test": 12, "elapsed_s": 44.03}
+{"fold": 3, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 42, "n_train": 901, "n_cal": 173, "n_test": 52, "elapsed_s": 44.96}
+{"fold": 4, "heldout_group": "10.1016/j.addma.2021.102570", "seed": 42, "n_train": 826, "n_cal": 173, "n_test": 127, "elapsed_s": 45.74}
+{"fold": 5, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 42, "n_train": 826, "n_cal": 290, "n_test": 10, "elapsed_s": 46.41}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2018.12.016", "seed": 42, "n_train": 826, "n_cal": 256, "n_test": 44, "elapsed_s": 47.01}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2019.01.013", "seed": 42, "n_train": 832, "n_cal": 256, "n_test": 38, "elapsed_s": 47.59}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 42, "n_train": 832, "n_cal": 266, "n_test": 28, "elapsed_s": 48.19}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2019.105194", "seed": 42, "n_train": 819, "n_cal": 266, "n_test": 41, "elapsed_s": 48.78}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 42, "n_train": 839, "n_cal": 266, "n_test": 21, "elapsed_s": 49.33}
+{"fold": 11, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 42, "n_train": 832, "n_cal": 266, "n_test": 28, "elapsed_s": 49.8}
+{"fold": 12, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 42, "n_train": 841, "n_cal": 266, "n_test": 19, "elapsed_s": 50.33}
+{"fold": 13, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 42, "n_train": 762, "n_cal": 266, "n_test": 98, "elapsed_s": 50.86}
+{"fold": 14, "heldout_group": "10.1016/j.ijfatigue.2022.106843", "seed": 42, "n_train": 836, "n_cal": 266, "n_test": 24, "elapsed_s": 51.45}
+{"fold": 15, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 42, "n_train": 817, "n_cal": 266, "n_test": 43, "elapsed_s": 51.92}
+{"fold": 16, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 42, "n_train": 834, "n_cal": 266, "n_test": 26, "elapsed_s": 52.4}
+{"fold": 17, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 42, "n_train": 856, "n_cal": 266, "n_test": 4, "elapsed_s": 52.93}
+{"fold": 18, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 42, "n_train": 830, "n_cal": 266, "n_test": 30, "elapsed_s": 53.48}
+{"fold": 19, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 42, "n_train": 830, "n_cal": 283, "n_test": 13, "elapsed_s": 53.95}
+{"fold": 20, "heldout_group": "10.1016/j.matdes.2018.02.054", "seed": 42, "n_train": 810, "n_cal": 283, "n_test": 33, "elapsed_s": 54.39}
+{"fold": 21, "heldout_group": "10.1016/j.matdes.2020.108962", "seed": 42, "n_train": 812, "n_cal": 283, "n_test": 31, "elapsed_s": 54.88}
+{"fold": 22, "heldout_group": "10.1016/j.msea.2017.07.071", "seed": 42, "n_train": 782, "n_cal": 283, "n_test": 61, "elapsed_s": 55.41}
+{"fold": 23, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 42, "n_train": 794, "n_cal": 283, "n_test": 49, "elapsed_s": 55.94}
+{"fold": 24, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 42, "n_train": 794, "n_cal": 324, "n_test": 8, "elapsed_s": 56.4}
+{"fold": 25, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 42, "n_train": 778, "n_cal": 324, "n_test": 24, "elapsed_s": 56.87}
+{"fold": 26, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 42, "n_train": 778, "n_cal": 340, "n_test": 8, "elapsed_s": 57.41}
+{"fold": 27, "heldout_group": "10.1051/matecconf/201816502006", "seed": 42, "n_train": 778, "n_cal": 324, "n_test": 24, "elapsed_s": 57.92}
+{"fold": 28, "heldout_group": "10.1051/matecconf/201816522006", "seed": 42, "n_train": 778, "n_cal": 328, "n_test": 20, "elapsed_s": 58.39}
+{"fold": 29, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 42, "n_train": 785, "n_cal": 328, "n_test": 13, "elapsed_s": 58.93}
+{"fold": 30, "heldout_group": "10.1108/13552541311302932", "seed": 42, "n_train": 762, "n_cal": 328, "n_test": 36, "elapsed_s": 59.54}
+{"fold": 31, "heldout_group": "10.1111/ffe.13029", "seed": 42, "n_train": 784, "n_cal": 328, "n_test": 14, "elapsed_s": 60.09}
+{"fold": 32, "heldout_group": "10.1111/ffe.13077", "seed": 42, "n_train": 784, "n_cal": 328, "n_test": 14, "elapsed_s": 60.62}
+{"fold": 33, "heldout_group": "10.1111/ffe.13684", "seed": 42, "n_train": 775, "n_cal": 328, "n_test": 23, "elapsed_s": 61.15}
+{"fold": 34, "heldout_group": "10.3390/ma12244203", "seed": 42, "n_train": 742, "n_cal": 328, "n_test": 56, "elapsed_s": 61.65}
+{"fold": 35, "heldout_group": "10.3390/ma13153293", "seed": 42, "n_train": 789, "n_cal": 328, "n_test": 9, "elapsed_s": 62.15}
+{"fold": 36, "heldout_group": "10.3390/ma15186278", "seed": 42, "n_train": 789, "n_cal": 319, "n_test": 18, "elapsed_s": 62.67}
+{"fold": 0, "heldout_group": "random", "seed": 0, "n_train": 675, "n_cal": 225, "n_test": 226, "elapsed_s": 0.44}
+{"fold": 0, "heldout_group": "random", "seed": 17, "n_train": 675, "n_cal": 225, "n_test": 226, "elapsed_s": 0.9}
+{"fold": 0, "heldout_group": "random", "seed": 42, "n_train": 675, "n_cal": 225, "n_test": 226, "elapsed_s": 1.33}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 0, "n_train": 658, "n_cal": 278, "n_test": 6, "elapsed_s": 0.14}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 0, "n_train": 652, "n_cal": 278, "n_test": 12, "elapsed_s": 0.29}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 0, "n_train": 612, "n_cal": 278, "n_test": 52, "elapsed_s": 0.44}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 0, "n_train": 612, "n_cal": 320, "n_test": 10, "elapsed_s": 0.59}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 0, "n_train": 594, "n_cal": 320, "n_test": 28, "elapsed_s": 0.75}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 0, "n_train": 594, "n_cal": 327, "n_test": 21, "elapsed_s": 0.9}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 0, "n_train": 587, "n_cal": 327, "n_test": 28, "elapsed_s": 1.06}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 0, "n_train": 587, "n_cal": 336, "n_test": 19, "elapsed_s": 1.23}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 0, "n_train": 508, "n_cal": 336, "n_test": 98, "elapsed_s": 1.39}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 0, "n_train": 563, "n_cal": 336, "n_test": 43, "elapsed_s": 1.59}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 0, "n_train": 580, "n_cal": 336, "n_test": 26, "elapsed_s": 1.75}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 0, "n_train": 580, "n_cal": 358, "n_test": 4, "elapsed_s": 1.92}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 0, "n_train": 580, "n_cal": 332, "n_test": 30, "elapsed_s": 2.12}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 0, "n_train": 597, "n_cal": 332, "n_test": 13, "elapsed_s": 2.3}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 0, "n_train": 561, "n_cal": 332, "n_test": 49, "elapsed_s": 2.47}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 0, "n_train": 602, "n_cal": 332, "n_test": 8, "elapsed_s": 2.66}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 0, "n_train": 586, "n_cal": 332, "n_test": 24, "elapsed_s": 2.83}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 0, "n_train": 586, "n_cal": 348, "n_test": 8, "elapsed_s": 3.01}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 0, "n_train": 570, "n_cal": 348, "n_test": 24, "elapsed_s": 3.2}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 0, "n_train": 581, "n_cal": 348, "n_test": 13, "elapsed_s": 3.41}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 0, "n_train": 581, "n_cal": 325, "n_test": 36, "elapsed_s": 3.63}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 0, "n_train": 603, "n_cal": 325, "n_test": 14, "elapsed_s": 3.84}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 0, "n_train": 603, "n_cal": 325, "n_test": 14, "elapsed_s": 4.05}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 0, "n_train": 561, "n_cal": 325, "n_test": 56, "elapsed_s": 4.25}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 0, "n_train": 608, "n_cal": 325, "n_test": 9, "elapsed_s": 4.48}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 0, "n_train": 599, "n_cal": 325, "n_test": 18, "elapsed_s": 4.7}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 0, "n_train": 488, "n_cal": 325, "n_test": 129, "elapsed_s": 4.89}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 0, "n_train": 488, "n_cal": 328, "n_test": 126, "elapsed_s": 5.07}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 0, "n_train": 488, "n_cal": 430, "n_test": 24, "elapsed_s": 5.25}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 17, "n_train": 492, "n_cal": 444, "n_test": 6, "elapsed_s": 5.45}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 17, "n_train": 486, "n_cal": 444, "n_test": 12, "elapsed_s": 5.64}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 17, "n_train": 446, "n_cal": 444, "n_test": 52, "elapsed_s": 5.86}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 17, "n_train": 488, "n_cal": 444, "n_test": 10, "elapsed_s": 6.03}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 17, "n_train": 488, "n_cal": 426, "n_test": 28, "elapsed_s": 6.22}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 17, "n_train": 488, "n_cal": 433, "n_test": 21, "elapsed_s": 6.39}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 17, "n_train": 488, "n_cal": 426, "n_test": 28, "elapsed_s": 6.54}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 17, "n_train": 488, "n_cal": 435, "n_test": 19, "elapsed_s": 6.7}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 17, "n_train": 409, "n_cal": 435, "n_test": 98, "elapsed_s": 6.83}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 17, "n_train": 464, "n_cal": 435, "n_test": 43, "elapsed_s": 6.96}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 17, "n_train": 481, "n_cal": 435, "n_test": 26, "elapsed_s": 7.11}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 17, "n_train": 503, "n_cal": 435, "n_test": 4, "elapsed_s": 7.27}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 17, "n_train": 477, "n_cal": 435, "n_test": 30, "elapsed_s": 7.41}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 17, "n_train": 477, "n_cal": 452, "n_test": 13, "elapsed_s": 7.55}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 17, "n_train": 441, "n_cal": 452, "n_test": 49, "elapsed_s": 7.71}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 17, "n_train": 482, "n_cal": 452, "n_test": 8, "elapsed_s": 7.87}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 17, "n_train": 466, "n_cal": 452, "n_test": 24, "elapsed_s": 8.05}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 17, "n_train": 482, "n_cal": 452, "n_test": 8, "elapsed_s": 8.24}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 17, "n_train": 466, "n_cal": 452, "n_test": 24, "elapsed_s": 8.43}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 17, "n_train": 477, "n_cal": 452, "n_test": 13, "elapsed_s": 8.68}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 17, "n_train": 454, "n_cal": 452, "n_test": 36, "elapsed_s": 8.84}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 17, "n_train": 476, "n_cal": 452, "n_test": 14, "elapsed_s": 9.0}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 17, "n_train": 476, "n_cal": 452, "n_test": 14, "elapsed_s": 9.15}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 17, "n_train": 476, "n_cal": 410, "n_test": 56, "elapsed_s": 9.3}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 17, "n_train": 523, "n_cal": 410, "n_test": 9, "elapsed_s": 9.45}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 17, "n_train": 514, "n_cal": 410, "n_test": 18, "elapsed_s": 9.63}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 17, "n_train": 514, "n_cal": 299, "n_test": 129, "elapsed_s": 9.79}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 17, "n_train": 514, "n_cal": 302, "n_test": 126, "elapsed_s": 9.95}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 17, "n_train": 514, "n_cal": 404, "n_test": 24, "elapsed_s": 10.11}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 42, "n_train": 667, "n_cal": 269, "n_test": 6, "elapsed_s": 10.26}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 42, "n_train": 661, "n_cal": 269, "n_test": 12, "elapsed_s": 10.41}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 42, "n_train": 621, "n_cal": 269, "n_test": 52, "elapsed_s": 10.57}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 42, "n_train": 663, "n_cal": 269, "n_test": 10, "elapsed_s": 10.72}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 42, "n_train": 645, "n_cal": 269, "n_test": 28, "elapsed_s": 10.86}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 42, "n_train": 652, "n_cal": 269, "n_test": 21, "elapsed_s": 11.0}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 42, "n_train": 652, "n_cal": 262, "n_test": 28, "elapsed_s": 11.14}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 42, "n_train": 661, "n_cal": 262, "n_test": 19, "elapsed_s": 11.26}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 42, "n_train": 661, "n_cal": 183, "n_test": 98, "elapsed_s": 11.39}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 42, "n_train": 716, "n_cal": 183, "n_test": 43, "elapsed_s": 11.57}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 42, "n_train": 733, "n_cal": 183, "n_test": 26, "elapsed_s": 11.76}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 42, "n_train": 733, "n_cal": 205, "n_test": 4, "elapsed_s": 11.96}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 42, "n_train": 707, "n_cal": 205, "n_test": 30, "elapsed_s": 12.16}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 42, "n_train": 724, "n_cal": 205, "n_test": 13, "elapsed_s": 12.36}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 42, "n_train": 688, "n_cal": 205, "n_test": 49, "elapsed_s": 12.56}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 42, "n_train": 729, "n_cal": 205, "n_test": 8, "elapsed_s": 12.74}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 42, "n_train": 713, "n_cal": 205, "n_test": 24, "elapsed_s": 12.9}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 42, "n_train": 713, "n_cal": 221, "n_test": 8, "elapsed_s": 13.07}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 42, "n_train": 713, "n_cal": 205, "n_test": 24, "elapsed_s": 13.23}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 42, "n_train": 724, "n_cal": 205, "n_test": 13, "elapsed_s": 13.43}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 42, "n_train": 701, "n_cal": 205, "n_test": 36, "elapsed_s": 13.63}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 42, "n_train": 723, "n_cal": 205, "n_test": 14, "elapsed_s": 13.86}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 42, "n_train": 723, "n_cal": 205, "n_test": 14, "elapsed_s": 14.17}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 42, "n_train": 723, "n_cal": 163, "n_test": 56, "elapsed_s": 14.47}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 42, "n_train": 723, "n_cal": 210, "n_test": 9, "elapsed_s": 14.77}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 42, "n_train": 723, "n_cal": 201, "n_test": 18, "elapsed_s": 15.04}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 42, "n_train": 612, "n_cal": 201, "n_test": 129, "elapsed_s": 15.28}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 42, "n_train": 615, "n_cal": 201, "n_test": 126, "elapsed_s": 15.51}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 42, "n_train": 615, "n_cal": 303, "n_test": 24, "elapsed_s": 15.73}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 0, "n_train": 900, "n_cal": 220, "n_test": 6, "elapsed_s": 0.21}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 0, "n_train": 894, "n_cal": 220, "n_test": 12, "elapsed_s": 0.4}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 0, "n_train": 854, "n_cal": 220, "n_test": 52, "elapsed_s": 0.64}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 0, "n_train": 854, "n_cal": 262, "n_test": 10, "elapsed_s": 0.91}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 0, "n_train": 836, "n_cal": 262, "n_test": 28, "elapsed_s": 1.23}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 0, "n_train": 836, "n_cal": 269, "n_test": 21, "elapsed_s": 1.51}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 0, "n_train": 829, "n_cal": 269, "n_test": 28, "elapsed_s": 1.77}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 0, "n_train": 829, "n_cal": 278, "n_test": 19, "elapsed_s": 2.06}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 0, "n_train": 750, "n_cal": 278, "n_test": 98, "elapsed_s": 2.29}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 0, "n_train": 805, "n_cal": 278, "n_test": 43, "elapsed_s": 2.57}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 0, "n_train": 822, "n_cal": 278, "n_test": 26, "elapsed_s": 2.81}
+{"fold": 11, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 0, "n_train": 822, "n_cal": 274, "n_test": 30, "elapsed_s": 3.06}
+{"fold": 12, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 0, "n_train": 822, "n_cal": 255, "n_test": 49, "elapsed_s": 3.3}
+{"fold": 13, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 0, "n_train": 863, "n_cal": 255, "n_test": 8, "elapsed_s": 3.52}
+{"fold": 14, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 0, "n_train": 847, "n_cal": 255, "n_test": 24, "elapsed_s": 3.78}
+{"fold": 15, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 0, "n_train": 863, "n_cal": 255, "n_test": 8, "elapsed_s": 4.06}
+{"fold": 16, "heldout_group": "10.1051/matecconf/201816502006", "seed": 0, "n_train": 847, "n_cal": 255, "n_test": 24, "elapsed_s": 4.34}
+{"fold": 17, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 0, "n_train": 847, "n_cal": 266, "n_test": 13, "elapsed_s": 4.64}
+{"fold": 18, "heldout_group": "10.1108/13552541311302932", "seed": 0, "n_train": 824, "n_cal": 266, "n_test": 36, "elapsed_s": 4.91}
+{"fold": 19, "heldout_group": "10.1111/ffe.13029", "seed": 0, "n_train": 846, "n_cal": 266, "n_test": 14, "elapsed_s": 5.18}
+{"fold": 20, "heldout_group": "10.1111/ffe.13077", "seed": 0, "n_train": 846, "n_cal": 266, "n_test": 14, "elapsed_s": 5.44}
+{"fold": 21, "heldout_group": "10.3390/ma12244203", "seed": 0, "n_train": 804, "n_cal": 266, "n_test": 56, "elapsed_s": 5.68}
+{"fold": 22, "heldout_group": "10.3390/ma13153293", "seed": 0, "n_train": 851, "n_cal": 266, "n_test": 9, "elapsed_s": 5.93}
+{"fold": 23, "heldout_group": "10.3390/ma15186278", "seed": 0, "n_train": 842, "n_cal": 266, "n_test": 18, "elapsed_s": 6.15}
+{"fold": 24, "heldout_group": "curve_reuse_family_01", "seed": 0, "n_train": 643, "n_cal": 266, "n_test": 217, "elapsed_s": 6.39}
+{"fold": 25, "heldout_group": "curve_reuse_family_02", "seed": 0, "n_train": 661, "n_cal": 266, "n_test": 199, "elapsed_s": 6.64}
+{"fold": 26, "heldout_group": "curve_reuse_family_03", "seed": 0, "n_train": 661, "n_cal": 418, "n_test": 47, "elapsed_s": 6.89}
+{"fold": 27, "heldout_group": "weak_reuse_sensitivity_01", "seed": 0, "n_train": 661, "n_cal": 448, "n_test": 17, "elapsed_s": 7.15}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 17, "n_train": 545, "n_cal": 575, "n_test": 6, "elapsed_s": 7.37}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 17, "n_train": 539, "n_cal": 575, "n_test": 12, "elapsed_s": 7.62}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 17, "n_train": 499, "n_cal": 575, "n_test": 52, "elapsed_s": 7.87}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 17, "n_train": 541, "n_cal": 575, "n_test": 10, "elapsed_s": 8.14}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 17, "n_train": 541, "n_cal": 557, "n_test": 28, "elapsed_s": 8.38}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 17, "n_train": 541, "n_cal": 564, "n_test": 21, "elapsed_s": 8.61}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 17, "n_train": 541, "n_cal": 557, "n_test": 28, "elapsed_s": 8.84}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 17, "n_train": 541, "n_cal": 566, "n_test": 19, "elapsed_s": 9.13}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 17, "n_train": 462, "n_cal": 566, "n_test": 98, "elapsed_s": 9.39}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 17, "n_train": 517, "n_cal": 566, "n_test": 43, "elapsed_s": 9.65}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 17, "n_train": 534, "n_cal": 566, "n_test": 26, "elapsed_s": 9.87}
+{"fold": 11, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 17, "n_train": 530, "n_cal": 566, "n_test": 30, "elapsed_s": 10.11}
+{"fold": 12, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 17, "n_train": 511, "n_cal": 566, "n_test": 49, "elapsed_s": 10.33}
+{"fold": 13, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 17, "n_train": 511, "n_cal": 607, "n_test": 8, "elapsed_s": 10.55}
+{"fold": 14, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 17, "n_train": 495, "n_cal": 607, "n_test": 24, "elapsed_s": 10.8}
+{"fold": 15, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 17, "n_train": 495, "n_cal": 623, "n_test": 8, "elapsed_s": 11.06}
+{"fold": 16, "heldout_group": "10.1051/matecconf/201816502006", "seed": 17, "n_train": 479, "n_cal": 623, "n_test": 24, "elapsed_s": 11.32}
+{"fold": 17, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 17, "n_train": 490, "n_cal": 623, "n_test": 13, "elapsed_s": 11.58}
+{"fold": 18, "heldout_group": "10.1108/13552541311302932", "seed": 17, "n_train": 467, "n_cal": 623, "n_test": 36, "elapsed_s": 11.82}
+{"fold": 19, "heldout_group": "10.1111/ffe.13029", "seed": 17, "n_train": 489, "n_cal": 623, "n_test": 14, "elapsed_s": 12.15}
+{"fold": 20, "heldout_group": "10.1111/ffe.13077", "seed": 17, "n_train": 489, "n_cal": 623, "n_test": 14, "elapsed_s": 12.4}
+{"fold": 21, "heldout_group": "10.3390/ma12244203", "seed": 17, "n_train": 447, "n_cal": 623, "n_test": 56, "elapsed_s": 12.63}
+{"fold": 22, "heldout_group": "10.3390/ma13153293", "seed": 17, "n_train": 494, "n_cal": 623, "n_test": 9, "elapsed_s": 12.87}
+{"fold": 23, "heldout_group": "10.3390/ma15186278", "seed": 17, "n_train": 485, "n_cal": 623, "n_test": 18, "elapsed_s": 13.14}
+{"fold": 24, "heldout_group": "curve_reuse_family_01", "seed": 17, "n_train": 485, "n_cal": 424, "n_test": 217, "elapsed_s": 13.41}
+{"fold": 25, "heldout_group": "curve_reuse_family_02", "seed": 17, "n_train": 485, "n_cal": 442, "n_test": 199, "elapsed_s": 13.63}
+{"fold": 26, "heldout_group": "curve_reuse_family_03", "seed": 17, "n_train": 485, "n_cal": 594, "n_test": 47, "elapsed_s": 13.89}
+{"fold": 27, "heldout_group": "weak_reuse_sensitivity_01", "seed": 17, "n_train": 515, "n_cal": 594, "n_test": 17, "elapsed_s": 14.2}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 42, "n_train": 862, "n_cal": 258, "n_test": 6, "elapsed_s": 14.51}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 42, "n_train": 856, "n_cal": 258, "n_test": 12, "elapsed_s": 14.82}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 42, "n_train": 816, "n_cal": 258, "n_test": 52, "elapsed_s": 15.12}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 42, "n_train": 858, "n_cal": 258, "n_test": 10, "elapsed_s": 15.38}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 42, "n_train": 840, "n_cal": 258, "n_test": 28, "elapsed_s": 15.68}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 42, "n_train": 847, "n_cal": 258, "n_test": 21, "elapsed_s": 15.91}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 42, "n_train": 847, "n_cal": 251, "n_test": 28, "elapsed_s": 16.13}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 42, "n_train": 856, "n_cal": 251, "n_test": 19, "elapsed_s": 16.37}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 42, "n_train": 856, "n_cal": 172, "n_test": 98, "elapsed_s": 16.62}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 42, "n_train": 911, "n_cal": 172, "n_test": 43, "elapsed_s": 16.92}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 42, "n_train": 928, "n_cal": 172, "n_test": 26, "elapsed_s": 17.21}
+{"fold": 11, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 42, "n_train": 924, "n_cal": 172, "n_test": 30, "elapsed_s": 17.54}
+{"fold": 12, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 42, "n_train": 905, "n_cal": 172, "n_test": 49, "elapsed_s": 17.84}
+{"fold": 13, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 42, "n_train": 946, "n_cal": 172, "n_test": 8, "elapsed_s": 18.1}
+{"fold": 14, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 42, "n_train": 930, "n_cal": 172, "n_test": 24, "elapsed_s": 18.37}
+{"fold": 15, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 42, "n_train": 946, "n_cal": 172, "n_test": 8, "elapsed_s": 18.58}
+{"fold": 16, "heldout_group": "10.1051/matecconf/201816502006", "seed": 42, "n_train": 946, "n_cal": 156, "n_test": 24, "elapsed_s": 18.79}
+{"fold": 17, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 42, "n_train": 957, "n_cal": 156, "n_test": 13, "elapsed_s": 19.01}
+{"fold": 18, "heldout_group": "10.1108/13552541311302932", "seed": 42, "n_train": 957, "n_cal": 133, "n_test": 36, "elapsed_s": 19.23}
+{"fold": 19, "heldout_group": "10.1111/ffe.13029", "seed": 42, "n_train": 957, "n_cal": 155, "n_test": 14, "elapsed_s": 19.48}
+{"fold": 20, "heldout_group": "10.1111/ffe.13077", "seed": 42, "n_train": 957, "n_cal": 155, "n_test": 14, "elapsed_s": 19.69}
+{"fold": 21, "heldout_group": "10.3390/ma12244203", "seed": 42, "n_train": 915, "n_cal": 155, "n_test": 56, "elapsed_s": 19.94}
+{"fold": 22, "heldout_group": "10.3390/ma13153293", "seed": 42, "n_train": 915, "n_cal": 202, "n_test": 9, "elapsed_s": 20.17}
+{"fold": 23, "heldout_group": "10.3390/ma15186278", "seed": 42, "n_train": 915, "n_cal": 193, "n_test": 18, "elapsed_s": 20.4}
+{"fold": 24, "heldout_group": "curve_reuse_family_01", "seed": 42, "n_train": 716, "n_cal": 193, "n_test": 217, "elapsed_s": 20.58}
+{"fold": 25, "heldout_group": "curve_reuse_family_02", "seed": 42, "n_train": 734, "n_cal": 193, "n_test": 199, "elapsed_s": 20.8}
+{"fold": 26, "heldout_group": "curve_reuse_family_03", "seed": 42, "n_train": 886, "n_cal": 193, "n_test": 47, "elapsed_s": 21.02}
+{"fold": 27, "heldout_group": "weak_reuse_sensitivity_01", "seed": 42, "n_train": 886, "n_cal": 223, "n_test": 17, "elapsed_s": 21.22}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 0, "n_train": 746, "n_cal": 374, "n_test": 6, "elapsed_s": 0.13}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 0, "n_train": 740, "n_cal": 374, "n_test": 12, "elapsed_s": 0.25}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 0, "n_train": 700, "n_cal": 374, "n_test": 52, "elapsed_s": 0.38}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 0, "n_train": 700, "n_cal": 416, "n_test": 10, "elapsed_s": 0.52}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 0, "n_train": 682, "n_cal": 416, "n_test": 28, "elapsed_s": 0.65}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 0, "n_train": 682, "n_cal": 423, "n_test": 21, "elapsed_s": 0.78}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 0, "n_train": 675, "n_cal": 423, "n_test": 28, "elapsed_s": 0.97}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 0, "n_train": 675, "n_cal": 432, "n_test": 19, "elapsed_s": 1.15}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 0, "n_train": 596, "n_cal": 432, "n_test": 98, "elapsed_s": 1.3}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 0, "n_train": 651, "n_cal": 432, "n_test": 43, "elapsed_s": 1.48}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 0, "n_train": 668, "n_cal": 432, "n_test": 26, "elapsed_s": 1.63}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 0, "n_train": 668, "n_cal": 454, "n_test": 4, "elapsed_s": 1.77}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 0, "n_train": 668, "n_cal": 428, "n_test": 30, "elapsed_s": 1.92}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 0, "n_train": 685, "n_cal": 428, "n_test": 13, "elapsed_s": 2.04}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 0, "n_train": 649, "n_cal": 428, "n_test": 49, "elapsed_s": 2.19}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 0, "n_train": 690, "n_cal": 428, "n_test": 8, "elapsed_s": 2.33}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 0, "n_train": 674, "n_cal": 428, "n_test": 24, "elapsed_s": 2.51}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 0, "n_train": 674, "n_cal": 444, "n_test": 8, "elapsed_s": 2.67}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 0, "n_train": 658, "n_cal": 444, "n_test": 24, "elapsed_s": 2.82}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 0, "n_train": 669, "n_cal": 444, "n_test": 13, "elapsed_s": 3.0}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 0, "n_train": 669, "n_cal": 421, "n_test": 36, "elapsed_s": 3.16}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 0, "n_train": 691, "n_cal": 421, "n_test": 14, "elapsed_s": 3.32}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 0, "n_train": 691, "n_cal": 421, "n_test": 14, "elapsed_s": 3.48}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 0, "n_train": 649, "n_cal": 421, "n_test": 56, "elapsed_s": 3.61}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 0, "n_train": 696, "n_cal": 421, "n_test": 9, "elapsed_s": 3.75}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 0, "n_train": 687, "n_cal": 421, "n_test": 18, "elapsed_s": 3.9}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 0, "n_train": 488, "n_cal": 421, "n_test": 217, "elapsed_s": 4.02}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 0, "n_train": 488, "n_cal": 439, "n_test": 199, "elapsed_s": 4.14}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 0, "n_train": 488, "n_cal": 591, "n_test": 47, "elapsed_s": 4.25}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 17, "n_train": 492, "n_cal": 628, "n_test": 6, "elapsed_s": 4.35}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 17, "n_train": 486, "n_cal": 628, "n_test": 12, "elapsed_s": 4.44}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 17, "n_train": 446, "n_cal": 628, "n_test": 52, "elapsed_s": 4.57}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 17, "n_train": 488, "n_cal": 628, "n_test": 10, "elapsed_s": 4.67}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 17, "n_train": 488, "n_cal": 610, "n_test": 28, "elapsed_s": 4.78}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 17, "n_train": 488, "n_cal": 617, "n_test": 21, "elapsed_s": 4.88}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 17, "n_train": 488, "n_cal": 610, "n_test": 28, "elapsed_s": 4.99}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 17, "n_train": 488, "n_cal": 619, "n_test": 19, "elapsed_s": 5.1}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 17, "n_train": 409, "n_cal": 619, "n_test": 98, "elapsed_s": 5.19}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 17, "n_train": 464, "n_cal": 619, "n_test": 43, "elapsed_s": 5.29}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 17, "n_train": 481, "n_cal": 619, "n_test": 26, "elapsed_s": 5.46}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 17, "n_train": 503, "n_cal": 619, "n_test": 4, "elapsed_s": 5.61}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 17, "n_train": 477, "n_cal": 619, "n_test": 30, "elapsed_s": 5.74}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 17, "n_train": 477, "n_cal": 636, "n_test": 13, "elapsed_s": 5.87}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 17, "n_train": 441, "n_cal": 636, "n_test": 49, "elapsed_s": 5.99}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 17, "n_train": 482, "n_cal": 636, "n_test": 8, "elapsed_s": 6.12}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 17, "n_train": 466, "n_cal": 636, "n_test": 24, "elapsed_s": 6.28}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 17, "n_train": 482, "n_cal": 636, "n_test": 8, "elapsed_s": 6.41}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 17, "n_train": 466, "n_cal": 636, "n_test": 24, "elapsed_s": 6.54}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 17, "n_train": 477, "n_cal": 636, "n_test": 13, "elapsed_s": 6.64}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 17, "n_train": 454, "n_cal": 636, "n_test": 36, "elapsed_s": 6.75}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 17, "n_train": 476, "n_cal": 636, "n_test": 14, "elapsed_s": 6.84}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 17, "n_train": 476, "n_cal": 636, "n_test": 14, "elapsed_s": 6.95}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 17, "n_train": 476, "n_cal": 594, "n_test": 56, "elapsed_s": 7.05}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 17, "n_train": 523, "n_cal": 594, "n_test": 9, "elapsed_s": 7.17}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 17, "n_train": 514, "n_cal": 594, "n_test": 18, "elapsed_s": 7.28}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 17, "n_train": 514, "n_cal": 395, "n_test": 217, "elapsed_s": 7.39}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 17, "n_train": 514, "n_cal": 413, "n_test": 199, "elapsed_s": 7.5}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 17, "n_train": 514, "n_cal": 565, "n_test": 47, "elapsed_s": 7.6}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 42, "n_train": 828, "n_cal": 292, "n_test": 6, "elapsed_s": 7.73}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 42, "n_train": 822, "n_cal": 292, "n_test": 12, "elapsed_s": 7.84}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 42, "n_train": 782, "n_cal": 292, "n_test": 52, "elapsed_s": 7.98}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 42, "n_train": 824, "n_cal": 292, "n_test": 10, "elapsed_s": 8.11}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 42, "n_train": 806, "n_cal": 292, "n_test": 28, "elapsed_s": 8.24}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 42, "n_train": 813, "n_cal": 292, "n_test": 21, "elapsed_s": 8.38}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 42, "n_train": 813, "n_cal": 285, "n_test": 28, "elapsed_s": 8.52}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 42, "n_train": 822, "n_cal": 285, "n_test": 19, "elapsed_s": 8.63}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 42, "n_train": 822, "n_cal": 206, "n_test": 98, "elapsed_s": 8.75}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 42, "n_train": 877, "n_cal": 206, "n_test": 43, "elapsed_s": 8.88}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 42, "n_train": 894, "n_cal": 206, "n_test": 26, "elapsed_s": 9.02}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 42, "n_train": 894, "n_cal": 228, "n_test": 4, "elapsed_s": 9.16}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 42, "n_train": 868, "n_cal": 228, "n_test": 30, "elapsed_s": 9.31}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 42, "n_train": 885, "n_cal": 228, "n_test": 13, "elapsed_s": 9.45}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 42, "n_train": 849, "n_cal": 228, "n_test": 49, "elapsed_s": 9.57}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 42, "n_train": 890, "n_cal": 228, "n_test": 8, "elapsed_s": 9.71}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 42, "n_train": 874, "n_cal": 228, "n_test": 24, "elapsed_s": 9.83}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 42, "n_train": 874, "n_cal": 244, "n_test": 8, "elapsed_s": 9.95}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 42, "n_train": 874, "n_cal": 228, "n_test": 24, "elapsed_s": 10.07}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 42, "n_train": 885, "n_cal": 228, "n_test": 13, "elapsed_s": 10.22}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 42, "n_train": 862, "n_cal": 228, "n_test": 36, "elapsed_s": 10.36}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 42, "n_train": 884, "n_cal": 228, "n_test": 14, "elapsed_s": 10.51}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 42, "n_train": 884, "n_cal": 228, "n_test": 14, "elapsed_s": 10.68}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 42, "n_train": 884, "n_cal": 186, "n_test": 56, "elapsed_s": 10.87}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 42, "n_train": 884, "n_cal": 233, "n_test": 9, "elapsed_s": 11.05}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 42, "n_train": 884, "n_cal": 224, "n_test": 18, "elapsed_s": 11.23}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 42, "n_train": 685, "n_cal": 224, "n_test": 217, "elapsed_s": 11.38}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 42, "n_train": 703, "n_cal": 224, "n_test": 199, "elapsed_s": 11.53}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 42, "n_train": 703, "n_cal": 376, "n_test": 47, "elapsed_s": 11.69}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 0, "n_train": 746, "n_cal": 374, "n_test": 6, "elapsed_s": 1.42}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 0, "n_train": 740, "n_cal": 374, "n_test": 12, "elapsed_s": 2.15}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 0, "n_train": 700, "n_cal": 374, "n_test": 52, "elapsed_s": 3.22}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 0, "n_train": 700, "n_cal": 416, "n_test": 10, "elapsed_s": 4.22}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 0, "n_train": 682, "n_cal": 416, "n_test": 28, "elapsed_s": 5.07}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 0, "n_train": 682, "n_cal": 423, "n_test": 21, "elapsed_s": 5.99}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 0, "n_train": 675, "n_cal": 423, "n_test": 28, "elapsed_s": 8.1}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 0, "n_train": 675, "n_cal": 432, "n_test": 19, "elapsed_s": 10.03}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 0, "n_train": 596, "n_cal": 432, "n_test": 98, "elapsed_s": 11.37}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 0, "n_train": 651, "n_cal": 432, "n_test": 43, "elapsed_s": 12.68}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 0, "n_train": 668, "n_cal": 432, "n_test": 26, "elapsed_s": 13.46}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 0, "n_train": 668, "n_cal": 454, "n_test": 4, "elapsed_s": 14.39}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 0, "n_train": 668, "n_cal": 428, "n_test": 30, "elapsed_s": 15.26}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 0, "n_train": 685, "n_cal": 428, "n_test": 13, "elapsed_s": 16.38}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 0, "n_train": 649, "n_cal": 428, "n_test": 49, "elapsed_s": 17.32}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 0, "n_train": 690, "n_cal": 428, "n_test": 8, "elapsed_s": 18.29}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 0, "n_train": 674, "n_cal": 428, "n_test": 24, "elapsed_s": 19.59}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 0, "n_train": 674, "n_cal": 444, "n_test": 8, "elapsed_s": 21.15}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 0, "n_train": 658, "n_cal": 444, "n_test": 24, "elapsed_s": 22.2}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 0, "n_train": 669, "n_cal": 444, "n_test": 13, "elapsed_s": 23.03}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 0, "n_train": 669, "n_cal": 421, "n_test": 36, "elapsed_s": 23.98}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 0, "n_train": 691, "n_cal": 421, "n_test": 14, "elapsed_s": 24.87}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 0, "n_train": 691, "n_cal": 421, "n_test": 14, "elapsed_s": 25.88}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 0, "n_train": 649, "n_cal": 421, "n_test": 56, "elapsed_s": 27.12}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 0, "n_train": 696, "n_cal": 421, "n_test": 9, "elapsed_s": 28.54}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 0, "n_train": 687, "n_cal": 421, "n_test": 18, "elapsed_s": 29.5}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 0, "n_train": 488, "n_cal": 421, "n_test": 217, "elapsed_s": 31.36}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 0, "n_train": 488, "n_cal": 439, "n_test": 199, "elapsed_s": 33.13}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 0, "n_train": 488, "n_cal": 591, "n_test": 47, "elapsed_s": 34.77}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 17, "n_train": 492, "n_cal": 628, "n_test": 6, "elapsed_s": 35.53}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 17, "n_train": 486, "n_cal": 628, "n_test": 12, "elapsed_s": 36.23}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 17, "n_train": 446, "n_cal": 628, "n_test": 52, "elapsed_s": 37.74}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 17, "n_train": 488, "n_cal": 628, "n_test": 10, "elapsed_s": 39.03}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 17, "n_train": 488, "n_cal": 610, "n_test": 28, "elapsed_s": 40.3}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 17, "n_train": 488, "n_cal": 617, "n_test": 21, "elapsed_s": 41.73}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 17, "n_train": 488, "n_cal": 610, "n_test": 28, "elapsed_s": 43.0}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 17, "n_train": 488, "n_cal": 619, "n_test": 19, "elapsed_s": 44.16}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 17, "n_train": 409, "n_cal": 619, "n_test": 98, "elapsed_s": 44.95}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 17, "n_train": 464, "n_cal": 619, "n_test": 43, "elapsed_s": 45.84}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 17, "n_train": 481, "n_cal": 619, "n_test": 26, "elapsed_s": 47.28}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 17, "n_train": 503, "n_cal": 619, "n_test": 4, "elapsed_s": 47.89}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 17, "n_train": 477, "n_cal": 619, "n_test": 30, "elapsed_s": 48.65}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 17, "n_train": 477, "n_cal": 636, "n_test": 13, "elapsed_s": 49.32}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 17, "n_train": 441, "n_cal": 636, "n_test": 49, "elapsed_s": 50.07}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 17, "n_train": 482, "n_cal": 636, "n_test": 8, "elapsed_s": 50.94}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 17, "n_train": 466, "n_cal": 636, "n_test": 24, "elapsed_s": 51.62}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 17, "n_train": 482, "n_cal": 636, "n_test": 8, "elapsed_s": 52.78}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 17, "n_train": 466, "n_cal": 636, "n_test": 24, "elapsed_s": 54.27}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 17, "n_train": 477, "n_cal": 636, "n_test": 13, "elapsed_s": 55.14}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 17, "n_train": 454, "n_cal": 636, "n_test": 36, "elapsed_s": 55.98}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 17, "n_train": 476, "n_cal": 636, "n_test": 14, "elapsed_s": 56.92}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 17, "n_train": 476, "n_cal": 636, "n_test": 14, "elapsed_s": 57.5}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 17, "n_train": 476, "n_cal": 594, "n_test": 56, "elapsed_s": 58.26}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 17, "n_train": 523, "n_cal": 594, "n_test": 9, "elapsed_s": 58.98}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 17, "n_train": 514, "n_cal": 594, "n_test": 18, "elapsed_s": 60.6}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 17, "n_train": 514, "n_cal": 395, "n_test": 217, "elapsed_s": 62.27}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 17, "n_train": 514, "n_cal": 413, "n_test": 199, "elapsed_s": 64.0}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 17, "n_train": 514, "n_cal": 565, "n_test": 47, "elapsed_s": 65.7}
+{"fold": 0, "heldout_group": "10.1002/adem.202200751", "seed": 42, "n_train": 828, "n_cal": 292, "n_test": 6, "elapsed_s": 67.17}
+{"fold": 1, "heldout_group": "10.1007/978-3-030-31154-4_75", "seed": 42, "n_train": 822, "n_cal": 292, "n_test": 12, "elapsed_s": 68.49}
+{"fold": 2, "heldout_group": "10.1007/s40964-021-00164-8", "seed": 42, "n_train": 782, "n_cal": 292, "n_test": 52, "elapsed_s": 69.85}
+{"fold": 3, "heldout_group": "10.1016/j.engfracmech.2022.108883", "seed": 42, "n_train": 824, "n_cal": 292, "n_test": 10, "elapsed_s": 71.45}
+{"fold": 4, "heldout_group": "10.1016/j.ijfatigue.2019.03.022", "seed": 42, "n_train": 806, "n_cal": 292, "n_test": 28, "elapsed_s": 73.35}
+{"fold": 5, "heldout_group": "10.1016/j.ijfatigue.2019.105301", "seed": 42, "n_train": 813, "n_cal": 292, "n_test": 21, "elapsed_s": 74.55}
+{"fold": 6, "heldout_group": "10.1016/j.ijfatigue.2020.106063", "seed": 42, "n_train": 813, "n_cal": 285, "n_test": 28, "elapsed_s": 75.83}
+{"fold": 7, "heldout_group": "10.1016/j.ijfatigue.2021.106207", "seed": 42, "n_train": 822, "n_cal": 285, "n_test": 19, "elapsed_s": 76.89}
+{"fold": 8, "heldout_group": "10.1016/j.ijfatigue.2021.106552", "seed": 42, "n_train": 822, "n_cal": 206, "n_test": 98, "elapsed_s": 77.98}
+{"fold": 9, "heldout_group": "10.1016/j.ijfatigue.2022.106946", "seed": 42, "n_train": 877, "n_cal": 206, "n_test": 43, "elapsed_s": 79.42}
+{"fold": 10, "heldout_group": "10.1016/j.ijfatigue.2022.107025", "seed": 42, "n_train": 894, "n_cal": 206, "n_test": 26, "elapsed_s": 80.86}
+{"fold": 11, "heldout_group": "10.1016/j.ijplas.2021.103172", "seed": 42, "n_train": 894, "n_cal": 228, "n_test": 4, "elapsed_s": 82.33}
+{"fold": 12, "heldout_group": "10.1016/j.jmst.2019.08.047", "seed": 42, "n_train": 868, "n_cal": 228, "n_test": 30, "elapsed_s": 84.36}
+{"fold": 13, "heldout_group": "10.1016/j.jmst.2021.10.006", "seed": 42, "n_train": 885, "n_cal": 228, "n_test": 13, "elapsed_s": 85.09}
+{"fold": 14, "heldout_group": "10.1016/j.msea.2020.140660", "seed": 42, "n_train": 849, "n_cal": 228, "n_test": 49, "elapsed_s": 86.06}
+{"fold": 15, "heldout_group": "10.1016/j.mtla.2022.101591", "seed": 42, "n_train": 890, "n_cal": 228, "n_test": 8, "elapsed_s": 87.24}
+{"fold": 16, "heldout_group": "10.1016/j.proeng.2018.02.002", "seed": 42, "n_train": 874, "n_cal": 228, "n_test": 24, "elapsed_s": 88.89}
+{"fold": 17, "heldout_group": "10.1016/j.tafmec.2020.102849", "seed": 42, "n_train": 874, "n_cal": 244, "n_test": 8, "elapsed_s": 90.58}
+{"fold": 18, "heldout_group": "10.1051/matecconf/201816502006", "seed": 42, "n_train": 874, "n_cal": 228, "n_test": 24, "elapsed_s": 92.27}
+{"fold": 19, "heldout_group": "10.1080/00325899.2021.2010932", "seed": 42, "n_train": 885, "n_cal": 228, "n_test": 13, "elapsed_s": 93.23}
+{"fold": 20, "heldout_group": "10.1108/13552541311302932", "seed": 42, "n_train": 862, "n_cal": 228, "n_test": 36, "elapsed_s": 95.27}
+{"fold": 21, "heldout_group": "10.1111/ffe.13029", "seed": 42, "n_train": 884, "n_cal": 228, "n_test": 14, "elapsed_s": 96.81}
+{"fold": 22, "heldout_group": "10.1111/ffe.13077", "seed": 42, "n_train": 884, "n_cal": 228, "n_test": 14, "elapsed_s": 97.8}
+{"fold": 23, "heldout_group": "10.3390/ma12244203", "seed": 42, "n_train": 884, "n_cal": 186, "n_test": 56, "elapsed_s": 99.01}
+{"fold": 24, "heldout_group": "10.3390/ma13153293", "seed": 42, "n_train": 884, "n_cal": 233, "n_test": 9, "elapsed_s": 100.09}
+{"fold": 25, "heldout_group": "10.3390/ma15186278", "seed": 42, "n_train": 884, "n_cal": 224, "n_test": 18, "elapsed_s": 101.28}
+{"fold": 26, "heldout_group": "curve_reuse_family_01", "seed": 42, "n_train": 685, "n_cal": 224, "n_test": 217, "elapsed_s": 102.93}
+{"fold": 27, "heldout_group": "curve_reuse_family_02", "seed": 42, "n_train": 703, "n_cal": 224, "n_test": 199, "elapsed_s": 103.71}
+{"fold": 28, "heldout_group": "curve_reuse_family_03", "seed": 42, "n_train": 703, "n_cal": 376, "n_test": 47, "elapsed_s": 104.54}
+  model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+basquin      cohort_max                         all    0.000379    0.000379      1.000000              2.659771
+basquin endpoint_pooled                         all    0.121402    0.128520      1.000000              0.877102
+basquin       model_q10                         all    0.140449    0.149688      1.000000              0.837287
+ linear      cohort_max                         all    0.001969    0.001969      1.000000              3.541167
+ linear endpoint_pooled                         all    0.145033    0.154034      1.000000              1.133824
+ linear endpoint_pooled        matched_combined_0.5    0.138650    0.143906      0.507582              1.133824
+ linear endpoint_pooled        matched_combined_0.8    0.142265    0.148866      0.833859              1.133824
+ linear endpoint_pooled        matched_distance_0.5    0.141725    0.143462      0.507582              1.133824
+ linear endpoint_pooled        matched_distance_0.8    0.140968    0.145749      0.833859              1.133824
+ linear endpoint_pooled     matched_instability_0.5    0.143785    0.150357      0.507582              1.133824
+ linear endpoint_pooled     matched_instability_0.8    0.142897    0.151336      0.833859              1.133824
+ linear endpoint_pooled          matched_random_0.5    0.146265    0.155693      0.507582              1.133824
+ linear endpoint_pooled          matched_random_0.8    0.146030    0.155091      0.833859              1.133824
+ linear endpoint_pooled    operational_combined_0.5    0.171769    0.176149      0.613064              1.144673
+ linear endpoint_pooled    operational_combined_0.8    0.150216    0.158218      0.857656              1.137051
+ linear endpoint_pooled    operational_distance_0.5    0.108060    0.114011      0.613185              1.184794
+ linear endpoint_pooled    operational_distance_0.8    0.139178    0.146935      0.822501              1.171577
+ linear endpoint_pooled operational_instability_0.5    0.146145    0.152114      0.535123              1.108740
+ linear endpoint_pooled operational_instability_0.8    0.136111    0.143258      0.855326              1.135418
+ linear       model_q10                         all    0.289712    0.307687      1.000000              0.618516
+    mlp      cohort_max                         all    0.005196    0.005196      1.000000              4.118449
+    mlp endpoint_pooled                         all    0.105176    0.109829      1.000000              1.823850
+    mlp       model_q10                         all    0.430418    0.476910      1.000000              0.318381
+  model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+basquin      cohort_max                         all    0.002419    0.002419      1.000000              2.159489
+basquin endpoint_pooled                         all    0.095608    0.098928      1.000000              0.748286
+basquin       model_q10                         all    0.085212    0.086746      1.000000              0.766732
+ linear      cohort_max                         all    0.027005    0.028774      1.000000              2.238208
+ linear endpoint_pooled                         all    0.190271    0.204379      1.000000              0.629359
+ linear endpoint_pooled        matched_combined_0.5    0.169428    0.177737      0.508259              0.629359
+ linear endpoint_pooled        matched_combined_0.8    0.182643    0.192475      0.829903              0.629359
+ linear endpoint_pooled        matched_distance_0.5    0.166092    0.170346      0.508259              0.629359
+ linear endpoint_pooled        matched_distance_0.8    0.186725    0.190345      0.829903              0.629359
+ linear endpoint_pooled     matched_instability_0.5    0.171275    0.185628      0.508259              0.629359
+ linear endpoint_pooled     matched_instability_0.8    0.185282    0.198641      0.829903              0.629359
+ linear endpoint_pooled          matched_random_0.5    0.191985    0.206904      0.508259              0.629359
+ linear endpoint_pooled          matched_random_0.8    0.190927    0.205263      0.829903              0.629359
+ linear endpoint_pooled    operational_combined_0.5    0.133072    0.137949      0.531285              0.687779
+ linear endpoint_pooled    operational_combined_0.8    0.179103    0.188953      0.733767              0.635986
+ linear endpoint_pooled    operational_distance_0.5    0.152149    0.153764      0.463299              0.634338
+ linear endpoint_pooled    operational_distance_0.8    0.167280    0.178831      0.752566              0.647048
+ linear endpoint_pooled operational_instability_0.5    0.138211    0.147000      0.451671              0.675003
+ linear endpoint_pooled operational_instability_0.8    0.166088    0.178418      0.691423              0.661984
+ linear       model_q10                         all    0.192686    0.205226      1.000000              0.619211
+    mlp      cohort_max                         all    0.011573    0.012592      1.000000              3.068640
+    mlp endpoint_pooled                         all    0.169799    0.187441      1.000000              1.125799
+    mlp       model_q10                         all    0.355518    0.392132      1.000000              0.310099
+  model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+basquin      cohort_max                         all    0.003340    0.003340      1.000000              1.582764
+basquin endpoint_pooled                         all    0.097732    0.104053      1.000000              0.752314
+basquin       model_q10                         all    0.071257    0.074131      1.000000              0.857430
+ linear      cohort_max                         all    0.001680    0.001680      1.000000              1.443614
+ linear endpoint_pooled                         all    0.113841    0.123076      1.000000              0.649235
+ linear endpoint_pooled        matched_combined_0.5    0.092415    0.092415      0.595001              0.649235
+ linear endpoint_pooled        matched_combined_0.8    0.114704    0.119474      0.917184              0.649235
+ linear endpoint_pooled        matched_distance_0.5    0.102402    0.104701      0.595001              0.649235
+ linear endpoint_pooled        matched_distance_0.8    0.116322    0.122242      0.917184              0.649235
+ linear endpoint_pooled     matched_instability_0.5    0.088430    0.089148      0.595001              0.649235
+ linear endpoint_pooled     matched_instability_0.8    0.120630    0.127760      0.917184              0.649235
+ linear endpoint_pooled          matched_random_0.5    0.111527    0.121410      0.595001              0.649235
+ linear endpoint_pooled          matched_random_0.8    0.113873    0.123018      0.917184              0.649235
+ linear endpoint_pooled    operational_combined_0.5    0.125938    0.126555      0.462770              0.644429
+ linear endpoint_pooled    operational_combined_0.8    0.108226    0.111530      0.713926              0.650286
+ linear endpoint_pooled    operational_distance_0.5    0.138354    0.138354      0.346716              0.646561
+ linear endpoint_pooled    operational_distance_0.8    0.136514    0.138813      0.717494              0.650378
+ linear endpoint_pooled operational_instability_0.5    0.121261    0.126288      0.523979              0.645617
+ linear endpoint_pooled operational_instability_0.8    0.110035    0.115893      0.760864              0.646909
+ linear       model_q10                         all    0.110402    0.120787      1.000000              0.654175
+    mlp      cohort_max                         all    0.010129    0.013549      1.000000              1.102442
+    mlp endpoint_pooled                         all    0.051710    0.065517      1.000000              0.525742
+    mlp       model_q10                         all    0.139170    0.165885      1.000000              0.306931
+ model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+linear      cohort_max                         all    0.002181    0.002181      1.000000              3.561046
+linear endpoint_pooled                         all    0.149958    0.157210      1.000000              1.142832
+linear endpoint_pooled        matched_combined_0.5    0.140300    0.143360      0.507183              1.142832
+linear endpoint_pooled        matched_combined_0.8    0.142620    0.147824      0.834782              1.142832
+linear endpoint_pooled        matched_distance_0.5    0.140401    0.141043      0.507183              1.142832
+linear endpoint_pooled        matched_distance_0.8    0.144456    0.148414      0.834782              1.142832
+linear endpoint_pooled     matched_instability_0.5    0.137919    0.143392      0.507183              1.142832
+linear endpoint_pooled     matched_instability_0.8    0.146322    0.153792      0.834782              1.142832
+linear endpoint_pooled          matched_random_0.5    0.151175    0.158770      0.507183              1.142832
+linear endpoint_pooled          matched_random_0.8    0.150513    0.157877      0.834782              1.142832
+linear endpoint_pooled    operational_combined_0.5    0.173091    0.177811      0.599865              1.112739
+linear endpoint_pooled    operational_combined_0.8    0.147340    0.153415      0.857745              1.126036
+linear endpoint_pooled    operational_distance_0.5    0.127784    0.132920      0.606610              1.126518
+linear endpoint_pooled    operational_distance_0.8    0.142545    0.148454      0.811654              1.179367
+linear endpoint_pooled operational_instability_0.5    0.162708    0.169905      0.554045              1.088322
+linear endpoint_pooled operational_instability_0.8    0.146283    0.153043      0.855475              1.142872
+linear       model_q10                         all    0.289093    0.307133      1.000000              0.621762
+ model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+linear      cohort_max                         all    0.036675    0.039368      1.000000              2.583522
+linear endpoint_pooled                         all    0.160274    0.168753      1.000000              1.133952
+linear endpoint_pooled        matched_combined_0.5    0.155880    0.161767      0.507530              1.133952
+linear endpoint_pooled        matched_combined_0.8    0.159519    0.166164      0.827118              1.133952
+linear endpoint_pooled        matched_distance_0.5    0.160262    0.162108      0.507530              1.133952
+linear endpoint_pooled        matched_distance_0.8    0.156253    0.159245      0.827118              1.133952
+linear endpoint_pooled     matched_instability_0.5    0.160797    0.167940      0.507530              1.133952
+linear endpoint_pooled     matched_instability_0.8    0.156965    0.164255      0.827118              1.133952
+linear endpoint_pooled          matched_random_0.5    0.161437    0.170675      0.507530              1.133952
+linear endpoint_pooled          matched_random_0.8    0.161279    0.169979      0.827118              1.133952
+linear endpoint_pooled    operational_combined_0.5    0.170331    0.176008      0.592539              1.165513
+linear endpoint_pooled    operational_combined_0.8    0.156854    0.165019      0.791627              1.118964
+linear endpoint_pooled    operational_distance_0.5    0.181208    0.188750      0.580032              1.039876
+linear endpoint_pooled    operational_distance_0.8    0.154621    0.163097      0.805729              1.099589
+linear endpoint_pooled operational_instability_0.5    0.127809    0.135823      0.532420              1.243804
+linear endpoint_pooled operational_instability_0.8    0.176708    0.184267      0.805758              1.124379
+linear       model_q10                         all    0.284942    0.304138      1.000000              0.637126
+ model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+linear      cohort_max                         all    0.001817    0.001817      1.000000              3.307896
+linear endpoint_pooled                         all    0.155739    0.162230      1.000000              1.006479
+linear endpoint_pooled        matched_combined_0.5    0.143505    0.147842      0.507582              1.006479
+linear endpoint_pooled        matched_combined_0.8    0.150178    0.154337      0.833859              1.006479
+linear endpoint_pooled        matched_distance_0.5    0.152311    0.154048      0.507582              1.006479
+linear endpoint_pooled        matched_distance_0.8    0.153079    0.155992      0.833859              1.006479
+linear endpoint_pooled     matched_instability_0.5    0.146943    0.151732      0.507582              1.006479
+linear endpoint_pooled     matched_instability_0.8    0.150049    0.155804      0.833859              1.006479
+linear endpoint_pooled          matched_random_0.5    0.156042    0.162721      0.507582              1.006479
+linear endpoint_pooled          matched_random_0.8    0.156924    0.163394      0.833859              1.006479
+linear endpoint_pooled    operational_combined_0.5    0.117138    0.120070      0.592859              1.018628
+linear endpoint_pooled    operational_combined_0.8    0.161844    0.167964      0.839117              1.000659
+linear endpoint_pooled    operational_distance_0.5    0.115792    0.118782      0.613185              1.053292
+linear endpoint_pooled    operational_distance_0.8    0.144970    0.149383      0.822501              1.049247
+linear endpoint_pooled operational_instability_0.5    0.154518    0.158874      0.536710              0.996955
+linear endpoint_pooled operational_instability_0.8    0.149794    0.155306      0.827904              1.005077
+linear       model_q10                         all    0.275073    0.290885      1.000000              0.580285
+model           bound policy  risk_lower  risk_upper  availability  conservatism_decades
+  mlp      cohort_max    all    0.002342    0.002458           1.0              4.213921
+  mlp endpoint_pooled    all    0.092991    0.100634           1.0              1.885989
+  mlp       model_q10    all    0.401672    0.449321           1.0              0.314429

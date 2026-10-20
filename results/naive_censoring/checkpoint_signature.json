@@ -1,0 +1,13 @@
+{
+  "data_sha256": "24d668df78dfa084859f34e81ddc29a24136d50f0799d08b80346908011683ed",
+  "code_sha256": "a452ca6b2104735c7b78306caa3af816a061c29cf5a34d5719c0546eccb4c79a",
+  "scheme": "source",
+  "bootstraps": 8,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "models": "linear",
+  "naive_events": true
+}

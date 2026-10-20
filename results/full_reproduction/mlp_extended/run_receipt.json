@@ -1,0 +1,22 @@
+{
+  "arguments": {
+    "input": "data/processed/primary.csv",
+    "output": "results/full_reproduction/mlp_extended",
+    "scheme": "source",
+    "seeds": "0,17,42",
+    "bootstraps": 8,
+    "limit_folds": null,
+    "models": "mlp",
+    "naive_events": false,
+    "mlp_maxiter": 12000
+  },
+  "data_sha256": "24d668df78dfa084859f34e81ddc29a24136d50f0799d08b80346908011683ed",
+  "groups": 29,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "duration_seconds": 104.64252018928528,
+  "completed_folds": 87
+}

@@ -83,5 +83,18 @@
     "sha256": "f5ceb502e12025385b6dd5011162b889c520a84fbc54467b85a2f33198c1e84c",
     "access_date": "2026-10-20",
     "note": "Accessed before manifest generation; precise fetch time not recorded."
+  },
+  {
+    "file": "WietechaReiman2024_crossref.json",
+    "url": "https://api.crossref.org/works/10.1016/j.msea.2024.146580",
+    "access_date": "2026-10-20",
+    "bytes": 27303,
+    "sha256": "7fe8c19e38625509fc4daa13e6b62da3c5e5595b84ec761e236a543009c73b6d"
+  },
+  {
+    "url": "https://github.com/wietecha-reiman/Fatigue-AM-316L",
+    "access_date": "2026-10-20",
+    "status": 404,
+    "note": "Manuscript data link; repository not acquired."
   }
 ]

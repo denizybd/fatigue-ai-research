@@ -1,0 +1,18 @@
+ model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+linear      cohort_max                         all    0.036675    0.039368      1.000000              2.583522
+linear endpoint_pooled                         all    0.160274    0.168753      1.000000              1.133952
+linear endpoint_pooled        matched_combined_0.5    0.155880    0.161767      0.507530              1.133952
+linear endpoint_pooled        matched_combined_0.8    0.159519    0.166164      0.827118              1.133952
+linear endpoint_pooled        matched_distance_0.5    0.160262    0.162108      0.507530              1.133952
+linear endpoint_pooled        matched_distance_0.8    0.156253    0.159245      0.827118              1.133952
+linear endpoint_pooled     matched_instability_0.5    0.160797    0.167940      0.507530              1.133952
+linear endpoint_pooled     matched_instability_0.8    0.156965    0.164255      0.827118              1.133952
+linear endpoint_pooled          matched_random_0.5    0.161437    0.170675      0.507530              1.133952
+linear endpoint_pooled          matched_random_0.8    0.161279    0.169979      0.827118              1.133952
+linear endpoint_pooled    operational_combined_0.5    0.170331    0.176008      0.592539              1.165513
+linear endpoint_pooled    operational_combined_0.8    0.156854    0.165019      0.791627              1.118964
+linear endpoint_pooled    operational_distance_0.5    0.181208    0.188750      0.580032              1.039876
+linear endpoint_pooled    operational_distance_0.8    0.154621    0.163097      0.805729              1.099589
+linear endpoint_pooled operational_instability_0.5    0.127809    0.135823      0.532420              1.243804
+linear endpoint_pooled operational_instability_0.8    0.176708    0.184267      0.805758              1.124379
+linear       model_q10                         all    0.284942    0.304138      1.000000              0.637126

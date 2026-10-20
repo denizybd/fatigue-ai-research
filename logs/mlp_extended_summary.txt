@@ -1,0 +1,4 @@
+model           bound policy  risk_lower  risk_upper  availability  conservatism_decades
+  mlp      cohort_max    all    0.002342    0.002458           1.0              4.213921
+  mlp endpoint_pooled    all    0.092991    0.100634           1.0              1.885989
+  mlp       model_q10    all    0.401672    0.449321           1.0              0.314429

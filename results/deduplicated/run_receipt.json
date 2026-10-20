@@ -1,0 +1,21 @@
+{
+  "arguments": {
+    "input": "data/processed/primary_deduplicated_sensitivity.csv",
+    "output": "results/deduplicated",
+    "scheme": "source",
+    "seeds": "0,17,42",
+    "bootstraps": 8,
+    "limit_folds": null,
+    "models": "linear",
+    "naive_events": false
+  },
+  "data_sha256": "ed28cacef0dcca7224f2a52e05d7c97cdf765ff6cb2935adad89e426c0b6c207",
+  "groups": 29,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "duration_seconds": 50.42712616920471,
+  "completed_folds": 87
+}

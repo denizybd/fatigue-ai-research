@@ -1,0 +1,4 @@
+scheme,model,nll
+random,basquin,0.9980240803235102
+random,linear,0.8380764243373012
+random,mlp,0.7134867735517766

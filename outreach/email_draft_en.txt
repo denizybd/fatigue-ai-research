@@ -1,0 +1,16 @@
+Subject: Open-data audit of source-held-out fatigue-life bounds for LPBF 316L
+
+Dear Andrea Tridello,
+
+I am investigating lower-life reliability on unseen literature sources, motivated by your group's SS316L R90C90 curves and subsequent design and transfer-learning work.
+
+An open-data pilot covers 1,126 digitized observations from 37 DOIs. Three possible curve-reuse families yield 29 conservative provenance blocks. This is a related-method evaluation, rather than a reproduction of your BNN.
+
+For the frozen rich-linear AFT, pooled calibration leaves a provenance-block-balanced empirical violation interval of 14.5–15.4%. A grouping/split sensitivity raises whole-cohort violations under source-maximum calibration from 4.60% to 17.86%; calibration membership changes too. The combined support/instability gate fails its preregistered superiority rule. These results do not validate a safe design algorithm.
+
+Would you be willing to comment on the attached one-page brief, particularly the proposed source families? A source-to-condition map for your 518-point corpus would help establish overlap before a larger data request.
+
+Thank you for your consideration.
+
+Best regards,
+[Name]

@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-20",
+  "aggregation": "provenance-block-balanced; 37 DOIs, 29 conservative blocks, only three multi-DOI reuse families",
+  "source_sha256": {
+    "results/primary/summary.csv": "29db73812bb5b925a339d1cc9af47fb5ee415102360ff61deb45872abd8cbd53",
+    "results/primary/paired_contrasts.csv": "d75352888bef9a1ba25c7aeb6174e8938525521f768f4418d430d8b3f46990f4",
+    "results/primary/source_seed_metrics.csv": "eb6548c5e0bff9e021d2f485d835761783a045666305c4d7ac270cc966a426e5",
+    "results/sensitivity_comparison.csv": "8cf5fb8ecdc7c630e787f973f4c08b0a5bd225ab39c36a5be6f13c17f12dba98",
+    "results/mlp_extended/summary.csv": "80ca46a636fb3bb5814d65f75863586e3d7fbd112d61805b4c60b8a30841260c",
+    "results/mlp_extended/fit_statuses.csv": "bf2fdb1d8ff112f3e72b5c59c1db6b740878e3dbabba3c771c365b3151b48b9e",
+    "protocols/v1_5_postresult_numerical_sensitivity.md": "71a1d9e0c680239d521f3fec22bf42d3bd9d4409bdba78cb2c0857b5ffa3f1a4"
+  },
+  "primary_model_scope": "frozen rich-linear censored lognormal AFT; not all models and not original BNN",
+  "brief_exact_values": [
+    {
+      "model": "linear",
+      "bound": "cohort_max",
+      "policy": "all",
+      "risk_lower": 0.001969431883183,
+      "risk_upper": 0.001969431883183,
+      "cohort_violation_lower": 0.0459770114942528,
+      "cohort_violation_upper": 0.0459770114942528,
+      "conservatism_decades": 3.5411670525124945
+    },
+    {
+      "model": "linear",
+      "bound": "endpoint_pooled",
+      "policy": "all",
+      "risk_lower": 0.1450333351170576,
+      "risk_upper": 0.1540338594804644,
+      "cohort_violation_lower": 0.528735632183908,
+      "cohort_violation_upper": 0.5517241379310345,
+      "conservatism_decades": 1.133824075291342
+    },
+    {
+      "model": "linear",
+      "bound": "model_q10",
+      "policy": "all",
+      "risk_lower": 0.2897122658644626,
+      "risk_upper": 0.3076874573025099,
+      "cohort_violation_lower": 0.7126436781609196,
+      "cohort_violation_upper": 0.7126436781609196,
+      "conservatism_decades": 0.6185160903871029
+    }
+  ],
+  "primary_combined_contrasts": [
+    {
+      "scheme": "source",
+      "fraction": 0.8,
+      "comparison": "combined minus distance",
+      "sources": 29,
+      "known_violation_difference": 0.0012962904683129,
+      "ci_low": -0.0063866006294069,
+      "ci_high": 0.008913405757936,
+      "risk_difference_identification_lower": -0.0034847241967683,
+      "risk_difference_identification_upper": 0.0078972285050416,
+      "severe_known_difference": 0.0029362155406959
+    },
+    {
+      "scheme": "source",
+      "fraction": 0.8,
+      "comparison": "combined minus instability",
+      "sources": 29,
+      "known_violation_difference": -0.0006322087341663,
+      "ci_low": -0.0134230421973627,
+      "ci_high": 0.0090903375697084,
+      "risk_difference_identification_lower": -0.0090708530935425,
+      "risk_difference_identification_upper": 0.0059687293025623,
+      "severe_known_difference": 0.004202119719361
+    },
+    {
+      "scheme": "source",
+      "fraction": 0.8,
+      "comparison": "combined minus random",
+      "sources": 29,
+      "known_violation_difference": -0.0037655412630204,
+      "ci_low": -0.0116458160271579,
+      "ci_high": 0.0027274616032335,
+      "risk_difference_identification_lower": -0.0128259460779928,
+      "risk_difference_identification_upper": 0.0028353967737082,
+      "severe_known_difference": 0.0003012063601482
+    }
+  ],
+  "grouping_sensitivity": [
+    {
+      "analysis": "primary",
+      "sources": 29,
+      "bound": "cohort_max",
+      "risk_lower": 0.001969431883183,
+      "risk_upper": 0.001969431883183,
+      "pooled_risk_lower": 0.0041444641799881,
+      "pooled_risk_upper": 0.0041444641799881,
+      "cohort_violation_lower": 0.0459770114942528,
+      "cohort_violation_upper": 0.0459770114942528,
+      "conservatism_decades": 3.5411670525124945,
+      "failure_mae": 0.7500604664615813
+    },
+    {
+      "analysis": "primary",
+      "sources": 29,
+      "bound": "endpoint_pooled",
+      "risk_lower": 0.1450333351170576,
+      "risk_upper": 0.1540338594804644,
+      "pooled_risk_lower": 0.1225577264653641,
+      "pooled_risk_upper": 0.1302545885139135,
+      "cohort_violation_lower": 0.528735632183908,
+      "cohort_violation_upper": 0.5517241379310345,
+      "conservatism_decades": 1.133824075291342,
+      "failure_mae": 0.7500604664615813
+    },
+    {
+      "analysis": "primary",
+      "sources": 29,
+      "bound": "model_q10",
+      "risk_lower": 0.2897122658644626,
+      "risk_upper": 0.3076874573025099,
+      "pooled_risk_lower": 0.2821195973949082,
+      "pooled_risk_upper": 0.2989934872705743,
+      "cohort_violation_lower": 0.7126436781609196,
+      "cohort_violation_upper": 0.7126436781609196,
+      "conservatism_decades": 0.6185160903871029,
+      "failure_mae": 0.7500604664615813
+    },
+    {
+      "analysis": "deduplicated",
+      "sources": 29,
+      "bound": "cohort_max",
+      "risk_lower": 0.0021808955249211,
+      "risk_upper": 0.0021808955249211,
+      "pooled_risk_lower": 0.0049539985845718,
+      "pooled_risk_upper": 0.0049539985845718,
+      "cohort_violation_lower": 0.0459770114942528,
+      "cohort_violation_upper": 0.0459770114942528,
+      "conservatism_decades": 3.5610456261203285,
+      "failure_mae": 0.7552145280306773
+    },
+    {
+      "analysis": "deduplicated",
+      "sources": 29,
+      "bound": "endpoint_pooled",
+      "risk_lower": 0.149957594850149,
+      "risk_upper": 0.1572099210679924,
+      "pooled_risk_lower": 0.1167728237791932,
+      "pooled_risk_upper": 0.1234961075725406,
+      "cohort_violation_lower": 0.5402298850574713,
+      "cohort_violation_upper": 0.5632183908045978,
+      "conservatism_decades": 1.1428324274858408,
+      "failure_mae": 0.7552145280306773
+    },
+    {
+      "analysis": "deduplicated",
+      "sources": 29,
+      "bound": "model_q10",
+      "risk_lower": 0.2890927486052025,
+      "risk_upper": 0.307133260788801,
+      "pooled_risk_lower": 0.2604387827317763,
+      "pooled_risk_upper": 0.2781316348195329,
+      "cohort_violation_lower": 0.7126436781609196,
+      "cohort_violation_upper": 0.7126436781609196,
+      "conservatism_decades": 0.6217621922178335,
+      "failure_mae": 0.7552145280306773
+    },
+    {
+      "analysis": "weak_edge",
+      "sources": 28,
+      "bound": "cohort_max",
+      "risk_lower": 0.036674795140945,
+      "risk_upper": 0.0393675389051173,
+      "pooled_risk_lower": 0.0189461219656601,
+      "pooled_risk_upper": 0.0207223208999407,
+      "cohort_violation_lower": 0.1785714285714285,
+      "cohort_violation_upper": 0.1785714285714285,
+      "conservatism_decades": 2.5835217903634224,
+      "failure_mae": 0.7586685024137918
+    },
+    {
+      "analysis": "weak_edge",
+      "sources": 28,
+      "bound": "endpoint_pooled",
+      "risk_lower": 0.1602738017853525,
+      "risk_upper": 0.168752809437249,
+      "pooled_risk_lower": 0.1583777383066903,
+      "pooled_risk_upper": 0.1657785671995263,
+      "cohort_violation_lower": 0.4999999999999999,
+      "cohort_violation_upper": 0.5238095238095237,
+      "conservatism_decades": 1.1339524947979662,
+      "failure_mae": 0.7586685024137918
+    },
+    {
+      "analysis": "weak_edge",
+      "sources": 28,
+      "bound": "model_q10",
+      "risk_lower": 0.2849424901213416,
+      "risk_upper": 0.3041381330638177,
+      "pooled_risk_lower": 0.2788632326820603,
+      "pooled_risk_upper": 0.2957371225577264,
+      "cohort_violation_lower": 0.6666666666666666,
+      "cohort_violation_upper": 0.6666666666666666,
+      "conservatism_decades": 0.6371263017112089,
+      "failure_mae": 0.7586685024137918
+    }
+  ],
+  "postresult_numerical_MLP": {
+    "role": "exploratory sensitivity, not primary architecture comparison",
+    "iteration_cap": 12000,
+    "all_fits_converged": true,
+    "fits": 87,
+    "maximum_iterations": 9183,
+    "results": [
+      {
+        "model": "mlp",
+        "bound": "cohort_max",
+        "risk_lower": 0.0023423769091764,
+        "risk_upper": 0.0024578970385589,
+        "conservatism_decades": 4.213921392164225
+      },
+      {
+        "model": "mlp",
+        "bound": "endpoint_pooled",
+        "risk_lower": 0.0929914613671413,
+        "risk_upper": 0.1006336843935513,
+        "conservatism_decades": 1.885989415897843
+      },
+      {
+        "model": "mlp",
+        "bound": "model_q10",
+        "risk_lower": 0.4016720901979516,
+        "risk_upper": 0.4493209759782711,
+        "conservatism_decades": 0.3144292047787776
+      }
+    ]
+  },
+  "cost_C_definition": "mean across blocks of within-block/seed median model-location minus log-lower-bound; location is model median, not observed median",
+  "strong_H2": "failed preregistered superiority rule; no combined-gate benefit established",
+  "drafts_only": "No email sent or files uploaded; unknown personal signature left as [Name].",
+  "final_review_edits": "Scope clarified: publication/provenance blocks, not leave-lab-out; raw original data not obtained, available on request; no independent-external-data implication.",
+  "final_outreach_file_hashes": {
+    "one_page_brief_en.txt": "0597638129697417a4dbc1e6e2de66c3dd64633d166331b57c26e46ac11c55de",
+    "email_draft_en.txt": "9e44691648063ced9403aca97b41a494190299b15ecbead9c06b9a29bd715351",
+    "user_next_step_tr.txt": "e98c420fd486040d116ae964b0d30cb8b9d1c3074f817ca9cda6869cbc569646",
+    "technical_qa_tr.md": "813569cb137b2dd6eee5a36a65080f340fee40f36bb423d89145c45795227dc5"
+  },
+  "fit_statuses_scope": "All model/bootstrap status rows in extended fit_statuses.csv; convergence87/87 andmax9183 refer to rows model=mlp."
+}

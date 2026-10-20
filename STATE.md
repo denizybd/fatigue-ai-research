@@ -1,28 +1,41 @@
-# Research state and initial plan
+# Research state
 
-Date: 2026-10-20 (Europe/Istanbul). Goal active; completion is the full pasted scope, not merely reading the attachment.
+Updated: 20 October 2026, Europe/Istanbul.
 
-## Objective
-An evidence-bounded contribution useful to Andrea Tridello in AM fatigue reliability, with reproducible critical experiments and a reviewable English manuscript/contact package. Positive improvement is not required. No correspondence/publication/uploads without explicit approval.
+**Completed bounded study:** frozen critical experiments, complete computational replay, internal critical verification, scientific draft, Turkish explanation and reviewable contact package. The contribution is a reproducible pilot/technical note and a negative intervention result. It is not an established new safe-design algorithm or an accepted paper.
 
-## Initial gates
-1. Full-text audit of SS316L baseline and topology/transfer continuations; distinguish reported method, gap in reporting and proved error.
-2. Raw open-data retrieval, immutable checksums/license/provenance, field and runout audit, source/condition duplicates. No equivalence claim with the unavailable 518-row dataset.
-3. Choose a narrow hypothesis after data and closest-prior-work audit; write protocol before running outcome comparisons. Group outer tests by source publication; all preprocessing/calibration/thresholds training-only.
-4. Implement censored fatigue statistical baseline plus small ML comparison where useful. Validate likelihood/censoring, split integrity and preprocessing; run multiple seeds/group uncertainty and matched-acceptance ablations.
-5. Challenge results, record failures and limitations, code-generated scientific figures, English manuscript/supplement, Turkish explanation, one-page research brief/email draft/technical Q&A.
+No email, upload, publication, paid service or change to another project was performed.
 
-## Initial candidate (not yet preregistered)
-Can observable data support and uncertainty detect when a lower fatigue-life bound becomes dangerously optimistic in a new source/condition? Evaluate publication-level risk and selective-use rate without treating runouts as failures or claiming distribution-free guarantees under shift.
+## Main findings
 
-## Parallel work
-- primary_paper_audit: local baseline PDF and claims/source overlap.
-- followon_audit: full text topology and transfer extensions.
-- novelty_audit: closest prior work and focused contribution selection.
-- root: environment/data/protocol/code/experiments/integration. Repeated agent opinion is not independent scientific evidence.
+The combined support/instability rule failed the prespecified H2 criterion. At the matched 80% target, actual mean availability is 83.39% after integer rounding; all primary comparator intervals cross zero.
 
-## Machine receipt
-Apple M4, 16 GiB RAM, 10 CPUs, 52 GiB free at start. No existing research directory; created without modifying other projects. Existing processes inspected, none stopped. Prefer CPU small-data models with limited BLAS threads. No auxiliary LLM is justified for structured JSON.
+For the frozen rich-linear AFT, block-balanced empirical violation identification intervals are 28.97-30.77% for model q10, 14.50-15.40% for endpoint calibration and 0.197% for cohort-max calibration. The last costs 3.541 log10 decades relative to the model median and is sensitive to grouping/calibration partitions. These intervals describe censoring ambiguity, not sampling confidence or digitization uncertainty.
 
-## Current state
-Raw API metadata fetched; outcomes not analysed. Critical experiments not yet run.
+## Retained evidence
+
+- Official FatigueData-AM2022 v2 MAT and JSON, with MD5/SHA256 and CC BY 4.0 attribution. One hundred seeded coordinates match between formats.
+- Ordinary 316L L-PBF subset: 1,473 observations, 160 conditions, 46 DOIs. Primary: 1,126 observations, 120 conditions, 37 DOIs; 987 failures and 139 runouts.
+- Thirty near-curve candidate pairs screened. Three strong multi-DOI families yield 29 precautionary provenance blocks: families of four, five and two DOIs, plus 26 singletons. Specimen identity and physical independence remain unverified. Nineteen source-figure points were checked without a runout disagreement.
+- Original Centola data/code were not obtained; the article reports data available on request. Source DOI overlap is 16/17 in the broader subset and 12/17 in the primary cohort. This is not row identity or independent external data.
+- Local pre-fit protocol v1 and amendments v1.1-v1.3; before-aggregate target clarification v1.4; explicitly post-result numerical sensitivity v1.5. Git chronology is local, not a public registration authority.
+- Primary: 29 blocks x three seeds = 87 folds. Controls: DOI-only 111, random-row three, deduplication 87, naive censoring 87, weak-edge grouping 84, extended MLP 87 folds. Seed repeats are not independent experiments.
+- All primary Basquin, rich-linear and bootstrap fits converge. Primary MLP: 0/87 converge at the fixed 1,500 cap. Separate 12,000-cap numerical sensitivity: 87/87 converge, maximum 9,183 iterations. Neither establishes a general architecture or original-BNN ranking.
+- Sixteen synthetic tests pass. Independent arithmetic/split checks cover 87 folds, 30,402 prediction rows and 2,001 metric cells; numerical replay samples two named folds. This is not an external scientific replication.
+- All seven experiment configurations and three seeds were replayed from raw data. All 105,786 saved prediction rows and summary tables exactly match; maximum numerical difference is zero. Receipt: `results/full_reproduction_comparison.json`.
+
+## Entry points and commands
+
+Read README.md, the four PDFs in manuscript/, and outreach/technical_qa_tr.md. Exact data, source reports, decisions, seeds, splits, logs and results remain in their respective directories.
+
+`zsh run_all.sh` creates a fresh timestamped replay using pinned dependencies. Never resume mismatched checkpoints. `src.postprocess`, `src.make_figures`, `src.build_documents` and `src.independent_audit` regenerate integrated tables, figures, PDFs and checks.
+
+## Remaining scientific limits and future work
+
+Current evidence supports a bounded pilot and failed gate hypothesis. Stronger work needs source-family validation with specimen/batch IDs, original raw 518 and excluded 32 records, split/Owen-target code, source-aware survival baselines and a separate experimental campaign. New confirmatory claims require a new protocol and fresh/frozen data; existing test results must not guide an unlabelled new claim.
+
+This is not leave-laboratory-out evaluation. Original risk-volume/SWT/variational-layer/Owen calculations were not recreated. Follow-on indexed author full texts were inspected, but PDF download, visual checks and supplement access were incomplete. Wu full text was not obtained; Boruah is a preprint. All access limits appear in the literature reports.
+
+## Human next step
+
+Read the Turkish explanation and Q&A, then review the one-page brief and two selected figures. The email asks narrowly for source-family feedback and source-to-condition mapping. Signature [Name] and real background are intentionally left to the human. Explicit human authorization is required before sending. Do not send or publish automatically.

@@ -1,0 +1,37 @@
+{
+  "passed_integrity_checks": true,
+  "failure_count": 0,
+  "H2_strong_claim_passes": false,
+  "optimization": {
+    "fits": 957,
+    "not_converged": 87,
+    "sigma_at_bound": 0,
+    "by_model": {
+      "basquin": {
+        "fits": 87,
+        "not_converged": 0,
+        "max_iterations": 13,
+        "max_gradient": 4.183434953818565e-06
+      },
+      "linear": {
+        "fits": 87,
+        "not_converged": 0,
+        "max_iterations": 205,
+        "max_gradient": 8.773917795115114e-05
+      },
+      "linear_bootstrap": {
+        "fits": 696,
+        "not_converged": 0,
+        "max_iterations": 664,
+        "max_gradient": 0.00013801780605394981
+      },
+      "mlp": {
+        "fits": 87,
+        "not_converged": 87,
+        "max_iterations": 1500,
+        "max_gradient": 0.014680453200254073
+      }
+    }
+  },
+  "elapsed_seconds": 20.804975032806396
+}

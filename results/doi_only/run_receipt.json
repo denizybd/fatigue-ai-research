@@ -1,0 +1,21 @@
+{
+  "arguments": {
+    "input": "data/processed/primary_doi_only.csv",
+    "output": "results/doi_only",
+    "scheme": "source",
+    "seeds": "0,17,42",
+    "bootstraps": 8,
+    "limit_folds": null,
+    "models": "basquin,linear,mlp",
+    "naive_events": false
+  },
+  "data_sha256": "55180c53b940f8f69c14eebf58714d39db851f124e59ba7a527aa13cc8a236b6",
+  "groups": 37,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "duration_seconds": 262.08750891685486,
+  "completed_folds": 111
+}

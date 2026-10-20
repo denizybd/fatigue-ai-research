@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from matplotlib.ticker import LogLocator, NullFormatter
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
@@ -22,8 +23,10 @@ for ax,(a,b,title) in zip(axes,examples):
             ax.scatter(r.cycles_observed,r.stress_amplitude,s=44,marker=marker,
                 c=color,label=f'{ds}\n{r.doi.iloc[0]}')
     ax.set_xscale('log');ax.set_yscale('log');ax.set_title(title,fontsize=10)
+    ax.xaxis.set_major_locator(LogLocator(base=10,subs=(1,)))
+    ax.xaxis.set_minor_formatter(NullFormatter())
     ax.set_xlabel('Observed cycles');ax.set_ylabel('Stress amplitude (MPa)')
     ax.grid(alpha=.2);ax.legend(fontsize=6,loc='best')
 fig.suptitle('Near-coincident curves across publication DOIs\nScreening evidence; specimen identity is not proven',fontsize=12)
 fig.savefig(HERE/'duplicate_curve_examples.png',dpi=190)
-fig.savefig(HERE/'duplicate_curve_examples.pdf')
+fig.savefig(HERE/'duplicate_curve_examples.svg')

@@ -1,0 +1,21 @@
+{
+  "arguments": {
+    "input": "data/processed/primary.csv",
+    "output": "results/naive_censoring",
+    "scheme": "source",
+    "seeds": "0,17,42",
+    "bootstraps": 8,
+    "limit_folds": null,
+    "models": "linear",
+    "naive_events": true
+  },
+  "data_sha256": "24d668df78dfa084859f34e81ddc29a24136d50f0799d08b80346908011683ed",
+  "groups": 29,
+  "seeds": [
+    0,
+    17,
+    42
+  ],
+  "duration_seconds": 52.522071838378906,
+  "completed_folds": 87
+}

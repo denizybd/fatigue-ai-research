@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-20",
+  "scope": "pre-outcome code/schema audit; no real-data fits or model-outcome inspection by auditor",
+  "sha256": {
+    "src/features.py": "925bd2f9e86afc3a21fb109cc5127bb65901d056872092a16ff538fc049820c1",
+    "src/evaluation.py": "6e5874221951c5a31d28e518f1214e6f241a969faff71bb609272f4b7eff2760",
+    "src/run_experiment.py": "743731d3b9cc6c46fa6a14df7237f33ea235980509740d8ad04043af2e0bf678",
+    "src/summarize.py": "fbe6e26e3003e9d13c549e1e11b8fc09ad1e17574021b988cd3f7e5db0e7123b",
+    "src/prepare_data.py": "a5dd32b916f13dc8007553eeb5350118a9049866495ea8243fe301a000553b92",
+    "src/group_sources.py": "a799eba041322c3cdb8448e144a95d1b5bd7737dd0d38253291ae53db53bd241",
+    "src/models.py": "2e69f6549b8042e88fd9de7e9c30e35ce269e5999324427ccbfeec757d1f1715",
+    "tests/test_models.py": "424052bdbf593e277d69d74f82e10b437bb693f70c5a1cd81e6ae40b83ad33ce",
+    "protocols/v1_pre_outcome.md": "dfcfaa5d545eee00be15991c3feb207247380324c97446e106fc8a8c938e43e2",
+    "protocols/v1_1_prefit_integrity.md": "8640260b2d4c72a9a26878d42e8a276fba360f9e05cf1b6d4cee4807c7b29adc",
+    "protocols/v1_2_prefit_claim_rule.md": "bf9c5f3096caccb9a5f74a3912ca6413f079fb44db6a9298a9bdf6846e3a93dc",
+    "protocols/v1_3_prefit_provenance.md": "5fd06ff05052202a7a89c11e451388a8b77a09d081db375f8c6c3426b62b4d11",
+    "data/processed/primary.csv": "24d668df78dfa084859f34e81ddc29a24136d50f0799d08b80346908011683ed"
+  },
+  "synthetic_test_log": "logs/synthetic_models_tests.txt",
+  "synthetic_tests_passed": 11
+}

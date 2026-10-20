@@ -1,0 +1,1375 @@
+=== PDF PAGE 1 ===
+1 
+ 
+Developing Statistical Tools to Analyze Historical Stress-Controlled Fatigue Data 1 
+in Additively Manufactured Austenitic Stainless Steel  2 
+I.J. Wietecha-Reiman a, S.M. Sabol b, T.A. Palmer a, c, * 3 
+a Department of Material Science and Engineering, Pennsylvania State University, University Park, PA, 16802, 4 
+USA 5 
+b Naval Nuclear Laboratory, West Mifflin, PA, 15122, USA 6 
+c Department of Engineering Science and Mechanics, Pennsylvania State University, University Park, PA, 16802, 7 
+USA 8 
+*Corresponding author. E-mail: tap103@psu.edu (T.A. Palmer) 9 
+ 10 
+Abstract  11 
+The development of robust fatigue property data set s for additively manufactured 316L austenitic stain less 12 
+steels is hindered by the small sample sizes, incon sistent reporting of material properties and proces sing conditions, 13 
+and differences in testing procedures for current s ources of testing data.  By applying standardizatio n and 14 
+categorization protocols to account for these short comings, historical data sets were aggregated into a single large 15 
+data set and analyzed in greater detail, providing new levels of insight into the stress-controlled fa tigue behavior of 16 
+additively manufactured materials.  Using this sing le aggregated data set, scatter was quantified usin g an eigenvalue 17 
+analysis, and a multi-variable statistical model fo r predicting the mean fatigue life was developed.  Interactions 18 
+between variables and the sensitivity to different loading conditions were then identified, with the s catter in the data 19 
+being attributed to differences in testing and post -processing condition such as surface condition and  heat treatment, 20 
+and the model was used to identify the role that ea ch variable plays in determining fatigue life.  An analysis of the 21 
+fatigue responses across the aggregated data set us ing clustering algorithms allowed two distinct tren ds to be 22 
+identified and attributed to the differing roles of  microstructure and porosity on the resulting fatig ue lives across 23 
+different equivalent stress amplitude ranges.   24 
+ 25 
+Keywords 26 
+austenitic stainless steel, additive manufacturing, statistics, fatigue, porosity 27 
+Abbreviations (in order of appearance) 28 
+ Stress amplitude [MPa] 
+Nf Fatigue cycles to failure (fatigue life) 
+  Mean stress [MPa] 
+R Load ratio between minimum and maximum stress 
+  Equivalent fully-reversed axial stress amplitude [MPa] 
+UTS Ultimate tensile strength [MPa] 
+r Radius from the specimen center during discretization [mm] 
+ Radius of the fatigue specimen at the center of the gauge region [mm] 
+E Elastic modulus [GPa] 
+	
+
+
+ Arithmetic mean of fatigue life 
+ y-intercept of a simple linear regression model 
+ regressed slope of a simple linear regression model for stress amplitude 
+ ,   of a data point in a simple linear regression model 
+ ,    Residual error 
+ρ Blocking term for original data source 
+ Fixed effect of the i th  level of surface condition 
+ Fixed effect of the j th  level of heat treatment 
+ Fixed effect of the k th  level of build angle 
+ Fixed effect of the l th  level of load ratio 
+ Fixed effect of the m th  level of loading configuration 
+   Example of two-way interaction terms 
+   Example of three-way interaction terms 
+ Regressed slope for UTS 
+ Regressed slope for elongation to failure 
+© 2024 published by Elsevier. This manuscript is made available under the Elsevier user license
+https://www.elsevier.com/open-access/userlicense/1.0/
+Version of Record: https://www.sciencedirect.com/science/article/pii/S0921509324005112
+Manuscript_e1488fa2c01376b12da5eb2fef5e0370
+
+=== PDF PAGE 2 ===
+2 
+ 
+EL Elongation to failure 
+ Regressed slope for the interaction between UTS and EL 
+c Y-intercept for Basquin’s equation, fatigue strength coefficient 
+b Slope for Basquin’s equation, fatigue strength exponent, fatigue response 
+Z() z-score standardized value 
+ Eigenvalue 
+I Identity matrix 
+95% CI 95% Confidence Interval 
+95% PI 95% Prediction Interval 
+H Hat matrix 
+X Model matrix 
+H0 Null hypothesis 
+Ha Alternative hypothesis 
+βs Categorical or continuous variable considered for hypothesis testing 
+ 29 
+1.  Introduction 30 
+Approximately 90 % of metallic component and struct ural failures are attributed to fatigue mechanisms [1], but 31 
+the scatter inherent in fatigue testing data introd uces significant challenges for the identification of suitable design 32 
+criteria.  In cast and wrought materials, extensive  datasets [2] have been produced under highly contr olled material, 33 
+loading, and environmental conditions [3] to develo p appropriate design standards for fatigue critical  applications.  34 
+Compositional variations driven by heat-to-heat var iability or small changes in processing conditions can also 35 
+contribute to scatter and are typically mitigated t hrough highly controlled post process heat treatmen ts [4] or 36 
+thermomechanical processing [5].   37 
+While fracture-mechanics approaches [6] are availab le for identifying design allowable values for fati gue 38 
+critical applications, their wide-spread use is lim ited by a dearth of high-fidelity material property  data.  In their 39 
+place, design standards for pressure vessels [7], b ridge components [8], and aerospace applications [9 ] employ 40 
+penalties, safety factors, or fatigue-strength redu ction factors to the applied strains or stresses [2 ].  Fatigue design 41 
+curves [10] are then constructed to account for the  effects of scatter in fatigue life originating fro m differences in 42 
+surface roughness [11], tensile residual stresses [ 6], and, recently, for processing routes, such as a dditive 43 
+manufacturing (AM) [12]. 44 
+Development of these safety factors for AM material s, however, is limited, in part, by the impact of t he 45 
+complex processing routes inherent in the different  AM processes.  For example, laser-based powder bed  fusion (L-46 
+PBF) AM processes [13,14] are characterized by rapi d solidification conditions that produce microstruc tures 47 
+dominated by dendritic or cellular structures [15] and complex dislocation substructures [16].  These materials are 48 
+also susceptible to the formation of porosity that primarily originates from lack of fusion, gas poros ity, and keyhole 49 
+
+=== PDF PAGE 3 ===
+3 
+ 
+collapse mechanisms [17].  Under static loading con ditions, these pores have little impact on the yiel d and tensile 50 
+strengths, but increased variability in the elongation to failure has been observed [20,21].  51 
+Variations in microstructure, dislocation substruct ure, and processing porosity in AM processed austen itic 52 
+stainless steels have more prominent effects on the  fatigue behavior than that observed in cast or wro ught materials 53 
+[19].  For example, compilations of fatigue testing  results obtained from both wrought [20–28] and AM processed 54 
+[29–43] 316L austenitic stainless steel are shown i n Figure 1(a&b), respectively.  Fatigue design curv es are included 55 
+on each plot to highlight the different levels of scatter and were calculated using the following relationship [44]: 56 
+ = 58020 
+	
+.&' + 299.92                                                          (1) 57 
+where σa is the stress amplitude and Nf is the cycles to failure.  Safety factors which acc ount for how inherent scatter 58 
+and surface roughness impact the allowable fatigue design limits are also applied to these curves [44] .  The inherent 59 
+scatter in the stress-controlled fatigue testing da ta was considered by applying a safety factor with a value of 2, and 60 
+surface roughness accounted for by applying a safet y factor of 5. 61 
+
+=== PDF PAGE 4 ===
+4 
+ 
+ 62 
+Figure 1(a&b): A compilation of stress-controlled fatigue testing data [29–43] for (a) wrought ( R = -1) and (b) laser-63 
+powder bed fusion material. Design safety curves are overlaid on each plot with different safety factors to capture 64 
+the role of inherent scatter and surface finish.   65 
+The stress-controlled fatigue data for wrought mate rials in Figure 1(a) display low levels of scatter and are 66 
+clustered around the design curve with a safety fac tor of 2.  On the other hand, stress-controlled fat igue data for AM 67 
+fabricated materials in Figure 1(b) display no disc ernible trends even when the load ratios ( R) of 0.1 and -1 are 68 
+accounted for with respect to different applied mea n stress levels experienced under the same loading configuration 69 
+[11].  Much of the variability in the fatigue perfo rmance of the AM fabricated materials can be traced , in part, to 70 
+differences in material composition, post-processin g, and surface conditions across the individual dat a sets [45].  71 
+Changes in testing procedures also contribute to th e observed variability for both wrought and AM fabr icated 72 
+materials, with the test specimens used in axial an d rotating bending loading configurations experienc ing different 73 
+stress states.   74 
+
+
+=== PDF PAGE 5 ===
+5 
+ 
+The variability in the available stress-controlled fatigue data for AM processed 316L austenitic stain less steel 75 
+has been exacerbated by the small sample sizes and little replication within individual data sets and limited the 76 
+ability to determine how fatigue properties are imp acted by AM processes.  While interest is growing i n being able 77 
+to compile such historical data [46], strategies to  manipulate and model the data are currently lackin g.  When the 78 
+data sets were aggregated, a relatively large amoun t of data became available, but analysis of this la rger data set in a 79 
+unified manner required a more in-depth statistical  analysis.  In this analysis, categorization and st andardization 80 
+protocols were applied to individual data sets to a ccount for differences in testing procedures, mater ial properties, 81 
+and surface conditions.  After applying these stand ardization protocols, the data were aggregated, and  statistical 82 
+analysis tools were then used to identify sources o f scatter and interactions between different variab le categories that 83 
+contribute to fatigue life.  Clustering algorithms were then applied to the calculated fatigue respons es in the 84 
+available data, allowing trends originating from di fferences in the microstructure- and porosity-drive n mechanisms 85 
+for fatigue failure to be identified.   86 
+2. Data Analysis  87 
+2.1. Data Standardization and Categorization 88 
+A methodology was developed to compile, standardize , categorize, and analyze AM data available in the open 89 
+literature.  As a first step, available data were c ompiled from the archival literature into a single collection of more 90 
+than 600 stress-controlled fatigue testing data poi nts for both wrought [20–28] and L-PBF AM 316L aust enitic 91 
+stainless steels [29–43].  Since the stress-control led fatigue data were primarily presented in a grap hical form, 92 
+individual stress-fatigue life (S-N) plots were dig itized using WebPlotDigitizer 0F 
+1, and the corresponding stress 93 
+amplitudes and cycles to failure were extracted. 94 
+The amount of data compiled for the AM materials, t hough more comprehensive than any individual data s et, 95 
+was still relatively small, and much of the data wa s not easily aggregated due to differences in testi ng procedures.  96 
+As shown in Table 1, load ratios of -1 and 0.1 were  used in axial and rotating-bending fatigue loading  97 
+configurations.  In order to directly compare these  different conditions, each stress amplitude value was converted to 98 
+an equivalent fully reversed axial stress amplitude  (  ).  When R is -1, the value of   is the reported stress 99 
+maximum or stress amplitude.  At load ratios greate r than 0, the resulting positive mean stresses were  accounted for 100 
+by extracting   from the Gerber parabola [11]: 101 
+                                                           
+1 https://automeris.io/WebPlotDigitizer (Pacifica, CA) 
+
+=== PDF PAGE 6 ===
+6 
+ 
+ =
+*+
+,*-.+/ 012 ⁄ 4                                                                  (2) 102 
+where UTS  is the reported ultimate tensile strength and   is the mean stress, which was calculated using the  103 
+following relationship: 104 
+ =
+*+
+56                                                                            (3) 105 
+Since stress-controlled fatigue data for ductile me tals generally fall along the Gerber parabola [11] and other 106 
+approaches require more information than is general ly provided in historical literature [11,37], the u se of this 107 
+technique, along with the Goodman equation, could b e used to account for changes in load ratio in the development 108 
+of fatigue design curves [3].   109 
+A portion of the data used in the analysis was also  obtained in a rotating-bending configuration.  For  data 110 
+obtained in the rotating-bending configuration [29, 30,42], the values for   were correlated with differences in the 111 
+stress distribution [47]: 112 
+ =
+*
+ 7
+,89 9:; <
+=
+,89 9:; <
+4>                                                                     (4) 113 
+where σ is the rotating-bending stress, r is the radius from the specimen center at the point  where the applied stress 114 
+was equivalent to the fatigue limit, and rd is the radius of the specimen.  The ratio between r and rd represents the 115 
+cross-sectional area of the sample that experiences  significant microplastic strain from structural or  microstructural 116 
+inhomogeneities during rotating-bending fatigue tes ting [47].  A procedure for calculating the value f or r is provided 117 
+in Appendix A [48] and was applied to three sets of  data with specimen diameters of 4.76 mm [30], 9 mm  [40], and 118 
+12.5 mm [29].  Even though the volume of material i s an important consideration in examining this mode  of fatigue 119 
+loading [49], the cross-section geometry and radius  were reported in only a limited number of data set s.  As a result, 120 
+they were not included in the data analysis procedure.  121 
+ After standardizing the equivalent stress amplitud es for different fatigue loading and testing condit ions, data 122 
+descriptors surveyed and sub-divided into material property, processing, and surface condition categor ies, as 123 
+summarized in Table 1.  Through this categorization  process, additional information was extracted from  the 124 
+individual data sets and used in the follow-on stat istical analysis.  The material property category i ncluded the yield 125 
+strength, UTS , and elongation to failure ( EL ) for the materials tested in each data set [50].  Since the yield strength 126 
+and related fractography information were rarely re ported, neither parameter was considered in the sta tistical 127 
+analyses.  When the UTS  and EL  values were not reported, these data sets were als o excluded, resulting in a total of 128 
+
+=== PDF PAGE 7 ===
+7 
+ 
+374 data points being used in the statistical analy sis of the L-PBF processed 316L austenitic stainles s steels.  Other 129 
+material properties, such as residual stress, were too infrequently reported as to be considered in th is iteration of the 130 
+analysis. 131 
+In the processing conditions category, parameters, such as laser power, scan velocity, layer thickness , and hatch 132 
+spacing, can be used to capture the conditions lead ing to different microstructural and porosity featu res.  Porosity 133 
+levels [32] have been measured using Archimedes den sity measurement [35], optical microscopy [40], or x-ray 134 
+computed tomography [31,51] techniques.  However, p rocessing parameters and porosity levels were not 135 
+consistently reported and were not considered in th e analysis to avoid discarding data with unreported  values.  Post-136 
+process heat treatments were also included and were  categorized by both function and temperature.  Hea t treatments 137 
+at temperatures below 650 ° C, which produced no mi crostructural changes, were used for stress relief [4], as 138 
+reported in the original data sources, and higher t emperature heat treatments that did produce microst ructural 139 
+changes were used for annealing [52].  Hot isostati c pressing (HIP), which involves the use of both hi gh 140 
+temperatures and pressure, was used primarily to he al process related porosity and to produce more uni form 141 
+microstructures [17]. 142 
+
+=== PDF PAGE 8 ===
+8 
+ 
+Table 1: Description of stress-controlled fatigue datasets aggregated from literature using categorized variables. 143 
+  Material 
+Properties Processing Conditions Surface 
+Conditions 
+Testing 
+Parameters 
+Source 
+# of specimens  
+UTS  (MPa) + 
+EL  (%) + 
+Power (W) + 
+Velocity + 
+(mm/s) 
+Thick (µm) + 
+Hatch (µm) + 
+Porosity 
+[vol.%] + 
+Heat 
+Treatment 
+Surface 
+Build Angle 
+Ra  (µm) + 
+R 
+Frequency + 
+(Hz)  
+Loading 
+[39] , [51]  
+10  678  39  
+250 900 30 
+0.06 
+0.01 
+0.04 
+None M 
+0 
+ -1 2 A 8 662 36 45 
+10 600 41 90 
+[38]  
+10  570  48  
+60  
+470C -5h  N 
+N 
+M 
+M 
+90 
+7.2  
+-1 60 A 10 573 46 None 7.2 
+6 573  46  None  0.5  
+8 570 48 470C-5h 0.5 
+[40]  12 621 20 90 1000 30 150 2.3 500C-1h M 90  -1 50 R 
+[41]  
+21 600 55 
+30 
+None 
+M 90 
+ 
+-1 40 A 21  617  54  650C -2h   
+12 586 64 1150C-100MPa -4h   
+[29]  
+16 680 30 
+195 750 40 
+388C-4h 
+M 
+45 
+1.0 -1 20 R 10  717  28  388C -4h  0 
+5 680 30 1190C-150MPa -4h 45 
+[30]  
+13  
+200 1000 
+50 
+110  
+ 1038C-1h 
+M 
+N 
+M 
+N 
+90 
+ 
+-1 
+50 R 7  
+15 30  5 A 16   
+[31]  13 437 58 320 2400 50 1000 5.4 None N 90 10.1 0.1 1 0 A 
+[32]  
+5 
+760 30 103 425 30 130  
+ None 
+N 
+90 
+10.0 
+0.4 
+0.1 
+0.1 50 A 
+12 M 
+14 M 
+[33]  
+11  
+275 760 50 120  
+ None 
+M 
+N 
+M 
+90 
+1.7 
+13.3 
+1.1 
+-1 100 A 
+7 
+11  
+[34]  12 565 41 113 600 20 80  
+ None M 90  0.1 30 A 
+4 -1 
+[35–
+37,53]**  
+7 669 51 10 0.1 982C-25m 
+M 0  0.1 5 A 
+7 726 42 10 0.1 None 
+17  723  46  20  1.15  None  
+9 695 34 30 6.66 None 
+6 662  56  10  0.1  1093C -25m  
+[54]  
+5 626 54 1190C-150MPa -4h 
+M 
+0  0.1 
+5 A 
+1 626 54 1190C-150MPa -4h 0  -1 
+10  582  67  1190C -150MPa -4h  90   0.1  
+8 723 43 None 0  0.1 
+5 620  68  None  90   0.1  
+* M = machined, N = net-shape. A = axial, R = rotating-bending. + = continuous variable. No superscript = 144 
+categorical variable. 145 
+**Due to frequent data reuse between these papers, duplicate values were discounted. 146 
+ 147 
+The surface roughness of the specimens was another important factor and considered in the final catego ry.  In 148 
+the net-shape or as-deposited condition, the specim en surface can display significant surface roughnes s originating 149 
+from complex melt-pool behavior and interactions wi th surrounding powder [55].  Other processing poros ity may 150 
+also be present in sub-surface regions and not visi ble at the surface [45].  After machining, most of the surface 151 
+
+=== PDF PAGE 9 ===
+9 
+ 
+roughness and sub-surface porosity can be removed, and an additional polishing step can be applied to further 152 
+decrease the height of surface asperities [56].  Even though the surface condition can be quantified u sing metrics like 153 
+the arithmetic mean surface roughness ( Ra ), it is typically only described in broad qualitat ive terms (machined or 154 
+net-shape).  Orientation of the specimen during AM processing can also impact surface condition [57].  Common 155 
+build angles included 0 °, corresponding to a horiz ontal or transverse sample orientation, 45 °, and 9 0 °, which is 156 
+placed in a vertical or longitudinal orientation.  157 
+2.2. Statistical Analysis in Stress-Controlled Fatigue Data 158 
+ A series of statistical analyses were performed to  quantify the scatter in the stress-controlled fati gue data, to 159 
+assess contributions to fatigue life from the varia bles listed in Table 1 and to identify deeper trend s in the aggregated 160 
+data. The impact of each variable on the mean fatig ue life was assessed using a general linear model a s shown 161 
+below: 162 
+?@A  B  = μ + D +  ,+ EF − F
+H + EF − F
+H + EF − F
+HEF − F
+H +   +163 
+ +  +  +  +   + ⋯ +                                  (5) 164 
+where  µ  is the y-intercept of the model and ρ is the blocking term that accounts for nuisance va riables.  By 165 
+incorporating the publication source as a blocking term, build-to-build, machine-to-machine, and lab-t o-lab 166 
+variability was addressed, reducing the overall err or, and improving model precision.  All calculation s were 167 
+performed using the R programming language 1F 
+2, and the functions utilized for this analysis are described in detail in 168 
+Appendix B. 169 
+The terms in Equation (5) captured each data catego ry defined in Table 1, where  is the fixed effect of the i th  170 
+level of surface condition,  is the fixed effect of the j th  level of heat treatment,  is the fixed effect of the k th  level 171 
+of build angle,  is the l th  level of load ratio, and  is the fixed effect of the m th  level of loading configuration.  All 172 
+terms with the form    address potential two-way interactions between the  main effects.  Continuous variables, 173 
+which did not require categorization, are also incl uded in the model, where  represents the effect of stress 174 
+amplitude,  and  capture the effect of the UTS  and EL , respectively, and  considers the interaction between 175 
+UTS  and EL .  Additional details on the variable selection and  model diagnostic procedures are provided in Append ix 176 
+B. 177 
+                                                           
+2 The R Foundation (https://www.r-project.org/foundation/) 
+
+=== PDF PAGE 10 ===
+10 
+ 
+Changes in the dominant strengthening mechanisms [1 1] can be correlated with microstructural features and 178 
+porosity levels [58–60] through the measurement of the fatigue response, which is defined as the slope  of the S-N 179 
+curve.  Values for the fatigue response from each d ata set were extracted from S-N curves using a line arized form of 180 
+Basquin’s equation [11]: 181 
+log   = log  M + N log  2	                                                        (6) 182 
+where b is the slope of the S-N curve, or fatigue response, and c is the intercept with the y-axis. 183 
+Clustering algorithms were then applied to the aggr egated fatigue response data to identify underlying  184 
+mechanisms driving similar behavior across differen t data sets.  As a first step, an agglomerative hie rarchical 185 
+clustering technique was implemented in the R progr amming language 2F 
+3, and specific commands are listed in 186 
+Appendix C.  In this technique, pairs of fatigue re sponse coefficients were compared using a distance matrix 187 
+obtained by calculating the Euclidean distance betw een pairwise sets of fatigue response coefficients to establish 188 
+similarity.  Based on these similarities, stress-co ntrolled fatigue data sets were progressively clust ered into fewer 189 
+groups until all points were contained in a single cluster.  The cut-off point was determined using Wa rd’s method 190 
+[61] to define the level of dissimilarity and assign final clusters. 191 
+3. Results and Discussion 192 
+3.1. Modeling Scatter in Stress-Controlled Fatigue Data 193 
+ Before the aggregated stress-controlled fatigue da ta were analyzed, the raw data highlighted in Figur e 1(b) were 194 
+standardized to account for differences in testing procedures and compiled.  As shown in Figure 2(a), the 195 
+standardization of the data alone did little to cha nge the scatter in the raw data but allowed the sca tter to be 196 
+quantified.  However, Figure 2(b&c) show that equiv alent stress-amplitude data are two orders of magni tude greater 197 
+than log-transformed fatigue life data and will bia s calculation of scatter based on covariance.  The initial step in the 198 
+quantification of the scatter, therefore, involved the conversion of the existing data into a standard  normalized 199 
+distribution using a z-score standardization proced ure, in which the column vectors   and 	 were standardized 200 
+using the following relationships: 201 
+OE,H =
+*+.,P,*+. 
+
+
+
+
+Q∑ 8S+.,PTS+. 
+
+
+
+
+
+<
+4/
+PUV
+/TV
+         (7) 202 
+                                                           
+3 The R Foundation (https://www.r-project.org/foundation/) 
+
+=== PDF PAGE 11 ===
+11 
+ 
+OE	,H =
+WX,P,WX
+
+
+
+Q∑ 8YX,PTYX
+
+
+
+
+<
+4/
+PUV
+/TV
+         (8) 203 
+where the subscript  i indicates that standardization was applied to each  data point and n represents the number of 204 
+data points.  Values of   and 	 were transformed using z-score standardization and  display similar normal 205 
+distributions, represented in Figure 2(d).  Confirm ation of the standardized distribution of values is  provided in 206 
+Figure 2(e). 207 
+After the completion of the Z-score standardization , the standardized values for   and 	 were similar in 208 
+magnitude, indicating that both values contribute e qually to the scatter. The level of scatter could t hen be defined by 209 
+calculating the variance-covariance matrix of the data using the relationship shown below [62]: 210 
+Z*+. ,WX = [
+\ ]E,− \^ 
+
+
+
+_HE,− \^ 
+
+
+
+_H
+1
+` \aE ,− \^ 
+
+
+
+_HE	,− \a	,bHb
+\aE,− \^ 
+
+
+
+_HE	,− \a	,bHb \ ]E 	,− \a	,bHE	,− \a	,bH
+1
+`
+c   (9) 211 
+where E denotes the expected value of the argument.   A line corresponding to the extracted covariance between   212 
+and 	, or the off-diagonal terms of Equation (9), is ove rlaid on the data in Figure 2(b).  An eigenvector a ssociated 213 
+with this line and the corresponding standardized d ata points was then constructed, with the correspon ding 214 
+eigenvalue, λ, used to quantify the scatter in the stress-controlled fatigue data using the following relationship:   215 
+det 8Z*+. ,WX − g< = 0         (10) 216 
+where I is the identity matrix [63].  When calculating the  eigenvalue for each category, the aggregated data set was 217 
+separated into individual subsets based on the variable being analyzed. 218 
+The calculated eigenvalues are compiled in Table 2,  with lower eigenvalues corresponding to lower leve ls of 219 
+scatter.  For the various categories in the Testing  Parameters group, it is shown that stress-controll ed fatigue data 220 
+produced with a load ratio of -1 and loading under rotating-bending conditions exhibit lower levels of  scatter in 221 
+fatigue life.  This lower level of scatter for the rotating-bending fatigue tests can be attributed to  the higher surface 222 
+stresses, which favor near-surface fatigue crack in itiation and lower stresses during crack propagatio n [45], thus 223 
+leading to consistently lower fatigue lives.  224 
+
+=== PDF PAGE 12 ===
+12 
+ 
+ 225 
+ 226 
+ 227 
+Figure 2(a-e): Plots showing (a) categorized stress-controlled fatigue data that has undergone standardization for 228 
+testing procedures with distributions of (b) fatigue life and (c) equivalent stress amplitude data. (b) By fitting a line 229 
+across the data, a fit that optimizes the distance between the z-score standardized points can be obtained.  This 230 
+distance is designated by the blue lines.  (e) Data are now standardized to the same scale and are suitable for 231 
+covariance calculation. 232 
+ 233 
+
+
+=== PDF PAGE 13 ===
+13 
+ 
+Table 2: Summary of scatter measurements in the stress-controlled fatigue results for the categorical variables of 234 
+interest. 235 
+Group Variable Eigenvalue 
+Testing 
+Parameters 
+Load ratio   
+ 
+-1 1.580 
+0.1 1.719 
+Loading   
+ 
+Axial 1.630 
+Rotating 1.431 
+Surface 
+Conditions 
+Surface Condition   
+ Net-shape 1.735 
+Machined 1.582 
+Build angle   
+ 
+0° 1.706 
+45° 1.415 
+90° 1.610 
+Processing 
+Conditions 
+Heat treatment   
+ 
+No treatment 1.647 
+Stress relief 1.528 
+Annealing 1.488 
+HIP 1.242 
+Fatigue 
+Response 
+Group 
+Shallow S-N curve 1.566 
+Steep S-N curve 1.706 
+    *Low scatter magnitude due to small amount of d ata points contributed. 236 
+ 237 
+When examining the scatter due to the changes in su rface conditions, it appears that the net-shape spe cimens, 238 
+with Ra  ranging from tens to hundreds of micrometers [57],  display a higher eigenvalue and corresponding scat ter.  239 
+With the application of a machining operation to re move surface roughness and near-surface porosity, l ower 240 
+eigenvalues and decreased scatter are observed. Cha nges in the build angle for the individual specimen s leads to a 241 
+clear decrease in the eigenvalues when moving from a 0 ° to a 90 ° build angle, indicating decreased s catter when 242 
+the specimen orientation changed from parallel to p erpendicular to the build plate.  The 45 ° build an gle is 243 
+considered anomalous in this dataset as relatively few datapoints belong to this condition (Table 1).  This increased 244 
+level of scatter is driven, in part, by changes in the orientation of lack of fusion porosity formed along the build path.  245 
+In samples fabricated at a build angle of 0 °, lack  of fusion porosity forms along the major axis of t he specimen, 246 
+causing these pores to have a larger radius of curv ature along the loading axis and lowering the stres s concentration.  247 
+On the other hand, specimens fabricated at a 90 ° b uild angle form pores along the minor axis of the s pecimen, 248 
+decreasing the radius of curvature of pores along the loading axis and increasing the stress concentration [1].   249 
+
+=== PDF PAGE 14 ===
+14 
+ 
+ Post-process heat treatments performed across a ra nge of temperatures and pressures also affect the s catter in 250 
+different ways.  In the as-deposited condition prio r to any post-processing, the eigenvalues and scatt er are the 251 
+highest.  The addition of post-process heat treatme nts produces a gradual decrease in the eigenvalues.   Stress relief 252 
+heat treatments ( Δeigenvalue  = 0.119) have a minimal effect on decreasing scatt er, and the high temperature 253 
+annealing heat treatments (Δeigenvalue  = 0.040) provide only a marginal improvement.  HIP  post-processing, which 254 
+drives the formation of a more uniform microstructu re and the healing of processing porosity, on the o ther hand, led 255 
+to a practically significant decrease ( Δeigenvalue  = 0.246) in the eigenvalue and a corresponding decrease in scatter.   256 
+3.2. Direct Comparisons of Categorized Fatigue Life 257 
+ While the quantification of scatter in the stress- controlled fatigue data provided insight into how d ifferent 258 
+parameters affect repeatability, additional analysi s is needed to determine any impact on fatigue life  across the 259 
+aggregated data sets.  Direct comparisons [64], whi ch do not portray isolated effects, between the exp erimental 260 
+fatigue lives were then completed for each categori cal variable to provide a bulk comparison of data.  The mean 261 
+fatigue life ( 	
+
+
+) for each data set was then calculated for stress amplitude ranges between (70 to 550) MPa using the 262 
+following relationship [65]: 263 
+	
+
+
+ =
+
+ ∑ log  2	,
+
+h
+                                                                      (11) 264 
+ Values of 	
+
+
+ can now be calculated for the primary categories i dentified in Table 1.  Changes in the load ratio 265 
+and loading configuration have a minimal impact on the mean fatigue lives of the standardized data set  as shown in 266 
+Figure 3(a) and Figure 3(b), respectively, meeting the expectation of the standardization procedures.  Similarities in 267 
+the mean fatigue lives show that the influence of t esting procedures can be effectively addressed thro ugh the initial 268 
+standardization process.  The effects of surface co ndition, defined as either net-shape or machined, a re captured 269 
+across these same stress amplitude ranges in Figure  3(c).  It is evident that the mean fatigue life of  machined 270 
+specimens is greater than that of the net-shape spe cimens, which is in line with the expected improvem ent in fatigue 271 
+life with machined surface conditions.  The increas ing tendency for machined specimens to experience g reater mean 272 
+fatigue lives at higher stress amplitudes is also c onsistent with the transition from crack propagatio n to initiation 273 
+dominated fatigue lives with increases in applied s tresses [66].  A closer examination of the role of build angle in 274 
+Figure 3(d) showed that no clear trends emerge in the fatigue life measurements. 275 
+
+=== PDF PAGE 15 ===
+15 
+ 
+ 276 
+Figure 3(a-e):  Plots showing the direct comparisons of fatigue life across a range of stress amplitudes for the (a) 277 
+load ratio, (b) loading configuration, (c) surface condition, (d) build angle, and (e) heat treatment categories.  The 278 
+overlaid bars represent one standard error of the mean fatigue life. 279 
+ 280 
+
+
+=== PDF PAGE 16 ===
+16 
+ 
+The effects of changes in heat treatment conditions  are captured in Figure 3(e).  No clear trends are evident in 281 
+the mean fatigue life with different heat treatment  conditions, particularly at the higher stress ampl itudes.  On the 282 
+other hand, there are some unexpected results at lo w stress amplitude levels, particularly between (70 and 200) MPa.  283 
+It appears that the application of HIP post process ing produced mean fatigue lives equivalent to those  observed in 284 
+as-deposited material.  This behavior is not consis tent with the improvements in fatigue life observed  with the 285 
+application of HIP post-processing [67–70]. 286 
+3.3. Statistical Modeling of Contributions to Fatigue Life 287 
+ Direct comparisons cannot account for the complex interactions between variables or provide an estima te of the 288 
+impact of unknown variables.  A more in-depth stati stical analysis is therefore needed to extract a co mprehensive 289 
+and quantitative understanding of the contributions  to fatigue life.  Interactions between categorical  variables can be 290 
+more fully interrogated using the general linear mo del defined in Equation (5) and comparing the predi cted and 291 
+experimental mean fatigue lives across the individu al data sets, as shown in Figure 4(a).  To help eva luate the 292 
+accuracy of the model, the 95% confidence interval (CI) and 95% prediction intervals (PI) were calcula ted using the 293 
+following relationships: 294 
+95%jk = 	
+
+
+ ± mn
+4,,5opq′s′s,q        (12) 295 
+95%tk = 	
+
+
+ ± mn
+4,,5opqusus,q + 1       (13) 296 
+where s is the estimated standard deviation obtained using  the mean squared error (MSE), s′s is the variance-297 
+covariance matrix of the model matrix, and x is the vector of each variable. 298 
+
+=== PDF PAGE 17 ===
+17 
+ 
+    299 
+Figure 4(a-d): (a) Plot comparing the experimental and model results for the aggregated stress-controlled data 300 
+overlaid with 95% predictive and confidence intervals.  (b) Leverage of individual data points on the model fit is 301 
+then compared to the standardized residual error to quantify the general accuracy of the model.  Additional 302 
+diagnostic tests used for verification of the statistical model were performed.  (c) A quantile-quantile plot highlights 303 
+minor deviations of standardized residual error at the tails of the error distribution, and a plot (d) of standardized 304 
+residual errors shows no strong patterns. 305 
+The 95% CI of 0.296 indicates that estimates for 	
+
+
+ will fall within this narrow and repeatable band 9 5% of the 306 
+time, and the 95% PI of 0.805 provides an estimate for the likelihood that new data will fall within t his range [71].  307 
+An additional evaluation of the accuracy of the mod el was performed by calculating the values for R 2adjusted  (0.645), 308 
+which penalizes model complexity, and R 2predicted  (0.573), which penalizes both model complexity and  degree of 309 
+collinearity.  These values indicate that between ( 64.5 and 57.3) % of the total variance is explained  by the model, 310 
+and the residual standard error after regression is  0.381 on 264 degrees of freedom.  Despite moderate  correlation 311 
+
+
+=== PDF PAGE 18 ===
+18 
+ 
+coefficient values, the model did capture the coeff icient estimate magnitudes as well as the trends in  fatigue lives 312 
+across a range of stress amplitudes.  As a general measure of the susceptibility to outliers of the mo del, the residual 313 
+error is compared to the influence of individual da ta points on the model by plotting data point lever age as a 314 
+function of residual error in Figure 4(b).  Leverage is calculated using the following relationship: 315 
+w = x x1 x,x1          (14) 316 
+where H is the hat matrix, X is the model matrix, and high leverage for a data point being defined as twice the mean 317 
+leverage value.  As shown in Figure 4(b), the vast majority of the data is clustered around a standard ized residual 318 
+error value of zero, with only two data points pote ntially falling in a region in which both high leve rage and high 319 
+error are defined.  Another 20 data points display standardized errors greater than 2 but only moderat e to low 320 
+leverage.  With so few outliers in this data set, t here is rather high confidence that the model coeff icient estimates 321 
+were not unduly biased. 322 
+Model validity was determined by evaluating a quant ile-quantile plot of Z-score standardized residual errors of 323 
+the model fit, which is shown in Figure 4(c).  It i s assumed that the residual errors of N f follow a normal distribution 324 
+with no discernible patterns, and deviations from t he predicted model fit indicate minor violations of  the normal 325 
+distribution, which was quantified by the Shapiro-W ilk normality test ( test statistic  = 0.979, p-value  = 0.003 < 0.05).  326 
+Although the test was statistically significant, in dicating violation of the normality assumption, the  data points that 327 
+deviate from the predicted model fit fall within th e tail-sensitive confidence bands [72], and do not practically affect 328 
+the model predictions.  Residual error was also com pared to the modeled values using the Bruesch-Pagan  constant 329 
+variance test ( test statistic  = 0.418, p-value  = 0.509 > 0.05) in Figure 4(d), and it was found t hat there are no strong 330 
+patterns in the errors.  With the results of the di agnostics supporting these assumptions, the statist ical model was 331 
+considered valid. 332 
+ The model was interrogated in greater detail to id entify the contributions of each categorized variab le using a 333 
+series of statistical tests that are summarized in Table 3.  T-tests and partial F-tests for significa nce were performed 334 
+on the coefficient estimates in the model, and the hypothesis statements were defined as: 335 
+yz ∶   | = 0   ;    y  ∶   | ≠ 0         (15) 336 
+yz ∶   | @p @m pABMm? @ mℎ @? A ??  @mℎ mp   ;    337 
+ y ∶   | pABMm? @p mℎ @? A ?? @mℎ m p    (16) 338 
+
+=== PDF PAGE 19 ===
+19 
+ 
+where H 0 is the null hypothesis statement, H a is the alternative hypothesis statement, and | is a given categorical or 339 
+continuous variable under consideration.  The T-tes t is used to determine whether the coefficient esti mate differs 340 
+from zero, while the partial F-test is used to dete rmine if the addition of the coefficient to the mod el contributes new 341 
+information.  Before investigating the individual c ategories, contributions of the blocking term (data  sources) and 342 
+the covariate (stress amplitude) were quantified as  a percentage of the summation of F-test statistic values.  The 343 
+blocking term accounts for approximately 7.8 % of t he variation of fatigue life when the stress amplit ude covariate 344 
+is ignored and could be attributed to build-to-buil d, machine-to-machine, or lab-to-lab variations.  S tress amplitude, 345 
+which is represented as a covariate, accounts for 85.6 % of the variation of fatigue life, as expected. 346 
+Testing parameters, such as the load ratio and load ing condition, were not significant ( p-value  >> 0.05) after 347 
+they were standardized in the dataset, and their co efficient estimates were negligible ( T-statistic  < 1.98).  The impact 348 
+of the material properties was then assessed.  Base d on the magnitudes of the individual F-statistics,  both UTS  and 349 
+EL  contributed new information to the model.  This ef fect is highlighted in Figure 5(a), in which the re sidual errors, 350 
+denoted by the lengths of the dashed lines, increas ed when the UTS  and EL  were excluded from the model.  An 351 
+interaction term between the UTS  and EL  can be visualized by comparing the estimates of th e coefficients for the 352 
+UTS  over a range of EL  values, as shown in Figure 5(b).  Up to an EL  value of approximately 60 %, a high UTS  353 
+value has a beneficial effect on the fatigue life, as shown by the positive coefficient estimates.  Wh en EL  values 354 
+exceed 60 %, further increases in UTS  produce negative coefficient estimates, resulting in a detrimental effect on 355 
+fatigue life. 356 
+
+=== PDF PAGE 20 ===
+20 
+ 
+Table 3: Summary of the estimates of variations in fatigue life obtained from the statistical model.  Estimates for the statistical model of variations in fatigue life.  357 
+Input Information Model Definition Statistical Test Output 
+Group  Variable  Equation 
+symbol 
+Coefficient 
+Estimate 
+Standard 
+Error 
+Sum of Squares/ 
+Degrees of freedom F-statistic  Effect size T-statistic  Significance  
+Blocking 
+Term  Source  D NA  NA  4.76 / 8 4.12  -- --  --  
+ Testing / 
+Covariate  
+Stress 
+amplitude 
+  -0.0075 0.0004 36.42 / 1 180.97  0.39 -17.77  yes  
+Testing 
+Parameters  
+Load ratio     0.00 / 1 0.00  0.00 
+-1  NA  NA   --  NA  NA  
+0.1   --  --   --  0.19  no  
+Loading    0.00 / 1 0.00 0.00   
+Axial   NA  NA   -- NA NA 
+Rotating   --  --   -- 0.02 no 
+Material 
+Properties  
+UTS   0.1051 0.0358 1.21 / 1 5.99  0.02 2.94  yes  
+EL   1.159 0.4030 1.96 / 1 9.72  0.03 2.88  yes  
+UTS : EL  -0.0018 0.0006 1.77 / 1 8.77 0.03 -2.89 yes 
+Surface 
+Conditions  
+Surface 
+condition 
+    3.81 / 1 18.94  0.06  
+Machined   NA  NA   --  NA  NA  
+Net-shape   -0.6880  0.1340   --  -5.15  yes  
+Build angle     5.23 / 2 12.98  0.08 
+0°   NA  NA   --  NA  NA  
+45°   --  0.7320   --  0.90  no  
+90 °  2.2900  0.8730   --  3.08  yes  
+Processing 
+Conditions  
+Heat 
+treatment 
+    2.49 / 3 4.12  0.04  
+Annealed   NA  NA   --  NA  NA  
+No treatment   -1.2100  0.5540   --  -2.18  yes  
+Stress relieved   -1.4800  0.5590   --  -2.50  yes  
+HIP   0.6210  0.3150   --  1.97  yes  
+ Residuals     56.35 / 348    
+ 358 
+
+=== PDF PAGE 21 ===
+21 
+ 
+   359 
+Figure 5(a&b): Plots showing (a) the partial fitting of the standardized data to extract model errors when mechanical 360 
+properties are excluded and (b) the change of coefficient estimate of UTS  when interacting with elongation to failure 361 
+with reported EL values shown as boxes. 362 
+For the surface condition, build angle, and heat tr eatment conditions, default values defined by a mac hined 363 
+surface at a 0 ° build angle in the annealed condit ion were used in the estimation of the correspondin g coefficients 364 
+(Table 3).  When considering surface condition, a n et-shape surface can decrease 	
+
+
+ by over half an order of 365 
+magnitude compared to a machined surface, despite a ccounting for much of the scatter of fatigue life d uring the 366 
+eigenvalue analysis.  Increasing the build angle to  90 ° was shown to increase 	
+
+
+ by two orders of magnitude, while 367 
+there was no statistically significant difference b etween build angles of 0 ° and 45 °, in part due to  the small sample 368 
+size of 45 ° specimens (Table 1).  While the additi on of a stress relief heat treatment had only a neg ligible impact on 369 
+	
+
+
+, annealing increased the  	
+
+
+ by over an order of magnitude, and the addition of  a HIP post-processing step 370 
+increased the 	
+
+
+ value by an additional half order of magnitude.  371 
+
+
+=== PDF PAGE 22 ===
+22 
+ 
+The F-test statistic represents the amount of new i nformation provided to the model.  When used in con junction 372 
+with the effect size, which conveys the magnitude o f the contribution, the variables with the biggest impact can be 373 
+identified.  Since the reported F-test statistics a nd effect sizes in Table 3 have a correlation coeff icient of 0.66, there 374 
+is merit in discussing both metrics, and sources of  variation in the fatigue data can then be identifi ed.  For example, 375 
+surface condition, defined as whether a specimen is  machined or not, has the largest F-statistic, foll owed by build 376 
+angle, mechanical properties, and finally heat trea tment.  Effect sizes for surface condition and buil d angle are 377 
+greater than 0.02 and less than 0.15 and can be cla ssified as moderate in magnitude.  Conversely, heat  treatment 378 
+provides the least amount of new information, given  its unexplored impact on the mechanical properties , such as the 379 
+UTS .  However, heat treatment has a greater effect siz e, and thus a greater practical significance, than mechanical 380 
+properties.  While heat treatment would contain som e information in common with mechanical properties,  it 381 
+implicitly carries assumptions regarding the presence of residual strain and processing porosity. 382 
+3.4. Clustering Analysis of the Fatigue Response 383 
+While analysis of the scatter in historical stress- controlled fatigue data and contributions to 	
+
+
+ can provide 384 
+crucial insights into the repeatability of fatigue testing, they do not directly provide insight into the underlying 385 
+mechanisms driving the fatigue properties.  Additio nal metrics can be obtained from the historical dat a to help 386 
+identify these mechanisms.  For example, the fatigu e response, which can be obtained from the slope of  each S-N 387 
+curve, was calculated for each data set using Basqu in’s equation (Equation (6)) and linearizing the re lationship 388 
+between b and c by applying a logarithmic transform ation to c.  Fatigue response data obtained using this techni que 389 
+are plotted in Figure 6(a) and display a generally linear trend across all data sets.  390 
+A hierarchical clustering approach was then used to  identify any underlying trends or clustering not c learly 391 
+visible in the data and to determine the optimal nu mber of clusters.  In this procedure, the gap stati stic (Gap( k)) was 392 
+calculated for each possible number of clusters wit h a total of up to seven clusters ( k) tested, as shown in the 393 
+relationship below [73]: 394 
+  = \ 
+∗log  − log         (17) 395 
+where \
+∗ is the expected sum of the pairwise Euclidian dist ances between all points within a cluster and  is the 396 
+actual sum of pairwise Euclidian distances.  The op timal number of clusters was then selected based on  the largest 397 
+increase in Gap( k) as the number of clusters was tested in sequentia l order, as shown in Figure 6(b), to guard against 398 
+over-fitting the number of clusters.  Two clusters were found to be optimal.   399 
+
+=== PDF PAGE 23 ===
+23 
+ 
+ 400 
+Figure 6(a&b): (a) Plot showing the extraction of the fatigue response using the linearized relationship between 401 
+Basquin’s equation parameters. Clustering results are overlaid, and mean fatigue responses are provided. (b) The 402 
+optimal number of clusters is identified using the calculated gap statistic. 403 
+The two groups that emerged from this clustering ap proach are highlighted in Figure 6(a), with one gro up 404 
+displaying shallow S-N curves with mean b values of  -0.08 and a second group having a steep S-N curve and mean 405 
+b values of -0.24.  These two data clusters were the n associated with the categorized variables using a  Recursive 406 
+Partitioning and Regression Tree (RPART), which is summarized in Figure 7.  In this process, the class ification 407 
+accuracy of the entire data set is explored by cate gorizing each individual data set using the elongat ion to failure, 408 
+surface condition, and heat treatment conditions as  the primary criteria due to their relative contrib utions in the 409 
+statistical model.  Categorization continues until each node contains only steep or shallow S-N curve fatigue 410 
+responses [63].   411 
+
+
+=== PDF PAGE 24 ===
+24 
+ 
+ 412 
+Figure 7: Schematic diagram showing the decision tree generated using Recursive Partitioning and Regression Trees 413 
+(RPART) for fatigue response to classify steep (0) and shallow (1) S-N-curve slopes. Classification accuracy = 414 
+82.9 % 415 
+ A classification accuracy of 82.9 % is obtained th rough this process, and the factors affecting the c lusters are 416 
+identified.  In the case of the EL  values, they closely followed the trend establishe d by the interaction between UTS  417 
+and EL  shown in Figure 5(b), with steep S-N curve behavio r being correlated with the highest levels of ducti lity ( EL  418 
+= (55 to 60) %).  The steep S-N curve behavior clus ter was also dominated by specimens with ductility levels below 419 
+35 %, the presence of net-shape surfaces, and no he at treatment.  These conditions can be associated w ith the 420 
+presence of and sensitivity to processing porosity.   On the other hand, shallow S-N curves include dat a sets with 421 
+specimens that underwent machining and high tempera ture heat treatments, indicative of samples with fe w or no 422 
+remaining processing pores and moderate mechanical properties, allowing the fatigue response to be dic tated by 423 
+microstructural features.   424 
+ Despite the incomplete pedigree of historical data , the differentiation between microstructure- and p orosity-425 
+driven fatigue can be tested by comparison to unnot ched and notched wrought data, respectively.  The u se of fatigue 426 
+response values to differentiate between the primar y mechanisms driving the fatigue properties is firs t tested on 427 
+selected historical wrought data.  In Figure 8(a), fatigue property data for samples with grain sizes of (50 and 100) 428 
+µm are shown, and the results from a series of stati stical tests are summarized in Table 4.  These two data sets 429 
+
+
+=== PDF PAGE 25 ===
+25 
+ 
+produce distinct bands of data, with the finer grai n sizes displaying higher equivalent stress amplitu des across the 430 
+range of cycles to failure, which is consistent wit h the expected behavior in wrought materials.  Usin g a T-test to 431 
+compare the slopes of these two bands, it is determ ined, as shown in  Table 4, that the slopes are not  significantly 432 
+different and that the finer grain size has a negli gible impact on fatigue response, or the slope of t he SN-curve.  With 433 
+the addition of a notch on material with a 27 µm gr ain size, the stress-controlled fatigue data, which  are highlighted 434 
+in Figure 8(b), display a much steeper slope than t he S-N curves for the unnotched fatigue specimens s hown in 435 
+Figure 8(a).  Incorporation of a stress-concentrati ng feature such as a notch leads to steeper S-N cur ves, or a fatigue 436 
+response larger in magnitude. 437 
+
+=== PDF PAGE 26 ===
+26 
+ 
+   438 
+Figure 8(a-c): Aggregated S-N plots containing wrought data by (a) grain size and (b) notched and for (b) L-PBF 439 
+316L stress-controlled fatigue data that has been standardized and categorized.   440 
+ Expanding this analysis to the stress-controlled L -PBF AM fatigue data in Figure 8(c), two prominent bands 441 
+encompassing the data with shallow and steep slopes  are prominent.  The data encompassing the shallow slopes of 442 
+the stress-controlled fatigue data generally fall a long a band at equivalent stress amplitudes lying a bove the line 443 
+defined by a safety factor of 2 and displays a simi lar slope to the wrought data highlighted in Figure  8(a).  A T-test 444 
+to compare slopes of the L-PBF band with the shallo w wrought band shows that the fatigue responses are  similar, 445 
+
+
+=== PDF PAGE 27 ===
+27 
+ 
+providing evidence of microstructure-driven fatigue .  Data encompassing the steep slopes fall in a low er band in the 446 
+vicinity of the line defining a safety factor of 5,  behaving in a similar fashion to the notched wroug ht material 447 
+highlighted in Figure 8(b) but with an even steeper slope, providing evidence of porosity-driven fatigue. 448 
+Table 4:  Summary of statistical testing results for individual groups of stress-controlled fatigue data.  Confidence 449 
+level 99 %, α of 0.001. 450 
+ T-statistic Degrees of 
+freedom  p-value Significant? Outcome 
+Wrought, shallow 
+50 and 100 µm grain size 2.97 13 0.0104 No Similar 
+response 
+Wrought, steep (notched) 
+versus shallow (un-notched) 48.28 88 3.64x10 -65  Yes Different 
+response 
+L-PBF and wrought, shallow 1.76 100 0.085 No Similar 
+response 
+L-PBF, steep versus shallow 95.85 158 5.40x10 -142  Yes Different 
+response 
+L-PBF and wrought, steep 26.87 229 4.19x10 -72  Yes Different 
+response 
+ 451 
+ Within each of these bands of data, the level of s catter in the fatigue life also differed, with the data defined by 452 
+the shallow fatigue response displaying a lower eig envalue (Table 2) and level of scatter than the dat a within the 453 
+band defining the steep fatigue response.  These lo w levels of scatter in the data are consistent with  the negligible 454 
+presence of porosity, which may otherwise promote p remature failure during testing, and the governing role of 455 
+microstructures in defining the fatigue properties.   The increased scatter in this second band of data  can be attributed 456 
+to the presence of sub-surface porosity [31] and su rface-connected porosity in both as-deposited and H IP processed 457 
+materials [37].   458 
+4. Summary and Conclusions  459 
+Stress-controlled fatigue data for AM fabricated 31 6L austenitic stainless steels are characterized by  small 460 
+sample sizes and a wide range of testing conditions  which limit broader analysis of fatigue performanc e and the 461 
+development of robust and representative mechanical  properties.  Individual data sets were first stand ardized to 462 
+account for differences in testing configuration an d categorized to identify differences in material p roperties, 463 
+processing, and surface conditions and aggregated i nto a single large data set.  A statistical methodo logy was then 464 
+developed and tested to identify larger trends and discern mechanisms contributing to fatigue failure.    Sources of 465 
+scatter in the larger data set and interactions bet ween the different categorized variables and their respective effects 466 
+on the resulting fatigue lives were identified.  Ex panding this analysis to the use of clustering algo rithms to identify 467 
+
+=== PDF PAGE 28 ===
+28 
+ 
+trends in the fatigue response allowed for the iden tification of microstructural- and porosity-driven mechanisms that 468 
+controlled fatigue behavior.  Additional conclusions are provided below in more detail.   469 
+• A methodology for standardizing, categorizing, and clustering available fatigue data was developed to 470 
+allow for the statistical analysis of a single aggr egated data set obtained from available smaller 471 
+disconnected data sets.   472 
+• Scatter in the fatigue life data of AM fabricated 316L austenitic stainless steel was quantified by calculating 473 
+eigenvalues from the covariance between experimenta l fatigue life and the equivalent stress amplitude.   474 
+Based on these calculations, lower levels of scatte r in the data were identified and corresponded with  lower 475 
+load ratios, rotating-bending testing conditions, a nd machined surfaces. Scatter from the as-deposited  476 
+condition ( eigenvalue  = 1.647) was higher than under stress relief (1.52 8) and annealed (1.488) conditions 477 
+with the greatest reduction of scatter found after hot-isostatic pressing (1.242).  478 
+• A statistical model was formulated and used to quan tify contributions to fatigue life from the materia l 479 
+properties, surface condition, and post-process hea t treatments.  While the model only demonstrated a 480 
+moderate fit with an adjusted correlation coefficie nt ( R2adjusted ) of 0.645, it proved superior to direct 481 
+comparisons of the mean fatigue lives for these var iables and allowed the impact of each variable on 482 
+fatigue life to be quantified.  For example, mean f atigue life increased by about 1.5 orders of magnit ude 483 
+more than that observed in the as deposited and stress relieved conditions, with the application of HIP. 484 
+• Statistical clustering of the aggregated fatigue re sponse data allowed two groups of fatigue responses  485 
+characterized by shallow ( N
+ = -0.0830 ± 0.0292) and steep ( N
+ = -0.2390 ± 0.0542) slopes to be identified 486 
+with a classification accuracy of 82.9 %.  After ap plying a RPARTS analysis to the data sets, the shal low 487 
+fatigue response group was characterized by moderat e ductility, application of HIP, and possessing a 488 
+machined surface.  The steep fatigue response group  contained samples with differing levels of process ing 489 
+porosity that were not healed by post-process HIP treatments or machining of the as deposited surfaces.   490 
+• By comparing the shallow and steep fatigue response  groups for the AM fabricated materials with wrough t 491 
+data, similarities between microstructure and notch ed behavior in the wrought material were identified  492 
+(confidence level of 99 %, α = 0.001).  AM fabricated materials with a shallow fatigue response displayed 493 
+low levels of scatter ( eigenvalue  = 1.566) and similar fatigue lives to unnotched wr ought materials.  On the 494 
+
+=== PDF PAGE 29 ===
+29 
+ 
+other hand, AM materials with steep fatigue respons es ( eigenvalue  = 1.706) were similar to notched 495 
+wrought materials, highlighting the role of processing porosity in defining the fatigue life.  496 
+Acknowledgements  497 
+This research has been authorized by the Naval Nucl ear Laboratory, operated by Fluor Marine Propulsion  under 498 
+Contract No. DOE-89233018CNR000004 with the U.S. De partment of Energy. Any opinions, findings, and 499 
+conclusions or recommendations expressed in this pu blication are those of the author and do not necess arily reflect 500 
+the views of Fluor Marine Propulsion. 501 
+Data Availability Statement  502 
+All data curated in this work is available upon req uest and as a flat file at https://github.com/wiete cha-503 
+reiman/Fatigue-AM-316L. 504 
+References  505 
+[1] M. Meyers, K. Chawla, Mechanical Behavior of Ma terials, 2nd ed., Cambridge University Press, New Y ork, 506 
+NY, 2009.  507 
+[2] O.K. Chopra, W.J. Shack, A review of the effect s of coolant environments on the fatigue life of LW R 508 
+structural materials, Journal of Pressure Vessel Te chnology, Transactions of the ASME 131 (2009). 509 
+https://doi.org/10.1115/1.3027496. 510 
+[3] S. O, Chopra; W, Review of the margins for ASME  code fatigue design curve – effects of surface rou ghness 511 
+and material variability. Tech Rep NUREG/ CR6815, A NL-02/39. U.S. Nuclear Regulatory Commission, 512 
+2003. 513 
+[4] J. Beddoes, M.J. Bibby, Principles of Metal Man ufacturing Processes, Elsevier Butterworth-Heineman n, 514 
+Boston, MA, 2003. 515 
+[5] S. Mohd, M.S. Bhuiyan, D. Nie, Y. Otsuka, Y. Mu toh, Fatigue strength scatter characteristics of JI S 516 
+SUS630 stainless steel with duplex S-N curve, Int J  Fatigue 82 (2015) 371–378. 517 
+https://doi.org/10.1016/j.ijfatigue.2015.08.006. 518 
+[6] S. Suresh, Fatigue of Materials, 2nd ed., Cambr idge University Press, New York, NY, 2004. 519 
+[7] T. Métais, R. Briot, S. Courtin, M. Triay, F. B ridier, F. Billon, C. Gourdin, P. Duranton, J.-P. L uciani, An 520 
+Assessment of the Safety Factors and Uncertainties in the Fatigue Rules of the RCC-M Code Through the 521 
+Benchmark with the EN-13445-3 Standard, Proceesings  of the ASME 2017 Pressure Vessels and Piping 522 
+Conference (2017). 523 
+[8] J. Leander, B. Norlin, R. Karoumi, Reliability- Based Calibration of Fatigue Safety Factors for Exi sting Steel 524 
+Bridges, Journal of Bridge Engineering 20 (2015) 1–9. https://doi.org/10.1061/(asce)be.1943-5592.0000716. 525 
+[9] V. Monthlahuc, Reliability Approach Applied on Fatigue Safety Factors for Fleet Monitoring, in: IC AF 526 
+2019, LNME, Springer International Publishing, 2020 : pp. 245–255. https://doi.org/10.1007/978-3-030-527 
+21503-3. 528 
+[10] L.N. McCARTNEY, Can Safety Factors Be Reduced Safely When Designing Against Fatigue?, Fatigue 529 
+Fract Eng Mater Struct 2 (1979) 387–400. https://doi.org/10.1111/j.1460-2695.1979.tb01096.x. 530 
+[11] G.E. Dieter, Mechanical Metallurgy, 3rd ed., M cGraw-Hill, New York, NY, 1986. 531 
+[12] A. Dagkolu, I. Gokdag, O. Yilmaz, Design and a dditive manufacturing of a fatigue-critical aerospa ce part 532 
+using topology optimization and L-PBF process, Procedia Manuf 54 (2021) 238–243. 533 
+[13] J. Olsén, Z. Shen, L. Liu, A. Koptyug, L.E. Rä nnar, Micro- and macro-structural heterogeneities i n 316L 534 
+stainless steel prepared by electron-beam melting, Mater Charact 141 (2018) 1–7. 535 
+https://doi.org/10.1016/j.matchar.2018.04.026. 536 
+[14] A. Yadollahi, N. Shamsaei, S.M. Thompson, D.W.  Seely, Effects of process time interval and heat t reatment 537 
+on the mechanical and microstructural properties of  direct laser deposited 316L stainless steel, Mater ials 538 
+Science and Engineering A 644 (2015) 171–183. https://doi.org/10.1016/j.msea.2015.07.056. 539 
+
+=== PDF PAGE 30 ===
+30 
+ 
+[15] T. DebRoy, H.L. Wei, J.S. Zuback, T. Mukherjee , J.W. Elmer, J.O. Milewski, A.M. Beese, A. Wilson- Heid, 540 
+A. De, W. Zhang, Additive manufacturing of metallic  components – Process, structure and properties, Pr og 541 
+Mater Sci 92 (2018) 112–224. https://doi.org/10.1016/j.pmatsci.2017.10.001. 542 
+[16] T. Voisin, J.B. Forien, A. Perron, S. Aubry, N . Bertin, A. Samanta, A. Baker, Y.M. Wang, New insi ghts on 543 
+cellular structures strengthening mechanisms and th ermal stability of an austenitic stainless steel fa bricated 544 
+by laser powder-bed-fusion, Acta Mater 203 (2021). https://doi.org/10.1016/j.actamat.2020.11.018. 545 
+[17] M. Brennan, J.S. Keist, T.A. Palmer, Defects i n Metal Additive Manufacturing Processes, in: ASM 546 
+Handbook: Additive Manufacturing Processes, 2020: p p. 277–286. 547 
+https://doi.org/10.31399/asm.hb.v24.a0006557. 548 
+[18] N.P. Lavery, J. Cherry, S. Mehmood, H. Davies,  B. Girling, E. Sackett, S.G.R. Brown, J. Sienz, Ef fects of 549 
+hot isostatic pressing on the elastic modulus and t ensile properties of 316L parts made by powder bed laser 550 
+fusion, Materials Science and Engineering A 693 (20 17) 186–213. 551 
+https://doi.org/10.1016/j.msea.2017.03.100. 552 
+[19] P. Bajaj, A. Hariharan, A. Kini, P. Kürnsteine r, D. Raabe, E.A. Jägle, Steels in additive manufac turing: A 553 
+review of their microstructure and properties, Mate rials Science and Engineering A 772 (2020). 554 
+https://doi.org/10.1016/j.msea.2019.138633. 555 
+[20] J.P. Strizak, H. Tian, P.K. Liaw, L.K. Mansur,  Fatigue properties of type 316LN stainless steel i n air and 556 
+mercury, Journal of Nuclear Materials 343 (2005) 134–144. https://doi.org/10.1016/j.jnucmat.2005.03.019. 557 
+[21] N. Maruyama, D. Mori, S. Hiromoto, K. Kanazawa , M. Nakamura, Fatigue strength of 316L-type stainl ess 558 
+steel in simulated body fluids, Corros Sci 53 (2011 ) 2222–2227. 559 
+https://doi.org/10.1016/j.corsci.2011.03.004. 560 
+[22] T. Roland, D. Retraint, K. Lu, J. Lu, Fatigue life improvement through surface nanostructuring of  stainless 561 
+steel by means of surface mechanical attrition trea tment, Scr Mater 54 (2006) 1949–1954. 562 
+https://doi.org/10.1016/j.scriptamat.2006.01.049. 563 
+[23] M. Taira, E.P. Lautenschlager, In vitro corros ion fatigue of 316L cold worked stainless steel, J Biomed 564 
+Mater Res 26 (1992) 1131–1139. https://doi.org/10.1002/jbm.820260903. 565 
+[24] H.W. Huang, Z.B. Wang, J. Lu, K. Lu, Fatigue b ehaviors of AISI 316L stainless steel with a gradie nt 566 
+nanostructured surface layer, Acta Mater 87 (2015) 150–160. https://doi.org/10.1016/j.actamat.2014.12.057. 567 
+[25] N. Agarwal, H. Kahn, A. Avishai, G. Michal, F.  Ernst, A.H. Heuer, Enhanced fatigue resistance in 316L 568 
+austenitic stainless steel due to low-temperature p araequilibrium carburization, Acta Mater 55 (2007) 5572–569 
+5580. https://doi.org/10.1016/j.actamat.2007.06.025. 570 
+[26] H. Ullmaier, J.I. Shakib, W. Schmitz, R.G. Fau lkner, E.A. Little, P. Wienhold, Deterioration of f atigue life 571 
+of 316L stainless steel due to TEXTOR exposure, Jou rnal of Nuclear Materials 175 (1990) 20–28. 572 
+https://doi.org/10.1016/0022-3115(90)90265-O. 573 
+[27] X. Zhao, Fatigue properties of 316L stainless steel, Applied Mechanics and Materials 204–208 (201 2) 574 
+3786–3789. https://doi.org/10.4028/www.scientific.net/AMM.204-208.3786. 575 
+[28] E.S. Puchi-Cabrera, M.H. Staia, C. Tovar, E.A.  Ochoa-Pérez, High cycle fatigue behavior of 316L s tainless 576 
+steel, Int J Fatigue 30 (2008) 2140–2146. https://doi.org/10.1016/j.ijfatigue.2008.05.018. 577 
+[29] T.M. Mower, M.J. Long, Mechanical behavior of additive manufactured, powder-bed laser-fused mater ials, 578 
+Materials Science and Engineering A 651 (2016) 198–213. https://doi.org/10.1016/j.msea.2015.10.068. 579 
+[30] R. Shrestha, J. Simsiriwong, N. Shamsaei, Fati gue behavior of additive manufactured 316L stainles s steel 580 
+under axial versus rotating-bending loading: Synerg istic effects of stress gradient, surface roughness , and 581 
+volumetric defects, Int J Fatigue 144 (2021) 106063. https://doi.org/10.1016/j.ijfatigue.2020.106063. 582 
+[31] K. Solberg, S. Guan, S.M.J. Razavi, T. Welo, K .C. Chan, F. Berto, Fatigue of additively manufactu red 316L 583 
+stainless steel: The influence of porosity and surf ace roughness, Fatigue Fract Eng Mater Struct 42 (2 019) 584 
+2043–2052. https://doi.org/10.1111/ffe.13077. 585 
+[32] A.B. Spierings, T.L. Starr, K. Wegener, Fatigu e performance of additive manufactured metallic par ts, Rapid 586 
+Prototyp J 19 (2013) 88–94. https://doi.org/10.1108/13552541311302932. 587 
+[33] E. Uhlmann, C. Fleck, G. Gerlitzky, F. Faltin,  Dynamical Fatigue Behavior of Additive Manufacture d 588 
+Products for a Fundamental Life cycle Approach, Pro cedia CIRP 61 (2017) 588–593. 589 
+https://doi.org/10.1016/j.procir.2016.11.138. 590 
+
+=== PDF PAGE 31 ===
+31 
+ 
+[34] B. Voloskov, S. Evlashin, S. Dagesyan, S. Abai mov, I. Akhatov, I. Sergeichev, Very high cycle fat igue 591 
+behavior of additively manufactured 316L stainless steel, Materials 13 (2020) 1–11. 592 
+https://doi.org/10.3390/ma13153293. 593 
+[35] M. Zhang, C.N. Sun, X. Zhang, P.C. Goh, J. Wei , D. Hardacre, H. Li, Fatigue and fracture behaviou r of 594 
+laser powder bed fusion stainless steel 316L: Influ ence of processing parameters, Materials Science an d 595 
+Engineering A 703 (2017) 251–261. https://doi.org/10.1016/j.msea.2017.07.071. 596 
+[36] M. Zhang, C.N. Sun, X. Zhang, P.C. Goh, J. Wei , D. Hardacre, H. Li, Effect of heat treatment on f atigue 597 
+crack initiation of laser powder bed fusion stainle ss steel 316L, MATEC Web of Conferences 165 (2018) 1–598 
+6. https://doi.org/10.1051/matecconf/201816522006. 599 
+[37] M. Zhang, C.N. Sun, X. Zhang, J. Wei, D. Harda cre, H. Li, High cycle fatigue and ratcheting inter action of 600 
+laser powder bed fusion stainless steel 316L: Fract ure behaviour and stress-based modelling, Int J Fat igue 601 
+121 (2019) 252–264. https://doi.org/10.1016/j.ijfatigue.2018.12.016. 602 
+[38] C. Elangeswaran, A. Cutolo, G.K. Muralidharan,  C. de Formanoir, F. Berto, K. Vanmeensel, B. Van 603 
+Hooreweder, Effect of post-treatments on the fatigu e behaviour of 316L stainless steel manufactured by  604 
+laser powder bed fusion, Int J Fatigue 123 (2019) 31–39. https://doi.org/10.1016/j.ijfatigue.2019.01.013. 605 
+[39] B. Blinn, M. Klein, C. Gläßner, M. Smaga, J.C.  Aurich, T. Beck, An investigation of the microstru cture and 606 
+fatigue behavior of additively manufactured AISI 31 6L stainless steel with regard to the influence of heat 607 
+treatment, Metals (Basel) 8 (2018). https://doi.org/10.3390/met8040220. 608 
+[40] P. Kumar, R. Jayaraj, J. Suryawanshi, U.R. Sat wik, J. McKinnell, U. Ramamurty, Fatigue strength o f 609 
+additively manufactured 316L austenitic stainless s teel, Acta Mater 199 (2020) 225–239. 610 
+https://doi.org/10.1016/j.actamat.2020.08.033. 611 
+[41] S. Leuders, T. Lieneke, S. Lammers, T. Tröster , T. Niendorf, On the fatigue properties of metals 612 
+manufactured by selective laser melting - The role of ductility, J Mater Res 29 (2014) 1911–1919. 613 
+https://doi.org/10.1557/jmr.2014.157. 614 
+[42] E. Liverani, S. Toschi, L. Ceschini, A. Fortun ato, Effect of selective laser melting (SLM) process parameters 615 
+on microstructure and mechanical properties of 316L  austenitic stainless steel, J Mater Process Techno l 249 616 
+(2017) 255–263. https://doi.org/10.1016/j.jmatprotec.2017.05.042. 617 
+[43] A. Riemer, S. Leuders, M. Thöne, H.A. Richard,  T. Tröster, T. Niendorf, On the fatigue crack grow th 618 
+behavior in 316L stainless steel manufactured by se lective laser melting, Eng Fract Mech 120 (2014) 15 –25. 619 
+https://doi.org/10.1016/j.engfracmech.2014.03.008. 620 
+[44] O.K. Chopra, D.J. Gavenda, Effects of LWR cool ant environments on fatigue lives of austenitic sta inless 621 
+steels, Journal of Pressure Vessel Technology, Tran sactions of the ASME 120 (1998) 116–121. 622 
+https://doi.org/10.1115/1.2842228. 623 
+[45] I.J. Wietecha-Reiman, A. Segall, X. Zhao, T.A.  Palmer, Combining Fractal and Topological Analyses  to 624 
+Quantify Fracture Surfaces in Additively Manufactured Ti-6Al-4V, Int J Fatigue (2023). 625 
+[46] J. Rogers, M. Qian, J. Elambasseril, C. Burvil l, C. Brice, C. Wallbrink, M. Brandt, M. Leary, Fat igue test 626 
+data applicability for additive manufacture: A meth od for quantifying the uncertainty of AM fatigue da ta, 627 
+Mater Des 231 (2023) 111978. https://doi.org/10.1016/j.matdes.2023.111978. 628 
+[47] A. Esin, A method for correlating different ty pes of fatigue curve, Int J Fatigue 2 (1980) 153–15 8. 629 
+https://doi.org/10.1016/0142-1123(80)90042-0. 630 
+[48] P. Strzelecki, T. Tomaszewski, Analysis of axi al load and bending load effects on the fatigue lif e, AIP Conf 631 
+Proc 2028 (2018). https://doi.org/10.1063/1.5066409. 632 
+[49] M. Makkonen, Statistical size effect in the fa tigue limit of steel, Int J Fatigue 23 (2001) 395–4 02. 633 
+https://doi.org/10.1016/S0142-1123(01)00003-2. 634 
+[50] J.C. Pang, S.X. Li, Z.G. Wang, Z.F. Zhang, Rel ations between fatigue strength and other mechanica l 635 
+properties of metallic materials, Fatigue Fract Eng  Mater Struct 37 (2014) 958–976. 636 
+https://doi.org/10.1111/ffe.12158. 637 
+[51] B. Blinn, M. Ley, N. Buschhorn, R. Teutsch, T.  Beck, Investigation of the anisotropic fatigue beh avior of 638 
+additively manufactured structures made of AISI 316 L with short-time procedures PhyBaL LIT and PhyBaL 639 
+CHT, Int J Fatigue 124 (2019) 389–399. https://doi.org/10.1016/j.ijfatigue.2019.03.022. 640 
+[52] D. Porter, Phase Transformations in Metals and  Alloys, 3rd ed., CRC Press, New York, NY, 2009. 641 
+
+=== PDF PAGE 32 ===
+32 
+ 
+[53] M. Zhang, C.N. Sun, X. Zhang, P.C. Goh, J. Wei , H. Li, D. Hardacre, Elucidating the Relations Bet ween 642 
+Monotonic and Fatigue Properties of Laser Powder Be d Fusion Stainless Steel 316L, Jom 70 (2018) 390–643 
+395. https://doi.org/10.1007/s11837-017-2640-z. 644 
+[54] M. Zhang, C.N. Sun, X. Zhang, P.C. Goh, J. Wei , D. Hardacre, H. Li, High cycle fatigue life predi ction of 645 
+laser additive manufactured stainless steel: A mach ine learning approach, Int J Fatigue 128 (2019) 105 194. 646 
+https://doi.org/10.1016/j.ijfatigue.2019.105194. 647 
+[55] G. Strano, L. Hao, R.M. Everson, K.E. Evans, S urface roughness analysis, modelling and prediction  in 648 
+selective laser melting, J Mater Process Technol 21 3 (2013) 589–597. 649 
+https://doi.org/10.1016/j.jmatprotec.2012.11.011. 650 
+[56] P. Tyagi, T. Goulet, C. Riso, R. Stephenson, N . Chuenprateep, J. Schlitzer, C. Benton, F. Garcia- Moreno, 651 
+Reducing the roughness of internal surface of an ad ditive manufacturing produced 316 steel component b y 652 
+chempolishing and electropolishing, Addit Manuf 25 (2019) 32–38. 653 
+https://doi.org/10.1016/j.addma.2018.11.001. 654 
+[57] F. Cabanettes, A. Joubert, G. Chardon, V. Duma s, J. Rech, C. Grosjean, Z. Dimkovski, Topography o f as 655 
+built surfaces generated in metal additive manufact uring: A multi scale analysis from form to roughnes s, 656 
+Precis Eng 52 (2018) 249–265. https://doi.org/10.1016/j.precisioneng.2018.01.002. 657 
+[58] B. Wang, P. Zhang, Q.Q. Duan, Z.J. Zhang, H.J.  Yang, J.C. Pang, Y.Z. Tian, X.W. Li, Z.F. Zhang, H igh-658 
+cycle fatigue properties and damage mechanisms of p re-strained Fe-30Mn-0.9C twinning-induced plasticit y 659 
+steel, Materials Science and Engineering A 679 (201 7) 258–271. 660 
+https://doi.org/10.1016/j.msea.2016.10.043. 661 
+[59] S.X. Li, Effects of inclusions on very high cy cle fatigue properties of high strength steels, Int ernational 662 
+Materials Reviews 57 (2012) 92–114. https://doi.org/10.1179/1743280411Y.0000000008. 663 
+[60] S. Yang, L. Yang, Y. Wang, Determining the fat igue parameters in total strain life equation of a material 664 
+based on monotonic tensile mechanical properties, E ng Fract Mech 226 (2020) 106866. 665 
+https://doi.org/10.1016/j.engfracmech.2019.106866. 666 
+[61] R.A. Johnson, D.W. Wichern, Applied Multivaria te Statistical Analysis, 6th ed., Pearson, Upper Sa ddle 667 
+River, NJ, 2007. 668 
+[62] M. Kutner, C. Nachtsheim, J. Neter, W. Li, App lied Linear Statistical Models, 5th ed., McGraw-Hil l, New 669 
+York, NY, 2005. 670 
+[63] J. Gareth, D. Witten, T. Hastie, R. Tibshirani , An Introduction to Statistical Learning, 2nd ed.,  Springer, 671 
+New York, NY, 2021. 672 
+[64] F. Cao, T. Zhang, M.A. Ryder, D.A. Lados, A Re view of the Fatigue Properties of Additively Manufa ctured 673 
+Ti-6Al-4V, Jom 70 (2018) 349–357. https://doi.org/10.1007/s11837-017-2728-5. 674 
+[65] C.R. Schneider, S.J. Maddox, Best Practice Gui de on Statistical Analysis of Fatigue Data, TWI Sta tistics 675 
+Report (n.d.). 676 
+[66] M.D. Sangid, The physics of fatigue crack init iation, Int J Fatigue 57 (2013) 58–72. 677 
+https://doi.org/10.1016/j.ijfatigue.2012.10.009. 678 
+[67] R. Molaei, A. Fatemi, N. Phan, Significance of  hot isostatic pressing (HIP) on multiaxial deforma tion and 679 
+fatigue behaviors of additive manufactured Ti-6Al-4 V including build orientation and surface roughness  680 
+effects, Int J Fatigue 117 (2018) 352–370. https://doi.org/10.1016/j.ijfatigue.2018.07.035. 681 
+[68] C. Qiu, N.J.E. Adkins, M.M. Attallah, Microstr ucture and tensile properties of selectively laser- melted and 682 
+of HIPed laser-melted Ti-6Al-4V, Materials Science and Engineering A 578 (2013) 230–239. 683 
+https://doi.org/10.1016/j.msea.2013.04.099. 684 
+[69] P. Ducheyne, D. Kohn, T.S. Smith, Fatigue prop erties of cast and heat treated Ti6Al4V alloy for a natomic 685 
+hip prostheses, Biomaterials 8 (1987) 223–227. https://doi.org/10.1016/0142-9612(87)90068-8. 686 
+[70] A.H. Chern, P. Nandwana, T. Yuan, M.M. Kirka, R.R. Dehoff, P.K. Liaw, C.E. Duty, A review on the 687 
+fatigue behavior of Ti-6Al-4V fabricated by electro n beam melting additive manufacturing, Int J Fatigu e 688 
+119 (2019) 173–184. https://doi.org/10.1016/j.ijfatigue.2018.09.022. 689 
+[71] R.L. Ott, M. Longnecker, Statistical Methods a nd Data Analysis, 7th ed., Cengage Learning, Boston , MA, 690 
+2016. 691 
+[72] S. Aldor-Noiman, L.D. Brown, A. Buja, W. Rolke , R.A. Stine, The Power to See: A New Graphical Tes t of 692 
+Normality, Statistical Computing and Graphics (2012) 249–260. 693 
+
+=== PDF PAGE 33 ===
+33 
+ 
+[73] R. Tibshirani, G. Walther, T. Hastie, Estimati ng the number of data clusters via the Gap statisti c, Journal of 694 
+the Royal Statistical Society B 63 (2001) 411–423. 695 
+[74] S.J. Sheather, A Modern Approach to Regression  with R, Springer, New York, NY, 2009. 696 
+[75] Grolemund, Hands-On Programming with R, O’Reil ly, 2014. https://rstudio-education.github.io/hopr/. 697 
+[76] H. Wickham, ggplot2: Elegant Graphics for Data  Analysis, 3rd ed., Springer, n.d. https://ggplot2-book.org/. 698 
+[77] R.P. Abelson, Statistics as Principled Argumen t, Lawrence Erlbaum Associates, Inc., Hillsdale, NJ, 1995. 699 
+[78] J. Cohen, Statistical Power Analysis for the B ehavioral Sciences, 2nd ed., 1988. 700 
+[79] F.E. Harrell, Regression Modeling Strategies, 2nd ed., Springer, 2023. https://hbiostat.org/rmsc/. 701 
+[80] J.M. Hoenig, D.M. Heisey, The Abuse of Power, Am Stat 55 (2001) 19–24. 702 
+https://doi.org/10.1198/000313001300339897. 703 
+  704 
+ Appendix A: Conversion of the Stress Amplitude to Equivalent Axial Stress Amplitude in Rotating-Bendi ng 705 
+Testing  706 
+ Conversion of stress amplitude from rotating bendi ng to equivalent axial is based on accounting for t he 707 
+differences in the stress distribution across the s pecimen cross section [47].  Implementation of Equa tion (4) to 708 
+perform this conversion necessitates the calculatio n of the radius, r, where the applied stresses equal the reported 709 
+fatigue limit.  Because only the specimen geometry and fatigue limit are reported in literature, it be comes necessary 710 
+to calculate a range of stress values ( σ) that would be experienced across the specimen cro ss-section during bending. 711 
+Calculation of r first requires a definition of σ at a distance y from the neutral axis of the specimen as: 712 
+ = 
+
+                                                                         (A1) 713 
+ where M is the applied bending moment and I is the second moment of inertia. The applied bendi ng moment for a 714 
+cylinder is calculated by: 715 
+ =
+ 
+                                                                            (A2) 716 
+where F is the applied force and L is the reduced length of the fatigue specimen. The  cylinder cross section is then 717 
+discretized into annular elements, with each elemen t having an area of Ai and a stress maximum, σmax , applied at the 718 
+specimen surface in tension.  Using these assumptions, the applied force (F) can be calculated as: 719 
+ =                                                                               (A3) 720 
+with the area discretized as: 721 
+ =  
+ =  ^ +   −  −  _ = 4                                         (A4) 722 
+where Δri is the difference between inner and outer radii of  the i th  segment and Δy is the discretized step in radial 723 
+distance away from the neutral axis. The final comp onent needed to calculate the stress on each elemen t is the 724 
+second moment of inertia,  I: 725 
+
+=== PDF PAGE 34 ===
+34 
+ 
+k =
+
+                                                                            (A5) 726 
+where d is the gauge section diameter of the specimen. Equ ations (A2) to (A5) can then be substituted into Eq uation 727 
+(A1) to obtain a vector of stresses across the specimen cross-section during rotating-bending fatigue: 728 
+ =
+*P
+                                                                        (A6) 729 
+Each σi is then compared to the reported fatigue limit and  the σi value which closest matches the reported fatigue 730 
+limit will correspond to the value of r to be used in Equation (4).   731 
+Appendix B: Variable Selection and Diagnostic Procedures 732 
+ A flowchart of the variable selection and modeling  procedures and the corresponding R programming lan guage 733 
+commands is provided in Figure B.1. The procedure b egins with a backward stepwise variable selection, in which a 734 
+single term is removed from the full model at each step if it decreases the Bayesian Information Crite rion (BIC) 735 
+[74].  the Bayesian information criterion (BIC) calculated as [74]: 736 
+kj = −2 log  +  + 2 log                        (B1) 737 
+where L is the likelihood function of the model whe n various terms are tested for removal,  p is the number of terms 738 
+estimated in the model, and n is the number of data points.  The first term of E quation (B1) penalizes what terms are 739 
+included in the model while the second term penaliz es the size or complexity of the model so simpler m odels are 740 
+favored.   741 
+This variable selection approach cannot assess all possible models in order to obtain the most optimal  one so a 742 
+manual variable selection is subsequently used.  A T-test is applied to the model which evaluates whet her or not 743 
+each term has a coefficient estimate significantly different from zero.  If the term does not have a p-value  below the 744 
+confidence level of 0.05, it is deemed insignifican t and may be removed.  A partial F-test is performe d in tandem to 745 
+determine whether each term in the model contribute s a significant amount of new information.  The F-t est was 746 
+performed using a Type II analysis since the data w ere inherently unbalanced and the order in which mo del terms 747 
+are incorporated does not matter.  Additional refer ences are provided to aid those not familiar with t he practices of 748 
+statistical programming [62,74–76].  Based on the F -test, effect sizes [77] were also calculated in or der to better 749 
+evaluate the magnitude of the modeled effects and are presented as a partial η2 calculated as: 750 
+ 9¡ 
+ =
+22 .XX.¢£ 
+22 .XX.¢£ 522 .¤¤¥¤ 
+          (6) 751 
+
+=== PDF PAGE 35 ===
+35 
+ 
+where SS effect  and SS error  are the sum of squares of the effect evaluated and  the residual error, respectively.  752 
+Conventional effect sizes of 0.02, 0.15, and 0.35 a re taken as reference values for small, medium, and  large 753 
+magnitude effect sizes, respectively [78].   754 
+ 755 
+ 756 
+ 757 
+Figure B.1: Summary of the general linear modeling procedure and functions of interest. 758 
+ 759 
+Managing the aggregated data in this manner has add itional benefits for statistical analysis.  The dat a dimension 760 
+reduction strategy of converting to   benefits statistical power, or likelihood of detec ting an effect when one exists 761 
+[71], by increasing the amount of observations per variable of interest [79].  Stated otherwise, one m inus the 762 
+statistical power yields β, which is the probability of committing a Type II error.  An a priori  power analysis 4 was 763 
+performed to assess this quality.  To estimate the power of the regression analysis, the cumulative F- distribution is 764 
+calculated based on the numerator and denominator d egrees of freedom of an F-test, n and d, the statistical 765 
+                                                           
+4 Performed using the “pwr” library and the “pwr.f2.test” function. 
+
+
+=== PDF PAGE 36 ===
+36 
+ 
+significance, α, and the estimated effect size, f2 .  The area under the F-distribution probability de nsity function, β, 766 
+can then be calculated using standard commands incl uded with the base R programming language 1F 
+5.  This calculation 767 
+is schematized in Figure B.2(a) where n is 25, or the number of coefficients that will be estimated in the proceeding 768 
+analysis, d is the number of data points minus the number of co efficients estimated and the estimated intercept (3 74 769 
+– 25 – 1 = 348), and α equals 0.05. 770 
+For a priori  power analysis, conventional effect sizes of 0.02,  0.15, and 0.35 were used as reference values for 771 
+small, medium, and large effect sizes, respectively  [78].  For a sequence of simulated effect sizes, d for standardized 772 
+data (348) and non-standardized data (374 – 29 – 1 = 344) are compared for their estimated effect on s tatistical 773 
+power in Figure B.2(b).  If the resultant effect si ze is small to medium, then standardizing the datas et increases 774 
+power by approximately 0.05, or 5 %.  In other word s, the probability of committing a Type II error de creases by 775 
+approximately 5 %.  Conversely, for a large effect size the act of standardizing the dataset will be m eaningless for 776 
+sufficiently large datasets.  Importance of sample size is demonstrated in Figure B.2(c).  As the effe ct size that is 777 
+being captured by the statistical analysis decrease s, larger datasets become necessary to mitigate the  risk of Type II 778 
+error.  Note that no post-hoc  calculation of power will be performed as no usefu l information is provided by doing 779 
+so [80]. 780 
+ 781 
+                                                           
+5 The R Foundation (https://www.r-project.org/foundation/) 
+
+=== PDF PAGE 37 ===
+37 
+ 
+ 782 
+Figure B.2: (a) Probability density function for the dataset size and proposed model complexity.  The highlighted 783 
+area under the curve represents the probability of committing a Type II error.  (b) Change in statistical power as a 784 
+function of estimated effect size.  Conventional effect sizes for multiple linear regression are overlaid for reference 785 
+[78].  Circles indicate standardized data, and squares indicate non-standardized data.  (c)  Statistical power as a 786 
+function of residual degrees of freedom, or dataset size, for medium and small effect sizes. 787 
+  788 
+
+
+=== PDF PAGE 38 ===
+38 
+ 
+Appendix C: Clustering Procedure  789 
+A brief flowchart for this procedure with R program ming language commands is provided in Figure C.1.  First, 790 
+the pairwise dissimilarity is defined for all of th e data points in the analysis which is stored as a distance matrix.  791 
+Dissimilarity is defined by the Euclidian distance between two data points.  Agglomerative clustering is then 792 
+performed to sequentially group data points by incr easing dissimilarity.  The median linkage method is  used such 793 
+that the distance between two clusters is defined b y the centroids of these clusters, and the gap stat istic is calculated 794 
+for a range of cluster values to identify the optim al number of clusters.  Once the optimal number of clusters is 795 
+identified, it can be used to set a cut-off value o f dissimilarity to obtain the final cluster assignm ents for all of the 796 
+data points. 797 
+ 798 
+Figure C.1: Summary of the fatigue response clustering procedure and the corresponding library commands. 799 
+
+
+=== PDF PAGE 39 ===

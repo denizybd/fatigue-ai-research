@@ -1,0 +1,6 @@
+{
+  "sample_size": 100,
+  "seed": 2026,
+  "all_mat_flattened_vs_official_json_coordinates_match": true,
+  "note": "Format consistency check, not validation against original experimental records."
+}

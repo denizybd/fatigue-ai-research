@@ -1,0 +1,29 @@
+Senden beklenen sonraki adım
+
+Önce bir sayfalık İngilizce özeti ve teknik soru-cevap dosyasını oku. Görüşmede rahatça açıklayabilmen gereken üç sonuç var:
+
+1. Bu, özgün 518 noktalı BNN deneyinin birebir yeniden üretimi değil. Açık veriyle, 37 DOI / 29 muhafazakâr köken bloğu ayrımıyla, bir blok dışarıda bırakıldığında ilgili yorulma modellerinin alt ömür sınırlarını inceliyoruz.
+2. Kalibrasyon daha az gözlenen iyimser tahmin sağlayabiliyor; bunun karşılığında önerilen ömür çok kısalabiliyor. Kaynak-maksimum ve pooled kalibrasyon farklı hedefler taşıyor. Buradaki 14,5–15,4 yüzde aralığı dondurulmuş zengin doğrusal AFT modeline ait; tüm modeller veya özgün BNN hakkında bir sonuç değil.
+3. Destek uzaklığı ve bootstrap kararsızlığını birleştiren kural, önceden belirlediğimiz üstünlük ölçütünü geçmedi. E-postada bunu açık bir olumsuz sonuç olarak anlatıyoruz.
+
+E-posta taslağındaki [Name] alanını tam adınla tamamla. İstersen gerçekten sahip olduğun eğitim/araştırma bağlamını tek cümleyle ekle. Bu paket hakkında bilinmeyen bir diploma, kurum, deneyim veya başarı varsayılmadı. Kendi katkını gerçek kapsamıyla açıkla; çalışma AI destekli literatür incelemesi, kod ve hesaplamalı analiz içeriyor. Teknik cevapları ezberlemek yerine kodun ve sonuçların neyi gösterdiğini anlatabilmek önemli.
+
+İlk iletişim paketi kısa tutulabilir: e-posta, bir sayfalık özet ve iki grafik. İlk grafik köken bloğu değişiminde risk ile model-medyanı/alt-sınır farkıyla ölçülen muhafazakârlığı birlikte göstermeli; ikinci grafik birleşik kuralın uzaklık, kararsızlık ve rastgele kuralla eşit kabulde karşılaştırmasını ve belirsizlik aralıklarını göstermeli. Tam kaynak/kod paketi, ilgisini çekerse ayrıntılı inceleme için hazırdır.
+
+Somut talep: kaynak ailelerinin gerçekten ortak deneyleri içerip içermediği hakkında kısa bir yöntem yorumu; uygunsa özgün 518 noktalı derlemenin kaynak-koşul eşlemesi. Bu eşleme, tam deney verisi aktarımı olmadan bile örtüşme ve değerlendirme tanımını düzeltmeye yarayabilir. Bir görüşme veya işbirliği isteği, bu dar teknik sorunun etrafında gelişebilir; olumlu yanıt elde edilmiş sonuç değildir.
+
+Gönderim aşamasında alıcı adresi resmi PoliTO kaynağından doğrulanmalı. E-posta gönderme, dışarıya dosya yükleme ve yayınlama bu Goal'de açık onayına bağlı; şu ana kadar bunların hiçbiri yapılmadı. İncelemen için hazırlanan dosyalar yerel taslaktır.
+
+Çalışmanın bugünkü gücü
+
+Bu paket, kaynak kökenini ve sansürü ciddiye alan, tekrar çalıştırılabilir fakat katkı gücü sınırlı bir pilot araştırma/teknik not düzeyinde savunulabilir. Özgün bir belirsizlik algoritması veya fiziksel güvenli tasarım doğrulaması iddiasını desteklemiyor. Dikkate değer tarafı, kaynaklar arası güvenilirlik-muhafazakârlık değişimini ve başarısız bir seçim hipotezini açık biçimde göstermesi. Kaynak ailelerinin fiziksel doğrulanması, daha bağımsız bir dış deney kampanyası ve özgün yöntemle doğrudan karşılaştırma katkıyı belirgin biçimde güçlendirebilir. Yayımlanabilirlik ve Tridello'nun ilgisi bu bulgulardan garanti edilemez.
+
+Dayanaklar: results/primary/summary.csv, paired_contrasts.csv ve source_seed_metrics.csv; outreach/numerical_claims_receipt.json; protocols/v1_2_prefit_claim_rule.md üstünlük ölçütü; data/DATA_DICTIONARY.md.
+
+Önemli sağlamlık sınırı
+
+Köken-blok dengeli pooled numune-risk aralığı ana doğrusal analizde yüzde 14,50–15,40; zayıf-kenar incelemesinde yüzde 16,03–16,88; yaklaşık ayıklamada yüzde 15,00–15,72. Kaynak-maksimum kalibrasyonda tam bir kohortta en az bir ihlal görülmesi ana analizde yüzde 4,60 iken zayıf-kenar gruplama/bölme duyarlılığında yüzde 17,86. Bölme ve kalibrasyon üyelikleri de değiştiği için bunu gruplamanın tek başına nedensel etkisi gibi anlatma. Bu bulgu, güvenli bir tasarım algoritması iddiasını desteklemez.
+
+İlk MLP uyumları dondurulmuş 1.500 iterasyon sınırında yakınsamadı. Ayrı, sonuç-sonrası 12.000 sınırında 87/87 uyum yakınsadı; en uzun uyum 9.183 iterasyon sürdü. Bu sayısal incelemede q10 yüzde 40,17–44,93, pooled yüzde 9,30–10,06, cohort yüzde 0,234–0,246 numune-risk tanımlama aralıkları bulundu. Bunlar ana sonuç veya mimari üstünlük sıralaması değildir. Sayısal yakınsama fiziksel doğrulama sağlamaz.
+
+Tanımlama aralığı sansürlü numunelerde neyi bilmediğimizi, betimsel blok-bootstrap güven aralığı ise sınırlı blok örnekleminin değişkenliğini anlatır. Farklı belirsizliklerdir. Ömür maliyeti skoru gözlenen medyana değil modelin tahmin ettiği medyana göre ölçülür.

@@ -1,0 +1,240 @@
+{
+  "recorded_utc": "2026-10-20T12:53:25.408658+00:00",
+  "sources": [
+    {
+      "file": "FatigueData_descriptor_2023.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10151339/fullTextXML",
+      "doi": "10.1038/s41597-023-02150-x",
+      "license": "CC BY 4.0",
+      "verification": "XML Data Records prose read; thirdcolumn and defaults verified",
+      "accessed_utc": "2026-10-20T12:53:25.408658+00:00",
+      "sha256": "fcc9c940264cc4e14eca3763f1af066da779726e67a9e5f1c1c4485803e94eac",
+      "bytes": 151002
+    },
+    {
+      "file": "Stern_2023_2200751.pdf",
+      "url": "https://eldorado.tu-dortmund.de/bitstreams/85e849cf-99ec-4498-ac69-b65c8a91d353/download",
+      "doi": "10.1002/adem.202200751",
+      "license": "CC BY 4.0",
+      "verification": "13pages; p10 Fig10 visually checked; six ordinary316Lpoints compared",
+      "accessed_utc": "2026-10-20T12:53:25.408658+00:00",
+      "sha256": "3a5645f47bc6301821bd8651f681185c4ca6dbc6ab938cba513538fd53a24a6b",
+      "bytes": 3911537
+    },
+    {
+      "file": "Voloskov_2020.pdf",
+      "url": "https://pdfs.semanticscholar.org/e579/e3c7dea46f2377a603e9d2961fb9a032830b.pdf",
+      "doi": "10.3390/ma13153293",
+      "license": "CC BY 4.0",
+      "verification": "11pages; p4methods andp5Fig3 visually checked;13points compared",
+      "accessed_utc": "2026-10-20T12:53:25.408658+00:00",
+      "sha256": "60dcc51d099bb7f98e4756e97caa174a575212b6d309f1243338804058e4a66a",
+      "bytes": 8619842
+    },
+    {
+      "file": "Voloskov_2020.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7435938/fullTextXML",
+      "doi": "10.3390/ma13153293",
+      "license": "CC BY 4.0",
+      "verification": "XML methods andfigure captions read",
+      "accessed_utc": "2026-10-20T12:53:25.408658+00:00",
+      "sha256": "fa1a8b88e0c377c48260af72ee9de5b05cb0d056ac9de178b26c2417648aff27",
+      "bytes": 77642
+    },
+    {
+      "file": "Auburn_NCAME_publications.html",
+      "url": "https://eng.auburn.edu/ncame/publications",
+      "doi": null,
+      "license": "website terms not verified; local provenance copy only",
+      "verification": "Shrestha2019/2021 listing;2021DOI/title mismatch noted",
+      "accessed_utc": "2026-10-20T12:53:25.408658+00:00",
+      "sha256": "ddc60685e4c8fe81f5699dd974382ec7e9d2f1e1ec7615cd98693606024be720",
+      "bytes": 125827
+    }
+  ],
+  "data_source": {
+    "doi": "10.6084/m9.figshare.22337629",
+    "license": "CC BY 4.0",
+    "json_snapshot_status": "first completeSternarticle decoded during download; wholeJSONnot assumedcomplete",
+    "processed_data": "Root MATderived data/processed/all_sn_observations.csv andss316l_lpbf_all.csv"
+  },
+  "access_failures": [
+    {
+      "url": "https://github.com/wietecha-reiman/Fatigue-AM-316L",
+      "http_status": 404,
+      "note": "Advertised inOSTImanuscript butcurrentlynotavailable"
+    },
+    {
+      "url": "https://api.github.com/repos/wietecha-reiman/Fatigue-AM-316L/contents",
+      "http_status": 404
+    }
+  ],
+  "files": [
+    {
+      "file": "Auburn_NCAME_publications.html",
+      "sha256": "ddc60685e4c8fe81f5699dd974382ec7e9d2f1e1ec7615cd98693606024be720",
+      "bytes": 125827
+    },
+    {
+      "file": "FatigueData_descriptor_2023.xml",
+      "sha256": "fcc9c940264cc4e14eca3763f1af066da779726e67a9e5f1c1c4485803e94eac",
+      "bytes": 151002
+    },
+    {
+      "file": "Stern_2023_2200751.pdf",
+      "sha256": "3a5645f47bc6301821bd8651f681185c4ca6dbc6ab938cba513538fd53a24a6b",
+      "bytes": 3911537
+    },
+    {
+      "file": "Stern_2023_2200751.txt",
+      "sha256": "ad1c8485436b8ee0dd9294b8574a797c87708fcfccbc378e299fecdc573e8611",
+      "bytes": 62125
+    },
+    {
+      "file": "Stern_Fig10_spotcheck.csv",
+      "sha256": "e3f5df14b60eb4ad69e4c44153888a358a8e0f2b47d6bf9486aeb9af57e9e92c",
+      "bytes": 1108
+    },
+    {
+      "file": "Stern_database_article_partial_json_snapshot.json",
+      "sha256": "8020142a59bc7c8988f97f47c0dbdbc1466d64b6f035cb8d268bcea3c689301b",
+      "bytes": 6605
+    },
+    {
+      "file": "Stern_page10.pdf",
+      "sha256": "5fb2dd202033dea9114917cb358c0ba52218b9403dc25705b34e4e1155c73368",
+      "bytes": 227169
+    },
+    {
+      "file": "Stern_page10.png",
+      "sha256": "dab2c3821ed726595e56788dd8e2a7b1d5c4551c24cc434014df7ecf24ce6023",
+      "bytes": 824509
+    },
+    {
+      "file": "Stern_page10_img0.tiff",
+      "sha256": "ab9015331ca0b42f5c28d27bbb0c38940f36431aacbf77fe3e98823ab8fb5c36",
+      "bytes": 1584
+    },
+    {
+      "file": "Stern_page10_img1.png",
+      "sha256": "0f113392ab0b86bd632527329c7d1981a4cadeb1bd640d40bfedbd2d9d9f1193",
+      "bytes": 131623
+    },
+    {
+      "file": "Stern_page10_sips.png",
+      "sha256": "687dbe8c84926e9f1c1c845ccdaecbdb868a8ac3564b72f74599c8456064a2c1",
+      "bytes": 248575
+    },
+    {
+      "file": "Voloskov_2020.pdf",
+      "sha256": "60dcc51d099bb7f98e4756e97caa174a575212b6d309f1243338804058e4a66a",
+      "bytes": 8619842
+    },
+    {
+      "file": "Voloskov_2020.txt",
+      "sha256": "0308bd1f465f3d50b38f2025e27b1dc529c6967363ca2e82ca3d3b0d493ed40c",
+      "bytes": 39008
+    },
+    {
+      "file": "Voloskov_2020.xml",
+      "sha256": "fa1a8b88e0c377c48260af72ee9de5b05cb0d056ac9de178b26c2417648aff27",
+      "bytes": 77642
+    },
+    {
+      "file": "Voloskov_Fig3_manual_expected.csv",
+      "sha256": "7a2110a937d8314cb52ccc17c0d48863ddc98834db48b37a4baf3b9b90ba4354",
+      "bytes": 1647
+    },
+    {
+      "file": "Voloskov_Fig3_spotcheck.csv",
+      "sha256": "5158291e31f97c31aef7af1564b153989410bcaeb61583561705b0f62b8dd253",
+      "bytes": 2212
+    },
+    {
+      "file": "Voloskov_page4.png",
+      "sha256": "aa7bb2cef8168329b0a1e3f22b98bc3d99bab878f53e9c285062914eff1a6ed1",
+      "bytes": 511385
+    },
+    {
+      "file": "Voloskov_page5.png",
+      "sha256": "56c185cddfa16511fc10efa328bd3991680b74de5d8c2a3bd74c0dbb908b3113",
+      "bytes": 837490
+    },
+    {
+      "file": "Voloskov_page5_img0.jpg",
+      "sha256": "fecba30645b196f17221085a6a42605507f5bf3925f00caf507a1c29d0b14afa",
+      "bytes": 248756
+    },
+    {
+      "file": "Voloskov_page5_img1.png",
+      "sha256": "3345e9aa4299b5741ace20a1665bdf82254b93207e8f9ccea906a40ed0824550",
+      "bytes": 836259
+    },
+    {
+      "file": "Voloskov_page5_img2.png",
+      "sha256": "2426fac18ce6da143171af7e834adc5dc575016b25107b63b4645780178be5e2",
+      "bytes": 802166
+    },
+    {
+      "file": "Voloskov_page5_img3.png",
+      "sha256": "61b5cedae53ee2179b2252d4e23bfa5a01912beba00d591dc886d193fb3eb744",
+      "bytes": 845579
+    },
+    {
+      "file": "Voloskov_page9.png",
+      "sha256": "74a51e853a95ea0156fba6710beb7585c444453117478ebe3606094d87f9536e",
+      "bytes": 525733
+    },
+    {
+      "file": "duplicate_audit_summary.json",
+      "sha256": "1a105c06e61602b54452caaadff5ef8b7e9ea28b34a3fc5e4a0172241b8da712",
+      "bytes": 359
+    },
+    {
+      "file": "duplicate_curve_audit.py",
+      "sha256": "c198b5e1ea0b93710e4bd05f2843525cd164a8e50efc11408492d40f6ae69d1a",
+      "bytes": 4224
+    },
+    {
+      "file": "duplicate_curve_candidates.csv",
+      "sha256": "c40d364fcea0603bf2bd5b93d60a2da71a136a560f193bd1a5eee84eb6478bf0",
+      "bytes": 20238
+    },
+    {
+      "file": "duplicate_curve_examples.png",
+      "sha256": "38b01215b11f7622a9f6fcdc056acfd014887d31d76efcf223b19836ccdae624",
+      "bytes": 156738
+    },
+    {
+      "file": "duplicate_curve_examples.svg",
+      "sha256": "1252a22c7e8c116d6ac1668616e9fef2c04e88c14a263f6a0f84f300682964b9",
+      "bytes": 100583
+    },
+    {
+      "file": "exact_crosssource_coordinates.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "plot_duplicate_evidence.py",
+      "sha256": "233063383b2843e2bf65b0b1a8550440ddeb447939b62610d7c96a00710cb2b6",
+      "bytes": 1700
+    },
+    {
+      "file": "source_family_recommendations.csv",
+      "sha256": "9c62e7c6f94e49ca404089cb11b4bfae50793706641cc63bac302f0d93c70b13",
+      "bytes": 2525
+    },
+    {
+      "file": "source_spotcheck.py",
+      "sha256": "86cab42d308aeea81224927d8760719597df6303b43035a6e39d1b2d679df09d",
+      "bytes": 4940
+    },
+    {
+      "file": "spotcheck_summary.json",
+      "sha256": "1a7be29c96e15197e4dbc902263307e124f8a82927cc639d1be677c81f010e43",
+      "bytes": 452
+    }
+  ],
+  "updated_utc": "2026-10-20T12:54:10.309310+00:00"
+}

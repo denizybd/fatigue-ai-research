@@ -32,5 +32,11 @@
     "Kookalani et al full text",
     "ASME full manuscript and DOI",
     "EFAST manuscript and DOI"
+  ],
+  "additional_prior_queries": [
+    "\"Developing statistical tools to analyze historical stress-controlled fatigue data\"",
+    "site:github.com \"Fatigue-AM-316L\"",
+    "\"wietecha-reiman\" github",
+    "\"Developing statistical tools\" \"fatigue\" \"censor\""
   ]
 }

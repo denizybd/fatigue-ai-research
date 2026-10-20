@@ -1,0 +1,24 @@
+  model           bound                      policy  risk_lower  risk_upper  availability  conservatism_decades
+basquin      cohort_max                         all    0.002419    0.002419      1.000000              2.159489
+basquin endpoint_pooled                         all    0.095608    0.098928      1.000000              0.748286
+basquin       model_q10                         all    0.085212    0.086746      1.000000              0.766732
+ linear      cohort_max                         all    0.027005    0.028774      1.000000              2.238208
+ linear endpoint_pooled                         all    0.190271    0.204379      1.000000              0.629359
+ linear endpoint_pooled        matched_combined_0.5    0.169428    0.177737      0.508259              0.629359
+ linear endpoint_pooled        matched_combined_0.8    0.182643    0.192475      0.829903              0.629359
+ linear endpoint_pooled        matched_distance_0.5    0.166092    0.170346      0.508259              0.629359
+ linear endpoint_pooled        matched_distance_0.8    0.186725    0.190345      0.829903              0.629359
+ linear endpoint_pooled     matched_instability_0.5    0.171275    0.185628      0.508259              0.629359
+ linear endpoint_pooled     matched_instability_0.8    0.185282    0.198641      0.829903              0.629359
+ linear endpoint_pooled          matched_random_0.5    0.191985    0.206904      0.508259              0.629359
+ linear endpoint_pooled          matched_random_0.8    0.190927    0.205263      0.829903              0.629359
+ linear endpoint_pooled    operational_combined_0.5    0.133072    0.137949      0.531285              0.687779
+ linear endpoint_pooled    operational_combined_0.8    0.179103    0.188953      0.733767              0.635986
+ linear endpoint_pooled    operational_distance_0.5    0.152149    0.153764      0.463299              0.634338
+ linear endpoint_pooled    operational_distance_0.8    0.167280    0.178831      0.752566              0.647048
+ linear endpoint_pooled operational_instability_0.5    0.138211    0.147000      0.451671              0.675003
+ linear endpoint_pooled operational_instability_0.8    0.166088    0.178418      0.691423              0.661984
+ linear       model_q10                         all    0.192686    0.205226      1.000000              0.619211
+    mlp      cohort_max                         all    0.011573    0.012592      1.000000              3.068640
+    mlp endpoint_pooled                         all    0.169799    0.187441      1.000000              1.125799
+    mlp       model_q10                         all    0.355518    0.392132      1.000000              0.310099
