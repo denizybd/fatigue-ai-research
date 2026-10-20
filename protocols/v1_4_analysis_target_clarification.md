@@ -1,0 +1,3 @@
+# Protocol clarification v1.4: report calibration targets explicitly
+
+2026-10-20 during frozen model execution, before inspection of any aggregate test results. This adds no fit, selection, threshold or model choice. In addition to prespecified equal-source/pooled specimen risk, report each held-out complete source cohort's indicator of at least one known violation and the corresponding upper indicator allowing ambiguous runouts. Average these over source blocks and seeds. This directly evaluates source-max calibration's simultaneous-cohort target and avoids judging it solely by the different mean-specimen-risk target. Report both targets side by side; no added method superiority claim is authorized by this clarification.

@@ -12,6 +12,8 @@ def cell(p,a,policy):
     for factor in [1.,2.]:
         m=risk_metrics(p.log_lower.to_numpy(),p.log_life.to_numpy(),p.event.to_numpy(),a,factor)
         out.update({(k if factor==1 else 'severe_'+k):v for k,v in m.items()})
+        out[('cohort_violation_lower' if factor==1 else 'severe_cohort_violation_lower')]=float(m['known_danger']>0) if m['accepted'] else np.nan
+        out[('cohort_violation_upper' if factor==1 else 'severe_cohort_violation_upper')]=float(m['known_danger']+m['unknown_runouts']>0) if m['accepted'] else np.nan
     out['runout_fraction']=float(p.loc[a,'runout'].mean()) if np.any(a) else np.nan
     out['median_log_stress']=float(p.loc[a,'log_stress'].median()) if np.any(a) else np.nan
     out['conservatism_decades']=float((p.loc[a,'mu']-p.loc[a,'log_lower']).median()) if np.any(a) else np.nan
@@ -51,7 +53,7 @@ def build_cells(p):
 def aggregate(cells):
     # The source, not seed or row, is the resampling unit.
     keys=['scheme','model','bound','policy']
-    cols=['risk_lower','risk_upper','severe_risk_lower','severe_risk_upper','availability','conservatism_decades','runout_fraction','median_log_stress','failure_mae','failure_rmse','zero_bound_fraction','increasing_life_with_stress_fraction']
+    cols=['risk_lower','risk_upper','severe_risk_lower','severe_risk_upper','availability','conservatism_decades','runout_fraction','median_log_stress','failure_mae','failure_rmse','zero_bound_fraction','increasing_life_with_stress_fraction','cohort_violation_lower','cohort_violation_upper','severe_cohort_violation_lower','severe_cohort_violation_upper']
     rows=[];rng=np.random.default_rng(9821)
     for key,z in cells.groupby(keys):
         by=z.groupby('group_id')[cols].mean();r=dict(zip(keys,key));r['sources']=len(by);r['sources_with_any_acceptance']=int(z.groupby('group_id').accepted.max().gt(0).sum())
