@@ -1,0 +1,983 @@
+Distribution-Free Conformal Prediction for Steel Fatigue Strength: Marginal Validity Is Not Enough
+// Restore the saved color scheme preference, or
+  // enact the browser preference if "automatic", 
+  // without expecting DOM load to have completed.
+  //
+  // Also restore any saved readingmode and ToC display preferences.
+  function initializeReadingPreferences() {
+    let saved_theme = localStorage.getItem("ar5iv_theme") || "automatic";
+    if (saved_theme === "automatic") {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        saved_theme = "dark";
+      }
+    }
+    if (saved_theme == "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    const tocDisplay = localStorage.getItem('arxiv_html_paper_toc_display');
+    if (tocDisplay) {
+      document.documentElement.setAttribute("data-toc-display", tocDisplay);
+    }
+    const readingMode = localStorage.getItem('arxiv_html_paper_reading_mode');
+    if (readingMode) {
+      document.documentElement.setAttribute("data-reading-mode", readingMode);
+    }
+    // Pre-apply spinout-banner dismissal here, before the banner paints, so it
+    // never flashes in only to be hidden later by the deferred arxiv-header.js.
+    // Key matches arxiv-header.js: "arxiv-banner-dismissed:" + data-banner-name.
+    if (localStorage.getItem('arxiv-banner-dismissed:spinout-nonprofit')) {
+      document.documentElement.setAttribute("data-banner-dismissed", "");
+    }
+  }
+  // Run as soon as JS starts, to minimize repainting
+  initializeReadingPreferences();
+/* Banner pre-dismissal (set above before paint -> no flash-then-hide) and
+     reading-mode chrome hiding. */
+  html[data-banner-dismissed] .ds-announcement { display: none; }
+  html[data-reading-mode="enabled"] .ds-announcement,
+  html[data-reading-mode="enabled"] .ds-site-footer { display: none; }
+  /* Print keeps the reader header's logo, not its controls: the theme's own print rule
+     (header, nav { display: none }) sits in a layer that its header layer outranks. */
+  @media print { .arxiv-html-header .html-header-nav { display: none; } }
+  /* Keep the announcement text dark on the Open-Blue band in both colour themes
+     (otherwise it inherits the paper's warm-wash text in dark mode and washes out). */
+  .ds-announcement-text { color: var(--arxiv-ink, #1c1a17); }
+Report GitHub Issue
+×
+Title:
+Content selection saved. Describe the issue below:
+Description:
+Submit without GitHub
+Submit in GitHub
+arXiv is now an independent nonprofit!
+Learn more
+×
+Back to arXiv
+Why HTML?
+Report Issue
+Back to Abstract
+Download PDF
+Abstract
+1
+Introduction
+2
+Related Work
+2.1
+Data-driven fatigue strength prediction
+2.2
+Uncertainty quantification in materials machine learning
+2.3
+Conformal prediction and the marginal–conditional coverage distinction
+2.4
+Positioning
+3
+Materials and Methods
+3.1
+Dataset
+3.2
+Data Leakage Audit
+3.3
+Point Prediction Model
+3.4
+Uncertainty Quantification Methods
+Split-Conformal Prediction (SCP).
+Normalized Conformal Prediction, cross-fitted.
+3.5
+Evaluation Protocol
+4
+Results and Discussion
+4.1
+Point Prediction Performance
+4.2
+Marginal Coverage of Prediction Intervals
+4.3
+Conditional Coverage Analysis
+4.4
+Limitations
+5
+Conclusion
+Data availability statement.
+Acknowledgments.
+Author contribution.
+Funding statement.
+Competing interest.
+Ethical standard.
+References
+License: CC BY 4.0
+arXiv:2608.07589v1 [stat.AP] 05 Aug 2026
+Distribution-Free Conformal Prediction for Steel Fatigue Strength: Marginal Validity Is Not Enough
+Journal:
+Data-Centric Engineering
+Publication type:
+Research Article
+Irene Boruah
+Address:
+Department of Mechanical Engineering, Dibrugarh University Institute of Engineering and Technology, Dibrugarh, 786004,
+\state
+Assam, India. Corresponding author: ireneboruah2004@gmail.com
+Abstract
+Predicting fatigue failure in steel components experimentally is costly because it requires testing across multiple compositions and processing conditions. This has spurred research on data-driven prediction models. Studies using the NIMS MatNavi steel fatigue dataset often report high point-prediction accuracy but rely on aggregate error metrics, leaving uncertainty about the reliability of individual predictions and whether accuracy is consistent across the fatigue-strength spectrum. This paper is the first to apply conformal prediction to steel fatigue strength, comparing five interval-construction methods across 50 independent data splits and distinguishing marginal coverage from coverage within specific sub-regions of the predicted property. A gradient-boosting point model achieves an
+R
+2
+R^{2}
+of
+0.976
+±
+0.009
+0.976\pm 0.009
+and a mean absolute error of
+18.3
+±
+2.3
+18.3\pm 2.3
+MPa. Split-conformal prediction provides valid marginal coverage (0.918) but drops to 0.755 in the highest-strength quartile, where design margins are most critical, a pattern also observed with a Gaussian process baseline. A cross-fitted, normalized conformal method restores near-uniform coverage across all quartiles (0.869–0.938) without a significant increase in interval width, by scaling the interval based on a cross-fitted estimate of local prediction difficulty rather than using a single global width. Diagnostic analysis traces the residual gap in the highest-strength quartile to elevated residual variance (2.7
+×
+\times
+the pooled Q1–Q3 level) rather than a systematic bias, situating the shortfall against a proven distribution-free limit on exact conditional coverage. Marginal coverage claims for ML-based fatigue-strength predictions can conceal systematic unreliability precisely where engineering decisions are most risky; therefore, conditional coverage should be routinely assessed alongside marginal coverage.
+keywords
+conformal prediction, uncertainty quantification, steel fatigue strength, conditional coverage, gradient boosting, materials informatics
+2026
+{Frontmatter}
+\authormark
+Boruah
+Impact Statement
+Steel fatigue failure causes most structural and mechanical component breakdowns, and machine learning models now predict fatigue strength accurately from composition and processing data, avoiding months of physical testing. But accuracy is not trustworthiness: an engineer setting a design allowable needs a confidence interval that holds up where it matters, not just on average. This work shows standard uncertainty methods are unreliable in the high-strength regime, where margins are tightest and failure is costliest. We introduce a method that corrects this at no meaningful cost, and explain, rather than hide, the uncertainty that remains. For engineering uses of machine learning to predict material properties, this offers a concrete check against false confidence: verify coverage holds locally, not only on average.
+1
+Introduction
+Fatigue failure, cracking under repeated stress well below a material’s ultimate strength, is one of the most common ways steel components fail in service, and one of the hardest to catch in advance, since there is typically no visible deformation warning before it happens. Determining fatigue strength experimentally means running physical tests over many load cycles, which is slow and expensive to repeat across composition and processing variants. That cost has pushed researchers toward data-driven prediction instead: train a model on existing fatigue data, then predict strength for a new composition and processing route without physical testing.
+That approach works well. On the NIMS MatNavi steel fatigue dataset used throughout this paper, published models already reach
+R
+2
+R^{2}
+above 0.95
+(
+Agrawal & Choudhary, 2018
+;
+Liu et al., 2023
+;
+Kookalani et al., 2025
+)
+, and recent work has pushed into interpretability, using SHAP to identify which features drive predictions and, in Liu et al.’s case, symbolic regression to recover a closed-form expression. What none of this work does is say how much to trust any individual prediction: every study reports
+R
+2
+R^{2}
+and mean absolute error, aggregate accuracy, and stops there. An engineer setting a safety margin needs more, not just what the model predicts, but how wide the real uncertainty band is, and whether that interval has earned its stated confidence.
+Gaussian process regression is the usual answer, but its uncertainty estimate assumes a specific noise structure with no guarantee that assumption matches real fatigue data. Conformal prediction offers a distribution-free alternative: a 90% interval that really does contain the true value 90% of the time, without assuming anything about the noise distribution, so long as calibration and test data are exchangeable. But that guarantee is usually only checked as an average over the whole test set, marginal coverage. A method can hit 90% on average while being badly wrong in specific sub-regions, and a marginal-only check would never reveal it. For fatigue strength, this matters more than usual: the sub-region most likely to fail, high-strength steel, is also where design margins are tightest.
+This paper compares five interval-construction methods for steel fatigue strength across 50 data splits, separating marginal coverage from coverage within sub-regions of the predicted property. Split-conformal prediction and a Gaussian process baseline are both marginally valid yet conditionally miscalibrated, badly under-covering the high-strength quartile where design margins matter most. A cross-fitted normalized conformal method restores near-uniform coverage across all quartiles at essentially no width cost, and we diagnose the mechanism behind the gap that remains rather than leaving it unexplained.
+Section
+2
+reviews prior work. Section
+3
+describes the dataset, model, and methods compared. Section
+4
+presents results, marginal coverage first, then the conditional-coverage finding that drives the rest of the paper. Section
+5
+concludes.
+2
+Related Work
+2.1
+Data-driven fatigue strength prediction
+Agrawal et al. (2014)
+were the first to apply supervised learning to the NIMS MatNavi fatigue dataset, using composition and processing parameters to predict fatigue strength directly rather than relying on physics-based models that are slow and expensive to build.
+Agrawal & Choudhary (2018)
+turned this into a practical ensemble data-mining tool.
+Liu et al. (2023)
+pushed accuracy on the same dataset substantially further, using engineered atomic-level features (mean electronegativity, valence-electron counts) alongside composition and processing, and identifying tempering temperature and mean electronegativity as the dominant SHAP predictors; they additionally introduce symbolic regression to recover a closed-form expression linking their four key features to fatigue strength.
+Kookalani et al. (2025)
+work with the same 437-sample dataset and, closer to our own feature choices, raw composition rather than engineered atomic descriptors: their CatBoost model reaches
+R
+2
+=
+0.952
+R^{2}=0.952
+, and SHAP identifies tempering temperature, chromium, and molybdenum as dominant predictors. What is consistent across all four studies is the evaluation:
+R
+2
+R^{2}
+and MAPE, full stop. Even the two that go furthest toward interpretability, Liu et al. with SHAP and symbolic regression, Kookalani et al. with SHAP alone, report point-prediction accuracy only: no study in this line constructs a prediction interval with any coverage guarantee, and none checks whether that accuracy holds up evenly across the fatigue-strength range or falls apart somewhere. That is the gap we are after.
+2.2
+Uncertainty quantification in materials machine learning
+Outside the fatigue-specific literature, a wider materials-informatics community has been working on UQ for property prediction generally. Gaussian process regression is the default choice, mostly because it comes with a posterior variance built in, but it assumes a noise structure (usually homoscedastic, sometimes a simple heteroscedastic extension) that may not actually match the property it is applied to.
+Tavazza et al. (2021)
+compared quantile-loss, direct error-learning, and GP approaches across several material properties.
+Varivoda et al. (2023)
+ran a broader benchmark of UQ methods for materials property prediction. Varivoda et al. is the one that matters most here, because it includes inductive conformal prediction. As far as we have found, it is the only materials-property UQ benchmark that does. But it stops at marginal coverage and interval efficiency. Whether coverage holds up within sub-regions of the predicted property is not asked. That question is still open, and it is the one we take up.
+2.3
+Conformal prediction and the marginal–conditional coverage distinction
+Conformal prediction
+(
+Vovk et al., 2005
+)
+gives prediction intervals a distribution-free, finite-sample marginal coverage guarantee, with the only real requirement being exchangeability between calibration and test data. No parametric noise assumption needed. Split-conformal prediction
+(
+Lei et al., 2018
+)
+makes this workable at scale: one held-out calibration set instead of the full conformal procedure, at the cost of a single, constant interval width applied everywhere.
+Papadopoulos et al. (2008)
+introduced normalized nonconformity measures as a fix for exactly this: scaling the nonconformity score by a predicted difficulty estimate so interval width can vary locally instead of staying fixed, which is the technique our own method builds on directly (Section
+3.4
+). That constant width, before normalization, is exactly the weak point that motivated locally-adaptive variants generally.
+Vovk (2012)
+first laid out, rigorously, what “conditional” validity can and cannot mean for a conformal predictor, and showed that inductive conformal predictors are only known to control coverage on average, not within arbitrary sub-populations, which is precisely the gap normalization and later methods try to close.
+Romano et al. (2019)
+built conformalized quantile regression (CQR) to address it from a different angle, pairing conformal calibration with quantile regression so interval width tracks local difficulty. They showed, both in theory and in practice, that a method can be marginally valid while still badly miscalibrated within specific sub-populations. That marginal-versus-conditional distinction is the core problem we are bringing into the fatigue-strength setting, though our locally-adaptive mechanism is a cross-fitted normalized conformal score rather than CQR (Section
+3.4
+). It is worth being upfront about the ceiling here:
+Barber et al. (2021)
+prove that exact conditional coverage is impossible to guarantee distribution-free for continuous targets, without further assumptions on the underlying distribution. Normalization and CQR are both practical approximations to conditional validity, not violations of that impossibility result, and we return to this point in Section
+4.4
+when discussing the residual coverage gap our own method does not fully close.
+2.4
+Positioning
+As far as we can tell, nobody has applied distribution-free conformal prediction to steel fatigue strength before. And within the broader materials-UQ literature, nobody has checked whether a conformal method’s coverage holds conditionally across sub-regions of a predicted property. We address both. It is worth being precise about what this adds beyond
+Liu et al. (2023)
+and
+Kookalani et al. (2025)
+, the two strongest existing works on this exact dataset: their SHAP-based analyses explain why the model predicts what it predicts, feature attribution and, in Liu et al.’s case, a closed-form expression, but neither says anything about how much to trust any individual prediction. Interpretability and calibrated uncertainty are different questions, and the second one has not been asked on this dataset. We show that marginally-valid split-conformal intervals fall apart in the high-strength regime specifically, where design margins are tightest. A cross-fitted normalized conformal method fixes most, though not all, of that failure.
+3
+Materials and Methods
+3.1
+Dataset
+We use the NIMS MatNavi steel fatigue dataset: 437 samples, 25 features covering chemical composition (C, Si, Mn, P, S, Ni, Cr, Cu, Mo) and processing (normalizing, through-hardening, tempering, carburizing, plus upstream rolling and cooling parameters). The target is rotating-bending fatigue strength, spanning 225 to 1,190 MPa across the dataset.
+Each of the 50 runs (Section
+3.5
+) uses its own random split into training, calibration, and test sets. Test is 20% of the data. Of what is left, 25% goes to calibration (used only for conformal calibration, Section
+3.4
+), and the rest trains the model. We fit feature standardization on the training set only, then apply it to calibration and test, so no scaling statistics leak across the split. A row-index column present in the source spreadsheet (a serial number with no physical meaning) is dropped before any model fitting, so it is absent from the 25 features above and from every result reported below.
+3.2
+Data Leakage Audit
+With only 437 samples, we wanted to rule out train/test contamination as an explanation for the accuracy before trusting it. Three checks: full-row duplicates (identical feature and target values), feature-only duplicates (same composition and processing but different fatigue strength, a sign of label noise or measurement duplication rather than real replicates), and near-duplicates, flagged by scaled-Euclidean distance below 5% of the dataset’s median nearest-neighbor distance (threshold 0.0160, against a median of 0.3195).
+We found none of the three. Given how high the
+R
+2
+R^{2}
+is for a dataset this small, it is worth stating plainly: the accuracy in Section
+4.1
+reflects real generalization, not leakage.
+3.3
+Point Prediction Model
+We predict fatigue strength with a gradient boosting regressor
+(
+Friedman, 2001
+)
+. We tuned hyperparameters once, on the seed-42 fold, then froze them for all 50 runs. Re-tuning per split would itself be a form of leakage. The frozen values are n_estimators = 200, learning_rate = 0.05, max_depth = 4, min_samples_leaf = 1, subsample = 1.0, with random_state = 0. Note that the tuning fold falls inside the 0–49 evaluation range, so one of the 50 splits is not fully held out with respect to hyperparameter selection; with a single tuning pass spread across 50 splits the effect on the reported means is negligible.
+We used SHAP
+(
+Lundberg & Lee, 2017
+)
+to check interpretability. Chromium content (Cr) and tempering temperature (TT) were the two dominant predictors by a clear margin, followed by quenching media temperature (QmT), carbon content (C), and normalizing temperature (NT). That ranking lines up with what is already known metallurgically about what drives fatigue strength: Cr and TT govern hardenability and the tempering response that sets the final microstructure, while QmT controls the cooling rate during hardening and therefore the resulting martensite fraction, so their dominance here is not a surprising result, it is a sanity check the model passes. (Section
+4.1
+presents the SHAP figures alongside the other point-prediction performance results.)
+3.4
+Uncertainty Quantification Methods
+We compare five ways of building prediction intervals at
+1
+−
+α
+=
+0.90
+1-\alpha=0.90
+.
+μ
+⁡
+(
+x
+)
+\mu(x)
+is the point prediction from the gradient boosting model.
+Split-Conformal Prediction (SCP).
+The nonconformity score on the calibration set is the absolute residual,
+s
+i
+=
+|
+y
+i
+−
+μ
+⁡
+(
+x
+i
+)
+|
+s_{i}=|y_{i}-\mu(x_{i})|
+. We take the
+(
+1
+−
+α
+)
+(1-\alpha)
+-quantile of these scores at level
+⌈
+(
+1
+−
+α
+)
+​
+(
+n
++
+1
+)
+⌉
+/
+n
+\lceil(1-\alpha)(n+1)\rceil/n
+to get a single number,
+q
+^
+\hat{q}
+, and every test interval becomes
+μ
+⁡
+(
+x
+)
+±
+q
+^
+\mu(x)\pm\hat{q}
+. Same width, everywhere.
+Normalized Conformal Prediction, cross-fitted.
+This is our method, adapting normalized nonconformity measures
+(
+Papadopoulos et al., 2008
+)
+to a cross-fitted difficulty estimate, and the interesting part is how it gets around SCP’s constant width. We train a difficulty model
+ρ
+⁡
+(
+x
+)
+\rho(x)
+to predict expected absolute residual size, so interval width can vary locally rather than stay fixed. Here is the detail that matters: we train
+ρ
+⁡
+(
+x
+)
+\rho(x)
+on out-of-fold residuals from 5-fold cross-fitting on the training set, following the same logic that motivates cross-fitting in double/debiased machine learning more generally
+(
+Chernozhukov et al., 2018
+)
+: a model’s residuals on its own training data are optimistically small, so any downstream estimate built from those residuals inherits that bias unless the two roles stay separated. We fit each fold’s model on the other four and generate residuals on the held-out fold, so
+ρ
+⁡
+(
+x
+)
+\rho(x)
+never sees residuals from a model that saw those same points during training. Skip cross-fitting and use in-sample residuals instead, and they come out optimistically small, since a model always fits its own training data too well, and the method quietly collapses back into behaving like SCP. Cross-fitting makes the method work at all; without it, it is just SCP wearing a different name. We floor
+ρ
+⁡
+(
+x
+)
+\rho(x)
+at
+0.1
+×
+0.1\times
+the mean training residual to avoid dividing by something close to zero. The normalized score is
+s
+i
+=
+|
+y
+i
+−
+μ
+⁡
+(
+x
+i
+)
+|
+/
+ρ
+⁡
+(
+x
+i
+)
+s_{i}=|y_{i}-\mu(x_{i})|/\rho(x_{i})
+; its
+(
+1
+−
+α
+)
+(1-\alpha)
+-quantile
+q
+^
+n
+\hat{q}_{n}
+comes from the calibration set; the interval is
+μ
+⁡
+(
+x
+)
+±
+q
+^
+n
+⋅
+ρ
+⁡
+(
+x
+)
+\mu(x)\pm\hat{q}_{n}\cdot\rho(x)
+, width scaling with local predicted difficulty.
+The remaining three methods are baselines rather than our main contribution.
+A
+bootstrap ensemble
+of 100 gradient boosting models, each fit on a bootstrap resample of training data with the same frozen hyperparameters, gives an interval as the empirical
+[
+α
+/
+2
+,
+1
+−
+α
+/
+2
+]
+[\alpha/2,\ 1-\alpha/2]
+percentile range across those 100 predictions at each test point. This captures epistemic uncertainty in the conditional mean only; it has nothing to say about the aleatoric scatter that is there regardless of how much data you collect.
+Gaussian process regression (GPR)
+uses a constant kernel multiplied by an RBF kernel plus an additive white-noise term, fit on standardized features with internally normalized targets. Kernel hyperparameters are set by marginal-likelihood maximization using scikit-learn’s default optimizer. The 90% interval is
+μ
+G
+​
+P
+​
+R
+​
+(
+x
+)
+±
+1.645
+⋅
+σ
+G
+​
+P
+​
+R
+​
+(
+x
+)
+\mu_{GPR}(x)\pm 1.645\cdot\sigma_{GPR}(x)
+: a standard normal posterior interval.
+Raw quantile regression
+(
+Koenker & Bassett, 1978
+)
+trains two gradient boosting models directly on pinball loss, one targeting
+α
+/
+2
+\alpha/2
+and one targeting
+1
+−
+α
+/
+2
+1-\alpha/2
+, with the same frozen hyperparameters minus the loss function. This baseline skips conformal calibration entirely. We include it to show what happens without that step.
+3.5
+Evaluation Protocol
+All five methods run across 50 independent train/calibration/test splits (seeds 0–49), hyperparameters frozen throughout (Section
+3.3
+). Whatever variability shows up comes from how the data happens to split, not from re-tuning.
+For each seed and method we compute marginal coverage (fraction of test points whose true fatigue strength lands inside the interval) and mean prediction interval width (MPIW). We report both as mean
+±
+\pm
+standard deviation across the 50 seeds (Table
+1
+).
+For conditional calibration, we split each seed’s test set into quartiles by predicted fatigue strength, using that seed’s own 25th/50th/75th percentile cut points, and compute coverage within each quartile, again averaged over 50 seeds (Table
+2
+). This diagnostic is what catches a method being right on average while wrong in specific places.
+Where Q4 (the highest-strength quartile) shows conditional miscalibration, we dig into why. We split the Q4 test residuals into a bias component and a dispersion component, then compare Q4’s residual standard deviation against the pooled standard deviation in Q1–Q3.
+4
+Results and Discussion
+4.1
+Point Prediction Performance
+Across 50 independent train/test splits with frozen hyperparameters, the gradient boosting model achieved a coefficient of determination of
+R
+2
+=
+0.976
+±
+0.009
+R^{2}=0.976\pm 0.009
+and a mean absolute error of
+18.3
+±
+2.3
+18.3\pm 2.3
+MPa on held-out test data, over a fatigue-strength range of 225 to 1,190 MPa. We report the multi-seed average rather than any single split to avoid presenting a favorable draw as a headline result. The modest standard deviation across seeds indicates that predictive accuracy is stable and not an artifact of a particular partition.
+A leakage audit of the dataset (Section
+3.2
+) supports the reliability of this accuracy: we found no full-row duplicates, no feature-only duplicates (identical composition with differing fatigue strength), and no near-duplicate pairs below a scaled-Euclidean threshold of 5% of the median nearest-neighbor distance. The reported accuracy therefore reflects genuine generalization rather than train/test contamination, a relevant point given the high
+R
+2
+R^{2}
+obtained on a dataset of only 437 samples.
+SHAP analysis of the fitted model identified chromium content (Cr) and tempering temperature (TT) as the two dominant predictors by a clear margin, followed by quenching media temperature (QmT), carbon content (C), and normalizing temperature (NT) as a second tier. This ranking is consistent with established metallurgical understanding: Cr and TT govern hardenability and the tempering response that sets the final microstructure, and QmT governs the cooling rate during hardening, which directly sets the martensite fraction, so their dominance supports the physical plausibility of the learned relationships rather than being an artifact of the model.
+Figure 1:
+Parity plot, predicted vs. measured fatigue strength across three model types on a single representative split (seed 42), with the
+y
+=
+x
+y=x
+reference line. The headline accuracy reported above is the 50-seed mean and differs slightly from the single-split value shown here
+Figure 2:
+Mean absolute SHAP value per feature, ranked by importance
+Figure 3:
+SHAP beeswarm plot showing the direction and spread of each feature’s effect on predicted fatigue strength
+4.2
+Marginal Coverage of Prediction Intervals
+Deployment of fatigue-strength predictions in design requires not only accurate point estimates but reliable uncertainty quantification. We evaluated five interval-construction methods at a target coverage of
+1
+−
+α
+=
+0.90
+1-\alpha=0.90
+, reporting empirical marginal coverage and mean prediction interval width (MPIW) averaged over the 50 seeds (Table
+1
+).
+Table 1:
+Marginal coverage and interval width (50-seed mean
+±
+\pm
+std, target coverage 0.90)
+Method
+Coverage
+MPIW (MPa)
+Split-Conformal (SCP)
+0.918
+±
+0.039
+0.918\pm 0.039
+97.9
+±
+22.4
+97.9\pm 22.4
+Normalized Conformal (cross-fitted)
+0.906
+±
+0.041
+0.906\pm 0.041
+95.0
+±
+16.9
+95.0\pm 16.9
+Gaussian Process Regression
+0.887
+±
+0.043
+0.887\pm 0.043
+72.8
+±
+3.9
+72.8\pm 3.9
+Bootstrap Ensemble
+0.650
+±
+0.063
+0.650\pm 0.063
+46.1
+±
+6.5
+46.1\pm 6.5
+Quantile Regression (raw)
+0.765
+±
+0.058
+0.765\pm 0.058
+156.6
+±
+18.4
+156.6\pm 18.4
+Two of the methods fail to provide valid marginal coverage. The bootstrap ensemble covered only 0.650 of test samples: by quantifying epistemic uncertainty in the conditional mean while ignoring irreducible aleatoric scatter, it produces intervals that are far too narrow (46.1 MPa). Raw quantile regression undercovered at 0.765 despite producing the widest intervals (156.6 MPa), indicating that the unconformalized quantile estimates are themselves poorly calibrated at this sample size. Neither method is suitable for reliability-sensitive use.
+The two conformal methods achieved near-nominal marginal coverage (SCP 0.918, normalized 0.906), as expected from their distribution-free finite-sample guarantee under exchangeability
+(
+Vovk et al., 2005
+;
+Lei et al., 2018
+)
+. The Gaussian process baseline
+(
+Rasmussen & Williams, 2006
+)
+fell modestly below target (0.887) with the narrowest intervals among the valid methods (72.8 MPa). On marginal coverage alone, SCP and normalized conformal appear nearly equivalent; the distinction between them emerges only under conditional analysis.
+4.3
+Conditional Coverage Analysis
+Marginal coverage averaged over the full test distribution can mask systematic miscalibration within sub-regions of the input space. To probe this, we partitioned each test set into quartiles by predicted fatigue strength and computed coverage within each quartile, averaged over the 50 seeds (Table
+2
+). The bootstrap ensemble and raw quantile regression are omitted from this analysis: neither achieves valid marginal coverage (Table
+1
+), so conditional coverage is not a meaningful question for them.
+Table 2:
+Coverage by predicted-fatigue-strength quartile (50-seed mean
+±
+\pm
+std, target 0.90)
+Quartile
+SCP
+Normalized CP (cross-fitted)
+GPR
+Q1 (lowest)
+0.979
+±
+0.036
+0.979\pm 0.036
+0.910
+±
+0.071
+0.910\pm 0.071
+0.975
+±
+0.038
+0.975\pm 0.038
+Q2
+0.974
+±
+0.032
+0.974\pm 0.032
+0.938
+±
+0.053
+0.938\pm 0.053
+0.940
+±
+0.059
+0.940\pm 0.059
+Q3
+0.963
+±
+0.046
+0.963\pm 0.046
+0.905
+±
+0.073
+0.905\pm 0.073
+0.893
+±
+0.068
+0.893\pm 0.068
+Q4 (highest)
+0.755
+±
+0.119
+0.755\pm 0.119
+0.869
+±
+0.081
+0.869\pm 0.081
+0.740
+±
+0.099
+0.740\pm 0.099
+Split-conformal, despite its valid marginal coverage, is strongly miscalibrated conditionally. It over-covers the three lower quartiles (0.963–0.979, well above target) and severely under-covers the highest-strength quartile (0.755). This is a direct consequence of the constant interval width imposed by the global nonconformity quantile: a single width cannot simultaneously serve regions of differing residual scale. The Gaussian process baseline exhibits the same pathology (0.975 in Q1 falling to 0.740 in Q4), demonstrating that the failure is not specific to conformal construction but reflects the heteroscedastic structure of the fatigue data, which neither a global conformal width nor a smoothly-varying GP posterior captures in the high-strength regime.
+Normalized conformal prediction, using a cross-fitted difficulty model to scale interval width locally, substantially restores conditional calibration. It holds coverage within a narrow band of 0.869–0.938 across all four quartiles, a conditional coverage range of 0.069, compared with 0.224 for SCP, while preserving marginal validity (0.906, Table
+1
+). It achieves this at essentially no cost in average width (95.0 MPa vs. 97.9 MPa for SCP) and with reduced width variability across seeds (
+±
+16.9
+\pm 16.9
+vs.
+±
+22.4
+\pm 22.4
+MPa): the method redistributes interval width from the over-covered low-strength regime to the under-covered high-strength regime rather than uniformly inflating it.
+Figure 4:
+Grouped bar chart of coverage by quartile for SCP, normalized CP, and GPR, with the 0.90 target line
+Taken together, these results establish that conditional coverage
+(
+Vovk, 2012
+;
+Romano et al., 2019
+)
+, not marginal coverage alone, is the appropriate calibration criterion for this problem.
+4.4
+Limitations
+Normalized conformal prediction does not fully close the coverage gap in the highest-strength quartile, where it reaches 0.869 against the 0.90 target. It is worth situating this against what is actually achievable:
+Barber et al. (2021)
+prove that exact conditional coverage has no distribution-free guarantee for continuous targets without further distributional assumptions, so no method in this comparison, ours included, could close this gap completely.
+Diagnostic analysis of the Q4 residuals rules out a systematic directional bias as the driver: the mean signed residual there is essentially zero (
+−
+0.1
+±
+9.4
+-0.1\pm 9.4
+MPa across seeds), so the model is not consistently over- or under-predicting high-strength steels. The gap instead traces to elevated residual variance: Q4’s residual standard deviation (
+40.9
+±
+7.9
+40.9\pm 7.9
+MPa) runs roughly
+2.7
+×
+2.7\times
+higher than the pooled Q1–Q3 standard deviation (
+15.7
+±
+2.3
+15.7\pm 2.3
+MPa); computed per seed and averaged, the ratio is
+2.68
+±
+0.70
+2.68\pm 0.70
+. Cross-fitted normalization directly targets this heteroscedasticity by scaling interval width to a local difficulty estimate, which is why it closes most of the gap; the residual shortfall likely reflects the difficulty model’s own estimation noise in a region where both training and calibration data are comparatively sparse, rather than a structural bias the method fails to account for.
+Closing this remaining gap further is a natural direction for future work: locally-adaptive alternatives such as conformalized quantile regression
+(
+Romano et al., 2019
+)
+, region-specific split conformal prediction using training-derived quartile thresholds (a direction suggested by Dr. Rohan Hore, personal communication), or enrichment of the dataset in the high-strength regime where samples are sparse.
+5
+Conclusion
+1.
+Split-conformal prediction achieves nominal marginal coverage on steel fatigue strength (0.918) but is conditionally miscalibrated, ranging from 0.979 in the lowest-strength quartile to 0.755 in the highest.
+2.
+A Gaussian process baseline exhibits the identical failure pattern (
+0.975
+→
+0.740
+0.975\rightarrow 0.740
+), showing the problem is a property of the data’s heteroscedastic structure, not an artifact of conformal construction specifically.
+3.
+A cross-fitted normalized conformal method restores near-uniform conditional coverage (0.869–0.938 across all quartiles) at essentially no cost in average interval width, by scaling interval width to a cross-fitted difficulty estimate rather than applying one global width.
+4.
+A residual coverage gap in the highest-strength quartile (0.869 vs. the 0.90 target) traces to elevated residual variance in that regime, roughly
+2.7
+×
+2.7\times
+the pooled Q1–Q3 level (mean per-seed ratio
+2.68
+±
+0.70
+2.68\pm 0.70
+), with no meaningful directional bias (mean Q4 residual is essentially zero), rather than standing as an unexplained shortfall. This gap also reflects a proven theoretical limit
+(
+Barber et al., 2021
+)
+: exact conditional coverage has no distribution-free guarantee, so no method in this comparison could have closed it completely.
+5.
+Engineers using ML-based fatigue-strength predictions should treat marginal coverage claims with caution in the high-strength regime specifically, where design margins matter most and where this analysis shows standard methods are least reliable.
+Declarations
+Data availability statement.
+The NIMS MatNavi steel fatigue dataset is available from Japan’s National Institute for Materials Science (NIMS) subject to their access terms. The code used for data processing, model training, and analysis in this paper is openly available on Zenodo at
+https://doi.org/10.5281/zenodo.21731737
+.
+Acknowledgments.
+The author thanks Dr. Rohan Hore (Carnegie Mellon University) for a helpful discussion on region-specific and localized conformal prediction approaches to the conditional coverage gap discussed in Section
+4.4
+.
+Author contribution.
+The author conceived the study, curated and audited the dataset, developed the methodology (including the cross-fitted normalized conformal method), performed the computational analysis, and wrote the manuscript.
+Funding statement.
+This research received no specific grant from any funding agency.
+Competing interest.
+None.
+Ethical standard.
+The research meets all ethical guidelines, including adherence to the legal requirements of the study country.
+References
+Agrawal & Choudhary (2018)
+Ankit Agrawal and Alok Choudhary
+“An Online Tool for Predicting Fatigue Strength of Steel Alloys Based on Ensemble Data Mining”
+In
+International Journal of Fatigue
+113
+, 2018, pp. 389–400
+DOI:
+10.1016/j.ijfatigue.2018.04.017
+Agrawal et al. (2014)
+Ankit Agrawal, Parijat. Deshpande, Ahmet Cecen, Gautham. Basavarsu, Alok. Choudhary and Surya. Kalidindi
+“Exploration of Data Science Techniques to Predict Fatigue Strength of Steel from Composition and Processing Parameters”
+In
+Integrating Materials and Manufacturing Innovation
+3.1
+, 2014, pp. 90–108
+DOI:
+10.1186/2193-9772-3-8
+Barber et al. (2021)
+Rina Barber, Emmanuel. Candès, Aaditya Ramdas and Ryan. Tibshirani
+“The Limits of Distribution-Free Conditional Predictive Inference”
+In
+Information and Inference: A Journal of the IMA
+10.2
+, 2021, pp. 455–482
+DOI:
+10.1093/imaiai/iaaa017
+Chernozhukov et al. (2018)
+Victor Chernozhukov, Denis Chetverikov, Mert Demirer, Esther Duflo, Christian Hansen, Whitney Newey and James Robins
+“Double/Debiased Machine Learning for Treatment and Structural Parameters”
+In
+The Econometrics Journal
+21.1
+, 2018, pp. C1–C68
+DOI:
+10.1111/ectj.12097
+Friedman (2001)
+Jerome. Friedman
+“Greedy Function Approximation: A Gradient Boosting Machine”
+In
+The Annals of Statistics
+29.5
+, 2001, pp. 1189–1232
+Koenker & Bassett (1978)
+Roger Koenker and Gilbert Bassett
+“Regression Quantiles”
+In
+Econometrica
+46.1
+, 1978, pp. 33–50
+Kookalani et al. (2025)
+Soheila Kookalani, Gozde Ozturk, Hamidreza Alavi, Erika Pärn and Ioannis Brilakis
+“Interpretable Machine Learning for Predicting the Fatigue Strength of Steel: Influence of Composition and Processing Parameters”
+In
+Proceedings of the 37th International Symposium on Automation and Robotics in Construction (ISARC 2025)
+, 2025, pp. 1049–1056
+Lei et al. (2018)
+Jing Lei, Max G’Sell, Alessandro Rinaldo, Ryan. Tibshirani and Larry Wasserman
+“Distribution-Free Predictive Inference for Regression”
+In
+Journal of the American Statistical Association
+113.523
+, 2018, pp. 1094–1111
+DOI:
+10.1080/01621459.2017.1307116
+Liu et al. (2023)
+Chengcheng Liu, Xuandong Wang, Weidong Cai, Jiahui Yang and Hang Su
+“Prediction of the Fatigue Strength of Steel Based on Interpretable Machine Learning”
+In
+Materials
+16.23
+, 2023, pp. 7354
+DOI:
+10.3390/ma16237354
+Lundberg & Lee (2017)
+Scott. Lundberg and Su-In Lee
+“A Unified Approach to Interpreting Model Predictions”
+In
+Advances in Neural Information Processing Systems 30 (NeurIPS 2017)
+, 2017, pp. 4765–4774
+Papadopoulos et al. (2008)
+Harris Papadopoulos, Alexander Gammerman and Vladimir Vovk
+“Normalized Nonconformity Measures for Regression Conformal Prediction”
+In
+Proceedings of the IASTED International Conference on Artificial Intelligence and Applications (AIA 2008)
+, 2008, pp. 64–69
+Rasmussen & Williams (2006)
+Carl Rasmussen and Christopher.. Williams
+“Gaussian Processes for Machine Learning”
+MIT Press, 2006
+Romano et al. (2019)
+Yaniv Romano, Evan Patterson and Emmanuel. Candès
+“Conformalized Quantile Regression” arXiv:1905.03222
+In
+Advances in Neural Information Processing Systems 32 (NeurIPS 2019)
+, 2019
+Tavazza et al. (2021)
+Francesca Tavazza, Brian DeCost and Kamal Choudhary
+“Uncertainty Prediction for Machine Learning Models of Material Properties”
+In
+ACS Omega
+6.48
+, 2021, pp. 32431–32440
+DOI:
+10.1021/acsomega.1c03752
+Varivoda et al. (2023)
+Daniel Varivoda, Rongzhi Dong, Sadman Omee and Jianjun Hu
+“Materials Property Prediction with Uncertainty Quantification: A Benchmark Study”
+In
+Applied Physics Reviews
+10.2
+, 2023, pp. 021409
+DOI:
+10.1063/5.0133528
+Vovk (2012)
+Vladimir Vovk
+“Conditional Validity of Inductive Conformal Predictors”
+In
+Proceedings of the Asian Conference on Machine Learning
+25
+, PMLR, 2012, pp. 475–490
+Vovk et al. (2005)
+Vladimir Vovk, Alexander Gammerman and Glenn Shafer
+“Algorithmic Learning in a Random World”
+Springer, 2005
+Experimental support, please
+view the build logs
+for errors. Generated by
+L
+A
+T
+E
+xml
+.
+Instructions for reporting errors
+We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+      support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+      methods listed below:
+Click the "Report Issue"
+(
+)
+button, located in the page header.
+Tip:
+You can select the relevant text first, to include it in your report.
+Our team has already identified
+the following issues
+. We appreciate your time reviewing and reporting rendering errors we
+      may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+      should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+      all.
+Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a
+list of packages that need conversion
+, and welcome
+developer contributions
+.
+We gratefully acknowledge support from
+        our
+major funders
+,
+member institutions
+,
+,
+        and all contributors.
+About
+·
+Help
+·
+Contact
+·
+Subscribe
+·
+Copyright
+·
+Privacy
+·
+Accessibility
+·
+Operational Status
+(opens in new tab)
+Major funding support from

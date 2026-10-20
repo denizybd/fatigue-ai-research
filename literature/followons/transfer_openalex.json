@@ -1,0 +1,1295 @@
+{
+  "id": "https://openalex.org/W7163571496",
+  "doi": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+  "title": "Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process \u2212 structure \u2212 property relationship",
+  "display_name": "Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process \u2212 structure \u2212 property relationship",
+  "publication_year": 2026,
+  "publication_date": "2026-06-04",
+  "ids": {
+    "openalex": "https://openalex.org/W7163571496",
+    "doi": "https://doi.org/10.1016/j.engfailanal.2026.111075"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.engfailanal.2026.111075",
+    "doi": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S152303250",
+      "display_name": "Engineering Failure Analysis",
+      "issn_l": "1350-6307",
+      "issn": [
+        "1350-6307",
+        "1873-1961"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "anvur-scientific",
+        "cwts-core",
+        "dongbi-b",
+        "jufo-1",
+        "ki-jl-1",
+        "norway-1",
+        "poland-100",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Engineering Failure Analysis",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "hybrid",
+    "oa_url": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5092796436",
+        "display_name": "Alessio Centola",
+        "orcid": "https://orcid.org/0009-0002-3536-6486",
+        "observed_orcids": [
+          "https://orcid.org/0009-0002-3536-6486"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Alessio Centola",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0009-0002-3536-6486",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5009618676",
+        "display_name": "Alberto Ciampaglia",
+        "orcid": "https://orcid.org/0000-0002-4054-1317",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-4054-1317"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Alberto Ciampaglia",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-4054-1317",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5028917454",
+        "display_name": "Davide Salvatore Paolino",
+        "orcid": "https://orcid.org/0000-0002-4231-4580",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-4231-4580",
+          "https://orcid.org/0009-0003-6658-2779"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Davide Salvatore Paolino",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-4231-4580",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5076669080",
+        "display_name": "Andrea Tridello",
+        "orcid": "https://orcid.org/0000-0003-3007-3377",
+        "observed_orcids": [
+          "https://orcid.org/0000-0003-3007-3377"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Andrea Tridello",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129 Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5092796436"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I177477856"
+  ],
+  "apc_list": {
+    "value": 3820,
+    "currency": "USD",
+    "value_usd": 3820
+  },
+  "apc_paid": {
+    "value": 3820,
+    "currency": "USD",
+    "value_usd": 3820
+  },
+  "fwci": 0.0,
+  "has_fulltext": true,
+  "cited_by_count": 0,
+  "citation_normalized_percentile": {
+    "value": 0.31363554,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": null,
+  "biblio": {
+    "volume": "197",
+    "issue": null,
+    "first_page": "111075",
+    "last_page": "111075"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10396",
+    "display_name": "Fatigue and fracture mechanics",
+    "score": 0.6890000104904175,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2211",
+      "display_name": "Mechanics of Materials"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10396",
+      "display_name": "Fatigue and fracture mechanics",
+      "score": 0.6890000104904175,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2211",
+        "display_name": "Mechanics of Materials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11948",
+      "display_name": "Machine Learning in Materials Science",
+      "score": 0.13369999825954437,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2505",
+        "display_name": "Materials Chemistry"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10705",
+      "display_name": "Additive Manufacturing Materials and Processes",
+      "score": 0.12780000269412994,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2210",
+        "display_name": "Mechanical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/transfer-learning",
+      "display_name": "transfer learning",
+      "score": 0.8259999752044678
+    },
+    {
+      "id": "https://openalex.org/keywords/fatigue-life-prediction",
+      "display_name": "fatigue life prediction",
+      "score": 0.9390000104904175
+    },
+    {
+      "id": "https://openalex.org/keywords/additive-manufacturing",
+      "display_name": "additive manufacturing",
+      "score": 0.8830000162124634
+    },
+    {
+      "id": "https://openalex.org/keywords/data-scarcity",
+      "display_name": "data scarcity",
+      "score": 0.890999972820282
+    },
+    {
+      "id": "https://openalex.org/keywords/processing-structure-property-relationships",
+      "display_name": "process-structure-property relationships",
+      "score": 0.8679999709129333
+    },
+    {
+      "id": "https://openalex.org/keywords/bayesian-neural-networks",
+      "display_name": "Bayesian neural networks",
+      "score": 0.8050000071525574
+    },
+    {
+      "id": "https://openalex.org/keywords/ti-6al-4v",
+      "display_name": "Ti-6Al-4V",
+      "score": 0.9660000205039978
+    },
+    {
+      "id": "https://openalex.org/keywords/alsi10mg-alloy",
+      "display_name": "AlSi10Mg",
+      "score": 0.9990000128746033
+    },
+    {
+      "id": "https://openalex.org/keywords/316l-stainless-steel",
+      "display_name": "316L stainless steel",
+      "score": 0.9340000152587891
+    },
+    {
+      "id": "https://openalex.org/keywords/process-parameters",
+      "display_name": "process parameters",
+      "score": 0.800000011920929
+    },
+    {
+      "id": "https://openalex.org/keywords/fatigue-design",
+      "display_name": "fatigue design",
+      "score": 0.3070000112056732
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C109747225",
+      "wikidata": "https://www.wikidata.org/wiki/Q815758",
+      "display_name": "Scarcity",
+      "level": 2,
+      "score": 0.7221999764442444
+    },
+    {
+      "id": "https://openalex.org/C98045186",
+      "wikidata": "https://www.wikidata.org/wiki/Q205663",
+      "display_name": "Process (computing)",
+      "level": 2,
+      "score": 0.7195000052452087
+    },
+    {
+      "id": "https://openalex.org/C189950617",
+      "wikidata": "https://www.wikidata.org/wiki/Q937228",
+      "display_name": "Property (philosophy)",
+      "level": 2,
+      "score": 0.6559000015258789
+    },
+    {
+      "id": "https://openalex.org/C150899416",
+      "wikidata": "https://www.wikidata.org/wiki/Q1820378",
+      "display_name": "Transfer of learning",
+      "level": 2,
+      "score": 0.5227000117301941
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.44350001215934753
+    },
+    {
+      "id": "https://openalex.org/C2776175482",
+      "wikidata": "https://www.wikidata.org/wiki/Q1195816",
+      "display_name": "Transfer (computing)",
+      "level": 2,
+      "score": 0.42649999260902405
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.37619999051094055
+    },
+    {
+      "id": "https://openalex.org/C13736549",
+      "wikidata": "https://www.wikidata.org/wiki/Q4489420",
+      "display_name": "Industrial engineering",
+      "level": 1,
+      "score": 0.34119999408721924
+    },
+    {
+      "id": "https://openalex.org/C154945302",
+      "wikidata": "https://www.wikidata.org/wiki/Q11660",
+      "display_name": "Artificial intelligence",
+      "level": 1,
+      "score": 0.31310001015663147
+    },
+    {
+      "id": "https://openalex.org/C81299745",
+      "wikidata": "https://www.wikidata.org/wiki/Q334269",
+      "display_name": "Transfer function",
+      "level": 2,
+      "score": 0.30489999055862427
+    },
+    {
+      "id": "https://openalex.org/C2776960227",
+      "wikidata": "https://www.wikidata.org/wiki/Q2586354",
+      "display_name": "Knowledge transfer",
+      "level": 2,
+      "score": 0.29170000553131104
+    },
+    {
+      "id": "https://openalex.org/C26517878",
+      "wikidata": "https://www.wikidata.org/wiki/Q228039",
+      "display_name": "Key (lock)",
+      "level": 2,
+      "score": 0.2574999928474426
+    },
+    {
+      "id": "https://openalex.org/C2777938197",
+      "wikidata": "https://www.wikidata.org/wiki/Q7834022",
+      "display_name": "Transfer of training",
+      "level": 2,
+      "score": 0.2506999969482422
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.engfailanal.2026.111075",
+      "doi": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S152303250",
+        "display_name": "Engineering Failure Analysis",
+        "issn_l": "1350-6307",
+        "issn": [
+          "1350-6307",
+          "1873-1961"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "anvur-scientific",
+          "cwts-core",
+          "dongbi-b",
+          "jufo-1",
+          "ki-jl-1",
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Engineering Failure Analysis",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:iris.polito.it:11583/3013143",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "https://hdl.handle.net/11583/3013143",
+      "pdf_url": "https://iris.polito.it/bitstream/11583/3013143/2/Centola%20et%20al.%20-%20Data%20scarcity%20in%20fatigue%20design%20of%20AM%20parts%20A%20transfer%20learning%20framework%20to%20model%20the%20process%20%e2%88%92%20structure%20%e2%88%92%20property%20relationship%20-%20comp.pdf",
+      "source": {
+        "id": "https://openalex.org/S7407055329",
+        "display_name": "PORTO@Iris",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "info:eu-repo/semantics/article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1016/j.engfailanal.2026.111075",
+    "doi": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S152303250",
+      "display_name": "Engineering Failure Analysis",
+      "issn_l": "1350-6307",
+      "issn": [
+        "1350-6307",
+        "1873-1961"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "anvur-scientific",
+        "cwts-core",
+        "dongbi-b",
+        "jufo-1",
+        "ki-jl-1",
+        "norway-1",
+        "poland-100",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Engineering Failure Analysis",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [
+    {
+      "display_name": "Industry, innovation and infrastructure",
+      "id": "https://metadata.un.org/sdg/9",
+      "score": 0.5378999710083008
+    }
+  ],
+  "sustainable_development_goals_aurora": [
+    {
+      "display_name": "Climate action",
+      "id": "https://metadata.un.org/sdg/13",
+      "score": 0.4382702708244324
+    }
+  ],
+  "study_designs": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 109,
+  "referenced_works": [
+    "https://openalex.org/W947063803",
+    "https://openalex.org/W1958634925",
+    "https://openalex.org/W2013024365",
+    "https://openalex.org/W2028236214",
+    "https://openalex.org/W2058524613",
+    "https://openalex.org/W2083430307",
+    "https://openalex.org/W2093872829",
+    "https://openalex.org/W2098459033",
+    "https://openalex.org/W2112617887",
+    "https://openalex.org/W2204647836",
+    "https://openalex.org/W2384513450",
+    "https://openalex.org/W2405744025",
+    "https://openalex.org/W2408619629",
+    "https://openalex.org/W2468956998",
+    "https://openalex.org/W2568514500",
+    "https://openalex.org/W2605415991",
+    "https://openalex.org/W2737835937",
+    "https://openalex.org/W2745207820",
+    "https://openalex.org/W2772445686",
+    "https://openalex.org/W2795022093",
+    "https://openalex.org/W2795108952",
+    "https://openalex.org/W2809577129",
+    "https://openalex.org/W2858673650",
+    "https://openalex.org/W2884258664",
+    "https://openalex.org/W2884812296",
+    "https://openalex.org/W2893266492",
+    "https://openalex.org/W2899283552",
+    "https://openalex.org/W2901298394",
+    "https://openalex.org/W2904015241",
+    "https://openalex.org/W2917140214",
+    "https://openalex.org/W2918284714",
+    "https://openalex.org/W2941080303",
+    "https://openalex.org/W2952953259",
+    "https://openalex.org/W2955939954",
+    "https://openalex.org/W2961604913",
+    "https://openalex.org/W2963760156",
+    "https://openalex.org/W2970458529",
+    "https://openalex.org/W2986379646",
+    "https://openalex.org/W2996972405",
+    "https://openalex.org/W3006564653",
+    "https://openalex.org/W3015248553",
+    "https://openalex.org/W3016840523",
+    "https://openalex.org/W3019883205",
+    "https://openalex.org/W3028373266",
+    "https://openalex.org/W3033089788",
+    "https://openalex.org/W3045236245",
+    "https://openalex.org/W3056439226",
+    "https://openalex.org/W3061569788",
+    "https://openalex.org/W3091589417",
+    "https://openalex.org/W3094109425",
+    "https://openalex.org/W3098533991",
+    "https://openalex.org/W3109859104",
+    "https://openalex.org/W3120338085",
+    "https://openalex.org/W3126673207",
+    "https://openalex.org/W3127829091",
+    "https://openalex.org/W3133844953",
+    "https://openalex.org/W3149027251",
+    "https://openalex.org/W3161759570",
+    "https://openalex.org/W3167364775",
+    "https://openalex.org/W3168187080",
+    "https://openalex.org/W3177435813",
+    "https://openalex.org/W3193440305",
+    "https://openalex.org/W3197313489",
+    "https://openalex.org/W3199496501",
+    "https://openalex.org/W3208382710",
+    "https://openalex.org/W3215178455",
+    "https://openalex.org/W4200353395",
+    "https://openalex.org/W4210557940",
+    "https://openalex.org/W4213441432",
+    "https://openalex.org/W4214737549",
+    "https://openalex.org/W4220816912",
+    "https://openalex.org/W4220846477",
+    "https://openalex.org/W4224226519",
+    "https://openalex.org/W4224884878",
+    "https://openalex.org/W4224935497",
+    "https://openalex.org/W4228999199",
+    "https://openalex.org/W4229002826",
+    "https://openalex.org/W4229368118",
+    "https://openalex.org/W4249678223",
+    "https://openalex.org/W4281478366",
+    "https://openalex.org/W4281479491",
+    "https://openalex.org/W4281708633",
+    "https://openalex.org/W4283459157",
+    "https://openalex.org/W4285586279",
+    "https://openalex.org/W4285603290",
+    "https://openalex.org/W4285807191",
+    "https://openalex.org/W4288036948",
+    "https://openalex.org/W4292622286",
+    "https://openalex.org/W4293037178",
+    "https://openalex.org/W4295725624",
+    "https://openalex.org/W4297320247",
+    "https://openalex.org/W4302287593",
+    "https://openalex.org/W4313268458",
+    "https://openalex.org/W4313593791",
+    "https://openalex.org/W4362591107",
+    "https://openalex.org/W4385154479",
+    "https://openalex.org/W4385725428",
+    "https://openalex.org/W4388906672",
+    "https://openalex.org/W4390660224",
+    "https://openalex.org/W4390913891",
+    "https://openalex.org/W4391248287",
+    "https://openalex.org/W4399325729",
+    "https://openalex.org/W4402313473",
+    "https://openalex.org/W4404028544",
+    "https://openalex.org/W4404516820",
+    "https://openalex.org/W4411589694",
+    "https://openalex.org/W4415766881",
+    "https://openalex.org/W7082652894",
+    "https://openalex.org/W7119139129"
+  ],
+  "related_works": [],
+  "abstract_inverted_index": {
+    "The": [
+      0,
+      21,
+      59,
+      114,
+      157,
+      188
+    ],
+    "paper": [
+      1
+    ],
+    "demonstrates": [
+      2
+    ],
+    "the": [
+      3,
+      11,
+      39,
+      47,
+      80,
+      86,
+      96,
+      99,
+      102,
+      124,
+      131,
+      135,
+      138,
+      141,
+      163,
+      168,
+      178,
+      184,
+      221,
+      225,
+      235
+    ],
+    "effectiveness": [
+      4,
+      116
+    ],
+    "of": [
+      5,
+      15,
+      41,
+      56,
+      134,
+      167,
+      227
+    ],
+    "transfer": [
+      6,
+      44
+    ],
+    "learning": [
+      7
+    ],
+    "(TL)": [
+      8
+    ],
+    "in": [
+      9,
+      45,
+      129,
+      213
+    ],
+    "improving": [
+      10,
+      46
+    ],
+    "fatigue": [
+      12,
+      57,
+      103,
+      208,
+      231
+    ],
+    "failure": [
+      13
+    ],
+    "prediction": [
+      14
+    ],
+    "additively": [
+      16
+    ],
+    "manufactured": [
+      17
+    ],
+    "(AMed)": [
+      18
+    ],
+    "metallic": [
+      19
+    ],
+    "alloys.": [
+      20
+    ],
+    "approach": [
+      22
+    ],
+    "is": [
+      23,
+      117,
+      160,
+      175
+    ],
+    "applied": [
+      24,
+      97
+    ],
+    "to": [
+      25,
+      37,
+      205,
+      223
+    ],
+    "three": [
+      26,
+      125
+    ],
+    "commonly": [
+      27
+    ],
+    "used": [
+      28
+    ],
+    "AMed": [
+      29
+    ],
+    "alloys": [
+      30,
+      73,
+      133
+    ],
+    "\u2212": [
+      31,
+      36
+    ],
+    "Ti6Al4V,": [
+      32
+    ],
+    "AlSi10Mg": [
+      33
+    ],
+    "and": [
+      34,
+      74,
+      92,
+      95,
+      110,
+      137,
+      174,
+      196
+    ],
+    "SS316L": [
+      35
+    ],
+    "investigate": [
+      38
+    ],
+    "potential": [
+      40
+    ],
+    "multi-material": [
+      42,
+      202
+    ],
+    "knowledge": [
+      43
+    ],
+    "predictive": [
+      48
+    ],
+    "accuracy": [
+      49,
+      159,
+      195
+    ],
+    "under": [
+      50
+    ],
+    "data-scarcity": [
+      51
+    ],
+    "conditions,": [
+      52
+    ],
+    "which": [
+      53
+    ],
+    "are": [
+      54,
+      238
+    ],
+    "typical": [
+      55
+    ],
+    "testing.": [
+      58
+    ],
+    "TL": [
+      60,
+      115,
+      182,
+      192,
+      219
+    ],
+    "framework": [
+      61
+    ],
+    "employs": [
+      62
+    ],
+    "a": [
+      63,
+      106,
+      120,
+      145
+    ],
+    "Bayesian": [
+      64
+    ],
+    "neural": [
+      65
+    ],
+    "network": [
+      66
+    ],
+    "(BNN)": [
+      67
+    ],
+    "pre-trained": [
+      68
+    ],
+    "on": [
+      69,
+      123,
+      170,
+      183,
+      230
+    ],
+    "data": [
+      70,
+      78,
+      155,
+      215,
+      237
+    ],
+    "from": [
+      71,
+      79,
+      85,
+      200
+    ],
+    "two": [
+      72,
+      132
+    ],
+    "subsequently": [
+      75
+    ],
+    "fine-tuned": [
+      76
+    ],
+    "using": [
+      77,
+      162
+    ],
+    "third,": [
+      81
+    ],
+    "data-scarce": [
+      82
+    ],
+    "alloy.": [
+      83
+    ],
+    "Starting": [
+      84
+    ],
+    "process": [
+      87,
+      228
+    ],
+    "parameters,": [
+      88
+    ],
+    "risk": [
+      89
+    ],
+    "volume,": [
+      90
+    ],
+    "thermal": [
+      91
+    ],
+    "surface": [
+      93
+    ],
+    "treatments,": [
+      94
+    ],
+    "stress,": [
+      98
+    ],
+    "BNN": [
+      100
+    ],
+    "predicts": [
+      101
+    ],
+    "life": [
+      104
+    ],
+    "at": [
+      105
+    ],
+    "defined": [
+      107
+    ],
+    "reliability": [
+      108
+    ],
+    "(R)": [
+      109
+    ],
+    "confidence": [
+      111,
+      212
+    ],
+    "(C)": [
+      112
+    ],
+    "levels.": [
+      113
+    ],
+    "assessed": [
+      118
+    ],
+    "though": [
+      119
+    ],
+    "cross-material": [
+      121
+    ],
+    "validation": [
+      122,
+      172
+    ],
+    "alloys,": [
+      126
+    ],
+    "by": [
+      127
+    ],
+    "changing": [
+      128
+    ],
+    "turn": [
+      130
+    ],
+    "pre-training": [
+      136
+    ],
+    "third": [
+      139
+    ],
+    "as": [
+      140
+    ],
+    "target": [
+      142
+    ],
+    "material": [
+      143
+    ],
+    "with": [
+      144,
+      153,
+      210
+    ],
+    "truncated": [
+      146
+    ],
+    "training": [
+      147
+    ],
+    "dataset,": [
+      148
+    ],
+    "mimicking": [
+      149
+    ],
+    "realistic": [
+      150
+    ],
+    "experimental": [
+      151
+    ],
+    "scenarios": [
+      152
+    ],
+    "limited": [
+      154
+    ],
+    "availability.": [
+      156
+    ],
+    "model": [
+      158,
+      179
+    ],
+    "evaluated": [
+      161
+    ],
+    "R": [
+      164
+    ],
+    "2": [
+      165
+    ],
+    "score": [
+      166
+    ],
+    "predictions": [
+      169
+    ],
+    "external": [
+      171
+    ],
+    "datasets": [
+      173
+    ],
+    "compared": [
+      176
+    ],
+    "against": [
+      177,
+      207
+    ],
+    "trained": [
+      180
+    ],
+    "without": [
+      181
+    ],
+    "same": [
+      185
+    ],
+    "reduced": [
+      186
+    ],
+    "database.": [
+      187
+    ],
+    "results": [
+      189
+    ],
+    "shows": [
+      190
+    ],
+    "that": [
+      191
+    ],
+    "improves": [
+      193
+    ],
+    "both": [
+      194
+    ],
+    "generalization": [
+      197
+    ],
+    "capability,": [
+      198
+    ],
+    "benefiting": [
+      199
+    ],
+    "heterogenous": [
+      201
+    ],
+    "knowledge,": [
+      203
+    ],
+    "allowing": [
+      204
+    ],
+    "design": [
+      206
+    ],
+    "failures": [
+      209
+    ],
+    "greater": [
+      211
+    ],
+    "this": [
+      214
+    ],
+    "scarce": [
+      216
+    ],
+    "conditions.": [
+      217
+    ],
+    "Moreover,": [
+      218
+    ],
+    "enhances": [
+      220
+    ],
+    "ability": [
+      222
+    ],
+    "infer": [
+      224
+    ],
+    "influence": [
+      226
+    ],
+    "parameters": [
+      229
+    ],
+    "behaviour,": [
+      232
+    ],
+    "even": [
+      233
+    ],
+    "when": [
+      234
+    ],
+    "available": [
+      236
+    ],
+    "limited.": [
+      239
+    ]
+  },
+  "counts_by_year": [],
+  "updated_date": "2026-10-15T10:00:46.086208",
+  "created_date": "2026-06-05T00:00:00"
+}

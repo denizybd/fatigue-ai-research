@@ -1,0 +1,36 @@
+{
+  "audit_date": "2026-10-20",
+  "cutoff": "2026-10-20",
+  "method": "Targeted primary-source web queries; no systematic/exhaustive claim. Author posts/abstracts and Crossref metadata retained as labeled.",
+  "queries": [
+    "additive manufacturing fatigue machine learning conformal prediction uncertainty out of distribution leave one publication out",
+    "fatigue life prediction additive manufacturing dataset train test splitting publication leakage uncertainty",
+    "conformal prediction censored survival exchangeability groups hierarchical",
+    "\"fatigue\" \"conformal\" \"additive\" prediction",
+    "\"Machine learning for fatigue life prediction of additively manufactured alloys\" \"2026\" doi",
+    "selective prediction risk coverage neural network uncertainty Geifman El Yaniv 2017",
+    "\"10.1016/j.ijfatigue.2026.109943\" \"October\"",
+    "\"Machine learning for fatigue life prediction\" \"Wu\" \"109943\"",
+    "\"additive\" \"fatigue\" \"uncertainty\" \"out-of-distribution\"",
+    "\"Distribution-free inference with hierarchical data\" Lee Barber Willett",
+    "\"fatigue\" \"conformal prediction\" metals -conformal-cooling -mould",
+    "\"censoring-aware\" \"fatigue\" \"additively\"",
+    "\"109943\" \"Available online\" fatigue",
+    "\"Machine learning for fatigue life prediction of additively manufactured alloys\" -site:eurekamag.com -site:sciencedirect.com",
+    "\"fatigue\" \"risk-coverage\" prediction",
+    "\"fatigue\" \"selective prediction\"",
+    "\"Conformalized Survival Analysis\" DOI Candès Lei Ren 2023",
+    "\"Distribution-free inference with hierarchical data\" \"10.1145\"",
+    "\"Conformal prediction beyond exchangeability\" 10.1214 2023 authors",
+    "\"A Bayesian defect-based physics-guided neural network model\" doi",
+    "\"fatigue\" \"conformal\" \"runout\"",
+    "\"fatigue\" \"publication\" \"uncertainty\" \"machine learning\" additive group",
+    "\"Prediction sets and conformal inference with censored outcomes\" authors"
+  ],
+  "unavailable": [
+    "Wu et al full text and exact online date",
+    "Kookalani et al full text",
+    "ASME full manuscript and DOI",
+    "EFAST manuscript and DOI"
+  ]
+}

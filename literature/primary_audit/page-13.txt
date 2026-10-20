@@ -1,0 +1,77 @@
+A.      Centola      et      al.                                                                                                                                                                                         Engineering Failure Analysis 168 (2025) 109081
+
+and      flexibility.      This      conclusion      is      further      supported      in      [9],      where      a      review      of      machine      learning      techniques      for      predicting      the      fatigue
+response     of     AM     parts     was     conducted.     Specifically,     the     analysis     in     [9]     highlighted     that     NNs     are     among     the     most     effective     ML     algorithms
+for      this      particular      application.      Indeed,      from      Fig.      7      it      is      possible      to      appreciate      this      behavior.      For      each      dataset,      the      BNN      is      interrogated
+100     times     for     each     Sa            level,     and     100     BNN     curves     (light     blue)     and     their     mean     (blue)     can     be     computed     and     plotted     on     top     of     the     R90C90
+experimental    curve    (dashed    black).    It    is    possible    to    appreciate    how    the    results    are    greatly    improved    for    the    same    training    (Fig.    7a    and    c)
+and     testing     (Fig.     7b     and     d)     sets,     used     also     for     the     previous     NN.     The     model     predictions     can     outline     which     regions     of     the     dataset     are     less
+confident      and      which      ones      are      more      certain.      It      can      be      understood      how      the      Sa                                   levels      around      250      MPa      output      a      tighter      prediction      band,
+whereas     the     upper     and     lower     extrema     (namely     400     and     100     MPa)     produce     a     less     confident     band.     This     behavior     can     be     mainly     ascribed
+to         a         higher         density         of         experimental         points         around         250         MPa         and         to         a         lower         one         around         100         and         400         MPa         in         the         TDB.         The         BNN
+automatically      accounts      for      these      discrepancies      by      adjusting      the      weight      uncertainty      and      increasing      the      associated      standard      deviation.
+Due       to       these       reasons       and       the       ones       explained       in       Section       3.3,       this       particular       model       proves       to       be       the       most       generalizable,       reliable       and
+flexible.
+       It     must     be     noted     that,     during     the     fatigue     design     stage,     a     unique     PSN     design     curve     should     be     available     rather     than     a     band     of     curves.
+According     to     Fig.     8,     the     10th     curve     of     the     BNN     prediction     envelope     can     be     considered     as     the     BNN     C90     curve     and     is     characterized     by     an
+offset     with     respect     to     the     R90C90     Owen’ s     experimental     fit     (dashed     black)     and     the     BNN     mean     (blue),     indicating     how     confident     the     BNN
+prediction        is.        This        curve,        with        this        R90C90        BNN,        is        the        one        to        be        used        to        design        against        fatigue        failures        for        PBF-LB        SS316L        when
+considering       the       influence       of      PP.       This       approach       has       been       validated      on       the       PBF-LB       SS316L,      but       it       can      be       generalized       and       extended       to
+other     materials.     Fig.     8     shows     the     advantages     of     employing     a     BNN:     with     this     ML     model     is     possible     to     separate     the     epistemic     uncertainty
+contribution         related         to         the         ML        algorithm,         from        the         aleatoric        and         epistemic         uncertainty         contributions         that         are         tied         to         the         Owen’ s
+R90C90      fatigue       design      curve.
+       Table       3.       resumes       the       NN        models       employed       for       this       research,       listing       their       details,       objectives,       advantages       and       disadvantages       in       a
+compact      manner.
+
+
+4.2.              Process       parameters       influence
+
+       Once       the       BNN       has       been       correctly       trained,       it       can       be       used       to       produce       continuous       predictions       to       evaluate       the       PP       influence       on       the
+fatigue     life.     Since     Sa            ranges     from     100     to     400     MPa     in     the     TDB,     the     200     and     350     MPa     levels     have     been     chosen,     i.e.,     the     stress     amplitudes
+where     a    larger    amount    of    data     is    available.    In     this    parametric    study,    specific     parameters     have    been     varied     while    all    the    remaining     input
+features      have       been      set       to       their      most       recurrent       values      (Table       4).
+       In    Section    4.2.1    the    effect    of    a    single    parameter    is    studied,    specifically             ϑ       ,    P,    v,    h,    and    t.    Section    4.2.2    evaluates    the    synergic    effect    of    P
+and       v,      h       and       t,      and       of      Edand                   ϑ       .       In      this      Section       the      word                   “    life”           is      always       referred       to      as       the      R90C90       Nfpredicted      by      the       BNN.
+
+4.2.1.              Single       parameter       influence
+       Fig.      9a      shows      the      effect      of                  ϑ             on      the      fatigue      life.      The      model      is      in      agreement      with      the      experimental      results      which      demonstrate      that
+horizontally      manufactured       specimens       (0◦)      have      a       better       fatigue      life       than      the      vertically       manufactured       ones      (90◦)      [2,27,50,51].
+       In      the      case      of      P,      v,      h,      and      t,      the      predictions      have      been      extended      outside      the      respective      range      observed      in      the      TDB,      as      indicated      by
+black          dashed          lines          in          Fig.          9b          and          9e.          Therefore,          the          training          ranges,          as          maximum          and          minimum          values,          found          in          the          TDB          are
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.      8.          PSN      curves      BNN      model      uncertainty      at      a      model      confidence      level      of      90%      (Orange)      for      two      datasets.      Within      the      uncertainty      bands,      the      10th
+element      can      be       selected      to      provide       the       C90      BNN      R90C90       design      curve.
+
+
+                                                                                                                                                     13

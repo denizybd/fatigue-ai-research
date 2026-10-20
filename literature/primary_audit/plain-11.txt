@@ -1,0 +1,18 @@
+uncertainty via the predicted σ . In detail, the PINN-L has been firstly interrogated with fixed features (set to the TDB most recurrent
+values, as it has been done for Section 4.2 ), while varying the studied PP, one at a time. The kernel density estimate (blue) has been
+superimposed to demonstrate that when there is a large amount of data, as in the 150 – 280 W range for P ( Fig. 6 a) and the 80 – 110 μ m
+Fig. 5. ( continued ).
+Table 2
+Experimental, FFNN-L and PINN-L MLLE for the shown training and testing datasets. The row total accounts for the sum of the MLLE of all 51 datasets.
+The PINN-L outperforms the FFNN-L since its MLLE is significantly higher.
+Dataset Experimental FFNN-L PINN-L Training Testing
+0 1.658 1.485 0.444 x ​
+15 9.595 1.782 4.057 ​ x
+34 - 0.851 - 15.804 - 5.097 x ​
+48 - 7.104 - 60.864 - 8.215 ​ x
+Total 132.275 - 4887.481 - 51.226 ​ ​
+Fig. 6. Standard deviation σ estimated by the PINN-L as the PP varies (P in a, h in b). The red points correspond to the actual training values in the
+TDB. The dashed black line refers to the PP range outside the TDB, while its plain counterpart refers to the training range. In dashed blue the kernel
+density estimate.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+11 

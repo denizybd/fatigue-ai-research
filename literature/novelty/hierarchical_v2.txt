@@ -1,0 +1,17457 @@
+Distribution-free inference with hierarchical data
+// Restore the saved color scheme preference, or
+  // enact the browser preference if "automatic", 
+  // without expecting DOM load to have completed.
+  //
+  // Also restore any saved readingmode and ToC display preferences.
+  function initializeReadingPreferences() {
+    let saved_theme = localStorage.getItem("ar5iv_theme") || "automatic";
+    if (saved_theme === "automatic") {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        saved_theme = "dark";
+      }
+    }
+    if (saved_theme == "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    const tocDisplay = localStorage.getItem('arxiv_html_paper_toc_display');
+    if (tocDisplay) {
+      document.documentElement.setAttribute("data-toc-display", tocDisplay);
+    }
+    const readingMode = localStorage.getItem('arxiv_html_paper_reading_mode');
+    if (readingMode) {
+      document.documentElement.setAttribute("data-reading-mode", readingMode);
+    }
+    // Pre-apply spinout-banner dismissal here, before the banner paints, so it
+    // never flashes in only to be hidden later by the deferred arxiv-header.js.
+    // Key matches arxiv-header.js: "arxiv-banner-dismissed:" + data-banner-name.
+    if (localStorage.getItem('arxiv-banner-dismissed:spinout-nonprofit')) {
+      document.documentElement.setAttribute("data-banner-dismissed", "");
+    }
+  }
+  // Run as soon as JS starts, to minimize repainting
+  initializeReadingPreferences();
+/* Banner pre-dismissal (set above before paint -> no flash-then-hide) and
+     reading-mode chrome hiding. */
+  html[data-banner-dismissed] .ds-announcement { display: none; }
+  html[data-reading-mode="enabled"] .ds-announcement,
+  html[data-reading-mode="enabled"] .ds-site-footer { display: none; }
+  /* Print keeps the reader header's logo, not its controls: the theme's own print rule
+     (header, nav { display: none }) sits in a layer that its header layer outranks. */
+  @media print { .arxiv-html-header .html-header-nav { display: none; } }
+  /* Keep the announcement text dark on the Open-Blue band in both colour themes
+     (otherwise it inherits the paper's warm-wash text in dark mode and washes out). */
+  .ds-announcement-text { color: var(--arxiv-ink, #1c1a17); }
+Report GitHub Issue
+×
+Title:
+Content selection saved. Describe the issue below:
+Description:
+Submit without GitHub
+Submit in GitHub
+arXiv is now an independent nonprofit!
+Learn more
+×
+Back to arXiv
+Why HTML?
+Report Issue
+Back to Abstract
+Download PDF
+Abstract
+1
+Introduction
+1.1
+Problem setting: hierarchical sampling
+Hierarchical i.i.d. sampling.
+Defining hierarchical exchangeability.
+Special case: repeated measurements.
+Contributions.
+1.2
+Related work
+1.3
+Outline
+2
+Hierarchical conformal prediction
+2.1
+Background: split conformal
+2.2
+Proposed method: HCP
+2.3
+Comparison with
+Dunn et al. (2022)
+’s methods
+2.3.1
+Pooling CDFs
+2.3.2
+Double Conformal
+2.3.3
+Subsampling Once
+2.3.4
+Repeated Subsampling
+2.4
+Simulations
+Score functions.
+Data and methods.
+Results.
+3
+Distribution-free prediction with repeated measurements
+3.1
+Toward inference with conditional coverage guarantees
+3.2
+Proposed method for second-moment coverage: HCP
+2
+3.3
+Remarks
+3.3.1
+A trivial way to bound the second moment
+3.3.2
+Beyond the second moment?
+3.4
+Simulations
+Score functions.
+Data and methods.
+Results.
+4
+Application to a dynamical system dataset
+Overview of experiment.
+Generating the data.
+Results.
+5
+Discussion
+References
+A
+Extending HCP to full conformal and jackknife+
+A.1
+Extending full conformal prediction
+A.1.1
+Background: full conformal prediction
+A.1.2
+Hierarchical full conformal prediction
+A.2
+Extending jackknife+
+A.2.1
+Background: jackknife+
+A.2.2
+Hierarchical jackknife+
+B
+Comparing HCP
+2
+versus a trivial solution
+C
+Proofs
+C.1
+Proof of Theorem
+A new quantile function.
+Applying hierarchical exchangeability.
+Coverage guarantee: lower bound.
+Coverage guarantee: upper bound.
+C.2
+Proof of Theorem
+A new quantile function.
+Applying hierarchical exchangeability.
+Coverage guarantee.
+The upper bound.
+C.3
+Proof of Theorem
+C.4
+Proof of Theorem
+License: arXiv.org perpetual non-exclusive license
+arXiv:2306.06342v2 [math.ST] 20 Oct 2023
+Distribution-free inference with hierarchical data
+Yonghoon Lee
+†
+†
+thanks:
+Department of Statistics, University of Pennsylvania
+Rina Foygel Barber
+†
+†
+thanks:
+Department of Statistics, University of Chicago
+Rebecca Willett
+†
+†
+footnotemark:
+†
+†
+thanks:
+Department of Computer Science, University of Chicago
+Abstract
+This paper studies distribution-free inference in settings where the data set has a hierarchical structure—for example, groups of observations,
+or repeated measurements. In such settings, standard notions of exchangeability may not hold. To address this challenge, a hierarchical form of exchangeability is derived, facilitating extensions of distribution-free methods, including conformal prediction and jackknife+. While the standard theoretical guarantee obtained by
+the conformal prediction framework is a marginal predictive coverage guarantee, in the special case of independent repeated measurements, it is possible to achieve a stronger form of
+coverage—the “second-moment coverage” property—to provide better control of conditional miscoverage rates, and distribution-free prediction sets that achieve this property are constructed. Simulations illustrate that this guarantee indeed leads to uniformly small conditional miscoverage rates. Empirically, this stronger guarantee comes at the cost of a larger width of the prediction set in scenarios where the fitted model is poorly calibrated, but this cost is very mild in cases where the fitted model is accurate.
+1
+Introduction
+Consider a prediction problem where we have training data
+{
+(
+X
+i
+,
+Y
+i
+)
+}
+i
+=
+1
+,
+2
+,
+…
+,
+n
+\{(X_{i},Y_{i})\}_{i=1,2,\dots,n}
+, and a new observation
+X
+test
+X_{\textnormal{test}}
+for
+which we need to predict its response,
+Y
+test
+Y_{\textnormal{test}}
+. The task of
+distribution-free prediction
+is to construct
+a prediction band
+C
+^
+\widehat{C}
+satisfying
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+α
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-\alpha
+(1)
+with respect to data
+(
+X
+1
+,
+Y
+1
+)
+,
+…
+,
+(
+X
+n
+,
+Y
+n
+)
+,
+(
+X
+test
+,
+Y
+test
+)
+∼
+iid
+P
+(X_{1},Y_{1}),\dots,(X_{n},Y_{n}),(X_{\textnormal{test}},Y_{\textnormal{test}})\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}P
+, for
+any
+distribution
+P
+P
+. Methods such as conformal prediction
+(
+Vovk et al., 2005
+)
+provide an answer to this problem whose validity does not depend on any assumptions on
+P
+P
+—and indeed, validity holds more generally for any exchangeable data distribution (with i.i.d. data
+points being an important special case).
+Though the marginal coverage guarantee (
+1
+) guarantees an overall quality of the prediction set, it is often more desired to have a useful guarantee with conditional coverage
+ℙ
+⁡
+{
+Y
+test
+∈
+C
+^
+​
+(
+X
+test
+)
+|
+X
+test
+}
+,
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\ \middle|\ {X_{\textnormal{test}}}\right\},
+to ensure that the prediction is accurate conditional on the specific feature values of the test point. However, achieving distribution-free conditional coverage is a much more challenging problem. In case of nonatomic features (i.e., where the distribution of
+X
+i
+X_{i}
+has no point masses, such as a continuous distribution),
+Vovk et al. (2005)
+;
+Lei and Wasserman (2014)
+;
+Barber et al. (2021a)
+prove fundamental limits on the possibility of constructing this stronger type of prediction interval—indeed, in the case of a real-valued response
+Y
+Y
+, any such
+C
+^
+\widehat{C}
+cannot have finite width.
+In this work, we study a different setting where the data sampling mechanism is hierarchical, rather than i.i.d.—this builds on the work
+of
+Dunn et al. (2022)
+(detailed below), who also studied conformal prediction in the hierarchical setting.
+We develop an extension of conformal prediction that works for such data structure, which we denote as hierarchical conformal prediction (HCP),
+to provide distribution-free marginal predictive coverage in this non-i.i.d. setting.
+Furthermore, we also explore an important special case, where our data set
+contains multiple observations (multiple draws of
+Y
+Y
+) for each individual (for each draw of
+X
+X
+); in
+this setting, we propose a variant of our method, HCP
+2
+,
+that moves towards conditional coverage via a stronger “second-moment coverage” guarantee.
+1.1
+Problem setting: hierarchical sampling
+In an i.i.d. setting, we would work with data points that are sampled as
+Z
+i
+=
+(
+X
+i
+,
+Y
+i
+)
+∼
+iid
+P
+Z_{i}=(X_{i},Y_{i})\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}P
+for some distribution
+P
+P
+.
+For example, each data point
+i
+i
+might correspond to a randomly sampled individual; we would like to ask
+how features
+X
+i
+X_{i}
+can be used to predict a response
+Y
+i
+Y_{i}
+—for instance, if we are studying academic performance for a sample of children,
+X
+i
+X_{i}
+might reflect features such as age, school quality rating, parents’ income level, etc, for the
+i
+i
+th child in the sample,
+and
+Y
+i
+Y_{i}
+is the child’s test score.
+In a hierarchical setting, we instead assume that the data are drawn via a hierarchical sampling procedure.
+For example, if our procedure for recruiting subjects in our study involves sampling classrooms within a city,
+and then sampling multiple children within each classroom, then we would
+expect some amount of dependence between subjects that are in the same classroom.
+Can we still use this training data set to build a model for predicting
+Y
+Y
+from
+X
+X
+, for a new child
+that comes from a new (previously unsampled) classroom?
+In this setting, statistical procedures that rely on an i.i.d. sample may no longer be valid. Parametric approaches
+might address this issue by, e.g., adding a random effects component to the parametric model.
+In this work, we instead seek to adapt to hierarchically sampled data within the framework of distribution-free inference.
+Hierarchical i.i.d. sampling.
+To generalize the example above, suppose
+the training sample consists of
+K
+≥
+1
+K\geq 1
+many
+groups
+of observations, where group
+k
+k
+contains
+N
+k
+≥
+1
+N_{k}\geq 1
+many data points
+Z
+k
+,
+1
+,
+…
+,
+Z
+k
+,
+N
+k
+Z_{k,1},\dots,Z_{k,N_{k}}
+.
+We can consider a hierarchical version of the i.i.d. sampling assumption: first we sample the distributions and sample sizes
+that characterize each group,
+Π
+k
+∼
+P
+Π
+,
+N
+k
+|
+Π
+k
+∼
+P
+N
+|
+Π
+,
+independently for each
+k
+=
+1
+,
+…
+,
+K
+,
+\Pi_{k}\sim P_{\Pi},\ N_{k}\mid\Pi_{k}\sim P_{N\mid\Pi},\textnormal{ independently for each $k=1,\dots,K$,}
+where
+P
+Π
+P_{\Pi}
+is some distribution over the space of distributions on
+Z
+∈
+𝒵
+Z\in\mathcal{Z}
+,
+while
+P
+N
+|
+Π
+P_{N\mid\Pi}
+is a conditional distribution on the within-group sample size
+N
+∈
+ℕ
+=
+{
+1
+,
+2
+,
+…
+}
+N\in\mathbb{N}=\{1,2,\dots\}
+.
+Then conditional on this draw, we sample observations within each group,
+Z
+k
+,
+1
+,
+…
+,
+Z
+k
+,
+N
+k
+|
+(
+Π
+k
+,
+N
+k
+)
+∼
+iid
+Π
+k
+,
+independently for each
+k
+=
+1
+,
+…
+,
+K
+.
+Z_{k,1},\dots,Z_{k,N_{k}}\mid(\Pi_{k},N_{k})\,\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}\Pi_{k},\textnormal{ independently for each $k=1,\dots,K$}.
+In this setting, we aim to provide a prediction interval
+1
+1
+1
+In general, predictive inference can provide a
+prediction set
+that may or may not be an interval—and indeed, if the response
+Y
+Y
+is not real-valued, it may not be meaningful to ask for an interval
+of values. However, we continue to refer to the “prediction interval” for simplicity.
+for a data point that is sampled from a
+new
+group,
+for a
+test point
+Z
+test
+=
+(
+X
+test
+,
+Y
+test
+)
+Z_{\textnormal{test}}=(X_{\textnormal{test}},Y_{\textnormal{test}})
+sampled as
+Π
+K
++
+1
+∼
+P
+Π
+,
+Z
+test
+|
+Π
+K
++
+1
+∼
+Π
+K
++
+1
+,
+\Pi_{K+1}\sim P_{\Pi},\ Z_{\textnormal{test}}\mid\Pi_{K+1}\sim\Pi_{K+1},
+drawn independently of the training data—that is, based on the test features
+X
+test
+X_{\textnormal{test}}
+, we need to construct a prediction
+interval for
+Y
+test
+Y_{\textnormal{test}}
+.
+A key observation is that this prediction task can equivalently be characterized as follows.
+Imagine that we instead sample a collection of data points from
+K
++
+1
+K+1
+, rather than
+K
+K
+,
+many groups:
+Π
+k
+∼
+P
+Π
+,
+N
+k
+|
+Π
+k
+∼
+P
+N
+|
+Π
+,
+Z
+k
+,
+1
+,
+…
+,
+Z
+k
+,
+N
+k
+|
+(
+Π
+k
+,
+N
+k
+)
+∼
+iid
+Π
+k
+,
+\Pi_{k}\sim P_{\Pi},\ N_{k}\mid\Pi_{k}\sim P_{N\mid\Pi},\ Z_{k,1},\dots,Z_{k,N_{k}}\mid(\Pi_{k},N_{k})\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}\Pi_{k},
+(2)
+independently for each
+k
+=
+1
+,
+…
+,
+K
++
+1
+k=1,\dots,K+1
+. Here groups
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+correspond to training data.
+Then our prediction task can equivalently be characterized
+as the task of predictive inference for
+Z
+K
++
+1
+,
+1
+Z_{K+1,1}
+(that is, writing
+Z
+K
++
+1
+,
+1
+=
+(
+X
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+1
+)
+Z_{K+1,1}=(X_{K+1,1},Y_{K+1,1})
+,
+then based on features
+X
+K
++
+1
+,
+1
+X_{K+1,1}
+we need to construct a prediction interval for
+Y
+K
++
+1
+,
+1
+Y_{K+1,1}
+)—we can simply
+ignore the remaining test points
+Z
+K
++
+1
+,
+2
+,
+…
+,
+Z
+K
++
+1
+,
+N
+K
++
+1
+Z_{K+1,2},\dots,Z_{K+1,N_{K+1}}
+.
+Defining hierarchical exchangeability.
+We can generalize the above construction to a hierarchical notion of exchangeability, which we formalize as follows.
+First, let
+𝒵
+=
+𝒳
+×
+𝒴
+\mathcal{Z}=\mathcal{X}\times\mathcal{Y}
+(where
+𝒳
+\mathcal{X}
+and
+𝒴
+\mathcal{Y}
+denote the spaces
+in which the features
+X
+X
+and responses
+Y
+Y
+lie, respectively), and define
+𝒵
+~
+=
+𝒵
+∪
+𝒵
+2
+∪
+𝒵
+3
+∪
+…
+,
+\tilde{\mathcal{Z}}=\mathcal{Z}\cup\mathcal{Z}^{2}\cup\mathcal{Z}^{3}\cup\dots,
+the set of
+all sequences of any finite length
+with entries lying in
+𝒵
+\mathcal{Z}
+.
+With this definition in place, we can define
+Z
+~
+k
+=
+(
+Z
+k
+,
+1
+,
+…
+,
+Z
+k
+,
+N
+k
+)
+∈
+𝒵
+~
+\tilde{Z}_{k}=(Z_{k,1},\dots,Z_{k,N_{k}})\in\tilde{\mathcal{Z}}
+,
+the
+k
+k
+th group of observations within our sample. For any
+z
+~
+∈
+𝒵
+~
+\tilde{z}\in\tilde{\mathcal{Z}}
+, we also define
+length
+​
+(
+z
+~
+)
+∈
+ℕ
+\textnormal{length}(\tilde{z})\in\mathbb{N}
+as the length of the finite sequence
+z
+~
+\tilde{z}
+.
+Definition 1
+(Hierarchical exchangeability)
+.
+Let
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+∈
+𝒵
+~
+\tilde{Z}_{1},\dots,\tilde{Z}_{K+1}\in\tilde{\mathcal{Z}}
+be a sequence of random variables with a joint distribution.
+We say that this sequence (or equivalently, its distribution) satisfies
+hierarchical exchangeability
+if, first,
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+=
+d
+(
+Z
+~
+σ
+⁡
+(
+1
+)
+,
+…
+,
+Z
+~
+σ
+⁡
+(
+K
++
+1
+)
+)
+(\tilde{Z}_{1},\dots,\tilde{Z}_{K+1})\stackrel{{\scriptstyle\textnormal{d}}}{{=}}(\tilde{Z}_{\sigma(1)},\dots,\tilde{Z}_{\sigma(K+1)})
+for all
+σ
+∈
+𝒮
+K
++
+1
+\sigma\in\mathcal{S}_{K+1}
+,
+and, second,
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+k
+,
+…
+,
+Z
+~
+K
++
+1
+)
+=
+d
+(
+Z
+~
+1
+,
+…
+,
+(
+Z
+~
+k
+,
+σ
+⁡
+(
+1
+)
+,
+…
+,
+Z
+~
+k
+,
+σ
+⁡
+(
+m
+)
+)
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+length
+​
+(
+Z
+~
+k
+)
+=
+m
+(\tilde{Z}_{1},\dots,\tilde{Z}_{k},\dots,\tilde{Z}_{K+1})\stackrel{{\scriptstyle\textnormal{d}}}{{=}}(\tilde{Z}_{1},\dots,(\tilde{Z}_{k,\sigma(1)},\dots,\tilde{Z}_{k,\sigma(m)}),\dots,\tilde{Z}_{K+1})\mid\textnormal{length}(\tilde{Z}_{k})=m
+for all
+k
+=
+1
+,
+…
+,
+K
++
+1
+k=1,\dots,K+1
+, all
+m
+≥
+1
+m\geq 1
+for which
+ℙ
+{
+length
+(
+Z
+~
+k
+)
+=
+m
+}
+>
+0
+\mathbb{P}\left\{{\textnormal{length}(\tilde{Z}_{k})=m}\right\}>0
+, and
+all
+σ
+∈
+𝒮
+m
+\sigma\in\mathcal{S}_{m}
+.
+(Here
+𝒮
+r
+\mathcal{S}_{r}
+denotes the set of permutations on
+{
+1
+,
+…
+,
+r
+}
+\{1,\dots,r\}
+, for any
+r
+∈
+ℕ
+r\in\mathbb{N}
+.) In other words, hierarchical exchangeability requires that, first, the groups are exchangeable with each other, and second,
+the observations within each group are exchangeable as well.
+We can compare this to the ordinary definition of exchangeability for a data set
+(
+Z
+1
+,
+…
+,
+Z
+n
++
+1
+)
+(Z_{1},\dots,Z_{n+1})
+, which requires
+(
+Z
+1
+,
+…
+,
+Z
+n
++
+1
+)
+=
+d
+(
+Z
+σ
+⁡
+(
+1
+)
+,
+…
+,
+Z
+σ
+⁡
+(
+n
++
+1
+)
+)
+​
+for all
+σ
+∈
+𝒮
+n
++
+1
+.
+(Z_{1},\dots,Z_{n+1})\stackrel{{\scriptstyle\textnormal{d}}}{{=}}(Z_{\sigma(1)},\dots,Z_{\sigma(n+1)})\textnormal{ for all $\sigma\in\mathcal{S}_{n+1}$}.
+(3)
+Special case: repeated measurements.
+A special case is the setting where we have data with repeated measurements. In this setting, given an unknown distribution
+P
+P
+on
+𝒵
+=
+𝒳
+×
+𝒴
+\mathcal{Z}=\mathcal{X}\times\mathcal{Y}
+, writing
+P
+X
+P_{X}
+and
+P
+Y
+|
+X
+P_{Y|X}
+as the corresponding marginal and conditional distribution,
+if for example we assume each batch of measurements has a common fixed size
+N
+N
+, we draw the training data as
+{
+X
+k
+∼
+P
+X
+,
+Y
+k
+,
+1
+,
+…
+,
+Y
+k
+,
+N
+|
+X
+k
+∼
+iid
+P
+Y
+|
+X
+,
+\begin{cases}X_{k}\sim P_{X},\\
+Y_{k,1},\dots,Y_{k,N}\mid X_{k}\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}P_{Y|X},\end{cases}
+(4)
+independently for each
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+. The test point is then given by an independent draw
+(
+X
+test
+,
+Y
+test
+)
+∼
+P
+(X_{\textnormal{test}},Y_{\textnormal{test}})\sim P
+.
+Equivalently, we can formulate the problem as sampling
+K
++
+1
+K+1
+, rather than
+K
+K
+, many groups from the distribution (
+4
+),
+with groups
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+comprising the training data, and with
+(
+X
+K
++
+1
+,
+Y
+K
++
+1
+,
+1
+)
+(X_{K+1},Y_{K+1,1})
+determining the test point.
+By defining
+Z
+k
+,
+i
+=
+(
+X
+k
+,
+Y
+k
+,
+i
+)
+Z_{k,i}=(X_{k},Y_{k,i})
+, we can see that this construction satisfies the hierarchical exchangeability property given in Definition
+1
+(and indeed, can be viewed as a special case of the hierarchical-i.i.d. construction
+given in (
+2
+), by taking
+Π
+k
+\Pi_{k}
+to be the distribution of
+(
+X
+,
+Y
+)
+(X,Y)
+conditional on
+X
+=
+X
+k
+X=X_{k}
+).
+Contributions.
+The main contributions of the present work can be summarized as follows. First,
+for hierarchical data
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{1},\dots,\tilde{Z}_{K+1}
+satisfying the hierarchical exchangeability
+condition in Definition
+1
+,
+with
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+\tilde{Z}_{1},\dots,\tilde{Z}_{K}
+comprising the training data while
+Z
+~
+K
++
+1
+,
+1
+\tilde{Z}_{K+1,1}
+is the target test point,
+we provide a predictive inference method (HCP) that
+offers a marginal coverage guarantee. Moreover,
+for the special case of repeated measurements,
+we provide a predictive inference method (HCP
+2
+)
+that offers a stronger notion of distribution-free validity (moving towards conditional, rather than marginal, coverage).
+1.2
+Related work
+Distribution-free inference has received much attention recently in the statistics and machine learning literature,
+with many methodological advances but also many results examining
+the limits of the distribution-free framework.
+In the standard setting with exchangeable (e.g., i.i.d.) data, conformal prediction (see
+Vovk et al. (2005)
+;
+Lei et al. (2018)
+for background) provides a universal framework for distribution-free prediction. Split conformal prediction
+(
+Vovk et al., 2005
+;
+Papadopoulos et al., 2002
+)
+offers a variant of conformal prediction that relies on data splitting to reduce the computational cost, but with some loss of statistical accuracy.
+Barber et al. (2021b)
+introduces the jackknife+, which provides a valid distribution-free prediction set without data splitting while having a more moderate computational cost than full conformal prediction.
+Applications of the conformal prediction framework to settings beyond the framework of exchangeability have also been studied in the recent
+literature. For example,
+Tibshirani et al. (2019)
+and
+Podkopaev and Ramdas (2021)
+introduce extensions of conformal prediction that deal with covariate shift and label shift, respectively, while
+Barber et al. (2022)
+allow for unknown deviations from exchangeability.
+Xu and Xie (2021)
+considers applications to time series data, and
+Lei et al. (2015)
+considers functional data.
+For the goal of having a useful bound for conditional coverage in the distribution-free setting,
+Vovk (2012)
+and
+Barber et al. (2021a)
+show impossibility results for coverage conditional on
+X
+test
+X_{\textnormal{test}}
+in the case that the feature distribution is nonatomic.
+Izbicki et al. (2019)
+and
+Chernozhukov et al. (2021)
+propose methods that provide conditional coverage guarantees under strong additional assumptions. Conformalized quantile regression, introduced by
+Romano et al. (2019)
+, can provide improved control of conditional miscoverage rates empirically, by accounting for heterogeneous spread of
+Y
+Y
+given
+X
+X
+.
+Problems other than prediction have been studied as well in the distribution-free framework.
+Barber (2020)
+and
+Medarametla and Candès (2021)
+discuss limits on having a useful inference on conditional mean and median, respectively.
+Lee and Barber (2021)
+prove that for discrete feature distributions, we can make use of repeated feature observations to attain meaningful inference for the conditional mean.
+Distribution-free inference for the hierarchical data setting was previously studied by
+(
+Dunn et al., 2022
+)
+, proposing a range of different methods
+for the hierarchical setting. We describe their methods and results in detail in Section
+2.3
+.
+(
+Dunn et al. (2022)
+also study the problem of prediction for a new data point observed
+within
+one of the groups in the training
+sample—e.g., a new child, sampled from a classroom that is already present in the study—but this is a fundamentally different
+inference problem and we do not consider it in this work.)
+The setting of repeated measurements is explored by
+Cheng et al. (2022)
+, who contrast empirical risk minimization when the repeated measurements are aggregated prior to estimation and when they are kept separate. Our contributions complement their work with a framework for conformal prediction. Like
+Cheng et al. (2022)
+, we find that non-aggregated repeated measurements can enable
+a more informative statistical analysis.
+1.3
+Outline
+The remainder of this paper is organized as follows. In Section
+2
+, we first give background on existing
+methods for the hierarchical setting
+(
+Dunn et al., 2022
+)
+, and then present our proposed method, Hierarchical Conformal Prediction (HCP),
+and compare HCP with the existing methods on simulated data.
+In Section
+3
+, we turn to the special case of data with repeated measurements; we examine the problem
+of conditionally valid coverage in this setting, and propose a variant of our method, HCP
+2
+, that offers a stronger coverage guarantee,
+which we verify with simulations. Section
+5
+offers a short discussion of our findings and of open questions raised by this work.
+The proofs of our theorems, together with some additional methods and theoretical results, are deferred to the Appendix.
+2
+Hierarchical conformal prediction
+In this section, we give a short introduction to the well-known split conformal method for i.i.d. (or exchangeable) data,
+and then propose our new method, hierarchical conformal prediction (HCP), which adapts split conformal to the setting
+of hierarchically structured data.
+2.1
+Background: split conformal
+First, for background, consider the setting of i.i.d. or exchangeable data,
+Z
+1
+,
+…
+,
+Z
+n
+,
+Z
+n
++
+1
+Z_{1},\dots,Z_{n},Z_{n+1}
+,
+where
+Z
+i
+=
+(
+X
+i
+,
+Y
+i
+)
+Z_{i}=(X_{i},Y_{i})
+for each
+i
+i
+. Here
+Z
+1
+,
+…
+,
+Z
+n
+Z_{1},\dots,Z_{n}
+is the training data, while
+Z
+test
+=
+Z
+n
++
+1
+Z_{\textnormal{test}}=Z_{n+1}
+is the test point.
+The
+split conformal prediction
+method
+(
+Vovk et al., 2005
+)
+constructs a distribution-free prediction interval as follows. As a preliminary step, we split the training data into
+two data sets of size
+n
+0
++
+n
+1
+=
+n
+n_{0}+n_{1}=n
+, with the first
+n
+0
+n_{0}
+data points used for training, and the remaining
+n
+1
+n_{1}
+data points
+used for calibration. Once the data is split, the first step is to use the training portion of the data (i.e.,
+Z
+1
+,
+…
+,
+Z
+n
+0
+Z_{1},\dots,Z_{n_{0}}
+), we fit
+a
+score function
+s
+:
+𝒵
+→
+ℝ
+,
+s:\mathcal{Z}\rightarrow\mathbb{R},
+where
+s
+⁡
+(
+z
+)
+=
+s
+⁡
+(
+x
+,
+y
+)
+s(z)=s(x,y)
+measures the extent to which a data point
+(
+x
+,
+y
+)
+(x,y)
+conforms
+to the trends observed in the training data,
+with large values indicating a more unusual value of the data point. For example, if the response variables
+Y
+Y
+lie in
+𝒴
+=
+ℝ
+\mathcal{Y}=\mathbb{R}
+, one mechanism for defining this function
+is to first run a regression on the labeled data set
+{
+(
+X
+i
+,
+Y
+i
+)
+:
+i
+=
+1
+,
+…
+,
+n
+0
+}
+\{(X_{i},Y_{i}):i=1,\dots,n_{0}\}
+, to produce a fitted model
+μ
+^
+:
+𝒳
+→
+ℝ
+\widehat{\mu}:\mathcal{X}\rightarrow\mathbb{R}
+,
+and then define
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(x,y)=|y-\widehat{\mu}(x)|
+, the absolute value of the residual.
+Next, the second step is to use the calibration set (i.e.,
+Z
+n
+0
++
+1
+,
+…
+,
+Z
+n
+Z_{n_{0}+1},\dots,Z_{n}
+) to determine a cutoff threshold for the score,
+and construct the corresponding prediction interval:
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+⁡
+(
+X
+test
+,
+y
+)
+≤
+Q
+1
+−
+α
+​
+(
+∑
+i
+=
+n
+0
++
+1
+n
+1
+n
+1
++
+1
+​
+δ
+s
+⁡
+(
+Z
+i
+)
++
+1
+n
+1
++
+1
+​
+δ
++
+∞
+)
+}
+,
+\widehat{C}(X_{\textnormal{test}})=\left\{y\in\mathcal{Y}:s(X_{\textnormal{test}},y)\leq Q_{1-\alpha}\left(\sum_{i=n_{0}+1}^{n}\frac{1}{n_{1}+1}\delta_{s(Z_{i})}+\frac{1}{n_{1}+1}\delta_{+\infty}\right)\right\},
+(5)
+where
+δ
+t
+\delta_{t}
+denotes the point mass at
+t
+t
+, while
+Q
+1
+−
+α
+​
+(
+⋅
+)
+Q_{1-\alpha}(\cdot)
+denotes the
+(
+1
+−
+α
+)
+(1-\alpha)
+-quantile of a distribution.
+2
+2
+2
+Formally, for a distribution
+P
+P
+on
+ℝ
+\mathbb{R}
+,
+the quantile is defined as
+Q
+1
+−
+α
+(
+P
+)
+=
+inf
+{
+t
+∈
+ℝ
+:
+ℙ
+T
+∼
+P
+{
+T
+≤
+t
+}
+≥
+1
+−
+α
+}
+Q_{1-\alpha}(P)=\inf\{t\in\mathbb{R}:\mathbb{P}_{{T\sim P}}\left\{{T\leq t}\right\}\geq 1-\alpha\}
+.
+Vovk et al. (2005)
+establish marginal coverage for the split conformal method:
+if the data
+Z
+1
+,
+…
+,
+Z
+n
+,
+Z
+test
+Z_{1},\dots,Z_{n},Z_{\textnormal{test}}
+satisfies exchangeability (that is, if the property (
+3
+)
+holds when we take
+Z
+test
+=
+Z
+n
++
+1
+Z_{\textnormal{test}}=Z_{n+1}
+),
+then
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+α
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-\alpha.
+We note that this guarantee is marginal—in particular, it does not hold if we were to condition on the test features
+X
+test
+X_{\textnormal{test}}
+(and also,
+holds only on average over the draw
+of the training and calibration data
+Z
+1
+,
+…
+,
+Z
+n
+Z_{1},\dots,Z_{n}
+).
+In the setting of i.i.d. or exchangeable data, the full conformal prediction method
+(
+Vovk et al., 2005
+)
+provides
+an alternative method that avoids the loss of accuracy incurred by sample splitting, at the cost of a greater computational burden.
+As a compromise between split and full conformal, cross-validation type methods are proposed by
+Vovk (2015)
+;
+Vovk et al. (2018)
+;
+Barber et al. (2021b)
+. We give background on these alternative
+methods in Appendix
+A
+.
+2.2
+Proposed method: HCP
+Now we return to the hierarchical data setting that is the problem of interest in this paper.
+Can split conformal prediction be applied to this setting? That is, given the observed data points
+Z
+1
+,
+1
+,
+…
+,
+Z
+1
+,
+N
+1
+,
+…
+,
+Z
+K
+,
+1
+,
+…
+,
+Z
+K
+,
+N
+K
+Z_{1,1},\dots,Z_{1,N_{1}},\dots,Z_{K,1},\dots,Z_{K,N_{K}}
+, can we simply apply split conformal to this training data
+set to obtain a valid prediction interval? In fact, the hierarchical exchangeability property (Definition
+1
+)
+is not sufficient.
+In general,
+the data may satisfy hierarchical exchangeability without satisfying the (ordinary, non-hierarchical) exchangeability property (
+3
+)
+that is needed for split conformal to have theoretical validity—for example,
+if the data consists of students sampled from
+K
+K
+many classrooms, then there may be higher correlation between
+students in the same classroom.
+(An exception is the trivial special case where
+N
+1
+=
+⋯
+=
+N
+K
+=
+1
+N_{1}=\dots=N_{K}=1
+,
+i.e., all groups contain exactly one observation, in which case hierarchical exchangeability simply reduces to ordinary exchangeability.)
+We now introduce our extension of split conformal prediction for the hierarchical data setting.
+Given training data
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+\tilde{Z}_{1},\dots,\tilde{Z}_{K}
+, we split it into
+K
+0
++
+K
+1
+K_{0}+K_{1}
+many groups, with
+K
+0
+K_{0}
+groups used for training
+and
+K
+1
+=
+K
+−
+K
+0
+K_{1}=K-K_{0}
+groups for calibration. First, using data
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+0
+\tilde{Z}_{1},\dots,\tilde{Z}_{K_{0}}
+, we fit a score function
+s
+:
+𝒵
+→
+ℝ
+s:\mathcal{Z}\rightarrow\mathbb{R}
+(as before, a canonical choice is to use the absolute value of the residual for some fitted model,
+s
+⁡
+(
+z
+)
+=
+s
+⁡
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(z)=s(x,y)=|y-\widehat{\mu}(x)|
+for some fitted model
+μ
+^
+\widehat{\mu}
+). Next, we use the calibration set to set a threshold
+T
+T
+for the prediction interval, as follows:
+HCP method:
+C
+^
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+(
+X
+test
+,
+y
+)
+≤
+T
+}
+,
+where
+T
+=
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+K
+0
++
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
+1
++
+1
+)
+​
+N
+k
+⋅
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+)
++
+1
+K
+1
++
+1
+⋅
+δ
++
+∞
+)
+.
+\textnormal{HCP method: \quad}\widehat{C}(X_{\textnormal{test}})=\{y\in\mathcal{Y}:s(X_{\textnormal{test}},y)\leq T\},\textnormal{ where }\\
+T=Q_{1-\alpha}\left(\sum_{k=K_{0}+1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K_{1}+1)N_{k}}\cdot\delta_{s(Z_{k,i})}+\frac{1}{K_{1}+1}\cdot\delta_{+\infty}\right).
+(6)
+Compared to the original split conformal interval constructed in (
+5
+), we see
+that the constructions follow the same format, but the score threshold for HCP in general is different,
+since this new construction places different amounts of weight on different training data points, depending on the sizes
+of the various groups. However, as a special case, if
+N
+k
+=
+1
+N_{k}=1
+for all
+k
+k
+(i.e., one observation in each group), then HCP
+simply reduces to the split conformal method.
+The HCP prediction interval offers the following distribution-free guarantee:
+Theorem 1
+(Marginal coverage for HCP)
+.
+Suppose that
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{1},\dots,\tilde{Z}_{K+1}
+satisfies the hierarchical exchangeability property
+(Definition
+1
+), and suppose we run HCP with training data
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+\tilde{Z}_{1},\dots,\tilde{Z}_{K}
+and test
+point
+Z
+test
+=
+(
+X
+test
+,
+Y
+test
+)
+=
+Z
+~
+K
++
+1
+,
+1
+Z_{\textnormal{test}}=(X_{\textnormal{test}},Y_{\textnormal{test}})=\tilde{Z}_{K+1,1}
+. Then
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+α
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-\alpha.
+Moreover, if the scores
+s
+⁡
+(
+Z
+k
+,
+i
+)
+s(Z_{k,i})
+are distinct almost surely,
+3
+3
+3
+In fact, we see in the proof that it suffices
+to assume that
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≠
+s
+⁡
+(
+Z
+k
+′
+,
+i
+′
+)
+s(Z_{k,i})\neq s(Z_{k^{\prime},i^{\prime}})
+for all
+k
+≠
+k
+′
+k\neq k^{\prime}
+, almost surely—in other words, we can allow non-distinct scores within a group
+k
+k
+, as long
+as scores from different groups are always distinct.
+it additionally holds that
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≤
+1
+−
+α
++
+2
+K
+1
++
+1
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\leq 1-\alpha+\frac{2}{K_{1}+1}.
+In Appendix
+A
+, we provide analogous hierarchical versions of the jackknife+ and full conformal methods, to avoid
+the loss of accuracy incurred by sample splitting.
+2.3
+Comparison with
+Dunn et al. (2022)
+’s methods
+In this section, we summarize the work of
+Dunn et al. (2022)
+for the hierarchical data setting and compare
+to our proposed HCP method.
+Dunn et al. (2022)
+introduce four approaches for distribution-free inference with hierarchical data, which they refer
+to as Pooling CDFs, Double Conformal, Subsampling Once, and Repeated Subsampling.
+Here we only consider the split conformal versions of their methods, in the context of the supervised learning
+problem (i.e., predicting
+Y
+Y
+from
+X
+X
+), to be directly comparable to the setting of our work.
+In the remainder of this section, we rewrite their methods to be consistent with our notation and problem setting for ease of comparison. As we detail below, the comparison between HCP and
+Dunn et al. (2022)
+’s four methods reveals:
+•
+Dunn et al. (2022)
+’s theoretical guarantee for Pooling CDFs offers only an asymptotic result. In Proposition
+1
+, we show that Pooling CDFs is actually exactly equivalent to running HCP but with a slightly
+higher error level
+α
+\alpha
+, and consequently, establish a novel finite-sample coverage guarantee.
+•
+Double Conformal was shown by
+Dunn et al. (2022)
+to have finite-sample coverage at level
+1
+−
+α
+1-\alpha
+,
+but in practice is substantially overly conservative.
+•
+Subsampling Once was also shown by
+Dunn et al. (2022)
+to have finite-sample coverage at level
+1
+−
+α
+1-\alpha
+,
+but in practice can lead to more variable performance due to discarding most of the calibration data.
+•
+Dunn et al. (2022)
+’s theoretical guarantee for Repeated Subsampling establishes coverage at the weaker level
+1
+−
+2
+​
+α
+1-2\alpha
+, even though empirical performance shows that undercoverage does not occur. In our work (Proposition
+2
+), we establish
+that Repeated Subsampling is equivalent to running HCP on a bootstrapped version of the original calibration data set, and consequently, obtain
+a novel guarantee
+of finite-sample coverage at level
+1
+−
+α
+1-\alpha
+.
+Overall, our proposed framework of hierarchical exchangeability allows us to build a new understanding of the finite-sample performance
+of two of
+Dunn et al. (2022)
+’s methods, Pooling CDFs and Repeated Subsampling—that is, the two whose empirical performance was observed to be the best, without high variance or overcoverage.
+As for HCP,
+for all of
+Dunn et al. (2022)
+’s methods the first step is to use the training portion of the data (groups
+k
+=
+1
+,
+…
+,
+K
+0
+k=1,\dots,K_{0}
+)
+to train a score function
+s
+:
+𝒵
+→
+ℝ
+s:\mathcal{Z}\rightarrow\mathbb{R}
+, and the next step is to define a prediction interval
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+⁡
+(
+X
+test
+,
+y
+)
+≤
+T
+}
+\widehat{C}(X_{\textnormal{test}})=\left\{y\in\mathcal{Y}:s(X_{\textnormal{test}},y)\leq T\right\}
+, for some threshold
+T
+T
+determined by the calibration
+set. We next give details for how
+T
+T
+is selected for each of their proposed methods.
+2.3.1
+Pooling CDFs
+This method estimates the conditional cumulative distribution function (CDF)
+of the scores within each group in the calibration set, and then averages these CDFs
+to estimate the distribution of the test point score. For each calibration group
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+k=K_{0}+1,\dots,K
+,
+write the empirical CDF for group
+k
+k
+by
+F
+^
+k
+(
+t
+)
+=
+1
+N
+k
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+s
+(
+Z
+k
+,
+i
+)
+≤
+t
+}
+,
+\widehat{F}_{k}(t)=\frac{1}{N_{k}}\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{s(Z_{k,i})\leq t}\right\},
+and then define the pooled (or averaged) CDF as
+F
+^
+pooled
+​
+(
+t
+)
+=
+1
+K
+1
+​
+∑
+k
+=
+K
+0
++
+1
+K
+F
+^
+k
+​
+(
+t
+)
+.
+\widehat{F}_{\text{pooled}}(t)=\frac{1}{K_{1}}\sum_{k=K_{0}+1}^{K}\widehat{F}_{k}(t).
+The threshold
+T
+T
+is then taken to be the
+(
+1
+−
+α
+)
+(1-\alpha)
+-quantile of this pooled CDF,
+T
+=
+inf
+{
+t
+:
+F
+^
+pooled
+​
+(
+t
+)
+≥
+1
+−
+α
+}
+.
+T=\inf\left\{t:\widehat{F}_{\text{pooled}}(t)\geq 1-\alpha\right\}.
+Dunn et al. (2022)
+show that this method provides an asymptotic
+(
+1
+−
+α
+)
+(1-\alpha)
+coverage guarantee
+as
+K
+1
+→
+∞
+K_{1}\rightarrow\infty
+, but there is no finite-sample guarantee.
+Here, we show that our HCP framework allows for a stronger, finite-sample guarantee,
+simply by reinterpreting the method as a version of HCP.
+Proposition 1
+.
+The Pooling CDFs method of
+Dunn et al. (2022)
+is equivalent to running HCP with
+α
+′
+=
+α
++
+1
+−
+α
+K
+1
++
+1
+\alpha^{\prime}=\alpha+\frac{1-\alpha}{K_{1}+1}
+in place of
+α
+\alpha
+.
+Consequently, under hierarchical exchangeability
+(Definition
+1
+), the Pooling CDFs method satisfies
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+α
+−
+1
+−
+α
+K
+1
++
+1
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-\alpha-\frac{1-\alpha}{K_{1}+1}.
+Moreover, if the scores
+s
+⁡
+(
+Z
+k
+,
+i
+)
+s(Z_{k,i})
+are distinct almost surely,
+it additionally holds that
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≤
+1
+−
+α
++
+1
++
+α
+K
+1
++
+1
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\leq 1-\alpha+\frac{1+\alpha}{K_{1}+1}.
+Proof.
+Examining the definition of
+F
+^
+pooled
+\widehat{F}_{\textnormal{pooled}}
+, we can see that the threshold
+T
+T
+for Pooling CDFs can equivalently
+be written as
+T
+\displaystyle T
+=
+inf
+{
+t
+∈
+ℝ
+:
+∑
+k
+=
+K
+0
++
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+K
+1
+​
+N
+k
+⋅
+𝟙
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≤
+t
+≥
+1
+−
+α
+}
+\displaystyle=\inf\left\{t\in\mathbb{R}:\sum_{k=K_{0}+1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{K_{1}N_{k}}\cdot{\mathbbm{1}}_{{s(Z_{k,i})\leq t}}\geq 1-\alpha\right\}
+=
+inf
+{
+t
+∈
+ℝ
+:
+∑
+k
+=
+K
+0
++
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
+1
++
+1
+)
+​
+N
+k
+⋅
+𝟙
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≤
+t
+≥
+1
+−
+α
+′
+}
+\displaystyle=\inf\left\{t\in\mathbb{R}:\sum_{k=K_{0}+1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K_{1}+1)N_{k}}\cdot{\mathbbm{1}}_{{s(Z_{k,i})\leq t}}\geq 1-\alpha^{\prime}\right\}
+=
+Q
+1
+−
+α
+′
+​
+(
+∑
+k
+=
+K
+0
++
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
+1
++
+1
+)
+​
+N
+k
+⋅
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+)
++
+1
+K
+1
++
+1
+⋅
+δ
++
+∞
+)
+,
+\displaystyle=Q_{1-\alpha^{\prime}}\left(\sum_{k=K_{0}+1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K_{1}+1)N_{k}}\cdot\delta_{s(Z_{k,i})}+\frac{1}{K_{1}+1}\cdot\delta_{+\infty}\right),
+where the second equality holds since
+1
+−
+α
+′
+=
+K
+1
+K
+1
++
+1
+⋅
+(
+1
+−
+α
+)
+1-\alpha^{\prime}=\frac{K_{1}}{K_{1}+1}\cdot(1-\alpha)
+.
+Note that the last expression coincides with the definition of HCP with
+α
+′
+\alpha^{\prime}
+in place of
+α
+\alpha
+.
+The remaining results follow directly from Theorem
+1
+.
+∎
+This result implies the asymptotic result of
+Dunn et al. (2022)
+(since as
+K
+1
+→
+∞
+K_{1}\rightarrow\infty
+,
+this coverage guarantee approaches
+1
+−
+α
+1-\alpha
+), and so
+this strengthens the existing result.
+Note, however, that the asymptotic result for Pooling CDFs does not require exchangeability of the group sizes
+N
+k
+N_{k}
+,
+so
+Dunn et al. (2022)
+’s assumptions are slightly weaker than for the finite-sample guarantee of HCP.
+2.3.2
+Double Conformal
+Dunn et al. (2022)
+’s second approach, Double Conformal, is designed for the special case where all group sizes are equal,
+N
+k
+≡
+N
+N_{k}\equiv N
+.
+It works by quantifying the within-group uncertainties for each group and then combining them to calculate a threshold
+T
+T
+for the prediction set.
+Specifically, define
+q
+k
+=
+Q
+1
+−
+α
+/
+2
+​
+(
+∑
+i
+=
+1
+N
+1
+N
++
+1
+​
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+)
++
+1
+N
++
+1
+​
+δ
++
+∞
+)
+q_{k}=Q_{1-\alpha/2}\left(\sum_{i=1}^{N}\frac{1}{N+1}\delta_{s(Z_{k,i})}+\frac{1}{N+1}\delta_{+\infty}\right)
+as the
+(
+1
+−
+α
+/
+2
+)
+(1-\alpha/2)
+-quantile of the scores within group
+k
+k
+(with a small weight placed on
++
+∞
++\infty
+to act as
+a correction for finite sample size—note that this is equivalent to running
+split conformal (
+5
+) at coverage level
+1
+−
+α
+/
+2
+1-\alpha/2
+for the data in the
+k
+k
+th group). Then define
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+⁡
+(
+X
+test
+,
+y
+)
+≤
+T
+}
+\widehat{C}(X_{\textnormal{test}})=\left\{y\in\mathcal{Y}:s(X_{\textnormal{test}},y)\leq T\right\}
+for a threshold
+T
+T
+defined as
+T
+=
+Q
+1
+−
+α
+/
+2
+​
+(
+∑
+k
+=
+K
+0
++
+1
+K
+1
+K
+1
++
+1
+​
+δ
+q
+k
++
+1
+K
+1
++
+1
+​
+δ
++
+∞
+)
+.
+T=Q_{1-\alpha/2}\left(\sum_{k=K_{0}+1}^{K}\frac{1}{K_{1}+1}\delta_{q_{k}}+\frac{1}{K_{1}+1}\delta_{+\infty}\right).
+Dunn et al. (2022)
+show that the Double Conformal method provides finite-sample marginal coverage
+at level
+1
+−
+α
+1-\alpha
+(unlike Pooling CDFs which offers only asymptotic coverage).
+However, in practice, the method is often substantially overly conservative—this is because the coverage
+guarantee is proven via a union bound, with total error rate
+α
+\alpha
+obtained
+by summing an
+α
+/
+2
+\alpha/2
+within-group error bound plus an
+α
+/
+2
+\alpha/2
+across-group error bound.
+2.3.3
+Subsampling Once
+Next,
+Dunn et al. (2022)
+propose Subsampling Once, an approach that avoids the issue of hierarchical exchangeability
+by subsampling a single observation from each group, thus yielding a data set that satisfies (ordinary, non-hierarchical) exchangeability.
+4
+4
+4
+While
+Dunn et al. (2022)
+present this method as a modification of full conformal, here for consistency of the comparison across different methods,
+we use its split conformal version.
+Specifically, let
+i
+k
+i_{k}
+be drawn uniformly from
+{
+1
+,
+…
+,
+N
+k
+}
+\{1,\dots,N_{k}\}
+, for each
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+k=K_{0}+1,\dots,K
+. Then
+the subset of the calibration data given by
+Z
+K
+0
++
+1
+,
+i
+K
+0
++
+1
+,
+…
+,
+Z
+K
+,
+i
+K
+Z_{K_{0}+1,i_{K_{0}+1}},\dots,Z_{K,i_{K}}
+, together with the test point
+Z
+test
+Z_{\textnormal{test}}
+,
+now forms an exchangeable data set, and thus ordinary split conformal can be applied.
+Tthe prediction set is then defined with the threshold
+T
+=
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+K
+0
++
+1
+K
+1
+K
+1
++
+1
+​
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+k
+)
++
+1
+K
+1
++
+1
+​
+δ
++
+∞
+)
+.
+T=Q_{1-\alpha}\left(\sum_{k=K_{0}+1}^{K}\frac{1}{K_{1}+1}\delta_{s(Z_{k,i_{k}})}+\frac{1}{K_{1}+1}\delta_{+\infty}\right).
+Dunn et al. (2022)
+show that, due to the exchangeability of this data subset, this procedure again offers
+finite-sample marginal coverage
+at level
+1
+−
+α
+1-\alpha
+. Moreover, unlike the Double Conformal method, this last method is no longer overly conservative in practice.
+As for Pooling CDFs, we note that this method does not require exchangeability of the group sizes
+N
+k
+N_{k}
+,
+so the assumptions are slightly weaker than for the finite-sample guarantee of HCP.
+However, the prediction interval constructed by the Subsampling Once method may be highly variable because much
+of the available calibration data is discarded.
+2.3.4
+Repeated Subsampling
+To alleviate the problem of discarding data in the Subsampling Once method,
+Dunn et al. (2022)
+also provide an alternative method that makes use of multiple repeats of this procedure (Repeated Subsampling),
+and aggregating the outputs to provide a single prediction interval.
+For each
+b
+=
+1
+,
+…
+,
+B
+b=1,\dots,B
+, randomly
+choose a data point
+i
+k
+(
+b
+)
+∈
+{
+1
+,
+…
+,
+N
+k
+}
+i_{k}^{(b)}\in\{1,\dots,N_{k}\}
+for each group
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+k=K_{0}+1,\dots,K
+, so that
+{
+Z
+K
+0
++
+1
+,
+i
+K
+0
++
+1
+(
+b
+)
+,
+…
+,
+Z
+K
+,
+i
+K
+(
+b
+)
+}
+\{Z_{K_{0}+1,i_{K_{0}+1}^{(b)}},\dots,Z_{K,i_{K}^{(b)}}\}
+is the subsampled calibration data set for the
+b
+b
+th run of Subsampling Once.
+To aggregate the
+B
+B
+many runs together,
+Dunn et al. (2022)
+reformulate the Subsampling Once procedure in terms of a p-value,
+rather than a quantile, and then average the p-values.
+To do this, define the p-value for the
+b
+b
+th run of Subsampling Once as
+P
+(
+b
+)
+​
+(
+z
+)
+=
+1
++
+∑
+k
+=
+K
+0
++
+1
+K
+𝟙
+s
+⁡
+(
+Z
+k
+,
+i
+k
+(
+b
+)
+)
+≥
+s
+⁡
+(
+z
+)
+K
+1
++
+1
+.
+P^{(b)}(z)=\frac{1+\sum_{k=K_{0}+1}^{K}{\mathbbm{1}}_{{s(Z_{k,i_{k}^{(b)}})\geq s(z)}}}{K_{1}+1}.
+Then it holds that the
+prediction interval for the
+b
+b
+th run of Subsampling Once can equivalently be defined as
+C
+^
+(
+b
+)
+​
+(
+X
+test
+)
+=
+{
+y
+:
+P
+(
+b
+)
+​
+(
+X
+test
+,
+y
+)
+>
+α
+}
+\widehat{C}^{(b)}(X_{\textnormal{test}})=\{y:P^{(b)}(X_{\textnormal{test}},y)>\alpha\}
+, the set of values
+y
+y
+whose p-value is
+not
+sufficiently
+small to be rejected at level
+α
+\alpha
+.
+With this equivalent formulation in place, we are now ready to define the aggregation:
+the prediction interval for Repeated Subsampling is given by
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+:
+P
+¯
+​
+(
+X
+test
+,
+y
+)
+>
+α
+}
+​
+where
+​
+P
+¯
+=
+1
+B
+​
+∑
+b
+=
+1
+B
+P
+(
+b
+)
+​
+(
+z
+)
+.
+\widehat{C}(X_{\textnormal{test}})=\{y:\bar{P}(X_{\textnormal{test}},y)>\alpha\}\textnormal{ where }\bar{P}=\frac{1}{B}\sum_{b=1}^{B}P^{(b)}(z).
+This averaging strategy avoids the loss of information incurred by taking only a single subsample; however,
+Dunn et al. (2022)
+’s
+finite-sample theory for the
+Repeated Subsampling method only ensures
+1
+−
+2
+​
+α
+1-2\alpha
+, rather than
+1
+−
+α
+1-\alpha
+, as the marginal
+coverage level.
+(The factor of 2 arises from the fact that an average of valid p-values is, up to a factor of 2, a valid p-value
+(
+Vovk and Wang, 2020
+)
+.)
+Next, we will see that using our HCP framework leads to a stronger finite-sample guarantee.
+Specifically, we now
+derive an equivalent formulation
+to better understand the relationship of this method to HCP.
+By examining the definition of
+P
+¯
+\bar{P}
+, we can verify that
+Repeated Subsampling
+is equivalent to taking
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+⁡
+(
+X
+test
+,
+y
+)
+≤
+T
+}
+\widehat{C}(X_{\textnormal{test}})=\left\{y\in\mathcal{Y}:s(X_{\textnormal{test}},y)\leq T\right\}
+where the threshold
+T
+T
+is defined as
+T
+=
+Q
+1
+−
+α
+​
+(
+∑
+b
+=
+1
+B
+∑
+k
+=
+K
+0
++
+1
+K
+1
+B
+⁡
+(
+K
+1
++
+1
+)
+​
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+k
+(
+b
+)
+)
++
+1
+K
+1
++
+1
+​
+δ
++
+∞
+)
+.
+T=Q_{1-\alpha}\left(\sum_{b=1}^{B}\sum_{k=K_{0}+1}^{K}\frac{1}{B(K_{1}+1)}\delta_{s(Z_{k,i^{(b)}_{k}})}+\frac{1}{K_{1}+1}\delta_{+\infty}\right).
+If the number of repeats
+B
+B
+is extremely large,
+we would expect that, within group
+k
+k
+, the selected index
+i
+k
+(
+b
+)
+i^{(b)}_{k}
+is equal to each
+i
+=
+1
+,
+…
+,
+N
+k
+i=1,\dots,N_{k}
+in roughly equal proportions—that is,
+∑
+b
+=
+1
+B
+1
+B
+​
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+k
+(
+b
+)
+)
+≈
+∑
+i
+=
+1
+N
+k
+1
+N
+k
+​
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+)
+.
+\sum_{b=1}^{B}\frac{1}{B}\delta_{s(Z_{k,i^{(b)}_{k}})}\approx\sum_{i=1}^{N_{k}}\frac{1}{N_{k}}\delta_{s(Z_{k,i})}.
+Consequently, as
+B
+→
+∞
+B\rightarrow\infty
+in the Repeated Subsampling
+method,
+we would expect that the threshold
+T
+T
+constructed by “Repeated sampling”
+is approximately equal to the threshold
+T
+T
+constructed by HCP (
+6
+), and so the resulting prediction intervals should be approximately the same.
+In other words, for large
+B
+B
+, we can view the Repeated Subsampling method as an approximation to HCP.
+In fact, we can actually derive a stronger result: under hierarchical exchangeability, Repeated Subsampling
+offers a theoretical guarantee of coverage at level
+1
+−
+α
+1-\alpha
+, rather than the weaker
+1
+−
+2
+​
+α
+1-2\alpha
+result in existing work.
+(However, this new result requires exchangeability of the group sizes
+N
+k
+N_{k}
+, which the
+1
+−
+2
+​
+α
+1-2\alpha
+coverage result does not.)
+Proposition 2
+.
+Consider a bootstrapped calibration set, where for the
+k
+k
+th
+group, the data points within that group are given by
+Z
+~
+k
+boot
+=
+(
+Z
+k
+,
+i
+k
+(
+1
+)
+,
+…
+,
+Z
+k
+,
+i
+k
+(
+B
+)
+)
+,
+\tilde{Z}^{\textnormal{boot}}_{k}=(Z_{k,i_{k}^{(1)}},\dots,Z_{k,i_{k}^{(B)}}),
+(7)
+where for each
+k
+k
+, the indices
+i
+k
+(
+1
+)
+,
+…
+,
+i
+k
+(
+B
+)
+i_{k}^{(1)},\dots,i_{k}^{(B)}
+are sampled uniformly with replacement from
+{
+1
+,
+…
+,
+N
+k
+}
+\{1,\dots,N_{k}\}
+.
+The Repeated Subsampling method of
+Dunn et al. (2022)
+is equivalent to running HCP
+using the bootstrapped calibration set (
+7
+) (for
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+k=K_{0}+1,\dots,K
+) in place of the original data set.
+Moreover, if the original data set
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+(\tilde{Z}_{1},\dots,\tilde{Z}_{K+1})
+satisfies hierarchical exchangeability (Definition
+1
+), then the bootstrapped calibration and test data
+(
+Z
+~
+K
+0
++
+1
+boot
+,
+…
+,
+Z
+~
+K
+boot
+,
+Z
+~
+K
++
+1
+boot
+)
+(\tilde{Z}^{\textnormal{boot}}_{K_{0}+1},\dots,\tilde{Z}^{\textnormal{boot}}_{K},\tilde{Z}^{\textnormal{boot}}_{K+1})
+satisfies hierarchical exchangeability (Definition
+1
+) conditional on the training data
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+.
+Consequently, the Repeated Subsampling method satisfies
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+α
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-\alpha.
+and moreover, if the scores
+s
+⁡
+(
+Z
+k
+,
+i
+)
+s(Z_{k,i})
+are distinct almost surely,
+it additionally holds that
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≤
+1
+−
+α
++
+2
+K
+1
++
+1
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\leq 1-\alpha+\frac{2}{K_{1}+1}.
+Proof.
+The first claim—i.e., that Repeated Subsampling is equivalent to running HCP with the bootstrapped
+calibration set—follows directly from the definition of the methods. Next we check hierarchical exchangeability.
+First, for a permutation
+σ
+\sigma
+of the groups
+K
+0
++
+1
+,
+…
+,
+K
++
+1
+K_{0}+1,\dots,K+1
+, we observe that the permuted
+bootstrapped data set
+(
+Z
+~
+σ
+⁡
+(
+K
+0
++
+1
+)
+boot
+,
+…
+,
+Z
+~
+σ
+⁡
+(
+K
++
+1
+)
+boot
+)
+(\tilde{Z}^{\textnormal{boot}}_{\sigma(K_{0}+1)},\dots,\tilde{Z}^{\textnormal{boot}}_{\sigma(K+1)})
+is equal, in distribution, to first permuting the original calibration and test data (i.e., replacing
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})
+with
+(
+Z
+~
+σ
+⁡
+(
+K
+0
++
+1
+)
+,
+…
+,
+Z
+~
+σ
+⁡
+(
+K
++
+1
+)
+)
+(\tilde{Z}_{\sigma(K_{0}+1)},\dots,\tilde{Z}_{\sigma(K+1)})
+,
+which is equal in distribution conditional on
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+),
+and then sampling data points at random for each group; therefore, it is equal in distribution to the bootstrapped
+data (
+7
+). The second exchangeability property (i.e., equality in distribution after
+permuting within a group) follows from the fact that the randomly sampled indices satisfy
+(
+i
+k
+(
+1
+)
+,
+…
+,
+i
+k
+(
+B
+)
+)
+=
+d
+(
+i
+k
+(
+σ
+⁡
+(
+1
+)
+)
+,
+…
+,
+i
+k
+(
+σ
+⁡
+(
+B
+)
+)
+)
+(i_{k}^{(1)},\dots,i_{k}^{(B)})\stackrel{{\scriptstyle\textnormal{d}}}{{=}}(i_{k}^{(\sigma(1))},\dots,i_{k}^{(\sigma(B))})
+for any
+σ
+∈
+𝒮
+B
+\sigma\in\mathcal{S}_{B}
+.
+We can now apply Theorem
+1
+to prove the coverage results.
+5
+5
+5
+For the upper bound on coverage,
+note that the footnote in Theorem
+1
+states that it is sufficient for scores to be distinct across groups; in particular,
+the bootstrapped data set may have
+i
+k
+(
+b
+)
+=
+i
+k
+(
+b
+′
+)
+i_{k}^{(b)}=i_{k}^{(b^{\prime})}
+leading to repeated scores
+s
+⁡
+(
+Z
+k
+,
+i
+k
+(
+b
+)
+)
+=
+s
+⁡
+(
+Z
+k
+,
+i
+k
+(
+b
+′
+)
+)
+s(Z_{k,i_{k}^{(b)}})=s(Z_{k,i_{k}^{(b^{\prime})}})
+within the
+k
+k
+th group, but this does not contradict the result since we only need to ensure
+s
+⁡
+(
+Z
+k
+,
+i
+k
+(
+b
+)
+)
+≠
+s
+⁡
+(
+Z
+k
+′
+,
+i
+k
+′
+(
+b
+′
+)
+)
+s(Z_{k,i_{k}^{(b)}})\neq s(Z_{k^{\prime},i_{k^{\prime}}^{(b^{\prime})}})
+for distinct groups
+k
+≠
+k
+′
+k\neq k^{\prime}
+.
+∎
+2.4
+Simulations
+We next present simulation results to illustrate the comparison between
+HCP and the methods proposed by
+Dunn et al. (2022)
+.
+6
+6
+6
+Code to reproduce this simulation is available at
+https://github.com/rebeccawillett/Distribution-free-inference-with-hierarchical-data
+.
+Score functions.
+A common score for conformal prediction is the absolute value of the residual,
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+,
+s(x,y)=\big|y-\widehat{\mu}(x)\big|,
+where
+μ
+^
+\widehat{\mu}
+is a model fitted on the first portion of the training data (i.e., groups
+k
+=
+1
+,
+…
+,
+K
+0
+k=1,\dots,K_{0}
+, with the calibration set held out)—that is,
+μ
+^
+​
+(
+x
+)
+\widehat{\mu}(x)
+is an estimate of
+𝔼
+⁡
+[
+Y
+|
+X
+=
+x
+]
+\mathbb{E}\left[{Y}\ \middle|\ {X=x}\right]
+.
+This score leads to prediction intervals of the form
+C
+^
+​
+(
+X
+test
+)
+=
+μ
+^
+​
+(
+X
+test
+)
+±
+T
+\widehat{C}(X_{\textnormal{test}})=\widehat{\mu}(X_{\textnormal{test}})\pm T
+, for some
+threshold
+T
+T
+selected using the calibration set. We will use this score for this first simulation.
+Data and methods.
+The data for this simulation is generated as follows:
+independently for each group
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+, we set
+N
+k
+≡
+N
+N_{k}\equiv N
+and draw
+(
+X
+k
+,
+1
+⋮
+X
+k
+,
+N
+)
+∼
+𝒩
+⁡
+(
+(
+0
+⋮
+0
+)
+,
+(
+2
+1
+…
+1
+1
+1
+2
+…
+1
+1
+⋮
+⋮
+⋮
+⋮
+⋮
+1
+1
+…
+2
+1
+1
+1
+…
+1
+2
+)
+)
+,
+\displaystyle\left(\begin{array}[]{c}X_{k,1}\\
+\vdots\\
+X_{k,N}\end{array}\right)\sim\mathcal{N}\left(\left(\begin{array}[]{c}0\\
+\vdots\\
+0\end{array}\right),\left(\begin{array}[]{ccccc}2&1&\dots&1&1\\
+1&2&\dots&1&1\\
+\vdots&\vdots&\vdots&\vdots&\vdots\\
+1&1&\dots&2&1\\
+1&1&\dots&1&2\end{array}\right)\right),
+(
+Y
+k
+,
+1
+⋮
+Y
+k
+,
+N
+)
+|
+(
+X
+k
+,
+1
+⋮
+X
+k
+,
+N
+)
+∼
+𝒩
+(
+(
+μ
+⁡
+(
+X
+k
+,
+1
+)
+⋮
+μ
+⁡
+(
+X
+k
+,
+N
+)
+)
+,
+(
+2
+1
+…
+1
+1
+1
+2
+…
+1
+1
+⋮
+⋮
+⋮
+⋮
+⋮
+1
+1
+…
+2
+1
+1
+1
+…
+1
+2
+)
+)
+,
+\displaystyle\left(\begin{array}[]{c}Y_{k,1}\\
+\vdots\\
+Y_{k,N}\end{array}\right)\left|\left(\begin{array}[]{c}X_{k,1}\\
+\vdots\\
+X_{k,N}\end{array}\right)\right.\sim\mathcal{N}\left(\left(\begin{array}[]{c}\mu(X_{k,1})\\
+\vdots\\
+\mu(X_{k,N})\end{array}\right),\left(\begin{array}[]{ccccc}2&1&\dots&1&1\\
+1&2&\dots&1&1\\
+\vdots&\vdots&\vdots&\vdots&\vdots\\
+1&1&\dots&2&1\\
+1&1&\dots&1&2\end{array}\right)\right),
+where the true conditional mean function is given by
+μ
+⁡
+(
+x
+)
+=
+1
++
+x
++
+0.1
+⋅
+x
+2
+.
+\mu(x)=1+x+0.1\cdot x^{2}.
+We run the experiment for the following choices of
+K
+K
+(the number of groups) and
+N
+N
+(the number of observations within each group):
+K
+=
+20
+,
+N
+=
+2
+,
+K
+=
+100
+,
+N
+=
+5
+.
+K=20,N=2,\quad K=100,N=5.
+The target coverage level is set to be 80%, i.e.,
+α
+=
+0.2
+\alpha=0.2
+.
+The training portion of the data (i.e., groups
+k
+=
+1
+,
+…
+,
+K
+0
+k=1,\dots,K_{0}
+, for
+K
+0
+=
+K
+/
+2
+K_{0}=K/2
+)
+is used to produce an estimate
+μ
+^
+​
+(
+x
+)
+\widehat{\mu}(x)
+of the conditional mean function via linear regression (specifically, we run least squares
+on the data set
+{
+(
+X
+k
+,
+i
+,
+Y
+k
+,
+i
+)
+:
+k
+=
+1
+,
+…
+,
+K
+0
+,
+i
+=
+1
+,
+…
+,
+N
+}
+\{(X_{k,i},Y_{k,i}):k=1,\dots,K_{0},\ i=1,\dots,N\}
+, ignoring the hierarchical structure of the data),
+to define the score
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(x,y)=|y-\widehat{\mu}(x)|
+as described above.
+We then use the calibration set (i.e.,
+K
+1
+=
+K
+/
+2
+K_{1}=K/2
+many groups
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+k=K_{0}+1,\dots,K
+) to
+choose the threshold
+T
+T
+that defines the prediction interval, for all methods, as detailed in the sections above.
+We compare HCP with
+Dunn et al. (2022)
+’s Pooling CDFs, Double Conformal, and Subsampling Once methods.
+(We do not compare with Repeated Subsampling since, as explained in Section
+2.3
+,
+the Repeated Subsampling method with large
+B
+B
+can essentially be interpreted as an approximation to
+HCP in this split conformal setting.)
+Results.
+The results for all methods are shown in Figure
+. Here, we generate the training set consisting of
+K
+K
+groups of size
+N
+N
+,
+together with a test set of
+n
+test
+=
+1000
+n_{\textnormal{test}}=1000
+independent draws
+(
+X
+test
+,
+Y
+test
+)
+(X_{\textnormal{test}},Y_{\textnormal{test}})
+, each drawn from the same distribution
+as the data points
+(
+X
+k
+,
+i
+,
+Y
+k
+,
+i
+)
+(X_{k,i},Y_{k,i})
+in the training set.
+For each of the four methods, we calculate the mean coverage rate,
+1
+1000
+​
+∑
+i
+=
+1
+1000
+𝟙
+Y
+test
+,
+i
+∈
+C
+^
+​
+(
+X
+test
+,
+i
+)
+,
+\frac{1}{1000}\sum_{i=1}^{1000}{\mathbbm{1}}_{{Y_{\textnormal{test},i}\in\widehat{C}(X_{\textnormal{test},i})}},
+(8)
+and mean prediction interval width,
+1
+1000
+​
+∑
+i
+=
+1
+1000
+length
+​
+(
+C
+^
+​
+(
+X
+test
+,
+i
+)
+)
+.
+\frac{1}{1000}\sum_{i=1}^{1000}\textnormal{length}(\widehat{C}(X_{\textnormal{test},i})).
+(9)
+The box plots in Figure
+show the distribution of these two measures of performance,
+across 500 independent trials.
+The overall average coverage for each method is also shown in Table
+1
+.
+Comparing the results for the various methods, we see that the empirical results confirm
+our expectations as described above. In particular, among
+Dunn et al. (2022)
+’s methods, we see
+that Pooling CDFs works quite well but
+shows some undercoverage for small
+K
+K
+(as expected, since we have seen in Proposition
+1
+that it is equivalent to HCP with a slightly higher value of
+α
+\alpha
+);
+that Double Conformal tends to provide over-conservative prediction sets (with coverage level
+>
+1
+−
+α
+>1-\alpha
+, and consequently,
+substantially wider prediction intervals); and that Subsampling Once provides the correct coverage level but suffers from higher
+variability due to discarding much of the data—to be specific, the method’s performance on the test set can change dramatically when we resample
+the training and calibration data, since the output of the method relies on a substantially reduced calibration set size for each trial.
+HCP is free from these issues, and tends to show good empirical performance
+while also enjoying a theoretical finite-sample guarantee.
+3
+Distribution-free prediction with repeated measurements
+We now return to the setting of repeated measurements, introduced earlier in Section
+1.1
+.
+The training data consisting of i.i.d. samples of the features
+X
+X
+accompanied by repeated i.i.d. draws of the response
+Y
+Y
+,
+{
+X
+k
+∼
+P
+X
+,
+N
+k
+|
+X
+k
+∼
+P
+N
+|
+X
+,
+Y
+k
+,
+1
+,
+…
+,
+Y
+k
+,
+N
+k
+|
+(
+X
+k
+,
+N
+k
+)
+∼
+iid
+P
+Y
+|
+X
+,
+\begin{cases}X_{k}\sim P_{X},\\
+N_{k}\mid X_{k}\sim P_{N|X},\\
+Y_{k,1},\dots,Y_{k,N_{k}}\mid(X_{k},N_{k})\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}P_{Y|X},\end{cases}
+(10)
+independently for each
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+,
+and the test point is a new independent draw from the
+(
+X
+,
+Y
+)
+(X,Y)
+distribution,
+X
+test
+∼
+P
+X
+,
+Y
+test
+|
+X
+test
+∼
+P
+Y
+|
+X
+.
+X_{\textnormal{test}}\sim P_{X},\ Y_{\textnormal{test}}\mid X_{\textnormal{test}}\sim P_{Y|X}.
+(11)
+(This construction generalizes the model introduced earlier in (
+4
+), because here we allow for potentially different numbers of repeated measurements for each
+k
+k
+.)
+Equivalently, we can draw from the model (
+10
+)
+K
++
+1
+K+1
+times, with
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+denoting training data,
+and with test
+point
+(
+X
+test
+,
+Y
+test
+)
+=
+(
+X
+K
++
+1
+,
+Y
+K
++
+1
+,
+1
+)
+(X_{\textnormal{test}},Y_{\textnormal{test}})=(X_{K+1},Y_{K+1,1})
+(and any additional draws of the response,
+Y
+K
++
+1
+,
+2
+,
+…
+,
+Y
+K
++
+1
+,
+N
+K
++
+1
+Y_{K+1,2},\dots,Y_{K+1,N_{K+1}}
+, are simply discarded).
+This model satisfies the definition of hierarchical exchangeability (Definition
+1
+), and therefore, the HCP
+method defined in (
+6
+) is guaranteed to offer marginal coverage at level
+1
+−
+α
+1-\alpha
+, as in Theorem
+1
+.
+Since the training data is not i.i.d. (and not exchangeable) due to the repeated measurements, this result is again novel relative to existing
+split conformal methodology.
+Thus far, we have only shown that HCP allows us to restore marginal predictive coverage
+despite
+the repeated
+measurements—that is, we can provide the same marginal guarantee for the repeated measurement setting,
+as was already obtained by split conformal for the i.i.d. data setting.
+On the other hand, the presence of repeated measurements actually carries valuable
+information—for instance, we can directly estimate the conditional variance of
+Y
+|
+X
+Y|X
+at each
+X
+=
+X
+k
+X=X_{k}
+for which we have multiple
+draws of
+Y
+Y
+. This naturally leads us to ask whether we can use this special structure
+to
+enhance
+the types of guarantees it is possible to achieve—that is, can we expect a stronger inference result that achieves guarantees beyond the usual marginal coverage guarantee?
+This is the question that we address next.
+3.1
+Toward inference with conditional coverage guarantees
+In the setting of i.i.d. data (i.e., without repeated measurements),
+when the features
+X
+X
+have a continuous or nonatomic distribution,
+Vovk et al. (2005)
+;
+Lei and Wasserman (2014)
+;
+Barber et al. (2021a)
+establish
+that conditionally-valid predictive inference (that is, guarantees of the form
+ℙ
+⁡
+{
+Y
+test
+∈
+C
+^
+​
+(
+X
+test
+)
+|
+X
+test
+}
+≥
+1
+−
+α
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\ \middle|\ {X_{\textnormal{test}}}\right\}\geq 1-\alpha
+) are impossible
+to achieve with finite-width prediction intervals.
+However, access to repeated measurements may provide additional information that allows us to move beyond this impossibility
+result.
+In this section, we discuss possible targets of distribution-free inference beyond the marginal coverage guarantee, by making use of the repeated measurements.
+Consider the miscoverage rate conditional on all the observations we have—both the observed training and calibration data,
+𝒟
+=
+{
+(
+X
+k
+,
+Y
+k
+,
+1
+,
+…
+,
+Y
+k
+,
+N
+k
+)
+}
+k
+=
+1
+,
+…
+,
+K
+\mathcal{D}=\{(X_{k},Y_{k,1},\dots,Y_{k,N_{k}})\}_{k=1,\dots,K}
+, and the test feature vector,
+X
+test
+X_{\textnormal{test}}
+. Specifically, define
+α
+𝒟
+(
+x
+)
+=
+ℙ
+{
+Y
+test
+∉
+C
+^
+(
+X
+test
+)
+|
+𝒟
+;
+X
+test
+=
+x
+}
+,
+\alpha_{\mathcal{D}}(x)=\mathbb{P}\left\{{Y_{\textnormal{test}}\notin\widehat{C}(X_{\textnormal{test}})}\ \middle|\ {\mathcal{D};X_{\textnormal{test}}=x}\right\},
+where the probability is taken with respect to the distribution of the test response
+Y
+test
+Y_{\textnormal{test}}
+(which is drawn from
+P
+Y
+|
+X
+P_{Y|X}
+at
+X
+test
+=
+x
+X_{\textnormal{test}}=x
+).
+7
+7
+7
+Note
+that the random variable
+α
+𝒟
+​
+(
+X
+test
+)
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})
+is therefore the coverage conditional on both the observed
+training and calibration data
+𝒟
+\mathcal{D}
+, and
+test feature
+X
+test
+X_{\textnormal{test}}
+, meaning that we are now examining an even stronger form of conditional coverage. However,
+it is well known that conditioning on
+𝒟
+\mathcal{D}
+is straightforward for split conformal prediction
+(
+Vovk, 2012
+)
+,
+that is, the primary challenge in bounding
+α
+𝒟
+​
+(
+X
+test
+)
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})
+comes from conditioning on
+X
+test
+X_{\textnormal{test}}
+.
+The marginal coverage guarantee
+ℙ
+{
+Y
+test
+∉
+C
+^
+(
+X
+test
+)
+}
+≤
+α
+\mathbb{P}\left\{{Y_{\textnormal{test}}\notin\widehat{C}(X_{\textnormal{test}})}\right\}\leq\alpha
+can then equivalently be expressed as
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+≤
+α
+,
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]\leq\alpha,
+(12)
+by the tower law.
+For the goal of controlling conditional miscoverage, an ideal target would be
+α
+𝒟
+​
+(
+X
+test
+)
+≤
+α
+​
+almost surely.
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})\leq\alpha\text{ almost surely.}
+(13)
+This condition, if achieved, would ensure that the resulting prediction set provides a good coverage for any value of new input
+X
+test
+X_{\textnormal{test}}
+, rather than only on average over
+X
+test
+X_{\textnormal{test}}
+. However,
+even in the setting of repeated measurements, if
+X
+X
+is continuously distributed (or more generally, nonatomic, i.e.,
+P
+X
+​
+(
+x
+)
+=
+0
+P_{X}(x)=0
+for all
+x
+∈
+𝒳
+x\in\mathcal{X}
+), the guarantee (
+13
+) is not achievable by any nontrivial (finite-width) prediction interval.
+Consequently, we would like to find a coverage target that is stronger than the basic marginal guarantee (
+12
+)
+but weaker than the unachievable conditional guarantee (
+13
+).
+As a compromise between the two,
+we consider the following guarantee, which we refer to as
+second-moment coverage
+:
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+α
+2
+.
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq\alpha^{2}.
+(14)
+This condition is a compromise between the previous two: second-moment coverage (
+14
+)
+is strictly weaker than the (unattainable) conditional coverage guarantee (
+13
+),
+and strictly stronger than the marginal coverage guarantee (
+12
+).
+Another way of understanding the guarantee (
+14
+) as a mechanism for controlling conditional miscoverage is to look at the tail probability. By Markov’s inequality, for any constant
+c
+>
+1
+c>1
+, the marginal coverage guarantee leads to
+ℙ
+{
+α
+𝒟
+(
+X
+test
+)
+>
+c
+α
+}
+≤
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+c
+​
+α
+=
+1
+c
+,
+\mathbb{P}\left\{{\alpha_{\mathcal{D}}(X_{\textnormal{test}})>c\alpha}\right\}\leq\frac{\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]}{c\alpha}=\frac{1}{c},
+while the stronger guarantee (
+14
+) implies
+ℙ
+{
+α
+𝒟
+(
+X
+test
+)
+>
+c
+α
+}
+=
+ℙ
+{
+α
+𝒟
+(
+X
+test
+)
+2
+>
+c
+2
+α
+2
+}
+≤
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+c
+2
+​
+α
+2
+=
+1
+c
+2
+.
+\mathbb{P}\left\{{\alpha_{\mathcal{D}}(X_{\textnormal{test}})>c\alpha}\right\}=\mathbb{P}\left\{{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}>c^{2}\alpha^{2}}\right\}\leq\frac{\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]}{c^{2}\alpha^{2}}=\frac{1}{c^{2}}.
+Hence, we can expect more uniformly small conditional miscoverage rate from the second-moment coverage guarantee.
+3.2
+Proposed method for second-moment coverage: HCP
+2
+Now we discuss how the stronger guarantee (
+14
+) can be achieved in the distribution-free sense,
+in the setting of repeated measurements.
+We propose a modification of our HCP method, which we call HCP
+2
+—this name refers to the fact that the
+new goal is second-moment coverage.
+(As before, here we aim to extend the split conformal method to address this goal;
+extensions of other methods—namely, full conformal and jackknife+—are deferred to the Appendix.)
+To begin, let
+K
+1
+≥
+2
+=
+∑
+k
+=
+K
+0
++
+1
+K
+𝟙
+N
+k
+≥
+2
+K_{1}^{\geq 2}=\sum_{k=K_{0}+1}^{K}{\mathbbm{1}}_{{N_{k}\geq 2}}
+, the number of data points in the calibration set
+for which we have at least two repeated measurements.
+HCP
+2
+method:
+C
+^
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+(
+X
+test
+,
+y
+)
+≤
+T
+}
+,
+where
+T
+=
+Q
+1
+−
+α
+2
+​
+(
+∑
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+N
+k
+≥
+2
+∑
+i
+=
+1
+,
+…
+,
+N
+k
+N
+k
+−
+i
+(
+K
+1
+≥
+2
++
+1
+)
+​
+(
+N
+k
+2
+)
+⋅
+δ
+s
+k
+,
+(
+i
+)
++
+1
+K
+1
+≥
+2
++
+1
+⋅
+δ
++
+∞
+)
+,
+\textnormal{HCP${}^{2}$ method: \quad}\widehat{C}(X_{\textnormal{test}})=\{y\in\mathcal{Y}:s(X_{\textnormal{test}},y)\leq T\},\textnormal{ where }\\
+T=Q_{1-\alpha^{2}}\left(\sum_{\begin{subarray}{c}k=K_{0}+1,\dots,K\\
+N_{k}\geq 2\end{subarray}}\sum_{i=1,\dots,N_{k}}\frac{N_{k}-i}{(K_{1}^{\geq 2}+1){N_{k}\choose 2}}\cdot\delta_{s_{k,(i)}}+\frac{1}{K_{1}^{\geq 2}+1}\cdot\delta_{+\infty}\right),
+(15)
+where
+s
+k
+,
+(
+1
+)
+≤
+⋯
+≤
+s
+k
+,
+(
+N
+k
+)
+s_{k,(1)}\leq\dots\leq s_{k,(N_{k})}
+are the order statistics of the scores
+s
+⁡
+(
+Z
+k
+,
+1
+)
+,
+…
+,
+s
+⁡
+(
+Z
+k
+,
+N
+k
+)
+s(Z_{k,1}),\dots,s(Z_{k,N_{k}})
+in the
+k
+k
+th calibration
+group.
+To understand the intuition behind this construction, we can first verify that the threshold
+T
+T
+in this definition
+can equivalently be written as
+T
+=
+Q
+1
+−
+α
+2
+​
+(
+∑
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+1
+(
+K
+1
+≥
+2
++
+1
+)
+​
+(
+N
+k
+2
+)
+⋅
+δ
+min
+⁡
+{
+s
+⁡
+(
+Z
+k
+,
+i
+)
+,
+s
+⁡
+(
+Z
+k
+,
+i
+′
+)
+}
++
+1
+K
+1
+≥
+2
++
+1
+⋅
+δ
++
+∞
+)
+.
+T=Q_{1-\alpha^{2}}\left(\sum_{\begin{subarray}{c}k=K_{0}+1,\dots,K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i<i^{\prime}\leq N_{k}}\frac{1}{(K_{1}^{\geq 2}+1){N_{k}\choose 2}}\cdot\delta_{\min\{s(Z_{k,i}),s(Z_{k,i^{\prime}})\}}+\frac{1}{K_{1}^{\geq 2}+1}\cdot\delta_{+\infty}\right).
+With this equivalent definition in place, we can now explain
+the main idea behind the construction of the HCP
+2
+method.
+For intuition, suppose
+Y
+|
+X
+Y\mid X
+has a continuous distribution.
+For each group
+k
+k
+, since the
+Y
+k
+,
+i
+Y_{k,i}
+’s are i.i.d. conditional on
+X
+=
+X
+k
+X=X_{k}
+,
+if
+q
+1
+−
+a
+q_{1-a}
+is equal to the
+(
+1
+−
+a
+)
+(1-a)
+-quantile of the distribution of
+s
+⁡
+(
+X
+,
+Y
+)
+s(X,Y)
+conditional on
+X
+=
+X
+k
+X=X_{k}
+,
+then for constructing HCP (and proving marginal coverage), we observe that
+ℙ
+{
+s
+(
+X
+k
+,
+Y
+k
+,
+i
+)
+>
+q
+1
+−
+a
+}
+=
+a
+\mathbb{P}\left\{{s(X_{k},Y_{k,i})>q_{1-a}}\right\}=a
+by construction.
+But, if we have at least two measurements
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+1\leq i<i^{\prime}\leq N_{k}
+at this particular
+k
+k
+,
+then we can also see that
+ℙ
+{
+min
+{
+s
+(
+X
+k
+,
+Y
+k
+,
+i
+)
+,
+s
+(
+X
+k
+,
+Y
+k
+,
+i
+′
+)
+}
+>
+q
+1
+−
+a
+}
+=
+a
+2
+\mathbb{P}\left\{{\min\{s(X_{k},Y_{k,i}),s(X_{k},Y_{k,i^{\prime}})\}>q_{1-a}}\right\}=a^{2}
+. In other words, by examining the pairwise minimums
+across the scores at each value of
+X
+X
+, we can learn about
+α
+𝒟
+​
+(
+X
+)
+2
+\alpha_{\mathcal{D}}(X)^{2}
+, rather than learning only about
+α
+𝒟
+​
+(
+X
+)
+\alpha_{\mathcal{D}}(X)
+.
+The following theorem verifies that the HCP
+2
+method achieves second-moment coverage—with the caveat
+that the coverage guarantee is with respect to a reweighted distribution on
+X
+test
+X_{\textnormal{test}}
+.
+In particular,
+let
+p
+≥
+2
+=
+ℙ
+{
+N
+≥
+2
+}
+>
+0
+p_{\geq 2}=\mathbb{P}\left\{{N\geq 2}\right\}>0
+denote the probability of at least two repeated measurements when drawing a new data point,
+and let
+P
+X
+≥
+2
+P_{X}^{\geq 2}
+denote the conditional distribution of
+X
+X
+,
+when conditioning on the event
+N
+≥
+2
+N\geq 2
+under the joint model
+(
+X
+,
+N
+)
+∼
+P
+X
+×
+P
+N
+|
+X
+(X,N)\sim P_{X}\times P_{N|X}
+.
+Theorem 2
+(Second-moment coverage for HCP
+2
+)
+.
+Assume the training data is drawn from the i.i.d. model with repeated measurements (
+10
+),
+independently for
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+, and that the test point
+(
+X
+test
+,
+Y
+test
+)
+(X_{\textnormal{test}},Y_{\textnormal{test}})
+is drawn
+independently from the model (
+11
+). Then
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+α
+2
+.
+\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq\alpha^{2}.
+Moreover, if all scores
+s
+⁡
+(
+Z
+k
+,
+i
+)
+s(Z_{k,i})
+are distinct almost surely, it additionally holds that
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≥
+α
+2
+−
+2
+(
+K
+1
++
+1
+)
+​
+p
+≥
+2
+.
+\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\geq\alpha^{2}-\frac{2}{(K_{1}+1)p_{\geq 2}}.
+In particular, if the number of repeated measurements
+N
+N
+is independent from
+X
+X
+(i.e.,
+N
+k
+⟂
+⁣
+⟂
+X
+k
+N_{k}\mathchoice{\mathrel{\hbox to0.0pt{$\displaystyle\perp$\hss}\mkern 2.0mu{\displaystyle\perp}}}{\mathrel{\hbox to0.0pt{$\textstyle\perp$\hss}\mkern 2.0mu{\textstyle\perp}}}{\mathrel{\hbox to0.0pt{$\scriptstyle\perp$\hss}\mkern 2.0mu{\scriptstyle\perp}}}{\mathrel{\hbox to0.0pt{$\scriptscriptstyle\perp$\hss}\mkern 2.0mu{\scriptscriptstyle\perp}}}X_{k}
+for each
+k
+k
+—for example,
+if the number of repeats is simply given by some constant),
+then
+P
+X
+≥
+2
+P_{X}^{\geq 2}
+is simply equal to the original marginal distribution
+P
+X
+P_{X}
+,
+and we have established a second-moment coverage guarantee
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+α
+2
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq\alpha^{2}
+,
+as in the initial goal (
+14
+).
+3.3
+Remarks
+3.3.1
+A trivial way to bound the second moment
+Even in a setting where measurements are not repeated,
+it is possible to achieve a second-moment bound in a trivial way: since
+α
+𝒟
+​
+(
+X
+test
+)
+≤
+1
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})\leq 1
+holds always,
+it’s trivially true that
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]
+.
+However, this type of bound is not meaningful. For example, suppose we set
+α
+=
+0.1
+\alpha=0.1
+, aiming for 90% coverage.
+If we construct prediction intervals with 90% marginal coverage, then we achieve
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+≤
+0.1
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]\leq 0.1
+.
+If we instead construct prediction intervals with 99% marginal coverage (e.g., run split conformal, or HCP
+if appropriate, with
+α
+=
+0.01
+\alpha=0.01
+in place of
+α
+=
+0.1
+\alpha=0.1
+),
+then we achieve
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+≤
+0.01
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]\leq 0.01
+and consequently, the second-moment bound
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+0.1
+2
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq 0.1^{2}
+also holds.
+However, this is not a method we would want to use in practice because it would
+mean that we are substantially inflating the size of our prediction intervals.
+Instead, we would like to verify whether our
+original
+prediction intervals—constructed with 90% marginal coverage—achieve
+the second-moment bound as well, because they exhibit good conditional coverage properties.
+When repeated measurements are available, this is the benefit offered by
+HCP
+2
+. As we see below, in a setting where the prediction intervals
+constructed by HCP already show good conditional (as well as marginal) coverage,
+the intervals constructed by HCP
+2
+need not be much wider.
+In addition, to further illustrate this point, in Appendix
+B
+, we show empirically that HCP
+2
+can improve
+substantially over the trivial solution given by running HCP with
+α
+2
+\alpha^{2}
+in place of
+α
+\alpha
+.
+3.3.2
+Beyond the second moment?
+If the groups (or at least, a substantial fraction of groups) have at least two observations,
+we have seen that we can move from marginal coverage to second-moment coverage—that is, move from bounding
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]
+, to bounding
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]
+.
+In principle, it is possible to push this further: if our data distribution includes groups with
+≥
+ℓ
+\geq\ell
+observations in the group,
+it is possible to define a method for
+ℓ
+\ell
+-th moment coverage, i.e., bounding
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+ℓ
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{\ell}}\right]
+.
+The construction would be analogous to HCP
+2
+—instead of considering pairs of scores within each group (i.e.,
+min
+⁡
+{
+s
+⁡
+(
+Z
+k
+,
+i
+)
+,
+s
+⁡
+(
+Z
+k
+,
+i
+′
+)
+}
+\min\{s(Z_{k,i}),s(Z_{k,i^{\prime}})\}
+), we would consider
+ℓ
+\ell
+-tuples. However, we do not view this extension as practical (unless the number of groups
+K
+K
+is massive), because
+we would need to compute the threshold for the prediction interval via a
+(
+1
+−
+α
+ℓ
+)
+(1-\alpha^{\ell})
+-quantile; since in practice
+we are generally interested in small values of
+α
+\alpha
+(e.g.,
+α
+=
+0.1
+\alpha=0.1
+), this would likely lead to intervals
+that are not stable (and often, not even finite).
+3.4
+Simulations
+We next show simulation results to illustrate the performance of HCP
+2
+, as compared to HCP,
+for the setting of repeated measurements.
+8
+8
+8
+Code to reproduce this simulation is available at
+https://github.com/rebeccawillett/Distribution-free-inference-with-hierarchical-data
+.
+Score functions.
+We consider two different score functions in our simulations.
+First, as for our earlier simulation, we will consider the simple residual score
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+,
+s(x,y)=\big|y-\widehat{\mu}(x)\big|,
+(16)
+where
+μ
+^
+​
+(
+x
+)
+\widehat{\mu}(x)
+is an estimate of
+𝔼
+⁡
+[
+Y
+|
+X
+=
+x
+]
+\mathbb{E}\left[{Y}\ \middle|\ {X=x}\right]
+, fitted on the first portion of the training data (i.e.,
+k
+=
+1
+,
+…
+,
+K
+0
+k=1,\dots,K_{0}
+).
+As described earlier, this score leads to prediction intervals of the form
+C
+^
+​
+(
+X
+test
+)
+=
+μ
+^
+​
+(
+X
+test
+)
+±
+T
+\widehat{C}(X_{\textnormal{test}})=\widehat{\mu}(X_{\textnormal{test}})\pm T
+for some
+threshold
+T
+T
+, and therefore may not be ideally suited for data with nonconstant variance in the noise.
+This motivates a variant of the above score,
+given by a rescaled residual,
+s
+⁡
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+σ
+^
+​
+(
+x
+)
+,
+s(x,y)=\frac{\big|y-\widehat{\mu}(x)\big|}{\widehat{\sigma}(x)},
+(17)
+where
+σ
+^
+​
+(
+x
+)
+2
+\widehat{\sigma}(x)^{2}
+is an estimate of
+Var
+​
+(
+Y
+|
+X
+=
+x
+)
+\textnormal{Var}(Y|X=x)
+, again
+fitted on the first portion of the training data (i.e.,
+k
+=
+1
+,
+…
+,
+K
+0
+k=1,\dots,K_{0}
+).
+This score leads to prediction intervals of the form
+C
+^
+​
+(
+X
+test
+)
+=
+μ
+^
+​
+(
+X
+test
+)
+±
+T
+⋅
+σ
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})=\widehat{\mu}(X_{\textnormal{test}})\pm T\cdot\widehat{\sigma}(X_{\textnormal{test}})
+,
+again for some
+threshold
+T
+T
+selected using the calibration set.
+The rescaled residual score
+has the potential to adapt to local variance and therefore, to exhibit better conditional coverage properties empirically (see e.g.,
+Lei et al. (2018)
+for more discussions on the use of this nonconformity score).
+In this simulation we will use each of the above scores.
+Data and methods.
+The data for this simulation is generated as follows:
+for each group
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+, we set
+N
+k
+≡
+2
+N_{k}\equiv 2
+and draw
+X
+k
+∼
+iid
+Unif
+​
+[
+0
+,
+5
+]
+,
+\displaystyle X_{k}\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}\text{Unif}[0,5],
+Y
+k
+,
+1
+,
+Y
+k
+,
+2
+|
+X
+k
+∼
+iid
+𝒩
+⁡
+(
+μ
+⁡
+(
+X
+k
+)
+,
+σ
+​
+(
+X
+k
+)
+2
+)
+,
+\displaystyle Y_{k,1},Y_{k,2}\mid X_{k}\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}\mathcal{N}(\mu(X_{k}),\sigma(X_{k})^{2}),
+where the true conditional mean is given by
+μ
+⁡
+(
+x
+)
+=
+1
++
+x
++
+0.1
+⋅
+x
+2
+,
+\mu(x)=1+x+0.1\cdot x^{2},
+and the true conditional variance is defined in two different ways:
+Setting 1 (constant variance)
+:
+σ
+⁡
+(
+x
+)
+≡
+2
+,
+\displaystyle:\sigma(x)\equiv 2,
+Setting 2 (nonconstant variance)
+:
+σ
+(
+x
+)
+=
+𝟙
+{
+x
+<
+3
+}
++
+(
+1
++
+4
+(
+x
+−
+3
+)
+4
+)
+⋅
+𝟙
+{
+3
+≤
+x
+<
+4
+}
++
+5
+⋅
+𝟙
+{
+x
+≥
+4
+}
+.
+\displaystyle:\sigma(x)={\mathbbm{1}}\left\{{x<3}\right\}+(1+4(x-3)^{4})\cdot{\mathbbm{1}}\left\{{3\leq x<4}\right\}+5\cdot{\mathbbm{1}}\left\{{x\geq 4}\right\}.
+For both settings, we generate data for
+K
+=
+1000
+K=1000
+many independent groups, with
+N
+=
+2
+N=2
+observations per group.
+The test point
+X
+test
+X_{\textnormal{test}}
+is then drawn independently from the same marginal distribution,
+X
+test
+∼
+Unif
+​
+[
+0
+,
+5
+]
+X_{\textnormal{test}}\sim\text{Unif}[0,5]
+.
+The two settings are illustrated in Figure
+1
+. Setting 1 reflects an easier setting, where the constant variance of the noise means that
+the scores (
+16
+) and (
+17
+) each lead to prediction intervals that fit well to the trends in the data as long as
+μ
+^
+\widehat{\mu}
+estimates the true conditional
+mean
+μ
+\mu
+fairly accurately. Setting 2, on the other hand, reflects the case where we have different degrees of prediction difficulty at different values of the features
+X
+X
+due to highly nonconstant variance in the noise,
+and in particular, the simple score (
+16
+) is not well-suited to this setting (since it does not allow for prediction intervals to have widths varying with
+X
+X
+),
+while the rescaled residual score (
+17
+) has the potential to yield a much better fit as long as both
+μ
+^
+\widehat{\mu}
+and
+σ
+^
+\widehat{\sigma}
+are accurate estimates.
+The training data is split into
+K
+0
+=
+K
+/
+2
+K_{0}=K/2
+many groups for training
+and
+K
+1
+=
+K
+/
+2
+K_{1}=K/2
+many groups for calibration. On the training data,
+μ
+^
+\widehat{\mu}
+and
+σ
+^
+\widehat{\sigma}
+are fitted
+via kernel regression with a box kernel
+K
+h
+(
+x
+)
+=
+1
+2
+​
+h
+⋅
+𝟙
+{
+|
+x
+|
+<
+h
+}
+K_{h}(x)=\frac{1}{2h}\cdot{\mathbbm{1}}\left\{{|x|<h}\right\}
+, with bandwidth
+h
+=
+0.5
+h=0.5
+.
+Figure 1
+:
+Scatter plot of data sets from one trial of Setting 1 (constant variance case) and one trial of Setting 2 (nonconstant variance case).
+Results.
+We run 500 independent trials of the simulation. For each trial, each of the two settings, and each method (HCP and HCP
+2
+),
+after generating the training data and the test point
+X
+test
+X_{\textnormal{test}}
+we construct a prediction set
+C
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})
+,
+and then compute the conditional miscoverage rate
+α
+𝒟
+​
+(
+X
+test
+)
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})
+(which can be computed exactly,
+since the distribution of
+Y
+test
+|
+X
+test
+Y_{\textnormal{test}}\mid X_{\textnormal{test}}
+is known by construction) and the width of the prediction set
+length
+​
+(
+C
+^
+​
+(
+X
+test
+)
+)
+\text{length}(\widehat{C}(X_{\textnormal{test}}))
+.
+The results for the residual score
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(x,y)=|y-\widehat{\mu}(x)|
+are shown in Figure
+.
+We see that, for Setting 1 (constant variance), where this score is a good match for the shape of the conditional distribution of
+Y
+|
+X
+Y\mid X
+,
+both HCP and HCP
+2
+show conditional miscoverage rates
+α
+𝒟
+​
+(
+X
+test
+)
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})
+that cluster closely around
+the target level
+α
+=
+0.2
+\alpha=0.2
+, and consequently, the prediction interval width are similar for the two methods.
+For Setting 2 (nonconstant variance), on the other hand, this score is a poor match for the distribution, and while HCP achieves
+an average coverage of 80%, the distribution of
+α
+𝒟
+​
+(
+X
+test
+)
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})
+has extremely large variance.
+It is clear that HCP does not satisfy any sort of conditional coverage or second-moment coverage property,
+and consequently HCP
+2
+is forced to produce substantially wider prediction intervals, illustrating the tradeoff between
+width of the interval and the coverage properties it achieves.
+In contrast, the results
+for the rescaled residual score
+s
+⁡
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+/
+σ
+^
+​
+(
+x
+)
+s(x,y)=|y-\widehat{\mu}(x)|/\widehat{\sigma}(x)
+are shown in Figure
+.
+This choice of score is a good match for the data distribution in both Setting 1 and Setting 2, since it accommodates nonconstant
+variance. Consequently, for both HCP and HCP
+2
+, we see that the empirical distribution of
+α
+𝒟
+​
+(
+X
+test
+)
+\alpha_{\mathcal{D}}(X_{\textnormal{test}})
+clusters around the target level
+α
+=
+0.2
+\alpha=0.2
+, and the two methods produce similar prediction interval widths.
+Thus we see that, when the score function is chosen well, the stronger coverage guarantee offered by HCP
+2
+is essentially “free”
+since we can achieve it without substantially increasing the width of the prediction intervals.
+4
+Application to a dynamical system dataset
+Our study is inspired by the generation of ensembles of climate forecasts created by running a simulator over a collection of perturbed initial conditions. These so-called “initial condition ensembles” help decision-makers account for uncertainties in forecasts when developing climate change mitigation and response plans
+(
+Mankin et al., 2020
+)
+. Similar ensembles are used for weather forecasting; for instance, the European Centre for Medium-Range Weather Forecasts (ECMWF) notes:
+An ensemble weather forecast is a set of forecasts that present the range of future weather possibilities. Multiple simulations are run, each with a slight variation of its initial conditions and with slightly perturbed weather models. These variations represent the inevitable uncertainty in the initial conditions and approximations in the models.
+(
+European Centre for Medium-Range Weather Forecasts, 2023
+)
+Overview of experiment.
+For this experiment,
+9
+9
+9
+Code to reproduce this experiment is available at
+https://github.com/rebeccawillett/Distribution-free-inference-with-hierarchical-data
+.
+our task will be to
+predict the future state of the system
+, looking ahead from current time
+t
+=
+0
+t=0
+to future time
+t
+=
+T
+t=T
+.
+We will consider two different choices of
+T
+T
+for defining both an easier task (near-future prediction with a low value of
+T
+T
+) and a harder task (prediction farther into the future, with a higher value of
+T
+T
+).
+We will see that, while HCP provides marginal coverage (as guaranteed by the theory) for both tasks,
+second-moment coverage only appears to hold empirically for the easier task; consequently, HCP
+2
+is able to return intervals
+that are only barely wider for the easier near-future prediction task, but for the harder task must return substantially wider intervals
+in order to achieve a second-moment coverage guarantee.
+Generating the data.
+In the context of this paper, we seek to take an initial condition and generate a prediction interval that contains all ensemble forecasts with high probability.
+Motivated by this setting, we apply HCP and HCP
+2
+to a dynamical system dataset generated from the Lorenz 96 (L96) model. Developed by
+Lorenz (1996)
+, the L96 system is a prototype model for studying prediction and filtering of dynamical systems in climate science.
+The model is a system of coupled ordinary equations and defined as follows:
+𝖽
+​
+u
+m
+​
+(
+t
+)
+𝖽
+​
+t
+=
+−
+u
+m
+−
+1
+​
+(
+t
+)
+​
+(
+u
+m
+−
+2
+​
+(
+t
+)
+−
+u
+m
++
+1
+​
+(
+t
+)
+)
+−
+u
+m
+​
+(
+t
+)
++
+F
+,
+\frac{\mathsf{d}u_{m}(t)}{\mathsf{d}t}=-u_{m-1}(t)\big(u_{m-2}(t)-u_{m+1}(t)\big)-u_{m}(t)+F,
+(18)
+where
+u
+m
+​
+(
+t
+)
+u_{m}(t)
+denotes the state of the system at
+M
+M
+different locations
+m
+=
+1
+,
+…
+,
+M
+m=1,\dots,M
+.
+In order for the system to be well-defined at the boundaries, we define
+u
+M
++
+1
+​
+(
+t
+)
+=
+u
+1
+​
+(
+t
+)
+u_{M+1}(t)=u_{1}(t)
+,
+u
+0
+​
+(
+t
+)
+=
+u
+M
+​
+(
+t
+)
+u_{0}(t)=u_{M}(t)
+,
+u
+−
+1
+​
+(
+t
+)
+=
+u
+M
+−
+1
+​
+(
+t
+)
+u_{-1}(t)=u_{M-1}(t)
+;
+this ensures that the system is cyclic over the
+M
+M
+locations.
+The value
+F
+∈
+ℝ
+F\in\mathbb{R}
+denotes the external forcing, i.e., an effect of external factors; we use
+F
+=
+10
+F=10
+, which corresponds to strong chaotic turbulence
+(
+Majda et al., 2005
+)
+.
+To specify our workflow, we define a function
+L96
+​
+(
+⋅
+,
+T
+)
+\texttt{L96}(\cdot;T)
+that runs the L96 system as defined in (
+18
+) for a time duration
+T
+T
+(more precisely, this function implements the Runge–Kutta approximation with time step
+𝖽
+​
+t
+=
+0.05
+\mathsf{d}t=0.05
+,
+(
+Bank et al., 1987
+;
+SciPy.org,
+)
+).
+Thus, given starting conditions
+u
+⁡
+(
+0
+)
+=
+(
+u
+1
+​
+(
+0
+)
+,
+…
+,
+u
+M
+​
+(
+0
+)
+)
+u(0)=(u_{1}(0),\dots,u_{M}(0))
+, the value of the system at time
+T
+T
+,
+u
+⁡
+(
+T
+)
+=
+(
+u
+1
+​
+(
+T
+)
+,
+…
+,
+u
+M
+​
+(
+T
+)
+)
+u(T)=(u_{1}(T),\dots,u_{M}(T))
+, is (approximately)
+given by
+u
+​
+(
+T
+)
+=
+L96
+​
+(
+u
+​
+(
+0
+)
+,
+T
+)
+.
+u(T)=\texttt{L96}(u(0);T).
+To generate data, we do the following: taking
+K
+=
+800
+K=800
+as the number of independent groups of observations, independently for each
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+,
+•
+The feature vector is
+X
+k
+=
+(
+X
+k
+​
+1
+,
+…
+,
+X
+k
+​
+M
+)
+∈
+ℝ
+M
+X_{k}=(X_{k1},\dots,X_{kM})\in\mathbb{R}^{M}
+, with dimension
+M
+=
+10
+M=10
+, which defines the initial conditions of the system.
+•
+Setting
+N
+k
+=
+50
+N_{k}=50
+, for each
+i
+=
+1
+,
+…
+,
+N
+k
+i=1,\dots,N_{k}
+, start the L96 system initialized at a perturbation of
+X
+k
+X_{k}
+,
+(
+X
+k
+​
+1
++
+r
+​
+η
+1
+k
+,
+i
+,
+…
+,
+X
+k
+​
+M
++
+r
+​
+η
+M
+k
+,
+i
+)
+​
+where
+​
+η
+m
+k
+,
+i
+∼
+iid
+𝒩
+⁡
+(
+0
+,
+1
+)
+,
+(X_{k1}+r\eta^{k,i}_{1},\dots,X_{kM}+r\eta^{k,i}_{M})\textnormal{ where }\eta^{k,i}_{m}\stackrel{{\scriptstyle\textnormal{iid}}}{{\sim}}\mathcal{N}(0,1),
+with the scale of the noise set as
+r
+=
+0.01
+r=0.01
+.
+We then run the L96 system (
+18
+) up until time
+t
+=
+T
+t=T
+to define the response:
+Y
+k
+​
+i
+=
+[
+L96
+​
+(
+(
+X
+k
+​
+1
++
+r
+​
+η
+1
+k
+,
+i
+,
+…
+,
+X
+k
+​
+M
++
+r
+​
+η
+M
+k
+,
+i
+)
+,
+T
+)
+]
+1
+,
+Y_{ki}=\left[\texttt{L96}\Big((X_{k1}+r\eta^{k,i}_{1},\dots,X_{kM}+r\eta^{k,i}_{M});T\Big)\right]_{1},
+i.e.,
+the value of the system at the final time
+T
+T
+, at its first location,
+m
+=
+1
+m=1
+.
+The feature vectors
+X
+k
+X_{k}
+, i.e., the initial conditions, are themselves generated using the L96 system as well, in order to provide more meaningful or realistic starting conditions: independently for each
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+,
+X
+k
+=
+L96
+​
+(
+u
+,
+T
+0
+)
+​
+where
+​
+u
+∼
+𝒩
+⁡
+(
+0
+,
+𝐈
+m
+)
+,
+X_{k}=\texttt{L96}\big(u;T_{0}\big)\textnormal{ where }u\sim\mathcal{N}(0,\mathbf{I}_{m}),
+i.e.,
+X
+k
+X_{k}
+is the output of the L96 system run for time duration
+T
+0
+T_{0}
+(where we take
+T
+0
+=
+20
+T_{0}=20
+) when initialized with Gaussian noise.
+We consider two different choices of
+T
+T
+, to define two different prediction tasks: a near-future prediction task, with
+T
+=
+0.05
+T=0.05
+, and a
+more distant-future prediction task, with
+T
+=
+0.5
+T=0.5
+.
+For each of the two tasks, we generate training, calibration, and test sets as described above, where each data set has
+K
+=
+800
+K=800
+and
+N
+k
+≡
+50
+N_{k}\equiv 50
+. We run a neural network model on the training data set to produce estimators
+μ
+^
+​
+(
+⋅
+)
+\hat{\mu}(\cdot)
+and
+σ
+^
+​
+(
+⋅
+)
+\hat{\sigma}(\cdot)
+of the conditional mean and conditional standard deviation of
+Y
+Y
+given
+X
+X
+.
+Using the calibration data, we then implement the HCP and HCP
+2
+methods, with score function
+s
+⁡
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+/
+σ
+^
+​
+(
+x
+)
+s(x,y)=|y-\hat{\mu}(x)|/\hat{\sigma}(x)
+.
+Results.
+We evaluate the performance of the two procedures with the test data. The results are summarized in Table
+1
+and Figure
+2
+.
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})}\right]
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]
+Mean width
+T = 0.05
+HCP
+0.2006 (0.0041)
+0.0546 (0.0029)
+1.4875 (0.0044)
+HCP
+2
+0.1748 (0.0039)
+0.0437 (0.0026)
+1.5753 (0.0047)
+T = 0.5
+HCP
+0.2313 (0.0119)
+0.1701 (0.0110)
+10.4259 (0.1957)
+HCP
+2
+0.0628 (0.0073)
+0.0478 (0.0066)
+22.0395 (0.4138)
+Table 1
+:
+Results for L96 data, for the HCP and HCP
+2
+methods. The table displays the estimated mean miscoverage rate (target:
+α
+=
+0.2
+\alpha=0.2
+), mean second-moment miscoverage rate (target:
+α
+2
+=
+0.04
+\alpha^{2}=0.04
+), and mean width of prediction intervals. These results are computed for a single trial of the experiment; the mean miscoverage rate and mean prediction interval width are estimated using a test set (with standard errors shown in parentheses).
+Figure 2
+:
+Results for L96 data: conditional miscoverage rates and the widths of the prediction sets from HCP and HCP
+2
+.
+The results show that HCP and HCP
+2
+provide prediction sets that satisfy their respective target guarantees. Since the dynamical system is chaotic, making accurate predictions become harder for larger
+T
+T
+. For the task of predicting the relatively near future (
+T
+=
+0.05
+T=0.05
+),
+the two procedures provide similar prediction sets. In particular, we see that HCP already achieves second-moment miscoverage near the target level
+α
+2
+=
+0.04
+\alpha^{2}=0.04
+; consequently, HCP
+2
+is able to return a similar prediction interval as HCP, without being substantially more conservative. In contrast, for the task of predicting the far future (
+T
+=
+0.5
+T=0.5
+),
+while HCP successfully bounds the marginal miscoverage rate with relatively narrow prediction intervals,
+it fails to achieve good conditional miscoverage control (indeed,
+HCP shows a high second-moment miscoverage rate—nearly as large as
+α
+=
+0.2
+\alpha=0.2
+, i.e., the worst-case scenario as described in Section
+3.3.1
+).
+As a result the HCP
+2
+method
+needs to be much more conservative (wider prediction sets than HCP) in order to reduce second-moment miscoverage to the allowed level
+α
+2
+=
+0.04
+\alpha^{2}=0.04
+.
+5
+Discussion
+In this work, we examine the problem of distribution-free inference for data sampled under a hierarchical structure, and
+propose hierarchical conformal prediction (HCP) to extend the conformal prediction framework to this setting.
+We also examine the special case of repeated measurements (multiple draws of the response
+Y
+Y
+for each sampled feature vector
+X
+X
+),
+and develop the HCP
+2
+method to achieve a stronger second-moment coverage guarantee, moving towards conditional coverage in this setting.
+These results raise a number of open questions. In many statistical applications, the hierarchical structure of the sampling
+scheme is (at least partially) controlled by the analyst designing the study. In particular, this means that the analyst
+can choose between, say, a large number of independent groups
+K
+K
+with a small number of measurements
+N
+k
+N_{k}
+within each group,
+or conversely a small number of groups with large numbers of repeats.
+Characterizing the pros and cons of this tradeoff is an important question to determine how study
+design affects inference in this distribution-free setting.
+Our results show that having even a small amount of repeated measurements can significantly expand the realm of what distribution-free inference can do (relatedly, recent work by
+Lee and Barber (2021)
+examines a similar phenomenon when the distribution of
+X
+X
+is discrete). This raises a more general question: what reasonable additions can we make to the setting so that a more useful inference is possible in a distribution-free manner? We aim to explore this type of problem in our future work.
+Acknowledgements
+Y.L., R.F.B., and R.W. were partially supported by the National Science Foundation via grant DMS-2023109.
+Y.L. was additionally supported by National Institutes of Health via grant R01AG065276-01.
+R.F.B. was additionally supported by the Office of Naval Research via grant N00014-20-1-2337.
+R.W. was additionally supported the National Science Foundation via grant DMS-1930049 and by the Department of Energy via grant DE-AC02-06CH113575.
+References
+Bank et al. [1987]
+R Bank, RL Graham, J Stoer, and R Varga.
+Springer series in 8.
+1987.
+Barber [2020]
+Rina Foygel Barber.
+Is distribution-free inference possible for binary regression?
+Electronic Journal of Statistics
+, 14(2):3487–3524, 2020.
+Barber et al. [2021a]
+Rina Foygel Barber, Emmanuel J Candes, Aaditya Ramdas, and Ryan J Tibshirani.
+The limits of distribution-free conditional predictive inference.
+Information and Inference: A Journal of the IMA
+, 10(2):455–482, 2021a.
+Barber et al. [2021b]
+Rina Foygel Barber, Emmanuel J Candes, Aaditya Ramdas, and Ryan J Tibshirani.
+Predictive inference with the jackknife+.
+The Annals of Statistics
+, 49(1):486–507,
+2021b.
+Barber et al. [2022]
+Rina Foygel Barber, Emmanuel J Candes, Aaditya Ramdas, and Ryan J Tibshirani.
+Conformal prediction beyond exchangeability.
+arXiv preprint arXiv:2202.13415
+, 2022.
+Cheng et al. [2022]
+Chen Cheng, Hilal Asi, and John Duchi.
+How many labelers do you have? a closer look at gold-standard labels.
+arXiv preprint arXiv:2206.12041
+, 2022.
+Chernozhukov et al. [2021]
+Victor Chernozhukov, Kaspar Wüthrich, and Yinchu Zhu.
+Distributional conformal prediction.
+Proceedings of the National Academy of Sciences
+, 118(48):e2107794118, 2021.
+Dunn et al. [2022]
+Robin Dunn, Larry Wasserman, and Aaditya Ramdas.
+Distribution-free prediction sets for two-layer hierarchical models.
+Journal of the American Statistical Association
+, pages 1–12,
+2022.
+European Centre for Medium-Range Weather Forecasts [2023]
+European Centre for Medium-Range Weather Forecasts.
+Fact sheet: Ensemble weather forecasting, 2023.
+https://www.ecmwf.int/en/about/media-centre/focus/2017/fact-sheet-ensemble-weather-forecasting
+,
+Retrieved Oct. 13, 2023.
+Harrison [2012]
+Matthew T Harrison.
+Conservative hypothesis tests and confidence intervals using
+importance sampling.
+Biometrika
+, 99(1):57–69, 2012.
+Izbicki et al. [2019]
+Rafael Izbicki, Gilson T Shimizu, and Rafael B Stern.
+Flexible distribution-free conditional predictive bands using density
+estimators.
+arXiv preprint arXiv:1910.05575
+, 2019.
+Lee and Barber [2021]
+Yonghoon Lee and Rina Barber.
+Distribution-free inference for regression: discrete, continuous, and
+in between.
+Advances in Neural Information Processing Systems
+, 34, 2021.
+Lei and Wasserman [2014]
+Jing Lei and Larry Wasserman.
+Distribution-free prediction bands for non-parametric regression.
+Journal of the Royal Statistical Society: Series B: Statistical
+Methodology
+, pages 71–96, 2014.
+Lei et al. [2015]
+Jing Lei, Alessandro Rinaldo, and Larry Wasserman.
+A conformal prediction approach to explore functional data.
+Annals of Mathematics and Artificial Intelligence
+,
+74:29–43, 2015.
+Lei et al. [2018]
+Jing Lei, Max G’Sell, Alessandro Rinaldo, Ryan J Tibshirani, and Larry
+Wasserman.
+Distribution-free predictive inference for regression.
+Journal of the American Statistical Association
+, 113(523):1094–1111, 2018.
+Lorenz [1996]
+Edward N Lorenz.
+Predictability: A problem partly solved.
+In
+Proc. Seminar on predictability
+, volume 1. Reading, 1996.
+Majda et al. [2005]
+Andrew Majda, Rafail V Abramov, and Marcus J Grote.
+Information theory and stochastics for multiscale nonlinear
+systems
+, volume 25.
+American Mathematical Soc., 2005.
+Mankin et al. [2020]
+Justin S Mankin, Flavio Lehner, Sloan Coats, and Karen A McKinnon.
+The value of initial condition large ensembles to robust adaptation
+decision-making.
+Earth’s Future
+, 8(10):e2012EF001610, 2020.
+Medarametla and Candès [2021]
+Dhruv Medarametla and Emmanuel Candès.
+Distribution-free conditional median inference.
+Electronic Journal of Statistics
+, 15(2):4625–4658, 2021.
+Papadopoulos et al. [2002]
+Harris Papadopoulos, Kostas Proedrou, Volodya Vovk, and Alex Gammerman.
+Inductive confidence machines for regression.
+In
+European Conference on Machine Learning
+, pages 345–356.
+Springer, 2002.
+Podkopaev and Ramdas [2021]
+Aleksandr Podkopaev and Aaditya Ramdas.
+Distribution-free uncertainty quantification for classification under
+label shift.
+In
+Uncertainty in Artificial Intelligence
+, pages 844–853.
+PMLR, 2021.
+Romano et al. [2019]
+Yaniv Romano, Evan Patterson, and Emmanuel Candes.
+Conformalized quantile regression.
+Advances in neural information processing systems
+, 32, 2019.
+[23]
+SciPy.org.
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html#r179348322575-13
+.
+Tibshirani et al. [2019]
+Ryan J Tibshirani, Rina Foygel Barber, Emmanuel Candes, and Aaditya Ramdas.
+Conformal prediction under covariate shift.
+Advances in neural information processing systems
+, 32, 2019.
+Vovk [2012]
+Vladimir Vovk.
+Conditional validity of inductive conformal predictors.
+In
+Asian conference on machine learning
+, pages 475–490. PMLR,
+2012.
+Vovk [2015]
+Vladimir Vovk.
+Cross-conformal predictors.
+Annals of Mathematics and Artificial Intelligence
+,
+74:9–28, 2015.
+Vovk and Wang [2020]
+Vladimir Vovk and Ruodu Wang.
+Combining p-values via averaging.
+Biometrika
+, 107(4):791–808, 2020.
+Vovk et al. [2005]
+Vladimir Vovk, Alexander Gammerman, and Glenn Shafer.
+Algorithmic learning in a random world
+.
+Springer Science & Business Media, 2005.
+Vovk et al. [2018]
+Vladimir Vovk, Ilia Nouretdinov, Valery Manokhin, and Alexander Gammerman.
+Cross-conformal predictive distributions.
+In
+Conformal and Probabilistic Prediction and Applications
+,
+pages 37–51. PMLR, 2018.
+Xu and Xie [2021]
+Chen Xu and Yao Xie.
+Conformal prediction interval for dynamic time-series.
+In
+International Conference on Machine Learning
+, pages
+11559–11569. PMLR, 2021.
+Appendix A
+Extending HCP to full conformal and jackknife+
+In Sections
+2
+and
+3
+, we introduced methods that extend split conformal prediction to the setting of hierarchical exchangeability, constructing prediction sets with the marginal coverage guarantee (via the HCP method) and the stronger second-moment coverage guarantee (via the HCP
+2
+method). Similar ideas can be applied to derive extensions of other methods—specifically, full conformal prediction
+[
+Vovk et al., 2005
+]
+and jackknife+
+[
+Barber et al., 2021b
+]
+—to the hierarchical data setting, which allows us to avoid
+the statistical cost of data splitting.
+A.1
+Extending full conformal prediction
+A.1.1
+Background: full conformal prediction
+In the setting of exchangeable data (without a hierarchical structure), the
+full conformal prediction
+method
+[
+Vovk et al., 2005
+]
+allows us to use the entire training data set for constructing the score function, rather than splitting the data as in split conformal.
+Specifically, the method begins with an algorithm
+𝒜
+:
+𝒵
+n
++
+1
+→
+{
+functions
+𝒵
+→
+ℝ
+}
+\mathcal{A}:\mathcal{Z}^{n+1}\rightarrow\{\textnormal{functions $\mathcal{Z}\rightarrow\mathbb{R}$}\}
+, which
+inputs a data set of size
+n
++
+1
+n+1
+and returns a fitted score function
+s
+s
+;
+𝒜
+\mathcal{A}
+is assumed to be symmetric in its input arguments, i.e., permuting
+the
+n
++
+1
+n+1
+input data points does not affect
+s
+s
+.
+10
+10
+10
+The framework also allows for a randomized algorithm
+𝒜
+\mathcal{A}
+, in which
+case the symmetry condition is required to hold in a distributional sense.
+Define
+s
+y
+=
+𝒜
+⁡
+(
+Z
+1
+,
+…
+,
+Z
+n
+,
+(
+X
+test
+,
+y
+)
+)
+,
+s^{y}=\mathcal{A}\left(Z_{1},\dots,Z_{n},(X_{\textnormal{test}},y)\right),
+the fitted score function obtained if
+(
+X
+test
+,
+y
+)
+(X_{\textnormal{test}},y)
+were the test point.
+The prediction set is then given by
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+∈
+𝒴
+:
+s
+y
+​
+(
+(
+X
+test
+,
+y
+)
+)
+≤
+Q
+1
+−
+α
+​
+(
+∑
+i
+=
+1
+n
+1
+n
+​
+δ
+s
+y
+​
+(
+Z
+i
+)
++
+1
+n
+​
+δ
++
+∞
+)
+}
+.
+\widehat{C}(X_{\textnormal{test}})=\left\{y\in\mathcal{Y}:s^{y}((X_{\textnormal{test}},y))\leq Q_{1-\alpha}\left(\sum_{i=1}^{n}\frac{1}{n}\delta_{s^{y}(Z_{i})}+\frac{1}{n}\delta_{+\infty}\right)\right\}.
+For exchangeable training and test data, this method offers marginal coverage at level
+1
+−
+α
+1-\alpha
+[
+Vovk et al., 2005
+]
+.
+A.1.2
+Hierarchical full conformal prediction
+We now define a version of HCP that extends the full conformal method to the hierarchical framework.
+We now begin with an algorithm
+𝒜
+:
+𝒵
+~
+K
++
+1
+→
+{
+functions
+𝒵
+→
+ℝ
+}
+\mathcal{A}:\tilde{\mathcal{Z}}^{K+1}\rightarrow\{\textnormal{functions $\mathcal{Z}\rightarrow\mathbb{R}$}\}
+,
+again assumed to be symmetric—but now the symmetry follows a hierarchical structure: we assume that,
+for any
+z
+~
+1
+,
+…
+,
+z
+~
+K
++
+1
+\tilde{z}_{1},\dots,\tilde{z}_{K+1}
+,
+first, it holds that
+𝒜
+⁡
+(
+z
+~
+1
+,
+…
+,
+z
+~
+K
++
+1
+)
+=
+𝒜
+⁡
+(
+z
+~
+σ
+⁡
+(
+1
+)
+,
+…
+,
+z
+~
+σ
+⁡
+(
+K
++
+1
+)
+)
+\mathcal{A}(\tilde{z}_{1},\dots,\tilde{z}_{K+1})=\mathcal{A}(\tilde{z}_{\sigma(1)},\dots,\tilde{z}_{\sigma(K+1)})
+for all
+σ
+∈
+𝒮
+K
++
+1
+\sigma\in\mathcal{S}_{K+1}
+,
+and, second,
+𝒜
+⁡
+(
+z
+~
+1
+,
+…
+,
+z
+~
+k
+,
+…
+,
+z
+~
+K
++
+1
+)
+=
+𝒜
+⁡
+(
+z
+~
+1
+,
+…
+,
+(
+z
+~
+k
+,
+σ
+⁡
+(
+1
+)
+,
+…
+,
+z
+~
+k
+,
+σ
+⁡
+(
+m
+)
+)
+,
+…
+,
+z
+~
+K
++
+1
+)
+\mathcal{A}(\tilde{z}_{1},\dots,\tilde{z}_{k},\dots,\tilde{z}_{K+1})=\mathcal{A}(\tilde{z}_{1},\dots,(\tilde{z}_{k,\sigma(1)},\dots,\tilde{z}_{k,\sigma(m)}),\dots,\tilde{z}_{K+1})
+for all
+k
+=
+1
+,
+…
+,
+K
++
+1
+k=1,\dots,K+1
+and
+all
+σ
+∈
+𝒮
+length
+​
+(
+z
+~
+k
+)
+\sigma\in\mathcal{S}_{\textnormal{length}(\tilde{z}_{k})}
+.
+We refer to any such algorithm
+𝒜
+\mathcal{A}
+as
+hierarchically symmetric
+.
+(For example, if
+𝒜
+\mathcal{A}
+simply discards the group information and runs a symmetric procedure
+on the data points
+(
+z
+1
+,
+1
+,
+…
+,
+z
+1
+,
+N
+1
+,
+…
+,
+z
+K
++
+1
+,
+1
+,
+…
+,
+z
+K
++
+1
+,
+N
+K
++
+1
+)
+(z_{1,1},\dots,z_{1,N_{1}},\dots,z_{K+1,1},\dots,z_{K+1,N_{K+1}})
+, then
+the hierarchical symmetry property follows immediately—in this sense, then, requiring hierarchical symmetry
+is strictly weaker than the usual symmetry condition.)
+Next, define
+s
+z
+~
+=
+𝒜
+⁡
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+,
+z
+~
+)
+s^{\tilde{z}}=\mathcal{A}\left(\tilde{Z}_{1},\dots,\tilde{Z}_{K},\tilde{z}\right)
+to be the fitted score function obtained if we were to observe an entire
+group
+of test observations
+z
+~
+\tilde{z}
+, and let
+C
+~
+=
+{
+z
+~
+∈
+𝒵
+~
+:
+s
+z
+~
+​
+(
+P
+1
+​
+z
+~
+)
+≤
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+δ
+s
+z
+~
+​
+(
+Z
+k
+,
+i
+)
++
+1
+K
++
+1
+⋅
+δ
++
+∞
+)
+}
+,
+\tilde{C}=\left\{\tilde{z}\in\tilde{\mathcal{Z}}:s^{\tilde{z}}(P_{1}\tilde{z})\leq Q_{1-\alpha}\left(\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot\delta_{s^{\tilde{z}}(Z_{k,i})}+\frac{1}{K+1}\cdot\delta_{+\infty}\right)\right\},
+where
+P
+1
+P_{1}
+denotes the projection to the first component (i.e., if
+z
+~
+=
+(
+z
+1
+,
+…
+,
+z
+m
+)
+\tilde{z}=(z_{1},\dots,z_{m})
+, then
+P
+1
+​
+(
+z
+~
+)
+=
+z
+1
+P_{1}(\tilde{z})=z_{1}
+).
+Let
+C
+^
+​
+(
+X
+test
+)
+=
+{
+y
+∈
+ℝ
+:
+(
+X
+test
+,
+y
+)
+∈
+P
+1
+​
+C
+~
+}
+,
+\widehat{C}(X_{\textnormal{test}})=\{y\in\mathbb{R}:(X_{\textnormal{test}},y)\in P_{1}\tilde{C}\},
+(19)
+where
+P
+1
+​
+C
+~
+=
+{
+P
+1
+​
+(
+z
+~
+)
+:
+z
+~
+∈
+C
+~
+}
+P_{1}\tilde{C}=\{P_{1}(\tilde{z}):\tilde{z}\in\tilde{C}\}
+.
+Since
+𝒵
+∪
+𝒵
+2
+∪
+…
+\ \mathcal{Z}\cup\mathcal{Z}^{2}\cup\dots
+is a space of vectors of arbitrary lengths, this prediction set has heavier computational cost than the full conformal method in standard settings, which already is known to have a high computational cost. It is therefore unlikely to be useful in practical settings; this extension is therefore primarily of theoretical interest, and is intended only to demonstrate that the hierarchical exchangeability framework can be combined with full conformal as well as with split conformal.
+Our first theoretical result shows that this method
+provides a marginal coverage guarantee in the hierarchical data setting.
+Theorem 3
+.
+Suppose that
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{1},\dots,\tilde{Z}_{K+1}
+satisfies the hierarchical exchangeability property (Definition
+1
+), and let
+Z
+test
+=
+(
+X
+test
+,
+Y
+test
+)
+=
+Z
+~
+K
++
+1
+,
+1
+Z_{\textnormal{test}}=(X_{\textnormal{test}},Y_{\textnormal{test}})=\tilde{Z}_{K+1,1}
+. Given a hierarchically symmetric algorithm
+𝒜
+\mathcal{A}
+, the prediction set
+C
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})
+defined above satisfies
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+α
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-\alpha.
+Similarly, we can achieve a bound for the second-moment coverage via full-conformal framework. We extend HCP
+2
+to this setting.
+Define
+K
+≥
+2
+=
+∑
+k
+=
+1
+K
+𝟙
+N
+k
+≥
+2
+K^{\geq 2}=\sum_{k=1}^{K}{\mathbbm{1}}_{{N_{k}\geq 2}}
+, and let
+C
+~
+=
+{
+z
+~
+∈
+𝒵
+~
+:
+s
+z
+~
+(
+P
+1
+z
+~
+)
+≤
+Q
+1
+−
+α
+2
+(
+∑
+k
+=
+1
+,
+…
+,
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+1
+(
+K
+≥
+2
++
+1
+)
+​
+(
+N
+k
+2
+)
+⋅
+δ
+min
+⁡
+{
+s
+z
+~
+​
+(
+Z
+k
+,
+i
+)
+,
+s
+z
+~
+​
+(
+Z
+k
+,
+i
+′
+)
+}
++
+1
+K
+≥
+2
++
+1
+⋅
+δ
++
+∞
+)
+}
+,
+\tilde{C}=\left\{\rule{0.0pt}{34.14322pt}\tilde{z}\in\tilde{\mathcal{Z}}\right.:s^{\tilde{z}}(P_{1}\tilde{z})\leq Q_{1-\alpha^{2}}\left(\rule{0.0pt}{31.2982pt}\sum_{\begin{subarray}{c}k=1,\dots,K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i<i^{\prime}\leq N_{k}}\frac{1}{(K^{\geq 2}+1){N_{k}\choose 2}}\cdot\delta_{\min\{s^{\tilde{z}}(Z_{k,i}),s^{\tilde{z}}(Z_{k,i^{\prime}})\}}\right.\\
+\left.+\frac{1}{K^{\geq 2}+1}\cdot\delta_{+\infty}\rule{0.0pt}{31.2982pt}\right)\left.\rule{0.0pt}{34.14322pt}\right\},
+and then again define
+C
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})
+as in (
+19
+). Again, as above, this construction
+is computationally extremely expensive and is therefore primarily of theoretical interest.
+Theorem 4
+.
+Assume the training data is drawn from the i.i.d. model with repeated measurements (
+10
+),
+independently for
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+, and that the test point
+(
+X
+test
+,
+Y
+test
+)
+(X_{\textnormal{test}},Y_{\textnormal{test}})
+is drawn
+independently from the model (
+11
+). Given a symmetric algorithm
+𝒜
+\mathcal{A}
+, the prediction set
+C
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})
+defined above satisfies
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+α
+2
+.
+\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq\alpha^{2}.
+We omit the proofs of these two theorems,
+as they follow from the same arguments as the proofs of Theorem
+1
+and Theorem
+2
+for the split conformal
+setting.
+A.2
+Extending jackknife+
+A.2.1
+Background: jackknife+
+The jackknife+
+[
+Barber et al., 2021b
+]
+(closely
+related to cross-conformal prediction
+[
+Vovk, 2015
+,
+Vovk et al., 2018
+]
+) offers a leave-one-out approach to the problem of distribution-free predictive inference. Like full conformal, the jackknife+ method provides a prediction set without
+the loss of accuracy incurred by data splitting. The computational cost of jackknife+ is higher than for split conformal (requiring fitting
+K
+K
+many leave-one-group-out models),
+but substantially lower than full conformal.
+Rather than working with an arbitrary score function, jackknife+ works specifically with the residual score (i.e.,
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(x,y)=|y-\widehat{\mu}(x)|
+for some fitted model
+μ
+^
+\widehat{\mu}
+), in the setting
+𝒴
+⊆
+ℝ
+\mathcal{Y}\subseteq\mathbb{R}
+.
+Let
+𝒜
+:
+𝒵
+n
++
+1
+→
+{
+functions
+𝒳
+→
+ℝ
+}
+\mathcal{A}:\mathcal{Z}^{n+1}\rightarrow\{\textnormal{functions $\mathcal{X}\rightarrow\mathbb{R}$}\}
+, which
+inputs a data set of size
+n
++
+1
+n+1
+and returns a fitted regression function
+μ
+^
+\widehat{\mu}
+; as for full conformal,
+𝒜
+\mathcal{A}
+is assumed to be symmetric in its input arguments. Let
+μ
+^
+−
+i
+=
+𝒜
+⁡
+(
+Z
+1
+,
+…
+,
+Z
+i
+−
+1
+,
+Z
+i
++
+1
+,
+…
+,
+Z
+n
+)
+\widehat{\mu}_{-i}=\mathcal{A}\left(Z_{1},\dots,Z_{i-1},Z_{i+1},\dots,Z_{n}\right)
+be the
+i
+i
+th leave-one-out model, and compute the
+i
+i
+th leave-one-out residual as
+R
+i
+=
+|
+Y
+i
+−
+μ
+^
+−
+i
+​
+(
+X
+i
+)
+|
+.
+R_{i}=|Y_{i}-\widehat{\mu}_{-i}(X_{i})|.
+Then the jackknife+ prediction interval is given by
+C
+^
+​
+(
+X
+test
+)
+=
+[
+Q
+α
+′
+​
+(
+∑
+i
+=
+1
+n
+1
+n
+⋅
+δ
+μ
+^
+−
+i
+​
+(
+X
+test
+)
+−
+R
+i
++
+1
+n
+⋅
+δ
+−
+∞
+)
+,
+Q
+1
+−
+α
+​
+(
+∑
+i
+=
+1
+n
+1
+n
+⋅
+δ
+μ
+^
+−
+i
+​
+(
+X
+test
+)
++
+R
+i
++
+1
+n
+⋅
+δ
++
+∞
+)
+]
+,
+\widehat{C}(X_{\textnormal{test}})=\left[Q_{\alpha}^{\prime}\left(\sum_{i=1}^{n}\frac{1}{n}\cdot\delta_{\widehat{\mu}_{-i}(X_{\textnormal{test}})-R_{i}}+\frac{1}{n}\cdot\delta_{-\infty}\right),\ Q_{1-\alpha}\left(\sum_{i=1}^{n}\frac{1}{n}\cdot\delta_{\widehat{\mu}_{-i}(X_{\textnormal{test}})+R_{i}}+\frac{1}{n}\cdot\delta_{+\infty}\right)\right],
+where for a distribution
+P
+P
+on
+ℝ
+\mathbb{R}
+,
+Q
+α
+′
+(
+P
+)
+=
+sup
+{
+t
+∈
+ℝ
+:
+ℙ
+T
+∼
+P
+{
+T
+≤
+t
+}
+≥
+α
+}
+Q_{\alpha}^{\prime}(P)=\sup\{t\in\mathbb{R}:\mathbb{P}_{{T\sim P}}\left\{{T\leq t}\right\}\geq\alpha\}
+(compare to the usual definition
+of quantile, where we take the infimum rather than the supremum).
+For exchangeable training and test data, the jackknife+ offers marginal coverage at level
+1
+−
+2
+​
+α
+1-2\alpha
+(here the factor of 2 is unavoidable,
+unless we make additional assumptions)
+[
+Barber et al., 2021b
+]
+.
+A.2.2
+Hierarchical jackknife+
+Next, we extend jackknife+ to the hierarchical setting.
+(HCP can also be extended to cross-conformal prediction
+[
+Vovk, 2015
+,
+Vovk et al., 2018
+]
+in a similar way, but we omit the details here.)
+While computationally more expensive than split conformal based methods, the hierarchical jackknife+ can nonetheless
+be viewed as a practical alternative to the computationally infeasible full conformal based method.
+To define the hierarchical jackknife+ method, we begin with an algorithm
+𝒜
+:
+𝒵
+~
+K
+−
+1
+→
+{
+functions
+𝒳
+→
+ℝ
+}
+\mathcal{A}:\tilde{\mathcal{Z}}^{K-1}\rightarrow\{\textnormal{functions $\mathcal{X}\rightarrow\mathbb{R}$}\}
+,
+which we again assume to be hierarchically symmetric, as for the case of full conformal.
+For each
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+, define the leave-one-group-out model,
+μ
+^
+−
+k
+=
+𝒜
+⁡
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+k
+−
+1
+,
+Z
+~
+k
++
+1
+,
+…
+,
+Z
+~
+K
+)
+,
+\widehat{\mu}_{-k}=\mathcal{A}\left(\tilde{Z}_{1},\dots,\tilde{Z}_{k-1},\tilde{Z}_{k+1},\dots,\tilde{Z}_{K}\right),
+and define the corresponding residuals for the
+k
+k
+th group,
+R
+k
+,
+i
+=
+|
+Y
+k
+,
+i
+−
+μ
+^
+−
+k
+​
+(
+X
+k
+,
+i
+)
+|
+,
+R_{k,i}=|Y_{k,i}-\widehat{\mu}_{-k}(X_{k,i})|,
+for each
+i
+=
+1
+,
+…
+,
+N
+k
+i=1,\dots,N_{k}
+.
+The hierarchical jackknife+ prediction interval is then given by
+C
+^
+(
+X
+test
+)
+=
+[
+Q
+α
+′
+(
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+δ
+μ
+^
+−
+k
+​
+(
+X
+test
+)
+−
+R
+k
+,
+i
++
+1
+K
++
+1
+⋅
+δ
+−
+∞
+)
+,
+Q
+1
+−
+α
+(
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+δ
+μ
+^
+−
+k
+​
+(
+X
+test
+)
++
+R
+k
+,
+i
++
+1
+K
++
+1
+⋅
+δ
++
+∞
+)
+]
+.
+\widehat{C}(X_{\textnormal{test}})=\left[\rule{0.0pt}{22.76228pt}Q_{\alpha}^{\prime}\left(\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot\delta_{\widehat{\mu}_{-k}(X_{\textnormal{test}})-R_{k,i}}+\frac{1}{K+1}\cdot\delta_{-\infty}\right),\right.\\
+\left.Q_{1-\alpha}\left(\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot\delta_{\widehat{\mu}_{-k}(X_{\textnormal{test}})+R_{k,i}}+\frac{1}{K+1}\cdot\delta_{+\infty}\right)\rule{0.0pt}{22.76228pt}\right].
+(20)
+Our first theoretical result shows that this method
+provides a marginal coverage guarantee in the hierarchical data setting.
+Theorem 5
+.
+Suppose that
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{1},\dots,\tilde{Z}_{K+1}
+satisfies the hierarchical exchangeability property (Definition
+1
+), and let
+Z
+test
+=
+(
+X
+test
+,
+Y
+test
+)
+=
+Z
+~
+K
++
+1
+,
+1
+Z_{\textnormal{test}}=(X_{\textnormal{test}},Y_{\textnormal{test}})=\tilde{Z}_{K+1,1}
+. Given a hierarchically symmetric algorithm
+𝒜
+\mathcal{A}
+, the prediction set
+C
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})
+defined in (
+20
+) satisfies
+ℙ
+{
+Y
+test
+∈
+C
+^
+(
+X
+test
+)
+}
+≥
+1
+−
+2
+α
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\right\}\geq 1-2\alpha.
+We can also obtain a second-moment coverage bound by extending HCP
+2
+to the jackknife+.
+Define
+C
+^
+(
+X
+test
+)
+=
+[
+Q
+α
+2
+′
+(
+∑
+k
+=
+1
+,
+…
+,
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+1
+(
+K
+≥
+2
++
+1
+)
+​
+(
+N
+k
+2
+)
+⋅
+δ
+μ
+^
+−
+k
+​
+(
+X
+test
+)
+−
+min
+⁡
+{
+R
+k
+,
+i
+,
+R
+k
+,
+i
+′
+}
++
+1
+K
+≥
+2
++
+1
+⋅
+δ
+−
+∞
+)
+,
+Q
+1
+−
+α
+2
+(
+∑
+k
+=
+1
+,
+…
+,
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+1
+(
+K
+≥
+2
++
+1
+)
+​
+(
+N
+k
+2
+)
+⋅
+δ
+μ
+^
+−
+k
+​
+(
+X
+test
+)
++
+min
+⁡
+{
+R
+k
+,
+i
+,
+R
+k
+,
+i
+′
+}
++
+1
+K
+≥
+2
++
+1
+⋅
+δ
++
+∞
+)
+]
+.
+\widehat{C}(X_{\textnormal{test}})=\left[\rule{0.0pt}{22.76228pt}Q_{\alpha^{2}}^{\prime}\left(\sum_{\begin{subarray}{c}k=1,\dots,K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i<i^{\prime}\leq N_{k}}\frac{1}{(K^{\geq 2}+1){N_{k}\choose 2}}\cdot\delta_{\widehat{\mu}_{-k}(X_{\textnormal{test}})-\min\{R_{k,i},R_{k,i^{\prime}}\}}+\frac{1}{K^{\geq 2}+1}\cdot\delta_{-\infty}\right),\right.\\
+\left.Q_{1-\alpha^{2}}\left(\sum_{\begin{subarray}{c}k=1,\dots,K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i<i^{\prime}\leq N_{k}}\frac{1}{(K^{\geq 2}+1){N_{k}\choose 2}}\cdot\delta_{\widehat{\mu}_{-k}(X_{\textnormal{test}})+\min\{R_{k,i},R_{k,i^{\prime}}\}}+\frac{1}{K^{\geq 2}+1}\cdot\delta_{+\infty}\right)\rule{0.0pt}{22.76228pt}\right].
+(21)
+Theorem 6
+.
+Assume the training data is drawn from the i.i.d. model with repeated measurements (
+10
+),
+independently for
+k
+=
+1
+,
+…
+,
+K
+k=1,\dots,K
+, and that the test point
+(
+X
+test
+,
+Y
+test
+)
+(X_{\textnormal{test}},Y_{\textnormal{test}})
+is drawn
+independently from the model (
+11
+). Given a symmetric algorithm
+𝒜
+\mathcal{A}
+, the prediction set
+C
+^
+​
+(
+X
+test
+)
+\widehat{C}(X_{\textnormal{test}})
+defined in (
+21
+) satisfies
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+≤
+4
+​
+α
+2
+.
+\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]\leq 4\alpha^{2}.
+We note that, as for the jackknife+ in the non-hierarchical setting,
+the theoretical guarantees hold with
+2
+​
+α
+2\alpha
+in place of
+α
+\alpha
+(and, similarly,
+4
+​
+α
+2
+=
+(
+2
+​
+α
+)
+2
+4\alpha^{2}=(2\alpha)^{2}
+in place of
+α
+2
+\alpha^{2}
+).
+The proofs of these two theorems are given in Appendix
+C.3
+and
+C.4
+.
+Appendix B
+Comparing HCP
+2
+versus a trivial solution
+In Section
+3.3.1
+, we discussed a possible trivial solution to the problem of second-moment coverage: simply
+run a method that guarantees marginal coverage, at level
+1
+−
+α
+2
+1-\alpha^{2}
+in place of
+1
+−
+α
+1-\alpha
+.
+Here we illustrate that this trivial solution is, as expected, highly impractical because it inevitably provides
+extremely wide prediction intervals; we compare to HCP
+2
+which is able to keep intervals at roughly the same
+width as a marginal-coverage method, in settings where the score function is chosen well.
+To illustrate this, we rerun the simulations of Section
+3.4
+, adding a third method:
+HCP run with
+α
+2
+\alpha^{2}
+in place of
+α
+\alpha
+. All other details of the data and implementation are exactly the same
+as in Section
+3.4
+.
+11
+11
+11
+Code to reproduce this simulation is available at
+https://github.com/rebeccawillett/Distribution-free-inference-with-hierarchical-data
+.
+As expected, we see that, for the three cases where the score function is a good match to the data distribution
+(namely, the residual score
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(x,y)=|y-\widehat{\mu}(x)|
+for Setting 1, or the rescaled residual score
+s
+⁡
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+/
+σ
+^
+​
+(
+x
+)
+s(x,y)=|y-\widehat{\mu}(x)|/\widehat{\sigma}(x)
+for Setting 1 and for Setting 2), HCP
+2
+provides intervals that are similar
+in width to HCP, while running the trivial solution (HCP with
+α
+=
+0.04
+\alpha=0.04
+in place of
+α
+=
+0.2
+\alpha=0.2
+) leads to extremely
+wide intervals. On the other hand, for the fourth case (the residual score
+s
+​
+(
+x
+,
+y
+)
+=
+|
+y
+−
+μ
+^
+​
+(
+x
+)
+|
+s(x,y)=|y-\widehat{\mu}(x)|
+for Setting 2),
+HCP
+2
+shows poor performance, but is still noticeably better than
+simply running the trivial solution (HCP with
+α
+=
+0.04
+\alpha=0.04
+in place of
+α
+=
+0.2
+\alpha=0.2
+); the trivial solution is
+still overly conservative, although less so here than in the other three cases.
+Appendix C
+Proofs
+C.1
+Proof of Theorem
+1
+As described in Section
+1.1
+, we can define
+(
+X
+test
+,
+Y
+test
+)
+=
+(
+X
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+1
+)
+(X_{\textnormal{test}},Y_{\textnormal{test}})=(X_{K+1,1},Y_{K+1,1})
+,
+so that the combined data set
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{1},\dots,\tilde{Z}_{K+1}
+satisfies hierarchical exchangeability (Definition
+1
+),
+where
+Z
+~
+k
+=
+(
+Z
+k
+,
+1
+,
+…
+,
+Z
+k
+,
+N
+k
+)
+\tilde{Z}_{k}=(Z_{k,1},\dots,Z_{k,N_{k}})
+for each
+k
+=
+1
+,
+…
+,
+K
++
+1
+k=1,\dots,K+1
+and
+Z
+k
+,
+i
+=
+(
+X
+k
+,
+i
+,
+Y
+k
+,
+i
+)
+Z_{k,i}=(X_{k,i},Y_{k,i})
+for each
+i
+=
+1
+,
+…
+,
+N
+k
+i=1,\dots,N_{k}
+.
+From this point on, we perform all calculations
+conditional on the training data
+Z
+~
+[
+K
+0
+]
+=
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+0
+)
+\tilde{Z}_{[K_{0}]}=(\tilde{Z}_{1},\dots,\tilde{Z}_{K_{0}})
+, so that we can treat the score function
+s
+s
+as fixed.
+Note that, conditional on the training data
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+,
+the remaining data
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K},\tilde{Z}_{K+1}
+(i.e., the calibration and test groups) again
+satisfy hierarchical exchangeability (Definition
+1
+).
+A new quantile function.
+First, define a function
+q
+:
+𝒵
+~
+K
+1
++
+1
+→
+ℝ
+q:\tilde{\mathcal{Z}}^{K_{1}+1}\rightarrow\mathbb{R}
+as
+q
+1
+−
+α
+​
+(
+z
+~
+1
+,
+…
+,
+z
+~
+K
+1
++
+1
+)
+=
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+1
+K
+1
++
+1
+∑
+i
+=
+1
+length
+​
+(
+z
+~
+k
+)
+1
+(
+K
+1
++
+1
+)
+⋅
+length
+​
+(
+z
+~
+k
+)
+​
+δ
+s
+⁡
+(
+z
+k
+,
+i
+)
+)
+,
+q_{1-\alpha}(\tilde{z}_{1},\dots,\tilde{z}_{K_{1}+1})=Q_{1-\alpha}\left(\sum_{k=1}^{K_{1}+1}\sum_{i=1}^{\textnormal{length}(\tilde{z}_{k})}\frac{1}{(K_{1}+1)\cdot\textnormal{length}(\tilde{z}_{k})}\delta_{s(z_{k,i})}\right),
+the empirical quantile of a given data set reweighted according to group size (to give equal weight to each group regardless
+of length).
+By definition of
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})
+as a weighted quantile, it holds deterministically that
+1
+K
+1
++
+1
+∑
+k
+=
+K
+0
++
+1
+K
++
+1
+1
+N
+k
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+s
+(
+Z
+k
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+≥
+1
+−
+α
+\frac{1}{K_{1}+1}\sum_{k=K_{0}+1}^{K+1}\frac{1}{N_{k}}\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{s(Z_{k,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}\geq 1-\alpha
+(22)
+(see, e.g.,
+Harrison [2012, Lemma A1]
+), and furthermore, if
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≠
+s
+⁡
+(
+Z
+k
+′
+,
+i
+′
+)
+s(Z_{k,i})\neq s(Z_{k^{\prime},i^{\prime}})
+for any
+k
+≠
+k
+′
+k\neq k^{\prime}
+,
+then
+1
+K
+1
++
+1
+∑
+k
+=
+K
+0
++
+1
+K
++
+1
+1
+N
+k
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+s
+(
+Z
+k
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+≤
+1
+−
+α
++
+1
+K
+1
++
+1
+,
+\frac{1}{K_{1}+1}\sum_{k=K_{0}+1}^{K+1}\frac{1}{N_{k}}\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{s(Z_{k,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}\leq 1-\alpha+\frac{1}{K_{1}+1},
+(23)
+where this last step holds since the condition on the scores ensures that the weighted distribution places mass at most
+1
+K
+1
++
+1
+\frac{1}{K_{1}+1}
+on any value.
+Next, we examine the invariance properties of this function
+q
+1
+−
+α
+q_{1-\alpha}
+.
+First, for any
+σ
+∈
+𝒮
+K
+1
++
+1
+\sigma\in\mathcal{S}_{K_{1}+1}
+, we can verify that
+q
+1
+−
+α
+​
+(
+z
+~
+1
+,
+…
+,
+z
+~
+K
+1
++
+1
+)
+=
+q
+1
+−
+α
+​
+(
+z
+~
+σ
+⁡
+(
+1
+)
+,
+…
+,
+z
+~
+σ
+⁡
+(
+K
+1
++
+1
+)
+)
+.
+q_{1-\alpha}(\tilde{z}_{1},\dots,\tilde{z}_{K_{1}+1})=q_{1-\alpha}(\tilde{z}_{\sigma(1)},\dots,\tilde{z}_{\sigma(K_{1}+1)}).
+(24)
+Next, for any
+k
+k
+consider a permutation
+σ
+∈
+𝒮
+length
+​
+(
+z
+~
+k
+)
+\sigma\in\mathcal{S}_{\textnormal{length}(\tilde{z}_{k})}
+,
+and let
+z
+~
+k
+σ
+=
+(
+z
+k
+,
+σ
+⁡
+(
+1
+)
+,
+…
+,
+z
+k
+,
+σ
+​
+(
+length
+​
+(
+z
+~
+k
+)
+)
+)
+\tilde{z}_{k}^{\sigma}=(z_{k,\sigma(1)},\dots,z_{k,\sigma(\textnormal{length}(\tilde{z}_{k}))})
+be the corresponding permutation of
+z
+~
+k
+\tilde{z}_{k}
+. We can see from the definition
+that
+q
+1
+−
+α
+​
+(
+z
+~
+1
+,
+…
+,
+z
+~
+K
+1
++
+1
+)
+=
+q
+1
+−
+α
+​
+(
+z
+~
+1
+,
+…
+,
+z
+~
+k
+−
+1
+,
+z
+~
+k
+σ
+,
+z
+~
+k
++
+1
+,
+…
+,
+z
+~
+K
+1
++
+1
+)
+.
+q_{1-\alpha}(\tilde{z}_{1},\dots,\tilde{z}_{K_{1}+1})=q_{1-\alpha}(\tilde{z}_{1},\dots,\tilde{z}_{k-1},\tilde{z}_{k}^{\sigma},\tilde{z}_{k+1},\dots,\tilde{z}_{K_{1}+1}).
+(25)
+Applying hierarchical exchangeability.
+Recall the definition of hierarchical exchangeability (Definition
+1
+):
+by the second part of the definition, for any permutation
+σ
+∈
+𝒮
+N
+K
++
+1
+\sigma\in\mathcal{S}_{N_{K+1}}
+, we have
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+=
+d
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
+,
+Z
+~
+K
++
+1
+σ
+)
+(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})\stackrel{{\scriptstyle\textnormal{d}}}{{=}}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K},\tilde{Z}_{K+1}^{\sigma})
+conditional on both
+N
+K
++
+1
+N_{K+1}
+and on
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+. Then, conditional on
+N
+K
++
+1
+N_{K+1}
+and
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+, for any
+i
+i
+,
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+=
+d
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+σ
+⁡
+(
+1
+)
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
+,
+Z
+~
+K
++
+1
+σ
+)
+}
+=
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+σ
+⁡
+(
+1
+)
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+,
+{\mathbbm{1}}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}\stackrel{{\scriptstyle\textnormal{d}}}{{=}}{\mathbbm{1}}\left\{{s(Z_{K+1,\sigma(1)})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K},\tilde{Z}_{K+1}^{\sigma})}\right\}\\
+={\mathbbm{1}}\left\{{s(Z_{K+1,\sigma(1)})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\},
+where the second step holds by (
+25
+). In particular, by taking any
+σ
+\sigma
+with
+σ
+⁡
+(
+1
+)
+=
+i
+\sigma(1)=i
+,
+ℙ
+{
+s
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+N
+K
++
+1
+}
+=
+ℙ
+{
+s
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+N
+K
++
+1
+}
+,
+\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]},N_{K+1}}\right\}\\
+=\mathbb{P}\left\{{s(Z_{K+1,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]},N_{K+1}}\right\},
+for each
+i
+=
+1
+,
+…
+,
+N
+K
++
+1
+i=1,\dots,N_{K+1}
+. After taking an average over all
+i
+i
+, and then marginalizing over
+N
+K
++
+1
+N_{K+1}
+,
+ℙ
+⁡
+{
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+=
+𝔼
+[
+1
+N
+K
++
+1
+∑
+i
+=
+1
+N
+K
++
+1
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+]
+.
+\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\\
+=\mathbb{E}\left[{\frac{1}{N_{K+1}}\sum_{i=1}^{N_{K+1}}{\mathbbm{1}}\left\{{s(Z_{K+1,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right].
+Furthermore, by the first part of Definition
+1
+, we see that
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+=
+d
+(
+Z
+~
+σ
+⁡
+(
+K
+0
++
+1
+)
+,
+…
+,
+Z
+~
+σ
+⁡
+(
+K
++
+1
+)
+)
+(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})\stackrel{{\scriptstyle\textnormal{d}}}{{=}}(\tilde{Z}_{\sigma(K_{0}+1)},\dots,\tilde{Z}_{\sigma(K+1)})
+holds conditional on
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+, for any
+σ
+\sigma
+that permutes
+{
+K
+0
++
+1
+,
+…
+,
+K
++
+1
+}
+\{K_{0}+1,\dots,K+1\}
+.
+Thus, conditional on
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+, it holds that
+1
+N
+K
++
+1
+∑
+i
+=
+1
+N
+K
++
+1
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+=
+d
+1
+N
+σ
+⁡
+(
+K
++
+1
+)
+∑
+i
+=
+1
+N
+σ
+⁡
+(
+K
++
+1
+)
+𝟙
+{
+s
+(
+Z
+σ
+⁡
+(
+K
++
+1
+)
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+σ
+⁡
+(
+K
+0
++
+1
+)
+,
+…
+,
+Z
+~
+σ
+⁡
+(
+K
++
+1
+)
+)
+}
+=
+1
+N
+σ
+⁡
+(
+K
++
+1
+)
+∑
+i
+=
+1
+N
+σ
+⁡
+(
+K
++
+1
+)
+𝟙
+{
+s
+(
+Z
+σ
+⁡
+(
+K
++
+1
+)
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+\frac{1}{N_{K+1}}\sum_{i=1}^{N_{K+1}}{\mathbbm{1}}\left\{{s(Z_{K+1,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}\\
+\stackrel{{\scriptstyle\textnormal{d}}}{{=}}\frac{1}{N_{\sigma(K+1)}}\sum_{i=1}^{N_{\sigma(K+1)}}{\mathbbm{1}}\left\{{s(Z_{\sigma(K+1),i})\leq q_{1-\alpha}(\tilde{Z}_{\sigma(K_{0}+1)},\dots,\tilde{Z}_{\sigma(K+1)})}\right\}\\
+=\frac{1}{N_{\sigma(K+1)}}\sum_{i=1}^{N_{\sigma(K+1)}}{\mathbbm{1}}\left\{{s(Z_{\sigma(K+1),i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}
+where the second step applies (
+24
+). Then for any
+k
+∈
+{
+K
+0
++
+1
+,
+…
+,
+K
++
+1
+}
+k\in\{K_{0}+1,\dots,K+1\}
+, taking any
+σ
+\sigma
+with
+σ
+⁡
+(
+K
++
+1
+)
+=
+k
+\sigma(K+1)=k
+, we have
+𝔼
+[
+1
+N
+K
++
+1
+∑
+i
+=
+1
+N
+K
++
+1
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+]
+=
+𝔼
+[
+1
+N
+k
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+s
+(
+Z
+k
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+]
+\mathbb{E}\left[{\frac{1}{N_{K+1}}\sum_{i=1}^{N_{K+1}}{\mathbbm{1}}\left\{{s(Z_{K+1,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right]\\
+=\mathbb{E}\left[{\frac{1}{N_{k}}\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{s(Z_{k,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right]
+and so, taking an average over all
+k
+k
+,
+𝔼
+[
+1
+N
+K
++
+1
+∑
+i
+=
+1
+N
+K
++
+1
+𝟙
+{
+s
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+]
+=
+𝔼
+[
+1
+K
+1
++
+1
+∑
+k
+=
+K
+0
++
+1
+K
++
+1
+1
+N
+k
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+s
+(
+Z
+k
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+]
+.
+\mathbb{E}\left[{\frac{1}{N_{K+1}}\sum_{i=1}^{N_{K+1}}{\mathbbm{1}}\left\{{s(Z_{K+1,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right]\\
+=\mathbb{E}\left[{\frac{1}{K_{1}+1}\sum_{k=K_{0}+1}^{K+1}\frac{1}{N_{k}}\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{s(Z_{k,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right].
+Combining everything so far, we have shown that
+ℙ
+⁡
+{
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+=
+𝔼
+[
+1
+K
+1
++
+1
+∑
+k
+=
+K
+0
++
+1
+K
++
+1
+1
+N
+k
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+s
+(
+Z
+k
+,
+i
+)
+≤
+q
+1
+−
+α
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+]
+.
+\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\\
+=\mathbb{E}\left[{\frac{1}{K_{1}+1}\sum_{k=K_{0}+1}^{K+1}\frac{1}{N_{k}}\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{s(Z_{k,i})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right].
+Therefore, applying (
+22
+), we have
+ℙ
+⁡
+{
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+≥
+1
+−
+α
+.
+\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\geq 1-\alpha.
+Conversely, if
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≠
+s
+⁡
+(
+Z
+k
+′
+,
+i
+′
+)
+s(Z_{k,i})\neq s(Z_{k^{\prime},i^{\prime}})
+for all
+k
+≠
+k
+′
+k\neq k^{\prime}
+, almost surely, then by (
+23
+),
+ℙ
+⁡
+{
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+≤
+1
+−
+α
++
+1
+K
+1
++
+1
+.
+\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\leq 1-\alpha+\frac{1}{K_{1}+1}.
+Coverage guarantee: lower bound.
+Now we need to relate the function
+q
+1
+−
+α
+q_{1-\alpha}
+to the coverage properties of the HCP method.
+Recalling the definition (
+6
+) of the HCP prediction interval, we can see that
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+K
+0
++
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
+1
++
+1
+)
+​
+N
+k
+⋅
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+)
++
+1
+K
+1
++
+1
+⋅
+δ
++
+∞
+)
+≥
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+,
+Q_{1-\alpha}\left(\sum_{k=K_{0}+1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K_{1}+1)N_{k}}\cdot\delta_{s(Z_{k,i})}+\frac{1}{K_{1}+1}\cdot\delta_{+\infty}\right)\geq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1}),
+and so
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+⇒
+Y
+test
+∈
+C
+^
+​
+(
+X
+test
+)
+.
+s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})\quad\Rightarrow\quad Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}}).
+Therefore, combining with the work above,
+ℙ
+⁡
+{
+Y
+test
+∈
+C
+^
+​
+(
+X
+test
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+≥
+ℙ
+⁡
+{
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+≥
+1
+−
+α
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\geq\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\geq 1-\alpha.
+Coverage guarantee: upper bound.
+Finally, we derive the upper bound on coverage, in the case that
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≠
+s
+⁡
+(
+Z
+k
+′
+,
+i
+′
+)
+s(Z_{k,i})\neq s(Z_{k^{\prime},i^{\prime}})
+for all
+k
+≠
+k
+′
+k\neq k^{\prime}
+, almost surely.
+First, we can observe that
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+K
+0
++
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
+1
++
+1
+)
+​
+N
+k
+⋅
+δ
+s
+⁡
+(
+Z
+k
+,
+i
+)
++
+1
+K
+1
++
+1
+⋅
+δ
++
+∞
+)
+≤
+q
+1
+−
+α
+′
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+,
+Q_{1-\alpha}\left(\sum_{k=K_{0}+1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K_{1}+1)N_{k}}\cdot\delta_{s(Z_{k,i})}+\frac{1}{K_{1}+1}\cdot\delta_{+\infty}\right)\leq q_{1-\alpha^{\prime}}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1}),
+where
+α
+′
+=
+α
+−
+1
+K
+1
++
+1
+\alpha^{\prime}=\alpha-\frac{1}{K_{1}+1}
+.
+Therefore, from the calculations above (applied with
+α
+′
+\alpha^{\prime}
+in place of
+α
+\alpha
+),
+ℙ
+⁡
+{
+Y
+test
+∈
+C
+^
+​
+(
+X
+test
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+≤
+ℙ
+⁡
+{
+s
+⁡
+(
+Z
+K
++
+1
+,
+1
+)
+≤
+q
+1
+−
+α
+′
+​
+(
+Z
+~
+K
+0
++
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+}
+≤
+1
+−
+α
+′
++
+1
+K
+1
++
+1
+=
+1
+−
+α
++
+2
+K
+1
++
+1
+.
+\mathbb{P}\left\{{Y_{\textnormal{test}}\in\widehat{C}(X_{\textnormal{test}})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\leq\mathbb{P}\left\{{s(Z_{K+1,1})\leq q_{1-\alpha^{\prime}}(\tilde{Z}_{K_{0}+1},\dots,\tilde{Z}_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]}}\right\}\\
+\leq 1-\alpha^{\prime}+\frac{1}{K_{1}+1}=1-\alpha+\frac{2}{K_{1}+1}.
+C.2
+Proof of Theorem
+2
+The proof largely follows the same structure as the proof of Theorem
+1
+.
+First, draw
+(
+X
+K
++
+1
+,
+N
+K
++
+1
+)
+(X_{K+1},N_{K+1})
+from the distribution of
+(
+X
+,
+N
+)
+(X,N)
+conditional on the event
+N
+≥
+2
+N\geq 2
+, and draw
+Y
+K
++
+1
+,
+1
+,
+…
+,
+Y
+K
++
+1
+,
+N
+K
++
+1
+Y_{K+1,1},\dots,Y_{K+1,N_{K+1}}
+i.i.d. from the distribution of
+Y
+|
+X
+Y\mid X
+at
+X
+=
+X
+K
++
+1
+X=X_{K+1}
+.
+Condition also on
+𝒮
+=
+{
+k
+∈
+{
+K
+0
++
+1
+,
+…
+,
+K
+}
+:
+N
+k
+≥
+2
+}
+\mathcal{S}=\{k\in\{K_{0}+1,\dots,K\}:N_{k}\geq 2\}
+.
+Then, conditional on
+𝒮
+\mathcal{S}
+and also on the training data
+Z
+~
+[
+K
+0
+]
+\tilde{Z}_{[K_{0}]}
+, we see that
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})
+satisfies hierarchical exchangeability (Definition
+1
+).
+A new quantile function.
+Next, define
+𝒵
+~
+≥
+2
+=
+𝒵
+2
+∪
+𝒵
+3
+∪
+…
+\tilde{\mathcal{Z}}^{\geq 2}=\mathcal{Z}^{2}\cup\mathcal{Z}^{3}\cup\dots
+, and define a function
+q
+′
+:
+(
+𝒵
+~
+≥
+2
+)
+K
+1
+≥
+2
++
+1
+→
+ℝ
+q^{\prime}:(\tilde{\mathcal{Z}}^{\geq 2})^{K_{1}^{\geq 2}+1}\rightarrow\mathbb{R}
+as
+q
+1
+−
+α
+2
+′
+​
+(
+z
+~
+1
+,
+…
+,
+z
+~
+K
+1
+≥
+2
++
+1
+)
+=
+Q
+1
+−
+α
+2
+​
+(
+∑
+k
+=
+1
+K
+1
+≥
+2
++
+1
+∑
+1
+≤
+i
+<
+i
+′
+≤
+length
+​
+(
+z
+~
+k
+)
+1
+(
+K
+1
+≥
+2
++
+1
+)
+⋅
+(
+length
+​
+(
+z
+~
+k
+)
+2
+)
+​
+δ
+min
+⁡
+{
+s
+⁡
+(
+z
+k
+,
+i
+)
+,
+s
+⁡
+(
+z
+k
+,
+i
+′
+)
+}
+)
+.
+q^{\prime}_{1-\alpha^{2}}(\tilde{z}_{1},\dots,\tilde{z}_{K_{1}^{\geq 2}+1})\\
+=Q_{1-\alpha^{2}}\left(\sum_{k=1}^{K_{1}^{\geq 2}+1}\sum_{1\leq i<i^{\prime}\leq\textnormal{length}(\tilde{z}_{k})}\frac{1}{(K_{1}^{\geq 2}+1)\cdot{\textnormal{length}(\tilde{z}_{k})\choose 2}}\delta_{\min\{s(z_{k,i}),s(z_{k,i^{\prime}})\}}\right).
+By definition of this weighted quantile, it holds deterministically that
+1
+K
+1
+≥
+2
++
+1
+∑
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+1
+(
+N
+k
+2
+)
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+𝟙
+{
+min
+{
+s
+(
+Z
+k
+,
+i
+)
+,
+s
+(
+Z
+k
+,
+i
+′
+)
+}
+≤
+q
+1
+−
+α
+2
+′
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+}
+≥
+1
+−
+α
+\frac{1}{K_{1}^{\geq 2}+1}\sum_{k\in\mathcal{S}\cup\{K+1\}}\frac{1}{{N_{k}\choose 2}}\sum_{1\leq i<i^{\prime}\leq N_{k}}{\mathbbm{1}}\left\{{\min\{s(Z_{k,i}),s(Z_{k,i^{\prime}})\}\leq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})}\right\}\geq 1-\alpha
+(26)
+(see, e.g.,
+Harrison [2012, Lemma A1]
+).
+Next, we examine invariance properties of this function
+q
+1
+−
+α
+2
+′
+q^{\prime}_{1-\alpha^{2}}
+. Similarly to the proof of Theorem
+1
+,
+for any
+σ
+∈
+𝒮
+K
+1
++
+1
+\sigma\in\mathcal{S}_{K_{1}+1}
+, we see that the value of
+q
+1
+−
+α
+2
+′
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})
+is unchanged if we permute groups, or if we permute data points within any group.
+Applying hierarchical exchangeability.
+Following a similar argument to the proof of Theorem
+1
+, we can verify that, since
+the data satisfies hierarchical exchangeability (Definition
+1
+), and the function
+q
+1
+−
+α
+2
+′
+q^{\prime}_{1-\alpha^{2}}
+satisfies the invariance properties
+described above,
+we have
+ℙ
+{
+min
+{
+s
+(
+Z
+K
++
+1
+,
+1
+)
+,
+s
+(
+Z
+K
++
+1
+,
+2
+)
+}
+≤
+q
+′
+1
+−
+α
+2
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+}
+=
+𝔼
+[
+1
+K
+1
+≥
+2
++
+1
+∑
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+1
+(
+N
+k
+2
+)
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+𝟙
+{
+min
+{
+s
+(
+Z
+k
+,
+i
+)
+,
+s
+(
+Z
+k
+,
+i
+′
+)
+}
+≤
+q
+′
+1
+−
+α
+2
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+]
+.
+\mathbb{P}\left\{{\min\{s(Z_{K+1,1}),s(Z_{K+1,2})\}\leq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right\}\\
+=\text{\small$\mathbb{E}\left[{\frac{1}{K_{1}^{\geq 2}+1}\sum_{k\in\mathcal{S}\cup\{K+1\}}\frac{1}{{N_{k}\choose 2}}\sum_{1\leq i<i^{\prime}\leq N_{k}}\!\!\!{\mathbbm{1}}\left\{{\min\{s(Z_{k,i}),s(Z_{k,i^{\prime}})\}\leq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right]$}.
+Therefore, applying (
+26
+), we have
+ℙ
+{
+min
+{
+s
+(
+Z
+K
++
+1
+,
+1
+)
+,
+s
+(
+Z
+K
++
+1
+,
+2
+)
+}
+≤
+q
+1
+−
+α
+2
+′
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+}
+≥
+1
+−
+α
+2
+.
+\mathbb{P}\left\{{\min\{s(Z_{K+1,1}),s(Z_{K+1,2})\}\leq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right\}\geq 1-\alpha^{2}.
+Coverage guarantee.
+Now we need to relate the function
+q
+1
+−
+α
+2
+′
+q^{\prime}_{1-\alpha^{2}}
+to the coverage properties of the HCP
+2
+method.
+For each
+i
+=
+1
+,
+2
+i=1,2
+, we have
+Y
+K
++
+1
+,
+i
+∈
+C
+^
+​
+(
+X
+K
++
+1
+)
+Y_{K+1,i}\in\widehat{C}(X_{K+1})
+if and only if
+s
+⁡
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+Q
+1
+−
+α
+2
+​
+(
+∑
+k
+=
+K
+0
++
+1
+,
+…
+,
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+<
+i
+′
+≤
+N
+k
+1
+(
+K
+1
+≥
+2
++
+1
+)
+​
+(
+N
+k
+2
+)
+⋅
+δ
+min
+⁡
+{
+s
+⁡
+(
+Z
+k
+,
+i
+)
+,
+s
+⁡
+(
+Z
+k
+,
+i
+′
+)
+}
++
+1
+K
+1
+≥
+2
++
+1
+⋅
+δ
++
+∞
+)
+,
+s(Z_{K+1,i})\leq Q_{1-\alpha^{2}}\left(\sum_{\begin{subarray}{c}k=K_{0}+1,\dots,K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i<i^{\prime}\leq N_{k}}\frac{1}{(K_{1}^{\geq 2}+1){N_{k}\choose 2}}\cdot\delta_{\min\{s(Z_{k,i}),s(Z_{k,i^{\prime}})\}}+\frac{1}{K_{1}^{\geq 2}+1}\cdot\delta_{+\infty}\right),
+by definition of the method. Deterministically, it holds that this quantile on the right hand side is
+≥
+q
+1
+−
+α
+2
+′
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+\geq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})
+, and so,
+s
+(
+Z
+K
++
+1
+,
+i
+)
+≤
+q
+1
+−
+α
+2
+′
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+⇒
+Y
+K
++
+1
+,
+i
+∈
+C
+^
+(
+X
+K
++
+1
+)
+.
+s(Z_{K+1,i})\leq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})\quad\Rightarrow\quad Y_{K+1,i}\in\widehat{C}(X_{K+1}).
+In particular,
+ℙ
+{
+{
+Y
+K
++
+1
+,
+1
+∈
+C
+^
+(
+X
+K
++
+1
+)
+}
+∪
+{
+Y
+K
++
+1
+,
+2
+∈
+C
+^
+(
+X
+K
++
+1
+)
+}
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+}
+≥
+ℙ
+{
+min
+{
+s
+(
+Z
+K
++
+1
+,
+1
+)
+,
+s
+(
+Z
+K
++
+1
+,
+2
+)
+}
+≤
+q
+′
+1
+−
+α
+2
+(
+Z
+~
+k
+:
+k
+∈
+𝒮
+∪
+{
+K
++
+1
+}
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+}
+≥
+1
+−
+α
+2
+,
+\mathbb{P}\left\{{\{Y_{K+1,1}\in\widehat{C}(X_{K+1})\}\cup\{Y_{K+1,2}\in\widehat{C}(X_{K+1})\}}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right\}\\
+\geq\mathbb{P}\left\{{\min\{s(Z_{K+1,1}),s(Z_{K+1,2})\}\leq q^{\prime}_{1-\alpha^{2}}(\tilde{Z}_{k}:k\in\mathcal{S}\cup\{K+1\})}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right\}\geq 1-\alpha^{2},
+where the last step holds by the work above. Equivalently,
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+}
+≤
+α
+2
+.
+\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\not\in\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right\}\leq\alpha^{2}.
+Next, since
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+Y_{K+1,1},Y_{K+1,2}
+are i.i.d. draws from the distribution
+P
+Y
+|
+X
+P_{Y|X}
+at
+X
+=
+X
+K
++
+1
+X=X_{K+1}
+(and are independent of the training and calibration data, by
+the hierarchical i.i.d. model),
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+}
+=
+𝔼
+[
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+]
+,
+X
+K
++
+1
+}
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+]
+=
+𝔼
+[
+ℙ
+{
+Y
+K
++
+1
+,
+1
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+]
+,
+X
+K
++
+1
+}
+2
+|
+Z
+~
+[
+K
+0
+]
+,
+𝒮
+]
+.
+\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\not\in\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right\}\\
+=\mathbb{E}\left[{\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\not\in\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K]},X_{K+1}}\right\}}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right]\\
+=\mathbb{E}\left[{\mathbb{P}\left\{{Y_{K+1,1}\not\in\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K]},X_{K+1}}\right\}^{2}}\ \middle|\ {\tilde{Z}_{[K_{0}]},\mathcal{S}}\right].
+Combining with the above, and marginalizing, we have
+α
+2
+≥
+𝔼
+[
+ℙ
+{
+Y
+K
++
+1
+,
+1
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+]
+,
+X
+K
++
+1
+}
+2
+]
+=
+𝔼
+[
+α
+𝒟
+(
+X
+K
++
+1
+)
+2
+]
+,
+\alpha^{2}\geq\mathbb{E}\left[{\mathbb{P}\left\{{Y_{K+1,1}\not\in\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K]},X_{K+1}}\right\}^{2}}\right]=\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{K+1})^{2}}\right],
+where the last step holds by definition of
+α
+𝒟
+​
+(
+x
+)
+\alpha_{\mathcal{D}}(x)
+. Recalling that
+X
+test
+=
+X
+K
++
+1
+X_{\textnormal{test}}=X_{K+1}
+by construction, this completes the proof of
+the upper bound on
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]
+.
+The upper bound.
+In the case that
+s
+⁡
+(
+Z
+k
+,
+i
+)
+≠
+s
+⁡
+(
+Z
+k
+′
+,
+i
+′
+)
+s(Z_{k,i})\neq s(Z_{k^{\prime},i^{\prime}})
+for all
+k
+≠
+k
+′
+k\neq k^{\prime}
+, almost surely,
+proving that
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+K
++
+1
+)
+2
+|
+K
+1
+≥
+2
+]
+≥
+α
+2
+−
+2
+K
+1
+≥
+2
++
+1
+\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{K+1})^{2}}\ \middle|\ {K_{1}^{\geq 2}}\right]\geq\alpha^{2}-\frac{2}{K_{1}^{\geq 2}+1}
+follows from an argument that is very similar to the proof of the analogous result in Theorem
+1
+, so we omit the details.
+Finally, we can verify that
+𝔼
+⁡
+[
+1
+K
+1
+≥
+2
++
+1
+]
+≤
+1
+(
+K
+1
++
+1
+)
+⋅
+p
+≥
+2
+\mathbb{E}\left[{\frac{1}{K_{1}^{\geq 2}+1}}\right]\leq\frac{1}{(K_{1}+1)\cdot p_{\geq 2}}
+by using the fact that
+K
+1
+≥
+2
+∼
+Binomial
+​
+(
+K
+1
+,
+p
+≥
+2
+)
+K_{1}^{\geq 2}\sim\textnormal{Binomial}(K_{1},p_{\geq 2})
+.
+C.3
+Proof of Theorem
+5
+The proof extends the idea of the proof for the original jackknife+
+[
+Barber et al., 2021b
+]
+. Similarly to the proof for the split conformal-based methods we look into the coverage for
+Y
+K
++
+1
+,
+1
+Y_{K+1,1}
+. For each
+1
+≤
+k
+≠
+k
+′
+≤
+K
++
+1
+1\leq k\neq k^{\prime}\leq K+1
+, let
+μ
+~
+−
+(
+k
+,
+k
+′
+)
+=
+μ
+~
+−
+(
+k
+′
+,
+k
+)
+=
+𝒜
+⁡
+(
+(
+Z
+~
+ℓ
+)
+ℓ
+∈
+[
+K
++
+1
+]
+\
+{
+k
+,
+k
+′
+}
+)
+\tilde{\mu}_{-(k,k^{\prime})}=\tilde{\mu}_{-(k^{\prime},k)}=\mathcal{A}((\tilde{Z}_{\ell})_{\ell\in[K+1]\backslash\{k,k^{\prime}\}})
+be the estimator from the expanded data set
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
+,
+Z
+~
+K
++
+1
+\tilde{Z}_{1},\dots,\tilde{Z}_{K},\tilde{Z}_{K+1}
+after excluding the
+k
+k
+-th and
+k
+′
+k^{\prime}
+-th groups of observations, and define
+R
+(
+k
+,
+i
+)
+,
+k
+′
+R_{(k,i),k^{\prime}}
+by
+R
+(
+k
+,
+i
+)
+,
+k
+′
+=
+{
+|
+Y
+k
+,
+i
+−
+μ
+~
+−
+(
+k
+,
+k
+′
+)
+​
+(
+X
+k
+,
+i
+)
+|
+,
+k
+≠
+k
+′
++
+∞
+,
+k
+=
+k
+′
+\displaystyle R_{(k,i),k^{\prime}}=\begin{cases}|Y_{k,i}-\tilde{\mu}_{-(k,k^{\prime})}(X_{k,i})|,&k\neq k^{\prime}\\
++\infty,&k=k^{\prime}\end{cases}
+for
+1
+≤
+i
+≤
+N
+k
+1\leq i\leq N_{k}
+. Next, define
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+=
+𝟙
+{
+R
+(
+k
+,
+i
+)
+,
+k
+′
+>
+R
+(
+k
+′
+,
+i
+)
+,
+k
+}
+,
+A_{(k,i),(k^{\prime},i^{\prime})}={\mathbbm{1}}\left\{{R_{(k,i),k^{\prime}}>R_{(k^{\prime},i),k}}\right\},
+and note that for any
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+(k,i),(k^{\prime},i^{\prime})
+, we must have
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
++
+A
+(
+k
+′
+,
+i
+′
+)
+,
+(
+k
+,
+i
+)
+≤
+1
+A_{(k,i),(k^{\prime},i^{\prime})}+A_{(k^{\prime},i^{\prime}),(k,i)}\leq 1
+.
+Define also
+A
+(
+k
+,
+i
+)
+,
+∙
+=
+∑
+k
+′
+=
+1
+K
++
+1
+∑
+i
+′
+=
+1
+N
+k
+′
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+⋅
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+.
+A_{(k,i),\bullet}=\sum_{k^{\prime}=1}^{K+1}\sum_{i^{\prime}=1}^{N_{k^{\prime}}}\frac{1}{(K+1)N_{k^{\prime}}}\cdot A_{(k,i),(k^{\prime},i^{\prime})}.
+Write
+A
+A
+to denote the array of all
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+A_{(k,i),(k^{\prime},i^{\prime})}
+’s:
+A
+=
+{
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+:
+1
+≤
+k
+,
+k
+′
+≤
+K
++
+1
+,
+1
+≤
+i
+≤
+N
+k
+,
+1
+≤
+i
+′
+≤
+N
+k
+′
+}
+.
+A=\{A_{(k,i),(k^{\prime},i^{\prime})}:1\leq k,k^{\prime}\leq K+1,1\leq i\leq N_{k},1\leq i^{\prime}\leq N_{k^{\prime}}\}.
+Finally, define the set
+S
+⁡
+(
+A
+)
+S(A)
+by
+S
+⁡
+(
+A
+)
+=
+{
+(
+k
+,
+i
+)
+:
+A
+(
+k
+,
+i
+)
+,
+∙
+≥
+1
+−
+α
+}
+,
+S(A)=\{(k,i):A_{(k,i),\bullet}\geq 1-\alpha\},
+and let
+s
+⁡
+(
+A
+)
+=
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+.
+s(A)=\sum_{(k,i)\in S(A)}\frac{1}{(K+1)N_{k}}.
+To bound
+s
+⁡
+(
+A
+)
+s(A)
+, we have
+(
+1
+−
+α
+)
+​
+s
+​
+(
+A
+)
+=
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+−
+α
+(
+K
++
+1
+)
+​
+N
+k
+\displaystyle(1-\alpha)s(A)=\sum_{(k,i)\in S(A)}\frac{1-\alpha}{(K+1)N_{k}}
+≤
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+​
+A
+(
+k
+,
+i
+)
+,
+∙
+\displaystyle\leq\sum_{(k,i)\in S(A)}\frac{1}{(K+1)N_{k}}A_{(k,i),\bullet}
+=
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+​
+∑
+k
+′
+=
+1
+K
++
+1
+∑
+i
+′
+=
+1
+N
+k
+′
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+​
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+\displaystyle=\sum_{(k,i)\in S(A)}\frac{1}{(K+1)N_{k}}\sum_{k^{\prime}=1}^{K+1}\sum_{i^{\prime}=1}^{N_{k^{\prime}}}\frac{1}{(K+1)N_{k^{\prime}}}A_{(k,i),(k^{\prime},i^{\prime})}
+=
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+​
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+​
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+\displaystyle=\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}A_{(k,i),(k^{\prime},i^{\prime})}
++
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∉
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+\displaystyle\hskip 72.26999pt+\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\not\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}A_{(k,i),(k^{\prime},i^{\prime})}
+=
+1
+2
+​
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+​
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+​
+(
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
++
+A
+(
+k
+′
+,
+i
+′
+)
+,
+(
+k
+,
+i
+)
+)
+\displaystyle=\frac{1}{2}\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}\left(A_{(k,i),(k^{\prime},i^{\prime})}+A_{(k^{\prime},i^{\prime}),(k,i)}\right)
++
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∉
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+A
+(
+k
+,
+i
+)
+,
+(
+k
+′
+,
+i
+′
+)
+\displaystyle\hskip 72.26999pt+\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\not\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}A_{(k,i),(k^{\prime},i^{\prime})}
+≤
+1
+2
+​
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+​
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
++
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∉
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+​
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+\displaystyle\leq\frac{1}{2}\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}+\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\not\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}
+=
+−
+1
+2
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
++
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+k
+′
+=
+1
+K
++
+1
+∑
+i
+′
+=
+1
+N
+k
+′
+1
+(
+K
++
+1
+)
+​
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+′
+\displaystyle=-\frac{1}{2}\sum_{(k,i)\in S(A)}\sum_{(k^{\prime},i^{\prime})\in S(A)}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}+\sum_{(k,i)\in S(A)}\sum_{k^{\prime}=1}^{K+1}\sum_{i^{\prime}=1}^{N_{k^{\prime}}}\frac{1}{(K+1)N_{k}}\frac{1}{(K+1)N_{k^{\prime}}}
+=
+−
+1
+2
+​
+(
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+)
+2
++
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+\displaystyle=-\frac{1}{2}\left(\sum_{(k,i)\in S(A)}\frac{1}{(K+1)N_{k}}\right)^{2}+\sum_{(k,i)\in S(A)}\frac{1}{(K+1)N_{k}}
+=
+−
+1
+2
+​
+s
+​
+(
+A
+)
+2
++
+s
+⁡
+(
+A
+)
+,
+\displaystyle=-\frac{1}{2}s(A)^{2}+s(A),
+which proves
+s
+⁡
+(
+A
+)
+≤
+2
+​
+α
+s(A)\leq 2\alpha
+.
+Next, since
+(
+Z
+~
+1
+,
+…
+,
+Z
+~
+K
++
+1
+)
+(\tilde{Z}_{1},\dots,\tilde{Z}_{K+1})
+satisfies hierarchical exchangeability (Definition
+1
+), by a similar argument
+as in the proof of Theorem
+1
+, we have
+ℙ
+⁡
+{
+(
+K
++
+1
+,
+1
+)
+∈
+S
+⁡
+(
+A
+)
+|
+N
+K
++
+1
+=
+m
+}
+=
+ℙ
+⁡
+{
+(
+K
++
+1
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+|
+N
+K
++
+1
+=
+m
+}
+\mathbb{P}\left\{{(K+1,1)\in S(A)}\ \middle|\ {N_{K+1}=m}\right\}=\mathbb{P}\left\{{(K+1,i)\in S(A)}\ \middle|\ {N_{K+1}=m}\right\}
+for all
+i
+=
+1
+,
+2
+,
+…
+,
+m
+i=1,2,\dots,m
+, where
+m
+m
+is any positive integer with
+ℙ
+{
+N
+K
++
+1
+=
+m
+}
+>
+0
+\mathbb{P}\left\{{N_{K+1}=m}\right\}>0
+, and
+𝔼
+[
+1
+N
+K
++
+1
+⋅
+∑
+i
+=
+1
+N
+K
++
+1
+𝟙
+{
+(
+K
++
+1
+,
+i
+)
+∈
+S
+(
+A
+)
+}
+]
+=
+𝔼
+[
+1
+N
+k
+⋅
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+(
+k
+,
+i
+)
+∈
+S
+(
+A
+)
+}
+]
+\mathbb{E}\left[{\frac{1}{N_{K+1}}\cdot\sum_{i=1}^{N_{K+1}}{\mathbbm{1}}\left\{{(K+1,i)\in S(A)}\right\}}\right]=\mathbb{E}\left[{\frac{1}{N_{k}}\cdot\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{(k,i)\in S(A)}\right\}}\right]
+for all
+k
+=
+1
+,
+2
+,
+…
+,
+K
+k=1,2,\dots,K
+. It follows that
+ℙ
+{
+(
+K
++
+1
+,
+1
+)
+∈
+S
+(
+A
+)
+}
+\displaystyle\mathbb{P}\left\{{(K+1,1)\in S(A)}\right\}
+=
+𝔼
+⁡
+[
+ℙ
+⁡
+{
+(
+K
++
+1
+,
+1
+)
+∈
+S
+⁡
+(
+A
+)
+|
+N
+K
++
+1
+}
+]
+\displaystyle=\mathbb{E}\left[{\mathbb{P}\left\{{(K+1,1)\in S(A)}\ \middle|\ {N_{K+1}}\right\}}\right]
+=
+𝔼
+⁡
+[
+1
+N
+K
++
+1
+⋅
+∑
+i
+=
+1
+N
+K
++
+1
+ℙ
+⁡
+{
+(
+K
++
+1
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+|
+N
+K
++
+1
+}
+]
+\displaystyle=\mathbb{E}\left[{\frac{1}{N_{K+1}}\cdot\sum_{i=1}^{N_{K+1}}\mathbb{P}\left\{{(K+1,i)\in S(A)}\ \middle|\ {N_{K+1}}\right\}}\right]
+=
+𝔼
+[
+1
+N
+K
++
+1
+⋅
+∑
+i
+=
+1
+N
+K
++
+1
+𝟙
+{
+(
+K
++
+1
+,
+i
+)
+∈
+S
+(
+A
+)
+}
+]
+\displaystyle=\mathbb{E}\left[{\frac{1}{N_{K+1}}\cdot\sum_{i=1}^{N_{K+1}}{\mathbbm{1}}\left\{{(K+1,i)\in S(A)}\right\}}\right]
+=
+𝔼
+[
+1
+K
++
+1
+∑
+k
+=
+1
+K
++
+1
+1
+N
+k
+⋅
+∑
+i
+=
+1
+N
+k
+𝟙
+{
+(
+k
+,
+i
+)
+∈
+S
+(
+A
+)
+}
+]
+\displaystyle=\mathbb{E}\left[{\frac{1}{K+1}\sum_{k=1}^{K+1}\frac{1}{N_{k}}\cdot\sum_{i=1}^{N_{k}}{\mathbbm{1}}\left\{{(k,i)\in S(A)}\right\}}\right]
+=
+𝔼
+⁡
+[
+∑
+(
+k
+,
+i
+)
+∈
+S
+⁡
+(
+A
+)
+1
+(
+K
++
+1
+)
+​
+N
+k
+]
+=
+𝔼
+⁡
+[
+s
+⁡
+(
+A
+)
+]
+≤
+2
+​
+α
+,
+\displaystyle=\mathbb{E}\left[{\sum_{(k,i)\in S(A)}\frac{1}{(K+1)N_{k}}}\right]=\mathbb{E}\left[{s(A)}\right]\leq 2\alpha,
+where the last inequality holds since we have shown that
+s
+⁡
+(
+A
+)
+≤
+2
+​
+α
+s(A)\leq 2\alpha
+holds deterministically.
+Now suppose
+Y
+K
++
+1
+,
+1
+∉
+C
+^
+​
+(
+X
+K
++
+1
+,
+1
+)
+Y_{K+1,1}\notin\widehat{C}(X_{K+1,1})
+. This implies
+that either
+Y
+K
++
+1
+,
+1
+<
+Q
+α
+′
+​
+(
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+δ
+μ
+^
+−
+k
+​
+(
+X
+K
++
+1
+,
+1
+)
+−
+R
+k
+,
+i
++
+1
+K
++
+1
+⋅
+δ
+−
+∞
+)
+,
+Y_{K+1,1}<Q_{\alpha}^{\prime}\left(\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot\delta_{\widehat{\mu}_{-k}(X_{K+1,1})-R_{k,i}}+\frac{1}{K+1}\cdot\delta_{-\infty}\right),
+or
+Y
+K
++
+1
+,
+1
+>
+Q
+1
+−
+α
+​
+(
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+δ
+μ
+^
+−
+k
+​
+(
+X
+K
++
+1
+,
+1
+)
++
+R
+k
+,
+i
++
+1
+K
++
+1
+⋅
+δ
++
+∞
+)
+.
+Y_{K+1,1}>Q_{1-\alpha}\left(\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot\delta_{\widehat{\mu}_{-k}(X_{K+1,1})+R_{k,i}}+\frac{1}{K+1}\cdot\delta_{+\infty}\right).
+From the definition of
+Q
+α
+′
+Q_{\alpha}^{\prime}
+and
+Q
+1
+−
+α
+Q_{1-\alpha}
+, we then have
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+𝟙
+{
+μ
+^
+−
+k
+(
+X
+K
++
+1
+,
+1
+)
+−
+R
+k
+,
+i
+>
+Y
+K
++
+1
+,
+1
+}
+≥
+1
+−
+α
+,
+\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot{\mathbbm{1}}\left\{{\widehat{\mu}_{-k}(X_{K+1,1})-R_{k,i}>Y_{K+1,1}}\right\}\geq 1-\alpha,
+or
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+𝟙
+{
+μ
+^
+−
+k
+(
+X
+K
++
+1
+,
+1
+)
++
+R
+k
+,
+i
+<
+Y
+K
++
+1
+,
+1
+}
+≥
+1
+−
+α
+.
+\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot{\mathbbm{1}}\left\{{\widehat{\mu}_{-k}(X_{K+1,1})+R_{k,i}<Y_{K+1,1}}\right\}\geq 1-\alpha.
+In either case, we have
+1
+−
+α
+\displaystyle 1-\alpha
+≤
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+𝟙
+{
+|
+Y
+K
++
+1
+,
+1
+−
+μ
+^
+−
+k
+(
+X
+K
++
+1
+,
+1
+)
+|
+>
+R
+k
+,
+i
+}
+\displaystyle\leq\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot{\mathbbm{1}}\left\{{|Y_{K+1,1}-\widehat{\mu}_{-k}(X_{K+1,1})|>R_{k,i}}\right\}
+=
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+𝟙
+{
+R
+(
+K
++
+1
+,
+1
+)
+,
+k
+>
+R
+(
+k
+,
+i
+)
+,
+K
++
+1
+}
+\displaystyle=\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot{\mathbbm{1}}\left\{{R_{(K+1,1),k}>R_{(k,i),K+1}}\right\}
+=
+∑
+k
+=
+1
+K
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+A
+(
+K
++
+1
+,
+1
+)
+,
+(
+k
+,
+i
+)
+=
+∑
+k
+=
+1
+K
++
+1
+∑
+i
+=
+1
+N
+k
+1
+(
+K
++
+1
+)
+​
+N
+k
+⋅
+A
+(
+K
++
+1
+,
+1
+)
+,
+(
+k
+,
+i
+)
+=
+A
+(
+K
++
+1
+,
+1
+)
+,
+∙
+.
+\displaystyle=\sum_{k=1}^{K}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot A_{(K+1,1),(k,i)}=\sum_{k=1}^{K+1}\sum_{i=1}^{N_{k}}\frac{1}{(K+1)N_{k}}\cdot A_{(K+1,1),(k,i)}=A_{(K+1,1),\bullet}.
+Hence, we have shown that
+Y
+K
++
+1
+,
+1
+∉
+C
+^
+​
+(
+X
+K
++
+1
+,
+1
+)
+Y_{K+1,1}\notin\widehat{C}(X_{K+1,1})
+implies
+(
+K
++
+1
+,
+1
+)
+∈
+S
+⁡
+(
+A
+)
+(K+1,1)\in S(A)
+, and so
+ℙ
+{
+Y
+K
++
+1
+,
+1
+∉
+C
+^
+(
+X
+K
++
+1
+,
+1
+)
+}
+≤
+ℙ
+{
+(
+K
++
+1
+,
+1
+)
+∈
+S
+(
+A
+)
+}
+≤
+2
+α
+.
+\mathbb{P}\left\{{Y_{K+1,1}\notin\widehat{C}(X_{K+1,1})}\right\}\leq\mathbb{P}\left\{{(K+1,1)\in S(A)}\right\}\leq 2\alpha.
+C.4
+Proof of Theorem
+6
+For
+1
+≤
+k
+≠
+k
+′
+≤
+K
++
+1
+1\leq k\neq k^{\prime}\leq K+1
+with
+N
+k
+,
+N
+k
+′
+≥
+2
+N_{k},N_{k^{\prime}}\geq 2
+,
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+1\leq i_{1}<i_{2}\leq N_{k}
+, and
+1
+≤
+i
+1
+′
+<
+i
+2
+′
+≤
+N
+k
+′
+1\leq i_{1}^{\prime}<i_{2}^{\prime}\leq N_{k^{\prime}}
+, define
+μ
+~
+−
+(
+k
+,
+k
+′
+)
+\tilde{\mu}_{-(k,k^{\prime})}
+as in the proof of Theorem
+5
+, and then define
+R
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+k
+′
+=
+{
+min
+⁡
+{
+|
+Y
+k
+,
+i
+1
+−
+μ
+~
+−
+(
+k
+,
+k
+′
+)
+​
+(
+X
+i
+)
+|
+,
+|
+Y
+k
+,
+i
+2
+−
+μ
+~
+−
+(
+k
+,
+k
+′
+)
+​
+(
+X
+i
+)
+|
+}
+,
+k
+≠
+k
+′
++
+∞
+,
+k
+=
+k
+′
+\displaystyle R_{(k,i_{1},i_{2}),k^{\prime}}=\begin{cases}\min\{|Y_{k,i_{1}}-\tilde{\mu}_{-(k,k^{\prime})}(X_{i})|,|Y_{k,i_{2}}-\tilde{\mu}_{-(k,k^{\prime})}(X_{i})|\},&k\neq k^{\prime}\\
++\infty,&k=k^{\prime}\end{cases}
+and
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+=
+𝟙
+{
+R
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+k
+′
+>
+R
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+,
+k
+}
+,
+A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}={\mathbbm{1}}\left\{{R_{(k,i_{1},i_{2}),k^{\prime}}>R_{(k^{\prime},i_{1}^{\prime},i_{2}^{\prime}),k}}\right\},
+and note that for any
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+(k,i_{1},i_{2}),(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})
+, we must have
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
++
+A
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+,
+(
+k
+,
+i
+1
+,
+i
+2
+)
+≤
+1
+A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}+A_{(k^{\prime},i_{1}^{\prime},i_{2}^{\prime}),(k,i_{1},i_{2})}\leq 1
+.
+Next, let
+S
+(
+A
+)
+=
+{
+(
+k
+,
+i
+1
+,
+i
+2
+)
+:
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+∙
+≥
+1
+−
+2
+α
+2
+,
+1
+≤
+k
+≤
+K
++
+1
+,
+N
+k
+≥
+2
+,
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+}
+S(A)=\{(k,i_{1},i_{2}):A_{(k,i_{1},i_{2}),\bullet}\geq 1-2\alpha^{2},1\leq k\leq K+1,N_{k}\geq 2,1\leq i_{1}<i_{2}\leq N_{k}\}
+where
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+∙
+=
+∑
+1
+≤
+k
+′
+≤
+K
++
+1
+N
+k
+′
+≥
+2
+∑
+1
+≤
+i
+1
+′
+<
+i
+2
+′
+≤
+N
+k
+′
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+⋅
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+A_{(k,i_{1},i_{2}),\bullet}=\sum_{\begin{subarray}{c}1\leq k^{\prime}\leq K+1\\
+N_{k^{\prime}}\geq 2\end{subarray}}\sum_{1\leq i_{1}^{\prime}<i_{2}^{\prime}\leq N_{k^{\prime}}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}\cdot A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}
+and
+K
+~
+≥
+2
+=
+∑
+k
+=
+1
+K
++
+1
+𝟙
+{
+N
+k
+≥
+2
+}
+,
+\tilde{K}^{\geq 2}=\sum_{k=1}^{K+1}{\mathbbm{1}}\left\{{N_{k}\geq 2}\right\},
+which we assume to be nonzero.
+Let
+s
+⁡
+(
+A
+)
+=
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+.
+s(A)=\sum_{(k,i_{1},i_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}.
+We then calculate
+(
+1
+−
+2
+​
+α
+2
+)
+​
+s
+​
+(
+A
+)
+=
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+1
+−
+2
+​
+α
+2
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+\displaystyle(1-2\alpha^{2})s(A)=\sum_{(k,i_{1},i_{2})\in S(A)}\frac{1-2\alpha^{2}}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}
+≤
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+​
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+∙
+\displaystyle\leq\sum_{(k,i_{1},i_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}A_{(k,i_{1},i_{2}),\bullet}
+=
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+​
+∑
+1
+≤
+k
+′
+≤
+K
++
+1
+N
+k
+′
+≥
+2
+∑
+1
+≤
+i
+1
+′
+<
+i
+2
+′
+≤
+N
+k
+′
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+⋅
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+\displaystyle=\sum_{(k,i_{1},i_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\sum_{\begin{subarray}{c}1\leq k^{\prime}\leq K+1\\
+N_{k^{\prime}}\geq 2\end{subarray}}\sum_{1\leq i_{1}^{\prime}<i_{2}^{\prime}\leq N_{k^{\prime}}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}\cdot A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}
+=
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+​
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+​
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+\displaystyle=\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}
++
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∉
+S
+⁡
+(
+A
+)
+N
+k
+′
+≥
+2
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+\displaystyle\hskip 72.26999pt+\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{\begin{subarray}{c}(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\not\in S(A)\\
+N_{k^{\prime}}\geq 2\end{subarray}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}
+=
+1
+2
+​
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+​
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+​
+(
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
++
+A
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+,
+(
+k
+,
+i
+1
+,
+i
+2
+)
+)
+\displaystyle=\frac{1}{2}\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}\left(A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}+A_{(k^{\prime},i_{1}^{\prime},i_{2}^{\prime}),(k,i_{1},i_{2})}\right)
++
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∉
+S
+⁡
+(
+A
+)
+N
+k
+′
+≥
+2
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+A
+(
+k
+,
+i
+1
+,
+i
+2
+)
+,
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+\displaystyle\hskip 72.26999pt+\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{\begin{subarray}{c}(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\not\in S(A)\\
+N_{k^{\prime}}\geq 2\end{subarray}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}A_{(k,i_{1},i_{2}),(k^{\prime},i_{1}^{\prime},i_{2}^{\prime})}
+≤
+1
+2
+​
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+​
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
++
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∉
+S
+⁡
+(
+A
+)
+N
+k
+′
+≥
+2
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+​
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+\displaystyle\leq\frac{1}{2}\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}+\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{\begin{subarray}{c}(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\not\in S(A)\\
+N_{k^{\prime}}\geq 2\end{subarray}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}
+=
+−
+1
+2
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+(
+k
+′
+,
+i
+1
+′
+,
+i
+2
+′
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
++
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+∑
+1
+≤
+k
+′
+≤
+K
++
+1
+N
+k
+′
+≥
+2
+∑
+1
+≤
+i
+1
+′
+<
+i
+2
+′
+≤
+N
+k
+′
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+′
+2
+)
+\displaystyle=-\frac{1}{2}\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{(k^{\prime},i^{\prime}_{1},i^{\prime}_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}+\sum_{(k,i_{1},i_{2})\in S(A)}\sum_{\begin{subarray}{c}1\leq k^{\prime}\leq K+1\\
+N_{k^{\prime}}\geq 2\end{subarray}}\sum_{1\leq i_{1}^{\prime}<i_{2}^{\prime}\leq N_{k^{\prime}}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k^{\prime}}\choose 2}}
+=
+−
+1
+2
+​
+(
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+)
+2
++
+∑
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+⁡
+(
+A
+)
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+\displaystyle=-\frac{1}{2}\left(\sum_{(k,i_{1},i_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}\right)^{2}+\sum_{(k,i_{1},i_{2})\in S(A)}\frac{1}{{\tilde{K}^{\geq 2}}{N_{k}\choose 2}}
+=
+−
+1
+2
+​
+s
+​
+(
+A
+)
+2
++
+s
+⁡
+(
+A
+)
+,
+\displaystyle=-\frac{1}{2}s(A)^{2}+s(A),
+which proves
+s
+⁡
+(
+A
+)
+≤
+4
+​
+α
+2
+s(A)\leq 4\alpha^{2}
+.
+Next, by an analogous argument as in the proof of Theorem
+5
+,
+the hierarchical exchangeability of the data implies that
+ℙ
+⁡
+{
+(
+K
++
+1
+,
+1
+,
+2
+)
+∈
+S
+⁡
+(
+A
+)
+|
+N
+K
++
+1
+≥
+2
+}
+=
+𝔼
+[
+1
+K
+~
+≥
+2
+∑
+1
+≤
+k
+≤
+K
++
+1
+N
+k
+≥
+2
+1
+(
+N
+k
+2
+)
+⋅
+∑
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+𝟙
+{
+(
+k
+,
+i
+1
+,
+i
+2
+)
+∈
+S
+(
+A
+)
+}
+|
+N
+K
++
+1
+≥
+2
+]
+≤
+4
+α
+2
+,
+\mathbb{P}\left\{{(K+1,1,2)\in S(A)}\ \middle|\ {N_{K+1}\geq 2}\right\}\\
+=\mathbb{E}\left[{\frac{1}{\tilde{K}^{\geq 2}}\sum_{\begin{subarray}{c}1\leq k\leq K+1\\
+N_{k}\geq 2\end{subarray}}\frac{1}{{N_{k}\choose 2}}\cdot\sum_{1\leq i_{1}<i_{2}\leq N_{k}}{\mathbbm{1}}\left\{{(k,i_{1},i_{2})\in S(A)}\right\}}\ \middle|\ {N_{K+1}\geq 2}\right]\leq 4\alpha^{2},
+where the last step holds by our deterministic bound on
+s
+⁡
+(
+A
+)
+s(A)
+calculated above.
+Our next step is to verify that
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+​
+(
+X
+K
++
+1
+)
+⇒
+(
+K
++
+1
+,
+1
+,
+2
+)
+∈
+S
+⁡
+(
+A
+)
+.
+Y_{K+1,1},Y_{K+1,2}\notin\widehat{C}(X_{K+1})\quad\Rightarrow\quad(K+1,1,2)\in S(A).
+(27)
+To see this, by definition of
+C
+^
+​
+(
+X
+K
++
+1
+)
+\widehat{C}(X_{K+1})
+we see that, for each
+i
+=
+1
+,
+2
+i=1,2
+,
+Y
+K
++
+1
+,
+i
+∉
+C
+^
+​
+(
+X
+K
++
+1
+)
+Y_{K+1,i}\not\in\widehat{C}(X_{K+1})
+implies that
+1
+−
+α
+2
+≤
+∑
+1
+≤
+k
+≤
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+⋅
+𝟙
+{
+|
+Y
+K
++
+1
+,
+i
+−
+μ
+^
+−
+k
+(
+X
+K
++
+1
+)
+|
+>
+min
+{
+R
+k
+,
+i
+1
+,
+R
+k
+,
+i
+2
+}
+}
+.
+1-\alpha^{2}\leq\sum_{\begin{subarray}{c}1\leq k\leq K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i_{1}<i_{2}\leq N_{k}}\frac{1}{\tilde{K}^{\geq 2}{N_{k}\choose 2}}\cdot{\mathbbm{1}}\left\{{|Y_{K+1,i}-\widehat{\mu}_{-k}(X_{K+1})|>\min\{R_{k,i_{1}},R_{k,i_{2}}\}}\right\}.
+Summing over
+i
+=
+1
+,
+2
+i=1,2
+, then, we have
+2
+​
+(
+1
+−
+α
+2
+)
+\displaystyle 2(1-\alpha^{2})
+≤
+∑
+1
+≤
+k
+≤
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+⋅
+∑
+i
+=
+1
+,
+2
+𝟙
+{
+|
+Y
+K
++
+1
+,
+i
+−
+μ
+^
+−
+k
+(
+X
+K
++
+1
+)
+|
+>
+min
+{
+R
+k
+,
+i
+1
+,
+R
+k
+,
+i
+2
+}
+}
+\displaystyle\leq\sum_{\begin{subarray}{c}1\leq k\leq K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i_{1}<i_{2}\leq N_{k}}\frac{1}{\tilde{K}^{\geq 2}{N_{k}\choose 2}}\cdot\sum_{i=1,2}{\mathbbm{1}}\left\{{|Y_{K+1,i}-\widehat{\mu}_{-k}(X_{K+1})|>\min\{R_{k,i_{1}},R_{k,i_{2}}\}}\right\}
+≤
+∑
+1
+≤
+k
+≤
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+⋅
+(
+1
++
+𝟙
+{
+min
+i
+=
+1
+,
+2
+|
+Y
+K
++
+1
+,
+i
+−
+μ
+^
+−
+k
+(
+X
+K
++
+1
+)
+|
+>
+min
+{
+R
+k
+,
+i
+1
+,
+R
+k
+,
+i
+2
+}
+}
+)
+\displaystyle\leq\sum_{\begin{subarray}{c}1\leq k\leq K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i_{1}<i_{2}\leq N_{k}}\frac{1}{\tilde{K}^{\geq 2}{N_{k}\choose 2}}\cdot\left(1+{\mathbbm{1}}\left\{{\min_{i=1,2}|Y_{K+1,i}-\widehat{\mu}_{-k}(X_{K+1})|>\min\{R_{k,i_{1}},R_{k,i_{2}}\}}\right\}\right)
+≤
+1
++
+∑
+1
+≤
+k
+≤
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+⋅
+𝟙
+{
+min
+i
+=
+1
+,
+2
+|
+Y
+K
++
+1
+,
+i
+−
+μ
+^
+−
+k
+(
+X
+K
++
+1
+)
+|
+>
+min
+{
+R
+k
+,
+i
+1
+,
+R
+k
+,
+i
+2
+}
+}
+\displaystyle\leq 1+\sum_{\begin{subarray}{c}1\leq k\leq K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i_{1}<i_{2}\leq N_{k}}\frac{1}{\tilde{K}^{\geq 2}{N_{k}\choose 2}}\cdot{\mathbbm{1}}\left\{{\min_{i=1,2}|Y_{K+1,i}-\widehat{\mu}_{-k}(X_{K+1})|>\min\{R_{k,i_{1}},R_{k,i_{2}}\}}\right\}
+=
+1
++
+∑
+1
+≤
+k
+≤
+K
+N
+k
+≥
+2
+∑
+1
+≤
+i
+1
+<
+i
+2
+≤
+N
+k
+1
+K
+~
+≥
+2
+​
+(
+N
+k
+2
+)
+⋅
+A
+(
+K
++
+1
+,
+1
+,
+2
+)
+,
+(
+k
+,
+i
+1
+,
+i
+2
+)
+\displaystyle=1+\sum_{\begin{subarray}{c}1\leq k\leq K\\
+N_{k}\geq 2\end{subarray}}\sum_{1\leq i_{1}<i_{2}\leq N_{k}}\frac{1}{\tilde{K}^{\geq 2}{N_{k}\choose 2}}\cdot A_{(K+1,1,2),(k,i_{1},i_{2})}
+=
+1
++
+A
+(
+K
++
+1
+,
+1
+,
+2
+)
+,
+∙
+.
+\displaystyle=1+A_{(K+1,1,2),\bullet}.
+This verifies (
+27
+), and so we have
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+N
+K
++
+1
+≥
+2
+}
+≤
+ℙ
+{
+(
+K
++
+1
+,
+1
+,
+2
+)
+∈
+S
+(
+A
+)
+|
+N
+K
++
+1
+≥
+2
+}
+≤
+4
+α
+2
+.
+\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\notin\widehat{C}(X_{K+1})}\ \middle|\ {N_{K+1}\geq 2}\right\}\leq\mathbb{P}\left\{{(K+1,1,2)\in S(A)}\ \middle|\ {N_{K+1}\geq 2}\right\}\leq 4\alpha^{2}.
+To complete the proof, we calculate
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+N
+K
++
+1
+≥
+2
+}
+\displaystyle\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\notin\widehat{C}(X_{K+1})}\ \middle|\ {N_{K+1}\geq 2}\right\}
+=
+\displaystyle=
+𝔼
+[
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+]
+,
+X
+K
++
+1
+,
+N
+K
++
+1
+≥
+2
+}
+|
+N
+K
++
+1
+≥
+2
+]
+\displaystyle\mathbb{E}\left[{\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\notin\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K]},X_{K+1},N_{K+1}\geq 2}\right\}}\ \middle|\ {N_{K+1}\geq 2}\right]
+=
+\displaystyle=
+𝔼
+[
+ℙ
+{
+Y
+K
++
+1
+,
+1
+,
+Y
+K
++
+1
+,
+2
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+]
+,
+X
+K
++
+1
+}
+|
+N
+K
++
+1
+≥
+2
+]
+\displaystyle\mathbb{E}\left[{\mathbb{P}\left\{{Y_{K+1,1},Y_{K+1,2}\notin\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K]},X_{K+1}}\right\}}\ \middle|\ {N_{K+1}\geq 2}\right]
+=
+\displaystyle=
+𝔼
+[
+ℙ
+{
+Y
+K
++
+1
+,
+1
+∉
+C
+^
+(
+X
+K
++
+1
+)
+|
+Z
+~
+[
+K
+]
+,
+X
+K
++
+1
+}
+2
+|
+N
+K
++
+1
+≥
+2
+]
+\displaystyle\mathbb{E}\left[{\mathbb{P}\left\{{Y_{K+1,1}\notin\widehat{C}(X_{K+1})}\ \middle|\ {\tilde{Z}_{[K]},X_{K+1}}\right\}^{2}}\ \middle|\ {N_{K+1}\geq 2}\right]
+=
+\displaystyle=
+𝔼
+⁡
+[
+α
+𝒟
+​
+(
+X
+K
++
+1
+)
+2
+|
+N
+K
++
+1
+≥
+2
+]
+\displaystyle\mathbb{E}\left[{\alpha_{\mathcal{D}}(X_{K+1})^{2}}\ \middle|\ {N_{K+1}\geq 2}\right]
+=
+\displaystyle=
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+K
++
+1
+)
+2
+]
+,
+\displaystyle\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{K+1})^{2}}\right],
+where the last two steps hold by definition of
+α
+𝒟
+​
+(
+X
+K
++
+1
+)
+\alpha_{\mathcal{D}}(X_{K+1})
+and of
+P
+X
+≥
+2
+P_{X}^{\geq 2}
+. Therefore,
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+test
+)
+2
+]
+=
+𝔼
+P
+X
+≥
+2
+​
+[
+α
+𝒟
+​
+(
+X
+K
++
+1
+)
+2
+]
+≤
+4
+​
+α
+2
+.
+\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{\textnormal{test}})^{2}}\right]=\mathbb{E}_{{P_{X}^{\geq 2}}}\left[{\alpha_{\mathcal{D}}(X_{K+1})^{2}}\right]\leq 4\alpha^{2}.
+Experimental support, please
+view the build logs
+for errors. Generated by
+L
+A
+T
+E
+xml
+.
+Instructions for reporting errors
+We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+      support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+      methods listed below:
+Click the "Report Issue"
+(
+)
+button, located in the page header.
+Tip:
+You can select the relevant text first, to include it in your report.
+Our team has already identified
+the following issues
+. We appreciate your time reviewing and reporting rendering errors we
+      may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+      should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+      all.
+Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a
+list of packages that need conversion
+, and welcome
+developer contributions
+.
+We gratefully acknowledge support from
+        our
+major funders
+,
+member institutions
+,
+,
+        and all contributors.
+About
+·
+Help
+·
+Contact
+·
+Subscribe
+·
+Copyright
+·
+Privacy
+·
+Accessibility
+·
+Operational Status
+(opens in new tab)
+Major funding support from

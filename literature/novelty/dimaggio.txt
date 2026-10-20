@@ -1,0 +1,1278 @@
+A robust methodology for dataset preparation and algorithm performance assessment in machine learning prediction of the fatigue life of additive manufactured components | Engineering with Computers | Springer Nature Link
+html{line-height:1.15;text-size-adjust:100%}body{margin:0;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:1.8}details,main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent;color:#025e8d;text-decoration:underline .0625rem;text-decoration-skip-ink:auto;text-underline-offset:.25rem}sub{font-size:75%;line-height:0;position:relative;vertical-align:baseline;bottom:-.25em}img{border:0;max-width:100%;height:auto;vertical-align:middle}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0;overflow:visible}button{text-transform:none}[type=submit],button{appearance:button}[type=search]{appearance:textfield;outline-offset:-2px}summary{display:list-item}[hidden]{display:none}button{cursor:pointer}svg{width:1rem;height:1rem}.eds-c-header__brand img{max-width:100%}@media only screen and (min-width:768px){.eds-c-header__brand img{max-width:340px}}
+@media only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark) {  body{line-height:1.8;min-height:100%;color:#222;background:#fff}button{cursor:pointer}img{border:0;max-width:100%;height:auto;vertical-align:middle}html{height:100%;overflow-y:scroll;font-size:100%;box-sizing:border-box}h1{font-size:clamp(1.75rem,4vw,2.25rem)}h2{font-size:clamp(1.5rem,4vw,1.75rem)}body,h1,h2,h3{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif}h1,h2,h3{font-weight:700;line-height:1.2}h3{font-size:clamp(1.25rem,4vw,1.5rem)}body{font-size:1.125rem}*{box-sizing:inherit}p{margin-top:0;margin-bottom:2rem;overflow-wrap:break-word;word-break:break-word}p:last-of-type{margin-bottom:0}a{color:#025e8d;text-decoration:underline .0625rem;text-decoration-skip-ink:auto;padding:initial;text-underline-offset:.25rem}.eds-c-button{cursor:pointer;display:inline-block;margin:0;position:relative;text-decoration:none;text-align:center;width:100%;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.5;padding:.5rem 1.5rem;transition:.2s;border-radius:32px;font-weight:700}.eds-c-button span,.eds-c-button svg{vertical-align:middle}.eds-c-button svg{width:1.5rem;height:1.5rem}.eds-c-button svg:first-child{margin-right:8px}@media only screen and (min-width:480px){.eds-c-button{width:auto}}.eds-c-button--primary{color:#fff;background-color:#025e8d;background-image:none;border:2px solid transparent;box-shadow:none;text-decoration:none}.eds-c-button--primary svg{fill:currentcolor}.eds-c-header{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;background-color:#fff;padding:8px 0 0;border-bottom:2px solid #01324b;font-size:1rem;line-height:1.5}.eds-c-header__container{max-width:1280px;margin:0 auto 8px;padding:0 8px;justify-content:space-between;position:relative;display:flex;align-items:center;flex-wrap:nowrap;gap:8px 16px}.eds-c-header__nav{border-top:2px solid #c5e0f4;padding-top:4px;position:relative}.eds-c-header__nav-container{max-width:1280px;padding:0 8px;margin:0 auto 4px;display:flex;align-items:center;flex-wrap:wrap;position:relative}.eds-c-header__nav-container>:not(:last-child){margin-right:32px}.eds-c-header__link-container{display:flex;align-items:center;flex:1 0 auto;gap:8px 16px;justify-content:space-between}.eds-c-header__list{list-style:none;margin:0;padding:0}.eds-c-header__list-item{margin:0 auto;max-width:1280px;font-weight:700;padding:8px}.eds-c-header__list-item:not(:last-child){border-bottom:2px solid #c5e0f4}.eds-c-header__item{color:inherit}@media only screen and (min-width:768px){.eds-c-header__item--menu{display:none;visibility:hidden}.eds-c-header__item--menu:first-child+*{margin-block-start:0}}.eds-c-header__item--inline-links{display:none;visibility:hidden}@media only screen and (min-width:768px){.eds-c-header__item--inline-links{display:flex;gap:16px;visibility:visible}}.eds-c-header__item--divider:before{content:"";position:absolute;border-left:2px solid #c5e0f4;height:calc(100% - 16px);top:8px;margin-left:-15px}.eds-c-header__brand{padding:16px 8px}.eds-c-header__brand a{display:block;line-height:1;text-decoration:none}.eds-c-header__brand img{height:1.5rem;width:auto}.eds-c-header__link{display:inline-block;padding:16px 8px;color:inherit;font-weight:700;text-decoration-color:transparent;position:relative;word-break:normal;white-space:nowrap}.eds-c-header__link:visited{color:inherit}.eds-c-header__link:hover{color:inherit;text-decoration-color:inherit}.eds-c-header__link:not(.eds-c-header__expander .eds-c-header__link):hover{text-decoration-color:transparent}.eds-c-header__link:not(.eds-c-header__expander .eds-c-header__link):hover:after{content:"";background-color:#025e8d;width:100%;height:6px;border-radius:4px;position:absolute;bottom:-4px;left:0}.eds-c-header__link--static{flex:0 0 auto}.eds-c-header__link.is-open{color:#025e8d}.eds-c-header__link.is-open:after{content:"";background-color:#025e8d;width:100%;height:6px;border-radius:4px;position:absolute;bottom:-4px;left:0}.eds-c-header__icon{fill:currentcolor;transform:translate(0);display:inline-block;width:1em;height:1em;vertical-align:bottom;font-size:1.5rem}.eds-c-header__icon+*{margin-left:8px}.eds-c-header__expander{background-color:#f0f7fc}.eds-c-header__search{display:block;padding:24px 0}@media only screen and (min-width:768px){.eds-c-header__search{max-width:70%}}.eds-c-header__search-container{position:relative}.eds-c-header__search-label{display:inline-block;color:inherit;font-weight:700;margin-bottom:8px}.eds-c-header__search-input{border:1px solid #000;width:100%;padding:8px 48px 8px 8px;background-color:#fff}.eds-c-header__search-button{background-color:transparent;border:0;color:inherit;position:absolute;height:100%;padding:0 8px;right:0}.has-tethered.eds-c-header__expander{margin-top:-2px;width:100%;top:100%;z-index:10;left:0;border-bottom:2px solid #01324b}@media only screen and (min-width:768px){.has-tethered.eds-c-header__expander--menu{display:none;visibility:hidden}}.has-tethered .eds-c-header__heading{display:none;visibility:hidden}.has-tethered .eds-c-header__heading:first-child+*{margin-block-start:0}.has-tethered .eds-c-header__search{margin:auto}.eds-c-header__heading{margin:0 auto;max-width:1280px;padding:16px 16px 0}.eds-c-footer__button-text.hover,.eds-c-footer__button-text.visited,.eds-c-footer__button-text:hover,.eds-c-footer__button-text:visited,.eds-c-status-message__message a{color:inherit}.eds-c-pagination,.js .eds-c-modal[open]{display:flex;justify-content:center;align-items:center}.eds-c-pagination{list-style:none;margin:0;flex-wrap:wrap;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:.875rem;padding:32px 0;line-height:1.4;gap:16px 0}@media only screen and (min-width:480px){.eds-c-pagination{padding:32px 16px}}.eds-c-pagination__item{margin-right:8px}.eds-c-pagination__item--prev{margin-right:16px}.eds-c-pagination__item--next .eds-c-pagination__link,.eds-c-pagination__item--prev .eds-c-pagination__link{padding:16px 8px}.eds-c-pagination__item--next{margin-left:8px}.eds-c-pagination__item:last-child{margin-right:0}.eds-c-pagination__link{align-items:center;cursor:pointer;display:inline-block;font-size:1rem;margin:0;position:relative;padding:16px 24px;text-align:center;transition:.2s;color:#222}.eds-c-pagination__link:visited{color:#222}.eds-c-pagination__link--disabled{color:#555;border-color:#555;cursor:default}.eds-c-pagination__link--active{color:#fff;background-color:#01324b;background-image:none;border-radius:8px}.eds-c-pagination__link--active:focus-visible,.eds-c-pagination__link--active:hover,.eds-c-pagination__link--active:visited{color:#fff}.eds-c-pagination__link-container{display:flex;align-items:center}.eds-c-pagination__icon{fill:#222;width:1.5rem;height:1.5rem}.eds-c-pagination__icon--disabled{fill:#555}.eds-c-pagination__visually-hidden{border:0;clip:rect(0,0,0,0);clip-path:inset(50%);height:1px;overflow:hidden;padding:0;white-space:nowrap;width:1px;position:absolute!important}.eds-c-status-message{display:flex;gap:.5rem;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem;position:relative;box-sizing:border-box;border-radius:8px;background-color:#fff;border:1px solid #999;line-height:1.4;padding:16px 16px 12px}.eds-c-status-message :last-child{margin-bottom:0}.eds-c-status-message__text{padding-right:12px;margin-top:2px}.eds-c-status-message__text h5{margin-top:0}.eds-c-status-message__icon{fill:currentcolor;transform:translate(0);display:inline-block;vertical-align:text-top;width:24px;height:24px;flex:0 0 auto;margin-right:8px}.eds-c-status-message__icon--top{align-self:flex-start}.eds-c-status-message__dismiss-button{position:absolute;border:0;background:0 0;right:8px;cursor:pointer}.eds-c-status-message__dismiss-icon{fill:currentcolor;transform:translate(0);display:inline-block;vertical-align:text-top;width:24px;height:24px;color:#555}.eds-c-status-message__title{font-weight:700;margin-bottom:8px}.eds-c-status-message--info .eds-c-status-message__icon{color:#17758c}.eds-c-status-message--info{border-bottom:4px solid #17758c}.eds-c-status-message--error .eds-c-status-message__icon{color:#be1818}.eds-c-status-message--error{border-bottom:4px solid #be1818}.eds-c-status-message--success .eds-c-status-message__icon{color:#007a4b}.eds-c-status-message--success{border-bottom:4px solid #007a4b}.eds-c-status-message--warning .eds-c-status-message__icon{color:#daa520}.eds-c-status-message--warning{border-bottom:4px solid #daa520}.c-breadcrumbs{list-style:none;margin:0;padding:0;font-size:min(max(.875rem,2vw),1rem);font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;color:#333}.c-breadcrumbs>li{display:inline}svg.c-breadcrumbs__chevron{margin:0 .25rem;fill:#333;width:10px;height:10px}.c-breadcrumbs--contrast,.c-breadcrumbs--contrast .c-breadcrumbs__link,.c-breadcrumbs--contrast .c-breadcrumbs__link.hover,.c-breadcrumbs--contrast .c-breadcrumbs__link.visited,.c-breadcrumbs--contrast .c-breadcrumbs__link:hover,.c-breadcrumbs--contrast .c-breadcrumbs__link:visited{color:#fff}.c-breadcrumbs--contrast svg.c-breadcrumbs__chevron{fill:#fff}@media only screen and (max-width:479px){.c-breadcrumbs .c-breadcrumbs__item{display:none}.c-breadcrumbs .c-breadcrumbs__item:last-child,.c-breadcrumbs .c-breadcrumbs__item:nth-last-child(2){display:inline}}.eds-c-header__flex-group{display:flex}.eds-c-header__item--show-on-desktop{display:none;visibility:hidden}@media only screen and (min-width:900px){.eds-c-header__item--show-on-desktop{display:block;visibility:visible}}.c-header__link{display:inline-block;padding:16px 8px;color:inherit;font-weight:700;text-decoration-color:transparent;position:relative;word-break:normal;white-space:nowrap}.eds-l-with-sidebar{display:flex;flex-wrap:wrap}.eds-l-with-sidebar>*{margin:0}.eds-l-with-sidebar__sidebar{flex-grow:1;min-width:var(--eds-l-with-sidebar--min-width,400px);flex-basis:var(--eds-l-with-sidebar--basis,400px)}.eds-l-with-sidebar>:not(.eds-l-with-sidebar__sidebar){flex-basis:0px;flex-grow:999;min-width:var(--eds-l-with-sidebar--min,50%)}.eds-l-with-sidebar>:first-child{padding-right:4rem}@supports (gap:1em){.eds-l-with-sidebar>:first-child{padding-right:0}.eds-l-with-sidebar{gap:var(--eds-l-with-sidebar--gap,4rem)}}.c-meta__link:visited,.c-status-message a{color:#000}.c-skip-link,.js .c-popup{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;position:absolute}.c-skip-link{background:#01324b;color:#fff;font-size:1rem;text-align:center;padding:8px;width:100%;inset:0 0 auto;z-index:9999;transform:translateY(-100%)}@media (prefers-reduced-motion:reduce){.c-skip-link{transition:top .3s ease-in-out}}@media print{.c-skip-link{display:none}}.c-skip-link:active,.c-skip-link:hover,.c-skip-link:link,.c-skip-link:visited{color:#fff}.c-skip-link:focus{transform:translateY(0)}.c-status-message{display:block;font-size:clamp(.875rem,4vw,1rem);font-weight:400}.c-status-message--flex{display:flex}.c-status-message--bold{font-weight:700}.c-status-message--boxed{box-shadow:0 0 5px 0 rgba(51,51,51,.1);overflow:hidden}.c-status-message--banner{background-color:#fff;line-height:1.4;padding:16px 0;justify-content:center}.c-status-message--banner .c-status-message__container{justify-content:center;padding:0 16px}.c-status-message--sticky{position:sticky;top:0;z-index:999}.c-status-message__container{display:flex;justify-content:flex-start;align-items:center}.c-status-message__container--centered{width:100%}.c-status-message__icon{flex-shrink:0;align-self:flex-start}.c-status-message__message :first-child,.c-status-message__message :last-child{margin-top:0}.c-status-message--info .c-status-message__icon{fill:currentcolor}.c-status-message--banner.c-status-message--info{border-bottom:4px solid #17758c}.c-status-message--boxed.c-status-message--info .c-status-message__bottom-border{content:"";position:absolute;bottom:0;left:0;background:#17758c;height:4px;width:100%}.c-status-message--error .c-status-message__icon{fill:currentcolor}.c-status-message--banner.c-status-message--error{border-bottom:4px solid #be1818}.c-status-message--boxed.c-status-message--error .c-status-message__bottom-border{content:"";position:absolute;bottom:0;left:0;background:#be1818;height:4px;width:100%}.c-status-message--success .c-status-message__icon{fill:currentcolor}.c-status-message--banner.c-status-message--success{border-bottom:4px solid #007a4b}.c-status-message--boxed.c-status-message--success .c-status-message__bottom-border{content:"";position:absolute;bottom:0;left:0;background:#007a4b;height:4px;width:100%}.c-status-message--warning .c-status-message__icon{fill:currentcolor}.c-status-message--banner.c-status-message--warning{border-bottom:4px solid #daa520}.c-status-message--boxed.c-status-message--warning .c-status-message__bottom-border{content:"";position:absolute;bottom:0;left:0;background:#daa520;height:4px;width:100%}:root{--header-height:58px}.c-ad{text-align:center}@media only screen and (min-width:480px){.c-ad{padding:8px}}.c-ad--728x90{display:none}.c-ad--728x90 .c-ad__inner{min-height:calc(1.5em + 94px)}@media only screen and (min-width:876px){.js .c-ad--728x90{display:none}}.c-ad--300x250{display:none;padding:0}.c-ad--300x250 .c-ad__inner{min-height:calc(1.5em + 254px)}@media only screen and (min-width:480px){.js .c-ad--300x250{display:block}}.c-ad__label{line-height:1.5;font-size:.875rem;font-weight:400;margin-bottom:4px;color:#333}.c-ad__label,.c-article-header{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif}.c-article-identifiers{list-style:none;font-size:1rem;line-height:1.3;display:flex;flex-wrap:wrap;color:#6f6f6f;padding:0}.c-article-identifiers__item{margin-right:8px;padding-right:8px;list-style:none}.c-article-identifiers__item:last-child{margin-right:0;padding-right:0}@media only screen and (min-width:876px){.c-article-title{font-size:1.875rem;line-height:1.2}}.c-article-author-list{width:100%;margin:0 8px 0 0;padding:0;display:inline;list-style:none;font-size:1rem}.c-article-author-list__item{display:inline;padding-right:0}.c-article-author-list__show-more{display:none;margin-right:4px}.c-article-author-list__button,.js .c-article-author-list__item--hide,.js .c-article-author-list__show-more{display:none}.js .c-article-author-list--long .c-article-author-list__show-more,.js .c-article-author-list--long+.c-article-author-list__button{display:inline}@media only screen and (max-width:767px){.js .c-article-author-list__item--hide-small-screen{display:none}.js .c-article-author-list--short .c-article-author-list__show-more,.js .c-article-author-list--short+.c-article-author-list__button{display:inline}}#uptodate-client,.js .c-article-author-list--expanded .c-article-author-list__show-more{display:none!important}.js .c-article-author-list--expanded .c-article-author-list__item--hide-small-screen{display:inline!important}.c-article-author-list__button,.c-button-author-list{background:#ebf1f5;border:4px solid #ebf1f5;border-radius:20px;color:#666;font-size:.875rem;line-height:1.4;padding:2px 11px 2px 8px;text-decoration:none}.c-article-author-list__button svg,.c-button-author-list svg{margin:1px 4px 0 0}.c-article-author-list__button:hover,.c-button-author-list:hover{background:#025e8d;border-color:transparent;color:#fff}.c-article-body .c-article-access-provider{padding:8px 16px}.c-article-body .c-article-access-provider,.c-notes{border-width:1px medium;border-style:solid none;border-color:#d5d5d5 currentcolor;border-image:initial;margin:24px 0}.c-article-body .c-article-access-provider__text{color:#555}.c-article-body .c-article-access-provider__text,.c-notes__text{padding-top:2px;padding-bottom:2px;margin-bottom:0;font-size:1rem;text-align:center}.c-article-body .c-article-author-affiliation__address{color:inherit;font-weight:700;margin:0}.c-article-body .c-article-author-affiliation__authors-list{list-style:none;padding:0;margin:0}.c-article-body .c-article-author-affiliation__authors-item{display:inline;margin-left:0}.c-article-authors-search{margin-top:0;margin-bottom:24px}.c-article-authors-search__item,.c-article-authors-search__title{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif}.c-article-authors-search__title{color:#626262;font-weight:700;margin:0;padding:0;font-size:1.05rem}.c-article-authors-search__item{font-size:1rem}.c-article-authors-search__text{margin:0}.c-article-body .c-article-subject-list--no-mb{margin-bottom:0}.c-code-block{padding:20px;margin:0 0 24px;border:1px solid #fff;font-family:monospace}.c-code-block__heading{margin-bottom:16px;font-weight:400}.c-code-block__line{overflow-wrap:break-word;white-space:pre-wrap;display:block}.c-article-share-box__no-sharelink-info{font-size:.813rem;font-weight:700;padding-top:4px;margin-bottom:24px}.c-article-share-box__only-read-input{border:1px solid #d5d5d5;display:inline-block;box-sizing:content-box;height:24px;margin-bottom:8px;font-size:.875rem;font-weight:700;padding:8px 10px}.c-article-share-box__button--link-like{background-color:transparent;border:0;color:#025e8d;cursor:pointer;font-size:.875rem;margin-bottom:8px;margin-left:10px}.c-article-associated-content__container .c-article-associated-content__collection-label{font-size:.875rem;line-height:1.4}.c-article-associated-content__container .c-article-associated-content__collection-title{line-height:1.3}.c-reading-companion{clear:both;min-height:389px}.c-reading-companion .u-lazy-ad-wrapper{background-color:transparent!important;min-height:250px}.c-reading-companion .u-lazy-ad-wrapper .div-gpt-ad{height:100%}.c-reading-companion__scroll-pane{overflow:hidden auto;margin:0 -4px;min-height:200px;padding-left:4px;padding-right:4px}.c-reading-companion__tabs{font-size:1rem;list-style:none;display:flex;flex-flow:row;margin:0 0 8px;padding:0}.c-reading-companion__tabs>li{flex-grow:1}.c-reading-companion__tab{border-style:solid;border-color:#d5d5d5;border-image:initial;border-width:1px 1px 1px 0;padding:8px 8px 8px 15px;text-align:left;font-size:1rem;width:100%}.c-reading-companion__tabs li:first-child .c-reading-companion__tab{border-left-width:1px}.c-reading-companion__tab--active{background-color:#fcfcfc;border-bottom:1px solid #fcfcfc;font-weight:700}.c-reading-companion__sections-list{list-style:none;padding:0}.c-reading-companion__figures-list,.c-reading-companion__references-list{list-style:none;padding:0;min-height:389px}.c-reading-companion__references-list--numeric{list-style:decimal inside}.c-reading-companion__sections-list{margin:0 0 8px;min-height:50px}.c-reading-companion__section-item{font-size:1rem;padding:0}.c-reading-companion__section-item a{display:block;padding:8px 0 8px 16px;line-height:1.5;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;outline-offset:-4px}.c-reading-companion__figure-item{padding:16px 8px 16px 0;border-top:1px solid #d5d5d5;font-size:1rem}.c-reading-companion__figure-item:first-child{border-top:none;padding-top:8px}.c-reading-companion__reference-item{font-size:1rem}.c-reading-companion__reference-item:first-child{border-top:none}.c-reading-companion__reference-item a{word-break:break-word}.c-reading-companion__reference-citation{display:inline}.c-reading-companion__reference-links{list-style:none;text-align:right;margin:8px 0 0;padding:0;font-weight:700;font-size:.813rem}.c-reading-companion__reference-links>a{display:inline-block;margin-left:8px}.c-reading-companion__reference-links>a:first-child{display:inline-block}.c-reading-companion__figure-title{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:700;line-height:1.2;-webkit-font-smoothing:antialiased;font-size:1.25rem;display:block;margin:0 0 8px}.c-reading-companion__figure-links{margin:8px 0 0;display:flex;justify-content:space-between}.c-reading-companion__figure-links>a{display:flex;align-items:center}.c-reading-companion__figure-full-link svg{height:.8em;margin-left:2px}.c-reading-companion__panel{display:none;border-top:none;margin-top:0;padding-top:0}.c-reading-companion__panel--active{display:block}.c-article-section__figure .video,p.app-article-masthead__access--above-download{margin:0 0 16px}.c-cod{font-size:1rem;display:block;width:100%}.c-cod__form{background:#ebf0f3}.c-cod__prompt{margin:0 0 24px;font-size:1.125rem;line-height:1.3}.c-cod__label{display:block;margin:0 0 4px}.c-cod__row{display:flex;margin:0 0 16px}.c-cod__row:last-child{margin:0}.c-cod__input{padding:13px;margin:0;border:1px solid #d5d5d5;border-radius:2px;flex:1 1 auto}.c-cod__input--submit{margin-left:8px;flex-shrink:1;background-color:#025e8d;color:#fff;border:1px solid #025e8d;transition:background-color .2s ease-out,color .2s ease-out}.c-cod__input--submit-single{margin:0;flex-shrink:0;flex-basis:100%}.c-cod__input--submit:focus,.c-cod__input--submit:hover{color:#025e8d;background-color:#fff}.save-data .c-article-author-institutional-author__sub-division,.save-data .c-article-equation__number,.save-data .c-article-figure-description,.save-data .c-article-fullwidth-content,.save-data .c-article-main-column,.save-data .c-article-satellite-article-link,.save-data .c-article-satellite-subtitle,.save-data .c-article-table-container,.save-data .c-blockquote__body,.save-data .c-code-block__heading,.save-data .c-reading-companion__figure-title,.save-data .c-reading-companion__reference-citation,.save-data .c-site-messages--nature-briefing-email-variant .serif,.save-data .c-site-messages--nature-briefing-email-variant.serif,.save-data .serif,.save-data .u-serif,.save-data h1,.save-data h2,.save-data h3{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif}.c-pdf-download{display:flex}@media only screen and (min-width:768px){.c-pdf-download{max-height:none}}@media only screen and (min-width:1024px){.c-pdf-download{max-height:48px}}.c-pdf-download__link{display:flex;flex:1 1 0%;padding:13px 24px}.c-pdf-download__link:hover{text-decoration:none}.c-pdf-download__text{padding-right:4px}@media only screen and (max-width:767px){.c-pdf-download__text{text-transform:capitalize}}@media only screen and (min-width:768px){.c-pdf-download__text{padding-right:8px}}.c-pdf-container{display:flex;justify-content:flex-end}@media only screen and (max-width:767px){.c-pdf-container .c-pdf-download{display:flex;flex-basis:100%}}.c-pdf-container--flex-start{justify-content:flex-start}.c-pdf-container .c-pdf-download+.c-pdf-download{margin-left:16px}.c-article-extras .c-pdf-container{width:100%;flex-wrap:wrap}.c-article-extras .c-pdf-container .c-pdf-download{width:100%}.c-article-extras .c-pdf-container .c-pdf-download+.c-pdf-download{margin-left:0}@media only screen and (min-width:768px){.c-context-bar--sticky .c-pdf-download__link{flex:1 1 183px;align-items:center}}@media only screen and (max-width:320px){.c-context-bar--sticky .c-pdf-download__link{padding:16px}}.article-page--commercial .c-pdf-container{display:block}.c-article-body .c-article-recommendations-list,.c-book-body .c-article-recommendations-list{display:flex;flex-direction:row;gap:16px;max-width:100%;margin:0;padding:16px 0 0}.c-article-body .c-article-recommendations-list__item,.c-book-body .c-article-recommendations-list__item{flex:1 1 0%}@media only screen and (max-width:767px){.c-article-body .c-article-recommendations-list,.c-book-body .c-article-recommendations-list{flex-direction:column}}.c-article-body .c-article-recommendations-card__authors{display:none;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:.875rem;line-height:1.5;margin:0 0 8px}@media only screen and (max-width:767px){.c-article-body .c-article-recommendations-card__authors{display:block;margin:0}}.c-article-body .c-article-history{margin-top:24px}.app-chat{line-height:1.5;max-height:min(850px,80vh);position:relative;display:flex;flex-direction:column}@media only screen and (max-width:1024px){.app-chat{max-height:100%}}.app-chat__header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;width:100%;align-items:center;margin-bottom:-1px;padding-bottom:8px;z-index:2;background-color:#fff}.app-chat__heading{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:700;line-height:1.2;-webkit-font-smoothing:antialiased;font-size:1.25rem;margin:0}.app-chat__divider{width:100%;position:sticky;top:0;border-bottom:1px solid #c5e0f4;z-index:1}.app-chat__sub-heading{text-align:right;font-size:14px;font-weight:700;display:flex;gap:4px;align-items:center;min-width:fit-content}.app-chat__icon{transform:translate(0);display:inline-block;vertical-align:text-top;width:24px;height:24px;fill:#08c}.app-chat__description{font-size:14px;padding-bottom:8px;width:100%}.app-chat__consent{font-size:14px;color:#555;margin-bottom:16px}.app-chat__window{display:flex;overflow-y:auto;flex-direction:column;align-items:flex-start;flex:1 1 auto;min-height:280px}@media only screen and (max-width:1024px){.app-chat__window{min-height:0;flex:0 0 auto;overflow-y:unset}}.app-chat__message{white-space:pre-line;padding:6px 16px;word-break:break-word;overflow-wrap:anywhere}.app-chat__message--loading{align-self:flex-start;background:#f0f7fc;border-radius:12px 12px 12px 2px;white-space:normal}.app-chat__loading{display:flex;align-items:center;gap:8px;margin-bottom:8px;margin-top:8px}.app-chat__loading-icon{fill:currentcolor;transform:translate(0);display:inline-block;width:1em;height:1em;vertical-align:middle;color:#0070a8;line-height:1}.app-chat__loading-icon--static{display:none}.app-chat__loading-icon--animated{display:inline}@media (prefers-reduced-motion:reduce){.app-chat__loading-icon--static{display:inline}.app-chat__loading-icon--animated{display:none}}.app-feedback .app-feedback__message--success .eds-c-status-message__icon{color:#007a4b}.app-article-masthead{display:flex;flex-direction:column;gap:16px;padding:16px 0 24px}.app-article-masthead .c-pdf-download .c-pdf-download__link:focus:focus-visible,.app-article-masthead a:focus{outline:4px solid #fff}.app-article-masthead .c-pdf-download .c-pdf-download__link:focus{border:2px solid #fff}.app-article-masthead__info{display:flex;flex-direction:column;flex-grow:1}.app-article-masthead__brand{display:flex;flex-direction:column;gap:8px;flex-basis:fit-content;flex-shrink:0;border-top:1px solid hsla(0,0%,100%,.8);padding:16px 0 0;min-height:96px}.app-article-masthead__brand img{position:absolute;left:0;width:72px;height:auto;border:1px solid #fff;box-shadow:0 4px 15px 0 hsla(0,0%,50%,.25);border-radius:8px}.app-article-masthead__journal-link{max-width:400px;position:relative;display:block;padding:0 0 0 88px;margin:0 0 8px;font-size:min(max(1.125rem,2vw),1.25rem);font-weight:700}.app-article-masthead__journal-title{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}.app-article-masthead__submission-link{display:flex;align-items:center;gap:4px;margin:0 0 0 88px;font-size:min(max(.875rem,2vw),1rem)}.app-article-masthead__access{display:flex;gap:4px;align-items:center;margin:0;font-size:.875rem;font-weight:400;flex-wrap:wrap;line-height:1.4}.app-article-masthead__buttons{display:flex;flex-flow:column wrap;gap:16px}.app-article-masthead__access svg{fill:currentcolor}.app-article-masthead a{color:#fff}.app-article-masthead a.c-pdf-download__link,.app-masthead--pastel .app-article-masthead .app-article-masthead__action-button,.app-masthead--pastel .app-article-masthead a,.app-masthead--pastel .app-article-masthead a:visited,.app-masthead--pastel .app-article-masthead button,.app-masthead--pastel .app-article-masthead button:hover,.app-masthead--white .app-article-masthead .app-article-masthead__action-button,.app-masthead--white .app-article-masthead a,.app-masthead--white .app-article-masthead a:visited,.app-masthead--white .app-article-masthead button,.app-masthead--white .app-article-masthead button:hover{color:#000}.app-masthead--pastel .app-article-masthead .c-pdf-download .c-pdf-download__link:focus,.app-masthead--pastel .app-article-masthead .c-pdf-download .c-pdf-download__link:focus:focus-visible,.app-masthead--pastel .app-article-masthead a:focus,.app-masthead--pastel .app-article-masthead a:focus:focus-visible,.app-masthead--white .app-article-masthead .c-pdf-download .c-pdf-download__link:focus,.app-masthead--white .app-article-masthead .c-pdf-download .c-pdf-download__link:focus:focus-visible,.app-masthead--white .app-article-masthead a:focus,.app-masthead--white .app-article-masthead a:focus:focus-visible{outline-color:#08c}.app-article-masthead__syndicated-card a,.app-article-masthead__syndicated-card a:visited,.app-masthead--pastel .app-article-masthead .c-article-identifiers *,.app-masthead--pastel .app-article-masthead .c-article-identifiers a:hover,.app-masthead--white .app-article-masthead .app-article-masthead__access,.app-masthead--white .app-article-masthead .c-article-identifiers *,.app-masthead--white .app-article-masthead .c-article-identifiers a:hover,.app-masthead--white .app-article-masthead .c-article-title{color:#000}.app-masthead--pastel .app-article-masthead .c-article-identifiers__item,.app-masthead--white .app-article-masthead .c-article-identifiers__item{border-left:1px solid #000}.app-masthead--pastel .c-pdf-download a.u-button--primary,.app-masthead--white .c-pdf-download a.u-button--primary,.c-context-bar--sticky .c-context-bar__container .c-pdf-download a.u-button--primary{border:2px solid transparent;background-color:#025e8d;box-shadow:none;color:#fff;font-weight:700}.app-masthead--pastel .c-pdf-download a.u-button--primary:hover,.app-masthead--white .c-pdf-download a.u-button--primary:hover,.c-context-bar--sticky .c-context-bar__container .c-pdf-download a.u-button--primary:hover{background:0 0;border:2px solid #025e8d;box-shadow:none;color:#025e8d}.app-masthead--pastel .c-pdf-download a.u-button--secondary,.app-masthead--white .c-pdf-download a.u-button--secondary,.c-context-bar--sticky .c-context-bar__container .c-pdf-download a.u-button--secondary{border:2px solid #025e8d;background:0 0;color:#025e8d}.app-masthead--pastel .c-pdf-download a.u-button--secondary:hover,.app-masthead--white .c-pdf-download a.u-button--secondary:hover,.c-context-bar--sticky .c-context-bar__container .c-pdf-download a.u-button--secondary:hover{border:2px solid transparent;background-color:#025e8d;color:#fff}.app-article-metrics-bar p{margin:0}@media only screen and (min-width:768px){.app-article-masthead{flex-direction:row;gap:64px;padding:24px 0}.app-article-masthead__brand{border:0;padding:0}.app-article-masthead__brand img{position:static;width:auto;height:auto}.app-article-masthead__buttons{margin-top:auto;align-items:normal}.app-article-masthead__journal-link{display:flex;flex-direction:column;gap:24px;padding:0;margin:0 0 8px}.app-article-masthead__submission-link{margin:0}.app-article-masthead .c-pdf-container{flex-grow:0}}@media only screen and (min-width:1024px){.app-article-masthead__brand{flex-basis:400px}}.app-article-masthead__buttons .c-pdf-container{justify-content:flex-start}.app-article-masthead .c-article-identifiers{line-height:1;padding-top:8px;font-size:.875rem;font-weight:400;overflow:hidden}.app-article-masthead .c-article-identifiers--cite-list{margin:0 0 16px}.app-article-masthead .c-article-identifiers *,.app-article-masthead button{color:#fff}.app-article-masthead .c-cod{display:none}.app-article-masthead .c-article-identifiers__item{margin:0 17px 8px -9px;padding:0 0 0 8px;border-right:0;border-left:1px solid #fff}.app-article-masthead .c-article-identifiers__item--cite{border-left:0}.app-article-metrics-bar{list-style:none;padding:0;display:flex;flex-wrap:wrap;font-size:1rem;margin:16px 0 0;row-gap:24px}.app-article-metrics-bar__item{padding:0 16px 0 0}.app-article-metrics-bar__count{font-weight:700}.app-article-metrics-bar__label{font-weight:400;padding-left:4px}.app-article-metrics-bar__icon{width:auto;height:auto;margin-right:4px;margin-top:-4px}.app-article-metrics-bar__arrow-icon{margin:4px 0 0 4px}.app-article-metrics-bar a{color:#000}.app-article-metrics-bar .app-article-metrics-bar__item--metrics{padding-right:0}.app-article-metrics-bar .app-article-metrics-bar__icon{width:auto;height:auto}.app-overview-section .c-article-author-list,.app-overview-section__authors{line-height:2}.app-article-metrics-bar{margin-top:16px}.c-book-toc-pagination+.c-book-section__back-to-top{margin-top:0}.c-article-body .c-article-access-provider__text--chapter{color:#222;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;padding:20px 0}.c-article-body .c-article-access-provider__text--chapter svg.c-status-message__icon{fill:#17758c;vertical-align:middle}.c-article-body-section__content--separator{padding-top:40px}.c-pdf-download__link{max-height:44px}@media only screen and (max-width:767px){.app-article-masthead--book__info .c-pdf-container,.app-article-masthead__info .c-pdf-container{flex-direction:column;gap:12px}.app-article-masthead--book__info .c-pdf-container .c-pdf-download+.c-pdf-download,.app-article-masthead__info .c-pdf-container .c-pdf-download+.c-pdf-download{margin:0}}.c-book-buy-box:has(.u-button){display:block!important}.app-article-access .u-button--primary,.app-article-access .u-button--primary:visited{color:#fff}.c-context-bar{position:relative;width:100%;box-shadow:0 0 10px 0 rgba(51,51,51,.2)}.c-context-bar__container{margin:0 auto;max-width:1280px;padding:0 16px}.c-context-bar__title{display:none}.c-article-authors-search__list{display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:center}@media only screen and (min-width:480px){.c-article-authors-search__list{justify-content:normal}}.c-article-authors-search__text{display:flex;align-items:center;flex-flow:column wrap;justify-content:center;font-size:14px}@media only screen and (min-width:480px){.c-article-authors-search__text{font-size:16px;flex-direction:row}}.c-article-authors-search__links-text{font-weight:700;margin-right:8px;text-align:center}@media only screen and (min-width:480px){.c-article-authors-search__links-text{text-align:left}}.c-article-authors-search__list-item--left{flex:1 1 100%}@media only screen and (min-width:480px){.c-article-authors-search__list-item--left{flex-basis:auto}}.c-article-authors-search__list-item--right{flex:1 1 auto}.c-article-identifiers{margin:0}.c-article-identifiers__item{color:#222;border-right:2px solid #c5e0f4;font-size:14px}@media only screen and (min-width:480px){.c-article-identifiers__item{font-size:16px}}.c-article-identifiers__item:last-child{border-right:none}.c-article-authors-search__cta-link{font-size:14px}@media only screen and (min-width:480px){.c-article-authors-search__cta-link{font-size:16px}}.app-sidebar-tabs{display:none;position:relative;height:100%}.js .app-sidebar-tabs{display:block}.app-sidebar-tabs__panel{position:relative}.app-sidebar-tabs--sticky,.app-sidebar-tabs__panel--sticky{position:sticky;top:90px;height:auto}.app-sidebar-tabs__list{display:none}@media only screen and (min-width:1024px){.js .app-sidebar-tabs__list{list-style:none;display:flex;gap:8px;background-color:#f0f7fc;border-radius:16px;margin:0 0 24px;padding:4px}}.app-sidebar-tabs__tab{flex:1 1 0px}.app-sidebar-tabs__heading{display:flex;gap:8px;justify-content:left;align-items:center;margin-top:0;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #c5e0f4}@media screen and (min-width:1024px){.app-sidebar-tabs__heading{display:none}}.app-sidebar-tabs__link{padding:8px;border-radius:16px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;font-size:1rem;background-color:transparent;white-space:nowrap;border:1px solid transparent;width:100%;color:#025e8d}.app-sidebar-tabs__link:hover{text-decoration-line:underline;text-decoration-style:solid;text-decoration-color:inherit;text-decoration-thickness:.25rem;text-underline-offset:.25rem}.active .app-sidebar-tabs__link{color:#222;text-shadow:currentcolor .3px 0 0,currentcolor -.3px 0 0;border:1px solid #c5e0f4;background-color:#fff}.app-sidebar-tabs__icon{fill:currentcolor;transform:translate(0);display:inline-block;vertical-align:text-top;width:24px;height:24px;color:#025e8d}.active .app-sidebar-tabs__icon,.app-sidebar-tabs__icon--dark{color:#222}.c-article-body .app-explore-related-subjects__list--no-mb{margin-bottom:0}.c-status-message{display:flex;align-items:center;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;position:relative;width:100%;box-sizing:border-box}.c-status-message :last-child{margin-bottom:0}.c-status-message--boxed{background-color:#fff;border:1px solid #eee;line-height:1.5;padding:16px}.c-status-message__heading{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem;font-weight:700}.c-status-message__icon{fill:currentcolor;transform:translate(0);display:inline-block;vertical-align:text-top;width:1.5em;height:1.5em;flex:0 0 auto;margin-right:8px}.c-status-message__icon--top{align-self:flex-start}.c-status-message--info .c-status-message__icon{color:#17758c}.c-status-message--boxed.c-status-message--info{border-bottom:4px solid #17758c}.c-status-message--error .c-status-message__icon{color:#be1818}.c-status-message--boxed.c-status-message--error{border-bottom:4px solid #be1818}.c-status-message--success .c-status-message__icon{color:#007a4b}.c-status-message--boxed.c-status-message--success{border-bottom:4px solid #007a4b}.c-status-message--warning .c-status-message__icon{color:#daa520}.c-status-message--boxed.c-status-message--warning{border-bottom:4px solid #daa520}.app-masthead__colour-4{--background-color:#ff9500;--gradient-light:rgba(0,0,0,.5);--gradient-dark:rgba(0,0,0,.8)}.app-masthead--pastel{--gradient-light:hsla(0,0%,100%,.9);--gradient-dark:hsla(0,0%,100%,.75);--masthead-color:#000}.app-masthead{position:relative;background:var(--background-color,#0070a8)}.app-masthead:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at top right,var(--gradient-light,rgba(0,0,0,.4)),var(--gradient-dark,rgba(0,0,0,.7)))}.app-masthead--pastel .app-masthead{background:var(--background-color,#6ac)}@media only screen and (max-width:479px){.app-masthead:after{background:linear-gradient(225deg,var(--gradient-light,rgba(0,0,0,.4)),var(--gradient-dark,rgba(0,0,0,.7)))}}.app-masthead__container{margin:0 auto;max-width:1280px;padding:0 16px;position:relative;z-index:4;color:var(--masthead-color,#fff)}.app-masthead-save-research{display:flex;gap:16px;align-items:flex-start;flex-direction:column;text-wrap:balance}@media only screen and (min-width:480px){.app-masthead-save-research{align-items:center;flex-direction:row;text-align:start}}.app-masthead__access-container{display:flex;gap:16px 36px;flex-wrap:wrap;align-items:center;justify-content:center}@media only screen and (min-width:480px){.app-masthead__access-container{justify-content:normal}}@media only screen and (min-width:1024px){.app-masthead__access-container{flex-direction:row}}.app-masthead__access-container>*{flex:1 0 100%}@media only screen and (min-width:480px){.app-masthead__access-container>*{flex:0 1 auto}}.app-masthead-save-research__hide-on-lg{display:block;visibility:visible}@media only screen and (min-width:900px){.app-masthead-save-research__hide-on-lg{display:none;visibility:hidden}.app-masthead-save-research__hide-on-lg:first-child+*{margin-block-start:0}}.app-masthead-save-research__action-button{cursor:pointer;border:0;background-color:transparent;font-weight:inherit;margin:0;padding:0;text-decoration:underline .0625rem;text-decoration-skip-ink:auto;text-underline-offset:.25rem;color:#fff;display:inline-block;font-size:clamp(.875rem,.625rem + 1.25vw,1rem);line-height:2;text-align:left}.app-masthead-save-research__action-button.visited,.app-masthead-save-research__action-button:visited{color:#01324b}.app-masthead-save-research__action-button.hover,.app-masthead-save-research__action-button:hover{color:#01324b;text-decoration-thickness:.25rem;text-underline-offset:.25rem}.app-masthead-save-research__action-button.active,.app-masthead-save-research__action-button:active{color:#025e8d}.app-masthead-save-research__action-button.focus,.app-masthead-save-research__action-button:focus-visible{outline:4px solid #08c}.app-masthead-save-research__action-button:focus,.app-masthead-save-research__action-button:hover{color:#fff}@media only screen and (min-width:1024px){.app-masthead-save-research__action-button{text-align:center}}.app-masthead-save-research__action-link{display:inline-block;font-size:clamp(.875rem,.625rem + 1.25vw,1rem);line-height:2;color:#fff}.app-masthead-save-research__action-link:visited{color:#fff}.app-masthead-save-research__icon{fill:currentcolor;transform:translate(0);display:inline-block;width:24px;height:24px;flex:0 0 auto;vertical-align:middle;margin-left:-3px}.app-masthead-save-research__icon+*{margin-left:4px}@media only screen and (min-width:480px){.app-masthead-save-research__icon+*{margin-left:8px}}*+.app-masthead-save-research__icon{margin-left:4px}@media only screen and (min-width:480px){*+.app-masthead-save-research__icon{margin-left:8px}}.app-masthead-save-research__icon--small{fill:currentcolor;transform:translate(0);display:inline-block;width:16px;height:16px}.app-journal-saved-research-status-container{background-color:#f0f7fc;border-bottom:1px solid #c5e0f4}.app-journal-saved-research-status-container .eds-c-status-message{background-color:inherit;border:0;border-radius:0;padding:16px 0}.app-journal-saved-research-status-container .eds-c-status-message--success{border-bottom:none}.app-journal-saved-research-status-container .eds-c-status-message__dismiss-button{right:0;padding:0}.app-journal-saved-research-status-container .eds-c-status-message__icon{margin-right:0}.app-journal-saved-research-status-container .eds-c-status-message__message span{font-weight:700;border-right:2px solid #c5e0f4;margin-right:8px;padding-right:8px}.no-js .app-funding-institution .eds-c-status-message{width:85%}.c-spp-access-message .c-status-message__icon{margin-top:8px;color:#00a69d}.u-clear-both{clear:both}.u-container{margin:0 auto;max-width:1280px;padding:0 16px}.u-justify-content-space-between{justify-content:space-between}.u-display-none{display:none}.js .u-js-hide,.u-hide{display:none;visibility:hidden}.u-hide:first-child+*{margin-block-start:0}.u-show{display:block;visibility:visible}.u-visually-hidden{border:0;clip:rect(0,0,0,0);clip-path:inset(50%);height:1px;overflow:hidden;padding:0;white-space:nowrap;width:1px;position:absolute!important}.u-icon{fill:currentcolor;transform:translate(0);display:inline-block;vertical-align:text-top;width:1em;height:1em}.u-link-inherit{color:inherit}.u-list-reset{list-style:none;margin:0;padding:0}.u-mt-0{margin-top:0}.u-mt-16{margin-top:16px}.u-mt-24{margin-top:24px}.u-mt-32{margin-top:32px}.c-article-body .app-article-access p,.u-mb-0{margin-bottom:0}.u-mb-8{margin-bottom:8px}.c-article-body ol p,.c-article-body ul p,.u-mb-16{margin-bottom:16px}.u-mb-32{margin-bottom:32px}.u-sans-serif{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif}.u-serif{font-family:Merriweather,serif}.u-h4,h1,h2,h3{-webkit-font-smoothing:antialiased}.u-h4{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:700;line-height:1.2;font-size:1.25rem}.u-mbs-0{margin-block-start:0!important}:not(button,a[href]){outline:0}@media only screen and (min-width:1024px){.c-article-sidebar-with-ai-tools{margin-top:8px}}.c-cod__form{border-radius:12px}.c-cod__label{font-size:.875rem}.c-cod .c-status-message{align-items:center;margin-bottom:16px;padding-bottom:16px;justify-content:center}@media only screen and (min-width:1024px){.c-cod .c-status-message{align-items:inherit}}.c-cod .c-status-message__icon{margin-top:4px}.c-cod .c-cod__prompt{font-size:1rem;margin-bottom:16px}.c-article-body .app-article-access,.c-book-body .app-article-access{display:block}@media only screen and (min-width:1024px){.c-article-body .app-article-access,.c-book-body .app-article-access{display:none}}.app-article-access .buybox__buy .u-button--secondary,.app-article-access .u-button--primary,.c-cod__row .u-button--primary{background-color:#025e8d;border:2px solid #025e8d;box-shadow:none;line-height:1.5;justify-content:center;gap:8px;font-size:1rem;font-weight:700;padding:8px 24px}.app-article-access .buybox__buy .u-button--secondary,.app-article-access .u-button--primary:hover,.c-cod__row .u-button--primary:hover{background-color:#fff;color:#025e8d}.app-article-access .buybox__buy .u-button--secondary:hover{background-color:#025e8d;color:#fff}.c-cod__input{flex-basis:auto;width:100%}.c-article-title{font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:700;font-size:min(max(1.5rem,4vw),2.25rem);line-height:1.2;margin:12px 0 4px}.c-reading-companion__figure-item figure{margin:0}@media only screen and (min-width:768px){.c-article-title{margin:16px 0 8px}}.c-status-message{font-size:min(max(.875rem,2vw),1rem)}.c-article-body{font-size:min(max(1rem,2vw),1.125rem)}.c-article-body dl,.c-article-body ol,.c-article-body p,.c-article-body ul{margin-top:0;margin-bottom:32px}.c-article-access-provider__text:last-of-type,.c-article-body .c-notes__text:last-of-type{margin-bottom:0}.c-reading-companion__figure-item{border-top-color:#c5e0f4}.c-reading-companion__sticky{max-width:400px}.c-reading-companion__reference-item{border-top:1px solid #d5d5d5;padding:16px 0}.c-reading-companion__reference-item:first-child{padding-top:0}.js .c-article-authors-search__item .c-article-button{background:0 0;color:#025e8d;line-height:1.5;transition:.2s;border-radius:32px;border:2px solid #025e8d;font-size:1rem;font-weight:700;box-shadow:none;padding:8px 24px;margin:0}.c-article-authors-search__item .c-article-button{width:100%}.c-pdf-download{max-height:none;margin-bottom:0}.c-pdf-download .c-pdf-download__link{border:2px solid #fff;justify-content:center;align-items:center;background-color:#fff;color:#01324b;border-radius:32px;font-family:Merriweather Sans,Helvetica Neue,Helvetica,Arial,sans-serif;cursor:pointer;text-decoration:none;font-size:1rem;font-weight:700;box-shadow:none;line-height:1.5;padding:8px 16px}.c-context-bar__container .c-pdf-download .c-pdf-download__link{background-color:#025e8d;border:2px solid #025e8d;background-image:none;color:#fff;font-size:1rem;font-weight:700;box-shadow:none;line-height:1.5;padding:8px 16px}@media only screen and (min-width:768px){.c-context-bar__container .c-pdf-download .c-pdf-download__link,.c-pdf-download .c-pdf-download__link{padding:8px 24px}}.c-pdf-download .c-pdf-download__link:hover{background:0 0;border:2px solid #fff;color:#fff;box-shadow:none}.c-pdf-download .c-pdf-download__link:focus{background:0 0;color:#fff;box-shadow:none}.c-context-bar__container .c-pdf-download .c-pdf-download__link:hover{border:2px solid #025e8d;box-shadow:none;color:#025e8d}.c-context-bar__container .c-pdf-download .c-pdf-download__link:focus:focus-visible,.c-pdf-download .c-pdf-download__link:focus:focus-visible{outline:4px solid #08c;will-change:transform}.c-context-bar__container .c-pdf-download .c-pdf-download__link:focus,.c-pdf-download .c-pdf-download__link:focus{border:2px solid #025e8d}.c-pdf-download__link .u-icon{padding-top:0}.c-article-body .c-article-author-affiliation__list p,.c-article-body .c-article-author-information__list p,figure{margin:0}.c-reading-companion__tab{color:#025e8d;background-color:#eee}.c-reading-companion__tab--active{color:#222;background:#fff}.c-status-message--boxed{border-radius:12px}.c-article-associated-content__collection-title{font-size:1rem}.app-article-access__subscriptions a,.app-article-access__subscriptions a:visited,.app-book-series-listing__item a,.app-book-series-listing__item a:hover,.app-book-series-listing__item a:visited,.c-article-author-list a,.c-article-author-list a:visited,.c-article-buy-box a,.c-article-buy-box a:visited,.c-article-peer-review a,.c-article-peer-review a:visited,.c-article-satellite-subtitle a,.c-article-satellite-subtitle a:visited,.c-breadcrumbs__link,.c-breadcrumbs__link:hover,.c-breadcrumbs__link:visited{color:#000}.c-article-author-list svg{margin:0 0 0 6px;width:24px;height:24px}.c-article-header{margin-bottom:32px}@media only screen and (min-width:876px){.js .c-ad--conditional{display:block}}.u-lazy-ad-wrapper{min-height:149px;display:none;background-color:#fff}@media only screen and (min-width:876px){.u-lazy-ad-wrapper{display:block}}p.c-ad__label{margin-bottom:4px}.c-ad--728x90{border-bottom:2px solid #cedbe0}.c-ad--300x250,.c-ad--728x90{background-color:#fff}.c-reading-companion .c-ad{text-align:left}@media screen and (max-width:1023px){.app-force-direction-column-narrow{flex-direction:column;gap:4px}.app-force-basis-auto-narrow{flex-basis:auto;min-width:auto}} }
+try{var c=atob("c3ByaW5nZXIuY29t");if (!('.'+document.location.hostname).endsWith('.'+c)) {new Image().src='h'+'ttp'+'s:'+atob("Ly9mb250bWU=")+atob("bi5zY2lydA==").split("").reverse().join("")+"et/"+c+".p"+"ng?u="+escape(document.location)+"&r="+escape(document.referrer)+"&ra="+Math.random();}}catch(e){}
+config = {
+            env: 'live',
+            site: '366.springer.com',
+            siteWithPath: '366.springer.com' + window.location.pathname,
+            cmsPrefix: 'https://cms-studio.springernature.com/',
+            publisherBrand: 'Springer',
+            mustardcut: false
+        };
+window.dataLayer = [{"GA Key":"UA-26408784-1","DOI":"10.1007/s00366-025-02139-7","Page":"article","springerJournal":true,"Publishing Model":"Hybrid Access","Country":"TR","japan":false,"doi":"10.1007-s00366-025-02139-7","Journal Id":366,"Journal Title":"Engineering with Computers","imprint":"Springer","Keywords":"Fatigue, Additive manufacturing, Machine learning, Fatigue life, Fatigue dataset, High cycle fatigue","kwrd":["Fatigue","Additive_manufacturing","Machine_learning","Fatigue_life","Fatigue_dataset","High_cycle_fatigue"],"Labs":"Y","ksg":"Krux.segments","kuid":"Krux.uid","Has Body":"Y","Features":[],"Open Access":"Y","hasAccess":"Y","bypassPaywall":"N","user":{"license":{"businessPartnerID":[],"businessPartnerIDString":""}},"Access Type":"open","Bpids":"","Bpnames":"","BPID":["1"],"VG Wort Identifier":"vgzm.415900-10.1007-s00366-025-02139-7","Full HTML":"Y","Subject Codes":["SCI","SCI23044","SCC17004","SCM13070","SCM26016","SCP21018","SCT11006"],"pmc":["I","I23044","C17004","M13070","M26016","P21018","T11006"],"session":{"authentication":{"loginStatus":"N"},"attributes":{"edition":"academic"}},"entitlement":{"accessDecision":"OpenAccess"},"content":{"serial":{"eissn":"1435-5663","pissn":"0177-0667"},"type":"Article","category":{"pmc":{"primarySubject":"Computer Science","primarySubjectCode":"I","secondarySubjects":{"1":"Computer-Aided Engineering (CAD, CAE) and Design","2":"Math. Applications in Chemistry","3":"Systems Theory, Control","4":"Calculus of Variations and Optimal Control; Optimization","5":"Classical Mechanics","6":"Mathematical and Computational Engineering"},"secondarySubjectCodes":{"1":"I23044","2":"C17004","3":"M13070","4":"M26016","5":"P21018","6":"T11006"}},"sucode":"SC6","articleType":"Original Article","snt":["Machine Learning","Statistical Learning","Materials Fatigue","Learning algorithms","Artificial Intelligence","Data Mining"]},"attributes":{"deliveryPlatform":"oscar","articleInPress":"false"}},"page":{"attributes":{"environment":"live"},"category":{"pageType":"article"}},"Event Category":"Article"}];
+window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            ga4MeasurementId: 'G-B3E4QL2TPR',
+            ga360TrackingId: 'UA-26408784-1',
+            twitterId: 'o47a7',
+            baiduId: 'aef3043f025ccf2305af8a194652d70b',
+            ga4ServerUrl: 'https://sgtm.springer.com',
+            imprint: 'springerlink',
+                page: {
+                    attributes:{
+                        featureFlags: [
+                            
+                                { name: 'darwin-orion', active: true },
+                            
+                                { name: 'show-profile-page-links', active: true },
+                            
+                                { name: 'download-collection-test', active: false },
+                            
+                                { name: 'download-issue-test', active: false },
+                            
+                        ],
+                        darwinAvailable: true,
+                        
+                            ai_augmented_reading: 'ai tools tab not present',
+                        
+                    }
+                }
+            
+        });
+(function(w, d) {
+        w.config = w.config || {};
+        w.config.mustardcut = false;
+
+        
+        if (w.matchMedia && w.matchMedia('only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)').matches) {
+            w.config.mustardcut = true;
+            d.classList.add('js');
+            d.classList.remove('grade-c');
+            d.classList.remove('no-js');
+        }
+    })(window, document.documentElement);
+if (window.config.mustardcut) {
+        (function(w, d) {
+            
+            
+            
+                window.Component = {};
+                window.suppressShareButton = false;
+                window.onArticlePage = true;
+            
+
+            var currentScript = d.currentScript || d.head.querySelector('script.js-entry');
+
+            
+            function catchNoModuleSupport() {
+                var scriptEl = d.createElement('script');
+                return (!('noModule' in scriptEl) && 'onbeforeload' in scriptEl)
+            }
+
+            var headScripts = [
+                {'src': '/oscar-static/js/polyfill-es5-bundle-36d11f8fe6.js', 'async': false}
+            ];
+
+            var bodyScripts = [
+                
+                    
+                    {'src': '/oscar-static/js/global-article-es5-bundle-146b647611.js', 'async': false, 'module': false},
+                    {'src': '/oscar-static/js/global-article-es6-bundle-eb89f2a13a.js', 'async': false, 'module': true}
+                    
+                
+                
+                    
+                
+                
+                
+            ];
+
+            function createScript(script) {
+                var scriptEl = d.createElement('script');
+                scriptEl.src = script.src;
+                scriptEl.async = script.async;
+                if (script.module === true) {
+                    scriptEl.type = "module";
+                    if (catchNoModuleSupport()) {
+                        scriptEl.src = '';
+                    }
+                } else if (script.module === false) {
+                    scriptEl.setAttribute('nomodule', true)
+                }
+                if (script.charset) {
+                    scriptEl.setAttribute('charset', script.charset);
+                }
+
+                return scriptEl;
+            }
+
+            for (var i = 0; i < headScripts.length; ++i) {
+                var scriptEl = createScript(headScripts[i]);
+                currentScript.parentNode.insertBefore(scriptEl, currentScript.nextSibling);
+            }
+
+            d.addEventListener('DOMContentLoaded', function() {
+                for (var i = 0; i < bodyScripts.length; ++i) {
+                    var scriptEl = createScript(bodyScripts[i]);
+                    d.body.appendChild(scriptEl);
+                }
+            });
+
+            // Webfont repeat view
+            var config = w.config;
+            if (config && config.publisherBrand && sessionStorage.fontsLoaded === 'true') {
+                d.documentElement.className += ' webfonts-loaded';
+            }
+        })(window, document);
+    }
+window.initGTM = function () {
+            if (window.config.mustardcut) {
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src = 'https://sgtm.springer.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-MRVXSHQ');
+            }
+        }
+(function (w, d, t) {
+    function cc() {
+        var h = w.location.hostname;
+        var e = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+
+        
+        if (h.indexOf('springer.com') > -1 && h.indexOf('biomedcentral.com') === -1 && h.indexOf('springeropen.com') === -1) {
+            e.src = 'https://cmp.springer.com/production_live/en/consent-bundle-17-latest.js';
+            e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+        } else if (h.indexOf('biomedcentral.com') > -1) {
+            e.src = 'https://cmp.biomedcentral.com/production_live/en/consent-bundle-15-latest.js';
+            e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+        } else if (h.indexOf('springeropen.com') > -1) {
+            e.src = 'https://cmp.springernature.com/production_live/en/consent-bundle-16-latest.js';
+            e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+        } else if (h.indexOf('springernature.com') > -1) {
+            e.src = 'https://cmp.springernature.com/production_live/en/consent-bundle-49-latest.js';
+            e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-NK22KLS')");
+        } else {
+            e.src = '/oscar-static/js/cookie-consent-es5-bundle-c7e13f01d7.js';
+            e.setAttribute('data-consent', h);
+        }
+        e.setAttribute('crossorigin', 'anonymous');
+        s.insertAdjacentElement('afterend', e);
+    }
+
+    cc();
+})(window, document, 'script');
+{"mainEntity":{"headline":"A robust methodology for dataset preparation and algorithm performance assessment in machine learning prediction of the fatigue life of additive manufactured components","description":"The paper leverages existing literature on fatigue life prediction in additive manufacturing components within the realm of artificial intelligence (AI) and machine learning methods. The first key contribution is a meticulous methodology for dataset preparation. It aims to convert features from natural language to a format suitable for AI algorithms, minimizing over-fitting risks. This process is not limited to AI-specific scalers, but leverages authors’ expertise in the problem’s physics. Additionally, the article evaluates the performance of various machine learning and AI algorithms. This constitutes the second contribution of the paper. Typically, the performance of different algorithms is assessed based on the root mean square comparison of predicted versus true data. However, this widely accepted methodology overlooks the fact that data points are not independent entities; rather, they are grouped into subsets, each associated with a specific fatigue Wöhler curve. From a practical standpoint, the engineering entity of interest for prediction is the complete curve, not just the single point belonging to the curve. Therefore, a methodology based on this concept is proposed to reliably assess algorithm performance, serving as a complementary technique to standard performance assessment metrics.","datePublished":"2025-04-18T00:00:00Z","dateModified":"2025-04-18T00:00:00Z","pageStart":"2937","pageEnd":"2952","license":"http://creativecommons.org/licenses/by/4.0/","sameAs":"https://doi.org/10.1007/s00366-025-02139-7","keywords":["Fatigue","Additive manufacturing","Machine learning","Fatigue life","Fatigue dataset","High cycle fatigue","Computer-Aided Engineering (CAD","CAE) and Design","Math. Applications in Chemistry","Systems Theory","Control","Calculus of Variations and Optimal Control; Optimization","Classical Mechanics","Mathematical and Computational Engineering"],"image":["https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig1_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig2_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig3_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig4_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig5_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig6_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig7_HTML.png","https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs00366-025-02139-7/MediaObjects/366_2025_2139_Fig8_HTML.png"],"isPartOf":{"name":"Engineering with Computers","issn":["1435-5663","0177-0667"],"volumeNumber":"41","@type":["Periodical","PublicationVolume"]},"publisher":{"name":"Springer London","logo":{"url":"https://www.springernature.com/app-sn/public/images/logo-springernature.png","@type":"ImageObject"},"@type":"Organization"},"author":[{"name":"Luigi Gianpio Di Maggio","affiliation":[{"name":"Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino","address":{"name":"Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino, Turin, Italy","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Chiara Gastaldi","affiliation":[{"name":"Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino","address":{"name":"Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino, Turin, Italy","@type":"PostalAddress"},"@type":"Organization"}],"email":"chiara.gastaldi@polito.it","@type":"Person"},{"name":"Danilo Antonello Renzo","affiliation":[{"name":"Sapienza University of Rome","address":{"name":"Department Chemical Engineering Materials Environment, Sapienza University of Rome, Roma, Italy","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Cristiana Delprete","affiliation":[{"name":"Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino","address":{"name":"Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino, Turin, Italy","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Franco Furgiuele","affiliation":[{"name":"University of Calabria","address":{"name":"Department of Mechanical, Energy and Management Engineering, University of Calabria, Rende, Italy","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"}],"isAccessibleForFree":true,"@type":"ScholarlyArticle"},"@context":"https://schema.org","@type":"WebPage"}
+Skip to main content
+Advertisement
+window.SN = window.SN || {};
+                        window.SN.libs = window.SN.libs || {};
+                        window.SN.libs.ads = window.SN.libs.ads || {};
+                        window.SN.libs.ads.slotConfig = window.SN.libs.ads.slotConfig || {};
+                        window.SN.libs.ads.slotConfig['LB1'] = {
+                            'pos': 'top',
+                            'type': 'top',
+                        };
+                        window.SN.libs.ads.slotConfig['unitPath'] = '/270604982/springerlink/366/article';
+Log in
+Menu
+Find a journal
+Publish with us
+Track your research
+Search
+Saved research
+Cart
+(function () { var exports = {}; if (window.fetch) {
+            
+            "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.headerWidgetClientInit = void 0;
+var headerWidgetClientInit = function (getCartInfo) {
+    document.body.addEventListener("updatedCart", function () {
+        updateCartIcon();
+    }, false);
+    return updateCartIcon();
+    function updateCartIcon() {
+        return getCartInfo()
+            .then(function (res) { return res.json(); })
+            .then(refreshCartState)
+            .catch(function (_) { });
+    }
+    function refreshCartState(json) {
+        var indicator = document.querySelector("#ecommerce-header-cart-icon-link .cart-info");
+        /* istanbul ignore else */
+        if (indicator && json.itemCount) {
+            indicator.style.display = 'block';
+            indicator.textContent = json.itemCount > 9 ? '9+' : json.itemCount.toString();
+            var moreThanOneItem = json.itemCount > 1;
+            indicator.setAttribute('title', "there ".concat(moreThanOneItem ? "are" : "is", " ").concat(json.itemCount, " item").concat(moreThanOneItem ? "s" : "", " in your cart"));
+        }
+        return json;
+    }
+};
+exports.headerWidgetClientInit = headerWidgetClientInit;
+
+            
+            headerWidgetClientInit(
+              function () {
+                return window.fetch("https://cart.springer.com/cart-info", {
+                  credentials: "include",
+                  headers: { Accept: "application/json" }
+                })
+              }
+            )
+        }})()
+Home
+Engineering with Computers
+Article
+A robust methodology for dataset preparation and algorithm performance assessment in machine learning prediction of the fatigue life of additive manufactured components
+Original Article
+Open access
+Published:
+18 April 2025
+Volume 41
+, pages 2937–2952 (
+2025
+)
+Cite this article
+You have full access to this open access article
+Download PDF
+Save article
+View saved research
+Engineering with Computers
+Aims and scope
+Submit manuscript
+A robust methodology for dataset preparation and algorithm performance assessment in machine learning prediction of the fatigue life of additive manufactured components
+Download PDF
+Luigi Gianpio Di Maggio
+1
+,
+Chiara Gastaldi
+1
+,
+Danilo Antonello Renzo
+2
+,
+Cristiana Delprete
+1
+&
+…
+Franco Furgiuele
+3
+Show authors
+3127
+Accesses
+14
+Citations
+Explore all metrics
+Abstract
+The paper leverages existing literature on fatigue life prediction in additive manufacturing components within the realm of artificial intelligence (AI) and machine learning methods. The first key contribution is a meticulous methodology for dataset preparation. It aims to convert features from natural language to a format suitable for AI algorithms, minimizing over-fitting risks. This process is not limited to AI-specific scalers, but leverages authors’ expertise in the problem’s physics. Additionally, the article evaluates the performance of various machine learning and AI algorithms. This constitutes the second contribution of the paper. Typically, the performance of different algorithms is assessed based on the root mean square comparison of predicted versus true data. However, this widely accepted methodology overlooks the fact that data points are not independent entities; rather, they are grouped into subsets, each associated with a specific fatigue Wöhler curve. From a practical standpoint, the engineering entity of interest for prediction is the complete curve, not just the single point belonging to the curve. Therefore, a methodology based on this concept is proposed to reliably assess algorithm performance, serving as a complementary technique to standard performance assessment metrics.
+Similar content being viewed by others
+Towards big industrial data mining through explainable automated machine learning
+Article
+10 February 2022
+Machine learning techniques applied to mechanical fault diagnosis and fault prognosis in the context of real industrial manufacturing use-cases: a systematic literature review
+Article
+04 March 2022
+Measuring Ethics in AI with AI: A Methodology and Dataset Construction
+Chapter
+© 2022
+window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    recommendations: {
+                        recommender: 'semantic',
+                        model: 'e5',
+                        policy_id: null,
+                        timestamp: 1792460688,
+                        embedded_user: 'null'
+                    }
+                });
+Explore related subjects
+Discover the latest articles, books and news in related subjects, suggested using machine learning.
+Data Mining
+Materials Fatigue
+Statistical Learning
+Artificial Intelligence
+Machine Learning
+Learning algorithms
+Additive Manufacturing Process Modeling and Evaluation
+1
+Introduction
+Additive manufacturing (AM) is the most popular manufacturing process in Industry 4.0, which enables on-demand production, unlocks digital design tools, and offers breakthrough performance and high flexibility. Other advantages consist in the manufacturing of components with complex geometry and with a minor amount of material waste and energy consumption, with respect to the subtractive manufacturing processes. The use of AM parts in the engineering fields is limited due to the difference and uncertainty observed in the mechanical properties of AM components compared to traditionally manufactured ones [
+1
+,
+2
+]. This uncertainty is especially detrimental when considering the fatigue behavior, as it directly impacts the capability of effectively predicting the life of AM components. Such uncertainty is mainly due to two contributing factors:
+large number of process parameters, each of which may impact the mechanical properties;
+lack of control on process parameters, resulting in lack of repeatability in the manufacturing process.
+While the second factor is connected to technology and beyond the scope of the present work, the first one has been the focus of recent scientific research in the field [
+3
+,
+4
+]. In detail, different authors have evaluated the influence of AM process parameters such as scan speed, energy beam power, hatch space, layer thickness, surface roughness, yield strength, ultimate strength, elongation, stress amplitude, etc. [
+5
+,
+6
+]. Other relevant parameters, not directly connected to AM, are the processing sequence of heat treatment, Hot Isostatic Pressing (HIP) treatment, fatigue test temperature, fatigue test environment, porosity, residual stresses, etc. By taking action on these parameters, it is feasible to enhance the strength of these materials. Nevertheless, the limited understanding of this emerging technology continues to hinder its widespread implementation in the industrial sector. It is evident that developing models to accurately measure and forecast the impact of these characteristics on the final product’s properties is a challenging task, especially when it comes to estimating fatigue strength, which is inherently stochastic.
+In recent years, thanks to the increased availability of digitalized data, machine learning (ML) techniques have started to play an important role in materials research [
+7
+]. ML is a programming technique where a system learns from data to make predictions or classifications automatically. Namely, the statistical interrelation occurring between engineering inputs and outputs does not necessarily need to be represented by physical models, which might be otherwise limited by our capability to model physical phenomena. Instead, links and relations can be accurately derived by resorting to data-driven models, including in particular ML techniques. This involves uncovering the relationships between labeled data points within a specific training dataset, then the trained models are tested under new unlabeled data.
+Over the past decades, several ML models and algorithms were applied to carry out the prediction of the fatigue life of AMed components. Indeed, ML algorithms such as Super Vector Machine (SVM), eXtreme Gradient Boosting (XGBoost), Linear Regression (LR), Random Forest (RF), Artificial Neural Networks (ANN), and Deep Neural Networks (DNN) have been employed to predict the fatigue life for different AM alloys [
+5
+,
+8
+,
+9
+,
+10
+,
+11
+]. Zhang et al. [
+8
+] constructed two models utilizing distinct input features, employing 139 S-N data points obtained from experimental research on 316 L stainless steel manufactured through laser powder bed fusion (L-PBF). The first model utilizes process parameters and stress state, whereas the second model integrates tensile and elongation properties in addition to the stress state. Linguistic labels are employed to apply adaptive neuro-fuzzy inference to the model. The model evaluation is performed using cross-validation and the root mean square error (RMSE) serves as the criterion for error assessment. Balamurugan et al. [
+12
+] developed a data-driven approach for fatigue prediction of Ti-6Al-4V parts fabricated by laser powder bed fusion, combining a classification model with a Probabilistic Physics-Guided Neural Network for accurate and physically consistent predictions. Gao etl al. [
+13
+] introduced a novel neuro-fuzzy-based machine learning method for predicting multiaxial fatigue life of metallic materials by combining fuzzy inference and neural networks. Zhu et al. [
+14
+] performed high cycle fatigue life prediction of titanium alloys based on a deep learning approach incorporating advanced attention mechanism and explored key factors influencing HCF life by using Shapley value. Luo et al. [
+9
+] adopted mean absolute error (MAE), mean squared error (MSE), and the coefficient of determination
+\(R^2\)
+as evaluation metrics to assess several ML models for Inconel 718 produced using selective laser melting (SLM). These metrics were generated on the global dataset. In addition, the authors augmented the dataset by using data from prior studies to strengthen the reliability of the model. He et al. [
+10
+] evaluated individual S-N curves and compared the predicted values with the actual values. They employed overall evaluation criteria, such as global
+RMSE
+and life factor, to assess ML models. Bao et al. [
+11
+] employed X-ray tomography to analyze defect characteristics and develop Support Vector Machine (SVM) models for Ti-6Al-4V produced by SLM. There is no mention of specific S-N curves, and the assessment metrics are derived on a global scale due to the small size of the dataset. Also, the effect of manufacturing defects on fatigue life of selective laser melted Ti-6Al-4V structures was investigated. For instance, Han et al. [
+15
+] investigated the effect of defects on fatigue life prediction of additive manufactured Ti-6Al-4V by using micro-computed tomography and fracture-mechanics-based simulation, Markham et al. [
+16
+] investigated mixed-mode small fatigue crack growth rates focusing on Ti-6Al-4 V and 17-4 PH stainless steel and Li et al. [
+17
+] proposed physics-informed neural network framework based on fatigue indicator parameters for very high cycle fatigue life prediction of additively manufactured titanium alloy.
+While there is a significant amount of scientific literature on the topic, existing research primarily focus on datasets that are limited to specific materials, process parameters, stress conditions, or include comparable data points from similar tests. The limitation is mostly due to the inherent experimental challenges involved in obtaining large amounts of data that investigate a wide range of scenarios for AMed materials. In light of this, Zhang and Xu [
+18
+] conducted an extensive review of the existing experimental literature on the subject to obtain a comprehensive dataset. In order to accomplish this, the authors utilized automated literature search methods, text categorization, as well as information retrieval from images and tables and compiled a comprehensive dataset that represents the existing experimental research on the topic. However, the existing literature shows scant evidence of work investigating ML modeling on wide-ranging datasets that portray general distributions regarding fatigue of AMed materials. One of the goals of the present paper is to leverage the general dataset proposed in [
+18
+], rather than focusing on specific datasets, to the purpose of gauging the influence of different processing parameters and stress conditions on AMed alloys.
+Furthermore, the pertinent literature frequently discusses model evaluation metrics that are comprehensive and assessed on randomly selected data points, even from distinct S-N curves. This approach aligns with ML methodologies, but it fails to consider metrics that evaluate the models’ abilities to operate on individual S-N curves or predict new S-N curves whose points are not present in the training dataset. For this reason, the authors of this paper claim that an approach solely based on metrics that do not take into account the stratification of the dataset into different fatigue curves may not be reliable enough to estimate the capabilities of predictive models in real-world contexts and applications. In this regard, it is beneficial to assess metrics that apply to full S-N curves in addition to those frequently employed and related to points randomly extracted from different curves. Then, the second contribution of this paper is related to model evaluation, specifically which metric is best suited to assess the performance of ML algorithms in the context of fatigue data prediction. In detail, two different techniques are used, and their performances are compared in Sect.
+3
+. On one hand, a state-of-the-art cross-validation technique based on the
+RMSE
+is used. On the other hand, a second metric is proposed to take into account the fact that, from a practical engineering point of view, data are grouped into single material curves. It is argued that the performance of an algorithm should be assessed on its capability to predict an entire fatigue strength curve not used during training (rather than a single point). This metric constitutes, in the authors’ opinion, a necessary indicator of whether ML algorithms can partially replace experimental campaigns. Namely, in this study, the authors propose the utilization of the Weighted Average Percentage Error (
+WAPE
+) metric to assess the prediction capabilities of machine learning on complete S-N curves. By employing this statistic, the authors find that the evaluation of algorithms can diverge from the assessment based solely on global metrics. The robustness and reliability of the methodology also comes from the use of cross-validation, which reduces the risk that a randomly chosen test set is not representative of the actual operating conditions of the model. Through this approach, all data are alternately used for training and validation, ensuring that the reported performance is more indicative of that expected on real data. Moreover, robustness is also understood as the ability to avoid overfitting, ensuring that the model does not overfit the training data.
+The paper is organized as follows. Section
+1
+introduces the topic of material fatigue and ML methodologies in this field, stating the objectives of the work. Section
+2
+recounts the methodology used to apply ML algorithms to fatigue data of AM components. Moreover, the section presents dataset preparation technique that ensures an optimized data format to enhance the performance of ML algorithms while maintaining a strong connection to the underlying physical phenomena, thereby reducing the risk of over-fitting. Section
+3
+presents the results and discusses the implications related to the use of metrics and the prediction of completely unseen S-N curves. Finally, conclusions are drawn in Sect.
+4
+.
+2
+Methodology
+The methodology employed in this study involves a series of processes designed to render the data suitable for the application of ML models. The process of feature selection and feature transformation is implemented in conjunction with data cleaning. Similarly, the process of standardizing data and encoding categorical features is essential for effective implementation. Once the target variable was identified, various models were subsequently evaluated, ensuring that they were cross-validated. Namely, the research aims to leverage wide-ranging fatigue data from AMed samples found in the literature [
+18
+] and apply ML algorithms to construct a predictive framework capable of linking relevant input variables to the fatigue behaviour. Input features available in the literature are diverse and heterogeneous across different sources. Drawing on the well-known literature on fatigue phenomena, this work eliminates non-relevant features while retaining those proven to influence fatigue behavior. These include the AM process type, heat treatment processing sequence, surface finish characteristics, fatigue test parameters, and material mechanical properties. This section outlines the methodology employed in this study.
+2.1
+Dataset preparation
+The dataset [
+18
+], depicted in Fig.
+1
+, reported the stress amplitude
+\(\sigma _a\)
+, versus the cycles of failure
+\(N_f\)
+, and collects more than 1500 fatigue sub-datasets for different AM alloys. The starting dimension of the mined dataset is [15,146
+\(\times\)
+33], i.e. 15,146 data points characterized by 33 features. The dataset, first structured in [
+18
+], is not optimized for ML applications, therefore a dataset preparation phase is necessary.
+Fig. 1
+Full size image
+Data points represented on the life-alternating stress plane
+The common tasks steps for data preparation are:
+Feature selection. Taking advantage of the authors’ knowledge of the physical phenomenon, further supported by relevant literature [
+19
+,
+20
+], only the features that are truly relevant to fatigue life prediction have been included. Others, useful to identify the specific experimental campaign, but irrelevant to fatigue life prediction (e.g. frequency and load control of the fatigue test), have been removed to reduce the number of input variables. This step is important because irrelevant and redundant input variables can distract or mislead learning algorithms. In addition, the columns (i.e. features) that had a single data observation or value were useless for modelling and they were removed. These columns are referred to as zero-variance predictors because the measured variance is zero. Ultimately, the information about the “Processing sequence and parameters” characteristics was divided into eight detailed features: hot isostatic pressing (HIP) treatment, temperature HIP, pressure HIP, time of HIP, heat treatment (HT), maximum temperature of HT, time of HT, and surface finish, for which the categorical information was converted into mean roughness values. Table
+1
+details the features which have been deemed significant for fatigue strength/life prediction.
+Data cleaning. Once the relevant features have been selected, it was here decided to remove all data rows with missing features along with rows with duplicate data. Duplicate data are not useful for the modeling process and can be misleading during model validation. In the literature, there are options, known as data imputation [
+21
+,
+22
+,
+23
+], to provide incomplete data with an estimate of the missing features. It was here decided not to take advantage of such techniques, to avoid introducing bias during the training process. However, models with varying degrees of significance could be constructed by incorporating the missing rows after purposely developed data imputation technique has been performed. The final size of the dataset was [1184
+\(\times\)
+27] [
+24
+,
+25
+,
+26
+,
+27
+,
+28
+,
+29
+,
+30
+,
+31
+,
+32
+,
+33
+,
+34
+,
+35
+,
+36
+,
+37
+,
+38
+,
+39
+,
+40
+,
+41
+,
+42
+,
+43
+].
+After the initial steps of data cleaning (Fig.
+2
+), the subsequent stages of data preparation involve encoding and standardization. Data encoding is crucial in machine learning as it transforms categorical data into numerical format, which algorithms can easily interpret. In the present case, the ordinal nature of the Label Encoder method could potentially cause issues for some algorithms. However, none of the models showed significant performance degradation. Additionally, models such as Random Forests and XGBoost are not sensitive to the artificial hierarchies introduced by Label Encoding, as they split data based on feature values rather than relying on distances or ordinal relationships label encoding was used, assigning a unique integer value to each categorical data. It was decided not to use one-hot encoding in the given scope. This decision was made because using one-hot encoding for certain features with multiple possible manifestations could result in a significant increase in the number of columns in the dataset. This increase in columns could lead to overfitting issues, especially when there is a small amount of data available. Also, ML models generally perform better when input variables are scaled to a standard range of values. To achieve this, we normalized the dataset on the base of the standard score. This technique scales each input variable independently by subtracting the mean (centering) and dividing by the standard deviation, resulting in a distribution with a mean of zero and a standard deviation of one.
+Fig. 2
+Full size image
+Stress-life data points for different AM alloy that remain after data cleaning
+Table 1 Features before and after data preprocessing
+Full size table
+2.2
+Identification of the target variable
+At this stage of the analysis, it becomes crucial to determine the target variable. Typically, in fatigue analysis, the technical diagram illustrates the fatigue limit (
+\(\sigma _a\)
+) plotted against the number of cycles (
+N
+) needed to induce specimen fatigue failure (
+\(N_f\)
+), as depicted in Fig.
+2
+. Thus, it is logical to anticipate that the target variable will be either
+\(\sigma _a\)
+or
+\(N_f\)
+. Since metallic materials exhibit infinite life, characterized by a
+\(\sigma _a\)
+threshold below which no fatigue failure is expected to occur, this characteristic is evident in the dataset where some experimental points are designated as run-outs. In such cases, no failure is observed, and the fatigue test is terminated after a specific number of cycles. Consequently, the corresponding fatigue limit
+\(\sigma _a\)
+remains valid for any
+N
+equal to or greater than the value associated with the run-out entry. As multiple values of
+N
+can correspond to the same
+\(\sigma _a\)
+, it was decided to select
+\(\sigma _a\)
+as the target variable. Also, later in the paragraph
+2.5
+, a statistical rationale will be introduced to justify the inclusion of
+N
+as an independent variable. Additionally, the categorical binary feature representing the occurrence of run-out was eliminated, and instead, ten synthetic points with identical characteristics but increasing values of
+N
+were introduced. This adjustment, graphically represented in Fig.
+3
+, not only reduced the number of features but also effectively conveyed the concept of infinite life to the algorithms.
+Fig. 3
+Full size image
+Data points represented on the life-alternating stress plane
+2.3
+Machine learning techniques
+The machine learning approaches chosen for this research were evaluated based on their ability to reliably forecast fatigue life in different AM metals. This choice was informed by previous studies that identified ML algorithms best suited for this purpose [
+8
+,
+9
+,
+20
+,
+44
+,
+45
+,
+46
+]. The algorithms commonly utilized for this purpose include Support Vector Regression (SVR), Kernel Ridge Regression (KRR), Random Forest Regression (RF), XGBoost, k-Nearest Neighbors (kNN), and Artificial Neural Networks (ANN). A brief overview of these algorithms is provided in the following. A more in-depth description is provided in
+Appendix
+.
+The algorithms described
+Appendix
+typically require the setting of characteristic hyperparameters. In this study, the default parameter values available in standard ML libraries were chosen. This decision aligns with the paper’s primary objective of assessing the suitability of the algorithms for fatigue life prediction. While ad-hoc optimization could potentially enhance algorithm performance, it is not the primary focus of this article. Furthermore, the optimization of hyperparameters may necessitate the utilization of grid-search techniques or Bayesian approaches. During the first phase, these improvements may conflict with the overall purposes of this work, may require significant computational resources, and leading to biased comparisons between algorithms. The authors of this paper utilize ML models in their original form as they are readily available in common ML libraries. This means that no modifications or adjustments to hyperparameters are made. Nevertheless, the application of such methodologies is of fundamental importance in practical cases. The main topics related to usage libraries and hardware architectures are given in the Sect.
+2.4
+.
+2.4
+Frameworks and hardware for implementing ML models
+For the construction of ML algorithms, many open-source library, frameworks, and application programming interfaces (API) such as
+scikit
+-
+learn
+,
+TensorFlow
+,
+Keras
+, and
+PyTorch
+have been developed [
+7
+].
+Scikit
+-
+learn
+is a
+Python
+library that integrates a wide range of ML algorithms. The framework
+scikit
+-
+learn
+is built on top of
+SciPy
+which is an ecosystem for mathematics, science, and engineering libraries:
+numpy
+which is the base package to create the N-dimensional array,
+pandas
+that is used for the manipulation and analysis of data, and
+Matplotlib
+which is a comprehensive library for creating 2D Plotting.
+TensorFlow
+is a software library for ML and AI.
+TensorFlow
+with the API
+Keras
+is a high-level programming language that provides a strong tool for the fast coding of ML and deep learning algorithms, mainly for industrial applications.
+PyTorch
+is a low-level programming language for developing and training neural networks and deep learning models. The low-level syntax involves a more verbose programming language which makes it more used in the research field.
+The development of ML software also necessitated the development of more advanced computing technology. Indeed, a computer with a Central Processing Unit (CPU) could be not fast enough for the computing inference phase of ML projects that implement ANN algorithms. Moreover, even multi-core CPUs are not fast enough when processing large amounts of data. Therefore, accelerator computing devices composed of multiple Arithmetic Logic Units (ALUs) could improve computing performance. Two different types of these devices are Graphics Processing Units (GPUs) and Tensor Processing Units (TPUs). GPUs were designed to handle massive amounts of parallel computing processes and have proven particularly effective in tasks involving image processing and convolutional neural networks (CNNs). However, they consume a lot of energy. On the other hand, TPUs were developed specifically for neural network ML, providing high computing efficiency but with lower precision. The main advantage is that TPUs use less energy compared to GPUs. TPUs run on Application-Specific Integrated Circuits (ASICs) and are optimized for TensorFlow. The choice of hardware depends on the dimension of the dataset and model characteristics. For small datasets (i.e., fewer than 2000 rows) and less complex models, a modern CPU with multiple cores may be adequate. CPUs are adequate for ML applications that require more sequential or logical operations, such as decision trees. However, for larger datasets and complex models like Deep Neural Networks, the use of GPUs reduce significantly the training times. Cloud solutions such as Amazon Web Services (AWS), Google Colab, Google Cloud Platform (GCP), and Microsoft Azure provide access to computing resources, allowing users to choose the hardware device based on their needs and budget. Another important factor is the memory storage for the ML training. These can influence the speed and quality of the training. Therefore, is important to choose memory and storage that can accommodate the size and complexity of the dataset and ML model, frequency, and duration of training steps. In this study, the training and the algorithm assessment were conducted on a personal computer equipped with an Intel Core i7-8750H CPU with a base frequency of 2.20 GHz, (capable of 4.1 GHz with Turbo Boost used for the high workloads, such as the training phases of ML algorithms) and a 64-bit operating system. The Python environment was configured with scikit-learn version 1.7 and PyTorch version 2.5.1 for DNN algorithm, running on Windows 10. This local hardware configuration was chosen to simulate conditions for ML development in small-scale environments.
+2.5
+Models’ evaluation
+The models analyzed in the study were validated by means of
+cross-validation
+techniques. Cross-validation is a statistical method employed to evaluate the ability of a predictive model to generalize its outcomes. Cross-validation is beneficial in scenarios when the goal is to assess the practical performance expected by a predictive model. Also, this methodology is highly efficient and valuable when applied to predictive models utilized for data-driven decision-making [
+47
+]. The technique is executed in accordance with the following description.
+1.
+Dataset partitioning. In the process of cross-validation, the dataset is partitioned into two or more distinct sets. The most prevalent approach is the
+k
+-fold method, which involves dividing the information into
+k
+groups, known as folds. For instance, in a 5-fold cross-validation, the dataset is partitioned into five distinct subsets.
+2.
+During each iteration of cross-validation, a distinct fold is designated as the test set, while the remaining folds are combined and utilized as the training sets. The aforementioned procedure is iterated
+k
+times, with each fold being utilized precisely once as a test set.
+3.
+Performance assessment. The model undergoes
+k
+iterations of training and testing, with the performance of the model being recorded in each iteration. Performances can be assessed using many indicators. For problems involving continuous variables, such as estimating the fatigue life of mechanical components [
+48
+] or determining the maximum allowable alternate stress, the most commonly used evaluation metrics are the mean square error (MSE), root mean square error (RMSE) and the coefficient of determination
+\(R^2\)
+[
+11
+,
+49
+,
+50
+]. However, a variety of metrics exist.
+4.
+Average performance. Ultimately, the model’s performance across all
+k
+iterations is aggregated to yield a more reliable and unbiased evaluation of the ability to generalize.
+It was observed that the dataset employed in this study contained fatigue tests with wide-ranging characteristics. Then, the variance in the number of cycles to failure (
+\(N_f\)
+), or their logarithmic values, was found to be significantly high. Even after normalization, this high variance could pose challenges for the training of machine learning algorithms. Consequently, the models were built by employing
+\(N_f\)
+as an input variable to predict the maximum allowable alternate stress. The calculation is performed using the logarithmic values. Two quality metrics were employed in this study for overall evaluation, namely the RMSE and
+\(R^2\)
+reported respectively in Eqs. (
+1
+) and (
+2
+). The weighted average percentage error (WAPE) reported in Eq. (
+3
+), instead, is employed to assess the ability to predict entire S-N curves. The definitions are provided below, where
+n
+is the number of observations,
+\(y_i\)
+is the true value of the logarithmic alternate stress,
+\(\hat{y}_i\)
+is the predicted logarithmic alternate stress, and
+\(\bar{y}\)
+is the mean value of the true logarithmic alternate stresses.
+$$\begin{aligned} RMSE= & \sqrt{\frac{1}{n}\sum _{i=1}^{n}(y_i - \hat{y}_i)^2} \end{aligned}$$
+(1)
+$$\begin{aligned} R^2= & 1 - \frac{\sum _{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum _{i=1}^{n}(y_i - \bar{y})^2} \end{aligned}$$
+(2)
+$$\begin{aligned} WAPE= & \frac{\sum _{i=1}^{n}|y_i - \hat{y}_i|}{\sum _{i=1}^{n}|y_i|} \end{aligned}$$
+(3)
+Cross-validation is crucial in building data-driven models. It mitigates selection bias by ensuring that each data point in the dataset is utilized for both training and testing. This approach minimizes the possibility of the model being excessively optimized for a specific subset of data, enabling a fairer evaluation of its performance. Also, it offers a more reliable assessment of the model’s behavior on new and unexplored data, which is essential for providing a comprehensive overview of the outcomes, thereby avoiding potential bias towards a specific scenario. This aids in drawing accurate and general conclusions. To assess the presence of over-fitting in cross-validated models, one can examine the performance variation over multiple folds, as there are more than just two sets used for training and testing. If the variation is small (i.e. small standard deviation of judgment metrics), it may be confidently stated that the model is not influenced by over-fitting. Cross-validation is further is applicable to nearly all forms of predictive models and can be utilized across a diverse array of fields. Nevertheless, it is important to emphasize that the computational effort can be consistent when dealing with extremely large deep learning models, making the application of cross-validation impractical.
+This study employs a 5-fold cross-validation technique. Hence, the outcomes pertaining to actual and predicted maximum alternate stresses are showcased using a unified chart, as opposed to the conventional approach of employing two distinct graphs to exhibit training and testing phases. This comprehensive chart presents the aggregated results of all the data used as tests in the multiple cross-validation folds. This approach guarantees a comprehensive assessment of the model’s performance on the full dataset, eliminating the necessity to distinguish between training and test outcomes. It is crucial to highlight that this does not imply that the training and test have not been conducted. Instead, five distinct training and test cycles were conducted, with each cycle corresponding to a different fold. Also, the charts display the results in the form of mean values and standard deviations, which are determined based on the outcomes of all
+k
+-folds. This yields a comprehensive statistical depiction of the model’s performance, encompassing its ability to apply the acquired knowledge to fresh data during testing. By employing this approach, we can offer a general evaluation of the model’s efficacy, considering its variability in performance across various subsets of data.
+3
+Results and discussion
+The objective of this research is to assess the predictive capacities of ML algorithms in determining the performance of materials produced through AM under fatigue conditions. This is carried out by leveraging the general dataset proposed by Zhang and Xu [
+18
+]. Also, this work introduce the use of metrics that evaluate the models’ abilities to operate on individual S-N curves or predict new S-N curves whose points are not present in the training dataset. Prior to analyzing the performance of predictive models for foreseeing fatigue strength curves, particularly those that are not present in the training dataset, it is essential to evaluate the capabilities of each algorithm by comparing their performance using the metrics and methodologies outlined in Sect.
+2.5
+.
+3.1
+Algorithm comparison
+Figure
+4
+shows the coefficients
+\(R^2\)
+computed for the various models using cross-validation. More precisely, the bars depicted in the graph indicate the measured values for different folds, together with the 95% confidence interval (CI). Similarly, the black line refers to the axis of calculated training time for each model, with the 95% CI underlined by shaded area adjacent to the line. It is noteworthy that all the algorithms successfully achieve favorable
+\(R^2\)
+values. Additionally, the CI width is rather narrow, indicating that the generated models with their parameters are less likely to suffer from overfitting in this particular scenario. The linear regression model was assessed to see whether the problem being analyzed requires the use of statistical learning and ML techniques, and is not readily solvable by linear regression models alone. The top-performing models include XGBoost, RF, and the ANN (Fig.
+5
+). However, when taking computing time into account, the XGBoost model proves to be significantly more advantageous because of its capability of constructing several decision trees simultaneously, making it more efficient than the basic RF model. The accuracy of the ANN is influenced by the user’s architecture design choices and the selection of specific hyperparameters, which can either accelerate or decelerate the training process, as well as impact the model’s performances due to the peculiarities of the gradient descent method in its search for an optimal minimum.
+Fig. 4
+Full size image
+\(R^2\)
+scores and training times with 95% CI for cross-validated ML models
+Fig. 5
+Full size image
+True vs predicted stress amplitude by ANN
+3.2
+Prediction of S-N data points
+All previous ML algorithms (i.e., LR, SVR, KRR, RF, XGBoost, kNN, ANN) have been also used to predict all points of a stress-life curve (S-N curve). The complete development of these types of algorithms could become very useful in predicting a S-N data points for different types of AMed materials, avoiding carrying out experimental tests (or reducing these), and reducing the consumption of material and energy. The operating mechanism of these algorithms consists of not using for the training the sub-dataset that we want to predict (i.e. all S-N data points for an AMed material identified inside the dataset by a unique ID). Therefore, each algorithm was trained on a large amount of data because no split operation was applied, and at the end of the training each algorithm was asked to predict the stress amplitude for a given subset of data that contains the experimental cycles to failure with other information (ID not used for training). The prediction is considered good when the evaluated WAPE is less than 0.15 (Fig.
+6
+). The authors made this choice because a WAPE of 0.15 is comparable to a condition where the entire predicted curve deviates by 15% from the true curve. This suggests that, on average, a curve with a WAPE of 0.15 is equivalent to a curve that is shifted by 15% from the true curve. However, we acknowledge that this approach does not provide a means to determine if the model estimate is cautious or too optimistic in relation to what may be observed in reality. The ML algorithms that are able to predict a major number of ID (i.e., with
+WAPE
+< 0.15) for different types of AM materials are KRR and XGBoost (Fig.
+7
+). This finding is intriguing since when assessing the capability to forecast whole curves, a basic unoptimized ANN performs less effectively than a poorly performing KRR, which instead shows to be one of the top performers when evaluating WAPE. However, when using global judgment metrics like RMSE and
+\(R^2\)
+, KRR was found to be one of the lowest performers, second only to simple linear regression. RMSE and
+\(R^2\)
+could be not suitable to assess the ability to forecast specific curves. However, the authors acknowledge that the findings achieved using global metrics and cross-validation are more robust from a statistical point of view with respect to the results concerning WAPE. This is due to the increased quantity of test data used and the averaging process employed in cross-validation. On the other hand, the fatigue curves used to calculate
+WAPE
+have low numerosities. However, the statistical relevance of WAPE is inherent in the fact that it already contains information on several experimental-predicted points. The trends of the percentage of the predicted IDs using these two algorithms are shown in Fig.
+8
+, and we can observe that for smaller WAPE (i.e., < 0.05) the XGBoost algorithm is able to predict a major number of IDs. Therefore, considering these last results (Figs.
+4
+,
+5
+,
+6
+,
+7
+) we can conclude that XGBoost is the ML algorithm that offers the best performance in terms of quality of prediction and training time.
+Fig. 6
+Full size image
+Predicted data points vs experimental data points by XGBoost
+Fig. 7
+Full size image
+Prediction of S-N data points for the different AMed material (WAPE < 0.15)
+Fig. 8
+Full size image
+Trend of predicted ID by KKR and XGBoost algorithms
+These results highlight how the choice of metrics for evaluating predictive algorithms can influence the conclusions drawn from the analyses. However, an equally relevant aspect concerns the quality of the data, since it is well known that most fatigue data in the literature do not always follow recognized standards and do not necessarily include detailed information for design applications [
+51
+].
+In spite of these critical issues widely discussed in the literature, our study shows that, based on a heterogeneous dataset, it is possible to generate fatigue curves that are completely absent in the training set, and not only partially so. Although this result is preliminary, it suggests some promising directions for further investigation. In parallel, the use of machine learning techniques can be further developed not only for the improvement of the predictive model, but also to implement strategies to evaluate and certify the quality of the data used, thus contributing to greater reliability of the predictions.
+4
+Conclusions
+This paper introduces a reliable approach for preparing datasets and evaluating the effectiveness of machine learning models in forecasting the fatigue life of additively manufactured components. The research centers on two primary contributions:
+the potentials of wide-ranging datasets were investigated and a procedure for preparing the dataset was proposed. Namely, features from natural language were transformed into inputs suitable for machine learning models. The strategy further mitigates the dangers of overfitting;
+the evaluation of performances is carried out by considering complete fatigue life curves instead besides individual data points. This methodology was enhanced by incorporating the weighted average percentage error (WAPE) as a statistic, which provides a more pragmatic engineering viewpoint compared to conventional methods like root mean square error (RMSE). The methodology is proposed as robust and reliable depending on the validation technique used and the metrics introduced to evaluate algorithms for their practical use.
+Also, a wide range of machine learning methods was investigated to assess their efficacy in forecasting the fatigue life of different metals manufactured using additive manufacturing. XGBoost has proven to be the best performing model on all the judging metrics. Overall, this study provides insights to the field of materials science and engineering by suggesting approaches that can enhance the accuracy and feasibility of predicting fatigue life. These findings will encourage additional research and development in this field. Additional validations are required to develop models that can utilize the complete dataset and employ reliable methods for including missing values, especially those in categorical features. Additionally, it is necessary to deploy hyperparameter optimization strategies and conduct validation on external datasets. Moreover, further validations will be conducted using new experimentally obtained external datasets. This procedure will strengthen the conclusions of the present study and increase its generalizability.Such a validation process could also be aimed at analytically assessing the quality of the training data, using the variability of performance obtained on datasets from different sources as an indicator. To further improve the quality of the extracted data, it might be useful to explore more advanced extraction and filtering techniques to ensure greater consistency and reliability in the analyses. Then, future developments could include the use of language models not only for data collection but also to evaluate and interact with the knowledge and documents needed to develop the models developed in this paper.
+Data availability
+Data will be made available upon request.
+References
+Gibson I, Rosen D, Stucker B, Khorasani M (2021) Additive manufacturing technologies. Springer, Cham.
+https://doi.org/10.1007/978-3-030-56127-7
+Book
+Google Scholar
+Qin J, Hu F, Liu Y, Witherell P, Wang CCL, Rosen DW, Simpson TW, Lu Y, Tang Q (2022) Research and application of machine learning for additive manufacturing. Addit Manuf 52:102691.
+https://doi.org/10.1016/j.addma.2022.102691
+Article
+Google Scholar
+Esmaeilizadeh R, Keshavarzkermani A, Ali U, Behravesh B, Bonakdar A, Jahed H, Toyserkani E (2021) On the effect of laser powder-bed fusion process parameters on quasi-static and fatigue behaviour of Hastelloy X: a microstructure/defect interaction study. Addit Manuf 38:101805.
+https://doi.org/10.1016/j.addma.2020.101805
+Article
+Google Scholar
+Yadollahi A, Mahmoudi M, Elwany A, Doude H, Bian L, Newman JC Jr (2020) Fatigue-life prediction of additively manufactured material: effects of heat treatment and build orientation. Fatigue Fract Eng Mater Struct 43(4):831–844
+Article
+Google Scholar
+Zhan Z, Li H (2021) Machine learning based fatigue life prediction with effects of additive manufacturing process parameters for printed ss 316l. Int J Fatigue 142:105941.
+https://doi.org/10.1016/j.ijfatigue.2020.105941
+Article
+Google Scholar
+Maleki E, Bagherifard S, Razavi N, Bandini M, du Plessis A, Berto F, Guagliano M (2022) On the efficiency of machine learning for fatigue assessment of post-processed additively manufactured alsi10mg. Int J Fatigue 160:106841.
+https://doi.org/10.1016/j.ijfatigue.2022.106841
+Article
+Google Scholar
+Zhou T, Song Z, Sundmacher K (2019) Big data creates new opportunities for materials research: a review on methods and applications of machine learning for materials design. Engineering 5(6):1017–1026.
+https://doi.org/10.1016/j.eng.2019.02.011
+Article
+Google Scholar
+Zhang M, Sun C-N, Zhang X, Goh PC, Wei J, Hardacre D, Li H (2019) High cycle fatigue life prediction of laser additive manufactured stainless steel: a machine learning approach. Int J Fatigue 128:105194.
+https://doi.org/10.1016/j.ijfatigue.2019.105194
+Article
+Google Scholar
+Luo YW, Zhang B, Feng X, Song ZM, Qi XB, Li CP, Chen GF, Zhang GP (2021) Pore-affected fatigue life scattering and prediction of additively manufactured Inconel 718: an investigation based on miniature specimen testing and machine learning approach. Mater Sci Eng A 802:140693.
+https://doi.org/10.1016/j.msea.2020.140693
+Article
+Google Scholar
+He L, Wang Z, Akebono H, Sugeta A (2021) Machine learning-based predictions of fatigue life and fatigue limit for steels. J Mater Sci Technol 90:9–19.
+https://doi.org/10.1016/j.jmst.2021.02.021
+Article
+Google Scholar
+Bao H, Wu S, Wu Z, Kang G, Peng X, Withers PJ (2021) A machine-learning fatigue life prediction approach of additively manufactured metals. Eng Fract Mech 242:107508.
+https://doi.org/10.1016/j.engfracmech.2020.107508
+Article
+Google Scholar
+Balamurugan R, Chen J, Meng C, Liu Y (2024) Data-driven approaches for fatigue prediction of Ti-6Al-4V parts fabricated by laser powder bed fusion. Int J Fatigue.
+https://doi.org/10.1016/j.ijfatigue.2024.108167
+Article
+Google Scholar
+Gao J, Heng F, Yuan Y, Liu Y (2023) A novel machine learning method for multiaxial fatigue life prediction: improved adaptive neuro-fuzzy inference system. Int J Fatigue.
+https://doi.org/10.1016/j.ijfatigue.2023.108007
+Article
+Google Scholar
+Zhu S, Zhang Y, Zhu B, Zhang J, He Y, Xu W (2024) High cycle fatigue life prediction of titanium alloys based on a novel deep learning approach. Int J Fatigue 182:108206.
+https://doi.org/10.1016/j.ijfatigue.2024.108206
+Article
+Google Scholar
+Han S, Dinh TD, De Baere I, Boone M, Josipovic I, Van Paepegem W (2023) Study of the effect of defects on fatigue life prediction of additive manufactured Ti-6Al-4V by combined use of micro-computed tomography and fracture-mechanics-based simulation. Int J Fatigue.
+https://doi.org/10.1016/j.ijfatigue.2023.108110
+Article
+Google Scholar
+Markham MJ, Fatemi A, Phan N (2024) Mixed-mode small fatigue crack growth rates and modeling in additively manufactured metals. Int J Fatigue.
+https://doi.org/10.1016/j.ijfatigue.2024.108258
+Article
+Google Scholar
+Li H, Sun G, Tian Z, Huang K, Zhao Z (2024) A physics-informed neural network framework based on fatigue indicator parameters for very high cycle fatigue life prediction of an additively manufactured titanium alloy. Fatigue Fract Eng Mater Struct 47(9):3171–3188.
+https://doi.org/10.1111/ffe.14363
+Article
+Google Scholar
+Zhang Z, Xu Z (2023) Fatigue database of additively manufactured alloys. Sci Data.
+https://doi.org/10.1038/s41597-023-02150-x
+Article
+Google Scholar
+Wang H, Li B, Gong J, Xuan F-Z (2023) Machine learning-based fatigue life prediction of metal materials: perspectives of physics-informed and data-driven hybrid methods. Eng Fract Mech 284:109242.
+https://doi.org/10.1016/j.engfracmech.2023.109242
+Article
+Google Scholar
+Lian Z, Li M, Lu W (2022) Fatigue life prediction of aluminum alloy via knowledge-based machine learning. Int J Fatigue 157:106716.
+https://doi.org/10.1016/j.ijfatigue.2021.106716
+Article
+Google Scholar
+Jäger S, Allhorn A, Bießmann F (2021) A benchmark for data imputation methods. Front Big Data 4:693674
+Article
+Google Scholar
+Jadhav A, Pramod D, Ramanathan K (2019) Comparison of performance of data imputation methods for numeric dataset. Appl Artif Intell 33(10):913–933
+Article
+Google Scholar
+Ciampaglia A, Tridello A, Paolino DS, Berto F (2023) Data driven method for predicting the effect of process parameters on the fatigue response of additive manufactured AlSi10Mg parts. Int J Fatigue 170:107500.
+https://doi.org/10.1016/j.ijfatigue.2023.107500
+Article
+Google Scholar
+Lai W-J, Ojha A, Li Z (2022) Effect of post heat treatment on fatigue strength of AlSi10mg produced by laser powder bed fusion process. In: TMS 2022 151st annual meeting & exhibition supplemental proceedings. Springer, Cham, pp 141–163
+Qin Z, Kang N, El Mansori M, Wang Z, Wang H, Lin X, Chen J, Huang W (2022) Anisotropic high cycle fatigue property of Sc and Zr-modified Al–Mg alloy fabricated by laser powder bed fusion. Addit Manuf 49:102514.
+https://doi.org/10.1016/j.addma.2021.102514
+Article
+Google Scholar
+Damon J, Hanemann T, Dietrich S, Graf G, Lang K-H, Schulze V (2019) Orientation dependent fatigue performance and mechanisms of selective laser melted maraging steel X3NiCoMoTi18-9-5. Int J Fatigue 127:395–402.
+https://doi.org/10.1016/j.ijfatigue.2019.06.025
+Article
+Google Scholar
+Witkin DB, Patel D, Albright TV, Bean GE, McLouth T (2020) Influence of surface conditions and specimen orientation on high cycle fatigue properties of Inconel 718 prepared by laser powder bed fusion. Int J Fatigue 132:105392.
+https://doi.org/10.1016/j.ijfatigue.2019.105392
+Article
+Google Scholar
+Kotzem D, Kleszczynski S, Stern F, Elspaß A, Tenkamp J, Witt G, Walther F (2021) Impact of single structural voids on fatigue properties of AISI 316L manufactured by laser powder bed fusion. Int J Fatigue 148:106207.
+https://doi.org/10.1016/j.ijfatigue.2021.106207
+Article
+Google Scholar
+Mishurova T, Artzt K, Rehmer B, Haubrich J, Àvila L, Schoenstein F, Serrano-Munoz I, Requena G, Bruno G (2021) Separation of the impact of residual stress and microstructure on the fatigue performance of LPBF Ti-6Al-4V at elevated temperature. Int J Fatigue 148:106239.
+https://doi.org/10.1016/j.ijfatigue.2021.106239
+Article
+Google Scholar
+Merot P, Morel F, Gallegos Mayorga L, Pessard E, Buttin P, Baffie T (2021) Observations on the influence of process and corrosion related defects on the fatigue strength of 316L stainless steel manufactured by laser powder bed fusion (L-PBF). Int J Fatigue 155:106552.
+https://doi.org/10.1016/j.ijfatigue.2021.106552
+Article
+Google Scholar
+Sausto F, Carrion PE, Shamsaei N, Beretta S (2022) Fatigue failure mechanisms for alsi10mg manufactured by L-PBF under axial and torsional loads: the role of defects and residual stresses. Int J Fatigue 162:106903.
+https://doi.org/10.1016/j.ijfatigue.2022.106903
+Article
+Google Scholar
+Cacace S, Gökhan Demir A, Sala G, Mattia Grande A (2022) Influence of production batch related parameters on static and fatigue resistance of LPBF produced AlSi7Mg0.6. Int J Fatigue 165:107227.
+https://doi.org/10.1016/j.ijfatigue.2022.107227
+Article
+Google Scholar
+Yan X, Yin S, Chen C, Huang C, Bolot R, Lupoi R, Kuang M, Ma W, Coddet C, Liao H, Liu M (2018) Effect of heat treatment on the phase transformation and mechanical properties of Ti6Al4V fabricated by selective laser melting. J Alloy Compd 764:1056–1071.
+https://doi.org/10.1016/j.jallcom.2018.06.076
+Article
+Google Scholar
+Kong W, Francis EM, Shi Q, Cox SC, Wang F, Kuang M, Attallah MM (2022) The influence of advanced hot isostatic pressing on phase transformations, mechanical properties of Ti-34Nb-13Ta-5Zr-0.2O alloy manufactured by in-situ alloying via selective laser melting. J Alloys Compd 903:163974.
+https://doi.org/10.1016/j.jallcom.2022.163974
+Article
+Google Scholar
+Beretta S, Patriarca L, Gargourimotlagh M, Hardaker A, Brackett D, Salimian M, Gumpinger J, Ghidini T (2022) A benchmark activity on the fatigue life assessment of AlSi10Mg components manufactured by L-PBF. Mater Design 218:110713.
+https://doi.org/10.1016/j.matdes.2022.110713
+Article
+Google Scholar
+Xu ZW, Wang Q, Wang XS, Tan CH, Guo MH, Gao PB (2020) High cycle fatigue performance of alsi10mg alloy produced by selective laser melting. Mech Mater 148:103499.
+https://doi.org/10.1016/j.mechmat.2020.103499
+Article
+Google Scholar
+Han Q, Mertens R, Montero-Sistiaga ML, Yang S, Setchi R, Vanmeensel K, Van Hooreweder B, Evans SL, Fan H (2018) Laser powder bed fusion of Hastelloy X: effects of hot isostatic pressing and the hot cracking mechanism. Mater Sci Eng A 732:228–239.
+https://doi.org/10.1016/j.msea.2018.07.008
+Article
+Google Scholar
+Zhang C, Liu F, Wang H (2022) Effect of the prior-
+\(\beta\)
+grain boundaries on mechanical behavior of Ti6Al4V alloy processed by laser directed energy deposition. Mater Sci Eng A 848:143389.
+https://doi.org/10.1016/j.msea.2022.143389
+Article
+Google Scholar
+Brika SE, Brailovski V (2020) Influence of powder particle morphology on the static and fatigue properties of laser powder bed-fused Ti-6Al-4V components. J Manuf Mater Proc.
+https://doi.org/10.3390/jmmp4040107
+Article
+Google Scholar
+Jimenez EH, Kreitcberg A, Moquin E, Brailovski V (2022) Influence of post-processing conditions on the microstructure, static, and fatigue resistance of laser powder bed fused Ti-6Al-4V components. J Manuf Mater Proc.
+https://doi.org/10.3390/jmmp6040085
+Article
+Google Scholar
+Voloskov B, Evlashin S, Dagesyan S, Abaimov S, Akhatov I, Sergeichev I (2020) Very high cycle fatigue behavior of additively manufactured 316L stainless steel. Materials.
+https://doi.org/10.3390/ma13153293
+Article
+Google Scholar
+Klein Fiorentin F, Maciel D, Gil J, Figueiredo M, Berto F, Jesus A (2022) Fatigue assessment of Inconel 625 produced by directed energy deposition from miniaturized specimens. Metals.
+https://doi.org/10.3390/met12010156
+Article
+Google Scholar
+Bassoli E, Denti L, Comin A, Sola A, Tognoli E (2018) Fatigue behavior of as-built L-PBF A357.0 parts. Metals.
+https://doi.org/10.3390/met8080634
+Article
+Google Scholar
+Zhan Z, Li H (2021) A novel approach based on the elastoplastic fatigue damage and machine learning models for life prediction of aerospace alloy parts fabricated by additive manufacturing. Int J Fatigue 145:106089.
+https://doi.org/10.1016/j.ijfatigue.2020.106089
+Article
+Google Scholar
+Horňas J, Běhal J, Homola P, Senck S, Holzleitner M, Godja N, Pàsztor Z, Hegedüs B, Doubrava R, Růžek R, Petrusovà L (2023) Modelling fatigue life prediction of additively manufactured Ti-6Al-4V samples using machine learning approach. Int J Fatigue 169:107483.
+https://doi.org/10.1016/j.ijfatigue.2022.107483
+Article
+Google Scholar
+Konda N, Verma R, Jayaganthan R (2023) Estimation of high cycle fatigue life of additively manufactured Ti6Al4V using data analytics. Procedia Struct Integr 46:87–93
+Article
+Google Scholar
+Géron A (2018) Hands-on machine learning with Scikit-Learn and TensorFlow: concepts, tools, and techniques to build intelligent systems, first edition, fifth release edition. O’Reilly, Beijing Boston Farnham Sebastopol Tokyo
+Horňas J, Běhal J, Homola P, Senck S, Holzleitner M, Godja N, Pàsztor Z, Hegedüs B, Doubrava R, Růžek R, Petrusovà L (2023) Modelling fatigue life prediction of additively manufactured Ti-6Al-4V samples using machine learning approach. Int J Fatigue 169:107483.
+https://doi.org/10.1016/j.ijfatigue.2022.107483
+Article
+Google Scholar
+He L, Wang Z, Akebono H, Sugeta A (2021) Machine learning-based predictions of fatigue life and fatigue limit for steels. J Mater Sci Technol 90:9–19.
+https://doi.org/10.1016/j.jmst.2021.02.021
+Article
+Google Scholar
+Maleki E, Bagherifard S, Razavi N, Bandini M, Plessis AD, Berto F, Guagliano M (2022) On the efficiency of machine learning for fatigue assessment of post-processed additively manufactured AlSi10Mg. Int J Fatigue 160:106841.
+https://doi.org/10.1016/j.ijfatigue.2022.106841
+Article
+Google Scholar
+Xu Z, Zhang Z (2024) The need for standardizing fatigue data reporting. Nat Mater 23(7):866–868.
+https://doi.org/10.1038/s41563-024-01929-6
+Article
+MathSciNet
+Google Scholar
+Vovk V (2013). In: Schölkopf B, Luo Z, Vovk V (eds) Kernel ridge regression. Springer, Berlin, Heidelberg, pp 105–116
+Google Scholar
+Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, Blondel M, Prettenhofer P, Weiss R, Dubourg V, Vanderplas J, Passos A, Cournapeau D, Brucher M, Perrot M, Duchesnay E (2011) Scikit-learn: machine learning in Python. J Mach Learn Res 12:2825–2830
+MathSciNet
+Google Scholar
+Stulp F, Sigaud O (2015) Many regression algorithms, one unified model: a review. Neural Netw 69:60–79.
+https://doi.org/10.1016/j.neunet.2015.05.005
+Article
+Google Scholar
+Download references
+Acknowledgements
+L. G. Di Maggio, C. Gastaldi, D. A. Renzo, and C. Delprete wish to honor the memory of our dear coauthor, Franco Furgiuele, who passed on August 29, 2024, acknowledging his contagious passion for research, his ability to identify the essential, and his warmth-qualities that made him a great professor, researcher, and supervisor. This research has been supported by ICSC - Italian Research Center on High Performance Computing, Big Data and Quantum Computing, funded by the European Union - NextGenerationEU.
+Funding
+Open access funding provided by Politecnico di Torino within the CRUI-CARE Agreement.
+Author information
+Authors and Affiliations
+Dipartimento di Ingegneria Meccanica e Aerospaziale, Politecnico di Torino, Corso Duca degli Abruzzi, 10129, Turin, Italy
+Luigi Gianpio Di Maggio, Chiara Gastaldi & Cristiana Delprete
+Department Chemical Engineering Materials Environment, Sapienza University of Rome, Via Eudossiana 18, 00184, Roma, Italy
+Danilo Antonello Renzo
+Department of Mechanical, Energy and Management Engineering, University of Calabria, Via P. Bucci 46C, 87036, Rende, Italy
+Franco Furgiuele
+Authors
+Luigi Gianpio Di Maggio
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Chiara Gastaldi
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Danilo Antonello Renzo
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Cristiana Delprete
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Franco Furgiuele
+View author publications
+Search author on:
+PubMed
+Google Scholar
+Contributions
+Luigi Gianpio Di Maggio: Conceptualization, Methodology, Software, Writing-original draft. Chiara Gastaldi: Conceptualization, Methodology, Supervision, Project Administration, Writing-original draft, Writing-review & editing. Danilo Antonello Renzo: Conceptualization, Methodology, Software, Writing-original draft. Cristiana Delprete: Conceptualization, Methodology, Writing-review & editing, Supervision. Franco Furgiuele: Conceptualization, Methodology, Supervision, Writing-review & editing.
+Corresponding author
+Correspondence to
+Chiara Gastaldi
+.
+Ethics declarations
+Conflict of interest
+No potential conflict of interest is reported by the authors when submitting the work.
+Additional information
+Publisher's Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Appendix: Machine learning algorithms
+Appendix: Machine learning algorithms
+1.1
+Linear regression algorithm
+The linear regression algorithm finds the linear relationship between a dependent variable (i.e., target variable) and one or more independent features. In this last case, the method is known as multivariate linear regression. The equation for multiple linear regression is:
+$$\begin{aligned} y=\beta _0+\beta _1 X_1+\beta _2 X_2+ \cdots +\beta _n X_n \end{aligned}$$
+(4)
+where
+y
+is the dependent variable,
+\(X_n\)
+are the independent variables,
+\(\beta _0\)
+is the intercept,
+\(\beta _1\)
+,
+\(\beta _2\)
+,...
+\(\beta _n\)
+are the slopes. The goal of the algorithm is to find the best-fit line that can predict the values based on the independent variables. The limit of this algorithm is that fails when there are too many independent variables to take into account. Linear regression continues to be among the most prevalent algorithms owing to its straightforwardness and ease of interpretation. Nevertheless, the efficacy of this model rely on foundational assumptions that may prove to be unsuitable for exceedingly intricate or nonlinear phenomena.
+1.2
+Random Forest algorithm
+The Random Forest algorithm used in our case is a supervised decision regression tree. The algorithm is based on an ensemble bagging technique, also known as bootstrap aggregation. Bagging is a technique where multiple subsets are created for the training by sampling with replacement. Each subset is used to train a separate decision tree. The Bagging technique helps to reduce overfitting and leads to more robust and generalized predictions. Therefore, the RF algorithm creates multiple random decision trees during the training, each trained on a random subset of data. The final prediction
+f
+(
+x
+) result to be the average of the predictions from all trees:
+$$\begin{aligned} f(x) = \frac{1}{B} \sum _{b=1}^{B} T_b(x) \end{aligned}$$
+(5)
+where
+B
+are the different bootstrapped training datasets,
+\(T_b\)
+are the regression tree predictors, and
+x
+are the unseen samples. One of the key advantages of the bagging technique used in Random Forest is its ability to reduce variance. This can be expressed mathematically as
+\(Var(f_{RF}(x)) = \frac{1}{B} Var(T(x))\)
+,where
+\(Var(f_{RF}(x))\)
+is the variance of the overall Random Forest prediction,
+B
+is the number of trees in the forest and
+Var
+(
+T
+(
+x
+)) is the variance of a single decision tree predictor. This equation illustrates that increasing the number of trees
+B
+helps to reduce the overall variance of the model.
+The main hyperparameters for random forest are the number of trees, the maximum number of features, the minimum number of samples required to split a node in a decision tree, the minimum number of samples required to be in a leaf node, the maximum depth of the decision trees in the forest, and the random number generator seed that is used to initialize the random forest algorithm.
+1.3
+XGBoost algorithm
+The eXtreme Gradient Boosting is a supervised optimized boosting algorithm based on a gradient boosting minimization technique, similar to a neural network. It uses a regularization term which makes it efficient for most different types of datasets. In particular, the objective function
+\(L(\phi )\)
+which needs to be optimized is given by the sum of the loss function and regularization term [
+46
+]:
+$$\begin{aligned} L(\phi ) = \sum _{i} l(\tilde{y}_i, y_i)+\sum _{k} \beta (f_k) \end{aligned}$$
+(6)
+where
+l
+is the loss function representing the difference between the actual target value
+\(\tilde{y}_i\)
+and the predicted target value
+\(y_i\)
+;
+\(\beta (f_k)\)
+is the regularization term that is given by:
+$$\begin{aligned} \beta (f_k) = \gamma T + 0.5 \cdot \lambda \cdot \omega ^2 \end{aligned}$$
+(7)
+where
+\(\gamma\)
+is the pruning index,
+T
+is the number of trees,
+\(\lambda\)
+is the scaling factor of the weights and
+\(\omega\)
+is the leaf weight.
+The algorithm tries to minimize
+l
+and optimizing regularization
+\(f_k\)
+leads to a smaller variance and makes the prediction stable. The algorithm during the training generates decision trees in series in a manner that the residuals of the previous tree are used for the training of the following one. The efficiency of the XGBoost algorithm is influenced by a lot of hyperparameters and the wrong choice of these can lead to poor performance. Key hyperparameters include: objective, learning_rate, n_estimators, booster,
+max_depth
+,
+min_child_weight
+,
+gamma
+,
+subsample
+,
+colsample_bytree, reg_alpha (L1 Regularization) and reg_lambda (L2 Regularization)
+. It is decided to use the default hyperparameters also because in this case find the best combination is computationally expensive (Table
+2
+).
+Table 2 Key XGBoost hyperparameters and default setting
+Full size table
+1.4
+Super Vector Regression algorithm
+Support Vector Regression (SVR) is a regression algorithm based on Support Vector Machines (SVM) that finds the optimal hyperplane in a high-dimensional space with the maximum margin such that the data points (or as many as possible) lie within the margin and on the correct side of the hyperplane. The regression equation in the feature space is:
+$$\begin{aligned} f(x) = <w,x> + bias \end{aligned}$$
+(8)
+where
+f
+(
+x
+) is the predicted output,
+x
+is the input feature vector,
+w
+is the weight vector, and
+\(<\cdot ,\cdot>\)
+denotes the dot product.
+SVR can find nonlinear relationships by mapping the input features into a higher-dimensional space using a kernel function. It is useful for problems where the relationship between the independent variables and the dependent variable is nonlinear or complex. SVR aims to minimize the empirical risk while ensuring errors for each data point are within a tolerance
+\(\epsilon\)
+, formulated as:
+$$\begin{aligned} \min _{w, b, \xi , \xi ^*} \frac{1}{2} \Vert w\Vert ^2 + C \sum _{i=1}^n (\xi _i + \xi _i^*) \end{aligned}$$
+(9)
+subject to the constraints:
+$$\begin{aligned} \begin{aligned} y_i - \langle w, x_i \rangle - b \le \epsilon + \xi _i \\ \langle w, x_i \rangle + b - y_i \le \epsilon + \xi _i^* \\ \xi _i, \xi _i^* \ge 0 \end{aligned} \end{aligned}$$
+(10)
+where
+C
+is the regularization parameter,
+\(\xi _i\)
+and
+\(\xi _i^*\)
+are slack variables representing deviation from the true value. The parameter
+\(\epsilon\)
+controls the width of the margin. It allows some tolerance for errors, known as
+\(\epsilon\)
+-insensitive loss.
+Data points within the margin or on the correct side of the hyperplane but outside the margin are considered to have no error. The regularization parameters allow the balance of the trade-off between maximizing the margin and minimizing the error. This helps prevent overfitting and ensures better generalization to unseen data.
+1.5
+Kernel Ridge Regression algorithm
+The structure of the KRR algorithm is identical to the SVR [
+52
+]. The substantial difference consists in the adopted loss function. The SVR algorithm uses
+\(\epsilon\)
+-insensitive loss combined with the L2 regularization (or ridge regularization) method [
+53
+]. KRR combines ridge regression with the Kernel trick to build a decision surface to map all data points randomly distributed in a multidimensional space. The Kernel trick is a method that allows finding a surface with the maximum margin that separates the data (not linearly separable), converting the problem into a higher-dimensional feature space where the data may be linearly separated. Mathematically, the Kernel trick allows to operate in the multidimensional feature space without calculating the coordinates. When an algorithm based on the Kernel trick is used, it is important to choose the adequate Kernel function
+\(K(X_1, X_2)\)
+that maps the input data vectors in the higher dimensional space [
+54
+]. There are several Kernel functions to do this: linear, polynomial, radial basis, Gaussian, Laplacian, exponential chi2, and sigmoid. The Kernel function that best performs to take low-dimensional input space and transform it into a higher-dimensional space for our problem is the radial basis function (RBF):
+$$\begin{aligned} K(X_1,X_2) = e^{-\gamma ||X_1-X_2||^2} \end{aligned}$$
+(11)
+where
+\(X_1\)
+and
+\(X_2\)
+are input data points and
+\(||X_1-X_2||^2\)
+is the squared Euclidean distance.
+\(\gamma\)
+is a hyperparameter that is defined as
+\(\frac{1}{2\sigma ^2}\)
+, where
+\(\sigma\)
+is a parameter known as the bandwidth of the kernel function. In this case, we set RBF as the kernel function whereas other hyperparameters are in the default set.
+Another point is that the KRR technique generally slips into overfitting, but this problem can be prevented by adopting the cross-validation technique. In addition, KRR became faster than SVR for medium-sized datasets, i.e., less than one thousand samples, whereas SVR is better for larger training datasets. Considering the training time SVR is faster for all sizes of datasets because the learned solution is sparse [
+53
+].
+1.6
+k-Nearest Neighbors regression
+k-nearest neighbors (kNN) regression is a non-parametric supervised learning method for prediction problems. The kNN regressor uses the proximity of data points in the feature space for the prediction. In particular, the kNN algorithm calculates its distance (e.g., by Euclidean distance, Manhattan distance, Minkowski distance, Hamming distance, etc.) from the “k” nearest data points to determine which group of data points it belongs to [
+53
+]. The default metric Minkowski was used for the distance computation:
+$$\begin{aligned} d(X,Y)= \Bigg (\sum _{i=1}^{n} |x_i - y_i|^p \Bigg )^\frac{1}{p} \end{aligned}$$
+(12)
+where
+\(X = (x_1,x_2,...,x_n\)
+) and
+\(Y = (y_1, y_2,..., y_n\)
+) are data points with
+n
+features and
+p
+is the power parameter for the Minkowski metric equal to 2 (default value). The kNN algorithm is based on the principle that similar data points tend to have similar target values. By finding the k nearest neighbors to a new data point, it makes predictions considering the average of these neighbors’ target values.
+1.7
+Artificial Neural Network
+The structure of an ANN is similar to a human brain. This is generally composed of an input layer of artificial neurons, one or more hidden layers, and an output layer. The input layer receives the information from the environment, but it is not processed. The information from the input layer is sent to the first hidden layer. Each neuron of a hidden layer receives inputs from all neurons of the previous layer. Each input information
+\(p_i\)
+is multiplied with a weight
+\(w_i\)
+, adds a
+bias
+term, and then passes the result through an activation function. The neural response can be mathematically expressed as:
+$$\begin{aligned} n = \sum _{i=1}^{k} p_i w_i + bias \end{aligned}$$
+(13)
+The
+bias
+is considered a systematic error that occurs in the ANN algorithm due to incorrect assumptions that occur during the training process. Technically, bias is defined as the error between the average algorithm prediction and the ground truth. The activation function has an important role in the learning capability of ANN because it allows us to find non-linear relationships between the input and output. Common activation functions are the sigmoid, tanh, and ReLU (Rectified Linear Unit). Usually, the ReLU is the most used function because is able to converge faster compared to traditional activation functions since the derivative of ReLU is 1 for a positive input. The output of the ReLU function is the maximum value between 0 and the input value. The output layer receives the information from the previously last hidden layer and provides the output answer. The training is based on a backpropagation process that involves adjusting the weights and biases of the neurons. During the backpropagation process, the gradient of the loss function with respect to each weight and bias is calculated and then adjusted using Gradient Descent. The gradient descent is an optimization technique and the most popular are the stochastic gradient descent (SGD), the root mean squared propagation (RMSProp), and the adaptive moment estimation (Adam). The latter was used to minimize the loss function of our ANN. In this study, the ANN was constructed and trained using the framework PyTorch. The structure (i.e., number of neurons and layers) of an ANN is often found through a
+trial
+and
+error
+procedure. Generally, is important to have a large enough network for good learning but small enough to make a fast learning. A common issue for this type of algorithm is overfitting which represents the learning case where the performance of training is better than validation. This can be prevented by adopting techniques such as regularization methods (i.e., L1 or L2), dropout layer, and early stopping that help the algorithm to generalize better. The structure of our ANN was built using the Sequential module, which creates a stack of layers where each layer has exactly one input tensor and one output tensor. The ANN was built using the trial and error procedure, starting from a network made with a few resources (i.e., a few neurons and hidden layers) that are progressively increased until the test error does not improve anymore. This procedure allowed us to achieve the best one in performance and fast learning. The network consists of three hidden layers and one Dropout layer. The Dropout layer turns off the
+\(30\%\)
+of neurons helping to avoid overfitting (Table
+3
+).
+Table 3 Sequenze of hidden layers of the ANN
+Full size table
+The hyperparameters as the learning rate are set before the training. The value of the learning rate defines the speed with which the network updates its parameters. For instance, a larger batch size might require a smaller learning rate to prevent overshooting of the optimal point, whereas a smaller batch size might require a larger learning rate to escape local minima. In our case, the best learning rate was set equal to 0.0001. The number of training epochs was 2500. An epoch is a hyperparameter that represents how many times a learning algorithm iterates over the entire training dataset during the training. At the end of each training of a single batch of samples, the algorithm learning is reset and the training starts again.
+Rights and permissions
+Open Access
+This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+http://creativecommons.org/licenses/by/4.0/
+.
+Reprints and permissions
+About this article
+Cite this article
+Di Maggio, L.G., Gastaldi, C., Renzo, D.A.
+et al.
+A robust methodology for dataset preparation and algorithm performance assessment in machine learning prediction of the fatigue life of additive manufactured components.
+Engineering with Computers
+41
+, 2937–2952 (2025). https://doi.org/10.1007/s00366-025-02139-7
+Download citation
+Received
+:
+02 July 2024
+Accepted
+:
+25 March 2025
+Published
+:
+18 April 2025
+Version of record
+:
+18 April 2025
+Issue date
+:
+October 2025
+DOI
+:
+https://doi.org/10.1007/s00366-025-02139-7
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+Keywords
+Fatigue
+Additive manufacturing
+Machine learning
+Fatigue life
+Fatigue dataset
+High cycle fatigue
+Profiles
+Luigi Gianpio Di Maggio
+View author profile
+Chiara Gastaldi
+View author profile
+Danilo Antonello Renzo
+View author profile
+Advertisement
+window.SN = window.SN || {};
+    window.SN.libs = window.SN.libs || {};
+    window.SN.libs.ads = window.SN.libs.ads || {};
+    window.SN.libs.ads.slotConfig = window.SN.libs.ads.slotConfig || {};
+    window.SN.libs.ads.slotConfig['MPU1'] = {
+        'pos': 'MPU1',
+        'type': 'MPU1',
+    };
+    window.SN.libs.ads.slotConfig['unitPath'] = '/270604982/springerlink/366/article';
+Search
+Search by keyword or author
+Search
+Navigation
+Find a journal
+Publish with us
+Track your research
+Footer Navigation
+Discover content
+Journals A-Z
+Books A-Z
+Subjects A-Z
+Publish with us
+Journal finder
+Publish your research
+Language editing
+Open access publishing
+Products and services
+Our products
+Librarians
+Societies
+Partners and advertisers
+Our brands
+Springer
+Nature Portfolio
+BMC
+Palgrave Macmillan
+Apress
+Discover
+Corporate Navigation
+Your privacy choices/Manage cookies
+Your US state privacy rights
+Accessibility statement
+Terms and conditions
+Privacy policy
+Help and support
+Legal notice
+Cancel contracts here
+185.204.72.70
+Not affiliated
+© 2026 Springer Nature

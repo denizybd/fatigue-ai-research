@@ -1,0 +1,83 @@
+A.      Centola      et      al.                                                                                                                                                                                                 Engineering Failure Analysis 168 (2025) 109081
+
+Data       availability
+
+        Data       will      be      made       available      on      request.
+
+References
+
+  [1]           Y.     Yamashita,     T.     Murakami,     R.     Mihara,     M.     Okada,     Y.     Murakami,     Defect     analysis     and     fatigue     design     basis     for     Ni-based     superalloy     718     manufactured     by     additive
+           manufacturing,      Procedia      Struct.      Integrity      (2017),      https://doi.org/10.1016/j.prostr.2017.11.054.
+  [2]           A.     Tridello,     J.     Fiocchi,     C.A.     Biffi,     G.     Chiandussi,     M.     Rossetto,     A.     Tuissi,     D.S.     Paolino,     Effect     of     microstructure,     residual     stresses     and     building     orientation     on     the
+           fatigue      response      up      to      109      cycles      of      an      SLM      AlSi10Mg      alloy,      Int.      J.      Fatigue      137      (2020)      105659,      https://doi.org/10.1016/J.IJFATIGUE.2020.105659.
+  [3]           J.      Eckert,      J.C.      Holzer,      C.E.      Krill,      W.L.      Johnson,      Structural      and      thermodynamic      properties      of      nanocrystalline      fcc      metals      prepared      by      mechanical      attrition,
+           J.      Mater.      Res.      7      (1992),      https://doi.org/10.1557/JMR.1992.1751.
+  [4]           S.      Liu,      Y.C.      Shin,      Additive      manufacturing      of      Ti6Al4V      alloy:      a      review,      Mater.      Des.      164      (2019),      https://doi.org/10.1016/j.matdes.2018.107552.
+  [5]           A.    Tridello,    J.    Fiocchi,    C.A.    Biffi,    G.    Chiandussi,    M.    Rossetto,    A.    Tuissi,    D.S.    Paolino,    VHCF    response    of    Gaussian    SLM    AlSi10Mg    specimens:    Effect    of    a    stress    relief
+           heat      treatment,      Int.      J.      Fatigue      124      (2019),      https://doi.org/10.1016/j.ijfatigue.2019.02.020.
+  [6]           A.      Tridello,      J.      Fiocchi,      C.A.      Biffi,      M.      Rossetto,      A.      Tuissi,      D.S.      Paolino,      Size-effects      affecting      the      fatigue      response      up      to      109      cycles      (VHCF)      of      SLM      AlSi10Mg
+           specimens      produced      in      horizontal      and      vertical      directions,      Int.      J.      Fatigue      160      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.106825.
+  [7]           Y.      Murakami,      Metal      fatigue:      Effects      of      small      defects      and      nonmetallic      inclusions,      2019.      doi:      10.1016/C2016-0-05272-5.
+  [8]           F.    Calignano,    D.    Manfredi,    E.P.    Ambrosio,    L.    Iuliano,    P.    Fino,    Influence    of    process    parameters    on    surface    roughness    of    aluminum    parts    produced    by    DMLS,    Int.    J.
+           Adv.      Manuf.      Technol.      67      (2013),      https://doi.org/10.1007/s00170-012-4688-9.
+  [9]           A.     Centola,     A.     Tridello,     A.     Ciampaglia,     F.     Berto,     D.S.     Paolino,     Review     on     machine     learning      techniques     for     the     assessment     of     the     fatigue      response     of     additively
+           manufactured      metal      parts,      Fatigue      Fract.      Eng.      Mater.      Struct.      (2024),      https://doi.org/10.1111/ffe.14326.
+[10]           J.      Chen,      Y.      Liu,      Fatigue      modeling      using      neural      networks:      a      comprehensive      review,      Fatigue      Fract.      Eng.      Mater.      Struct.      45      (2022),      https://doi.org/10.1111/
+           ffe.13640.
+[11]           A.      Centola,      A.      Ciampaglia,      A.      Tridello,      D.S.      Paolino,      Machine      learning      methods      to      predict      the      fatigue      life      of      selectively      laser      melted      Ti6Al4V      components,
+           Fatigue      Fract.      Eng.      Mater.      Struct.      46      (2023),      https://doi.org/10.1111/ffe.14125.
+[12]           A.    Tridello,    A.    Ciampaglia,    F.    Berto,    D.S.    Paolino,    Assessment    of    the    critical    defect    in    additive    manufacturing    components    through    machine    learning    algorithms,
+           Appl.      Sci.      (switzerland)      13      (2023),      https://doi.org/10.3390/app13074294.
+[13]           E.      Maleki,      S.      Bagherifard,      M.      Guagliano,      Correlation      of      residual      stress,      hardness      and      surface      roughness      with      crack      initiation      and      fatigue      strength      of      surface
+           treated      additive      manufactured      AlSi10Mg:      Experimental      and      machine      learning      approaches,      J.      Mater.      Res.      Technol.      24      (2023)      3265–    3283,      https://doi.org/
+           10.1016/J.JMRT.2023.03.193.
+[14]           L.    Dang,    X.    He,    D.    Tang,    Y.    Li,    T.    Wang,    A    fatigue    life    prediction    approach    for    laser-directed    energy    deposition    titanium    alloys    by    using    support    vector    regression
+           based      on      pore-induced      failures,      Int.      J.      Fatigue      159      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.106748.
+[15]           J.    Hor ˇnas,    J.    Bˇehal,    P.    Homola,    S.    Senck,    M.    Holzleitner,    N.    Godja,    Z.    P´asztor,    B.    Hegedüs,    R.    Doubrava,    R.    Rů           ˇzek,    L.    Petrusov´a,    Modelling    fatigue    life    prediction
+           of      additively      manufactured      Ti-6Al-4V      samples      using      machine      learning      approach,      Int.      J.      Fatigue      169      (2023)      107483,      https://doi.org/10.1016/J.
+           IJFATIGUE.2022.107483.
+[16]           M.     Zhang,     C.N.     Sun,     X.     Zhang,     P.C.     Goh,     J.     Wei,     D.     Hardacre,     H.     Li,     High     cycle     fatigue     life     prediction     of     laser     additive     manufactured     stainless     steel:     a     machine
+           learning      approach,      Int.      J.      Fatigue      128      (2019)      105194,      https://doi.org/10.1016/J.IJFATIGUE.2019.105194.
+[17]           A.      Ciampaglia,      A.      Tridello,      D.S.      Paolino,      F.      Berto,      Data      driven      method      for      predicting      the      effect      of      process      parameters      on      the      fatigue      response      of      additive
+           manufactured      AlSi10Mg      parts,      Int.      J.      Fatigue      170      (2023)      107500,      https://doi.org/10.1016/J.IJFATIGUE.2023.107500.
+[18]           A.      Ciampaglia,      A.      Tridello,      F.      Berto,      D.      Paolino,      Data-driven      method      to      assess      the      influence      of      process      parameters      on      the      fatigue      response      of      additively
+           manufactured      Ti6Al4V,      Procedia      Struct.      Integrity      47      (2023)      56–    69,      https://doi.org/10.1016/j.prostr.2023.06.041.
+[19]           E.      Salvati,      A.      Tognan,      L.      Laurenti,      M.      Pelegatti,      F.      De      Bona,      A      defect-based      physics-informed      machine      learning      framework      for      fatigue      finite      life      prediction      in
+           additive      manufacturing,      Mater.      Des.      222      (2022)      111089,      https://doi.org/10.1016/J.MATDES.2022.111089.
+[20]           A.    Tridello,    C.    Boursier    Niutta,     F.    Berto,    G.    Qian,     D.S.    Paolino,    Fatigue    failures     from    defects     in    additive    manufactured     components:    a    statistical     methodology    for
+           the      analysis      of      the      experimental      results,      Fatigue      Fract.      Eng.      Mater.      Struct.      44      (2021),      https://doi.org/10.1111/ffe.13467.
+[21]           J.    Chen,    Y.    Liu,    Fatigue    property    prediction    of    additively    manufactured    Ti-6Al-4V    using    probabilistic    physics-guided    learning,    Addit.    Manuf.    39    (2021)    101876,
+           https://doi.org/10.1016/J.ADDMA.2021.101876.
+[22]           Y.L.      Lee,      J.      Pan,      R.      Hathaway,      M.      Barkey,      Fatigue      testing      and      analysis,      2005.      doi:      10.1016/B978-0-7506-7719-6.X5000-3.
+[23]           L.     Du,     G.     Qian,     L.     Zheng,     Y.     Hong,     Influence     of     processing     parameters     of     selective     laser     melting     on     high-cycle     and     very-high-cycle     fatigue     behaviour     of     Ti-6Al-
+           4V,      Fatigue      Fract.      Eng.      Mater.      Struct.      44      (2021),      https://doi.org/10.1111/ffe.13361.
+[24]           M.      Bakhtiarian,      H.      Omidvar,      A.      Mashhuriazar,      Z.      Sajuri,      C.H.      Gur,      The      effects      of      SLM      process      parameters      on      the      relative      density      and      hardness      of      austenitic
+           stainless      steel      316L,      J.      Mater.      Res.      Technol.      29      (2024),      https://doi.org/10.1016/j.jmrt.2024.01.237.
+[25]           M.    Mohseni,    M.S.    Sadeghi,    A.    Hemasian    Etefagh,    S.M.    Nikouei,    M.    Khajehzadeh,    The    effect    of    selective    laser    melting    process    parameters    and    remelting    scanning
+           strategy    on    relative    density    and    surface    hardness    of    stainless    steel    316L,    Proceed.    Institut.    Mechan.    Eng.,    Part    e:    J.    Process    Mechan.    Eng.    (2023),    https://doi.org/
+           10.1177/09544089231207809.
+[26]           J.M.     Alegre,     A.     Díaz,     R.     García,     L.B.     Peral,     I.I.     Cuesta,     Effect     of     HIP     post-processing     at     850◦C/200    MPa     in     the     fatigue     behavior     of     Ti-6Al-4V     alloy     fabricated     by
+           Selective      Laser      Melting,      Int.      J.      Fatigue      163      (2022)      107097,      https://doi.org/10.1016/J.IJFATIGUE.2022.107097.
+[27]           A.B.      Spierings,      T.L.      Starr,      K.      Wegener,      Fatigue      performance      of      additive      manufactured      metallic      parts,      Rapid      Prototyp.      J.      19      (2013),      https://doi.org/10.1108/
+           13552541311302932.
+[28]           R.      Shrestha,      J.      Simsiriwong,      N.      Shamsaei,      Fatigue      behavior      of      additive      manufactured      316L      stainless      steel      parts:      effects      of      layer      orientation      and      surface
+           roughness,      Addit.      Manuf.      28      (2019),      https://doi.org/10.1016/j.addma.2019.04.011.
+[29]           F.    Stern,    L.    Becker,    C.    Cui,    J.    Tenkamp,    V.    Uhlenwinkel,    M.    Steinbacher,    J.    Boes,    J.    Lentz,    R.    Fechte-Heinen,    S.    Weber,    F.    Walther,    Improving    the    defect    tolerance
+           of      PBF-LB/M      processed      316L      steel      by      increasing      the      nitrogen      content,      Adv.      Eng.      Mater.      25      (2023),      https://doi.org/10.1002/adem.202200751.
+[30]           W.J.     Lai,     A.     Ojha,     Z.     Li,     C.     Engler-Pinto,     X.     Su,     Effect     of     residual     stress     on     fatigue     strength     of     316L     stainless     steel     produced     by     laser     powder     bed     fusion     process,
+           Prog.      Addit.      Manuf.      6      (2021),      https://doi.org/10.1007/s40964-021-00164-8.
+[31]           P.    Kumar,    R.    Jayaraj,    J.    Suryawanshi,    U.R.    Satwik,    J.    McKinnell,    U.    Ramamurty,    Fatigue    strength    of    additively    manufactured    316L    austenitic    stainless    steel,    Acta
+           Mater.      199      (2020),      https://doi.org/10.1016/j.actamat.2020.08.033.
+[32]           G.S.    Ponticelli,    R.    Panciroli,    S.    Venettacci,    F.    Tagliaferri,    S.    Guarino,    Experimental    investigation    on    the    fatigue    behavior    of    laser    powder    bed    fused    316L    stainless
+           steel,      CIRP      J.      Manuf.      Sci.      Technol.      38      (2022),      https://doi.org/10.1016/j.cirpj.2022.07.007.
+[33]           R.      Shrestha,      J.      Simsiriwong,      N.      Shamsaei,      Fatigue      behavior      of      additive      manufactured      316L      stainless      steel      under      axial      versus      rotating-bending      loading:
+           synergistic      effects      of      stress      gradient,      surface      roughness,      and      volumetric      defects,      Int.      J.      Fatigue      144      (2021),      https://doi.org/10.1016/j.ijfatigue.2020.106063.
+[34]           D.      Kotzem,      S.      Kleszczynski,      F.      Stern,      A.      Elspaß    ,      J.      Tenkamp,      G.      Witt,      F.      Walther,      Impact      of      single      structural      voids      on      fatigue      properties      of      AISI      316L
+           manufactured      by      laser      powder      bed      fusion,      Int.      J.      Fatigue      148      (2021),      https://doi.org/10.1016/j.ijfatigue.2021.106207.
+[35]           X.     Liang,     A.     Hor,    C.     Robert,     M.    Salem,     F.     Lin,    F.     Morel,     High     cycle    fatigue     behavior     of    316L     steel     fabricated     by    laser     powder     bed     fusion:    Effects     of    surface     defect
+           and      loading      mode,      Int.      J.      Fatigue      160      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.106843.
+[36]           F.      Zeng,      Y.      Yang,      G.      Qian,      Fatigue      properties      and      S-N      curve      estimating      of      316L      stainless      steel      prepared      by      SLM,      Int.      J.      Fatigue      162      (2022),      https://doi.org/
+           10.1016/j.ijfatigue.2022.106946.
+
+
+                                                                                                                                                          22

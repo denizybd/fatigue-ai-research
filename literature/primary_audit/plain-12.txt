@@ -1,0 +1,16 @@
+range for h ( Fig. 6 b), the predicted σ is small. On the other hand, where the numerosity of the training data is limited (dashed black line
+outside the TDB range and in the training range boundaries), the uncertainty associated with the prediction drastically increases.
+To separate the experimentally observed uncertainty from the prediction uncertainty, the BNN is introduced. In the BNN, the
+probabilistic formulation of its parameters can capture the input-related uncertainty and discern it from the experimental scattering.
+Moreover, the probabilistic formulation of the BNN weights allows to improve the generalization capability of the model [47] . This
+behavior can be appreciated not only from the training and testing loss curves, but also from the R90C90 curves. Considering Owen ’ s
+R90C90 curve, with this BNN, allows to model effectively the model uncertainty on these design curves while guaranteeing that the ML
+model uncertainty is separated from the uncertainty of experimental data. This was not possible with the deterministic formulation of
+the FFNN-L and with the PINN-L, whose probabilistic approach was not inherited in the weight uncertainty of their NN formulation.
+Considering these factors, the chosen ML model successfully addresses the challenges of predicting and preventing fatigue failures,
+ensuring accurate and reliable results. Among these models, neural networks (NNs) stand out as the most suitable technique for
+describing and addressing the fatigue behavior of additively manufactured (AM) metal alloys, thanks to their exceptional performance
+Fig. 7. BNN PSN curves. In black the R50 experimental fit, in dashed black the Owen R90C90 curve, in light blue the R90C90 BNN predictions and
+in blue their mean. (b) and (d) are testing sets, whereas the other four are training sets.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+12 

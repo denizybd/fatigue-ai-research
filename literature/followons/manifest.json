@@ -1,0 +1,54 @@
+{
+  "audited_utc": "2026-10-20T12:39:18.492581+00:00",
+  "pdf_acquisition": "unsuccessful",
+  "visual_verification": "not_performed_no_pdf",
+  "license_from_crossref_and_openalex": "CC BY-NC-ND 4.0 for both papers",
+  "sources": {
+    "topology": {
+      "doi": "10.1016/j.ijfatigue.2026.109481",
+      "repository_pdf": "https://iris.polito.it/bitstream/11583/3009771/4/2026_IJF_topology_optimization_AM_ML.pdf.pdf",
+      "repository_http_status": 403,
+      "fulltext_used": "author-upload ResearchGate indexed text",
+      "pdf_sha256": null
+    },
+    "transfer": {
+      "doi": "10.1016/j.engfailanal.2026.111075",
+      "repository_pdf": "https://iris.polito.it/bitstream/11583/3013143/2/Centola%20et%20al.%20-%20Data%20scarcity%20in%20fatigue%20design%20of%20AM%20parts%20A%20transfer%20learning%20framework%20to%20model%20the%20process%20%e2%88%92%20structure%20%e2%88%92%20property%20relationship%20-%20comp.pdf",
+      "repository_http_status": 403,
+      "fulltext_used": "author-upload ResearchGate indexed text",
+      "pdf_sha256": null
+    }
+  },
+  "files": [
+    {
+      "path": "topology_crossref.json",
+      "sha256": "3f76704a958e2b9766668bdf485cfee9085c1c7522e72444ce20d4cd6c721301",
+      "bytes": 47939,
+      "kind": "metadata_not_full_text"
+    },
+    {
+      "path": "topology_openalex.json",
+      "sha256": "c9e2658f791863713c326afc9e9a0127ad3b10ec99efb08c1f508fba2d360dd9",
+      "bytes": 31752,
+      "kind": "metadata_not_full_text"
+    },
+    {
+      "path": "topology_publisher.xml",
+      "sha256": "ad0b2774fc0b238caf6959ab119ca07a5c5e3f5c18d1e6729ec61b09a17f063c",
+      "bytes": 2089,
+      "kind": "metadata_not_full_text"
+    },
+    {
+      "path": "transfer_crossref.json",
+      "sha256": "19d5e83e4a02dc44c1d6a244d3eeb5968e42062a19559f026859952536bf06d8",
+      "bytes": 59503,
+      "kind": "metadata_not_full_text"
+    },
+    {
+      "path": "transfer_openalex.json",
+      "sha256": "be32ef5f062dd98805ed11e89fe8f4b94d2365a2b0b6e2d702065cedf0fedd77",
+      "bytes": 29938,
+      "kind": "metadata_not_full_text"
+    }
+  ]
+}

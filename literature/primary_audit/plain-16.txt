@@ -1,0 +1,7 @@
+Fig. 9. Effects of ϑ (a), P (b), v (c), h (d) and t (e) on the R90C90 fatigue life N
+f
+, evaluated by the R90C90 BNN, for two different S
+a
+level.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+16 

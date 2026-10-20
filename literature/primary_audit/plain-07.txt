@@ -1,0 +1,72 @@
+3.2. PINN-L
+In the FFNN-L, the dataset standard deviation σ is part of the TDB labels, therefore its value should be computed beforehand. As a
+consequence, since the number of datasets in the TDB is 51, the number of training points is reduced to 51 as well. To overcome this
+issue and leverage all the 518 training data points, a probabilistic loss function L (Eq. (4) ) is proposed to find the standard deviation
+associated with each manufacturing configuration by maximizing the log-likelihood of each batch:
+L = -
+∑
+M
+i
+-
+1 - R
+f , i
+)
+ln
+-
+PDF
+-
+log
+10
+N
+f , i
+; σ
+) )
++ R
+f , i
+ln
+-
+1 - CDF
+-
+log
+10
+N
+f , i
+; σ
+) )
+, (4)
+As for the FFNN-L, the linear fatigue model is assumed, and its parameters are the outputs of the network. Therefore, the proposed
+PINN outputs m , q , and σ to compute the PDF using Eq. (1) . The model can be trained on the full TDB (518 points), provided that an
+adequate training and testing split is adopted (90 % - 10 % split). This favors model generalization and reduces overfitting. The task is
+accomplished through a custom loss function that embeds previous physical knowledge into the ML algorithm [45] . Unlike in [11] ,
+where the custom loss function calculated the derivative on the SN diagram to force monotonically decreasing behaviors without
+accounting for the presence of runouts and their statistical significance, here the linear trend is enforced. To obtain this, the PINN
+structure shown in Fig. 2 is exploited. The same inputs of the NN of Section 2.2 are used, except that S
+a
+and R
+f
+are also included to
+exploit the full TDB. They are referred to as mock inputs since they are not fed to the NN hidden structure directly, but they are only
+passed to the custom loss function.
+The hidden structure is the same of the previous section, but the number of epochs employed are 5000, the batch size is 300
+whereas the learning rate has been set to 0.0001. The number of trainable parameters for this PINN model is the same as the previous
+FFNN-L, since the fully connected structure remains the same, despite the concatenated mock inputs. For this NN, the testing procedure
+is more flexible with respect to the previous FFNN. Indeed, the testing part can be composed of randomly selected points, belonging to
+more datasets (the case in which all points belonging to the same dataset are all removed, is highly unlikely). Otherwise, a dataset
+testing strategy can be adopted, by removing all the points pertaining to the same dataset, on randomly selected datasets. The latter
+strategy is more severe [11] , but allows to compare the performance of this PINN model to the one of the FFNN of Section 2.2 .
+3.3. R90C90 BNN
+The proposed NN models the aleatoric response of fatigue by embedding the prediction of statistically distributed values of the
+fatigue life. However, the predicted distributions are inferred from the available data, which in turn affects the predicted response. In
+principle, the aleatoric distribution should be insensitive to the observed values, but in reality, this can be only achieved if infinite
+samples are available. To discern the effect of the training data (i.e., the uncertainty of the model) from the intrinsic scattering of the
+fatigue response (i.e., the aleatoric uncertainty), a BNN is adopted.
+BNN allows to capture the ML model uncertainty with ease, granting also the model generalization by considering Bayesian sta-
+tistics as part of the model. Indeed, in a BNN each weight and bias of a layer is a random variable instead of a single value, whose
+distributions are defined by maximizing the log-likelihood of the posterior distribution on the observed data. BNN are commonly built
+with variational layers, using parametric functions (e.g., Bernoulli, Gaussian, Weibull … ) for both the prior and posterior distributions.
+Each layer is defined by the number of neurons, the activation function, the prior distribution, and the posterior distribution. Vari-
+ational layers are trained by minimizing the Kullback-Leibler (KL) divergence [46,47] , which requires the definition of KL weights to
+preserve consistency. For this BNN, both the prior and posterior are defined as a multivariate normal distributions, that are used to
+Fig. 2. PINN-L structure. The following NN allows to produce the MLLE fit parameters, but by using all the TDB data.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+7 

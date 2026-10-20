@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "title": "Improving the Defect Tolerance of PBF-LB/M Processed 316L Steel by Increasing the Nitrogen Content",
+    "author": [
+      "Becker, Louis",
+      "Boes, Johannes",
+      "Cui, Chengsong",
+      "Fechte-Heinen, Rainer",
+      "Lentz, Jonathan",
+      "Steinbacher, Matthias",
+      "Stern, Felix",
+      "Tenkamp, Jochen",
+      "Uhlenwinkel, Volker",
+      "Walther, Frank",
+      "Weber, Sebastian"
+    ],
+    "source": "ADVANCED ENGINEERING MATERIALS",
+    "year": 2022,
+    "institution": [
+      "Leibniz Inst",
+      "Ruhr Univ Bochum",
+      "Tech Univ Dortmund"
+    ],
+    "fund": [
+      "German Research Foundation (DFG)",
+      "Projekt DEAL"
+    ],
+    "doi": "10.1002/adem.202200751",
+    "country_region": [
+      "Germany"
+    ]
+  },
+  "scidata": {
+    "datasets": [
+      {
+        "fatigue": {
+          "fat_data": [
+            [
+              20047.798627110165,
+              233.96526529844243,
+              0.0
+            ],
+            [
+              50630.18728897715,
+              215.90585444167965,
+              0.0
+            ],
+            [
+              94372.34334864018,
+              197.99943902472384,
+              0.0
+            ],
+            [
+              152595.8138920629,
+              180.01666143330715,
+              0.0
+            ],
+            [
+              270549.9721398766,
+              161.84502629528197,
+              0.0
+            ],
+            [
+              973129.9141024948,
+              143.9245563892888,
+              0.0
+            ]
+          ],
+          "fdata_type": "sn",
+          "extract_method": "color and shape"
+        },
+        "am": {
+          "am_type": "L-PBF",
+          "am_para": {
+            "am_machine": "Aconity MINI",
+            "scan_speed": [
+              800.0
+            ],
+            "hatch_space": [
+              100.0
+            ],
+            "layer_thickness": [
+              50.0
+            ],
+            "preheat": [
+              25.0
+            ],
+            "direction": [
+              0.0
+            ],
+            "am_env": "N2",
+            "layer_rot": [
+              90.0
+            ],
+            "scan_pattern": "simple hatch",
+            "fdstock_type": "powder",
+            "fdstock_size": [
+              30.5,
+              61.3
+            ],
+            "power": [
+              250.0
+            ]
+          }
+        },
+        "materials": {
+          "mat_name": "316L"
+        },
+        "processing": {
+          "proc_seq": [
+            1,
+            2,
+            3
+          ],
+          "proc_para": [
+            {
+              "type": "NHT"
+            },
+            {
+              "method": "machine",
+              "type": "SURF"
+            },
+            {
+              "method": "polish",
+              "type": "SURF"
+            }
+          ]
+        },
+        "testing": {
+          "fat_type": "uniaxial",
+          "fat_temp": [
+            25.0
+          ],
+          "fat_env": "air",
+          "fat_r": [
+            0.1
+          ],
+          "frequency": [
+            10.0
+          ],
+          "fat_machine": "Schenck PSB100",
+          "fat_standard": "",
+          "spec_desc": "circular cross-section; with drawing",
+          "spec_size": [
+            3.0
+          ],
+          "spec_kt": [
+            1.0
+          ],
+          "load_ctrl": "force"
+        },
+        "static_mech": {
+          "modulus": [],
+          "yield_strength": [
+            490.0
+          ],
+          "tensile_strength": [
+            656.0
+          ],
+          "elongation": [
+            48.2
+          ]
+        },
+        "score": [
+          0.9428571428571428
+        ]
+      },
+      {
+        "fatigue": {
+          "fat_data": [
+            [
+              83135.1772792321,
+              233.6810444376202,
+              0.0
+            ],
+            [
+              150230.15520403552,
+              216.05888470393913,
+              0.0
+            ],
+            [
+              238948.94160953406,
+              197.88507929476887,
+              0.0
+            ],
+            [
+              290290.94535479776,
+              179.88468042678284,
+              0.0
+            ],
+            [
+              400571.67133967037,
+              161.87097949982328,
+              0.0
+            ],
+            [
+              765621.8692674527,
+              144.1259876141602,
+              0.0
+            ]
+          ],
+          "fdata_type": "sn",
+          "extract_method": "color and shape"
+        },
+        "am": {
+          "am_type": "L-PBF",
+          "am_para": {
+            "am_machine": "Aconity MINI",
+            "scan_speed": [
+              800.0
+            ],
+            "hatch_space": [
+              100.0
+            ],
+            "layer_thickness": [
+              50.0
+            ],
+            "preheat": [
+              25.0
+            ],
+            "direction": [
+              0.0
+            ],
+            "am_env": "N2",
+            "layer_rot": [
+              90.0
+            ],
+            "scan_pattern": "simple hatch",
+            "fdstock_type": "powder",
+            "fdstock_size": [
+              30.3,
+              64.5
+            ],
+            "power": [
+              250.0
+            ]
+          }
+        },
+        "materials": {
+          "mat_name": "316L + Nitrogen"
+        },
+        "processing": {
+          "proc_seq": [
+            1,
+            2,
+            3
+          ],
+          "proc_para": [
+            {
+              "type": "NHT"
+            },
+            {
+              "method": "machine",
+              "type": "SURF"
+            },
+            {
+              "method": "polish",
+              "type": "SURF"
+            }
+          ]
+        },
+        "testing": {
+          "fat_type": "uniaxial",
+          "fat_temp": [
+            25.0
+          ],
+          "fat_env": "air",
+          "fat_r": [
+            0.1
+          ],
+          "frequency": [
+            10.0
+          ],
+          "fat_machine": "Schenck PSB100",
+          "fat_standard": "",
+          "spec_desc": "circular cross-section; with drawing",
+          "spec_size": [
+            3.0
+          ],
+          "spec_kt": [
+            1.0
+          ],
+          "load_ctrl": "force"
+        },
+        "static_mech": {
+          "modulus": [],
+          "yield_strength": [
+            569.0
+          ],
+          "tensile_strength": [
+            714.0
+          ],
+          "elongation": [
+            42.4
+          ]
+        },
+        "score": [
+          0.9428571428571428
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+A.      Centola      et      al.                                                                                                                                                                                   Engineering Failure Analysis 168 (2025) 109081
+
+introduce     those     uncertainties     in     the     layer     connections.     The     prior     is     a     standardized     multivariate     normal     distribution     (zero     mean     vector
+and      identity      covariance      matrix)      whereas      the      posterior       is      a       fully      populated      multivariate      normal      distribution,      whose      mean       vector      and
+symmetric        covariance       matrix        entries       are        updated        during       training.        BNN       architecture        is        analogue       to       the        one        of       FFNN,        with        the        only
+difference       that      at      least      one      of       the       layers      is       a       variational      one,      whereas       for      the       FFNN-L      all       layers      are       deterministic.
+       Here     the     goal     is     to     predict     Nf         at     90     %     Reliability     (R90)     and     90     %    Confidence     (C90),     as     defined     in     Section     2.3,     to     confine     the     intrinsic
+scatter    of     the    fatigue     (R90)    and    the     uncertainty    of    linear    model    (C90)     to    the    dataset,    while    modelling     the     ML    uncertainty    with     the    BNN.
+This     allows     to     assess     design     PSN     curves     that     can     be     used     to     predict     fatigue     life     accounting     for     the     limitations     of     the     ML     model     related     to
+the       available      data.
+       The      inputs      of       the      BNN      are       the      PP,       Vrisk,       TT,      ST       and       Sa as      well.      The      BNN      architecture       is      reported      in       Fig.      3.      The      input       layer       has      19
+nodes,       while      the       3      deterministic      hidden       layers       have      100,      75       and       50      neurons,      respectively,       all      activated      with       a      ReLU      function.
+       Another     single     input     node     is     concatenated     to     the     third     layer     that     takes     once     more     Saas     input.     The     third     layer     with     50              +     1     neurons     is
+connected        to        the        variational        output        layer,        which        is        linearly        activated        with        just        1        neuron.        This        is        done        to        obtain        a        mean        behavior
+between      the      linear      and      the      ReLU     activation      function      to      Sa,      since      the      output      layer      is      linearly      activated,      and      the      3rd      layer      has      the      ReLU
+influence     of     Sa          coming     from     the     19     nodes     input     layer     that     has     undergone     ReLU     activations     for     three     times.     Therefore,     linear     behaviors
+can     be     obtained     (thanks     to     the     linearly     activated     part     of     Sa),     while     having     flexible     adapting     slopes     (thanks     to     the     ReLU    activated     part     of
+Sa).
+       Nonetheless,     the     employment     of     a     BNN     can     favor     a     better     training     and     model     generalization     [47],     as     it     will     be     discussed     in     the     next
+sections.      For      the      training      of      the      BNN,      the      batch      size      has      been      set      to      30,      the      learning      rate      to      0.001      and      the      number      of      epochs      to      1500.
+       To       provide       design       SN       curves        that       are       characterized       also        by       the       model       uncertainty,       the       BNN       is       trained       with       the       Nf                               defined       with
+R90C90       Owen       procedure       (Eq.       (3))       [22].       In       this       way,       the       aleatoric       and       epistemic       uncertainty       intrinsic       to       fatigue       experimental       cam-
+paigns      can      be      separated       from      the       ML      model      uncertainty.
+
+4.              Results       and       discussion
+
+       The     proposed     models     aim     at     predicting     the     PSN     curves,     which      account     for     the     probabilistic     nature     of     the     fatigue     response,     and     the
+uncertainty     of      the     fatigue      models,      properly      discerning     one      from      the     other.      First,      the      overall      accuracy     of     the      models     is      verified      and      the
+predicted        PSN        curves        are        compared        with        the        experimental        data.        Thereafter,        the        algorithms        are        further        stressed        by        considering        the
+manufacturing       conditions      not      included      in       the      training       database.
+       The    NNs    have    been    developed    in    Python    using    the    libraries             “    Tensor    Flow”         and            “    Tensor    Flow    Probability”    .    The    model    generalization
+has       been       verified       by       monitoring       the       loss       values       computed       on       the       training       and       test       datasets       at       each       epoch.       Indeed,       if       the       testing       loss
+diverges     above     the     training     loss,     it     is     a     clear     sign     of     overfitting     [48].     Overfitting     is     critical     in     neural     networks,     especially     when     a     small
+TDB    is    used,    as    in    the    case    of    FFNN-L.    Fig.    4a    shows    that    the    test    loss    diverges    from    the    training    one    after    50    epochs    [49].    However,    such
+a       low       number       of       training       epochs       would       not       guarantee       sufficient       accuracy       compared       to       other       models.       The       tendency       of       these       NN        to
+overfit     can     be     justified     by     the     reduced     amount     of     data,     making     it     less     accurate     than     some     other     models     evaluated     in     this     study.     Despite
+this,       the      results       provide      valuable      insights      for       improving       model      performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                Fig.       3.          R90C90      fit       BNN      structure.
+
+
+                                                                                                                                                  8

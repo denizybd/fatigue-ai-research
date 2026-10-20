@@ -1,0 +1,87 @@
+[
+  {
+    "key": "boruah_v1",
+    "url": "https://arxiv.org/html/2608.07589v1",
+    "file": "boruah_v1.html",
+    "bytes": 114152,
+    "sha256": "6b9dc5a1b0f1e4d93b994e23863306679d4e2ed7ea19d7bdd8504f630de13fdc",
+    "accessed_utc": "2026-10-20T12:35:27.749187+00:00"
+  },
+  {
+    "key": "hierarchical_v2",
+    "url": "https://arxiv.org/html/2306.06342v2",
+    "file": "hierarchical_v2.html",
+    "bytes": 841453,
+    "sha256": "31fca0d7e4f59745d83330ce0b1a24bdf49f830bbc1aa23ba8e97de7a4f8cdf6",
+    "accessed_utc": "2026-10-20T12:36:27.226129+00:00"
+  },
+  {
+    "key": "survival",
+    "url": "https://arxiv.org/html/2103.09763",
+    "error": "The read operation timed out"
+  },
+  {
+    "key": "exchangeability",
+    "url": "https://arxiv.org/html/2202.13415",
+    "file": "exchangeability.html",
+    "bytes": 1051104,
+    "sha256": "d8b5112422ad5f068f8b1a01eafc322fea9782e11aad306ee77e3f9855c8fcef",
+    "accessed_utc": "2026-10-20T12:36:25.559217+00:00"
+  },
+  {
+    "key": "dimaggio",
+    "url": "https://link.springer.com/article/10.1007/s00366-025-02139-7",
+    "file": "dimaggio.html",
+    "bytes": 493559,
+    "sha256": "bf08d7a9e9cfde1bef1fff906582dc53a5c1b3d5074256fd223ed815eb780d91",
+    "accessed_utc": "2026-10-20T12:35:54.127776+00:00"
+  },
+  {
+    "key": "asme",
+    "url": "https://ssdm.secure-platform.com/a/solicitations/269/sessiongallery/23090/application/182979",
+    "file": "asme.html",
+    "bytes": 47415,
+    "sha256": "9796ca8cd084932530daf0e2c5c88e67fa367f6c90627a0259aa22b27f0e73f6",
+    "accessed_utc": "2026-10-20T12:35:27.203978+00:00"
+  },
+  {
+    "key": "hierarchical_metadata",
+    "url": "https://api.crossref.org/works/10.1145/3786352",
+    "file": "hierarchical_metadata.json",
+    "bytes": 11838,
+    "sha256": "cc4d1f143f55a816c65432c6589fdb56ed8200b3f4f4ace61944263c8c33412e",
+    "accessed_utc": "2026-10-20T12:35:28.233127+00:00"
+  },
+  {
+    "key": "survival_metadata",
+    "url": "https://api.crossref.org/works/10.1093/jrsssb/qkac004",
+    "file": "survival_metadata.json",
+    "bytes": 25624,
+    "sha256": "9de066eb387d5a405b1ccd7f6dbed96237de262165297963bc810eaacbd356c2",
+    "accessed_utc": "2026-10-20T12:35:31.067609+00:00"
+  },
+  {
+    "key": "steel_ssrn_metadata",
+    "url": "https://api.crossref.org/works/10.2139/ssrn.7385361",
+    "file": "steel_ssrn_metadata.json",
+    "bytes": 17935,
+    "sha256": "0e9a218699197a9b81373e92f7304c385c3467fd20234d6d0e22edb2d662d1a9",
+    "accessed_utc": "2026-10-20T12:35:30.438402+00:00"
+  },
+  {
+    "file": "wu_metadata.txt",
+    "url": "https://api.crossref.org/works/10.1016/j.ijfatigue.2026.109943",
+    "bytes": 14822,
+    "sha256": "e85948a06fe457aaf46af0b2de12d3c5436a746809b208a44f103b69b681c332",
+    "access_date": "2026-10-20",
+    "note": "Accessed before manifest generation; precise fetch time not recorded."
+  },
+  {
+    "file": "dimaggio_metadata.txt",
+    "url": "https://api.crossref.org/works/10.1007/s00366-025-02139-7",
+    "bytes": 28778,
+    "sha256": "f5ceb502e12025385b6dd5011162b889c520a84fbc54467b85a2f33198c1e84c",
+    "access_date": "2026-10-20",
+    "note": "Accessed before manifest generation; precise fetch time not recorded."
+  }
+]

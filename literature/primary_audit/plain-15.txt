@@ -1,0 +1,14 @@
+Table 4
+TDB Most recurrent values used for the PP effect evaluation. The studied parameter is varied while the others are kept constant.
+ϑ [
+◦
+] P [W] v [mm/s] h [ μ m] t [ μ m] V
+risk
+[mm
+3
+] T [
+◦
+C] Δ t [hours] TT_Ann TT_HIP ST_Mac ST_Pol ST_EP ST_Grind ST_SSP ST_VF ST_Nitr ST_DN
+90 275 1000 100 30 600 20 0 0 0 0 0 0 0 0 0 0 0
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+15 

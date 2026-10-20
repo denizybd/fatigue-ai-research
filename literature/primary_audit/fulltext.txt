@@ -1,0 +1,1969 @@
+=== PDF PAGE 1 ===
+                                                     Engineering Failure Analysis 168 (2025) 109081
+
+
+                                                        ContentslistsavailableatScienceDirect
+
+                                                  EngineeringFailureAnalysis
+
+
+                                            journalhomepage:www.elsevier.com/locate/engfailanal
+
+
+Probabilistic             Machine             Learning             for             preventing             fatigue             failures             in
+Additively             Manufactured             SS316L
+Alessio          Centola*,          Alberto          Ciampaglia     ,          Davide          Salvatore          Paolino     ,          Andrea          Tridello
+
+
+Politecnico      di      Torino,      Department      of      Mechanical      and      Aerospace      Engineering,      Torino      10129,      Italy
+
+
+
+ARTICLE                          INFO                 ABSTRACT
+
+Keywords:                                             Thisstudypresentsaprobabilisticmachinelearningapproachtopredictandimprovethefatigue
+Fatigue                                               performanceofadditivelymanufacturedSS316Lcomponents.Byanalyzingkeymanufacturing
+Probabilisticmachinelearning                          parametersasprocesssettings,thermaltreatmentsandsurfacetreatments,thedevelopedmodels
+Machinelearning                                       providestatisticalestimationsoffatiguestrength,thatprovidesvaluableinsightstoextendfa-
+Processparameters                                     tiguelife.Trainedonanexperimentaldatabaseoffatiguetests,theBayesianNeuralNetwork
+Design                                                (BNN)isemployedtoseparatemodeluncertainty,relatedtodatalimitations,fromtheuncer-
+Additivemanufacturing
+SS316L                                                taintyinherentinthefatiguephenomenon.ThisapproachrobustlypredictsProbabilisticStress-
+Failureprevention                                     Life(PSN)curves,offeringvaluableinsightsintotheimpactofmanufacturingparameterson
+                                                      fatigue resistance, allowing to further postpone fatigue failures. The results demonstrate
+                                                      increasedrobustnessandtrustworthinesscomparedtootherdeterministicmachinelearning
+                                                      models,makingthismethodsuitableforcriticalapplicationswherefailurepreventioniscrucial.
+
+
+
+1. Introduction
+
+    Additivemanufacturing(AM)isanemergingproductionprocessredefiningthelandscapeofmodernengineering,withPowderBed
+Fusion–LaserBeam(PBF-LB)beingaparamounttechnologyinproducinglightweightmetalcomponentswithoptimizedgeometries.
+
+
+    Abbreviations:AM,AdditiveManufacturing;BNN,BayesianNeuralNetwork;C90,Confidencelevelat90%;CDF,Cumulativedistribution
+function;Ed,Volumetricenergydensity;f,failure;FFNN,Feed-ForwardNeuralNetwork;FFNN-L,Feed-ForwardNeuralNetworkLikelihood;h,
+HatchDistance[μm];HCF,HighCycleFatigue;HIP,HotIsostaticPressingThermalTreatment;LOF,Lackoffusion;LPBF,Laserpowerbedfusion;m,
+R50curveslopecoefficient;ML,MachineLearning;MLLE,MaximumLog-LikelihoodEstimate;MLLEf,Maximumlog-likelihoodestimateofafailure;
+MLLEr,Maximumlog-likelihoodestimateofarunout;MSE,Meansquarederror;Nf,Numberofcyclestofailure;NLL,negativelog-likelihood;NN,
+NeuralNetwork;Nr,Numberofcyclesofarunoutspecimen;P,LaserPower[W];PBF-LB,PowderBedFusion–LaserBeam;PDF,Probabilitydensity
+function;PINN,PhysicsInformedNeuralNetwork;PP,ProcessParameters;PSN,ProbabilisticStress-Life(Curves);q,R50interceptcoefficient;
+qR90C90,R90C90interceptcoefficient;r,runout;R90,Reliabilitylevelat90%;ReLU,Rectifiedlinearunitactivationfunction;Rf,Runoutflag;Sa,
+Appliedstressamplitude[MPa];SN,Stress-lifecurves;SS316L,StainlessSteel316L;ST,SurfaceTreatment;ST_DN,DeepNitridingsurfacetreatment
+boolean;ST_EP,Electro-polishingsurfacetreatmentboolean;ST_Grind,Grindingsurfacetreatmentboolean;ST_Mac,Machiningsurfacetreatment
+boolean;ST_Nitr,Nitridingsurfacetreatmentboolean;ST_Pol,Polishingsurfacetreatmentboolean;ST_SSP,SevereShockPeeningsurfacetreatment
+boolean;ST_VF,VibratoryFinishingsurfacetreatmentboolean;t,LayerThickness[μm];T,ThermalTreatmentTemperature[◦C];tanh,Hyperbolic
+tangentactivationfunction;TDB,TrainingDatabase;TT,ThermalTreatment;TT_Ann,Annealing(Stressrelief)thermaltreatmentboolean;TT_HIP,
+Hotisostaticpressingthermaltreatmentboolean;v,LaserScanSpeed[mm/s];VHCF,VeryHighCycleFatigue;Vrisk,RiskVolume;Δt,Thermal
+TreatmentTime[hours];ϑ,BuildingOrientation[◦];ρrel,Relativedensity[%];σ,Datasetstandarddeviation.
+ *Correspondingauthor.
+    E-mailaddress:alessio.centola@polito.it(A.Centola).
+
+https://doi.org/10.1016/j.engfailanal.2024.109081
+Received12September2024;Receivedinrevisedform28October2024;Accepted13November2024
+Available online 19 November 2024
+1350-6307/©      2025   The   Authors.      Published    by   Elsevier  Ltd.     This   is an   open   access   article  under   the   CC   BY-NC-ND     license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/         ).
+
+=== PDF PAGE 2 ===
+A.      Centola      et      al.                                                                                                                                                                                Engineering Failure Analysis 168 (2025) 109081
+
+Another     major     benefit     is     that     additive     manufacturing     processes     enable     the     production     of     complex     shapes     and     geometries,     tailored     and
+customized     for     the      specific     application.     Among     the      various     metals      used     in     AM,     stainless      steel     316L     (SS316L)     is      particularly     valued     for
+its        versatility,        strength,        and        corrosion        resistance.        Although        PBF-LB        SS316L        parts        have        excellent        static        mechanical        properties,        their
+fatigue        performance        is        worse        than        that        of        parts        made        using        conventional        manufacturing        processes.        Among        the        factors        that        impact
+fatigue     performance,     process     parameters     (PP)     have     been     observed     to     play     a     fundamental     role.     The     reduced     fatigue     performance     of     as-
+built      PBF-LB      SS316L      components      is      largely      due      to      defects      arising      during      the      layer-by-layer      manufacturing      process      [1].                                       These      defects,
+such     as     porosities     and     lack     of     fusions     (LOFs),     are     preferential     nucleation     sites     for     fatigue     cracks     [2].                                     The     material     microstructure     is     also
+influenced       by       the       combination       of       these       PP,       since       the       local       thermal       history       can       alter       the       microstructure       of       the       grains       [3]       and       subse-
+quently      affect      fatigue      performance      [4].                                       Therefore,      optimizing      the      combination      of      PP      is      fundamental      to      creating      components      with      the
+highest          relative          density          (ρ     rel)          and          the          lowest          porosity.          Similarly,          post-processing          treatments          can          affect          the          fatigue          response.          For
+example,    thermal     treatments    (TT)     like    hot     isostatic    pressing     (HIP)    can     reduce     the     size     of    manufacturing     defects.     Another    common     TT     is
+a     stress     relief     treatment,     which,     if     carefully     designed     in     terms     of     heating     temperature     and     time,     has     been     shown     to     improve     the     fatigue
+response     of     PBF-LB     parts     by     reducing     detrimental     residual     stresses     that     may     originate     during     the     PBF-LB     process     [5,6].                                                         A     fundamental
+role      is      played      by      surface      treatments      (ST),      like      machining,      polishing      and      nitriding,      which      can      enhance      the      surface      quality      by      reducing
+the     roughness,     consequently     reducing     the     number     of     surface     defects,     which     are     critical     in     the     high     cycle     fatigue     (HCF)     regimen.     These
+treatments     positively     affect      the     fatigue      response     since      surface      defects     lead     to      a     lower      fatigue     limit     with      respect     to      internal     defects     [7].
+The       assessment       of       PP,       TT,       and       ST       on       the       fatigue       response       would       permit       to       manufacture       PBF-LB       parts       with       optimized       and       enhanced
+fatigue     response.     However,     due     to     the     large     number     of     parameters     involved     and     their     interactions,     this     is     rather     complex     for     economic
+reasons     and     would     require     a     not     feasible     number     of     experimental    tests.     Indeed,     the     above-described     parameters     also     interact     with     each
+other,      making      it      quite      impossible      to      define      a      model      which      provides      in      output      the      fatigue      response      starting      from      PP,      TT      and      ST,      even
+with         optimized         design         of         experiments         (DOEs)         strategies         [8].                                          It         must         be         noted         that         many         results         are         available         and         spread         in         the
+literature,     obtained     by     varying     specific     manufacturing     parameters,     thus     not     providing     a     global     insight     on     the     fatigue     response     and     the
+fatigue     behavior     of     AM    parts.     The     large    variability     of     the     fatigue     results    further     complicates     the    analysis     of     the     fatigue     response     and     the
+assessment         of         the         influence         of         the         manufacturing         parameters.         On         the         other         hand,         with         large         datasets         available         in         the         literature,
+complex      relationships       between       numerous      factors       can      be      reliably       managed      with      Machine       Learning      (ML)      techniques.       Indeed,      existing
+literature     datasets     can     be     leveraged     to     train     the     ML     model,     enabling     researchers     to     exploit     the     extensive     test     campaigns     already     carried
+out,     while     thoroughly     mapping     the     relationships     between     a     component     fatigue     life     and     the     aforementioned     factors.     Among     several     ML
+architectures,       Neural       Networks       (NN)       are       one       of       the       most       flexible,       efficient,       and       widespread.       Indeed,       NN       can       be       thought       of       as       a       uni-
+versal      approximator,      though      they      are      often      mistakenly      compared      to      the      human      brain,      allowing      to      handle      multivariate      problems      with
+ease.       The      use      of      NN       for       the      assessment       of      the       fatigue      life       of      AMed      parts      is       a       relatively      young       research      field.
+       Over       the       past       five       years,       there       has       been        a       noticeable       increase       in       ML       studies       focusing       on       the       fatigue       response       of       various       PBF-LB
+materials       [9].                                       This       surge       in       interest       reflects       a       growing       recognition       of       the       potential       benefits       that       ML       can       offer       in       optimizing       AM       pro-
+cesses        and        improving        the        fatigue        performance        [10].                                                      Different        types        of        NNs        have        been        employed        for        this        task.        In        particular,        Feed-
+Forward        Neural        Networks        (FFNN)       have        proven        to       be       reliable        candidates        to       model        the       link        between       manufacturing        process        and        fa-
+tigue      performance.      Centola      et      al.      [11]      employed      a      FFNN     trained      with      literature      data      to     predict      the      fatigue      life      of      Ti6Al4V      alloy     based
+on      PP,      TT      and      ST      conditions.      Tridello      et      al.      [12]      developed      two      FFNN      to      evaluate      critical      defects      in      PBF-LBed      AlSi10Mg      and      Ti6Al4V
+alloys.     The     model     could     accurately     predict     the     distribution     of     the     critical     defects     described     with     a     Largest     Extreme     Value     Distribution,
+estimated     with     the     FFNN.     Bagherifard     et     al.     [13]     conducted     tests     on     PBF-LBed     AlSi10Mg     V-notched     specimens     to     develop     a     FFNN     that
+correlates     residual     stress,    hardness,     and     roughness     to    the     fatigue     life     of     specimens.    Dang    et     al.     [14]    proposed     a     properly     designed     FFNN
+to     estimate     the     fatigue     performance     from     fractography     analyses.     Hornas     et     al.     [15]     developed     a     FFNN     to     address     the     impact     of     defects,
+detected       via       micro-computed      tomography,       and       stress       amplitude      on       the       fatigue       performance      of       PBF-LBed       Ti6Al4V.       Zhang       et       al.       [16]
+developed        a        ML        framework        that        combines        two        FFNNs,        respectively        fed        with        PPs        and        static        properties,        to        forecast        the        fatigue        per-
+formance       of      PBF-LBed       SS316L      samples       using      both      experimental      and       literature      data.
+       Complex      engineering      phenomena,      like      fatigue      of      AMed      parts,      however,      can      be      better      forecast      through      ML      algorithms      embedding
+previous        physical        knowledge,        such        as        physics-informed        neural        networks        (PINN).        These        NNs        adopt        prior        engineering        knowledge        to
+design    a    constrained     loss    function    that    leverages    physical    formulas.    In    this    way,    the     obtained    results    approach    a    more    realistic     outcome
+that     likely     benefits     the     model     generalization.     In     [11],                                                   a     PINN     has     been     created     to     improve     the     predictions     of     (stress-life)     S-N     curves     by
+penalizing     monotonically     increasing     predictions     of     the     S-N     curves,     which     may     result     when     using     FFNN.     Ciampaglia     et     al.      developed     a
+PINN     environment     to     link     the     PP     and     TT     parameters     with     the     fatigue     response     of     AlSi10Mg     [17]     and     Ti6Al4V     [18]     samples.     The     model
+architecture     leverages     the     Murakami     formulation     to     link     the     input     features     and     is     trained     on     the     available     literature     data.     Salvati     et     al.
+[19]       fine-tuned       a       PINN       to       predict       the       life       of       defective       AlSi10Mg       coupons       by       incorporating       linear       elastic       fracture       mechanics       formu-
+lations.     The     results     presented     in     the     above-mentioned     articles     marked     a     shift     to     innovative     data-centric     methodologies     that     encompass
+data-science       methods       and       physics-based       formulations.       However,       these       methodologies       give       a       deterministic       description       of       the       fatigue
+response,     while     its     intrinsic     stochastic     nature     fosters     the     need     for     statistical     methodologies     to     assess     the     aleatoric     response     of     the     parts
+[20].                                                  In    the     present     paper,    the     ML     models    are     declined    in     a     probabilistic     version,    to     model    the     stochastic    nature    of     the    fatigue     response.
+       Chen       and       Liu       [21]       developed       a       PINN       to       predict       the       fatigue       life       of       small       datasets,       while       properly       treating       runout       specimens       thus
+providing      statistical      confidence      intervals      for      the      predicted      Probabilistic      S-N      (PSN)      curves.      This      has      been      accomplished      by      adopting      a
+properly    designed    loss    function    that    is    equal    to    the    negative    maximum    log-likelihood    estimate    (MLLE).    In    this    way,    the    PINN    minimizes
+during      training       this       custom      loss      function       to      provide       prediction      with       aleatoric      confidence       intervals.
+       To      the      best      of      the      authors’                                                                                      knowledge,      this      is      the      only      article      presenting      an      application      of      a      probabilistic      ML      method      in      this      field.
+       It        is        important        to        note        that        probabilistic        approaches        should        properly        consider        the        two        main        sources        of        uncertainty        related        to        a
+
+
+                                                                                                                                               2
+
+=== PDF PAGE 3 ===
+A.      Centola      et      al.                                                                                                                                                                                         Engineering Failure Analysis 168 (2025) 109081
+
+model     prediction:     (i)     the     aleatoric     uncertainty,     defined     as     the     intrinsic     scatter     of     the     fatigue     phenomena;     (ii)     the     epistemic     uncertainty,
+defined     as     the     confidence     of     the     prediction     which     is     related     to     the     model     (i.e.,     the     ML     model     in     this     case).     The     first     has     been     extensively
+discussed     in     the     literature,     and     a     large     variety     of     statistical     approaches     can     be     used     to     assess     the     fatigue     response     at     different     reliability
+levels.       Methodologies       which       consider       the       uncertainty       of       the       ML       model       instead       are       recent       in       the       literature,       and       their       application       to
+fatigue       problems      is       fundamental      to       preserve       a      clear       distinction      between       the      aleatoric       and      epistemic       uncertainty.
+       The    focus    of    the    present    work    is    to    develop    NN    models    that    can    model    the    aleatoric    uncertainty    intrinsic    to    the    fatigue    phenomenon,
+as     well     as     the     ML     model     uncertainty     (i.e.,     the     epistemic     uncertainty)     and     to     separate     their     contribution.     The     developed     NN     algorithms
+can      predict       the       PSN       curves       that      can      be       used       to      safely       design       AMed       parts.      First,       an      FFNN       is       developed       to      predict       the       parameters       of       a
+linear        S-N        curve        with        normally        distributed        data        (FFNN-L);        then,        a        PINN        is        introduced        to        predict        the        above-mentioned        parameters
+(PINN-L);     last,     a     Bayesian     Neural     Network     (BNN)     is     developed     to     predict     the     R90C90     (i.e.,     90     %     reliability     and     90     %     confidence     level)
+curves       defined       with       the       Owen’ s       method       [22],       to       finally       separate       the       experimental       uncertainty       from       the       ML       model       one.       These       algo-
+rithms       have      been       trained      on      a       training       database       (TDB)      and      validated       by      considering       literature       data.
+
+2.              Experimental       data       and       fatigue       models
+
+       This     section     describes     the     data     used     to     train     the     proposed     ML     models,     which     include     manufacturing     information     about     the     additive
+process       and       experimental       fatigue       tests       results.       Thereafter,       the       empirical       fatigue       models,       which       will       be       integrated       with       the       ML       algo-
+rithms       described       in       Section       3,       are       briefly       introduced       and       applied       to       the       collected       data.       The       ML       models       employed       in       this       study,       are
+proposed        to        leverage        well-established        and        accepted        fatigue        design        models,        while        ensuring        that        the        ML        models       infer        the        associated
+statistical      uncertainty      associated       with      the       training       data      and       dataset      evaluation.
+
+
+2.1.              Database
+
+       This        section        discusses        the        parameters        used        for        the        training        of        the        developed        NN        algorithms.        Creating        a        fully        populated        TDB        is
+crucial    for    the    ML    algorithms,    which    should    contain    comprehensive    data.    In    ML     terminology,    the    inputs    are    called    features    (xi),    and    the
+outputs      to      be      predicted      are      called      labels      (yi).      The      goal      of      the      proposed      ML      approaches      is      to      predict      the      fatigue      PSN      curves      of      PBF-LB
+SS316L     components     based     on     various     process     parameters.     Given     that     the     fatigue     characteristics     of     this     alloy     are     strongly     influenced     by
+the    defect    distribution,    to    have    good    predictive    accuracy,    PP,    TT    and    ST    are    included,    as    explained    below.    It    is    crucial    to    carefully    select
+the     NN     features     to     accurately     forecast     the     fatigue     response.     During     the     PBF-LB     process,     a     laser     melts     metal     powders     layer     by     layer     on     a
+building      platform.     The      layer      thickness     t      is      determined     by      the      space      travelled     by      the      platform      after     each      deposition.      The     orientation      of
+the        part        on        the        platform,        referred        to        as        the        building        orientation                      ϑ       ,        impacts        the        final        product        mechanical        properties,        with        common
+angles     being     horizontal     (0◦),     vertical     (90◦),     and     inclined     (45◦).     Other     key     parameters     include     the     hatch     distance     h,     which     is     the     spacing
+between     successive      laser     passes,      the     laser     power     P,     and      the     laser     scan     speed      v.     If     h      is     too     large,      the     particles     might      not     be     fully     melted,
+while      small       hatch      may       lead       to      multiple      meltings      of       the      same      portion       of       material       [23,24].      Similarly,      high      v      with      low       P       might      lead       to
+incomplete      melting,      while      high      P      with      low      v      may      cause      over-melting      and      affect      part      quality      [23,25].      Similarly,      TT,      such      as      annealing
+(Ann)         and         HIP,         can        significantly         impact         the         fatigue         response         [26],         when         proper         temperatures         (T)         and         duration         (Δ        t)        are         correctly
+defined.     These     are     therefore     considered     as     features     for     the     developed     NN.     PBF-LB     SS316L     specimens     commonly     undergo     an     Ann     which
+consists       of       reheating       components       at       a       temperature       (500                                  ◦C       to       1050    ◦C)       below       the       melting       point       to       reduce       residual       thermal       stresses
+generated     during     the     manufacturing     process.     ST     also     affect     fatigue     response.     Due     to     poor     surface     finishes     in     AMed     parts,     processes     like
+machining          (ST_Mac),          polishing          (ST_Pol),          electro-polishing          (ST_EP),          grinding          (ST_Grind),          severe          shock          peening          (ST_SSP),          vibratory
+finishing      (ST_VF),      nitriding      (ST_Nitr),      and      deep      nitriding      (ST_DN)      are      also      used      to      improve      the      surface      quality      and,      consequently,      the
+fatigue        performance.        These        ST        are        also        considered        as        boolean        features       for        the        NN        to        improve        the        accuracy        of        the        predictions.       The
+literature       has       been        thoroughly       searched       to       gather        as       much        training        data       as       possible.        Despite       the       limited        data       availability,       the       TDB
+includes        a        broad        range        of        key        PP,        TT,        and        ST.        To        overcome        this        limitation,        the        BNN        has        been        purposely        employed        to        manage        un-
+certainty      and       provide      reliable       predictions.
+       It      should      be      noted      that      only      those      articles      reporting      the      process      parameters      P,      v,      t,      h,      and                ϑ       ,      along      with      information      about      thermal
+and         surface         treatments,         are         considered.         Information         about         the         AM         machine         and         the         powder         used         to         produce         the         specimens         was
+intended      to      be      included,      as      it      is      well      known      that      processing      parameters      can      vary      between      different      AM      machines,      affecting      material
+properties.        However,        only        a        few        of        the        datasets        provided        this        information.        To        maintain        consistency        in        the        TDB        and        maximize        the
+number        of        training        points,        it        has        been        decided        not        to        include        machine-specific        details.        For        each        failure        or        runout        event,        the        stress
+amplitude     Sa              and     the     corresponding     number     of     cycles     Nf                                are     included,     along     with     a     boolean     runout     flag     Rf,     to     denote     whether     the     point
+is     a     failure     (Rf    =     0)     or     a     runout     (Rf      =     1).     The     fatigue     lifetime     range     below     107                           cycles     was     considered     due     to     limitations     in     the     available
+training           data           from           literature           sources.           Therefore,           the           Very           High           Cycle           Fatigue           (VHCF)           regime           was           not           explicitly           modeled           and
+considered        in        this        analysis,        due        to        the        limited        data        points        in        this        region.        However,        the        developed        machine        learning        framework        is
+capable     of     modeling     the     fatigue     behavior     in     the     VHCF     regimes     as     well,     but     additional     data     covering     this     life     range     should     be     available.
+The     fatigue     tests     reported     in     the     literature     are     primarily     conducted     in     three     configurations:     rotating     bending     (i.e.,     stress     ratio     R               =                            1),
+pulsating     tensile     and     bending     (i.e.,     R               ∕√                                                                                                                               ),      allowing      the       calculation      of       equivalent      stress      amplitude      at      R                  =                               1.      To       account      for      the       scale      effect,̅̅̅̅̅̅=     0).     To     compare     data     with     different     stress     ratio,     the     Smith-Watson-Topper     correction     is     applied
+(Sa,R=         1    =      Smax     •                                                                             ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅0.5              •             (1                               R)
+which      can      greatly      affect      the      fatigue      response,      the      risk      volume      Vrisk                                   is      calculated      according      to      the      testing      configuration      and      specimen
+geometry.        As        detailed        in        [7],        Vrisk          corresponds        to        the        material        volume        that        undergoes        90        %        of        the        nominal        stress.        In        the        training
+
+
+                                                                                                                                                     3
+
+=== PDF PAGE 4 ===
+A.      Centola      et      al.                                                                                                                                                                                                                                     Engineering Failure Analysis 168 (2025) 109081
+
+database,      TT,      ST      and      Rf                       are      denoted      as      Boolean      features      using      the      one-hot      encoding      strategy,      where      1      stands      for      true      and      0      for      false.
+When        it        comes        to        T,        20           ◦C        was        set        as        the        default        for        cases        where        the        TT        is        not        applied        (both        TT_Ann        and        TT_HIP                       =        0).        The        same
+reasoning     applies     for              Δ        t,     with     0     h     when     a     TT     is     not     performed.     Diverse     ranges     of     T     and              Δ        t     are     found     in     the     literature     and     are     reported     as
+such      in       case      one      of       the      two       TT      is       performed.
+         In     this     work,     Nfis     the     dependent     variable     and     Sa                                                   the     independent     one.     This     interpretation     mirrors     actual     fatigue     testing,     where     Sa                                                                                                  is
+predetermined,        and        the        cycles        to        failure        are        then        measured.        Unlike        in        [11],        information        concerning        runout        specimens        is        properly
+treated     thanks     to     Rf,     considering     the     correct    statistical     formulation.    A     summary     of     the     data    used     to     train     the     ML     algorithms     is     presented
+in       Table       1,       comprising       518       fatigue       points       from       51       datasets       extrapolated       from       17       articles.       For       brevity,       the       Sa,       Nf                                                                                         and       Rf        columns       are
+removed      just      to      report       the      PP,      TT,      ST       and      Vrisk.      The      amount      of      data      of      each       dataset      is      different,      with      some      having       just      one      point       per
+stress      amplitude      level.      Despite      this,      datasets      with      a      single      stress      amplitude      level      are      retained      since      they      could      be      supplemented      with
+similar      datasets.
+
+2.2.              Linear       fatigue       model       with       constant       normal       distribution
+
+         The       HCF       response       of       metallic       materials       is       generally       described       by       power       law       function,       commonly       referred       to       as       Basquin’ s       law.       A
+statistical    variation    of    the    model    can    be    obtained    assuming    a    normal    distribution    of    the    fatigue    life    [44].    This    method    will    be    referred    to
+as              “    linear     model”         in     the     following.     Nf                      is     a     random     variable     with     its     mean     that     linearly     varies     with     the     applied     stress     amplitude     Sa,     and     a
+constant      standard       deviation                                        σ  .      The      cumulative      distribution      function       (CDF)      of      Nf,       can      be      then      found       in      Eq.       (1):
+                                                             (log                  N    )                                                     m              •     log(S)              +     q))
+                   CDF                                                    10          f                                10         a                       ,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (1)
+                               log10(Nf)                     =                 ϕ                          σ
+
+with         the         slope         m,         the         intercept         q         and         the         standard         deviation                                   σ     assumed         to         be         constant,         and         to         be         estimated         by         considering         the
+experimental     data.     For     each     dataset,     the     parameters     are     estimated     by     minimizing     the     negative     log-likelihood     function     (NLL),     reported
+in      Eq.       (2):
+                   ⎧
+                   ⎪                                                                                                                                )
+                   ⎪
+                   ⎪
+                   ⎪                                                            NLL                 =                                                        MLLEf+     MLLEr
+                   ⎪
+                   ⎪
+                   ⎪
+                   ⎪
+                   ⎪                                                                 )                                               N      )⃒                                S     )                  ))
+                   ⎪                                        M
+                   ⎨      MLLEf              =                 ∑(1                               Fr,i•     ln     PDF      log10       f   ,i   ⃒m              •     log10    a,i      +     q;    σ
+                                                            i
+                   ⎪                                                                                                                                                                                   )                                    ,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    (2)
+                   ⎪
+                   ⎪                                                                                                              N     )⃒                                S     )                   )
+                   ⎪                                          M
+                   ⎪                                                                                                                        ⃒m              •     log
+                   ⎪       MLLE               =                 ∑F        •     ln     1                               CDF      log                                                 +     q;σ
+                   ⎪                      r                          r,i                                                10          r,i                         10         a,i
+                   ⎪                                          i
+                   ⎪
+                   ⎪
+                   ⎩
+
+
+where     M     is     the     number     of     specimens     for     the     considered     dataset     and     the     subscripts     f     and     r     stand     for     failure     and     runout,     respectively.     Rf,i
+is     the    runout    flag    for    the     i-th    specimen,    PDF    is     the    probability    density     function     [22].    For     each    dataset,     once    the     constant    coefficients     are
+estimated,       the      PSN       curves      at       the      selected       reliability      levels       can      be      estimated.
+
+2.3.              Reliability       bounds       and       confidence       intervals
+
+         The       statistical      models       provide       an       estimate       of       the       fatigue       life       with       a       variability       imputable,       for       example,       to       the       presence       of       micro-
+structural        irregularities        (e.g.,        defects),        which        act        as        root        cause.        In        the        design        of        engineering        structures,        fatigue        curves        at        a        defined
+reliability      and      confidence      levels      (e.g.      R90C90      curve)      are      used,      rather      than      P-S-N      curves      with      a      specific      high      level      of      reliability.      In      the
+following,    according    to    a    standard    notation,    the    R90    PSN    curve    indicates    the    10th    percentile    PSN    curve.    While    the    concept    of    reliability
+is          related          to          the          aleatoric          uncertainty          for          fatigue,          the          concept          of          confidence          is          introduced          to          handle          epistemic          uncertainty.          The
+epistemic       uncertainty       is       related       to       the       model       parameter       estimation.       In       essence,       the       R90       curve       at       a       90       %       confidence       level       (R90C90)
+provides    the    P-S-N    curve    estimated    according    to    the    considered    fitting    model    (e.g.,    the    Basquin    model)    which    lies    below    the    90    %    of    the
+R90       curves       obtained       with       different      subsets.      In       this      study,       the       R90C90      curve       was       selected       as       an      example       to      strike       a       balance       between
+safety     and     conservative     designs,     but     the     model     can     be     adjusted     to     accommodate     any     desired     combination     of     reliability     and     confidence
+levels       (e.g.,      R95C95,       R90C95)      depending      on      the       specific       design      requirements.
+         In       the       literature       and       in       industrial       applications,       the       R90C90       PSN       curves       are       commonly       estimated       with       the       Owen’ s       method       [22],
+which      requires      shifting      leftward      the      R50      linear      curve      by      a      factor      kOwen                                                                    multiplied      by      the      fatigue      life      standard      deviation.      The      R90C90
+curve       results       into       a       linear       curve       with       slope       mR90C90                                            equal       to       the       R50       curve       slope       m,       whereas       the       intercept       qR90C90                                                     is       calculated       ac-
+cording      to       Eq.      (3):
+
+                   qR90C90             =      q                                kOwen•σ,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      (3)
+
+where      q      is      the      R50      curve      intercept      obtained      from      Eq.      (2),                                                    σ    is      the      dataset      standard      deviation      and      kOwen                                              is      a      multiplicative      coefficient
+obtainable       from       [22].       The       linear       model       and       the       R90C90       PSN       curves       have       been       estimated       to       properly       train       the       developed       ML       algo-
+rithms     and     to     separate     and     investigate     the     contribution     of     the     aleatoric     and     epistemic     uncertainty.     It     is     worth     noting     that,     typically,     the
+Owen       method       is       used       for       estimating       R90C90       curves,       with       this       estimation       relying       on       experimental       data       obtained       under       specific       AM
+production    conditions.    The    method    proposed    in    the    article,    on    the    other    hand,    can     estimate    the    design    curves    with    good    approximation
+
+
+                                                                                                                                                                                    4
+
+=== PDF PAGE 5 ===
+A.      Centola      et      al.                                                                                                                                                        Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                               5
+
+=== PDF PAGE 6 ===
+A.      Centola      et      al.                                                                                                                                                                                  Engineering Failure Analysis 168 (2025) 109081
+
+directly     from     the     production     settings     and     with     the     training     process     carried     out     by     considering     available     literature     datasets.     To     achieve
+the      same      result      with      traditional      methods,      a      costly      and      time-consuming      DOE      (Design      of      Experiments),      for      example,      would      have      been
+required.        Moreover,        DOE        is        not        applicable       using        literature        data,        as        ML.        This        is        the        most        significant        advantage        of        the        proposed        ML
+algorithms      over       traditional      methods.      Furthermore,      with      the      developed      approach,      the      variability      associated      with      the      ML      predictions,
+dependent      on       the      data      available       for      the       training,      can      be      also       considered,      thus       allowing      for       a       safe      fatigue       design.
+
+3.              Machine       learning       models
+
+       This      section      outlines      the      probabilistic      ML      algorithms      that      have      been      developed.      Details      about      the      FFNN-L      and      its      construction      are
+provided       in       Section       3.1,       whereas       in       Section       3.2       the       PINN-L       is       defined       so       that       all       the       training       data       can       be       leveraged       properly.       Lastly
+Section      3.3       outlines      the       functioning       of      the       R90C90      BNN      and       its      application       to       predict      the       R90C90      Owen’ s       curve.
+
+3.1.              FFNN-L
+
+       The    first    model    to    be    introduced    is    a    FFNN    trained    to    predict    the    parameters    of    the    linear    fatigue    model.    The    model,    named    FFNN-L,
+predicts       the       slope       m,       the       intercept       q       and       the       standard       deviation                   σ   of       the       linear       fatigue       model       for       any       given       manufacturing       configu-
+ration.     Therefore,      the     model     is      trained     on      51     data     points,      each     representing      a      dataset     of      the     TDB     (Table      1).     An     FFNN     is      a     basic      type      of
+NN      where      data      flows      only      in      one      direction,      from      the      input      layer      through      hidden      layers      to      the      output      layer.      Within      the      hidden      layers,
+neurons     process     the     features     xj,     applying     weights     wijand     biases     bito     generate     a     combined     signal     transformed     by     an     activation     function.
+The     output     layer    typically     uses     a     linear    activation    which     can     be    a     sigmoid,    a     linear,    a     rectified    linear     unit    (ReLU),    or     hyperbolic    tangent
+(tanh)        function.        Two        critical        hyperparameters        in        this        process        are        the        number        of        training        iterations        (epochs)        and        the        learning        rate.
+During        training,        the        process        is        repeated        for        each        epoch,        and        the        weights        wij           and        biases        bi   are        adjusted        after        each        cycle        to        enhance
+prediction      accuracy.      This      adjustment      is      guided      by      a      loss      function,      typically      mean      squared      error      (MSE)      which      measures      how      well      the
+network     predictions      yi,pred                      match      the     desired      output      yi,true.      The      learning     rate      determines      the     update      magnitude     for      weights     and      biases,
+balancing     between     rapid     convergence     and     stability.     Another     hyperparameter     of     importance     is     the     batch     size,     representing     the     number
+of     data     samples     processed     simultaneously,     with     mini-batch     gradient     descent     often     being     a     practical     choice.     For     a     detailed     explanation
+of      FFNN,       the      reader       is       referred       to      [9].
+       Fig.      1      shows      the       structure      of       the      first      NN       employed       in      this      research,      the       FFNN-L.
+       As    shown    in     Fig.     1,    there    are     4    inputs     categories,    namely    PP,    Vrisk,    TT     and    ST.     Concerning     the    PP     category,             ϑ       ,    P,    v,    h     and     t,    previously
+defined,      are      present.      For      TT,      the      numeric      variables      are      T      and                 Δ        t,      whereas      TT_Ann      and      TT_HIP      are      booleans.      The      ST      category      includes
+ST_Mac,    ST_Pol,     ST_EP,     ST_Grind,    ST_SSP,     ST_VF,     ST_Nitr,    and     ST_DN.    These     18     variables     are     the    features,     whereas    the     three     labels    are     m,
+q      and   σ  .      The      loss      function      for      this      NN      is      the      MSE.      The      three      intermediate      hidden      layers      are      characterized      by      100,      75      and      50      neurons,
+respectively,      all      activated      with      the      ReLU      function.      Indeed      in      [9]      and      in      [11,12]      it      has      been      shown      that      a      pyramidal      structure,      further
+increases      the       quality      of       the      fatigue       performance      predictions       of      PBF-LB      parts.
+       Before     each     training,     the     TDB     is     randomly     split     into     90     %     training     and     10     %    testing     part,     yielding     46     training     and     5     testing     datasets,
+respectively.       Data       are       normalized       following       the       z-score       for       each       feature       (xnorm                                    =       (x                   –             xtrain,μ)       /       xtrain,σ),       with       the       mean       and       standard
+deviation     of     computed     on     the     training     dataset.     The     NN     is     trained     for     1000     epochs     with     a     learning     rate     equal     to     0.001     and     the     batch     size
+to      30.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                        Fig.      1.          FFNN-L      structure.
+
+
+                                                                                                                                                6
+
+=== PDF PAGE 7 ===
+A.      Centola      et      al.                                                                                                                                                                                                         Engineering Failure Analysis 168 (2025) 109081
+
+3.2.              PINN-L
+
+        In      the      FFNN-L,     the      dataset     standard      deviation                                        σ   is      part     of      the      TDB     labels,      therefore      its      value      should      be      computed      beforehand.      As      a
+consequence,      since      the      number      of      datasets      in      the      TDB      is      51,      the      number      of      training      points      is      reduced      to      51      as      well.      To      overcome      this
+issue      and      leverage     all     the      518      training      data     points,      a      probabilistic      loss     function            L                       (Eq.      (4))      is      proposed     to      find      the     standard      deviation
+associated       with      each       manufacturing      configuration       by      maximizing       the       log-likelihood      of       each       batch:
+
+                                        M     1                               R)                             ))                                                                         ))
+                 L                 =                                                   ∑if   ,iln     PDF      log10Nf   ,i;σ+     Rf   ,iln     1                                CDF      log10Nf    ,i;σ,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            (4)
+
+As       for       the       FFNN-L,       the       linear       fatigue       model       is       assumed,       and       its       parameters       are       the       outputs       of       the       network.       Therefore,       the       proposed
+PINN      outputs      m,      q,      and                σ    to      compute      the      PDF      using      Eq.      (1).      The      model      can      be      trained      on      the      full      TDB      (518      points),      provided      that      an
+adequate     training     and     testing     split     is     adopted     (90     %                                10     %     split).    This     favors     model     generalization     and     reduces     overfitting.     The     task     is
+accomplished       through       a       custom       loss       function       that       embeds       previous       physical       knowledge      into       the       ML      algorithm       [45].       Unlike      in       [11],
+where        the        custom        loss        function        calculated        the        derivative        on        the        SN        diagram        to        force        monotonically        decreasing        behaviors        without
+accounting       for       the       presence       of       runouts       and       their       statistical       significance,       here       the       linear       trend       is       enforced.       To       obtain       this,       the       PINN
+structure       shown       in       Fig.       2       is       exploited.       The       same       inputs       of       the       NN       of       Section       2.2       are       used,       except       that       Sa                                 and       Rf     are       also       included       to
+exploit      the      full      TDB.      They      are      referred      to      as      mock      inputs      since      they      are      not      fed      to      the      NN      hidden      structure      directly,      but      they      are      only
+passed      to       the      custom       loss      function.
+        The        hidden        structure        is        the        same        of        the        previous        section,        but        the        number        of        epochs        employed        are        5000,        the        batch        size        is        300
+whereas     the     learning     rate     has     been     set     to     0.0001.     The     number     of     trainable     parameters     for     this     PINN     model     is     the     same     as     the     previous
+FFNN-L,    since    the    fully    connected    structure    remains    the    same,    despite    the    concatenated    mock    inputs.    For    this    NN,    the    testing    procedure
+is     more     flexible     with     respect     to     the     previous     FFNN.     Indeed,     the     testing     part     can     be     composed     of     randomly     selected     points,     belonging     to
+more       datasets       (the       case       in       which       all       points       belonging       to       the       same       dataset       are       all       removed,       is       highly       unlikely).       Otherwise,       a       dataset
+testing      strategy      can      be      adopted,      by      removing      all      the      points      pertaining      to      the      same      dataset,      on      randomly      selected      datasets.      The      latter
+strategy      is       more      severe      [11],       but      allows       to      compare       the      performance       of      this      PINN       model      to       the      one      of       the      FFNN       of      Section      2.2.
+
+3.3.              R90C90       BNN
+
+        The       proposed       NN       models       the       aleatoric       response       of       fatigue       by       embedding       the       prediction       of       statistically       distributed       values       of       the
+fatigue     life.     However,      the     predicted     distributions     are      inferred     from     the     available     data,      which     in     turn     affects      the     predicted     response.      In
+principle,       the       aleatoric       distribution       should       be       insensitive       to       the       observed       values,       but       in       reality,       this       can       be       only       achieved       if       infinite
+samples      are      available.      To      discern      the      effect      of      the      training      data      (i.e.,      the      uncertainty      of      the      model)      from      the      intrinsic      scattering      of      the
+fatigue       response      (i.e.,       the      aleatoric       uncertainty),      a       BNN      is      adopted.
+        BNN       allows       to       capture       the       ML       model       uncertainty       with       ease,       granting       also       the       model       generalization       by       considering       Bayesian       sta-
+tistics       as       part       of       the       model.       Indeed,       in       a       BNN       each       weight       and       bias       of       a       layer       is       a       random       variable       instead       of       a       single       value,       whose
+distributions     are     defined     by     maximizing     the     log-likelihood     of     the     posterior     distribution     on     the     observed     data.     BNN     are     commonly     built
+with     variational     layers,     using     parametric     functions     (e.g.,     Bernoulli,     Gaussian,     Weibull…                 )     for     both     the     prior     and     posterior     distributions.
+Each       layer       is       defined       by       the       number       of       neurons,       the       activation       function,       the       prior       distribution,       and       the       posterior       distribution.       Vari-
+ational      layers      are      trained      by      minimizing      the      Kullback-Leibler      (KL)      divergence      [46,47],      which      requires      the      definition      of      KL      weights      to
+preserve       consistency.       For       this       BNN,       both       the       prior       and       posterior       are       defined       as       a       multivariate       normal       distributions,       that       are       used       to
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             Fig.      2.          PINN-L       structure.      The       following       NN       allows      to      produce       the       MLLE      fit       parameters,      but      by      using      all       the       TDB       data.
+
+
+                                                                                                                                                                7
+
+=== PDF PAGE 8 ===
+A.      Centola      et      al.                                                                                                                                                                                   Engineering Failure Analysis 168 (2025) 109081
+
+introduce     those     uncertainties     in     the     layer     connections.     The     prior     is     a     standardized     multivariate     normal     distribution     (zero     mean     vector
+and      identity      covariance      matrix)      whereas      the      posterior       is      a       fully      populated      multivariate      normal      distribution,      whose      mean       vector      and
+symmetric        covariance       matrix        entries       are        updated        during       training.        BNN       architecture        is        analogue       to       the        one        of       FFNN,        with        the        only
+difference       that      at      least      one      of       the       layers      is       a       variational      one,      whereas       for      the       FFNN-L      all       layers      are       deterministic.
+       Here     the     goal     is     to     predict     Nf         at     90     %     Reliability     (R90)     and     90     %    Confidence     (C90),     as     defined     in     Section     2.3,     to     confine     the     intrinsic
+scatter    of     the    fatigue     (R90)    and    the     uncertainty    of    linear    model    (C90)     to    the    dataset,    while    modelling     the     ML    uncertainty    with     the    BNN.
+This     allows     to     assess     design     PSN     curves     that     can     be     used     to     predict     fatigue     life     accounting     for     the     limitations     of     the     ML     model     related     to
+the       available      data.
+       The      inputs      of       the      BNN      are       the      PP,       Vrisk,       TT,      ST       and       Sa as      well.      The      BNN      architecture       is      reported      in       Fig.      3.      The      input       layer       has      19
+nodes,       while      the       3      deterministic      hidden       layers       have      100,      75       and       50      neurons,      respectively,       all      activated      with       a      ReLU      function.
+       Another     single     input     node     is     concatenated     to     the     third     layer     that     takes     once     more     Saas     input.     The     third     layer     with     50              +     1     neurons     is
+connected        to        the        variational        output        layer,        which        is        linearly        activated        with        just        1        neuron.        This        is        done        to        obtain        a        mean        behavior
+between      the      linear      and      the      ReLU     activation      function      to      Sa,      since      the      output      layer      is      linearly      activated,      and      the      3rd      layer      has      the      ReLU
+influence     of     Sa          coming     from     the     19     nodes     input     layer     that     has     undergone     ReLU     activations     for     three     times.     Therefore,     linear     behaviors
+can     be     obtained     (thanks     to     the     linearly     activated     part     of     Sa),     while     having     flexible     adapting     slopes     (thanks     to     the     ReLU    activated     part     of
+Sa).
+       Nonetheless,     the     employment     of     a     BNN     can     favor     a     better     training     and     model     generalization     [47],     as     it     will     be     discussed     in     the     next
+sections.      For      the      training      of      the      BNN,      the      batch      size      has      been      set      to      30,      the      learning      rate      to      0.001      and      the      number      of      epochs      to      1500.
+       To       provide       design       SN       curves        that       are       characterized       also        by       the       model       uncertainty,       the       BNN       is       trained       with       the       Nf                               defined       with
+R90C90       Owen       procedure       (Eq.       (3))       [22].       In       this       way,       the       aleatoric       and       epistemic       uncertainty       intrinsic       to       fatigue       experimental       cam-
+paigns      can      be      separated       from      the       ML      model      uncertainty.
+
+4.              Results       and       discussion
+
+       The     proposed     models     aim     at     predicting     the     PSN     curves,     which      account     for     the     probabilistic     nature     of     the     fatigue     response,     and     the
+uncertainty     of      the     fatigue      models,      properly      discerning     one      from      the     other.      First,      the      overall      accuracy     of     the      models     is      verified      and      the
+predicted        PSN        curves        are        compared        with        the        experimental        data.        Thereafter,        the        algorithms        are        further        stressed        by        considering        the
+manufacturing       conditions      not      included      in       the      training       database.
+       The    NNs    have    been    developed    in    Python    using    the    libraries             “    Tensor    Flow”         and            “    Tensor    Flow    Probability”    .    The    model    generalization
+has       been       verified       by       monitoring       the       loss       values       computed       on       the       training       and       test       datasets       at       each       epoch.       Indeed,       if       the       testing       loss
+diverges     above     the     training     loss,     it     is     a     clear     sign     of     overfitting     [48].     Overfitting     is     critical     in     neural     networks,     especially     when     a     small
+TDB    is    used,    as    in    the    case    of    FFNN-L.    Fig.    4a    shows    that    the    test    loss    diverges    from    the    training    one    after    50    epochs    [49].    However,    such
+a       low       number       of       training       epochs       would       not       guarantee       sufficient       accuracy       compared       to       other       models.       The       tendency       of       these       NN        to
+overfit     can     be     justified     by     the     reduced     amount     of     data,     making     it     less     accurate     than     some     other     models     evaluated     in     this     study.     Despite
+this,       the      results       provide      valuable      insights      for       improving       model      performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                Fig.       3.          R90C90      fit       BNN      structure.
+
+
+                                                                                                                                                  8
+
+=== PDF PAGE 9 ===
+A.      Centola      et      al.                                                                                                                                                                                          Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.      4.          Training      and      Testing      Losses      for      the      FFNN-L      (a),      the      PINN-L      (b)      and      the      R90C90      BNN      (c).      It      can      be      observed      a      progressive      reduction      in      the
+overfitting      behavior,       from      the       first       NN      model       to      the       last      one.
+
+       The    PINN-L    training    and    testing    losses    follow    a    similar    trend    (Fig.    4b),    meaning    that    there    is    no    overfitting    or    underfitting.    Due    to    its
+complexity,      this      model      requires      more      epochs      to      be      trained,      eventually      achieving      subtle      differences      in      the      training      and      testing      losses.
+       Introducing     the     statistical     distributions     in     the     R90C90     BNN      connections     allows     to     better     generalize     and     represent     the     data.     In     fact,
+as     can     be     seen     from     Fig.     4c,     the     testing     loss     has     a     great     overlap     with     the     training     loss     and     both     curves     have     a     steep     training     descent.     To
+search     for     hidden     instabilities     in     the     training     process,     the     procedure     has     been     carried     until     1500     epochs.     As     Fig.     4c     shows,     no     problems
+occurred,      meaning      that      the       model      is      correctly       trained      and       is      capable      of       well       generalizing      the       data.
+       For     normalization,    the     z-score     method     was     utilized.     Regarding    feature     selection,    the     approach     outlined     in    [11]     was     adopted.     Due     to
+the     limited     data     availability     compared     to     typical     machine     learning     applications,     a     single     percentage     data     split     of     90     %     training     and     10
+%     testing     was     implemented.     In     terms     of     data     cleaning,     the     original     dataset     consisted     of     550     entries,     out     of     which     32     were     identified     as
+outliers       and      removed.       For       validation,      a       90      %-10      %       split      was       selected,       aligning      with       standard      practices      in       the       literature.
+       In     Section     4.1     the     PSN     curves     extracted     from     the     FFNN-L     are     compared     with     the     ones     of     the     PINN-L,     and     the     R90C90     BNN.     Section
+4.2       explores      the       influences      of      the       process      parameters       alone       and      combined       on      Nf.
+
+
+4.1.              Probabilistic       S-N       curves
+
+       For        the        FFNN-L        algorithm,        all        datasets        have        been        evaluated        and        four        of        them        are        shown        in        this        Section        (more        PSN        curves        are
+reported      in       the      Appendix).       To       maintain      an       unbiased      evaluation,      two       training       sets       and       two      testing       sets       are       randomly      drawn.      Respec-
+tively     datasets     0     and     34     (Fig.     5a     and     c)     are     coming     from     training     sets     while     datasets     15     and     48     (Fig.     5b     and     d)     are     testing     sets     (refer     to
+Table       1,       for       the       dataset       PP       and       reference       article).       For       each       of       the       four       datasets       (from       Fig.       5a       to       Fig.       5d),       two       figures       are       shown:       the
+FFNN-L         prediction         (green)        and         the         PINN-L         (red),        both         compared        to         the         experimental        R50         curve        (black).        Table         2         reports         the         log-
+likelihood         estimated         on         the         selected         datasets,         alongside         the         total         value         computed         over         the         complete         database.         Both         FFNN-L         and
+PINN-L      provide      accurate      predictions      of      the      PSN      curves      in      the      case      of      training      datasets,      with      an      acceptable      log-likelihood      difference                 –
+with       respect       to       the       MLLE       on       the       experimental       data.       However,       the       PINN-L       outperforms       the       FFNN-L       when       tested       outside       the       training
+database        (Fig.        5),        proving        its        superior        predictive        capability.        In        this        case        (Fig.        5b        and        g),        the        FFNN-L        provided        a        PSN        curve        with        a
+significantly      lower      MLLE      (1.782      and                             60.86)      compared      to      the      one      obtained      fitting      the      linear      model      on      the      experimental      data      (9.595
+and                               7.104),      while      the      PINN-L      (Fig.      5d      and      i)      correctly      estimates      the      PSN      curve,      achieving      a      higher       MLLE      compared      to      the      FFNN-L
+(4.057        and                                     8.215).        An        overall        comparison        reported        in        Table         2        accounts        for        all        the        data        points,        i.e.,        the         total        sum        of        the        MLLE,
+underlining      that      the       PINN-L      consistently       gives       more      accurate      results.
+       The      lower      accuracy      of      the      FFNN-L      is      imputable      to      the      size      of      the      TDB,      which      only      comprises      51      points,      one      for      each      dataset.      This
+gap     suggests     that,     while     the     FFNN-L     fits     the     training     data     very     well,     it     does     not     generalize     as     well     to     the     test     data.     It     may     be     concluded
+that      the      model       is      capturing       noise       and       details      specific       to       the      training       data,       which       negatively      affect      the       accuracy      in      the       test       case.
+       The      modified       training      strategy       employed      in      the       PINN-L      allows       to      use      the       full       TDB,      to       improve      the       model      generalization.
+       Fig.      5d      and      5      h,      show      the      PSN      curves      predicted      with      the      PINN-L      model      on      the      test      datasets.      An      overall      improvement      in      the      model
+accuracy     is     observable,     as     indicated     in     Table     2,     imputable     to     the     increase     in     the     database     size.     As     an     example,     the     training     dataset     34     is
+correctly      predicted      by       the       PINN-L,      as       opposed       to      the       FFNN-L      (Fig.       5c).
+       However,       not       in       all       cases       the       slope       is       properly       estimated       (Fig.       5d       and       h)       by       the       PINN-L.       This       behavior       is       particularly       evident       for
+datasets    with    a    limited    amount    of    data,    where    the    R90-R10    bands    correctly    contain    the    majority    of    experimental    points,    but    the    m    and    q
+are       not       always       correctly       estimated.       Indeed,       the       model       compensates       for       the       small       numerosity       of       training       data       by       increasing       the       pre-
+dicted      standard     deviation                         σ  ,      compromising      the      accuracy      on     the      slope      and      intercept      parameters,      m     and      q.      The      correlation      between      the
+predicted      deviation      and       the       dataset      size      is       analysed      in       Fig.      6a       and      b.
+       It       is       possible       to       appreciate       how       the       PINN-L       compensates       for       the       limited       numerosity       of       training       data       by       increasing       the       associated
+
+
+                                                                                                                                                      9
+
+=== PDF PAGE 10 ===
+A.      Centola      et      al.                                                                                                                                                                                                                Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.       5.          FFNN-L       and       PINN-L       PSN       curves.       In       black       the       MLLE       experimental       fit,       while       in       green       the       FFNN-L       predictions       and       in       red       the        PINN-L       pre-
+dictions.      The       green,      red      and       black       transparent      bands       are      the      R90-R10       bands.       (b)      and       (d)       are      testing      sets,      whereas      the       others       are      training      sets.
+
+
+
+
+
+                                                                                                                                                                    10
+
+=== PDF PAGE 11 ===
+A.      Centola      et      al.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Fig.       5.      (continued).
+
+
+
+Table      2
+Experimental,    FFNN-L    and    PINN-L    MLLE    for    the    shown    training    and    testing    datasets.    The    row    total    accounts    for    the    sum    of    the    MLLE    of    all    51    datasets.
+The      PINN-L      outperforms      the      FFNN-L      since      its      MLLE      is      significantly      higher.
+
+             Dataset                                                                                                                                                                            Experimental                                                                                                                                                                            FFNN-L                                                                                                                                                                                                          PINN-L                                                                                                                                                                                        Training                                                                                                                                                                            Testing
+
+
+             0                                                                                                                                                                                                                                                    1.658                                                                                                                                                                                                                                                                   1.485                                                                                                                                                                                                     0.444                                                                                                                                                                            x                                                                                                                                                                                                            ​
+             15                                                                                                                                                                                                                                         9.595                                                                                                                                                                                                                                                                   1.782                                                                                                                                                                                                     4.057                                                                                                                                                       ​                                                                                                                                                                                                                                                  x
+             34                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 0.851                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            15.804                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              5.097                                                                                                                                                                            x                                                                                                                                                                                                            ​
+             48                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 7.104                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            60.864                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              8.215                                                                                                                                                       ​                                                                                                                                                                                                                                                  x
+             Total                                                                                                                                                                                              132.275                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   4887.481                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 51.226                                                                                                                                                       ​                                                                                                                                                                                                                     ​
+
+
+uncertainty      via      the      predicted                                                                                                                                                                                                  σ         .      In      detail,      the      PINN-L      has      been      firstly      interrogated      with      fixed      features      (set      to      the      TDB      most      recurrent
+values,      as      it      has      been      done      for      Section      4.2),      while      varying      the      studied      PP,      one      at      a      time.      The      kernel      density      estimate      (blue)      has      been
+superimposed     to     demonstrate     that     when     there     is     a     large     amount     of     data,     as     in     the     150–     280     W     range     for     P     (Fig.     6a)     and     the     80–     110                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   μ        m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.     6.          Standard     deviation                                                                                                                                                          σ            estimated     by     the     PINN-L     as     the     PP     varies     (P     in     a,     h     in     b).     The     red     points     correspond     to     the     actual     training     values     in     the
+TDB.     The     dashed     black     line     refers     to     the     PP     range     outside     the     TDB,     while     its     plain     counterpart     refers     to     the     training     range.     In     dashed     blue     the     kernel
+density      estimate.
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          11
+
+=== PDF PAGE 12 ===
+A.      Centola      et      al.                                                                                                                                                                           Engineering Failure Analysis 168 (2025) 109081
+
+range    for    h    (Fig.     6b),    the    predicted                  σ  is     small.    On    the    other    hand,    where     the    numerosity    of    the     training    data    is     limited    (dashed    black    line
+outside      the       TDB      range      and       in      the       training      range      boundaries),       the      uncertainty      associated       with       the      prediction       drastically      increases.
+       To        separate        the        experimentally        observed        uncertainty        from        the        prediction        uncertainty,        the        BNN        is        introduced.        In        the        BNN,        the
+probabilistic      formulation      of      its      parameters      can      capture      the      input-related      uncertainty      and      discern      it      from      the      experimental      scattering.
+Moreover,       the       probabilistic       formulation       of       the       BNN      weights       allows       to       improve       the       generalization       capability       of       the       model      [47].       This
+behavior     can      be     appreciated     not     only     from      the     training      and     testing      loss     curves,     but     also      from      the     R90C90     curves.     Considering     Owen’ s
+R90C90    curve,    with    this    BNN,    allows    to    model    effectively    the    model    uncertainty    on    these    design    curves    while    guaranteeing    that    the    ML
+model     uncertainty     is     separated     from     the     uncertainty     of     experimental     data.     This     was     not     possible     with     the     deterministic     formulation     of
+the      FFNN-L      and      with      the      PINN-L,      whose      probabilistic      approach      was      not      inherited      in      the      weight      uncertainty      of      their      NN      formulation.
+Considering       these       factors,       the       chosen       ML       model       successfully       addresses       the       challenges       of       predicting       and       preventing       fatigue       failures,
+ensuring         accurate         and         reliable         results.         Among         these         models,         neural         networks         (NNs)         stand         out         as         the         most         suitable         technique         for
+describing     and     addressing     the     fatigue     behavior     of     additively     manufactured     (AM)     metal     alloys,     thanks     to     their     exceptional     performance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.     7.          BNN     PSN     curves.     In     black     the     R50     experimental     fit,     in     dashed     black     the     Owen     R90C90     curve,     in     light     blue     the     R90C90     BNN     predictions     and
+in      blue      their       mean.      (b)       and      (d)       are      testing      sets,      whereas       the      other       four      are      training       sets.
+
+
+                                                                                                                                           12
+
+=== PDF PAGE 13 ===
+A.      Centola      et      al.                                                                                                                                                                                         Engineering Failure Analysis 168 (2025) 109081
+
+and      flexibility.      This      conclusion      is      further      supported      in      [9],      where      a      review      of      machine      learning      techniques      for      predicting      the      fatigue
+response     of     AM     parts     was     conducted.     Specifically,     the     analysis     in     [9]     highlighted     that     NNs     are     among     the     most     effective     ML     algorithms
+for      this      particular      application.      Indeed,      from      Fig.      7      it      is      possible      to      appreciate      this      behavior.      For      each      dataset,      the      BNN      is      interrogated
+100     times     for     each     Sa            level,     and     100     BNN     curves     (light     blue)     and     their     mean     (blue)     can     be     computed     and     plotted     on     top     of     the     R90C90
+experimental    curve    (dashed    black).    It    is    possible    to    appreciate    how    the    results    are    greatly    improved    for    the    same    training    (Fig.    7a    and    c)
+and     testing     (Fig.     7b     and     d)     sets,     used     also     for     the     previous     NN.     The     model     predictions     can     outline     which     regions     of     the     dataset     are     less
+confident      and      which      ones      are      more      certain.      It      can      be      understood      how      the      Sa                                   levels      around      250      MPa      output      a      tighter      prediction      band,
+whereas     the     upper     and     lower     extrema     (namely     400     and     100     MPa)     produce     a     less     confident     band.     This     behavior     can     be     mainly     ascribed
+to         a         higher         density         of         experimental         points         around         250         MPa         and         to         a         lower         one         around         100         and         400         MPa         in         the         TDB.         The         BNN
+automatically      accounts      for      these      discrepancies      by      adjusting      the      weight      uncertainty      and      increasing      the      associated      standard      deviation.
+Due       to       these       reasons       and       the       ones       explained       in       Section       3.3,       this       particular       model       proves       to       be       the       most       generalizable,       reliable       and
+flexible.
+       It     must     be     noted     that,     during     the     fatigue     design     stage,     a     unique     PSN     design     curve     should     be     available     rather     than     a     band     of     curves.
+According     to     Fig.     8,     the     10th     curve     of     the     BNN     prediction     envelope     can     be     considered     as     the     BNN     C90     curve     and     is     characterized     by     an
+offset     with     respect     to     the     R90C90     Owen’ s     experimental     fit     (dashed     black)     and     the     BNN     mean     (blue),     indicating     how     confident     the     BNN
+prediction        is.        This        curve,        with        this        R90C90        BNN,        is        the        one        to        be        used        to        design        against        fatigue        failures        for        PBF-LB        SS316L        when
+considering       the       influence       of      PP.       This       approach       has       been       validated      on       the       PBF-LB       SS316L,      but       it       can      be       generalized       and       extended       to
+other     materials.     Fig.     8     shows     the     advantages     of     employing     a     BNN:     with     this     ML     model     is     possible     to     separate     the     epistemic     uncertainty
+contribution         related         to         the         ML        algorithm,         from        the         aleatoric        and         epistemic         uncertainty         contributions         that         are         tied         to         the         Owen’ s
+R90C90      fatigue       design      curve.
+       Table       3.       resumes       the       NN        models       employed       for       this       research,       listing       their       details,       objectives,       advantages       and       disadvantages       in       a
+compact      manner.
+
+
+4.2.              Process       parameters       influence
+
+       Once       the       BNN       has       been       correctly       trained,       it       can       be       used       to       produce       continuous       predictions       to       evaluate       the       PP       influence       on       the
+fatigue     life.     Since     Sa            ranges     from     100     to     400     MPa     in     the     TDB,     the     200     and     350     MPa     levels     have     been     chosen,     i.e.,     the     stress     amplitudes
+where     a    larger    amount    of    data     is    available.    In     this    parametric    study,    specific     parameters     have    been     varied     while    all    the    remaining     input
+features      have       been      set       to       their      most       recurrent       values      (Table       4).
+       In    Section    4.2.1    the    effect    of    a    single    parameter    is    studied,    specifically             ϑ       ,    P,    v,    h,    and    t.    Section    4.2.2    evaluates    the    synergic    effect    of    P
+and       v,      h       and       t,      and       of      Edand                   ϑ       .       In      this      Section       the      word                   “    life”           is      always       referred       to      as       the      R90C90       Nfpredicted      by      the       BNN.
+
+4.2.1.              Single       parameter       influence
+       Fig.      9a      shows      the      effect      of                  ϑ             on      the      fatigue      life.      The      model      is      in      agreement      with      the      experimental      results      which      demonstrate      that
+horizontally      manufactured       specimens       (0◦)      have      a       better       fatigue      life       than      the      vertically       manufactured       ones      (90◦)      [2,27,50,51].
+       In      the      case      of      P,      v,      h,      and      t,      the      predictions      have      been      extended      outside      the      respective      range      observed      in      the      TDB,      as      indicated      by
+black          dashed          lines          in          Fig.          9b          and          9e.          Therefore,          the          training          ranges,          as          maximum          and          minimum          values,          found          in          the          TDB          are
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.      8.          PSN      curves      BNN      model      uncertainty      at      a      model      confidence      level      of      90%      (Orange)      for      two      datasets.      Within      the      uncertainty      bands,      the      10th
+element      can      be       selected      to      provide       the       C90      BNN      R90C90       design      curve.
+
+
+                                                                                                                                                     13
+
+=== PDF PAGE 14 ===
+A.      Centola      et      al.                                                                                                                                                                                                                               Engineering Failure Analysis 168 (2025) 109081
+
+Table      3
+NN      models      comparison.
+
+    NN                                                                                           Details                                                                                                                                                                                                                      Objective                                                                                                                                                                                                                                                                                     Advantages                                                                                                                                                                                                                Disadvantages
+
+    FFNN-L                                                                                                                                                                       Dataset     TDB     (51     data)Predict    m,    q    andσfor    each    dataset    from                Simple     model                Overfitting
+                                                   18     inputs                                          PP,     Vrisk,     TT,     ST                                                                               Simple     loss     function                                                    Less     training     data
+                                                   Pyramidal     structure     of                                                                                                                                     Fast     Training                                                               Imprecise
+                                   100,   75   and   50   ReLU   neurons                                                                                                                                              Preliminary     employment                                                      Cannot     separate     experimental
+                                                   3     outputs                                                                                                                                                                                                                      uncertainty     from     model
+                                                   epochs:     1000                                                                                                                                                                                                                   uncertainty
+                                                   learning     rate:     0.001
+                                                   batch     size:     30
+    PINN-L                                                                                                                                                                                Full     TDB     (518     data)Predict    m,    q    andσfor    each    dataset    from                Generalization                Long     training
+                                                  18     inputs    (+2    mock    inputs                  PP,     Vrisk,     TT,     ST,     Saand     Rf          using     all     the                              More     training     data                                                      Stiff     PSN     curve     adaptivity
+                                   for     Sa   and     Rf)                                               data                                                                                                        More     precise     than     FFNN-L                                            Cannot     separate     experimental
+                                                   Pyramidal     structure     of                                                                                                                                                                                                     uncertainty     from     model
+                                   100,   75   and   50   ReLU   neurons                                                                                                                                                                                                              uncertainty
+                                                   3     outputs     (+2     mock                                                                                                                                                                                                                     Complex     loss     function
+                                   outputs     for     Sa         and     Rf)                                                                                                                                                                                                                         Complex     model
+                                                   epochs:     5000
+                                                   learning     rate:     0.0001
+                                                   batch     size:     300
+    R90C90                                         Full     TDB     (518     data)                        Predict   R90C90   Nffrom   PP,   Vrisk,   TT,   ST                                                         Generalization                                                                  Complex     model
+             BNN                                   19     inputs     (Sa                                  and     Sa     considering     also     the     model                                                       More     training     data
+                                   concatenated)                                                          uncertainty                                                                                                 Fast     Training
+                                                   Pyramidal     structure     of                                                                                                                                     Can     separate     experimental
+                                   100,   75   and   50   ReLU   neurons                                                                                                                              uncertainty     from     model
+                                                   1     variational     output                                                                                                                       uncertainty
+                                                   epochs:     1500                                                                                                                                                   Can     directly     output     the     model
+                                                   learning     rate:     0.001                                                                                                                       uncertainty     envelope
+                                                   batch     size:     30
+
+
+
+respectively:     from     0◦                           to     90◦       for              ϑ       ,     from     90     W     to     350     W     for     P,     from     420     mm/s     to     1200     mm/s     for     v,     from     60                                       μ  m     to     150μ           m     for     h,     and     from
+20      μ  m    to    50μ          m     for    t.     Fig.     9b    shows    that    low    values     of    P     have     a    positive     effect    on     the    life,     particularly    below     250    W,     while    powers    above
+this       value       lead       to       a       decrease       of       the       fatigue       life.       Similar       trends       can       be       found       in       [23]       for       P       with       respect       to       the       porosity       [%],       which       is
+associated       with       a       lower       life       since       the       defect       number       and       size       increase.       Also,       in       [24],       it       has       been       shown       that       increasing       P       leads       to       a
+decrease      in               ρ  rel    of      PBF-LB      SS316L,      eventually      reflecting      in      reduced      life.      In      [25],      the      same      trend      for      P      vs                                                                        ρ  rel    has      been      reported,      with      a
+drastic       decrease      of                     ρ  rel    after      285      W.
+         Fig.     9c     shows     the     effect     of     v     on     the     life.     The     BNN     shows     that     speeds     close     to     1200     mm/s     give     the     highest     life,     especially     for     the     200
+MPa     level.     The     350     MPa     level     shows     no     significant     differences     between     speeds     level     with     the     highest     life     located     between     the     800     and
+1000       mm/s       range.       However,       the       350       MPa       is       affected       by       a       higher       degree       of       uncertainty,       since       there       are       less       points       in       the       TDB.       As       a
+result,     the     uncertainty     band     associated     with     350     MPa     is     larger     for     all     the     analyzed     PP.     Nonetheless,     in     [52,53],     it     has     been     shown     that
+the       lowest       percentage       of       porosity       is       achieved       by       speeds       close       to       1250       mm/s,       whereas,       in       [23],       similar       trends       in       porosity       have       been
+achieved       for       the       1000       mm/s       range.       [24]       showed       that       the       800       to       1200       mm/s       speed       range       gives       high       values       of                                                                                ρ  rel,       with       1200       mm/s
+giving       the       highest                    ρ  rel.       Values       of       v       higher       than       1200       mm/s       led       to       a       drastic       decrease       of                                    ρ  rel    and       should       therefore       be       avoided.       In       [25]
+again,       1200       mm/s       leads       to       the       highest                                 ρ  rel.       The       results       obtained       for       v       are       sound       with       the       experimental       evidence,       proving       the       effec-
+tiveness      of       the      BNN      in       modelling      the      life       as      the       PP      changes.
+         Fig.     9d     shows     that     with     small     values     of     h     a     better     fatigue     response     can     be     achieved.     This     behavior     is     particularly     evident     for     the     350
+MPa     stress     level.     At     200     MPa     there     is     no     marked     difference     between     values     of     h     ranging     from     60     to     90                                                                                                μ  m,     whereas     a     more     prominent
+decrease      is      observed      after      this     range.      Once      again,      the      BNN      shows      an      increase      in      the      uncertainty      level      for      the      350      MPa      level      and      if      the
+life     is      evaluated     for      h     values      that     are     outside      of     the      training     range.      This      BNN     behavior      is      also      confirmed      by     the      experimental     evidence
+[54]:     as    in     [23],    low     values    of     h     lead    to     low    levels     of    porosity     while    high     values     give    the     opposite    behavior.     In    [25],    the     authors     confirm
+that      low      values       of       h      give       a       higher                   ρ  rel,      and       vice       versa.
+         In     Fig.     9e,     it     can     be     observed     how     t     has     a     more     marked     influence     on     the     life     for     the     200     MPa     level     with     respect     to     the     350     MPa     level,
+but     it     can     be     observed     that     low     values     of     t     generally     give     a     better     fatigue     response.     It     is     generally     known     that     t     has     a     lower     influence     on
+the      life      [11,12,17,18]      and      Section      4.2.2      analyzes      this      peculiarity.      Nonetheless,      [23]      confirms      the      trends      found      by      the      BNN,      since      low
+values       of      t      produce       a       lower      porosity       in      the       specimens,      and       in      [24]       small      t       led      to      a       higher                                                    ρ  rel.
+         It        must        be        remarked        that        the        results        shown        in        Fig.        9        may        change        if        the        PP        that        have        been        kept        constant        are        altered        from        the
+configuration      shown      in       Table      4.
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                              14
+
+=== PDF PAGE 15 ===
+A.      Centola      et      al.                                                                                                                                                       Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                             15
+
+=== PDF PAGE 16 ===
+A.      Centola      et      al.                                                                                                                                                                                                                                             Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       Fig.       9.          Effects       of                   ϑ             (a),      P      (b),      v      (c),       h       (d)      and       t      (e)      on       the       R90C90       fatigue      life       Nf,      evaluated       by       the      R90C90       BNN,       for      two      different       Sa                           level.
+
+
+
+
+
+
+
+                                                                                                                                                                                        16
+
+=== PDF PAGE 17 ===
+A.      Centola      et      al.                                                                                                                                                                                                                    Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.     10.          P     and     v     synergic     influence     on     the     R90C90     Nf.     In     (a)     P     vs     Nf                         at     two     Sa     levels     and     at     three     v     levels.     In     (b)     3d     plot     of     P     and     v     vs     R90C90     Nf                      at
+350       and      200       MPa,      together       (b)      and       alone       with      beach      contour      lines       (c      and       d).
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                      17
+
+=== PDF PAGE 18 ===
+A.      Centola      et      al.                                                                                                                                                                                                                   Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.     11.          H     and     t     synergic     influence     on     r90c90     nf.     In     (a)     h     vs     Nf                   at     two     Sa     level     and     at     three     t     levels.     In     (b)     3d     plot     of     h     and     t     vs     R90C90     Nf                 at     350     and
+200       MPa,      together      (b)       and       alone      with       beach      contour      lines      (c       and      d).
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                      18
+
+=== PDF PAGE 19 ===
+A.      Centola      et      al.                                                                                                                                                                                                                    Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                  Fig.       12.          Effect      of      Ed    on       the      R90C90       Nf           for       the       three      building      orientations.
+
+4.2.2.              Parameters       synergic       influence
+        Experimental     results     have     shown     that     the     correlation     between     process     parameters     plays     a     significant     role     in     the     resultant     porosity,
+which       in       turn       affects       the       fatigue       life.       In       the       following,       the       synergic       influence       of       the       PP       is       analyzed       with       the       BNN.       Fig.       10       shows       the
+mutual      influence      of      P      and      v      on      the      life      inside      the      training      range,      under      different     perspectives.      It      can      be      observed      that      P      influences      the
+life     much     more     than     v.     Fig.    10c-d     indicates     that    the     highest     life     is     achievable     by     using     high     speed     combined     with     a     power     below     250     W.
+The      influence      of      v      is      more      marked      for      low      P      values,      whereas      it      tends      to      reduce      significantly      for      high      P      values      (Fig.      10a),      suggesting      a
+predominant     effect     of     the     excessive     power     in     reducing     the     fatigue     performance.     Moreover,     the     contour     lines     in     Fig.     10c-d     highlight     the
+different     effects     of     the     parameters     interaction     at     a     stress     amplitude     of     200     MPa     and     300     MPa,     respectively.     Similar     trends     are     found     in
+[25]      for         ρ  rel   as       opposed      to      Nf,       further      proving       the       excellent      capabilities      of       the      BNN.
+        The     combined     influence     of     h     and     t     is     reported     in     Fig.     11.     It     is     evident     how     t     has     a     limited     influence     on     the     fatigue     life,     while     h     has     a
+remarkable       effect.       This       is       also       clear       from       Fig.       11a       where       the       iso-t       lines       are       almost       superimposing.       However,       it       can       be       observed       that
+decreasing       t       leads       to       a       slightly       better       response.       To       achieve       a       higher       fatigue       performance,       both       t       and       h       should       be       set       to       their       lowest
+values.      However,       this      could      significantly      impact       the      duration       of      the       manufacturing      process.
+        The        effect         of         all        the         PP         combined         can        be         investigated        by         studying         how         the         volumetric        energy         density        Ed                                               [J/mm3]         affects         the
+response     as              ϑ            varies.     Indeed,     it     is     known     [23]     that     Edis     calculated     according     to     Eq.     (5),     which     shows     how     P,     v,     h     and     t     are     all     taken     into
+account    at    once.    The    range    of    evaluation    of    Ed                                              spans    from    the    minimum    to    the    maximum    of    the    TDB.    Edis    calculated    for    each    dataset    as:
+                  E      =             P
+                     d         v              •     h              •     t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (5)
+
+Fig.    12    confirms    that    the    0◦                          configuration    outperforms    the    45◦                                              and    this    last    one    on    the    90◦.    The    differences    between             ϑ           are    less    evident    in
+the     higher     end     of     Ed,     especially     for     the     350     MPa     level.     When     it     comes     to     Ed,     a     higher     response     is     achieved     for     both     Salevels     in     the     range
+close         to         100         and         120         J/mm3,         for         the         45◦         and         90◦        specimens.         A         wider         plateau         of         peak         response         is         observable         for         the         horizontal
+specimens     (0◦)    from     70             ÷    80     to    120     J/mm3.     The     results    for    Ed                                             obtained     with    the     BNN     are    also     confirmed     by     the    literature.     In    [52,54],     it
+has    been    shown    that    when    Ed                                =    117    J/mm3                   a    lower    number    of    defects    with    a    smaller    size    is    obtained,    leading    to    a    better    fatigue    life.    On
+the     other     hand,     approaching     values     of     Ed                                        close     to     50     J/mm3                   leads     to     a     nonnegligible     decrease     of     the     fatigue     response,     while     increasing
+it     too     much     (close     to     300     J/mm3)     drastically     increases     the     size     and     number     of     defects     leading     to     an     extremely     poor     fatigue     life.     In     [23],
+Ed     has      been      set      from      20      to      85      J/mm3,      and      the      measured      porosity      has      trends      similar      to      the      trends      of      the      life      predicted      by      the      BNN      of
+Fig.      12,      since      the      minimum      is      achieved      on      the      higher      end      of      the      range.      Even      though      Ed                                                          is      known      not      to      be      an      exhaustive      predictor      of
+fatigue     behaviour     [54],     its     influence     on     the     fatigue     life     has     been     studied     for     the     sake     of     comparison     with     literature     results.     Indeed,     the
+proposed      BNN      can      provide      uncertainty      envelopes      for      any      synergic      parameter,      while      preserving      the      multiple      parameters      interactions
+which      govern      the      fatigue      strength.      However,      since      more      than      one      PP      is      considered      at      once,      it      has      been      decided      to      keep      the      figures      as
+clear       as      possible       for      this       chapter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                       19
+
+=== PDF PAGE 20 ===
+A.      Centola      et      al.                                                                                                                                                                              Engineering Failure Analysis 168 (2025) 109081
+
+5.              Conclusions
+
+       This        work        presents        a        novel        approach        to        reliably        predict        and        prevent        fatigue        failures        in        additively        manufactured        (AM)        SS316L
+components.     The      method      is      a      substantial      shift      from      the      use      of      deterministic     machine      learning      (ML)      models      to     estimate      the      SN      curves,
+towards      probabilistic      ones      to      provide     Probabilistic      Stress-Life      (PSN)      curves.      Furthermore,      the      method      builds      upon      established      fatigue
+models,      offering       a      more      robust       and      trustworthy       way      to      adopt       ML      in       fatigue      design,       leveraging       on      experimental      data.       In      particular:
+
+  •          A     standard     Feed     Forward     Neural     Network     (FFNN)     is     trained     to     predict     the     parameters     of     linear     PSN     curves     from     the     manufacturing
+       parameters,      showing       promising      results       but      limited      predictive       capabilities       outside      the      training       intervals
+  •          A         variation         of         the         FFNN         with         a         custom         loss         function         is         developed         to         improve         the         training         process,         leading         to         substantial         im-
+       provements     of     the     model     accuracy     in     extrapolating     outside     the     training     database.     However,     the     statistical     deviation     is     concurrently
+       influenced      by       the       experimental      scatter      and       the       available      data.
+  •          A        Bayesian        neural        network        (BNN)        is        proposed        to        specifically        estimate        the        uncertainty        of        the        ML        model,        uniquely        related        to        its
+       architecture     and     training.     To     separate     this     uncertainty     from     the     experimental     scattering,     the     BNN     is     trained     on     PSN     curves     at     90     %
+       reliability      (R90)       and      confidence       (C90)      levels,      commonly       used      for       the      industrial       practice.
+  •          The     results     of     the     BNN     are     R90C90    curves     with     a     distribution     directly    inherited     from     the     training     dataset,     which     gives     an     indication
+       of      the       trustworthiness       of      the       ML      predictions      and       provides       a      safe       data-driven      tool      for       the      design       of      AM      parts.
+  •          All     the     ML     models     are     trained     on     literature     data     that     study     the     critical     role     of     process     parameters,     risk     volume,     thermal     treatments,
+       and       surface        treatments       in        determining       fatigue        performance.       The       models       allow       to        assimilate       the        different       scientific       findings        and
+       embed       them      into       a      unique       powerful       design      tool.
+  •          The        influence        of        building        orientation,        laser        power,        scan        speed,        hatch        distance,        and        layer        thickness        are        analysed        with        the        BNN,
+       unveiling       their       individual       and       combined       effects       on       fatigue       performances.       Alongside       average       trends,       the       BNN       estimates       the       con-
+       fidence    of    the    ML    prediction    outside    the    training    range.    The    confidence    bands    could    be    used    to    selectively    enlarge    the    database    with
+       experiments       specifically      designed      to       reduce       the      model      uncertainty      under      specific       manufacturing       configurations      yet      unexplored.
+
+       In     conclusion,    the     proposed     BNN     substantially    improves     the     trustworthiness     and     explainability     of     ML     models    for     the     fatigue     design,
+providing       powerful       data-driven       tools       that       accurately       predict       PSN       curves       from       process       parameters,       while       embedding       a       probabilistic
+metric        of        the        ML        confidence        that        can       be        used        to        deliver        safe        design.        Its        integration        into        the        AM        design        process        offers        a        significant
+advancement     in     producing     safer     and     more     reliable     components     for     the     aerospace,     medical,     and     automotive     industries,     as     the     predicted
+PSN      curve       can      be      chosen      with       designer-defined       confidence      level.
+
+Funding
+
+       This      research       did       not      receive      any      specific       grant      from      funding      agencies      in      the       public,      commercial,       or      not-for-profit       sectors.
+
+CRediT       authorship       contribution       statement
+
+       Alessio            Centola:            Writing                                    –                  original             draft,            Visualization,             Validation,             Software,             Methodology,            Investigation,             Data            curation,
+Conceptualization.       Alberto      Ciampaglia:       Writing                   –            review      &       editing,       Validation,      Supervision,       Conceptualization.      Davide       Salvatore
+Paolino:       Writing                    –             review      &       editing,       Supervision,       Project       administration,       Conceptualization.       Andrea       Tridello:       Writing                    –             review      &
+editing,      Supervision,       Project      administration,       Formal      analysis.
+
+Declaration       of       competing       interest
+
+       The      authors      declare      that      they      have      no      known      competing      financial      interests      or      personal      relationships      that      could      have      appeared      to
+influence      the       work      reported       in      this      paper.
+
+Appendix:.              Additional       results
+
+       In      the       following       section,       additional       PSN      curves       are       shown      for       two       training       datasets,      namely      9       (Fig.       13a)       and       35       (Fig.       13b),       eval-
+uated       with      the       FFNN-L,      PINN-L      and       R90C90      BNN.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                             20
+
+=== PDF PAGE 21 ===
+A.      Centola      et      al.                                                                                                                                                                                                  Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.     13.          Additional      PSN     curves      for      two     training      datasets,     namely     9      (a)     and      35      (b).      The     green      curves      have     been     evaluated      with     the      FFNN-L,     the      red
+ones      with      the       PINN-L      and       the       blue      ones      with      the       R90C90       BNN.
+
+.
+
+
+
+                                                                                                                                                          21
+
+=== PDF PAGE 22 ===
+A.      Centola      et      al.                                                                                                                                                                                                 Engineering Failure Analysis 168 (2025) 109081
+
+Data       availability
+
+        Data       will      be      made       available      on      request.
+
+References
+
+  [1]           Y.     Yamashita,     T.     Murakami,     R.     Mihara,     M.     Okada,     Y.     Murakami,     Defect     analysis     and     fatigue     design     basis     for     Ni-based     superalloy     718     manufactured     by     additive
+           manufacturing,      Procedia      Struct.      Integrity      (2017),      https://doi.org/10.1016/j.prostr.2017.11.054.
+  [2]           A.     Tridello,     J.     Fiocchi,     C.A.     Biffi,     G.     Chiandussi,     M.     Rossetto,     A.     Tuissi,     D.S.     Paolino,     Effect     of     microstructure,     residual     stresses     and     building     orientation     on     the
+           fatigue      response      up      to      109      cycles      of      an      SLM      AlSi10Mg      alloy,      Int.      J.      Fatigue      137      (2020)      105659,      https://doi.org/10.1016/J.IJFATIGUE.2020.105659.
+  [3]           J.      Eckert,      J.C.      Holzer,      C.E.      Krill,      W.L.      Johnson,      Structural      and      thermodynamic      properties      of      nanocrystalline      fcc      metals      prepared      by      mechanical      attrition,
+           J.      Mater.      Res.      7      (1992),      https://doi.org/10.1557/JMR.1992.1751.
+  [4]           S.      Liu,      Y.C.      Shin,      Additive      manufacturing      of      Ti6Al4V      alloy:      a      review,      Mater.      Des.      164      (2019),      https://doi.org/10.1016/j.matdes.2018.107552.
+  [5]           A.    Tridello,    J.    Fiocchi,    C.A.    Biffi,    G.    Chiandussi,    M.    Rossetto,    A.    Tuissi,    D.S.    Paolino,    VHCF    response    of    Gaussian    SLM    AlSi10Mg    specimens:    Effect    of    a    stress    relief
+           heat      treatment,      Int.      J.      Fatigue      124      (2019),      https://doi.org/10.1016/j.ijfatigue.2019.02.020.
+  [6]           A.      Tridello,      J.      Fiocchi,      C.A.      Biffi,      M.      Rossetto,      A.      Tuissi,      D.S.      Paolino,      Size-effects      affecting      the      fatigue      response      up      to      109      cycles      (VHCF)      of      SLM      AlSi10Mg
+           specimens      produced      in      horizontal      and      vertical      directions,      Int.      J.      Fatigue      160      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.106825.
+  [7]           Y.      Murakami,      Metal      fatigue:      Effects      of      small      defects      and      nonmetallic      inclusions,      2019.      doi:      10.1016/C2016-0-05272-5.
+  [8]           F.    Calignano,    D.    Manfredi,    E.P.    Ambrosio,    L.    Iuliano,    P.    Fino,    Influence    of    process    parameters    on    surface    roughness    of    aluminum    parts    produced    by    DMLS,    Int.    J.
+           Adv.      Manuf.      Technol.      67      (2013),      https://doi.org/10.1007/s00170-012-4688-9.
+  [9]           A.     Centola,     A.     Tridello,     A.     Ciampaglia,     F.     Berto,     D.S.     Paolino,     Review     on     machine     learning      techniques     for     the     assessment     of     the     fatigue      response     of     additively
+           manufactured      metal      parts,      Fatigue      Fract.      Eng.      Mater.      Struct.      (2024),      https://doi.org/10.1111/ffe.14326.
+[10]           J.      Chen,      Y.      Liu,      Fatigue      modeling      using      neural      networks:      a      comprehensive      review,      Fatigue      Fract.      Eng.      Mater.      Struct.      45      (2022),      https://doi.org/10.1111/
+           ffe.13640.
+[11]           A.      Centola,      A.      Ciampaglia,      A.      Tridello,      D.S.      Paolino,      Machine      learning      methods      to      predict      the      fatigue      life      of      selectively      laser      melted      Ti6Al4V      components,
+           Fatigue      Fract.      Eng.      Mater.      Struct.      46      (2023),      https://doi.org/10.1111/ffe.14125.
+[12]           A.    Tridello,    A.    Ciampaglia,    F.    Berto,    D.S.    Paolino,    Assessment    of    the    critical    defect    in    additive    manufacturing    components    through    machine    learning    algorithms,
+           Appl.      Sci.      (switzerland)      13      (2023),      https://doi.org/10.3390/app13074294.
+[13]           E.      Maleki,      S.      Bagherifard,      M.      Guagliano,      Correlation      of      residual      stress,      hardness      and      surface      roughness      with      crack      initiation      and      fatigue      strength      of      surface
+           treated      additive      manufactured      AlSi10Mg:      Experimental      and      machine      learning      approaches,      J.      Mater.      Res.      Technol.      24      (2023)      3265–    3283,      https://doi.org/
+           10.1016/J.JMRT.2023.03.193.
+[14]           L.    Dang,    X.    He,    D.    Tang,    Y.    Li,    T.    Wang,    A    fatigue    life    prediction    approach    for    laser-directed    energy    deposition    titanium    alloys    by    using    support    vector    regression
+           based      on      pore-induced      failures,      Int.      J.      Fatigue      159      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.106748.
+[15]           J.    Hor ˇnas,    J.    Bˇehal,    P.    Homola,    S.    Senck,    M.    Holzleitner,    N.    Godja,    Z.    P´asztor,    B.    Hegedüs,    R.    Doubrava,    R.    Rů           ˇzek,    L.    Petrusov´a,    Modelling    fatigue    life    prediction
+           of      additively      manufactured      Ti-6Al-4V      samples      using      machine      learning      approach,      Int.      J.      Fatigue      169      (2023)      107483,      https://doi.org/10.1016/J.
+           IJFATIGUE.2022.107483.
+[16]           M.     Zhang,     C.N.     Sun,     X.     Zhang,     P.C.     Goh,     J.     Wei,     D.     Hardacre,     H.     Li,     High     cycle     fatigue     life     prediction     of     laser     additive     manufactured     stainless     steel:     a     machine
+           learning      approach,      Int.      J.      Fatigue      128      (2019)      105194,      https://doi.org/10.1016/J.IJFATIGUE.2019.105194.
+[17]           A.      Ciampaglia,      A.      Tridello,      D.S.      Paolino,      F.      Berto,      Data      driven      method      for      predicting      the      effect      of      process      parameters      on      the      fatigue      response      of      additive
+           manufactured      AlSi10Mg      parts,      Int.      J.      Fatigue      170      (2023)      107500,      https://doi.org/10.1016/J.IJFATIGUE.2023.107500.
+[18]           A.      Ciampaglia,      A.      Tridello,      F.      Berto,      D.      Paolino,      Data-driven      method      to      assess      the      influence      of      process      parameters      on      the      fatigue      response      of      additively
+           manufactured      Ti6Al4V,      Procedia      Struct.      Integrity      47      (2023)      56–    69,      https://doi.org/10.1016/j.prostr.2023.06.041.
+[19]           E.      Salvati,      A.      Tognan,      L.      Laurenti,      M.      Pelegatti,      F.      De      Bona,      A      defect-based      physics-informed      machine      learning      framework      for      fatigue      finite      life      prediction      in
+           additive      manufacturing,      Mater.      Des.      222      (2022)      111089,      https://doi.org/10.1016/J.MATDES.2022.111089.
+[20]           A.    Tridello,    C.    Boursier    Niutta,     F.    Berto,    G.    Qian,     D.S.    Paolino,    Fatigue    failures     from    defects     in    additive    manufactured     components:    a    statistical     methodology    for
+           the      analysis      of      the      experimental      results,      Fatigue      Fract.      Eng.      Mater.      Struct.      44      (2021),      https://doi.org/10.1111/ffe.13467.
+[21]           J.    Chen,    Y.    Liu,    Fatigue    property    prediction    of    additively    manufactured    Ti-6Al-4V    using    probabilistic    physics-guided    learning,    Addit.    Manuf.    39    (2021)    101876,
+           https://doi.org/10.1016/J.ADDMA.2021.101876.
+[22]           Y.L.      Lee,      J.      Pan,      R.      Hathaway,      M.      Barkey,      Fatigue      testing      and      analysis,      2005.      doi:      10.1016/B978-0-7506-7719-6.X5000-3.
+[23]           L.     Du,     G.     Qian,     L.     Zheng,     Y.     Hong,     Influence     of     processing     parameters     of     selective     laser     melting     on     high-cycle     and     very-high-cycle     fatigue     behaviour     of     Ti-6Al-
+           4V,      Fatigue      Fract.      Eng.      Mater.      Struct.      44      (2021),      https://doi.org/10.1111/ffe.13361.
+[24]           M.      Bakhtiarian,      H.      Omidvar,      A.      Mashhuriazar,      Z.      Sajuri,      C.H.      Gur,      The      effects      of      SLM      process      parameters      on      the      relative      density      and      hardness      of      austenitic
+           stainless      steel      316L,      J.      Mater.      Res.      Technol.      29      (2024),      https://doi.org/10.1016/j.jmrt.2024.01.237.
+[25]           M.    Mohseni,    M.S.    Sadeghi,    A.    Hemasian    Etefagh,    S.M.    Nikouei,    M.    Khajehzadeh,    The    effect    of    selective    laser    melting    process    parameters    and    remelting    scanning
+           strategy    on    relative    density    and    surface    hardness    of    stainless    steel    316L,    Proceed.    Institut.    Mechan.    Eng.,    Part    e:    J.    Process    Mechan.    Eng.    (2023),    https://doi.org/
+           10.1177/09544089231207809.
+[26]           J.M.     Alegre,     A.     Díaz,     R.     García,     L.B.     Peral,     I.I.     Cuesta,     Effect     of     HIP     post-processing     at     850◦C/200    MPa     in     the     fatigue     behavior     of     Ti-6Al-4V     alloy     fabricated     by
+           Selective      Laser      Melting,      Int.      J.      Fatigue      163      (2022)      107097,      https://doi.org/10.1016/J.IJFATIGUE.2022.107097.
+[27]           A.B.      Spierings,      T.L.      Starr,      K.      Wegener,      Fatigue      performance      of      additive      manufactured      metallic      parts,      Rapid      Prototyp.      J.      19      (2013),      https://doi.org/10.1108/
+           13552541311302932.
+[28]           R.      Shrestha,      J.      Simsiriwong,      N.      Shamsaei,      Fatigue      behavior      of      additive      manufactured      316L      stainless      steel      parts:      effects      of      layer      orientation      and      surface
+           roughness,      Addit.      Manuf.      28      (2019),      https://doi.org/10.1016/j.addma.2019.04.011.
+[29]           F.    Stern,    L.    Becker,    C.    Cui,    J.    Tenkamp,    V.    Uhlenwinkel,    M.    Steinbacher,    J.    Boes,    J.    Lentz,    R.    Fechte-Heinen,    S.    Weber,    F.    Walther,    Improving    the    defect    tolerance
+           of      PBF-LB/M      processed      316L      steel      by      increasing      the      nitrogen      content,      Adv.      Eng.      Mater.      25      (2023),      https://doi.org/10.1002/adem.202200751.
+[30]           W.J.     Lai,     A.     Ojha,     Z.     Li,     C.     Engler-Pinto,     X.     Su,     Effect     of     residual     stress     on     fatigue     strength     of     316L     stainless     steel     produced     by     laser     powder     bed     fusion     process,
+           Prog.      Addit.      Manuf.      6      (2021),      https://doi.org/10.1007/s40964-021-00164-8.
+[31]           P.    Kumar,    R.    Jayaraj,    J.    Suryawanshi,    U.R.    Satwik,    J.    McKinnell,    U.    Ramamurty,    Fatigue    strength    of    additively    manufactured    316L    austenitic    stainless    steel,    Acta
+           Mater.      199      (2020),      https://doi.org/10.1016/j.actamat.2020.08.033.
+[32]           G.S.    Ponticelli,    R.    Panciroli,    S.    Venettacci,    F.    Tagliaferri,    S.    Guarino,    Experimental    investigation    on    the    fatigue    behavior    of    laser    powder    bed    fused    316L    stainless
+           steel,      CIRP      J.      Manuf.      Sci.      Technol.      38      (2022),      https://doi.org/10.1016/j.cirpj.2022.07.007.
+[33]           R.      Shrestha,      J.      Simsiriwong,      N.      Shamsaei,      Fatigue      behavior      of      additive      manufactured      316L      stainless      steel      under      axial      versus      rotating-bending      loading:
+           synergistic      effects      of      stress      gradient,      surface      roughness,      and      volumetric      defects,      Int.      J.      Fatigue      144      (2021),      https://doi.org/10.1016/j.ijfatigue.2020.106063.
+[34]           D.      Kotzem,      S.      Kleszczynski,      F.      Stern,      A.      Elspaß    ,      J.      Tenkamp,      G.      Witt,      F.      Walther,      Impact      of      single      structural      voids      on      fatigue      properties      of      AISI      316L
+           manufactured      by      laser      powder      bed      fusion,      Int.      J.      Fatigue      148      (2021),      https://doi.org/10.1016/j.ijfatigue.2021.106207.
+[35]           X.     Liang,     A.     Hor,    C.     Robert,     M.    Salem,     F.     Lin,    F.     Morel,     High     cycle    fatigue     behavior     of    316L     steel     fabricated     by    laser     powder     bed     fusion:    Effects     of    surface     defect
+           and      loading      mode,      Int.      J.      Fatigue      160      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.106843.
+[36]           F.      Zeng,      Y.      Yang,      G.      Qian,      Fatigue      properties      and      S-N      curve      estimating      of      316L      stainless      steel      prepared      by      SLM,      Int.      J.      Fatigue      162      (2022),      https://doi.org/
+           10.1016/j.ijfatigue.2022.106946.
+
+
+                                                                                                                                                          22
+
+=== PDF PAGE 23 ===
+A.      Centola      et      al.                                                                                                                                                                                               Engineering Failure Analysis 168 (2025) 109081
+
+[37]           J.    Nafar    Dastgerdi,    O.    Jaberi,    H.    Remes,    Influence    of    internal    and    surface    defects    on    the    fatigue    performance    of    additively    manufactured    stainless    steel    316L,    Int
+           J      Fatigue      163      (2022),      https://doi.org/10.1016/j.ijfatigue.2022.107025.
+[38]           C.     Yu,     P.     Zhang,     Z.     Zhang,     W.     Liu,     Microstructure     and     fatigue     behavior     of     laser-powder     bed     fusion     austenitic     stainless     steel,     J.     Mater.     Sci.     Technol.     46     (2020),
+           https://doi.org/10.1016/j.jmst.2019.08.047.
+[39]           L.      Cui,      D.      Deng,      F.      Jiang,      R.L.      Peng,      T.      Xin,      R.T.      Mousavian,      Z.      Yang,      J.      Moverare,      Superior      low      cycle      fatigue      property      from      cell      structures      in      additively
+           manufactured      316L      stainless      steel,      J.      Mater.      Sci.      Technol.      111      (2022),      https://doi.org/10.1016/j.jmst.2021.10.006.
+[40]           K.      Malekipour,      M.      Mashayekhi,      M.      Badrossamay,      Meso-scale      damage      mechanics      modeling      for      high      cycle      fatigue      behavior      of      additively      manufactured
+           components,      Mech.      Mater.      160      (2021),      https://doi.org/10.1016/j.mechmat.2021.103951.
+[41]           K.      Solberg,      S.      Guan,      N.      Razavi,      T.      Welo,      K.C.      Chan,      F.      Berto,      Fatigue      of      additively      manufactured      316L      stainless      steel:      the      influence      of      porosity      and      surface
+           roughness,      Fatigue      Fract.      Eng.      Mater.      Struct.      42      (2019),      https://doi.org/10.1111/ffe.13077.
+[42]           E.      Uhlmann,      C.      Fleck,      G.      Gerlitzky,      F.      Faltin,      Dynamical      fatigue      behavior      of      additive      manufactured      products      for      a      fundamental      life      cycle      approach,      Procedia
+           CIRP      (2017),      https://doi.org/10.1016/j.procir.2016.11.138.
+[43]           B.     Voloskov,     S.     Evlashin,     S.     Dagesyan,     S.     Abaimov,     I.     Akhatov,     I.     Sergeichev,     Very     high     cycle     fatigue     behavior     of     additively     manufactured     316L     stainless     steel,
+           Materials      13      (2020),      https://doi.org/10.3390/ma13153293.
+[44]           D.S.    Paolino,    G.     Chiandussi,    M.    Rossetto,    A    unified    statistical    model     for    S-N    fatigue    curves:    probabilistic    definition,    Fatigue    Fract.    Eng.    Mater.    Struct.    36     (2013),
+           https://doi.org/10.1111/j.1460-2695.2012.01711.x.
+[45]           M.      Raissi,      P.      Perdikaris,      G.E.      Karniadakis,      Physics-informed      neural      networks:      a      deep      learning      framework      for      solving      forward      and      inverse      problems      involving
+           nonlinear      partial      differential      equations,      J.      Comput.      Phys.      378      (2019)      686–    707,      https://doi.org/10.1016/J.JCP.2018.10.045.
+[46]           G.E.      Hinton,      D.      van      Camp,      Keeping      neural      networks      simple      by      minimizing      the      description      length      of      the      weights,      in:      1993.      doi:      10.1145/168304.168306.
+[47]           C.     Blundell,     J.     Cornebise,     K.     Kavukcuoglu,     D.     Wierstra,     Weight     uncertainty     in     neural     networks,     in:     32nd     International     Conference     on     Machine     Learning,     ICML
+           2015,      2015.
+[48]           X.      Ying,      An      Overview      of      Overfitting      and      its      Solutions,      J.      Phys.      Conf.      Ser.      (2019),      https://doi.org/10.1088/1742-6596/1168/2/022022.
+[49]           L.      Prechelt,      Early      stopping      -      But      when?,      Lecture      Notes      in      Computer      Science      (Including      Subseries      Lecture      Notes      in      Artificial      Intelligence      and      Lecture      Notes      in
+           Bioinformatics)      7700      LECTURE      NO      (2012).      doi:      10.1007/978-3-642-35289-8_5.
+[50]           B.    Blinn,    M.    Klein,    C.    Gl¨aß    ner,    M.    Smaga,    J.C.    Aurich,    T.    Beck,    An    investigation    of    the    microstructure    and    fatigue    behavior    of    additively    manufactured    AISI    316L
+           stainless      steel      with      regard      to      the      influence      of      heat      treatment,      Metals      (basel)      8      (2018),      https://doi.org/10.3390/met8040220.
+[51]           P.M.      Cerezo,      J.A.      Aguilera,      A.      Garcia-Gonzalez,      P.      Lopez-Crespo,      Influence      of      porosity      on      fatigue      behaviour      of      18Ni300      steel      SLM      CT      specimens      at      various
+           angles,      Materials      17      (2024),      https://doi.org/10.3390/ma17020432.
+[52]           N.      Sanaei,     A.     Fatemi,      Defects      in     additive     manufactured     metals      and     their     effect      on     fatigue     performance:      a     state-of-the-art      review,     Prog.     Mater     Sci.      117     (2021),
+           https://doi.org/10.1016/j.pmatsci.2020.100724.
+[53]           G.     Kasperovich,     J.     Hausmann,     Improvement     of     fatigue     resistance     and     ductility     of     TiAl6V4     processed     by     selective     laser     melting,     J.     Mater.     Process.     Technol.     220
+           (2015),      https://doi.org/10.1016/j.jmatprotec.2015.01.025.
+[54]           G.     Kasperovich,     J.     Haubrich,     J.     Gussone,     G.     Requena,     Correlation     between     porosity     and     processing     parameters     in     TiAl6V4     produced     by     selective     laser     melting,
+           Mater.      Des.      105      (2016),      https://doi.org/10.1016/j.matdes.2016.05.070.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                        23

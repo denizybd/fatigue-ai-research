@@ -1,0 +1,85 @@
+Probabilistic Machine Learning for preventing fatigue failures in
+Additively Manufactured SS316L
+Alessio Centola
+*
+, Alberto Ciampaglia , Davide Salvatore Paolino , Andrea Tridello
+Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy
+ARTICLE INFO
+Keywords:
+Fatigue
+Probabilistic machine learning
+Machine learning
+Process parameters
+Design
+Additive manufacturing
+SS316L
+Failure prevention
+ABSTRACT
+This study presents a probabilistic machine learning approach to predict and improve the fatigue
+performance of additively manufactured SS316L components. By analyzing key manufacturing
+parameters as process settings, thermal treatments and surface treatments, the developed models
+provide statistical estimations of fatigue strength, that provides valuable insights to extend fa-
+tigue life. Trained on an experimental database of fatigue tests, the Bayesian Neural Network
+(BNN) is employed to separate model uncertainty, related to data limitations, from the uncer-
+tainty inherent in the fatigue phenomenon. This approach robustly predicts Probabilistic Stress-
+Life (PSN) curves, offering valuable insights into the impact of manufacturing parameters on
+fatigue resistance, allowing to further postpone fatigue failures. The results demonstrate
+increased robustness and trustworthiness compared to other deterministic machine learning
+models, making this method suitable for critical applications where failure prevention is crucial.
+1. Introduction
+Additive manufacturing (AM) is an emerging production process redefining the landscape of modern engineering, with Powder Bed
+Fusion – Laser Beam (PBF-LB) being a paramount technology in producing lightweight metal components with optimized geometries.
+Abbreviations: AM, Additive Manufacturing; BNN, Bayesian Neural Network; C90, Confidence level at 90%; CDF, Cumulative distribution
+function; E
+d
+, Volumetric energy density;
+f
+, failure; FFNN, Feed-Forward Neural Network; FFNN-L, Feed-Forward Neural Network Likelihood; h ,
+Hatch Distance [ μ m]; HCF, High Cycle Fatigue; HIP, Hot Isostatic Pressing Thermal Treatment; LOF, Lack of fusion; LPBF, Laser power bed fusion; m ,
+R50 curve slope coefficient; ML, Machine Learning; MLLE, Maximum Log-Likelihood Estimate; MLLE
+f
+, Maximum log-likelihood estimate of a failure;
+MLLE
+r
+, Maximum log-likelihood estimate of a runout; MSE, Mean squared error; N
+f
+, Number of cycles to failure; NLL, negative log-likelihood; NN,
+Neural Network; N
+r
+, Number of cycles of a runout specimen; P , Laser Power [W]; PBF-LB, Powder Bed Fusion – Laser Beam; PDF, Probability density
+function; PINN, Physics Informed Neural Network; PP, Process Parameters; PSN, Probabilistic Stress-Life (Curves); q , R50 intercept coefficient;
+q
+R90C90
+, R90C90 intercept coefficient;
+r
+, runout; R90, Reliability level at 90%; ReLU, Rectified linear unit activation function; R
+f
+, Runout flag; S
+a
+,
+Applied stress amplitude [MPa]; SN, Stress-life curves; SS316L, Stainless Steel 316L; ST, Surface Treatment; ST_DN, Deep Nitriding surface treatment
+boolean; ST_EP, Electro-polishing surface treatment boolean; ST_Grind, Grinding surface treatment boolean; ST_Mac, Machining surface treatment
+boolean; ST_Nitr, Nitriding surface treatment boolean; ST_Pol, Polishing surface treatment boolean; ST_SSP, Severe Shock Peening surface treatment
+boolean; ST_VF, Vibratory Finishing surface treatment boolean; t , Layer Thickness [ μ m]; T , Thermal Treatment Temperature [
+◦
+C]; tanh, Hyperbolic
+tangent activation function; TDB, Training Database; TT, Thermal Treatment; TT_Ann, Annealing (Stress relief) thermal treatment boolean; TT_HIP,
+Hot isostatic pressing thermal treatment boolean; v , Laser Scan Speed [mm/s]; VHCF, Very High Cycle Fatigue; V
+risk
+, Risk Volume; Δ t , Thermal
+Treatment Time [hours]; ϑ , Building Orientation [
+◦
+]; ρ
+rel
+, Relative density [%]; σ , Dataset standard deviation.
+* Corresponding author.
+E-mail address: alessio.centola@polito.it (A. Centola).
+Contents lists available at ScienceDirect
+Engineering Failure Analysis
+journal homep age: www.el sevier.com/l ocate/engfa ilanal
+https://doi.org/10.1016/j.engfailanal.2024.109081
+Received 12 September 2024; Received in revised form 28 October 2024; Accepted 13 November 2024
+Engineering Failure Analysis 168 (2025) 109081 
+Available online 19 November 2024 
+1350-6307/© 2025 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license 
+( http://creativecommons.org/licenses/by-nc-nd/4.0/ ). 

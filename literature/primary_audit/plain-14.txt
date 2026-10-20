@@ -1,0 +1,143 @@
+respectively: from 0
+◦
+to 90
+◦
+for ϑ , from 90 W to 350 W for P , from 420 mm/s to 1200 mm/s for v , from 60 μ m to 150 μ m for h, and from
+20 μ m to 50 μ m for t . Fig. 9 b shows that low values of P have a positive effect on the life, particularly below 250 W, while powers above
+this value lead to a decrease of the fatigue life. Similar trends can be found in [23] for P with respect to the porosity [%], which is
+associated with a lower life since the defect number and size increase. Also, in [24] , it has been shown that increasing P leads to a
+decrease in ρ
+rel
+of PBF-LB SS316L, eventually reflecting in reduced life. In [25] , the same trend for P vs ρ
+rel
+has been reported, with a
+drastic decrease of ρ
+rel
+after 285 W.
+Fig. 9 c shows the effect of v on the life. The BNN shows that speeds close to 1200 mm/s give the highest life, especially for the 200
+MPa level. The 350 MPa level shows no significant differences between speeds level with the highest life located between the 800 and
+1000 mm/s range. However, the 350 MPa is affected by a higher degree of uncertainty, since there are less points in the TDB. As a
+result, the uncertainty band associated with 350 MPa is larger for all the analyzed PP. Nonetheless, in [52,53] , it has been shown that
+the lowest percentage of porosity is achieved by speeds close to 1250 mm/s, whereas, in [23] , similar trends in porosity have been
+achieved for the 1000 mm/s range. [24] showed that the 800 to 1200 mm/s speed range gives high values of ρ
+rel
+, with 1200 mm/s
+giving the highest ρ
+rel
+. Values of v higher than 1200 mm/s led to a drastic decrease of ρ
+rel
+and should therefore be avoided. In [25]
+again, 1200 mm/s leads to the highest ρ
+rel
+. The results obtained for v are sound with the experimental evidence, proving the effec-
+tiveness of the BNN in modelling the life as the PP changes.
+Fig. 9 d shows that with small values of h a better fatigue response can be achieved. This behavior is particularly evident for the 350
+MPa stress level. At 200 MPa there is no marked difference between values of h ranging from 60 to 90 μ m, whereas a more prominent
+decrease is observed after this range. Once again, the BNN shows an increase in the uncertainty level for the 350 MPa level and if the
+life is evaluated for h values that are outside of the training range. This BNN behavior is also confirmed by the experimental evidence
+[54] : as in [23] , low values of h lead to low levels of porosity while high values give the opposite behavior. In [25] , the authors confirm
+that low values of h give a higher ρ
+rel
+, and vice versa.
+In Fig. 9 e, it can be observed how t has a more marked influence on the life for the 200 MPa level with respect to the 350 MPa level,
+but it can be observed that low values of t generally give a better fatigue response. It is generally known that t has a lower influence on
+the life [11,12,17,18] and Section 4.2.2 analyzes this peculiarity. Nonetheless, [23] confirms the trends found by the BNN, since low
+values of t produce a lower porosity in the specimens, and in [24] small t led to a higher ρ
+rel
+.
+It must be remarked that the results shown in Fig. 9 may change if the PP that have been kept constant are altered from the
+configuration shown in Table 4 .
+Table 3
+NN models comparison.
+NN Details Objective Advantages Disadvantages
+FFNN-L - Dataset TDB (51 data)
+- 18 inputs
+- Pyramidal structure of
+100, 75 and 50 ReLU neurons
+- 3 outputs
+- epochs: 1000
+- learning rate: 0.001
+- batch size: 30
+Predict m , q and σ for each dataset from
+PP, V
+risk
+, TT, ST
+- Simple model
+- Simple loss function
+- Fast Training
+- Preliminary employment
+- Overfitting
+- Less training data
+- Imprecise
+- Cannot separate experimental
+uncertainty from model
+uncertainty
+PINN-L - Full TDB (518 data)
+- 18 inputs ( + 2 mock inputs
+for S
+a
+and R
+f
+)
+- Pyramidal structure of
+100, 75 and 50 ReLU neurons
+- 3 outputs ( + 2 mock
+outputs for S
+a
+and R
+f
+)
+- epochs: 5000
+- learning rate: 0.0001
+- batch size: 300
+Predict m , q and σ for each dataset from
+PP, V
+risk
+, TT, ST, S
+a
+and R
+f
+using all the
+data
+- Generalization
+- More training data
+- More precise than FFNN-L
+- Long training
+- Stiff PSN curve adaptivity
+- Cannot separate experimental
+uncertainty from model
+uncertainty
+- Complex loss function
+- Complex model
+R90C90
+BNN
+- Full TDB (518 data)
+- 19 inputs ( S
+a
+concatenated)
+- Pyramidal structure of
+100, 75 and 50 ReLU neurons
+- 1 variational output
+- epochs: 1500
+- learning rate: 0.001
+- batch size: 30
+Predict R90C90 N
+f
+from PP, V
+risk
+, TT, ST
+and S
+a
+considering also the model
+uncertainty
+- Generalization
+- More training data
+- Fast Training
+- Can separate experimental
+uncertainty from model
+uncertainty
+- Can directly output the model
+uncertainty envelope
+- Complex model
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+14 

@@ -1,0 +1,66 @@
+                                                     Engineering Failure Analysis 168 (2025) 109081
+
+
+                                                        ContentslistsavailableatScienceDirect
+
+                                                  EngineeringFailureAnalysis
+
+
+                                            journalhomepage:www.elsevier.com/locate/engfailanal
+
+
+Probabilistic             Machine             Learning             for             preventing             fatigue             failures             in
+Additively             Manufactured             SS316L
+Alessio          Centola*,          Alberto          Ciampaglia     ,          Davide          Salvatore          Paolino     ,          Andrea          Tridello
+
+
+Politecnico      di      Torino,      Department      of      Mechanical      and      Aerospace      Engineering,      Torino      10129,      Italy
+
+
+
+ARTICLE                          INFO                 ABSTRACT
+
+Keywords:                                             Thisstudypresentsaprobabilisticmachinelearningapproachtopredictandimprovethefatigue
+Fatigue                                               performanceofadditivelymanufacturedSS316Lcomponents.Byanalyzingkeymanufacturing
+Probabilisticmachinelearning                          parametersasprocesssettings,thermaltreatmentsandsurfacetreatments,thedevelopedmodels
+Machinelearning                                       providestatisticalestimationsoffatiguestrength,thatprovidesvaluableinsightstoextendfa-
+Processparameters                                     tiguelife.Trainedonanexperimentaldatabaseoffatiguetests,theBayesianNeuralNetwork
+Design                                                (BNN)isemployedtoseparatemodeluncertainty,relatedtodatalimitations,fromtheuncer-
+Additivemanufacturing
+SS316L                                                taintyinherentinthefatiguephenomenon.ThisapproachrobustlypredictsProbabilisticStress-
+Failureprevention                                     Life(PSN)curves,offeringvaluableinsightsintotheimpactofmanufacturingparameterson
+                                                      fatigue resistance, allowing to further postpone fatigue failures. The results demonstrate
+                                                      increasedrobustnessandtrustworthinesscomparedtootherdeterministicmachinelearning
+                                                      models,makingthismethodsuitableforcriticalapplicationswherefailurepreventioniscrucial.
+
+
+
+1. Introduction
+
+    Additivemanufacturing(AM)isanemergingproductionprocessredefiningthelandscapeofmodernengineering,withPowderBed
+Fusion–LaserBeam(PBF-LB)beingaparamounttechnologyinproducinglightweightmetalcomponentswithoptimizedgeometries.
+
+
+    Abbreviations:AM,AdditiveManufacturing;BNN,BayesianNeuralNetwork;C90,Confidencelevelat90%;CDF,Cumulativedistribution
+function;Ed,Volumetricenergydensity;f,failure;FFNN,Feed-ForwardNeuralNetwork;FFNN-L,Feed-ForwardNeuralNetworkLikelihood;h,
+HatchDistance[μm];HCF,HighCycleFatigue;HIP,HotIsostaticPressingThermalTreatment;LOF,Lackoffusion;LPBF,Laserpowerbedfusion;m,
+R50curveslopecoefficient;ML,MachineLearning;MLLE,MaximumLog-LikelihoodEstimate;MLLEf,Maximumlog-likelihoodestimateofafailure;
+MLLEr,Maximumlog-likelihoodestimateofarunout;MSE,Meansquarederror;Nf,Numberofcyclestofailure;NLL,negativelog-likelihood;NN,
+NeuralNetwork;Nr,Numberofcyclesofarunoutspecimen;P,LaserPower[W];PBF-LB,PowderBedFusion–LaserBeam;PDF,Probabilitydensity
+function;PINN,PhysicsInformedNeuralNetwork;PP,ProcessParameters;PSN,ProbabilisticStress-Life(Curves);q,R50interceptcoefficient;
+qR90C90,R90C90interceptcoefficient;r,runout;R90,Reliabilitylevelat90%;ReLU,Rectifiedlinearunitactivationfunction;Rf,Runoutflag;Sa,
+Appliedstressamplitude[MPa];SN,Stress-lifecurves;SS316L,StainlessSteel316L;ST,SurfaceTreatment;ST_DN,DeepNitridingsurfacetreatment
+boolean;ST_EP,Electro-polishingsurfacetreatmentboolean;ST_Grind,Grindingsurfacetreatmentboolean;ST_Mac,Machiningsurfacetreatment
+boolean;ST_Nitr,Nitridingsurfacetreatmentboolean;ST_Pol,Polishingsurfacetreatmentboolean;ST_SSP,SevereShockPeeningsurfacetreatment
+boolean;ST_VF,VibratoryFinishingsurfacetreatmentboolean;t,LayerThickness[μm];T,ThermalTreatmentTemperature[◦C];tanh,Hyperbolic
+tangentactivationfunction;TDB,TrainingDatabase;TT,ThermalTreatment;TT_Ann,Annealing(Stressrelief)thermaltreatmentboolean;TT_HIP,
+Hotisostaticpressingthermaltreatmentboolean;v,LaserScanSpeed[mm/s];VHCF,VeryHighCycleFatigue;Vrisk,RiskVolume;Δt,Thermal
+TreatmentTime[hours];ϑ,BuildingOrientation[◦];ρrel,Relativedensity[%];σ,Datasetstandarddeviation.
+ *Correspondingauthor.
+    E-mailaddress:alessio.centola@polito.it(A.Centola).
+
+https://doi.org/10.1016/j.engfailanal.2024.109081
+Received12September2024;Receivedinrevisedform28October2024;Accepted13November2024
+Available online 19 November 2024
+1350-6307/©      2025   The   Authors.      Published    by   Elsevier  Ltd.     This   is an   open   access   article  under   the   CC   BY-NC-ND     license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/         ).

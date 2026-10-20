@@ -1,0 +1,1340 @@
+{
+  "id": "https://openalex.org/W7119139129",
+  "doi": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+  "title": "Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components",
+  "display_name": "Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components",
+  "publication_year": 2026,
+  "publication_date": "2026-01-08",
+  "ids": {
+    "openalex": "https://openalex.org/W7119139129",
+    "doi": "https://doi.org/10.1016/j.ijfatigue.2026.109481"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.ijfatigue.2026.109481",
+    "doi": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S71623918",
+      "display_name": "International Journal of Fatigue",
+      "issn_l": "0142-1123",
+      "issn": [
+        "0142-1123",
+        "1879-3452"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "anvur-scientific",
+        "cwts-core",
+        "dongbi-a",
+        "jufo-2",
+        "ki-jl-2",
+        "norway-2",
+        "poland-140",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "International Journal of Fatigue",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "hybrid",
+    "oa_url": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5092796436",
+        "display_name": "Alessio Centola",
+        "orcid": "https://orcid.org/0009-0002-3536-6486",
+        "observed_orcids": [
+          "https://orcid.org/0009-0002-3536-6486"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Alessio Centola",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0009-0002-3536-6486",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5009618676",
+        "display_name": "Alberto Ciampaglia",
+        "orcid": "https://orcid.org/0000-0002-4054-1317",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-4054-1317"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Alberto Ciampaglia",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-4054-1317",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5074661461",
+        "display_name": "Carlo Boursier Niutta",
+        "orcid": "https://orcid.org/0000-0002-7894-4752",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-7894-4752"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Carlo Boursier Niutta",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-7894-4752",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5034502737",
+        "display_name": "F. Berto",
+        "orcid": null,
+        "observed_orcids": []
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I861853513",
+          "display_name": "Sapienza University of Rome",
+          "ror": "https://ror.org/02be6w209",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I861853513"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Filippo Berto",
+      "raw_affiliation_strings": [
+        "Department of Chemical Engineering, Materials and Environment, Universit\u00e0 La Sapienza, 00185 Roma, Italy"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Chemical Engineering, Materials and Environment, Universit\u00e0 La Sapienza, 00185 Roma, Italy",
+          "institution_ids": [
+            "https://openalex.org/I861853513"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5028917454",
+        "display_name": "Davide Salvatore Paolino",
+        "orcid": "https://orcid.org/0000-0002-4231-4580",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-4231-4580",
+          "https://orcid.org/0009-0003-6658-2779"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Davide Salvatore Paolino",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-4231-4580",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5076669080",
+        "display_name": "Andrea Tridello",
+        "orcid": "https://orcid.org/0000-0003-3007-3377",
+        "observed_orcids": [
+          "https://orcid.org/0000-0003-3007-3377"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I177477856",
+          "display_name": "Politecnico di Torino",
+          "ror": "https://ror.org/00bgk9508",
+          "country_code": "IT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ],
+      "countries": [
+        "IT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Andrea Tridello",
+      "raw_affiliation_strings": [
+        "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0003-3007-3377",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Politecnico di Torino, Department of Mechanical and Aerospace Engineering, Torino 10129, Italy",
+          "institution_ids": [
+            "https://openalex.org/I177477856"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5092796436"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I177477856"
+  ],
+  "apc_list": {
+    "value": 3940,
+    "currency": "USD",
+    "value_usd": 3940
+  },
+  "apc_paid": {
+    "value": 3940,
+    "currency": "USD",
+    "value_usd": 3940
+  },
+  "fwci": 9.7067,
+  "has_fulltext": true,
+  "cited_by_count": 4,
+  "citation_normalized_percentile": {
+    "value": 0.97495686,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 98,
+    "max": 99
+  },
+  "biblio": {
+    "volume": "206",
+    "issue": null,
+    "first_page": "109481",
+    "last_page": "109481"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11115",
+    "display_name": "Topology Optimization in Engineering",
+    "score": 0.9829000234603882,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2205",
+      "display_name": "Civil and Structural Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11115",
+      "display_name": "Topology Optimization in Engineering",
+      "score": 0.9829000234603882,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2205",
+        "display_name": "Civil and Structural Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10705",
+      "display_name": "Additive Manufacturing Materials and Processes",
+      "score": 0.003800000064074993,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2210",
+        "display_name": "Mechanical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10783",
+      "display_name": "Additive Manufacturing and 3D Printing Technologies",
+      "score": 0.0024999999441206455,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2203",
+        "display_name": "Automotive Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/topology-optimization",
+      "display_name": "topology optimization",
+      "score": 0.9369999766349792
+    },
+    {
+      "id": "https://openalex.org/keywords/additive-manufacturing",
+      "display_name": "additive manufacturing",
+      "score": 0.968999981880188
+    },
+    {
+      "id": "https://openalex.org/keywords/fatigue-resistance",
+      "display_name": "fatigue resistance",
+      "score": 0.7350000143051147
+    },
+    {
+      "id": "https://openalex.org/keywords/bayesian-neural-networks",
+      "display_name": "Bayesian neural networks",
+      "score": 0.7519999742507935
+    },
+    {
+      "id": "https://openalex.org/keywords/process-parameters",
+      "display_name": "process parameters",
+      "score": 0.550000011920929
+    },
+    {
+      "id": "https://openalex.org/keywords/critical-flaw-size",
+      "display_name": "critical flaw size",
+      "score": 0.7490000128746033
+    },
+    {
+      "id": "https://openalex.org/keywords/stress-intensity-factor",
+      "display_name": "stress intensity factor",
+      "score": 0.9070000052452087
+    },
+    {
+      "id": "https://openalex.org/keywords/threshold-stress-intensity-factor",
+      "display_name": "threshold stress intensity factor",
+      "score": 0.8320000171661377
+    },
+    {
+      "id": "https://openalex.org/keywords/ss-316l",
+      "display_name": "SS316L",
+      "score": 0.753000020980835
+    },
+    {
+      "id": "https://openalex.org/keywords/ti-6al-4v",
+      "display_name": "Ti-6Al-4V",
+      "score": 0.9990000128746033
+    },
+    {
+      "id": "https://openalex.org/keywords/lightweight-design",
+      "display_name": "lightweight design",
+      "score": 0.4659999907016754
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C167740415",
+      "wikidata": "https://www.wikidata.org/wiki/Q2876213",
+      "display_name": "Aerospace",
+      "level": 2,
+      "score": 0.8039000034332275
+    },
+    {
+      "id": "https://openalex.org/C526921623",
+      "wikidata": "https://www.wikidata.org/wiki/Q190117",
+      "display_name": "Automotive industry",
+      "level": 2,
+      "score": 0.7089999914169312
+    },
+    {
+      "id": "https://openalex.org/C2780440489",
+      "wikidata": "https://www.wikidata.org/wiki/Q5227278",
+      "display_name": "Data-driven",
+      "level": 2,
+      "score": 0.6262000203132629
+    },
+    {
+      "id": "https://openalex.org/C189216461",
+      "wikidata": "https://www.wikidata.org/wiki/Q2443456",
+      "display_name": "Topology optimization",
+      "level": 3,
+      "score": 0.607699990272522
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.4636000096797943
+    },
+    {
+      "id": "https://openalex.org/C171146098",
+      "wikidata": "https://www.wikidata.org/wiki/Q124192",
+      "display_name": "Automotive engineering",
+      "level": 1,
+      "score": 0.43209999799728394
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.42660000920295715
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.39719998836517334
+    },
+    {
+      "id": "https://openalex.org/C117671659",
+      "wikidata": "https://www.wikidata.org/wiki/Q11049265",
+      "display_name": "Manufacturing engineering",
+      "level": 1,
+      "score": 0.3889000117778778
+    },
+    {
+      "id": "https://openalex.org/C168167062",
+      "wikidata": "https://www.wikidata.org/wiki/Q1117970",
+      "display_name": "Component (thermodynamics)",
+      "level": 2,
+      "score": 0.367900013923645
+    },
+    {
+      "id": "https://openalex.org/C184720557",
+      "wikidata": "https://www.wikidata.org/wiki/Q7825049",
+      "display_name": "Topology (electrical circuits)",
+      "level": 2,
+      "score": 0.3260999917984009
+    },
+    {
+      "id": "https://openalex.org/C523214423",
+      "wikidata": "https://www.wikidata.org/wiki/Q192047",
+      "display_name": "Machining",
+      "level": 2,
+      "score": 0.3158999979496002
+    },
+    {
+      "id": "https://openalex.org/C133731056",
+      "wikidata": "https://www.wikidata.org/wiki/Q4917288",
+      "display_name": "Control engineering",
+      "level": 1,
+      "score": 0.3109000027179718
+    },
+    {
+      "id": "https://openalex.org/C199639397",
+      "wikidata": "https://www.wikidata.org/wiki/Q1788588",
+      "display_name": "Engineering drawing",
+      "level": 1,
+      "score": 0.3025999963283539
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.ijfatigue.2026.109481",
+      "doi": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S71623918",
+        "display_name": "International Journal of Fatigue",
+        "issn_l": "0142-1123",
+        "issn": [
+          "0142-1123",
+          "1879-3452"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "anvur-scientific",
+          "cwts-core",
+          "dongbi-a",
+          "jufo-2",
+          "ki-jl-2",
+          "norway-2",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "International Journal of Fatigue",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:iris.polito.it:11583/3009771",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "https://hdl.handle.net/11583/3009771",
+      "pdf_url": "https://iris.polito.it/bitstream/11583/3009771/4/2026_IJF_topology_optimization_AM_ML.pdf.pdf",
+      "source": {
+        "id": "https://openalex.org/S7407055329",
+        "display_name": "PORTO@Iris",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "info:eu-repo/semantics/article"
+    },
+    {
+      "id": "pmh:oai:iris.uniroma1.it:11573/1765219",
+      "doi": null,
+      "is_oa": false,
+      "landing_page_url": "https://hdl.handle.net/11573/1765219",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4377196107",
+        "display_name": "IRIS Research product catalog (Sapienza University of Rome)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "info:eu-repo/semantics/article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1016/j.ijfatigue.2026.109481",
+    "doi": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.ijfatigue.2026.109481",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S71623918",
+      "display_name": "International Journal of Fatigue",
+      "issn_l": "0142-1123",
+      "issn": [
+        "0142-1123",
+        "1879-3452"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "anvur-scientific",
+        "cwts-core",
+        "dongbi-a",
+        "jufo-2",
+        "ki-jl-2",
+        "norway-2",
+        "poland-140",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "International Journal of Fatigue",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [
+    {
+      "score": 0.651199996471405,
+      "id": "https://metadata.un.org/sdg/9",
+      "display_name": "Industry, innovation and infrastructure"
+    }
+  ],
+  "sustainable_development_goals_aurora": [],
+  "study_designs": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 82,
+  "referenced_works": [
+    "https://openalex.org/W947063803",
+    "https://openalex.org/W1968406308",
+    "https://openalex.org/W2058524613",
+    "https://openalex.org/W2083430307",
+    "https://openalex.org/W2098459033",
+    "https://openalex.org/W2112617887",
+    "https://openalex.org/W2204647836",
+    "https://openalex.org/W2405744025",
+    "https://openalex.org/W2468956998",
+    "https://openalex.org/W2605415991",
+    "https://openalex.org/W2737835937",
+    "https://openalex.org/W2772445686",
+    "https://openalex.org/W2795108952",
+    "https://openalex.org/W2809577129",
+    "https://openalex.org/W2884258664",
+    "https://openalex.org/W2884812296",
+    "https://openalex.org/W2899283552",
+    "https://openalex.org/W2901298394",
+    "https://openalex.org/W2904015241",
+    "https://openalex.org/W2918284714",
+    "https://openalex.org/W2921639475",
+    "https://openalex.org/W2930337130",
+    "https://openalex.org/W2941080303",
+    "https://openalex.org/W2952953259",
+    "https://openalex.org/W2961604913",
+    "https://openalex.org/W2963760156",
+    "https://openalex.org/W2970458529",
+    "https://openalex.org/W2972432939",
+    "https://openalex.org/W2986379646",
+    "https://openalex.org/W2990451840",
+    "https://openalex.org/W2996972405",
+    "https://openalex.org/W3006564653",
+    "https://openalex.org/W3009760965",
+    "https://openalex.org/W3015248553",
+    "https://openalex.org/W3028373266",
+    "https://openalex.org/W3045236245",
+    "https://openalex.org/W3047543961",
+    "https://openalex.org/W3056439226",
+    "https://openalex.org/W3061569788",
+    "https://openalex.org/W3091589417",
+    "https://openalex.org/W3094109425",
+    "https://openalex.org/W3098533991",
+    "https://openalex.org/W3109859104",
+    "https://openalex.org/W3113060123",
+    "https://openalex.org/W3120338085",
+    "https://openalex.org/W3126673207",
+    "https://openalex.org/W3133844953",
+    "https://openalex.org/W3149027251",
+    "https://openalex.org/W3167364775",
+    "https://openalex.org/W3168187080",
+    "https://openalex.org/W3177435813",
+    "https://openalex.org/W3193440305",
+    "https://openalex.org/W3212434030",
+    "https://openalex.org/W3215178455",
+    "https://openalex.org/W4200353395",
+    "https://openalex.org/W4210557940",
+    "https://openalex.org/W4214737549",
+    "https://openalex.org/W4220816912",
+    "https://openalex.org/W4220846477",
+    "https://openalex.org/W4224226519",
+    "https://openalex.org/W4224884878",
+    "https://openalex.org/W4225294474",
+    "https://openalex.org/W4229002826",
+    "https://openalex.org/W4249678223",
+    "https://openalex.org/W4281478366",
+    "https://openalex.org/W4281708633",
+    "https://openalex.org/W4283459157",
+    "https://openalex.org/W4285586279",
+    "https://openalex.org/W4285807191",
+    "https://openalex.org/W4288036948",
+    "https://openalex.org/W4292622286",
+    "https://openalex.org/W4293037178",
+    "https://openalex.org/W4297320247",
+    "https://openalex.org/W4313268458",
+    "https://openalex.org/W4313593791",
+    "https://openalex.org/W4362591107",
+    "https://openalex.org/W4381848128",
+    "https://openalex.org/W4385154479",
+    "https://openalex.org/W4385725428",
+    "https://openalex.org/W4392650888",
+    "https://openalex.org/W4399325729",
+    "https://openalex.org/W4404516820"
+  ],
+  "related_works": [],
+  "abstract_inverted_index": {
+    "The": [
+      0,
+      20,
+      81,
+      104
+    ],
+    "present": [
+      1
+    ],
+    "paper": [
+      2
+    ],
+    "presents": [
+      3
+    ],
+    "two": [
+      4,
+      154
+    ],
+    "novel": [
+      5
+    ],
+    "data-driven": [
+      6
+    ],
+    "topology": [
+      7
+    ],
+    "optimization": [
+      8
+    ],
+    "(TO)": [
+      9
+    ],
+    "procedures": [
+      10
+    ],
+    "to": [
+      11,
+      47,
+      57,
+      93,
+      145,
+      158
+    ],
+    "design": [
+      12,
+      61,
+      84,
+      151,
+      160,
+      203
+    ],
+    "lighter": [
+      13
+    ],
+    "additively": [
+      14
+    ],
+    "manufactured": [
+      15
+    ],
+    "(AM)": [
+      16
+    ],
+    "fatigue": [
+      17,
+      42,
+      209
+    ],
+    "resistant": [
+      18
+    ],
+    "components.": [
+      19
+    ],
+    "first": [
+      21
+    ],
+    "TO": [
+      22,
+      64,
+      83,
+      105
+    ],
+    "method": [
+      23
+    ],
+    "is": [
+      24,
+      86,
+      108,
+      137
+    ],
+    "driven": [
+      25,
+      88
+    ],
+    "by": [
+      26,
+      89
+    ],
+    "a": [
+      27,
+      35,
+      170,
+      201
+    ],
+    "probabilistic": [
+      28,
+      49
+    ],
+    "machine": [
+      29
+    ],
+    "learning": [
+      30
+    ],
+    "(ML)": [
+      31
+    ],
+    "algorithm": [
+      32
+    ],
+    "based": [
+      33
+    ],
+    "on": [
+      34,
+      41
+    ],
+    "Bayesian": [
+      36
+    ],
+    "Neural": [
+      37
+    ],
+    "Network": [
+      38
+    ],
+    "(BNN),": [
+      39
+    ],
+    "trained": [
+      40,
+      92
+    ],
+    "data": [
+      43
+    ],
+    "from": [
+      44,
+      69,
+      100,
+      110
+    ],
+    "the": [
+      45,
+      59,
+      73,
+      95,
+      101,
+      111,
+      116,
+      125,
+      127,
+      135,
+      147,
+      159,
+      176,
+      179,
+      215,
+      218
+    ],
+    "literature": [
+      46
+    ],
+    "assess": [
+      48,
+      146
+    ],
+    "stress-life": [
+      50
+    ],
+    "(PSN)": [
+      51
+    ],
+    "curves.": [
+      52
+    ],
+    "These": [
+      53,
+      153
+    ],
+    "curves": [
+      54
+    ],
+    "are": [
+      55,
+      66,
+      156
+    ],
+    "used": [
+      56
+    ],
+    "predict": [
+      58,
+      94
+    ],
+    "allowable": [
+      60
+    ],
+    "stress": [
+      62,
+      107,
+      118,
+      129,
+      181
+    ],
+    "for": [
+      63,
+      207,
+      214
+    ],
+    "and": [
+      65,
+      76,
+      78,
+      115,
+      139,
+      169,
+      190
+    ],
+    "predicted": [
+      67,
+      112
+    ],
+    "directly": [
+      68,
+      213
+    ],
+    "AM": [
+      70,
+      219
+    ],
+    "process": [
+      71,
+      102,
+      220
+    ],
+    "parameters,": [
+      72
+    ],
+    "risk": [
+      74
+    ],
+    "volume,": [
+      75
+    ],
+    "thermal": [
+      77
+    ],
+    "surface": [
+      79
+    ],
+    "treatments.": [
+      80
+    ],
+    "second": [
+      82
+    ],
+    "procedure": [
+      85
+    ],
+    "instead": [
+      87
+    ],
+    "another": [
+      90
+    ],
+    "BNN,": [
+      91
+    ],
+    "maximum": [
+      96
+    ],
+    "critical": [
+      97,
+      113,
+      128
+    ],
+    "defect": [
+      98,
+      114
+    ],
+    "size": [
+      99
+    ],
+    "parameters.": [
+      103,
+      221
+    ],
+    "limit": [
+      106,
+      180
+    ],
+    "computed": [
+      109,
+      138
+    ],
+    "threshold": [
+      117
+    ],
+    "intensity": [
+      119,
+      130
+    ],
+    "factor": [
+      120,
+      131
+    ],
+    "K": [
+      121,
+      132,
+      142
+    ],
+    "th": [
+      122,
+      143
+    ],
+    ".": [
+      123
+    ],
+    "After": [
+      124
+    ],
+    "TO,": [
+      126
+    ],
+    "I": [
+      133
+    ],
+    "in": [
+      134,
+      200
+    ],
+    "component": [
+      136
+    ],
+    "compared": [
+      140
+    ],
+    "against": [
+      141
+    ],
+    ",": [
+      144
+    ],
+    "effectiveness": [
+      148
+    ],
+    "of": [
+      149,
+      161,
+      217
+    ],
+    "this": [
+      150
+    ],
+    "procedure.": [
+      152
+    ],
+    "frameworks": [
+      155
+    ],
+    "applied": [
+      157
+    ],
+    "an": [
+      162
+    ],
+    "SS316L": [
+      163
+    ],
+    "automotive": [
+      164
+    ],
+    "suspension": [
+      165
+    ],
+    "lower": [
+      166
+    ],
+    "control": [
+      167
+    ],
+    "arm": [
+      168
+    ],
+    "Ti6Al4V": [
+      171
+    ],
+    "aerospace": [
+      172
+    ],
+    "bracket,": [
+      173
+    ],
+    "respectively.": [
+      174
+    ],
+    "With": [
+      175
+    ],
+    "following": [
+      177
+    ],
+    "framework,": [
+      178
+    ],
+    "calculation": [
+      182
+    ],
+    "does": [
+      183
+    ],
+    "not": [
+      184
+    ],
+    "require": [
+      185
+    ],
+    "specifically": [
+      186
+    ],
+    "designed": [
+      187
+    ],
+    "experimental": [
+      188,
+      195
+    ],
+    "campaigns": [
+      189
+    ],
+    "prototyping,": [
+      191
+    ],
+    "as": [
+      192
+    ],
+    "previously": [
+      193
+    ],
+    "sparse": [
+      194
+    ],
+    "knowledge": [
+      196
+    ],
+    "can": [
+      197
+    ],
+    "be": [
+      198
+    ],
+    "embedded": [
+      199
+    ],
+    "powerful": [
+      202
+    ],
+    "tool,": [
+      204
+    ],
+    "which": [
+      205
+    ],
+    "allows": [
+      206
+    ],
+    "preventing": [
+      208
+    ],
+    "failures,": [
+      210
+    ],
+    "while": [
+      211
+    ],
+    "accounting": [
+      212
+    ],
+    "influence": [
+      216
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 4
+    }
+  ],
+  "updated_date": "2026-10-15T10:00:46.086208",
+  "created_date": "2026-01-08T00:00:00"
+}

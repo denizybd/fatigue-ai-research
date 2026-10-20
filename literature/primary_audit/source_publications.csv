@@ -1,0 +1,18 @@
+reference,dataset_codes,doi,first_author,year,title,evidence_page
+27,0;1;2,10.1108/13552541311302932,Spierings,2013,Fatigue performance of additive manufactured metallic parts,Table1 p5; References p22-23
+28,3;4;5;6;7,10.1016/j.addma.2019.04.011,Shrestha,2019,Fatigue behavior of additive manufactured 316L stainless steel parts: effects of layer orientation and surface roughness,Table1 p5; References p22-23
+29,8;9,10.1002/adem.202200751,Stern,2023,Improving the defect tolerance of PBF-LB/M processed 316L steel by increasing the nitrogen content,Table1 p5; References p22-23
+30,10;11;12;13,10.1007/s40964-021-00164-8,Lai,2021,Effect of residual stress on fatigue strength of 316L stainless steel produced by laser powder bed fusion process,Table1 p5; References p22-23
+31,14,10.1016/j.actamat.2020.08.033,Kumar,2020,Fatigue strength of additively manufactured 316L austenitic stainless steel,Table1 p5; References p22-23
+32,15;16;17;18;19;20,10.1016/j.cirpj.2022.07.007,Ponticelli,2022,Experimental investigation on the fatigue behavior of laser powder bed fused 316L stainless steel,Table1 p5; References p22-23
+33,21;22;23;24;25;26;27,10.1016/j.ijfatigue.2020.106063,Shrestha,2021,"Fatigue behavior of additive manufactured 316L stainless steel under axial versus rotating-bending loading: synergistic effects of stress gradient, surface roughness, and volumetric defects",Table1 p5; References p22-23
+34,28,10.1016/j.ijfatigue.2021.106207,Kotzem,2021,Impact of single structural voids on fatigue properties of AISI 316L manufactured by laser powder bed fusion,Table1 p5; References p22-23
+35,29;30;31;32;33,10.1016/j.ijfatigue.2022.106843,Liang,2022,High cycle fatigue behavior of 316L steel fabricated by laser powder bed fusion: Effects of surface defect and loading mode,Table1 p5; References p22-23
+36,34;35,10.1016/j.ijfatigue.2022.106946,Zeng,2022,Fatigue properties and S-N curve estimating of 316L stainless steel prepared by SLM,Table1 p5; References p22-23
+37,36;37;38;39,10.1016/j.ijfatigue.2022.107025,Nafar Dastgerdi,2022,Influence of internal and surface defects on the fatigue performance of additively manufactured stainless steel 316L,Table1 p5; References p22-23
+38,40;41,10.1016/j.jmst.2019.08.047,Yu,2020,Microstructure and fatigue behavior of laser-powder bed fusion austenitic stainless steel,Table1 p5; References p22-23
+39,42;43;44,10.1016/j.jmst.2021.10.006,Cui,2022,Superior low cycle fatigue property from cell structures in additively manufactured 316L stainless steel,Table1 p5; References p22-23
+40,45,10.1016/j.mechmat.2021.103951,Malekipour,2021,Meso-scale damage mechanics modeling for high cycle fatigue behavior of additively manufactured components,Table1 p5; References p22-23
+41,46,10.1111/ffe.13077,Solberg,2019,Fatigue of additively manufactured 316L stainless steel: the influence of porosity and surface roughness,Table1 p5; References p22-23
+42,47;48;49,10.1016/j.procir.2016.11.138,Uhlmann,2017,Dynamical fatigue behavior of additive manufactured products for a fundamental life cycle approach,Table1 p5; References p22-23
+43,50,10.3390/ma13153293,Voloskov,2020,Very high cycle fatigue behavior of additively manufactured 316L stainless steel,Table1 p5; References p22-23

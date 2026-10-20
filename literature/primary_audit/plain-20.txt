@@ -1,0 +1,42 @@
+5. Conclusions
+This work presents a novel approach to reliably predict and prevent fatigue failures in additively manufactured (AM) SS316L
+components. The method is a substantial shift from the use of deterministic machine learning (ML) models to estimate the SN curves,
+towards probabilistic ones to provide Probabilistic Stress-Life (PSN) curves. Furthermore, the method builds upon established fatigue
+models, offering a more robust and trustworthy way to adopt ML in fatigue design, leveraging on experimental data. In particular:
+• A standard Feed Forward Neural Network (FFNN) is trained to predict the parameters of linear PSN curves from the manufacturing
+parameters, showing promising results but limited predictive capabilities outside the training intervals
+• A variation of the FFNN with a custom loss function is developed to improve the training process, leading to substantial im-
+provements of the model accuracy in extrapolating outside the training database. However, the statistical deviation is concurrently
+influenced by the experimental scatter and the available data.
+• A Bayesian neural network (BNN) is proposed to specifically estimate the uncertainty of the ML model, uniquely related to its
+architecture and training. To separate this uncertainty from the experimental scattering, the BNN is trained on PSN curves at 90 %
+reliability (R90) and confidence (C90) levels, commonly used for the industrial practice.
+• The results of the BNN are R90C90 curves with a distribution directly inherited from the training dataset, which gives an indication
+of the trustworthiness of the ML predictions and provides a safe data-driven tool for the design of AM parts.
+• All the ML models are trained on literature data that study the critical role of process parameters, risk volume, thermal treatments,
+and surface treatments in determining fatigue performance. The models allow to assimilate the different scientific findings and
+embed them into a unique powerful design tool.
+• The influence of building orientation, laser power, scan speed, hatch distance, and layer thickness are analysed with the BNN,
+unveiling their individual and combined effects on fatigue performances. Alongside average trends, the BNN estimates the con-
+fidence of the ML prediction outside the training range. The confidence bands could be used to selectively enlarge the database with
+experiments specifically designed to reduce the model uncertainty under specific manufacturing configurations yet unexplored.
+In conclusion, the proposed BNN substantially improves the trustworthiness and explainability of ML models for the fatigue design,
+providing powerful data-driven tools that accurately predict PSN curves from process parameters, while embedding a probabilistic
+metric of the ML confidence that can be used to deliver safe design. Its integration into the AM design process offers a significant
+advancement in producing safer and more reliable components for the aerospace, medical, and automotive industries, as the predicted
+PSN curve can be chosen with designer-defined confidence level.
+Funding
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+CRediT authorship contribution statement
+Alessio Centola: Writing – original draft, Visualization, Validation, Software, Methodology, Investigation, Data curation,
+Conceptualization. Alberto Ciampaglia: Writing – review & editing, Validation, Supervision, Conceptualization. Davide Salvatore
+Paolino: Writing – review & editing, Supervision, Project administration, Conceptualization. Andrea Tridello: Writing – review &
+editing, Supervision, Project administration, Formal analysis.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+Appendix:. Additional results
+In the following section, additional PSN curves are shown for two training datasets, namely 9 ( Fig. 13 a) and 35 ( Fig. 13 b), eval-
+uated with the FFNN-L, PINN-L and R90C90 BNN.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+20 

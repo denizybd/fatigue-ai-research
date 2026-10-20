@@ -1,0 +1,1517 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2026-09-04T02:14:16Z",
+      "timestamp": 1788488056736,
+      "version": "build-2803163510"
+    },
+    "reference-count": 129,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2026-11-01T00:00:00Z",
+          "timestamp": 1793491200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2026-11-01T00:00:00Z",
+          "timestamp": 1793491200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              4
+            ]
+          ],
+          "date-time": "2026-06-04T00:00:00Z",
+          "timestamp": 1780531200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Engineering Failure Analysis"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.engfailanal.2026.111075",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T23:53:00Z",
+      "timestamp": 1780617180000
+    },
+    "page": "111075",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "special_numbering": "PA",
+    "title": [
+      "Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process \u2212 structure \u2212 property relationship"
+    ],
+    "prefix": "10.1016",
+    "volume": "197",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0002-3536-6486",
+        "authenticated-orcid": false,
+        "given": "Alessio",
+        "family": "Centola",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4054-1317",
+        "authenticated-orcid": false,
+        "given": "Alberto",
+        "family": "Ciampaglia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4231-4580",
+        "authenticated-orcid": false,
+        "given": "Davide Salvatore",
+        "family": "Paolino",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrea",
+        "family": "Tridello",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0005",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2019.108164",
+        "article-title": "Review on design and structural optimisation in additive manufacturing: Towards next-generation lightweight structures",
+        "volume": "183",
+        "author": "Plocher",
+        "year": "2019",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0010",
+        "doi-asserted-by": "crossref",
+        "unstructured": "R. Caivano, A. Tridello, M. Codegone, G. Chiandussi, A new methodology for thermostructural topology optimization: Analytical definition and validation, Proceedings of the Institution of Mechanical Engineers, Part L: Journal of Materials: Design and Applications 235 (2021). 10.1177/1464420720970246.",
+        "DOI": "10.1177/1464420720970246"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0015",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.engfailanal.2022.106737",
+        "article-title": "Defect-Driven topology optimization for fatigue design of additive manufacturing structures: Application on a real industrial aerospace component",
+        "volume": "142",
+        "author": "Boursier Niutta",
+        "year": "2022",
+        "journal-title": "Eng. Fail. Anal."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0020",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.mser.2021.100606",
+        "article-title": "Architected cellular materials: a review on their mechanical properties towards fatigue-tolerant design and fabrication",
+        "volume": "144",
+        "author": "Benedetti",
+        "year": "2021",
+        "journal-title": "Materials Science and Engineering r: Reports"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0025",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2019.107950",
+        "article-title": "Mechanical design and multifunctional applications of chiral mechanical metamaterials: a review",
+        "volume": "180",
+        "author": "Wu",
+        "year": "2019",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0030",
+        "article-title": "Experimental and Numerical Investigation of a Lattice Structure for Energy Absorption: Application to the Design of an Automotive Crash Absorber",
+        "volume": "14",
+        "author": "Niutta",
+        "year": "2022",
+        "journal-title": "Polymers (Basel)."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0035",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-1-4419-1120-9",
+        "author": "Gibson",
+        "year": "2010",
+        "journal-title": "Additive Manufacturing Technologies: Rapid Prototyping to Direct Digital Manufacturing"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0040",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4028/www.scientific.net/SSP.278.1",
+        "article-title": "A review of metal additive manufacturing technologies",
+        "author": "Yakout",
+        "year": "2018",
+        "journal-title": "Solid State Phenom."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0045",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s11665-014-0958-z",
+        "article-title": "Metal additive manufacturing: a review",
+        "volume": "23",
+        "author": "Frazier",
+        "year": "2014",
+        "journal-title": "J. Mater. Eng. Perform."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0050",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2026.109481",
+        "article-title": "Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components",
+        "author": "Centola",
+        "year": "2026",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0055",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.prostr.2017.11.054",
+        "article-title": "Defect Analysis and Fatigue Design Basis for Ni-based Superalloy 718 manufactured by Additive Manufacturing",
+        "author": "Yamashita",
+        "year": "2017",
+        "journal-title": "Procedia Struct. Integrity"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0060",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2017.01.001",
+        "article-title": "Additive manufacturing of fatigue resistant materials: challenges and opportunities",
+        "volume": "98",
+        "author": "Yadollahi",
+        "year": "2017",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1016/j.prostr.2019.12.014",
+        "article-title": "Defect Analysis for Additively Manufactured Materials in Fatigue from the viewpoint of Quality Control and Statistics of Extremes",
+        "volume": "19",
+        "author": "Murakami",
+        "year": "2019",
+        "journal-title": "Procedia Struct. Integrity"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0070",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.pmatsci.2020.100724",
+        "article-title": "Defects in additive manufactured metals and their effect on fatigue performance: a state-of-the-art review",
+        "volume": "117",
+        "author": "Sanaei",
+        "year": "2021",
+        "journal-title": "Prog. Mater Sci."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0075",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2021.106674",
+        "article-title": "Fatigue lifetime assessment of AM metallic components according to a strain-based criterion",
+        "volume": "156",
+        "author": "Ronchei",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0080",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1557/jmr.2014.157",
+        "article-title": "On the fatigue properties of metals manufactured by selective laser melting - the role of ductility",
+        "volume": "29",
+        "author": "Leuders",
+        "year": "2014",
+        "journal-title": "J. Mater. Res."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0085",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1111/ffe.13361",
+        "article-title": "Influence of processing parameters of selective laser melting on high-cycle and very-high-cycle fatigue behaviour of Ti-6Al-4V",
+        "volume": "44",
+        "author": "Du",
+        "year": "2021",
+        "journal-title": "Fatigue Fract. Eng. Mater. Struct."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0090",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2019.02.020",
+        "article-title": "VHCF response of Gaussian SLM AlSi10Mg specimens: effect of a stress relief heat treatment",
+        "volume": "124",
+        "author": "Tridello",
+        "year": "2019",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0095",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.106825",
+        "article-title": "Size-effects affecting the fatigue response up to 109 cycles (VHCF) of SLM AlSi10Mg specimens produced in horizontal and vertical directions",
+        "volume": "160",
+        "author": "Tridello",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0100",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s00170-012-4688-9",
+        "article-title": "Influence of process parameters on surface roughness of aluminum parts produced by DMLS",
+        "volume": "67",
+        "author": "Calignano",
+        "year": "2013",
+        "journal-title": "Int. J. Adv. Manuf. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0105",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2016.06.020",
+        "article-title": "A comparison of fatigue strength sensitivity to defects for materials manufactured by AM or traditional processes",
+        "volume": "94",
+        "author": "Beretta",
+        "year": "2017",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0110",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2018.07.020",
+        "article-title": "Influence of defects, surface roughness and HIP on the fatigue strength of Ti-6Al-4V manufactured by additive manufacturing",
+        "volume": "117",
+        "author": "Masuo",
+        "year": "2018",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0115",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1111/ffe.13077",
+        "article-title": "Fatigue of additively manufactured 316L stainless steel: the influence of porosity and surface roughness",
+        "volume": "42",
+        "author": "Solberg",
+        "year": "2019",
+        "journal-title": "Fatigue Fract. Eng. Mater. Struct."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0120",
+        "article-title": "Fatigue property prediction of additively manufactured Ti-6Al-4V using probabilistic physics-guided learning",
+        "volume": "39",
+        "author": "Chen",
+        "year": "2021",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0125",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.107483",
+        "article-title": "Modelling fatigue life prediction of additively manufactured Ti-6Al-4V samples using machine learning approach",
+        "volume": "169",
+        "author": "Hor\u0148as",
+        "year": "2023",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0130",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2022.111089",
+        "article-title": "A defect-based physics-informed machine learning framework for fatigue finite life prediction in additive manufacturing",
+        "volume": "222",
+        "author": "Salvati",
+        "year": "2022",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0135",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. Cutolo, N. Lammens, K. Vanden Boer, H. Erdelyi, M. Schulz, G.K. Muralidharan, L. Thijs, C. Elangeswaran, B. Van Hooreweder, Fatigue life prediction of a L-PBF component in Ti-6Al-4V using sample data, FE-based simulations and machine learning, Int. J. Fatigue 167 (2023) 107276. 10.1016/J.IJFATIGUE.2022.107276.",
+        "DOI": "10.1016/j.ijfatigue.2022.107276"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0140",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.107147",
+        "article-title": "Fatigue-life prediction of additively manufactured metals by continuous damage mechanics (CDM)-informed machine learning with sensitive features",
+        "volume": "164",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0145",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2024.108588",
+        "article-title": "Explainable machine learning-based fatigue assessment of 316L stainless steel fabricated by laser-powder bed fusion",
+        "volume": "190",
+        "author": "Wang",
+        "year": "2025",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0150",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2025.109360",
+        "article-title": "A universal high-cycle fatigue life prediction of additive manufacturing medium-entropy alloys via machine learning and nondestructive tests",
+        "volume": "204",
+        "author": "Du",
+        "year": "2026",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0155",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2025.109296",
+        "article-title": "Physics-informed machine learning for high-cycle fatigue of AM Ti6Al4V: Life prediction and correlation analysis",
+        "volume": "203",
+        "author": "Yang",
+        "year": "2026",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0160",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1111/ffe.14326",
+        "article-title": "Review on machine learning techniques for the assessment of the fatigue response of additively manufactured metal parts",
+        "author": "Centola",
+        "year": "2024",
+        "journal-title": "Fatigue Fract. Eng. Mater. Struct."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0165",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1111/ffe.14125",
+        "article-title": "Machine learning methods to predict the fatigue life of selectively laser melted Ti6Al4V components",
+        "volume": "46",
+        "author": "Centola",
+        "year": "2023",
+        "journal-title": "Fatigue Fract. Eng. Mater. Struct."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0170",
+        "article-title": "Assessment of the critical defect in Additive Manufacturing Components through Machine Learning Algorithms",
+        "volume": "13",
+        "author": "Tridello",
+        "year": "2023",
+        "journal-title": "Applied Sciences (switzerland)"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "3265",
+        "DOI": "10.1016/j.jmrt.2023.03.193",
+        "article-title": "Correlation of residual stress, hardness and surface roughness with crack initiation and fatigue strength of surface treated additive manufactured AlSi10Mg: Experimental and machine learning approaches",
+        "volume": "24",
+        "author": "Maleki",
+        "year": "2023",
+        "journal-title": "J. Mater. Res. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0180",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.106748",
+        "article-title": "A fatigue life prediction approach for laser-directed energy deposition titanium alloys by using support vector regression based on pore-induced failures",
+        "volume": "159",
+        "author": "Dang",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0185",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2019.105194",
+        "article-title": "High cycle fatigue life prediction of laser additive manufactured stainless steel: a machine learning approach",
+        "volume": "128",
+        "author": "Zhang",
+        "year": "2019",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "686",
+        "DOI": "10.1016/j.jcp.2018.10.045",
+        "article-title": "Physics-informed neural networks: a deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+        "volume": "378",
+        "author": "Raissi",
+        "year": "2019",
+        "journal-title": "J. Comput. Phys."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0195",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2023.107500",
+        "article-title": "Data driven method for predicting the effect of process parameters on the fatigue response of additive manufactured AlSi10Mg parts",
+        "volume": "170",
+        "author": "Ciampaglia",
+        "year": "2023",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "56",
+        "DOI": "10.1016/j.prostr.2023.06.041",
+        "article-title": "Data-driven method to assess the influence of process parameters on the fatigue response of additively manufactured Ti6Al4V",
+        "volume": "47",
+        "author": "Ciampaglia",
+        "year": "2023",
+        "journal-title": "Procedia Struct. Integrity"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0205",
+        "author": "Murakami",
+        "year": "2019",
+        "journal-title": "Metal Fatigue: Effects of Small Defects and Nonmetallic Inclusions"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0210",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.engfailanal.2024.109081",
+        "article-title": "Probabilistic Machine Learning for preventing fatigue failures in Additively Manufactured SS316L",
+        "volume": "168",
+        "author": "Centola",
+        "year": "2025",
+        "journal-title": "Eng. Fail. Anal."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0215",
+        "author": "Lee",
+        "year": "2005",
+        "journal-title": "Fatigue Testing and Analysis"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0220",
+        "series-title": "In: 32nd International Conference on Machine Learning",
+        "article-title": "Weight uncertainty in neural networks",
+        "author": "Blundell",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0225",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s00170-023-12658-6",
+        "article-title": "Real-time prediction of deposited bead width in L-DED using semi-supervised transfer learning",
+        "volume": "129",
+        "author": "Mochi",
+        "year": "2023",
+        "journal-title": "Int. J. Adv. Manuf. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0230",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/ACCESS.2024.3350709",
+        "article-title": "Transfer Learning Methods for Fractographic Detection of Fatigue Crack Initiation in Additive Manufacturing",
+        "volume": "12",
+        "author": "Anidjar",
+        "year": "2024",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0235",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tafmec.2019.102447",
+        "article-title": "Transfer learning enhanced physics informed neural network for phase-field modeling of fracture",
+        "volume": "106",
+        "author": "Goswami",
+        "year": "2020",
+        "journal-title": "Theor. Appl. Fract. Mech."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "467",
+        "DOI": "10.1111/ffe.14497",
+        "article-title": "Feature transfer Learning for Fatigue Life Prediction of Additive Manufactured Metals with Small Samples",
+        "volume": "48",
+        "author": "Wu",
+        "year": "2025",
+        "journal-title": "Fatigue Fract. Eng. Mater. Struct."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0245",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2025.109129",
+        "article-title": "A transfer learning enhanced physics-informed neural network for predicting fatigue life of megacasting alloy with limited data sizes",
+        "volume": "200",
+        "author": "Zhai",
+        "year": "2025",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0250",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1111/j.1460-2695.2012.01711.x",
+        "article-title": "A unified statistical model for S-N fatigue curves: Probabilistic definition",
+        "volume": "36",
+        "author": "Paolino",
+        "year": "2013",
+        "journal-title": "Fatigue Fract. Eng. Mater. Struct."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0255",
+        "article-title": "Keeping neural networks simple by minimizing the description length of the weights",
+        "author": "Hinton",
+        "year": "1993",
+        "journal-title": "In"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0260",
+        "article-title": "An Overview of Overfitting and its Solutions",
+        "author": "Ying",
+        "year": "2019",
+        "journal-title": "J. Phys. Conf. Ser."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0265",
+        "article-title": "Ti-6Al-4V powder characteristics in laser powder bed fusion: the effect on tensile and fatigue behavior",
+        "volume": "51",
+        "author": "Soltani-Tehrani",
+        "year": "2022",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0270",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2020.105659",
+        "article-title": "Effect of microstructure, residual stresses and building orientation on the fatigue response up to 109 cycles of an SLM AlSi10Mg alloy",
+        "volume": "137",
+        "author": "Tridello",
+        "year": "2020",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0275",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1108/13552541311302932",
+        "article-title": "Fatigue performance of additive manufactured metallic parts",
+        "volume": "19",
+        "author": "Spierings",
+        "year": "2013",
+        "journal-title": "Rapid Prototyp. J."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0280",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/met8040220",
+        "article-title": "An investigation of the microstructure and fatigue behavior of additively manufactured AISI 316L stainless steel with regard to the influence of heat treatment",
+        "volume": "8",
+        "author": "Blinn",
+        "year": "2018",
+        "journal-title": "Metals (basel)."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0285",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/ma17020432",
+        "article-title": "Influence of Porosity on Fatigue Behaviour of 18Ni300 Steel SLM CT Specimens at Various Angles",
+        "volume": "17",
+        "author": "Cerezo",
+        "year": "2024",
+        "journal-title": "Materials"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0290",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jmrt.2024.01.237",
+        "article-title": "The effects of SLM process parameters on the relative density and hardness of austenitic stainless steel 316L",
+        "volume": "29",
+        "author": "Bakhtiarian",
+        "year": "2024",
+        "journal-title": "J. Mater. Res. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0295",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jmatprotec.2015.01.025",
+        "article-title": "Improvement of fatigue resistance and ductility of TiAl6V4 processed by selective laser melting",
+        "volume": "220",
+        "author": "Kasperovich",
+        "year": "2015",
+        "journal-title": "J. Mater. Process. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0300",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.pmatsci.2020.100724",
+        "article-title": "Defects in additive manufactured metals and their effect on fatigue performance: a state-of-the-art review",
+        "volume": "117",
+        "author": "Sanaei",
+        "year": "2021",
+        "journal-title": "Prog. Mater Sci."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0305",
+        "article-title": "The effect of selective laser melting process parameters and remelting scanning strategy on relative density and surface hardness of stainless steel 316L",
+        "author": "Mohseni",
+        "year": "2023",
+        "journal-title": "Proceedings of the Institution of Mechanical Engineers, Part e: Journal of Process Mechanical Engineering"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0310",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2016.05.070",
+        "article-title": "Correlation between porosity and processing parameters in TiAl6V4 produced by selective laser melting",
+        "volume": "105",
+        "author": "Kasperovich",
+        "year": "2016",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0315",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2016.05.018",
+        "article-title": "Fatigue life of additively manufactured Ti\u20136Al\u20134V in the very high cycle fatigue regime",
+        "volume": "94",
+        "author": "G\u00fcnther",
+        "year": "2017",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0320",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2020.108708",
+        "article-title": "The effect of manufacturing defects on the fatigue life of selective laser melted Ti-6Al-4V structures",
+        "volume": "192",
+        "author": "Hu",
+        "year": "2020",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0325",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1016/j.matdes.2015.12.135",
+        "article-title": "Comparison of the microstructures and mechanical properties of Ti\u20136Al\u20134V fabricated by selective laser melting and electron beam melting",
+        "volume": "95",
+        "author": "Zhao",
+        "year": "2016",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0330",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/ma11040537",
+        "article-title": "Influence of inherent surface and internal defects on mechanical properties of additively manufactured Ti6Al4V alloy: Comparison between selective laser melting and electron beam melting",
+        "volume": "11",
+        "author": "Fousov\u00e1",
+        "year": "2018",
+        "journal-title": "Materials"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0335",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.optlastec.2021.107391",
+        "article-title": "Effects of laser shock peening on the ultra-high cycle fatigue performance of additively manufactured Ti6Al4V alloy",
+        "volume": "144",
+        "author": "Jiang",
+        "year": "2021",
+        "journal-title": "Opt. Laser Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0340",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijmecsci.2021.106591",
+        "article-title": "Characteristic and mechanism of crack initiation and early growth of an additively manufactured Ti-6Al-4V in very high cycle fatigue regime",
+        "volume": "205",
+        "author": "Sun",
+        "year": "2021",
+        "journal-title": "Int. J. Mech. Sci."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0345",
+        "article-title": "High cycle fatigue (HCF) performance of Ti-6Al-4V alloy processed by selective laser melting",
+        "author": "Eric",
+        "year": "2013",
+        "journal-title": "Adv. Mat. Res."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0350",
+        "doi-asserted-by": "crossref",
+        "first-page": "545",
+        "DOI": "10.1016/j.matdes.2015.07.147",
+        "article-title": "Influence of defects on mechanical properties of Ti\u20136Al\u20134V components produced by selective laser melting and electron beam melting",
+        "volume": "86",
+        "author": "Gong",
+        "year": "2015",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0355",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.107097",
+        "article-title": "Effect of HIP post-processing at 850\u00b0C/200MPa in the fatigue behavior of Ti-6Al-4V alloy fabricated by Selective Laser Melting",
+        "volume": "163",
+        "author": "Alegre",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0360",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.actamat.2022.118189",
+        "article-title": "Fatigue life estimation of additively manufactured Ti-6Al-4V: Sensitivity, scatter and defect description in Damage-tolerant models",
+        "volume": "237",
+        "author": "Macallister",
+        "year": "2022",
+        "journal-title": "Acta Mater."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0365",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1088/1757-899X/461/1/012052",
+        "article-title": "Fatigue properties of SLM-produced Ti6Al4V with various post-processing processes",
+        "author": "Mertova",
+        "year": "2018",
+        "journal-title": "IOP Conf. Ser.: Mater. Sci. Eng."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0370",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1080/21663831.2019.1609110",
+        "article-title": "Fatigue strength improvement of selective laser melted ti6al4v using ultrasonic surface mechanical attrition",
+        "volume": "7",
+        "author": "Yan",
+        "year": "2019",
+        "journal-title": "Mater. Res. Lett."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0375",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.actamat.2020.05.041",
+        "article-title": "High cycle fatigue in selective laser melted Ti-6Al-4V",
+        "volume": "194",
+        "author": "Kumar",
+        "year": "2020",
+        "journal-title": "Acta Mater."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0380",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s10853-022-07019-9",
+        "article-title": "Fatigue properties of selective laser melted Ti-6Al-4V alloy subjected to laser shock processing",
+        "volume": "57",
+        "author": "Xin",
+        "year": "2022",
+        "journal-title": "J. Mater. Sci."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0385",
+        "article-title": "The influence of oxygen on the chemical composition and mechanical properties of Ti-6Al-4V during laser powder bed fusion (L-PBF)",
+        "volume": "32",
+        "author": "Dietrich",
+        "year": "2020",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0390",
+        "article-title": "Surface roughness parameter and modeling for fatigue behavior of additive manufactured parts: a non-destructive data-driven approach",
+        "volume": "46",
+        "author": "Lee",
+        "year": "2021",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0395",
+        "article-title": "Fatigue performance of laser powder bed fusion hydride-dehydride Ti-6Al-4V powder",
+        "volume": "59",
+        "author": "Asherloo",
+        "year": "2022",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0400",
+        "article-title": "On study of process induced defects-based fatigue performance of additively manufactured Ti6Al4V alloy",
+        "volume": "60",
+        "author": "Bhandari",
+        "year": "2022",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0405",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1016/j.cirp.2021.03.004",
+        "article-title": "Application of the Theory of critical Distances to predict the effect of induced and process inherent defects for SLM Ti-6Al-4V in high cycle fatigue",
+        "volume": "70",
+        "author": "Gillham",
+        "year": "2021",
+        "journal-title": "CIRP Ann."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0410",
+        "doi-asserted-by": "crossref",
+        "first-page": "461",
+        "DOI": "10.1016/j.cirp.2022.04.021",
+        "article-title": "Ti6Al4V titanium alloy fatigue strength after AM- and machining-based process chains",
+        "volume": "71",
+        "author": "Ghiotti",
+        "year": "2022",
+        "journal-title": "CIRP Ann."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0415",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.engfailanal.2022.106494",
+        "article-title": "High cycle fatigue performance evaluation of a laser powder bed fusion manufactured Ti-6Al-4V bracket for aero-engine applications",
+        "volume": "140",
+        "author": "Gupta",
+        "year": "2022",
+        "journal-title": "Eng. Fail. Anal."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0420",
+        "doi-asserted-by": "crossref",
+        "first-page": "302",
+        "DOI": "10.1016/j.ijfatigue.2017.07.014",
+        "article-title": "Evaluation of fatigue crack propagation behaviour in Ti-6Al-4V manufactured by selective laser melting",
+        "volume": "104",
+        "author": "Walker",
+        "year": "2017",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0425",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1016/j.ijfatigue.2018.11.019",
+        "article-title": "Fatigue performances of selective laser melted Ti-6Al-4V alloy: Influence of surface finishing, hot isostatic pressing and heat treatments",
+        "volume": "120",
+        "author": "Yu",
+        "year": "2019",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0430",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2020.106008",
+        "article-title": "Fatigue limit prediction model and fatigue crack growth mechanism for selective laser melting Ti6Al4V samples with inherent defects",
+        "volume": "143",
+        "author": "Xu",
+        "year": "2021",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0435",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.106973",
+        "article-title": "Fatigue strength of LPBF Ti6Al4V machined under flood and cryogenic lubri-cooling conditions",
+        "volume": "162",
+        "author": "Bertolini",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0440",
+        "doi-asserted-by": "crossref",
+        "first-page": "1056",
+        "DOI": "10.1016/j.jallcom.2018.06.076",
+        "article-title": "Effect of heat treatment on the phase transformation and mechanical properties of Ti6Al4V fabricated by selective laser melting",
+        "volume": "764",
+        "author": "Yan",
+        "year": "2018",
+        "journal-title": "J. Alloys Compd."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0445",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matlet.2020.127516",
+        "article-title": "Microstructural feature and mechanical property in different building directions of additive manufactured Ti6Al4V alloy",
+        "volume": "267",
+        "author": "Chang",
+        "year": "2020",
+        "journal-title": "Mater. Lett."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0450",
+        "doi-asserted-by": "crossref",
+        "first-page": "327",
+        "DOI": "10.1016/j.msea.2014.01.041",
+        "article-title": "Fatigue performance evaluation of selective laser melted Ti\u20136Al\u20134V",
+        "volume": "598",
+        "author": "Edwards",
+        "year": "2014",
+        "journal-title": "Mater. Sci. Eng. A"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0455",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/met11071022",
+        "article-title": "Fatigue assessment of selective laser melted ti-6al-4v: Influence of speed manufacturing and porosity",
+        "volume": "11",
+        "author": "Segurajauregi",
+        "year": "2021",
+        "journal-title": "Metals (basel)."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0460",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/jmmp6040085",
+        "article-title": "Influence of Post-Processing Conditions on the Microstructure, Static, and Fatigue Resistance of Laser Powder Bed Fused Ti-6Al-4V Components",
+        "volume": "6",
+        "author": "Jimenez",
+        "year": "2022",
+        "journal-title": "Journal of Manufacturing and Materials Processing"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0465",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tafmec.2020.102611",
+        "article-title": "Defects as a root cause of fatigue weakening of additively manufactured AlSi10Mg components",
+        "volume": "108",
+        "author": "Ferro",
+        "year": "2020",
+        "journal-title": "Theor. Appl. Fract. Mech."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0470",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1016/j.matdes.2011.07.067",
+        "article-title": "Additive manufactured AlSi10Mg samples using Selective Laser Melting (SLM): Microstructure, high cycle fatigue, and fracture behavior",
+        "volume": "34",
+        "author": "Brandl",
+        "year": "2012",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0475",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2019.02.040",
+        "article-title": "Very high-cycle fatigue properties and microstructural damage mechanisms of selective laser melted AlSi10Mg alloy",
+        "volume": "124",
+        "author": "Awd",
+        "year": "2019",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0480",
+        "doi-asserted-by": "crossref",
+        "first-page": "229",
+        "DOI": "10.1016/j.msea.2017.08.027",
+        "article-title": "Fatigue of AlSi10Mg specimens fabricated by additive manufacturing selective laser melting (AM-SLM)",
+        "volume": "704",
+        "author": "Uzan",
+        "year": "2017",
+        "journal-title": "Mater. Sci. Eng. A"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0485",
+        "first-page": "458",
+        "article-title": "On the effect of shot-peening on fatigue resistance of AlSi10Mg specimens fabricated by additive manufacturing using selective laser melting (AM-SLM)",
+        "volume": "21",
+        "author": "Uzan",
+        "year": "2018",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0490",
+        "article-title": "Defect-based Fatigue Modeling for AlSi10Mg Produced by Laser Powder Bed Fusion Process",
+        "author": "Ojha",
+        "year": "2021",
+        "journal-title": "Minerals, Metals and Materials Series"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0495",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s10853-022-07027-9",
+        "article-title": "Hot isostatic pressing of laser powder bed fusion AlSi10Mg: parameter identification and mechanical properties",
+        "volume": "57",
+        "author": "Santos Mac\u00edas",
+        "year": "2022",
+        "journal-title": "J. Mater. Sci."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0500",
+        "article-title": "Fatigue strength estimation methodology of additively manufactured metallic bulk material",
+        "volume": "39",
+        "author": "Schneller",
+        "year": "2021",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0505",
+        "doi-asserted-by": "crossref",
+        "first-page": "513",
+        "DOI": "10.1016/j.ijfatigue.2018.07.016",
+        "article-title": "Effect of heat treatments on fatigue property of selective laser melting AlSi10Mg",
+        "volume": "116",
+        "author": "Zhang",
+        "year": "2018",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0510",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2021.106165",
+        "article-title": "A comparative investigation on the microstructure and mechanical properties of additively manufactured aluminum alloys",
+        "volume": "146",
+        "author": "Muhammad",
+        "year": "2021",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0515",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2021.106317",
+        "article-title": "The effect of defect population on the anisotropic fatigue resistance of AlSi10Mg alloy fabricated by laser powder bed fusion",
+        "volume": "151",
+        "author": "Wu",
+        "year": "2021",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0520",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.106903",
+        "article-title": "Fatigue failure mechanisms for AlSi10Mg manufactured by L-PBF under axial and torsional loads: the role of defects and residual stresses",
+        "volume": "162",
+        "author": "Sausto",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0525",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijmecsci.2022.107336",
+        "article-title": "High-cycle-fatigue properties of selective-laser-melted AlSi10Mg with multiple building directions",
+        "volume": "224",
+        "author": "Zhang",
+        "year": "2022",
+        "journal-title": "Int. J. Mech. Sci."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0530",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.1016/j.matdes.2016.05.041",
+        "article-title": "Improving the fatigue behaviour of a selectively laser melted aluminium alloy: Influence of heat treatment and surface quality",
+        "volume": "104",
+        "author": "Aboulkhair",
+        "year": "2016",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0535",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.mechmat.2020.103499",
+        "article-title": "High cycle fatigue performance of AlSi10Mg alloy produced by selective laser melting",
+        "volume": "148",
+        "author": "Xu",
+        "year": "2020",
+        "journal-title": "Mech. Mater."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0540",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2022.110713",
+        "article-title": "A benchmark activity on the fatigue life assessment of AlSi10Mg components manufactured by L-PBF",
+        "volume": "218",
+        "author": "Beretta",
+        "year": "2022",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0545",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.matdes.2021.110084",
+        "article-title": "Fatigue crack nucleation and growth in laser powder bed fusion AlSi10Mg under as built and post-treated conditions",
+        "author": "Santos Mac\u00edas",
+        "year": "2021",
+        "journal-title": "Mater. Des."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0550",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.msea.2022.144157",
+        "article-title": "On mechanical properties of SLM Al\u2013Si alloy: Role of heat treatment-induced evolution of silicon morphology",
+        "volume": "858",
+        "author": "Bisht",
+        "year": "2022",
+        "journal-title": "Mater. Sci. Eng. A"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0555",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1016/j.tafmec.2018.09.011",
+        "article-title": "Linking microstructure and processing defects to mechanical properties of selectively laser melted AlSi10Mg alloy",
+        "volume": "98",
+        "author": "Larrosa",
+        "year": "2018",
+        "journal-title": "Theor. Appl. Fract. Mech."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0560",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/met11091432",
+        "article-title": "Effect of as-built and ground surfaces on the fatigue properties of AlSi10Mg alloy produced by additive manufacturing",
+        "volume": "11",
+        "author": "Domfang Ngnekou",
+        "year": "2021",
+        "journal-title": "Metals (basel)"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0565",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/met12060898",
+        "article-title": "Analysis of Fatigue Strength of L-PBF AlSi10Mg with Different Surface Post-Processes: effect of Residual Stresses",
+        "volume": "12",
+        "author": "Sausto",
+        "year": "2022",
+        "journal-title": "Metals (basel)."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0570",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2021.106616",
+        "article-title": "In situ X-ray imaging of fatigue crack growth from multiple defects in additively manufactured AlSi10Mg alloy",
+        "volume": "155",
+        "author": "Qian",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0575",
+        "article-title": "Fatigue behavior of additive manufactured 316L stainless steel parts: Effects of layer orientation and surface roughness",
+        "volume": "28",
+        "author": "Shrestha",
+        "year": "2019",
+        "journal-title": "Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0580",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/adem.202200751",
+        "article-title": "Improving the defect Tolerance of PBF-LB/M Processed 316L Steel by increasing the Nitrogen Content",
+        "volume": "25",
+        "author": "Stern",
+        "year": "2023",
+        "journal-title": "Adv. Eng. Mater."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0585",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s40964-021-00164-8",
+        "article-title": "Effect of residual stress on fatigue strength of 316L stainless steel produced by laser powder bed fusion process",
+        "volume": "6",
+        "author": "Lai",
+        "year": "2021",
+        "journal-title": "Prog. Addit. Manuf."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0590",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.actamat.2020.08.033",
+        "article-title": "Fatigue strength of additively manufactured 316L austenitic stainless steel",
+        "volume": "199",
+        "author": "Kumar",
+        "year": "2020",
+        "journal-title": "Acta Mater."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0595",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cirpj.2022.07.007",
+        "article-title": "Experimental investigation on the fatigue behavior of laser powder bed fused 316L stainless steel",
+        "volume": "38",
+        "author": "Ponticelli",
+        "year": "2022",
+        "journal-title": "CIRP J. Manuf. Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0600",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2020.106063",
+        "article-title": "Fatigue behavior of additive manufactured 316L stainless steel under axial versus rotating-bending loading: Synergistic effects of stress gradient, surface roughness, and volumetric defects",
+        "volume": "144",
+        "author": "Shrestha",
+        "year": "2021",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0605",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2021.106207",
+        "article-title": "Impact of single structural voids on fatigue properties of AISI 316L manufactured by laser powder bed fusion",
+        "volume": "148",
+        "author": "Kotzem",
+        "year": "2021",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0610",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.106843",
+        "article-title": "High cycle fatigue behavior of 316L steel fabricated by laser powder bed fusion: Effects of surface defect and loading mode",
+        "volume": "160",
+        "author": "Liang",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0615",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.106946",
+        "article-title": "Fatigue properties and S-N curve estimating of 316L stainless steel prepared by SLM",
+        "volume": "162",
+        "author": "Zeng",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0620",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijfatigue.2022.107025",
+        "article-title": "Influence of internal and surface defects on the fatigue performance of additively manufactured stainless steel 316L",
+        "author": "Nafar Dastgerdi",
+        "year": "2022",
+        "journal-title": "Int. J. Fatigue 163"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0625",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jmst.2019.08.047",
+        "article-title": "Microstructure and fatigue behavior of laser-powder bed fusion austenitic stainless steel",
+        "volume": "46",
+        "author": "Yu",
+        "year": "2020",
+        "journal-title": "J. Mater. Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0630",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jmst.2021.10.006",
+        "article-title": "Superior low cycle fatigue property from cell structures in additively manufactured 316L stainless steel",
+        "volume": "111",
+        "author": "Cui",
+        "year": "2022",
+        "journal-title": "J. Mater. Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0635",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.mechmat.2021.103951",
+        "article-title": "Meso-scale damage mechanics modeling for high cycle fatigue behavior of additively manufactured components",
+        "volume": "160",
+        "author": "Malekipour",
+        "year": "2021",
+        "journal-title": "Mech. Mater."
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0640",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.procir.2016.11.138",
+        "article-title": "Dynamical Fatigue Behavior of Additive Manufactured Products for a Fundamental Life cycle Approach",
+        "author": "Uhlmann",
+        "year": "2017",
+        "journal-title": "Procedia CIRP"
+      },
+      {
+        "key": "10.1016/j.engfailanal.2026.111075_b0645",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/ma13153293",
+        "article-title": "Very high cycle fatigue behavior of additively manufactured 316L stainless steel",
+        "volume": "13",
+        "author": "Voloskov",
+        "year": "2020",
+        "journal-title": "Materials"
+      }
+    ],
+    "container-title": [
+      "Engineering Failure Analysis"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1350630726005509?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1350630726005509?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2026-09-04T01:54:21Z",
+      "timestamp": 1788486861000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1350630726005509"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          11
+        ]
+      ]
+    },
+    "references-count": 129,
+    "alternative-id": [
+      "S1350630726005509"
+    ],
+    "URL": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+    "relation": {},
+    "ISSN": [
+      "1350-6307"
+    ],
+    "issn-type": [
+      {
+        "value": "1350-6307",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process \u2212 structure \u2212 property relationship",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Engineering Failure Analysis",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.engfailanal.2026.111075",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "\u00a9 2026 The Author(s). Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "111075"
+  }
+}

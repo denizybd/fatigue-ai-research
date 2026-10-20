@@ -1,0 +1,79 @@
+A.      Centola      et      al.                                                                                                                                                                                                                    Engineering Failure Analysis 168 (2025) 109081
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                  Fig.       12.          Effect      of      Ed    on       the      R90C90       Nf           for       the       three      building      orientations.
+
+4.2.2.              Parameters       synergic       influence
+        Experimental     results     have     shown     that     the     correlation     between     process     parameters     plays     a     significant     role     in     the     resultant     porosity,
+which       in       turn       affects       the       fatigue       life.       In       the       following,       the       synergic       influence       of       the       PP       is       analyzed       with       the       BNN.       Fig.       10       shows       the
+mutual      influence      of      P      and      v      on      the      life      inside      the      training      range,      under      different     perspectives.      It      can      be      observed      that      P      influences      the
+life     much     more     than     v.     Fig.    10c-d     indicates     that    the     highest     life     is     achievable     by     using     high     speed     combined     with     a     power     below     250     W.
+The      influence      of      v      is      more      marked      for      low      P      values,      whereas      it      tends      to      reduce      significantly      for      high      P      values      (Fig.      10a),      suggesting      a
+predominant     effect     of     the     excessive     power     in     reducing     the     fatigue     performance.     Moreover,     the     contour     lines     in     Fig.     10c-d     highlight     the
+different     effects     of     the     parameters     interaction     at     a     stress     amplitude     of     200     MPa     and     300     MPa,     respectively.     Similar     trends     are     found     in
+[25]      for         ρ  rel   as       opposed      to      Nf,       further      proving       the       excellent      capabilities      of       the      BNN.
+        The     combined     influence     of     h     and     t     is     reported     in     Fig.     11.     It     is     evident     how     t     has     a     limited     influence     on     the     fatigue     life,     while     h     has     a
+remarkable       effect.       This       is       also       clear       from       Fig.       11a       where       the       iso-t       lines       are       almost       superimposing.       However,       it       can       be       observed       that
+decreasing       t       leads       to       a       slightly       better       response.       To       achieve       a       higher       fatigue       performance,       both       t       and       h       should       be       set       to       their       lowest
+values.      However,       this      could      significantly      impact       the      duration       of      the       manufacturing      process.
+        The        effect         of         all        the         PP         combined         can        be         investigated        by         studying         how         the         volumetric        energy         density        Ed                                               [J/mm3]         affects         the
+response     as              ϑ            varies.     Indeed,     it     is     known     [23]     that     Edis     calculated     according     to     Eq.     (5),     which     shows     how     P,     v,     h     and     t     are     all     taken     into
+account    at    once.    The    range    of    evaluation    of    Ed                                              spans    from    the    minimum    to    the    maximum    of    the    TDB.    Edis    calculated    for    each    dataset    as:
+                  E      =             P
+                     d         v              •     h              •     t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           (5)
+
+Fig.    12    confirms    that    the    0◦                          configuration    outperforms    the    45◦                                              and    this    last    one    on    the    90◦.    The    differences    between             ϑ           are    less    evident    in
+the     higher     end     of     Ed,     especially     for     the     350     MPa     level.     When     it     comes     to     Ed,     a     higher     response     is     achieved     for     both     Salevels     in     the     range
+close         to         100         and         120         J/mm3,         for         the         45◦         and         90◦        specimens.         A         wider         plateau         of         peak         response         is         observable         for         the         horizontal
+specimens     (0◦)    from     70             ÷    80     to    120     J/mm3.     The     results    for    Ed                                             obtained     with    the     BNN     are    also     confirmed     by     the    literature.     In    [52,54],     it
+has    been    shown    that    when    Ed                                =    117    J/mm3                   a    lower    number    of    defects    with    a    smaller    size    is    obtained,    leading    to    a    better    fatigue    life.    On
+the     other     hand,     approaching     values     of     Ed                                        close     to     50     J/mm3                   leads     to     a     nonnegligible     decrease     of     the     fatigue     response,     while     increasing
+it     too     much     (close     to     300     J/mm3)     drastically     increases     the     size     and     number     of     defects     leading     to     an     extremely     poor     fatigue     life.     In     [23],
+Ed     has      been      set      from      20      to      85      J/mm3,      and      the      measured      porosity      has      trends      similar      to      the      trends      of      the      life      predicted      by      the      BNN      of
+Fig.      12,      since      the      minimum      is      achieved      on      the      higher      end      of      the      range.      Even      though      Ed                                                          is      known      not      to      be      an      exhaustive      predictor      of
+fatigue     behaviour     [54],     its     influence     on     the     fatigue     life     has     been     studied     for     the     sake     of     comparison     with     literature     results.     Indeed,     the
+proposed      BNN      can      provide      uncertainty      envelopes      for      any      synergic      parameter,      while      preserving      the      multiple      parameters      interactions
+which      govern      the      fatigue      strength.      However,      since      more      than      one      PP      is      considered      at      once,      it      has      been      decided      to      keep      the      figures      as
+clear       as      possible       for      this       chapter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                       19

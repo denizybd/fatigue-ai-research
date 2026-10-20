@@ -1,0 +1,45 @@
+The PINN-L training and testing losses follow a similar trend ( Fig. 4 b), meaning that there is no overfitting or underfitting. Due to its
+complexity, this model requires more epochs to be trained, eventually achieving subtle differences in the training and testing losses.
+Introducing the statistical distributions in the R90C90 BNN connections allows to better generalize and represent the data. In fact,
+as can be seen from Fig. 4 c, the testing loss has a great overlap with the training loss and both curves have a steep training descent. To
+search for hidden instabilities in the training process, the procedure has been carried until 1500 epochs. As Fig. 4 c shows, no problems
+occurred, meaning that the model is correctly trained and is capable of well generalizing the data.
+For normalization, the z-score method was utilized. Regarding feature selection, the approach outlined in [11] was adopted. Due to
+the limited data availability compared to typical machine learning applications, a single percentage data split of 90 % training and 10
+% testing was implemented. In terms of data cleaning, the original dataset consisted of 550 entries, out of which 32 were identified as
+outliers and removed. For validation, a 90 %-10 % split was selected, aligning with standard practices in the literature.
+In Section 4.1 the PSN curves extracted from the FFNN-L are compared with the ones of the PINN-L, and the R90C90 BNN. Section
+4.2 explores the influences of the process parameters alone and combined on N
+f
+.
+4.1. Probabilistic S-N curves
+For the FFNN-L algorithm, all datasets have been evaluated and four of them are shown in this Section (more PSN curves are
+reported in the Appendix). To maintain an unbiased evaluation, two training sets and two testing sets are randomly drawn. Respec-
+tively datasets 0 and 34 ( Fig. 5 a and c) are coming from training sets while datasets 15 and 48 ( Fig. 5 b and d) are testing sets (refer to
+Table 1 , for the dataset PP and reference article). For each of the four datasets (from Fig. 5 a to Fig. 5 d), two figures are shown: the
+FFNN-L prediction (green) and the PINN-L (red), both compared to the experimental R50 curve (black). Table 2 reports the log-
+likelihood estimated on the selected datasets, alongside the total value computed over the complete database. Both FFNN-L and
+PINN-L provide accurate predictions of the PSN curves in the case of training datasets, with an acceptable log-likelihood difference –
+with respect to the MLLE on the experimental data. However, the PINN-L outperforms the FFNN-L when tested outside the training
+database ( Fig. 5 ), proving its superior predictive capability. In this case ( Fig. 5 b and g), the FFNN-L provided a PSN curve with a
+significantly lower MLLE (1.782 and - 60.86) compared to the one obtained fitting the linear model on the experimental data (9.595
+and - 7.104), while the PINN-L ( Fig. 5 d and i) correctly estimates the PSN curve, achieving a higher MLLE compared to the FFNN-L
+(4.057 and - 8.215). An overall comparison reported in Table 2 accounts for all the data points, i.e., the total sum of the MLLE,
+underlining that the PINN-L consistently gives more accurate results.
+The lower accuracy of the FFNN-L is imputable to the size of the TDB, which only comprises 51 points, one for each dataset. This
+gap suggests that, while the FFNN-L fits the training data very well, it does not generalize as well to the test data. It may be concluded
+that the model is capturing noise and details specific to the training data, which negatively affect the accuracy in the test case.
+The modified training strategy employed in the PINN-L allows to use the full TDB, to improve the model generalization.
+Fig. 5 d and 5 h, show the PSN curves predicted with the PINN-L model on the test datasets. An overall improvement in the model
+accuracy is observable, as indicated in Table 2 , imputable to the increase in the database size. As an example, the training dataset 34 is
+correctly predicted by the PINN-L, as opposed to the FFNN-L ( Fig. 5 c).
+However, not in all cases the slope is properly estimated ( Fig. 5 d and h) by the PINN-L. This behavior is particularly evident for
+datasets with a limited amount of data, where the R90-R10 bands correctly contain the majority of experimental points, but the m and q
+are not always correctly estimated. Indeed, the model compensates for the small numerosity of training data by increasing the pre-
+dicted standard deviation σ , compromising the accuracy on the slope and intercept parameters, m and q . The correlation between the
+predicted deviation and the dataset size is analysed in Fig. 6 a and b.
+It is possible to appreciate how the PINN-L compensates for the limited numerosity of training data by increasing the associated
+Fig. 4. Training and Testing Losses for the FFNN-L (a), the PINN-L (b) and the R90C90 BNN (c). It can be observed a progressive reduction in the
+overfitting behavior, from the first NN model to the last one.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+9 

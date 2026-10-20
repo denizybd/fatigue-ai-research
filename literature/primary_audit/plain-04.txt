@@ -1,0 +1,194 @@
+database, TT , ST and R
+f
+are denoted as Boolean features using the one-hot encoding strategy, where 1 stands for true and 0 for false.
+When it comes to T , 20
+◦
+C was set as the default for cases where the TT is not applied (both TT_Ann and TT_HIP = 0). The same
+reasoning applies for Δ t , with 0 h when a TT is not performed. Diverse ranges of T and Δ t are found in the literature and are reported as
+such in case one of the two TT is performed.
+In this work, N
+f
+is the dependent variable and S
+a
+the independent one. This interpretation mirrors actual fatigue testing, where S
+a
+is
+predetermined, and the cycles to failure are then measured. Unlike in [11] , information concerning runout specimens is properly
+treated thanks to R
+f
+, considering the correct statistical formulation. A summary of the data used to train the ML algorithms is presented
+in Table 1 , comprising 518 fatigue points from 51 datasets extrapolated from 17 articles. For brevity, the S
+a
+, N
+f
+and R
+f
+columns are
+removed just to report the PP , TT , ST and V
+risk
+. The amount of data of each dataset is different, with some having just one point per
+stress amplitude level. Despite this, datasets with a single stress amplitude level are retained since they could be supplemented with
+similar datasets.
+2.2. Linear fatigue model with constant normal distribution
+The HCF response of metallic materials is generally described by power law function, commonly referred to as Basquin ’ s law. A
+statistical variation of the model can be obtained assuming a normal distribution of the fatigue life [44] . This method will be referred to
+as “ linear model ” in the following. N
+f
+is a random variable with its mean that linearly varies with the applied stress amplitude S
+a
+, and a
+constant standard deviation σ . The cumulative distribution function (CDF) of N
+f
+, can be then found in Eq. (1) :
+CDF
+log
+10 ( N
+f )
+= ϕ
+(
+log
+10
+-
+N
+f
+)
+-
+-
+m • log
+10
+( S
+a
+) + q
+)
+σ
+)
+, (1)
+with the slope m , the intercept q and the standard deviation σ assumed to be constant, and to be estimated by considering the
+experimental data. For each dataset, the parameters are estimated by minimizing the negative log-likelihood function (NLL), reported
+in Eq. (2) :
+⎧
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎨
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎩
+NLL = -
+-
+MLLE
+f
++ MLLE
+r
+)
+MLLE
+f
+=
+∑
+M
+i
+( 1 - F
+r , i
+)
+• ln
+-
+PDF
+-
+log
+10
+-
+N
+f , i
+) ⃒
+⃒
+m • log
+10
+-
+S
+a , i
+)
++ q ; σ
+))
+MLLE
+r
+=
+∑
+M
+i
+F
+r , i
+• ln
+-
+1 - CDF
+-
+log
+10
+-
+N
+r , i
+) ⃒
+⃒
+m • log
+10
+-
+S
+a , i
+)
++ q ; σ
+)
+)
+, (2)
+where M is the number of specimens for the considered dataset and the subscripts f and r stand for failure and runout, respectively. R
+f,i
+is the runout flag for the i -th specimen, PDF is the probability density function [22] . For each dataset, once the constant coefficients are
+estimated, the PSN curves at the selected reliability levels can be estimated.
+2.3. Reliability bounds and confidence intervals
+The statistical models provide an estimate of the fatigue life with a variability imputable, for example, to the presence of micro-
+structural irregularities (e.g., defects), which act as root cause. In the design of engineering structures, fatigue curves at a defined
+reliability and confidence levels (e.g. R90C90 curve) are used, rather than P-S-N curves with a specific high level of reliability. In the
+following, according to a standard notation, the R90 PSN curve indicates the 10th percentile PSN curve. While the concept of reliability
+is related to the aleatoric uncertainty for fatigue, the concept of confidence is introduced to handle epistemic uncertainty. The
+epistemic uncertainty is related to the model parameter estimation. In essence, the R90 curve at a 90 % confidence level (R90C90)
+provides the P-S-N curve estimated according to the considered fitting model (e.g., the Basquin model) which lies below the 90 % of the
+R90 curves obtained with different subsets. In this study, the R90C90 curve was selected as an example to strike a balance between
+safety and conservative designs, but the model can be adjusted to accommodate any desired combination of reliability and confidence
+levels (e.g., R95C95, R90C95) depending on the specific design requirements.
+In the literature and in industrial applications, the R90C90 PSN curves are commonly estimated with the Owen ’ s method [22] ,
+which requires shifting leftward the R50 linear curve by a factor k
+Owen
+multiplied by the fatigue life standard deviation. The R90C90
+curve results into a linear curve with slope m
+R90C90
+equal to the R50 curve slope m , whereas the intercept q
+R90C90
+is calculated ac-
+cording to Eq. (3) :
+q
+R 90 C 90
+= q - k
+Owen
+• σ , (3)
+where q is the R50 curve intercept obtained from Eq. (2) , σ is the dataset standard deviation and k
+Owen
+is a multiplicative coefficient
+obtainable from [22] . The linear model and the R90C90 PSN curves have been estimated to properly train the developed ML algo-
+rithms and to separate and investigate the contribution of the aleatoric and epistemic uncertainty. It is worth noting that, typically, the
+Owen method is used for estimating R90C90 curves, with this estimation relying on experimental data obtained under specific AM
+production conditions. The method proposed in the article, on the other hand, can estimate the design curves with good approximation
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+4 

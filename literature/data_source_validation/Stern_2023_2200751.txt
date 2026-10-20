@@ -1,0 +1,1035 @@
+=== PAGE 1 ===
+Improving the Defect Tolerance of PBF-LB/M Processed
+316L Steel by Increasing the Nitrogen Content
+Felix Stern,* Louis Becker, Chengsong Cui, Jochen Tenkamp, Volker Uhlenwinkel,
+Matthias Steinbacher, Johannes Boes, Jonathan Lentz, Rainer Fechte-Heinen,
+Sebastian Weber, and Frank Walther
+1. Introduction
+The stainless steel AISI 316L (X2CrNiMo17-12-2, DIN 1.4404) is
+one of the most used Fe-based alloys for additive manufacturing
+(AM) by laser-based powder bed fusion processing of metals
+(PBF-LB/M). Due to this, considerable
+knowledge regarding the microstructure
+and mechanical as well as chemical behav-
+ior and part/specimen densities of 99.9%
+or more have been reported. However,
+there is still a high scatter in the available
+data regarding the mechanical and espe-
+cially the fatigue behavior and fatigue
+strength,[1,2] as these properties are
+strongly in ﬂuenced by individual process
+parameters, building orientation, surface
+quality, porosity, and residual stresses.
+Due to this, it is well known that pro-
+cess-induced defects, even at a very small
+scale, are detrimental to fatigue life. [1,2]
+As those pores or lack of fusion (LoF)
+defects act as local stress raisers, the crack
+initiation is favored in their vicinity. If
+internal defects are present in the AM part,
+they can only be mitigated or even closed
+when applying posttreatment procedures
+such as hot-isostatic pressing (HIP). [3]
+Nonetheless, all postprocessing also leads to higher component
+costs as well as unintentional grain coarsening and dissolution of
+the process-induced cellular subgrain structure, which is mainly
+responsible for the high strength of the PBF-LB/M material com-
+pared to the conventional one. [4,5] However, fatigue strength of
+HIPed specimens in the low cycle fatigue regime is reduced,
+whereas it can improve the high cycle fatigue behavior. [1]
+Most of the results found in the literature show contradictory
+results regarding the fatigue behavior of AM parts compared to
+conventional material[2,6–8] or fatigue life suffers from high scat-
+ter.[9] The reason for this is that a lot of different material con-
+ditions with and without posttreatment are investigated.
+Especially, the as-built surface of AM specimens and internal
+defects are in ﬂuencing the test results in a signi ﬁcant manner
+so that a direct comparison even of different conditions of the
+same material can be challenging. Beretta et al. [10] compared
+AM and conventionally manufactured parts from AlSi10Mg
+and Ti6Al4V, showing that high scatter of results for machined
+AM specimens is mostly linked to the presence of defects with
+different sizes. If this is considered, machined and stress relieved
+AM material under fatigue loading is either comparable or even
+better than conventional material. Murakami et al. [9] also
+addressed this topic and proposed a modi ﬁed S –N curve based
+on the parea-model instead of the classical S –N curves. They
+state that scatter of fatigue results from specimens with defects
+F. Stern, J. Tenkamp, F. Walther
+Chair of Materials Test Engineering (WPT)
+TU Dortmund University
+44227 Dortmund, Germany
+E-mail: felix.stern@tu-dortmund.de
+L. Becker, J. Boes, J. Lentz, S. Weber
+Chair for Materials Technology (LWT)
+Ruhr University Bochum
+44801 Bochum, Germany
+C. Cui, V. Uhlenwinkel, M. Steinbacher, R. Fechte-Heinen
+Materials Engineering Department
+Leibniz Institute for Materials Engineering-IWT
+28359 Bremen, Germany
+The ORCID identi ﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adem.202200751.
+© 2022 The Authors. Advanced Engineering Materials published by Wiley-
+VCH GmbH. This is an open access article under the terms of the Creative
+Commons Attribution License, which permits use, distribution and
+reproduction in any medium, provided the original work is properly cited.
+DOI: 10.1002/adem.202200751
+Nitrogen (N) in steels can improve their mechanical strength by solid solution
+strengthening. Processing N-alloyed steels with additive manufacturing, here
+laser powder bed fusion (PBF-LB), is challenging as the N-solubility in the melt
+can be exceeded. This degassing of N counteracts its intended positive effects.
+Herein, the PBF-LB processed 316L stainless steel with increased N-content is
+investigated and compared to PBF-LB 316L with conventional N-content. The N
+is introduced into the steel by nitriding the powder and mixing it with the starting
+powder to achieve an N-content of approximately 0.16 mass%. Thermodynamic
+calculations for maximum solubility to avoid N outgassing and pore formation
+under PBF-LB conditions are performed beforehand. Based on the results, a
+higher defect tolerance under fatigue characterized by Murakami model can be
+achieved without negatively in ﬂuencing the PBF-LB processability of the 316L
+steel. The increased N-content leads to higher hardness ( þ14%), yield strength
+(þ16%), tensile strength ( þ9%), and higher failure stress in short time fatigue
+test ( þ16%).
+RESEARCH ARTICLE
+www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (1 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+
+
+=== PAGE 2 ===
+is caused due to each defect creating a single S –N curve. As there
+is in general a random scatter in the size of crack-initiating
+defects in PBF-LB specimens, the obtained S –N curves are based
+on data points of different individual defect-size dependent S –N
+curves. This is supported by the results of Kotzem et al. [11] where
+specimens from 316L with de ﬁned internal defect sizes were
+manufactured by PBF-LB/M and clearly distinguishable S –N
+curves could be found for each defect size.
+Solid solution strengthening is often used to improve the
+strength of metals. In austenitic steels, carbon and nitrogen
+(N) are mostly used for interstitial solid solution strengthening
+because of it being one of the most effective strengthening mech-
+anisms.[12] However, increasing the carbon content in austenitic
+CrNi steels promotes the formation of carbides, thus decreasing
+the corrosion resistance due to the reduction of dissolved Cr in
+the steel which is much less than the case for N (Cr 23C6 com-
+pared to CrN or Cr 2N). N has multiple bene ﬁcial effects on
+Fe alloys when used as alloying element. It stabilizes the austen-
+itic ( γ-) phase [13] and, thus, can partly replace the expensive ele-
+ment Ni. [14] Furthermore, N promotes the metallic bonding
+character which leads to an increase in strength and ductility [15]
+and, additionally, improves corrosion resistance against inter-
+granular, pitting, and crevice corrosion. [16] Alloys with up to
+1 mass% of N are used for, e.g., medical applications. [17]
+In PBF-LB/M, different strategies have already been used to
+increase the amount of nitrogen in steels. Powder modi ﬁcation
+was performed in terms of nitriding the powder to increase the
+N-content. Stern et al.[18] investigated the gas-nitrided steel powder
+X30CrMo7-2 and characterized the in ﬂuence of the increased
+N-content of 0.68 mass% compared to the untreated material with
+0.049 mass% of N on the mechanical compressive behavior. The
+N-content was reduced to 0.47 mass% after PBF-LB/M accompa-
+nied by high amount of gas pores in the processed steel.
+Nevertheless, hardness increased signi ﬁcantly, especially after
+tempering twice at 590 °C for 2 h. Compressive yield strength of
+tempered specimens was increased to 1990 MPa compared
+to specimens without increased N which only reached
+1225 MPa in as-built condition. A prealloyed martensitic steel
+X30CrMoN15-1 was characterized by Boes et al. [19] which was
+gas atomized under N atmosphere and afterward processed by
+PBF-LB/M. N-content also decreased from powder to PBF-LB/M
+specimen from 0.18 to 0.14 mass% as the steel solidi ﬁes primary
+in the ferritic phase which results in a much lower N solubility.
+Here, as-built as well as heat-treated conditions were compared.
+The results from short time fatigue test procedure showed better
+fatigue behavior of the as-built condition due to higher ductility
+from retained austenite, thus, leading to higher defect tolerance
+under fatigue. Electron back scatter diffraction (EBSD) analysis
+revealed transformation of austenite to martensite in the vicinity
+of the fracture surface in combination with increase of hardness
+from 496 HV30 in the bulk as-built material up to 720 HV0.1
+in the fatigue crack region. In situ interstitial alloying was investi-
+gated by Valente et al. [20] by processing 316L powder with
+additional 2.5 mass% Cr 2N by PBF-LB/M. They achieved a
+N - c o n t e n to f0 . 3 1m a s s %a c c o m p a n i e db yah a r d n e s si n c r e a s e
+o fa b o u t4 0H V 0 . 1a n dn om e a s u r a b l ew e i g h tl o s si nF e C l3 solution
+after 10 days of immersion regarding corrosion properties.
+Boes et al. [16] aimed for interstitial solid solution strengthen-
+ing by increasing the N-content by gas-nitriding the 316L powder
+from 0.039 to 0.589 mass% exceeding the estimated maximum
+solubility of approximately 0.3 mass%. The higher N-content was
+found to be caused by the formation of ﬁne nitrides on the sur-
+face and M(C,N) precipitates at the surface-near grain boundaries
+of the powder particles. The nitrided powder was mixed with the
+starting powder so that N contents of 0.065 and 0.27 mass% N in
+the mixed powder and 0.069 and 0.22 mass% N after PBF-LB
+were achieved. Specimens with 0.22 mass% N showed increased
+porosity with spherical pores, indicating the exceeding of the
+maximum solubility of nitrogen in the liquid phase while speci-
+mens with lower amount of nitrogen showed slightly increased
+N-content possibly caused by nitrogen uptake from the shielding
+gas atmosphere during PBF-LB. Nevertheless, specimens with
+increased N-content possessed increased ultimate tensile
+strength of 625 and 762 MPa (0.069 and 0.22 mass% N, respec-
+tively) compared to the unmodi ﬁed steel with 440 MPa.
+However, no further analysis such as characterization of the
+fatigue and corrosion behavior was done.
+Based on the given information, the modi ﬁcation of the start-
+ing powder seems to be a promising way to achieve a higher
+defect tolerance against fatigue failure in the PBF-LB/M as-built
+part. Especially for most of the available alloys for PBF-LB/M, it is
+still not yet possible to achieve fully dense parts and the generation
+of process-induced defects will lead to locations for preferred crack
+initiation. As shown from the literature, the increase of N-content
+in steels could reduce the criticality of certain defects or allow
+defects with speci ﬁc sizes to be present in AM parts as it would
+be less critical due to increased defect tolerance. However, there is
+a lack of investigations regarding the in ﬂuence of the strengthen-
+ing mechanisms in PBF-LB/M on the fatigue behavior.
+In this work, 316L stainless steel is modi ﬁed in a way that
+maximum solubility is not exceeded but signi ﬁcant amount of
+nitrogen is induced in the steel. The goal is to characterize the
+inﬂuence of the increased N-content on the microstructure and
+the defect tolerance by not aiming for fully dense parts but parts
+with defects in terms of typical lack of fusion porosity. The micro-
+structure of the manufactured specimens is extensively character-
+ized and, additionally, different fatigue tests are performed to
+evaluate differences in the fatigue behavior and defect tolerance.
+2. Experimental Section
+2.1. Material Proceedings
+The austenitic stainless steel powder AISI 316L (X2CrNiMo17-12-2,
+DIN 1.4404), which was provided by Deutsche Edelstahlwerke
+GmbH, served as the starting powder for the investigations in this
+work. N was introduced by solid-state nitriding of the starting pow-
+der in a vacuum chamber furnace of type IU 54/1 F from Schmetz
+GmbH. N uptake took place under an N 2 atmosphere (N2 partial
+pressure of 3 bar) at a temperature of 675 °C. Before the powder was
+nitrided for 6 h under these conditions, the temperature was
+increased in two time steps of 10 h each. In this way, a sufﬁciently
+good vacuum was created before the inlet of the nitrogen gas to
+prevent strong oxidation during nitriding. The process parameters
+used were taken from the work of Boes et al. [16] in which it was
+shown that a considerable N-content is established in the powder
+without causing strong agglomeration phenomena. The N and O
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (2 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 3 ===
+contents of the powders were measured by carrier gas hot extraction
+using an ONH-200 ELTRA analyze r. At this point, it should be
+noted in advance that an N-content of 0.61 mass% was introduced
+by the nitriding process. As this N-content in the nitrided powder
+(hereinafter referred to as 316L-nit) would greatly exceed the N
+solubility in the molten steel during PBF-LB/M production, the
+316L-nit powder was mixed with the 316L starting powder
+(N-content of 0.058 mass%) to a target N-content of 0.16 mass%
+(powder mixture hereinafter referred to as 316L þ N). This target
+content was determined based on the results of Boes et al. [16] and
+thermodynamic equilibrium calculations using ThermoCalc and
+was subject to the objective of generating the maximum possible
+N-content at which no N outgassing occurs during PBF-LB/M pro-
+duction (see also Section 2.7).
+The 316L-nit was mixed with the initial 316L powder by using
+a 3D tumble mixer (TURBULA Type T2F) at a rotating speed of
+101 min/C0 1 for 6 min. The proportion of the initial 316L powder
+and the 316L-nit powder was 82 and 18 mass%, respectively. The
+targeted N-content of the mixed powder is 0.16 mass%.
+2.2. Powder Characterization
+The particle size distributions of the powders were determined
+by means of a laser diffraction testing instrument (Malvern
+Mastersizer 2000, Malvern Panalytical GmbH). The particle
+morphology was investigated by scanning electron microscopy
+(SEM) (CAMSCAN CS44). The ﬂowability of the powder was
+determined by means of Hall ﬂow-testing (funnel opening
+∅2.5 mm) according to ISO 4490:2018. The apparent density
+was measured according to ISO 697:1981. The tap density of
+the powder was measured after 1250 tap cycles with a JEL
+STAV II device (J. Engelsmann AG).
+2.3. Specimen Manufacturing by PBF-LB
+Specimens in the form of near net shaped tensile specimens
+(Figure 1 a) and cuboids were manufactured on the PBF-LB/M
+system Aconity Mini (Aconity3D GmbH)). The cuboids were
+manufactured horizontally, so that the corresponding tensile axis
+of the specimens was perpendicular to the build direction. As
+part of the work, all specimens were analyzed in the as-built con-
+dition. No downstream heat treatment or postprocessing was
+performed. The cuboids had a dimension of 65 mm (length) /C2 10
+mm (width) /C2 11 mm (height). They were built on a platform of
+AISI 304 stainless steel with a diameter of 140 mm and without
+any base plate heating. The process chamber was purged with
+nitrogen gas with a high purity of 99.99% and an oxygen content
+in the process chamber lower than 50 ppm could be achieved.
+Based on a parameter study of the AISI 316L steel (to be pub-
+lished elsewhere), the process parameters for the specimens
+were determined as follows ( Table 1 ).
+For fatigue tests, specimens according to Figure 1b were man-
+ufactured by machining the cuboids and the gauge section was
+additionally polished to remove possible turning marks.
+2.4. Specimen Preparation and Microstructure Investigations
+For microstructural investigations, small pieces of the manufac-
+tured cuboids were cut, and the corresponding cross sections
+with either parallel (XY cross section) or perpendicular view
+(XZ cross section) with regard to the build direction (BD) were
+hot embedded (180 °C) and successively ground and polished
+with oxide polishing suspension. Thereafter, the specimens were
+etched with V2A-etchant and investigated with the optical light
+microscope Axio Imager (Carl Zeiss AG). Further analysis was
+done by SEM to obtain high magni ﬁcation images of the micro-
+structure. The SEM is additionally equipped with a Velocity Pro
+CMOS sensor (EDAX/AMETEK) for EBSD analysis which was
+done on the XY and XZ cross sections of the PBF-LB processed
+316L and 316L þ N. SEM was also used for fractographic analysis
+Figure 1. Specimen geometry of 316L/316L þ N used for a) tensile tests and b) fatigue tests (all numbers in mm).
+Table 1. PBF-LB process parameters for 316L and 316L þ N steel.
+Laser
+power [W]
+Scan speed
+[mm s/C0 1]
+Spot
+size [μm]
+Hatch
+distance
+[μm]
+Layer
+thickness
+[μm]
+Scan
+strategy
+Tilt
+angle
+[°]
+Process
+gas
+250 800 50 100 50 Simple
+hatching
+90 N 2
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (3 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 4 ===
+to gain information about location and size of the crack-initiating
+defects after fatigue testing. Defect size was measured based on
+SEM image with ImageJ software (NIH). Furthermore, hardness
+measurements in terms of Vickers hardness HV10 (loading force
+of F ¼ 98.07 N) were done on both cross sections on a Dia Testor
+3 RC (Otto Wolpert-Werke GmbH) with a minimum of ﬁve
+indents per measurement according to DIN EN ISO 6507-1.
+2.5. Microfocused Computed X-Ray Tomography
+For nondestructive defect detection and to obtain 3D information
+about the size, location, and shape of defects, microfocus computed
+tomography (μ-CT) was performed with a Nikon XT H 160 system
+(Nikon Metrology) equipped with a tungsten ﬁlament and a real-
+time detector. For the investigations, the gauge section of randomly
+selected fatigue specimens (Figure 1b) with 3 mm diameter was
+scanned. The small cross section of the specimens ensures that
+it is fully penetrated by the X-Rays. Additionally, a high resolution
+in terms of voxel size can be achieved. Scanning parameters and
+achieved resolution can be found in Table S1, Supporting
+Information. The reconstructed 3D volume was subsequently
+analyzed by VGStudioMax 3.2 using the VGEasyPore algorithm.
+2.6. X-Ray Diffraction Measurements
+To investigate the phases existing in the PBF-LB/M fabricated
+components, X-Ray diffraction (XRD) patterns of the two steels
+were recorded using a Bruker D8 Advance system (Bruker
+Corp.). The input radiation was Cu K α radiation with a
+wavelength of 1.5406 Å. The setup corresponded to the
+Bragg–Brentano geometry, with which a 2 θ range of 30 –90°
+was successively recorded. The step size was 0.02° and a measur-
+ing duration of 10 s was selected per step. In this way, a high res-
+olution was generated, which also allows the detection of phases
+that may be present in lower concentrations. During the experi-
+ment, the specimens rotated around their vertical spatial axis so
+that the entire specimen surface contributed to the experiment.
+The examined specimen area corresponded to the middle cut sur-
+face, parallel to the buildup direction. The preparation included
+the cutting of the cubes and subsequent polishing using SiC
+particle suspension (3 to 1 μm). After the experiment, the
+X-Ray patterns were analyzed by the DIFFRAC.EVA software.
+2.7. Thermodynamic Calculations
+In order to determine the temperature-dependent N-content in
+the liquid phase of the investigated steel X2CrNiMo17-12-2,
+CALPHAD calculations were carried out using the ThermoCalc
+software (version 2021b). The thermodynamic data were taken
+from the TCFE10 database, and the phases LIQUID (liquid phase),
+FCC_A1#1 (γ-Fe), BCC_A2 ( α-/δ-Fe), FCCA1#2 (monocarbides),
+HCP (M2(C,N)), M23 (M 23C6), M7 (M 7C3), CEM (Fe 3C), SIGMA
+(sigma phase), and LAV (Laves phase) were considered in the
+simulations. The system size was 1 mol. Moreover, a nitrogen
+pressure of 1.03 bar was used, which corresponded to the pressure
+modalities during PBF-LB/M process.
+2.8. Tensile Testing
+The quasistatic mechanical properties were characterized by ten-
+sile tests according to DIN EN ISO 6892-1 at room temperature.
+For this purpose, a ZwickRoell Z100 tensile testing machine
+(ZwickRoell GmbH & Co. KG) was used. The crosshead speed
+was 0.5 mm min/C0 1. The elongation was determined by the dis-
+placement of the traverse. The preparation of the specimens
+included the grinding of the surface with SiC paper (1000 mesh).
+Five tensile specimens (Figure 1a) per material were investigated.
+2.9. Fatigue Testing
+For the characterization of the fatigue behavior at room tempera-
+ture, multiple amplitude tests (MAT) as well as constant amplitude
+tests (CAT) were performed on a servohydraulic testing system
+Schenck PSB100 (100 kN load cell, Instron 8800 controller) at
+f ¼ 20 Hz (MAT) and 10 Hz (CAT) under constant tensile mean
+stress (load ratioR ¼ 0.1). MAT is a short time procedure to obtain
+information about the fatigue behavior by additionally measuring
+the material’s reaction[21] which was already successfully used for
+different PBF-LB materials.[19,22] In this case, stress–strain behav-
+ior was measured with a tactile extensometer ( l0 ¼ 10 mm). By
+that, plastic strain amplitude εa,p and total strain amplitude εa,t
+can be used to describe the mechanical material reaction in every
+step as well as with increasing stress after each step. Detailed infor-
+mation of the stress levels can be found in the results. MAT started
+at a maximum stress of σmax,start ¼ 200 MPa (approximately 40%
+yield strength) at which no fatigue damage is expected. The step
+length was Δ N ¼ 1E4 after which the maximum stress was
+increased by a step size of Δ σmax ¼ 20 MPa which was repeated
+until fracture of the specimen. Based on the results of MATs,
+the CATs were performed at maximum stresses between 320
+and 520 MPa.
+3. Results and Discussion
+3.1. Characterization of the Powder Particles used for PBF-LB/M
+The chemical compositions of the powders considered in
+this work are shown in Table 2 . As already mentioned in
+Section 2.1, an N-content of 0.61 mass% was introduced by
+nitriding. It was also described that this content would greatly
+exceed the N-solubility in the melt during the PBF-LB process,
+which according to Boes et al. [16] would lead to outgassing of
+N in the melt and, thus, to gas pore formation. For this reason,
+a powder mixture of nitrided steel powder and starting steel pow-
+der was prepared. During powder mixing, a target N-content of
+Table 2. Chemical compositions of the respective powders determined by
+optical emission spectrometry in mass%. N and O were determined
+separately by hot carrier gas extraction (O is given in ppm).
+Powder State C Cr Mn Si Ni Mo N O Fe
+316L Initial <0.02 16.6 0.65 0.75 12.4 2.3 0.058 355 bal.
+316L-nit Nitrided <0.02 16.6 0.65 0.75 12.4 2.3 0.610 410 bal.
+316L þ N Mixed <0.02 16.6 0.65 0.75 12.4 2.3 0.161 377 bal.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (4 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 5 ===
+0.16 mass% was targeted, which was based on thermodynamic
+calculations. The N-solubility in the steel ’s melt determined
+using the CALPHAD method is shown in Figure 2. At the solidus
+temperature of 1414 °C, a N-content of the melt of 0.32 mass% is
+expected, which decreases with increasing temperature down to
+0.135 mass% at a temperature of 2000 °C. Boes et al.[16] used sim-
+ilar calculations for linking the N solubility of 316L steel with the
+tendency to the formation of gas pores caused by exceeding N
+solubility in the melt during PBF-LB processing. In their work,
+a N-content of 0.27 mass% led to pronounced gas pore formation
+during PBF-LB while an initial N-content of 0.065 mass% was
+low enough to prevent this outgassing phenomenon. Based on
+these investigations and the thermodynamic calculations in
+Figure 2, the target N-content of 0.16 mass% represents a content
+that can lead to improvements in the mechanical and chemical
+properties without showing outgassing phenomena during PBF-
+LB. The N-content of 0.161 mass% of the powder mixture
+316L þ N (see Table 2) indicates that the mixing of the 316L
+and 316L-nit powder was successful.
+The micrographs of the initial 316L powder are shown in
+Figure S1a, Supporting Information. The powder shows many
+particles in irregular shape and many satellite particles.
+Further investigations on the 316L-nit and the mixed powder
+316L þ N (not shown here) revealed that the nitriding and mix-
+ing processes do not have any in ﬂuence on the particle
+morphology.
+The initial 316L powder, the 316L-nit powder, and the
+316L þ N powder mixture also reveal similar particle size distri-
+bution (see Figure 3). The main particle size parameters d10, d50,
+and d90 are given in Table 3. All the powders possess a relatively
+large particle size. The median particle diameter is about 45 μm.
+There is only a small number of ﬁne particles (smaller than the
+nominal lower fraction limit of 20 μm) present in the powders.
+The polished section of the 316L powder particles is presented
+in Figure S1b, Supporting Information. Only a small amount of
+porosity has been found inside the powder particles. The particle
+surface of the 316L and the 316L-nit powder was examined by
+SEM and the results are shown in Figure 4a,b. Very ﬁne precip-
+itates were observed at the particle surface of the 316L-nit powder
+indicated by the red arrows in Figure 4b. They are most likely
+M(C,N) nitrides, which are formed by the uptake of nitrogen
+into the steel during gas nitriding. [18] In addition to precipitate
+formation at the particle surface, the dendritic microstructure
+in the initial 316L powder was remarkedly modi ﬁed during
+the nitriding process as shown in Figure 4c,d. The heating
+and accelerated diffusion under nitriding conditions led to the
+formation of interdentritic nitrides which also caused a more
+intense etching in this region. [16]
+The ﬂow property and the packing density of the respective
+powders are listed in Table 3. They all show good ﬂowability
+and similar apparent density. As many particles have an irregular
+shape and many satellite particles, which usually impairs powder
+ﬂowability, the good ﬂowability of the powders is probably
+associated with the relatively large particle size range.
+3.2. In ﬂuence of N-Addition on the Microstructure and
+Process-Induced Defects
+Optical microscopy reveals the typical PBF-LB microstructure
+consisting of clearly visible melt pools in XZ cross section
+(Figure 5 a,c and laser scan tracks in XY cross section
+Figure 5b,d) in both investigated materials, respectively. For a
+better overview, BD is additionally marked. Especially in XZ
+cross section, grain growth along Z-axis in BD is visible with
+columnar grains growing through the melt pool boundaries
+along the temperature gradient during PBF-LB. In XY cross sec-
+tion, the scan strategy is noticeable as scan direction was rotated
+by 90° after each layer.
+Figure 2. Calculated N-solubility in the melt determined by CALPHAD
+method depending on the temperature.
+Figure 3. Particle size distribution of the initial 316L powder, the 316L-nit
+powder, and the mixed powder 316L þ N.
+Table 3. Properties of the different conditions of the 316L powder
+particles.
+Powder Unit Initial powder 316L 316L-nit 316L þ N
+Particle size d10 μm 30.5 31.4 30.3
+Particle size d50 μm 43.3 46.0 44.4
+Particle size d90 μm 61.3 67.4 64.5
+Flow time (Ø2.5 mm) s 50g /C0 1 16.0 16.5 18.0
+Apparent density g cm /C0 3 4.35 4.09 4.18
+Tap density g cm /C0 3 4.76 4.76 4.76
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (5 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 6 ===
+Figure 4. SEM (BSE) micrographs of the particle surface of the 316L powder a) before and b) after gas nitriding (red arrows point at nitrides); etched cross
+sections of the powder particles c) 316L and d) 316L-nit.
+Figure 5. Etched microstructure by optical microscopy of a) XZ cross section and b) XY cross section of 316L and c) XZ cross section and d) XY cross
+section of 316L þ N; BD: build direction.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (6 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 7 ===
+At higher magni ﬁcations in SEM, the cellular subgrain struc-
+ture in terms of equiaxed and columnar dendrites can be identi-
+ﬁed (see Figure 6 ). The orientation of this structure is mainly
+based on the heat ﬂow direction and rapid solidi ﬁcation[23] which
+is visible in the XZ cross section of 316L in Figure 6a where a tilt
+and elongation of the cells in not only the BD but also in the
+direction of other melt pools or grains is present. Deviation of
+the cell structure can also vary in neighboring grains as shown
+in Figure 6b for the 316L þ N. Based on the literature, the inter-
+dendritic regions are enriched with heavier elements, such as Mo
+and Cr, due to microsegregation phenomena upon solidi ﬁcation.
+Furthermore, these regions are known to exhibit an increased
+dislocation density as described by Wang et al. [5] No signi ﬁcant
+inﬂuence of the N-content on the microstructure can be found in
+OM or SEM images. Especially the absence of precipitates in the
+316L þ Ns p e c i m e n sh a st ob em e n t i o n e d ,a sn i t r i d ef o r m a t i o n
+becomes more likely with increasing N-content. This ﬁnding is
+in accordance with the observations made by Boes et al., [16] and
+is likely to be associated with the high cooling rates during PBF-
+LB preventing pronounced precipitation processes. Furthermore,
+it is clear that N addition, which is not exceeding the calculated max-
+imum N solubility, Figure 2, does not lead to N outgassing and the
+development of structural defects such as spherical gas pores.
+Hardness measurements revealed a pronounced hardness
+increase in both XY and XZ cross sections ( Table 4)w i t hi n c r e a s -
+ing N-content. The increased N-content leads to an approximately
+11-14% higher hardness compared to the 316L steel. Additionally,
+slightly higher hardness can be found when the hardness is
+measured perpendicular to the build direction (XZ cross section).
+The hardness measured in this work is lower compared to the raw
+and interstitially alloyed 316L with 0.3 mass% N with 267 and 305
+HV0.1, respectively, as reported by Valente et al. [20] which can be
+explained by using different test forces (HV0.1 compared to HV10
+in this work) as well as having almost twice the amount of N as the
+316L þ N in this work. Nevertheless, the absolute hardness
+increase of Δ HV is quite similar. Hardness values as reported
+by others[24] are very similar to the hardness of the 316L in this
+work.
+Investigations in terms of EBSD scans ( Figure 7a–d reveal the
+typical PBF-LB microstructure with visible melt pools or laser
+scan tracks as it was already shown in the light optical micros-
+copy images (see Figure 5) including the epitaxial grain growth
+through individual melt pools and layers in Figure 7a,c. The
+rotational scan strategy leads to a less textured microstructure
+as normally a high texture would be expected due to the preferred
+epitaxial growth[25–27] and change direction of local temperature
+gradient.[28] Additionally, slightly different orientation inside
+most of the grains can be found which can be correlated
+with low angle grain boundaries or stress compensation. [27]
+Furthermore, the EBSD shows a slight variation in grain orien-
+tation in individual grains identi ﬁable by the color gradient.
+Based on XRD measurements phase analysis shown in
+Figure S2, Supporting Information, an almost fully austenitic
+phase composition as exclusively the re ﬂections of the austenitic
+phase can be identi ﬁed. This is in correspondence with other
+ﬁndings.[23,29] This fully austenitic phase constitution is a result
+of the high solidi ﬁcation and cooling rates prevailing in the
+PBF-LB process. On the one hand, these favor primary austenitic
+solidiﬁcation due to kinetically more favorable formation of
+austenite compared to ferrite [30] and, on the other hand, prevent
+ferrite formation at the cell boundaries due to microsegregation
+of Cr and Mo as observed for example in the context of additive
+manufacturing by direct energy deposition (DED-LB). [31] With
+regard to the primary solidi ﬁcation of austenite, the in ﬂuence
+of nitrogen is estimated to be low in this work. N additionally
+stabilizes the austenitic phase, which only further supports
+the already austenitic phase constitution, which was seen for
+the 316L steel with less N.
+In the results of μCT scans, a considerable number of defects
+in the gauge section of the specimens can be found. In total,
+PBF-LB leads to 0.71% and 0.56% porosity for the 316L and
+316L þ N specimen in Figure 8 a–d, respectively, based on
+μCT evaluation of the defects. Highest value of defect size in
+terms of projected defect size perpendicular to the later load
+direction along the specimen axis were parea ¼ 456 and
+348 μm for the 316L and 316L þ N specimens shown in
+Figure 8, respectively. Almost all detected defects seem to have
+Figure 6. SEM images with cellular subgrain structure of XZ cross section of a) 316L and b) 316L þ N.
+Table 4. Results of hardness measurements on 316L and 316L þ N cross
+sections.
+Hardness HV10
+316L 316L þ N
+XY cross section 204 /C6 4 230 /C6 5
+XZ cross section 214 /C6 13 245 /C6 6
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (7 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 8 ===
+a quite aspherical ﬂat and elongated shape with a thickness
+reaching higher than the individual layer size in the process
+which indicates that no gas porosity was induced during process-
+ing as can be seen in Figure 8c,d for the 316L þ N specimen.
+In addition, a comparison of the N-content of the powders and
+specimens built using PBF-LB/M (see Table 5) shows that there
+is negligible decrease in N-content in the 316L þ N material. In
+the 316L material, the specimens also absorb approximately
+0.01 mass% N from the process gas during the manufacturing
+process. This supports the conclusion that solubility of N was
+not exceeded during PBF-LB. Regarding the 316L þ N steel, just
+a slight decrease in the N-content of 0.003 mass% after PBF-LB
+processing is observable. In contrast, for the 316L steel, there was
+an increase in N-content of 0.014 mass% during PBF-LB process-
+ing, which is attributed to N uptake from the process atmosphere
+(N2). At this point, it should be recalled which reference points
+were used to determine the target N-content of 0.16 mass% in the
+powder. As shown before, thermodynamic calculations and the
+results of Boes et al.[16] were considered. The absence of spherical
+gas pores and the only slightly lower N-content of the 316L þ N
+components compared to the 316L þ N powder (see Table 5)
+indicate that this assumption is expedient.
+3.3. Mechanical Properties
+Figure S3, Supporting Information, shows representative
+stress–strain curves of both steels 316L and 316L þ N in the
+PBF-LB-manufactured condition. The associated mechanical
+parameters (mean values) such as yield strength (YS), ultimate
+tensile strength (UTS), and the elongation at fracture (A) can
+be seen in Table 6 . The YS of 316L þ N is about 80 MPa and
+the UTS about 60 MPa higher compared to 316L steel. The
+elongation at fracture of steel 316L þ N, with a value of
+42.4%, is about 6% lower than that of 316L. In summary, nitro-
+gen has led to a signi ﬁcant increase in strength and a slight
+decrease in elongation at fracture. The increase in strength,
+which is consistent with the hardness measurements already
+shown in chapter 3.2, is a result of solid solution strengthening
+associated with interstitially dissolved N. Gavriljuk et al. [32]
+reported that interstitially dissolved nitrogen atoms act as
+obstacles for dislocations leading to an overall increased strength.
+The microstructure analysis in Section 3.2 revealed a mainly
+austenitic microstructure. Precipitates such as nitrides were
+not detected. For this reason, it can be concluded that all N intro-
+duced is dissolved interstitially in the austenitic lattice leading to
+the observed strength increase. These observations correspond to
+the results of Boes et al., [16] which also suggested an N-rich
+precipitation free microstructure in PBF-LB-built nitrogen
+containing 316L steel. Also, in the aforementioned work, an
+increased strength with increasing N-content was detected,
+which is also in line with the results in the present work. In prin-
+ciple, it is known that the stainless steel ’s increase in strength
+associated with the addition of N is not accompanied by a con-
+siderable deterioration in ductility. This phenomenon is a result
+of the inﬂuence of N on the bonding character in the iron lattice.
+N acts as an electron donator leading to an increase of free elec-
+trons which promotes the metallic bonding character. [32] This
+effect simultaneously contributes to the steel ’s ductility in a
+considerable manner. The results in the present work show a
+decrease of 12% from 48.2% to 42.4% in the elongation at
+Figure 7. Results of EBSD scans (IPF) of a) 316L XZ section; b) 316L XY section; c) 316L þ N XZ section; and d) 316L þ N XY section.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (8 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 9 ===
+fracture, while the YS and UTS increase about 16% and 8%,
+respectively, with a higher N-content in the 316L steel conﬁrming
+the described mechanism known from the literature.
+The results of MAT are shown in Figure 9. In general, similar
+material behavior under cyclic loading in terms of change in εa,t
+and εa,p can be found. Whereas at low maximum stress a linear
+trend especially in εa,p can be found, this is no longer the case at
+σmax ¼ 360 MPa for 316L and σmax ¼ 420 MPa for 316L þ N,
+respectively. By that, it is already possible to say that the effect
+of the increased amount of N can already be found by a shifted
+ﬁrst signi ﬁcant material reaction to higher σmax, similar to the
+results found in tensile tests (Table 6). Furthermore, both speci-
+mens failed with visible increase of εa,p which can be correlated
+Table 5. Results of nitrogen measurements on 316L and 316L þ N before
+and after PBF-LB processing determined using carrier gas hot extraction.
+N-content in mass%
+Powder PBF-LB
+316L 0.058 0.072
+316L þ N 0.161 0.158
+Table 6. Results of tensile tests.
+Material Yield strength
+YS [MPa]
+Ultimate tensile
+strength UTS [MPa]
+Elongation at
+fracture A [%]
+316L 490 /C6 19 656 /C6 16 48.2 /C6 3.6
+316L þ N 569 /C6 11 714 /C6 16 42.4 /C6 6.9
+Figure 9. Results of multiple amplitude tests including material reaction in
+terms of plastic and total strain amplitude for 316L and 316L þ N.
+Figure 8. Results from μCT scans with defect distribution in 316L a) diagonal above view; b) top view; and in 316L þ N c) diagonal above view and d) top
+view.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (9 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 10 ===
+to cyclic softening as well as unstable crack growth rate in the last
+step indicated by the increase in εa,t. In general, austenitic steels
+can show high ductility not only under quasistatic but also under
+fatigue loading. Stern et al. [22] did MAT of 316L under R ¼/C0 1
+(tension–compression, fully reversed loading) and found good
+correlation with results from MAT and later CAT when compar-
+ing the in ﬂuence of different build directions on the fatigue
+behavior. The results also showed high ductility and exponential
+increase of εa,t and εa,p shortly before failure. The stress in the last
+step of MAT of 500 and 580 MPa for 316L and 316L þ N, respec-
+tively, is also very similar to the YS from tensile tests (Table 6).
+Results of tests at constant σmax are shown in Figure 10 in
+terms of a classical S–N curve ﬁtted by Basquin Equation (1) with
+σ 0f [MPa] as fatigue strength coef ﬁcient and b [-] as fatigue
+strength exponent.
+σmax ¼ σ0f ðNf Þb (1)
+The fatigue life is signi ﬁcantly higher at high stresses for
+316L þ N where higher yield stress seems to have a big in ﬂuence
+on the number of cycles to failure. At lower stresses, this effect
+seems to become neglectable as both curves intersect at the lowest
+tested stress of σmax ¼ 320 MPa. The Basquin ﬁtr e v e a l sa n
+apparent high difference in fatigue behavior of the two investigated
+materials as especially the fatigue exponentb of the PBF-LB 316L is
+quite high compared to conventionally manufactured 316L as
+described by Puchi-Cabrera et al. [33] Their ﬁndings are more
+comparable to the results of 316L þ Nw i t h σ 0f ¼ 5750 MPa and
+b ¼/C0 0.212 while for 316Lþ N it is 6760 MPa and/C0 0.2243, respec-
+tively. However, the results should only be discussed after consid-
+ering the outcome of the fractography as results from ref. [33] were
+performed on specimens with a hemispherical notch at the surface.
+Compared to other fatigue results, the fatigue strength of PBF-LB
+316L at N ¼ 106 reported by Spierings et al.[34] for both machined
+and polished specimens was estimated at approximately 320 MPa
+based on the given S–Nc u r v e s(σmax). The results in Figure 10 indi-
+cate a similar but slightly lower fatigue strength for both 316L and
+316L þ N and have to be complemented by further tests in the
+future.
+Investigations of the fractured surface by SEM reveal that all
+specimens under cyclic loading failed from LoF defects near or in
+direct contact with the surface. Shape and size of the LoFs is
+similar to the results from μCT. For a better comparison, frac-
+tured surfaces of both batches with similar fatigue life are
+depicted in Figure 11 . As further shown in Figure 11a,b, crack
+initiation for the 316L took place directly at the LoF which is posi-
+tioned directly at the surface of the specimen. Similar to that, the
+fatigue crack shown in Figure 11c,d for 316L þ N started from a
+LoF which was positioned slightly below the specimen ’s surface.
+Inside both defects, un- and partially melted powder particles can
+be found. For 316L, defects with sizes between 134 and 475 μm
+were crack initiating, while for 316L þ N it was in the range of
+187–391 μm. Size and shape of the defects correspond quite well
+with the ﬁndings of μCT as shown in Figure 8b,d.
+The surface around the defects showed no signs of ﬁsheye-like
+characteristics and, thus, no smooth but a more striated surface
+morphology. This ﬁnding has also been reported by Andreau
+et al. [35] for regular PBF/LB 316L under fatigue ( R ¼ 0.1) and
+is related to intergranular crack propagation. They state that this
+is most probably caused by a weakening of the grain boundaries
+by ambient oxygen or hydrogen.
+Based on the fatigue results and the difference in fatigue
+strength exponent, it appears that either the mechanism of crack
+initiation and/or crack propagation is substantially changed by
+the higher N-content or that even other aspects have to be con-
+sidered. Fractography already revealed that the scatter in size and
+shape of crack-initiating LoF defects is quite high and, in the
+introduction, it was already stated that different defect sizes lead
+to different S –N curves.[9] So, it is possible that due to statistical
+reasons the seemingly different slopes of the S –N curves in this
+work and the supposed difference in failure mechanism could be
+a misinterpretation of the limited number and the corresponding
+high scatter of data points.[36] Especially in AM, where specimens
+can be more expensive or the amount of powder is limited due to
+speciﬁc modiﬁcations, the number of available specimens can be
+small. However, the characterization of the fatigue behavior is
+essential for a safe design of AM parts and, thus, cannot be
+neglected.
+To exclude the possibility that the higher fatigue life of the
+316L þ N specimens is only based on possibly smaller defects
+tested at the individual stresses when compared to the direct part-
+ner of 316L, Figure 12a was set up to visualize the defect size based
+on fractography by SEM at the corresponding σmax.U n e x p e c t e d l y
+and unbeknown, specimens of both batches tested at stresses of
+σmax ¼ 440 MPa and higher had the biggest crack-initiating defects
+with parea > 300 μm compared to the stresses lower than
+440 MPa. Additionally, except for σmax ¼ 440 and 260 MPa, speci-
+mens from 316L always had the bigger crack-initiating defect. A
+ﬁrst indicator for a better fatigue behavior of the 316L þ Nc a nb e
+found in the number of cycles to failure of both batches at
+σmax ¼ 440 MPa where the defect sizes were almost identical,
+namely, 368 and 391 μm for 316L and 316L þ N, respectively.
+Batch 316L þ N showed slightly higher fatigue life of
+Nf ¼ 1.53 /C2 105 compared to 1.35 /C2 105 of 316L (Figure 10). As
+the size of the crack-initiating defect is known, the difference
+of approximately 13% should be completely relatable to the
+increased N-content as fatigue life is signi ﬁcantly dominated by
+the size of the present defect(s). [11] In general, the defect sizes
+in this work are similar or bigger compared to other results[24,37,38]
+where either keyhole pores or LoFs were crack initiating in
+fatigued PBF/LB 316L with minimum defect sizes of less
+Figure 10. Results of constant amplitude tests in form of Woehler curves
+for the 316L and 316L þ N specimens.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (10 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 11 ===
+than 100 μm and maximum defect sizes of up to 370 μm, respec-
+tively. Additionally, Figure 12 b shows that the crack-initiating
+defect sizes follow an extreme value distribution in terms of
+the Gumbel distribution (Equation (2)), [39] which is able to
+describe extreme defects in many applications,[36] e.g., nonmetallic
+inclusions in steels. [40] Here, λ and δ are the location and scale
+parameters, respectively. Cumulative probability was estimated
+by Equation (3) with specimen number i and total number of
+specimens n. This is also important to consider as statistic of
+extremes can be used for quality control in the future [41] as
+fatigue strength distribution or failure probability can be
+estimated.[36]
+P ¼ 1 /C0 exp /C0 exp
+ﬃﬃﬃﬃﬃﬃﬃﬃ ﬃareap /C0 λ
+δ
+/C18/C19/C20/C21
+(2)
+P ¼ i /C0 0.5
+n (3)
+Figure 11. Fractured surfaces of: 316L a) overview and b) crack-initiating defect; and 316L þ N c) overview and d) crack-initiating defect.
+Figure 12. a) Comparison of maximum stress and size of crack-initiating defect parea; b) Gumbel plot of crack initiating defects.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (11 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 12 ===
+Due to the aforementioned effect of defects and the number of
+specimens tested in this work, the resulting slopes of the Basquin
+equation in Figure 10 of 316L þ N compared to 316L cannot be
+used to describe the fatigue behavior of the material in a general
+way. In the literature, different diagrams can be created to con-
+sider load and defect size such as Δ K–Nf curves[42,43] or the mod-
+iﬁed S –N curve proposed by Murakami [9] which were
+originally set up to describe the in ﬂuence of nonmetallic inclu-
+sions on the fatigue behavior. Shiozawa et al. [44] also used
+Δ K–Nf/parea curves to show the dependency of defect size
+and fatigue life. In a ﬁrst attempt in Figure 13 , a modi ﬁed
+S–N curve, a so-called S –Nf/parea curve, is plotted. Here, for
+each data point, the size of the crack-initiating defect in terms
+of its parea was considered to calculate a defect-size normalized
+fatigue life ( Nf/parea) to include the in ﬂuence of the defect size
+on the fatigue life.
+By that, both curves seem to align more parallel except for the
+results at 320 MPa where the crack-initiating defect size in the
+316L specimen was almost half the size of the one in
+the 316L þ N specimen. Except for the two aforementioned data
+points, the improved fatigue behavior introduced by the higher
+N-content can be described without the caused scatter in fatigue
+life caused by the different sizes of the crack-initiating defects in
+terms of a comparable slope.
+A more established plot of the results can be achieved by
+setting up a modi ﬁed S –N curve as described by Murakami. [9]
+By calculating the fatigue strength σw (Equation (4)) for every
+batch and specimen with the measured defect size, the ratio
+of fatigue strength to applied stress amplitude σa at R ¼ 0.1
+the diagram in Figure 14 can be achieved. Based on ref. [45],
+α is de ﬁned as 0.226 þ HV /C2 10/C0 4.
+σw ¼ 1.43 ðHV þ 120Þ
+ð ﬃﬃﬃﬃﬃﬃﬃﬃ ﬃareap Þ1=6
+1 /C0 R
+2
+/C20/C21α
+(4)
+As the different material condition or microstructure is con-
+sidered in this model in terms of the hardness HV, no signi ﬁcant
+deviation of the data points is expected which holds true as can be
+seen in Figure 14. The higher hardness of the 316L þ N leads to
+higher σw when the same defect size is considered in both 316L
+and 316L þ N. As y-axis is based on σa/σw this ratio would
+decrease and can only be counteracted with an increasing fatigue
+life to overlap again with the results of 316L. At around 1.2-1.3,
+the results of 316L þ N perform even better than the 316L.
+Additionally, the specimens tested at σmax ¼ 320 MPa which cor-
+responds to σa/σw ¼ 0.85 ﬁt much better in the normalized data
+points. It can be stated that the solid solution strengthening of
+the 316L þ N specimens leads to improved mechanical strengths
+which also holds true for the fatigue behavior. It can also be said
+that the achieved higher hardness is a suitable microstructural
+value to characterize this effect by using the Murakami approach.
+4. Conclusion and Outlook
+In this work, an increased content of nitrogen in 316L stainless
+steel was optimized for PBF-LB manufacturing to achieve
+improved mechanical properties in the processed steel. The
+N-content was increased by nitriding the initial powder and mix-
+ing the nitrided and initial powder to achieve an N-content of
+0.16%. No degassing of N 2 or formation of nitrides in the typical
+PBF-LB microstructure could be found. Hereby, the hardness
+and ultimate tensile strength could be improved from 214 to
+245 HV10 and from 656 to 714 MPa, respectively, as the nitrogen
+was assumed to be fully interstitially dissolved. The defect toler-
+ance was characterized by manufacturing specimens with a
+porosity of approximately 0.6% where crack initiation occurred
+at lack of fusion defects. By that, the defect tolerance could be
+compared in terms of fatigue testing and fractographic investi-
+gations to utilize the Murakami approach. The increased nitro-
+gen content could be veri ﬁed as it can be included in the model
+by considering the difference in hardness of initial and modi ﬁed
+316L.
+In upcoming investigations, the presented results in this work
+will be complemented by characterizing the corrosion properties
+and the behavior of the PBF-LB steel under combined corrosion
+and fatigue loading will be focused.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Figure 13. Modiﬁed S –N/parea curve of 316L and 316L þ N steel.
+Figure 14. Modiﬁed S –N diagram according to Murakami [9] for the 316L
+and 316L þ N steel.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (12 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+=== PAGE 13 ===
+Acknowledgements
+The authors thank the German Research Foundation (Deutsche
+Forschungsgemeinschaft, DFG) for its ﬁnancial support within the
+research project “Mechanism-based assessment of the in ﬂuence of pow-
+der production and process parameters on the microstructure and the
+deformation behavior of SLM-compacted C þ N steels in air and in corro-
+sive environments” (project no. 372290567; WA 1672/30-2, TH 531/20-2,
+UH 77/12-2).
+Open Access funding enabled and organized by Projekt DEAL.
+Conﬂict of Interest
+The authors declare no con ﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+AISI 316L, defect tolerance, fatigue behavior, laser powder bed fusion,
+nitrogen alloying
+Received: May 25, 2022
+Revised: July 21, 2022
+Published online: August 2, 2022
+[1] S. Afkhami, M. Dabiri, S. H. Alavi, T. Björk, A. Salminen, Int. J. Fatigue
+2019, 122, 72.
+[2] K. Solberg, F. Berto, Mater. Des. Process. Commun. 2019, 1, 51.
+[3] S. Tammas-Williams, P. J. Withers, I. Todd, P. B. Prangnell, Sci. Rep.
+2017, 7, 7308.
+[4] A. Röttger, K. Geenen, M. Windmann, F. Binner, W. Theisen, Mater.
+Sci. Eng. A 2016, 678, 365.
+[5] Y. M. Wang, T. Voisin, J. T. McKeown, J. Ye, N. P. Calta, Z. Li, Z. Zeng,
+Y. Zhang, W. Chen, T. T. Roehling, R. T. Ott, M. K. Santala,
+P. J. Depond, M. J. Matthews, A. V. Hamza, T. Zhu, Nat. Mater.
+2018, 17, 63.
+[6] O. Fergani, A. Bratli Wold, F. Berto, V. Brotan, M. Bambach, Fatigue
+Fract. Eng. Mater. Struct. 2018, 41, 1102.
+[7] B. Blinn, M. Klein, C. Gläßner, M. Smaga, J. Aurich, T. Beck, Metals
+2018, 8, 220.
+[8] T. DebRoy, H. L. Wei, J. S. Zuback, T. Mukherjee, J. W. Elmer,
+J. O. Milewski, A. M. Beese, A. Wilson-Heid, A. De, W. Zhang,
+Prog. Mater. Sci. 2018, 92, 112.
+[9] Y. Murakami, T. Takagi, K. Wada, H. Matsunaga, Int. J. Fatigue 2021,
+146, 106138.
+[10] S. Beretta, S. Romano, Int. J. Fatigue 2017, 94, 178.
+[11] D. Kotzem, S. Kleszczynski, F. Stern, A. Elspaß, J. Tenkamp, G. Witt,
+F. Walther, Int. J. Fatigue 2021, 148, 106207.
+[12] M. Nyström, U. Lindstedt, B. Karlsson, J.-O. Nilsson, Mater. Sci.
+Technol. 1997, 13, 560.
+[13] T. Masumura, N. Nakada, T. Tsuchiyama, S. Takaki, T. Koyano,
+K. Adachi, Acta Mater. 2015, 84, 330.
+[14] W. A. Ghanem, W. A. Hussein, S. N. Saeed, S. M. Bader, R. M. Abou
+Shahba, MAS 2015, 9, 119.
+[15] V. G. Gavriljuk, ISIJ Int. 1996, 36, 738.
+[16] J. Boes, A. Röttger, L. Becker, W. Theisen, Addit. Manuf. 2019, 30,
+100836.
+[17] J. Menzel, W. Kirschner, G. Stein, ISIJ Int. 1996, 36, 893.
+[18] F. Stern, F. Grabienski, F. Walther, J. Boes, A. Röttger, W. Theisen,
+Mater. Test. 2020, 62, 19.
+[19] J. Boes, A. Röttger, W. Theisen, C. Cui, V. Uhlenwinkel, A. Schulz,
+H.-W. Zoch, F. Stern, J. Tenkamp, F. Walther, Addit. Manuf. 2020,
+34, 101379.
+[20] E. H. Valente, V. K. Nadimpalli, T. L. Christiansen, D. B. Pedersen,
+M. A. Somers, Manuf. Lett. 2021, 1, 100006.
+[21] F. Walther, Mater. Test. 2014, 56, 519.
+[22] F. Stern, J. Kleinhorst, J. Tenkamp, F. Walther, Fatigue Fract. Eng.
+Mater. Struct. 2019, 42, 2422.
+[23] K. Saeidi, X. Gao, Y. Zhong, Z. J. Shen, Mater. Sci. Eng. A2015, 625, 221.
+[24] F. Stern, J. Tenkamp, F. Walther, Prog. Addit. Manuf. 2020, 5, 287.
+[25] N. Nadammal, T. Mishurova, T. Fritsch, I. Serrano-Munoz,
+A. Kromm, C. Haberland, P. D. Portella, G. Bruno, Addit. Manuf.
+2021, 38, 101792.
+[26] J. Suryawanshi, K. G. Prashanth, U. Ramamurty, Mater. Sci. Eng. A
+2017, 696, 113.
+[27] M. Godec, Č. Donik, A. Kocijan, B. Podgornik, D. A. Skobir Balanti ˇc,
+Addit. Manuf. 2020, 32, 101000.
+[28] M. J. Uddin, E. Ramirez-Cedillo, R. A. Mirshams, H. R. Siller, Mater.
+Character. 2021, 174, 111047.
+[29] C. Qiu, M. A. Kindi, A. S. Aladawi, I. A. Hatmi, Sci. Rep. 2018, 8, 7785.
+[30] S. Fukumoto, W. Kurz, ISIJ Int. 1999, 39, 1270.
+[31] P. Bajaj, A. Hariharan, A. Kini, P. Kürnsteiner, D. Raabe, E. A. Jägle,
+Mater. Sci. Eng. A 2020, 772, 138633.
+[32] V. G. Gavriljuk, H. Berns, High Nitrogen Steels , Springer Berlin
+Heidelberg, Berlin, Heidelberg 1999.
+[33] E. Puchi-Cabrera, F. Matínez, I. Herrera, J. Berríos, S. Dixit, D. Bhat,
+Surf. Coat. Technol. 2004, 182, 276.
+[34] A. B. Spierings, T. L. Starr, K. Wegener, Rapid Prototyping J. 2013,
+19, 88.
+[35] O. Andreau, E. Pessard, I. Koutiri, P. Peyre, N. Saintier, Int. J. Fatigue
+2021, 143, 105930.
+[36] S. Romano, A. Brandão, J. Gumpinger, M. Gschweitl, S. Beretta,
+Mater. Des. 2017, 131, 32.
+[37] B. Blinn, M. Ley, N. Buschhorn, R. Teutsch, T. Beck, Int. J. Fatigue
+2019, 124, 389.
+[38] O. Andreau, E. Pessard, I. Koutiri, J.-D. Penot, C. Dupuy, N. Saintier,
+P. Peyre, Mater. Sci. Eng. A 2019, 757, 146.
+[39] E. J. Gumbel, Statistics of Extremes , Columbia University Press, New
+York, NY 1958, https://doi.org/10.7312/gumb92958.
+[40] M. Tiryakio ˘glu, Mater. Sci. Eng. A 2009, 520, 114.
+[41] Y. Murakami, H. Masuo, Y. Tanaka, M. Nakatani, Procedia Struct.
+Integrity 2019, 19, 113.
+[42] Y. Shimatani, K. Shiozawa, T. Nakada, T. Yoshimoto, Procedia Eng.
+2010, 2, 873.
+[43] K. Shiozawa, L. Lu, S. Ishihara, Fatigue Fract. Eng. Mater. Struct. 2001,
+24, 781.
+[44] K. Shiozawa, L. Lu, AMR 2008, 44–46, 33.
+[45] Y. Murakami, Metal Fatigue: Effects of Small Defects and Nonmetallic
+Inclusions,1 st ed, Elsevier, Amsterdam 2002, https://doi.org/10.1016/
+b978-0-08-044064-4.x5000-2.
+www.advancedsciencenews.com www.aem-journal.com
+Adv. Eng. Mater. 2023, 25, 2200751 2200751 (13 of 13) © 2022 The Authors. Advanced Engineering Materials published by Wiley-VCH GmbH
+ 15272648, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adem.202200751 by Technische Universitaet Dortmund, Wiley Online Library on [05/02/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

@@ -1,0 +1,4 @@
+Fig. 5. FFNN-L and PINN-L PSN curves. In black the MLLE experimental fit, while in green the FFNN-L predictions and in red the PINN-L pre-
+dictions. The green, red and black transparent bands are the R90-R10 bands. (b) and (d) are testing sets, whereas the others are training sets.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+10 

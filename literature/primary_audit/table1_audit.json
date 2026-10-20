@@ -1,0 +1,17 @@
+{
+  "n_conditions": 51,
+  "n_sources": 17,
+  "scan_speed_min": 425.0,
+  "scan_speed_max": 2400.0,
+  "identical_feature_pairs": [
+    [
+      32,
+      33
+    ],
+    [
+      40,
+      41
+    ]
+  ],
+  "identical_features_are_not_proof_of_specimen_duplication": true
+}

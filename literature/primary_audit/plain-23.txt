@@ -1,0 +1,36 @@
+[37] J. Nafar Dastgerdi, O. Jaberi, H. Remes, Influence of internal and surface defects on the fatigue performance of additively manufactured stainless steel 316L, Int
+J Fatigue 163 (2022), https://doi.org/10.1016/j.ijfatigue.2022.107025 .
+[38] C. Yu, P. Zhang, Z. Zhang, W. Liu, Microstructure and fatigue behavior of laser-powder bed fusion austenitic stainless steel, J. Mater. Sci. Technol. 46 (2020),
+https://doi.org/10.1016/j.jmst.2019.08.047 .
+[39] L. Cui, D. Deng, F. Jiang, R.L. Peng, T. Xin, R.T. Mousavian, Z. Yang, J. Moverare, Superior low cycle fatigue property from cell structures in additively
+manufactured 316L stainless steel, J. Mater. Sci. Technol. 111 (2022), https://doi.org/10.1016/j.jmst.2021.10.006 .
+[40] K. Malekipour, M. Mashayekhi, M. Badrossamay, Meso-scale damage mechanics modeling for high cycle fatigue behavior of additively manufactured
+components, Mech. Mater. 160 (2021), https://doi.org/10.1016/j.mechmat.2021.103951 .
+[41] K. Solberg, S. Guan, N. Razavi, T. Welo, K.C. Chan, F. Berto, Fatigue of additively manufactured 316L stainless steel: the influence of porosity and surface
+roughness, Fatigue Fract. Eng. Mater. Struct. 42 (2019), https://doi.org/10.1111/ffe.13077 .
+[42] E. Uhlmann, C. Fleck, G. Gerlitzky, F. Faltin, Dynamical fatigue behavior of additive manufactured products for a fundamental life cycle approach, Procedia
+CIRP (2017), https://doi.org/10.1016/j.procir.2016.11.138 .
+[43] B. Voloskov, S. Evlashin, S. Dagesyan, S. Abaimov, I. Akhatov, I. Sergeichev, Very high cycle fatigue behavior of additively manufactured 316L stainless steel,
+Materials 13 (2020), https://doi.org/10.3390/ma13153293 .
+[44] D.S. Paolino, G. Chiandussi, M. Rossetto, A unified statistical model for S-N fatigue curves: probabilistic definition, Fatigue Fract. Eng. Mater. Struct. 36 (2013),
+https://doi.org/10.1111/j.1460-2695.2012.01711.x .
+[45] M. Raissi, P. Perdikaris, G.E. Karniadakis, Physics-informed neural networks: a deep learning framework for solving forward and inverse problems involving
+nonlinear partial differential equations, J. Comput. Phys. 378 (2019) 686 – 707, https://doi.org/10.1016/J.JCP.2018.10.045 .
+[46] G.E. Hinton, D. van Camp, Keeping neural networks simple by minimizing the description length of the weights, in: 1993. doi: 10.1145/168304.168306.
+[47] C. Blundell, J. Cornebise, K. Kavukcuoglu, D. Wierstra, Weight uncertainty in neural networks, in: 32nd International Conference on Machine Learning, ICML
+2015, 2015.
+[48] X. Ying, An Overview of Overfitting and its Solutions, J. Phys. Conf. Ser. (2019), https://doi.org/10.1088/1742-6596/1168/2/022022 .
+[49] L. Prechelt, Early stopping - But when?, Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in
+Bioinformatics) 7700 LECTURE NO (2012). doi: 10.1007/978-3-642-35289-8_5.
+[50] B. Blinn, M. Klein, C. Gl ¨a ß ner, M. Smaga, J.C. Aurich, T. Beck, An investigation of the microstructure and fatigue behavior of additively manufactured AISI 316L
+stainless steel with regard to the influence of heat treatment, Metals (basel) 8 (2018), https://doi.org/10.3390/met8040220 .
+[51] P.M. Cerezo, J.A. Aguilera, A. Garcia-Gonzalez, P. Lopez-Crespo, Influence of porosity on fatigue behaviour of 18Ni300 steel SLM CT specimens at various
+angles, Materials 17 (2024), https://doi.org/10.3390/ma17020432 .
+[52] N. Sanaei, A. Fatemi, Defects in additive manufactured metals and their effect on fatigue performance: a state-of-the-art review, Prog. Mater Sci. 117 (2021),
+https://doi.org/10.1016/j.pmatsci.2020.100724 .
+[53] G. Kasperovich, J. Hausmann, Improvement of fatigue resistance and ductility of TiAl6V4 processed by selective laser melting, J. Mater. Process. Technol. 220
+(2015), https://doi.org/10.1016/j.jmatprotec.2015.01.025 .
+[54] G. Kasperovich, J. Haubrich, J. Gussone, G. Requena, Correlation between porosity and processing parameters in TiAl6V4 produced by selective laser melting,
+Mater. Des. 105 (2016), https://doi.org/10.1016/j.matdes.2016.05.070 .
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+23 

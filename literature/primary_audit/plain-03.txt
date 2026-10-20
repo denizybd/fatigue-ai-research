@@ -1,0 +1,96 @@
+model prediction: (i) the aleatoric uncertainty, defined as the intrinsic scatter of the fatigue phenomena; (ii) the epistemic uncertainty,
+defined as the confidence of the prediction which is related to the model (i.e., the ML model in this case). The first has been extensively
+discussed in the literature, and a large variety of statistical approaches can be used to assess the fatigue response at different reliability
+levels. Methodologies which consider the uncertainty of the ML model instead are recent in the literature, and their application to
+fatigue problems is fundamental to preserve a clear distinction between the aleatoric and epistemic uncertainty.
+The focus of the present work is to develop NN models that can model the aleatoric uncertainty intrinsic to the fatigue phenomenon,
+as well as the ML model uncertainty (i.e., the epistemic uncertainty) and to separate their contribution. The developed NN algorithms
+can predict the PSN curves that can be used to safely design AMed parts. First, an FFNN is developed to predict the parameters of a
+linear S-N curve with normally distributed data (FFNN-L); then, a PINN is introduced to predict the above-mentioned parameters
+(PINN-L); last, a Bayesian Neural Network (BNN) is developed to predict the R90C90 (i.e., 90 % reliability and 90 % confidence level)
+curves defined with the Owen ’ s method [22] , to finally separate the experimental uncertainty from the ML model one. These algo-
+rithms have been trained on a training database (TDB) and validated by considering literature data.
+2. Experimental data and fatigue models
+This section describes the data used to train the proposed ML models, which include manufacturing information about the additive
+process and experimental fatigue tests results. Thereafter, the empirical fatigue models, which will be integrated with the ML algo-
+rithms described in Section 3 , are briefly introduced and applied to the collected data. The ML models employed in this study, are
+proposed to leverage well-established and accepted fatigue design models, while ensuring that the ML models infer the associated
+statistical uncertainty associated with the training data and dataset evaluation.
+2.1. Database
+This section discusses the parameters used for the training of the developed NN algorithms. Creating a fully populated TDB is
+crucial for the ML algorithms, which should contain comprehensive data. In ML terminology, the inputs are called features ( x
+i
+), and the
+outputs to be predicted are called labels ( y
+i
+). The goal of the proposed ML approaches is to predict the fatigue PSN curves of PBF-LB
+SS316L components based on various process parameters. Given that the fatigue characteristics of this alloy are strongly influenced by
+the defect distribution, to have good predictive accuracy, PP, TT and ST are included, as explained below. It is crucial to carefully select
+the NN features to accurately forecast the fatigue response. During the PBF-LB process, a laser melts metal powders layer by layer on a
+building platform. The layer thickness t is determined by the space travelled by the platform after each deposition. The orientation of
+the part on the platform, referred to as the building orientation ϑ , impacts the final product mechanical properties, with common
+angles being horizontal (0
+◦
+), vertical (90
+◦
+), and inclined (45
+◦
+). Other key parameters include the hatch distance h , which is the spacing
+between successive laser passes, the laser power P , and the laser scan speed v . If h is too large, the particles might not be fully melted,
+while small hatch may lead to multiple meltings of the same portion of material [23,24] . Similarly, high v with low P might lead to
+incomplete melting, while high P with low v may cause over-melting and affect part quality [23,25] . Similarly, TT , such as annealing
+( Ann ) and HIP , can significantly impact the fatigue response [26] , when proper temperatures ( T ) and duration ( Δ t ) are correctly
+defined. These are therefore considered as features for the developed NN. PBF-LB SS316L specimens commonly undergo an Ann which
+consists of reheating components at a temperature (500
+◦
+C to 1050
+◦
+C) below the melting point to reduce residual thermal stresses
+generated during the manufacturing process. ST also affect fatigue response. Due to poor surface finishes in AMed parts, processes like
+machining ( ST_Mac ), polishing ( ST_Pol ), electro-polishing ( ST_EP ), grinding ( ST_Grind ), severe shock peening ( ST_SSP ), vibratory
+finishing ( ST_VF ), nitriding ( ST_Nitr ), and deep nitriding ( ST_DN ) are also used to improve the surface quality and, consequently, the
+fatigue performance. These ST are also considered as boolean features for the NN to improve the accuracy of the predictions. The
+literature has been thoroughly searched to gather as much training data as possible. Despite the limited data availability, the TDB
+includes a broad range of key PP, TT, and ST. To overcome this limitation, the BNN has been purposely employed to manage un-
+certainty and provide reliable predictions.
+It should be noted that only those articles reporting the process parameters P , v , t , h , and ϑ , along with information about thermal
+and surface treatments, are considered. Information about the AM machine and the powder used to produce the specimens was
+intended to be included, as it is well known that processing parameters can vary between different AM machines, affecting material
+properties. However, only a few of the datasets provided this information. To maintain consistency in the TDB and maximize the
+number of training points, it has been decided not to include machine-specific details. For each failure or runout event, the stress
+amplitude S
+a
+and the corresponding number of cycles N
+f
+are included, along with a boolean runout flag R
+f
+, to denote whether the point
+is a failure ( R
+f
+= 0) or a runout ( R
+f
+= 1). The fatigue lifetime range below 10
+7
+cycles was considered due to limitations in the available
+training data from literature sources. Therefore, the Very High Cycle Fatigue (VHCF) regime was not explicitly modeled and
+considered in this analysis, due to the limited data points in this region. However, the developed machine learning framework is
+capable of modeling the fatigue behavior in the VHCF regimes as well, but additional data covering this life range should be available.
+The fatigue tests reported in the literature are primarily conducted in three configurations: rotating bending (i.e., stress ratio R = - 1),
+pulsating tensile and bending (i.e., R ∕= 0). To compare data with different stress ratio, the Smith-Watson-Topper correction is applied
+( S
+a , R =- 1
+= S
+max
+•
+̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ ̅̅̅̅̅ ̅
+0 . 5 • ( 1 - R )
+√
+), allowing the calculation of equivalent stress amplitude at R = - 1. To account for the scale effect,
+which can greatly affect the fatigue response, the risk volume V
+risk
+is calculated according to the testing configuration and specimen
+geometry. As detailed in [7] , V
+risk
+corresponds to the material volume that undergoes 90 % of the nominal stress. In the training
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+3 

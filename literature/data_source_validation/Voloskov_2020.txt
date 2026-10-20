@@ -1,0 +1,504 @@
+=== PAGE 1 ===
+materials
+Article
+Very High Cycle Fatigue Behavior of Additively
+Manufactured 316L Stainless Steel
+Boris Voloskov 1,*
+ , Stanislav Evlashin 1, Sarkis Dagesyan 2, Sergey Abaimov 1,
+Iskander Akhatov 1 and Ivan Sergeichev 1
+1 Center for Design, Manufacturing & Materials, Skolkovo Institute of Science and Technology,
+Bolshoy Boulevard 30, bld. 1, 121205 Moscow, Russia; S.Evlashin@skoltech.ru (S.E.);
+S.Abaimov@skoltech.ru (S.A.); I.Akhatov@skoltech.ru (I.A.); I.Sergeichev@skoltech.ru (I.S.)
+2 Department of Physics, M.V . Lomonosov Moscow State University, Leninskiye Gory 1, bld. 2,
+119991 Moscow, Russia; Dagesyan@physics.msu.ru
+* Correspondence: boris.voloskov@skoltech.ru
+Received: 26 June 2020; Accepted: 20 July 2020; Published: 24 July 2020
+/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045/gid00001
+/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046
+Abstract: The present paper is focused on an experimental study of the damage-to-failure mechanism
+of additively manufactured 316L stainless steel specimens subjected to very high cycle fatigue (VHCF)
+loading. Ultrasonic axial tension-compression tests were carried out on specimens for up to 109 cycles,
+and fracture surface analysis was performed. A ﬁne granular area (FGA) surrounding internal defects
+was observed and formed a “ﬁsh-eye” fracture type. Nonmetallic inclusions and the lack of fusion
+within the fracture surfaces that were observed with SEM were assumed to be sources of damage
+initiation and growth of the FGAs. The characteristic diameter of the FGAs was ≈500 µm on the
+fracture surface and were induced by nonmetallic inclusions; this characteristic diameter was the
+same as that for the fracture surface induced by a lack of fusion. Fracture surfaces corresponding to
+the high cycle fatigue (HCF) regime were discussed as well to emphasize damage features related to
+the VHCF regime.
+Keywords: additive manufacturing (AM); laser powder bed fusion (L-PBF); very high cycle fatigue
+(VHCF); ﬁne granular area (FGA); fracture surface; crack initiation
+1. Introduction
+Recent studies have improved the quality of additively manufactured (AM) products [ 1–5].
+Despite marked progress, there is a lack of experimental data revealing the mechanisms of damage
+and failure of structures in real-life complex loading conditions, which represents a critical obstacle for
+the implementation of additive technologies in the serial production of critical parts [6]. For instance,
+parts of turbine engines [4,7] and pressure vessels for spallation neutron sources [8,9] that experience
+from very high cycle fatigue (VHCF) could be additively manufactured.
+The properties of the ﬁnal part highly depend on certain process parameters, such as the laser
+velocity and power density, scanning strategy, hatch spacing, and thickness of the printed layers [10,11].
+The combination of these parameters can be used to fabricate structures with typical defects present in
+AM metallic parts, such as a lack of fusion, voids, and microcracks induced by residual stresses [12].
+Moreover, nonmetallic inclusions can appear within the part, due to imperfections of the feedstock
+material [13–15].
+A lack of fusion appears between layers as partially or fully unmelted particles [16] if the scan
+speed and laser power do not provide the energy density required for normal melting [17]. Moreover,
+the volumetric heat capacity gradient induced by diﬀerences in the size of powder particles results in
+fusion defects as well [18].
+Materials 2020, 13, 3293; doi:10.3390/ma13153293 www.mdpi.com /journal/materials
+
+=== PAGE 2 ===
+Materials 2020, 13, 3293 2 of 11
+Voids normally arise due to the entrapment of gas bubbles during the laser melting process [17].
+However, at a low laser density, voids can be formed due to the entrapment of powder particles if
+the melt pool is small; therefore, the particles are not molten enough to ensure suﬃcient bonding [19].
+Furthermore, when a combination of the laser power and scan speed exceeds a certain threshold value,
+the metal is vaporized; such a process generates vapor cavities, collapsing and forming voids [ 17].
+Microcracks caused by the release of a high-stress ﬁeld induced by a temperature gradient during
+laser melting also leads to void formation [20]. To diminish those microcracks, hot isostatic pressing
+(HIP) is applied. Another way to improve the densiﬁcation of the ﬁnal part is to increase the overlap of
+scanning tracks [20] or to preheat the baseplate during the process [21]. All defects mentioned above
+can cause crack initiation in the VHCF regime [22,23].
+Crack initiation and propagation scenarios were proposed for conventional fatigue regimes [24–26].
+Crack initiation is described as the formation of intrusions and extrusions on the material surface
+caused by the accumulation of persistent slip bands [27].
+However, in the VHCF regime, crack initiation occurs in the core of the material and is accompanied
+by the growth of so-called ﬁne granular areas (FGAs) in the vicinity of defects [22]. FGAs play a crucial
+role in the damage that occurs in the VHCF regime [ 28]; thus, it is assumed that more than 90% of
+the fatigue life is spent on the formation of FGAs [ 29]. Sakai has explained that the formation of a
+FGA occurs in three stages [30]. The ﬁrst stage is the formation of a ﬁne granular layer as a result of
+intensive polygonization around the internal defect during very high frequency loading. The second
+is the nucleation and conﬂuence of microdebonded areas. Lastly, the third stage is the formation of
+the FGA due to spreading of the microdebonded areas. The model proposed by Murakami et al. [31]
+explained FGA formation by hydrogen embrittlement caused by trapping hydrogen in the vicinity of
+internal defects.
+The present study investigated the VHCF damage-to-failure mechanism in 316L stainless steel
+specimens manufactured by laser powder bed fusion (L-PBF). The nonmetallic inclusions and lack
+of fusion were identiﬁed as sources of FGA growth and the formation of a “ﬁsh-eye” fracture
+type. Conventional fatigue tests were performed to emphasize features of material damage in the
+VHCF regime.
+2. Materials and Experimental Methods
+2.1. Materials and Specimens
+Cylindrical bars, 100 mm in length and 13 mm in diameter, were vertically built by Trumpf
+TruPrint 1000 (Ditzingen, Germany) facilities, with the process parameters given in Table 1. The laser
+has a Gaussian proﬁle with a focusing spot of 55µm. The 316L stainless steel powder particles had a
+spherical shape with a diameter of 20–50 µm (Figure 1c) [11]. It was observed that some large particles
+agglomerated with dust-like “satellites” as a result of collisions that were apparently caused by the gas
+atomization process [32] (Figure 1a,b).
+Table 1. The laser powder bed fusion (L-PBF) process parameters.
+Laser Power (W) Power Density
+(W/cm2)
+Beam Traverse Speed
+(mm/sec)
+Hatch Spacing
+(mm)
+Layer Thickness
+(mm)
+113 9.51 × 106 600 0.08 0.020
+The shapes and dimensions of the printed bars and test specimens milled from the cylinders
+by the CNC machine are shown in Figure 2. The specimens for the static tensile test were machined
+to the same shape as conventional fatigue specimens (Figure 2b). No specimens were heat-treated.
+Static tensile tests were performed at room temperature according to ISO 6892 [33] using an Instron
+5969 electromechanical machine with 50 kN load capacity. Five specimens were tested at a loading rate
+of 2 mm per min. The obtained tensile properties are given in Table 2.
+
+=== PAGE 3 ===
+Materials 2020, 13, 3293 3 of 11
+The conventional fatigue tests were performed by an Instron 8801 (Norwood, MA, USA)
+servo-hydraulic machine with cycle asymmetry coeﬃcient R = 0.1 (R = σmin/σmax) at a frequency of
+30 Hz according to ISO 1099 [34] at room temperature as well. One specimen per stress level was tested.
+Materials 2020, 13, x FOR PEER REVIEW 3 of 12 
+ 
+The conventional fatigue tests were performed by an Instron 8801 (Norwood, MA, USA) servo-
+hydraulic machine with cycle asymmetry coefficient R = 0.1 (R = minmax) at a frequency of 30 Hz 
+according to ISO 1099 [34] at room temperature as well. One specimen per stress level was tested. 
+  
+Figure 1. The 316L stainless steel powder used for the L -PBF process , a—magnification ×413; b—
+magnification ×2000; c—size distribution (the number below the chart shows the medium particle size 
+in the range). 
+ 
+Figure 2. The test specimens with dimensions: a—as-built cylinder; b—a specimen for static and 
+conventional fatigue tests; c—a specimen for VHCF tests. All dimensions shown are in millimeters. 
+  
+Figure 1. The 316L stainless steel powder used for the L-PBF process, ( a) magniﬁcation ×413;
+(b) magniﬁcation ×2000; (c) size distribution (the number below the chart shows the medium particle
+size in the range).
+Materials 2020, 13, x FOR PEER REVIEW 3 of 12 
+ 
+The conventional fatigue tests were performed by an Instron 8801 (Norwood, MA, USA) servo-
+hydraulic machine with cycle asymmetry coefficient R = 0.1 (R = σmin/σmax) at a frequency of 30 Hz 
+according to ISO 1099 [34] at room temperature as well. One specimen per stress level was tested. 
+  
+Figure 1. The 316L stainless steel powder used for the L-PBF process, a—magnification ×413; b—
+magnification ×2000; c—size distribution (the number below the chart shows the medium particle size 
+in the range). 
+ 
+Figure 2. The test specimens with dimensions: a—as-built cylinder; b—a specimen for static and 
+conventional fatigue tests; c—a specimen for VHCF tests. All dimensions shown are in millimeters. 
+  
+Figure 2. The test specimens with dimensions: ( a) as-built cylinder; ( b) a specimen for static and
+conventional fatigue tests; (c) a specimen for VHCF tests. All dimensions shown are in millimeters.
+Table 2. Tensile properties of the L-PBF 316L specimens.
+Elasticity Modulus
+(GPa)
+Yield Strength
+(MPa)
+Ultimate Strength
+(MPa)
+Elongation at Fracture
+(%)
+180 ± 7 479 ± 17 565 ± 12 41 ± 8
+
+=== PAGE 4 ===
+Materials 2020, 13, 3293 4 of 11
+2.2. Ultrasonic Fatigue T ests
+The axial tension-compression VHCF tests were performed using a Shimadzu USF-2000 (Kyoto, Japan)
+ultrasonic testing machine. Continuous oscillations of the specimen were generated by a piezoelectric
+actuator with a resonance frequency of 20 kHz± 30 Hz and a 300 ms pulse. The external frequency
+supplied by the test machine must be one of the natural frequencies of the specimen. All VHCF specimens
+were tested at R = −1. FE simulation was performed by SIMULIA Abaqus finite element software
+(v . 6.14, Dassault Systèmes, Vélizy-Villacoublay , France) to calculate the shape and dimensions of the
+specimen (Figure 2c), so that its natural frequency is 20 kHz. During the test, the specimens were cooled
+by dry air to maintain the temperature at the specimen surface between 15–45 ◦C. The temperature
+was measured by an infrared thermometer. An eddy current extensometer was used to measure the
+displacement of the free end of the specimen. The VHCF tests were automatically aborted as soon as the
+resonance frequency deviated more than 500 Hz from the initial setup frequency due to damage to the
+specimen. To reveal the fracture surface and keep its morphology after finishing the test, the specimens
+were statically disrupted at−150 ◦C in a climate chamber with liquid nitrogen. Then, the fracture surfaces
+were investigated by scanning electron microscopy (SEM) on a Quattro instrument (Thermo Fisher
+Scientific, Waltham, MA, USA) equipped with energy-dispersive X-ray spectroscopy (EDX, Bruker XFlash
+Detector 6, Billerica, MA, USA).
+3. Results and Discussion
+3.1. S–N Curves of the Specimens
+The fatigue tests were carried out for high and very high cycle fatigue regimes (HCF and VHCF,
+respectively). The S–N diagrams (maximum cyclic stress versus number of cycles to failure) were
+obtained, as given in Figure 3. The HCF tests were performed with R = 0.1, and the VHCF tests were
+performed for fully reversed loading with R = −1. The results of conventional fatigue tests of L-PBF
+316L stainless steel obtained by Spierings et al. [35] for R = 0.1 and Leuders et al. [36] for R = −1 are
+also plotted in Figure 3 and concatenated to the results of the present study. It was seen from the ﬁgure
+that the HCF data obtained herein for R = 0.1 lies within the data given in [35]. However, as recently
+discussed by Zhang et al. [37], the stress-based transformation of fatigue data from R = 0.1 to R = −1 is
+questionable for AM 316L stainless steel utilizing traditional models [38–40].
+As shown in Figure 3, the plotted S–N data corresponding to cold-worked specimens [41] shows
+higher endurance at similar stress levels than the data in the plot obtained for the AM specimens in
+HCF [36] and VHCF regimes. However, the AM specimens demonstrated almost the same fatigue
+behavior as the specimens heat treated at 1120 ◦C for 7.5 min followed by water quenching [ 41].
+This indicated that the diﬀerence could be explained by assuming features of the damage-to-failure
+mechanism of the AM and routinely manufactured 316L stainless steel under fatigue loading.
+3.2. Analysis of the Fracture Surfaces
+Figure 4 shows the fracture surface corresponding to the specimen tested in the HCF regime under
+average stress level σmax = 310 MPa and N = 1.41 × 106 cycles before rupture. The fracture surface
+(Figure 4a) consisted of a fatigue crack propagation zone (A) and a ﬁnal rupture zone (B). The direction
+of the crack propagation is indicated by arrows in Figure 4b nearest to the outer surface of the specimen
+where the fatigue crack nucleated (Figure 4c). The fatigue crack nucleation site (Figure 4c) and its
+propagation path (Figure 4d) are characterized by a rather complicated viscous relief of the fracture
+surface, caused by a mixed mode that combines shear and detachment. Fatigue striations (Figure 4d)
+were observed along with the elongated comb formations, which corresponds to the intermittent
+propagation of the fatigue crack, which is typical for ductile metallic materials. The distance between
+the individual striations at this stage was approximately 2 µm.
+
+=== PAGE 5 ===
+Materials 2020, 13, 3293 5 of 11
+Materials 2020, 13, x FOR PEER REVIEW 5 of 12 
+ 
+ 
+ 
+Figure 3. S–N diagram of the L-PBF 316L st ainless steel specimens, as we ll as the data obtained by 
+Spierings et al. [35], Leuders et al. [36], and by Xiong et al. [41] for cold-worked and solution-annealed 
+316L SS. The points indicated by the arrows correspond to specimens that were not disrupted during 
+the tests. 
+3.2. Analysis of the Fracture Surfaces 
+Figure 4 shows the fracture surface correspondin g to the specimen tested in the HCF regime 
+under average stress level σmax = 310 MPa and N = 1.41 × 106 cycles before rupture. The fracture surface 
+(Figure 4a) consisted of a fatigue crack propagation zone (A) and a final rupture zone (B). The 
+direction of the crack propagation is indicated by arrows in Figure 4b nearest to the outer surface of 
+the specimen where the fatigue crack nucleated (Figure 4c). The fatigue crack nucleation site (Figure 
+4c) and its propagation path (Figure 4d) are characterized by a rather complicated viscous relief of 
+the fracture surface, caused by a mixed mode that combines shear and detachment. Fatigue striations 
+(Figure 4d) were observed along with the elonga ted comb formations, which corresponds to the 
+intermittent propagation of the fatigue crack, which is typical for ductile metallic materials. The 
+distance between the individual striations at this stage was approximately 2 μm. 
+Figure 3. S–N diagram of the L-PBF 316L stainless steel specimens, as well as the data obtained by
+Spierings et al. [35], Leuders et al. [36], and by Xiong et al. [41] for cold-worked and solution-annealed
+316L SS. The points indicated by the arrows correspond to specimens that were not disrupted during
+the tests.
+Materials 2020, 13, x FOR PEER REVIEW 6 of 12 
+ 
+ 
+Figure 4. SEM micrographs of the fracture surface of th e L-PBF specimen after loading in the high 
+cycle fatigue (HCF) regime ( σmax = 310 MPa and N = 1.41 × 10 6 cycles), a—the characteristic failure 
+zones; b—the direction of the fatigue crack propagation (zone A); c—the crack nucleation site; d—
+fatigue striations. 
+SEM images of the fracture surface obtained in the HCF regime with the highest stress level σmax 
+= 450 MPa and N = 2.23 × 10 5 cycles before rupture are given in Figure 5. It was observed that two 
+separate fatigue cracks initiated growth from th e outer surface of the specimen (Figure 5b,d). 
+Therefore, two crack propagation zones, A1 and A2, grew until the final rupture at zone B (Figure 
+5a), which increased according to the applied stress and was proportionally larger than the 
+appropriate rupture zone (Figure 4a) observed in the HCF regime. The sizes of zones A1 and A2 are 
+smaller than the size of zone A produced in the HCF regime (Figure 4a), where the specimen ruptured 
+at low stresses. In other words, the ratio of the crack initiation and propagation zones to the final 
+fracture zone decreased as the stress level incr eased, which corresponds to previously reported 
+observations [42,43]. 
+Unlike the HCF regime at the average stress level, typical fatigue striations (Figure 4d) were not 
+observed on the fracture surface of the HCF specimen at highest stress level, which is probably related 
+to a higher rate of fatigue crack propagation [42]. Few unmelted particles ≈30 μm in size were 
+detected at the nucleation area where crack propagation zone A2 increased (Figure 5b). At the same 
+time, zone A1 propagated from the outer surface as well, where the AM process defects were not 
+observed.  
+Figure 4. SEM micrographs of the fracture surface of the L-PBF specimen after loading in the high
+cycle fatigue (HCF) regime (σmax = 310 MPa and N = 1.41 × 106 cycles), (a) the characteristic failure
+zones; ( b) the direction of the fatigue crack propagation (zone A); ( c) the crack nucleation site;
+(d) fatigue striations.
+
+=== PAGE 6 ===
+Materials 2020, 13, 3293 6 of 11
+SEM images of the fracture surface obtained in the HCF regime with the highest stress level
+σmax = 450 MPa and N = 2.23 × 105 cycles before rupture are given in Figure 5. It was observed that
+two separate fatigue cracks initiated growth from the outer surface of the specimen (Figure 5b,d).
+Therefore, two crack propagation zones, A1 and A2, grew until the ﬁnal rupture at zone B (Figure 5a),
+which increased according to the applied stress and was proportionally larger than the appropriate
+rupture zone (Figure 4a) observed in the HCF regime. The sizes of zones A1 and A2 are smaller than
+the size of zone A produced in the HCF regime (Figure 4a), where the specimen ruptured at low
+stresses. In other words, the ratio of the crack initiation and propagation zones to the ﬁnal fracture zone
+decreased as the stress level increased, which corresponds to previously reported observations [42,43].
+Unlike the HCF regime at the average stress level, typical fatigue striations (Figure 4d) were not
+observed on the fracture surface of the HCF specimen at highest stress level, which is probably related
+to a higher rate of fatigue crack propagation [42]. Few unmelted particles ≈30 µm in size were detected
+at the nucleation area where crack propagation zone A2 increased (Figure 5b). At the same time, zone
+A1 propagated from the outer surface as well, where the AM process defects were not observed.
+Materials 2020, 13, x FOR PEER REVIEW 7 of 12 
+ 
+ 
+Figure 5. SEM micrographs of the fracture surface of the LPBF specimen after loading in the HCF 
+regime ( σmax = 450 MPa and N = 2.23 × 10 5 cycles), a—zones of failure; b—direction of crack 
+propagation (zone A2); с—the direction of crack propagation (zone A1); d— the site of crack initiation 
+(zone A1). 
+Figure 6 presents the fracture surfaces of the opposite sides of the specimen damaged in the 
+VHCF regime. A fatigue crack (area A at Figure 6a) grew during the ultrasonic test, and then the final 
+brittle rupture (area B at Figure 6a) was achieved by the static tensile test at −150 ℃, which minimized 
+the plastic deformation in the cracked cross section to maintain the morphology formed during the 
+VHCF test. The typical VHCF “fish-eye” morphology was obtained surrounding the internal defects 
+(Figure 6b,d), which was confirmed by the imprints of the 56 μm inclusions on the opposite fracture 
+surface of the specimen (Figure 6c,e).  The measured size of the FGA was ≈500 μm (Figure 6b). The 
+elemental distribution across the defect and its vicinity (Figure 6e) was determined by EDX mapping 
+analysis. The EDX analysis showed a drop in the concentration of metallic elements and a small 
+growth of carbon and silicon (Figure 6f) in the defect vicinity that enabled the treatment of this defect 
+as a nonmetallic inclusion. 
+Figure 5. SEM micrographs of the fracture surface of the LPBF specimen after loading in the HCF regime
+(σmax = 450 MPa and N = 2.23 × 105 cycles), (a) zones of failure; (b) direction of crack propagation
+(zone A2); (c) the direction of crack propagation (zone A1); (d) the site of crack initiation (zone A1).
+Figure 6 presents the fracture surfaces of the opposite sides of the specimen damaged in the
+VHCF regime. A fatigue crack (area A at Figure 6a) grew during the ultrasonic test, and then the ﬁnal
+brittle rupture (area B at Figure 6a) was achieved by the static tensile test at −150 ◦C, which minimized
+the plastic deformation in the cracked cross section to maintain the morphology formed during
+the VHCF test. The typical VHCF “ﬁsh-eye” morphology was obtained surrounding the internal
+defects (Figure 6b,d), which was conﬁrmed by the imprints of the 56µm inclusions on the opposite
+fracture surface of the specimen (Figure 6c,e). The measured size of the FGA was ≈500 µm (Figure 6b).
+The elemental distribution across the defect and its vicinity (Figure 6e) was determined by EDX
+mapping analysis. The EDX analysis showed a drop in the concentration of metallic elements and a
+small growth of carbon and silicon (Figure 6f) in the defect vicinity that enabled the treatment of this
+defect as a nonmetallic inclusion.
+
+=== PAGE 7 ===
+Materials 2020, 13, 3293 7 of 11
+Materials 2020, 13, x FOR PEER REVIEW 8 of 12 
+ 
+ 
+ 
+Figure 6. SEM micrographs of the fracture surfaces after loading in the very high cycle fatigue (VHCF) 
+regime (σmax = 270 MPa and N = 4 × 10 7 cycles) of the L-PBF specimen with the assumed nonmetallic 
+inclusion), a—fracture surface 1; b—FGA and crack initiation si te at fracture surface 1; c—crack 
+initiation site at fracture surface 2; d—imprint of the defect at fracture surface 1; e—imprint of the 
+defect at fracture surface 2; and f—element distribution across the defect and its vicinity. 
+Another characteristic of the VHCF fracture surface is shown in Figure 7a–c. The characteristic 
+size and morphology of the FGA observed there (Figure 7b,c) are similar to those of the FGA 
+surrounding the nonmetallic inclusion mentioned above. Herein, EDX analysis of the defect zone was 
+also performed to identify this type of defect. The boundaries of the defect were enriched by 
+chromium and manganese, and at the same time, a lack of iron was observed there in comparison 
+with the nominal material surrounding the defect . Therefore, the defect was assumed to be an 
+unmelted particle or due to a lack of fusion. 
+Figure 6. SEM micrographs of the fracture surfaces after loading in the very high cycle fatigue (VHCF)
+regime (σmax = 270 MPa and N = 4 × 107 cycles) of the L-PBF specimen with the assumed nonmetallic
+inclusion), (a) fracture surface 1; (b) FGA and crack initiation site at fracture surface 1; (c) crack initiation
+site at fracture surface 2; ( d) imprint of the defect at fracture surface 1; ( e) imprint of the defect at
+fracture surface 2; and (f) element distribution across the defect and its vicinity.
+Another characteristic of the VHCF fracture surface is shown in Figure 7a–c. The characteristic size
+and morphology of the FGA observed there (Figure 7b,c) are similar to those of the FGA surrounding the
+nonmetallic inclusion mentioned above. Herein, EDX analysis of the defect zone was also performed to
+identify this type of defect. The boundaries of the defect were enriched by chromium and manganese,
+and at the same time, a lack of iron was observed there in comparison with the nominal material
+surrounding the defect. Therefore, the defect was assumed to be an unmelted particle or due to a lack
+of fusion.
+
+=== PAGE 8 ===
+Materials 2020, 13, 3293 8 of 11
+Materials 2020, 13, x FOR PEER REVIEW 9 of 12 
+ 
+ 
+Figure 7. SEM micrographs of the fracture surfaces after loading in the VHCF regime (σmax = 260 MPa, 
+N = 1.5 × 10 8 cycles) of the L-PBF specimen with the assumed fusion defect, a—zones of failure; b—
+crack initiation site; c—internal defect; d—iron distribution; e—chromium distribution; f—
+manganese distribution. 
+Summarizing the observations above, it is believ ed that FGAs corresponding to the identified 
+internal defects had a very similar characteristic  size and morphology. However, a quantitative 
+analysis of the fracture surfaces shall be performed to describe the FGA morphology, for instance, in 
+terms of scale-invariant properti es of the surface roughness [44] . Such analysis will provide a 
+quantitative comparison of the VHCF fracture  surface morphology beyond the FGA and the 
+morphology formed in the HCF regimes. 
+In general, the analysis of fracture surfaces in VHCF regime showed that the crack initiation 
+does not occur on the surface of the material, unlike  in the HCF regime. Such behavior is typical for 
+conventionally manufactured metals [22]. However,  the imperfections of material caused by the 
+additive manufacturing process can affect the fatigue behavior of the manufactured part. 
+Figure 7. SEM micrographs of the fracture surfaces after loading in the VHCF regime (σmax = 260 MPa,
+N = 1.5 × 108 cycles) of the L-PBF specimen with the assumed fusion defect, (a) zones of failure; (b) crack
+initiation site; (c) internal defect; (d) iron distribution; (e) chromium distribution; (f) manganese distribution.
+Summarizing the observations above, it is believed that FGAs corresponding to the identiﬁed
+internal defects had a very similar characteristic size and morphology. However, a quantitative analysis
+of the fracture surfaces shall be performed to describe the FGA morphology, for instance, in terms
+of scale-invariant properties of the surface roughness [44]. Such analysis will provide a quantitative
+comparison of the VHCF fracture surface morphology beyond the FGA and the morphology formed in
+the HCF regimes.
+In general, the analysis of fracture surfaces in VHCF regime showed that the crack initiation
+does not occur on the surface of the material, unlike in the HCF regime. Such behavior is typical
+for conventionally manufactured metals [22]. However, the imperfections of material caused by the
+additive manufacturing process can aﬀect the fatigue behavior of the manufactured part.
+
+=== PAGE 9 ===
+Materials 2020, 13, 3293 9 of 11
+4. Conclusions
+The fatigue response and the fracture surface morphology of the additively manufactured 316L
+stainless steel subjected to VHCF regime were ﬁrst observed. The obtained herein S–N diagram covering
+the HCF and VHCF regimes demonstrated the diﬀerence between the fatigue behaviors of the AM
+and conventionally manufactured 316L stainless steel specimens. Particularly, the published S–N data
+corresponding to cold-worked specimens showed higher endurance at similar stress levels obtained
+for the AM specimens in the HCF and VHCF regimes. Herein, the AM specimens demonstrated almost
+the same VHCF behavior as the specimens that were heat treated at 1120 ◦C for 7.5 min followed by
+water quenching.
+The analysis of the fracture surfaces detected FGAs surrounding internal defects that formed a
+“ﬁsh-eye” fracture type. The nonmetallic inclusions and lack of fusion detected by SEM within the
+fracture surfaces were assumed to be sources of damage initiation and FGA growth. The ≈500 µm
+characteristic diameter of the FGA on the fracture surface induced by a nonmetallic inclusion was
+the same as that for the fracture surface induced by a lack of fusion. It was observed that FGAs
+corresponding to the identiﬁed internal defects had a very similar characteristic size and morphology.
+However, a quantitative analysis of the fracture surfaces shall be performed to describe the FGA
+morphology, for instance, in terms of scale-invariant properties of the surface roughness. Such an
+analysis will provide a quantitative comparison of the VHCF fracture surface morphology beyond the
+FGA and the morphology formed in the HCF regime.
+Author Contributions: Conceptualization, B.V .; Data curation, B.V ., S.D. and I.S.; Formal analysis, B.V .;
+Investigation, B.V ., S.D., S.A., I.A. and I.S.; Methodology, B.V . and I.S.; Project administration, I.S.; Supervision, I.A.
+and I.S.; Validation, S.E.; Visualization, B.V . and S.E.; Writing—original draft, B.V . and I.S.; Writing—review &
+editing, S.E. and I.S. All authors have read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+References
+1. Vishnu Prashant Reddy, K.; Meera Mirzana, I.; Koti Reddy, A. Application of Additive Manufacturing
+technology to an Aerospace component for better trade-oﬀ’s. Mater. T oday Proc.2018, 5, 3895–3902. [CrossRef]
+2. Javaid, M.; Haleem, A. Additive manufacturing applications in medical cases: A literature based review.
+Alex. J. Med. 2017, 54, 411–422. [CrossRef]
+3. Delgado Camacho, D.; Clayton, P .; O’Brien, W.J.; Seepersad, C.; Juenger, M.; Ferron, R.; Salamone, S.
+Applications of additive manufacturing in the construction industry—A forward-looking review.
+Autom. Constr. 2018, 89, 110–119. [CrossRef]
+4. Han, P . Additive Design and Manufacturing of Jet Engine Parts. Eng. J. 2017, 3, 648–652. [CrossRef]
+5. Ngo, T.D.; Kashani, A.; Imbalzano, G.; Nguyen, K.T.Q.; Hui, D. Additive manufacturing (3D printing):
+A review of materials, methods, applications and challenges. Compos. Part B Eng. 2018, 143, 172–196.
+[CrossRef]
+6. DebRoy, T.; Wei, H.L.; Zuback, J.S.; Mukherjee, T.; Elmer, J.W.; Milewski, J.O.; Beese, A.M.; Wilson-Heid, A.;
+De, A.; Zhang, W. Additive manufacturing of metallic components—Process, structure and properties.
+Prog. Mater. Sci. 2018, 92, 112–224. [CrossRef]
+7. Shanyavskiy, A.A. Very-High-Cycle-Fatigue of in-service air-engine blades, compressor and turbine.Sci. China
+Phys. Mech. Astron. 2014, 57, 19–29. [CrossRef]
+8. Naoe, T.; Xiong, Z.; Futakawa, M. Gigacycle fatigue behaviour of austenitic stainless steels used for mercury
+target vessels. J. Nucl. Mater. 2016, 468, 331–338. [CrossRef]
+9. Xiong, Z.; Futakawa, M.; Naoe, T.; Maekawa, K. Very high cycle fatigue in pulsed high power spallation
+neutron source. Adv. Mater. Res. Vols. 2014, 892, 536–541. [CrossRef]
+10. Kuzminova, Y.; Firsov, D.; Dudin, A.; Sergeev, S.; Zhilyaev, A.; Dyakov, A.; Chupeeva, A. The eﬀect of the
+parameters of the powder bed fusion process on the microstructure and mechanical properties of CrFeCoNi
+medium-entropy alloys. Intermetallics 2020, 116, 106651. [CrossRef]
+
+=== PAGE 10 ===
+Materials 2020, 13, 3293 10 of 11
+11. Kuzminova, Y.O.; Firsov, D.G.; Konev, S.D.; Dudin, A.A.; Dagesyan, S.A.; Akhatov, I.S.; Evlashin, S.A.
+Structure control of 316L stainless steel through an additive manufacturing. Lett. Mater. 2019, 9, 551–555.
+[CrossRef]
+12. Wood, P .; Libura, T.; Kowalewski, Z.L.; Williams, G.; Serjouei, A. Inﬂuences of Horizontal and Vertical Build
+Orientations and Post-Fabrication Processes on the Fatigue Behavior of Stainless Steel 316L Produced by
+Selective Laser Melting. Materials 2019, 12, 4203. [CrossRef]
+13. Yadollahi, A.; Shamsaei, N.; Thompson, S.M.; Seely, D.W. Eﬀects of process time interval and heat treatment
+on the mechanical and microstructural properties of direct laser deposited 316L stainless steel. Mater. Sci.
+Eng. A 2015, 644, 171–183. [CrossRef]
+14. Casati, R.; Lemke, J.; Vedani, M. Microstructure and Fracture Behavior of 316L Austenitic Stainless Steel
+Produced by Selective Laser Melting. J. Mater. Sci. T echnol. 2016, 32, 738–744. [CrossRef]
+15. Grasso, M.; Colosimo, B.M. Process defects and in situ monitoring methods in metal powder bed fusion:
+A review. Meas. Sci. T echnol. 2017, 28, 044005. [CrossRef]
+16. Darvish, K.; Chen, Z.W.; Pasang, T. Reducing lack of fusion during selective laser melting of CoCrMo alloy:
+Eﬀect of laser power on geometrical features of tracks. Mater. Des. 2016, 112, 357–366. [CrossRef]
+17. Sola, A.; Nouri, A. Microstructural porosity in additive manufacturing: The formation and detection of pores
+in metal parts fabricated by powder bed fusion. J. Adv. Manuf. Process. 2019, 1, e10021. [CrossRef]
+18. Yadollahi, A.; Shamsaei, N.; Thompson, S.M.; Elwany, A.; Bian, L. Eﬀects of building orientation and heat
+treatment on fatigue behavior of selective laser melted 17-4 PH stainless steel. Int. J. Fatigue 2017, 94, 218–235.
+[CrossRef]
+19. Cherry, J.A.; Davies, H.M.; Mehmood, S.; Lavery, N.P .; Brown, S.G.R.; Sienz, J. Investigation into the eﬀect of
+process parameters on microstructural and physical properties of 316L stainless steel parts by selective laser
+melting. Int. J. Adv. Manuf. T echnol. 2014, 76, 869–879. [CrossRef]
+20. Li, R.; Shi, Y.; Wang, Z.; Wang, L.; Liu, J.; Jiang, W. Densiﬁcation behavior of gas and water atomized 316L
+stainless steel powder during selective laser melting. Appl. Surf. Sci. 2010, 256, 4350–4356. [CrossRef]
+21. Kempen, K.; Vrancken, B.; Thijs, L. Lowering thermal gradients in Selective Laser melting by pre-heating
+the baseplate. In Proceedings of the Solid Freeform Fabrication Symposium Proceedings, Austin, TX, USA,
+12–15 August 2013.
+22. Jeddi, D.; Palin-Luc, T. A review about the e ﬀects of structural and operational factors on the gigacycle
+fatigue of steels. Fatigue Fract. Eng. Mater. Struct. 2018, 41, 969–990. [CrossRef]
+23. Wycisk, E.; Siddique, S.; Herzog, D.; Walther, F.; Emmelmann, C. Fatigue Performance of Laser Additive
+Manufactured Ti–6Al–4V in Very High Cycle Fatigue Regime up to 10ˆ9 Cycles.Front. Mater. 2015, 2, 2–9.
+[CrossRef]
+24. Wood, W.A.; Cousland, S.M.K.; Sargant, K.R. Systematic microstructural changes peculiar to fatigue
+deformation. Acta Metall. 1963, 11, 643–652. [CrossRef]
+25. Forsyth, P .J.E. Fatigue damage and crack growth in aluminium alloys. Acta Metall. 1963, 11, 703–715.
+[CrossRef]
+26. Katagiri, K.; Omura, A.; Koyanagi, K.; Awatani, J.; Shiraishi, T.; Kaneshiro, H. Early Stage Crack Tip
+Dislocation Morphology in Fatigued Copper. Met. T rans. A 1977, 8, 1769–1773. [CrossRef]
+27. Tanaka, K.; Mura, T. A dislocation model for fatigue crack initiation. J. Appl. Mech. T rans. ASME 1981, 48,
+97–103. [CrossRef]
+28. Hong, Y.; Sun, C. The nature and the mechanism of crack initiation and early growth for very-high-cycle
+fatigue of metallic materials—An overview. Theor. Appl. Fract. Mech. 2017, 92, 331–350. [CrossRef]
+29. Mayer, H.; Schuller, R.; Karr, U.; Fitzka, M.; Irrasch, D.; Hahn, M.; Bacher-Höchst, M. Mean stress sensitivity
+and crack initiation mechanisms of spring steel for torsional and axial VHCF loading. Int. J. Fatigue 2016, 93,
+309–317. [CrossRef]
+30. Sakai, T. Review and Prospects for Current Studies on Very High Cycle Fatigue of Metallic Materials for
+Machine Structural Use. J. Solid Mech. Mater. Eng. 2009, 3, 425–439. [CrossRef]
+31. Murakami, Y.; Nomoto, T.; Ueda, T. Factors inﬂuencing the mechanism of superlong fatigue failure in steels.
+Fatigue Fract. Eng. Mater. Struct. 1999, 22, 581–590. [CrossRef]
+32. Opatová, K.; Zetková, I.; Kuˇ cerová, L. Particles of Virgin and Re-Used MS1 Maraging Steel.Materials 2020, 13,
+956. [CrossRef]
+
+=== PAGE 11 ===
+Materials 2020, 13, 3293 11 of 11
+33. International Organization for Standardization 6892-1. Metallic Materials—T ensile T esting—Part 1: Method of
+T est at Room T emperature; ISO: Geneva, Switzerland, 2016.
+34. International Organization for Standardization 1099.Metallic Materials—Fatigue T esting—Axial Force-Controlled
+Method; ISO: Geneva, Switzerland, 2004.
+35. Spierings, A.B.; Starr, T.L.; Wegener, K. Fatigue performance of additive manufactured metallic parts.
+Rapid Prototyp. J. 2013, 19, 88–94. [CrossRef]
+36. Leuders, S.; Lieneke, T.; Lammers, S.; Tröster, T.; Niendorf, T. On the fatigue properties of metals manufactured
+by selective laser melting—The role of ductility. J. Mater. Res. 2014, 29, 1911–1919. [CrossRef]
+37. Zhang, M.; Sun, C.N.; Zhang, X.; Wei, J.; Hardacre, D.; Li, H. High cycle fatigue and ratcheting interaction of
+laser powder bed fusion stainless steel 316L: Fracture behaviour and stress-based modelling. Int. J. Fatigue
+2019, 121, 252–264. [CrossRef]
+38. Goodman, J. Mechanics Applied to Engineering , 8th ed.; Longmans, Green & Co.: London, UK, 1919.
+39. Gerber, H. Bestimmung der Zulässigen Spannungen in Eisen-constructionen; Kgl. Hof- und Universitätsdruckerei
+Wolf & Sohn: Munich, Germany, 1874.
+40. Walker, K. The eﬀect of stress ratio during crack propagation and fatigue for 2024-T3 and 7075-T6 aluminum.
+In Eﬀects of Environment and Complex Load History on Fatigue Life ; Rosenfeld, M.S., Ed.; American Society for
+Testing & Materials: West Conshohocken, PA, USA, 1970; pp. 1–14.
+41. Xiong, Z.; Naoe, T.; Futakawa, M. Eﬀect of Artiﬁcial Defects on the Very High Cycle Fatigue Behavior of 316L
+Stainless Steel. Metals 2019, 9, 412. [CrossRef]
+42. Elangeswaran, C.; Cutolo, A.; Muralidharan, G.K.; de Formanoir, C.; Berto, F.; Vanmeensel, K.;
+Van Hooreweder, B. Eﬀect of post-treatments on the fatigue behaviour of 316L stainless steel manufactured
+by laser powder bed fusion. Int. J. Fatigue 2019, 123, 31–39. [CrossRef]
+43. Kocanda, S. Fatigue Failure of Metals ; Series on fatigue and fracture; Sijtho ﬀ & Noordhoﬀ International
+Publishers: Alphen aan den Rijn, The Netherlands, 1978; Volume 1, ISBN 9028600256.
+44. Bannikov, M.V .; Naimark, O.B.; Oborin, V .A. Experimental investigation of crack initiation and propagation
+in high- and gigacycle fatigue in titanium alloys by study of morphology of fracture. Frat. Integrit à Strutt.
+2015, 10, 51–56. [CrossRef]
+© 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).

@@ -1,0 +1,59 @@
+directly from the production settings and with the training process carried out by considering available literature datasets. To achieve
+the same result with traditional methods, a costly and time-consuming DOE (Design of Experiments), for example, would have been
+required. Moreover, DOE is not applicable using literature data, as ML. This is the most significant advantage of the proposed ML
+algorithms over traditional methods. Furthermore, with the developed approach, the variability associated with the ML predictions,
+dependent on the data available for the training, can be also considered, thus allowing for a safe fatigue design.
+3. Machine learning models
+This section outlines the probabilistic ML algorithms that have been developed. Details about the FFNN-L and its construction are
+provided in Section 3.1 , whereas in Section 3.2 the PINN-L is defined so that all the training data can be leveraged properly. Lastly
+Section 3.3 outlines the functioning of the R90C90 BNN and its application to predict the R90C90 Owen ’ s curve.
+3.1. FFNN-L
+The first model to be introduced is a FFNN trained to predict the parameters of the linear fatigue model. The model, named FFNN-L ,
+predicts the slope m , the intercept q and the standard deviation σ of the linear fatigue model for any given manufacturing configu-
+ration. Therefore, the model is trained on 51 data points, each representing a dataset of the TDB ( Table 1 ). An FFNN is a basic type of
+NN where data flows only in one direction, from the input layer through hidden layers to the output layer. Within the hidden layers,
+neurons process the features x
+j
+, applying weights w
+ij
+and biases b
+i
+to generate a combined signal transformed by an activation function.
+The output layer typically uses a linear activation which can be a sigmoid, a linear, a rectified linear unit (ReLU), or hyperbolic tangent
+(tanh) function. Two critical hyperparameters in this process are the number of training iterations (epochs) and the learning rate.
+During training, the process is repeated for each epoch, and the weights w
+ij
+and biases b
+i
+are adjusted after each cycle to enhance
+prediction accuracy. This adjustment is guided by a loss function, typically mean squared error (MSE) which measures how well the
+network predictions y
+i,pred
+match the desired output y
+i,true
+. The learning rate determines the update magnitude for weights and biases,
+balancing between rapid convergence and stability. Another hyperparameter of importance is the batch size, representing the number
+of data samples processed simultaneously, with mini-batch gradient descent often being a practical choice. For a detailed explanation
+of FFNN, the reader is referred to [9] .
+Fig. 1 shows the structure of the first NN employed in this research, the FFNN-L.
+As shown in Fig. 1 , there are 4 inputs categories, namely PP, V
+risk
+, TT and ST. Concerning the PP category, ϑ , P , v , h and t , previously
+defined, are present. For TT, the numeric variables are T and Δ t , whereas TT_Ann and TT_HIP are booleans. The ST category includes
+ST_Mac , ST_Pol , ST_EP , ST_Grind , ST_SSP , ST_VF , ST_Nitr, and ST_DN . These 18 variables are the features, whereas the three labels are m ,
+q and σ . The loss function for this NN is the MSE. The three intermediate hidden layers are characterized by 100, 75 and 50 neurons,
+respectively, all activated with the ReLU function. Indeed in [9] and in [11,12] it has been shown that a pyramidal structure, further
+increases the quality of the fatigue performance predictions of PBF-LB parts.
+Before each training, the TDB is randomly split into 90 % training and 10 % testing part, yielding 46 training and 5 testing datasets,
+respectively. Data are normalized following the z-score for each feature ( x
+norm
+= ( x – x
+train, μ
+) / x
+train, σ
+), with the mean and standard
+deviation of computed on the training dataset. The NN is trained for 1000 epochs with a learning rate equal to 0.001 and the batch size
+to 30.
+Fig. 1. FFNN-L structure.
+A. Centola et al. Engineering Failure Analysis 168 (2025) 109081 
+6 
