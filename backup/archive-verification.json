@@ -1,0 +1,10 @@
+{
+  "verified_utc": "2026-10-20T20:01:58.066030+00:00",
+  "passed": true,
+  "regular_files_verified": 22333,
+  "symlinks_verified": 4,
+  "entries_verified": 25351,
+  "missing": [],
+  "errors": [],
+  "method": "Streamed every archived file and checked SHA256/size against full capture manifest, preserving every directory and symlink target."
+}

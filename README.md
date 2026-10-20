@@ -1,3 +1,5 @@
+> **Complete folder backup:** [Full snapshot release](https://github.com/denizybd/fatigue-ai-research/releases/tag/snapshot-2026-10-20-2300) includes every file, including raw data, PDFs, ignored work and the Python environment. The ordinary Git source ZIP is not the full backup. [Details and restore instructions](SNAPSHOT_BACKUP.md).
+
 # Provenance-aware censored AM316L fatigue audit
 
 ## Current phase4 open-data continuation
