@@ -1,0 +1,26 @@
+{
+  "internal_raw_A": {
+    "risk_k0": "13.35-15.41%",
+    "risk_k3": "8.31-8.93%",
+    "geometric_gain": 1.9235497797898509,
+    "gain_descriptive95": [
+      0.8433650935948661,
+      3.653829127640419
+    ],
+    "true_risk_increase_hi95": 0.0930229531271196
+  },
+  "historical_methods_reviewed": {
+    "rows": 309,
+    "curves": 32,
+    "source_blocks": 11
+  },
+  "external": {
+    "specimens": 129,
+    "conditions": 3,
+    "campaigns": 1,
+    "support_k3_total": 9,
+    "fixed_queries_per_mechanism": 99
+  },
+  "primary_success": false,
+  "interpretation": "Useful source-audit and counterexample benchmark, not a new dependable-design method."
+}

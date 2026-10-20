@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-20T14:01:22.695669+00:00",
+  "source_sha256": "24d668df78dfa084859f34e81ddc29a24136d50f0799d08b80346908011683ed",
+  "cohort_sha256": "4e7567cbc412429454c063528f787dda51763eefe61ed6ee460ba5b4ddee9e80",
+  "cohort": "strict",
+  "near_cluster_sensitivity": true,
+  "calibration_enabled": false,
+  "n_rows": 308,
+  "n_curves": 32,
+  "n_blocks": 11,
+  "panels": [
+    {
+      "panel": "A",
+      "min_rows": 8,
+      "support_sizes": [
+        0,
+        3
+      ],
+      "curves": 18,
+      "blocks": 9,
+      "rows": 227
+    },
+    {
+      "panel": "B",
+      "min_rows": 10,
+      "support_sizes": [
+        0,
+        3,
+        5
+      ],
+      "curves": 13,
+      "blocks": 6,
+      "rows": 183
+    },
+    {
+      "panel": "C",
+      "min_rows": 15,
+      "support_sizes": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "curves": 6,
+      "blocks": 5,
+      "rows": 97
+    }
+  ],
+  "row_id_role": "database address, not original physical specimen ID",
+  "scope": "retrospective phase2; no real-data model outcomes used by this splitter",
+  "protocol_hashes": {
+    "protocols/v2/curvature_sensitivity_before_fits.md": "5352c52327d9c8b587901b28686b1adf0626a125c40cfd9f9d9779db3149d75f",
+    "protocols/v2/design_before_fits.md": "d1063c8aa68f6ee98351320c4d2ddcecb524c276f81c5525d9e3e115140e043c",
+    "protocols/v2/provenance_amendment_before_fits.md": "cabc8f473675964abf0d03153755719c04c62beaa6283d216db72f2bcafa181e",
+    "protocols/v2/small_source_and_external_amendment.md": "371f0418261272cb0663bfd350329a02bc414628bb13849a168b7e960125fca7"
+  },
+  "gate_hashes": {
+    "literature/provenance_v2/frozen_point_corrections.csv": "bbca60f034b9d57a65c4d2b422906993bdf13faf078a5961027e751fdd35db41",
+    "literature/provenance_v2/final_source_gate.csv": "8fb1bd00df9b21f7e6bf56dda7cf488e209ffc224f856292a4405922c2da48a5"
+  }
+}

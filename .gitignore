@@ -9,3 +9,14 @@ data/raw/*.json
 !data/raw/figshare_article_22337629.json
 literature/**/*.pdf
 literature/**/*.png
+literature/**/*.html
+literature/**/*.xml
+literature/**/*.txt
+literature/**/*.part
+literature/**/*.js
+data/external_v2/*
+!data/external_v2/trombley2025/
+data/external_v2/trombley2025/*
+!data/external_v2/trombley2025/manifest.json
+results/v2/full_replay/
+results/v2/replay_*/

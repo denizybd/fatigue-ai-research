@@ -53,7 +53,7 @@ def remove_near_clusters(frame):
     return frame[frame.row_id.isin(retained)].copy(), mapping
 
 
-def prepare(cohort='clean', near_clusters=False, destination=None, calibration=True):
+def prepare(cohort='clean', near_clusters=False, destination=None, calibration=True, exclude_sources=()):
     raw = ROOT/'data/processed/primary.csv'
     d = pd.read_csv(raw)
     d=d[~d.doi.isin(INVALID_CONSTANT_AMPLITUDE)].copy()
@@ -72,6 +72,7 @@ def prepare(cohort='clean', near_clusters=False, destination=None, calibration=T
     mapping = []
     if cohort == 'weak':
         d=d[~d.doi.isin(INVALID_CONSTANT_AMPLITUDE)].copy()
+    d=d[~d.doi.isin(exclude_sources)].copy()
     corrections=ROOT/'literature/provenance_v2/frozen_point_corrections.csv'
     if corrections.exists():
         for correction in pd.read_csv(corrections).to_dict('records'):
@@ -132,6 +133,7 @@ def prepare(cohort='clean', near_clusters=False, destination=None, calibration=T
                'source_sha256':digest(raw), 'cohort_sha256':digest(folder/'cohort.csv'),
                'cohort':cohort, 'near_cluster_sensitivity':near_clusters,
                'calibration_enabled':calibration,
+               'excluded_source_sensitivity':list(exclude_sources),
                'n_rows':len(d), 'n_curves':d.dataset_id.nunique(),
                'n_blocks':d.group_id.nunique(), 'panels':counts, 'tasks':tasks,
                'row_id_role':'database address, not original physical specimen ID',
@@ -151,4 +153,5 @@ if __name__ == '__main__':
     p=argparse.ArgumentParser();p.add_argument('--cohort',choices=['strict','clean','all','weak'],default='clean')
     p.add_argument('--near-clusters',action='store_true');p.add_argument('--destination')
     p.add_argument('--no-calibration',action='store_true')
-    a=p.parse_args();prepare(a.cohort,a.near_clusters,a.destination,not a.no_calibration)
+    p.add_argument('--exclude-sources',nargs='*',default=[])
+    a=p.parse_args();prepare(a.cohort,a.near_clusters,a.destination,not a.no_calibration,a.exclude_sources)

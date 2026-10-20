@@ -1,0 +1,214 @@
+{
+  "task": {
+    "panel": "B",
+    "seed": 42,
+    "outer": "10.1051/matecconf/201816502006",
+    "ks": [
+      0,
+      3,
+      5
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/978-3-030-31154-4_75",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.engfracmech.2022.108883",
+      "10.1016/j.ijfatigue.2019.03.022",
+      "10.1016/j.ijfatigue.2019.105301",
+      "10.1016/j.ijfatigue.2020.106063",
+      "10.1016/j.ijfatigue.2021.106207",
+      "10.1016/j.ijfatigue.2022.106946",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.ijplas.2021.103172",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1016/j.jmst.2021.10.006",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.mtla.2022.101591",
+      "10.1016/j.proeng.2018.02.002",
+      "10.1016/j.tafmec.2020.102849",
+      "10.1080/00325899.2021.2010932",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13029",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0468_d000",
+        "support_pool": [
+          "a0468_d000_p006",
+          "a0468_d000_p008",
+          "a0468_d000_p007",
+          "a0468_d000_p012",
+          "a0468_d000_p005"
+        ],
+        "query_ids": [
+          "a0468_d000_p003",
+          "a0468_d000_p010",
+          "a0468_d000_p001",
+          "a0468_d000_p002",
+          "a0468_d000_p004",
+          "a0468_d000_p009",
+          "a0468_d000_p000",
+          "a0468_d000_p011"
+        ]
+      },
+      {
+        "curve": "a0468_d002",
+        "support_pool": [
+          "a0468_d002_p007",
+          "a0468_d002_p000",
+          "a0468_d002_p010",
+          "a0468_d002_p002",
+          "a0468_d002_p003"
+        ],
+        "query_ids": [
+          "a0468_d002_p001",
+          "a0468_d002_p008",
+          "a0468_d002_p004",
+          "a0468_d002_p009",
+          "a0468_d002_p006",
+          "a0468_d002_p005"
+        ]
+      }
+    ]
+  },
+  "fit_n": 541,
+  "pooled": {
+    "params_": [
+      5.587499039180832,
+      -3.324376753158021,
+      -0.6131702783951155,
+      -0.3983830348784677
+    ],
+    "sigma_": 0.671404806944271,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 13,
+      "objective": 1.0293911522731352,
+      "gradient_inf": 2.3001667645572432e-07,
+      "ratio_median_train": 0.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 8,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.641499448164708,
+      -5.607166881805362,
+      -1.1375969024387904,
+      -0.9483576225550278,
+      -0.5044311855136443
+    ],
+    "sigma_": 0.38737672007246776,
+    "tau_": 0.6038489557915443,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 13,
+      "objective": 6.391646418001645,
+      "gradient_inf": 1.8701735313708667e-06,
+      "ratio_median_train": 0.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 8,
+      "nodes": 41,
+      "conditions": 59,
+      "sources": 24,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.391646418006101,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.391646418001645,
+          "n_iter": 13
+        }
+      ]
+    }
+  },
+  "calibration": [
+    {
+      "model": "pooled",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled",
+      "k": 5,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 5,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 5,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    }
+  ],
+  "seconds": 0.7328947910000352
+}

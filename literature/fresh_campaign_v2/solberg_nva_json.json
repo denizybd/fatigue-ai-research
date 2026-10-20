@@ -1,0 +1,464 @@
+{
+  "type" : "Publication",
+  "identifier" : "0198cc3f2d7b-0f2b3a33-885f-43e8-9457-c034402f823f",
+  "status" : "PUBLISHED",
+  "resourceOwner" : {
+    "owner" : "ntnu@194.0.0.0",
+    "ownerAffiliation" : "https://api.nva.unit.no/cristin/organization/194.0.0.0"
+  },
+  "publisher" : {
+    "type" : "Organization",
+    "id" : "https://api.nva.unit.no/customer/22139870-8d31-4df9-bc45-14eb68287c4a"
+  },
+  "createdDate" : "2025-08-21T10:49:09.243872795Z",
+  "modifiedDate" : "2025-08-27T01:05:58.710506532Z",
+  "publishedDate" : "2025-08-21T10:49:09.243872795Z",
+  "handle" : "https://hdl.handle.net/11250/2613836",
+  "entityDescription" : {
+    "type" : "EntityDescription",
+    "mainTitle" : "Fatigue of additively manufactured 316L stainless steel: The influence of porosity and surface roughness",
+    "alternativeTitles" : { },
+    "language" : "http://lexvo.org/id/iso639-3/eng",
+    "publicationDate" : {
+      "type" : "PublicationDate",
+      "year" : "2019"
+    },
+    "contributors" : [ {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "id" : "https://api.nva.unit.no/cristin/person/925531",
+        "name" : "Klas Solberg",
+        "verificationStatus" : "Verified",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/194.64.92.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 1,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "name" : "Shuai Guan",
+        "verificationStatus" : "NotVerified",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/43600016.0.0.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 2,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "id" : "https://api.nva.unit.no/cristin/person/901266",
+        "name" : "Nima Javad Razavi",
+        "verificationStatus" : "Verified",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/194.64.92.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 3,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "id" : "https://api.nva.unit.no/cristin/person/38673",
+        "name" : "Torgeir Welo",
+        "verificationStatus" : "Verified",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/194.64.92.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 4,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "name" : "Kang Cheung Chan",
+        "verificationStatus" : "NotVerified",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/43600016.0.0.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 5,
+      "correspondingAuthor" : false
+    }, {
+      "type" : "Contributor",
+      "identity" : {
+        "type" : "Identity",
+        "id" : "https://api.nva.unit.no/cristin/person/807825",
+        "name" : "Filippo Berto",
+        "verificationStatus" : "Verified",
+        "additionalIdentifiers" : [ ]
+      },
+      "affiliations" : [ {
+        "type" : "Organization",
+        "id" : "https://api.nva.unit.no/cristin/organization/194.64.92.0"
+      } ],
+      "role" : {
+        "type" : "Creator"
+      },
+      "sequence" : 6,
+      "correspondingAuthor" : false
+    } ],
+    "alternativeAbstracts" : { },
+    "tags" : [ ],
+    "description" : "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited. ©2019 The Authors Fatigue & Fracture of Engineering Materials & Structures Published by John Wiley & Sons Ltd.",
+    "reference" : {
+      "type" : "Reference",
+      "publicationContext" : {
+        "type" : "Journal",
+        "id" : "https://api.nva.unit.no/publication-channels-v2/serial-publication/3BC585D3-55C2-4C65-8609-E6EB1A404FD7/2019"
+      },
+      "doi" : "https://doi.org/10.1111/ffe.13077",
+      "publicationInstance" : {
+        "type" : "AcademicArticle",
+        "pages" : {
+          "type" : "Range",
+          "begin" : "2043",
+          "end" : "2052"
+        },
+        "volume" : "42",
+        "issue" : "9"
+      }
+    },
+    "abstract" : "The fatigue behaviour of additively manufactured (AM) 316L stainless steel is investigated with the main emphasis on internal porosity and surface roughness. A transition between two cases of failure are found: failure from defects in the surface region and failure from the internal defects. At low applied load level (and consequently a high number of cycles to failure), fatigue is initiating from defects in the surface region, while for high load levels, fatigue is initiating from internal defects. Porosities captured by X‐ray computed tomography (XCT) are compared with the defects initiating fatigue cracks, obtained from fractography. The fatigue data are synthesised using stress intensity factor (SIF) of the internal and surface defects on the fracture surface."
+  },
+  "projects" : [ ],
+  "fundings" : [ ],
+  "subjects" : [ ],
+  "associatedArtifacts" : [ {
+    "identifier" : "5ccdff16-3e41-443c-a090-28a789482e03",
+    "type" : "OpenFile",
+    "name" : "Solberg_et_al-2019-Fatigue_%26_Fracture_of_Engineering_Materials_%26_Structures.pdf",
+    "mimeType" : "application/pdf",
+    "size" : 4304025,
+    "license" : "https://creativecommons.org/licenses/by/4.0",
+    "rightsRetentionStrategy" : {
+      "type" : "NullRightsRetentionStrategy",
+      "configuredType" : "Unknown"
+    },
+    "publishedDate" : "2025-08-27T01:05:58.476784711Z",
+    "uploadDetails" : {
+      "type" : "ImportUploadDetails",
+      "source" : "Brage",
+      "archive" : "NTNU",
+      "uploadedDate" : "2025-08-27T01:05:58.193525618Z"
+    },
+    "allowedOperations" : [ "download", "read-metadata" ]
+  } ],
+  "importDetails" : [ ],
+  "additionalIdentifiers" : [ {
+    "type" : "ScopusIdentifier",
+    "sourceName" : "cristin@ntnu",
+    "value" : "2-s2.0-85069823098"
+  }, {
+    "type" : "HandleIdentifier",
+    "sourceName" : "brage@ntnu",
+    "value" : "https://hdl.handle.net/11250/2613836"
+  }, {
+    "type" : "CristinIdentifier",
+    "sourceName" : "cristin@ntnu",
+    "value" : "1722386"
+  } ],
+  "allowedOperations" : [ ],
+  "pendingOpenFileCount" : 0,
+  "@context" : {
+    "@vocab" : "https://nva.sikt.no/ontology/publication#",
+    "activeFrom" : {
+      "@type" : "xsd:dateTime"
+    },
+    "activeTo" : {
+      "@type" : "xsd:dateTime"
+    },
+    "additionalIdentifiers" : {
+      "@container" : "@set",
+      "@id" : "additionalIdentifier"
+    },
+    "administrativeAgreement" : {
+      "@id" : "administrativeAgreement",
+      "@type" : "xsd:boolean"
+    },
+    "affiliations" : {
+      "@container" : "@set",
+      "@id" : "affiliation",
+      "@context" : {
+        "institutionId" : {
+          "@id" : "affiliationInstitutionId"
+        }
+      }
+    },
+    "alternativeAbstracts" : {
+      "@container" : "@language",
+      "@id" : "alternativeAbstract"
+    },
+    "alternativeTitles" : {
+      "@container" : "@language",
+      "@id" : "alternativeTitle"
+    },
+    "amount" : {
+      "@type" : "xsd:integer"
+    },
+    "approvalStatus" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/publication#"
+      },
+      "@type" : "@vocab"
+    },
+    "approvals" : {
+      "@container" : "@set",
+      "@id" : "approval"
+    },
+    "approvedBy" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/approvals-body#"
+      },
+      "@type" : "@vocab"
+    },
+    "architectureOutput" : {
+      "@container" : "@set",
+      "@id" : "architectureOutput"
+    },
+    "associatedArtifacts" : {
+      "@container" : "@set",
+      "@id" : "associatedArtifact"
+    },
+    "compliesWith" : {
+      "@container" : "@set",
+      "@id" : "compliesWith"
+    },
+    "concertProgramme" : {
+      "@container" : "@set",
+      "@id" : "concertProgramme"
+    },
+    "contributorCristinIds" : null,
+    "contributorsPreview" : {
+      "@container" : "@set"
+    },
+    "contributorOrganizations" : {
+      "@container" : "@set",
+      "@id" : "contributorOrganization",
+      "@type" : "@id"
+    },
+    "contributors" : {
+      "@container" : "@set",
+      "@id" : "contributor"
+    },
+    "correspondingAuthor" : {
+      "@type" : "xsd:boolean"
+    },
+    "countryCode" : {
+      "@id" : "country"
+    },
+    "createdDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "curatingInstitutions" : null,
+    "days" : {
+      "@type" : "xsd:integer"
+    },
+    "doi" : {
+      "@type" : "@id"
+    },
+    "duplicateOf" : {
+      "@type" : "@id"
+    },
+    "embargoDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "extent" : {
+      "@type" : "xsd:integer"
+    },
+    "from" : {
+      "@type" : "xsd:dateTime"
+    },
+    "fundings" : {
+      "@container" : "@set",
+      "@id" : "funding"
+    },
+    "handle" : {
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@container" : "@set"
+    },
+    "hours" : {
+      "@type" : "xsd:integer"
+    },
+    "id" : "@id",
+    "illustrated" : {
+      "@type" : "xsd:boolean"
+    },
+    "importDetails" : {
+      "@container" : "@set",
+      "@id" : "importDetail"
+    },
+    "indexedDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "isbnList" : {
+      "@container" : "@set",
+      "@id" : "isbn"
+    },
+    "labels" : {
+      "@container" : "@language",
+      "@id" : "label"
+    },
+    "language" : {
+      "@type" : "@id"
+    },
+    "license" : {
+      "@type" : "@id"
+    },
+    "link" : {
+      "@type" : "@id"
+    },
+    "manifestations" : {
+      "@container" : "@set",
+      "@id" : "manifestation"
+    },
+    "metadataSource" : {
+      "@type" : "@id"
+    },
+    "minutes" : {
+      "@type" : "xsd:integer"
+    },
+    "modifiedDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "musicalWorks" : {
+      "@container" : "@set",
+      "@id" : "musicalWork"
+    },
+    "nameType" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/publication#"
+      },
+      "@type" : "@vocab"
+    },
+    "outputs" : {
+      "@container" : "@set",
+      "@id" : "output"
+    },
+    "ownerAffiliation" : {
+      "@type" : "@id"
+    },
+    "partOf" : {
+      "@container" : "@set"
+    },
+    "premiere" : {
+      "@type" : "xsd:boolean"
+    },
+    "projects" : {
+      "@container" : "@set",
+      "@id" : "project"
+    },
+    "publicationNotes" : {
+      "@container" : "@set",
+      "@id" : "publicationNote"
+    },
+    "publishedDate" : {
+      "@type" : "xsd:dateTime"
+    },
+    "ranking" : {
+      "@type" : "xsd:integer"
+    },
+    "referencedBy" : {
+      "@container" : "@set",
+      "@id" : "referencedBy"
+    },
+    "related" : {
+      "@container" : "@set",
+      "@id" : "related"
+    },
+    "role" : {
+      "@id" : "role"
+    },
+    "sequence" : {
+      "@type" : "xsd:integer"
+    },
+    "size" : {
+      "@type" : "xsd:integer"
+    },
+    "source" : {
+      "@type" : "@id"
+    },
+    "status" : {
+      "@context" : {
+        "@vocab" : "https://nva.sikt.no/ontology/publication#"
+      },
+      "@type" : "@vocab"
+    },
+    "subjects" : {
+      "@container" : "@set",
+      "@id" : "subject",
+      "@type" : "@id"
+    },
+    "tags" : {
+      "@container" : "@set",
+      "@id" : "tag"
+    },
+    "to" : {
+      "@type" : "xsd:dateTime"
+    },
+    "topLevelOrganizations" : {
+      "@container" : "@set",
+      "@id" : "topLevelOrganization"
+    },
+    "trackList" : {
+      "@container" : "@set",
+      "@id" : "trackList"
+    },
+    "type" : "@type",
+    "userAgreesToTermsAndConditions" : {
+      "@type" : "xsd:boolean"
+    },
+    "valid" : {
+      "@type" : "xsd:boolean"
+    },
+    "venues" : {
+      "@container" : "@set",
+      "@id" : "venue"
+    },
+    "visibleForNonOwner" : {
+      "@type" : "xsd:boolean"
+    },
+    "weeks" : {
+      "@type" : "xsd:integer"
+    },
+    "pendingOpenFileCount" : {
+      "@type" : "xsd:integer"
+    },
+    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+  },
+  "id" : "https://api.nva.unit.no/publication/0198cc3f2d7b-0f2b3a33-885f-43e8-9457-c034402f823f"
+}

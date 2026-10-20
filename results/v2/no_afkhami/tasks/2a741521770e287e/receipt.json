@@ -1,0 +1,151 @@
+{
+  "task": {
+    "panel": "A",
+    "seed": 17,
+    "outer": "10.1016/j.ijfatigue.2022.107025",
+    "ks": [
+      0,
+      3
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "cui_linked_campaign"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0239_d001",
+        "support_pool": [
+          "a0239_d001_p001",
+          "a0239_d001_p005",
+          "a0239_d001_p002"
+        ],
+        "query_ids": [
+          "a0239_d001_p006",
+          "a0239_d001_p004",
+          "a0239_d001_p000",
+          "a0239_d001_p003",
+          "a0239_d001_p007"
+        ]
+      }
+    ]
+  },
+  "fit_n": 234,
+  "pooled": {
+    "params_": [
+      5.812827377824038,
+      -3.53479154812127,
+      -0.932272424931091,
+      -0.3696459722547185
+    ],
+    "sigma_": 0.6909789130469437,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 11,
+      "objective": 1.056371271340139,
+      "gradient_inf": 3.0119872491962685e-08,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.879011671392987,
+      -5.660634712393407,
+      -1.446260824701444,
+      -0.9122330722198668,
+      -0.4815685550263357
+    ],
+    "sigma_": 0.4016263612404611,
+    "tau_": 0.6178135568253229,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 14,
+      "objective": 7.1158841621925495,
+      "gradient_inf": 1.03405781309851e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 24,
+      "sources": 9,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 7.1158841621925495,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 7.115884162199186,
+          "n_iter": 13
+        }
+      ]
+    }
+  },
+  "calibration": [
+    {
+      "model": "pooled",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    }
+  ],
+  "seconds": 0.33628849999968224
+}

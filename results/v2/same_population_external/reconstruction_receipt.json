@@ -1,0 +1,458 @@
+[
+  {
+    "panel": "external_random",
+    "seed": 0,
+    "outer": "trombley2025_one_campaign",
+    "saved_population_params": [
+      5.725371709230604,
+      -5.497918604832659,
+      -1.3286830449971863,
+      -0.957562518274629,
+      -0.5209161369368136
+    ],
+    "training_center_reconstructed": [
+      2.266979936972305,
+      -0.2381877022653722
+    ],
+    "statuses": [
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 4,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 6,
+        "support_runouts": 4,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 5,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 10,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 5,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 10,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      }
+    ]
+  },
+  {
+    "panel": "external_random",
+    "seed": 17,
+    "outer": "trombley2025_one_campaign",
+    "saved_population_params": [
+      5.725371709230604,
+      -5.497918604832659,
+      -1.3286830449971863,
+      -0.957562518274629,
+      -0.5209161369368136
+    ],
+    "training_center_reconstructed": [
+      2.266979936972305,
+      -0.2381877022653722
+    ],
+    "statuses": [
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 2,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 2,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 6,
+        "support_runouts": 4,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 4,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 8,
+        "support_runouts": 2,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 2,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 2.6645352591003757e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 4,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 9,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      }
+    ]
+  },
+  {
+    "panel": "external_random",
+    "seed": 42,
+    "outer": "trombley2025_one_campaign",
+    "saved_population_params": [
+      5.725371709230604,
+      -5.497918604832659,
+      -1.3286830449971863,
+      -0.957562518274629,
+      -0.5209161369368136
+    ],
+    "training_center_reconstructed": [
+      2.266979936972305,
+      -0.2381877022653722
+    ],
+    "statuses": [
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 5,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 8,
+        "support_runouts": 2,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 5,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 9,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 4,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 8,
+        "support_runouts": 2,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      }
+    ]
+  },
+  {
+    "panel": "external_chronological",
+    "seed": 0,
+    "outer": "trombley2025_one_campaign",
+    "saved_population_params": [
+      5.725371709230604,
+      -5.497918604832659,
+      -1.3286830449971863,
+      -0.957562518274629,
+      -0.5209161369368136
+    ],
+    "training_center_reconstructed": [
+      2.266979936972305,
+      -0.2381877022653722
+    ],
+    "statuses": [
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 2,
+        "support_runouts": 1,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 2,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d1.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 7,
+        "support_runouts": 3,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 5,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 10,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 8.881784197001252e-16
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 0,
+        "status": "shared_hierarchical_zero_shot_reference",
+        "support_failures": 0,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 7.105427357601002e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 3,
+        "status": "estimated",
+        "support_failures": 3,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 5,
+        "status": "estimated",
+        "support_failures": 5,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "k": 10,
+        "status": "estimated",
+        "support_failures": 10,
+        "support_runouts": 0,
+        "hierarchy_reconstruction_max_error": 1.7763568394002505e-15
+      }
+    ]
+  }
+]

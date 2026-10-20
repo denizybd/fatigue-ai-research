@@ -1,0 +1,26 @@
+{
+  "pdfs": [
+    {
+      "file": "manuscript/v2/research_brief_en.pdf",
+      "pages": 1
+    },
+    {
+      "file": "manuscript/v2/research_note_en.pdf",
+      "pages": 6
+    },
+    {
+      "file": "manuscript/v2/arastirma_ozeti_tr.pdf",
+      "pages": 4
+    }
+  ],
+  "all_pages_rendered": true,
+  "all_pages_contactsheet_review": "PASS: all11finalpages viewed, plus detailedEnglish3/5andbrief",
+  "detailed_pages_reviewed": [
+    "English3",
+    "English5",
+    "Englishbrief1"
+  ],
+  "pdf_character_safe_box_outside_count": 0,
+  "unicode_replacement_glyph_count": 0,
+  "status": "PASS"
+}

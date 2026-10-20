@@ -1,0 +1,22 @@
+[
+  {
+    "name": "dastgerdi2022",
+    "url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/7ae348c0-b555-4ba7-85fc-f2463a747c57/content",
+    "error": "('Connection broken: IncompleteRead(9607879 bytes read, 12406669 more expected)', IncompleteRead(9607879 bytes read, 12406669 more expected))"
+  },
+  {
+    "name": "yu2020",
+    "url": "https://www.jmst.org/article/2020/1005-0302/1005-0302-46-0-191.shtml",
+    "error": "HTTPSConnectionPool(host='www.jmst.org', port=443): Read timed out. (read timeout=5)"
+  },
+  {
+    "name": "wood2019_pdf",
+    "url": "https://pdfs.semanticscholar.org/e62b/71a62a45ebdb6e313f997fb2f3335ef49242.pdf",
+    "status": 200,
+    "path": "literature/provenance_v2/wood2019_pdf.pdf",
+    "sha256": "97f0c70f266790d3b1f561c120a306a233c62c514e1181bef521b0c6aee39043",
+    "bytes": 7221140,
+    "is_pdf": true,
+    "accessed": "2026-10-20T13:52:18.833499+00:00"
+  }
+]

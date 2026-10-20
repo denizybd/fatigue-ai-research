@@ -1,0 +1,73 @@
+[
+  {
+    "name": "elangeswaran_matdes2020",
+    "url": "https://re.public.polimi.it/retrieve/f20e4057-d42c-488d-9e0a-4a96fd07b986/1-s2.0-S0264127520304962-main.pdf",
+    "final_url": "https://re.public.polimi.it/retrieve/f20e4057-d42c-488d-9e0a-4a96fd07b986/1-s2.0-S0264127520304962-main.pdf",
+    "status": 403,
+    "path": "literature/provenance_v2/elangeswaran_matdes2020.html",
+    "sha256": "5864a59c31bd2978e0cb9b85e5138a7331d70a873a2c3f9bf9c7d878281bfd03",
+    "bytes": 5764,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:41:28.624885+00:00"
+  },
+  {
+    "name": "zhang_ml2019",
+    "url": "https://pureportal.coventry.ac.uk/files/30301723/Binder3.pdf",
+    "final_url": "https://pureportal.coventry.ac.uk/files/30301723/Binder3.pdf",
+    "status": 403,
+    "path": "literature/provenance_v2/zhang_ml2019.html",
+    "sha256": "d214b89798282996f0238a27c3c81655379a08b1f9fc7f81e28688aeca35f0ea",
+    "bytes": 5632,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:41:28.836328+00:00"
+  },
+  {
+    "name": "zhang_matdes2018",
+    "url": "https://pureportal.coventry.ac.uk/files/13549516/Materials_Design_final_accepted_version_for_PURE.pdf",
+    "final_url": "https://pureportal.coventry.ac.uk/files/13549516/Materials_Design_final_accepted_version_for_PURE.pdf",
+    "status": 403,
+    "path": "literature/provenance_v2/zhang_matdes2018.html",
+    "sha256": "e90a5cf6ab0b121f3467045befa226db925a368ca4c3eb1a02357ad65b8d4b51",
+    "bytes": 5798,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:41:28.902361+00:00"
+  },
+  {
+    "name": "zhang_msea2017",
+    "url": "https://pure.coventry.ac.uk/ws/files/11561081/fatiguecomb.pdf",
+    "final_url": "https://pure.coventry.ac.uk/ws/files/11561081/fatiguecomb.pdf",
+    "status": 200,
+    "path": "literature/provenance_v2/zhang_msea2017.pdf",
+    "sha256": "79eb5a15574bbeff90d923de21b45b7874bff3a92680d72195beb6397f034346",
+    "bytes": 3694362,
+    "is_pdf": true,
+    "accessed": "2026-10-20T13:41:39.065406+00:00"
+  },
+  {
+    "name": "zhang_matec2018",
+    "url": "https://www.matec-conferences.org/articles/matecconf/pdf/2018/24/matecconf_fatigue2018_22006.pdf",
+    "final_url": "https://www.matec-conferences.org/articles/matecconf/pdf/2018/24/matecconf_fatigue2018_22006.pdf",
+    "status": 403,
+    "path": "literature/provenance_v2/zhang_matec2018.html",
+    "sha256": "0d3e98ca727fc1201b436170af5a63f23348aaf146a3ac6234f6c4da283e8b34",
+    "bytes": 93,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:41:40.499771+00:00"
+  },
+  {
+    "name": "liang_ijf2022_page",
+    "url": "https://sam.ensam.eu/handle/10985/22237",
+    "final_url": "https://sam.ensam.eu/handle/10985/22237",
+    "status": 403,
+    "path": "literature/provenance_v2/liang_ijf2022_page.html",
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "bytes": 146,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:41:41.198028+00:00"
+  },
+  {
+    "name": "liang_ffe2022",
+    "url": "https://hal.science/hal-03616357/document",
+    "error": "('Connection broken: IncompleteRead(16781904 bytes read, 37019013 more expected)', IncompleteRead(16781904 bytes read, 37019013 more expected))"
+  }
+]

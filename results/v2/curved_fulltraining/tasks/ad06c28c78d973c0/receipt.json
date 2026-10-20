@@ -1,0 +1,167 @@
+{
+  "task": {
+    "panel": "A",
+    "seed": 17,
+    "outer": "10.3390/ma13153293",
+    "ks": [
+      0,
+      3
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1016/j.msea.2020.140660",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma15186278",
+      "cui_linked_campaign"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0562_d000",
+        "support_pool": [
+          "a0562_d000_p001",
+          "a0562_d000_p002",
+          "a0562_d000_p005"
+        ],
+        "query_ids": [
+          "a0562_d000_p000",
+          "a0562_d000_p003",
+          "a0562_d000_p006",
+          "a0562_d000_p007",
+          "a0562_d000_p008",
+          "a0562_d000_p004"
+        ]
+      }
+    ]
+  },
+  "fit_n": 300,
+  "pooled": {
+    "params_": [
+      5.682728903514021,
+      -2.1816800489377144,
+      -4.481396307190871,
+      -0.970811423897655,
+      -0.4851758349427393
+    ],
+    "sigma_": 0.61558894520043,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 17,
+      "objective": 0.9651940563971876,
+      "gradient_inf": 7.979908819844006e-08,
+      "knot_training_median_log_stress": 2.3071785394961175,
+      "stress_slopes_log10": [
+        -2.1816800489377144,
+        -4.481396307190871
+      ],
+      "ratio_median_train": 0.1,
+      "ratio_missing_train": 0,
+      "ratio_all_missing_train": false,
+      "sigma_at_bound": false,
+      "model": "finite two-slope curve; not a fatigue-limit estimator"
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.598615181225421,
+      -4.898134750568105,
+      -6.763704882792147,
+      -1.4931522167981746,
+      -0.957568764843332,
+      -0.5212672431024993
+    ],
+    "sigma_": 0.3838249211599896,
+    "tau_": 0.5937676230766845,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 20,
+      "objective": 6.733629697607625,
+      "gradient_inf": 3.536915438973054e-06,
+      "knot_training_median_log_stress": 2.3071785394961175,
+      "stress_slopes_log10": [
+        -4.898134750568105,
+        -6.763704882792147
+      ],
+      "ratio_median_train": 0.1,
+      "ratio_missing_train": 0,
+      "ratio_all_missing_train": false,
+      "sigma_at_bound": false,
+      "model": "finite two-slope curve; not a fatigue-limit estimator",
+      "nodes": 41,
+      "conditions": 31,
+      "sources": 10,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.733629697607625,
+          "n_iter": 20
+        },
+        {
+          "success": true,
+          "objective": 6.733629697614145,
+          "n_iter": 16
+        }
+      ]
+    }
+  },
+  "calibration": [
+    {
+      "model": "pooled_curved",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled_curved",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift_curved",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift_curved",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical_curved",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical_curved",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    }
+  ],
+  "seconds": 0.5893054580001262
+}

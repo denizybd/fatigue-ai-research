@@ -1,0 +1,22 @@
+[
+  {
+    "name": "zhang_ml2019_alt",
+    "url": "https://pure.coventry.ac.uk/ws/files/30301723/Binder3.pdf",
+    "status": 200,
+    "path": "literature/provenance_v2/zhang_ml2019_alt.pdf",
+    "sha256": "416c10690c587a4058638c9870f222d8921f5c9f4ec1faec219d2aaaf81e10e3",
+    "bytes": 4016592,
+    "is_pdf": true,
+    "accessed": "2026-10-20T13:45:40.093820+00:00"
+  },
+  {
+    "name": "zhang_matdes2018_alt",
+    "url": "https://pure.coventry.ac.uk/ws/files/13549516/Materials_Design_final_accepted_version_for_PURE.pdf",
+    "status": 200,
+    "path": "literature/provenance_v2/zhang_matdes2018_alt.pdf",
+    "sha256": "de722f06041f254dc376bb2e94febaa3e278f64adef221fac209c5c1f8728102",
+    "bytes": 3224113,
+    "is_pdf": true,
+    "accessed": "2026-10-20T13:45:45.554423+00:00"
+  }
+]

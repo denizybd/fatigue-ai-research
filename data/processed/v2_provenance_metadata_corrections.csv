@@ -1,0 +1,5 @@
+dataset_id,field,raw_value,source_supported_value,status,source_url,locator,row_id
+a0577_d003,thermal,HT,NHT,source_supported_correction,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section3.3 Renishaw lacks heat treatment,
+a0577_d003,heat_temperature,700,,source_supported_correction,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h,
+a0577_d003,heat_time,2,,source_supported_correction,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9505810/fullTextXML,Section2 EOS only receives700C2h,
+a0554_d006,runout,1,0,source_supported_correction,https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6947212/fullTextXML,Section3.4.1 latter extended ZX-SP-NSR sample broke;Figure14,a0554_d006_p004

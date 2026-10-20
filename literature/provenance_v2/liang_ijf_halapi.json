@@ -1,0 +1,15 @@
+{
+  "response":{
+    "numFound":1,
+    "start":0,
+    "maxScore":5.3494773,
+    "numFoundExact":true,
+    "docs":[{
+      "docid":"3662856",
+      "title_s":["High cycle fatigue behavior of 316L steel fabricated by laser powder bed fusion: effects of surface defect and loading mode"],
+      "halId_s":"hal-03605934",
+      "uri_s":"https://imt-mines-albi.hal.science/hal-03605934v1",
+      "fileMain_s":"https://imt-mines-albi.hal.science/hal-03605934/document"
+    }]
+  }
+}

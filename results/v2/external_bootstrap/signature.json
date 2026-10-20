@@ -1,0 +1,8 @@
+{
+  "external_manifest_sha256": "6ceec5e1bde767b8d89d80ebfdee91eed2b93f86d468f60c930fb80946cdd23d",
+  "code_sha256": "fd467aad10a12bc58fe43355bbb2343aeaa08c6086b1295b4f1febe8344ef66c",
+  "model_sha256": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+  "replicates": 20,
+  "seed": 27021,
+  "seconds": 11.336510625000301
+}

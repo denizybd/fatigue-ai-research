@@ -1,0 +1,10 @@
+{
+  "criterion": {
+    "observed_risk_upper_le_10pct": true,
+    "risk_increase_upper95_le_2pp": true,
+    "true_risk_change_upper95_le_2pp": true,
+    "gain_lower95_gt_1p25x": false
+  },
+  "all_pass": false,
+  "note": "Descriptive internal source bootstrap; not arbitrary-process reliability certification."
+}

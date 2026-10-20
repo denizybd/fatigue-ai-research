@@ -1,0 +1,832 @@
+{
+  "article_doi": "10.1038/s41598-025-97031-1",
+  "dataset_doi": "10.13011/m3-c93d-z035",
+  "dataset_title": "Dataset 1 - Concept Laser Samples",
+  "source_url": "https://materialscommons.org/public/datasets/2564",
+  "accessed_utc": "2026-10-20T13:46:49.701456+00:00",
+  "license": "No license specified on dataset landing; article CC BY4.0 does not automatically license repository records. Raw repository HTML retained locally; do not bundle/relicense in public deliverables.",
+  "retrieval": "Public GET entity pages; no authentication or archive download used.",
+  "specimen_entities": 157,
+  "files": [
+    {
+      "path": "data/external_v2/trombley2025/README_LOCAL_ANALYSIS_ONLY.md",
+      "sha256": "87fcab0c62323d53ecfca146c9e48d3db9495c685a5e78b5ec02a0b4b389de7c",
+      "size": 896
+    },
+    {
+      "path": "data/external_v2/trombley2025/entities_index.html",
+      "sha256": "068c388573dd06342ede643572e8b927b0988d79425c499611536b50958f5636",
+      "size": 391898
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67494.html",
+      "sha256": "79bce49575534d2e9498d53fa52c47d115538c6a47331be701ab9c3e43468ed6",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67495.html",
+      "sha256": "b3b41b5e3501742233a181d4f0b2297af67fcfb330836fa207a55e2845f18e8c",
+      "size": 157950
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67496.html",
+      "sha256": "4f948f7668d0551e6a6041fe6537848839d2dd099f86d8748c918d96e802c06a",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67497.html",
+      "sha256": "d3982bc2e4de2636d933fc02badcf53c93e3f74bc72e03f42d88d8a07d9ff6dc",
+      "size": 157951
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67498.html",
+      "sha256": "3c25efb4ef53460c8fa10dd7704e00972199344b69187560230fcd70f5b2599c",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67499.html",
+      "sha256": "2c7ec2f2be819f9fb26fbb917aec051237e8ce56a76d2d95ed203471cef59e00",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67500.html",
+      "sha256": "70e10c37eeecb1f56da41726dd0d1d8adbb9fcb339b44e76ed038f111e95121d",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67501.html",
+      "sha256": "72f2f28be9f82eab4b15f27b306f0f8a90f55222af2c4a479afbfdb70e915b63",
+      "size": 157958
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67502.html",
+      "sha256": "1c0cdcdc0df98673cfabf28b405c61f8383973ce0f332c83f5db54bee6cb4442",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67503.html",
+      "sha256": "003a6d3cdd4d123887863e03fa5585c8de9f5fc4cec27b0a16916d5afe4e6d3d",
+      "size": 157956
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67504.html",
+      "sha256": "f612417659fb37bbcf7ed7594dbc0db65592bc712be4af852bff4cb158c3ecd8",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67505.html",
+      "sha256": "c547ed16fb84fd3053f90498ef08bc0835a1e06ed2854d65e067043a5ada4e97",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67506.html",
+      "sha256": "d3ad334359f6bdec34b2eb85c66d3600cf7db3dc6448263addd9739bf0b31571",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67507.html",
+      "sha256": "af355497613b5e1aacf2ec0127053a9c311b2e439cf9dba158be5c9ccebaef6f",
+      "size": 157957
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67508.html",
+      "sha256": "bc81e06b0f39c2c49b7b3fc0df71f69cfb9db0bf7dbadf7536a4a7a292fafc3a",
+      "size": 171325
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67509.html",
+      "sha256": "d8a3478c6eb945d68a84af33947d6b8045711904515b2d4af32bdcf3a3c723bb",
+      "size": 165629
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67510.html",
+      "sha256": "5571cf2455d9f995bd305e3cf8786bf16941b471e064c81b4eafa0ad391e5860",
+      "size": 170002
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67511.html",
+      "sha256": "e9639d849536d72697c0af6c69fdc104aecba93ed312ce9d2ae6f045361eaa75",
+      "size": 169705
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67512.html",
+      "sha256": "c49858391ecc48948844eb93115292a7a8e78f63deb9e41c882d9f6bd31ce50b",
+      "size": 165628
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67513.html",
+      "sha256": "da703949c10a5847aaeb822ec8cc2dc43e1a37b04536883406422c61d1d6ef22",
+      "size": 165628
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67514.html",
+      "sha256": "7d8de8d3b4ee4d522acfccb15b0953f1776468e98b2db8d7fc97edfcec9b49b1",
+      "size": 165635
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67515.html",
+      "sha256": "ce4a337f8356da7b59e4b111ff0077d3254aa77c20444d13d10aeb0234c19304",
+      "size": 213702
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67516.html",
+      "sha256": "dce6c6ce57b3130ff058e8091023624fa23816e52594ed909da31d58924e5548",
+      "size": 165635
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67517.html",
+      "sha256": "e4a2c38abd43dee646333b6fe17df42aa80d0d298e6006643c759781ca2f5086",
+      "size": 165635
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67518.html",
+      "sha256": "be109353071efd5fc219f51226fde55f83571ee53cf8cb3a62a577512a5f53ab",
+      "size": 165635
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67519.html",
+      "sha256": "a042b8189837fdd6f171e01badef31600af1cbd466ddbb6ae1e63ebbcda652c6",
+      "size": 165635
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67520.html",
+      "sha256": "a9e337cbcb249a45b738c138b3992442175a50b13c5339f82f4f2ff56f66e552",
+      "size": 165628
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67521.html",
+      "sha256": "d5945cca2a04cdfa59333a9d6d18b4cc1679fc9fdb58df9967bdf7f444e4d6d4",
+      "size": 165634
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67522.html",
+      "sha256": "1072eb2a405bb0ba05f8f7082e8985844e524f138a10fad17822fbd26435046a",
+      "size": 165640
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67523.html",
+      "sha256": "43d814f42ed4055058a30f45b7875dee98de408766d59e2df8f6ddf040327c9c",
+      "size": 159126
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67524.html",
+      "sha256": "2a545ce1d64b50e99d308395d604026a29262b65d7fb0447b831cd8e62496473",
+      "size": 159127
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67525.html",
+      "sha256": "afab49402dad8013a6b4a3ea6c1086c5592729728a50770c61bd92c33052ae30",
+      "size": 159127
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67526.html",
+      "sha256": "d9469bd930861987b0c4deb90247e6d4534b095c8a5e1d07162dd8277e43d6dd",
+      "size": 159127
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67527.html",
+      "sha256": "a420fdc919f863ddc398e4b07f79245bfecbe9fb547540268c3afd463eda7e52",
+      "size": 159127
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67528.html",
+      "sha256": "fd07e956151961b17ec73eae0a1345761fd5585bdeb1670efde07f0629f497a2",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67529.html",
+      "sha256": "931185d1832a1723faa5383cdfe559b94b1a3de2c73beda4757cae72731507a2",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67530.html",
+      "sha256": "566993ec1de270fcf19b89c9bf6080cb6b224f5e45a4c49e5ce935a504e7ac77",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67531.html",
+      "sha256": "a25fbb526d1a7a0ae8fc38ae6d421a43f849bdfd50f3331003cd1e1df723e48f",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67532.html",
+      "sha256": "f3722732ce9dc9bb80aad26756446ac09ba43f72160fd4a6846b503b81e20041",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67533.html",
+      "sha256": "439da04ee9ad88b2bf5b41ae2d52542028a839b08221af24dae47274ef776a98",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67534.html",
+      "sha256": "8e92bac55e8666d941a813e56c2a14553def1e202c6343adc53de22be8ef1ebe",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67535.html",
+      "sha256": "5af2ddebb4bafb3cef528a2b778396751055d564931ae78a2f1706ee0e4888ea",
+      "size": 159128
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67536.html",
+      "sha256": "fdc43eaa2b5ffe5389ae8abe201044f5915e4128c512d84a173c9c67e26cd80d",
+      "size": 159127
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67537.html",
+      "sha256": "a7d0f828a3b2e93ecbc27f237783b4b26593f41741baa73da0dfe6d10bc05143",
+      "size": 159127
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67538.html",
+      "sha256": "8949629d506ca62aaedec3a86fb04d66de4d7ccb5c00fd8e07de32ba17c36bc9",
+      "size": 160064
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67539.html",
+      "sha256": "9537264eaa2625632496deb777690fff88fea071abef6d296e0fe8ab5f1653ba",
+      "size": 160063
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67540.html",
+      "sha256": "e8cb74b0311982bbd1063670ff85fb29a8c85c6e6fe2116983a22c24f119d91e",
+      "size": 160057
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67541.html",
+      "sha256": "1ea00a3cf97db15bf23f768fe2512635dd00c39045163a2ef54e95891d1e326d",
+      "size": 160058
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67542.html",
+      "sha256": "69cd763d76aad0368fb49ec51a62c9ad2dc1fe139508e5940e5c62e1bab2a48d",
+      "size": 160065
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67543.html",
+      "sha256": "816a278c89e3d4099e7d87ee3799b4c025e72645f3841e6033334bdfc96860e6",
+      "size": 160058
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67544.html",
+      "sha256": "7678ffd43f96338b5bb8541d57e3e0ad36063c420cf32eeea858521970400eb1",
+      "size": 160065
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67545.html",
+      "sha256": "b39f81746a80e360576d0b19d9d0333fd30bfea9db62fec426b73279fce9a5e9",
+      "size": 160064
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67546.html",
+      "sha256": "615a3a8b147b38844638b7872c4778a3980f54044b89cab21c6a7ace34084884",
+      "size": 160058
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67547.html",
+      "sha256": "86c3a4fd8284e33ca870c06be332d72e807726d2f546947cac2eb691ab6d9684",
+      "size": 160057
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67548.html",
+      "sha256": "91855823eea4bbe21c937b2524dbcfae61d073008fb4af5b9428ee858b752ce1",
+      "size": 188959
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67549.html",
+      "sha256": "41d00ab04eb263b382547265312b02a7b10a09262def8684d63846173bf09f29",
+      "size": 170912
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67550.html",
+      "sha256": "9bfd4dc4be7c0b8d4cc4872c6f58ec7107c10c62b454b5fc419c728283ed9fec",
+      "size": 166548
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67551.html",
+      "sha256": "026f26606ce4a8e961ffb719e073abeeb023e61232f93d84b6cabbdd86cff780",
+      "size": 166547
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67552.html",
+      "sha256": "afebf173bafe113b1e855cda3046ace1f1959e5f1f05fa23c8be82a6497c96df",
+      "size": 170906
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67553.html",
+      "sha256": "e28bde7ab562bee53bc4850f8aa94236e059ffc33960cb7e8903b25e934d202c",
+      "size": 166548
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67554.html",
+      "sha256": "b388d80b667c4cb39bf11338b42dcb48d1d34b4802e1c07f20776af6e0dfeaff",
+      "size": 166542
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67555.html",
+      "sha256": "456ff3b00f25e361ccf7d923081c7e84f2e04350cbbd9705bf49534c76b08d02",
+      "size": 166542
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67556.html",
+      "sha256": "57a29dd1ba1cae737a01169165abf3b1b26b865972e5a0cb356cba37eb7e1e3f",
+      "size": 166839
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67557.html",
+      "sha256": "6ea18a0037bb065f8a38fbf73d5901cc3c89b553e4b1d1aad8fd6e72f3ea2045",
+      "size": 166833
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67558.html",
+      "sha256": "d15a6b0b6153085794c88547b43171805cd62d3d1a8355655c625164b828c96f",
+      "size": 160325
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67559.html",
+      "sha256": "18db5d23d00a54defa90e4415d96fb2762dc6a9bfdf8e8a330cfa9c2d2026b9d",
+      "size": 160325
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67560.html",
+      "sha256": "104cc1a6b26f19a36a30fd588935c94af7db0396c513b4272119f0ba2b1fdc67",
+      "size": 160329
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67561.html",
+      "sha256": "ba5e31bc0ee215dbecb89e679f4c8ce94cc232473dc3a2a71778eea4ee86b3a4",
+      "size": 160330
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67562.html",
+      "sha256": "eef9d7786144307299108e7dce3dfc024c3f2e09f55927b91151d24efe9ef7d2",
+      "size": 158793
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67563.html",
+      "sha256": "d051b8c536ac1b41c2c20a7776463ae261f3cd91906164067d0d66436260b48b",
+      "size": 132851
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67564.html",
+      "sha256": "da7c023d9f4547a17bda0f9ef0f3ea53637e34e7b82908bbdc727348266ef82c",
+      "size": 158793
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67565.html",
+      "sha256": "65dcc70a0cf24e6060526f88aac0be20cc792061caddc7a500b1063c8a72cb32",
+      "size": 158793
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67566.html",
+      "sha256": "a8baa0b34f94a155ef0ec54b035b55dcca519b805779f1d21fbc500114db9a75",
+      "size": 158787
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67567.html",
+      "sha256": "997c8fa1be0951ad0ad84e63d7c94c1bd3fc8b54c7f6e259e1236b50079e26f1",
+      "size": 160041
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67568.html",
+      "sha256": "410758e0402303a76948ea31f114cb443153e955b748ab7cae59d45b28b98401",
+      "size": 160041
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67569.html",
+      "sha256": "c335135fb9da6b320b42931d01e2d62d2bf61c0bc9c7f7216ed9a95be7d213b6",
+      "size": 187817
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67570.html",
+      "sha256": "8caf8f7d1cbf5de13d0b74724f8616a50a63586e7d02222829063ab33baebb92",
+      "size": 160332
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67571.html",
+      "sha256": "82bcf42d79e5d97667d06168748965b18c1f9bea073734d87f33ae4603a66da3",
+      "size": 160331
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67572.html",
+      "sha256": "91b221e6ff0aac6685d30bef57b1b2ab767d305600206309412496fc42598ae3",
+      "size": 160332
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67573.html",
+      "sha256": "c5dceacdc381dbe80b2b4b2fc39a5ab5f3f894ae58478f50eeaee655d7d793a9",
+      "size": 160332
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67574.html",
+      "sha256": "927850984273c3b578704f963e2a3a6a54b6e65129a643ce463a2a39781d14b2",
+      "size": 160332
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67575.html",
+      "sha256": "09be7e61a989bf9ff6ce3f80c4612c607cacbda425225a4752993be0ef20888d",
+      "size": 160332
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67576.html",
+      "sha256": "f80ef4e5a06a74b62e89a46559f9fc725b8d9e6e2d2544ad40d55a7eaf46daec",
+      "size": 160332
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67577.html",
+      "sha256": "bfe147bdf44c7088d2668b26972b7db93ff6cde39fa611dd8cf004d7441b4426",
+      "size": 161261
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67578.html",
+      "sha256": "a49d8b01d414f67e3febdde376960df5b2e350983a063506779e41936ca32d03",
+      "size": 161261
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67579.html",
+      "sha256": "881f3d8e7698e99eaa71bc512f65f71a55dcd0f3aacb9c5cd2726dfc92c7101a",
+      "size": 161267
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67580.html",
+      "sha256": "7157fbca384018912dc622c3e74376d7a4bc6eb08be81d35519d1c9c64427d63",
+      "size": 164593
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67581.html",
+      "sha256": "6a30cbe16897af1822fabb355a029708aa4789abbefd0e7bcf46f76e0119ff1e",
+      "size": 161267
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67582.html",
+      "sha256": "f6badf48ddff051c68294141754cbc7aacc7f0ee115011bbbecdfe075b5c5547",
+      "size": 161261
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67583.html",
+      "sha256": "f96ae4c32fe82c7c295371cb5064cc828b6c874b33166bdd8f8aa6bba705cb06",
+      "size": 161267
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67584.html",
+      "sha256": "68378784f65fe124d430c9f6398edf9f5cf05f6e983cdd5aab2bf615b594f67e",
+      "size": 161260
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67585.html",
+      "sha256": "5632afcc71d29e4b6888a9d9b9781557ca4905f2bcdb8e2eaf7e7ec81a8910a4",
+      "size": 160016
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67586.html",
+      "sha256": "760c3f27b478fe8462aa08cb4e8d530dbd4f1aea1c0ea7fc0790d3b5cb7d7696",
+      "size": 160022
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67587.html",
+      "sha256": "40bb7b21b2292e1a7f535d6b38592bd36b1652b62f5fdf56d054b4b6847dc339",
+      "size": 166177
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67588.html",
+      "sha256": "d5394eead14ee8451df22c1641249c9cd53aead0e2510f3716919e09d226780a",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67589.html",
+      "sha256": "1e92f08e8a5b879e38afe0c07de81ecfd0250a824db474d2b1f489af5d19523f",
+      "size": 159663
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67590.html",
+      "sha256": "1648c4f06181b02a0e238b6af9a1b0a0591d6eccc148a9aedf76bdd078a6ac52",
+      "size": 163008
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67591.html",
+      "sha256": "c7c3d14f97ac818eb4072a63d59acd044a4e15ac5c97167ce68b4c39746bc6d0",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67592.html",
+      "sha256": "f83183a5b34563b89fc75ed9ea82958bd558d3f70b44c74e0c298be5a8c1f8ea",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67593.html",
+      "sha256": "287ee575b969aee30ade64ad50e8c171a53d1fe40a8bce80f4c4ad62100dd02a",
+      "size": 159663
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67594.html",
+      "sha256": "0c4982b52f3017fae089b28858f5e59815ab05734f6d0a970fe50a3c2e1a75c5",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67595.html",
+      "sha256": "d102adaeee2ace884aaaf3596321b3847bb4f21a80a57e8e20b5b1233cbb790c",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67596.html",
+      "sha256": "95a5e07776ef38ba3ec3dea7ec9219d7294a655aaae8f35b7c29273b9cfb2a8c",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67597.html",
+      "sha256": "a95105cc377f60feacedfcc24edd2cb2f034ac5ff8e2aacc6373209ba40670d8",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67598.html",
+      "sha256": "d8ad0b4b4db5f066ee1872a42575933215c38128470404f38ffb9c9c18ef2ea3",
+      "size": 181748
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67599.html",
+      "sha256": "07d1877d2d9916a12b57d14a83f98238a349f94fea8b8a4471ae2ad5fef2b4d1",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67600.html",
+      "sha256": "a2ca44782f8b26a0910e972b0eba3822fbb6ff3582650a713065c51d7f5457ed",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67601.html",
+      "sha256": "c998ba9b97c891a11c3c39aca33a2f72361aed4766268aaa964d0a78ce77815f",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67602.html",
+      "sha256": "37ab9a621116af5bb1ff64c10935ea98c7b4ac23c6dc09f4f0bc382f642b5460",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67603.html",
+      "sha256": "b560ac16afff9d93ae15e77c6cef4ec5b15d366e8fb482aa17b1c8b1835b4ffe",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67604.html",
+      "sha256": "dc4755dfba1ea86d3d45d75eab91b0b7ff3d812b5d8adeaff7296d83529cea9d",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67605.html",
+      "sha256": "dff2166f682bbde5c37b579aef9ee685fece41d64eae266ff8be8e57df4d5c05",
+      "size": 159664
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67606.html",
+      "sha256": "09d47682f80defd466bb7871970e71258006c762165f9a2d3a0d1410d69a5c01",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67607.html",
+      "sha256": "002726c469076aface944b17d55a7924861fab8b90c30901fc23d934b621d582",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67608.html",
+      "sha256": "49bda3d0642e4c9e75f237e361a8939f7f48fa0d1045aa44a9b7cdbaf94a1d2c",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67609.html",
+      "sha256": "5d574867f9c083d07eda75b50ec9ca4efd267f8b9f95977ce78c4b7cf9c82988",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67610.html",
+      "sha256": "a229275aa73bc86637897d95e276b22ca46aed931c16d11fa1b786cc65578b74",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67611.html",
+      "sha256": "a883f5ff94c4b616e883c99e8446a617a5aed6f6aece58f835e2235897d2e20c",
+      "size": 159670
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67612.html",
+      "sha256": "5c24be03b7bddcd83b4ab5bf92ad10b28277f67d4b4768e12460b7e4e0f384da",
+      "size": 160605
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67613.html",
+      "sha256": "bceb659b6fb625c67e91bbe64554002874e1e858535e5af6982466802db45efe",
+      "size": 160598
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67614.html",
+      "sha256": "e3b47a294e55097d4df894ad953290cfcf73574b3084a0f310479164b95bc270",
+      "size": 160593
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67615.html",
+      "sha256": "e7d65357623842dac965b45dc73de010fdde619f8bf0c36605d0df960cb4e70c",
+      "size": 160605
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67616.html",
+      "sha256": "bb2836c4fb56fdad6d86361f1e820cdfae80b23d0e707e6899db2c2194a3e3d7",
+      "size": 160605
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67617.html",
+      "sha256": "2aef2a658288ddbc5bb44512e507317054b3e750c4c207df097fe46859680335",
+      "size": 160599
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67618.html",
+      "sha256": "d0bc3ed304bbec05deb983a41bedd34840ba9f4ac631155990e2278cb1a8f2ec",
+      "size": 160606
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67619.html",
+      "sha256": "0d8ac523f07e12a4bdb8564405d2b19a1db6207536206a8f86fc7880f5e6ac19",
+      "size": 160599
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67620.html",
+      "sha256": "4bf0498edaa900163cae8e4dd7aa70d622a0c551a7131c52661dba03ce1f5558",
+      "size": 160606
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67621.html",
+      "sha256": "21b86931466c9f503b93530043d11a44565a4dc5215f962bc29a0c4ed943f423",
+      "size": 160593
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67622.html",
+      "sha256": "120ee81f77d391a18d98f46cc0ce428dbe9d69a4683f07e25ff74a350d83e67c",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67623.html",
+      "sha256": "95802630d6d1789f4c86d1701ff988784d483b248de4b802070b51fb793271f2",
+      "size": 159669
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67624.html",
+      "sha256": "a54408fda333da77db2d6c46a32f72e2f746cfd78f36bf3df71cb603a7f45ead",
+      "size": 151964
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67625.html",
+      "sha256": "4f771995d2b2f65abd8da3d1c0adb2bf1f7fdfe509820c242d2494549a586229",
+      "size": 203138
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67626.html",
+      "sha256": "9a1ea4c5132d061654f80425d0fffc05254db262388eea5587ab423a8d59a149",
+      "size": 169076
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67627.html",
+      "sha256": "bd90fece06bebc9db00a59547c2acf4ba948a2cb5035c441c02423b4eab365a6",
+      "size": 169361
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67628.html",
+      "sha256": "5a7ad0f49128ea42d066405f6330aedcbaf70318e27986de87eb041697e65769",
+      "size": 168403
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67629.html",
+      "sha256": "56904dbe2f3880d98bda420ef56f3d1857e481eef9eaafb6391aab8d089680be",
+      "size": 168413
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67630.html",
+      "sha256": "d5f23699cded7ca1262e0ea5c4ea7fd9b6afefd49bea7d06014c7d427a1cff41",
+      "size": 168116
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67631.html",
+      "sha256": "23351a1f82c297183ac3e2ce802bfa10321693d5a3dcb60367a373e919bc6f91",
+      "size": 168116
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67632.html",
+      "sha256": "b974521c07059ad803bc32c6fa47ad2bd19fb38d958c54c42cb492bc6f713e2a",
+      "size": 168110
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67633.html",
+      "sha256": "d5c9b702dd916e7576c92ba0eee959ad3e90e9114a7387b99c7b9c9069660491",
+      "size": 167815
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67634.html",
+      "sha256": "ffdb348428373ef84fb0b7b417943b90350d162d8881dc1ba7a5bc374230e18f",
+      "size": 167823
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67635.html",
+      "sha256": "f868f281c3c6a274066ae59bd7d3b4849baef834f5f0f435688a41d5fa2e9bf2",
+      "size": 167815
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67636.html",
+      "sha256": "329468e22f390e381e651325dbd90f2d2d64b4a1743dcb882eafc555fdaa642d",
+      "size": 170902
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67637.html",
+      "sha256": "1d789f9dc94ab98d01563c920df4367fad6680ab44e58293a451561463d74f52",
+      "size": 170917
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67638.html",
+      "sha256": "b5299029b746731c8ef41ffee6aefa7c79947c5c95a9a9c7c6cfae9e02989491",
+      "size": 170599
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67639.html",
+      "sha256": "9fa8355487eb4d177f966ec12d356b9c36d2ab703e8577b956eb3e7f59b11098",
+      "size": 170917
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67640.html",
+      "sha256": "b147f0b80bd9d34d89a18172f5be449b3f8e732f57a2ed75f59211692e1551a6",
+      "size": 170599
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67641.html",
+      "sha256": "a5d2725e8c2e61da40860c930c4a23ff0fc1a8a20b1f8f6d0ce7921b57f34035",
+      "size": 170917
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67642.html",
+      "sha256": "23a8d0dc011af14a82dbba716faf24dfb772ff6546ecd362a9f2ae522333be0d",
+      "size": 170607
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67643.html",
+      "sha256": "a6f639b551ea72f7c6564608e90d9721113e74d0057348996ef1d9465f0d39bd",
+      "size": 170909
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67644.html",
+      "sha256": "03310201cd3a19d618d41430b7771ad1bf09052b71d0293961076ca601e3bbb1",
+      "size": 170596
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67645.html",
+      "sha256": "47219dc31a6d06e23c0ef7a05d41ce6ec38311565dea918a8cbf9b8eecb08472",
+      "size": 170928
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67646.html",
+      "sha256": "13c158e949a74614eac837f51e0a9ad70932dd29eb10f68f014b8de79b047c2c",
+      "size": 170606
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67647.html",
+      "sha256": "87f95b64abf025276ba71910b1b2db99be1929264543d38b628b5e144bdad040",
+      "size": 170917
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67648.html",
+      "sha256": "72f28344866cb115f38f0aa471fe86693aec77a6a947d966e89f97edc8b914d9",
+      "size": 170606
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67649.html",
+      "sha256": "7e207e0dc5abd9d8642981f2be104af0f9ac488ced354201df5abba61176c6a5",
+      "size": 180558
+    },
+    {
+      "path": "data/external_v2/trombley2025/entity_67650.html",
+      "sha256": "f498ad843945fe814d9b92d9baa21831df8d3ec60aeea787be6b99f775f4857b",
+      "size": 180543
+    },
+    {
+      "path": "data/external_v2/trombley2025/exclusions.csv",
+      "sha256": "ad651795853e46357df72249d0eebeea6e81a2e6b6bafdefb6852837df9b3491",
+      "size": 598
+    },
+    {
+      "path": "data/external_v2/trombley2025/fatigue_all_conditions.csv",
+      "sha256": "3068bcd87c4ce2676cafc4fbef5ac7c05ba7e69d30e9f3c4572d7128f25339d4",
+      "size": 119072
+    },
+    {
+      "path": "data/external_v2/trombley2025/fatigue_asbuilt_available129.csv",
+      "sha256": "b6ef1ccc0fd23849a4271bac4c021ab51f8cdab536e512604fc92aa490264da1",
+      "size": 99358
+    },
+    {
+      "path": "data/external_v2/trombley2025/specimen_attributes.csv",
+      "sha256": "e35588e72503d1f203e44d119c4ec2f786c64122b65ee91ff739cdb5dba13aa3",
+      "size": 45164
+    },
+    {
+      "path": "data/external_v2/trombley2025/specimen_attributes.json",
+      "sha256": "e322a8544dfbb0d41fe9d27f26cb57f93fa01ea222401d2614679d0b3aca09d4",
+      "size": 440186
+    }
+  ]
+}

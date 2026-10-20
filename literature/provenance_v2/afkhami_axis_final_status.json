@@ -1,0 +1,9 @@
+{
+  "status": "unresolved",
+  "methods_verified": true,
+  "stress_axis_visually_verified": false,
+  "available_pdf_bytes": "Only validated tail HTTP206 range 22000000-22960345; not a complete PDF",
+  "decision": "Keep explicit stress-scale caveat and exclude-Afkhami sensitivity; do not delay pre-fit freeze",
+  "reason": "Bounded second retrieval attempt did not produce parseable complete PDF; own fetch processes ended",
+  "timestamp": "2026-10-20T14:01:36.362013+00:00"
+}

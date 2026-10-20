@@ -1,0 +1,45 @@
+[
+  {
+    "name": "liang_ffe2022_direct",
+    "url": "https://sam.ensam.eu/bitstream/handle/10985/22221/LAMPA_FFEMS_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "final_url": "https://sam.ensam.eu/bitstream/handle/10985/22221/LAMPA_FFEMS_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "status": 403,
+    "path": "literature/provenance_v2/liang_ffe2022_direct.html",
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "bytes": 146,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:42:43.455979+00:00"
+  },
+  {
+    "name": "liang_ijf2022_direct",
+    "url": "https://sam.ensam.eu/bitstream/handle/10985/22237/LAMPA_IJF_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "final_url": "https://sam.ensam.eu/bitstream/handle/10985/22237/LAMPA_IJF_2022_LIANG.pdf?isAllowed=y&sequence=2",
+    "status": 403,
+    "path": "literature/provenance_v2/liang_ijf2022_direct.html",
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "bytes": 146,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:42:43.453774+00:00"
+  },
+  {
+    "name": "cui_ijplas2022",
+    "url": "https://www.diva-portal.org/smash/get/diva2%3A1626356/FULLTEXT01.pdf",
+    "error": "HTTPSConnectionPool(host='www.diva-portal.org', port=443): Max retries exceeded with url: /smash/get/diva2%3A1626356/FULLTEXT01.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.diva-portal.org', port=443) at 0x10a5a4200>, 'Connection to www.diva-portal.org timed out. (connect timeout=35)'))"
+  },
+  {
+    "name": "cui_jmst2022_record",
+    "url": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2:1619582",
+    "error": "HTTPSConnectionPool(host='liu.diva-portal.org', port=443): Max retries exceeded with url: /smash/record.jsf?pid=diva2:1619582 (Caused by ConnectTimeoutError(<HTTPSConnection(host='liu.diva-portal.org', port=443) at 0x10abd47d0>, 'Connection to liu.diva-portal.org timed out. (connect timeout=35)'))"
+  },
+  {
+    "name": "zhang_msea2017_alt",
+    "url": "https://pureportal.coventry.ac.uk/ws/files/11561081/fatiguecomb.pdf",
+    "final_url": "https://pureportal.coventry.ac.uk/ws/files/11561081/fatiguecomb.pdf",
+    "status": 404,
+    "path": "literature/provenance_v2/zhang_msea2017_alt.html",
+    "sha256": "55d34da51e47af39a2158bef6875514109009f538761b4223ef07d92f4e97bc8",
+    "bytes": 15142,
+    "is_pdf": false,
+    "accessed": "2026-10-20T13:42:43.693924+00:00"
+  }
+]

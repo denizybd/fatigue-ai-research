@@ -1,5 +1,21 @@
 # Research state
 
+## Phase 2 supersedes the phase-1 scientific interpretation
+
+20 October 2026. Read `manuscript/v2/arastirma_ozeti_tr.pdf` and `research_note_en.pdf` first. The original computational pilot remains intact, but source-method review found an ineligible stepped-load source (Merot 106552: 98 database points versus 63 physical specimens), republished comparison curves, and source-supported runout/treatment corrections. Phase-1 numerical reproducibility does not validate its original constant-amplitude cohort assumption. Do not send the old contact package without this correction.
+
+Phase 2 main cohort: 309 digitized points, 32 curves, 11 method-reviewed source blocks. This is not exhaustive point-to-specimen identity or certified laboratory independence. Panel A has 18 curves/9 target sources; B 14/6; C 6/5. Frozen pre-fit protocols and source gate are in `protocols/v2/` and `literature/provenance_v2/final_source_gate.csv`. One later matched-population ablation is explicitly post-result.
+
+Raw full-training A-panel hierarchical k3 gives 1.92x geometric lower life and source-balanced danger identification 8.31-8.93%, versus 13.35-15.41% at k0. Descriptive 95% gain interval 0.84-3.65x crosses no improvement; true-risk-increase upper interval endpoint is +9.30pp. Source-specific harms remain; most mean risk improvement comes from Solberg. Prespecified calibrated usefulness fails: 4-6 calibration blocks produce literal zero-life 90% bounds.
+
+Acquired author-provided external campaign: 129 complete named specimens, three diameter conditions, one related campaign, different crack-related ultrasonic endpoint. At random k3 (three per condition, nine total), hierarchical danger is 13.19%, or 16.42% under the population-bootstrap sensitivity. A simple matched-slope/scatter local intercept control gives 6.99% at shorter life. Chronological k3 gives 1.96% on a different query population, not proof of selection superiority. No new dependable-design algorithm or general 90% guarantee is established.
+
+31 synthetic tests pass. Independent source/split checks and arithmetic cover all 14 configurations and the post-result common-query contrasts. A fresh end-to-end run of all 14 configurations reproduces all 227,310 stored prediction instances and 42 prediction/summary/contrast tables byte for byte; maximum numerical difference is zero (`results/v2/full_replay_comparison.json`). Instances repeat specimens over models/seeds/support counts and are not independent tests. The user-facing phase-2 archive excludes raw/normalized external repository records because no dataset license is specified; acquisition code, URLs, hashes and derived aggregates are retained. No correspondence, upload, publication or physical test occurred.
+
+Use `zsh run_v2.sh` for a fresh phase-2 replay; it retains frozen split IDs and writes a fresh results directory. Strong next evidence needs consistent specimen/build lineage and failure/censoring definitions, the published random-fatigue-limit baseline, and a common-query test of stress-level acquisition across additional held-out campaigns. Existing seen outcomes cannot become an unlabelled confirmatory test.
+
+## Historical phase 1 record (qualified by correction above)
+
 Updated: 20 October 2026, Europe/Istanbul.
 
 **Completed bounded study:** frozen critical experiments, complete computational replay, internal critical verification, scientific draft, Turkish explanation and reviewable contact package. The contribution is a reproducible pilot/technical note and a negative intervention result. It is not an established new safe-design algorithm or an accepted paper.

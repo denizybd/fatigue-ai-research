@@ -1,0 +1,16 @@
+Subject: Source provenance and few-shot lower-life limits in AM316L
+
+Dear Professor Tridello,
+
+I am examining how a few observations from a new AM316L condition affect reliable lower-life predictions, motivated by your SS316L probabilistic-ML and recent transfer-learning work.
+
+A public-data benchmark now includes a source-method audit, censored fatigue baselines, frozen source holdouts and an acquired author-provided external campaign. The audit identified stepped-load observations and source-supported label corrections in the open database. These findings do not establish errors in your original 518-row data, which I have not obtained.
+
+Three observations per condition improve the historical average, but uncertainty and source-specific failures prevent a reliable-method claim. A matched simple local-intercept control is competitive; the external campaign also exposes limits. The attached one-page brief and aggregate figures summarize these results without claiming model superiority.
+
+Would you be willing to comment on the proposed next test: selecting stress levels under a fixed experimental budget, with common held-out queries and a random-fatigue-limit comparator? A source-to-condition/build mapping and the censoring rules for your dataset would help resolve a concrete bottleneck.
+
+Best regards,
+[Name]
+
+Not sent. Verify personal signature and intended recipient before any sending action. Suggested attachments: phase-2 one-page brief, source-heterogeneity figure, external learning figure. The earlier contact draft is superseded by this correction-aware version.

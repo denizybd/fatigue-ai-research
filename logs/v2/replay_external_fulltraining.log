@@ -1,0 +1,4 @@
+1/4 panel=external_random seed=0 source=trombley2025_one_campaign seconds=0.64
+2/4 panel=external_random seed=17 source=trombley2025_one_campaign seconds=0.63
+3/4 panel=external_random seed=42 source=trombley2025_one_campaign seconds=0.71
+4/4 panel=external_chronological seed=0 source=trombley2025_one_campaign seconds=0.77

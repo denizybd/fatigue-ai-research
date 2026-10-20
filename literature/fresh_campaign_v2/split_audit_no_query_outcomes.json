@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "model": "pooled",
+      "k": 0,
+      "n_queries": 10,
+      "max_difference": 0.0,
+      "query_outcome_poisoning": "PASS"
+    },
+    {
+      "model": "pooled",
+      "k": 3,
+      "n_queries": 10,
+      "max_difference": 0.0,
+      "query_outcome_poisoning": "PASS"
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 0,
+      "n_queries": 10,
+      "max_difference": 0.0,
+      "query_outcome_poisoning": "PASS"
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 3,
+      "n_queries": 10,
+      "max_difference": 0.0,
+      "query_outcome_poisoning": "PASS"
+    },
+    {
+      "model": "hierarchical",
+      "k": 0,
+      "n_queries": 10,
+      "max_difference": 0.0,
+      "query_outcome_poisoning": "PASS"
+    },
+    {
+      "model": "hierarchical",
+      "k": 3,
+      "n_queries": 10,
+      "max_difference": 0.0,
+      "query_outcome_poisoning": "PASS"
+    }
+  ],
+  "parameters": "Fixed arbitrary artificial numerical parameters, not a real-data fit.",
+  "poisoned_columns": [
+    "log_life",
+    "event",
+    "cycles_observed",
+    "runout"
+  ],
+  "meaning": "Predictive lower quantiles do not inspect query outcomes, while legitimate support outcomes remain supplied. This does not by itself audit every possible source of leakage."
+}

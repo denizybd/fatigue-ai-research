@@ -1,0 +1,167 @@
+{
+  "task": {
+    "panel": "B",
+    "seed": 42,
+    "outer": "10.1007/s40964-021-00164-8",
+    "ks": [
+      0,
+      3,
+      5
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "cui_linked_campaign"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0032_d000",
+        "support_pool": [
+          "a0032_d000_p000",
+          "a0032_d000_p001",
+          "a0032_d000_p007",
+          "a0032_d000_p002",
+          "a0032_d000_p010"
+        ],
+        "query_ids": [
+          "a0032_d000_p006",
+          "a0032_d000_p009",
+          "a0032_d000_p011",
+          "a0032_d000_p004",
+          "a0032_d000_p005",
+          "a0032_d000_p003",
+          "a0032_d000_p008",
+          "a0032_d000_p012"
+        ]
+      },
+      {
+        "curve": "a0032_d001",
+        "support_pool": [
+          "a0032_d001_p002",
+          "a0032_d001_p006",
+          "a0032_d001_p004",
+          "a0032_d001_p008",
+          "a0032_d001_p001"
+        ],
+        "query_ids": [
+          "a0032_d001_p000",
+          "a0032_d001_p009",
+          "a0032_d001_p005",
+          "a0032_d001_p003",
+          "a0032_d001_p007"
+        ]
+      },
+      {
+        "curve": "a0032_d002",
+        "support_pool": [
+          "a0032_d002_p004",
+          "a0032_d002_p010",
+          "a0032_d002_p006",
+          "a0032_d002_p009",
+          "a0032_d002_p005"
+        ],
+        "query_ids": [
+          "a0032_d002_p000",
+          "a0032_d002_p007",
+          "a0032_d002_p001",
+          "a0032_d002_p002",
+          "a0032_d002_p008",
+          "a0032_d002_p003"
+        ]
+      },
+      {
+        "curve": "a0032_d003",
+        "support_pool": [
+          "a0032_d003_p014",
+          "a0032_d003_p001",
+          "a0032_d003_p006",
+          "a0032_d003_p013",
+          "a0032_d003_p004"
+        ],
+        "query_ids": [
+          "a0032_d003_p000",
+          "a0032_d003_p011",
+          "a0032_d003_p010",
+          "a0032_d003_p012",
+          "a0032_d003_p015",
+          "a0032_d003_p016",
+          "a0032_d003_p002",
+          "a0032_d003_p017",
+          "a0032_d003_p009",
+          "a0032_d003_p003",
+          "a0032_d003_p005",
+          "a0032_d003_p007",
+          "a0032_d003_p008"
+        ]
+      }
+    ]
+  },
+  "fit_n": 208,
+  "pooled": {
+    "params_": [
+      5.636925790219745,
+      -3.526385342469359,
+      -0.8290663230279157,
+      -0.4653122183040463
+    ],
+    "sigma_": 0.6279390205245902,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 11,
+      "objective": 0.9733534495033068,
+      "gradient_inf": 6.239701865861768e-08,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.6583457209754915,
+      -5.616526659327693,
+      -1.4159119168755758,
+      -1.0490775102529177,
+      -0.5584509985941505
+    ],
+    "sigma_": 0.3502607120389191,
+    "tau_": 0.5720945531267649,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 14,
+      "objective": 5.465889958105841,
+      "gradient_inf": 4.544008842588543e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 24,
+      "sources": 9,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.465889958105841,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 5.465889958118441,
+          "n_iter": 15
+        }
+      ]
+    }
+  },
+  "phase": "population_fit"
+}

@@ -1,0 +1,22 @@
+{
+  "splits_sha256": "8007fc2aac63cc74c23c87ea7d5aa0c55f77e06ced228fbf3363f91e7a70464a",
+  "cohort_sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3",
+  "code": {
+    "src/v2_run.py": "b4c79a07c3f96e32ac88f002d91be931153850c7e32016dc3892bd927edeef9b",
+    "src/v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+    "src/evaluation.py": "6e5874221951c5a31d28e518f1214e6f241a969faff71bb609272f4b7eff2760",
+    "src/v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377"
+  },
+  "quadrature": 41,
+  "models": [
+    "pooled",
+    "unpooled_shift",
+    "hierarchical"
+  ],
+  "bound_types": [
+    "raw",
+    "endpoint_calibrated"
+  ],
+  "alpha": 0.1,
+  "curvature_sensitivity": true
+}

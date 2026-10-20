@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "scope": "Non-creator arithmetic, reference identity, populationparameter/transformation and exact same-k common-query-mask audit. No root model or metric implementation imported, no population refit.",
+  "receipts": [
+    {
+      "run": "same_population_internal",
+      "original_run": "fulltraining",
+      "population_receipts_checked": 60,
+      "target_episodes_all_k_checked": 306,
+      "reference_prediction_rows": 2595,
+      "control_finite_k_positive_rows_independently_recomputed": 1565,
+      "all_runout_unavailable_episodes": 3,
+      "all_runout_unavailable_by_panel_k": {
+        "('A', 3)": 2,
+        "('C', 3)": 1
+      },
+      "hierarchy_reference_max_difference": 8.881784197001252e-15,
+      "control_scalar_MLE_quantile_max_difference": 2.4087398742267396e-12,
+      "training_center_max_difference": 0.0,
+      "matched_metric_cells_checked": 216,
+      "status": "PASS"
+    },
+    {
+      "run": "same_population_external",
+      "original_run": "external_fulltraining",
+      "population_receipts_checked": 4,
+      "target_episodes_all_k_checked": 48,
+      "reference_prediction_rows": 1584,
+      "control_finite_k_positive_rows_independently_recomputed": 1188,
+      "all_runout_unavailable_episodes": 0,
+      "all_runout_unavailable_by_panel_k": {},
+      "hierarchy_reference_max_difference": 7.105427357601002e-15,
+      "control_scalar_MLE_quantile_max_difference": 5.160316618457728e-13,
+      "training_center_max_difference": 0.0,
+      "matched_metric_cells_checked": 192,
+      "status": "PASS"
+    }
+  ],
+  "selected_k3": [
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "availability_pair",
+      "mean": "0.9814814814814815",
+      "lo95": "0.9444444444444444",
+      "hi95": "1.0",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "log_life_gain_hier_minus_control",
+      "mean": "0.04137231425096213",
+      "lo95": "-0.016602341854535515",
+      "hi95": "0.1310723483927525",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "hier_risk_lower",
+      "mean": "0.07777543958099514",
+      "lo95": "0.02046102046102046",
+      "hi95": "0.15388132122507117",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "hier_risk_upper",
+      "mean": "0.08518284698840255",
+      "lo95": "0.02046102046102046",
+      "hi95": "0.17631820340153653",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "control_risk_lower",
+      "mean": "0.08437994618550174",
+      "lo95": "0.024436134852801522",
+      "hi95": "0.16140184789490344",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "control_risk_upper",
+      "mean": "0.09034702437480215",
+      "lo95": "0.024436134852801522",
+      "hi95": "0.17809235517568847",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "true_risk_change_lo",
+      "mean": "-0.006604506604506604",
+      "lo95": "-0.022748856082189413",
+      "hi95": "0.006734006734006735",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_internal",
+      "panel": "A",
+      "k": "3",
+      "metric": "true_risk_change_hi",
+      "mean": "0.0008029008029008029",
+      "lo95": "-0.019943019943019943",
+      "hi95": "0.022032288698955363",
+      "n_sources": "9",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "availability_pair",
+      "mean": "1.0",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "log_life_gain_hier_minus_control",
+      "mean": "0.19197474064758802",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "hier_risk_lower",
+      "mean": "0.0196078431372549",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "hier_risk_upper",
+      "mean": "0.0196078431372549",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "control_risk_lower",
+      "mean": "0.00980392156862745",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "control_risk_upper",
+      "mean": "0.00980392156862745",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "true_risk_change_lo",
+      "mean": "0.00980392156862745",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_chronological",
+      "k": "3",
+      "metric": "true_risk_change_hi",
+      "mean": "0.00980392156862745",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "availability_pair",
+      "mean": "1.0",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "log_life_gain_hier_minus_control",
+      "mean": "0.15168659094969522",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "hier_risk_lower",
+      "mean": "0.13187052598817306",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "hier_risk_upper",
+      "mean": "0.13187052598817306",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "control_risk_lower",
+      "mean": "0.06987239340180516",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "control_risk_upper",
+      "mean": "0.06987239340180516",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "true_risk_change_lo",
+      "mean": "0.061998132586367875",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    },
+    {
+      "run": "same_population_external",
+      "panel": "external_random",
+      "k": "3",
+      "metric": "true_risk_change_hi",
+      "mean": "0.061998132586367875",
+      "lo95": "",
+      "hi95": "",
+      "n_sources": "1",
+      "interpretation": "post-result diagnostic; paired available queries only"
+    }
+  ],
+  "interpretation": [
+    "Explicit post-result exploratory ablation, cannot rescue frozen primary failure.",
+    "At k0 both names are the same hierarchical new-condition reference, not a zero-observation unpooled estimator.",
+    "At k>0 only target-intercept prior borrowing changes: same fitted hierarchical slope/R/sigma; censored flat-prior predictive variance is an observed-curvature approximation.",
+    "Unavailable all-runout support episodes are retained as missing, not silently fitted or converted to failures. Paired risk/utility is conditional on common finite predictions; availability is reported separately.",
+    "External three diameter conditions are one campaign; source-bootstrap CI is intentionally unavailable."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "audit_date": "2026-10-20T13:51:12.514194+00:00",
+  "primary_all_rows": 1126,
+  "all_sources": 37,
+  "method_verified_sources": 8,
+  "method_verified_rows": 256,
+  "method_verified_curves": 24,
+  "verified_source_dois": [
+    "10.1002/adem.202200751",
+    "10.1007/s40964-021-00164-8",
+    "10.1016/j.jmst.2019.08.047",
+    "10.1016/j.msea.2020.140660",
+    "10.1108/13552541311302932",
+    "10.3390/ma12244203",
+    "10.3390/ma13153293",
+    "10.3390/ma15186278"
+  ],
+  "excluded_stepped_doi": "10.1016/j.ijfatigue.2021.106552",
+  "source_gate_table_sha256": "8cd7da877490ebbf4e48250a0c8a411d73d90fd77180435c813ff9b48471ccc5",
+  "qualification": "Methods verified means source describes appropriate tests; not exhaustive point-to-specimen identity or certified independent campaigns."
+}

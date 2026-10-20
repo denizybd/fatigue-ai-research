@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "audit_implementation": "Independent HTMLParser DOM + Decimal numeric conversion; no import of regex acquisition/preparation functions",
+  "fatigue_records_checked": 154,
+  "asbuilt_records_checked": 129,
+  "numeric_comparisons": 1232,
+  "categorical_comparisons": 770,
+  "source_attribute_json_crosschecks": 1078,
+  "asbuilt_condition_counts": {
+    "trombley2025_d1.5_a": 44,
+    "trombley2025_d2.5_a": 40,
+    "trombley2025_d5_a": 45
+  },
+  "missing_entities": [
+    {
+      "entity_id": "67563",
+      "specimen_id": "CCV1-1.5a-16-au",
+      "missing_stress": true,
+      "missing_cycles": true
+    },
+    {
+      "entity_id": "67624",
+      "specimen_id": "CCV2-5.0a-01-hr",
+      "missing_stress": true,
+      "missing_cycles": true
+    },
+    {
+      "entity_id": "67625",
+      "specimen_id": "CCV2-5.0a-02-ar",
+      "missing_stress": true,
+      "missing_cycles": true
+    }
+  ],
+  "asbuilt_test_date_range": [
+    "2019-06-24",
+    "2021-07-12"
+  ],
+  "distinct_specimen_names": 154,
+  "limits": "Internal independent extraction arithmetic, not independent experiments or external scientific replication. Public author metadata can itself contain errors; no raw machine files accessed. Article advertises130 but only129 publiclycomplete asbuilt records."
+}

@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "original": "strict",
+      "replay": "replay_strict",
+      "rows": 15570,
+      "byte_identical": true,
+      "equal_values": true,
+      "original_sha256": "85dbf99241b3b7e00051325a7883069abb93b458602a07d62922a8f91eb7cda2",
+      "replay_sha256": "85dbf99241b3b7e00051325a7883069abb93b458602a07d62922a8f91eb7cda2"
+    },
+    {
+      "original": "fulltraining",
+      "replay": "replay_fulltraining",
+      "rows": 15570,
+      "byte_identical": true,
+      "equal_values": true,
+      "original_sha256": "b4e480977e23d6c2926ff01b326e450e0decddfa6a15f2365bcc393cd2dcdf1b",
+      "replay_sha256": "b4e480977e23d6c2926ff01b326e450e0decddfa6a15f2365bcc393cd2dcdf1b"
+    },
+    {
+      "original": "external_fulltraining",
+      "replay": "replay_external_fulltraining",
+      "rows": 9504,
+      "byte_identical": true,
+      "equal_values": true,
+      "original_sha256": "8fe7b28109d9765d0c787d3f9b1be6c4bbd59567ac7ea24c99975bf6f3ef7e30",
+      "replay_sha256": "8fe7b28109d9765d0c787d3f9b1be6c4bbd59567ac7ea24c99975bf6f3ef7e30"
+    }
+  ]
+}

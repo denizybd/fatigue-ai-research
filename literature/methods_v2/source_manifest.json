@@ -1,0 +1,29 @@
+{
+  "code_commit": "5b2cd20354e42105c980eabb4650240ae76dc866",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/msesia/conformal_survival/main/code/conf_surv/utils_censoring.R",
+      "path": "literature/methods_v2/utils_censoring.R",
+      "sha256": "aa46002e97da67ca59814fe288482c192e14ce28cba0a40eab7f3d83c0ab7311",
+      "accessed_utc": "2026-10-20T13:46:15.392373+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/msesia/conformal_survival/main/code/conf_surv/utils_conformal.R",
+      "path": "literature/methods_v2/utils_conformal.R",
+      "sha256": "f68f3693e2b76c4485afbdb2868e93a4bff4204e2372b0d4bfaaa80ef0973fb3",
+      "accessed_utc": "2026-10-20T13:46:15.808488+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/msesia/conformal_survival/main/code/conf_surv/utils_decensoring.R",
+      "path": "literature/methods_v2/utils_decensoring.R",
+      "sha256": "03f35bf785e790b867f847562d0a9f873ba5f827d16fb78bb1ca466fe228fc93",
+      "accessed_utc": "2026-10-20T13:46:16.499719+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/msesia/conformal_survival/main/code/experiments/experiment_1_laptop.R",
+      "path": "literature/methods_v2/experiment_1_laptop.R",
+      "sha256": "fb390905d9221cd5161b34eb7039a36b2eb8600756726ca99616d4cf471fb557",
+      "accessed_utc": "2026-10-20T13:46:18.012803+00:00"
+    }
+  ]
+}

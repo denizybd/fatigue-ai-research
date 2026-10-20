@@ -1,0 +1,85 @@
+{
+  "accessed_utc": "2026-10-20T13:55:08.162490+00:00",
+  "files": [
+    {
+      "path": "literature/methods_v2/source_checks/a205_raw_metadata.txt",
+      "bytes": 5396,
+      "sha256": "a604ef69971374ef414b75ed6e64f0102cece53f1738db57e216528a31d3d03a"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/seven_source_evidence.csv",
+      "bytes": 4629,
+      "sha256": "aad2da355f618af225a78255b05ba1a72c971571e8d5fee53c172f531df409e1"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/a201_raw_metadata.txt",
+      "bytes": 10978,
+      "sha256": "19c08d5c552dd3c9aeddd8e691c94aa8bb1502a87ac284044ed2ba73c855afc1"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/a404_raw_metadata.txt",
+      "bytes": 1780,
+      "sha256": "03e6bc5063b7a00ae876ac52f3a78053a70f1e88f523a562527dc489250f7311"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/106063.openalex.json",
+      "bytes": 17460,
+      "sha256": "1ff6a3997a966a6b51ce8464157cc32122160b087f99d08386df44c17495fe2a"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/102849.openalex.json",
+      "bytes": 13571,
+      "sha256": "ea9fc29e3a82fefe78c7adbce2dc01a2a6bdf75790aaf60fa1462890ae99c4a3"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/unit_conflict.json",
+      "bytes": 625,
+      "sha256": "91582fe345534042b5a9716ca7affdb57b0216924967321ea44236c2a501c8a6"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/a459_raw_metadata.txt",
+      "bytes": 1864,
+      "sha256": "5fa50c22f03ee1920cce9f7eb91844c5ec63562551f68a20c9c0b466cff33c45"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/006.openalex.json",
+      "bytes": 26942,
+      "sha256": "e2dd89789949f250a2bc3da5c96a661c44655eeb4c164da68b12274cf201f904"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/a239_raw_metadata.txt",
+      "bytes": 5320,
+      "sha256": "d90e9800b718b4c498eaefe5096a1ff1738cf0f62fa956df2a8dc6016beaa83c"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/101591.openalex.json",
+      "bytes": 15181,
+      "sha256": "ed20f6fb6b56645e6e839886eacd3ced17937aecfc78ccf45f9459a1c74ebf54"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/aalto_record.html",
+      "bytes": 59390,
+      "sha256": "518d2cda11baeb6005629afd9033dbb2d940857cb0704f8f7178eec781820a8b"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/106207.openalex.json",
+      "bytes": 19058,
+      "sha256": "807e63c8d93ed6c93d71ebf67a44bd6e6a639f36d0acd925d071676f903682e6"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/a253_raw_metadata.txt",
+      "bytes": 1961,
+      "sha256": "f6cd4008adcc9cfa060669819a191a9d17c4dd9d301f4b449569b44bcb3d50fb"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/source_audit_report.md",
+      "bytes": 2870,
+      "sha256": "249179613006b78010be06763b24dbfc3345a38b4bc1185d9909ea6ae214e6a6"
+    },
+    {
+      "path": "literature/methods_v2/source_checks/a295_raw_metadata.txt",
+      "bytes": 4353,
+      "sha256": "48bb8550e09b7c4946c3f70ee0af932e19ad43ee51482f31bbac5df732e2702a"
+    }
+  ]
+}

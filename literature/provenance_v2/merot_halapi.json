@@ -1,0 +1,15 @@
+{
+  "response":{
+    "numFound":1,
+    "start":0,
+    "maxScore":5.34554,
+    "numFoundExact":true,
+    "docs":[{
+      "docid":"3689368",
+      "title_s":["Observations on the influence of process and corrosion related defects on the fatigue strength of 316L stainless steel manufactured by Laser Powder Bed Fusion (L-PBF)"],
+      "halId_s":"hal-03689368",
+      "uri_s":"https://hal.science/hal-03689368v1",
+      "fileMain_s":"https://hal.science/hal-03689368/document"
+    }]
+  }
+}

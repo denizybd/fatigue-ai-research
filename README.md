@@ -1,5 +1,9 @@
 # Provenance-aware censored AM316L fatigue audit
 
+**Current phase: 2.** Start with `STATE.md`, `manuscript/v2/arastirma_ozeti_tr.pdf` or `manuscript/v2/research_note_en.pdf`. Source review found a stepped-load eligibility problem and label corrections in the old open-data pilot. Its earlier scientific interpretation and contact package require the phase-2 addendum.
+
+Phase 2 tests 0/3/5/10 endpoints per new condition using strong censored monotone fatigue baselines, fixed queries, source holdouts, an acquired 129-specimen campaign, curvature/parameter sensitivities and a matched-population control. The intended reliable-and-useful criterion failed. No general hierarchical-method superiority is established. Reproduce it with `zsh run_v2.sh`; original phase-1 instructions remain below for historical audit.
+
 A reproducible public-data pilot. The prespecified combined rejection hypothesis failed. This work does not establish a new safe-design algorithm.
 
 Start with **STATE.md** or **manuscript/arastirma_ozeti_tr.pdf**.

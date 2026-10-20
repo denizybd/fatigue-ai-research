@@ -1,0 +1,35 @@
+1. Üç deneyle güvenli sınır bulduk mu?
+Hayır. Bazı koşullarda yararlı düzelme var. Kaynak bazında risk artabiliyor; güçlü başarı ölçütleri geçilmedi.
+
+2. %8,31-8,93 güven aralığı mı?
+Hayır. Runoutların gerçek kırılma ömürleri bilinmediği için tehlikeli tahmin oranının belirlenebilen alt/üst uçları. Kaynak örnekleme belirsizliği ayrıca ve geniş.
+
+3. 1,92 kat, parçanın ömrü uzadı demek mi?
+Hayır. Aynı test girdilerindeki model alt ömür sınırı ortalamada yükseldi. Fiziksel parça veya ömrü değiştirilmedi. Betimleyici kazanç aralığı 0,84-3,65 kat ve kazançsızlığı dışlamıyor.
+
+4. Dış kampanyada neden sınırı düşürmek iyi?
+Başlangıç sınırı aşırı iyimserdi. Üç destek gözlemi bunu yaklaşık 4,68 kat düşürerek tehlikeli tahmini azaltıyor; rastgele seçimde risk yine %13,19.
+
+5. Üç deney toplam mı?
+Her koşul için üç gözlem. Dış kampanyadaki üç çap koşulunda toplam dokuz destek. Veriler geçmiş fiziksel deneylerden; biz yeni deney yapmadık.
+
+6. Kronolojik %1,96 niye ana başarı değil?
+Rastgele ve kronolojik mekanizmaların destekleri ve sorgu nüfusları farklı. Tek kampanya var. En iyi görünen sonucu seçmek güvenilir yöntem kanıtı olmaz.
+
+7. Bayesçi/hiyerarşik model yeni mi?
+Hayır, yorulmada hiyerarşik bilgi aktarımı önceki literatürde var. Buradaki model güçlü bir temel karşılaştırma. Aynı popülasyonlu basit yerel kontrol de rekabetçi.
+
+8. %90 kalibrasyon niye sıfır verdi?
+Yeterli bağımsız kalibrasyon bloğu yok. Dondurulan sonlu örneklem sırası mevcut blok sayısını aşıyor. Parametrik model bilgi verebilir ama ek varsayımlarla ve sınanması gereken güvenilirlikle.
+
+9. Veriyi tam doğruladık mı?
+309 noktanın kaynak deney yöntemlerini taradık ve somut düzeltmeler yaptık. Yaklaşık grafik noktalarının tamamını özgün numune kimliklerine bağlamadık; parti kimliği/gerilme ölçeği/sansür ayrıntılarında açıklanmış sınırlamalar var.
+
+10. Tridello'nun yanlışını mı bulduk?
+Hayır. Bulgular bizim FatigueData-AM2022 benchmarkımıza ait. Centola'nın özgün 518 kayıt ve kodu alınmadı.
+
+11. Sonraki güçlü sınama ne?
+Ortak, önceden ayrılmış sorgularda gerilme seviyelerini kapsayan deney seçimini rastgele/kronolojik seçimle karşılaştırmak; RFL ve basit yerel kontrolü kullanmak; farklı kampanyalarda kaynak bazında riski göstermek. Gerçek numune/parti kimliği ve ortak sonlanma/sansür tanımı gerekir.
+
+12. Bir şey gönderildi mi?
+Hayır. E-posta, yükleme veya yayın yapılmadı. Güncel kısa özet ve e-posta yalnız taslak.

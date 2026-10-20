@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-20T14:07:26.891231+00:00",
+  "timing": "EXPLICIT POST-RESULT EXPLORATORY ABLATION",
+  "original_predictions_sha256": "b4e480977e23d6c2926ff01b326e450e0decddfa6a15f2365bcc393cd2dcdf1b",
+  "original_population_receipt_sha256": "360bdaf54eba95dd585e81d751deaee83570d9b58e24d7581e5c91730ec2bbef",
+  "splits_sha256": "8007fc2aac63cc74c23c87ea7d5aa0c55f77e06ced228fbf3363f91e7a70464a",
+  "cohort_sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3",
+  "code_sha256": "a15db90d1f4d2d7613aa7edec360fe15e4b7b32f9d9bc90526f7aadea7c76501",
+  "model_sha256": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+  "protocol_sha256": "02e454cccc9158afe869e4dca535625519989be35f167e7a15f905cf241354e5",
+  "population_refitted": false,
+  "population_parameter_uncertainty_included": false
+}

@@ -1,0 +1,95 @@
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+1
+Az deneyle daha güvenilir yorulma sınırı: ne
+öğrendik?
+20 Ekim 2026 | İkinci araştırma aşaması | Sonuç: değerli veri denetimi ve bir sınır koşulu; henüz yeni, güvenilir tasarım yöntemi
+yok.
+Açık cevap
+Üç deney bazı yeni koşullarda çok işe yarıyor; bunu her koşula genelleyemiyoruz. Tarihsel veride ortalama
+alt sınır uzadı ve ortalama tehlikeli tahmin azaldı. Ancak belirsizlik geniş, birkaç kaynakta risk arttı ve dış
+kampanyada rastgele üç gözlemle hedefin üzerinde risk kaldı. Basit bir yerel düzeltme yöntemi de güçlü
+sonuç verdi. Hiyerarşik modelin üstünlüğünü kanıtlamadık.
+Önce veriyi düzelttik
+Önceki 1.126 noktalı pilotta bir kaynakta 98 kaydın bağımsız sabit gerilme deneyleri olmadığı ortaya çıktı.
+Aynı numuneye artan gerilme basamakları uygulanmış. Bu kaynağı yeni analizden çıkardık. Yeniden
+yayımlanmış eğriler, tam eşleştirilemeyen kayıtlar ve bir maksimum gerilme/genlik çelişkisi de ana
+kümeden ayrıldı.
+Ana küme: 309 yaklaşık grafik noktası, 32 eğri, yöntemi incelenmiş 11 kaynak bloğu. Bu, 11 bağımsız
+fabrika veya her noktanın özgün numune kimliği doğrulandı demek değil. Bir runout kaydının aslında
+kırılmış numune olduğunu ve bir koşula yanlış ısıl işlem atandığını kaynak metinlerinden düzelttik. Ham
+veri korunuyor.
+Bu düzeltmeler bizim açık veri benchmarkımıza aittir. Centola/Tridello’nun özgün 518 kaydı elimizde yok; onların verisinde aynı
+hataların olduğunu göstermedik. Önceki pilotun sayısal tekrarı doğru olsa da bilimsel yorumu kusurlu veri varsayımlarına
+bağlıydı. Eski iletişim paketinin yerine bu aşamanın düzeltmeli özeti kullanılmalı.
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+2
+Üç gözlemle ne değişti?
+Aynı test noktaları korunarak, her yeni eğriden 3 gözlem kullanıldı. Bütün diğer doğrulanmış tarihsel
+kaynaklarla eğitilen modelde kaynak dengeli risk aralığı 13.35-15.41% iken 8.31-8.93% oldu. Alt ömür
+sınırlarının geometrik ortalaması 1.92 katına çıktı.
+Fakat bu kazanç için betimleyici %95 kaynak bootstrap aralığı 0.84-3.65 kat. Yani kazanç olmadığını
+dışlayamıyoruz. Gerçek risk değişiminin üst sınırındaki belirsizlik de +9.30 puan artışa izin veriyor. Başarı
+için önceden koyduğumuz güçlü ölçütler geçilmedi.
+Ortalama iyileşmenin çoğu Solberg kaynağındaki büyük düzeltmeden geliyor. Lai kaynağında risk üst ucu
+%23,33’ten %42,60’a yükseliyor. Diğer bazı kaynaklar da kötüleşiyor. Bu yüzden ortalama %8,93, yeni bir
+parçanın veya her koşulun %90 güvenli olduğunun kanıtı değildir.
+Neden kalibrasyon sıfır ömür verdi?
+Kaynakları dikkatle ayırınca 9 bağımsız kalibrasyon bloğu kalmıyor. Dondurduğumuz dağılımdan bağımsız
+%90 yöntemin matematiksel sonucu sıfır alt sınır oluyor. Sıfır ömür güvenli ama tasarımda işe yaramaz.
+Bu, bütün belirsizlik yöntemleri imkânsız demek değil; az veriyle bilgi veren bir sınır için ek
+fiziksel/istatistiksel varsayım gerektiğini gösteriyor.
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+3
+Yeni alınan gerçek kampanyada ne oldu?
+Yazarların açık numune sayfalarından 129 kullanılabilir kayıt elde ettik. Üç çap koşulunda 44/40/45
+numune var; hepsi tek ilişkili kampanyadan geliyor. Makaledeki 130. numunenin gerekli alanları açık
+sayfada yoktu; uydurmadık. Kayıtlar grafikten çıkarılmış değil, yazarın numune bazında bildirdiği değerler.
+Ayrı bir ayrıştırıcıyla kaynak sayfaları tekrar kontrol edildi.
+Burada “3 gözlem”, her çap koşulu için 3, toplam 9 destek gözlemi demek. Her seçim mekanizması ve
+tohum içinde diğer 99 test noktası bütün k değerlerinde aynı tutuldu. Rastgele seçimde modelin tehlikeli
+sınır oranı %53,66’dan %13,19’a düştü. Bu kez alt sınır uzamadı: aşırı yüksek tahmin yaklaşık 4,68 kat
+aşağı çekildi. Hedef hâlâ aşılmış durumda.
+Kronolojik seçimde %1,96 görüldü; ancak farklı test noktaları ve farklı destek seçimi kullanıldığı için bunu
+rastgele seçime karşı kanıtlanmış üstünlük sayamayız. Bu tek kampanya için bağımsız kampanyalar arası
+güven aralığı yok. Ayrıca deneyin sonlanma ölçütü tam kopmadan önce görünen çatlakla ilişkili rezonans
+değişimi; tarihsel kırılma ömürleriyle tamamen aynı hedef değil.
+Kaynak-parametresi belirsizliğini ekleyen duyarlılıkta rastgele üç gözlemin riski %16,42; eğrisel temel
+modelde yaklaşık %13,20 çıktı. Sonuç yalnız düz bir Basquin çizgisinin seçilmesinden kaynaklanmıyor,
+fakat makalenin Weibull rastgele yorulma sınırı modeli henüz yeniden kurulmadı.
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+4
+En güçlü basit kontrol ne söyledi?
+Sonuçları gördükten sonra, açıkça keşifsel olarak bir kontrol daha ekledik: hiyerarşik modelin aynı eğimini
+ve saçılımını tutup yalnız yeni koşulun yerel ömür kaymasını hesapladık. Böylece önsel bilginin etkisini,
+farklı saçılım kullanmanın etkisinden ayırdık. Dış rastgele panelde bu basit kontrol %6,99 risk verdi;
+hiyerarşik modelin %13,19’una karşı daha düşük ama daha kısa ömür sınırları sundu. Hiyerarşinin gerekli
+veya üstün olduğunu söyleyemeyiz.
+Neyi teslim ediyoruz?
+Kaynak kanıtları, düzeltme kaydı, sonuç görülmeden dondurulan protokoller, 0/3/5/10 gözlemli deneyler,
+güçlü basit ve hiyerarşik sansürlü modeller, eğrilik ve veri-kökeni duyarlılıkları, ayrı kampanya testi,
+bağımsız aritmetik denetimi ve birebir sayısal tekrar. Yeni fiziksel deney yapılmadı. Deney sayısını
+azaltmanın parasal veya cihaz-saati maliyetini ölçmedik.
+Güçlü katkı için sıradaki tek soru
+Yeni bir üretim partisinde ilk birkaç deneyi hangi gerilmelerde yaparsak, yanlış model varsayımını erken
+fark edip güvenilir ve işe yarar bir alt sınıra ulaşırız? Bunu sınamak için aynı test kümesi üzerinde rastgele
+seçim, gerilme aralığını kapsayan seçim ve gerçek kronoloji karşılaştırılmalı. Yöntem seçimi geliştirme
+kampanyalarında yapılmalı; son testte farklı, önceden ayrılmış kampanyalar kullanılmalı.
+Önce gerçek numune/üretim partisi eşlemesi, ortak kırılma tanımı ve sansür planı gerekli. Sonra
+yayımlanmış rastgele yorulma sınırı modeli ve aynı popülasyonlu basit yerel kontrolle karşılaştırma
+yapılmalı. Başarı ortalamada değil, kaynak bazında risk ve işe yarar ömür sınırıyla aranmalı. Bu, mevcut
+veriyi daha fazla ayarlayıp olumlu sonuç çıkarmaktan daha güçlü bir araştırma sınaması olacak.
+Tridello’ya sunulabilecek dürüst mesaj
+“Açık veride deney kökenini incelerken somut uygunluk/etiket sorunları bulduk. Az gözlemle uyarlama
+ortalamada iyileşse de bazı yeni koşullarda güvenilirliği bozuluyor. Elimizde tekrarlanabilir bir benchmark
+ve yeni kampanya denemesi var. Numune/parti eşlemesi ve uygun deney seçimi tasarımı konusunda sınırlı
+teknik görüşünüzü almak isteriz.” Bu bir teknik işbirliği daveti için somut; güçlü yeni algoritma iddiası için
+erken. Hiçbir e-posta gönderilmedi.
+Ayrıntılı kaynaklar ve denetlenebilir sayılar İngilizce teknik raporda ve tekrar üretim paketinde. Sansür aralıkları güven aralığı
+değildir. Bootstrap aralıkları, ortak eğitim verisi ve az kaynak nedeniyle betimleyicidir.

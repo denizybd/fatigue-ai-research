@@ -1,0 +1,103 @@
+{
+  "task": {
+    "panel": "A",
+    "seed": 17,
+    "outer": "10.3390/ma13153293",
+    "ks": [
+      0,
+      3
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1016/j.msea.2020.140660",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma15186278",
+      "cui_linked_campaign"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0562_d000",
+        "support_pool": [
+          "a0562_d000_p001",
+          "a0562_d000_p002",
+          "a0562_d000_p005"
+        ],
+        "query_ids": [
+          "a0562_d000_p000",
+          "a0562_d000_p003",
+          "a0562_d000_p006",
+          "a0562_d000_p007",
+          "a0562_d000_p008",
+          "a0562_d000_p004"
+        ]
+      }
+    ]
+  },
+  "fit_n": 300,
+  "pooled": {
+    "params_": [
+      5.633538086297371,
+      -2.9308773999243276,
+      -0.8388134437880634,
+      -0.4647225176560468
+    ],
+    "sigma_": 0.6283094257752719,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 11,
+      "objective": 0.9752920914032112,
+      "gradient_inf": 4.351141760154491e-08,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.672968928804613,
+      -5.387955425724908,
+      -1.364855724709609,
+      -0.9418758504698239,
+      -0.518867168810821
+    ],
+    "sigma_": 0.38989576279403854,
+    "tau_": 0.5951944210096757,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 12,
+      "objective": 6.845964194360547,
+      "gradient_inf": 2.8991124275193347e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 81,
+      "conditions": 31,
+      "sources": 10,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.84596419443151,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.845964194360547,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  "phase": "population_fit"
+}

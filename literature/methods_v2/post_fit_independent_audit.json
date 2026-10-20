@@ -1,0 +1,110 @@
+{
+  "created_by": "independent audit script without project metric/model imports",
+  "folders": [
+    {
+      "folder": "results/v2/curved_fulltraining",
+      "prediction_rows": 15570,
+      "prediction_sha256": "72464ecaf51539515d4bd7f8de50b4b38cc8d8fced7f0ffa4b6c749ff1fd9fec",
+      "tasks": 60,
+      "independent_formula_prediction_rows": 4710,
+      "max_recorded_hierarchy_gradient": 1.0716465080551352e-05,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 39786
+    },
+    {
+      "folder": "results/v2/external",
+      "prediction_rows": 9504,
+      "prediction_sha256": "2bb5d1171c3d5464f1ee0da552899b48f51cf0dbcc9de111e6aa3af01c07dc69",
+      "tasks": 4,
+      "independent_formula_prediction_rows": 2597,
+      "max_recorded_hierarchy_gradient": 3.288934132816834e-07,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 6396
+    },
+    {
+      "folder": "results/v2/external_bootstrap",
+      "prediction_rows": 1584,
+      "prediction_sha256": "e82c53faae6e1555815868f7a7f306fe4df426f2bba2f31f91d4f43cfd401e1d",
+      "bootstrap_replicates": 20,
+      "independently_recomputed_metric_cells": 1066
+    },
+    {
+      "folder": "results/v2/external_curved",
+      "prediction_rows": 9504,
+      "prediction_sha256": "02d8e4f91a60e93c85b659fd244ceb8f9bfc834a3b37e38ae806f81e67f5a01b",
+      "tasks": 4,
+      "independent_formula_prediction_rows": 2597,
+      "max_recorded_hierarchy_gradient": 3.6645908967208873e-06,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 6396
+    },
+    {
+      "folder": "results/v2/external_fulltraining",
+      "prediction_rows": 9504,
+      "prediction_sha256": "8fe7b28109d9765d0c787d3f9b1be6c4bbd59567ac7ea24c99975bf6f3ef7e30",
+      "tasks": 4,
+      "independent_formula_prediction_rows": 2597,
+      "max_recorded_hierarchy_gradient": 8.625716325094679e-07,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 6396
+    },
+    {
+      "folder": "results/v2/fulltraining",
+      "prediction_rows": 15570,
+      "prediction_sha256": "b4e480977e23d6c2926ff01b326e450e0decddfa6a15f2365bcc393cd2dcdf1b",
+      "tasks": 60,
+      "independent_formula_prediction_rows": 4413,
+      "max_recorded_hierarchy_gradient": 3.2623652045926654e-06,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 39786
+    },
+    {
+      "folder": "results/v2/nearcluster_fulltraining",
+      "prediction_rows": 15264,
+      "prediction_sha256": "624112e2bbe5c1d79ee1071e8d29220805d8043057f9c86cc913c6c2fa4b2671",
+      "tasks": 60,
+      "independent_formula_prediction_rows": 4332,
+      "max_recorded_hierarchy_gradient": 2.307929458877922e-06,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 39084
+    },
+    {
+      "folder": "results/v2/no_afkhami",
+      "prediction_rows": 12060,
+      "prediction_sha256": "d1e89bdfada0da5b4cf5771aed53447284357bbc6a009a6ed9300ee8c0dcedb5",
+      "tasks": 51,
+      "independent_formula_prediction_rows": 3454,
+      "max_recorded_hierarchy_gradient": 7.590381016220338e-06,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 32028
+    },
+    {
+      "folder": "results/v2/strict",
+      "prediction_rows": 15570,
+      "prediction_sha256": "85dbf99241b3b7e00051325a7883069abb93b458602a07d62922a8f91eb7cda2",
+      "tasks": 60,
+      "independent_formula_prediction_rows": 4413,
+      "max_recorded_hierarchy_gradient": 1.3545914159920078e-05,
+      "hierarchy_sigma_bound_count": 0,
+      "hierarchy_tau_bound_count": 0,
+      "independently_recomputed_metric_cells": 39786
+    }
+  ],
+  "checks": 224932,
+  "all_pass": true,
+  "maximum_metric_absolute_difference": 1.7763568394002505e-15,
+  "mixed_posterior_quad_episodes": 30,
+  "limits": [
+    "Model implementer reviewed runners; this is not independent model authorship.",
+    "No refit of real-data populations; formulas reconstructed from saved parameters.",
+    "Source bootstrap dependence is descriptive, not a certified confidence guarantee.",
+    "Physical specimen provenance and crack endpoint equivalence are not established by arithmetic."
+  ]
+}

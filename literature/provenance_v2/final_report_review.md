@@ -1,0 +1,13 @@
+# Final technical report review
+
+2026-10-20. Reviewed the latest PDF-extracted `manuscript/v2/research_note_en.txt`, `arastirma_ozeti_tr.txt`, and `research_brief_en.txt` against the final source gate, internal/external summary and contrast tables, source/seed tables, matched-population controls, fit/split receipts, and independent external extraction audit. No research or fitting was performed.
+
+**Verdict: substantive PASS.** No incorrect headline number or materially inflated scientific conclusion was found. The source counts 309/32/11; panel counts 18/9, 14/6, 6/5; internal 1.92× gain and 0.84–3.65× interval; risk identification endpoints; +9.30-point bootstrap endpoint; external 129 records, one campaign, k3 per condition/nine total; matched-control 6.99%; bootstrap 16.42%; curved 13.20%; and Afkhami-excluded 9.00–9.70% agree with saved tables. The text correctly preserves the failed/vacuous calibrated primary criterion, labels raw results secondary, distinguishes censoring intervals from confidence intervals, records source heterogeneity and provenance uncertainty, and does not attribute our open-data corrections to Centola's unavailable original data. The added same-population control is explicitly identified as post-result.
+
+Only these small actionable precision edits remain:
+
+1. **English technical note, models paragraph, PDF page 2:** replace “A 20-source-bootstrap mixture assesses this externally” with “A 20-replicate training-source bootstrap mixture assesses this externally.” There were twenty bootstrap replicates drawn from eleven historical source blocks, not twenty historical sources.
+2. **English technical note, external section, PDF page 4, and Turkish summary, PDF page 3:** clarify that the 99 queries are fixed **within each mechanism and random seed** over k. Suggested English: “Within each mechanism and seed, the same 99 query specimens are retained across k; the three random seeds can have different query sets.” Suggested Turkish: “Her seçim mekanizması ve rastgele tohum içinde aynı 99 sorgu numunesi bütün k değerlerinde korunur; farklı tohumların sorgu kümeleri değişebilir.” This prevents reading the random panel as one shared 99-specimen query set across all seeds. Existing random-versus-chronological noncausal-comparison warning is correct.
+3. **English technical note, external comparator paragraph, PDF page 4:** replace “that stronger physical comparator” with “that relevant physical comparator.” The random-fatigue-limit model's comparative performance is explicitly untested; “stronger” can imply an established empirical ranking.
+
+These wording edits do not change the results or overall contribution judgment. The concise English brief has no actionable discrepancy.

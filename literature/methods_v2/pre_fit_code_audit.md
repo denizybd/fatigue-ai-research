@@ -1,0 +1,21 @@
+# Independent phase-2 runner/split/metric audit
+
+Reviewed20October2026 before real-data fitting: src/v2_prepare.py, src/v2_run.py, src/v2_summarize.py, src/v2_external_prepare.py, src/v2_population_bootstrap.py, plus all three pre-fit protocol files. The reviewer implemented v2_models.py, so the model code itself is not an independent authorship check. Synthetic model tests include an independently integrated scalar posterior and analytic-gradient checks.
+
+## Findings requiring action or explicit limits
+
+1. Population bootstrap initially integrates the prior centered41node GH rule even at k0, whereas the main model uses the exact normal convolution. It should use N(mu,sigma²+tau²) at k0 and N(mu+posterior_mean,sigma²+posterior_variance) for all-failure support. Retain adaptive posterior quadrature for mixed censoring. This prevents prior-grid aliasing and harmonizes main and ensemble numerics.
+2. The prespecified difference in risk upper endpoints is a difference between two worst-case empirical metrics, not itself an upper endpoint for the latent-risk contrast. Label it exactly. A secondary paired partial-identification contrast uses exact failure differences and, for each censored query, [0,1] ifLk>L0andLk>C, [-1,0] ifL0>LkandL0>C, otherwise[0,0]. This uses monotone inclusion of violation events and remains valid without independent censoring assumptions. Average contrasts over curves/seeds/sources identically to the primary summaries.
+3. Strict preparation filters eligible source DOIs but initially does not apply final gate family_id. Merge CuiIJPlast103172/JMST10.006 or retain one representative curve. Keep other same-campaign sources grouped. The source gate should distinguish eligible-whole-source from eligible-only-named-curves; startswitheligible must not accidentally admit a partially valid source.
+4. run.py records numerical fit receipts but initially does not abort or mark predictions unavailable on a non-converged fit. Require successful finite fits for the claim set, preserve every failed receipt, and repair numerics transparently if required. Population bootstrap already fails explicitly on unusable fits. Do not select failed fits based on favorable test outcomes.
+5. Add source gate hash/protocol hashes to provenance freeze receipts; the cohort hash already protects exact data. This is traceability, not an inferential fix.
+
+## Checks passed by inspection
+
+Fixed query IDs are shared across k within each panel. Support prefixes are nested and selected by rowID hash, not endpoint/event. Entire target source is absent from population fitting and calibration. Each calibration source contributes one outcome-blind selected curve/query and the same k support update. Unpooled all-runout calibrations are unavailable rather than silently dropped. Literal finite conformal order returns infinity below nine calibration sources, yielding zero life. The external campaign is never in historical population fits, and its three related conditions retain one campaign ID. Chronological dates are parsed with explicitmonth/day/year and outcome-blind ties, rather than sorted as strings. Source bootstrap copies source and condition IDs per sampled occurrence and uses target supports without queries. Query-to-curve-to-source aggregation does not count seeds as independent campaigns.
+
+## Scientific limits retained
+
+Small support counts from retrospectively selected records are not a validated experiment acquisition policy. Chronological campaign records include the original stress-selection protocol; random supports and actual first-in-time supports have different meanings. A zero-life calibrated lower bound is formally conservative but has no usable life utility and cannot pass the positive-claim gain rule. Source-balanced composite likelihood is a working model, not full source/condition Bayesian hierarchy. The external source has a crack/resonance endpoint, unlike total fracture in much of the training corpus. The original Weibull random-fatigue-limit model is unimplemented; Basquin-based results cannot establish state-of-the-art superiority. No arbitrary-process90percent guarantee follows.
+
+This audit is a computational/methodological review, not independent physical validation. Root must record which findings were repaired before fits and which remain limitations.

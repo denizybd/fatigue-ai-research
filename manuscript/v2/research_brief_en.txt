@@ -1,0 +1,34 @@
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+1
+Few-shot fatigue limits after a provenance audit
+AM316L | Working technical brief | Computational benchmark, not a validated safe-design method
+Question
+Can a few endpoints from a new AM316L condition make lower-life limits both safer and useful? We tested
+censored monotone Basquin baselines, target-intercept updating and hierarchical borrowing, using fixed
+support/query splits and held-out source blocks.
+Concrete evidence
+Original-methods review reduced a 1,126-point public pilot to 309 points/32 curves/11 method-reviewed
+source blocks for the main cohort. It identified stepped-load observations, republished curves and
+source-supported runout/treatment corrections. Physical specimen/batch independence remains
+incompletely documented. These are corrections to this open-data benchmark, not proof of errors in
+Centola et al.’s original 518 records.
+Results
+In the secondary full-training raw track, three endpoints per condition increased geometric lower life 1.92x
+and reduced mean danger identification endpoints from 13.35-15.41% to 8.31-8.93%. The descriptive 95%
+source-bootstrap life-gain interval is 0.84-3.65x; risk worsens for several sources. The prespecified 90%
+calibration becomes a zero-life bound with the available source count, so its usefulness criterion fails.
+An acquired author-provided campaign contains 129 complete specimens in three diameter groups,
+representing one related campaign. Three random endpoints per group (nine total) reduce danger from
+53.66% to 13.19% by lowering overly optimistic limits. A matched simple target-intercept control gives
+6.99% at shorter life. No hierarchical superiority or general 90% source-conditional guarantee is
+established. The campaign uses a crack-related ultrasonic endpoint, not necessarily full fracture.
+A narrow next step
+A useful continuation would test stress-level selection at fixed query sets and matched experimental
+budgets against a random-fatigue-limit baseline and simple local updating. This needs specimen/build
+lineage, consistent failure definitions, actual censoring plans and additional held-out campaigns. A
+source-to-condition mapping or brief methodological feedback would resolve a concrete bottleneck.
+Code, split receipts, aggregate figures and independent arithmetic checks are available locally. No new physical experiment or
+correspondence was performed. Original data DOI: 10.6084/m9.figshare.22337629.v2 (CC BY 4.0). External article:
+10.1038/s41598-025-97031-1; repository data license unspecified, so raw external records are excluded from the shareable
+archive.

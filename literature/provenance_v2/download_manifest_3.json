@@ -1,0 +1,22 @@
+[
+  {
+    "name": "liang_ffe_hal2",
+    "url": "https://imt-mines-albi.hal.science/hal-03616357/document",
+    "error": "('Connection broken: IncompleteRead(14230259 bytes read, 39570658 more expected)', IncompleteRead(14230259 bytes read, 39570658 more expected))"
+  },
+  {
+    "name": "liang_ijf_hal2",
+    "url": "https://imt-mines-albi.hal.science/hal-03605934/document",
+    "error": "('Connection broken: IncompleteRead(10497491 bytes read, 10528090 more expected)', IncompleteRead(10497491 bytes read, 10528090 more expected))"
+  },
+  {
+    "name": "merot_hal",
+    "url": "https://hal.science/hal-03689368/document",
+    "error": "HTTPSConnectionPool(host='hal.science', port=443): Read timed out."
+  },
+  {
+    "name": "afkhami_lut",
+    "url": "https://lutpub.lut.fi/bitstream/handle/10024/164752/Shahriar%20Afkhami_A4.pdf?isAllowed=y&sequence=1",
+    "error": "('Connection broken: IncompleteRead(19142624 bytes read, 3817722 more expected)', IncompleteRead(19142624 bytes read, 3817722 more expected))"
+  }
+]

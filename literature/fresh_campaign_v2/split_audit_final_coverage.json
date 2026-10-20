@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "audit_type": "Internal independent arithmetic and saved-data consistency; not independent experiments or external scientific replication.",
+  "groups": {
+    "main_completed_nine": {
+      "runs": [
+        "curved_fulltraining",
+        "external",
+        "external_bootstrap",
+        "external_curved",
+        "external_fulltraining",
+        "fulltraining",
+        "nearcluster_fulltraining",
+        "no_afkhami",
+        "strict"
+      ],
+      "prediction_instances_recomputed": 104130,
+      "summary_cells_checked": 4642,
+      "paired_cells_checked": 4410,
+      "max_absolute_summary_difference": 1.7763568394002505e-15,
+      "status": "PASS"
+    },
+    "postresult_matched_population_two": {
+      "runs": [
+        "same_population_internal",
+        "same_population_external"
+      ],
+      "prediction_instances_recomputed": 8358,
+      "summary_cells_checked": 374,
+      "paired_cells_checked": 360,
+      "max_absolute_summary_difference": 1.7763568394002505e-15,
+      "status": "PASS"
+    },
+    "broader_data_sensitivities_three": {
+      "runs": [
+        "all_family",
+        "weak_family",
+        "broader_fulltraining"
+      ],
+      "prediction_instances_recomputed": 114822,
+      "summary_cells_checked": 1782,
+      "paired_cells_checked": 1620,
+      "max_absolute_summary_difference": 8.881784197001252e-16,
+      "status": "PASS"
+    }
+  },
+  "totals": {
+    "runs": 14,
+    "prediction_instances_recomputed": 227310,
+    "summary_cells_checked": 6798,
+    "paired_cells_checked": 6390,
+    "additional_same_k_matched_control_cells_checked": 408
+  },
+  "scope_limits": [
+    "Prediction instances repeat the same specimens over model, support-count and seed combinations; do not describe227310asindependentexperiments.",
+    "The broader all-family/weak-family/clean full-training runs include sources not cleared by the strict source gate. They are sensitivity analyses, not primary evidence.",
+    "The matched-population control is explicitly post-result; it cannot replace the failed preregistered-within-phase criterion.",
+    "External validation has one campaign, not three independent diameter campaigns."
+  ],
+  "receipts": [
+    "split_audit_receipt.json",
+    "split_audit_result_tables.json",
+    "split_audit_same_population.json",
+    "split_audit_no_query_outcomes.json"
+  ]
+}

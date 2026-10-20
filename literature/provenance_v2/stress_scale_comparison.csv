@@ -1,0 +1,7 @@
+source_id,dataset_id,row_id,source_value,source_definition,conversion_to_amplitude,expected_amplitude,locator,qualification,matched_row_id,database_amplitude,stress_relative_difference
+10.3390/ma12244203,a0554_d000,a0554_d000_p000,615.0,maximum_stress,0.45,276.75,Figure9 PDFp12 visually inspected,approximate visual highstress marker around1.5e5cycles,a0554_d000_p000,275.99467360580746,0.0027292733304156696
+10.3390/ma12244203,a0554_d001,a0554_d001_p000,620.0,maximum_stress,0.45,279.0,Figure9 PDFp12 visually inspected,approximate visual highstress marker around4.7e4cycles,a0554_d001_p000,278.24148342902987,0.0027186973869897132
+10.3390/ma12244203,a0554_d006,a0554_d006_p004,276.4,maximum_stress,0.45,124.38,Figure9 axis and Figure14 specimen value,SEMcaption uses sigma_a inconsistently;Figure9 axis explicitmaximum,a0554_d006_p004,124.43592121911114,0.0004495997677371068
+10.1108/13552541311302932,a0481_d000,a0481_d000_p014,269.0,maximum_stress,0.45,121.05,Results polishedfatiguelimit and Figure4caption,paperreportedlimit not independentlyredigitizedpoint,a0481_d000_p014,121.3964210295568,0.0028618011528856505
+10.1108/13552541311302932,a0481_d001,,255.0,maximum_stress,0.45,114.75,Results machinedfatiguelimit and Figure4caption,compareclosestmachine runout at113.778MPaamp,a0481_d001_p012,113.77816374995432,0.008469161220441685
+10.3390/ma15186278,a0577_d000,,341.0,maximum_stress,0.45,153.45,Section3.3 explicit22762694cycle point,db153.1657766MPa22789810cycles,a0577_d000_p008,153.16577663314592,0.0018522213545393573

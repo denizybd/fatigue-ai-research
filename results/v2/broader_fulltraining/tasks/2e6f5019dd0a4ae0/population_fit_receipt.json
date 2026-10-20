@@ -1,0 +1,142 @@
+{
+  "task": {
+    "panel": "B",
+    "seed": 0,
+    "outer": "10.3390/ma12244203",
+    "ks": [
+      0,
+      3,
+      5
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/978-3-030-31154-4_75",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.engfracmech.2022.108883",
+      "10.1016/j.ijfatigue.2019.03.022",
+      "10.1016/j.ijfatigue.2019.105301",
+      "10.1016/j.ijfatigue.2020.106063",
+      "10.1016/j.ijfatigue.2021.106207",
+      "10.1016/j.ijfatigue.2022.106946",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.ijplas.2021.103172",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1016/j.jmst.2021.10.006",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.mtla.2022.101591",
+      "10.1016/j.proeng.2018.02.002",
+      "10.1016/j.tafmec.2020.102849",
+      "10.1051/matecconf/201816502006",
+      "10.1080/00325899.2021.2010932",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13029",
+      "10.1111/ffe.13077",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0554_d002",
+        "support_pool": [
+          "a0554_d002_p009",
+          "a0554_d002_p005",
+          "a0554_d002_p002",
+          "a0554_d002_p003",
+          "a0554_d002_p004"
+        ],
+        "query_ids": [
+          "a0554_d002_p006",
+          "a0554_d002_p000",
+          "a0554_d002_p008",
+          "a0554_d002_p007",
+          "a0554_d002_p001"
+        ]
+      },
+      {
+        "curve": "a0554_d003",
+        "support_pool": [
+          "a0554_d003_p004",
+          "a0554_d003_p014",
+          "a0554_d003_p015",
+          "a0554_d003_p012",
+          "a0554_d003_p007"
+        ],
+        "query_ids": [
+          "a0554_d003_p013",
+          "a0554_d003_p010",
+          "a0554_d003_p002",
+          "a0554_d003_p001",
+          "a0554_d003_p011",
+          "a0554_d003_p009",
+          "a0554_d003_p008",
+          "a0554_d003_p000",
+          "a0554_d003_p003",
+          "a0554_d003_p006",
+          "a0554_d003_p005"
+        ]
+      }
+    ]
+  },
+  "fit_n": 509,
+  "pooled": {
+    "params_": [
+      5.530254248396216,
+      -3.249028650705409,
+      -0.49098793430284443,
+      -0.38533793430542357
+    ],
+    "sigma_": 0.680220727440684,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 12,
+      "objective": 1.041674526640027,
+      "gradient_inf": 5.167110001536024e-07,
+      "ratio_median_train": -1.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 8,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.562003329698416,
+      -5.7180841366168265,
+      -1.1121362949193045,
+      -0.9917907279705583,
+      -0.4740744778903608
+    ],
+    "sigma_": 0.37091189366148997,
+    "tau_": 0.6224608912672486,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 15,
+      "objective": 6.1457541484834,
+      "gradient_inf": 9.040673334239149e-07,
+      "ratio_median_train": -1.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 8,
+      "nodes": 41,
+      "conditions": 54,
+      "sources": 24,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.1457541484834,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 6.145754148484469,
+          "n_iter": 16
+        }
+      ]
+    }
+  },
+  "phase": "population_fit"
+}

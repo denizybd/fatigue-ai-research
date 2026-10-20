@@ -1,0 +1,121 @@
+{
+  "task": {
+    "panel": "A",
+    "seed": 42,
+    "outer": "10.1080/00325899.2021.2010932",
+    "ks": [
+      0,
+      3
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/978-3-030-31154-4_75",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.engfracmech.2022.108883",
+      "10.1016/j.ijfatigue.2019.03.022",
+      "10.1016/j.ijfatigue.2019.105301",
+      "10.1016/j.ijfatigue.2020.106063",
+      "10.1016/j.ijfatigue.2021.106207",
+      "10.1016/j.ijfatigue.2022.106946",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.ijplas.2021.103172",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1016/j.jmst.2021.10.006",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.mtla.2022.101591",
+      "10.1016/j.proeng.2018.02.002",
+      "10.1016/j.tafmec.2020.102849",
+      "10.1051/matecconf/201816502006",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13029",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "a0472_d000",
+        "support_pool": [
+          "a0472_d000_p010",
+          "a0472_d000_p004",
+          "a0472_d000_p008"
+        ],
+        "query_ids": [
+          "a0472_d000_p012",
+          "a0472_d000_p003",
+          "a0472_d000_p011",
+          "a0472_d000_p007",
+          "a0472_d000_p001",
+          "a0472_d000_p002",
+          "a0472_d000_p005",
+          "a0472_d000_p006",
+          "a0472_d000_p000",
+          "a0472_d000_p009"
+        ]
+      }
+    ]
+  },
+  "fit_n": 552,
+  "pooled": {
+    "params_": [
+      5.540944391325069,
+      -3.2514420324995466,
+      -0.5172630251687812,
+      -0.36305699145545384
+    ],
+    "sigma_": 0.695546792145476,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 12,
+      "objective": 1.06262410182266,
+      "gradient_inf": 7.124347718998406e-07,
+      "ratio_median_train": -1.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 8,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.572163953725342,
+      -5.576096485427644,
+      -1.1086849429007304,
+      -0.9489705118547309,
+      -0.47485747254836624
+    ],
+    "sigma_": 0.3871393737667164,
+    "tau_": 0.621973698474137,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 14,
+      "objective": 6.372141822001277,
+      "gradient_inf": 4.743946122265363e-06,
+      "ratio_median_train": -1.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 8,
+      "nodes": 41,
+      "conditions": 60,
+      "sources": 24,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.372141822001277,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.372141822005663,
+          "n_iter": 15
+        }
+      ]
+    }
+  },
+  "phase": "population_fit"
+}

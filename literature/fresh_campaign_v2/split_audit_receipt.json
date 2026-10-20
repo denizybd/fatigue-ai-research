@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "scope": "Independent frozen split/cohort/sourcegate arithmetic; no model imports or performance outcomes; no frozenfile changed.",
+  "configurations": [
+    {
+      "configuration": "strict",
+      "cohort_rows": 309,
+      "historical_source_blocks": 11,
+      "historical_source_DOIs": 11,
+      "tasks": 60,
+      "target_curve_episodes": 114,
+      "calibration_counts": {
+        "6": 27,
+        "5": 18,
+        "4": 15
+      },
+      "all_90pct_endpoint_calibration_fewer_than9": true,
+      "independent_external_campaigns": 0,
+      "unique_queried_rows_by_panel": {
+        "A": 224,
+        "B": 180,
+        "C": 65
+      },
+      "frozen_split_sha256": "5309f97d8ffc1a3b7b153a18430016a54893e3eed4f56d8918d082884d2c764a",
+      "cohort_sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3",
+      "status": "PASS"
+    },
+    {
+      "configuration": "strict_fulltraining",
+      "cohort_rows": 309,
+      "historical_source_blocks": 11,
+      "historical_source_DOIs": 11,
+      "tasks": 60,
+      "target_curve_episodes": 114,
+      "calibration_counts": {
+        "0": 60
+      },
+      "all_90pct_endpoint_calibration_fewer_than9": true,
+      "independent_external_campaigns": 0,
+      "unique_queried_rows_by_panel": {
+        "A": 224,
+        "B": 180,
+        "C": 65
+      },
+      "frozen_split_sha256": "8007fc2aac63cc74c23c87ea7d5aa0c55f77e06ced228fbf3363f91e7a70464a",
+      "cohort_sha256": "a582866ead9f6bc79b53dd4ec6bac27877dddc22d5bf7594ba7e6687eaf93ba3",
+      "status": "PASS"
+    },
+    {
+      "configuration": "strict_nearcluster",
+      "cohort_rows": 308,
+      "historical_source_blocks": 11,
+      "historical_source_DOIs": 11,
+      "tasks": 60,
+      "target_curve_episodes": 111,
+      "calibration_counts": {
+        "6": 27,
+        "5": 18,
+        "4": 15
+      },
+      "all_90pct_endpoint_calibration_fewer_than9": true,
+      "independent_external_campaigns": 0,
+      "unique_queried_rows_by_panel": {
+        "A": 223,
+        "B": 171,
+        "C": 65
+      },
+      "frozen_split_sha256": "cdc118676ae189fecfdd2e04228561636ec3509f1355435671802f991c772130",
+      "cohort_sha256": "4e7567cbc412429454c063528f787dda51763eefe61ed6ee460ba5b4ddee9e80",
+      "status": "PASS"
+    },
+    {
+      "configuration": "external",
+      "cohort_rows": 438,
+      "historical_source_blocks": 11,
+      "historical_source_DOIs": 11,
+      "tasks": 4,
+      "target_curve_episodes": 12,
+      "calibration_counts": {
+        "6": 4
+      },
+      "all_90pct_endpoint_calibration_fewer_than9": true,
+      "independent_external_campaigns": 1,
+      "unique_queried_rows_by_panel": {
+        "external_random": 126,
+        "external_chronological": 99
+      },
+      "frozen_split_sha256": "7ddb21246e78cb6893341196790cefc29c3243d13feea243fd67af0a38944250",
+      "cohort_sha256": "0669677312918211b242e4d0d738ffe445de4e2b419a71d5dad8bb2062ed6078",
+      "status": "PASS"
+    },
+    {
+      "configuration": "external_fulltraining",
+      "cohort_rows": 438,
+      "historical_source_blocks": 11,
+      "historical_source_DOIs": 11,
+      "tasks": 4,
+      "target_curve_episodes": 12,
+      "calibration_counts": {
+        "0": 4
+      },
+      "all_90pct_endpoint_calibration_fewer_than9": true,
+      "independent_external_campaigns": 1,
+      "unique_queried_rows_by_panel": {
+        "external_random": 126,
+        "external_chronological": 99
+      },
+      "frozen_split_sha256": "6ceec5e1bde767b8d89d80ebfdee91eed2b93f86d468f60c930fb80946cdd23d",
+      "cohort_sha256": "0669677312918211b242e4d0d738ffe445de4e2b419a71d5dad8bb2062ed6078",
+      "status": "PASS"
+    }
+  ],
+  "source_corrections_verified": 29,
+  "near_cluster_rows_removed": 1,
+  "warnings": [
+    "ChronologicaltiesuseSHA256ofrow_id (stableauthorrecordaddress), while amendmentcallsit specimenID; deterministic/outcomeblindbutprose should clarify beforeclaimingliteralprotocol identity."
+  ],
+  "inference_limits": [
+    "HistoricalconditionsareS-Ncurves,notcertifiedbatches;11sourceblocksnot11independentlaboratories.",
+    "PanelA9sourceblocks,PanelB6,PanelC5;bootstrappairedwithinpanelandseedaveragewithinsource;donottreatseeds/curves/rowsasindependentcampaigns.",
+    "External3conditionsareonecampaign;4episodes(random3seeds+chronological1)aredependentsubsamples,not4independentsources.",
+    "Allcalibratedtrackscurrentlyhavefewerthan9independentcalibrationblocks;thefinite90%endpointorderstatisticmustyieldzero-lifebounds,notaconvenientfiniterank.",
+    "Cuihasone13rowJMSTrepresentativeinonefamilyblock;theIJPpaperisabsent.",
+    "CorrectedWoodrunoutisfailure;KedzioraRenishawNHTwithblankheattemperature/time;MerotandlinkedsteppedcontinuationandMolaeirepublishedcurvesareabsent."
+  ]
+}

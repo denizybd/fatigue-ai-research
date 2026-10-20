@@ -1,0 +1,212 @@
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+1
+Provenance first: how far do three fatigue
+endpoints carry a new condition?
+A source-audited, censored AM316L benchmark with an acquired external campaign. The prespecified useful-calibration
+criterion was not met.
+Finding
+In a retrospective full-training model-based track, three endpoints per new condition increased the
+geometric lower-life limit by 1.92x while the source-balanced danger identification interval fell from
+13.35-15.41% to 8.31-8.93%. The descriptive source-bootstrap gain interval is 0.84-3.65x and includes no
+improvement. Some sources became less safe. This is a promising aggregate trend, not a demonstrated
+reliable-design algorithm.
+Why provenance had to precede fitting
+The original public-data pilot contained 1,126 approximately digitized points. Original-methods review
+identified 98 records from Merot et al. as stepped-load/damage-equivalent observations rather than
+ordinary independent constant-amplitude lifetimes. They were excluded. Further publication-level reuse,
+unresolved figure-to-experiment mappings and a maximum-stress/amplitude conflict required quarantine.
+The main cohort contains 309 points, 32 database curves and 11 source blocks with reviewed
+experimental methods. These are not 11 certified independent laboratories, nor are database row IDs
+physical specimen IDs.
+Additional source-supported corrections: one Wood endpoint labelled runout was a fracture; one Kedziora Renishaw group
+inherited an unsupported heat treatment. Corrections are applied only to derived phase-2 data. Raw files and v1 outputs
+remain immutable. These findings concern our open-data benchmark and do not prove an error in Centola et al.’s unavailable
+518-row dataset. [1-4]
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+2
+Frozen question and models
+For an unseen provenance source, do 3, 5 or 10 endpoints from one new condition improve useful
+lower-life limits? All other curves from that source remain outside population fitting and calibration.
+Conditions mean source S-N series, not verified build batches. All model features and population
+parameters are learned from historical fitting sources.
+Panel
+Endpoints per condition
+Eligible curves / sources
+Fixed-query minimum
+A: primary
+0, 3
+18 / 9
+5
+B: secondary
+0, 3, 5
+14 / 6
+5
+C: limited
+secondary
+0, 3, 5, 10
+6 / 5
+5
+Seeds 0, 17 and 42 define outcome-blind record-ID permutations. Reserve the maximum support pool
+once per panel and use all remaining records as the same queries for every k. The panels have different
+populations; they are not a single learning curve. Runouts contribute a survival likelihood, not an exact
+failure density.
+Baselines: (i) pooled monotone censored lognormal Basquin; (ii) a target-only intercept update with
+historical slope/scatter; (iii) a condition-random-intercept Basquin model, updating a proper target
+intercept posterior with censored support. The predictive lower decile integrates specimen scatter and
+target intercept uncertainty. Population parameters are empirical Bayes estimates; the main bounds omit
+their estimation uncertainty. A training-source bootstrap mixture with 20 replicates from 11 historical
+sources assesses this externally. A continuous two-slope monotone curve with a training-only median
+stress knot is a prespecified curvature sensitivity.
+Calibration and claim discipline
+The original primary criterion required a useful 90% endpoint-calibrated bound, risk at most 10%, a paired
+risk-increase limit and a greater-than-1.25x life gain supported by descriptive source-bootstrap intervals.
+Source review leaves only 4-6 calibration blocks when at least four fitting blocks are retained. The required
+finite-sample rank exceeds the calibration count, so the literal bound is zero. It is safe but useless and fails
+the utility criterion. This finite-rank result applies to this frozen calibration protocol, not to every
+parametric or survival method.
+A separately recorded full-training raw track fits all other verified sources and reports model-based 10th
+percentiles. It does not replace the failed calibrated primary test. Hierarchical borrowing and modern
+survival conformal prediction are established prior work. Missing potential censoring times on failures rule
+out direct Type-I calibration, but modern right-censoring methods exist; none guarantees arbitrary
+manufacturing-source shift. [5-8]
+Risk and utility
+Danger is L>T. For a runout C<T, L<=C establishes safety for that event; L>C remains ambiguous. Report
+[known violations/n, (known+ambiguous)/n]. These are censoring identification endpoints, not confidence
+intervals. Average within curve, then source, then seeds. Utility is paired log10(Lk/L0) on identical queries;
+larger unsafe limits are not useful. Source bootstrap intervals are descriptive because outer models reuse
+training sources.
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+3
+Internal results: average gain is not source reliability
+The full-training raw A-panel gain is 1.92x (0.84-3.65x descriptive 95% interval). The upper bootstrap
+endpoint for the upper identified true-risk increase is +9.30 percentage points, above the 2-point
+noninferiority margin. Hence even the secondary raw result does not meet the intended robust
+positive-claim standard.
+Solberg’s source risk upper endpoint falls from 100% to 3.03%, driving most of the mean improvement. Lai increases from
+23.33% to 42.60%; Spierings from 0% to 6.94%; Kedziora from 0% to 11.11%. These are small-source descriptive estimates,
+not certificates. Deleting the unfavorable sources or treating seed repeats as new experiments would be invalid.
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+4
+Acquired external campaign: the limits become shorter and less dangerous
+Trombley, Birnbaum and Allison’s public Materials Commons pages provide 129 complete named as-built
+specimens: 44/40/45 at 1.5/2.5/5.0 mm diameter. The article states 130; one incomplete page is excluded
+without imputation. All 154 available fatigue records and the 129-record subset were independently
+checked against the public HTML. No strong historical-coordinate reuse signal was found. This is one
+campaign with three related conditions. Four builds are reported, but specimen-to-build mapping is not
+certified. [9-10]
+Tests were performed in 2019-2021, at 20 kHz and R=-1. The failure endpoint is a
+resonance-drop/visible-crack criterion, potentially before full fracture. Thus this is a cross-campaign,
+cross-endpoint stress test, not clean validation of an identical fracture-time distribution. Preserve actual
+runout endpoints; do not invent a universal potential censoring time for failures.
+Mechanism / k
+Danger fraction
+Geometric lower life
+Random / 0
+53.66-53.66%
+3,646,481 cycles
+Random / 3
+13.19-13.19%
+778,760 cycles
+Random / 5
+16.25-16.25%
+998,370 cycles
+Random / 10
+15.03-15.03%
+1,159,981 cycles
+Chronological / 0
+48.53-48.53%
+3,915,926 cycles
+Chronological / 3
+1.96-1.96%
+443,883 cycles
+Chronological / 5
+1.96-1.96%
+568,477 cycles
+Chronological / 10
+3.07-3.07%
+613,991 cycles
+k is per diameter condition: k=3 uses nine support endpoints in total. Each mechanism and seed keeps 99
+common queries over its k values. Random and chronological mechanisms have different query sets, so
+their difference cannot identify a causal benefit of a selection policy. One campaign provides no
+independent campaign-level confidence interval.
+Random k3 reduces danger from 53.66% to 13.19%, still above 10%, by lowering the life limit about 4.68x
+rather than extending it. The 20-population-bootstrap mixture has 16.42% random-k3 danger; the
+two-slope model has 13.20%. Chronological k3 gives 1.96% on its own query population. We retain every
+result rather than select the most favorable mechanism.
+The original article uses a Weibull random-fatigue-limit model. Our finite curvature control is not its reproduction, and
+superiority over that relevant physical comparator is untested. This limitation must remain in any communication. [9,11]
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+5
+Controls, sensitivities and verification
+An explicitly post-result diagnostic holds the hierarchical population slope/scatter fixed and replaces prior
+borrowing with an unpooled censored target intercept. At k0 its reference equals the same hierarchical
+predictive distribution; all-runout supports remain unavailable. This control avoids attributing a changed
+population scatter to a benefit from shrinkage. It was not used to rescue the original primary claim.
+On matched internal k3 queries, hierarchical versus this simple control gives about 1.10x life, with a
+descriptive interval including no gain. Externally on random supports, the control has 6.99% danger versus
+13.19% for the hierarchy, at approximately 1/1.42 of its life limit. There is a tradeoff, not demonstrated
+prior-specific superiority. Availability and common-query masks are retained.
+Near-coordinate clustering removes one historical point; the A-panel risk endpoints remain unchanged.
+Excluding Afkhami, whose stress-axis visual verification remains unresolved, gives k3 risk 9.00-9.70%.
+Full-family/weak-edge and broader database-labelled analyses are sensitivity results, not replacements for
+reviewed-source evidence. They retain unresolved original-experiment and stress-definition issues.
+All 31 synthetic model/evaluation tests pass. Two independently written arithmetic checks reproduce core
+source-balanced summaries and paired censoring contrasts. Direct scalar numerical integration checks
+mixed-censor posteriors. Critical strict, full-training and external predictions were replayed byte for byte.
+These establish computational consistency, not independent physical replication. Fit statuses, split IDs,
+hashes and exact commands are saved.
+Boundaries
+The cohort remains digitized with incomplete physical specimen/batch IDs. Several method-reviewed
+sources lack exhaustive point matching. Original author endpoints and sampling protocols differ;
+staircase-selected stresses and retrospective random supports are not an optimized sequential test policy.
+Counts of endpoints are not measured machine hours or monetary savings. We did not run new physical
+experiments, obtain Centola’s original data/code, reproduce the BNN/Owen calculations, or establish
+general source-conditional coverage.
+
+AM316L fatigue | Phase 2 working research note | 20 October 2026
+Computational study. Historical experiments are credited to their original authors.
+6
+Contribution assessment and the next discriminating experiment
+The defensible contribution is a provenance-corrected benchmark, concrete source/label corrections and a
+documented counterexample to interpreting average few-shot improvement as reliable performance in
+every new condition. The hierarchical method itself is established. This package supports a focused
+technical discussion with Tridello, not a claim of a new validated fatigue-design algorithm.
+The next question should be: with a fixed test budget, which stress levels reveal a harmful new-condition
+shift and produce the largest useful lower-life limit at acceptable source-specific risk? First secure physical
+specimen/build IDs, consistent failure definitions and actual censoring plans. Then benchmark the
+published random-fatigue-limit model and the matched simple intercept control. Freeze one common
+query set across random, stress-spanning and chronological support policies; choose any policy only using
+development campaigns. Test on additional independent campaigns and report source-specific failures,
+not only an average. A new campaign and a frozen protocol are required for a strong confirmatory claim.
+References and evidence
+[1] Zhang & Xu. FatigueData-AM2022 v2. Data DOI 10.6084/m9.figshare.22337629.v2; descriptor DOI
+10.1038/s41597-023-02150-x. CC BY 4.0.
+[2] Merot et al. Observations on process/corrosion defects. DOI 10.1016/j.ijfatigue.2021.106552. Original methods section
+2.4/Table 3; source-method evidence in provenance_report.md.
+[3] Wood et al. Materials 12,4203 (2019). DOI 10.3390/ma12244203. Sections 2.1/2.9/3.4.1, Figures 9/14.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6947212/
+[4] Kedziora et al. Materials 15,6278 (2022). DOI 10.3390/ma15186278. Sections 2/3.3.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9505810/
+[5] Liu, Lu & Hoogenboom (2017). Hierarchical Bayesian fatigue data analysis. DOI 10.1016/j.ijfatigue.2017.03.043.
+[6] Candes, Lei & Ren (2023). Conformalized survival analysis. DOI 10.1093/jrsssb/qkac004.
+[7] Gui et al. (2024). Conformalized survival analysis with adaptive cut-offs. DOI 10.1093/biomet/asad076.
+[8] Sesia & Svetnik (2025). Doubly Robust Conformalized Survival Analysis with Right-Censored Data.
+https://proceedings.mlr.press/v267/sesia25a.html
+[9] Trombley, Birnbaum & Allison (2025). Section diameter and ultrasonic fatigue. DOI 10.1038/s41598-025-97031-1.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12008181/
+[10] Materials Commons campaign DOI 10.13011/m3-c93d-z035. https://materialscommons.org/public/datasets/2564/overview
+. Dataset license unspecified; raw/normalized repository records excluded from the shareable archive.
+[11] Pascual & Meeker (1999). Estimating fatigue curves with the random fatigue-limit model. DOI
+10.1080/00401706.1999.10485925.
+[12] Centola et al. DOI 10.1016/j.engfailanal.2024.109081. Tridello-group transfer continuation: DOI
+10.1016/j.engfailanal.2026.111075. Original 518 records/code were not obtained; these public-data source corrections do not
+prove errors in that work.

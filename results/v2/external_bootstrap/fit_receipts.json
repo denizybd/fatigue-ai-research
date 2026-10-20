@@ -1,0 +1,1102 @@
+[
+  {
+    "replicate": 0,
+    "selected_blocks": [
+      "10.3390/ma12244203",
+      "10.1108/13552541311302932",
+      "10.1108/13552541311302932",
+      "10.1002/adem.202200751",
+      "10.1111/ffe.13077",
+      "10.1111/ffe.13077",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma15186278",
+      "10.3390/ma12244203",
+      "cui_linked_campaign",
+      "cui_linked_campaign"
+    ],
+    "params": [
+      5.491043138083696,
+      -5.720667794375657,
+      -1.5818976401701306,
+      -0.9819417886176037,
+      -0.32021317219849127
+    ],
+    "center": [
+      2.230100328493067,
+      0.00803858520900365
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 17,
+      "objective": 6.228171341707644,
+      "gradient_inf": 1.3535616395499162e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 35,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.228171341707644,
+          "n_iter": 17
+        },
+        {
+          "success": true,
+          "objective": 6.228171341721471,
+          "n_iter": 13
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 1,
+    "selected_blocks": [
+      "10.1002/adem.202200751",
+      "10.1002/adem.202200751",
+      "10.1108/13552541311302932",
+      "10.3390/ma12244203",
+      "10.3390/ma15186278",
+      "cui_linked_campaign",
+      "10.3390/ma15186278",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma15186278",
+      "cui_linked_campaign",
+      "10.1111/ffe.13077"
+    ],
+    "params": [
+      5.426254492086004,
+      -5.728915030293916,
+      -1.5351024420676054,
+      -0.9730940957581146,
+      -0.592131524862799
+    ],
+    "center": [
+      2.2566669392395693,
+      -0.015789473684210697
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 15,
+      "objective": 5.481735588768672,
+      "gradient_inf": 7.066620799300871e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 29,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.481735588768672,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 5.481735588769701,
+          "n_iter": 14
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 2,
+    "selected_blocks": [
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1108/13552541311302932",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma12244203",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "cui_linked_campaign",
+      "10.1108/13552541311302932",
+      "cui_linked_campaign",
+      "10.3390/ma13153293"
+    ],
+    "params": [
+      5.8048456071221635,
+      -5.167616689554251,
+      -1.031835272730841,
+      -0.9120876514962041,
+      -0.8850690206879793
+    ],
+    "center": [
+      2.239696019419967,
+      0.01306990881458994
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 13,
+      "objective": 5.779476367494083,
+      "gradient_inf": 1.4360296954896157e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 40,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.779476367494109,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 5.779476367494083,
+          "n_iter": 13
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 3,
+    "selected_blocks": [
+      "cui_linked_campaign",
+      "10.1108/13552541311302932",
+      "10.1002/adem.202200751",
+      "cui_linked_campaign",
+      "10.1007/s40964-021-00164-8",
+      "10.1111/ffe.13077",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1007/s40964-021-00164-8",
+      "10.1002/adem.202200751",
+      "10.1002/adem.202200751",
+      "10.1016/j.msea.2020.140660"
+    ],
+    "params": [
+      5.814726803237794,
+      -5.741667916941295,
+      -1.5667494937187465,
+      -0.9249150037835127,
+      -0.5828691360961423
+    ],
+    "center": [
+      2.313130982285781,
+      -0.5353790613718428
+    ],
+    "ratio_median": -1.0,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 11,
+      "objective": 6.709782458271822,
+      "gradient_inf": 7.002283152424127e-06,
+      "ratio_median_train": -1.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 27,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.709782458323889,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.709782458271822,
+          "n_iter": 11
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 4,
+    "selected_blocks": [
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.msea.2020.140660",
+      "10.1108/13552541311302932",
+      "10.1007/s40964-021-00164-8",
+      "cui_linked_campaign",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8"
+    ],
+    "params": [
+      5.9008486494755275,
+      -5.000365689882228,
+      -1.1558121978144869,
+      -0.8201839993551213,
+      -0.7912325658730539
+    ],
+    "center": [
+      2.2652325229290167,
+      -0.27521865889212815
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 14,
+      "objective": 6.992038900434489,
+      "gradient_inf": 6.677433371793384e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 37,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.992038900434489,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.992038900440025,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 5,
+    "selected_blocks": [
+      "10.1016/j.jmst.2019.08.047",
+      "cui_linked_campaign",
+      "10.1111/ffe.13077",
+      "10.3390/ma13153293",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "cui_linked_campaign",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "10.1108/13552541311302932"
+    ],
+    "params": [
+      5.707072555157715,
+      -6.038575489970703,
+      -1.645084826245774,
+      -1.0558857432280266,
+      -0.3867164212942835
+    ],
+    "center": [
+      2.2290307382005596,
+      -0.14838709677419246
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 18,
+      "objective": 5.935554122413214,
+      "gradient_inf": 4.027370212045245e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 27,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.9355541224234205,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 5.935554122413214,
+          "n_iter": 18
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 6,
+    "selected_blocks": [
+      "cui_linked_campaign",
+      "10.1007/s40964-021-00164-8",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1111/ffe.13077",
+      "10.1111/ffe.13077",
+      "10.3390/ma15186278",
+      "10.1016/j.msea.2020.140660",
+      "10.1007/s40964-021-00164-8",
+      "10.3390/ma15186278"
+    ],
+    "params": [
+      5.769718188096713,
+      -5.526156124561345,
+      -1.5935013884267952,
+      -0.8566373651968143,
+      -0.3410409982504991
+    ],
+    "center": [
+      2.3056453069663516,
+      -0.5063711911357366
+    ],
+    "ratio_median": -1.0,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 13,
+      "objective": 8.898302371851107,
+      "gradient_inf": 8.089401459104861e-07,
+      "ratio_median_train": -1.0,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 31,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 8.898302372177197,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 8.898302371851107,
+          "n_iter": 13
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 7,
+    "selected_blocks": [
+      "10.3390/ma13153293",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma15186278",
+      "10.1108/13552541311302932",
+      "10.1007/s40964-021-00164-8",
+      "10.1111/ffe.13077",
+      "10.3390/ma13153293",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.3390/ma12244203"
+    ],
+    "params": [
+      5.718571856864196,
+      -5.330100620531652,
+      -1.2450537441247491,
+      -0.9996302261015397,
+      -0.4822474212393206
+    ],
+    "center": [
+      2.245548351221801,
+      -0.06627906976744144
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 17,
+      "objective": 6.678321413070743,
+      "gradient_inf": 2.820969624339753e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 35,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.678321413070743,
+          "n_iter": 17
+        },
+        {
+          "success": true,
+          "objective": 6.678321413130009,
+          "n_iter": 15
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 8,
+    "selected_blocks": [
+      "10.1108/13552541311302932",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1111/ffe.13077",
+      "10.1111/ffe.13077",
+      "10.1108/13552541311302932",
+      "10.1108/13552541311302932",
+      "10.1002/adem.202200751",
+      "10.1002/adem.202200751",
+      "10.3390/ma12244203",
+      "10.1016/j.ijfatigue.2022.107025"
+    ],
+    "params": [
+      5.6113558767735,
+      -5.600211674392919,
+      -1.4506879550960508,
+      -1.2350126792846583,
+      -0.5051086490314701
+    ],
+    "center": [
+      2.1934426507720532,
+      -0.015384615384615162
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 14,
+      "objective": 4.313382998599263,
+      "gradient_inf": 1.8862290841192841e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 30,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 4.313382998698475,
+          "n_iter": 16
+        },
+        {
+          "success": true,
+          "objective": 4.313382998599263,
+          "n_iter": 14
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 9,
+    "selected_blocks": [
+      "10.1111/ffe.13077",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma15186278",
+      "10.1108/13552541311302932",
+      "10.1016/j.msea.2020.140660",
+      "10.1111/ffe.13077",
+      "10.3390/ma15186278",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma13153293",
+      "cui_linked_campaign"
+    ],
+    "params": [
+      5.280320152716844,
+      -5.9770662323365755,
+      -1.5973069235612036,
+      -1.1788890668007534,
+      -0.32750132680185584
+    ],
+    "center": [
+      2.264957006197958,
+      0.051525423728814
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 19,
+      "objective": 5.249567542401908,
+      "gradient_inf": 1.7337122781846404e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 29,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.249567542410236,
+          "n_iter": 19
+        },
+        {
+          "success": true,
+          "objective": 5.249567542401908,
+          "n_iter": 19
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 10,
+    "selected_blocks": [
+      "10.1016/j.jmst.2019.08.047",
+      "10.1108/13552541311302932",
+      "cui_linked_campaign",
+      "10.1111/ffe.13077",
+      "10.1111/ffe.13077",
+      "10.1108/13552541311302932",
+      "cui_linked_campaign",
+      "10.1016/j.jmst.2019.08.047",
+      "10.3390/ma12244203",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.3390/ma15186278"
+    ],
+    "params": [
+      5.572707099040297,
+      -5.713537198850927,
+      -1.64356710442392,
+      -1.0551008801660322,
+      -0.5008173619609859
+    ],
+    "center": [
+      2.253564939257063,
+      -0.23076923076923225
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 14,
+      "objective": 5.900224290490133,
+      "gradient_inf": 1.080808351913709e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 31,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.9002242904902324,
+          "n_iter": 16
+        },
+        {
+          "success": true,
+          "objective": 5.900224290490133,
+          "n_iter": 14
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 11,
+    "selected_blocks": [
+      "10.3390/ma12244203",
+      "10.3390/ma15186278",
+      "10.1007/s40964-021-00164-8",
+      "cui_linked_campaign",
+      "10.1016/j.ijfatigue.2022.107025",
+      "cui_linked_campaign",
+      "cui_linked_campaign",
+      "10.3390/ma12244203",
+      "10.1007/s40964-021-00164-8",
+      "10.3390/ma12244203",
+      "cui_linked_campaign"
+    ],
+    "params": [
+      5.914147078533062,
+      -4.654523783545735,
+      -0.9791215332464217,
+      -0.5605577215446838,
+      -0.6786561978037317
+    ],
+    "center": [
+      2.288430878941308,
+      -0.3663043478260886
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 14,
+      "objective": 7.397749241153719,
+      "gradient_inf": 2.4601647820587935e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 47,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 7.397749241153719,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 7.397749241158298,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 12,
+    "selected_blocks": [
+      "10.1111/ffe.13077",
+      "cui_linked_campaign",
+      "10.3390/ma15186278",
+      "10.1007/s40964-021-00164-8",
+      "10.1002/adem.202200751",
+      "10.1016/j.jmst.2019.08.047",
+      "10.3390/ma12244203",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.1111/ffe.13077",
+      "10.1002/adem.202200751"
+    ],
+    "params": [
+      5.620534966666858,
+      -5.62845637931524,
+      -1.7429391259160698,
+      -0.97039569017873,
+      -0.295036413258337
+    ],
+    "center": [
+      2.244742675954066,
+      -0.2745519713261678
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 14,
+      "objective": 6.784600551279215,
+      "gradient_inf": 8.166335478277525e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 30,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.784600551283778,
+          "n_iter": 16
+        },
+        {
+          "success": true,
+          "objective": 6.784600551279215,
+          "n_iter": 14
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 13,
+    "selected_blocks": [
+      "10.3390/ma15186278",
+      "10.3390/ma15186278",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.msea.2020.140660",
+      "10.1002/adem.202200751",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.3390/ma13153293",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1108/13552541311302932",
+      "10.3390/ma12244203",
+      "10.3390/ma15186278"
+    ],
+    "params": [
+      5.789580245528488,
+      -5.2830295027721865,
+      -1.1460469376648026,
+      -0.9144908361462071,
+      -0.8727699127564225
+    ],
+    "center": [
+      2.258315701030145,
+      -0.18364779874213866
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 15,
+      "objective": 6.7005844927935385,
+      "gradient_inf": 4.3105684354761975e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 32,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.7005844927935385,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 6.700584492804021,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 14,
+    "selected_blocks": [
+      "10.1111/ffe.13077",
+      "10.3390/ma15186278",
+      "cui_linked_campaign",
+      "10.3390/ma15186278",
+      "10.1111/ffe.13077",
+      "10.1016/j.msea.2020.140660",
+      "10.3390/ma13153293",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1108/13552541311302932",
+      "cui_linked_campaign"
+    ],
+    "params": [
+      5.306822113125654,
+      -5.968508048079829,
+      -1.6671376377324805,
+      -1.1285177223530598,
+      -0.3803400016778237
+    ],
+    "center": [
+      2.2658115896725213,
+      -0.010424710424710566
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 17,
+      "objective": 5.206272118398554,
+      "gradient_inf": 2.3757307276994766e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 28,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 5.206272118398554,
+          "n_iter": 17
+        },
+        {
+          "success": true,
+          "objective": 5.206272118398991,
+          "n_iter": 15
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 15,
+    "selected_blocks": [
+      "10.1108/13552541311302932",
+      "10.1016/j.jmst.2019.08.047",
+      "10.3390/ma13153293",
+      "10.1108/13552541311302932",
+      "10.3390/ma15186278",
+      "cui_linked_campaign",
+      "cui_linked_campaign",
+      "10.1108/13552541311302932",
+      "10.1016/j.msea.2020.140660",
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8"
+    ],
+    "params": [
+      5.877575979805901,
+      -5.81506281496799,
+      -1.265571776579064,
+      -0.949322242860961,
+      -1.0690556749980493
+    ],
+    "center": [
+      2.275508713740915,
+      -0.2986577181208046
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 11,
+      "objective": 6.210885296353562,
+      "gradient_inf": 3.2842176685976554e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 29,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.210885296383144,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 6.210885296353562,
+          "n_iter": 11
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 16,
+    "selected_blocks": [
+      "cui_linked_campaign",
+      "10.3390/ma15186278",
+      "10.1002/adem.202200751",
+      "10.1002/adem.202200751",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8",
+      "10.3390/ma13153293",
+      "10.1016/j.msea.2020.140660",
+      "10.1007/s40964-021-00164-8"
+    ],
+    "params": [
+      5.923403789258615,
+      -5.530554984520756,
+      -1.2281067069257066,
+      -0.8041542416226954,
+      -0.7217910909757655
+    ],
+    "center": [
+      2.2867199980231283,
+      -0.3663043478260868
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 13,
+      "objective": 6.883211258603548,
+      "gradient_inf": 3.114298840117824e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 29,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.883211258603548,
+          "n_iter": 13
+        },
+        {
+          "success": true,
+          "objective": 6.883211258720961,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 17,
+    "selected_blocks": [
+      "10.1002/adem.202200751",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "10.3390/ma15186278",
+      "10.1002/adem.202200751",
+      "10.1002/adem.202200751",
+      "10.1016/j.msea.2020.140660",
+      "cui_linked_campaign"
+    ],
+    "params": [
+      5.514472929416612,
+      -5.920850718519752,
+      -1.4026808490095397,
+      -0.9811888567721905,
+      -0.9178233274235292
+    ],
+    "center": [
+      2.2623872298569996,
+      0.031250000000000035
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 12,
+      "objective": 4.962268085055638,
+      "gradient_inf": 4.551655881090966e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 25,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 4.96226808505571,
+          "n_iter": 15
+        },
+        {
+          "success": true,
+          "objective": 4.962268085055638,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 18,
+    "selected_blocks": [
+      "10.1016/j.jmst.2019.08.047",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "cui_linked_campaign",
+      "10.1002/adem.202200751",
+      "10.1002/adem.202200751",
+      "10.1108/13552541311302932",
+      "10.1108/13552541311302932",
+      "10.3390/ma12244203",
+      "10.3390/ma12244203",
+      "10.3390/ma15186278"
+    ],
+    "params": [
+      5.7158022864510425,
+      -5.671143343624866,
+      -1.3983874518372816,
+      -0.9953484194668373,
+      -0.5563137305600196
+    ],
+    "center": [
+      2.216010373937228,
+      -0.05407166123778379
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "n_iter": 13,
+      "objective": 6.012974104767292,
+      "gradient_inf": 1.602831114166925e-06,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 33,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.012974104768459,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.012974104767292,
+          "n_iter": 13
+        }
+      ]
+    }
+  },
+  {
+    "replicate": 19,
+    "selected_blocks": [
+      "cui_linked_campaign",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1002/adem.202200751",
+      "10.3390/ma15186278",
+      "10.1108/13552541311302932",
+      "10.1016/j.msea.2020.140660",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.3390/ma15186278",
+      "10.1016/j.msea.2020.140660",
+      "10.1108/13552541311302932",
+      "10.3390/ma15186278"
+    ],
+    "params": [
+      5.499569373399726,
+      -5.249995236937596,
+      -1.2329845172226492,
+      -1.0671258107255617,
+      -1.1713147657135246
+    ],
+    "center": [
+      2.2548564460949416,
+      0.05152542372881334
+    ],
+    "ratio_median": 0.1,
+    "fit": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 16,
+      "objective": 4.623851321092366,
+      "gradient_inf": 4.5840138787004575e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 32,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 4.623851321092366,
+          "n_iter": 16
+        },
+        {
+          "success": true,
+          "objective": 4.623851321092783,
+          "n_iter": 15
+        }
+      ]
+    }
+  }
+]

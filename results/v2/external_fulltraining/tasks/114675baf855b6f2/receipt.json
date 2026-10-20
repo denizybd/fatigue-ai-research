@@ -1,0 +1,338 @@
+{
+  "task": {
+    "panel": "external_random",
+    "seed": 17,
+    "outer": "trombley2025_one_campaign",
+    "ks": [
+      0,
+      3,
+      5,
+      10
+    ],
+    "fit_blocks": [
+      "10.1002/adem.202200751",
+      "10.1007/s40964-021-00164-8",
+      "10.1016/j.ijfatigue.2022.107025",
+      "10.1016/j.jmst.2019.08.047",
+      "10.1016/j.msea.2020.140660",
+      "10.1108/13552541311302932",
+      "10.1111/ffe.13077",
+      "10.3390/ma12244203",
+      "10.3390/ma13153293",
+      "10.3390/ma15186278",
+      "cui_linked_campaign"
+    ],
+    "cal_blocks": [],
+    "calibration": [],
+    "targets": [
+      {
+        "curve": "trombley2025_d1.5_a",
+        "support_pool": [
+          "mc2564_e67580",
+          "mc2564_e67499",
+          "mc2564_e67496",
+          "mc2564_e67558",
+          "mc2564_e67568",
+          "mc2564_e67551",
+          "mc2564_e67578",
+          "mc2564_e67494",
+          "mc2564_e67582",
+          "mc2564_e67550"
+        ],
+        "query_ids": [
+          "mc2564_e67570",
+          "mc2564_e67572",
+          "mc2564_e67574",
+          "mc2564_e67564",
+          "mc2564_e67571",
+          "mc2564_e67548",
+          "mc2564_e67549",
+          "mc2564_e67579",
+          "mc2564_e67569",
+          "mc2564_e67553",
+          "mc2564_e67566",
+          "mc2564_e67565",
+          "mc2564_e67581",
+          "mc2564_e67562",
+          "mc2564_e67555",
+          "mc2564_e67554",
+          "mc2564_e67498",
+          "mc2564_e67561",
+          "mc2564_e67557",
+          "mc2564_e67495",
+          "mc2564_e67567",
+          "mc2564_e67576",
+          "mc2564_e67575",
+          "mc2564_e67583",
+          "mc2564_e67559",
+          "mc2564_e67573",
+          "mc2564_e67497",
+          "mc2564_e67552",
+          "mc2564_e67585",
+          "mc2564_e67560",
+          "mc2564_e67556",
+          "mc2564_e67586",
+          "mc2564_e67584",
+          "mc2564_e67577"
+        ]
+      },
+      {
+        "curve": "trombley2025_d2.5_a",
+        "support_pool": [
+          "mc2564_e67501",
+          "mc2564_e67601",
+          "mc2564_e67608",
+          "mc2564_e67619",
+          "mc2564_e67587",
+          "mc2564_e67603",
+          "mc2564_e67593",
+          "mc2564_e67597",
+          "mc2564_e67591",
+          "mc2564_e67589"
+        ],
+        "query_ids": [
+          "mc2564_e67599",
+          "mc2564_e67613",
+          "mc2564_e67623",
+          "mc2564_e67600",
+          "mc2564_e67607",
+          "mc2564_e67610",
+          "mc2564_e67588",
+          "mc2564_e67611",
+          "mc2564_e67609",
+          "mc2564_e67615",
+          "mc2564_e67622",
+          "mc2564_e67598",
+          "mc2564_e67620",
+          "mc2564_e67594",
+          "mc2564_e67604",
+          "mc2564_e67502",
+          "mc2564_e67605",
+          "mc2564_e67617",
+          "mc2564_e67606",
+          "mc2564_e67621",
+          "mc2564_e67618",
+          "mc2564_e67595",
+          "mc2564_e67612",
+          "mc2564_e67616",
+          "mc2564_e67592",
+          "mc2564_e67602",
+          "mc2564_e67590",
+          "mc2564_e67500",
+          "mc2564_e67596",
+          "mc2564_e67614"
+        ]
+      },
+      {
+        "curve": "trombley2025_d5_a",
+        "support_pool": [
+          "mc2564_e67547",
+          "mc2564_e67535",
+          "mc2564_e67538",
+          "mc2564_e67528",
+          "mc2564_e67513",
+          "mc2564_e67522",
+          "mc2564_e67529",
+          "mc2564_e67521",
+          "mc2564_e67508",
+          "mc2564_e67526"
+        ],
+        "query_ids": [
+          "mc2564_e67542",
+          "mc2564_e67511",
+          "mc2564_e67530",
+          "mc2564_e67532",
+          "mc2564_e67519",
+          "mc2564_e67506",
+          "mc2564_e67537",
+          "mc2564_e67517",
+          "mc2564_e67520",
+          "mc2564_e67545",
+          "mc2564_e67525",
+          "mc2564_e67527",
+          "mc2564_e67507",
+          "mc2564_e67514",
+          "mc2564_e67505",
+          "mc2564_e67534",
+          "mc2564_e67544",
+          "mc2564_e67503",
+          "mc2564_e67512",
+          "mc2564_e67510",
+          "mc2564_e67524",
+          "mc2564_e67504",
+          "mc2564_e67518",
+          "mc2564_e67539",
+          "mc2564_e67533",
+          "mc2564_e67536",
+          "mc2564_e67509",
+          "mc2564_e67516",
+          "mc2564_e67515",
+          "mc2564_e67546",
+          "mc2564_e67543",
+          "mc2564_e67531",
+          "mc2564_e67541",
+          "mc2564_e67523",
+          "mc2564_e67540"
+        ]
+      }
+    ]
+  },
+  "fit_n": 309,
+  "pooled": {
+    "params_": [
+      5.701201509746963,
+      -3.2340853066552215,
+      -0.8252655992177313,
+      -0.4336377065523203
+    ],
+    "sigma_": 0.648147032376681,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 13,
+      "objective": 1.0026028335546047,
+      "gradient_inf": 1.922758483723433e-08,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "sigma_at_bound": false
+    }
+  },
+  "hierarchical": {
+    "params_": [
+      5.725371709230604,
+      -5.497918604832659,
+      -1.3286830449971863,
+      -0.957562518274629,
+      -0.5209161369368136
+    ],
+    "sigma_": 0.38382731875621795,
+    "tau_": 0.593976135152927,
+    "fit_receipt_": {
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "n_iter": 14,
+      "objective": 6.701653673319042,
+      "gradient_inf": 8.625716325094679e-07,
+      "ratio_median_train": 0.1,
+      "ratio_all_missing_train": false,
+      "ratio_missing_train": 0,
+      "nodes": 41,
+      "conditions": 32,
+      "sources": 11,
+      "sigma_at_bound": false,
+      "tau_at_bound": false,
+      "training_start_receipts": [
+        {
+          "success": true,
+          "objective": 6.701653673319042,
+          "n_iter": 14
+        },
+        {
+          "success": true,
+          "objective": 6.701653673377991,
+          "n_iter": 12
+        }
+      ]
+    }
+  },
+  "calibration": [
+    {
+      "model": "pooled",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled",
+      "k": 5,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "pooled",
+      "k": 10,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 5,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "unpooled_shift",
+      "k": 10,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 0,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 3,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 5,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    },
+    {
+      "model": "hierarchical",
+      "k": 10,
+      "scores": [],
+      "failed_blocks": [],
+      "cutoff": Infinity,
+      "m": 0
+    }
+  ],
+  "seconds": 0.5256802080002672
+}

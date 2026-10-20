@@ -1,0 +1,15 @@
+{
+  "response":{
+    "numFound":1,
+    "start":0,
+    "maxScore":5.353388,
+    "numFoundExact":true,
+    "docs":[{
+      "docid":"3710653",
+      "title_s":["Correlation between microstructure and cyclic behavior of 316L stainless steel obtained by Laser Powder Bed Fusion"],
+      "halId_s":"hal-03616357",
+      "uri_s":"https://imt-mines-albi.hal.science/hal-03616357v1",
+      "fileMain_s":"https://imt-mines-albi.hal.science/hal-03616357/document"
+    }]
+  }
+}

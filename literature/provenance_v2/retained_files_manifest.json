@@ -1,0 +1,122 @@
+[
+  {
+    "path": "literature/provenance_v2/elangeswaran_matdes2020.html",
+    "bytes": 5764,
+    "sha256": "5864a59c31bd2978e0cb9b85e5138a7331d70a873a2c3f9bf9c7d878281bfd03",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/kedziora2022.xml",
+    "bytes": 220848,
+    "sha256": "e07b1478eff8294635ef95030390df9df76e38a1599a4d58a667a68abfa706f5",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/kedziora_fig11_access_denied.html",
+    "bytes": 5653,
+    "sha256": "095c5fce450dfbdbee4cad256ada68675038afbeab9f9cde86ac94839dd42da3",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/liang_ffe2022_direct.html",
+    "bytes": 146,
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/liang_ijf2022_direct.html",
+    "bytes": 146,
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/liang_ijf2022_page.html",
+    "bytes": 146,
+    "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/wood2019.xml",
+    "bytes": 123002,
+    "sha256": "4dadc3e86e40503e25830448b3b31ff27c90a8bafc754ffb4d45f0e68969fe17",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/wood2019_pdf.pdf",
+    "bytes": 7221140,
+    "sha256": "97f0c70f266790d3b1f561c120a306a233c62c514e1181bef521b0c6aee39043",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/wood2019_pdf.txt",
+    "bytes": 88301,
+    "sha256": "1b174e6dd0ef23c1f7c5b09382d44e4ce8e51829ff6343c6b1910e7c14b29576",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/wood_fig9_page.png",
+    "bytes": 510293,
+    "sha256": "2e5b6159132597cd6f0351847c3003d93f711378034688f6f512a5f9b19fa4eb",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_matdes2018.html",
+    "bytes": 5798,
+    "sha256": "e90a5cf6ab0b121f3467045befa226db925a368ca4c3eb1a02357ad65b8d4b51",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_matdes2018_alt.pdf",
+    "bytes": 3224113,
+    "sha256": "de722f06041f254dc376bb2e94febaa3e278f64adef221fac209c5c1f8728102",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_matdes2018_alt.txt",
+    "bytes": 70896,
+    "sha256": "c06d6886c5ab7844d2b6b88beaa18917ba85fe114024c6c7004ee16ad6b5bc9b",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_matec2018.html",
+    "bytes": 93,
+    "sha256": "0d3e98ca727fc1201b436170af5a63f23348aaf146a3ac6234f6c4da283e8b34",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_ml2019.html",
+    "bytes": 5632,
+    "sha256": "d214b89798282996f0238a27c3c81655379a08b1f9fc7f81e28688aeca35f0ea",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_ml2019_alt.pdf",
+    "bytes": 4016592,
+    "sha256": "416c10690c587a4058638c9870f222d8921f5c9f4ec1faec219d2aaaf81e10e3",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_ml2019_alt.txt",
+    "bytes": 66267,
+    "sha256": "cf7b165adc84f38b03f75864237afbfa34c2511271d4bfbb2cc627ea5cc0e10b",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_msea2017.pdf",
+    "bytes": 3694362,
+    "sha256": "79eb5a15574bbeff90d923de21b45b7874bff3a92680d72195beb6397f034346",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_msea2017.txt",
+    "bytes": 65506,
+    "sha256": "c7bc23a49b069b65228f87530c107bb4824ebcc8d5a39d6ba47bf242f1f42766",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  },
+  {
+    "path": "literature/provenance_v2/zhang_msea2017_alt.html",
+    "bytes": 15142,
+    "sha256": "55d34da51e47af39a2158bef6875514109009f538761b4223ef07d92f4e97bc8",
+    "qualification": "Complete retained file; HTML access-denial files are not source full texts."
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "dataset_id": "a0404_d000",
+  "doi": "10.1016/j.mtla.2022.101591",
+  "n": 8,
+  "database_amplitude_range_MPa": [
+    260.8348560866121,
+    337.7511948057149
+  ],
+  "reported_R_interval": [
+    0.04,
+    0.06
+  ],
+  "reported_maximum_stress_below_mean_yield_MPa": 378,
+  "implied_sigma_max_if_database_amplitude_interpretation_MPa": [
+    543.4059501804419,
+    718.6195634164146
+  ],
+  "possible_amplitude_range_if_DB_stores_sigma_max_MPa": [
+    122.59238236070767,
+    162.12057350674314
+  ],
+  "status": "definition conflict strongly supported; exact plotted point identity and row-specific R not visually verified"
+}

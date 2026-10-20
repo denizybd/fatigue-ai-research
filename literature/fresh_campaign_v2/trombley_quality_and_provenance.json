@@ -1,0 +1,140 @@
+{
+  "repository_entities": 157,
+  "fatigue_records": 154,
+  "asbuilt_records": 129,
+  "nonfatigue_excluded": [
+    {
+      "entity_id": "67563",
+      "specimen_name": "CCV1-1.5a-16-au",
+      "reason": "Missing Number of Cycles or Max Stress in public metadata; no imputation. Two hr/ar names are residual-stress-only; au name is incompletely recorded fatigue specimen."
+    },
+    {
+      "entity_id": "67624",
+      "specimen_name": "CCV2-5.0a-01-hr",
+      "reason": "Missing Number of Cycles or Max Stress in public metadata; no imputation. Two hr/ar names are residual-stress-only; au name is incompletely recorded fatigue specimen."
+    },
+    {
+      "entity_id": "67625",
+      "specimen_name": "CCV2-5.0a-02-ar",
+      "reason": "Missing Number of Cycles or Max Stress in public metadata; no imputation. Two hr/ar names are residual-stress-only; au name is incompletely recorded fatigue specimen."
+    }
+  ],
+  "asbuilt_condition_counts": {
+    "trombley2025_d1.5_a": 44,
+    "trombley2025_d2.5_a": 40,
+    "trombley2025_d5_a": 45
+  },
+  "all_condition_counts": {
+    "trombley2025_d1.5_a": 44,
+    "trombley2025_d2.5_a": 40,
+    "trombley2025_d5_a": 45,
+    "trombley2025_d5_c": 8,
+    "trombley2025_d5_h": 10,
+    "trombley2025_d5_s": 7
+  },
+  "asbuilt_failure_runout_counts": [
+    {
+      "condition_id": "trombley2025_d1.5_a",
+      "event": 0,
+      "n": 15
+    },
+    {
+      "condition_id": "trombley2025_d1.5_a",
+      "event": 1,
+      "n": 29
+    },
+    {
+      "condition_id": "trombley2025_d2.5_a",
+      "event": 0,
+      "n": 6
+    },
+    {
+      "condition_id": "trombley2025_d2.5_a",
+      "event": 1,
+      "n": 34
+    },
+    {
+      "condition_id": "trombley2025_d5_a",
+      "event": 0,
+      "n": 5
+    },
+    {
+      "condition_id": "trombley2025_d5_a",
+      "event": 1,
+      "n": 40
+    }
+  ],
+  "asbuilt_minimum_stress": 80.0,
+  "asbuilt_maximum_stress": 213.7,
+  "duplicate_specimen_ids": 0,
+  "duplicate_entity_ids": 0,
+  "duplicate_exact_fatigue_coordinates_within_condition": 7,
+  "exact_coordinate_duplicates_caveat": "distinct named specimens may legitimately share rounded endpoints; do not deduplicate automatically",
+  "dates": [
+    "1/13/2020",
+    "1/13/2021",
+    "1/14/2021",
+    "1/15/2021",
+    "1/17/2020",
+    "1/20/2021",
+    "1/21/2021",
+    "1/28/2021",
+    "1/29/2021",
+    "1/5/2021",
+    "11/20/2020",
+    "12/15/2020",
+    "12/16/2020",
+    "12/18/2020",
+    "12/19/2020",
+    "12/21/2020",
+    "12/22/2020",
+    "12/8/2020",
+    "2/18/2020",
+    "2/3/2021",
+    "2/4/2020",
+    "2/5/2021",
+    "3/17/2020",
+    "3/18/2020",
+    "3/19/2020",
+    "4/22/2021",
+    "4/23/2021",
+    "4/26/2021",
+    "4/27/2021",
+    "4/28/2021",
+    "4/29/2021",
+    "4/30/2021",
+    "5/10/2021",
+    "5/11/2021",
+    "5/13/2021",
+    "5/14/2021",
+    "5/15/2021",
+    "5/3/2021",
+    "5/4/2021",
+    "5/5/2021",
+    "5/6/2021",
+    "5/7/2021",
+    "6/11/2020",
+    "6/12/2020",
+    "6/15/2020",
+    "6/16/2020",
+    "6/17/2020",
+    "6/18/2020",
+    "6/24/2019",
+    "6/25/2019",
+    "6/27/2019",
+    "6/28/2019",
+    "6/8/2020",
+    "7/1/2019",
+    "7/12/2021",
+    "9/20/2019",
+    "9/21/2019",
+    "9/23/2019"
+  ],
+  "historical_shared_author_metadata": [],
+  "historical_shared370W_900mms_25um_rows": 0,
+  "historical_coordinate_pairs_screened": 12,
+  "historical_strong_candidate_reuse": [],
+  "independence": "One external authorcampaign with3relatedasbuiltconditions,4reportedbuilds; dates as displayed inqualityreport; not2025new physicaltesting; physicalindependence beyondrecorded source notcertified",
+  "test_endpoint": "visiblecrack via200Hz frequencydrop,notfullfracture",
+  "license": "repository no license specified; articleCCBY4.0 separate; localanalysis only,exclude rawmetadata/HTML frompublicarchive pendinglicense"
+}

@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "original": "fulltraining",
+      "sensitivity": "quadrature81_internal",
+      "rows": 15570,
+      "max_log_lower_difference": 1.5527489605204892e-07,
+      "risk_classification_changes": 0
+    },
+    {
+      "original": "external_fulltraining",
+      "sensitivity": "quadrature81_external",
+      "rows": 9504,
+      "max_log_lower_difference": 2.7712943051483307e-11,
+      "risk_classification_changes": 0
+    }
+  ]
+}
