@@ -23,7 +23,7 @@ def source_weights(groups):
     u,c=np.unique(groups,return_counts=True);sizes=dict(zip(u,c))
     return np.array([1./sizes[g] for g in groups])
 
-def fit_fold(df,train_ix,cal_ix,test_ix,seed,fold,scheme,outdir,n_boot=8,model_names=('basquin','linear','mlp'),naive_events=False):
+def fit_fold(df,train_ix,cal_ix,test_ix,seed,fold,scheme,outdir,n_boot=8,model_names=('basquin','linear','mlp'),naive_events=False,mlp_maxiter=1500):
     tr=df.loc[train_ix];cal=df.loc[cal_ix];te=df.loc[test_ix]
     gtr=tr.group_id.to_numpy();w=source_weights(gtr)
     y=tr.log_life.to_numpy();event=tr.event.to_numpy()
@@ -49,7 +49,7 @@ def fit_fold(df,train_ix,cal_ix,test_ix,seed,fold,scheme,outdir,n_boot=8,model_n
     for model in model_names:
         enc=Encoder('basquin').fit(tr) if model=='basquin' else rich
         tx=enc.transform(tr);cx=enc.transform(cal);qx=enc.transform(te)
-        mod=(MLPCensoredAFT(seed=seed,max_iter=1500) if model=='mlp' else LinearCensoredAFT(max_iter=1000)).fit(tx,y,event,w)
+        mod=(MLPCensoredAFT(seed=seed,max_iter=mlp_maxiter) if model=='mlp' else LinearCensoredAFT(max_iter=1000)).fit(tx,y,event,w)
         fits.append(dict(model=model,**mod.status_.to_dict(),sigma=mod.sigma_,sigma_at_bound=mod.sigma_at_bound_))
         muc=mod.predict_location(cx);mut=mod.predict_location(qx)
         plus=te.copy();minus=te.copy();plus['log_stress']+=.01;minus['log_stress']-=.01
@@ -75,13 +75,13 @@ def fit_fold(df,train_ix,cal_ix,test_ix,seed,fold,scheme,outdir,n_boot=8,model_n
     return pd.concat(preds,ignore_index=True)
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--input',default='data/processed/primary.csv');ap.add_argument('--output',default='results/primary');ap.add_argument('--scheme',choices=['source','random'],default='source');ap.add_argument('--seeds',default='0,17,42');ap.add_argument('--bootstraps',type=int,default=8);ap.add_argument('--limit-folds',type=int);ap.add_argument('--models',default='basquin,linear,mlp');ap.add_argument('--naive-events',action='store_true');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--input',default='data/processed/primary.csv');ap.add_argument('--output',default='results/primary');ap.add_argument('--scheme',choices=['source','random'],default='source');ap.add_argument('--seeds',default='0,17,42');ap.add_argument('--bootstraps',type=int,default=8);ap.add_argument('--limit-folds',type=int);ap.add_argument('--models',default='basquin,linear,mlp');ap.add_argument('--naive-events',action='store_true');ap.add_argument('--mlp-maxiter',type=int,default=1500);args=ap.parse_args()
     df=pd.read_csv(ROOT/args.input);out=ROOT/args.output;out.mkdir(parents=True,exist_ok=True);(out/'folds').mkdir(exist_ok=True)
     groups=np.sort(df.group_id.unique());seeds=[int(s) for s in args.seeds.split(',')]
     assert len(groups)>=14,'Too few independent groups for >=4 fit groups after nine-source calibration; report feasibility failure.'
     outputs=[];started=time.time();data_hash=hashlib.sha256((ROOT/args.input).read_bytes()).hexdigest()
     code_hash=hashlib.sha256(b''.join(p.read_bytes() for p in sorted((ROOT/'src').glob('*.py')))).hexdigest()
-    signature={'data_sha256':data_hash,'code_sha256':code_hash,'scheme':args.scheme,'bootstraps':args.bootstraps,'seeds':seeds,'models':args.models,'naive_events':args.naive_events}
+    signature={'data_sha256':data_hash,'code_sha256':code_hash,'scheme':args.scheme,'bootstraps':args.bootstraps,'seeds':seeds,'models':args.models,'naive_events':args.naive_events,'mlp_maxiter':args.mlp_maxiter}
     manifest=out/'checkpoint_signature.json'
     if manifest.exists(): assert json.loads(manifest.read_text())==signature,'Checkpoint signature mismatch: choose a new output directory.'
     else:
@@ -102,7 +102,7 @@ def main():
                 assert not (set(df.loc[ti].group_id)|set(df.loc[ci].group_id)) & set(df.loc[qi].group_id)
             else:
                 order=rng.permutation(df.index);nt=int(.6*len(order));nc=int(.2*len(order));ti=order[:nt];ci=order[nt:nt+nc];qi=order[nt+nc:]
-            p=fit_fold(df,ti,ci,qi,seed,f'{i:03d}',args.scheme,out,args.bootstraps,args.models.split(','),args.naive_events);p.to_csv(checkpoint,index=False);outputs.append(p)
+            p=fit_fold(df,ti,ci,qi,seed,f'{i:03d}',args.scheme,out,args.bootstraps,args.models.split(','),args.naive_events,args.mlp_maxiter);p.to_csv(checkpoint,index=False);outputs.append(p)
             print(json.dumps({'fold':i,'heldout_group':g,'seed':seed,'n_train':len(ti),'n_cal':len(ci),'n_test':len(qi),'elapsed_s':round(time.time()-started,2)}),flush=True)
     pd.concat(outputs,ignore_index=True).to_csv(out/'predictions.csv',index=False)
     (out/'run_receipt.json').write_text(json.dumps({'arguments':vars(args),'data_sha256':data_hash,'groups':len(groups),'seeds':seeds,'duration_seconds':time.time()-started,'completed_folds':len(outputs)},indent=2))
