@@ -1,6 +1,6 @@
 """Summarize saved test predictions; no model or gate optimization."""
 from pathlib import Path
-import argparse,json
+import argparse,json,hashlib
 import numpy as np
 import pandas as pd
 from scipy.stats import norm
@@ -32,7 +32,10 @@ def build_cells(p):
             for frac in [.5,.8]:
                 rows.append(cell(t,t[f'accept_{score}_{frac}'].to_numpy(bool),f'operational_{score}_{frac}'))
                 k=int(np.ceil(frac*len(t)));mask=np.zeros(len(t),bool)
-                mask[np.argsort(t[score].to_numpy(),kind='stable')[:k]]=True
+                # Raw records can be sorted by life/stress: ties must not inherit
+                # that order. Hashing IDs gives fixed outcome-blind tie breaks.
+                tie=np.array([int(hashlib.sha256(f'{rid}|{key[1]}'.encode()).hexdigest()[:16],16) for rid in t.row_id],dtype=np.uint64)
+                mask[np.lexsort((tie,t[score].to_numpy()))[:k]]=True
                 rows.append(cell(t,mask,f'matched_{score}_{frac}'))
         for frac in [.5,.8]:
             # Same source count as every matched score,20 outcome-blind realizations.
