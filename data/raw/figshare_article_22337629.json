@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "id": 41023478,
+      "name": "FatigueData-AM2022.mat",
+      "size": 5820607,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/41023478",
+      "supplied_md5": "1f66b2a5e48146c2d5a27739ad24ff30",
+      "computed_md5": "1f66b2a5e48146c2d5a27739ad24ff30",
+      "mimetype": "application/octet-stream"
+    },
+    {
+      "id": 41023481,
+      "name": "FatigueData-AM2022.json",
+      "size": 69558939,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/41023481",
+      "supplied_md5": "f0d565902c000b277480bb6fa2e5f711",
+      "computed_md5": "f0d565902c000b277480bb6fa2e5f711",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 41023484,
+      "name": "FatigueData-AM2022.xlsx",
+      "size": 7044408,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/41023484",
+      "supplied_md5": "0a7db5fe40892cc420b9ac3713e596ad",
+      "computed_md5": "0a7db5fe40892cc420b9ac3713e596ad",
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 14591738,
+      "full_name": "Zian Zhang",
+      "first_name": "Zian",
+      "last_name": "Zhang",
+      "is_active": true,
+      "url_name": "Zian_Zhang",
+      "orcid_id": "0009-0003-0037-8417"
+    },
+    {
+      "id": 14321643,
+      "full_name": "Zhiping Xu",
+      "first_name": "Zhiping",
+      "last_name": "Xu",
+      "is_active": true,
+      "url_name": "Zhiping_Xu",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Fatigue_Database_of_Additively_Manufactured_Alloys/22337629",
+  "download_disabled": false,
+  "description": "<p>\u00a0\u00a0</p>\n<p>Fatigue is a process of mechanical degradation that is usually assessed based on empirical rules and experimental data obtained from standardized tests. Fatigue data of engineering materials are commonly reported in <em>S</em>-<em>N</em> (the stress-life relation), <em>e</em>-<em>N</em> (the strain-life relation), and d<em>a</em>/d<em>N</em>- <em>\u0394K</em> (the relation between the fatigue crack growth rate and the stress intensity factor range) data. Fatigue and static mechanical properties of additively manufactured (AM) alloys, as well as the types of materials, parameters of AM, processing, and tests are collected from thousands of scientific articles till the end of 2022 using natural language processing, machine learning, and computer vision techniques. The results show that the performance of AM alloys could reach that of conventional alloys although data dispersion and system deviation are present. The database (FatigueData-AM2022) is formatted in compact structures, hosted in an open repository, and analyzed to show their patterns and statistics. The quality of data collected from the literature is measured by defining rating scores for datasets reported in individual studies and through the fill rates of data entries across all the datasets. The database also serves as a high-quality training set for data processing using machine learning models. Data extraction and analysis procedures are outlined and the tools are publicly released. A unified language of fatigue data is suggested to regulate data reporting for the fatigue performance of materials to facilitate data sharing and the development of open science.</p>\n<p><br></p>\n<p>Article DOI: 10.1038/s41597-023-02150-x</p>",
+  "funding": "National Natural Science Foundation of China, grants 11825203, 11832010, 11921002, 52090032, 12122204, and 11872150.",
+  "funding_list": [
+    {
+      "id": 23219416,
+      "title": "National Natural Science Foundation of China, grants 11825203, 11832010, 11921002, 52090032, 12122204, and 11872150.",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 2,
+  "status": "public",
+  "size": 82423954,
+  "created_date": "2023-06-01T09:10:55Z",
+  "modified_date": "2023-06-01T09:10:56Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "fatigue",
+    "alloys",
+    "additive manufacturing",
+    "database",
+    "open science"
+  ],
+  "keywords": [
+    "fatigue",
+    "alloys",
+    "additive manufacturing",
+    "database",
+    "open science"
+  ],
+  "categories": [
+    {
+      "id": 26218,
+      "title": "Aerospace materials",
+      "parent_id": 26215,
+      "path": "/26212/26215/26218",
+      "source_id": "400101",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 26773,
+      "title": "Solid mechanics",
+      "parent_id": 26752,
+      "path": "/26212/26752/26773",
+      "source_id": "401707",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 26734,
+      "title": "Metals and alloy materials",
+      "parent_id": 26713,
+      "path": "/26212/26713/26734",
+      "source_id": "401607",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Zhang, Zian; Xu, Zhiping (2023). Fatigue Database of Additively Manufactured Alloys. figshare. Dataset. https://doi.org/10.6084/m9.figshare.22337629.v2",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": "file",
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 22337629,
+  "title": "Fatigue Database of Additively Manufactured Alloys",
+  "doi": "10.6084/m9.figshare.22337629.v2",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/22337629",
+  "published_date": "2023-06-01T09:10:55Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/22337629",
+  "url_public_api": "https://api.figshare.com/v2/articles/22337629",
+  "url_private_html": "https://figshare.com/account/articles/22337629",
+  "url_public_html": "https://figshare.com/articles/dataset/Fatigue_Database_of_Additively_Manufactured_Alloys/22337629",
+  "timeline": {
+    "posted": "2023-06-01T09:10:55",
+    "firstOnline": "2023-04-06"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

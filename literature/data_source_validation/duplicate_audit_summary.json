@@ -1,0 +1,12 @@
+{
+  "input": "data/processed/ss316l_lpbf_all.csv",
+  "datasets": 160,
+  "sources": 46,
+  "screening_tolerance": {
+    "cycles_relative": 0.02,
+    "stress_relative": 0.01
+  },
+  "candidate_curves": 30,
+  "exact_coordinate_pairs": 0,
+  "caveat": "No automatic grouping or row removal. Negative screen cannot exclude overlap at other digitization tolerances."
+}

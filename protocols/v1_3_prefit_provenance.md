@@ -1,0 +1,9 @@
+# Protocol amendment v1.3: pre-fit provenance/eligibility findings
+
+2026-10-20; data audit only, no fitted real-data outcomes inspected. The1130-row preliminary cohort includes4 strain-controlled rows despite an S-N label. Restrict the primary stress-controlled population to `load_control=force`, leaving1126 rows/37DOIs. This is a metadata eligibility correction; all failures/runouts in eligible curves remain.
+
+The pre-outcome duplicate screen finds strongly near-identical curves across DOIs. Conservatively group only connected edges with at least5 distinct near-coincident points covering at least85% of the smaller curve, within2% life/1% amplitude, same load ratio/mode. The three listed connected source sets in `src/group_sources.py` are frozen as primary leakage blocks before any fit. These are approximate-curve reuse flags, not proof of exact specimen identity. Keep all rows in primary analysis; publication-only splitting is a potentially contaminated sensitivity.
+
+Additional sensitivity: merge the weaker3/4-point candidate between DOI10.1016/j.ijplas.2021.103172 and10.1016/j.jmst.2021.10.006. Another sensitivity greedily removes near-coincident cross-DOI observations in strong families, using lowest database row ID as representative with same runout/load ratio and the same2%life/1%stress tolerances. This may merge distinct replicates, so it cannot replace the primary. Save every removed-to-retained map. Refit all three seeds for main/DOI-only, rich linear for dedup/weak-edge/naive-censoring sensitivities. These sensitivities do not establish that all remaining studies are physically independent.
+
+Missing scalar medians are computed from finite values only. Infinite conservatism from zero-life bounds stays infinite in aggregate utility; report zero-bound frequency. Constant/all-missing numerical features use fixed unit scale1, a limitation of the descriptive distance representation; no physical support theorem is claimed.

@@ -1,0 +1,71 @@
+{
+  "all_sn": {
+    "rows": 15146,
+    "datasets": 1610,
+    "sources": 459,
+    "failures": 13295,
+    "runouts": 1851
+  },
+  "ss316l_lpbf": {
+    "rows": 1473,
+    "datasets": 160,
+    "sources": 46,
+    "failures": 1293,
+    "runouts": 180
+  },
+  "primary_uniaxial_room_unnotched": {
+    "rows": 1126,
+    "datasets": 120,
+    "sources": 37,
+    "failures": 987,
+    "runouts": 139
+  },
+  "invalid_primary_candidate_rows": 0,
+  "ss316l_test_types": {
+    "uniaxial": 1185,
+    "rotating bending fatigue": 126,
+    "bending fatigue": 117,
+    "bending fatigue; resonance": 41,
+    "uniaxial; VHCF": 4
+  },
+  "ss316l_load_control": {
+    "force": 1455,
+    "strain": 14,
+    "displacement": 4
+  },
+  "ss316l_surfaces": {
+    "machine;polish": 220,
+    "as-built": 438,
+    "polish only": 40,
+    "polish": 34,
+    "machine": 343,
+    "manually grind": 46,
+    "EDM;manual grind": 77,
+    "EDM defect;machine;polish": 17,
+    "corrosion;machine;polish": 39,
+    "polish simple": 27,
+    "polish total": 11,
+    "EDM;electropolish;grind": 30,
+    "EDM;grind": 61,
+    "high-frequency mechanical impact": 7,
+    "unknown": 12,
+    "vibratory finish": 14,
+    "electropolish;manually grind": 12,
+    "electropolish": 13,
+    "EDM": 20,
+    "shot peen": 12
+  },
+  "ss316l_thermal": {
+    "NHT": 514,
+    "HT": 537,
+    "HIP": 62,
+    "unknown": 360
+  },
+  "source_default_caveat": "Descriptor assigns uniaxial,25C,air,Kt1 when not stated. These cannot be certified source-measured from this database alone.",
+  "no_equivalence": "No row identity with original Centola518 corpus claimed; source overlap only.",
+  "centola_source_doi_overlap": {
+    "in_open_sn": 16,
+    "in_ss316l_lpbf": 16,
+    "in_primary": 12
+  }
+}

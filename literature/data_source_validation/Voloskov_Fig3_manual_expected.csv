@@ -1,0 +1,14 @@
+manual_point_index,source_group,marker_x_pixel,marker_y_pixel,axis_x_at_1e4,axis_pixels_per_decade,source_N_approx,source_sigma_max_MPa,source_R,expected_sigma_a_MPa,source_arrow_runout,precision
+0,HCF,431,350,154,190.5,284490.80978337873,450,0.1,202.5,0,visual pixel-level approximate not author raw data
+1,HCF,488,505,154,190.5,566605.5704827392,375,0.1,168.75,0,visual pixel-level approximate not author raw data
+2,HCF,581,607,154,190.5,1743692.1656028493,325,0.1,146.25,0,visual pixel-level approximate not author raw data
+3,HCF,564,638,154,190.5,1419812.4207339142,310,0.1,139.5,0,visual pixel-level approximate not author raw data
+4,HCF,550,679,154,190.5,1198781.8459583772,290,0.1,130.5,0,visual pixel-level approximate not author raw data
+5,HCF,673,699,154,190.5,5301630.41156278,280,0.1,126.0,0,visual pixel-level approximate not author raw data
+6,HCF,680,719,154,190.5,5769721.566965307,270,0.1,121.5,0,visual pixel-level approximate not author raw data
+7,HCF,725,709,154,190.5,9939746.949684823,275,0.1,123.75,1,visual pixel-level approximate not author raw data
+8,HCF,725,761,154,190.5,9939746.949684823,250,0.1,112.5,1,visual pixel-level approximate not author raw data
+9,VHCF,840,719,154,190.5,39907072.38565046,270,-1.0,270.0,0,visual pixel-level approximate not author raw data
+10,VHCF,944,741,154,190.5,140275436.0186085,260,-1.0,260.0,0,visual pixel-level approximate not author raw data
+11,VHCF,1030,761,154,190.5,396666201.01611906,250,-1.0,250.0,0,visual pixel-level approximate not author raw data
+12,VHCF,1114,750,154,190.5,1094888965.127687,255,-1.0,255.0,0,visual pixel-level approximate not author raw data

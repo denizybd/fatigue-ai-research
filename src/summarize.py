@@ -56,7 +56,11 @@ def aggregate(cells):
     for key,z in cells.groupby(keys):
         by=z.groupby('group_id')[cols].mean();r=dict(zip(keys,key));r['sources']=len(by);r['sources_with_any_acceptance']=int(z.groupby('group_id').accepted.max().gt(0).sum())
         for c in cols:
-            v=by[c].to_numpy();v=v[np.isfinite(v)]
+            v=by[c].to_numpy()
+            if c=='conservatism_decades' and np.isposinf(v).any():
+                r[c]=r[c+'_ci_low']=r[c+'_ci_high']=np.inf
+                continue
+            v=v[np.isfinite(v)]
             if len(v):
                 means=v[rng.integers(0,len(v),(2000,len(v)))].mean(axis=1)
                 r[c]=float(v.mean());r[c+'_ci_low'],r[c+'_ci_high']=np.quantile(means,[.025,.975])

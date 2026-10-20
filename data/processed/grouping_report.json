@@ -1,0 +1,30 @@
+{
+  "rows": 1126,
+  "conditions": 120,
+  "source_dois": 37,
+  "conservative_blocks": 29,
+  "runouts": 139,
+  "families": [
+    [
+      "10.1007/978-3-030-05861-6_36",
+      "10.1016/j.addma.2021.102570",
+      "10.1016/j.ijfatigue.2019.01.013",
+      "10.1016/j.matdes.2020.108962"
+    ],
+    [
+      "10.1016/j.ijfatigue.2018.12.016",
+      "10.1016/j.ijfatigue.2019.105194",
+      "10.1016/j.matdes.2018.02.054",
+      "10.1016/j.msea.2017.07.071",
+      "10.1051/matecconf/201816522006"
+    ],
+    [
+      "10.1016/j.ijfatigue.2022.106843",
+      "10.1111/ffe.13684"
+    ]
+  ],
+  "dedup_sensitivity_rows": 942,
+  "removed_near_coincident_rows": 184,
+  "weak_edge_blocks": 28,
+  "qualification": "Near-identical digitized curves define conservative leakage blocks; physical specimen identity not established."
+}

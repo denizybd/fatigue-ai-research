@@ -12,7 +12,7 @@ class Encoder:
         self.numeric=NUMERIC if self.mode=='rich' else ['log_stress','load_ratio']
         self.categorical=CATEGORICAL if self.mode=='rich' else []
         a=df[self.numeric].to_numpy(float)
-        self.med=np.array([np.nanmedian(c) if np.isfinite(c).any() else 0 for c in a.T])
+        self.med=np.array([np.median(c[np.isfinite(c)]) if np.isfinite(c).any() else 0 for c in a.T])
         a=np.where(np.isfinite(a),a,self.med)
         self.mean=a.mean(axis=0);self.sd=a.std(axis=0);self.sd[self.sd<1e-8]=1.
         self.categories={c:sorted(set(df[c].fillna('unknown').astype(str)))+['__unseen__'] for c in self.categorical}

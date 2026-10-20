@@ -90,7 +90,7 @@ def main():
     # Retain all source IDs. Component grouping updated by duplicate/source-family audit.
     select['group_id']=select.source_id
     select.to_csv(ROOT/'data/processed/ss316l_lpbf_all.csv',index=False)
-    primary=select[(select.test_type=='uniaxial') & (select.temperature.between(20,30)) & (select.kt.between(.99,1.01))].copy()
+    primary=select[(select.test_type=='uniaxial') & (select.temperature.between(20,30)) & (select.kt.between(.99,1.01)) & (select.load_control=='force')].copy()
     primary.to_csv(ROOT/'data/processed/primary.csv',index=False)
     counts=lambda z:dict(rows=len(z),datasets=int(z.dataset_id.nunique()),sources=int(z.source_id.nunique()),failures=int(z.event.sum()),runouts=int(z.runout.sum()))
     report={'all_sn':counts(allrows),'ss316l_lpbf':counts(select),'primary_uniaxial_room_unnotched':counts(primary),

@@ -1,0 +1,181 @@
+Aga, esas hedefi buna göre kuruyoruz: Tridello’nun ilgisini çekecek, onun araştırmasına somut katkı sağlayacak bir çalışma üretmek ve bunun üzerinden akademik iletişim başlatmak. Bunun için onun çalışmalarını iyi anlamamız, doğru bir açık soru seçmemiz ve gösterebileceğimiz gerçek sonuçlar üretmemiz gerekiyor.
+Konumuz metal eklemeli imalatla üretilen parçaların yorulma ömrünü ve güvenilirliğini yapay zekâyla tahmin etmek. Yorulma, bir parçanın tekrarlanan yükler altında zamanla hasarlanmasıdır. Metal 3B baskıda üretim ayarları, iç kusurlar, yüzey durumu ve son işlemler bu davranışı etkiler. Tridello ve ekibi bunlardan hareketle parçanın ömrünü ve güvenli tasarım sınırlarını tahmin eden modeller geliştiriyor. Başlangıç noktamız SS316L üzerine olasılıksal makine öğrenmesi makalesi.
+Ekip bunu daha sonra topoloji optimizasyonuna ve alaşımlar arasında transfer öğrenmesine taşımış. Dolayısıyla katkımızı bu devam çalışmalarını hesaba katarak seçmeliyiz. Başlamak için de FatigueData-AM2022 gibi açık deney verileri bulunuyor.
+Bence en güçlü başlangıç sorusu: Model, daha önce görmediği üretim koşullarında ne zaman gereğinden fazla güvenli tahmin yapıyor; bunu tespit ederek daha güvenilir mühendislik kararları verebilir miyiz? Bu bir araştırma adayı; özgünlüğünü ve işe yararlığını deneylerle sınayacağız.
+Promptta “ilerleme sağlayana kadar çalış” isteğini korudum; tamamlanmayı denetlenebilir çıktılara bağladım. Bu, Codex Goals’un ölçülebilir hedef ve doğrulama yaklaşımıyla da uyumlu. Yeni sohbete aşağıdaki metnin tamamını yapıştırabilirsin:
+
+Bu mesajı uzun soluklu bir araştırma Goal’ünün kapsamı olarak kullan. Önceki sohbetlere erişimin olduğunu varsayma. Gerekli başlangıç bağlamı aşağıdadır.
+
+ESAS AMACIM
+
+Politecnico di Torino’da Andrea Tridello ve birlikte çalıştığı araştırmacıların ilgisini çekebilecek, onların çalışmalarına somut katkı sağlayabilecek bir araştırma yürütmek istiyorum. Amacım bilimsel açıdan güçlü bir çalışma üzerinden görüşme, mentorluk veya araştırma işbirliği fırsatı oluşturmak.
+
+Çalışmayı, mevcut bilgiye ölçülebilir bir katkı yapacak ciddiyetle yürüt. Literatürü araştır, yöntemleri sorgula, erişilebilir verileri topla, kod yaz, hesaplamalı deneyler gerçekleştir, sonuçları eleştir ve savunulabilir bir makale taslağı üret. Bir plan veya literatür özeti hazırlayıp işi bitirme.
+
+İddialı ol; sonuçlar hakkında dürüst kal. Özgünlük, üstün performans, yayın kabulü veya Tridello’nun olumlu yanıtı garanti edilemez. Katkının değerini kanıtlarla belirle.
+
+1. ARAŞTIRMA KONUSU VE BAŞLANGIÇ KAYNAKLARI
+
+Konu, metal eklemeli imalatla, özellikle lazer toz yataklı ergitmeyle üretilen parçaların yorulma ömrü ve güvenilirliğinin makine öğrenmesiyle modellenmesidir.
+
+Yorulma; tekrarlanan yükler altında hasar birikimi, çatlak oluşumu ve kırılmayla ilgilidir. Üretim parametreleri, üretim yönü, kusurlar, yüzey ve ısıl işlemler, numune geometrisi ve yükleme koşulları birlikte önem taşır. Araştırmada ortalama tahmin doğruluğunun yanında belirsizliğin ve muhafazakâr tasarım sınırlarının güvenilirliğiyle ilgileniyoruz.
+
+Başlangıç kaynakları:
+
+A) Centola, Ciampaglia, Paolino ve Tridello:
+“Probabilistic Machine Learning for preventing fatigue failures in Additively Manufactured SS316L”
+DOI: 10.1016/j.engfailanal.2024.109081
+
+Makale FFNN, fizik/istatistik bilgisi kullanan ağlar ve Bayesçi sinir ağlarını karşılaştırıyor. 17 yayından 51 deney grubuna ait 518 yorulma noktası kullanıldığını, başlangıçtaki 550 kaydın 32’sinin çıkarıldığını bildiriyor. Veri erişimi istek üzerine. Bu bilgileri tam metinden doğrula.
+
+Aynı Mac’te bulunabilecek özgün PDF:
+ /Users/deniz2/Library/Application Support/Bavbav/Attachments/DECB8867-F13E-4061-B310-26BD54E69450/1-s2.0-S1350630724011270-main.pdf
+
+B) Aynı araştırma grubunun topoloji devamı:
+“Data driven topology optimization of AM parts accounting for process-affected fatigue performance: Application to automotive and aerospace components”
+DOI: 10.1016/j.ijfatigue.2026.109481
+
+C) Transfer öğrenmesi devamı:
+“Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process–structure–property relationship”
+DOI: 10.1016/j.engfailanal.2026.111075
+
+D) Açık veri kaynağı:
+FatigueData-AM2022
+Veri DOI: 10.6084/m9.figshare.22337629
+Veri açıklama makalesi DOI: 10.1038/s41597-023-02150-x
+
+Bu açık veri tabanının Centola’nın kullandığı 518 kayıtla aynı olduğu doğrulanmış değildir. Kaynak ve numune çakışmalarını incelemeden bağımsız dış test kabul etme.
+
+Bu liste başlangıç noktasıdır. Güncel literatürü ve Tridello’nun yakın tarihli çalışmalarını birincil kaynaklardan araştır. Topoloji, transfer öğrenmesi, aktif öğrenme veya belirsizlik tahmini eklemeyi tek başına özgün katkı sayma.
+
+2. ÖNCE PROBLEMİ VE KATKI FIRSATINI DOĞRU SEÇ
+
+Ana makaleleri tam metin, ek dosya ve erişilebilir kod düzeyinde incele. Her önemli iddiayı dayandığı denklem, veri, şekil veya deneyle eşleştir.
+
+Şunları birbirinden ayır:
+- Kanıtlanmış hata.
+- Yöntemin açıkça belirtilmiş sınırlaması.
+- Eksik raporlama veya yeniden üretilebilirlik sorunu.
+- Henüz sınanmamış şüphe.
+- Yeni araştırma fırsatı.
+
+Eksik açıklamayı otomatik olarak yanlış uygulama kabul etme. Yazarların güçlü taraflarını ve makul gerekçelerini de kaydet.
+
+Özellikle veri ayrımı, türetilmiş hedefler, aykırı gözlem çıkarma, runout kullanımı, belirsizlik yorumu, üretim koşulları arasında genelleme ve tasarım kararlarının güvenilirliğini araştır.
+
+En güçlü birkaç katkı adayını şu ölçütlerle karşılaştır:
+- Güncel literatüre göre farkı.
+- Tridello’nun araştırma gündemine yararı.
+- Erişilebilir veri ve donanımla sınanabilirliği.
+- Sonucun mühendislik açısından anlamı.
+- Başarısız olduğunda bile sağlayacağı bilgi.
+
+Ardından bir ana hipotez ve gerektiğinde bir yedek yön seç. Tüm alt alanlara aynı anda yayılma.
+
+Başlangıç adayımız:
+“Yeni bir kaynak çalışmaya veya üretim koşuluna geçildiğinde yorulma modellerinin belirsizlikleri ne kadar güvenilirdir? Veri desteğini ve belirsizliği birlikte kullanan bir karar kuralı, tehlikeli iyimser tahminleri azaltabilir mi?”
+
+Bunu doğrulanmış açık problem kabul etme. Daha özgün ve uygulanabilir bir soru bulursan kanıtlarını göstererek yönü güncelle.
+
+3. VERİYİ TOPLA VE KÖKENİNİ KORU
+
+Erişilebilir veri tabanlarını, makale eklerini, yazar depolarını ve kaynak yayınları araştır. Gerekirse grafiklerden veri çıkar; çıkarılan değerleri yaklaşık olarak işaretle.
+
+Her gözlemi mümkün olduğunca kaynak yayın, deney grubu, üretim partisi ve numune kimliğiyle ilişkilendir. Birimleri, gerilme tanımını, yük oranını, üretim yöntemini ve son işlemleri tutarlı hale getir.
+
+Ham verileri değiştirmeden sakla. Temizleme ve dönüştürme işlemlerini kodla gerçekleştir. Kaynak URL/DOI, erişim tarihi, lisans, dosya özeti ve dönüşüm geçmişini kaydet.
+
+Ölçülmüş, yayında raporlanmış, grafikten çıkarılmış, varsayılmış ve eksik değerleri ayır. Eksik üretim parametrelerini uydurma. Aynı deneyin farklı yayınlarda veya veri tabanlarında yeniden bulunabileceğini kontrol et.
+
+Runout, deney sona erdiğinde henüz kırılmamış numunedir. Bunu kırılma zamanı gibi işleme; uygun sağdan sansürlü veri yaklaşımı kullan.
+
+Orijinal veriyi alamazsan açık veriyle anlamlı çalışma yürüt. Bunun birebir yeniden üretim mi, yaklaşık yeniden uygulama mı, yoksa bağımsız veriyle yöntem değerlendirmesi mi olduğunu açıkça belirt.
+
+Yazarlara veri/kod talebi gerekirse somut bir e-posta taslağı hazırla; benim açık gönderme onayım olmadan iletişim kurma. Yanıt beklerken bağımsız ilerleyebilen işleri sürdür.
+
+4. DENEY PROTOKOLÜNÜ SONUÇLARI GÖRMEDEN BELİRLE
+
+Ana hipotezi, temel karşılaştırmaları, birincil metrikleri, veri ayrımlarını ve başarısızlık ölçütlerini kaydet.
+
+Temel değerlendirmede kaynak yayın veya bağımsız deney gruplarını tamamen dışarıda bırakan ayrımlar kullan. İlişkili yayınları ve tekrarlanan numuneleri aynı tarafta tut. Rastgele satır ayrımını ancak karşılaştırmalı teşhis amacıyla kullan.
+
+Ön işleme, eksik değer işlemleri, özellik seçimi, hiperparametre araması ve karar eşikleri yalnızca eğitim/doğrulama verisiyle belirlensin. Nihai test verisini yöntem seçimine katma. Türetilmiş yorulma eğrileri ve hedeflerin de veri sızıntısı yaratıp yaratmadığını denetle.
+
+Basit fakat güçlü karşılaştırmalar kur: uygun istatistiksel yorulma modeli, makaledeki yöntemin erişilebilir yeniden uygulaması ve araştırma sorusuna uygun küçük makine öğrenmesi modelleri. Model karmaşıklığını elde edilen yararla gerekçelendir.
+
+Yalnızca R² üzerinden değerlendirme yapma. Tahmin hatasıyla birlikte hedefe uygun kapsama, bant genişliği, tehlikeli yöndeki hata ve kararın kullanılabilirliğini ölç. Tahminden kaçınma kullanıyorsan kabul edilen örnek oranını ve aynı kabul oranındaki alternatifleri karşılaştır.
+
+BNN ağırlık belirsizliği, numuneler arası doğal saçılım, ömür tahmin aralığı ve R90C90 tasarım sınırının anlamlarını ayır. Sansürlü gözlemlerde naif kapsama hesabı kullanma. Kalibrasyon veya conformal yöntemlerin varsayımlarını, özellikle dağılım değişiminde, kontrol et.
+
+Birden fazla rastgele tohum, uygun grup düzeyinde belirsizlik hesabı, bileşen çıkarma ve duyarlılık deneyleri kullan. Veri sayısının yanında bağımsız kaynak/grup sayısını da raporla.
+
+5. YÖNTEMİ GELİŞTİR VE KENDİN ÇÜRÜTMEYE ÇALIŞ
+
+Önce çalışan ve doğrulanmış bir temel kur. Sonra seçilen hipotezi sınayan en küçük anlamlı değişikliği uygula. Her değişikliğin etkisini ayrı ölç.
+
+Olumlu ve olumsuz sonuçları kaydet. Test sonucunu iyileştirmek için veri ayrımını, metrikleri veya dışlanan kayıtları geriye dönük değiştirme. Yeni keşifler için protokol değişirse bunu tarihli olarak belirt ve keşifsel sonuçları ayır.
+
+İyileşme çıkmazsa kod hatası, veri yetersizliği, yanlış hipotez ve zaten güçlü olan temel yöntem olasılıklarını incele. Kanıtın desteklemediği fikri bırak; aynı yaklaşımı sonuç çıkana kadar sınırsız ayarlama.
+
+Topoloji optimizasyonu dalına geçmek anlamlıysa yorulma modelini tasarım kısıtına bağla. Optimizasyonun model hatalarından yararlanmasını, değişen risk hacmini, veri desteği dışına çıkışı ve sonlu eleman çözümünün ağ inceliğine duyarlılığını kontrol et.
+
+Sentetik veri istatistiksel davranışı sınamak için kullanılabilir; gerçek deney gibi sunulamaz. Sayısal tasarım başarısı, üretilmiş parçanın fiziksel yorulma doğrulaması olarak gösterilemez. Fiziksel deney gerekiyorsa uygulanabilir bir deney planı hazırla.
+
+6. YEREL ÇALIŞMA VE OTONOMİ
+
+Çalışmayı /Users/deniz2/Documents/ChatGPT/fatigue-ai-research altında düzenle. Dizin mevcutsa içeriğini inceleyerek koru. Donanımı, boş alanı, mevcut yazılımları ve çalışan işleri kontrol et.
+
+Bu kapsamda ücretsiz/açık kaynak araçları ve verileri indirebilir, izole yazılım ortamları kurabilir, kod yazabilir ve yerel hesaplamalı deneyleri çalıştırabilirsin. Rutin ve geri alınabilir adımlar için tekrar tekrar izin isteme.
+
+Yerel bir dil modeli veri çıkarma veya literatür işleme işini gerçekten iyileştirecekse mevcut kurulumu değerlendir; gerekirse donanıma uygun bir model kur ve test et. Modelin bilimsel içerik çıkarmasını kaynaklarla doğrula. Yorulma tahmin modeliyle yardımcı dil modelinin rollerini ayır.
+
+Mevcut projeleri, modelleri veya aktif işleri bozma. Ücretli hizmet, satın alma, dışarıya dosya yükleme, yayınlama, e-posta gönderme veya yıkıcı işlem için açık onay iste.
+
+Uygun alt görevleri paralel ajanlara böl. Bir ajanın sonucunu diğerinin tekrarlamasını bağımsız bilimsel doğrulama sayma.
+
+Uzun işlemleri ölçerek planla, kontrol noktaları kaydet ve gereksiz tekrarları önle. Ortam sınırı veya gerçek engel ortaya çıkarsa yapılanları, kalanları ve devam yolunu açıkça belirt.
+
+7. KALICI KAYITLAR VE TESLİMLER
+
+Araştırma durumunu sohbet dışında dosyalarda tut. Kaynaklar, kararlar, açık sorular, elenen hipotezler ve sonraki adımlar yeni bir oturumda anlaşılabilsin.
+
+Sonuç paketinde şunlar bulunsun:
+- Kaynaklarla desteklenen literatür ve özgünlük değerlendirmesi.
+- Mevcut makalelerin iddia ve sınırlama analizi.
+- Veri manifesti, veri sözlüğü ve kalite raporu.
+- Sürümü kaydedilmiş deney protokolü.
+- Tekrar çalıştırılabilir kod, ortam ve komutlar.
+- Deney ayarları, tohumlar, günlükler ve sonuç tabloları.
+- Sonuçlardan kodla üretilmiş, paylaşılabilir bilimsel grafikler.
+- Başarısızlık ve duyarlılık analizleri.
+- Kaynakçası doğrulanmış, İngilizce bilimsel makale taslağı ve ek materyal.
+- Türkçe, benim de anlayıp açıklayabileceğim yöntem ve bulgu özeti.
+
+Her ana iddiayı somut kaynağa veya deney çıktısına bağla. Makaleye yapılmamış deney, erişilmemiş veri veya doğrulanmamış atıf ekleme.
+
+8. TRIDELLO’YA ULAŞMA STRATEJİSİ
+
+Araştırma yönünü onun güncel çalışmalarına sağladığı yarar üzerinden değerlendir. Özellikle hangi bulgunun onun tasarım, güvenilirlik veya deney maliyeti sorununa katkı sağlayabileceğini açıkla.
+
+Yeterli kanıt oluştuğunda:
+- Bir sayfalık İngilizce araştırma özeti hazırla.
+- En önemli sonucu gösteren bir veya iki güçlü grafik seç.
+- İlgili çalışmasına somut biçimde değinen kısa bir İngilizce e-posta taslağı yaz.
+- Benden beklenen sonraki adımı ve ondan istenecek sınırlı, somut katkıyı belirt: örneğin bir yöntem yorumu, belirli veri alanları veya kısa görüşme.
+- Benim geçmişim, eğitimim, yetkinliğim ve yaptığım katkılar hakkında bilinmeyen bilgi uydurma.
+- Sonuçları anlayabilmem için muhtemel teknik sorular ve açıklamalı cevaplar hazırla.
+
+Çalışmayı olduğundan güçlü göstermeden, neden dikkate değer olduğunu net anlat. İletişim paketini göndermeden önce bana sun.
+
+9. TAMAMLANMA VE DEVAMLILIK
+
+Bu Goal, seçilen araştırma sorusu için önceden belirlenmiş kritik deneyler tamamlandığında, sonuçlar yeniden çalıştırılabildiğinde, iddialar bağımsız ve eleştirel kontrolden geçtiğinde ve araştırma/iletişim paketi hazır olduğunda tamamlanabilir.
+
+Olumlu sonuç zorunlu değildir. Sağlam bir olumsuz sonuç, sınır koşulu, karşı örnek veya önceki değerlendirmeyi düzelten bulgu da değer taşıyabilir. Katkının gücünü açıkça değerlendir; yalnızca yazı tamamlandı diye bilimsel başarı ilan etme.
+
+Tridello’nun yanıtı veya bir derginin kabulü kontrolümüz dışındadır; bunları araştırmanın tamamlanma koşulu yapma.
+
+Bana düzenli, kısa Türkçe ilerleme bilgisi ver: ne öğrendik, hangi kanıt var, ne belirsiz ve sıradaki deney neyi çözecek. Esas emeği araştırmaya ve deneylere ayır.
+
+Şimdi kaynaklara ve yerel ortama erişimi kontrol et, ilk çalışma planını dosyala ve doğrudan uygulanabilir veri/literatür denetimine başla. Mevcut kanıta göre planını geliştirerek çalışmayı tamamlanma ölçütlerine kadar sürdür.
+

@@ -1,0 +1,17 @@
+{
+  "stern": {
+    "points": 6,
+    "max_relative_N_difference": 0.003990913681930785,
+    "max_relative_sigma_difference": 0.0009566278069014291
+  },
+  "voloskov": {
+    "status": "matched",
+    "manual_points": 13,
+    "database_points": 13,
+    "matched": 13,
+    "unmatched_database_row_ids": [],
+    "runout_disagreements": [],
+    "max_relative_N_difference": 0.025920910211683745,
+    "max_relative_sigma_difference": 0.0024834100580386487
+  }
+}

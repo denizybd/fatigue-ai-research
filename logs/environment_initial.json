@@ -1,0 +1,19 @@
+{
+  "time_utc": "2026-10-20T12:33:54.421909+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "executable": "/Users/deniz2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "machine": "macOS-26.6.2-arm64-arm-64bit",
+  "modules": {
+    "numpy": true,
+    "scipy": false,
+    "pandas": true,
+    "sklearn": false,
+    "matplotlib": false,
+    "pypdf": true,
+    "pdfplumber": true,
+    "fitz": false,
+    "torch": false,
+    "reportlab": true,
+    "openpyxl": true
+  }
+}
