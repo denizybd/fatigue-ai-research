@@ -1,0 +1,41 @@
+{
+  "date": "20 October 2026",
+  "training_rows": 441,
+  "training_changed": false,
+  "newly_curated_exact_Nf": {
+    "pinn2025": 44,
+    "palmer2025": 12
+  },
+  "new_exact_Nf_total": 56,
+  "approximate_marker_candidates": {
+    "faue2022": 16
+  },
+  "aggregate_fatigue_strength_rows_bremen": 13,
+  "new_gold_identity_campaigns": 0,
+  "bartosak_reannotated_specimens": 20,
+  "bartosak_reannotated_defects": 200,
+  "RBF": {
+    "source_rows": 67,
+    "failures": 63,
+    "censors": 4,
+    "prior_reused_RTcurve": 25,
+    "other_condition_points": 42,
+    "ambient_rows": 44,
+    "high_temperature_rows": 23,
+    "source_families": 1,
+    "predictions_total": 88320,
+    "selected_support_instances": 2400
+  },
+  "protocol_sha256": "3dfcb673d47ed201f01eedeea8e60b9e051e978e982eb96619ff386c1e4f91c8",
+  "pair_audit_files": [
+    "results/v5/rbf_cap1e7/independent_contrast_audit.json",
+    "results/v5/rbf_cap5e6/independent_contrast_audit.json"
+  ],
+  "clean_replay_scientific_csvs": 36,
+  "clean_replay_maximum_numeric_difference": 0,
+  "clean_replay_all_fit_parameters_equal": true,
+  "no_new_physical_tests": true,
+  "no_original_Centola_reproduction": true,
+  "no_publication_or_contact": true,
+  "goal_status": "active; second mapped independent campaign and strong contribution unresolved"
+}

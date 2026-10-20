@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-20T20:20:57.085059+00:00",
+  "status": "PASS",
+  "test_count": 27,
+  "test_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_v6_student_aft.py -q",
+  "test_output": "...........................                                              [100%]\n27 passed in 1.57s\n",
+  "synthetic_only": true,
+  "real_data_fits_performed": 0,
+  "frozen_existing_modules_edited": false,
+  "config_count": 48,
+  "tau_grid": [
+    0.1,
+    0.3,
+    1,
+    3
+  ],
+  "independent_second_reader_review": "requested; not claimed complete",
+  "files": [
+    {
+      "path": "src/v6_student_aft.py",
+      "bytes": 27994,
+      "sha256": "70ddcd0aa3d2e6c76450086abcab331328a66cd5da884acb543f727360673ae1"
+    },
+    {
+      "path": "tests/test_v6_student_aft.py",
+      "bytes": 11305,
+      "sha256": "6c780e8cc7a803eab09d77db4d13bc176c752e418e368108b2b1098019aea6fd"
+    },
+    {
+      "path": "literature/v6_methods/student_aft_implementation.md",
+      "bytes": 6583,
+      "sha256": "b6073ede70111bc3b454d2223dfe7351b01919d6d7695c145de2fa1cafa9105c"
+    },
+    {
+      "path": "work/v6_student_aft/synthetic_tests.txt",
+      "bytes": 99,
+      "sha256": "91c0cde06af692d24918cde3ef4b184a096b7f89e8248a1f99ec778f862839f9"
+    }
+  ]
+}

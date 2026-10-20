@@ -1,0 +1,95 @@
+{
+  "scope": "Generated synthetic observations with fixed parameter fixture; no actual data fits",
+  "source_code_sha256_at_start": "1ffdc7b6d7f1d49a91ba23a8175e54d43c055ed5288cb89058c51285105dc04b",
+  "case": "broad",
+  "n_query": 3,
+  "sigma": 0.1,
+  "tauGamma": 0.03,
+  "life_prior_sd": 1.6,
+  "v_prior_sd": 0.15,
+  "score_seconds_including_support": 26.44677487499939,
+  "quantile_after_support_seconds": 22.15881354099838,
+  "score": [
+    -0.045911372407438034,
+    -7.24465431173261,
+    -2.9094750050801874
+  ],
+  "quantiles": [
+    [
+      6.609151857049666
+    ],
+    [
+      5.61356280096775
+    ],
+    [
+      4.961030431215724
+    ]
+  ],
+  "score_receipt": {
+    "success": true,
+    "n_selected_support": 3,
+    "n_query": 3,
+    "score_method": "separately certified log marginal likelihood ratio",
+    "support_log_marginal": -1.0679527944628826,
+    "support_tail_mass_bound_v": 1.2835532725059189e-11,
+    "query_outcomes_used_only_for_numeric_likelihood_evaluation": true,
+    "query_outcomes_used_for_fit_or_support_cache": false,
+    "numerator_integrals_cached": false,
+    "numerator_receipts": [
+      {
+        "v_nodes": 144,
+        "tail_mass_bound_v": 1.2675981974013178e-11,
+        "conditional_u_tail_bound_weighted": 4.563609336928239e-12,
+        "evidence_resolution_difference": 5.88193049821939e-10
+      },
+      {
+        "v_nodes": 153,
+        "tail_mass_bound_v": 8.700148603124141e-12,
+        "conditional_u_tail_bound_weighted": 3.728680384311868e-12,
+        "evidence_resolution_difference": 6.169431188141061e-09
+      },
+      {
+        "v_nodes": 139,
+        "tail_mass_bound_v": 2.7253196877653864e-11,
+        "conditional_u_tail_bound_weighted": 1.2586844717749935e-11,
+        "evidence_resolution_difference": 4.37856462198738e-09
+      }
+    ],
+    "population_parameters_uncertainty_integrated": false,
+    "target_posterior_is_Laplace": false,
+    "elapsed_seconds": 26.443406832997425,
+    "quantile_is_R90C90": false
+  },
+  "prediction_receipt": {
+    "success": true,
+    "n_selected_support": 3,
+    "n_query": 3,
+    "k0_analytic_convolution": false,
+    "scalar_reduction": false,
+    "support_log_marginal": -1.0679527944628826,
+    "v_nodes": 133,
+    "v_nodes_full_rule": 224,
+    "refinement": 0,
+    "v_radius": 1.2,
+    "tail_mass_bound_v": 1.2835532725059189e-11,
+    "conditional_u_tail_bound_weighted": 1.3216730049416615e-12,
+    "conditional_u_resolution_estimate_weighted": 1.0813385149529622e-10,
+    "max_quantile_log10_resolution_difference": 5.113509615739531e-11,
+    "max_cdf_resolution_difference": 3.308771312493519e-11,
+    "max_finite_mass_resolution_difference": 3.87897357345679e-07,
+    "evidence_resolution_difference": 2.0901502750803047e-11,
+    "finite_infinite_classification_consistent": true,
+    "finite_infinite_classification_margin": 0.7823934144645602,
+    "finite_infinite_classification_resolution_error": 1.551589429382716e-06,
+    "posterior_u_mean": 0.06021125362221543,
+    "posterior_v_mean": -0.06016897306349151,
+    "query_outcomes_used_for_resolution": false,
+    "target_posterior_is_Laplace": false,
+    "rule_difference_is_analytic_error_bound": false,
+    "population_parameters_uncertainty_integrated": false,
+    "quantile_is_R90C90": false
+  },
+  "real_fatigue_rows_fitted": 0,
+  "max_log_score_difference_from_original_uniform_rule": 2.602185134037427e-11,
+  "max_quantile_difference_from_original_uniform_rule": 2.6210145165350696e-12
+}

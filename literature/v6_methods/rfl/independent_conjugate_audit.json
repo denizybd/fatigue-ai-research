@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "source_sha256_at_start": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "source_sha256_at_end": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "scope": "Gamma-negligible limiting case equals exact conjugate shared-u Normal; generated numbers only",
+  "gamma_mean_logstress": -12.0,
+  "Gamma_nodes": 16,
+  "life_prior_sd": 0.3,
+  "v_prior_sd": 0.05,
+  "computed_scores": [
+    -43.635586083079595,
+    -0.12597069848107,
+    -39.30866300615972
+  ],
+  "exact_conjugate_scores": [
+    -43.63558608309645,
+    -0.12597069848106923,
+    -39.30866300617338
+  ],
+  "max_score_absolute_error": 1.6854073692229576e-11,
+  "max_quantile_absolute_error": 1.7470593860480221e-09,
+  "support_log_evidence_error": 1.7272405727908335e-11,
+  "query_outcome_prediction_isolation": true,
+  "support_cache_entries": 1,
+  "population_refitted": false,
+  "actual_fatigue_rows_read_or_fitted": 0,
+  "score_elapsed_seconds": 0.554193749998376,
+  "score_receipt": {
+    "success": true,
+    "n_selected_support": 3,
+    "n_query": 3,
+    "score_method": "positive posterior mixture with per-row u/v resolution and relative-tail checks; evidence-ratio fallback",
+    "support_log_marginal": -1.2918566588752514,
+    "posterior_omitted_mass_bound": 2.112977442774682e-11,
+    "u_log_score_resolution_difference": [
+      1.0351989487844548e-06,
+      1.9444226673215326e-08,
+      1.4375873433891684e-06
+    ],
+    "v_log_score_resolution_difference": [
+      0.0,
+      2.220446049250313e-16,
+      0.0
+    ],
+    "relative_predictive_likelihood_tail_bound": [
+      188122026.8707585,
+      4.503282412689524e-11,
+      2484740.111961742
+    ],
+    "predictive_log_score_tail_error_bound": [
+      Infinity,
+      4.503282412790921e-11,
+      Infinity
+    ],
+    "posterior_mixture_rows": 1,
+    "evidence_ratio_fallback_rows": [
+      0,
+      2
+    ],
+    "evidence_ratio_fallback_receipt": {
+      "success": true,
+      "n_selected_support": 3,
+      "n_query": 2,
+      "score_method": "separately certified log marginal likelihood ratio",
+      "support_log_marginal": -1.2918566588752514,
+      "support_tail_mass_bound_v": 2.1128748379807e-11,
+      "query_outcomes_used_only_for_numeric_likelihood_evaluation": true,
+      "query_outcomes_used_for_fit_or_support_cache": false,
+      "numerator_integrals_cached": false,
+      "numerator_receipts": [
+        {
+          "v_nodes": 74,
+          "tail_mass_bound_v": 2.453704312491001e-11,
+          "conditional_u_tail_bound_weighted": 7.550086870032581e-16,
+          "evidence_resolution_difference": 1.3562200251726608e-09
+        },
+        {
+          "v_nodes": 71,
+          "tail_mass_bound_v": 2.786179840100765e-11,
+          "conditional_u_tail_bound_weighted": 1.5775829633741846e-15,
+          "evidence_resolution_difference": 1.353939182990871e-09
+        }
+      ],
+      "population_parameters_uncertainty_integrated": false,
+      "target_posterior_is_Laplace": false,
+      "elapsed_seconds": 0.46354874999815365,
+      "quantile_is_R90C90": false
+    },
+    "query_outcomes_used_only_for_numeric_likelihood_evaluation": true,
+    "query_outcomes_used_for_fit_or_support_cache": false,
+    "numerator_integrals_cached": false,
+    "resolution_difference_is_analytic_error_bound": false,
+    "omitted_mass_bound_conditional_on_fixed_Gamma_rule": true,
+    "population_parameters_uncertainty_integrated": false,
+    "target_posterior_is_Laplace": false,
+    "elapsed_seconds": 0.5533872089981742,
+    "quantile_is_R90C90": false
+  },
+  "prediction_receipt": {
+    "success": true,
+    "n_selected_support": 3,
+    "n_query": 3,
+    "k0_analytic_convolution": false,
+    "scalar_reduction": false,
+    "support_log_marginal": -1.2918566588752514,
+    "v_nodes": 66,
+    "v_nodes_full_rule": 80,
+    "refinement": 0,
+    "v_radius": 0.4,
+    "tail_mass_bound_v": 2.1128748379807e-11,
+    "conditional_u_tail_bound_weighted": 1.026047939818571e-15,
+    "conditional_u_resolution_estimate_weighted": 1.0651792715544094e-08,
+    "max_quantile_log10_resolution_difference": 0.0,
+    "max_cdf_resolution_difference": 2.7755575615628914e-16,
+    "max_finite_mass_resolution_difference": 1.1102230246251565e-16,
+    "evidence_resolution_difference": 3.4582112728998027e-09,
+    "finite_infinite_classification_consistent": true,
+    "finite_infinite_classification_margin": 0.5,
+    "finite_infinite_classification_resolution_error": 4.2607170862176375e-08,
+    "posterior_u_mean": 0.10465116279069217,
+    "posterior_v_mean": 5.204170427930421e-17,
+    "query_outcomes_used_for_resolution": false,
+    "target_posterior_is_Laplace": false,
+    "rule_difference_is_analytic_error_bound": false,
+    "population_parameters_uncertainty_integrated": false,
+    "quantile_is_R90C90": false
+  }
+}

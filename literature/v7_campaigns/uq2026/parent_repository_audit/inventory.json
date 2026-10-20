@@ -1,0 +1,229 @@
+{
+  "created_utc": "2026-10-20T21:10:41.525230+00:00",
+  "repository_url": "https://github.com/yulin-g/UQ-fatigue-life-PBF-AM",
+  "commit_sha": "1b5c82714a35f66ad8f0ea846289b45719d22dd0",
+  "tree_complete": true,
+  "files": [
+    {
+      "path": "LICENSE",
+      "size": 1066,
+      "sha": "f538d3eddcf6f836eb2793c235bbede62de70053"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/GrainColormap.mat",
+      "size": 24184,
+      "sha": "68484103f806806da3049f55c018ad20c76f4b6a"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/elas3d_poly_fullstress.f90",
+      "size": 113444,
+      "sha": "d7069a7e373d41f639495c0fef8bb251b0c2ab14"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_BuildLib.m",
+      "size": 2553,
+      "sha": "efc6dd75a32c8985ca7aafb3ef6400351d26607b"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_ComputeEnergy.m",
+      "size": 387,
+      "sha": "61c8d1e99c55000eae197af5a67898cd6f5838ef"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_Create.m",
+      "size": 526,
+      "sha": "8e232e02317fea6bd884cedf627d5d30b2bd5d51"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_Delete.m",
+      "size": 223,
+      "sha": "c9f24b2eb8c48d76c51d8701d89e2b9e1c24ac84"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_ExpandOnAlpha.m",
+      "size": 303,
+      "sha": "4ac069a80937b9e817c7bac134b6f809abec34c7"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_Expansion.m",
+      "size": 1091,
+      "sha": "24dd7ca5b23708f7219f432caa6c4aeccf6302e3"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_GetLabeling.m",
+      "size": 670,
+      "sha": "b0c21bdbbbedd44420894658f4df2dea7912970a"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_ListHandles.m",
+      "size": 370,
+      "sha": "880efeb88a847b6c1b12d3e7cea9d42f607ca03d"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_LoadLib.m",
+      "size": 507,
+      "sha": "83c65ab387eff8adbc939ea37e0f91e9a8243e3d"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetDataCost.m",
+      "size": 2068,
+      "sha": "e8f4eaecb129c5bc25045087977d7ab995576bb8"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetLabelCost.m",
+      "size": 1695,
+      "sha": "c3437680e009e8f2842922d0997a5b10f8a9d2be"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetLabelOrder.m",
+      "size": 607,
+      "sha": "82e155813507a527c9bea7366fd8430c217f7383"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetLabeling.m",
+      "size": 787,
+      "sha": "e369867335d164763b9d9d8a55e98cf101038af9"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetNeighbors.m",
+      "size": 1198,
+      "sha": "e79ab5076c34fd18be61a7227ce8161a7dacd413"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetSmoothCost.m",
+      "size": 1380,
+      "sha": "f9b03f1a3b298c3c1ac00ad13b78d08525e6ac8b"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_SetVerbosity.m",
+      "size": 1155,
+      "sha": "9803942a5d81d2634df0612cda559e8932668302"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GCO_Swap.m",
+      "size": 702,
+      "sha": "87a1950155ea00d8cd25b58fe8f19218cc7817c8"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GRAINPARAMS_SinglePhase.m",
+      "size": 2695,
+      "sha": "f371c7e0d1ddb7efc58646dfa9e78e111d18b663"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GRAINPARAMS_TwoPhase.m",
+      "size": 3494,
+      "sha": "054cea9926cfdb599241423f8d89e097326e444a"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GeneratePairwise3D_CustomMicrostructure.m",
+      "size": 7167,
+      "sha": "95c5c7165d6da8b90a3c23c994d28a6d3a1edaa7"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GeneratePolycrystal_NoDefects.m",
+      "size": 7478,
+      "sha": "8a8b9bb1d09f9daa8417469ed897d9d0cfbc28b6"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GeneratePolycrystal_WithVoids.m",
+      "size": 8304,
+      "sha": "bd41671a428db35f0384464128f43c85b62e3ebf"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GenerateRandomTriangulation3D.m",
+      "size": 5244,
+      "sha": "ebf9f0104a51505a6a870b0895995846e740972d"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/ParseMicrostructure_SinglePhase.m",
+      "size": 2022,
+      "sha": "8ac52751e603e48c9131684715efd2e97f4427a3"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/ParseMicrostructure_TwoPhase.m",
+      "size": 4713,
+      "sha": "e3e98ab51906573e1ec28793e2b3898ea87d3874"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/SimpleTension3D_CustomMicrostructure.m",
+      "size": 6785,
+      "sha": "3692ee67462cde8b66dfabd5d23f413684318f26"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/SimpleTension3D_SinglePhase.m",
+      "size": 6057,
+      "sha": "8490d24564a7b60b6bdda9a0a06a1a567bcd5f8a"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/SmoothLabel3D_Fast.m",
+      "size": 4636,
+      "sha": "1caeadb7c59473a79c0f63b51cd5bd33f563a3d0"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.cpp",
+      "size": 20971,
+      "sha": "eaa5dc446daf2ea655872787c17d968b139cf279"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexa64",
+      "size": 118595,
+      "sha": "d582e3e8de71ebe7999fcb538c40ab63547ed3fc"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexw32",
+      "size": 73728,
+      "sha": "ff840c67ca35fe7414f969b185df5c507ec4af28"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexw64",
+      "size": 231424,
+      "sha": "34fab5c3a36dd8a99005eea7c113bdee1d12bfa8"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexw64.pdb",
+      "size": 1149952,
+      "sha": "383846e81d26f88848ebe0afc356c75533c28f22"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/generate_workflow.m",
+      "size": 34465,
+      "sha": "6e13ee4205004896b2e0758b173b7602b7af93ff"
+    }
+  ],
+  "repository_license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "total_blob_bytes": 1842646,
+  "code_executed": false,
+  "data_added_to_current_fits": 0,
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/yulin-g/UQ-fatigue-life-PBF-AM",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/repository.json",
+      "status": 200,
+      "bytes": 5692,
+      "sha256": "21c0eb684e43da9dbcaab796c927c112ffd0e24d26ccbcacd237770d69fb055d",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://api.github.com/repos/yulin-g/UQ-fatigue-life-PBF-AM/commits/main",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/commit.json",
+      "status": 200,
+      "bytes": 169402,
+      "sha256": "37eb43c1f068d0e85b594b6da039e20497f27b87d9e25c5094d95f054631688d",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://api.github.com/repos/yulin-g/UQ-fatigue-life-PBF-AM/git/trees/1b5c82714a35f66ad8f0ea846289b45719d22dd0?recursive=1",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/tree.json",
+      "status": 200,
+      "bytes": 11071,
+      "sha256": "1d2255bdf529cb011e65b59233c396a8caa6cc9f8cbe7df40bdf087502d1d437",
+      "content_type": "application/json; charset=utf-8"
+    }
+  ]
+}

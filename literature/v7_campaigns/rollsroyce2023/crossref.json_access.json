@@ -1,0 +1,9 @@
+{
+  "url": "https://api.crossref.org/works/10.1115/PVP2023-106379",
+  "retrieved_utc": "2026-10-20T21:05:03.671333+00:00",
+  "status": 200,
+  "bytes": 6567,
+  "sha256": "0c7b5ff81b4402043cba7c3497283ad8dde2796d1bce7d3880dbc83a63ba1c63",
+  "final_url": "https://api.crossref.org/works/10.1115/PVP2023-106379",
+  "pdf_magic": false
+}

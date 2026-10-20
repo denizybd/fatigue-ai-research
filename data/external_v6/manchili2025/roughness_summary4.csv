@@ -1,0 +1,5 @@
+row_locator,author_group_label,roughness_raw,roughness_unit,source_dataset_doi,source_file_sha256,fatigue_life_observation,current_fit_eligible
+Sheet1!A19:B19,U,11,um,10.17632/x9z34sgnyk.1,9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9,False,False
+Sheet1!A20:B20,A,2,um,10.17632/x9z34sgnyk.1,9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9,False,False
+Sheet1!A21:B21,B,above 3,um,10.17632/x9z34sgnyk.1,9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9,False,False
+Sheet1!A22:B22,B+D,1.5,um,10.17632/x9z34sgnyk.1,9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9,False,False

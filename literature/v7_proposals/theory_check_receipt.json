@@ -1,0 +1,179 @@
+{
+  "scope": "Manufactured decision examples only. No material dataset, fitted model or phase6 output read.",
+  "uniform": {
+    "models": [
+      "Uniform(4,5)",
+      "Uniform(5,6)"
+    ],
+    "alpha": 0.1,
+    "cap_log10_cycles": 6,
+    "safe_min_q_action": 4.1,
+    "unconstrained_minimax_pinball_action": 4.447213595499958,
+    "closed_form_action": "4+sqrt(0.2)",
+    "risk_under_first_model_at_safe_action": 0.1,
+    "risk_under_first_model_at_minimax_action": 0.4472135954999583,
+    "worst_regret_at_safe_action": 0.095,
+    "worst_regret_at_minimax_action": 0.06027864045000435,
+    "derivation": "For x=a-4 in [.1,1], r1=(x-.1)^2/2 and r2=.105-.1*x. They cross at x=sqrt(.2); one is increasing and the other decreasing."
+  },
+  "coherent_binary": {
+    "P_O_L": {
+      "exact_fraction": "1/2",
+      "float": 0.5
+    },
+    "conditional_P_W4": {
+      "A": {
+        "L": {
+          "exact_fraction": "1/4",
+          "float": 0.25
+        },
+        "H": {
+          "exact_fraction": "1/20",
+          "float": 0.05
+        }
+      },
+      "B": {
+        "L": {
+          "exact_fraction": "9/100",
+          "float": 0.09
+        },
+        "H": {
+          "exact_fraction": "1/100",
+          "float": 0.01
+        }
+      }
+    },
+    "prior_P_W4": {
+      "A": {
+        "exact_fraction": "3/20",
+        "float": 0.15
+      },
+      "B": {
+        "exact_fraction": "1/20",
+        "float": 0.05
+      }
+    },
+    "prior_safe_action": {
+      "exact_fraction": "4",
+      "float": 4.0
+    },
+    "conditional_safe_action": {
+      "L": {
+        "exact_fraction": "4",
+        "float": 4.0
+      },
+      "H": {
+        "exact_fraction": "5",
+        "float": 5.0
+      }
+    },
+    "conditional_strict_risk": {
+      "A": {
+        "L": {
+          "exact_fraction": "0",
+          "float": 0.0
+        },
+        "H": {
+          "exact_fraction": "1/20",
+          "float": 0.05
+        }
+      },
+      "B": {
+        "L": {
+          "exact_fraction": "0",
+          "float": 0.0
+        },
+        "H": {
+          "exact_fraction": "1/100",
+          "float": 0.01
+        }
+      }
+    },
+    "prior_raw_loss": {
+      "A": {
+        "exact_fraction": "17/200",
+        "float": 0.085
+      },
+      "B": {
+        "exact_fraction": "19/200",
+        "float": 0.095
+      }
+    },
+    "prior_Bayes_loss": {
+      "A": {
+        "exact_fraction": "17/200",
+        "float": 0.085
+      },
+      "B": {
+        "exact_fraction": "9/200",
+        "float": 0.045
+      }
+    },
+    "prior_regret": {
+      "A": {
+        "exact_fraction": "0",
+        "float": 0.0
+      },
+      "B": {
+        "exact_fraction": "1/20",
+        "float": 0.05
+      }
+    },
+    "future_raw_loss": {
+      "A": {
+        "exact_fraction": "3/50",
+        "float": 0.06
+      },
+      "B": {
+        "exact_fraction": "1/20",
+        "float": 0.05
+      }
+    },
+    "future_Bayes_loss": {
+      "A": {
+        "exact_fraction": "3/50",
+        "float": 0.06
+      },
+      "B": {
+        "exact_fraction": "9/200",
+        "float": 0.045
+      }
+    },
+    "future_conditional_regret": {
+      "A": {
+        "exact_fraction": "0",
+        "float": 0.0
+      },
+      "B": {
+        "exact_fraction": "1/200",
+        "float": 0.005
+      }
+    },
+    "min_modelwise_regret_gain": {
+      "exact_fraction": "0",
+      "float": 0.0
+    },
+    "reduction_in_worst_conditional_regret": {
+      "exact_fraction": "9/200",
+      "float": 0.045
+    },
+    "oracle_identity_residual": {
+      "A": {
+        "exact_fraction": "0",
+        "float": 0.0
+      },
+      "B": {
+        "exact_fraction": "0",
+        "float": 0.0
+      }
+    }
+  },
+  "independent_no_information_sentinel_loss_equals_prior": true,
+  "cap_atom": {
+    "P_W_below_cap": 0.05,
+    "F_at_cap": 1.0,
+    "safe_action": 6,
+    "risk_at_safe_action": 0.05
+  },
+  "all_assertions_passed": true
+}

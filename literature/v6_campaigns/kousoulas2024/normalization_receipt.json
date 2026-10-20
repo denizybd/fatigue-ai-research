@@ -1,0 +1,23 @@
+{
+  "source_dataset_doi": "10.17632/87hm5hwbpk.2",
+  "workbook_sha256": "0c4eefa8a3e6d9e48c54318d205562963ebc15719a7053d4a4ffe3bb03cd9bfe",
+  "threshold_segmentation_rows": {
+    "threshold 75-255": 371,
+    "threshold 88-255": 441,
+    "threshold 100-255": 513
+  },
+  "total_threshold_rows": 1325,
+  "these_are_not_unique_fatigue_tests": true,
+  "no_specimen_life_join_in_workbook": true,
+  "cached_sqrt_formulas_verified": 1325,
+  "macros_executed": false,
+  "numeric_table_life_records": 14,
+  "failures": 9,
+  "runouts": 5,
+  "actual_author_fatigue_IDs": 0,
+  "one_source_block_membership": true,
+  "family_exclusion": "all Kousoulas/Guo2023 process-signature and defect papers plus2025; not14newbuilds",
+  "ordinary_axial_eligible": 0,
+  "current_fit_eligible": 0,
+  "no_model_fits": true
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS_WITH_DISCLOSED_APPROXIMATIONS",
+  "scope": "Read-only mathematical/code review; synthetic receipts inspected; no actual campaign fits",
+  "checked_utc": "2026-10-20T20:27:04.316591+00:00",
+  "files": {
+    "src/v6_gp.py": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+    "src/v6_controls.py": "9e864712d49a0893535bdbc4707a48e528946621722f64d0e9056ac6c0586677"
+  },
+  "GP": {
+    "right_censor_loglikelihood": "logPhi((f-y)/sigma)",
+    "score_wrt_f": "phi(z)/(sigma*Phi(-z)), z=(y-f)/sigma",
+    "negative_hessian": "hazard(z)*(hazard(z)-z)/sigma^2; nonnegative; continued-fraction tail difference avoids catastrophic cancellation",
+    "whitened_negative_logposterior": "0.5*vTv - sum(logLikelihood(mean+L*v)); Hessian I+L^T W L positive definite",
+    "Laplace_predictive_variance": "diag(Kqq)-diag(Kqo sqrtW (I+sqrtW Koo sqrtW)^-1 sqrtW Koq)+sigma^2",
+    "mode_score_alpha": "alpha=likelihood_gradient, valid at converged mode",
+    "joint_support_update": "Original population and selected support factors recomputed jointly with fixed mean/kernel/noise; old mode is warm start only",
+    "query_outcomes": "Stripped from prediction input; likelihood scoring evaluates observed endpoint as expected",
+    "shape_zero_label": "Condition-shape-kernel ablation, not intercept-only when global GP remains uncertain",
+    "unit_weight_likelihood": true,
+    "mean_estimation_note": "Standalone default uses source-balanced CensoredBasquin; current v6 runner supplies source-balanced training-only HIERARCHICAL Basquin location, sigma and tau references. Residual GP likelihood is unit-weight. The fixed mean is not re-estimated after selected support.",
+    "population_hyperparameter_uncertainty_integrated": false,
+    "global_monotone_q10_guarantee": false,
+    "numerical_jitter": "Training latent covariance jitter only, exposed; exact Gaussian synthetic algebra receipt agrees",
+    "zero_covariance_anchor": "Allowed explicitly; jitter keeps factorization defined while zero query cross-covariance gives a fixed-mean Gaussian predictive anchor."
+  },
+  "controls": {
+    "multipliers_affect_local_life_and_slope_sd": true,
+    "hier_target_tau_attribute_used": true,
+    "RFL_target_cache_reset": true,
+    "matched_all_runouts_unavailable": "NaN retained, runner must report availability and not drop unfavorable undefined episodes",
+    "local_MAP_approximation": "Constrained posterior mode plus untruncated Gaussian curvature, not exact truncated slope posterior",
+    "receipt_improvement_sent_to_parent": "RESOLVED: parent added slope_at_lower_bound for -50, alongside upper-bound flag.",
+    "requires_runner_audit": "Inner objective must aggregate availability and common episodes consistently; not reviewed here"
+  },
+  "runner_readonly_review": {
+    "pair_cache_routing": "Correctly excludes both whole families; outer selection keeps only OTHER family validation rows",
+    "inner_eligibility": "All expected episodes required, missing/nonfinite scores fail closed; equal k/seed/condition/family aggregation",
+    "reporting_issue_sent": "Retain sole fixed matched-intercept outer reference even if ineligible to be a universally defined inner-selected winner",
+    "numeric_efficiency_sent": "Prefer explicit CDF method for outer CDF(q10) verification to avoid redundant joint-RFL likelihood-ratio integrals",
+    "full_runner_audit": false
+  }
+}

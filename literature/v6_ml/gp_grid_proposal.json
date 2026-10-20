@@ -1,0 +1,934 @@
+{
+  "status": "PROPOSED_NOT_FROZEN_FOR_REAL_DATA",
+  "candidate_count": 66,
+  "source_code_sha256": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+  "actual_generator": "src.v6_gp.proposed_gp_grid(reference_noise_sd,reference_condition_sd)",
+  "reference_recipe": "src.v6_gp.training_reference(inner_train):unchanged hierarchical Basquin;sigma within condition,tau condition intercept,fixed raw mean coefficients",
+  "candidates": [
+    {
+      "candidate_id": "gp00",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.2,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.2
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp01",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.2,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.2
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp02",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.2,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.2
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp03",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.2,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.2
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp04",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp05",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp06",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp07",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp08",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp09",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp10",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp11",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp12",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp13",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp14",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp15",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp16",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp17",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp18",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp19",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp20",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp21",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp22",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp23",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp24",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp25",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp26",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp27",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp28",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp29",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp30",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp31",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp32",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp33",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp34",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp35",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp36",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp37",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp38",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp39",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.3,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp40",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp41",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp42",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp43",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp44",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp45",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp46",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp47",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp48",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp49",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp50",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp51",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp52",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp53",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp54",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp55",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.1,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.1
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp56",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp57",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp58",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp59",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 0.35,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.35
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp60",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.5 * training_reference_sigma",
+      "noise_multiplier": 0.5
+    },
+    {
+      "candidate_id": "gp61",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "0.75 * training_reference_sigma",
+      "noise_multiplier": 0.75
+    },
+    {
+      "candidate_id": "gp62",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.25 * training_reference_sigma",
+      "noise_multiplier": 1.25
+    },
+    {
+      "candidate_id": "gp63",
+      "role": "structured_GP_grid",
+      "kernel": {
+        "global_sd": 0.6,
+        "stress_length": 1.0,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 1.0
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "2.0 * training_reference_sigma",
+      "noise_multiplier": 2.0
+    },
+    {
+      "candidate_id": "gp64",
+      "role": "zero_covariance_pooled_normal_anchor",
+      "kernel": {
+        "global_sd": 0.0,
+        "stress_length": 0.2,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.0,
+        "condition_shape_length": 0.2
+      },
+      "condition_intercept_sd": 0.0,
+      "noise_sd_formula": "1.0 * training_reference_sigma",
+      "noise_multiplier": 1.0
+    },
+    {
+      "candidate_id": "gp65",
+      "role": "sensible_GP_default_anchor",
+      "kernel": {
+        "global_sd": 0.5,
+        "stress_length": 0.2,
+        "ratio_length": 1.0,
+        "condition_shape_sd": 0.35,
+        "condition_shape_length": 0.2
+      },
+      "condition_intercept_sd": "training_reference_tau",
+      "noise_sd_formula": "1.0 * training_reference_sigma",
+      "noise_multiplier": 1.0
+    }
+  ],
+  "metadata_refreshed_utc": "2026-10-20T20:37:09.138496+00:00"
+}

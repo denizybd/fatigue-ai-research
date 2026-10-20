@@ -1,0 +1,13 @@
+{
+  "key": "osti_sandia2020",
+  "url": "https://www.osti.gov/servlets/purl/1668368",
+  "retrieved_utc": "2026-10-20T20:26:36.425851+00:00",
+  "status": 200,
+  "final_url": "https://www.osti.gov/servlets/purl/1668368",
+  "bytes": 11184535,
+  "content_type": "application/pdf",
+  "sha256": "e83a843c86a5e7f95ca44cd278fdd0271e9246f106f39952754c8c96ff1b07d2",
+  "pdf_magic": true,
+  "path": "literature/v6_campaigns/osti_sandia2020/official_source.pdf",
+  "pages": 37
+}

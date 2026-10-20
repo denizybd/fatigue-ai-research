@@ -1,0 +1,34 @@
+{
+  "reviewer": "root independent of new runtime/physical-adapter authors; author of runner/metrics/analysis with separate independent reviews",
+  "checked_utc": "2026-10-20T21:02:27.643486+00:00",
+  "status": "PASS",
+  "review": [
+    "RFL conditional positive mixture pruning upper bounds and global prior domains",
+    "coarse-u full joint v-evidence reweighting, normalized predictive law and far-tail evidence fallback",
+    "relative predictive error conversion -log1p(-epsilon) and fixed-Gamma scope",
+    "quantile numerical resolution distinctions and literal infinite-life mass",
+    "nonblocking full pipeline/stage/freezer locks with inherited child descriptors",
+    "single-threaded3worker local dispatch with process/log/final-state receipts",
+    "same frozen query/support universe and exact source-family exclusions",
+    "analysis accepts no missing structural query/source/model/policy; explicit unavailable predictions retained",
+    "shared selected-row future cost coupling and source-weighted descriptive intervals"
+  ],
+  "real_phase6_fatigue_fits_before_review": 0,
+  "source_data_unchanged_sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3",
+  "sha256": {
+    "src/v6_rfl_adapter.py": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+    "src/v6_run.py": "23372c5714a742d2dcf411899bf03ae88725046363a7517d199658e529c49375",
+    "src/v6_dispatch.py": "7772305d4473b4938aeacbff00b02cd6cf6b7070a54c6f9425f6e523edcc2196",
+    "src/v6_pipeline.py": "553a78fde402b8a75b0b0222b377eb4cc21f63f243957510baafb11c0d4aa562",
+    "src/v6_freeze.py": "38d305dcc988ca97e0161c62ee621142a9171f99c77b7046cc2c8624cf8659fd",
+    "src/v6_metrics.py": "519fe6026a730361c0391e4f09b9a000c9af7be815251da79c05d9d279787f6d",
+    "src/v6_analyze.py": "7501c7b11a2a159b9a7c118f3ef13ef60053e4076155c30c5aa7cfb29cb73a78",
+    "run_v6.sh": "941f9c546c6657c10172850f2fd039ad0ae6c174cfa0eb4952ec754d2471d568"
+  },
+  "limitations": [
+    "convergence differences are numerical diagnostics, not continuous quadrature theorems",
+    "no achieved experimental/model superiority is implied by prefit review",
+    "collection identity-qualified additional force-CA campaign still missing"
+  ],
+  "final_independent_analysis_receipt": "literature/v6_ml/analysis_independent_audit.json"
+}

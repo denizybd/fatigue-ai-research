@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-20T20:24:17.211430+00:00",
+  "reviewer": "parent independent of module author",
+  "status": "pass",
+  "checks": {
+    "synthetic_pytest_total": 43,
+    "author_checks": 27,
+    "parent_added_checks": 16,
+    "runtime_seconds": 2.54,
+    "independent_additions": [
+      "full marginal objective derivative across all 12 nu/scatter/shape combinations",
+      "selected-support predictive joint integration with conflicting failures and one runout against scipy.quad",
+      "literal spline and scatter formula"
+    ]
+  },
+  "source_review": [
+    "censored survival and failure density derivatives",
+    "marginal-score conditional-expectation gradient",
+    "proper prior likelihood integration",
+    "support-only posterior and query-outcome isolation",
+    "Student tail and capped-cost limitation",
+    "no fully Bayesian population or physical batch inference"
+  ],
+  "real_fatigue_fit_performed": false,
+  "limitations": [
+    "interior quadrature error is estimated, separate prior-tail bound is mathematical",
+    "predictive quantiles need not be monotone under stress-varying scatter",
+    "no population parameter uncertainty integration",
+    "source-balanced validation differs from unit-row likelihood"
+  ],
+  "sha256": {
+    "src/v6_student_aft.py": "70ddcd0aa3d2e6c76450086abcab331328a66cd5da884acb543f727360673ae1",
+    "tests/test_v6_student_aft.py": "6c780e8cc7a803eab09d77db4d13bc176c752e418e368108b2b1098019aea6fd",
+    "tests/test_v6_student_independent.py": "1a72687e054e2cdef83771377cf5a00c822cce98c729f11a22d4d630a71215ad"
+  }
+}

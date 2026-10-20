@@ -1,0 +1,738 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T21:56:49Z",
+      "timestamp": 1790546209331,
+      "version": "4.1.0"
+    },
+    "reference-count": 65,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              8
+            ]
+          ],
+          "date-time": "2022-10-08T00:00:00Z",
+          "timestamp": 1665187200000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              8
+            ]
+          ],
+          "date-time": "2022-10-08T00:00:00Z",
+          "timestamp": 1665187200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000266",
+        "name": "Engineering and Physical Sciences Research Council",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100000266",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100000700",
+        "name": "Royal Commission for the Exhibition of 1851",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100000700",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006233",
+        "name": "National Renewable Energy Laboratory",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100006233",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Fatigue Fract Eng Mat Struct"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>A statistical framework is presented enabling optimal sampling and analysis of constant life fatigue data. Protocols using Bayesian maximum entropy sampling are built based on conventional staircase and stress step methods, reducing the requirement of prior knowledge for data collection. The Bayesian Staircase method shows improved parameter estimation efficiency, and the Bayesian Stress Step method shows equal accuracy to the standard method at larger step size allowing experimentalists to lessen concerns of loading history. Statistical methods for determining model suitability are shown, highlighting the influence of protocol. Experimental validation is performed, showing the applicability of the methods in laboratory testing.</jats:p>",
+    "DOI": "10.1111/ffe.13859",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2022-10-08T08:30:06Z",
+      "timestamp": 1665217806000
+    },
+    "page": "228-243",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Bayesian optimized collection strategies for fatigue strength testing"
+    ],
+    "prefix": "10.1111",
+    "volume": "46",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3049-143X",
+        "authenticated-orcid": false,
+        "given": "Christopher Massimo",
+        "family": "Magazzeni",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Materials University of Oxford Oxford UK"
+          },
+          {
+            "name": "Materials and Processes Section European Space Agency, ESA\u2010ECSAT Fermi Ave Harwell UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4255-279X",
+        "authenticated-orcid": false,
+        "given": "Rory",
+        "family": "Rose",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Materials University of Oxford Oxford UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chris",
+        "family": "Gearhart",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Center for Integrated Mobility Sciences National Renewables Energy Laboratory Golden USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jicheng",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Materials University of Oxford Oxford UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Angus J.",
+        "family": "Wilkinson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Materials University of Oxford Oxford UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_11_2_1",
+        "first-page": "1",
+        "article-title": "The economic effects of fracture in the United States",
+        "author": "Reed R",
+        "year": "1983",
+        "journal-title": "Natl Bur Stand Spec Publ"
+      },
+      {
+        "key": "e_1_2_11_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1460-2695.2002.00555.x"
+      },
+      {
+        "key": "e_1_2_11_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1948.10483254"
+      },
+      {
+        "key": "e_1_2_11_5_1",
+        "volume-title": "A tentative guide for fatigue testing and the statistical anaylsis of fatigue data",
+        "author": "ASTM",
+        "year": "1958"
+      },
+      {
+        "key": "e_1_2_11_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1520/JTE11341J"
+      },
+      {
+        "key": "e_1_2_11_7_1",
+        "first-page": "13",
+        "article-title": "12107. Metallic materials\u2013fatigue testing\u2013statistical planning and analysis of data\u2014ISO 12107",
+        "volume": "2006",
+        "author": "ISO",
+        "year": "2006",
+        "journal-title": "Test"
+      },
+      {
+        "key": "e_1_2_11_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TR.1980.5220742"
+      },
+      {
+        "key": "e_1_2_11_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0142-1123(99)00030-4"
+      },
+      {
+        "key": "e_1_2_11_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0142-1123(00)00039-6"
+      },
+      {
+        "key": "e_1_2_11_11_1",
+        "first-page": "278",
+        "article-title": "Analysis of methods for determining high cycle fatigue strength of a material with investigation of Ti\u20106Al\u20104V gigacycle fatigue behavior",
+        "author": "Pollak RD",
+        "year": "2005",
+        "journal-title": "Fac Grad Sch Eng Manag Force Inst Technol"
+      },
+      {
+        "key": "e_1_2_11_12_1",
+        "first-page": "369",
+        "volume-title": "VHCF\u20104\u20104th International Conference on Very High Cycle Fatigue",
+        "author": "Engler\u2010Pinto CC",
+        "year": "2007"
+      },
+      {
+        "key": "e_1_2_11_13_1",
+        "first-page": "422",
+        "article-title": "Statistical approaches applied to fatigue test data analysis",
+        "volume": "114",
+        "author": "Engler\u2010Pinto CC",
+        "year": "2005",
+        "journal-title": "SAE Trans"
+      },
+      {
+        "key": "e_1_2_11_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1460-2695.2009.01391.x"
+      },
+      {
+        "key": "e_1_2_11_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0021-9290(98)00102-X"
+      },
+      {
+        "key": "e_1_2_11_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/met11020204"
+      },
+      {
+        "key": "e_1_2_11_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tafmec.2010.10.002"
+      },
+      {
+        "key": "e_1_2_11_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11661-002-0259-2"
+      },
+      {
+        "key": "e_1_2_11_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2021.106396"
+      },
+      {
+        "key": "e_1_2_11_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2020.105930"
+      },
+      {
+        "key": "e_1_2_11_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.msea.2019.04.101"
+      },
+      {
+        "key": "e_1_2_11_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.surfcoat.2021.126829"
+      },
+      {
+        "key": "e_1_2_11_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.msea.2019.138648"
+      },
+      {
+        "key": "e_1_2_11_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.conbuildmat.2017.03.183"
+      },
+      {
+        "key": "e_1_2_11_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tafmec.2018.09.005"
+      },
+      {
+        "key": "e_1_2_11_26_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1155/2020/8837564",
+        "article-title": "Prediction of high\u2010cycle fatigue performance of 1Cr11Ni2W2MoV stainless steel plate after foreign object damage",
+        "volume": "2020",
+        "author": "Zhao Z",
+        "year": "2020",
+        "journal-title": "Int J Aerosp Eng"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_11_27_1",
+        "first-page": "1",
+        "article-title": "An evaluation of the staircase and over\u2010stress probe methods for fatigue life characterization in aluminum sand castings",
+        "volume": "16",
+        "author": "Mackay R",
+        "year": "2021",
+        "journal-title": "Int J Met"
+      },
+      {
+        "key": "e_1_2_11_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2019.03.019"
+      },
+      {
+        "key": "e_1_2_11_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2020.106105"
+      },
+      {
+        "key": "e_1_2_11_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2020.105746"
+      },
+      {
+        "key": "e_1_2_11_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2015.04.016"
+      },
+      {
+        "key": "e_1_2_11_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jallcom.2018.04.029"
+      },
+      {
+        "key": "e_1_2_11_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2019.02.016"
+      },
+      {
+        "key": "e_1_2_11_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2020.106138"
+      },
+      {
+        "key": "e_1_2_11_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2018.01.012"
+      },
+      {
+        "key": "e_1_2_11_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.engfailanal.2020.104512"
+      },
+      {
+        "key": "e_1_2_11_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12206-017-0919-1"
+      },
+      {
+        "key": "e_1_2_11_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2021.106276"
+      },
+      {
+        "key": "e_1_2_11_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611970654"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_11_40_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1111/j.2517-6161.1968.tb01505.x",
+        "article-title": "The choice of variables in multiple regression",
+        "volume": "30",
+        "author": "Lindley DV",
+        "year": "1968",
+        "journal-title": "J R Stat Soc Ser B"
+      },
+      {
+        "key": "e_1_2_11_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aoms/1177728069"
+      },
+      {
+        "key": "e_1_2_11_42_1",
+        "unstructured": "DasGuptaA.Review of Optimal Bayes Designs. Technical Report #95\u20104.\u00a0Purdue University;1995.https://www.stat.purdue.edu/~dasgupta/publications/tr95-04.pdf"
+      },
+      {
+        "key": "e_1_2_11_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/ss/1177009939"
+      },
+      {
+        "key": "e_1_2_11_44_1",
+        "first-page": "1",
+        "article-title": "Fully Bayesian optimal experimental design: a review",
+        "author": "Ryan EG",
+        "year": "2016",
+        "journal-title": "Queensl Univ Technol"
+      },
+      {
+        "key": "e_1_2_11_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/insr.12107"
+      },
+      {
+        "key": "e_1_2_11_46_1",
+        "unstructured": "MagazzeniCM RoseR.cmmagazz/BayesOptFatigue: Code for \u201cBayesian Optimised Collection Strategies for Fatigue Testing Constant Life Testing.\u201d Available at:https://github.com/cmmagazz/BayesOptFatigue. Accessed September 17 2021."
+      },
+      {
+        "key": "e_1_2_11_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.410844"
+      },
+      {
+        "key": "e_1_2_11_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.0006-341X.2004.00148.x"
+      },
+      {
+        "key": "e_1_2_11_49_1",
+        "unstructured": "MagazzeniCM.Towards local property assessment of advanced manufactured microstructures\u2014a case study in linear friction welded titanium.2022."
+      },
+      {
+        "key": "e_1_2_11_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/e18040111"
+      },
+      {
+        "key": "e_1_2_11_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2008.06.004"
+      },
+      {
+        "key": "e_1_2_11_52_1",
+        "unstructured": "SchneiderCRA MaddoxSJ.Commission XIII\u2010WG1 best practice guide on statistical analysis of fatigue data.2003."
+      },
+      {
+        "key": "e_1_2_11_53_1",
+        "unstructured": "Chi\u2010liuS.The statistical analysis of fatigue data.1994."
+      },
+      {
+        "key": "e_1_2_11_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/qre.899"
+      },
+      {
+        "key": "e_1_2_11_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2011/718901"
+      },
+      {
+        "key": "e_1_2_11_56_1",
+        "volume-title": "Technologies IS of S and A. New Approaches to Determine the Endurance Strength Distribution",
+        "author": "Zhang J",
+        "year": "1998"
+      },
+      {
+        "key": "e_1_2_11_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4271/2009-01-0528"
+      },
+      {
+        "key": "e_1_2_11_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2018.03.008"
+      },
+      {
+        "key": "e_1_2_11_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2014.01.024"
+      },
+      {
+        "key": "e_1_2_11_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02670836.2020.1821965"
+      },
+      {
+        "key": "e_1_2_11_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2019.105222"
+      },
+      {
+        "key": "e_1_2_11_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2019.105216"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_11_63_1",
+        "first-page": "61",
+        "article-title": "AD\u2010Optimality\u2010Based Sensitivity Test",
+        "volume": "36",
+        "author": "Never BT",
+        "year": "1994",
+        "journal-title": "A D\u2010optimality\u2010based sensitivity test Technometrics"
+      },
+      {
+        "key": "e_1_2_11_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1995.10476572"
+      },
+      {
+        "key": "e_1_2_11_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9781118033197"
+      },
+      {
+        "key": "e_1_2_11_66_1",
+        "first-page": "155",
+        "article-title": "Data analysis: a Bayesian tutorial",
+        "volume": "40",
+        "author": "Fox EP",
+        "year": "1998",
+        "journal-title": "Dent Tech"
+      }
+    ],
+    "container-title": [
+      "Fatigue &amp; Fracture of Engineering Materials &amp; Structures"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ffe.13859",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/ffe.13859",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ffe.13859",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ffe.13859",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          5
+        ]
+      ],
+      "date-time": "2024-10-05T11:24:32Z",
+      "timestamp": 1728127472000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1111/ffe.13859"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          8
+        ]
+      ]
+    },
+    "references-count": 65,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1111/ffe.13859"
+    ],
+    "URL": "https://doi.org/10.1111/ffe.13859",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "8756-758X",
+      "1460-2695"
+    ],
+    "issn-type": [
+      {
+        "value": "8756-758X",
+        "type": "print"
+      },
+      {
+        "value": "1460-2695",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2022-05-30",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-09-23",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-10-08",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

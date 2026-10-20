@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-20T21:26:09.726604+00:00",
+  "source_url": "https://github.com/yulin-g/UQ-fatigue-life-PBF-AM",
+  "commit_sha": "1b5c82714a35f66ad8f0ea846289b45719d22dd0",
+  "complete_tree_blob_files": 37,
+  "static_files_acquired_and_git_blob_verified": 33,
+  "omitted_only_compiled_library_and_debug_files": [
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexa64",
+      "size": 118595,
+      "sha": "d582e3e8de71ebe7999fcb538c40ab63547ed3fc"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexw32",
+      "size": 73728,
+      "sha": "ff840c67ca35fe7414f969b185df5c507ec4af28"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexw64",
+      "size": 231424,
+      "sha": "34fab5c3a36dd8a99005eea7c113bdee1d12bfa8"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/bin/gco_matlab.mexw64.pdb",
+      "size": 1149952,
+      "sha": "383846e81d26f88848ebe0afc356c75533c28f22"
+    }
+  ],
+  "mat_variable_metadata": {
+    "UQ-fatigue-life-PBF-AM/GrainColormap.mat": [
+      [
+        "cmap",
+        [
+          1000,
+          3
+        ],
+        "double"
+      ]
+    ]
+  },
+  "source_pointers": [
+    {
+      "path": "UQ-fatigue-life-PBF-AM/generate_workflow.m",
+      "lines": [
+        3,
+        11
+      ],
+      "meaning": "simulation input generation,64subcubes; computational realizations do not establish64physical fatigue tests"
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/SimpleTension3D_SinglePhase.m",
+      "line": 78,
+      "meaning": "loads cmap only for crack-surface figure"
+    }
+  ],
+  "scope": "No new individual observed fatigue-life archive located in enumerated repository. This repository is simulation-input code; actual EBSD/microCT characterization and numerical validation in paper are separately audited, and are not denied by this finding.",
+  "license": "MIT repository license at pinned commit, copyright2026YulinGuo; retain license on any source redistribution",
+  "code_executed": false,
+  "data_added_to_fit": 0,
+  "independent_paper_audit": "../independent_audit/ (separate reader, ongoing at this timestamp)"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "filename": "PK_Batch processing_Porosity_50X - (Script for batch image processing).ijm",
+    "url": "https://data.mendeley.com/public-files/datasets/87hm5hwbpk/files/39133965-0042-4e03-8bea-e7b428cb3e73/file_downloaded",
+    "status": 200,
+    "bytes": 526,
+    "sha256": "1922cabb4dc99be62ec44b5666494e7d107beaaa4077f0fd394db77c9b97c9e7",
+    "checksum_match": true,
+    "path": "literature/v6_campaigns/kousoulas2024/PK_Batch processing_Porosity_50X - (Script for batch image processing).ijm"
+  },
+  {
+    "filename": "PK_Porosity_50X - (ImageJ defect size measuremnt macro).ijm",
+    "url": "https://data.mendeley.com/public-files/datasets/87hm5hwbpk/files/b858f0ae-d006-4403-a05f-f89aa7e80733/file_downloaded",
+    "status": 200,
+    "bytes": 1426,
+    "sha256": "6d43ecd70402bd79d7c773a966e86e42f9e8db26f28fccf2d701e3db8002b41c",
+    "checksum_match": true,
+    "path": "literature/v6_campaigns/kousoulas2024/PK_Porosity_50X - (ImageJ defect size measuremnt macro).ijm"
+  }
+]

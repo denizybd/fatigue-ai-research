@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-20T20:53:44.319485+00:00",
+  "scope": "Only this agent obsolete synthetic diagnostics; no actual-fatigue fit/model/source-acquisition process stopped",
+  "kept_latest_benchmark_pid": 66470,
+  "actions": [
+    {
+      "pid": 66095,
+      "command": ".venv/bin/python -",
+      "status": "terminated obsolete synthetic diagnostic"
+    },
+    {
+      "pid": 66206,
+      "command": ".venv/bin/python -m cProfile -o work/v6_rfl_broad.profile work/v6_rfl_profile.py",
+      "status": "terminated obsolete synthetic diagnostic"
+    },
+    {
+      "pid": 66290,
+      "command": ".venv/bin/python -",
+      "status": "terminated obsolete synthetic diagnostic"
+    },
+    {
+      "pid": 66384,
+      "command": ".venv/bin/python literature/v6_methods/rfl/benchmark_synthetic.py --case broad --nquery 3 --output literature/v6_methods/rfl/current_broad_runtime.json",
+      "status": "terminated obsolete synthetic diagnostic"
+    },
+    {
+      "pid": 66431,
+      "command": "",
+      "status": "not touched; command absent/changed"
+    }
+  ]
+}

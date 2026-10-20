@@ -1,0 +1,111 @@
+{
+  "utc": "2026-10-20T21:26:09.721513+00:00",
+  "recovery": "Resumed same sealed pipeline after confirmed OS reboot, locks free and all21 sealed inputs/runtime files unchanged.",
+  "pipeline_state": {
+    "status": "running",
+    "pipeline_pid": 1842,
+    "freeze_sha256": "25d1641a62c49cb8f969f907ac5a4dae7838393d3553fe711b13aced4049dc3e",
+    "started_utc": "2026-10-20T21:21:31.070103+00:00",
+    "total_stages": 8,
+    "completed_stages": [],
+    "active_stage": {
+      "name": "inner",
+      "status": "running",
+      "pid": 1846,
+      "command": [
+        "/Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python",
+        "-m",
+        "src.v6_dispatch",
+        "inner",
+        "--workers",
+        "3"
+      ],
+      "log": "/Users/deniz2/Desktop/fatigue-ai-research/logs/v6/pipeline_01_inner.log",
+      "started_utc": "2026-10-20T21:21:31.533564+00:00"
+    }
+  },
+  "inner_dispatch_state": {
+    "stage": "inner",
+    "cap": 1000000.0,
+    "workers": 3,
+    "status": "running",
+    "dispatcher_pid": 1846,
+    "freeze_sha256": "25d1641a62c49cb8f969f907ac5a4dae7838393d3553fe711b13aced4049dc3e",
+    "started_utc": "2026-10-20T21:21:31.669371+00:00",
+    "total_jobs": 66,
+    "completed_jobs": 3,
+    "results": [
+      {
+        "name": "pair_02",
+        "status": "complete",
+        "pid": 1850,
+        "started_utc": "2026-10-20T21:21:32.044335+00:00",
+        "command": [
+          "/Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python",
+          "-m",
+          "src.v6_run",
+          "inner",
+          "--pairs",
+          "2"
+        ],
+        "freeze_sha256": "25d1641a62c49cb8f969f907ac5a4dae7838393d3553fe711b13aced4049dc3e",
+        "log": "/Users/deniz2/Desktop/fatigue-ai-research/logs/v6/inner/pair_02.log",
+        "returncode": 0,
+        "completed_utc": "2026-10-20T21:24:27.750901+00:00",
+        "elapsed_seconds": 175.70663504099997
+      },
+      {
+        "name": "pair_01",
+        "status": "complete",
+        "pid": 1849,
+        "started_utc": "2026-10-20T21:21:32.044251+00:00",
+        "command": [
+          "/Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python",
+          "-m",
+          "src.v6_run",
+          "inner",
+          "--pairs",
+          "1"
+        ],
+        "freeze_sha256": "25d1641a62c49cb8f969f907ac5a4dae7838393d3553fe711b13aced4049dc3e",
+        "log": "/Users/deniz2/Desktop/fatigue-ai-research/logs/v6/inner/pair_01.log",
+        "returncode": 0,
+        "completed_utc": "2026-10-20T21:25:01.638799+00:00",
+        "elapsed_seconds": 209.59457891700004
+      },
+      {
+        "name": "pair_00",
+        "status": "complete",
+        "pid": 1848,
+        "started_utc": "2026-10-20T21:21:32.044188+00:00",
+        "command": [
+          "/Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python",
+          "-m",
+          "src.v6_run",
+          "inner",
+          "--pairs",
+          "0"
+        ],
+        "freeze_sha256": "25d1641a62c49cb8f969f907ac5a4dae7838393d3553fe711b13aced4049dc3e",
+        "log": "/Users/deniz2/Desktop/fatigue-ai-research/logs/v6/inner/pair_00.log",
+        "returncode": 0,
+        "completed_utc": "2026-10-20T21:25:07.969477+00:00",
+        "elapsed_seconds": 215.925317292
+      }
+    ],
+    "elapsed_seconds": 216.30102625
+  },
+  "process_snapshot": [
+    " 1842  1841          04:39   0.0  0.8 .venv/bin/python -m src.v6_pipeline",
+    " 1846  1842          04:38   0.0  0.8 /Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python -m src.v6_dispatch inner --workers 3",
+    " 2099  1846          01:42  99.9  1.1 /Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python -m src.v6_run inner --pairs 3",
+    " 2170  1846          01:08  98.2  1.1 /Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python -m src.v6_run inner --pairs 4",
+    " 2182  1846          01:02  98.3  1.1 /Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python -m src.v6_run inner --pairs 5"
+  ],
+  "preserved_pre_reboot_complete_candidate_files": 321,
+  "integrity_check": "resume_candidate_integrity.json checks all321 pre-reboot CSV/numerical-sidecar hashes plus31 post-resume files, no problems",
+  "current_candidate_score_file_count": 726,
+  "statistical_protocol_or_grid_changed": false,
+  "outer_scientific_results_available": false,
+  "note": "Saved old PIDs/status alone were not treated as liveness; no process was deliberately stopped."
+}

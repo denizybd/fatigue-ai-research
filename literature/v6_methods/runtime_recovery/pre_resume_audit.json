@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-20T21:21:22.374233+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "boot_time": "{ sec = 1792530977, usec = 437553 } Wed Oct 21 00:16:17 2026",
+  "all_sealed_files_match": true,
+  "file_checks": {
+    "src/v6_run.py": true,
+    "src/v6_dispatch.py": true,
+    "src/v6_pipeline.py": true,
+    "src/v6_freeze.py": true,
+    "run_v6.sh": true,
+    "src/v6_controls.py": true,
+    "src/v6_selection.py": true,
+    "src/v6_gp.py": true,
+    "src/v6_metrics.py": true,
+    "src/v6_analyze.py": true,
+    "src/v6_student_aft.py": true,
+    "src/v6_rfl_adapter.py": true,
+    "src/v6_prepare.py": true,
+    "src/v2_models.py": true,
+    "src/v2_curved_models.py": true,
+    "src/v3_design.py": true,
+    "src/v3_rfl.py": true,
+    "protocols/v6/nested_design.txt": true,
+    "protocols/v6/grid.json": true,
+    "data/processed/v4/controlled_expansion/expanded441.csv": true,
+    "data/processed/v6/episode_design.json": true
+  },
+  "locks": {
+    "dispatch.lock": {
+      "state": "free",
+      "historical_owner": "{\"kind\": \"dispatch\", \"stage\": \"inner\", \"cap\": 1000000.0, \"pid\": 66822, \"started_utc\": \"2026-10-20T21:05:05.984195+00:00\"}\n"
+    },
+    "freeze.lock": {
+      "state": "free",
+      "historical_owner": "{\"kind\": \"prefit_seal\", \"pid\": 66799, \"started_utc\": \"2026-10-20T21:05:01.474004+00:00\"}\n"
+    },
+    "pipeline.lock": {
+      "state": "free",
+      "historical_owner": "{\"kind\": \"pipeline\", \"pid\": 66818, \"started_utc\": \"2026-10-20T21:05:05.492185+00:00\"}\n"
+    }
+  },
+  "historical_pipeline_status": {
+    "status": "running",
+    "pipeline_pid": 66818,
+    "freeze_sha256": "25d1641a62c49cb8f969f907ac5a4dae7838393d3553fe711b13aced4049dc3e",
+    "started_utc": "2026-10-20T21:05:05.492632+00:00",
+    "total_stages": 8,
+    "completed_stages": [],
+    "active_stage": {
+      "name": "inner",
+      "status": "running",
+      "pid": 66822,
+      "command": [
+        "/Users/deniz2/Desktop/fatigue-ai-research/.venv/bin/python",
+        "-m",
+        "src.v6_dispatch",
+        "inner",
+        "--workers",
+        "3"
+      ],
+      "log": "/Users/deniz2/Desktop/fatigue-ai-research/logs/v6/pipeline_01_inner.log",
+      "started_utc": "2026-10-20T21:05:05.854107+00:00"
+    }
+  },
+  "candidate_score_files": 321,
+  "observation": "No v6 pipeline/dispatcher/worker live process observed; status JSON is stale. Terminal sessions from previous runtime no longer available. Resume will preserve seal and completed candidate caches."
+}

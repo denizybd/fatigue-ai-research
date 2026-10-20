@@ -1,0 +1,19 @@
+{
+  "total_frozen_tasks": 370,
+  "nonexhausted_k3_tasks": 330,
+  "third_choice_ge5percent_stress_ratio_tasks": 316,
+  "third_choice_conditions": 33,
+  "third_choice_source_families": 11,
+  "deterministic_high_anchor_sort": "descending logstress, then ascending rowID",
+  "stress_difference_is_covariate_separation_not_verified_author_level": true,
+  "source_columns_read": [
+    "row_id",
+    "dataset_id",
+    "group_id",
+    "log_stress",
+    "load_ratio"
+  ],
+  "outcomes_read_or_results_accessed": false,
+  "episode_design_sha256": "c1844122a2f128cc1da84a0cb80a0d666d64a844ccc70fc4d7924c8440611148",
+  "source_sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3"
+}

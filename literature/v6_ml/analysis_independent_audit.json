@@ -1,0 +1,101 @@
+{
+  "status": "PASS_AFTER_PREFIT_GAPS_RESOLVED",
+  "checked_utc": "2026-10-20T21:03:14.293077+00:00",
+  "files": {
+    "src/v6_analyze.py": "7501c7b11a2a159b9a7c118f3ef13ef60053e4076155c30c5aa7cfb29cb73a78",
+    "src/v6_metrics.py": "519fe6026a730361c0391e4f09b9a000c9af7be815251da79c05d9d279787f6d",
+    "src/v6_run.py": "23372c5714a742d2dcf411899bf03ae88725046363a7517d199658e529c49375",
+    "protocols/v6/nested_design.txt": "4fdfb77ec26c1937fcc3fbf0d0e77ee826d5bd15ea7af0f035cbe6e1657c1fbb",
+    "tests/test_v6_analyze.py": "58f17ec49758650de5f0f552505df6593bde0ed04f9add195f25e31d6b160d05",
+    "literature/v6_ml/analysis_independent_checks.py": "b1bf33e4f962df60430f20f2276507db3ae8f1695c3e54544f151caf1be0ec15"
+  },
+  "scope": "Independent review of parent analysis; generated full-pipeline predictions and source-universe counterexamples only; no actual seal, fatigue observations analyzed, plans or model fits.",
+  "checked": {
+    "frozen_source_integrity": "load_frozen runs before reading results; verifies runtime/input hashes. Result CSV hashes and seal match are also checked.",
+    "complete_expected_universe": "Run tasks exactly match frozen episodes; all17 model aliases and4 fixed policies are declared. Every model/policy has exactly the expected(group,condition,seed,k,queryID) universe; whole-family structural deletion is rejected.",
+    "common_query_contrasts": "Same-k policy/model comparisons require exact query identity sets. k0 can include additional conditions unavailable at larger k, but only after full expected-universe validation. Truth/event arrays checked on matched rows.",
+    "strict_numeric_missingness": "Unavailable q/score rows remain in the full universe. All-NaN utility family keeps its source position and suppresses strict bootstrap interval; gate becomes indeterminate rather than dropping the family.",
+    "cost_coupling": "Support costs reconstructed from each selected original-row prefix, with same-ID cost coupling. Model aliases reuse identical ledgers; costs are not multiplied by repeated query rows.",
+    "source_aggregation": "Validated query\u2192seed\u2192condition\u2192source normalization and source-only bootstrap helpers. Existing outcomes historically seen; source-bootstrap intervals descriptive, not physical-build/R90C90 confidence.",
+    "no_posthoc_selection": "Predictor/config choices come from upstream committed inner selection; analysis only reports prespecified comparisons and thresholds. No outer utility selects candidates or model-class members.",
+    "class_counts": "Five adaptive classes only. Hierarchical/curved require both declared members; scalar/joint RFL require both members and count as one. Any adequately available supported utility reversal blocks robustness. This conservative both-member rule prevents choosing the friendliest member after results.",
+    "criteria": "Relative availability>=.95, utility lower95>=log10(1.05), paired-risk upper95<=.02,cost-ratio upper95<=.90. Absolute-risk upper95<=.10 separate. Primaryk3/cap1M; other rows retain their explicit k/cap/subset context."
+  },
+  "resolved_issues": [
+    {
+      "issue": "Same-k comparison accepted missing source rows because subset matching was allowed",
+      "generated_counterexample": "3 source families in reference, one family deleted from high_stress; old code returned2-source gain.1 and CI[.1,.1].",
+      "fix": "Exact same-k query matching plus complete frozen task/query/k/model/policy validation."
+    },
+    {
+      "issue": "Analysis checked seal digest but did not validate frozen code/input bytes",
+      "fix": "Calls load_frozen before any result read; generated changed-runtime test rejects before analysis."
+    }
+  ],
+  "tests": {
+    "parent_pytest_command": ".venv/bin/python -m pytest -q tests/test_v6_analyze.py tests/test_v6_metrics.py tests/test_v6_runtime.py",
+    "pytest_passed": 18,
+    "parent_analysis_tests": 2,
+    "independent_generated_end_to_end": {
+      "status": "PASS",
+      "generated_end_to_end_cases": 4,
+      "checks": {
+        "all_classes": {
+          "passing_classes": [
+            "hierarchical_curved",
+            "local_slope",
+            "rfl",
+            "student",
+            "gp"
+          ],
+          "reversed_classes": [],
+          "criterion": true
+        },
+        "friendly_members_only": {
+          "passing_classes": [
+            "gp"
+          ],
+          "reversed_classes": [],
+          "criterion": false
+        },
+        "curve_reversal": {
+          "passing_classes": [
+            "local_slope",
+            "rfl",
+            "student",
+            "gp"
+          ],
+          "reversed_classes": [
+            "hierarchical_curved"
+          ],
+          "criterion": false
+        },
+        "missing_GP_family": {
+          "passing_classes": [
+            "hierarchical_curved",
+            "local_slope",
+            "rfl",
+            "student"
+          ],
+          "reversed_classes": [],
+          "criterion": true
+        },
+        "structural_missing_family_rejected": true,
+        "same_budget_subset_pair_rejected": true
+      },
+      "actual_fatigue_fits": 0,
+      "scope": "Fabricated predictions/ledgers and patched synthetic freeze/design only; no model fits or fatigue outcomes",
+      "analysis_source_sha256": "7501c7b11a2a159b9a7c118f3ef13ef60053e4076155c30c5aa7cfb29cb73a78",
+      "test_source_sha256": "b1bf33e4f962df60430f20f2276507db3ae8f1695c3e54544f151caf1be0ec15"
+    }
+  },
+  "limitations": [
+    "Finite logutility is conditional on paired finite quantiles and must always be read with reported availability.",
+    "Robustness can be supported by >=3 available classes even if another class is indeterminate; the unavailable class is not promoted to success.",
+    "Per-class both-member pass/reversal treatment is conservative; it does not establish architecture or mechanistic novelty.",
+    "Actual scientific result validation, convergence receipts and fresh replay remain pending until the planned runs complete."
+  ],
+  "actual_repository_freeze_invocations": 0,
+  "actual_fatigue_model_fits": 0,
+  "actual_prepared_fatigue_episode_plans": 0
+}

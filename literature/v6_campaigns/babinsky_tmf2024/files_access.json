@@ -1,0 +1,47 @@
+{
+  "url": "https://data.mendeley.com/public-api/datasets/83wh6zdpz9/files?folder_id=root&version=1&$start=0&$limit=1000",
+  "retrieved_utc": "2026-10-20T20:30:09.567104+00:00",
+  "status": 200,
+  "final_url": "https://data.mendeley.com/public-api/datasets/83wh6zdpz9/files?folder_id=root&version=1&$start=0&$limit=1000",
+  "bytes": 5146,
+  "sha256": "590bf6aba5f72ae7bd8544f5ce81379aca4460336e1664527452ecf21505842d",
+  "path": "literature/v6_campaigns/babinsky_tmf2024/files.json",
+  "pdf_magic": false,
+  "files": [
+    {
+      "name": "316LDensity_archimedes.xlsx",
+      "size": 12483,
+      "id": "fa332baa-5915-405f-b13c-9c8c2d1ac9c7"
+    },
+    {
+      "name": "CT.rar",
+      "size": 266547267,
+      "id": "b660bbde-ab61-4e5c-bc51-4e50a5ce32f8"
+    },
+    {
+      "name": "EDS EBSD - SEM TEM.rar",
+      "size": 4771229032,
+      "id": "e869770f-c607-44c8-8930-86451d2f7a31"
+    },
+    {
+      "name": "fatigue test data.rar",
+      "size": 781179864,
+      "id": "01658f57-627a-4edd-bbcf-62e887d84d38"
+    },
+    {
+      "name": "OES 316L.xlsx",
+      "size": 30090,
+      "id": "d8f84f29-a489-4837-afa3-cfba27d3ac1d"
+    },
+    {
+      "name": "SEM.rar",
+      "size": 1191849747,
+      "id": "1e66574e-7199-4723-b36e-7040c4e0346d"
+    },
+    {
+      "name": "TEM.rar",
+      "size": 3701885152,
+      "id": "ac78791c-9edf-4b83-9764-e21a9aa59dc9"
+    }
+  ]
+}

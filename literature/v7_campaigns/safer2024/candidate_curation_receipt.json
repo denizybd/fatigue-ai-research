@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-20T21:29:47.652538+00:00",
+  "source_url": "https://safer2028.fi/wp-content/uploads/SAFER2028-annual-report-2024-final.pdf",
+  "web_verified_pdf_pages": 142,
+  "web_pdf_table_page_1based": 101,
+  "local_pdf_acquired": false,
+  "local_pdf_sha256": null,
+  "local_access_receipt": "access_receipt.json",
+  "curated_candidate_rows": 5,
+  "author_specimen_ids": 5,
+  "verified_manufacturing_build_ids": 0,
+  "admitted_v6_rows": 0,
+  "admitted_primary_RT_force_CA_rows": 0,
+  "csv": "data/external_v7/safer2024/table4_4_2_1_webtext_candidate5.csv",
+  "csv_sha256": "21e71fc951fe8fd539a1dd4bacc556e8ff99ea040d0aad9ea63af857768d12a2",
+  "license": "VTT Public; no explicitCCgrant verified; no sourcePDF/images distributed",
+  "followon_preprint": {
+    "title": "Design and assessment of a bending fatigue test method using a Charpy size-scale specimen additively manufactured from316L stainlesssteel",
+    "doi": "10.2139/ssrn.6944100",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6944100",
+    "posted": "2026-06-15",
+    "pages_advertised": 26,
+    "local_pdf_access": "HTTP403",
+    "license_statement": "SSRNallrightsreserved,noReuseWithoutPermission",
+    "same_author_program": true,
+    "not_used_to_fill_missing_per_specimen_protocol": true
+  },
+  "limits": [
+    "strain column lacks amplitude/range/unit label",
+    "frequency column mixes strain-rate andHz strings",
+    "testtemperature,Rratio,failurecriterion unresolved",
+    "specimenmanufacturingIDs absent",
+    "not an acquisitioncomparisondata panel"
+  ]
+}

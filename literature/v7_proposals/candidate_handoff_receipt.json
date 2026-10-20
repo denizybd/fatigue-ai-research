@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-10-20T21:30:59.591268+00:00",
+  "scope": "Theoretical/pre-outcome design; no material fits or phase6 outer outputs accessed.",
+  "json_valid": true,
+  "manufactured_assertions_passed": true,
+  "checks_stdout": "{\"all_assertions_passed\": true, \"receipt\": \"/Users/deniz2/Desktop/fatigue-ai-research/literature/v7_proposals/theory_check_receipt.json\", \"uniform_minimax_action\": 4.447213595499958}",
+  "files": [
+    {
+      "path": "literature/v7_proposals/method_candidate.json",
+      "bytes": 16235,
+      "sha256": "d9f37817c1666c4dc8b7cc4fc8fce5fb77f4f5b78e0550f62efb3f8b756eb85a"
+    },
+    {
+      "path": "literature/v7_proposals/rationale.txt",
+      "bytes": 10185,
+      "sha256": "a045a53d72c182d705e1dc953ceca2a78254b4cccbd7fe172441b325f4c25bed"
+    },
+    {
+      "path": "literature/v7_proposals/theory_checks.py",
+      "bytes": 5739,
+      "sha256": "d537b7f532a0c0652bc9f6490160ce49c26537ef89674278143ea98d3bb02df2"
+    },
+    {
+      "path": "literature/v7_proposals/theory_check_receipt.json",
+      "bytes": 3870,
+      "sha256": "355a8840ec7f6b8eb2e288817db2178ff4cd877058dbaaa4870a2e40b79f2ec4"
+    }
+  ],
+  "primary_source_checked": {
+    "title": "Robust Bayesian experimental design and estimation for analysis of variance models using a class of normal mixtures",
+    "doi": "10.1016/0378-3758(93)90024-Z",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/037837589390024Z",
+    "scope": "Publisher abstract only; establishes generic minimax-regret design prior art, not full algorithm equivalence."
+  }
+}

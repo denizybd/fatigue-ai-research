@@ -1,0 +1,8 @@
+{
+  "url": "https://api.openalex.org/works/https://doi.org/10.1177/14644207251366376",
+  "retrieved_utc": "2026-10-20T21:07:30.636719+00:00",
+  "status": 200,
+  "bytes": 25782,
+  "sha256": "5830ada1e95f0019d42b8b5a9201906464edad1a0e7800cf493229c6d55f7a9c",
+  "final_url": "https://api.openalex.org/works/https://doi.org/10.1177/14644207251366376"
+}

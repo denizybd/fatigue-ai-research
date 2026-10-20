@@ -1,0 +1,38 @@
+[
+  {
+    "path": "literature/v6_methods/adaptive2026_crossref.json",
+    "requested_url": "https://api.crossref.org/works/10.1016/j.probengmech.2026.104043",
+    "status_code": 200,
+    "final_url": "https://api.crossref.org/works/10.1016/j.probengmech.2026.104043",
+    "bytes": 15001,
+    "content_type": "application/json",
+    "sha256": "50ab13d8f452557884958dc68e4a6a8de08b0e792e7ba8abea9758de139fbe16"
+  },
+  {
+    "path": "literature/v6_methods/adaptive2026_elsevier_full_request.xml",
+    "requested_url": "https://api.elsevier.com/content/article/PII:S0266892026001542?httpAccept=text/xml&view=FULL",
+    "status_code": 401,
+    "final_url": "https://api.elsevier.com/content/article/PII:S0266892026001542?httpAccept=text/xml&view=FULL",
+    "bytes": 133,
+    "content_type": "text/xml;charset=UTF-8",
+    "sha256": "a199c5505f5d84ca6206475b3a116d509aa4528f154f0d3cdbc57669ec400bb5"
+  },
+  {
+    "path": "literature/v6_methods/Lee2018_nsf_author.pdf",
+    "requested_url": "https://par.nsf.gov/servlets/purl/10110948",
+    "status_code": 200,
+    "final_url": "https://par.nsf.gov/servlets/purl/10110948",
+    "bytes": 922723,
+    "content_type": "application/pdf",
+    "sha256": "fd51b4ae642131aeba06de8a0a96be1adee85a030187bb901093f87771d29e6a"
+  },
+  {
+    "path": "literature/v6_methods/WangLi2025_official_page.html",
+    "requested_url": "https://sysengi.cjoe.ac.cn/EN/10.12011/SETP2023-2570",
+    "status_code": 200,
+    "final_url": "https://sysengi.cjoe.ac.cn/EN/10.12011/SETP2023-2570",
+    "bytes": 119466,
+    "content_type": "text/html;charset=UTF-8",
+    "sha256": "847a6e0b8b526575441ac0b5a5e7406ef0da8a6a38401e251684ced94936bb2a"
+  }
+]

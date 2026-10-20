@@ -1,0 +1,27 @@
+{
+  "url": "https://data.mendeley.com/public-api/datasets/87hm5hwbpk/files?folder_id=root&version=2&$start=0&$limit=1000",
+  "retrieved_utc": "2026-10-20T20:30:09.566867+00:00",
+  "status": 200,
+  "final_url": "https://data.mendeley.com/public-api/datasets/87hm5hwbpk/files?folder_id=root&version=2&$start=0&$limit=1000",
+  "bytes": 2301,
+  "sha256": "cc4cacedaa5a7d64b937ee10e516ffdfbc9ecd4434792b8ceb950a84ae702020",
+  "path": "literature/v6_campaigns/kousoulas2024/files.json",
+  "pdf_magic": false,
+  "files": [
+    {
+      "name": "Measured defect sizes.xlsx",
+      "size": 124078,
+      "id": "241fe93a-2c59-4666-90b7-52e448e76335"
+    },
+    {
+      "name": "PK_Batch processing_Porosity_50X - (Script for batch image processing).ijm",
+      "size": 526,
+      "id": "39133965-0042-4e03-8bea-e7b428cb3e73"
+    },
+    {
+      "name": "PK_Porosity_50X - (ImageJ defect size measuremnt macro).ijm",
+      "size": 1426,
+      "id": "b858f0ae-d006-4403-a05f-f89aa7e80733"
+    }
+  ]
+}

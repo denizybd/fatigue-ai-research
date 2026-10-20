@@ -1,0 +1,121 @@
+{
+  "status": "PASS_WITH_DISCLOSED_SCOPE_LIMITS",
+  "checked_utc": "2026-10-20T21:03:14.293883+00:00",
+  "files": {
+    "src/v6_run.py": "23372c5714a742d2dcf411899bf03ae88725046363a7517d199658e529c49375",
+    "src/v6_selection.py": "5a8e65049fc4576787a19fadbcb44bacb7b5f279e8e1ce83f427f3c751511d73",
+    "src/v6_prepare.py": "7bce1dd1f8d826ad451570636c20260cd464cd507b27dbb3fcffa6858bad3891",
+    "src/v6_gp.py": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+    "src/v6_controls.py": "9e864712d49a0893535bdbc4707a48e528946621722f64d0e9056ac6c0586677",
+    "src/v6_student_aft.py": "70ddcd0aa3d2e6c76450086abcab331328a66cd5da884acb543f727360673ae1",
+    "src/v6_rfl_adapter.py": "3499c04ae0877e06b54753103c838bd64f3d9267f720b7ebbd52d53a9faa0c53",
+    "protocols/v6/nested_design.txt": "4fdfb77ec26c1937fcc3fbf0d0e77ee826d5bd15ea7af0f035cbe6e1657c1fbb",
+    "data/processed/v6/episode_design.json": "c1844122a2f128cc1da84a0cb80a0d666d64a844ccc70fc4d7924c8440611148",
+    "literature/v6_ml/runner_mock_checks.py": "e24706240bab440cdba4432a5d2da00e659c2d7c24680b246b40ed521142085b",
+    "literature/v6_ml/selection_synthetic_checks.py": "94417d1da087f738bca5ac6a432fc4078ebe193afc1e9f9af572741a1dd14c87"
+  },
+  "actual_fatigue_model_fits": 0,
+  "actual_prepared_fatigue_episode_plans": 0,
+  "role": "Independent review of parent runner; author of GP and selection modules, whose mathematical/source review is separately independent in literature/v6_methods",
+  "checks": {
+    "nested_source_exclusion": "Every inner population/reference/planner training fold removes both outer and validation source families, including small/ineligible linked conditions. Outer fits remove the whole outer family. Training-only Cui family is retained.",
+    "cache_identity": "Cache directory binds freeze digest, sorted full family exclusions and exact ordered training CSV. Unordered pair reuse is valid in both validation directions.",
+    "reference_statistics": "GP raw mean coefficients, sigma and tau are read from the hierarchy fitted on that precise training fold; no target statistics. Student standardization/knots are fitted from training frame only.",
+    "score_aggregation": "Direct independent nested arithmetic confirms query mean then equal k0/k3, seed, condition within family, and 11-family mean. All expected episode keys and finite availability required.",
+    "candidate_selection": "146 unique candidates: GP66, Student48, control22, joint RFL10. Inner-only finite logscore and fixed 1e-6/ordinal tie rule. Missing inner episode disqualifies candidate for relevant outer direction.",
+    "common_episodes": "One per-task policy ledger is computed before iterating predictors; all aliases/candidates use identical queries and selected revealed support observations. Quantile API is covariate-only; outcomes enter separate scoring API.",
+    "numerical_eligibility": "Finite-quantile CDF values must have matching shape, be finite/in range and satisfy q10 discrepancy<=1e-3. NaN quantile/nonfinite outer score is explicit unavailable, with no alternative predictor selected.",
+    "numerical_evidence": "Inner target receipts retained in deterministic compressed sidecars and hashed before selection; outer distinct quantile/scoring/CDF-check receipts retain joint evidence-ratio quadrature diagnostics.",
+    "frozen_inner_decision": "Outer verifies selected score table and all inner CSV hashes, recomputes winning candidate under frozen rule, binds selected.json bytes into every shard and combine guard.",
+    "cost": "Primary1e6 support cap identifies recorded capped costs because all censor stops>=cap.1e7 sensitivity retains censor lower/upper intervals. Fixed-k has no unrecorded cost stopping.",
+    "design_scope": "37 eligible conditions/396 rows/12 source families.370 outer tasks,111 inner templates,66 pair-exclusion trainsets. Source families and working conditions do not certify physical builds."
+  },
+  "synthetic_tests": {
+    "status": "PASS",
+    "checks": {
+      "manifest_grid": {
+        "candidates": 146,
+        "counts": {
+          "gp": 66,
+          "student": 48,
+          "control": 22,
+          "joint_rfl": 10
+        },
+        "fit_calls": 0
+      },
+      "whole_family_and_cache_binding": {
+        "pair_excluded": true,
+        "train_only_family_retained": true,
+        "unordered_pair_reused": true,
+        "training_values_and_freeze_change_cache": true
+      },
+      "independent_inner_arithmetic": {
+        "pair_files": 330,
+        "outer_families": 12,
+        "candidates": 5,
+        "max_equal_family_score_error": 1.4210854715202004e-14,
+        "unavailable_candidate_outer_combinations": 1,
+        "k_seed_condition_family_weighting_verified": true,
+        "query_count_does_not_weight_families": true,
+        "unavailable_episode_disqualifies": true,
+        "tie_tolerance_ordinal_verified": true,
+        "outer_family_validation_scores_excluded": true
+      },
+      "outer_mock_orchestration": {
+        "quantile_calls": 12,
+        "query_outcomes_absent_from_quantile_api": true,
+        "score_uses_separate_truth_api": true,
+        "all_aliases_share_queries_supports": true,
+        "NaN_CDF_rejected": true,
+        "separate_quantile_scoring_CDF_receipts_retained": true,
+        "selection_bytes_bound_in_shard": true,
+        "no_actual_population_fit": true
+      },
+      "outer_evidence_guard": {
+        "modified_inner_csv_rejected_before_any_fit": true
+      }
+    },
+    "actual_fatigue_fits": 0,
+    "actual_fatigue_episode_plans": 0,
+    "scope": "generated families, manufactured mock log scores, real orchestration/aggregation only",
+    "runner_source_sha256": "23372c5714a742d2dcf411899bf03ae88725046363a7517d199658e529c49375",
+    "test_source_sha256": "e24706240bab440cdba4432a5d2da00e659c2d7c24680b246b40ed521142085b"
+  },
+  "covariate_only_secondary_subset": {
+    "primary_unchanged": true,
+    "rule": "pool_n>k and pool logstress span>=.05 decades",
+    "informative_tasks": {
+      "3": 328,
+      "5": 259,
+      "10": 10
+    },
+    "k3_families": 11
+  },
+  "resolved_findings": [
+    {
+      "issue": "Outer prefix k duplicate and combined selection policy duplicate keyword arguments",
+      "resolution": "Parent fixed before freeze; synthetic outer orchestration passes"
+    },
+    {
+      "issue": "Selected score table/selected alias bytes not bound into outer results",
+      "resolution": "Parent added score-table digest, winner-rule check and selected.json digest in shards"
+    },
+    {
+      "issue": "Inner target numeric receipts and separate outer scoring receipts omitted",
+      "resolution": "Parent added hashed compressed inner sidecars and separate outer stage receipts"
+    },
+    {
+      "issue": "NaN finite-quantile CDF could bypass discrepancy check",
+      "resolution": "Parent added shape/finiteness/range guards; independent NaN-CDF mock rejects it"
+    }
+  ],
+  "limitations": [
+    "No fatigue fits or real outcome comparisons performed by this audit. Final runtime/source freeze remains parent responsibility.",
+    "GP and Student unit-factor population objectives differ from legacy source-balanced composite controls; architecture or dimensionality mechanism is not isolated.",
+    "All historical outcomes were seen; nested separation is exploratory reused-data evaluation, not prospective confirmation.",
+    "Predictive q10 is not R90C90 and no change in actual specimen life is implied.",
+    "Outer stress monotonicity diagnostic is at observed query stress values, not a global proof.",
+    "Remaining nonlinear/joint quadrature numerical validation is separate from the runner orchestration audit."
+  ],
+  "prefit_refresh_note": "Reviewed new expected17model alias declarations/combine binding; runner mock rerun PASS. Shared-cost and analysis-universe changes independently reviewed separately."
+}

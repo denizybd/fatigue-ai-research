@@ -1,0 +1,60 @@
+{
+  "scope": "Synthetic narrow-scatter/broad-target-prior runtime stress check only",
+  "no_actual_fatigue_fits": true,
+  "algorithm": "global positive u-interval and v-node upper-bound pruning",
+  "code_sha256": "3499c04ae0877e06b54753103c838bd64f3d9267f720b7ebbd52d53a9faa0c53",
+  "settings": {
+    "sigma": 0.1,
+    "tauGamma": 0.03,
+    "lifePriorSD": 1.6,
+    "vPriorSD": 0.15,
+    "k": 3,
+    "nquery": 3
+  },
+  "score_seconds": 120.06534958299744,
+  "quantile_seconds": 20.088507083000877,
+  "score": [
+    -0.0459113724081357,
+    -7.244654311758616,
+    -2.9094750050812337
+  ],
+  "quantile": [
+    [
+      6.6091518570470935
+    ],
+    [
+      5.6135628009674585
+    ],
+    [
+      4.961030431215889
+    ]
+  ],
+  "max_log_score_difference_from_legacy": 9.992007221626409e-14,
+  "max_quantile_difference_from_legacy": 4.884981308350689e-14,
+  "prediction_receipt": {
+    "success": true,
+    "n_selected_support": 3,
+    "n_query": 3,
+    "k0_analytic_convolution": false,
+    "scalar_reduction": false,
+    "support_log_marginal": -1.067952794460819,
+    "v_nodes": 512,
+    "refinement": 1,
+    "v_radius": 1.2,
+    "tail_mass_bound_v": 5.761208355237293e-14,
+    "conditional_u_tail_bound_weighted": 4.718837028850691e-13,
+    "max_quantile_log10_resolution_difference": 8.79296635503124e-14,
+    "max_cdf_resolution_difference": 9.255096689031461e-14,
+    "max_finite_mass_resolution_difference": 2.2537527399890678e-14,
+    "evidence_resolution_difference": 1.021405182655144e-13,
+    "finite_infinite_classification_consistent": true,
+    "finite_infinite_classification_margin": 0.7823934144645204,
+    "finite_infinite_classification_resolution_error": 2.304483342094917e-13,
+    "posterior_u_mean": 0.0602112536223655,
+    "posterior_v_mean": -0.0601689730651007,
+    "query_outcomes_used_for_resolution": false,
+    "target_posterior_is_Laplace": false,
+    "population_parameters_uncertainty_integrated": false,
+    "quantile_is_R90C90": false
+  }
+}

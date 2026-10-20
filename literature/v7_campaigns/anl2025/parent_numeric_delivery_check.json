@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-20T21:30:57.934725+00:00",
+  "rows": 9,
+  "root_independent_numeric_table_match": true,
+  "author_build_join_rows": 3,
+  "named_powder_batch_rows": 3,
+  "both_build_and_powder_rows": 0,
+  "unique_rows_repeated2024": 5,
+  "unique_rows_absent2024table": 4,
+  "current_v6_rows_added": 0,
+  "no_new_independence_or_model_superiority_claim": true,
+  "files": [
+    {
+      "file": "ANL_9_kayit_ozet.csv",
+      "bytes": 895,
+      "sha256": "eff672f47211f0458bd4db095d109bdce75140622177444fc503982d141df9d2"
+    },
+    {
+      "file": "ANL_9_tam_koken_tablosu_v2.csv",
+      "bytes": 11718,
+      "sha256": "34bc053e074b62e49c8029257cf82e7a17cee938ad368e7a398d419f5098a1f4"
+    },
+    {
+      "file": "ANL_bagimsiz_kaynak_denetimi.json",
+      "bytes": 17075,
+      "sha256": "4f72fd51742eb62d7ff24855c44db551a0d6c33982765b4652da6021d932def3"
+    },
+    {
+      "file": "ANL_kaynak_ve_surum_kaydi.json",
+      "bytes": 2572,
+      "sha256": "bf9690487f71359d12e283f10f4f32d422b6584d24abbfbdfc35bc4a55391a29"
+    },
+    {
+      "file": "UQ2026_depo_kapsam_denetimi.json",
+      "bytes": 2155,
+      "sha256": "833f517b3ed7e250aa57bed54d281d4b26ba6fba3ae8c8a0abca7c23d06a15d2"
+    },
+    {
+      "file": "UQ2026_olculmus_omur_siniri.json",
+      "bytes": 9689,
+      "sha256": "76d772a85d0afb5407cc01ce0f1a3583d6f56316ebc85e63c4bd37ca00070570"
+    },
+    {
+      "file": "uc_numune_uretim_eslemesi.csv",
+      "bytes": 1252,
+      "sha256": "6d537363d972d5414c531e4366e153d8c6f070c607fbb0bdc0247a693b76159b"
+    },
+    {
+      "file": "verinin_anlami_ve_sinirlari.txt",
+      "bytes": 3362,
+      "sha256": "79fc56153d7cde294655105d710b22294c2fb34e9ef0278539a1fcc8d482205f"
+    }
+  ]
+}

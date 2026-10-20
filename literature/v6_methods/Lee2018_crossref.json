@@ -1,0 +1,483 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T10:30:14Z",
+      "timestamp": 1791369014817,
+      "version": "4.3.1"
+    },
+    "reference-count": 37,
+    "publisher": "Informa UK Limited",
+    "issue": "4",
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "the National Science Foundation",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "CNS-1565314"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CNS-1565314"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Technometrics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1080/00401706.2018.1437475",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          12
+        ]
+      ],
+      "date-time": "2018-02-12T16:23:53Z",
+      "timestamp": 1518452633000
+    },
+    "page": "472-483",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 21,
+    "title": [
+      "Sequential Bayesian Design for Accelerated Life Tests"
+    ],
+    "prefix": "10.1080",
+    "volume": "60",
+    "author": [
+      {
+        "given": "I-Chen",
+        "family": "Lee",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Statistics, National Cheng Kung University, Tainan, Taiwan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yili",
+        "family": "Hong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Statistics, Virginia Tech, Blacksburg, VA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sheng-Tsaing",
+        "family": "Tseng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Statistics, National Tsing Hua University, Hsinchu, Taiwan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tirthankar",
+        "family": "Dasgupta",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Statistics and Biostatistics, Rutgers University, Piscataway, NJ"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "cit0001",
+        "unstructured": "ASTM International (2010), \u201cE739-10 Standard Practice for Statistical Analysis of Linear or Linearized Stress-Life (SN) and Strain-Life (\u03b5-N) Fatigue Data,\u201d in Book of Standards, West Conshohocken, PA, USA: ASTM International."
+      },
+      {
+        "key": "cit0002",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/13-BA855"
+      },
+      {
+        "key": "cit0003",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/ss/1177009939"
+      },
+      {
+        "key": "cit0004",
+        "first-page": "421",
+        "volume": "5",
+        "author": "Chaudhuri P.",
+        "year": "1995",
+        "journal-title": "Statistica Sinica"
+      },
+      {
+        "key": "cit0005",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1962.10490020"
+      },
+      {
+        "key": "cit0006",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/016214507000001346"
+      },
+      {
+        "key": "cit0007",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1359-835X(03)00052-6"
+      },
+      {
+        "key": "cit0008",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00224065.2015.11918138"
+      },
+      {
+        "key": "cit0009",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/85.2.496"
+      },
+      {
+        "key": "cit0010",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00224065.2016.11918163"
+      },
+      {
+        "key": "cit0011",
+        "unstructured": "Lee, I.C., and Hong, Y. (2018), \u201cSeqBayesDesign: Sequential Bayesian Design,\u201d R package version 0.1.0."
+      },
+      {
+        "key": "cit0012",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2531634"
+      },
+      {
+        "key": "cit0013",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1984.10487941"
+      },
+      {
+        "key": "cit0014",
+        "volume-title": "Statistical Methods for Reliability Data",
+        "author": "Meeker W. Q.",
+        "year": "1998"
+      },
+      {
+        "key": "cit0015",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1977.10489577"
+      },
+      {
+        "key": "cit0016",
+        "volume-title": "How to Plan an Accelerated Life Test: Some Practical Guidelines",
+        "year": "1985"
+      },
+      {
+        "key": "cit0017",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TR.1975.5214922"
+      },
+      {
+        "key": "cit0018",
+        "volume-title": "SNL/MSU/DOE Composite Materials Fatigue Database, Version 25.0",
+        "year": "2016"
+      },
+      {
+        "key": "cit0019",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9780470316795"
+      },
+      {
+        "key": "cit0020",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1994.10485401"
+      },
+      {
+        "key": "cit0021",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.2016.1251495"
+      },
+      {
+        "key": "cit0022",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00224065.2014.11917957"
+      },
+      {
+        "key": "cit0023",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/004017003188618760"
+      },
+      {
+        "key": "cit0024",
+        "first-page": "284",
+        "volume": "35",
+        "author": "\u2014\u2014\u2014",
+        "year": "2004",
+        "journal-title": "IEEE Transactions on Reliability"
+      },
+      {
+        "key": "cit0025",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1520/JTE12692J"
+      },
+      {
+        "key": "cit0026",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1999.10485925"
+      },
+      {
+        "key": "cit0027",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4614-6363-4"
+      },
+      {
+        "key": "cit0028",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jspi.2008.04.025"
+      },
+      {
+        "key": "cit0029",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/TECH.2009.0001"
+      },
+      {
+        "key": "cit0030",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TR.2011.2170115"
+      },
+      {
+        "key": "cit0031",
+        "first-page": "335",
+        "year": "2013",
+        "journal-title": "Statistical Models and Methods for Reliability and Survival Analysis"
+      },
+      {
+        "key": "cit0032",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/asmb.2061"
+      },
+      {
+        "key": "cit0033",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/15-BA945"
+      },
+      {
+        "key": "cit0034",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/72.3.553"
+      },
+      {
+        "key": "cit0035",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s001840400334"
+      },
+      {
+        "key": "cit0036",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/004017005000000373"
+      },
+      {
+        "key": "cit0037",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.2013.866600"
+      }
+    ],
+    "container-title": [
+      "Technometrics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00401706.2018.1437475",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          9,
+          7
+        ]
+      ],
+      "date-time": "2020-09-07T01:19:56Z",
+      "timestamp": 1599441596000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/00401706.2018.1437475"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          6
+        ]
+      ]
+    },
+    "references-count": 37,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/00401706.2018.1437475"
+    ],
+    "URL": "https://doi.org/10.1080/00401706.2018.1437475",
+    "relation": {},
+    "ISSN": [
+      "0040-1706",
+      "1537-2723"
+    ],
+    "issn-type": [
+      {
+        "value": "0040-1706",
+        "type": "print"
+      },
+      {
+        "value": "1537-2723",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=utch20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=utch20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2017-02-01",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2018-01-01",
+        "order": 1,
+        "name": "revised",
+        "label": "Revised",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2018-06-06",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

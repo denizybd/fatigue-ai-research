@@ -1,0 +1,639 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T11:58:37Z",
+      "timestamp": 1790855917955,
+      "version": "4.1.0"
+    },
+    "reference-count": 64,
+    "publisher": "Wiley",
+    "issue": "12",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              9,
+              29
+            ]
+          ],
+          "date-time": "2023-09-29T00:00:00Z",
+          "timestamp": 1695945600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Fatigue Fract Eng Mat Struct"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>S\u2010N curve parameter determination is a time\u2010 and cost\u2010intensive procedure. A standardized method for simultaneously determining all S\u2010N curve parameters with minimum testing effort is still missing. The Bayesian optimal experimental design (BOED) approach can reduce testing effort and accelerates uncertainty reduction during fatigue testing for S\u2010N curve parameters. The concept is applicable to all S\u2010N curve models and is exemplary illustrated for a bilinear S\u2010N curve model. We demonstrate the fatigue testing workflow for the bilinear S\u2010N curve in detail while discussing steps and challenges when generalizing to other S\u2010N curve models. Applying the BOED to the bilinear S\u2010N curve models, minor errors and uncertainties for all S\u2010N curve parameters are obtained after only 10 experiments for data scatter values below 1.1. For such, the relative error in fatigue limit estimation was less than 1% after five tests. When S\u2010N data scatter higher than 1.2 is concerned, 17 tests were required for robust analysis. The BOED methodology should be applied to other S\u2010N curve models in the future. The high computational effort and the approximation of the posterior distribution with a normal distribution are the limitations of the presented BOED approach.</jats:p>",
+    "DOI": "10.1111/ffe.14156",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2023-09-30T03:37:06Z",
+      "timestamp": 1696045026000
+    },
+    "page": "4783-4800",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": [
+      "Reduction of testing effort for fatigue tests: Application of Bayesian optimal experimental design"
+    ],
+    "prefix": "10.1111",
+    "volume": "46",
+    "author": [
+      {
+        "given": "Christian",
+        "family": "Frie",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "CR Robert Bosch GmbH  Renningen Germany"
+          },
+          {
+            "name": "Laboratory for Micro\u2010 and Materials Mechanics University of Freiburg  Freiburg im Breisgau Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anton",
+        "family": "Kolyshkin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "CR Robert Bosch GmbH  Renningen Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sven",
+        "family": "Mordeja",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Airbus Defence and Space GmbH  Manching Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0916-5990",
+        "authenticated-orcid": false,
+        "given": "Ali",
+        "family": "Riza Durmaz",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fraunhofer Institute for Mechanics of Materials  Freiburg im Breisgau Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chris",
+        "family": "Eberl",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratory for Micro\u2010 and Materials Mechanics University of Freiburg  Freiburg im Breisgau Germany"
+          },
+          {
+            "name": "Fraunhofer Institute for Mechanics of Materials  Freiburg im Breisgau Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          29
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_10_2_1",
+        "unstructured": "German Institute\u00a0for Standardization DIN.Din 50100:2016\u201012; load controlled fatigue testing\u2014execution and evaluation of cyclic tests at constant load amplitudes on metallic specimens and components;2016."
+      },
+      {
+        "key": "e_1_2_10_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11340-021-00758-x"
+      },
+      {
+        "key": "e_1_2_10_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1460-2695.1999.00205.x"
+      },
+      {
+        "key": "e_1_2_10_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11340-015-0027-z"
+      },
+      {
+        "key": "e_1_2_10_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1520/JTE20190593"
+      },
+      {
+        "key": "e_1_2_10_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1468-6996/12/5/054202"
+      },
+      {
+        "key": "e_1_2_10_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0309324720975284"
+      },
+      {
+        "key": "e_1_2_10_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0142-1123(01)00107-4"
+      },
+      {
+        "key": "e_1_2_10_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/adem.200900344"
+      },
+      {
+        "key": "e_1_2_10_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.abn0392"
+      },
+      {
+        "key": "e_1_2_10_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2014.02.020"
+      },
+      {
+        "key": "e_1_2_10_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14686996.2019.1680574"
+      },
+      {
+        "key": "e_1_2_10_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1201/b16018"
+      },
+      {
+        "key": "e_1_2_10_15_1",
+        "volume-title": "The Bayesian Choice: From Decision\u2010Theoretic Foundations to Computational Implementation",
+        "author": "Robert CP",
+        "year": "2007"
+      },
+      {
+        "key": "e_1_2_10_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0167-4730(84)90005-5"
+      },
+      {
+        "key": "e_1_2_10_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.strusafe.2009.08.001"
+      },
+      {
+        "key": "e_1_2_10_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2017.08.024"
+      },
+      {
+        "key": "e_1_2_10_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2018.07.027"
+      },
+      {
+        "key": "e_1_2_10_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2018.04.017"
+      },
+      {
+        "key": "e_1_2_10_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/2193-9772-3-8"
+      },
+      {
+        "key": "e_1_2_10_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ffe.13640"
+      },
+      {
+        "key": "e_1_2_10_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jmst.2021.02.021"
+      },
+      {
+        "key": "e_1_2_10_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0045561"
+      },
+      {
+        "key": "e_1_2_10_25_1",
+        "unstructured": "KolyshkinA FrieC FroschmeierT.Datenbasierte Lebensdauervorhersage. 48 Tagung des DVM\u2010Arbeitskreises Betriebsfestigkeit.2022.https://dvm-wissen.de/gb/betriebsfestigkeit-2022/240-BF-2022-017.html"
+      },
+      {
+        "key": "e_1_2_10_26_1",
+        "unstructured": "WeichertD KisterA HoubenS ErnisG WrobelS.Robustness in fatigue strength estimation. arXiv preprint arXiv:221201136;2022."
+      },
+      {
+        "key": "e_1_2_10_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11431-020-1599-5"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_10_28_1",
+        "first-page": "1625",
+        "article-title": "Confidence intervals for random forests: the jackknife and the infinitesimal jackknife",
+        "volume": "15",
+        "author": "Wager S",
+        "year": "2014",
+        "journal-title": "J Machine Learn Res"
+      },
+      {
+        "key": "e_1_2_10_29_1",
+        "first-page": "733",
+        "article-title": "Posterior predictive assessment of model fitness via realized discrepancies",
+        "volume": "6",
+        "author": "Gelman A",
+        "year": "1996",
+        "journal-title": "Stat Sin"
+      },
+      {
+        "key": "e_1_2_10_30_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "EvansM MoshonovH.Checking for prior\u2010data conflict;2006.",
+        "DOI": "10.1214/06-BA129"
+      },
+      {
+        "key": "e_1_2_10_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02664760802192981"
+      },
+      {
+        "key": "e_1_2_10_32_1",
+        "unstructured": "BasquinOH.The exponential law of endurance tests. In: Proc Am Soc Test Mater Vol.\u00a010;1910:625\u2010630."
+      },
+      {
+        "key": "e_1_2_10_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0142-1123(98)00048-6"
+      },
+      {
+        "key": "e_1_2_10_34_1",
+        "unstructured": "K\u00f6derM.Schwingfestigkeitsnachweis f\u00fcr innendruckbelastete common\u2010rail\u2010bauteile aus 100cr6 unter ber\u00fccksichtigung hochzyklischer betriebsbeanspruchungen;2014."
+      },
+      {
+        "key": "e_1_2_10_35_1",
+        "first-page": "339",
+        "article-title": "Die lebensdauer von kugellagern",
+        "volume": "68",
+        "author": "Palmgren A",
+        "year": "1924",
+        "journal-title": "Verfahrenstechinik"
+      },
+      {
+        "key": "e_1_2_10_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1999.10485925"
+      },
+      {
+        "key": "e_1_2_10_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1098/rspa.1914.0066"
+      },
+      {
+        "key": "e_1_2_10_38_1",
+        "volume-title": "A Unified Statistical Methodology for Modeling Fatigue Damage",
+        "author": "Castillo E",
+        "year": "2009"
+      },
+      {
+        "key": "e_1_2_10_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cma.2016.02.013"
+      },
+      {
+        "key": "e_1_2_10_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0142-1123(97)00037-6"
+      },
+      {
+        "key": "e_1_2_10_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0142-1123(79)90012-4"
+      },
+      {
+        "key": "e_1_2_10_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/mt-2020-0116"
+      },
+      {
+        "key": "e_1_2_10_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/insr.12107"
+      },
+      {
+        "key": "e_1_2_10_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acssynbio.2c00131"
+      },
+      {
+        "key": "e_1_2_10_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1467-9876.00239"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_10_46_1",
+        "first-page": "973",
+        "article-title": "Pyro: deep universal probabilistic programming",
+        "volume": "20",
+        "author": "Bingham E",
+        "year": "2019",
+        "journal-title": "J Machine Learn Res"
+      },
+      {
+        "key": "e_1_2_10_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3758/s13428\u2010020\u201001386\u20104"
+      },
+      {
+        "key": "e_1_2_10_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/1061860032012"
+      },
+      {
+        "key": "e_1_2_10_49_1",
+        "unstructured": "MagazzeniCM RoseR GearhartC GongJ WilkinsonAJ.Bayesian optimised collection strategies for fatigue strength testing. arXiv preprint arXiv:210702685;2021."
+      },
+      {
+        "key": "e_1_2_10_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcp.2012.08.013"
+      },
+      {
+        "key": "e_1_2_10_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2019.00122"
+      },
+      {
+        "key": "e_1_2_10_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.23998/rm.64924"
+      },
+      {
+        "key": "e_1_2_10_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1460-2695.1988.tb01216.x"
+      },
+      {
+        "key": "e_1_2_10_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csda.2015.06.007"
+      },
+      {
+        "key": "e_1_2_10_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511806575"
+      },
+      {
+        "key": "e_1_2_10_56_1",
+        "unstructured": "En 1993\u20101\u20109: Eurocode 3: Design of steel structures\u2014part 1\u20109 fatigue;2005."
+      },
+      {
+        "key": "e_1_2_10_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-23757-2"
+      },
+      {
+        "key": "e_1_2_10_58_1",
+        "volume-title": "Guideline for the Certification of Offshore Wind Turbines",
+        "author": "Lloyd G",
+        "year": "2010"
+      },
+      {
+        "key": "e_1_2_10_59_1",
+        "volume-title": "FKM guideline\u2014analytical strength assessment of components",
+        "author": "Rennert R",
+        "year": "2012"
+      },
+      {
+        "key": "e_1_2_10_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4271/2013-01-2440"
+      },
+      {
+        "key": "e_1_2_10_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijfatigue.2014.01.006"
+      },
+      {
+        "key": "e_1_2_10_62_1",
+        "unstructured": "YoonJY NamHO HwangIS TaeHL.Probabilistic modeling of the fatigue crack growth rate for ni\u2010base alloy x\u2010750;2012."
+      },
+      {
+        "key": "e_1_2_10_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ma12193239"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_10_64_1",
+        "first-page": "1593",
+        "article-title": "The No\u2010U\u2010Turn sampler: adaptively setting path lengths in hamiltonian Monte Carlo",
+        "volume": "15",
+        "author": "Hoffman MD",
+        "year": "2014",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "e_1_2_10_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1995.10476636"
+      }
+    ],
+    "container-title": [
+      "Fatigue &amp; Fracture of Engineering Materials &amp; Structures"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ffe.14156",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2023-11-07T01:13:46Z",
+      "timestamp": 1699319626000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1111/ffe.14156"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          29
+        ]
+      ]
+    },
+    "references-count": 64,
+    "journal-issue": {
+      "issue": "12",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1111/ffe.14156"
+    ],
+    "URL": "https://doi.org/10.1111/ffe.14156",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "8756-758X",
+      "1460-2695"
+    ],
+    "issn-type": [
+      {
+        "value": "8756-758X",
+        "type": "print"
+      },
+      {
+        "value": "1460-2695",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          29
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2023-07-31",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2023-09-11",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2023-09-29",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Magazzeni2022_arxiv2107.02685.pdf",
+    "url": "https://arxiv.org/pdf/2107.02685",
+    "status": 200,
+    "bytes": 2313705,
+    "pdf": true,
+    "pages": 27,
+    "sha256": "6053d04b294f955154073f8eb8292dddd640dd6c018c4fe143e2693090842c07"
+  },
+  {
+    "name": "BarrettCoolen2014_arxiv1312.1591.pdf",
+    "url": "https://arxiv.org/pdf/1312.1591",
+    "status": 200,
+    "bytes": 752302,
+    "pdf": true,
+    "pages": 36,
+    "sha256": "e43d54e7b4a9c65efef4c008fcb4bf3ca5629c4a64c3d7ce621a2619c7e291b2"
+  },
+  {
+    "name": "Lee2018_sequential_ALT_authorcopy.pdf",
+    "url": "https://varsys.cs.vt.edu/wp-content/uploads/sites/35/2018/05/Sequential-Bayesian-Design-for-Accelerated-Life-Tests-2.pdf",
+    "status": 404,
+    "bytes": 318,
+    "pdf": false
+  },
+  {
+    "name": "Rindt2022_censored_scoring.pdf",
+    "url": "https://proceedings.mlr.press/v151/rindt22a/rindt22a.pdf",
+    "status": 200,
+    "bytes": 972848,
+    "pdf": true,
+    "pages": 16,
+    "sha256": "80a889539f618791342499c083d05ec9efa8ab6860de796f9574cff934bdc50c"
+  },
+  {
+    "name": "RiihimakiVehtari2010_monotoneGP.pdf",
+    "url": "https://proceedings.mlr.press/v9/riihimaki10a/riihimaki10a.pdf",
+    "status": 200,
+    "bytes": 451437,
+    "pdf": true,
+    "pages": 8,
+    "sha256": "0221482450da7b3a033f34941c7991a78a433beaa97b86d8df4ab4c3604bf260"
+  }
+]

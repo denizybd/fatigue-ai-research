@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "Fixed synthetic parameter fixtures only; no campaign observations read or fitted",
+  "source_code_sha256": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "utc": "2026-10-20T20:58:06.975865+00:00",
+  "cases": [
+    {
+      "case": "ordinary",
+      "n_query": 3,
+      "score_seconds": 0.16616500000236556,
+      "quantile_seconds": 0.45177391700053704,
+      "fallback_rows": [],
+      "path": "literature/v6_methods/rfl/final_clean_ordinary_q3.json",
+      "sha256": "ea8dc793a135f592fe96d61c4148530abbf7f42ff9c72a951c4f11216b2bf7ca"
+    },
+    {
+      "case": "ordinary",
+      "n_query": 10,
+      "score_seconds": 0.2327217499987455,
+      "quantile_seconds": 1.5197357079996436,
+      "fallback_rows": [],
+      "path": "literature/v6_methods/rfl/final_clean_ordinary_q10.json",
+      "sha256": "192ba6683eebc7ec060fe8ecef68b0411184306e71893db24da4039e9f204c6e"
+    },
+    {
+      "case": "broad",
+      "n_query": 3,
+      "score_seconds": 0.6446298749979178,
+      "quantile_seconds": 2.4645769580019987,
+      "fallback_rows": [],
+      "path": "literature/v6_methods/rfl/final_clean_broad_q3.json",
+      "sha256": "2523e668961788bfedde7bd455bd77d81fae913df5993e729b5062a9df591eae"
+    },
+    {
+      "case": "broad",
+      "n_query": 10,
+      "score_seconds": 3.708468417000404,
+      "quantile_seconds": 18.38077450000128,
+      "fallback_rows": [],
+      "path": "literature/v6_methods/rfl/final_clean_broad_q10.json",
+      "sha256": "f165eed7a5c46558567a99649005cfa98cf6d62763f247ed220f3c71c8ddd418"
+    }
+  ]
+}

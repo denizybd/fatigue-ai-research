@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "generated_end_to_end_cases": 4,
+  "checks": {
+    "all_classes": {
+      "passing_classes": [
+        "hierarchical_curved",
+        "local_slope",
+        "rfl",
+        "student",
+        "gp"
+      ],
+      "reversed_classes": [],
+      "criterion": true
+    },
+    "friendly_members_only": {
+      "passing_classes": [
+        "gp"
+      ],
+      "reversed_classes": [],
+      "criterion": false
+    },
+    "curve_reversal": {
+      "passing_classes": [
+        "local_slope",
+        "rfl",
+        "student",
+        "gp"
+      ],
+      "reversed_classes": [
+        "hierarchical_curved"
+      ],
+      "criterion": false
+    },
+    "missing_GP_family": {
+      "passing_classes": [
+        "hierarchical_curved",
+        "local_slope",
+        "rfl",
+        "student"
+      ],
+      "reversed_classes": [],
+      "criterion": true
+    },
+    "structural_missing_family_rejected": true,
+    "same_budget_subset_pair_rejected": true
+  },
+  "actual_fatigue_fits": 0,
+  "scope": "Fabricated predictions/ledgers and patched synthetic freeze/design only; no model fits or fatigue outcomes",
+  "analysis_source_sha256": "7501c7b11a2a159b9a7c118f3ef13ef60053e4076155c30c5aa7cfb29cb73a78",
+  "test_source_sha256": "b1bf33e4f962df60430f20f2276507db3ae8f1695c3e54544f151caf1be0ec15"
+}

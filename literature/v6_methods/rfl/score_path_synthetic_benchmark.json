@@ -1,0 +1,25 @@
+{
+  "no_actual_fatigue_fits": true,
+  "code_sha256": "fa037b80a2c5b0a9ca0324c5881795b35d24586042193c4ae5fd9bc4e44f8b5b",
+  "cases": [
+    {
+      "n_query": 3,
+      "evidence_ratio_seconds": 0.8024083339987556,
+      "posterior_covariate_resolution_seconds": 0.732752416999574,
+      "max_log_score_difference": 1.7718404521360753e-10,
+      "query_numerator_integrals_cached": false,
+      "support_cache_entries": 1,
+      "note": "Synthetic fixed RFL parameters and generated supports/query; production evidence ratio chosen for per-numerator relative tail resolution, not speed or outcome utility."
+    },
+    {
+      "n_query": 10,
+      "evidence_ratio_seconds": 2.303103124999325,
+      "posterior_covariate_resolution_seconds": 2.026631291999365,
+      "max_log_score_difference": 4.871605341350005e-10,
+      "query_numerator_integrals_cached": false,
+      "support_cache_entries": 1,
+      "note": "Synthetic fixed RFL parameters and generated supports/query; production evidence ratio chosen for per-numerator relative tail resolution, not speed or outcome utility."
+    }
+  ],
+  "production_choice": "evidence_ratio"
+}

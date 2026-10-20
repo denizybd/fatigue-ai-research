@@ -1,0 +1,27 @@
+{
+  "status": "PASS_source_trace_preservation_not_cohort_admission",
+  "points": 330,
+  "source_file_sha256": "e7bc33e03c16ce3b89156e89bd9814a3e25234e107923d4de0c813f8dbc31a2b",
+  "source_doi": "10.17632/9xpx3wt82r.1",
+  "CCBY4_dataset": true,
+  "actual_specimen_IDs": 0,
+  "actual_build_IDs": 0,
+  "new_life_records": 0,
+  "cycles_monotonic": true,
+  "first_cycle": 1006,
+  "last_cycle": 329538,
+  "no_last_row_as_failure_inference": true,
+  "no_join_to_2025_table14": true,
+  "visible_sheets": [
+    "Sheet1"
+  ],
+  "hidden_sheets": [],
+  "defined_names": [],
+  "source_range": "Sheet1!A2:C331",
+  "other_format_only_columns": "D:H",
+  "R_script_executed": false,
+  "model_fits": 0,
+  "derivative_preprint_pages": 21,
+  "derivative_four_blocks_are_not_mapped_to_individual_coupons": true,
+  "derivative_postfracture_defect_is_not_free_pretest_covariate": true
+}

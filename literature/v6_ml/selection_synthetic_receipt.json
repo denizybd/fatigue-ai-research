@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "selector_boundary": {
+      "calls_checked": 40,
+      "only_covariates_passed": true,
+      "support_contains_previous_selected_reveals_only": true
+    },
+    "reveal_cost_prefixes": {
+      "prefixes_checked": 24,
+      "primary_cap_exact": true,
+      "sensitivity_preserves_censor_cost_intervals": true,
+      "source_endpoints_beyond_horizon_absent_from_supports": true
+    },
+    "query_outcome_isolation": {
+      "all_policies_both_caps_unchanged": true
+    },
+    "unselected_future_outcome_isolation": {
+      "next_choice_checks": 40,
+      "all_pass": true
+    },
+    "whole_family_lineage_and_budgets": {
+      "inner_pair_exclusion_accepted": true,
+      "partial_family_training_rejected": true,
+      "target_family_training_rejected": true,
+      "wrong_declared_exclusion_rejected": true,
+      "missing_active_planner_rejected": true,
+      "unsupported_cap_rejected": true,
+      "unrecorded_support_budget_rejected": true
+    },
+    "pool_exhaustion": {
+      "all_policy_support_sets_equal_when_entire_pool_selected": true,
+      "explicitly_flagged": true,
+      "no_invented_selection_advantage": true
+    }
+  },
+  "actual_fatigue_fits": 0,
+  "actual_prepared_episode_plans": 0,
+  "scope": "generated observations and fixed synthetic Fisher-planner parameters only",
+  "source_sha256": "5a8e65049fc4576787a19fadbcb44bacb7b5f279e8e1ce83f427f3c751511d73"
+}

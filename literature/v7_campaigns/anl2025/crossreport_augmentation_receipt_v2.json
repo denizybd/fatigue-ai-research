@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-20T21:25:49.262874+00:00",
+  "original_source2025_only_csv": "data/external_v7/anl2025/table4_reported9.csv",
+  "original_source2025_only_sha256": "4f65e6237a44a8613ad58c41b016b7e41fa9d67f873a4ffc2f76db6d0f57b184",
+  "augmented_csv": "data/external_v7/anl2025/crossreport_augmented9_v2.csv",
+  "augmented_csv_sha256": "34bc053e074b62e49c8029257cf82e7a17cee938ad368e7a398d419f5098a1f4",
+  "source2025_only_receipt_preserved": true,
+  "candidate_upgrades": 0,
+  "author_build_id": "R745577",
+  "independent_visual_audit": "PASS by /root/v7_source_audit; source audit artifact recorded separately",
+  "original2025_only_interpretation_refinement": "air summary prescribed wording in original source-only CSV should be read as reported2025 values;2024 calls these measured close to target; augmentedview retains both prescribed2023 and reported2024/2025 amplitudes",
+  "crossreport_exact_repeat_rows2024_2025": 5,
+  "2025_rows_absent2024_life_table": 4,
+  "new_independent_campaigns_claimed": 0,
+  "additional_RT_force_CA_rows": 0,
+  "sources": [
+    {
+      "url": "https://www.osti.gov/servlets/purl/1922636",
+      "retrieved_utc": "2026-10-20T21:22:15.588943+00:00",
+      "status": 200,
+      "final_url": "https://www.osti.gov/servlets/purl/1922636",
+      "bytes": 2056860,
+      "sha256": "79701bab7248b1b61085d1e7c986452ac305b34b26fb18aeb9b5d6776c9d7e08",
+      "pdf_magic": true,
+      "pages": 29
+    },
+    {
+      "url": "https://lwrs.inl.gov/content/uploads/11/2024/10/TestingAdditivelyManufactured316L.pdf",
+      "retrieved_utc": "2026-10-20T21:21:57.129892+00:00",
+      "status": 200,
+      "final_url": "https://lwrs.inl.gov/content/uploads/11/2024/10/TestingAdditivelyManufactured316L.pdf",
+      "bytes": 4755899,
+      "sha256": "6d6398be7a18fc2cbd8954ef1b0fa9e758d3067a1b979770d73282d335925422",
+      "pdf_magic": true,
+      "pages": 49
+    },
+    {
+      "url": "https://lwrs.inl.gov/content/uploads/11/2026/05/M3LW-25OR0402043.pdf",
+      "retrieved_utc": "2026-10-20T21:06:40.672716+00:00",
+      "status": 200,
+      "final_url": "https://lwrs.inl.gov/content/uploads/11/2026/05/M3LW-25OR0402043.pdf",
+      "bytes": 3037824,
+      "sha256": "36510dc044f78a6673f7700159a84f52e55021ec19e7dc6272f74afde89b4d59",
+      "pdf_magic": true,
+      "pages": 47
+    }
+  ],
+  "augmentation_version": 2,
+  "verified_build_joins": 3,
+  "water_build_joins": 0,
+  "source2024_duplicate_table2": "PDF28 printed14 fatigue target table exists despiteTable2duplicatechemistrylabel; no pertestIDs;prescribedtarget explainsclosemeasured"
+}

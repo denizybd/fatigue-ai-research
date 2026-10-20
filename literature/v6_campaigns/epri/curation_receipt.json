@@ -1,0 +1,37 @@
+{
+  "status": "PASS_factual_transcription_not_model_admission",
+  "source_url": "https://restservice.epri.com/publicdownload/000000003002018273/0/Product",
+  "source_sha256": "faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a",
+  "pdf_pages": 148,
+  "exact_numeric_rows_against_independent_text_parser": true,
+  "rows": 14,
+  "RT20C": 10,
+  "elevated300C": 4,
+  "reported_events": 14,
+  "distinct_author_sample_ids": 14,
+  "distinct_named_author_build_ids": 0,
+  "named_powder_lots": [
+    "55999"
+  ],
+  "source_supported_component_groups": 1,
+  "component_key_is_curator_label": true,
+  "strain_unit_conversion": "percent/100",
+  "life_unit_conversion": "none_cycles_header",
+  "no_stress_reconstruction": true,
+  "primary_force_CA_eligible_rows": 0,
+  "current_model_fit_eligible_rows": 0,
+  "missing_method_fields": [
+    "load_or_strain_ratio",
+    "frequency",
+    "waveform",
+    "control_feedback",
+    "failure_criterion",
+    "first_exposure_history",
+    "per_sample_extraction",
+    "author_build_serial",
+    "full_program_censoring"
+  ],
+  "no_model_fits": true,
+  "no_correspondence": true,
+  "no_publication": true
+}

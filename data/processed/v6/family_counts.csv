@@ -1,0 +1,14 @@
+group_id,rows,conditions,eligible_for_primary_outer
+10.1002/adem.202200751,6,1,True
+10.1007/s40964-021-00164-8,52,4,True
+10.1016/j.ijfatigue.2022.107025,26,4,True
+10.1016/j.jmst.2019.08.047,30,2,True
+10.1016/j.msea.2020.140660,49,4,True
+10.1108/13552541311302932,36,3,True
+10.1111/ffe.13077,14,1,True
+10.3390/ma12244203,56,7,True
+10.3390/ma13153293,9,1,True
+10.3390/ma15186278,18,2,True
+cui_linked_campaign,13,3,False
+v4_elangeswaran_linked_experiments,38,4,True
+v4_zhang_linked_original_experiments,94,12,True

@@ -1,0 +1,9 @@
+# Strong one-plate source statement; no individual fatigue lives in the raw workbook
+
+The official Chalmers16-page full text, DOI10.1007/s40964-025-01482-x, describes60 nominal specimens,15 per treatment group, produced simultaneously on one SLM125HL build plate. Section2.4.3 reports ISO1099:2017, R=.1,10Hz, room-temperature axial pulsating stress, amplitudes247.5/202.5/157.5MPa,5 per level. It explicitly excludes the as-built U group at202.5MPa because premature alignment failures left too few valid observations. The original60 must therefore not be treated as60 published uncensored life records. No actual author fatigue specimen IDs or individual numeric life table were obtained. Figure12 is a group box/range/mean presentation; group summaries have not been expanded into fictitious individual tests.
+
+The public CC BY4.0 Mendeley workbook DOI10.17632/x9z34sgnyk.1 contains31 residual-stress depth-profile points,4 treatment summaries, and4 roughness summaries. It contains **zero fatigue life rows**. The3 profile column pairs have no condition labels; no U/A/B/B+D assignment is inferred from column order. These treatment labels are group labels despite the worksheet's specimen header. One exact duplicate profile coordinate is preserved.
+
+The workbook reports B material removal as1.5mm, while article Section3.1 reports approximately0.16mm. Both facts are recorded without correcting the workbook. Some roughness values are rounded or bounded summaries; raw cell strings are preserved. No surface/residual-stress point is represented as an S–N observation or connected to an individual fatigue life.
+
+This source is useful public evidence of one-build RT axial experimental design, but lacks the individual sample→life crosswalk required for the identity primary panel. Its raw packet contributes39 ancillary source rows, not39 or60 new fatigue tests. All current model-fit flags are false; no fitting occurred.

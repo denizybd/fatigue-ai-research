@@ -1,0 +1,17 @@
+{
+  "url": "https://data.mendeley.com/public-api/datasets/x9z34sgnyk/files?folder_id=root&version=1&$start=0&$limit=1000",
+  "retrieved_utc": "2026-10-20T20:30:09.567041+00:00",
+  "status": 200,
+  "final_url": "https://data.mendeley.com/public-api/datasets/x9z34sgnyk/files?folder_id=root&version=1&$start=0&$limit=1000",
+  "bytes": 763,
+  "sha256": "d583a3e5ad179167201b9bf7469764d4405e27dcabe11c54e274466f678b2879",
+  "path": "literature/v6_campaigns/manchili2025/files.json",
+  "pdf_magic": false,
+  "files": [
+    {
+      "name": "Data Set_RS_SR.xlsx",
+      "size": 10823,
+      "id": "cd98aae6-77d9-4620-b6a3-14733f36b2f4"
+    }
+  ]
+}

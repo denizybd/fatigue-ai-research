@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-20T21:05:01.820930+00:00",
+  "status": "sealed before first actual phase6 fatigue population fit",
+  "historical_outcomes_already_seen": true,
+  "analysis_is_exploratory": true,
+  "outer_source_families": 12,
+  "inner_pair_trainsets": 66,
+  "candidate_count": 146,
+  "phase6_actual_model_fits_at_seal": 0,
+  "sha256": {
+    "src/v6_run.py": "23372c5714a742d2dcf411899bf03ae88725046363a7517d199658e529c49375",
+    "src/v6_dispatch.py": "7772305d4473b4938aeacbff00b02cd6cf6b7070a54c6f9425f6e523edcc2196",
+    "src/v6_pipeline.py": "553a78fde402b8a75b0b0222b377eb4cc21f63f243957510baafb11c0d4aa562",
+    "src/v6_freeze.py": "38d305dcc988ca97e0161c62ee621142a9171f99c77b7046cc2c8624cf8659fd",
+    "run_v6.sh": "941f9c546c6657c10172850f2fd039ad0ae6c174cfa0eb4952ec754d2471d568",
+    "src/v6_controls.py": "9e864712d49a0893535bdbc4707a48e528946621722f64d0e9056ac6c0586677",
+    "src/v6_selection.py": "5a8e65049fc4576787a19fadbcb44bacb7b5f279e8e1ce83f427f3c751511d73",
+    "src/v6_gp.py": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+    "src/v6_metrics.py": "519fe6026a730361c0391e4f09b9a000c9af7be815251da79c05d9d279787f6d",
+    "src/v6_analyze.py": "7501c7b11a2a159b9a7c118f3ef13ef60053e4076155c30c5aa7cfb29cb73a78",
+    "src/v6_student_aft.py": "70ddcd0aa3d2e6c76450086abcab331328a66cd5da884acb543f727360673ae1",
+    "src/v6_rfl_adapter.py": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+    "src/v6_prepare.py": "7bce1dd1f8d826ad451570636c20260cd464cd507b27dbb3fcffa6858bad3891",
+    "src/v2_models.py": "59fc24666208987d7d1e178357481b6dd8ddb515e35c3f1dbaa01d07e7ff4224",
+    "src/v2_curved_models.py": "2cba33304812dd0931566d9bb02d268dbee4f4c486eaea0b6fdaf76c8dffe377",
+    "src/v3_design.py": "dc6c2c625c1bf98dc5ff82ea5154b76f658ab89d0ce02b57de1ae6b12b0879db",
+    "src/v3_rfl.py": "ccc14f02cb88f67e37ea0a0481397f04721e0c37758a43f6e13bbe220e764ae2",
+    "protocols/v6/nested_design.txt": "4fdfb77ec26c1937fcc3fbf0d0e77ee826d5bd15ea7af0f035cbe6e1657c1fbb",
+    "protocols/v6/grid.json": "e42024ed862d98ad64257e89c94dcb377caabe8cb525e339859f65326d8410ca",
+    "data/processed/v4/controlled_expansion/expanded441.csv": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3",
+    "data/processed/v6/episode_design.json": "c1844122a2f128cc1da84a0cb80a0d666d64a844ccc70fc4d7924c8440611148"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1"
+    },
+    "execution_threads": "OPENBLAS/VECLIB/OMP/MKL=1 in run_v6.sh"
+  },
+  "authority": "public-source reading and reversible local computation only; no correspondence/publication",
+  "completion": "seal is permission to execute declared comparisons, not proof of scientific success"
+}

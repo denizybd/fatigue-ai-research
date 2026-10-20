@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-10-20T20:24:42.911570+00:00",
+  "status": "PASS",
+  "independent_reader": "v3_campaign_raw; GP authored by another agent",
+  "source": "src/v6_gp.py",
+  "source_sha256": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+  "checks": [
+    {
+      "name": "exact66_unique_covariance_noise_candidates",
+      "status": "PASS",
+      "candidates": 66,
+      "structured": 64,
+      "anchors": 2,
+      "inert_length_duplicates_removed": true,
+      "all_probe_covariances_positive_definite": true
+    },
+    {
+      "name": "censored_normal_tail_score_curvature_vs_independent_integrals",
+      "status": "PASS",
+      "z_max": 10000,
+      "max_absolute_curvature_error": 4.440892098500626e-16
+    },
+    {
+      "name": "selected_support_joint_gaussian_matches_exact_conditioning_and_evidence",
+      "status": "PASS",
+      "max_mean_error": 7.993605777301127e-15,
+      "max_variance_error": 1.1102230246251565e-16,
+      "log_evidence_error": 4.440892098500626e-16
+    },
+    {
+      "name": "censored_joint_mode_and_laplace_variance_independently_verified",
+      "status": "PASS",
+      "max_mode_error": 2.339829041630992e-08,
+      "max_variance_error": 4.479969201165446e-09,
+      "approximation_is_laplace_not_exact_censored_posterior": true
+    },
+    {
+      "name": "zero_covariance_anchor_exact_mean_and_noise",
+      "status": "PASS",
+      "numerical_jitter_does_not_create_cross_signal": true
+    },
+    {
+      "name": "query_outcomes_isolated_selected_support_only_fixed_hyperparameters",
+      "status": "PASS",
+      "support_order_invariant": true,
+      "changed_support_endpoint_changes_prediction": true,
+      "kernel_noise_and_mean_not_refitted_from_support": true
+    },
+    {
+      "name": "common_quantile_CDF_logscore_APIs_use_observed_density_or_survival",
+      "status": "PASS"
+    },
+    {
+      "name": "generated_training_only_reference_mean_sigma_tau_exact_conversion",
+      "status": "PASS",
+      "generated_rows": 40,
+      "within_condition_sigma": 0.1330870887802318,
+      "condition_tau": 0.43611776197545654,
+      "raw_mean_conversion_error": 8.881784197001252e-16
+    },
+    {
+      "name": "finite_configuration_quantile_and_identity_leakage_guards",
+      "status": "PASS",
+      "invalid_cases_rejected": 8
+    }
+  ],
+  "check_groups": 9,
+  "real_fatigue_fits_performed": 0,
+  "generated_data_reference_fits": 2,
+  "source_files_modified": false,
+  "boundaries": [
+    "Laplace approximates censored latent posterior; no exact censored-GP posterior claim",
+    "Kernel/mean/noise hyperparameter uncertainty not integrated; latent and natural variance included",
+    "No monotonicity guarantee; diagnostic only",
+    "API cannot certify outer-family exclusion or training-only external mean provenance; runner must enforce split",
+    "Condition labels are statistical database labels, not physical build identities",
+    "Training default mean can be estimated; kernel/noise fixed. Proposed training_reference mean/sigma/tau must be called inside each training fold",
+    "Source-family balancing applies to inner validation; GP likelihood factors have unit weights"
+  ]
+}

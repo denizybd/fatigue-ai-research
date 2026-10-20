@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-20T21:27:54.347790+00:00",
+  "access_method": "primary-source web retrieval; no bulk data downloaded for this route check",
+  "queries": [
+    "site:data.nist.gov 316L fatigue",
+    "site:nist.gov fatigue 316L data",
+    "site:nist.gov AM Bench fatigue 2025 stainless"
+  ],
+  "routes": [
+    {
+      "url": "https://www.nist.gov/ambench/direct-am-bench-data-links-and-referencing-guidance",
+      "finding": "AMB2025-03 high-cycle rotating bending fatigue dataset is PBF-LB Ti-6Al-4V, DOI10.18434/mds2-3734; not AM316L",
+      "new_AM316L_rows": 0
+    },
+    {
+      "url": "https://www.nist.gov/document/2025-9-25-nist-additive-manufacturing-fatigue-and-fracture-project-summary",
+      "finding": "Actual23-page NIST research-highlights PDF examined through official source. Fatigue highlights primarily titanium/Inconel; no matching individual AM316L life/build archive located in this source. This is not a global claim that no NISTAM316Ldata exist.",
+      "new_AM316L_rows": 0
+    },
+    {
+      "url": "https://www.nist.gov/publications/contributions-sub-surface-intergranular-phases-fatigue-crack-initiation-additively",
+      "finding": "Wietecha-Reiman/Iams/Sabol/Palmer2025 strain-life source, DOI10.1007/s10853-025-11259-w; already collected/audited in phase5, no new source counted",
+      "new_AM316L_rows": 0
+    },
+    {
+      "url": "https://data.mendeley.com/datasets/h97k6w9vm5/1",
+      "finding": "Yin etal15Oct2026, laser-wireDED316L rotating-beam, CC BY4.0; already acquired phase3 raw_repository with18named/14complete records. No duplicate collection or independent-count inflation.",
+      "prior_local_evidence": "literature/v3_campaigns/raw_repository/yin2026_secondary_report.md",
+      "new_AM316L_rows": 0
+    },
+    {
+      "url": "https://odin.jrc.ec.europa.eu/alcor/doiDisplay?p_RN5=4560019&p_entity=ACCESS",
+      "finding": "JRCdataset DOI10.5290/4560019, specimenUOC21,316La at300C load-controlLCF, creatorUniversityCantabria/INCEFA-SCALE. Landing metadata does not establish AM origin. Actual portal explicitlyrestricted, licensebyarrangement; no data fetched/contact made.",
+      "new_AM316L_rows": 0
+    }
+  ],
+  "current_fit_corpus_changed": false,
+  "contact_or_publication": false
+}

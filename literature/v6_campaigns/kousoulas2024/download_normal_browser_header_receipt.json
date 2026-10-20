@@ -1,0 +1,10 @@
+{
+  "download_url": {
+    "status": 200,
+    "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/09e00589-57c7-4ca5-9964-972284ba4094",
+    "bytes": 124078,
+    "sha256": "0c4eefa8a3e6d9e48c54318d205562963ebc15719a7053d4a4ffe3bb03cd9bfe",
+    "expected": "0c4eefa8a3e6d9e48c54318d205562963ebc15719a7053d4a4ffe3bb03cd9bfe",
+    "path": "literature/v6_campaigns/kousoulas2024/Measured defect sizes.xlsx"
+  }
+}

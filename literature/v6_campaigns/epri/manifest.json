@@ -1,0 +1,125 @@
+{
+  "files": [
+    {
+      "path": "literature/v6_campaigns/epri/curate_epri.py",
+      "bytes": 10179,
+      "sha256": "54d5f3659a0101367cd647cf99c4008bb9d965229aee88819753788c6917bde2"
+    },
+    {
+      "path": "literature/v6_campaigns/epri/curation_receipt.json",
+      "bytes": 1148,
+      "sha256": "6e5b6bf54fb1088b72008a62d53696278d53b3eea822579c0339aa3574475abe"
+    },
+    {
+      "path": "literature/v6_campaigns/epri/evidence_ledger.csv",
+      "bytes": 3099,
+      "sha256": "1ddd4999b86ae46303a9f0d689bfbd9784e42135c1b584cc56beecf6c2f58f49"
+    },
+    {
+      "path": "literature/v6_campaigns/epri/overlap_audit.json",
+      "bytes": 4499,
+      "sha256": "6b124eb84ef427754444b1260dcac23b8f538987644b4a2306bb23236546266b"
+    },
+    {
+      "path": "literature/v6_campaigns/epri/report.md",
+      "bytes": 4878,
+      "sha256": "dbe87d48181a1bd2cd015394c761c02b88bf712c4ccb5c13b5f80a649f74068b"
+    },
+    {
+      "path": "literature/v6_campaigns/epri/table_A18_pdf143_text.txt",
+      "bytes": 952,
+      "sha256": "a7481512ac7543fb304f14047226a1e84a0956335a1c9de5958a1d51b9c84788"
+    },
+    {
+      "path": "data/external_v6/epri/rr_process_powder_catalog1.csv",
+      "bytes": 804,
+      "sha256": "b437d174f08b27252a8a1a5a39304a66a6c8e0775845d9b08ab219c59cb74d67"
+    },
+    {
+      "path": "data/external_v6/epri/tableA18_300C_reported4.csv",
+      "bytes": 5653,
+      "sha256": "d1224712c1c0141be474835ad7185c8b92d8c43c6581340d67c64bc2824b3773"
+    },
+    {
+      "path": "data/external_v6/epri/tableA18_RT20C_reported10.csv",
+      "bytes": 11512,
+      "sha256": "3f06048c53e673ab0ac73429a336aa20f4a566bba39ffc130fd02e8cffdb5301"
+    },
+    {
+      "path": "data/external_v6/epri/tableA18_reported14.csv",
+      "bytes": 15785,
+      "sha256": "080ece1cced536af8871dd8f415cb4293892c5cbe1b5de650712fe854177c02f"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/access_receipt.json",
+      "bytes": 169,
+      "sha256": "8c0a290b72a5ec8dafcb5e346b63373e48f08d49f5aedfb9a3b6cd3df4b11c39"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/api.html",
+      "bytes": 5068,
+      "sha256": "da9d9ece0c9375dbd8c1d0ebf8b402164a5e0534da6d45f6bd9ab2a6952843a4"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/api_access.json",
+      "bytes": 371,
+      "sha256": "233889a3a5478ad0fecec788af0de60ab3debf2305d08678d1a0da4b965ca6da"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/epri_public.pdf",
+      "bytes": 24287669,
+      "sha256": "faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/epri_public_access.json",
+      "bytes": 455,
+      "sha256": "5e812f0cad280277d93a66d1b8f882383bac552e98c1aca103ed368b0f553156"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/fatigue_tableA18_pdf143.png",
+      "bytes": 183081,
+      "sha256": "6dcd3392d7e3bc9cec971a594671c3bd2e90a060a794e58d276156317261f1e5"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/independent_source_audit.json",
+      "bytes": 8943,
+      "sha256": "19c54939e64544a29ff764ec68ce3249c8d9e8b1773d95bf3776e66bb2136423"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/independent_visual/pdf117.png",
+      "bytes": 261782,
+      "sha256": "2ade26eb77659bd14028aa7eb16a569f6e565c8949493ee623fef862f1171700"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/independent_visual/pdf119.png",
+      "bytes": 202987,
+      "sha256": "fa64f1cb5b906c0339026f298c2fb1ee15227acc38bd7a3ba05b22256136df35"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/independent_visual/pdf120.png",
+      "bytes": 129857,
+      "sha256": "d4b80ebbbb86414415a25c2d168cfeae9573f7815e395cbb55468d0c526586c3"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/independent_visual/pdf143.png",
+      "bytes": 140389,
+      "sha256": "93bf0414fd06942b847271cbe9058291df4af805a0364922b482e5bd8324bcd2"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/pages_pdf_access.json",
+      "bytes": 149,
+      "sha256": "a0a89be2caf66bd30ce455a6cb98ec91925e2e0c6b00028a76cc6ea181c92f48"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/powder_tableA4_pdf120.png",
+      "bytes": 151397,
+      "sha256": "0bd9e95f773808ba39bb4b4e6839b1f158ceba68d6bf8ba18c939401301d0dea"
+    },
+    {
+      "path": "literature/v6_campaigns/osti_epri2020/source_text.txt",
+      "bytes": 226289,
+      "sha256": "253eaae94a72602b70d3f07c936fe171e7a82259a5eba6e9121c4f797f77be65"
+    }
+  ],
+  "manifest_excludes_itself": true
+}

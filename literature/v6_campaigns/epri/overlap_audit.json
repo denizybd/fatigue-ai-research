@@ -1,0 +1,142 @@
+{
+  "status": "bounded_bibliographic_source_screen_no_overlap_identified_not_universal_physical_proof",
+  "fatiguemetadata_articles_screened": 618,
+  "fatigue2022_specific_terms": [
+    "3002018273",
+    "55999",
+    "DE-NE0008521",
+    "EPRI",
+    "Rolls-Royce",
+    "Rolls Royce",
+    "ICME and In-Situ Process Monitoring"
+  ],
+  "author_surnames_screened": [
+    "gandy",
+    "tate",
+    "dinwiddie",
+    "carver",
+    "hensley",
+    "sisco",
+    "godfrey",
+    "beauchamp",
+    "rezayat",
+    "chandrasekar",
+    "foster",
+    "raplee",
+    "mcfalls",
+    "galicki",
+    "babu"
+  ],
+  "fatigue2022_hits": [
+    {
+      "article_index": 90,
+      "doi": "10.1016/j.engfailanal.2022.106494",
+      "title": "High cycle fatigue performance evaluation of a laser powder bed fusion manufactured Ti-6Al-4V bracket for aero-engine applications",
+      "specific_source_terms": [
+        "Rolls-Royce"
+      ],
+      "author_surname_hits": [],
+      "metadata": {
+        "title": "High cycle fatigue performance evaluation of a laser powder bed fusion manufactured Ti-6Al-4V bracket for aero-engine applications",
+        "author": [
+          "Bennett, Chris J.",
+          "Gupta, Alok",
+          "Sun, Wei"
+        ],
+        "source": "ENGINEERING FAILURE ANALYSIS",
+        "year": 2022,
+        "institution": [
+          "ITP Aero UK Ltd",
+          "Univ Nottingham"
+        ],
+        "fund": [
+          "Prosperity Partnership Grant \\ Cornerstone: Mechanical En-gineering Science to Enable Aero Propulsion Futures ",
+          "Rolls-Royce",
+          "UK Research & Innovation (UKRI)Engineering & Physical Sciences Research Council (EPSRC)"
+        ],
+        "doi": "10.1016/j.engfailanal.2022.106494",
+        "country_region": [
+          "UK"
+        ]
+      }
+    },
+    {
+      "article_index": 466,
+      "doi": "10.1038/s41598-021-99959-6",
+      "title": "Impact of surface and pore characteristics on fatigue life of laser powder bed fusion Ti-6Al-4V alloy described by neural network models",
+      "specific_source_terms": [
+        "Rolls-Royce",
+        "Rolls Royce"
+      ],
+      "author_surname_hits": [],
+      "metadata": {
+        "title": "Impact of surface and pore characteristics on fatigue life of laser powder bed fusion Ti-6Al-4V alloy described by neural network models",
+        "author": [
+          "Attardo, Ross",
+          "Billo, Richard",
+          "Glavicic, Michael",
+          "Layman, Maxwell",
+          "Luo, Tengfei",
+          "Ma, Ruimin",
+          "Moon, Seunghyun",
+          "Nordin, Mark",
+          "Tomonto, Charles",
+          "Wheelock, Paul"
+        ],
+        "source": "SCIENTIFIC REPORTS",
+        "year": 2021,
+        "institution": [
+          "Johnson & Johnson",
+          "Rolls Royce",
+          "Univ Notre Dame"
+        ],
+        "fund": [
+          "Rolls-Royce",
+          "V4 Institute"
+        ],
+        "doi": "10.1038/s41598-021-99959-6",
+        "country_region": [
+          "USA"
+        ]
+      }
+    }
+  ],
+  "current_training_rows": 441,
+  "current_training_source_groups": [
+    "10.1002/adem.202200751",
+    "10.1007/s40964-021-00164-8",
+    "10.1016/j.ijfatigue.2022.107025",
+    "10.1016/j.jmst.2019.08.047",
+    "10.1016/j.msea.2020.140660",
+    "10.1108/13552541311302932",
+    "10.1111/ffe.13077",
+    "10.3390/ma12244203",
+    "10.3390/ma13153293",
+    "10.3390/ma15186278",
+    "cui_linked_campaign",
+    "v4_elangeswaran_linked_experiments",
+    "v4_zhang_linked_original_experiments"
+  ],
+  "exact_source_report_or_family_in_training_group_ids": false,
+  "Merot_rows": 52,
+  "Merot_DOIs": [
+    "10.1016/j.ijfatigue.2021.106552"
+  ],
+  "Merot_powder_lots": [
+    "TLS0993/1/1",
+    "TLS1051/1/1"
+  ],
+  "Merot_build_ids": [
+    "FS18-019",
+    "FS18-020",
+    "FS19-006"
+  ],
+  "EPRI_powder_lot": "55999",
+  "EPRI_supplier": "LSN Diffusion",
+  "EPRI_component": "Rolls Royce tee",
+  "EPRI_named_build_serial": null,
+  "Merot_comparison": "Merot is distinct named FS18 builds and TLS0993/1/1 powder lot in another cited author program; no source link to RRtee identified",
+  "limitation": "No author per-specimen certificate or proprietary build traveler; absence of bibliographic matching does not prove absence of all historical physical reuse",
+  "conservative_future_source_family_exclusion": "Block EPRI3002018273, DOEDE-NE0008521 RRtee and any downstream RollsRoyce316L/316LN design-curve derivative pending exact reuse audit",
+  "no_numeric_coordinate_dedup_as_independence_proof": true
+}

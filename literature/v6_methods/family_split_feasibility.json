@@ -1,0 +1,55 @@
+{
+  "status": "Proposal audit only; no data split or fits authorized by this file",
+  "training": {
+    "rows": 441,
+    "conditions": 48,
+    "source_families": 13,
+    "eligible_conditions_n6": 37,
+    "k3_conditions": 37,
+    "k5_conditions": 28,
+    "k10_conditions": 5
+  },
+  "illustrative_9_4_salt": "v6-method-proposal-2026-10-20",
+  "illustrative_9_4_outer_families": [
+    "10.1002/adem.202200751",
+    "10.1016/j.msea.2020.140660",
+    "10.1111/ffe.13077",
+    "10.3390/ma13153293"
+  ],
+  "illustrative_role_counts": {
+    "development9": {
+      "rows": 363,
+      "conditions": 41,
+      "eligible_conditions_n6": 30,
+      "k3_conditions": 30,
+      "k5_conditions": 23,
+      "k10_conditions": 3
+    },
+    "outer4": {
+      "rows": 78,
+      "conditions": 7,
+      "eligible_conditions_n6": 7,
+      "k3_conditions": 7,
+      "k5_conditions": 5,
+      "k10_conditions": 2
+    }
+  },
+  "pretest_covariate_only_split": true,
+  "observed_outcomes_not_used_for_hash_split": true,
+  "full_nested_distinct_inner_trainsets": 66,
+  "stress_proxy_note": "Rounded log10stress0.01 bins are a covariate-diversity proxy, not verified nominal experimental stress levels.",
+  "illustrative_9_4_status": "REJECTED as primary: only4 outer families, all R=0.1; retained as covariate-only feasibility record, not adopted split",
+  "full_nested_primary_eligible_outer_families": 12,
+  "full_nested_inner_eligible_families_per_outer": 11,
+  "training_only_family": "cui_linked_campaign",
+  "training_only_family_rows": 13,
+  "latest_proposed_distinct_inner_population_fits": {
+    "GP66": 4356,
+    "Student48": 3168,
+    "two_methods_total": 7524
+  },
+  "grid_status": "Parent prefit proposal: effective66GP plus48Student; exact emitted grids and final frozen protocol govern",
+  "primary_eligible_rows": 396,
+  "primary_family_count_excludes_Cui_k0_appendix": true,
+  "supersession_note": "Earlier13-family78-pair calculation replaced after checking n>=6 query/support eligibility; no fits or target outcome selection by this file."
+}

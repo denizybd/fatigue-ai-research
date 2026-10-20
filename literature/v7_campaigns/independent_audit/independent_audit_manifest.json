@@ -1,0 +1,84 @@
+{
+  "checked_utc": "2026-10-20T21:28:03.632491+00:00",
+  "visual_reviewed": [
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf17.png",
+      "sha256": "06b5622331f09c59c145c0c68099e088e73eec011930bc0eb525375475ba30ea"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf18.png",
+      "sha256": "d530ea9a0a4610aa396d2c95491377680156fe3dd070a8d072b84da50e9f984c"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf23.png",
+      "sha256": "34956d27151b874740d0a1b2c617bfc6094963a675a83754d475119cf5f83228"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf24.png",
+      "sha256": "7547b12eee545cc42cbf38e6a3947c7fb0531bf99d773c33be46416c9db4afc3"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf24_detail.png",
+      "sha256": "824278e324a726b84c4ad20e0544ebbd3017e800e3deedeae10ddc4a55427b30"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf25.png",
+      "sha256": "842f9e79a320345539c99dac27966115a96a1367aca18f1edf3267a34b0fe3c8"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2025_pdf34.png",
+      "sha256": "531eb51e88b01dadbe6103c3a9055b5312c3abce570fda0716d8f5cb886c4353"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2023_pdf20.png",
+      "sha256": "dfc4d301096b5c9a30a1015e57c56f1329bd2949e5e7c48fd1764cf1f148470b"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2024_pdf28.png",
+      "sha256": "41182814363222abd9391cf2045b2ba8729221741a3a8c9e68902f88196dbc96"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/anl2024_pdf38.png",
+      "sha256": "4c0f639dfa1016916e35cefdab325dabccbd1543e17bf905039708c843b230ac"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/uq2026_pdf17.png",
+      "sha256": "eebf01f7e15454c2cc421c02983bff93ca317ea5063d1744d94ae6e4112fc0a0"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/uq2026_pdf18.png",
+      "sha256": "de0a95bba00f44e067c9114aca8de8562e8278f57ae78239e8a758df419b3440"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/uq2026_pdf19.png",
+      "sha256": "118825d8b48ed7c27105f2b119d744f399c4366cb6ec73ed5b6e2a6a354907cf"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/uq2026_pdf23.png",
+      "sha256": "a70056791f07b2662fc4773b0e6bdb14f7523be9405d29574ceda2c9682f502e"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/uq2026_pdf25.png",
+      "sha256": "66c67acc812f97e2e78f15b656c195305dc705280f6e9fbf3d327b0d195204b5"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/visual/uq2026_pdf26.png",
+      "sha256": "715b55b99145018f672d1f24ee893024cb6431ea57e929d05757ed2dfb5c5a80"
+    }
+  ],
+  "audit_files": [
+    {
+      "file": "literature/v7_campaigns/independent_audit/anl2025_independent_source_audit.json",
+      "sha256": "4f72fd51742eb62d7ff24855c44db551a0d6c33982765b4652da6021d932def3"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/uq2026_independent_source_audit.json",
+      "sha256": "76d772a85d0afb5407cc01ce0f1a3583d6f56316ebc85e63c4bd37ca00070570"
+    },
+    {
+      "file": "literature/v7_campaigns/independent_audit/source_audit_summary.txt",
+      "sha256": "1e8b7f964bd3b1f1548b686b2cc056afb3b19c7106fc642feafc7dc2dfdfe2eb"
+    }
+  ],
+  "private_source_renders_not_redistribution_packet": true
+}

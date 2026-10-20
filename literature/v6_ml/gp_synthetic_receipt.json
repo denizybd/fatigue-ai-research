@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checks": {
+    "likelihood_derivatives": {
+      "max_gradient_error": 1.437061025733044e-09,
+      "max_curvature_error": 7.963607551175755e-10,
+      "extreme_z1000_finite": true
+    },
+    "uncensored_exact_GP": {
+      "mean_error": 2.6645352591003757e-15,
+      "variance_error": 5.551115123125783e-17,
+      "log_marginal_error": 0.0,
+      "q10_CDF_matches": true
+    },
+    "nonlinear_function_behavior": {
+      "max_absolute_second_difference": 0.3519671902609458,
+      "nonlinear_posterior_curve_confirmed": true
+    },
+    "selected_support_joint_update": {
+      "exact_Gaussian_joint_mean_error": 6.217248937900877e-15,
+      "exact_Gaussian_joint_variance_error": 1.1102230246251565e-16,
+      "fixed_population_mean_and_kernel": true,
+      "query_outcomes_ignored": true,
+      "support_order_invariant": true,
+      "identity_overlap_rejected": true
+    },
+    "right_censor_all_runout": {
+      "scalar_mode_error": 1.3401066922824612e-09,
+      "scalar_Laplace_variance_error": 6.307593058973993e-10,
+      "censor_updates_above_failure_at_stop": true,
+      "proper_prior_keeps_finite_quantile": true
+    },
+    "zero_covariance_anchor": {
+      "exact_fixed_mean_and_observation_noise": true,
+      "selected_support_has_no_effect": true
+    },
+    "API_edge_validation": {
+      "nonfinite_quantiles_rejected": true,
+      "nonfinite_reference_scales_rejected": true,
+      "converted_identity_collisions_rejected": true,
+      "monotonicity_diagnostic_detects_positive_increments": true
+    },
+    "proposed_grid": {
+      "n_candidates": 66,
+      "distinct_effective_configs": true,
+      "zero_covariance_and_default_anchors": true,
+      "frozen_for_real_tuning": false
+    },
+    "synthetic_441_runtime": {
+      "training_rows": 441,
+      "generated_families": 13,
+      "generated_conditions": 48,
+      "censored_rows": 249,
+      "fit_seconds": 0.013547250000556232,
+      "support5_and_query10_seconds": 0.005750917000113986,
+      "fit_gradient_inf": 1.9512169657787126e-14,
+      "support_gradient_inf": 7.168869942120182e-10,
+      "real_fatigue_rows_fitted": 0,
+      "scientific_validation": false
+    },
+    "training_reference_recipe": {
+      "synthetic_only": true,
+      "success": true,
+      "n_rows": 441,
+      "within_condition_noise": 0.2887581045738542,
+      "condition_intercept_sd": 0.2806906291647346,
+      "elapsed_seconds": 0.6535710420030227
+    },
+    "all66_proposed_configs_synthetic_numerics": {
+      "configurations": 66,
+      "all_modes_converged": true,
+      "all_quantiles_finite": true,
+      "max_population_gradient_inf": 8.286484864949983e-08,
+      "max_selected_support_gradient_inf": 7.211120429256868e-08,
+      "total_seconds": 1.029607374999614,
+      "actual_fatigue_rows_used": 0,
+      "no_candidate_accuracy_comparison_or_selection": true
+    },
+    "monotonicity_diagnostic": {
+      "alpha": 0.1,
+      "stress_grid_edges": 9,
+      "positive_quantile_increments": 0,
+      "max_positive_log10life_increment": 0.0,
+      "monotonicity_guaranteed": false,
+      "interpretation": "diagnostic evaluated at fixed hyperparameters; never a post-hoc tuning objective"
+    }
+  },
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_code_sha256": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+  "scope": "Synthetic likelihood/GP algebra and numerical feasibility only; no target or actual fatigue data fits/tuning"
+}

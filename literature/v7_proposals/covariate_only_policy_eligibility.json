@@ -1,0 +1,253 @@
+{
+  "scope": "Covariates/IDs and declared task rules only; no model/result/outcome access",
+  "csv_sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3",
+  "read_columns": [
+    "row_id",
+    "dataset_id",
+    "group_id",
+    "log_stress",
+    "load_ratio"
+  ],
+  "source_rows": 441,
+  "source_conditions": 48,
+  "source_families": 13,
+  "k3_conditions": 37,
+  "nonexhausted_k3_conditions": 33,
+  "nonexhausted_k3_source_families": 11,
+  "nonexhausted_k3_rows": 372,
+  "stress_diversity_proxy_only": "round(log10 stress,0.01); not author-confirmed nominal stress levels",
+  "groups": [
+    {
+      "source_family": "10.1007/s40964-021-00164-8",
+      "condition": "a0032_d000",
+      "n": 13,
+      "pool_n": 8,
+      "stress_bins_proxy_n": 10
+    },
+    {
+      "source_family": "10.1007/s40964-021-00164-8",
+      "condition": "a0032_d001",
+      "n": 10,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 7
+    },
+    {
+      "source_family": "10.1007/s40964-021-00164-8",
+      "condition": "a0032_d002",
+      "n": 11,
+      "pool_n": 7,
+      "stress_bins_proxy_n": 9
+    },
+    {
+      "source_family": "10.1007/s40964-021-00164-8",
+      "condition": "a0032_d003",
+      "n": 18,
+      "pool_n": 11,
+      "stress_bins_proxy_n": 16
+    },
+    {
+      "source_family": "10.1016/j.ijfatigue.2022.107025",
+      "condition": "a0239_d000",
+      "n": 7,
+      "pool_n": 4,
+      "stress_bins_proxy_n": 7
+    },
+    {
+      "source_family": "10.1016/j.ijfatigue.2022.107025",
+      "condition": "a0239_d001",
+      "n": 8,
+      "pool_n": 5,
+      "stress_bins_proxy_n": 8
+    },
+    {
+      "source_family": "10.1016/j.jmst.2019.08.047",
+      "condition": "a0290_d000",
+      "n": 16,
+      "pool_n": 10,
+      "stress_bins_proxy_n": 6
+    },
+    {
+      "source_family": "10.1016/j.jmst.2019.08.047",
+      "condition": "a0290_d001",
+      "n": 14,
+      "pool_n": 9,
+      "stress_bins_proxy_n": 6
+    },
+    {
+      "source_family": "10.1016/j.msea.2020.140660",
+      "condition": "a0367_d000",
+      "n": 16,
+      "pool_n": 10,
+      "stress_bins_proxy_n": 10
+    },
+    {
+      "source_family": "10.1016/j.msea.2020.140660",
+      "condition": "a0367_d001",
+      "n": 16,
+      "pool_n": 10,
+      "stress_bins_proxy_n": 11
+    },
+    {
+      "source_family": "10.1016/j.msea.2020.140660",
+      "condition": "a0367_d002",
+      "n": 10,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 10
+    },
+    {
+      "source_family": "10.1016/j.msea.2020.140660",
+      "condition": "a0367_d003",
+      "n": 7,
+      "pool_n": 4,
+      "stress_bins_proxy_n": 7
+    },
+    {
+      "source_family": "10.1108/13552541311302932",
+      "condition": "a0481_d000",
+      "n": 15,
+      "pool_n": 9,
+      "stress_bins_proxy_n": 12
+    },
+    {
+      "source_family": "10.1108/13552541311302932",
+      "condition": "a0481_d001",
+      "n": 14,
+      "pool_n": 9,
+      "stress_bins_proxy_n": 10
+    },
+    {
+      "source_family": "10.1108/13552541311302932",
+      "condition": "a0481_d002",
+      "n": 7,
+      "pool_n": 4,
+      "stress_bins_proxy_n": 7
+    },
+    {
+      "source_family": "10.1111/ffe.13077",
+      "condition": "a0496_d000",
+      "n": 14,
+      "pool_n": 9,
+      "stress_bins_proxy_n": 7
+    },
+    {
+      "source_family": "10.3390/ma12244203",
+      "condition": "a0554_d001",
+      "n": 7,
+      "pool_n": 4,
+      "stress_bins_proxy_n": 6
+    },
+    {
+      "source_family": "10.3390/ma12244203",
+      "condition": "a0554_d002",
+      "n": 10,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 10
+    },
+    {
+      "source_family": "10.3390/ma12244203",
+      "condition": "a0554_d003",
+      "n": 16,
+      "pool_n": 10,
+      "stress_bins_proxy_n": 13
+    },
+    {
+      "source_family": "10.3390/ma12244203",
+      "condition": "a0554_d005",
+      "n": 7,
+      "pool_n": 4,
+      "stress_bins_proxy_n": 7
+    },
+    {
+      "source_family": "10.3390/ma13153293",
+      "condition": "a0562_d000",
+      "n": 9,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 8
+    },
+    {
+      "source_family": "10.3390/ma15186278",
+      "condition": "a0577_d000",
+      "n": 9,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 8
+    },
+    {
+      "source_family": "10.3390/ma15186278",
+      "condition": "a0577_d003",
+      "n": 9,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 5
+    },
+    {
+      "source_family": "v4_elangeswaran_linked_experiments",
+      "condition": "a0146_d000",
+      "n": 11,
+      "pool_n": 7,
+      "stress_bins_proxy_n": 4
+    },
+    {
+      "source_family": "v4_elangeswaran_linked_experiments",
+      "condition": "a0146_d001",
+      "n": 10,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 4
+    },
+    {
+      "source_family": "v4_elangeswaran_linked_experiments",
+      "condition": "a0146_d002",
+      "n": 8,
+      "pool_n": 5,
+      "stress_bins_proxy_n": 4
+    },
+    {
+      "source_family": "v4_elangeswaran_linked_experiments",
+      "condition": "a0146_d003",
+      "n": 9,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 4
+    },
+    {
+      "source_family": "v4_zhang_linked_original_experiments",
+      "condition": "a0142_d006",
+      "n": 10,
+      "pool_n": 6,
+      "stress_bins_proxy_n": 4
+    },
+    {
+      "source_family": "v4_zhang_linked_original_experiments",
+      "condition": "a0341_d000",
+      "n": 12,
+      "pool_n": 8,
+      "stress_bins_proxy_n": 8
+    },
+    {
+      "source_family": "v4_zhang_linked_original_experiments",
+      "condition": "a0341_d001",
+      "n": 12,
+      "pool_n": 8,
+      "stress_bins_proxy_n": 6
+    },
+    {
+      "source_family": "v4_zhang_linked_original_experiments",
+      "condition": "a0341_d002",
+      "n": 11,
+      "pool_n": 7,
+      "stress_bins_proxy_n": 9
+    },
+    {
+      "source_family": "v4_zhang_linked_original_experiments",
+      "condition": "a0341_d003",
+      "n": 12,
+      "pool_n": 8,
+      "stress_bins_proxy_n": 8
+    },
+    {
+      "source_family": "v4_zhang_linked_original_experiments",
+      "condition": "a0341_d004",
+      "n": 14,
+      "pool_n": 9,
+      "stress_bins_proxy_n": 8
+    }
+  ],
+  "checked_utc": "2026-10-20T21:06:57.310791+00:00"
+}

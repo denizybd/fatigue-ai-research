@@ -1,0 +1,9 @@
+{
+  "current_readme_sha256": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f",
+  "prior_readme": "literature/v3_campaigns/closure_diller/readme_live.txt",
+  "prior_sha256": "309b40f3ff20433930a59f2d1c28692b09614a447816a07e99701709cf7bce8f",
+  "byte_identical": true,
+  "same_primary_DOI": "10.1111/ffe.14375",
+  "new_physical_lineage_added": 0,
+  "status": "previously_exhausted_same_dataset_do_not_double_count"
+}

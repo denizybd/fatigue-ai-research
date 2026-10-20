@@ -1,0 +1,240 @@
+{
+  "status": "PASS_EXPERIMENTAL_MICROSTRUCTURE_PLUS_SIMULATED_INITIATION_LIFE_SCOPE_ZERO_NEW_OBSERVED_NF",
+  "checked_utc": "2026-10-20T21:28:03.632491+00:00",
+  "source": {
+    "local_pdf": "literature/v7_campaigns/uq2026/source.pdf",
+    "url": "https://arxiv.org/abs/2609.03163",
+    "report": "Guo,Sundararaghavan,Kramer arXiv2609.03163v1 submitted2September2026",
+    "pdf_sha256": "2cc836c5193d4dfce12e0292287b9c2ac83d6ab27fb033cb9423d4985d32abb1",
+    "page_text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt",
+    "index_convention": "PDF pages 1-based; numbered extracted lines reset at each page; printed page supplied separately."
+  },
+  "method": "Independent complete PDF text extraction and term scan plus full relevant experimental/numerical/results/conclusion pages; Figures3/4/5,Table3,Figure10/12 and availability visually checked. No author code execution.",
+  "experimental_content": {
+    "actual_printed_specimens": true,
+    "material": "316Lstainless steel",
+    "machine": "EOSM290LPBF",
+    "cylinder_geometry_mm": {
+      "diameter": 10,
+      "height": 25
+    },
+    "physical_data_types": [
+      "EBSDgrain texture,diameter,aspect ratio",
+      "microCTdefect geometry"
+    ],
+    "Table2_parameter_sets": 9,
+    "parameter_set_number_is_not_unique_specimen_id": true,
+    "individual_fatigue_observation_table_found": false,
+    "specimen_to_build_powder_lot_join_found": false,
+    "acknowledgment_scope": "Figures 3b, 4a and 4b are provided by Mohsen Taheri Andani (Texas A&M); Figure 5 uses data provided by Shuai Shao (Auburn). Actual experimental characterization exists, so describing the whole paper as synthetic would be inaccurate.",
+    "evidence": [
+      {
+        "pdf_page_1based": 17,
+        "printed_page": "17",
+        "extracted_page_lines": [
+          1,
+          12
+        ],
+        "item": "Section5.1 actual cylinders and characterization",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 17,
+        "printed_page": "17",
+        "extracted_page_lines": [
+          42,
+          58
+        ],
+        "item": "Nine process settings and EBSD/microCT method",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 18,
+        "printed_page": "18",
+        "extracted_page_lines": [
+          16,
+          29
+        ],
+        "item": "Figure5 scanned defects versus simulations",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 26,
+        "printed_page": "26",
+        "extracted_page_lines": [
+          7,
+          11
+        ],
+        "item": "Acknowledged experimental data providers",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      }
+    ]
+  },
+  "life_data_scope": {
+    "new_individual_observed_fatigue_life_records_parsed": 0,
+    "life_quantity": "Physics-derived fatigue crack INITIATION life, not a measured cycles-to-failure campaign.",
+    "simulation_units": "A 1.6 mm global cube is subdivided into 64 subcubes, each 0.4 mm wide; five cases. 64 evaluations per case times five cases = 320 evaluations per physical solver. These are not 320 independently manufactured fatigue specimens.",
+    "case_labels": {
+      "1": "syntheticgrain/voidstatistical realization informed by recommended setting",
+      "2": "synthetic",
+      "3": "synthetic",
+      "4": "printed characterization parameter set; downstream life still model-derived",
+      "5": "syntheticvoidsize sensitivity based onCase4"
+    },
+    "loading": "Three physics models use nominal 0.3 percent strain amplitude. PRISMS-Plasticity simulates two cycles under fully reversed cyclic displacement and computes stored work/FIP for the initiation-life formula. This is not an observed run-to-failure.",
+    "fitting": "Block extremes of G, surface energy and FIP are fitted from simulation outputs. Figure 7 labels these computed quantities Observed; the label does not denote physically measured Nf.",
+    "correlation": "Correlation coefficients 0.8, 0.7, 0.6 are chosen assumptions; they are not calibrated from failed-specimen fatigue testing.",
+    "evidence": [
+      {
+        "pdf_page_1based": 16,
+        "printed_page": "16",
+        "extracted_page_lines": [
+          69,
+          89
+        ],
+        "item": "Table1 solver evaluation counts",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 18,
+        "printed_page": "18",
+        "extracted_page_lines": [
+          31,
+          49
+        ],
+        "item": "Artificialmicrostructure generation,64subcubes",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 19,
+        "printed_page": "19",
+        "extracted_page_lines": [
+          10,
+          32
+        ],
+        "item": "Case1–5 source distinctions andTable3",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 20,
+        "printed_page": "20",
+        "extracted_page_lines": [
+          14,
+          18
+        ],
+        "item": "Two-cycle crystalplasticity loading",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 20,
+        "printed_page": "20",
+        "extracted_page_lines": [
+          20,
+          40
+        ],
+        "item": "Simulation outputs form statistical samples",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 20,
+        "printed_page": "20",
+        "extracted_page_lines": [
+          56,
+          60
+        ],
+        "item": "Chosen crosscorrelations",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      }
+    ]
+  },
+  "validation_scope": {
+    "performed": "Analytical ratio-distribution PDF compared with direct per-subcube evaluation of the same physics life formula plus KDE; checks distribution-fitting approximation.",
+    "not_established": "Independent physical fatigue-life coverage, out-of-build empirical calibration, successful stress-level selection, or physicallifeextension.",
+    "future_work": "Conclusion specifically proposes calibrating correlations using experimental fatigue-life tests of failed prints.",
+    "literature_comparison": "Introduction discusses prior bending/fatigue experiments by other authors; those summaries are not new observations from this paper. No additional measuredNf test table was identified.",
+    "evidence": [
+      {
+        "pdf_page_1based": 23,
+        "printed_page": "23",
+        "extracted_page_lines": [
+          22,
+          27
+        ],
+        "item": "Validation paragraphanalyticalPDFvsper-subcubeKDE",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 23,
+        "printed_page": "23",
+        "extracted_page_lines": [
+          44,
+          48
+        ],
+        "item": "Figure10 definition",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 25,
+        "printed_page": "25",
+        "extracted_page_lines": [
+          1,
+          8
+        ],
+        "item": "Sameformula comparisonforCase4",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 25,
+        "printed_page": "25",
+        "extracted_page_lines": [
+          50,
+          56
+        ],
+        "item": "Explicit future experimentalfatigue calibration",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 2,
+        "printed_page": "2",
+        "extracted_page_lines": [
+          32,
+          49
+        ],
+        "item": "Prior experimental literature discussion",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      }
+    ]
+  },
+  "repository_crosscheck": {
+    "url": "https://github.com/yulin-g/UQ-fatigue-life-PBF-AM",
+    "parent_pinned_commit": "1b5c82714a35f66ad8f0ea846289b45719d22dd0",
+    "independent_scope": "Paper availability says simulation inputfiles. Root separately performed pinned staticrepositoryaudit; this reader did not execute downloaded code.",
+    "inventory_receipt": "literature/v7_campaigns/uq2026/parent_repository_audit/inventory.json",
+    "static_receipt": "literature/v7_campaigns/uq2026/parent_repository_audit/all_source_static_receipt.json",
+    "evidence": [
+      {
+        "pdf_page_1based": 26,
+        "printed_page": "26",
+        "extracted_page_lines": [
+          17,
+          21
+        ],
+        "item": "Data availability is simulation inputs",
+        "text_index": "literature/v7_campaigns/independent_audit/uq2026_pypdf_pages.txt"
+      }
+    ]
+  },
+  "admission": {
+    "new_observed_Nf_rows": 0,
+    "current_v6_rows_added": 0,
+    "second_gold_campaign": false,
+    "use": "Adjacent physics/microstructure uncertainty prior art and optional numericalbenchmark; cannot fill missing measured specimen-build-lot fatigue campaign."
+  },
+  "actions": {
+    "no_data_edits": true,
+    "no_frozen_edits": true,
+    "no_fits": true,
+    "no_source_code_execution": true,
+    "no_correspondence_or_publication": true
+  }
+}

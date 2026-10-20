@@ -1,0 +1,10 @@
+{
+  "url": "https://www.osti.gov/api/v1/records/1668247",
+  "retrieved_utc": "2026-10-20T20:27:21.695697+00:00",
+  "status": 200,
+  "final_url": "https://www.osti.gov/api/v1/records/1668247",
+  "bytes": 5068,
+  "sha256": "da9d9ece0c9375dbd8c1d0ebf8b402164a5e0534da6d45f6bd9ab2a6952843a4",
+  "path": "literature/v6_campaigns/osti_epri2020/api.html",
+  "pdf_magic": false
+}

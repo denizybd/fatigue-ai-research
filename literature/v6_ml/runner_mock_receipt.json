@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "checks": {
+    "manifest_grid": {
+      "candidates": 146,
+      "counts": {
+        "gp": 66,
+        "student": 48,
+        "control": 22,
+        "joint_rfl": 10
+      },
+      "fit_calls": 0
+    },
+    "whole_family_and_cache_binding": {
+      "pair_excluded": true,
+      "train_only_family_retained": true,
+      "unordered_pair_reused": true,
+      "training_values_and_freeze_change_cache": true
+    },
+    "independent_inner_arithmetic": {
+      "pair_files": 330,
+      "outer_families": 12,
+      "candidates": 5,
+      "max_equal_family_score_error": 1.4210854715202004e-14,
+      "unavailable_candidate_outer_combinations": 1,
+      "k_seed_condition_family_weighting_verified": true,
+      "query_count_does_not_weight_families": true,
+      "unavailable_episode_disqualifies": true,
+      "tie_tolerance_ordinal_verified": true,
+      "outer_family_validation_scores_excluded": true
+    },
+    "outer_mock_orchestration": {
+      "quantile_calls": 12,
+      "query_outcomes_absent_from_quantile_api": true,
+      "score_uses_separate_truth_api": true,
+      "all_aliases_share_queries_supports": true,
+      "NaN_CDF_rejected": true,
+      "separate_quantile_scoring_CDF_receipts_retained": true,
+      "selection_bytes_bound_in_shard": true,
+      "no_actual_population_fit": true
+    },
+    "outer_evidence_guard": {
+      "modified_inner_csv_rejected_before_any_fit": true
+    }
+  },
+  "actual_fatigue_fits": 0,
+  "actual_fatigue_episode_plans": 0,
+  "scope": "generated families, manufactured mock log scores, real orchestration/aggregation only",
+  "runner_source_sha256": "23372c5714a742d2dcf411899bf03ae88725046363a7517d199658e529c49375",
+  "test_source_sha256": "e24706240bab440cdba4432a5d2da00e659c2d7c24680b246b40ed521142085b"
+}

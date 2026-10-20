@@ -1,0 +1,10 @@
+{
+  "url": "https://www.osti.gov/api/v1/records/1668368",
+  "retrieved_utc": "2026-10-20T20:27:21.696017+00:00",
+  "status": 200,
+  "final_url": "https://www.osti.gov/api/v1/records/1668368",
+  "bytes": 3770,
+  "sha256": "17042b8921b67a03968480abfd3948a911ce7c2fb07862a00789de686fdae034",
+  "path": "literature/v6_campaigns/osti_sandia2020/api.html",
+  "pdf_magic": false
+}

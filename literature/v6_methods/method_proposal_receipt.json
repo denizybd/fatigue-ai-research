@@ -1,0 +1,57 @@
+{
+  "status": "DELIVERED_PROPOSAL_AND_SYNTHETIC_CONTROL; no real fitting authorization",
+  "no_actual_fatigue_fits": true,
+  "primary_sources": 12,
+  "latest_recommended_outer_families": 12,
+  "eligible_conditions": 37,
+  "distinct_inner_exclusion_sets": 66,
+  "candidates": {
+    "GP_effective": 66,
+    "Student": 48,
+    "matched_controls": 22,
+    "joint_RFL_prior": 10
+  },
+  "total_two_new_method_inner_population_fits": 7524,
+  "main_scientific_limit": "Historical outcomes already seen; proper nested tuning gives exploratory held-family comparison, not prospective confirmation or R90C90",
+  "files": [
+    {
+      "path": "protocols/v6/method_options.txt",
+      "sha256": "bc82f20c1c5165b6973e476f98bafc870b3fb353c45e1fb161fe0e85de242068",
+      "bytes": 21764
+    },
+    {
+      "path": "literature/v6_methods/prior_art_matrix.json",
+      "sha256": "9c08776387a256a4f9d09127d6532b0cf175d3ac025d8b59082f586926f157ff",
+      "bytes": 8813
+    },
+    {
+      "path": "literature/v6_methods/prior_art_matrix.csv",
+      "sha256": "202fc6f74983036aa49da89d9223e52c76d0002222bc6b9747252904ccc7dfc4",
+      "bytes": 6211
+    },
+    {
+      "path": "literature/v6_methods/family_split_feasibility.json",
+      "sha256": "6bebaf5ba7f3441c02ca5d8c843135432f4741fdbeaf074d0869996b8a8a4f2e",
+      "bytes": 2031
+    },
+    {
+      "path": "literature/v6_methods/source_family_eligibility13.csv",
+      "sha256": "0680e0ad27f0cb47cfebc73ab5e0346632cd7fa33cfc9177034b94fd3a9712e9",
+      "bytes": 1339
+    },
+    {
+      "path": "literature/v6_methods/condition_episode_eligibility48.csv",
+      "sha256": "b9ff8caafac5af91feb1e44655db132dd8fb758177b377fe562c45331c4b54fa",
+      "bytes": 5050
+    },
+    {
+      "path": "literature/v6_methods/gp_and_controls_mathematical_review.json",
+      "sha256": "ac9f58b133d9168757d3e1bd0d5b5e30239fa9991b07c8b6d21eff4264680bb2",
+      "bytes": 3410
+    }
+  ],
+  "joint_RFL_control_source_sha256": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "joint_RFL_synthetic_tests": 23,
+  "independent_RFL_review": "PASS at final source hash",
+  "joint_RFL_final_handoff_manifest": "literature/v6_methods/rfl/final_handoff_manifest.json"
+}

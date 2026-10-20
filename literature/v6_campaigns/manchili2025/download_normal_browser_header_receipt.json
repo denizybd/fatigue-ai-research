@@ -1,0 +1,10 @@
+{
+  "download_url": {
+    "status": 200,
+    "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/8b1d1071-8d9f-4cba-a1ea-ed609c877622",
+    "bytes": 10823,
+    "sha256": "9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9",
+    "expected": "9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9",
+    "path": "literature/v6_campaigns/manchili2025/Data Set_RS_SR.xlsx"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source_dataset_doi": "10.17632/x9z34sgnyk.1",
+  "source_file_sha256": "9478616d343bb6ad70fdff88640b12d906344e2c0ae5552e11126c719fa826c9",
+  "residual_stress_points": 31,
+  "treatment_group_rows": 4,
+  "roughness_group_rows": 4,
+  "exact_fatigue_life_records_in_dataset": 0,
+  "author_fatigue_specimenIDs": 0,
+  "article_nominal_program": 60,
+  "article_single_plate_build_membership": true,
+  "article_excludes_U202point5_due_premature_alignment_failures": true,
+  "no_expansion_of_boxplot_mean_min_max_into_fictitious_individuals": true,
+  "profile_condition_mapping_missing": true,
+  "B_material_removal_discrepancy_preserved": true,
+  "license": "CC BY4 dataset and article",
+  "current_fit_eligible": 0,
+  "no_model_fits": true
+}

@@ -1,0 +1,63 @@
+{
+  "status": "FINAL_SYNTHETIC_HANDOFF",
+  "utc": "2026-10-20T21:00:34.127100+00:00",
+  "code_sha256": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "no_actual_fatigue_fits": true,
+  "files": [
+    {
+      "path": "literature/v6_methods/rfl/synthetic_receipt.json",
+      "sha256": "17c6cfeb6d6f294ee123087fca46272a3deaf99be7f0de904010bd5d86247151",
+      "bytes": 3676
+    },
+    {
+      "path": "literature/v6_methods/rfl/independent_audit.json",
+      "sha256": "4225edd1cd00fea4e84de59a9b2e4a101d97288e46461b4d574281c9f24c3bc7",
+      "bytes": 5658
+    },
+    {
+      "path": "literature/v6_methods/rfl/independent_conjugate_audit.json",
+      "sha256": "25ab2936510a8d63e6b5eb447c12bda76ec04294fcf8435174544e810e6d99c9",
+      "bytes": 4806
+    },
+    {
+      "path": "literature/v6_methods/rfl/independent_conjugate_checks.py",
+      "sha256": "65190f43cd4e0c05778e96d27e6da6a98d45b1548070edf3922c3badd8a89a24",
+      "bytes": 3078
+    },
+    {
+      "path": "literature/v6_methods/rfl/benchmark_suite_final.json",
+      "sha256": "089e551325662e1739cfd275cda5acf9c1589f1e59d2e7f13c6dbdbef961240a",
+      "bytes": 1584
+    },
+    {
+      "path": "literature/v6_methods/rfl/benchmark_synthetic.py",
+      "sha256": "5f2eaf34b2101822a74a990b57499c951fdc3edd053486baba1a1e80ed369b4d",
+      "bytes": 3063
+    },
+    {
+      "path": "literature/v6_methods/rfl/README.txt",
+      "sha256": "d71c47d2130ec769da69e1e67efaa35e6f28b44221a4f0a518cc7d93de20ae32",
+      "bytes": 1588
+    },
+    {
+      "path": "literature/v6_methods/rfl/final_clean_ordinary_q3.json",
+      "sha256": "ea8dc793a135f592fe96d61c4148530abbf7f42ff9c72a951c4f11216b2bf7ca",
+      "bytes": 3658
+    },
+    {
+      "path": "literature/v6_methods/rfl/final_clean_ordinary_q10.json",
+      "sha256": "192ba6683eebc7ec060fe8ecef68b0411184306e71893db24da4039e9f204c6e",
+      "bytes": 4922
+    },
+    {
+      "path": "literature/v6_methods/rfl/final_clean_broad_q3.json",
+      "sha256": "2523e668961788bfedde7bd455bd77d81fae913df5993e729b5062a9df591eae",
+      "bytes": 3798
+    },
+    {
+      "path": "literature/v6_methods/rfl/final_clean_broad_q10.json",
+      "sha256": "f165eed7a5c46558567a99649005cfa98cf6d62763f247ed220f3c71c8ddd418",
+      "bytes": 4894
+    }
+  ]
+}

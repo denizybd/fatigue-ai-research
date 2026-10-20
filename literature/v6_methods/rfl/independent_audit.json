@@ -1,0 +1,80 @@
+{
+  "status": "PASS_WITH_EXPLICIT_NUMERICAL_QUALIFICATIONS",
+  "checked_utc": "2026-10-20T20:59:35.573598+00:00",
+  "source": "src/v6_rfl_adapter.py",
+  "source_sha256": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "read_only_source_review": true,
+  "independent_math_review": {
+    "u_interval_bound": "Exact Normal-prior interval mass times product of per-row upper suprema. Failure mixture supremum bounded by positive weighted component suprema; survival monotone in u.",
+    "v_node_single_factor": "E_u productL <= E_u Li times product other row suprema; single-factor convolution exact in u.",
+    "v_node_two_failure": "Shared-u integrated bivariate Gaussian has covariance sigma^2 I + su^2 11T; positive Gamma component pair mixture exact for fixed Gamma rule.",
+    "tail_domains": "Outside symmetric prior domains: Gaussian prior tail times global likelihood supremum. Continuous rule convergence is separately diagnosed.",
+    "score_fast_path": "Selected-support posterior mixture evaluates query likelihood. Coarse-u comparisons also change/renormalize v weights by coarseZ_u/fineZ_u.",
+    "score_tail_normalization": "Conservative r=B*(1+M/p_hat); if r<1, -log1p(-r) controls stated log-tail error. B includes v omissions plus weighted u outside/pruned/discarded mass.",
+    "score_fallback": "Rows with inadequate u/v rule convergence or relative tail bound use separate global numerator/denominator evidence integrals; no query numerators cached.",
+    "finite_infinite_classification": "Margin gate includes v resolution/tails, conditional-u omitted mass/evidence resolution, and interval evidence-resolution estimate."
+  },
+  "independent_checks": {
+    "exact_conjugate_reference": {
+      "max_score_error": 1.6854073692229576e-11,
+      "max_quantile_error": 1.7470593860480221e-09,
+      "support_log_evidence_error": 1.7272405727908335e-11,
+      "fallback_rows": [
+        0,
+        2
+      ],
+      "actual_fatigue_fits": 0
+    },
+    "coarse_u_full_joint_helper": {
+      "status": "PASS",
+      "source_sha256_at_start": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+      "scope": "synthetic helper algebra and API guards only",
+      "fine_and_coarse_u_full_joint_mixture_max_error": 1.1102230246251565e-16,
+      "wrong_fixed_v_weight_error": 0.24939051111859611,
+      "conservative_log_tail_bound_cases": 4981,
+      "tail_bound_max_violation": -1.3236965798160933e-12,
+      "invalid_tolerance_guards": 16,
+      "actual_fatigue_rows_read_or_fitted": 0
+    },
+    "interval_and_pair_math": {
+      "scope": "independent mathematical bounds checks on generated quantities only",
+      "source_sha256_at_start": "240582c9141c705fad5a65e84323cdb19113efa76742fabe1610c6f09e46b0ad",
+      "pair_density_relative_error": 6.945370090946953e-13,
+      "interval_bound_max_violation": 3.3306690738754696e-16,
+      "numerical_cases": 31500,
+      "pointwise_density_bound": true,
+      "survival_endpoint_bound": true,
+      "no_actual_fatigue_fits": true
+    },
+    "population_and_query_isolation": "Population is cloned; fit not called. Generated test changed query endpoints/events and got bitwise identical predictive quantiles; only one selected-support cache entry."
+  },
+  "prior_review_findings_resolved": [
+    "Finite/infinite margin originally omitted conditional-u evidence/pruning terms; fixed before final hash.",
+    "Coarse-u score comparison originally needed v-evidence reweighting; final code includes it.",
+    "Nonfinite numerical tolerances now rejected."
+  ],
+  "runtime_review": {
+    "optimized_without_mode_replacement": [
+      "Immediate global u-domain expansion when outside-domain tail cannot be repaired by adding inside intervals",
+      "Cached Legendre rules",
+      "Event-specific density/survival branch evaluation",
+      "Support-array and shifted-kernel reuse",
+      "Per-row checked cached-posterior score plus evidence-ratio fallback"
+    ],
+    "obsolete_profile": "One old snapshot one-query profiler stopped before completion after superseded code; no timing or score result claimed.",
+    "completed_microprofile": "Nine conditional-u integrals on intermediate snapshot240582c took0.069s under concurrent activity; not a final whole-method runtime claim.",
+    "clean_runtime": "Author final same-hash benchmark: broad3query score0.645s,quantile2.465s; ordinary3query0.166/0.452s,ordinary10query0.233/1.520s. These are author timings, not independent physical or scalability validation."
+  },
+  "numerical_qualifications": [
+    "Bounds apply to truncation/pruning under the fixed positive Gamma quadrature. No separate continuous-Gamma integration theorem is claimed.",
+    "8/16 and successive-order differences are deterministic resolution diagnostics, not analytic total quadrature error bounds.",
+    "Population parameters/hyperparameter uncertainty are not integrated. Priors are target statistical shifts, not a physical-build covariance.",
+    "RFL can place mass at infinite life; quantiles require the explicit finite/infinite margin gate.",
+    "Caller must enforce training-only prior selection and outer-family exclusion; module review alone does not certify the nested runner.",
+    "No R90C90, engineering safety, physical life gain, or real-data superiority claim follows from these generated checks."
+  ],
+  "source_edits_by_independent_reviewer": false,
+  "actual_fatigue_rows_read_or_fitted": 0,
+  "external_correspondence": false,
+  "reproducible_command": "PYTHONPATH=. .venv/bin/python literature/v6_methods/rfl/independent_conjugate_checks.py f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e"
+}

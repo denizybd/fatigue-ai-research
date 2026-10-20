@@ -1,0 +1,52 @@
+{
+  "status": "IMPLEMENTATION_AND_SYNTHETIC_CHECKS_READY;NO_REAL_FITS",
+  "completed_utc": "2026-10-20T20:20:20.662246+00:00",
+  "model_file": "src/v6_gp.py",
+  "model_code_sha256": "14337ab27b986de8716b3ad2d510e19cfa468568aec13368f8a4fbb13f6a5c82",
+  "observed_schema": {
+    "training_rows": 441,
+    "conditions": 48,
+    "source_families": 13,
+    "failures": 380,
+    "eligible_n_ge6_rows": 396,
+    "eligible_conditions": 37,
+    "eligible_families": 12
+  },
+  "dependencies": "existing numpy/scipy/pandas only;no package installation required",
+  "predictor": "nonlinear censored GP AFT;global stress/R kernel plus working-condition intercept/optional shape kernel",
+  "inference": "joint training+selected-support fixed-hyperparameter Laplace;proper unit-weight Gaussian density/survival likelihood",
+  "tuning": "66 proposed candidates;selection exclusively inner held-source-family predictive censored logscore;parent freeze required",
+  "references": {
+    "primary_survival_GP": "https://arxiv.org/abs/1312.1591",
+    "Laplace_GP": "https://gaussianprocess.org/gpml/chapters/RW3.pdf",
+    "proper_censored_score": "https://proceedings.mlr.press/v151/rindt22a.html",
+    "censored_GP_prior_art": "https://link.springer.com/article/10.1007/s11222-023-10225-3"
+  },
+  "novelty": "additional established-model baseline;no invention/originalBNN-replication claim",
+  "synthetic_receipt": "literature/v6_ml/gp_synthetic_receipt.json",
+  "model_spec": "literature/v6_ml/GP_METHOD_SPEC.txt",
+  "grid_proposal": "literature/v6_ml/gp_grid_proposal.json",
+  "all_old_frozen_source_hashes_unchanged": {
+    "v5_rbf.py": true,
+    "v3_run.py": true,
+    "v3_design.py": true,
+    "v3_summarize.py": true,
+    "v2_models.py": true,
+    "v2_curved_models.py": true,
+    "v3_rfl.py": true
+  },
+  "limitations": [
+    "Laplace approximation",
+    "fixed mean/kernel/noise hyperparameters;their uncertainty not integrated",
+    "no literal infinite-life atom",
+    "q10 is not R90C90",
+    "q10 monotonicity diagnostic only",
+    "working conditions are not certified builds",
+    "synthetic correctness is not physical fatigue validation"
+  ],
+  "real_fatigue_model_fits_performed": 0,
+  "target_fits_or_tuning_performed": 0,
+  "contacts_or_publication": false,
+  "metadata_refreshed_utc": "2026-10-20T20:37:09.139236+00:00",
+  "independent_numerical_audit": "literature/v6_methods/gp_independent_audit.json"
+}

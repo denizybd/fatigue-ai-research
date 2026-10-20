@@ -1,0 +1,11 @@
+{
+  "requested_url": "https://sysengi.cjoe.ac.cn/EN/PDF/10.12011/SETP2023-2570",
+  "final_url": "https://sysengi.cjoe.ac.cn/EN/PDF/10.12011/SETP2023-2570",
+  "status_code": 200,
+  "content_type": "application/octet-stream;charset=UTF-8",
+  "bytes": 586615,
+  "pdf": true,
+  "sha256": "bd6d99dd8980b13081fd9ef74cd7bc6dd8e7f17d8aa1589af35e20e1dbdeed47",
+  "saved_as": "literature/v6_methods/WangLi2025_official.pdf",
+  "pages": 15
+}

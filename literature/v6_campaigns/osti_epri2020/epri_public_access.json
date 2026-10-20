@@ -1,0 +1,11 @@
+{
+  "url": "https://restservice.epri.com/publicdownload/000000003002018273/0/Product",
+  "retrieved_utc": "2026-10-20T20:33:11.500980+00:00",
+  "status": 200,
+  "final_url": "https://restservice.epri.com/publicdownload/000000003002018273/0/Product",
+  "bytes": 24287669,
+  "sha256": "faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a",
+  "path": "literature/v6_campaigns/osti_epri2020/epri_public.pdf",
+  "pdf_magic": true,
+  "pages": 148
+}

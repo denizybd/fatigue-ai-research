@@ -1,0 +1,131 @@
+{
+  "candidate_id": "v7_pre_outcome_safe_capped_decision_loss",
+  "status": "THEORETICAL CANDIDATE, not implemented, not a material finding, not a novelty claim",
+  "created_utc": "2026-10-20T21:28:18Z",
+  "access_boundary": {
+    "phase6_outer_outcomes_read": false,
+    "phase6_fits_started_by_this_task": false,
+    "frozen_protocol_or_runtime_edited": false,
+    "inputs_read": [
+      "literature/v7_proposals/anchored_eligibility_summary.json",
+      "literature/v7_proposals/anchored_episode_covariate_audit.json",
+      "literature/v7_proposals/covariate_only_policy_eligibility.json",
+      "literature/v6_methods/prior_art_matrix.json"
+    ]
+  },
+  "scientific_question": "After two identical high-stress support tests, can a third stress selected for a common safe, finite-horizon decision reduce held-source predictive loss and test cycles without increasing optimistic failures, across several downstream predictor classes?",
+  "data_status": {
+    "eligible_task_count_covariate_only": 316,
+    "eligible_condition_count": 33,
+    "eligible_source_family_count": 11,
+    "eligibility_rule": "After two highest-log-stress anchors sorted by rowID for ties, at least two remaining candidates and remaining maximum/minimum stress ratio >=1.05.",
+    "full_panel_required": true,
+    "stress_level_boundary": "Digitized row stresses and curator IDs are not author-verified nominal stress levels or independent physical replicates.",
+    "same_corpus_boundary": "Existing outcomes have been seen historically. A frozen pre-outcome policy on these data is still exploratory reused-data validation, not a new prospective campaign."
+  },
+  "decision_problem": {
+    "C_cycles": 1000000,
+    "h": 6,
+    "alpha": 0.1,
+    "random_target": "W=log10(min(N,C)); N may have an infinite-life atom, which becomes an atom at h.",
+    "action": "A vector a_j<=h, one lower-life claim per fixed query stress j. No artificial floor or upward clipping of a negative predicted log-life.",
+    "dangerous_event": "W_j<a_j, strictly. At the cap use F(h-), not F(h)=1.",
+    "safe_action": "a_R,j(D)=max{a<=h: P_m(W_j<a|D)<=alpha for every m in the frozen committee}.",
+    "quantile_relation": "The largest alpha-quantile minimizer under each m is its maximal model-safe action; a_R is their minimum. For continuous positive densities below h this is the usual min-model q10, capped at h.",
+    "loss": "ell_alpha(a,w)=(alpha-I(w<a))*(w-a), averaged equally over the fixed query IDs.",
+    "oracle_before_new_test": "b_m,j(D) is the model-specific largest alpha-quantile; B_m0=E_m[mean_j ell(b_m,j(D),W_j)|D].",
+    "oracle_after_new_test": "b_m,j(D,O_s) is the corresponding conditional quantile after the same observed third-test datum O_s; B_ms=E_m[min_a E_m[mean_j ell(a_j,W_j)|D,O_s]|D].",
+    "finite_loss_condition": "Each generative component must have E_m[abs(W_j)|D]<infinity. The considered finite-nu Student log-life models have nu>=4; finite capped cycle cost does not imply this log-loss condition by itself.",
+    "safety_boundary": "Simultaneous posterior risk control is conditional on the declared model laws and their coherent updates. It is neither physical-population coverage, R90C90 nor protection against all models being wrong."
+  },
+  "coherent_preposterior": {
+    "datum": "O_s=(min(N_s,C), I(N_s<C)); continuous failures below C plus the right-censor/cap atom.",
+    "joint_law": "For each hypothesized generating model m, integrate over its JOINT support-query predictive law conditional on training and the two shared anchors. Query and sentinel must share the same target latent variables.",
+    "common_update": "For every possible O_s generated under m, update EVERY committee model on the identical O_s, then form the simultaneous safe action a_R(D,O_s). Do not give different models their own favorable observations.",
+    "future_raw_loss": "G_ms=E_m[mean_j ell(a_R,j(D,O_s),W_j)|D].",
+    "prior_raw_loss": "G_m0=E_m[mean_j ell(a_R,j(D),W_j)|D].",
+    "conditional_residual_regret": "r_ms=G_ms-B_ms >=0; prior r_m0=G_m0-B_m0 >=0.",
+    "law_of_total_expectation": "G_m0-G_ms=(r_m0-r_ms)+(B_m0-B_ms). The second term is nonnegative for a coherent model and a common action domain, since a prior action can ignore the new datum.",
+    "warning": "max_m r_m0 - max_m r_ms is generally NOT min_m(r_m0-r_ms), and conditional-oracle regret reduction is NOT raw-loss reduction.",
+    "common_support_gate": "Every committee model must admit every possible datum having positive predictive probability under another committee member; otherwise its conditional update is undefined. Reject numerical zero-support/underflow artifacts. In particular a finite Gamma quadrature must not erase the positive finite-failure tail of a continuous RFL law. A proper contamination component is allowed only if explicitly declared before results and assessed as a changed model, never as a hidden likelihood floor."
+  },
+  "proposed_primary_score": {
+    "name": "reduction of worst prior-reference expected excess pinball loss per worst expected capped cycle",
+    "R0": "max_m(G_m0-B_m0)",
+    "R_s": "max_m(G_ms-B_m0), with the SAME no-new-test B_m0 for every candidate s",
+    "Delta_s": "R0-R_s",
+    "K_s": "max_m E_m[min(N_s,C)|D]/C, strictly positive and <=1",
+    "score": "Delta_s/K_s, considered only when Delta_s is numerically resolved positive and every generating model satisfies G_ms<=G_m0 within the prespecified integration tolerance.",
+    "terminology": "R_s can be negative because information may beat the no-new-test oracle. Call it prior-reference excess loss, not a nonnegative regret.",
+    "ties": "Numerically unresolved ties use larger remaining log stress, then ascending rowID; record all scores, uncertainty diagnostics and fallback reasons.",
+    "mandatory_third": "If no candidate passes the positive-gain/nonharm gates, choose smallest K_s, then larger stress, then rowID. This forced-test fallback does NOT inherit a no-harm theorem. Count fallback tasks in the full panel and report their frequency.",
+    "optional_stop_sensitivity": "A separate k=2-or-3 policy may decline the third test when gates fail. It must have its own support budget, cost and result rows, never be pooled with exactly-k3 comparisons.",
+    "cost_edge_cases": "Reject nonfinite/nonpositive K_s as numerical failure. Never rank negative-gain candidates by a negative ratio, which can prefer expensive tests merely by shrinking a negative score.",
+    "no_information_check": "If O_s is independent of query target latents under every model and does not change any posterior predictive query law, a_R and every G_ms equal their prior versions; Delta_s=0 exactly."
+  },
+  "committee_and_approximation_gate": {
+    "declared_structural_classes": [
+      "linear_and_curved_hierarchy",
+      "scalar_and_joint_random_fatigue_limit",
+      "local_slope",
+      "Student_AFT",
+      "censored_GP"
+    ],
+    "population_tuning": "Frozen source-separated training-only proper censored scoring; no outer query outcomes, policy utility, or friendly-class removal.",
+    "existing_predictor_warning": "A constrained MAP fit plus untruncated Gaussian curvature, or independently recomputed Laplace posteriors, is not automatically a coherent joint generative/update system. The safety/value identities above cannot simply be attached to the existing phase6 local and GP adapters.",
+    "candidate_generative_implementation": "A fixed positive finite-mixture approximation to the target latent prior on the finite candidate+query grid, conditioned on training. Draw/integrate target latents once, share them across sentinel/query, and reweight the SAME positive components by proper failure-density/censor-survival likelihoods for each hypothetical datum. Within the declared finite mixture the joint law and all posterior updates are coherent.",
+    "local_requirement": "A proper target intercept/slope prior with any negative-slope truncation explicitly normalized; this generative wrapper differs from the phase6 constrained-MAP downstream evaluator and must be named separately.",
+    "GP_requirement": "A single joint target GP prior on the fixed finite grid, conditional on an explicitly declared training approximation; subsequent support updates use the common positive mixture, not a new unrelated Laplace approximation per hypothetical observation.",
+    "mixture_fidelity_checks": "Before material experiments, assess increasing mixture size/seeds, predictive CDF/quantile/score convergence, survival/cap mass, and acquisition rank stability on manufactured cases and training-only folds. Finite-mixture internal coherence alone does not establish fidelity to the intended continuous posterior.",
+    "failure_policy": "If a declared class cannot meet numerical and computational gates, reject or explicitly label the candidate as restricted; do not silently drop an inconvenient class and keep a broad model-robust claim.",
+    "downstream_evaluation": "Every acquired support set is also given to all unchanged tuned downstream model classes. A committee-only benefit does not establish acquisition improvement across predictors."
+  },
+  "comparators": [
+    "Two shared highest-stress anchors + third uniform random from remaining IDs; same frozen query and random seeds.",
+    "Two shared highest-stress anchors + third highest remaining stress.",
+    "Two shared highest-stress anchors + third lowest remaining stress. This equals maximizing one-dimensional observed stress span; do not count low/span as two independent baselines.",
+    "Two shared highest-stress anchors + third nearest the fixed query median log stress; tie by rowID.",
+    "Two shared highest-stress anchors + model-specific expected information gain per that model's expected capped cycles, separately for every feasible coherent class, with the same outcome/censor treatment.",
+    "Two shared highest-stress anchors + model-specific posterior target-q10 variance reduction per expected capped cycles; explicitly requires epistemic target latents, not merely a predictive marginal q10.",
+    "Two shared highest-stress anchors + the class-averaged counterpart of the same safe-action decision-loss criterion, with proper evidence-updated BMA weights from a frozen class-balanced prior and mixture expected capped cost. Split prior mass equally among five structural classes, then among variants within each class; do not count hyperparameter grid points as independent models. Keep the terminal safe action fixed across acquired support sets; native mixture-q10 decisions are a separately labeled sensitivity. An average-versus-worst cost ablation separates aggregation from cost effects.",
+    "Global three-test random, highest-stress and stress-span/space-fill baselines without the two-anchor restriction, to test whether the anchor restriction itself loses useful information."
+  ],
+  "required_evaluation_before_any_claim": {
+    "primary": "Identified capped query pinball loss, strict optimistic-failure rate, mean safe log-life claim and actual total capped support cycles, all paired on the identical fixed query and source-separated folds.",
+    "all_support_costs": "Include both common anchors and the third test in actual experiment cost; an incremental third-test score is not a total-campaign saving.",
+    "aggregation": "Fixed query->seed->condition->source aggregation, source-level uncertainty with the small-source limitation explicit. Count missing predictions, failed integrations and fallback tasks.",
+    "downstream_robustness": "Require useful cost/decision benefit under at least three of five prespecified structural classes with no fully available harmful class hidden; retain the phase6 class-pair rules unless a new explicit protocol replaces them before results.",
+    "nonharm": "Evaluate actual paired optimistic-failure changes. A predicted model nonharm gate is not observed noninferiority.",
+    "prospective_scope": "A positive result on the reused 441-row proxy is exploratory; independent specimen/build-qualified physical campaign validation is still required.",
+    "ablation": "Worst-case versus class-balanced mixture, cost versus no-cost, shared anchors versus unconstrained three tests, and leave-one-class-out as sensitivity only. Never select the best committee after outer outcomes."
+  },
+  "cap_identification_and_saturation": {
+    "identification": "At C=1e6, an observed failure determines min(N,C), and a right-censor endpoint >=C determines min(N,C)=C. Under this condition both capped query loss/risk and actual capped support cost are point-identified from the recorded outcomes.",
+    "new_early_censors": "Any censor endpoint <C invalidates that point-identification shortcut; use explicit bounds or change the protocol before results.",
+    "saturation": "If all committee alpha-quantiles at a query stress are >=C, the current safe action is h and cannot increase. Existing above-C quantile disagreement disappears. This can flatten the acquisition objective, but does not imply all information value is zero: lowering a future bound can improve pinball loss/risk. Report these as different outcomes, plus cap-saturated query/task fractions and fallback rates.",
+    "uncapped_boundary": "A finite-nu Student distribution on logN can have E[N]=infinity; an RFL model can have an infinite-life atom. Neither invalidates bounded E[min(N,C)], and neither permits calling a capped improvement an uncapped life increase."
+  },
+  "theory_checks": {
+    "uniform_counterexample": "theory_checks.py / theory_check_receipt.json: exact analytic safe-action versus unconstrained minimax-pinball distinction.",
+    "coherent_binary_counterexample": "theory_checks.py / theory_check_receipt.json: a nonnegative conditional-regret example where min modelwise gains is zero but reduction in worst residual regret is positive; oracle identity also verified.",
+    "no_material_predictions_or_fits": true
+  },
+  "prior_art_boundary": {
+    "generic_minimax_regret_design_established": "Toman and Gastwirth1993, DOI10.1016/0378-3758(93)90024-Z; primary publisher abstract checked, full methods not read in this task.",
+    "fatigue_information_design_established": "Ryan2003 and Magazzeni2022/2023; existing local primary-source scope audit retained.",
+    "quantile_model_uncertainty_design_established": "Lee2018 and WangLi2025; existing local primary-source scope audit retained.",
+    "possible_contribution_only_if_validated": "A source-separated, finite-horizon, cost-aware stress-selection comparison that survives several strong model classes and explicit physical provenance gates; the words robust, active, BMA or minimax do not establish novelty.",
+    "primary_publisher_url_checked_in_this_task": "https://www.sciencedirect.com/science/article/abs/pii/037837589390024Z"
+  },
+  "recommendation": "Keep as a precise falsifiable next-step candidate. Do not describe it as a proven superior acquisition method. First test coherent-wrapper computational/fidelity feasibility without outer outcomes; then freeze a separate protocol if feasible.",
+  "numerical_feasibility_gate": {
+    "status": "NOT RUN; these gates must be finalized and frozen using manufactured/training-only cases before any material policy comparison.",
+    "proposed_absolute_pinball_tolerance_log10_cycles": 0.0001,
+    "proposed_absolute_quantile_tolerance_log10_cycles": 0.001,
+    "proposed_relative_expected_cost_tolerance": 0.001,
+    "method": "Use positive common-component likelihood reweighting, explicit cap atom, increasing latent mixture size and increasing future-outcome quadrature order. Check all candidate scores and signs, not only the winner.",
+    "rank_rule": "If the two best positive admissible scores are not separated beyond twice the largest observed refinement discrepancy, record a numerical tie and use the declared covariate/rowID tie break.",
+    "limits": "Refinement discrepancies and particle-seed agreement are numerical diagnostics, not certified error bounds or a proof of fidelity to a continuous posterior. Report model mass collapse/effective sample size. No material success claim without resolving consequential numerical ambiguities.",
+    "no_outer_tuning": true
+  }
+}

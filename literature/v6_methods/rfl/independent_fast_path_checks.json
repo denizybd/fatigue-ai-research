@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_sha256_at_start": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "scope": "synthetic helper algebra and API guards only",
+  "fine_and_coarse_u_full_joint_mixture_max_error": 1.1102230246251565e-16,
+  "wrong_fixed_v_weight_error": 0.24939051111859611,
+  "conservative_log_tail_bound_cases": 4981,
+  "tail_bound_max_violation": -1.3236965798160933e-12,
+  "invalid_tolerance_guards": 16,
+  "actual_fatigue_rows_read_or_fitted": 0
+}

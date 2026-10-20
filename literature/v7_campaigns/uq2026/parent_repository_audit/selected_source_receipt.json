@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-20T21:22:02.338921+00:00",
+  "commit_sha": "1b5c82714a35f66ad8f0ea846289b45719d22dd0",
+  "code_executed": false,
+  "requests": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/yulin-g/UQ-fatigue-life-PBF-AM/1b5c82714a35f66ad8f0ea846289b45719d22dd0/LICENSE",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/selected_source/LICENSE",
+      "status": 200,
+      "bytes": 1066,
+      "sha256": "1f01e9f0d112b1485f43e33f87d4a370a84068741b7f4ea2d146e0060ccaf54f",
+      "git_blob_sha1_matches_pinned_tree": true
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/generate_workflow.m",
+      "url": "https://raw.githubusercontent.com/yulin-g/UQ-fatigue-life-PBF-AM/1b5c82714a35f66ad8f0ea846289b45719d22dd0/UQ-fatigue-life-PBF-AM/generate_workflow.m",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/selected_source/generate_workflow.m",
+      "status": 200,
+      "bytes": 34465,
+      "sha256": "9139dbd93186f8640e698ac6ef068354019a355fa7b5bcd1e9638f0617ca5a40",
+      "git_blob_sha1_matches_pinned_tree": true
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GRAINPARAMS_SinglePhase.m",
+      "url": "https://raw.githubusercontent.com/yulin-g/UQ-fatigue-life-PBF-AM/1b5c82714a35f66ad8f0ea846289b45719d22dd0/UQ-fatigue-life-PBF-AM/functions/GRAINPARAMS_SinglePhase.m",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/selected_source/GRAINPARAMS_SinglePhase.m",
+      "status": 200,
+      "bytes": 2695,
+      "sha256": "4be4aeff90564ce30371b9dc521eb3a53b952a23f9954dc5da87001a90cc6e38",
+      "git_blob_sha1_matches_pinned_tree": true
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/GRAINPARAMS_TwoPhase.m",
+      "url": "https://raw.githubusercontent.com/yulin-g/UQ-fatigue-life-PBF-AM/1b5c82714a35f66ad8f0ea846289b45719d22dd0/UQ-fatigue-life-PBF-AM/functions/GRAINPARAMS_TwoPhase.m",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/selected_source/GRAINPARAMS_TwoPhase.m",
+      "status": 200,
+      "bytes": 3494,
+      "sha256": "4ed00493bf7e68e391c3625dd125ab494a3949612b3de1cd3e2a82dda72766f1",
+      "git_blob_sha1_matches_pinned_tree": true
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/functions/ParseMicrostructure_SinglePhase.m",
+      "url": "https://raw.githubusercontent.com/yulin-g/UQ-fatigue-life-PBF-AM/1b5c82714a35f66ad8f0ea846289b45719d22dd0/UQ-fatigue-life-PBF-AM/functions/ParseMicrostructure_SinglePhase.m",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/selected_source/ParseMicrostructure_SinglePhase.m",
+      "status": 200,
+      "bytes": 2022,
+      "sha256": "97927ea3ce39d6b73b42cb0be0b8c02703a05d7c1a27e3ada66c375096bdfd19",
+      "git_blob_sha1_matches_pinned_tree": true
+    },
+    {
+      "path": "UQ-fatigue-life-PBF-AM/elas3d_poly_fullstress.f90",
+      "url": "https://raw.githubusercontent.com/yulin-g/UQ-fatigue-life-PBF-AM/1b5c82714a35f66ad8f0ea846289b45719d22dd0/UQ-fatigue-life-PBF-AM/elas3d_poly_fullstress.f90",
+      "file": "literature/v7_campaigns/uq2026/parent_repository_audit/selected_source/elas3d_poly_fullstress.f90",
+      "status": 200,
+      "bytes": 113444,
+      "sha256": "371ef3571205f91464783c23b4a4eab00b5f9a02d3f5674de0a6a52d4a4f7952",
+      "git_blob_sha1_matches_pinned_tree": true
+    }
+  ],
+  "data_added_to_fits": 0
+}

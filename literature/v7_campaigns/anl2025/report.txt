@@ -1,0 +1,11 @@
+HISTORICAL2025-ONLY SOURCE VIEW. Latest crossreport view: data/external_v7/anl2025/crossreport_augmented9_v2.csv and crossreport_augmentation_receipt_v2.json. Independently verified2023Table3 now supplies author BuildIDR745577 for three air rows; prescribed2023 and measured/reported2024/2025 amplitudes remain separate. The source2025-only wording below is preserved as curation history, not the current crossreport build assessment.
+
+ANL/LWRS-25/2 Table 4: nine individual reported fatigue lives, not nine newly qualified RT force-controlled tests.
+
+The primary report identifies all nine sample IDs and test IDs. Three WEC FS samples link to a single described flange sector, EOS M290 and Praxair TruForm 316-3 batch22. This is an author-supported component-group/powder join, without a serialized build job. The six ANL samples link only to a two-tube group; per-sample tube membership and powder lot are absent. Curator group keys must not be presented as author build IDs.
+
+All tests are at 298-300C. Three air tests are strain controlled and fully reversed. Six PWR-water tests use pull-rod stroke control; reported strain amplitudes and rates are approximate and nonconstant. The air endpoint is a roughly50% stress-amplitude drop or final unstable-fracture cycle. The report does not explicitly restate a separate water-test endpoint; that field remains unresolved. Frequency, waveform, and specimen prior-history verification remain blank/false. No rows enter the frozen v6 model comparison or RT force-controlled primary panel.
+
+Prior-year ANL reports and the EPRI/WEC ASME component program can repeat specimens or manufacturing groups. This report is not automatically an independent campaign. Preserve author IDs and compare previous yearly tables before unioning records.
+
+Public access is through the official DOE/LWRS report. No explicit Creative Commons license is asserted. This curation contains reported numerical facts and source locations; source PDF/images remain local.

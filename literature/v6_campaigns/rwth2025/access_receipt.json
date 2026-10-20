@@ -1,0 +1,12 @@
+{
+  "key": "rwth2025",
+  "url": "https://publications.rwth-aachen.de/record/1023175/files/1023175.pdf",
+  "retrieved_utc": "2026-10-20T20:26:36.425535+00:00",
+  "status": 200,
+  "final_url": "https://publications.rwth-aachen.de/record/1023175/files/1023175.pdf",
+  "bytes": 248,
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561",
+  "pdf_magic": false,
+  "path": "literature/v6_campaigns/rwth2025/official_source.html"
+}

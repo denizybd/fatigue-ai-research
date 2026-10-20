@@ -1,0 +1,12 @@
+{
+  "url": "https://api.datacite.org/dois?query=316L+AND+fatigue&page%5Bsize%5D=100",
+  "status": 200,
+  "bytes": 801865,
+  "sha256": "d764ef188ff50c062c796f6fdf6317a8dd5f364e91acc96a90ca65d6b8d4c95e",
+  "retrieved_utc": "2026-10-20T21:29:30.028925+00:00",
+  "meta": {
+    "total": 352,
+    "totalPages": 4,
+    "page": 1
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://data.mendeley.com/public-files/datasets/9xpx3wt82r/files/ac45c6d2-1cd5-4730-9b19-5992db06ed1f/file_downloaded",
+    "name": "fatigue data.xlsx",
+    "retrieved_utc": "2026-10-20T20:45:25.939171+00:00",
+    "status": 200,
+    "bytes": 22005,
+    "sha256": "e7bc33e03c16ce3b89156e89bd9814a3e25234e107923d4de0c813f8dbc31a2b",
+    "hash_matches_metadata": true
+  },
+  {
+    "url": "https://data.mendeley.com/public-files/datasets/9xpx3wt82r/files/fb90b807-c066-43a5-8678-c95d4cc86429/file_downloaded",
+    "name": "regression script.R",
+    "retrieved_utc": "2026-10-20T20:45:26.534265+00:00",
+    "status": 200,
+    "bytes": 2197,
+    "sha256": "ca5544d04c42fc936b208f8c13c97ec2c800cdcb95ad60572af0ca4daa93ead3",
+    "hash_matches_metadata": true
+  }
+]

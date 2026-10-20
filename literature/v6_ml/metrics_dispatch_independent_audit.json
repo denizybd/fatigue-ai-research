@@ -1,0 +1,82 @@
+{
+  "status": "PASS_WITH_DECLARED_SCOPE_LIMITS",
+  "checked_utc": "2026-10-20T20:54:01.683399+00:00",
+  "files": {
+    "src/v6_metrics.py": "519fe6026a730361c0391e4f09b9a000c9af7be815251da79c05d9d279787f6d",
+    "src/v6_dispatch.py": "7772305d4473b4938aeacbff00b02cd6cf6b7070a54c6f9425f6e523edcc2196",
+    "src/v6_pipeline.py": "553a78fde402b8a75b0b0222b377eb4cc21f63f243957510baafb11c0d4aa562",
+    "src/v6_freeze.py": "38d305dcc988ca97e0161c62ee621142a9171f99c77b7046cc2c8624cf8659fd",
+    "run_v6.sh": "941f9c546c6657c10172850f2fd039ad0ae6c174cfa0eb4952ec754d2471d568",
+    "tests/test_v6_runtime.py": "fb0407a8c10057670693349b01f7e4a7c7063b5abd4b785ee128391deed368b6",
+    "tests/test_v6_metrics.py": "e507b06f9b5d5244328997359c673010d84bca4779ee09184def71c41675a432",
+    "literature/v6_ml/metrics_independent_checks.py": "3f174e6ebeca07884f46a8e67ee769fc3dddc5189bd7ed7987fb35c54280dbd2",
+    "protocols/v6/nested_design.txt": "4fdfb77ec26c1937fcc3fbf0d0e77ee826d5bd15ea7af0f035cbe6e1657c1fbb"
+  },
+  "roles": {
+    "metrics": "Independent review of parent formulas and independent enumeration oracles; parent implemented shared-cost coupling after reported gap.",
+    "runtime": "Independent initial review found missing dispatch final state and duplicate launch protection; this reviewer then authored requested dispatch/pipeline fixes. Root retains independent review responsibility for those edits."
+  },
+  "metrics": {
+    "risk": "Observed failure has exact strict-Y<q indicator; censor gives lower0 and upperI(q>c), missing q gives[0,1]. Infinities include admissible infinite lifetime.",
+    "paired_risk": "Same latent censored Y used for both indicators. Equality cancels exactly, including equal infinite thresholds; missing pair conservatively[-1,1].",
+    "shared_cost": "Shared specimen costs cancel from difference. Ratio(c+x)/(c+y) uses derivative sign(y-x) to choose common-cost endpoint after choosing exclusive endpoints. Different-row unknown costs retain rectangular bounds; identical shared support has exact ratio1 even at10M censor sensitivity.",
+    "rectangular_cost": "Low-level interval helper gives conservative bounds without shared identity. Current scientific comparisons should use paired_ledger_cost_bounds; nonzero supports have positive observed lower costs, and k0 uses two empty ledgers.",
+    "source_weighting": "Equal query means within episode, then seeds/condition/source; bootstrap only source-level means, never seed pseudo-replication.",
+    "bootstrap": "2000 source-resampling draws,RNG231. Strict interval suppressed when any supplied source is nonfinite or fewer2 finite. Mean field remains finite-source descriptive mean and must retain coverage/count labels.",
+    "caller_contract": "Caller must retain/reindex expected source families and choose strict mode for strict claims. Helpers cannot detect an entirely absent source that was removed before their input."
+  },
+  "independent_numerical_checks": {
+    "status": "PASS",
+    "single_risk_checks": 768,
+    "paired_same_Y_risk_checks": 384,
+    "missing_quantile_worst_case_convention": true,
+    "joint_shared_cost_corner_cases": 108,
+    "max_joint_cost_corner_error": 5.684341886080802e-14,
+    "rectangular_cost_corner_cases": 100,
+    "identical_shared_censored_support_exact_ratio_one": true,
+    "independent_query_seed_condition_family_weighting": true,
+    "independent_source_bootstrap_2000_seed231": true,
+    "strict_missing_source_interval_suppressed": true,
+    "physical_validation": false,
+    "actual_fatigue_fits": 0,
+    "metrics_source_sha256": "519fe6026a730361c0391e4f09b9a000c9af7be815251da79c05d9d279787f6d"
+  },
+  "runtime": {
+    "full_pipeline_lock": "Nonblocking ownership of whole8-stage pipeline; duplicate returns before writing status or starting a child.",
+    "global_dispatch_lock": "Shared across inner/outer/caps to keep at most3workers and prevent duplicate leaf writes.",
+    "inherited_lock": "Held descriptor passed to children; closing parent descriptor does not explicitly unlock it. Actual generated Python child retained flock after parent context exited, then released it on clean test exit.",
+    "process_safety": "No shell interpolation, no kill/termination operations. Explicit Python executable,cwdROOT,thread environment1 and per-job PID/log/receipt.",
+    "states": "Starting,running,and final complete/failed states; spawn errors and child nonzero exits remain failed, completed leaf shards preserved. Pipeline stops before dependent stages on failure.",
+    "freeze": "Every pipeline/dispatcher verifies Experiment seal before launching children; each v6_run child independently verifies again. Freezer takes nonblocking lock around existing-seal/result checks and atomic JSON replace; refuses overwrite/existing actual result files.",
+    "pipeline": "inner\u2192select\u2192outer1M\u2192combine1M\u2192analyze1M\u2192outer10M\u2192combine10M\u2192analyze10M",
+    "freezer_hash_coverage": "New pipeline and analysis modules included in RUNTIME."
+  },
+  "checks": {
+    "pytest_command": ".venv/bin/python -m pytest -q tests/test_v6_runtime.py tests/test_v6_metrics.py",
+    "pytest_passed": 16,
+    "runtime_tests": 11,
+    "parent_metric_tests": 5,
+    "duplicate_launch_rejected": true,
+    "actual_child_lock_survival_test": true,
+    "all66_mock_jobs_bounded3": true,
+    "nonzero_and_spawn_failures_recorded": true,
+    "missing_or_changed_seal_starts_no_child": true,
+    "synthetic_freeze_refuses_prior_results_and_overwrite": true,
+    "shell_syntax": "/bin/zsh -n run_v6.sh PASS"
+  },
+  "scope": {
+    "actual_fatigue_model_fits": 0,
+    "actual_prepared_fatigue_plans": 0,
+    "actual_repository_freeze_invocations": 0,
+    "freeze_test": "Only generated temporary files under patched module paths; no fatigue input/model code fit.",
+    "runtime_test": "Fake Experiment and mocked model subprocesses; one artificial Python stdin-wait child tested inherited OS flock, with no model/data access.",
+    "no_contact_or_publication": true
+  },
+  "limitations": [
+    "Source bootstrap remains descriptive under historical source dependence; not physical build confidence or R90C90.",
+    "Final new analysis consumer is separately authored/audited; this receipt proves helpers and execution scaffolding, not yet actual result arithmetic.",
+    "Direct low-level v6_run module calls can bypass dispatcher/pipeline ownership; prescribed entry point is run_v6.sh.",
+    "A prefit seal prevents later source drift but is not external proof of every historical manual action.",
+    "Runtime child may continue after parent interruption; inherited locks intentionally prevent duplicate launch until active children exit."
+  ]
+}

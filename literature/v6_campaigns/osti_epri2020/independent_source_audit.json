@@ -1,0 +1,210 @@
+{
+  "status": "PASS_REPORTED_TABLE_AND_COMPONENT_POWDER_ASSOCIATION_WITH_EXPLICIT_LIMITS",
+  "checked_utc": "2026-10-20T20:43:28.526152+00:00",
+  "source": {
+    "url": "https://restservice.epri.com/publicdownload/000000003002018273/0/Product",
+    "report_id": "3002018273",
+    "osti_id": "1668247",
+    "year": 2020,
+    "pages": 148,
+    "pdf_sha256": "faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a",
+    "local_pdf": "literature/v6_campaigns/osti_epri2020/epri_public.pdf",
+    "access": "Official public EPRI download; web fetch attempted but24.3MB exceeds tool limit",
+    "license": "Copyright2020 EPRI; all rights reserved. Public access is not a CC/open redistribution license. No PDF redistribution performed."
+  },
+  "checked_pages": [
+    {
+      "pdf": 117,
+      "printed": "A-5",
+      "item": "component scope"
+    },
+    {
+      "pdf": 119,
+      "printed": "A-7",
+      "item": "TableA3 and sectionA4"
+    },
+    {
+      "pdf": 120,
+      "printed": "A-8",
+      "item": "TableA4"
+    },
+    {
+      "pdf": 143,
+      "printed": "A-31",
+      "item": "FigureA23 and TableA18"
+    }
+  ],
+  "independent_visual_sha256": {
+    "literature/v6_campaigns/osti_epri2020/independent_visual/pdf117.png": "2ade26eb77659bd14028aa7eb16a569f6e565c8949493ee623fef862f1171700",
+    "literature/v6_campaigns/osti_epri2020/independent_visual/pdf119.png": "fa64f1cb5b906c0339026f298c2fb1ee15227acc38bd7a3ba05b22256136df35",
+    "literature/v6_campaigns/osti_epri2020/independent_visual/pdf120.png": "d4b80ebbbb86414415a25c2d168cfeae9573f7815e395cbb55468d0c526586c3",
+    "literature/v6_campaigns/osti_epri2020/independent_visual/pdf143.png": "93bf0414fd06942b847271cbe9058291df4af805a0364922b482e5bd8324bcd2"
+  },
+  "table": {
+    "author_sample_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "source_cells_checked": 98,
+    "all_source_cells_match_csv": true,
+    "curator_csv": "data/external_v6/epri/tableA18_reported14.csv",
+    "curator_csv_sha256": "080ece1cced536af8871dd8f415cb4293892c5cbe1b5de650712fe854177c02f",
+    "strain_percent_to_fraction_verified": true,
+    "reported_cycles_to_failure": [
+      2202,
+      2821,
+      5160,
+      4693,
+      6229,
+      13227,
+      254532,
+      86286,
+      51370,
+      53154,
+      26420,
+      25536,
+      7000,
+      7000
+    ],
+    "life_unit": "Nf cycles to failure as printed; not reversals2Nf; no multiplication/division by2",
+    "room_temperature_rows": 10,
+    "room_temperature_C": 20,
+    "elevated_temperature_rows": 4,
+    "elevated_temperature_C": 300,
+    "event": "All14 reported as cycles to failure, no censor/runout symbols. event1 reflects the table; physical rupture/stop criterion not separately verified.",
+    "duplicate_note": "Distinct author IDs13/14 have identical reported7000-cycle endpoints and other cells. Retain both with duplicate-coordinate warning, without extra independence inference."
+  },
+  "identity": {
+    "author_specimen_ids_verified": true,
+    "source_component_label": "Rolls Royce tee",
+    "specimen_to_component": "Direct TableA18 heading and FigureA23 caption associate all14 with this named component group, not a count-based guess.",
+    "single_named_component_context": true,
+    "explicit_exactly_one_physical_build_job_statement": false,
+    "unique_same_physical_component_serial_verified": false,
+    "author_build_or_component_serial_available": false,
+    "per_specimen_extraction_map_available": false,
+    "canonical_component_key_status": "Curator source-context label; no new author build ID or physical specimen position invented.",
+    "powder_supplier": "LSN Diffusion",
+    "powder_lot": "55999",
+    "powder_product": "F-316LNRR-ALMD",
+    "powder_join": "TableA4 Rolls-Royce column, in same component appendix; manufacturer/component-group association only, no per-ID certificate or uniquely named job-lot join."
+  },
+  "material_process": {
+    "report_grade": "Type316L/S31603",
+    "product_name": "F-316LNRR-ALMD",
+    "grade_caution": "Supplier product string316LN is not an independent grade certificate. Preserve exact product and report316L/S31603 labels.",
+    "process": "LPBF",
+    "machine": "EOS M280",
+    "laser_power_W": 195,
+    "layer_um": 20,
+    "stripe_mm": 5,
+    "rotation_degrees": 67,
+    "effective_velocity_m_s": 1.083,
+    "hatch_um": 90,
+    "energy_density_J_mm3": 100.03,
+    "powder_atomization_gas": "Nitrogen",
+    "build_chamber_gas": "Nitrogen",
+    "fatigue_environment": "Not stated; manufacturing gas is not fatigue atmosphere."
+  },
+  "heat_treatment": {
+    "label": "HIP and solution anneal",
+    "evidence": "FigureA23 caption directly assigns HIP+SA to RRtee.",
+    "exact_RR_schedule_verified": false,
+    "caution": "PDF119 sectionA4 exact1120C2h schedules name Westinghouse/Auburn or Oerlikon/secondWestinghouse and omit RR. Those schedules cannot silently be assigned to RR fatigue specimens."
+  },
+  "test_method": {
+    "source_standard": "ASTM E606-19e1",
+    "standard_primary_reference": "https://store.astm.org/e0606_e0606m-19e01.html",
+    "standard_context": "Official standard concerns strain-controlled axial fatigue; source gives total-strain amplitudes. Adjacent E606 strain-life evidence, not verified force-controlled HCF.",
+    "campaign_controller_settings_explicit": false,
+    "constant_amplitude_history_explicit": false,
+    "virgin_prior_history_verified": false,
+    "R_explicit": false,
+    "frequency_waveform_explicit": false,
+    "failure_criterion_explicit": false,
+    "runout_limit_or_full_original_program_known": false,
+    "negative_method_search": "Independent pypdf scan of148pages: E606/fatigue occurs only in contents/captions and PDF143; no further campaign-specific method found.",
+    "unknown_values_remain_blank": [
+      "author_build_id",
+      "author_component_serial",
+      "author_build_job_id",
+      "per_specimen_extraction_position",
+      "specimen_build_orientation",
+      "load_ratio",
+      "strain_ratio",
+      "frequency_Hz",
+      "waveform",
+      "failure_endpoint_detail",
+      "runout_threshold",
+      "rr_HIP_temperature_C",
+      "rr_HIP_duration_h",
+      "rr_SA_temperature_C",
+      "rr_SA_duration_h",
+      "control_mode"
+    ]
+  },
+  "stress_semantics": {
+    "raw_label": "Stress Amplitude, ksi and MPa",
+    "measured_cyclic_stress_verified": false,
+    "diagnostic_implied_E_GPa_min": 195.0,
+    "diagnostic_implied_E_GPa_max": 195.2,
+    "inference": "All reported stresses approximately equal195GPa times total-strain fraction. Consistent with elastic/pseudo-stress conversion, but calculation unstated. Do not treat as force-controlled stress or measured stabilized cyclic stress."
+  },
+  "admission": {
+    "current_RT_force_CA_training": false,
+    "current_gold_force_HCF_panel": false,
+    "adjacent_reported_strain_life_packet": true,
+    "current_cohorts_unchanged": true,
+    "reason": "Actual author IDs and source component/powder association are useful progress; source is method-adjacent with unresolved unique-build serialization and fatigue protocol details."
+  },
+  "no_fits": true,
+  "no_correspondence": true,
+  "no_raw_or_curated_data_edits": true,
+  "numeric_parser": "pandas float_precision=round_trip; prevents approximately1e-16 parser-rounding artifact in sample12 strain fraction",
+  "source_family_screen": {
+    "scope": "Independent metadata-only scan; not universal specimen reuse proof",
+    "articles": 618,
+    "metadata_sha256": "36a5ed57538739c37056bc956880f7c89bed009090999ea214d42612cf2c40de",
+    "specific_report_author_matches": false,
+    "hits": [
+      {
+        "index": 90,
+        "doi": "10.1016/j.engfailanal.2022.106494",
+        "title": "High cycle fatigue performance evaluation of a laser powder bed fusion manufactured Ti-6Al-4V bracket for aero-engine applications",
+        "terms": [
+          "Rolls-Royce"
+        ],
+        "names": []
+      },
+      {
+        "index": 466,
+        "doi": "10.1038/s41598-021-99959-6",
+        "title": "Impact of surface and pore characteristics on fatigue life of laser powder bed fusion Ti-6Al-4V alloy described by neural network models",
+        "terms": [
+          "Rolls-Royce",
+          "Rolls Royce"
+        ],
+        "names": []
+      }
+    ],
+    "interpretation": "Only2 Rolls-Royce corporate-name matches; both explicitly Ti-6Al-4V titles and no listed EPRI author matches. Current441 source-group labels have no EPRI report match. Keep the entire EPRI DOE RRtee program and downstream derivatives as one future family block.",
+    "curator_overlap_report": "literature/v6_campaigns/epri/overlap_audit.json"
+  },
+  "crosslinks": {
+    "curation_receipt": "literature/v6_campaigns/epri/curation_receipt.json",
+    "evidence_ledger": "literature/v6_campaigns/epri/evidence_ledger.csv",
+    "curator_report": "literature/v6_campaigns/epri/report.md"
+  }
+}

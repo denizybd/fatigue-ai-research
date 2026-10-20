@@ -1,0 +1,342 @@
+V6 METHODS AND VALIDATION OPTIONS -- PROPOSAL, NOT A FIT AUTHORIZATION
+Prepared 20 October 2026. The parent's final frozen protocol, grid manifests,
+and episode-design hashes supersede choices below if explicitly recorded.
+No actual fatigue observations have been fitted by this proposal/audit branch.
+
+1. Scientific question and permitted inference
+
+Can a small number of censored constant-amplitude observations improve the
+usefulness of a predicted lower-life quantile under source shift, and which
+target adaptation and stress-selection choices retain acceptable empirical
+risk at an identified cycle cost? The previous model-dependent high-stress
+gains do not prove a physical mechanism or increase a specimen's actual life.
+The useful-life metric is a change in a model's predicted q10. It is not an
+R90C90 tolerance bound, a 90% population guarantee, or a calibrated confidence
+limit. A physical interpretation needs independent material evidence.
+
+All 441 current corpus outcomes, and previous external panels, have already
+been inspected in earlier work. A new nested procedure separates tuning from
+its own outer evaluation, but remains exploratory reuse of historical data.
+Do not call the outer evaluation an unseen prospective confirmation.
+
+The first stage establishes reasonably tuned predictors and adapter controls.
+A new acquisition policy is a separate, subsequently frozen mechanism study;
+neither a GP nor generic Bayesian/active stress selection is itself novel.
+
+2. Corpus, experimental units and eligibility
+
+Use the existing source-method-qualified 441 rows / 48 working conditions /
+13 conservative source families without admitting new rows or editing prior
+frozen analyses. There are 380 failures and 61 right-censored observations.
+All censor endpoints are at least 10^6 cycles; the largest is about 10.608M.
+Working condition labels are not physical specimen, powder-lot or build IDs.
+Source-method eligibility does not promote these observations to the gold
+identity-qualified build panel. Preserve linked publications as one family.
+
+The inherited n>=6 query rule yields 37 conditions / 396 rows in 12 families.
+The Cui-linked family has 13 rows in 3 conditions of sizes4,4,5 and no eligible
+k3 condition. Retain it in every training set, with optional k0 cold-start
+results outside the primary few-shot panel. Eleven small conditions (45 rows)
+remain training data, rather than silently disappearing from the catalogue.
+There are28 k5-eligible and5 k10-eligible conditions. k10 is an appendix.
+These counts describe availability, not independent physical campaigns.
+
+For each eligible condition, fix the common query before acquisition:
+n_query=max(3,floor(0.4*n)); the remaining rows form the retrospective pool.
+Hash/split on pretest IDs and covariates only. Preserve original query event
+and censor endpoints for scoring. The exact frozen episode file governs.
+Covariate stress diversity from graph-derived coordinates is not proof of
+author-defined nominal stress levels; do not treat small digitization jitter
+as meaningful experimental resolution or manufacture new stresses.
+
+3. Full nested family validation and fair tuning
+
+Prefer all12 eligible outer-family leave-one-family-out folds over a9/4 split.
+For a fixed outer family, tune on the other11 eligible families by inner LOFO;
+Cui remains training-only. The entire inner and outer target families must be
+absent from each inner population fit, including ineligible conditions and
+linked-paper rows. Transformations, knots, reference scatter, prior scales,
+mean fits and any source-derived calibration are recomputed on that training
+set alone. Population fits can be cached by the unordered pair of excluded
+families: choose(12,2)=66 distinct inner training sets, not78.
+
+Proposed inner seeds101,202,303, outer seeds0..9; parent freezes these before
+any real fit. Tune using common random-support k0 and k3 episodes. The primary
+inner criterion is the equal-family mean censored predictive log score, with
+equal k0/k3 weighting and within-family condition/seed/query normalization.
+Write the exact aggregation in the final runner; a large family must not win
+by having more rows. Higher score is better. Use proper failure density for
+observed log10 life and survival probability at a censor endpoint; do not
+score a runout as a failure. The likelihood interpretation assumes censoring
+is exogenous conditional on included covariates and retained protocol.
+
+All model/configuration selection, numerical eligibility rules and tie breaks
+are inner-only. Predeclare deterministic simplicity-first tie breaking at a
+small stated score tolerance, and never inspect outer utility to choose a
+configuration. Failed candidates are explicit in grid receipts. Do not replace
+failed candidates selectively after seeing which outer family would benefit.
+If a whole model family fails, report unavailable; use only predetermined
+numerical fallbacks. Do not reward an unavailable/infinite quantile as utility.
+
+The old six fitted reference families are meaningful controls, not untuned
+strawmen: pooled censored Basquin, hierarchical/intercept Basquin, continuous
+two-slope hierarchical Basquin, scalar-shift Normal-Normal RFL, matched
+intercept, and local intercept/slope MAP. In new wrappers tune applicable
+target prior-width multipliers {0.25,0.5,1,2,4}, retaining old defaults, by the
+same inner rule. Record which controls actually have a prior; do not invent a
+prior for the unpooled matched-intercept estimator. Tuning a wrapper must not
+edit the old frozen implementation. Report both frozen and strongest tuned
+reference results where their roles differ.
+
+All new population likelihoods below use unit observation factors. Equal
+source weights in an external validation score are different from powering
+training likelihoods or inflating observation noise. The historical physical
+references used source-balanced working likelihoods; disclose this estimator
+difference, retain controls, and consider a unit-weight physical fit sensitivity
+only if predeclared before outcomes. A source-weighted censored likelihood is
+not equivalent to merely changing Gaussian noise for uncensored rows.
+
+4. Method A: nonlinear censored Gaussian-process AFT
+
+Y=log10(N)=m(log10(S),R)+f_global(x)+f_condition(x)+epsilon,
+epsilon~Normal(0,sigma^2). The mean is a training-only censored Basquin fit;
+the residual kernel is global RBF(logS,R) plus a condition random intercept
+and optional condition-specific RBF(logS). Condition covariance uses working
+database conditions, not asserted physical builds. For event e at y,
+L=NormalPDF(y;f,sigma)^e * NormalSF(y;f,sigma)^(1-e).
+
+Fit the joint latent posterior with Laplace's approximation at fixed kernel,
+noise and mean parameters. At k>0 append ONLY selected revealed supports and
+recompute the joint latent mode; do not stack a second Gaussian approximation
+on an old Laplace posterior. Censored-normal factors are log-concave; use a
+converged whitened Newton solve, jitter receipt and predictive-variance checks.
+Predictive log-life is Gaussian under the approximation; invert this predictive
+CDF for q10. Latent-function uncertainty is integrated approximately. Mean,
+kernel/noise hyperparameter and model-selection uncertainty are plug-in.
+
+Latest parent prefit proposal: globalSD {0,.3,.6}, conditionShapeSD {0,.35},
+stressLength {.1,.35,1} in log10(MPa), noiseMultiplier {.5,.75,1.25,2}.
+R length1, condition-shape length equal to stress length, condition-intercept
+scale and reference noise computed from the current training fold. Deduplicate
+identical covariance settings:72 Cartesian entries become64 when length is
+irrelevant for zero global+shape kernels. Add2 explicitly specified anchors
+in the final grid manifest:66 unique candidates. Do not infer their parameters
+from this proposal. The emitted implementation now specifies the anchors as
+zero residual covariance/noise multiplier1 and a default with globalSD .5,
+shapeSD .35, stress/shape length .2 and noise multiplier1. The runner uses the
+training-only hierarchical Basquin location as the shared fixed mean/reference.
+The earlier24-grid suggestion is superseded BEFORE fits.
+
+ShapeSD=0 is a condition-shape-kernel ablation, NOT an intercept-only target
+update: joint conditioning can still change the uncertain global function.
+The zero-global/zero-shape candidate is the strict intercept-kernel anchor.
+Use a separate frozen-global approximation only if explicitly named.
+
+A decreasing mean does not guarantee a decreasing GP q10. Log and quantify
+q10 increases on a predeclared stress grid at fixed R and condition, including
+extrapolation limits. Never silently isotonic-project quantiles while retaining
+the old CDF/log score. A virtual-derivative monotone GP would be a different
+method with an additional approximation, not an automatic property here.
+
+5. Method B: robust heteroscedastic Student AFT, scalar target update
+
+s=(log10(S)-trainingCenter)/trainingSD, r=R-trainingCenterR.
+Let H(s,k)=(s-k)_+ -(-k)_+. Use b_j=-softplus(beta_j)<0.
+Linear mean: mu=a+cR*r+b0*s.
+Two-knot mean: mu=a+cR*r+b0*s+(b1-b0)H(s,k1)+(b2-b1)H(s,k2),
+where k1,k2 are training-only standardized-logstress quantiles1/3 and2/3.
+This is continuous with negative stress slope in each segment.
+log(sigma(s))=gamma0+gamma1*s; gamma1=0 for constant scatter.
+gamma0 bounds[log(.05),log(2)], gamma1 bounds[-.5,.5].
+Training penalty=1e-3*(sum(b_j^2)+cR^2)+0.5*(gamma1/.25)^2;
+intercept and gamma0 unpenalized; stable unconstrained raw beta.
+
+Y=mu(x)+u_condition+sigma(s)*T_nu, u_condition~Normal(0,tau^2).
+For training, maximize proper unit-factor within-condition marginal likelihoods
+integrating each u; for a target condition update the SAME Normal prior by the
+product of only revealed failure-density/survival factors. Nuisance population
+parameters are plug-in, not a fully Bayesian hierarchical population posterior.
+Use adaptive positive quadrature with explicit Gaussian-prior tail bound and
+resolution checks; do not represent this as an exact analytic posterior or a
+Laplace target approximation. Predict the mixture CDF and invert it; averaging
+conditional/component quantiles is incorrect.
+
+Latest parent prefit grid: nu {4,10,Normal} x scatter {constant,loglinear} x
+mean {linear,two knots} x tau {.1,.3,1,3} log10-life SD =48 configurations.
+The original24-grid tau {.3,1} is superseded BEFORE any real fit. tau applies
+both to training condition marginals and target prior, rather than fitting
+with one prior and quietly adapting with another. Two deterministic starts
+are selected by the same training objective, not target validation outcomes.
+
+This first method updates only scalar target u. Its robust tail, mean curvature
+and heteroscedasticity are population flexibility, not target-learned slope or
+scatter. Finite-nu Student errors on log10 life imply E[N]=infinity, so never
+use an uncapped mean-life or lognormal moment shortcut. Capped expected cycles
+are finite and usable. A heteroscedastic monotone location need not have
+monotone q10; report the same grid diagnostic as for the GP.
+
+6. Material physical control: two-dimensional RFL target adaptation
+
+Retain the supported Normal-Normal RFL population variant from Pascual/Meeker,
+not a claim to reproduce an author's Weibull implementation:
+log10(Gamma)~Normal(muGamma+v,tauGamma^2),
+Y=a+u+b*log10((S-Gamma)/Sref)+cR*(R-Rbar)+epsilon for S>Gamma,
+with b<0 and N=infinity for S<=Gamma. Censor likelihood includes both finite
+survival and this genuine infinite-life mass. v moves the distribution of the
+random fatigue limit; u moves conditional finite log life.
+
+Predetermined proper target prior candidate:
+(u,v)~Normal(0,diag((m*tauHierTrain)^2,s_v^2)),
+m in {.25,.5,1,2,4}; s_v in {.05,.15} log10-stress units:10 combinations.
+Select by the same nested inner rule. The prior is an empirical-Bayes/source-
+validated modeling choice, not an inferred physical-build covariance or a
+population-parameter posterior. Zero correlation is explicit, not learned.
+Retain the scalar-v=0 matched ablation at the SAME life-prior settings and the
+local slope control, so an apparent GP gain cannot be credited merely to
+granting it extra target degrees of freedom.
+
+Integrate the 2D support posterior including fatigue-limit quadrature; verify
+both domain-tail mass and resolution, and invert the integrated predictive
+CDF. q10 can be infinite if finite-life mass is below0.1. Report availability
+and do not replace infinity with an advantageous finite number. Include
+runout-only/conflicting support, v=0 reduction, posterior normalization and
+mass-at-infinity synthetic checks before any fatigue fit. No change to frozen
+src/v3_rfl.py is authorized by this option.
+
+Production predictive scoring evaluates the positive support-posterior mixture
+and checks u-rule and v-rule convergence separately. Changing the u rule also
+reweights v by the ratio of conditional-u marginal likelihoods, so the check
+includes the u normalizer's effect on the v posterior. An omitted-posterior-mass
+bound and a uniform queried-likelihood supremum give a conservative relative
+numerator error estimate r; use -log(1-r) for the log-score bound, and do not
+accept the fast path if r>=1. Unresolved rows fall back to
+log p(query_i|supports)=log Z(supports,query_i)-log Z(supports), using separately
+tail-bounded/resolution-checked positive integrals. Scoring queries affect only
+evaluation of their own likelihood, never parameters, priors, acquisition or
+model/support caches. Both paths evaluate the same predictive model.
+
+The implementation uses global positive u intervals, with interval prior mass
+times likelihood suprema bounding pruning; positive v nodes use one-factor and
+analytic two-failure Gaussian marginal bounds. Adaptive8/16-point v intervals
+and paired u rules diagnose discretization error. These rule differences are
+numerical convergence estimates, not analytic error theorems. Mathematical
+omitted-mass bounds are conditional on the fixed positive96-node population
+Gamma quadrature representation; no rigorous continuous-Gamma quadrature-error
+guarantee is claimed. This numerical statement is separate from physical or
+population reliability uncertainty.
+
+7. Outer comparison, cost and censoring
+
+Use the SAME frozen query and selected support sequences for all predictors,
+prior settings and tuned/frozen references. Four inherited policies are random,
+stress-spanning, high-stress, and expected-information. The inherited planner
+is the outer-training-only hierarchical/censored-Normal Fisher planner; it is
+not retuned independently for GP, Student or RFL. It uses pool/query covariates
+and already revealed responses only. Population-trained planner parameters
+must exclude the full outer source family. Do not use outer family outcomes
+to tune a policy or choose its support sequence. Predeclare all policy seeds.
+
+Primary support cap C=10^6 makes min(N,C) identifiable for every retained
+training censor endpoint. Revealed failure above C becomes a censor at C;
+an earlier censor remains a censor, never invented survival to C. Query
+endpoints are original. Cost is observed capped support cycles, not an
+estimated future experiment time. C=10^7 is a sensitivity with lower/upper
+cost identification bounds where original censor endpoints fall below C.
+Include all selected rows and equal-n supports even when policies exhaust the
+same pool; label such episodes uninformative for stress-policy discrimination.
+
+For q10=q, the event of interest is Y<log10(q). An observed failure identifies
+the indicator; a right censor c identifies zero if c>=log10(q), otherwise it
+is unresolved. Mean risk lower/upper endpoints are identification bounds,
+NOT confidence limits. For paired qB-vs-qA risk, compute inf/sup of
+I(Y<qB)-I(Y<qA) over the SAME admissible Y for each censored row; subtracting
+unpaired marginal extrema can be unnecessarily wide. Bootstrap source family
+blocks for sampling uncertainty, never the ten seeds as independent campaigns.
+Use within-row paired log-q gains and paired costs before family aggregation.
+Always report both lower/upper risk and finite-quantile coverage/availability.
+
+Suggested scientific acceptance criteria (parent must freeze exact constants):
+improve equal-family held-family censored log score beyond tuned strong
+references, demonstrate useful finite q10/capped-cost tradeoffs at matched k,
+and do not declare success if paired risk upper confidence/identification
+criteria violate a predeclared noninferiority tolerance. A +2percentage-point
+risk tolerance is a proposal, not yet an authorized result-dependent threshold.
+If identification is too wide to establish safety, say indeterminate; do not
+turn NaN one-family CIs into failed Boolean gates. No single winning model or
+condition can establish model-robust contribution. Display discordant results.
+
+8. Later mechanism study, separate from the predictor benchmark
+
+A possible mechanism is deciding when extra target slope/scatter/limit
+adaptation is worth cycle cost under prior conflict. Compare fixed scalar,
+slope-enabled and limit-enabled posterior updates, then optional model/update-
+structure averaging with support marginal likelihoods. Generic model averaging,
+model discrimination and quantile design are already prior art. A contribution
+would require a precise new rule and evidence beyond their existing scope.
+
+For a candidate stress x and cap C, the prospective observation is
+O_C=(min(N,C),I[N<=C]), with failure density below C and a runout atom at C.
+Expected capped cycles=integral from0toC of P(N>t|D,x)dt, including RFL infinite
+life mass. A candidate decision rule may maximize expected reduction in
+query-grid lower-quantile decision loss or posterior uncertainty, divided by
+setup+expected capped cycles, with optional model-index information. Integrate
+over prospective failures AND runouts before revelation. Select only existing
+unrevealed candidates; do not simulate an outcome and present it as real data.
+Any utility weights, update-structure priors or risk constraints require an
+inner-only grid and a newly frozen comparison. This is NOT yet implemented.
+
+Tail posterior contraction can be confidently wrong under prior/model conflict;
+uncertainty reduction is not calibration. Test known synthetic misspecification
+as numerical/mechanism checks, separately from experimental source evidence.
+An external identity-qualified campaign remains valuable for physical-build
+generalization and prospective confirmation; ordinary source-held validation
+must not silently substitute for that claim.
+
+9. Prior-art boundaries and primary sources
+
+See literature/v6_methods/prior_art_matrix.json for evidence depth/access.
+Ryan2003 DOI10.1198/1061860032012 already studies information-gain design for
+the random-fatigue-limit model. Magazzeni et al. DOI10.1111/ffe.13859 applies
+Bayesian entropy collection to constant-life fatigue strength. Frie et al.2023
+DOI10.1111/ffe.14156 treats Bayesian optimal S-N testing with runouts. Lee et
+al.2018 DOI10.1080/00401706.2018.1437475 targets lifetime-quantile precision in
+sequential ALT. Wang/Li2025 DOI10.12011/SETP2023-2570 explicitly addresses
+model uncertainty, prediction variance+bias and Bayesian-averaged low-life
+quantiles; its full official15-page paper is now retained, with Weibull/lognormal
+candidate models and Type-I right-censor likelihood verified in sections2-3.
+The current2026 DOI10.1016/j.probengmech.2026.104043 presents
+posterior-uncertainty/heteroscedastic stress planning and empirical within-
+stress observation reservoirs (primary indexed methods; full PDF not retained).
+These prevent generic active/transfer/model-discrimination novelty claims.
+
+GP survival is established: Barrett/Coolen arXiv1312.1591. Monotone-GP
+derivative information is established: Riihimaki/Vehtari PMLR9(2010)645-652.
+Rindt et al. PMLR151(2022) discuss proper censored scoring. Conformal survival
+methods (Candes/Lei/Ren2023 DOI10.1093/jrsssb/qkac004 and later general-right-
+censor work at ICLR2025) require their stated exchangeability/censoring and
+calibration conditions. They do not confer R90C90 or arbitrary new-source
+coverage on this benchmark. Wu et al. DOI10.1016/j.ijfatigue.2026.109943 is
+currently preview-only in our audit: do not assert its full method omits any
+particular adaptive/censoring feature. Group transfer and physics baselines
+alone are not a new contribution. No novelty guarantee is warranted.
+
+10. Runtime, receipts and stop conditions
+
+The proposed66 GP +48 Student configurations on66 distinct inner population
+sets require7524 population fits before outer refits and physical-control
+grids. Cache key must include sorted training IDs, observed endpoints/events,
+source-family exclusion, preprocessing, config, code and protocol hashes.
+Support posterior caches must include revealed conditions/outcomes and cap;
+no query outcome can enter a predictive or selection cache. Joint GP support
+conditioning can dominate population-fit time; aggregate and report costs.
+Synthetic441-row GP timing is feasibility only, not real-data runtime proof.
+
+Require numerical receipts for convergence, objective/start selection, grid
+coverage, posterior/quadrature tails and resolution, CDF(q10)=.1, fallback,
+parameter-bound hits, monotonicity violations and finite quantile availability.
+Preserve failed candidates. A fresh empty-cache replay and independent paired
+metric arithmetic audit precede scientific delivery. No broad model search
+extension after outer inspection without an explicit new exploratory phase.
+If stronger tuned controls remove the gain, report that negative result and
+revise the research question; do not rename the old model dependence as a
+physical law or claim a novel experiment policy from it.

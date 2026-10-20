@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "1b8be728211d3bba83ae9f62b544d41cdcdd5b86118ca4b2929690e7cb2f2446",
+  "entries_checked": 96,
+  "total_bytes": 56392099,
+  "all_member_hashes_match": true,
+  "scope": "raw public collection snapshot integrity, not scientific fit eligibility",
+  "new_current_fit_rows": 0
+}

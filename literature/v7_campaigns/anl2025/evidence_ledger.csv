@@ -1,0 +1,10 @@
+claim,pdf_page_1based,printed_page,anchor,finding
+lives_and_author_ids,34,22,Table 4,9 reported fatigue-life rows with test and sample IDs; ANL6 WEC3
+ANL_lineage,15,3,"Section 2.1.1, Figure 1, Table 1",Two tubes printed on Renishaw AM400; no individual tube/sample linkage or powder lot identifier
+WEC_lineage_and_powder,17,5,"Section 2.1.3, Figure 4, Table 2",WEC flange sector from EPRI; EOS M290; Praxair batch22; 1120C 2h argon SA water quench
+WEC_extraction,18,6,Figure 5,Fatigue and CT samples machined from flange; no serialized build ID
+orientation,23,11,"Section 2.4, Figures 12-13",Tube samples parallel build; WEC FY parallel build subset; air midwall vs water three circumferential planes
+air_control_and_endpoint,24,12,Section 2.4,ASTM E606/E606M strain control R=-1; approximately50percent amplitude drop or last unstable fracture cycle
+water_control,25,13,Section 2.4,Stroke control; strain amplitude and rate not constant; no water-specific endpoint definition located
+reported_state_and_reuse,33,21,Section 3.4.1,Tube AB; flange SA; earlier AM plate print appears only as comparison data
+availability,2,unnumbered,Document availability and disclaimer,DOE reports freely available; no explicit CC license located

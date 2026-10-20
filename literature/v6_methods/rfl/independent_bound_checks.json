@@ -1,0 +1,10 @@
+{
+  "scope": "independent mathematical bounds checks on generated quantities only",
+  "source_sha256_at_start": "240582c9141c705fad5a65e84323cdb19113efa76742fabe1610c6f09e46b0ad",
+  "pair_density_relative_error": 6.945370090946953e-13,
+  "interval_bound_max_violation": 3.3306690738754696e-16,
+  "numerical_cases": 31500,
+  "pointwise_density_bound": true,
+  "survival_endpoint_bound": true,
+  "no_actual_fatigue_fits": true
+}

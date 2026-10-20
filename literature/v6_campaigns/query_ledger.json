@@ -1,0 +1,24 @@
+{
+  "scope": "Exact current-source followup queries; acquisition URLs and earlier bounded search outcomes retained in per-source access receipts and source_inventory.csv. This is not claimed to reconstruct unlogged earlier search wording.",
+  "queries": [
+    "\"3002018273\" fatigue Rolls Royce 55999",
+    "\"Gandy\" \"Rolls Royce\" \"fatigue\" 316L EPRI",
+    "site.nrc.gov \"Press\" \"Generation of a Fatigue\" pdf",
+    "\"3002018273\" \"fatigue\" \"frequency\"",
+    "\"Rolls Royce tee\" fatigue",
+    "site.nrc.gov/docs \"Generation of a Fatigue Design Curve\"",
+    "site.nrc.gov \"Press\" \"316LN\" \"2023\" pdf",
+    "\"10.1115/PVP2023-106379\"",
+    "\"Kousoulas\" \"Process Signature\" \"doi\""
+  ],
+  "followup_positive": "Kousoulas public Mendeley9xpx3wt82r.1 process-signature workbook and arXiv2510.21018",
+  "source_cautions": {
+    "NRC2023_workshop": "officialpage403 inwebtool; exacttitleDOIidentified asPVP2023-106379; noimportednumericcampaign",
+    "SandiaOSTI1668368": "genuinePDF explicitly304L, not316L",
+    "EPRIOSTI1668247": "directOSTI404 overcome viaofficialEPRIpublicdownload, noauthbypass",
+    "Mendeley_downloads": "ordinarypublicGET browserUserAgent/Referer toadvertisedpublicfile URLs; noauth"
+  },
+  "no_contacts": true,
+  "no_uploads": true,
+  "no_fits": true
+}

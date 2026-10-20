@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "pages_rendered_and_visually_inspected": 5,
+  "english_pages": 3,
+  "turkish_pages": 2,
+  "all_text_and_figures_legible": true,
+  "no_clipping_or_overlap": true,
+  "no_unverified_visual_source_claims": true,
+  "pdf_sha256": {
+    "yeni_veri_ve_deney_secimi_tr.pdf": "0aa49c20c19823f8134125183c7f2342c30157d864a403d0f4f82693dd65a2c0",
+    "public_data_rbf_addendum_en.pdf": "e01e7ef378b7784f629a5a0109b8e28487de7ee66eae40e62b39bc67f0343b47"
+  },
+  "render_sha256": {
+    "en-1.png": "b9f05b50d03f46f463caca556f834516aa0290b33ab6954f199430d4a39250db",
+    "en-2.png": "dc9bd1e2eafebf74d2c465b8b4c802694b61abc7cf2cf22e177f42f10e6592bd",
+    "en-3.png": "7137f5ccb2c0c6e9b9979725f4023a516e1fabf5133fa35ca966cc825ff74138",
+    "tr-1.png": "a86927aa9c6e9a1803eee70c6104fe63b27667b36e870c7399ae97ad6b48491e",
+    "tr-2.png": "e9553ef2e9300d649fac8af0ab196f36a028a33be503231c6942ba9bbda2fd40"
+  },
+  "output_scope": "Local research reports; strong method/independent campaign goal remains active"
+}

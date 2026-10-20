@@ -1,0 +1,435 @@
+{
+  "status": "PASS_NINE_REPORTED_OBSERVED_LIFE_ROWS_AND_THREE_CROSSREPORT_AUTHOR_BUILD_JOINS_WITH_LIMITS",
+  "checked_utc": "2026-10-20T21:28:03.632491+00:00",
+  "sources": [
+    {
+      "local_pdf": "literature/v7_campaigns/anl2025/source.pdf",
+      "url": "https://lwrs.inl.gov/content/uploads/11/2026/05/M3LW-25OR0402043.pdf",
+      "report": "ANL/LWRS-25/2 September2025",
+      "pdf_sha256": "36510dc044f78a6673f7700159a84f52e55021ec19e7dc6272f74afde89b4d59",
+      "page_text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt",
+      "index_convention": "PDF pages 1-based; numbered extracted lines reset at each page; printed page supplied separately."
+    },
+    {
+      "local_pdf": "literature/v7_campaigns/anl2024/source.pdf",
+      "url": "https://lwrs.inl.gov/content/uploads/11/2024/10/TestingAdditivelyManufactured316L.pdf",
+      "report": "ANL/LWRS-24/3 September2024",
+      "pdf_sha256": "6d6398be7a18fc2cbd8954ef1b0fa9e758d3067a1b979770d73282d335925422",
+      "page_text_index": "literature/v7_campaigns/independent_audit/anl2024_pypdf_pages.txt",
+      "index_convention": "PDF pages 1-based; numbered extracted lines reset at each page; printed page supplied separately."
+    },
+    {
+      "local_pdf": "literature/v7_campaigns/anl2023/source.pdf",
+      "url": "https://www.osti.gov/servlets/purl/1922636",
+      "report": "ANL-23/07 January2023",
+      "pdf_sha256": "79701bab7248b1b61085d1e7c986452ac305b34b26fb18aeb9b5d6776c9d7e08",
+      "page_text_index": "literature/v7_campaigns/independent_audit/anl2023_pypdf_pages.txt",
+      "index_convention": "PDF pages 1-based; numbered extracted lines reset at each page; printed page supplied separately."
+    }
+  ],
+  "method": "Independent pypdf extraction of all pages; relevant complete pages read; critical tables, specimen schematics, methods and comparison figures visually reviewed from Poppler renders. Separate reader from curator. No fits or source-code execution.",
+  "curation_comparison": {
+    "file": "data/external_v7/anl2025/table4_reported9.csv",
+    "sha256": "4f65e6237a44a8613ad58c41b016b7e41fa9d67f873a4ffc2f76db6d0f57b184",
+    "rows": 9,
+    "unique_test_ids": 9,
+    "unique_sample_ids": 9,
+    "all_72_normalized_table_cells_match_independent_transcription": true,
+    "numeric_cells": 36,
+    "source_group_labels_carried_over_from_merged_source_column": true,
+    "estimated_markers_water_all6_checked": true,
+    "no_censor_symbols_in_Table4": true,
+    "reported_rows": [
+      {
+        "material_source": "ANL",
+        "test_id": "LWRS-01",
+        "sample_id": "R745577-01",
+        "environment": "Air",
+        "temperature_C": 299,
+        "reported_strain_amplitude_percent": "0.25",
+        "reported_strain_rate_percent_per_s": "0.10",
+        "reported_life_cycles": 42600,
+        "strain_and_rate_estimated": false,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "ANL",
+        "test_id": "LWRS-02",
+        "sample_id": "R745577-02",
+        "environment": "Air",
+        "temperature_C": 300,
+        "reported_strain_amplitude_percent": "0.36",
+        "reported_strain_rate_percent_per_s": "0.10",
+        "reported_life_cycles": 14460,
+        "strain_and_rate_estimated": false,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "ANL",
+        "test_id": "LWRS-03",
+        "sample_id": "R745577-03",
+        "environment": "Air",
+        "temperature_C": 300,
+        "reported_strain_amplitude_percent": "0.46",
+        "reported_strain_rate_percent_per_s": "0.10",
+        "reported_life_cycles": 4990,
+        "strain_and_rate_estimated": false,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "ANL",
+        "test_id": "EAF-01",
+        "sample_id": "R765768-04",
+        "environment": "PWR water",
+        "temperature_C": 298,
+        "reported_strain_amplitude_percent": "0.33",
+        "reported_strain_rate_percent_per_s": "0.13",
+        "reported_life_cycles": 6432,
+        "strain_and_rate_estimated": true,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "ANL",
+        "test_id": "EAF-02",
+        "sample_id": "R765768-01",
+        "environment": "PWR water",
+        "temperature_C": 299,
+        "reported_strain_amplitude_percent": "0.41",
+        "reported_strain_rate_percent_per_s": "0.06",
+        "reported_life_cycles": 2360,
+        "strain_and_rate_estimated": true,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "ANL",
+        "test_id": "EAF-03",
+        "sample_id": "R765768-02",
+        "environment": "PWR water",
+        "temperature_C": 300,
+        "reported_strain_amplitude_percent": "0.50",
+        "reported_strain_rate_percent_per_s": "0.07",
+        "reported_life_cycles": 1250,
+        "strain_and_rate_estimated": true,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "WEC",
+        "test_id": "EAF-04",
+        "sample_id": "FS-01",
+        "environment": "PWR water",
+        "temperature_C": 300,
+        "reported_strain_amplitude_percent": "0.45",
+        "reported_strain_rate_percent_per_s": "0.06",
+        "reported_life_cycles": 1019,
+        "strain_and_rate_estimated": true,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "WEC",
+        "test_id": "EAF-05",
+        "sample_id": "FS-02",
+        "environment": "PWR water",
+        "temperature_C": 300,
+        "reported_strain_amplitude_percent": "0.32",
+        "reported_strain_rate_percent_per_s": "0.06",
+        "reported_life_cycles": 2655,
+        "strain_and_rate_estimated": true,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      },
+      {
+        "material_source": "WEC",
+        "test_id": "EAF-06",
+        "sample_id": "FS-03",
+        "environment": "PWR water",
+        "temperature_C": 300,
+        "reported_strain_amplitude_percent": "0.27",
+        "reported_strain_rate_percent_per_s": "0.06",
+        "reported_life_cycles": 14650,
+        "strain_and_rate_estimated": true,
+        "source_pdf_page": 34,
+        "source_printed_page": 22,
+        "source_table": 4
+      }
+    ]
+  },
+  "crossreport_join": {
+    "verified_rows": 3,
+    "author_build_id": "R745577",
+    "basis": "2023Table3 explicitly labels BuildID, rather than deriving it from a specimen prefix. Its SampleIDs LWRS01/02/03 equal 2024/2025 TestIDs; 2024 and2025 also repeat exact SampleIDs and fatigue lives.",
+    "joins": [
+      {
+        "author_2023_sample_id": "LWRS-01",
+        "author_2024_2025_test_id": "LWRS-01",
+        "author_2024_2025_sample_id": "R745577-01",
+        "author_build_id_2023": "R745577",
+        "life_cycles_2024_2025": 42600
+      },
+      {
+        "author_2023_sample_id": "LWRS-02",
+        "author_2024_2025_test_id": "LWRS-02",
+        "author_2024_2025_sample_id": "R745577-02",
+        "author_build_id_2023": "R745577",
+        "life_cycles_2024_2025": 14460
+      },
+      {
+        "author_2023_sample_id": "LWRS-03",
+        "author_2024_2025_test_id": "LWRS-03",
+        "author_2024_2025_sample_id": "R745577-03",
+        "author_build_id_2023": "R745577",
+        "life_cycles_2024_2025": 4990
+      }
+    ],
+    "evidence": [
+      {
+        "pdf_page_1based": 20,
+        "printed_page": "6",
+        "extracted_page_lines": [
+          11,
+          15
+        ],
+        "item": "Table3 explicit SampleID to BuildID map",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2023_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 38,
+        "printed_page": "24",
+        "extracted_page_lines": [
+          26,
+          28
+        ],
+        "item": "Table5 three repeated air SampleIDs and lives",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2024_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 34,
+        "printed_page": "22",
+        "extracted_page_lines": [
+          32,
+          34
+        ],
+        "item": "Table4 three repeated air SampleIDs and lives",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      }
+    ],
+    "does_not_establish": "Build-job date, physical machine-job serial beyond author BuildID, ANL powder-lot identifier, or virgin-history certificate.",
+    "R765768_prefix_is_not_promoted_to_author_build_id": true,
+    "original_2025_only_unknown_build_view_is_preserved": true
+  },
+  "prescribed_versus_reported_amplitudes": {
+    "2023_ID_specific_prescribed_percent": [
+      0.25,
+      0.35,
+      0.45
+    ],
+    "2024_2025_reported_air_percent": [
+      0.25,
+      0.36,
+      0.46
+    ],
+    "2023_prescribed_C": [
+      300,
+      300,
+      300
+    ],
+    "2024_2025_reported_air_C": [
+      299,
+      300,
+      300
+    ],
+    "interpretation": "2024 explicitly distinguishes measured in-air values from target values. Preserve separate target and measured/reported fields; do not overwrite either. This explains the source distinction without assuming an unreported rounding correction.",
+    "evidence": [
+      {
+        "pdf_page_1based": 20,
+        "printed_page": "6",
+        "extracted_page_lines": [
+          11,
+          23
+        ],
+        "item": "ID-specific prescribed conditions and method",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2023_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 28,
+        "printed_page": "14",
+        "extracted_page_lines": [
+          5,
+          12
+        ],
+        "item": "Table2 fatigue target conditions; actual duplicate table label despite list-of-tables inconsistency; no individual IDs",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2024_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 38,
+        "printed_page": "24",
+        "extracted_page_lines": [
+          7,
+          14
+        ],
+        "item": "Results text describes measured values close to target and estimated water stable-range averages",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2024_pypdf_pages.txt"
+      }
+    ]
+  },
+  "identity_and_lineage": {
+    "ANL": "2025 describes two tubes globally. Only air3 have an independently verified explicit author BuildID via2023. Water3 remain tube-group associated; no prefix-only build join invented.",
+    "WEC": "2025 section2.1.3, Table2 and Figure5 link flange specimens to a WEC flange sector received from EPRI, EOSM290, PraxairTruForm316-3 powder batch22. Table4 assigns FS01/02/03 toWEC. Physical flange context is supported; uniquely serialized author build/job ID absent.",
+    "rows_with_author_build_join": 3,
+    "rows_with_named_powder_batch": 3,
+    "rows_with_both_author_build_id_and_powder_lot_id": 0,
+    "WEC_heat_treatment": "1120C for2h in argon followed by water quench, directly assigned to this flange; not inferred from another EPRI component.",
+    "orientations": "ANL tube fatigue specimens parallel to build direction. WEC paragraph says the parallel-to-build subset was tested this fiscal year; no per-ID extraction coordinate is given.",
+    "family_deduplication": "2024 contains exact first5 of2025Table4. First3 air tests are already documented in2023. The three reports provide repeated lineage/evidence, not3 independent campaigns. External ORNL and wrought comparison points in Figure24 are not additional newly curated individual tests.",
+    "EPRI_relation": "WEC flange belongs to the EPRI/ASME20-254 program (2025reference12). Do not claim a new independent external program merely because ANL2025 is a new report. The EPRI2020 RRtee14 are a different named component and powder55999; there is no evidence of identical physical specimens between RRtee14 and WECFS3.",
+    "evidence": [
+      {
+        "pdf_page_1based": 15,
+        "printed_page": "3",
+        "extracted_page_lines": [
+          12,
+          15
+        ],
+        "item": "Two-tube manufacturing context",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 17,
+        "printed_page": "5",
+        "extracted_page_lines": [
+          10,
+          15
+        ],
+        "item": "WEC flange received fromEPRI and exactSA",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 17,
+        "printed_page": "5",
+        "extracted_page_lines": [
+          40,
+          43
+        ],
+        "item": "Table2 named powder batch22",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 18,
+        "printed_page": "6",
+        "extracted_page_lines": [
+          5,
+          11
+        ],
+        "item": "Figure5 flange extraction context",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 23,
+        "printed_page": "11",
+        "extracted_page_lines": [
+          14,
+          19
+        ],
+        "item": "Build-relative sectioning and FYWEC orientation",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 33,
+        "printed_page": "21",
+        "extracted_page_lines": [
+          27,
+          31
+        ],
+        "item": "Figure24 external comparison provenance",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      }
+    ]
+  },
+  "fatigue_protocol": {
+    "temperature_C_min_max": [
+      298,
+      300
+    ],
+    "air_rows": 3,
+    "air_control": "Axial strain controlled, fully reversed R=-1; standardE606/606M. Do not turn this into force ratio R.",
+    "air_life_endpoint": "Approx50percent stress-amplitude reduction from maximum, or final recorded cycle at unstable fracture (2024/2025);2023 specifies stress-drop endpoint only. Thus Nf is not necessarily final complete rupture.",
+    "water_rows": 6,
+    "water_control": "Pull-rod stroke/displacement feedback outside autoclave; applied gauge strain amplitude/rate explicitly vary with load-train compliance. Table4 approximate fields are stable-range estimates.",
+    "water_strain_constant_amplitude": false,
+    "water_force_constant_amplitude": false,
+    "water_R_and_separate_endpoint_criterion": "Not explicitly assigned; do not import the air endpoint/R unqualified.",
+    "history": "No explicit per-specimen prior-fatigue-history statement or virgin-history certification found in relevant methods/results. Current test identity is supported; do not assert certified first exposure.",
+    "frequency_waveform": "Not explicitly reported; do not infer from strain rate without waveform.",
+    "evidence": [
+      {
+        "pdf_page_1based": 24,
+        "printed_page": "12",
+        "extracted_page_lines": [
+          7,
+          20
+        ],
+        "item": "Air method and life definition",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 25,
+        "printed_page": "13",
+        "extracted_page_lines": [
+          14,
+          27
+        ],
+        "item": "Water apparatus and nonconstant applied strain/rate",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 33,
+        "printed_page": "21",
+        "extracted_page_lines": [
+          20,
+          25
+        ],
+        "item": "Estimated water stable-range summaries",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      },
+      {
+        "pdf_page_1based": 34,
+        "printed_page": "22",
+        "extracted_page_lines": [
+          32,
+          42
+        ],
+        "item": "Individual outcomes and estimation footnote",
+        "text_index": "literature/v7_campaigns/independent_audit/anl2025_pypdf_pages.txt"
+      }
+    ]
+  },
+  "admission": {
+    "observed_individual_life_records_available": 9,
+    "new_unique_tests_vs2024": 4,
+    "second_independent_RT_force_CA_campaign": false,
+    "current_v6_rows_added": 0,
+    "RT_force_CA_primary_rows_admitted": 0,
+    "use": "Separate elevated-temperature strain/stroke life evidence panel; explicit3row author-build mapping is a real provenance improvement, not current primary-domain validation."
+  },
+  "actions": {
+    "no_data_edits": true,
+    "no_frozen_edits": true,
+    "no_fits": true,
+    "no_source_code_execution": true,
+    "no_correspondence_or_publication": true
+  }
+}

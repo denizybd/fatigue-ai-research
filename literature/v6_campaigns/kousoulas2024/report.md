@@ -1,0 +1,13 @@
+# New public assets in a separate resonant-bending source family
+
+The official NSF-hosted9-page article, DOI10.1115/1.4066803, provides14 printed fatigue lives in Table4/PDF6. Table5/PDF8 and the runout discussion distinguish9 failures and5 runouts:3 at10million and2 at20million cycles. The table precision is0.01million cycles; scaling to cycles does not recover unreported raw integer precision. The tabulated14 are the current paper's data, unlike Table1 which summarizes other authors.
+
+Section2/PDF2–3 explicitly describes one SS316L LPBF block and14 dogbones extracted from that block by EDM. Thus one source-block membership is supported. Actual author fatigue specimen IDs, build-job serial, powder-lot number, and a specimen-to-pore/image crosswalk are absent. Curator table locators are not physical IDs.
+
+Section3/PDF4 describes fully reversed resonant pure bending at approximately62Hz initially, with closed-loop resonance tracking and a2Hz frequency-drop stopping endpoint before gross fracture. R=-1 is source-supported. This is neither ordinary axial loading nor rotating bending. Temperature is not explicit in the inspected methods. The endpoint must remain distinct from rupture life. Virgin first-exposure and full prior-load history are not independently established.
+
+The public Mendeley packet DOI10.17632/87hm5hwbpk.2 is CC BY4.0 and supplies a genuine workbook plus two ImageJ macros. Its1325 rows are371/441/513 image-segmentation observations under three thresholds. They are **not1325 fatigue lives or independently unique physical defects**. The middle441 threshold is the paper's defect population, inspected on six of the14 samples. Sheet labels, particle labels, and Snap image filenames are not fatigue specimen IDs. No defect-to-life join is invented. The macros were read for calibration and were not executed. Cached SQRT formulas agree with all1325 areas.
+
+The dataset's CC license is not assumed to license the separate article PDF. The article's statement that supporting datasets are available on request does not erase the public Mendeley defect packet. A further public2023 process-signature packet9xpx3wt82r.1 and2026 derivative arXiv2510.21018 are tracked in a separate folder. All Kousoulas/Guo process-signature/porosity/defect and later predictive publications remain one conservative source-family block until exact physical reuse is resolved. The14 table records are newly acquired into this curation, not claimed to be14 newly performed tests or a second independent author program.
+
+Outputs: `data/external_v6/kousoulas2024/table4_bending14.csv` and `defect_threshold_observations1325.csv`. All current model-admission flags are false; no fitting occurred.

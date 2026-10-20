@@ -1,0 +1,180 @@
+PHASE6: NESTED SOURCE-FAMILY PREDICTOR AND COMMON-SUPPORT COMPARISON
+Prepared before the first phase6 fit to actual fatigue observations.
+
+Scope and status
+This is exploratory reuse of an existing public-data reconstruction:441rows,
+48working conditions,13conservative source families,380failures and61right
+censors. Previous phases inspected these outcomes. Nested separation here is
+an honest evaluation procedure within reused data, not an untouched prospective
+confirmation. Source families are not certified physically independent builds,
+powder lots or laboratories. No original Centola518-row/BNN reproduction,
+R90C90 tolerance bound, physical specimen-life increase, or generic active/GP/
+transfer novelty is claimed. No correspondence, upload or publication.
+
+Frozen data and eligibility
+The exact input is data/processed/v4/controlled_expansion/expanded441.csv.
+The frozen episode file specifies every row ID.37conditions/396rows in12source
+families admit k3 with n_query=max(3,floor(.4n)) and all remaining rows in pool.
+The Cui-linked13rows in3small conditions are training-only;45rows in11small
+conditions overall remain in appropriate training sets. Whole source exclusion
+also removes ineligible conditions from held families. k0/k3 primary budgets;
+k5 and k10 when available, k10 appendix. Outer seeds0..9; inner101,202,303.
+Ranking uses SHA256(v3-common-query|seed|dataset_id|row_id), not outcomes.
+No new cases, row correction, rescaling or imputation from target outcomes.
+
+Every primary support test is capped at C=1e6. All existing censor endpoints
+are at least C, so observed min(N,C) cost is identified relative to the curated
+record. A failure beyond C is revealed as a right censor at C. True query
+endpoints/events remain original. C=1e7 is a sensitivity; earlier censors imply
+cost identification intervals rather than known test lengths. Keep digitized
+endpoint/coordinate limitations; do not infer nominal stress levels from tiny
+coordinate jitter. Fixed-k budgets have no implicit cycle-cost stopping.
+
+Report full primary panel and a prespecified covariate-only informative-policy
+subset: pool_n>k and pool_logstress_span>=.05 decades (about12% stress range).
+This is a numerical stress-range screen, not a claim of author nominal levels.
+Freeze this flag in each task before fitting. Exhausted pools and small stress
+ranges remain visible in the full analysis; never count seed/model replay
+instances as additional physical tests. Full panel remains primary.
+
+Nested evaluation
+Use12outer leave-one-source-family-out folds. For each outer family f, inner
+leave-one-family-out validation uses11other eligible families g. Inner training
+excludes BOTH f and g, including all linked rows. All transformations, means,
+noise/prior references, knots and model population fits use that training set.
+Cache populations by the66unordered pairs, not by a leaky full-data fit. The
+outer final model is refitted excluding f only AFTER all inner selections are
+committed. Inner plans use k0/k3 RANDOM supports and C=1e6,3seeds per condition.
+The same inner query/support episodes evaluate every candidate.
+
+Tune by censored predictive log score: failure density of log10(N), or survival
+at a right-censor endpoint. Higher is better. First average query rows in an
+episode, then k0/k3 equally, then seeds equally, then conditions equally within
+each validation family, then the11families equally. Censoring is treated as
+exogenous conditional on retained covariates/protocol, not proven universally.
+A candidate needs finite scores for EVERY expected episode in that outer
+fold; no dropping difficult supports or averaging only successful families.
+Ties within1e-6 use frozen grid ordinal. No outer utility, risk, cost or q10 is
+used to choose model hyperparameters, numerical fallbacks or acquired supports.
+Preserve all candidate failures and explicit per-fold unavailable model classes.
+
+Grid:146 fixed candidates, no outcome-dependent expansion
+GP66: fixed training-only hierarchical Basquin mean coefficients, within-
+condition sigma as reference noise and tau as condition-intercept kernelSD.
+Raw log10(MPa) stress length; R length1. GlobalSD{0,.30,.60},conditionShapeSD
+{0,.35},length{.10,.35,1},noiseMultiplier{.5,.75,1.25,2}; remove8inert length
+duplicates to64, add exact zero-covariance/reference-noise anchor and sensible
+default global.5,length.2,shape.35,reference-noise anchor. See exact grid.json.
+Joint censored Laplace mode is recomputed after appending selected supports;
+no double-Laplace stacking. Population kernel/noise/mean fixed at target. GP
+predictive q10 need not be monotone; report violations, do not tune them away.
+
+Student48:nu{4,10,Gaussian},scatter{constant,loglinear},mean{linear,two_knots},
+proper condition/target intercept priorSD{.1,.3,1,3}. Training-only standardized
+stress and knots at1/3,2/3 quantiles; all mean segment slopes negative. Proper
+censored unit-row likelihood and adaptive positive target integration, not a
+single-mode approximation. Population parameters plug-in. Finite-nu loglife
+t gives infinite uncapped arithmetic E[N]; never use a lognormal mean shortcut.
+
+Control22: pooled and matched intercept each one candidate; hierarchical,
+curved hierarchical, scalar-shift RFL and local intercept/slope each5target
+prior multipliers{.25,.5,1,2,4}. Frozen old population fits unchanged. Hier/curve
+tau changes target prior only; RFL uses multiplier*training-hier-tau. Local
+multiplier applies BOTH life and slope prior SDs; slope baseSD=max(1,abs(b)/2).
+Its constrained MAP plus untruncated curvature Gaussian is approximate. Flat
+matched-intercept is genuinely unavailable for all-runout supports and has no
+fictitious prior. Its k0 reference is hierarchical, as in the frozen benchmark.
+
+Joint RFL10: same frozen Normal-Normal RFL population; target life shiftu and
+log10-fatigue-limit mean shiftv have independent proper Gaussian priors.
+sd_u=multiplier*training_hier_tau with above5multipliers; sd_v{.05,.15}logstress.
+Actual infinite-life atom retained. Integrate positive joint posterior with
+tail/resolution receipts. k0 convolutions analytically add variances of u to
+epsilon and v to latent logGamma. sv0 scalar ablation is retained in controls.
+No selected query likelihood enters the target posterior or population fit.
+Numeric integration of scoring likelihoods may use their endpoint only to
+evaluate the fixed predictive law; it must not update/support-cache a query.
+
+The new unit-row likelihoods and old source-balanced composite population
+objectives are different estimators, with different relative ridge strength.
+Disclose this explicitly. This benchmark compares declared predictors; it does
+not causally isolate architecture or update dimensionality. Such a mechanism
+claim additionally requires a new prespecified weighting/regularization control
+and is not established by phase6 alone. All population uncertainty omissions,
+target approximation limits and condition-versus-physical-ID distinctions stay.
+
+Shared outer acquisition
+Four inherited policies:random,high_stress,stress_span,active_query_variance.
+One hierarchical Fisher planner fitted on outer-training families only creates
+each plan, shared by ALL final predictors and frozen/tuned references. Inner
+planner similarly excludes the full pair. Pool/query selector arguments contain
+only IDs,logstress,R. Reveal a chosen outcome only AFTER selection, cap it, and
+reconstruct predictor supports solely from this revealed ledger. An evaluated
+GP/Student/RFL is not allowed a favorable different experiment sequence.
+All fixed six references are shown even when ineligible for inner winner
+selection; genuine unavailable episodes stay unavailable. Also show each tuned
+category, inner-selected strongest control and inner-selected overall predictor.
+Those aliases reuse identical candidate predictions rather than new fits.
+
+Numerical rules and runtime
+Freeze.json hashes input, episodes, exact symbolic grid and every runtime model,
+selection and runner source before first actual fit. Synthetic suites and
+independent mathematical reviews precede it. Cache keys include full training
+observations/IDs/exclusions and freeze hash. No old unbound pickle is reused.
+Retain every start/bound/fallback/numeric receipt. Deterministic retries only:
+same objective/starts, larger optimizer iterations (physical1500->6000,RFL
+500->2000,Student600->2400,GP100->400). No alternative model substitution.
+Failed population configs are cached as unavailable. Target integration raises
+on exhausted predetermined grids; unavailable outer episodes do not trigger a
+different selected model. Report rather than silently drop them.
+Check finite q10 using CDF(q10) and preserve failures; discrepancy>1e-3 fails
+that episode numerically. Check new posterior normalization/tails, finite versus
+infinite quantile classification, GP jitter/Laplace convergence and monotonicity
+diagnostics. Scientific quantities use log10 life. Do not reward infinity as
+finite utility. Runtime timing on synthetic data is feasibility only. The full
+inner grid requires7524new GP/Student population fits plus shared physical
+fits and joint-adapter scoring; hours of local computation are allowed. Keep
+process handles and resumable completed shards; no result-driven grid pruning.
+
+Analysis and evidence thresholds
+Report availability, finite-q availability, q10, proper censored logscore,
+risk lower/upper identification endpoints, and support-cost lower/upper bounds.
+For risk I(Y<q), observed failures identify it; a censorc identifieszero when
+c>=q and otherwise leaves[0,1]. Missing prediction gets risk[0,1]. For paired
+qB,qA use the SAME admissible Y, not subtraction of marginal interval extrema:
+failure difference is exact; censor difference lower=-I(qA>qB and qA>c),
+upper=I(qB>qA and qB>c). Missing pair gives[-1,1]. Finite paired logutility is
+log10(qB)-log10(qA); report its coverage alongside every number.
+
+Average rows, seeds and conditions within source before averaging source
+families. Descriptive95% intervals bootstrap source-family averages with2000
+draws, RNG231. Never bootstrap seeds as independent campaigns. If fewer than2
+finite source means or any required strict score/utility family is missing,
+the relevant claim is indeterminate, not false or supported. These intervals
+do not prove laboratory/build independence or prospective population coverage.
+
+At k3 primary cap compare policies against random, and few-shot against k0 on
+exact matched queries. Compare each predictor against inner-selected strongest
+control on matched policies/k. Cost savings bounds derive from paired selected
+test cost intervals, not from nominal cap times number of tests. Couple shared
+selected row identities: the same unknown censored capped cost cancels in a
+difference and enters both sides of a ratio. Do not invent extra uncertainty
+by treating an identical selected row's cost as two unrelated variables. A useful
+relative policy claim requires finite paired availability>=.95, lower95% bound
+of mean logutility>=log10(1.05), upper95% paired risk-change bound<=.02, and
+upper95% cost-ratio bound<=.90. Also report absolute risk upper95%<=.10 as a
+separate empirical reliability criterion; never label it R90C90. A model-robust
+policy contribution additionally needs the relative criterion in at least3of
+the5distinct adaptive classes (hierarchical/curved,local-slope,RFL,Student,GP),
+without a statistically supported utility reversal in another fully available
+class. Joint/scalar RFL are one class; hierarchical/curved one class. These
+are declared research decision criteria, not established physical standards.
+Report all failures/discordance; thresholds do not guarantee a novel contribution.
+
+Delivery requires all planned runs, independent paired arithmetic/source/
+selection audits, fresh empty-cache replay of representative actual fits and
+scientific outputs, explicit coverage/limits and source attribution. A new
+acquisition rule or calibration method requires a separately frozen follow-on
+study; generic Bayesian design/model averaging already has prior art. Identity-
+qualified additional campaigns remain a separate objective and may not be
+replaced by this source-family benchmark.

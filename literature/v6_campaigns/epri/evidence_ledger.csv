@@ -1,0 +1,15 @@
+claim_id,pdf_page,printed_page,locator,source_supported_statement,source_sha256
+source_identity,5,iii,corporate citation and acknowledgments,"EPRI2020 report3002018273, DOEDE-NE0008521, multiple cooperating organizations; corporate citation is primary",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+package_scope,113,A-1,AppendixA title/date,316L LPBF material package dated30July2020,faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+physical_component_scope,117,A-5,A.1 Introduction,"Manufacturer components were sectioned/tested; four organizations and three component types are described, not14 independentbuilds",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+process_join,119,A-7,TableA-3 RollsRoyce column,"One reported RR process column; EOSM280, nitrogen,195W,20micron; not a machine job serial",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+powder_join,120,A-8,TableA-4 RollsRoyce column,"Lot55999, LSN Diffusion, F-316LNRR-ALMD; manufacturer-group mapping, not per-ID certificate",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+material_nomenclature,120,A-8,TableA-4 heading/product row,"Report identifies S31603(316L), product name contains316LN; preserve both without silently changing alloy",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+all14_component_membership,143,A-31,TableA-18 and FigureA-23,All14IDs under single RRtee table caption; figure supplies HIP+SA; no split-origin subgroup or author buildserial given,faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+life_units,143,A-31,TableA-18 life header,Cycles-to-failure explicitly; no division by2 and no reversal conversion,faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+events,143,A-31,TableA-18 numeric life cells,All14 table entries are reported failures; rupture criterion/runout program/omitted tests not stated,faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+method_boundary,143,A-31,ASTM E606-19e1 footer,"E606 reference and total strain amplitude given; force control,R,frequency,waveform,first exposure not stated",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+heat_treatment_boundary,119,A-7,A.4 component heat treatment,"Numerical HIP/SA schedule names other organizations, notRR; RR schedule must staymissing",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+stress_diagnostic,143,A-31,TableA-18 paired columns,"All stresses/strain fractions imply195.0–195.2GPa; numerical diagnostic only, measured nominalstress unverified",faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+coordinate_duplicate,143,A-31,TableA-18 IDs13 and14,Preserve two distinct authorIDs with identical values; physical independence not additionally verified,faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a
+license,4,ii,copyright notice,Copyright2020EPRI allrightsreserved; public official access is not an open redistribution license,faa725190038019aeb50ed212c0be44fd018ce5c280cb1e1ac3308618d74848a

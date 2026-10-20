@@ -1,0 +1,67 @@
+{
+  "status": "PASS_WITH_INDEPENDENT_REVIEW_AND_EXPLICIT_NUMERICAL_LIMITS",
+  "checked_utc": "2026-10-20T20:58:50.746272+00:00",
+  "scope": "Synthetic algebra, integration, numerical feasibility only; no campaign observations fitted or target configurations selected",
+  "test_command": ".venv/bin/python -m pytest tests/test_v6_rfl_adapter.py -q",
+  "tests_passed": 23,
+  "test_elapsed_seconds": 4.72,
+  "python": "3.12.13",
+  "source_code_sha256": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+  "checks": [
+    "k0 analytic independent Gaussian convolutions of life error and logGamma uncertainty",
+    "literal infinity atom and positive-infinity CDF endpoint",
+    "v=0 exact reduction to frozen scalar adapter",
+    "u/v posterior, predictive CDF and score against independent product-prior Hermite quadrature",
+    "failure versus right-censor likelihood and runout-only update",
+    "u=0 still updates v using genuine marginal likelihood",
+    "query endpoint perturbation ignored by predictions; no population mutation",
+    "positive global u interval pruning agrees with full frozen conditional-u integral",
+    "per-row event-specific likelihood equals frozen both-branch evaluation",
+    "fast score and far-tail evidence-ratio fallback match same predictive model",
+    "invalid priors/tolerances/identity overlaps/populationfallback rejected",
+    "node-limit numerical failure is explicit",
+    "ten proper source-supplied prior candidates"
+  ],
+  "integration_statement": {
+    "latent_Gamma_rule": "Fixed positive96-node population quadrature reused; no continuous-Gamma quadrature-error theorem",
+    "u_and_v_mass_bounds": "Mathematical truncation/pruning bounds conditional on that rule; all potentially important modes retained",
+    "rule_order_differences": "Numerical resolution estimates, not formal analytic discretization bounds",
+    "fast_score": "Positive posterior mixture; independent u/v rule checks include conditional-u evidence effect on v weights; relative tail bound transformed by -log1p(-r)",
+    "far_tail_fallback": "Per-query separately checked marginal-evidence ratio; no query-containing object enters selected-support/model cache",
+    "k0": "Exact Gaussian convolutions at model-distribution level; Gamma expectation remains same numerical rule"
+  },
+  "limitations": [
+    "Population parameters and prior-hyperparameter selection are plug-in",
+    "No physical-build covariance or R90C90 guarantee",
+    "Stress-quantile monotonicity requires diagnostics",
+    "One synthetic limiting case or runtime fixture is not physical validation"
+  ],
+  "files": [
+    {
+      "path": "src/v6_rfl_adapter.py",
+      "sha256": "f85ac7251675dd0eb84a19438f3aee9bb80b6c99ebddac7358108f8de8ac2f2e",
+      "bytes": 42862
+    },
+    {
+      "path": "tests/test_v6_rfl_adapter.py",
+      "sha256": "47f2dd2345513ca9732b054a8d019e791355949873f526d1f7f988d322aea7ec",
+      "bytes": 10222
+    },
+    {
+      "path": "literature/v6_methods/rfl/benchmark_synthetic.py",
+      "sha256": "5f2eaf34b2101822a74a990b57499c951fdc3edd053486baba1a1e80ed369b4d",
+      "bytes": 3063
+    }
+  ],
+  "independent_audit": {
+    "path": "literature/v6_methods/rfl/independent_audit.json",
+    "sha256": "4225edd1cd00fea4e84de59a9b2e4a101d97288e46461b4d574281c9f24c3bc7",
+    "status": "PASS_WITH_EXPLICIT_NUMERICAL_QUALIFICATIONS",
+    "max_conjugate_log_score_error": 1.6854073692229576e-11,
+    "max_conjugate_quantile_error": 1.7470593860480221e-09
+  },
+  "clean_benchmark_suite": {
+    "path": "literature/v6_methods/rfl/benchmark_suite_final.json",
+    "sha256": "089e551325662e1739cfd275cda5acf9c1589f1e59d2e7f13c6dbdbef961240a"
+  }
+}

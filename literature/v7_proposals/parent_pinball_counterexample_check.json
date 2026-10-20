@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-20T21:24:38.048591+00:00",
+  "kind": "independent mathematical counterexample, not fatigue data",
+  "distributions": [
+    "Uniform(4,5)",
+    "Uniform(5,6)"
+  ],
+  "alpha": 0.1,
+  "units": "arbitrary loglife units for illustration only",
+  "individual_oracle_quantiles": [
+    4.1,
+    5.1
+  ],
+  "safe_simultaneous_chance_constraint_action": 4.1,
+  "unconstrained_minimax_pinball_regret_action_closed_form": 4.447213595499958,
+  "unconstrained_numerical_action": 4.447213559956108,
+  "action_error": 3.5543850529506926e-08,
+  "safe_worst_expected_regret": 0.09500000000000003,
+  "unconstrained_worst_expected_regret": 0.06027864045000434,
+  "unsafe_model1_event_risk": 0.4472135954999583,
+  "joint_robust_risk_limit": 0.1,
+  "conclusion": "Robust loss-regret minimization alone does not imply robust10percent event risk; an explicit chance constraint changes the action.",
+  "source_of_example": "v7_design_theory agent proposal independently integrated and optimized by root",
+  "material_improvement_claimed": false
+}

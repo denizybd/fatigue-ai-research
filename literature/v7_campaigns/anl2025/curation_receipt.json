@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-20T21:22:55.544001+00:00",
+  "source": {
+    "url": "https://lwrs.inl.gov/content/uploads/11/2026/05/M3LW-25OR0402043.pdf",
+    "retrieved_utc": "2026-10-20T21:06:40.672716+00:00",
+    "status": 200,
+    "final_url": "https://lwrs.inl.gov/content/uploads/11/2026/05/M3LW-25OR0402043.pdf",
+    "bytes": 3037824,
+    "sha256": "36510dc044f78a6673f7700159a84f52e55021ec19e7dc6272f74afde89b4d59",
+    "pdf_magic": true,
+    "pages": 47
+  },
+  "reported_individual_life_rows": 9,
+  "numeric_test_fields_curated": 36,
+  "unique_reported_sample_ids": 9,
+  "unique_reported_test_ids": 9,
+  "air_rows": 3,
+  "pwr_water_rows": 6,
+  "temperature_range_C": [
+    298,
+    300
+  ],
+  "WEC_rows_with_named_powder_batch": 3,
+  "rows_with_serialized_build_id": 0,
+  "rows_admitted_current_v6": 0,
+  "rows_admitted_primary_RT_force_CA": 0,
+  "source_family_independence_claimed": false,
+  "license": "official DOE public access; no explicit CC reuse grant located; source PDF not included in any distribution packet",
+  "source_unchanged_sha256": "36510dc044f78a6673f7700159a84f52e55021ec19e7dc6272f74afde89b4d59",
+  "files": [
+    {
+      "path": "data/external_v7/anl2025/air_strain_control_reported3.csv",
+      "sha256": "0d1e410ddd2fc51b31606dd90c0574d5dea66f4838e5a6dccc1ffded8eccc354",
+      "bytes": 3470
+    },
+    {
+      "path": "data/external_v7/anl2025/pwr_stroke_control_reported6.csv",
+      "sha256": "513030139739da4d09f95c1ee3831e0297d25162cf9972979b530045fcf354d3",
+      "bytes": 6522
+    },
+    {
+      "path": "data/external_v7/anl2025/table4_reported9.csv",
+      "sha256": "4f65e6237a44a8613ad58c41b016b7e41fa9d67f873a4ffc2f76db6d0f57b184",
+      "bytes": 8816
+    }
+  ],
+  "independent_visual_audit": "pending separate reader; do not overwrite independent_audit",
+  "water_field_semantics": "estimated averages over stable test range; neither strain-CA nor force-CA"
+}

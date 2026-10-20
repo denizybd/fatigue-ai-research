@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "single_risk_checks": 768,
+  "paired_same_Y_risk_checks": 384,
+  "missing_quantile_worst_case_convention": true,
+  "joint_shared_cost_corner_cases": 108,
+  "max_joint_cost_corner_error": 5.684341886080802e-14,
+  "rectangular_cost_corner_cases": 100,
+  "identical_shared_censored_support_exact_ratio_one": true,
+  "independent_query_seed_condition_family_weighting": true,
+  "independent_source_bootstrap_2000_seed231": true,
+  "strict_missing_source_interval_suppressed": true,
+  "physical_validation": false,
+  "actual_fatigue_fits": 0,
+  "metrics_source_sha256": "519fe6026a730361c0391e4f09b9a000c9af7be815251da79c05d9d279787f6d"
+}
