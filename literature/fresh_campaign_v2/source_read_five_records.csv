@@ -1,0 +1,6 @@
+entity_id,specimen_id,source_max_stress_MPa,source_cycles_observed,source_status,source_R,source_test_date,source_condition,read_method
+67494,CCVT1-1.5a-01-au,171.0,315000,Failure,-1,7/1/2019,a - As-Built,Direct read of Ultrasonic Fatigue Testing labeled section in retained author HTML
+67495,CCVT1-1.5a-02-au,85.5,111000000,Runout,-1,6/24/2019,a - As-Built,Direct read of Ultrasonic Fatigue Testing labeled section in retained author HTML
+67500,CCVT1-2.5a-01-au,150.0,561000,Failure,-1,9/20/2019,a - As-Built,Direct read of Ultrasonic Fatigue Testing labeled section in retained author HTML
+67540,CCV1-5.0a-33-au,80.0,180000000,Runout,-1,6/8/2020,a - As-Built,Direct read of Ultrasonic Fatigue Testing labeled section in retained author HTML
+67626,CCV2-5.0a-03-hu,160.0,165000,Failure,-1,5/24/2022,h - Stress relief anneal,Direct read of Ultrasonic Fatigue Testing labeled section in retained author HTML
