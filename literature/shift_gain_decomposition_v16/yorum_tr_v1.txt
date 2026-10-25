@@ -1,0 +1,83 @@
+V16 — OLUMLU V15 SONUCUNDA HANGİ HATA AZALDI?
+22 Ekim 2026 — sonuç sonrası seçilmiş betimleyici tanı
+
+Kısa cevap: Bu altı sorguda medyan ömür tahmininin MSE kazancı ağırlıkla
+gerilme-stratumunun ortak ortalama hatasının azalmasından geliyor.
+Bu, paket/stratum düzeyinde tahmin düzeltmesiyle uyumludur. Aynı gerilmedeki
+üç numunenin yerel/bireysel sırasını daha iyi ayırt etme kanıtı değildir:
+sekiz model×eğitim bileşiminin hiçbirinde ikili sıralama iyileşmedi.
+Normal modellerde ortalama çıkarıldıktan sonraki hata MSEsi küçük ölçüde
+iyileşir; Student modellerin dört ağırlıklı sonucunda bu bileşen kötüleşir.
+Dolayısıyla “hiç bireysel bilgi yok” veya “yalnız reçeteyi ezberledi” gibi
+daha güçlü sonuçlar çıkarılmıyor.
+
+GERÇEK EVREN VE KURAL
+Kanonik kaynakta P2/P10/P26/P35/P51/P59'un tamamı event=1; sansürlü sorgu
+yok. Literal sigma_max_mpa=299.999970788 üçlüsü P10/P26/P59,
+450.00030092 üçlüsü P2/P35/P51. Bu değerler300/450'ye yuvarlanmadı.
+Dört model×iki eğitim paneli×üç kol=24grup, herbirinde aynı6sorgu;
+toplam144tahmin. Nominal54 ve nominal48 eğitim, bağımsız iki test değildir.
+
+Her stratumda e=log10-medyan−kanoniklog10ömür ve bölen3 ile
+ mean(e²)=mean(e)²+mean((e−mean(e))²).
+Bütünaltılıda iki terim stratum boylarıyla ağırlanır; ortak altılı
+mean(e)'nin karesiyle karıştırılmaz. Birim (log10çevrim)²'dir.
+Aşağıdaki kazançlar kapsam-kontrolünün hatası eksi dış-sinyal kolunun
+hatasıdır. Pozitif=bu tanı ölçütünde azalma. Tam sayılar CSVlerde saklıdır.
+
+Eğitim | Model | NetMSEkazancı | Ortalama-hata²kazancı | MerkezlenmişMSEkazancı | Ortalama-hata²cebirselpayı | İkiliuyum
+54 | Normal-linear  | 0.273568 | 0.260462 |  0.013106 |  95.21% | 5/6 -> 5/6
+54 | Normal-RBF     | 0.455060 | 0.443785 |  0.011275 |  97.52% | 5/6 -> 5/6
+54 | Student-linear | 0.160233 | 0.166756 | -0.006523 | 104.07% | 4/6 -> 2/6
+54 | Student-RBF    | 0.149923 | 0.153372 | -0.003448 | 102.30% | 4/6 -> 1/6
+48 | Normal-linear  | 0.338037 | 0.320353 |  0.017684 |  94.77% | 5/6 -> 5/6
+48 | Normal-RBF     | 0.576005 | 0.557613 |  0.018392 |  96.81% | 5/6 -> 5/6
+48 | Student-linear | 0.227723 | 0.234515 | -0.006793 | 102.98% | 4/6 -> 2/6
+48 | Student-RBF    | 0.183893 | 0.185960 | -0.002068 | 101.12% | 4/6 -> 4/6
+
+Yüzde104 gibi değerler hata değildir: pozitif ortak-hata kazancından
+negatif merkezlenmiş kazanç çıkar. Bunlar fiziksel/nedensel katkı payı
+değil, pozitif netMSE farkının işaretli cebirsel ayrıştırılmasıdır.
+Üçlülerin her birinin ayrı sonuçları da korunmuştur. Merkezlenmiş kazanç
+her üçlüde/Student durumda mutlaka negatif değildir; örneğin48Student-RBF
+ikinci stratumda küçük pozitiftir, fakat iki stratumun ağırlığında negatiftir.
+
+Her stratumun bütün üç ikilisi, toplam6ikili/grup tutuldu. Yalnız tahmin,
+yalnız truth ve ikisi tie kategorileri ayrı kaydedildi; bu gerçek24grupta
+tie yok. Sıralamayı düzeltmeden tahmin büyüklüklerini birbirine yaklaştırmak
+mümkündür: Normal modellerin küçük merkezlenmiş MSE kazancı ile değişmeyen
+sıralaması çelişmez. Coverage−core MSE farkları sekiz bileşimde0'dır;
+buna rağmen üçkol ve üçkarşılaştırma ayrı CSV satırları olarak korunur.
+
+BU SONUÇ NEYİ DEĞİŞTİRMEZ?
+Bu q50/MSE tanısı, proper sansürlü logscore değildir. Dağılımın yeri,
+ölçeği veya kuyrukları logscore'u etkileyebilir. V15'in önceki olumlu
+proper-logscore sonucu, V12nin olumsuz kapısı veya q10/güvenlik/genişlik
+raporu yeniden tanımlanmadı. MSE kazancını logscore kazancının yüzdesi
+diye sunmuyoruz.
+
+Stratum ortalama hatası gerçek testömürleri kullanılarak hesaplanır.
+Bu ortalamayı çıkaran yeni tahminler dışarıda uygulanabilir bir model
+olarak üretilmedi/sunulmadı. Sonuca göre seçilen bu tanı kör doğrulama,
+kalibrasyon, p-değeri, güven aralığı veya bağımsız üretim genellemesi değildir.
+Sekiz bileşim aynı altılıyı kullanır; sekiz bağımsız deney sayılmaz.
+
+Reçete+konum paketinin yeniden ifade edilmesi hâlâ rakiptir. Ancak hata
+cebirinden, dış-sinyalin yalnız reçete kodu olduğu veya gerçek kusurların
+nedensel olmadığı sonucu da çıkmaz. Nihai gage/CT kaydı ve kritik kusur
+bilinmiyor; model tane/hücre/RX ölçmüyor. Dar kazanım: bu altılıdaki mevcut
+medyan iyileşmesinin ortak hata düzeyinde yoğunlaştığını, göreli sıralama
+gelişmesi diye genişletilemeyeceğini artık sayısal olarak görebiliyoruz.
+
+DENETİM VE DOSYALAR
+734 kimlik/kapsam/aritmetik kontrolü0hata; ikili tie ve sabit/simetrik hata
+örnekleri dahil. Float hesaplar70haneli Decimal referansla ve MSE/kazanç
+özdeşlikleriyle denetlendi. Protokol yeni tanı hesabından önce yazıldı;
+V15sonucu önceden biliniyordu. Yeni fit/GET/eski-dosya-yazımı0.
+run_v1/mse_decomposition_v1.csv: bütün24grubun2stratum+bütünaltılı terimleri.
+run_v1/mse_contrasts_v1.csv: üç eşli karşılaştırmanın bütün terimleri.
+run_v1/all_order_pairs_v1.csv: bütün144ikili satırı; hiçbiri silinmedi.
+run_v1/order_summary_v1.csv ve order_contrasts_v1.csv: tie dahil bütün özetler.
+run_v1/prediction_errors_v1.csv ve canonical_truth6_v1.csv: izlenebilir girdiler.
+run_v1/arithmetic_checks_v1.csv, input_authority_v1.json, receipt_v1.json:
+tamlık/aritmetik ve kaynak-hash bağları. final_manifest_v1.json teslimatı bağlar.

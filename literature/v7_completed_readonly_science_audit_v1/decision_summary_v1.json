@@ -1,0 +1,281 @@
+{
+  "utc": "2026-10-21T18:14:13.780406+00:00",
+  "status": "COMPLETE_READ_ONLY_SCIENTIFIC_AUDIT",
+  "scientific_verdict_tr": "Tamamlanma doğrulandı; sağlam ek kovaryat veya sinirsel mimari katkısı desteklenmedi. Üç destekten öğrenme var. Fiziksel faktörlerin önemsizliği sonucu çıkmaz.",
+  "complete": {
+    "v7_inner": 66,
+    "v7_outer_per_cap": 12,
+    "v7_completed_utc": "2026-10-21T17:11:53.420491+00:00",
+    "four_followups_returncode0": true
+  },
+  "matched_scope": {
+    "canonical_training_catalogue": 441,
+    "query_rows": 396,
+    "statistical_conditions": 37,
+    "working_source_families": 12,
+    "tasks": 370,
+    "query_seed_policy_budget_keys_per_cap": 18280,
+    "V6_V7_V8r_exact_observation_support_cost_match": true,
+    "weakV8_1M_secondary_match": true,
+    "weakV8_10M_completion_not_claimed": true,
+    "V6_prespecified_five_strong_models_finite_complete": true
+  },
+  "what_is_compared_tr": {
+    "same_budget": "core(k3)-base(k3): aynı desteklerle yalnız kovaryat etkisi",
+    "increment": "core(k3)-core(k0): aynı modelde üç destekten öğrenme",
+    "increment_difference": "[core3-core0]-[base3-base0]: kovaryatın öğrenme artışını değiştirmesi; birincil kapı değil"
+  },
+  "primary_core_k3_full_equal_policy": [
+    {
+      "cap": 1000000.0,
+      "residual": "normal",
+      "metric": "score_gain",
+      "mean": 0.008619791940669223,
+      "lo95": -0.013387547376741091,
+      "hi95": 0.027609188625788466
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "normal",
+      "metric": "risk_change_upper",
+      "mean": -0.005209160052910053,
+      "lo95": -0.015908709490740743,
+      "hi95": 0.0012649222883597882
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "normal",
+      "metric": "pinball_gain_lower",
+      "mean": -0.00048742917654579225,
+      "lo95": -0.0029041036287757575,
+      "hi95": 0.002382870043068773
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "student",
+      "metric": "score_gain",
+      "mean": 0.009803227790944552,
+      "lo95": -0.008400671480893471,
+      "hi95": 0.02464761590581485
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "student",
+      "metric": "risk_change_upper",
+      "mean": -4.836309523809625e-05,
+      "lo95": -0.012635478670634921,
+      "hi95": 0.011528645833333328
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "student",
+      "metric": "pinball_gain_lower",
+      "mean": -0.0003589057450237131,
+      "lo95": -0.001715423942663106,
+      "hi95": 0.00120318386413619
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "normal",
+      "metric": "score_gain",
+      "mean": 0.0027230596046852,
+      "lo95": -0.018612182933216495,
+      "hi95": 0.02153520520271753
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "normal",
+      "metric": "risk_change_upper",
+      "mean": -0.006666666666666668,
+      "lo95": -0.014887855489417992,
+      "hi95": 0.0002302414021163995
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "normal",
+      "metric": "pinball_gain_lower",
+      "mean": -0.0007708534421113885,
+      "lo95": -0.0035066645860634986,
+      "hi95": 0.0023225366025673
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "student",
+      "metric": "score_gain",
+      "mean": 0.004456822301926824,
+      "lo95": -0.012844330710920556,
+      "hi95": 0.01831089973518363
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "student",
+      "metric": "risk_change_upper",
+      "mean": 0.00439525462962963,
+      "lo95": -0.005720558449074073,
+      "hi95": 0.014626808449074073
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "student",
+      "metric": "pinball_gain_lower",
+      "mean": -0.0006155502333752557,
+      "lo95": -0.0023875971603772067,
+      "hi95": 0.0011722808992639183
+    }
+  ],
+  "energy_k3_minus_core_full_equal_policy": [
+    {
+      "cap": 1000000.0,
+      "residual": "normal",
+      "metric": "score_gain",
+      "mean": -0.016020634380308117,
+      "lo95": -0.029664379460620467,
+      "hi95": -0.004460193834901696
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "normal",
+      "metric": "risk_change_upper",
+      "mean": -0.0011623677248677252,
+      "lo95": -0.0038622271825396828,
+      "hi95": 0.0008333333333333334
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "normal",
+      "metric": "pinball_gain_lower",
+      "mean": 0.0011787301034942386,
+      "lo95": -0.00024425485416332407,
+      "hi95": 0.002830903738903425
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "student",
+      "metric": "score_gain",
+      "mean": -0.013006550209235595,
+      "lo95": -0.02195874819703845,
+      "hi95": -0.005271339171180209
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "student",
+      "metric": "risk_change_upper",
+      "mean": 0.00835854828042328,
+      "lo95": -0.0020103339947089944,
+      "hi95": 0.02606481481481482
+    },
+    {
+      "cap": 1000000.0,
+      "residual": "student",
+      "metric": "pinball_gain_lower",
+      "mean": 0.0005183044915622952,
+      "lo95": -0.00020564004172703406,
+      "hi95": 0.0014061752254892416
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "normal",
+      "metric": "score_gain",
+      "mean": -0.010213811281829627,
+      "lo95": -0.01976649239928271,
+      "hi95": -0.0019869317293526446
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "normal",
+      "metric": "risk_change_upper",
+      "mean": 0.0010710152116402115,
+      "lo95": -0.003557787698412699,
+      "hi95": 0.00619212962962963
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "normal",
+      "metric": "pinball_gain_lower",
+      "mean": 0.0012902161886322646,
+      "lo95": 2.3988559247128073e-05,
+      "hi95": 0.0026306371481749483
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "student",
+      "metric": "score_gain",
+      "mean": -0.008446930569196686,
+      "lo95": -0.015633156898205245,
+      "hi95": -0.0025785953379095046
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "student",
+      "metric": "risk_change_upper",
+      "mean": 0.007864583333333333,
+      "lo95": -0.0040402199074074064,
+      "hi95": 0.02675535300925925
+    },
+    {
+      "cap": 10000000.0,
+      "residual": "student",
+      "metric": "pinball_gain_lower",
+      "mean": 0.0004631922142732388,
+      "lo95": -0.00016473169617413482,
+      "hi95": 0.0011293109820230617
+    }
+  ],
+  "gate_status": {
+    "v7_core_primary_both_caps": false,
+    "v7_process_secondary_both_caps": false,
+    "v7_energy_secondary_both_caps": false,
+    "v7_all_original_gate_cells_not_supported": 40,
+    "v8r_matched_input_gates_not_supported": 12,
+    "v8r_original_v6_five_conjunction_both_caps": false,
+    "v8r_same_input_architecture_support_both_caps": false
+  },
+  "budget_sensitivity": {
+    "same_corresponding_cap_predictions_and_original_winners": true,
+    "new_fit_or_reselection": false,
+    "k5": {
+      "sources": 11,
+      "conditions": 28,
+      "tasks": 280
+    },
+    "k10": {
+      "sources": 4,
+      "conditions": 5,
+      "tasks": 50
+    },
+    "cannot_rescue_primary": true
+  },
+  "numerical": {
+    "independent_samebudget_mean_checks": 560,
+    "max_mean_discrepancy": 5.551115123125783e-17,
+    "main_checks": 993,
+    "main_failures": 0,
+    "selected_outer_fit_JSONs": 168,
+    "whole_family_exclusion_pass": true,
+    "gradient_inf_min": 1.4696709622619153e-06,
+    "gradient_inf_max": 0.002787717985271776,
+    "gradient_above_1e_3_count": 9,
+    "ftol_success_not_strict_gradient_success": true,
+    "no_pickle_loaded": true
+  },
+  "censor_scope_tr": "event0 survival;1M capped karar hedefi belirlenebilir,10M sansür ve maliyet aralıkları korunur. Eşit kaynak bootstrap aralıkları fiziksel build/popülasyon garantisi değil.",
+  "branch_independence_tr": "Yeni ORNL60/54 XCT ve yeni termal/mikroyapı alanları eski V7 girdilerine hiç girmedi. Eski V7 olumsuzluğu bunları test etmiş değildir; fiziksel veri arayışı gereklidir.",
+  "audit_operations": {
+    "new_fits": 0,
+    "new_reselections": 0,
+    "model_imports": 0,
+    "pickle_loads": 0,
+    "old_edits": 0,
+    "process_signals": 0
+  },
+  "limits": [
+    "Küçük fitJSON ve CSV/JSON denetlendi; tüm içmodelcache veya parametreler bağımsız yeniden üretilmedi.",
+    "Aynı histórico corpus üzerinde keşifsel çalışma; conditionlar sertifikalı fiziksel buildler değil.",
+    "Yalnız bağımsız nokta ortalama aritmetiği yeniden hesaplandı; özgün bootstrap sınırları raporlandı."
+  ],
+  "v6_unavailable_other_models": {
+    "matched_intercept_each_cap": 18280,
+    "frozen_matched_intercept_1M": 159,
+    "frozen_matched_intercept_10M": 5
+  }
+}

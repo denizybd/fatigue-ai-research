@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "started_utc": "2026-10-22T02:38:15.818335+00:00",
+  "pid": 67207,
+  "fits_attempted": 8,
+  "fits_converged": 8,
+  "identity_replay_passed_all8": true,
+  "source": {
+    "path": "literature/within_load_mapping_control_v17/mapping_control_v1.py",
+    "sha256": "e622744c9f2a2f388cb313fff9fc2d2cc3eb237842abea26596eeac2c5c3dee8"
+  },
+  "authority": {
+    "path": "literature/within_load_mapping_control_v17/run_admission_v1.json",
+    "sha256": "135b7a395be616c52825c99e5ed7f96d98090728086d6999707b84fe95c71025"
+  },
+  "protocol": {
+    "path": "literature/within_load_mapping_control_v17/protocol_tr_v1.txt",
+    "sha256": "6ab38814c5d7c5c3507a7c0de6f575d6f89d523eb6a2672b423675215bf4518c"
+  },
+  "synthetic_query_control": true,
+  "original_measured_rows_changed": false,
+  "no_new_selection": true,
+  "wall_cap_seconds": 120,
+  "output_cap_bytes": 4194304,
+  "numerical_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  },
+  "current_case": {
+    "panel": "nominal_train48_sourceQC",
+    "model_class": "student4:rbf",
+    "chosen_global_cid": 22
+  },
+  "finished_utc": "2026-10-22T02:38:17.416113+00:00",
+  "labelled_maps": 36,
+  "distinct_synthetic_input_matrices": 36,
+  "prediction_rows": 1728,
+  "all8_cases_all36_above_frozen_gain_threshold": true,
+  "interpretation": "post-result synthetic query sensitivity only; no exchangeability,pvalue,causality,grain/cell/RX or engineering safety claim",
+  "elapsed_seconds": 1.613889250002103,
+  "output_bytes_before_final_receipt": 551628
+}

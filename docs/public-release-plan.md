@@ -1,3 +1,5 @@
+> **25 Ekim hazırlık güncellemesi:** İlk rapor, veri/sonuç dizinleri ve dosya envanteri hazırlandı. Dört kesin replay tekrarı kaldırıldı; [uygulanan kararlar](inventory/README.md) ve [doğrulama](publication-validation.json). Aşağıdaki metin ilk plandır. Public geçiş yapılmadı.
+
 # Public açılışa hazırlık planı
 25 Ekim 2026. Plan kaydıdır; public açılış, silme, arşiv taşıma veya geçmiş yeniden yazma yapılmadı.
 

@@ -1,0 +1,82 @@
+V7 TAMAMLANMIŞ SONUÇLARIN SALT OKUNUR BİLİMSEL DENETİMİ
+21 Ekim2026 • Yeni eğitim, fit, yeniden seçim, eski dosya düzenleme yok.
+
+Sonuç
+
+V7 ve dört takip işi operasyonel olarak tamamlandı. V7’nin önceden tanımlanan “yüzey/ısıl işlem/yön bilgisi, aynı üç destek gözlemi altında tahmin ve alt-ömür kararını sağlam biçimde iyileştirir” hipotezi desteklenmedi. Küçük pozitif ortalama proper-logscore değişimleri var; bunların kaynak-bootstrap alt sınırları sıfırın altında ve q10 pinball kaybı artıyor. Bu, hiç öğrenme olmadığı veya fiziksel etkilerin önemsiz olduğu anlamına gelmiyor. Mevcut metaveri ve model ailesi içinde, ilan edilen çoklu ölçütlerin birlikte geçmediği anlamına geliyor.
+
+1. Tamamlanma ve asıl araştırma sorusu
+
+Pipeline inner66/66, outer1M12/12, outer10M12/12 ve altı aşamayı bitirerek17:11:53UTC’de complete oldu. Takip kuyruğu17:13:55UTC’de complete. Dört işin returncode’u0. Eski16:08disk koruması hatası arşiv kaydıdır; güncel hata değildir. Bu denetim süreç başlatmadı veya sinyal göndermedi.
+
+Salt okunur tasarım kaynağı protocols/v7_covariates/paired_design_v1.txt. Birincil karşılaştırma aynı kodun Normal ve Student4 AFT kollarında core−base ve core−matching-missingness karşılaştırmalarıdır. Core yüzey, ısıl kategori, yön ve bilinmeme göstergelerini içerir. Birincil k=3,1M ufuk, dört politikanın eşit ortalaması; iki dağılım ve iki karşılaştırmanın tümü birlikte geçmelidir. Lower95 proper-score ve pinball kazancı>0, finite coverage≥.95, upper95 eşli risk artışı≤.02 gerekir. Mutlak risk upper95≤.10 ayrı etikettir. k0, farkların-farkı, elverişli politika veya alt küme birincil kapının yerine geçirilemez.
+
+114 ayar;42 birincil ve önceden zamanlanmış72 süreç/enerji ayarıdır. Normal/Student iki yakın artık dağılımıdır, bağımsız yapısal model kanıtları değildir. Kaynak/koşul kimliği özellik değildir; koşul kimliği istatistiksel gruptur, sertifikalı fiziksel build kimliği değildir. Konservatif441 metaveri görünümü kullanılır. Gerçekten ölçülmemiş pürüzlülük, gözenek, artık gerilme veya ısıl alan uydurulmamıştır.
+
+2. Eşleşme ve sızıntı denetimi
+
+Her iki cap’te V6, V7 ve düzenlenmiş V8r CSV’leri,396 benzersiz sorgu satırı/37 koşul/12 kaynak ailesi/370 episode-task için aynı18,280(query,seed,policy,k) anahtarını içeriyor. Orijinal sorgu gerilmesi,R,ömür,event; literal destek ID’leri; açıklanan capped ömür/event; destek maliyeti alt/üstü ve başarısız destek sayısı birebir aynı. Kapsam uygunluğunu model kullanılabilirliğine göre daraltmadık. V7 her cap’te255,920 satırın tamamında sonlu q10 ve proper skor, sıfır hata içeriyor. V8r219,360 satırda da aynı durum var.
+
+Weak V8’in tamamlanmış ayrı null-normalize1M analizi de aynı18,280 kimlikte eşleşti;146,240 satırda “no eligible feature candidate” korunmuş. Bunun10M tamamlanmış analiz receipt’i bulunmadığından böyle bir tamamlanma iddiası kurulmuyor. V6’nın eksik/hatalı satırları da ayrıca korunuyor: matched_intercept her cap’te18,280 uygun-aday yok kaydı; frozen_matched_intercept1M’de159,10M’de5 tahmin hatası. Bunlar önceden tanımlı beş güçlü karşılaştırıcının dışında; beşinin bu CSV’lerde sonlu kapsamı tam. Eşleşen sorgu kapsamı, bütün diğer modellerin sonlu tahmini olduğu anlamına gelmiyor.
+
+12 dış katın küçük foldJSON’ları ve168 seçilmiş outer-fitJSON’u ayrıca okundu: tam441 kataloğundan bütün held-out aileyi çıkaran eğitim ID’leri, kayıtlı eğitim hash’leri ve kaynak dışlamaları doğru.1,368 iç aday/aile seçim kaydı mevcut ve uygun; dondurulmuş1e−6/ordinal kuralı mevcut seçilmiş168kararla uyumlu. Burada yeni kazanan seçilmedi. Tüm iç model cache’leri ve hiçbir pkl yüklenmedi.
+
+Kaynak kod incelemesinde encoder yalnız eğitim çerçevesine fit ediliyor; sorgu q10API’sine yalnız kovaryatlar gidiyor, gerçek ömür/event skorda kullanılıyor. Eklenen metaveri, seçilmiş desteğin capped y/event değerlerini değiştirmiyor. Sağ-sansürlü satırlar failure density yerine survival ile değerlendiriliyor; event0 başarısızlık yapılmıyor. Bu CSV/kod/receipt denetimidir; bütün model parametrelerinin bağımsız yeniden eğitim doğrulaması değildir.
+
+3. Birincil sayısal sonuç: dört-politika ortalaması, k3, tüm12aile
+
+Kazanç yönü: logscore artışı iyi; pinball kazancı=referans kaybı−yeni kayıp, pozitif iyi. Aşağıdaki aralıklar mevcut eşit-kaynak bootstrap2000/RNG231 tanımlayıcı aralıklarıdır; fiziksel build/popülasyon güven aralığı değildir.
+
+Ufuk | Core−base | proper-score ortalama [95%] | pinball kazancı ortalama [95%]
+1M | Normal  | +.008620 [−.013388,+.027609] | −.000487 [−.002904,+.002383]
+1M | Student | +.009803 [−.008401,+.024648] | −.000359 [−.001715,+.001203]
+10M| Normal  | +.002723 [−.018612,+.021535] | −.000771 [−.003507,+.002323]
+10M| Student | +.004457 [−.012844,+.018311] | −.000616 [−.002388,+.001172]
+
+Core−matching-missingness de geçmiyor.1M’de score ortalamaları Normal+.003874, Student+.002775; pinball kazançları−.000169 ve−.000142. Dolayısıyla fiziksel değerlerin, metaverinin bulunup bulunmamasının ötesinde sağlam katkısı kurulmadı.
+
+Her ufukta ayrı dört politika×iki dağılımın sekiz core−base hücresinin8/8’inde ortalama proper-score artışı pozitif,8/8’inde ortalama pinball kazancı negatif; hiçbirinde bu iki ölçütün pozitif alt sınırları birlikte yok. İyi görünen tek politikayı seçmek sonucu değiştiremez.
+
+Koşullar da aynı yönde değil:1M Normal core−base score kazancı27/37koşulda,9/12ailede pozitif; pinball yalnız17/37koşulda,4/12ailede pozitif. Student’ta28/37 ve10/12 score-pozitif;16/37 ve5/12 pinball-pozitif. Birkaç olumlu kaynak, tüm kaynaklar için güvenilir alt-ömür katkısı değildir.11aileli informative-policy ve7aileli complete-setting alt kümeleri makine dosyasında ayrı tutuldu; birincil paneli değiştirmedi.
+
+4. Üç destekten öğrenme ile metaveri katkısı farklı sonuçlar
+
+Aynı bütçe karşılaştırması, iki modele AYNI üç açıklanmış desteği verip yalnız metaveri girdisini değiştirir: core(k3)−base(k3). Üç deneyin öğrenme katkısı ise AYNI modelde k3−k0 farkıdır. Farkların-farkı [core(k3)−core(k0)]−[base(k3)−base(k0)], metaverinin üç deneyden öğrenme miktarını ne kadar değiştirdiğini gösterir; bunlar birbirinin yerine geçmez. Daha iyi bir başlangıç prior’u k0’ı iyileştirip k3−k0 artışını küçültebilir. Bu nedenle büyük few-shot increment, metaveri başarısının kapısı yapılmadı.
+
+1M’de base Normal proper-score k0’dan k3’e−1.136287’den−.656754’e; Student−1.124317’den−.530083’e çıkıyor. Eşli kazançlar+.479533 ve+.594234; lower95+.245764 ve+.325694. Pinball kazançları+.055702 ve+.060433; lower95+.016474 ve+.019680. Core da üç destekten öğreniyor; bu core’un base’e ek yarar sağladığını göstermez.
+
+1M’de k3 mutlak risk üst aralıkları base Normal%4.905, base Student%6.802; core Normal%4.409, core Student%7.254. k0’da bu sınırlar daha yüksek.10M’de core Student risk üstü%11.084; ayrı%10empirik etiketi geçmiyor. Bu oranlar eşit kaynak-ağırlıklı, capped karar riskidir; R90C90 değildir. Daha uzun q10 tek başına kalite veya güvenlik başarısı sayılmadı.
+
+5. Süreç ve enerji: metrikler arasında ödünleşme
+
+1M’de energy−core proper-score Normal−.016021 [−.029664,−.004460], Student−.013007 [−.021959,−.005271]. İki üst sınır da negatif. Pinball ortalaması buna karşın+.001179 ve+.000518; alt sınırlar−.000244 ve−.000206. Yani daha iyi görünen bounded karar kaybı, daha kötü proper dağılım skoruyla birlikte.10M’de Normal energy−core pinball lower95+.000024 pozitif olsa da proper-score lower95−.019766; birleşik kapı yine geçmiyor. Student risk artışı üst sınırı yaklaşık%2.68puan ile%2kapısını da aşıyor.
+
+1M process−core score−.000351/−.001526 ve pinball−.000327/−.000421. Süreç veya enerji birincil olumsuz sonucu kurtarmıyor. İki cap’in20’şer özgün kapısının tamamı not_supported;40/40. Kaynak nominal ayarlarının çoğu aile içinde sabit ve çok eksik; enerji doğrusal-log cebirsel yeniden ifadedir, yeni fiziksel ölçüm değildir. Sonuç bu değişkenlerin nedensel mekanizmasını tanımlamaz.
+
+6. Güçlü karşılaştırıcılar ve tamamlanan eş-girdili V8r karşılaştırması
+
+Önceki V6’nın beş önceden belirlenmiş güçlü karşılaştırıcısı gp,student,joint_rfl,tuned_curved_hierarchical,tuned_local_slope’tur. Bu denetim ortak sorgu/destek kapsamını doğruladı; V7 için sonradan seçilmiş yeni GP-vs-kovaryat kapısı icat etmedi. V7’nin kendi same-code base’i, eğitim amaç fonksiyonu ve hedef posterior mekaniği değişimini kontrol eder. V6 karşılaştırmaları daha geniş model bağlamıdır; V7’deki metaveri etkisini tek başına izole etmez.
+
+Yeni tamamlanmış V8r_matched_physical sonuçları, aynı core/energy girdilerini alan AFT ile sinirsel modeli eşleştiriyor.1M core_context9−core_normal proper-score ortalaması−.230292 [−.567027,+.019542]; core_student’a göre−.358146 [−.703818,−.087339]. Pinball kazançları−.001486/−.007325.10M’de proper-score farkları−.254352/−.380908. Her iki cap’te altı eş-girdili kapının tamamı,12/12, desteklenmiyor. Özgün V8r→beş güçlü V6 karşılaştırıcısı birleşimi de iki cap’te false; daha sonra tamamlanan aynı-girdili AFT birleşimi de false. Öğrenilmiş ağın genel güçlü-model üstünlüğü veya daha iyi few-shot mimari katkısı sonucu çıkmıyor. Önceden kayıtlı aynı-ağırlık update-vs-off kapısı da güçlü-fewshot etiketinin ayrı koşuludur; operasyon tamamlanması bu koşulları geçirmez.
+
+7. Dört takip işinin gerçek anlamı
+
+v6_bounded_10m: mevcut10M tahmin ve destek ledger’inin bounded-decision son işlemesi. Orijinal başarı ölçütünü veya kazananı değiştirmiyor. Receipt ve dört çıktı hash’i doğrulandı. Sansür10M’de tam belirlenmeyen hedef/maliyet aralıkları korunuyor.
+v6_pair00_replay: eski kuyruğun yaptığı taze training-only146aday yeniden üretimidir; “hiç fit yapmadı” denemez. Bu denetim tekrar fit yapmadı.146orijinal/taze CSV’nin hash’i birebir doğrulandı;150joint-normalizasyon kaydı var. Bu fiziksel deney veya bağımsız dış test değildir.
+v7_budget_1m ve v7_budget_10m: ilgili cap’in aynı tahminleri ve aynı inner k0/k3 kazananları üzerinde5/10destek son işlemesi; yeni fit veya yeniden seçim yok. k5:11aile/28koşul/280task; k10:4aile/5koşul/50task. Dar k10paneli ana37koşulun yerine konamaz.
+
+Core−base k5proper-score1M+.000967/+.004787,10M−.000159/+.002455; dört aralığın hepsi sıfırı kapsıyor. k10score her iki dağılım/ufukta negatif ortalama; pinball kazancı k5/k10’un sekiz dağılım/ufuk hücresinin tamamında negatif. Bunlar ana k3olumsuz sonucu kurtaran doğrulama değildir.
+
+Cap1M ile10M’nin kendisi yalnız aynı tahmini tekrar cap’leme değildir:7,680seçim-adımı anahtarından808’inde seçilmiş satır değişmiş, aynı satırlı1,470adımda açıklanan değer/event değişmiş. “Aynı tahminden son işleme” ifadesi yalnız her cap içindeki5/10bütçe postprocessor’ları ve bounded karar analizleri için geçerlidir. Aynı cap’te iki özellik kolu aynı desteği aldığından maliyet farkı tam0/oran1; özellik eklemek bu tasarımda deney döngüsü tasarrufu göstermiyor.
+
+8. Sayısal ve kapsam sınırları
+
+168seçilmiş outerfit receipt’inin tümü saved success ve doğru eğitim kimliği taşıyor. Ancak gradient∞1.47e−6–2.79e−3;9’u1e−3üzerinde. Kod ftol=1e−10 ve gtol=1e−5 kullanıyor; L-BFGS-B’nin relative-ftol duruşu strict gradient yakınsaması demek değildir. Hiçbiri için “gradient≤1e−6” iddia edilmiyor. Bu sınırlama zaten dondurulmuş protokolde açık; denetim ayar değiştirmedi veya yeniden fit yapmadı. Popülasyon parametre/seçim belirsizliği entegre değil; hedef intercept belirsizliği entegre, özellik/slope katsayıları üçdestekle yeniden öğrenilmiyor.
+
+Bağımsız560same-budget nokta ortalaması ve coupled-censor bound aritmetiği yeniden hesaplandı; yayımlanan ortalamalara maksimum fark5.55e−17. Özgünbootstrap aralıkları kullanıldı, bu denetimde bağımsız yeni aralık üretildiği iddia edilmiyor.993ana bütünlük/aritmetik kontrolü ve153takip kontrolü geçti. Eski dosya hash’leri korundu. İlk yazar denetim betiğinin support_ids için JSON/Python-list sözdizimi hatası ayrı saklandı ve yalnız yeni v2betikte literal parser ile giderildi; model/veri hatası değildir.
+
+Dal bağımsızlığı: eski V7,441 tarihsel kayıt üzerindeki yüzey/ısıl kategori/yön ve nominal P/v/h/katman/preheat metaverisini kullanır. Yeni ORNL60/54 XCT ve şimdi incelenen termal koordinat/mikroyapı alanları V7 girdilerine katılmadı. Bu sonuç yeni termal alanların veya ölçülmüş mikroyapının sınanmış başarısızlığı değildir; fiziksel veri arayışı ayrı ve hâlâ gereklidir.
+
+Son bilimsel hüküm: tamamlanmış karşılaştırmalar, mevcut veri ve dondurulmuş arama kapsamında sağlam kovaryat veya sinirsel mimari katkısı göstermedi. Üç destekten öğrenme var; küçük metadata-score kazanımı, q10karar kaybı ile aynı yönde değil. Daha güçlü fiziksel katkı için test-öncesi numune-eşli ölçüm gerekir; olumsuz sonuçları aşmak için sonradan model/altküme/ufuk seçilmez.
+
+Dosyalar: all_cells_and_gates_v1.json, independent_mean_arithmetic_v1.json, csv_identity_and_failure_audit_v1.json, selected_outer_fit_receipts_v1.json, followup_and_stratum_audit_v1.json, weak_v8_coverage_v1.json ve crosscap_ledger_semantics_v1.json. Aritmetik kodu yalnız bu yeni klasördedir; modelleri import etmez ve pkl açmaz.

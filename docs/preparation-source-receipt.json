@@ -1,0 +1,123 @@
+{
+  "base_commit": "345afa3679193023bdcfea8908e81695130f18f0",
+  "copied_files": [
+    {
+      "path": "data/processed/v4/controlled_expansion/expanded441.csv",
+      "bytes": 43015,
+      "sha256": "708c86f67675afe1b9d374a9143a3f456986d1d4d191e93c57b3e7fa48f25ce3"
+    },
+    {
+      "path": "data/processed/v7_covariates/conservative441_v1.csv",
+      "bytes": 572370,
+      "sha256": "18751c67c17051961878a1348c9e0d3eb7e9874e2a24ea3fe008917dacc64a75"
+    },
+    {
+      "path": "data/raw/manifest.json",
+      "bytes": 1297,
+      "sha256": "370779eac8bcf9040e86e9a25e353b5b3f2304517c1bee3e7817e715ba4c581e"
+    },
+    {
+      "path": "literature/v6_methods/final_panel_audit_v1/report_tr_v1.md",
+      "bytes": 4452,
+      "sha256": "3265117d0de7b0bbf3186c124d6cbab92756e5c60c8e12e03790ad4c926c54ae"
+    },
+    {
+      "path": "literature/v6_methods/final_panel_audit_v1/report_v1.json",
+      "bytes": 7142,
+      "sha256": "19cd1157cdadc8e62b2ac9d3ddad28f1eae74ebb012721055cb4f95d696e5431"
+    },
+    {
+      "path": "literature/v6_methods/final_panel_audit_v1/outer_cap1e6_fitted_k3_comparisons.csv",
+      "bytes": 122022,
+      "sha256": "07030c88bcf4f87830eaec9aba60411104b662817454b609dfb5f2e075760598"
+    },
+    {
+      "path": "literature/v6_methods/final_panel_audit_v1/outer_cap1e7_fitted_k3_comparisons.csv",
+      "bytes": 122828,
+      "sha256": "b04130d2e524e86db4d69b57f2fe1e9d7a8b80501465159462edbf96132c2fcf"
+    },
+    {
+      "path": "literature/v6_methods/final_panel_audit_v1/outer_cap1e6_all_k3_gates.csv",
+      "bytes": 10980,
+      "sha256": "398c36b81f556d1b740c4e1202cba8857e6f2803e207dfa3557ed4c8a3f849c0"
+    },
+    {
+      "path": "literature/v6_methods/final_panel_audit_v1/outer_cap1e7_all_k3_gates.csv",
+      "bytes": 11000,
+      "sha256": "4edd7e91efceeb152fbe0356d5ad24d4e4ca5bf09ced8881ba180a6f4c42af48"
+    },
+    {
+      "path": "literature/v7_completed_readonly_science_audit_v1/rapor_tr_v1.txt",
+      "bytes": 14220,
+      "sha256": "fc2638ec4f2bc81baf3c7ad3515117de1f2c712701b30cf57e0d5e69d7a8e8f6"
+    },
+    {
+      "path": "literature/v7_completed_readonly_science_audit_v1/decision_summary_v1.json",
+      "bytes": 8654,
+      "sha256": "a01699877ae1e3ab68bbd6e23cecccb1709c226fcc666e10262cccc6acb21fa1"
+    },
+    {
+      "path": "literature/outer_region_signal_feasibility_v12/sonuc_ve_karar_tr_v1.txt",
+      "bytes": 14608,
+      "sha256": "5169b889f41891ff2e4c5dd4717d422aa633727f42cf67b4af10f55f5b08d58d"
+    },
+    {
+      "path": "literature/outer_region_signal_feasibility_v12/prepared_models_v1/input60.csv",
+      "bytes": 22537,
+      "sha256": "7e5e640edfd1813c2720e541c51a1f4a89d1c3b41dcdbca64f0a0765b6522553"
+    },
+    {
+      "path": "literature/outer_region_signal_feasibility_v12/prepared_models_v1/input54.csv",
+      "bytes": 20357,
+      "sha256": "847b946164d6a89762064ce9b83e121eda43473c8ca494bbabe66a2b34438421"
+    },
+    {
+      "path": "literature/outer_region_signal_feasibility_v12/results_summary_v1/score_gain_all_cells_v1.csv",
+      "bytes": 2799,
+      "sha256": "e86dc6b1286b49fd1f55cf50aa28b87162d4a84116fc44be61e4b321526a45b2"
+    },
+    {
+      "path": "literature/outer_region_signal_feasibility_v12/results_summary_v1/q10_violations_all_v15_v1.csv",
+      "bytes": 5323,
+      "sha256": "566a04b08bb1cad48808cfccf1f2be9ff9c4a9e6028316456a3eb4768e7e197e"
+    },
+    {
+      "path": "literature/shift_gain_decomposition_v16/yorum_tr_v1.txt",
+      "bytes": 5461,
+      "sha256": "609b1922144822c3c8c69d88b6b414be6a383f2ef913cdec80add3373788f2ad"
+    },
+    {
+      "path": "literature/shift_gain_decomposition_v16/run_v1/mse_contrasts_v1.csv",
+      "bytes": 13923,
+      "sha256": "9058ebb708b87224bada51815d1f82eadad4cddd04180f05dbe62bdf7e9b50cd"
+    },
+    {
+      "path": "literature/shift_gain_decomposition_v16/run_v1/order_contrasts_v1.csv",
+      "bytes": 9702,
+      "sha256": "eff875f3cf3afafdf9da419f7fc9eae0e594d7261094617a3a6d7d8c771e3434"
+    },
+    {
+      "path": "literature/within_load_mapping_control_v17/kisa_karar_tr_v1.txt",
+      "bytes": 2222,
+      "sha256": "829eed8093cbb437e65c9dd029f8db03d654af73afbca62edfba2e739932aad7"
+    },
+    {
+      "path": "literature/within_load_mapping_control_v17/run_v1/mapping_summaries.csv",
+      "bytes": 29991,
+      "sha256": "dcdc5025b4391ad3d346a53d687aeb8ab0b0d84802538473c590246f1579ae2f"
+    },
+    {
+      "path": "literature/within_load_mapping_control_v17/run_v1/identity_rank_and_range.csv",
+      "bytes": 1267,
+      "sha256": "3cf79fe4ddb72889fda8082c6cacbf507d14c3c3653e43d6e9864df216373917"
+    },
+    {
+      "path": "literature/within_load_mapping_control_v17/run_v1/receipt.json",
+      "bytes": 1551,
+      "sha256": "f153fefab7b2a55aa0a3aac17b393e5be1448f27837da43709c9dec36cb02d73"
+    }
+  ],
+  "new_model_fits": 0,
+  "main_research_files_modified": false,
+  "source_read_scope": "Selected completed reports and small CSV/JSON only; not a full recomputation"
+}

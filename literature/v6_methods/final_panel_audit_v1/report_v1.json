@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-21T09:53:20.026898+00:00",
+  "key_finding": "Three revealed tests improve proper distribution scores across all7 fitted models and4 policies, but no tested stress-choice policy passes the predeclared joint longer-bound/nonharm/finite/cost gate or model-robust gate.",
+  "panels": {
+    "outer_cap1e6": {
+      "cap": 1000000.0,
+      "all_individual_gates_checked": 476,
+      "individual_joint_passes": 0,
+      "model_robust_rows_checked": 28,
+      "model_robust_passes": 0,
+      "raw_k3_pair_summaries_reconstructed": 224,
+      "cost_summaries_corner_checked": 272,
+      "k3_vs_k0_fitted_score_cells": 28,
+      "score_lower95_positive_cells": 28,
+      "k3_policy_cost_vs_random": [
+        {
+          "policy": "random",
+          "ratio_upper_mean": 1.0,
+          "ratio_upper_lo95": 1.0,
+          "ratio_upper_hi95": 1.0
+        },
+        {
+          "policy": "stress_span",
+          "ratio_upper_mean": 1.2052145989125016,
+          "ratio_upper_lo95": 1.0412779947226176,
+          "ratio_upper_hi95": 1.3639145520639306
+        },
+        {
+          "policy": "high_stress",
+          "ratio_upper_mean": 0.5654580571179059,
+          "ratio_upper_lo95": 0.4451661652076671,
+          "ratio_upper_hi95": 0.6910065140297598
+        },
+        {
+          "policy": "active_query_variance",
+          "ratio_upper_mean": 1.1716713174923457,
+          "ratio_upper_lo95": 0.9859990443213608,
+          "ratio_upper_hi95": 1.4267219318615232
+        }
+      ],
+      "k3_class_reversals": [
+        {
+          "policy": "active_query_variance",
+          "reversed_classes": []
+        },
+        {
+          "policy": "high_stress",
+          "reversed_classes": [
+            "local_slope",
+            "rfl"
+          ]
+        },
+        {
+          "policy": "random",
+          "reversed_classes": []
+        },
+        {
+          "policy": "stress_span",
+          "reversed_classes": [
+            "rfl"
+          ]
+        }
+      ],
+      "source_counts_by_budget": [
+        {
+          "subset": "full",
+          "k": 0,
+          "eligible_source_counts": [
+            12
+          ]
+        },
+        {
+          "subset": "full",
+          "k": 3,
+          "eligible_source_counts": [
+            12
+          ]
+        },
+        {
+          "subset": "full",
+          "k": 5,
+          "eligible_source_counts": [
+            11
+          ]
+        },
+        {
+          "subset": "full",
+          "k": 10,
+          "eligible_source_counts": [
+            4
+          ]
+        },
+        {
+          "subset": "informative_policy",
+          "k": 3,
+          "eligible_source_counts": [
+            11
+          ]
+        },
+        {
+          "subset": "informative_policy",
+          "k": 5,
+          "eligible_source_counts": [
+            10
+          ]
+        },
+        {
+          "subset": "informative_policy",
+          "k": 10,
+          "eligible_source_counts": [
+            1
+          ]
+        }
+      ],
+      "receipt_scope": "Original analysis receipts lack derived-output hashes; gate outputs reconstructed from snapshotted summaries, and224 primary raw prediction summaries+272 shared-ledger cost summaries independently rechecked."
+    },
+    "outer_cap1e7": {
+      "cap": 10000000.0,
+      "all_individual_gates_checked": 476,
+      "individual_joint_passes": 0,
+      "model_robust_rows_checked": 28,
+      "model_robust_passes": 0,
+      "raw_k3_pair_summaries_reconstructed": 224,
+      "cost_summaries_corner_checked": 272,
+      "k3_vs_k0_fitted_score_cells": 28,
+      "score_lower95_positive_cells": 28,
+      "k3_policy_cost_vs_random": [
+        {
+          "policy": "random",
+          "ratio_upper_mean": 1.0,
+          "ratio_upper_lo95": 1.0,
+          "ratio_upper_hi95": 1.0
+        },
+        {
+          "policy": "stress_span",
+          "ratio_upper_mean": 3.308950616245555,
+          "ratio_upper_lo95": 2.1343511948746037,
+          "ratio_upper_hi95": 4.492664985378771
+        },
+        {
+          "policy": "high_stress",
+          "ratio_upper_mean": 0.4950221050353187,
+          "ratio_upper_lo95": 0.3642626082290919,
+          "ratio_upper_hi95": 0.6335481339151572
+        },
+        {
+          "policy": "active_query_variance",
+          "ratio_upper_mean": 2.30425589927193,
+          "ratio_upper_lo95": 1.5711206327530458,
+          "ratio_upper_hi95": 3.106027418025413
+        }
+      ],
+      "k3_class_reversals": [
+        {
+          "policy": "active_query_variance",
+          "reversed_classes": []
+        },
+        {
+          "policy": "high_stress",
+          "reversed_classes": [
+            "local_slope",
+            "rfl",
+            "student"
+          ]
+        },
+        {
+          "policy": "random",
+          "reversed_classes": []
+        },
+        {
+          "policy": "stress_span",
+          "reversed_classes": [
+            "rfl"
+          ]
+        }
+      ],
+      "source_counts_by_budget": [
+        {
+          "subset": "full",
+          "k": 0,
+          "eligible_source_counts": [
+            12
+          ]
+        },
+        {
+          "subset": "full",
+          "k": 3,
+          "eligible_source_counts": [
+            12
+          ]
+        },
+        {
+          "subset": "full",
+          "k": 5,
+          "eligible_source_counts": [
+            11
+          ]
+        },
+        {
+          "subset": "full",
+          "k": 10,
+          "eligible_source_counts": [
+            4
+          ]
+        },
+        {
+          "subset": "informative_policy",
+          "k": 3,
+          "eligible_source_counts": [
+            11
+          ]
+        },
+        {
+          "subset": "informative_policy",
+          "k": 5,
+          "eligible_source_counts": [
+            10
+          ]
+        },
+        {
+          "subset": "informative_policy",
+          "k": 10,
+          "eligible_source_counts": [
+            1
+          ]
+        }
+      ],
+      "receipt_scope": "Original analysis receipts lack derived-output hashes; gate outputs reconstructed from snapshotted summaries, and224 primary raw prediction summaries+272 shared-ledger cost summaries independently rechecked."
+    }
+  },
+  "quality_not_usable_life": "Positive log-score gain is separate from longer raw q10, low empirical absolute risk and experimental cost.",
+  "scope": "Historical source-family descriptive bootstrap; not physical-build independence, R90C90 certification or material validation.",
+  "verified_before_score_read": true,
+  "fits": 0,
+  "old_files_modified": false,
+  "hashes": {
+    "literature/v6_methods/final_panel_audit_v1/input_integrity_receipt_v1.json": "1ddb199953d0e4a82a6178f83ca66eb2bdcb56b0c904d2497e191296d8825fc8",
+    "literature/v6_methods/final_panel_audit_v1/numerical_and_gate_audit_receipt_v1.json": "2e4f5b7eac3584b8119666f6cf26e8b0688ef85c4457085e59a5cfca13de2f28",
+    "literature/v6_methods/final_panel_audit_v1/report_tr_v1.md": "3265117d0de7b0bbf3186c124d6cbab92756e5c60c8e12e03790ad4c926c54ae"
+  },
+  "original_analysis_rerun_or_output_rewrite": false,
+  "independent_in_memory_arithmetic_reconstruction": true
+}

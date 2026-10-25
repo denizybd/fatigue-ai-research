@@ -1,0 +1,9 @@
+claim,evidence,scope,claim_type
+V6: iki ufukta 28/28 skor alt sınırı pozitif; 0/476 ortak başarı,literature/v6_methods/final_panel_audit_v1/report_tr_v1.md,12 kaynak ailesi; fiziksel üretim bağımsızlığı değil,tamamlanmış hesap
+V7/V8r: sağlam ek metaveri veya mimari katkısı desteklenmedi,literature/v7_completed_readonly_science_audit_v1/rapor_tr_v1.txt,Sınanan aile ve ayarlar; ölçülmüş XCT bu eski girdilere dahil değildi,tamamlanmış hesap
+V12: 8/8 skor hücresi eşiği geçmedi; V15: 8/8 geçti,literature/outer_region_signal_feasibility_v12/results_summary_v1/score_gain_all_cells_v1.csv,Tek 316H üretimi; V15 aynı altı test numunesi,tamamlanmış hesap
+V15 olumlusunda q10 yine 3–6/6 fazla iyimser,literature/outer_region_signal_feasibility_v12/results_summary_v1/q10_violations_all_v15_v1.csv,Aynı altılı; güvenli tasarım sonucu yok,tamamlanmış hesap
+V16: medyan hata kazancı ortak ortalama düzeyinde yoğunlaştı,literature/shift_gain_decomposition_v16/yorum_tr_v1.txt,Sonuç sonrası betimleyici tanı; logscore veya nedensel ayrıştırma değil,sonuç sonrası tanı
+V17: 36/36 eşleme bütün sekiz hücrede kapıyı geçti,literature/within_load_mapping_control_v17/kisa_karar_tr_v1.txt,Sentetik sorgu kontrolü; bağımsız malzeme deneyi veya p değeri değil,tamamlanmış kontrol
+Başlangıç G/C adayları farklı bilgi taşır; ek katkı henüz doğrulanmadı,literature/microstructure_question_feasibility_v44/karar_notu_tr_v1.txt,Ölçüm önerisi; doğrulanmış yeni yöntem değil,araştırma sorusu
+Lyu eşleşmiş alan var; fiziksel uç sayımı henüz hazır değil,literature/physical_microstructure_route_gate_v45/sonuc_tr_v1.txt,Tek numune içinde seçilmiş alanlar,ölçülebilirlik kararı
