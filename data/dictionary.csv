@@ -1,0 +1,19 @@
+dataset,column,type,unit,meaning
+model441,row_id,metin,-,Türetilmiş gözlem kimliği; fiziksel kupon barkodu değildir.
+model441,dataset_id,metin,-,Kaynak içi koşul/grup kimliği.
+model441,group_id,metin,DOI/aile,İstatistiksel kaynak ailesi; doğrulanmış üretim partisi değildir.
+model441,log_stress,sayısal,log10(MPa),Çalışma girdisinde kullanılan gerilme ölçüsünün log10 değeri; yük türü kaynakla birlikte okunmalı.
+model441,load_ratio,sayısal,-,R gerilme oranı.
+model441,log_life,sayısal,log10(çevrim),Gözlenen kırılma veya duruş çevriminin log10 değeri.
+model441,event,ikili,0/1,1 kırılma; 0 sağdan sansür. Duruş kırılma zamanı sayılmaz.
+metadata441,*_provenance,metin,-,Her metaverinin kaynak ve bilinmeme durumu. Boş alan ölçülmüş sıfır değildir.
+ornl60,specimen_id / sample_id,metin,-,P-numune kimliği ile HDF bölge ordinali ayrıdır.
+ornl60,build_id / feedstock_lot,metin,-,Bu panel AOP24 FP07 / Lot4; çoklu üretim genellemesi yok.
+ornl60,sigma_max_mpa,sayısal,MPa,Maksimum gerilme; genlik diye yeniden adlandırılmadı.
+ornl60,stress_ratio,sayısal,-,Kaynak R değeri.
+ornl60,cycles / log10_cycles,sayısal,çevrim / log10(çevrim),Kaynağın sonlanım çevrimi; event ile birlikte yorumlanır.
+ornl60,source_cad_x_mm / source_cad_y_mm,sayısal,mm,Kaynak CAD konumu. Gerçek işlenmiş gage dönüşümü değildir.
+ornl60,outer_log1p_flaw_positive_count,sayısal,log1p(kayıt sayısı),Dış pencerede pozitif kusur-kayıt desteği. Gözenek hacmi değildir.
+ornl60,outer_log1p_largest_xy_patch_count,sayısal,log1p(piksel sayısı),Düzlem içi en büyük 4-komşu pozitif yama; fiziksel 3B kusur büyüklüğü değildir.
+ornl60,outer_flaw_plane_presence_fraction,sayısal,oran,Pozitif kusur kaydı görülen düzlemlerin payı.
+ornl60,*_knownness,kodlanmış gösterge,kaynak kod tanımı,Bu sözlük kodun işaretini bağımsız doğrulamadı; doğrudan fiziksel ölçü gibi kullanılmamalı.

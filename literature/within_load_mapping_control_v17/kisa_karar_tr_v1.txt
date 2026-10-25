@@ -1,0 +1,36 @@
+DOĞRU NUMUNE BAĞI KAZANCIN KAYNAĞI MI?
+22 Ekim 2026 — kısa karar
+
+Cevap: Bu altı numune ve bu skor ölçütü için doğru bireysel bağ gerekli
+çıkmadı. Önceki olumlu tahmin sonucunu, numuneye özgü mikroyapıyı doğru
+yakaladığımızın kanıtı olarak sunamayız.
+
+V15'te aynı altı yüksek enerji girdili/sol konumlu ORNL316H numunesinde
+üç ek dış-XCT özelliği dört güçlü modele fayda sağlamıştı. V17'de iki
+aynı-yük üçlüsünde bu özellikleri numuneler arasında birlikte değiştirdik.
+Eğitim verisi ve önceki model ayarları aynı kaldı; bütün36eşleme denendi.
+Bunlar gerçek malzeme deneyleri değil, sentetik sorgu kontrolleridir.
+
+Dört model × iki eğitim panelinde36eşlemenin tamamı önceki+.02nat skor
+kapısını geçti. Hiçbir numunenin kendi dış kaydını almadığı dört eşleme
+de buna dahil. En kötü eşlemede bile her grubun gerçek eşlemeyle elde
+ettiği SKOR KAZANCININ en az%99,35'i kaldı. Bu, doğruluk veya ömür yüzdesi
+değildir. Model özellik değişimine tepki veriyor; ancak doğru eşleme bu
+başarı ölçütü için zorunlu olmadı.26.243bağımsız sayısal kontrol hata bulmadı.
+
+Makul bir rakip açıklama, bu özelliklerin tek tek numuneleri ayırmaktan
+çok ortak üretim/konum farkını düzeltmesidir. Bu henüz tek açıklama olarak
+kanıtlanmadı. Sentetik donör kaydı alıcının diğer fiziksel özellikleriyle
+uyumsuz olabilir; nedensel etki/p-değeri hesaplamadık. Önceki olumsuz
+pencere sonucu da korunuyor. Olumlu V15skoruna rağmen q10ömür sınırı altı
+kırılmanın3–6'sında fazla iyimser; güvenli tasarım sonucu çıkaramayız.
+
+Sıradaki ayırt edici kanıt, aynı reçete/yükte değişen ve aynı fiziksel
+numuneye bağlanmış test öncesi tane/yönelim ile ayrı hücre ölçümüdür.
+Yüzey/kusur ve gerçek yorulma sonlanımıyla bağlantısı da korunmalıdır.
+Yeni bir mimari veya sınırsız ayar araması bu eksik bilgiyi yaratmaz.
+
+Şu anda bir dar bilimsel soruyu cevapladık. Ana tane–hücre–yorulma katkısını
+cevaplayabilecek ayırt edici veri ise hâlâ eksik; genel hedef tamamlanmadı.
+Ayrıntı/ham kontrol: sonuc_tr_v1.txt ve run_v1/.
+Görsel: esleme_duyarliligi_v1.png.

@@ -1,0 +1,238 @@
+EK UZAMSAL KUSUR KAYDI NE ZAMAN YARDIMCI OLDU?
+22 Ekim 2026 — V12 ve V15 sonuç/karar notu
+
+NE BULDUK?
+
+Sabit bir veri kümesinde iki farklı sorunun cevabı farklı çıktı. Ek dış
+kayıtlı-kusur bilgisi, aynı üretimin karışık numune ayrımlarında genel bir
+kazanç sağlamadı. Yalnız nominal reçetede öğrenip yüksek VED + sol konum
+paketindeki aynı altı numuneye geçtiğimizde dört modelin tamamına fayda
+sağladı. Bu, kapsamı belli ve incelenmeye değer bir tahmin bulgusudur.
+Henüz tane/hücre mekanizması, bağımsız üretime genelleme veya güvenilir
+mühendislik ömrü sonucu değildir. q10 alt ömür tahminleri hâlâ fazla iyimser.
+Ek tanıda medyan hata azalması ağırlıkla yeni paketin genel düzeyini
+düzeltmekten geldi; yük-içi sıralamanın toplam uyumu artmadı.
+
+Ana mikroyapı sorusunu tam cevaplamadık. Mevcut veride gerçekten
+cevaplayabildiğimiz dar soru şuydu: üretim, yük, konum, çap, eski iç
+kayıt ve kapsam kontrolünün yanında ek uzamsal kayıt işe yarıyor mu?
+Bu soruya hesapla cevap verdik. Tane ve hücrenin ayrı katkısı için hâlâ
+uygun ölçülmüş veri eksik; buna dair eksik değer veya RX yüzdesi üretmedik.
+
+GERÇEK VERİ VE KÖKENİ
+
+ORNL SS316H Lot4 / AOP24FP07: tek üretim, aynı fiziksel numuneye bağlanan
+60 yorulma kaydı; 56 kırılma ve 4 sağdan sansürlü duruş. P52/P61/P63/P65
+10.005.000 çevrimde kırılmış sayılmadı. HDF sample bölge etiketi/ordinali ile
+P-numune kimliği ayrı tutuldu. 64 adlandırılmış numune bölgesinden yorulma
+paneline bağlı sabit 60 kullanıldı. Bu bölge sayısı, 64 bağımsız XCT edinimi
+kanıtı değildir.
+Kaynak: https://doi.org/10.13139/ORNLNCCS/2524534
+Birincil yöntem: literature/paraview_pore_followon_v1/ornl_316h/Methods.docx
+
+Hedef, kaynakta kayıtlı ham XCT ve uint16 kusur alanlarıdır. XCT edinimi
+yorulma öncesidir; türetilmiş alanın bütün işlem adımlarının sonuçtan
+bağımsız kesin takvimi bilinmiyor. LoG eşikleme/kümeleme kaynakta açıklanır;
+uint16 değerlerinin tam sözlüğü ve üretici kodu bulunmadı. Bu yüzden değer
+büyüklüklerinden çap, hacim, kusur şiddeti veya gözenek yüzdesi çıkarmadık.
+Yalnız pozitif kayıt desteğini özetledik. Ham sinyalin pozitif olması,
+malzeme hacmi ya da tarama kalitesinin tam doğrulaması değildir.
+
+Eski 30×169×169 iç pencere korundu; aynı merkezde 30×337×337 alanın iç
+pencere dışındaki bölümü yeni kanal oldu. Üç sabit özet: pozitif destek
+sayısının log1p'si, düzlem içi en büyük 4-komşu yamanın log1p'si ve destek
+görülen düzlem oranı. Bunlar native 3B gözenek sayısı/şekli değildir.
+Geometri yeni dış veriler ve yeni performans görülmeden sabitlendi;
+eski ömürler bilindiği için çalışma keşifseldir, kör ileri doğrulama değil.
+
+60 numune bölgesinin yeni alt hacim çıkarımı tamamlandı. Eski iç pencere
+için 60×2 alanın 120 bayt-düzeyi/dtype eşitlik kontrolü;
+ayrı kodla 8.340 özellik/kontenjans karşılaştırması: uyuşmazlık 0.
+Sıfır kusur sinyalli sample60 korundu. Bütün ham-destek oranları 1 idi;
+kapsam kontrolüyle iç-pencere kolunun tasarımları bu veride aynılaştı.
+Bu aritmetik tutarlılıktır; fiziksel gözenek metrologisi doğrulaması değildir.
+Kontrollü uygulama gövdeleri 1.327.301.498 bayt; saklanan çıkarım çıktısı
+293.007.017 bayt. 128 GB kaynağın tamamı indirilmedi; bu sayılar ölçülmeyen
+ağ/protokol yükünü içermez ve dosyanın tümüne ait SHA256 kanıtı değildir.
+
+NİHAİ GAGE İLE EŞLEŞME SINIRI
+
+Kaynak yaklaşık 15 mm çaplı baskı taslağı ve yaklaşık 5,1 mm son gage bildirir.
+Tarama–işlenmiş yüzey dönüşümü, gerçek merkez/tilt ve gage profili eksik.
+İdeal merkezli dairesel gage varsayımında eski iç kare gage alanının
+%44,3–45,0'ını kapsar; yeni dış alanın yalnız %41,1–42,2'si o diskin
+içinde kalır. Bunlar koşullu geometri hesabıdır, ölçülmüş alan payları değil.
+Ek kayıt gerçek gageyle ilgili kusurları veya ortak üretim geçmişini
+paylaşan çevre malzemeyi temsil edebilir. Kritik yüzey kusurunu ölçtük
+ya da çıkarılan malzemenin etkisini belirledik diyemeyiz.
+Görsel/hesap: kosullu_gage_pencere_v1.png ve pencere_fiziksel_yorum_v1.txt.
+
+NASIL KARŞILAŞTIRDIK?
+
+Üç kol: B+eski iç kayıt; buna ham destek/bilinirlik kontrolü; bunlara
+üç dış kayıt özeti. B yük, üretim etiketi, konum ve çap bilgisini içerir.
+Normal ve Student-t(df4) hata dağılımları × doğrusal ve RBF temsili:
+dört aile, aynı 24 ayar. Ön işleme ve ayar seçimi yalnız eğitim içindeki
+ayrımlarla yapıldı; test sonucu model seçmedi. Başarısız grup atılmadı.
+
+V12: aynı 60 ve önceden belgeli altı yük-sapması numunesi çıkarılmış 54;
+aynı 5 dış/4 iç ayrım. Eski iç-kayıt tahminleri birebir korunarak referans
+alındı. Yalnız iki yeni kolun toplam 2.000 fitinin tamamı yakınsadı.
+
+V15: nominal reçetedeki 54, duyarlılıkta aynı eğitimden altı belgeli yük
+sapması çıkarılmış 48. İki eğitim aynı altı P2/P10/P26/P35/P51/P59'u
+tahmin etti. V12'nin 54 paneli ile V15'in nominal 54 eğitimi aynı üyeler
+değildir. Altılı eski OOF eğitimlerinde bulunduğundan eski tahminler
+kullanılmadı; üç kolun tamamı yeni nominal eğitimde kuruldu. 600/600 fit
+yakınsadı. Dört iç ayrım yalnız nominal eğitimdeydi.
+
+V15 kararı ve tam haritası, V12'nin yeni skorları hesaplanmadan sabitlendi;
+V12'nin olumsuz sonucuna rağmen koşuldu. Yeni ayar/geometri taraması yok.
+Altı yüksek VED numunesi aynı zamanda sol sütundadır: nominal X aralığına
+en az 25,49 mm uzak. Bu, ortak reçete+konum geçişidir; saf reçete deneyi
+veya bağımsız kampanya değildir. Altılı aynı tek üretimin V12 panelindedir.
+Nominal eğitimde reçete sabittir; görülmeyen reçete için etkisi öğrenilmiş
+bir katsayı yoktur. B'ye üretim etiketi konması bu destek eksikliğini çözmez.
+
+SONUÇ: YÜKSEK SKOR DAHA İYİ
+
+Aşağıdakiler dış-kayıt kolu eksi kapsam-kontrolü ortalama proper logscore
+kazancıdır (nat). Yüzde doğruluk artışı değildir. Önceden sabit tutarlılık
+kuralı, dört modelin iki panelde de en az +0,02 vermesiydi.
+
+Model                V12/60    V12/54    V15/54→6   V15/48→6
+Normal-doğrusal       -0,1812   -0,1788    +1,1794    +1,3560
+Student4-doğrusal     -0,0129   -0,1637    +0,8958    +1,1800
+Normal-RBF            -0,2476   -0,0179    +2,3828    +2,7442
+Student4-RBF          +0,0190   -0,0643    +0,9521    +1,3851
+
+V12: 8 hücrenin 7'si negatif; 1 küçük pozitif eşik altında. Skor ve q10
+kapıları geçmedi. Yalnız pencereyi büyütmek genel fayda sağlamadı. Önceki
+olumsuz iç-pencere sonucu korunuyor; gözenekler önemsiz denmiyor.
+
+V15: 8/8 skor hücresi eşiği geçti. Altı numunenin her birinde, dört model
+ve iki eğitimde toplam 48/48 eşli skor farkı pozitif. Kazanç bir tek uç
+numuneye dayanmıyor. Bunlar 48 bağımsız deney değildir; hep aynı altılıdır.
+Bu görevde model aileleri arasında işaret tutarlı, görevler arasında farklı.
+
+ÖMÜR SINIRLARI HÂLÂ GÜVENLİ DEĞİL
+
+q10 ömür sınırının gerçek kırılma ömrünü aştığı gözlenen numune sayıları:
+
+Model                54 eğitim: kontrol→dış    48 eğitim: kontrol→dış
+Normal-doğrusal                    6→6                      6→6
+Student4-doğrusal                  6→5                      6→4
+Normal-RBF                        6→3                      6→3
+Student4-RBF                      5→4                      6→3
+
+Her sütunun paydası aynı 6 kırılmadır. Dış kayıtla kayıp azalması ve bazı
+ihlal azalmaları var; 3–6/6 aşırı iyimser q10 tahmini hâlâ var. İyi skor,
+kalibre alt ömür veya mühendislik güvencesi anlamına gelmiyor. V15 için
+sonradan yeni bir q10 başarı kapısı icat edilmedi. 1M/10M ufukları aynı
+tahminlerin iki değerlendirmesidir. q05–q95 merkezî %90 tahmin bandıdır;
+parametre güven aralığı veya R90C90 değildir. Aynı altılıyı tekrarlayan bu
+karşılaştırmalarla popülasyon kalibrasyonu, emniyetli tasarım veya nedensel
+etki iddiası yok.
+
+HANGİ AÇIKLAMALAR HÂLÂ AYRILAMADI?
+
+Ek kayıt yerel kusur durumuna ilişkin yararlı bilgi taşıyabilir. Aynı
+zamanda eksik temsil edilen üretim/konum etkileşimlerinin, çevre malzemenin
+veya işleme zincirinin vekili olabilir. Üç değişkenin ek model serbestliği
+de tek başına fiziksel mekanizma kanıtı değildir. B'yi aşan öngörü kazancı
+bu rakipleri kendiliğinden kaldırmaz. Bu veri tane, hücre, GND veya RX
+ölçmüyor. Isıl alanlardan doğrulanmış numuneye özgü RX türetmedik.
+
+Önceki küçük soruların sonucu değişmedi: Lyu'nun 10 mikropilarında basit
+hücre/GND sıralama kuralları yetersizdi; bu basma ara çalışmasıdır, yorulma
+doğrulaması değil. Cui'nin yakın ortalama tane boyutlu üç koşulunda ortak
+yükte fark sürer, fakat hücre etiketi işlem etiketiyle birebirdir; başlangıç
+dayanımı da üç koşula eşlenmiş değildir. Bu 316L kanıtlarını ORNL 316H'ye
+katsayı veya numune verisi olarak aktarmadık. Dört karakterizasyon alanı
+dört yorulma numunesi sayılmadı; test sonrası ölçü başlangıç girdisi olmadı.
+
+EK İNCELEME: GENEL DÜZEY Mİ, YEREL AYIRT ETME Mİ?
+
+Yeni model eğitmeden V15 medyan tahminlerinin hata yapısı ayrıldı. İki
+gerçek yük düzeyindeki üçer numunede ortalama hata karesi, grup ortalama
+hatasının karesi ile grup içi merkezlenmiş ortalama hata karesinin toplamına
+tam eşittir.
+Bu aritmetik tanının kuralları yeni V16 hesabından önce yazıldı; sorunun
+kendisi V15 sonucu görüldükten sonra seçildi. Keşifsel sonuç-sonrası tanıdır.
+
+Sekiz model/eğitim karşılaştırmasının tamamında medyan hata karesi azaldı.
+Net azalmanın %94,77–104,07'si yük-grubu ortalama kaymasının düzelmesinden
+geliyor. %100'ün üstü hata değildir: bazı durumlarda merkezlenmiş hata
+arttığı için ortalama-kayma kazancı net kazançtan daha büyüktür. Student
+modellerinin dört karşılaştırmasında grup içi merkezlenmiş hata arttı.
+
+Yük-içi çiftleri birleştiren sekiz model/eğitim toplamının hiçbirinde
+sıralama uyumu artmadı (beşi aynı, üçü kötüleşti): Normal modellerde 5/6→5/6;
+Student-doğrusalda her iki eğitimde 4/6→2/6; Student-RBF'de 54 eğitimde
+4/6→1/6, 48 eğitimde 4/6→4/6. Her sayım iki yükteki toplam altı çifttir;
+bağımsız altı deney değildir. Tekil yüklerde/çiftlerde artış ve azalışlar
+var; burada verilen sonuç bunların toplamıdır. Yük başına üç numune var.
+
+Bu nedenle gördüğümüz medyan-tahmin faydası ağırlıkla bu yeni paketin
+genel ömür düzeyini düzeltmeye benziyor. Numuneye özgü yerel mikroyapıyı
+daha iyi ayırt ettik iddiasını desteklemiyor. Bu tanı proper logscore
+kazancını iptal etmez; onun yüzde kaçını açıkladığını da hesaplamaz.
+Test yaşamından türetilen merkezleme yeni bir tahmin veya kalibrasyon
+modeli olarak kullanılmadı. Nedensel vekillik kanıtı, yeni başarı kapısı
+veya V12/V15 kurallarında değişiklik değildir.
+Kurallar/çıktılar: literature/shift_gain_decomposition_v16/.
+
+SIRADAKİ ÖLÇÜM NEDEN BU?
+
+Ana mikroyapı iddiasını ilerletecek somut eksik, aynı fiziksel numunede
+başlangıç tane/yönelim ölçüsü ve hücreyi ayrı çözen ölçüm; konum, son yüzey,
+kusur ve gerçek yorulma sonlanımıyla bağlantısıdır. En azından aynı reçete
+ve yük içinde, ölçüm belirsizliğini aşan değişim gerekir. Üretim etkisini
+konumdan ayırmak için aynı reçeteler farklı konumlarda tekrarlanmalıdır.
+Kritik kusur yorumu için CT→son işlenmiş gage dönüşümü ve uint16 üretici
+sözlüğü/küme tablosu da gereklidir. Bir dosya veya küçük paylaşım eksikliği
+kapatabiliyorsa onu isteriz; eksik fiziksel bilgiyi daha fazla fit yaratmaz.
+
+AYNI EKSİĞİ SÜRESİZ ARAMAYACAĞIZ
+
+Lyu/Cui/Werner panel araması ve hedef uint16 kod kitabı izi yeni gerçek
+dosya/bağlantı/yazar yanıtı gelene kadar kapalı. Gönderilmiş Jiali Zhang,
+cc Xuemei Lyu talebi tekrarlanmadı. Bu turda tam o konuşma bir kez okundu:
+tek SENT mesaj; yeni yanıt/dosya gözlenmedi. Bu, bütün posta kutusu veya
+dünyadaki veri yokluğu kanıtı değildir. Yeni iletişim/yükleme/yayın yok.
+
+Bugün savunulabilir cümle: “Tek ORNL üretiminde, nominalden ortak
+yüksek-VED/sol-konum geçişinde ek kayıtlı uzamsal kusur sinyali dört AFT
+ailesinde tutarlı öngörü katkısı gösterdi; karışık numune ayrımlarında
+genel kazanç ve güvenilir q10 sınırı göstermedi.” Bu kayda değer bir pilot
+bulgudur. Güçlü ana mikroyapı makalesi için gereken kanıt henüz tamamlanmadı.
+
+DENETİM VE YENİDEN ÜRETİM
+
+Görseller: results_summary_v1/score_gain_comparison_v1.png ve
+results_summary_v1/v15_q10_absolute_violations_v1.png. Bütün16skor ve
+24mutlak q10hücresi gösterildi; grafikler root tarafından açılarak okundu.
+Tam hassasiyet CSVleri ve merkezî%90band/genişlik/kapsama dökümleri aynı
+klasörde. Ölçekler farklı; hata çubukları veya bağımsız kampanya CI yok.
+Kaynak mekanizma raporu: output/pdf/mikroyapi-fiziksel-gerekce-v2.pdf.
+Önceki dar kaynak sonuçları: literature/lyu_scalar_order_check_v10/sonuc_tr_v1.txt;
+literature/condition_unit_feasibility_v11/sonuc_tr_v1.txt.
+Cui birincil makalesi: https://doi.org/10.1016/j.jmst.2021.10.006
+
+V12: extraction_protocol_tr_v1.txt, model_protocol_tr_v1.txt,
+launch_freeze_v1.json, prepared_models_v1/prepared_manifest.json,
+model_results_v1/{controller_receipt,predeclared_gate_result}.json.
+V15: literature/recipe_shift_feasibility_v15/{protocol_tr_v1.txt,
+split_plan_v1.json,model_run_v1/controller_receipt.json,
+model_run_v1/predeclared_score_gate.json}.
+İki klasörde actual_results_authority_review_v1.json ve binding_supplement
+gerçek journal/fit/kimlik/inner-seçim/CSV-parser zincirini kontrol eder.
+literature/v12_v15_independent_metric_replay_v1/: ayrı scalar kodla
+76.664 CSV metrik karşılaştırması, en büyük fark 1,78×10^-15. Bu, verilen
+logscore'ların ortalama/farklarını doğrular; model yoğunluk hesabını ya da
+güven aralıklarını baştan kurmaz. Fiziksel bağımsız doğrulama değildir.
+
+Çalışan eski hesaplara sinyal/durdurma/yeniden başlatma yapılmadı. Yeni
+2.600 fit ve veri işleri doğal biçimde tamamlandı; sonuçlar ve önceki
+negatifler korunuyor. Yeni kurulum, büyük simülasyon veya PS5 hazırlığı yok.
+Genel mikroyapı hedefi ve bağımsız kampanya gereksinimi henüz tamamlanmadı.

@@ -1,0 +1,93 @@
+{
+  "format": "A4 portrait article exported from native Google Docs",
+  "pages": [
+    {
+      "page": 1,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3239,
+      "external_links": 4
+    },
+    {
+      "page": 2,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3092,
+      "external_links": 6
+    },
+    {
+      "page": 3,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3000,
+      "external_links": 5
+    },
+    {
+      "page": 4,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 2595,
+      "external_links": 3
+    },
+    {
+      "page": 5,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3735,
+      "external_links": 6
+    },
+    {
+      "page": 6,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 2634,
+      "external_links": 14
+    }
+  ],
+  "google_document": {
+    "documentId": "1ed0im9oY7-vSMolhR91PJGP3OwK-URp_A96bV0vTBTk",
+    "document_url": "https://docs.google.com/document/d/1ed0im9oY7-vSMolhR91PJGP3OwK-URp_A96bV0vTBTk",
+    "revisionId": "AHj4eMRZs75XqJ8pqA1PFHE5SHlkAL3SsvaFFNk-wFTIYvcELtJTIbxiKlgfmEkzWl8Ki2RubRN7WSfOhakaS52Qv5tt4-SYRK41rG9oNCk",
+    "title": "Araştırma Kaydı 1 — Açık Veriden Mikroyapıya: Yorulma Tahminine Nasıl Başladık?",
+    "tabId": "t.0",
+    "pageSize": {
+      "height": {
+        "magnitude": 841.8897637795277,
+        "unit": "PT"
+      },
+      "width": {
+        "magnitude": 595.2755905511812,
+        "unit": "PT"
+      }
+    },
+    "headings": 11,
+    "tableCount": 1,
+    "imageCount": 1,
+    "referenceLinkCount": 38,
+    "markersRemaining": false
+  },
+  "pdf_sha256": "265f2b3a3c8b4997831192cc04237e2de0ea25787953db256c0dda51bcc7624b",
+  "pdf_bytes": 225107,
+  "pdf_links": 38,
+  "all_six_pages_visually_reviewed": true,
+  "visual_findings": 0,
+  "new_model_fits": 0,
+  "native_table": true,
+  "figure_count": 1,
+  "working_copy_on_connected_ssd": true,
+  "relative_navigation_links_checked": 41,
+  "relative_navigation_errors": 0,
+  "exact_duplicate_files_removed": 4,
+  "duplicate_worktree_bytes": 229793673,
+  "git_history_rewritten": false,
+  "desktop_research_modified": false,
+  "figure_values_read_from_source_csv": 8,
+  "publish_scope": "private repository organization; not a public release",
+  "artifacts": [
+    {
+      "path": "articles/01-baslangic/ilk-arastirma-a4.pdf",
+      "bytes": 225107,
+      "sha256": "265f2b3a3c8b4997831192cc04237e2de0ea25787953db256c0dda51bcc7624b"
+    }
+  ]
+}

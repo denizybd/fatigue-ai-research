@@ -1,0 +1,9 @@
+panel,model_class,identity_gain,min_gain,max_gain,strictly_better_than_identity,strictly_worse_than_identity,numerically_tied_with_identity,identity_best_rank_with_ties,identity_worst_rank_with_ties,gain_at_least_frozen_threshold,all36_at_least_frozen_threshold,numeric_tie_tolerance,randomized_test_p_value
+nominal_train54,normal:linear,1.1793897907485615,1.1716692399030786,1.1913759628552658,19,16,1,20,20,36,True,1e-12,
+nominal_train54,student4:linear,0.8958411249368353,0.8958411249368353,0.9053780411291464,35,0,1,36,36,36,True,1e-12,
+nominal_train54,normal:rbf,2.38277938432873,2.3811739462133987,2.3841755221561054,15,20,1,16,16,36,True,1e-12,
+nominal_train54,student4:rbf,0.9520939911494389,0.9512830759122286,0.973609598861656,34,1,1,35,35,36,True,1e-12,
+nominal_train48_sourceQC,normal:linear,1.3559770380708576,1.350135201748904,1.3686150544589781,21,14,1,22,22,36,True,1e-12,
+nominal_train48_sourceQC,student4:linear,1.1800008759509721,1.1798802325000264,1.189605115705219,34,1,1,35,35,36,True,1e-12,
+nominal_train48_sourceQC,normal:rbf,2.7441684819255414,2.7426545040924104,2.745514822842166,17,18,1,18,18,36,True,1e-12,
+nominal_train48_sourceQC,student4:rbf,1.3850961817405356,1.3836961680791076,1.3926557556713985,29,6,1,30,30,36,True,1e-12,

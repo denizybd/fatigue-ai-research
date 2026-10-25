@@ -1,0 +1,17 @@
+study,panel,model_class,contrast,reference_mean_proper_log_score,outer_mean_proper_log_score,paired_mean_score_gain_nats,positive_is_better,fixed_threshold_nats,meets_fixed_threshold,horizon_independent_exactly,query_specimens
+V12,60,normal:linear,core_coverage_outer-minus-core_coverage_control,-0.5208537126860237,-0.702094791281665,-0.18124107859564118,True,0.02,False,True,60
+V12,60,student4:linear,core_coverage_outer-minus-core_coverage_control,-0.34284154546611173,-0.3557350990978438,-0.012893553631731999,True,0.02,False,True,60
+V12,60,normal:rbf,core_coverage_outer-minus-core_coverage_control,-0.6225946059180246,-0.8701935406996191,-0.24759893478159448,True,0.02,False,True,60
+V12,60,student4:rbf,core_coverage_outer-minus-core_coverage_control,-0.4624324661015165,-0.44339289948416133,0.019039566617355185,True,0.02,False,True,60
+V12,54,normal:linear,core_coverage_outer-minus-core_coverage_control,-0.5703989417415225,-0.7492054593514902,-0.178806517609968,True,0.02,False,True,54
+V12,54,student4:linear,core_coverage_outer-minus-core_coverage_control,-0.45294682548537435,-0.6166633970773877,-0.16371657159201333,True,0.02,False,True,54
+V12,54,normal:rbf,core_coverage_outer-minus-core_coverage_control,-0.7479035854431838,-0.7657869314985738,-0.017883346055389927,True,0.02,False,True,54
+V12,54,student4:rbf,core_coverage_outer-minus-core_coverage_control,-0.5570442010972252,-0.6213401252018277,-0.06429592410460244,True,0.02,False,True,54
+V15,nominal_train54,normal:linear,core_coverage_outer-minus-core_coverage_control,-2.885939470869474,-1.706549680120913,1.1793897907485615,True,0.02,True,True,6
+V15,nominal_train54,student4:linear,core_coverage_outer-minus-core_coverage_control,-2.247903179396402,-1.352062054459567,0.8958411249368353,True,0.02,True,True,6
+V15,nominal_train54,normal:rbf,core_coverage_outer-minus-core_coverage_control,-3.107867900785943,-0.7250885164572131,2.38277938432873,True,0.02,True,True,6
+V15,nominal_train54,student4:rbf,core_coverage_outer-minus-core_coverage_control,-1.9665127872436916,-1.0144187960942526,0.9520939911494389,True,0.02,True,True,6
+V15,nominal_train48_sourceQC,normal:linear,core_coverage_outer-minus-core_coverage_control,-3.066132948044338,-1.7101559099734802,1.3559770380708576,True,0.02,True,True,6
+V15,nominal_train48_sourceQC,student4:linear,core_coverage_outer-minus-core_coverage_control,-2.342881310342406,-1.1628804343914343,1.1800008759509721,True,0.02,True,True,6
+V15,nominal_train48_sourceQC,normal:rbf,core_coverage_outer-minus-core_coverage_control,-3.521114228405343,-0.7769457464798012,2.7441684819255414,True,0.02,True,True,6
+V15,nominal_train48_sourceQC,student4:rbf,core_coverage_outer-minus-core_coverage_control,-2.1137670677957834,-0.728670886055248,1.3850961817405356,True,0.02,True,True,6

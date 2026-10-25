@@ -1,0 +1,129 @@
+# Açık veriden mikroyapıya: yorulma tahminine nasıl başladık?
+
+[A4 PDF](ilk-arastirma-a4.pdf) · [Google Dokümanı](https://docs.google.com/document/d/1ed0im9oY7-vSMolhR91PJGP3OwK-URp_A96bV0vTBTk) · [Veri rehberi](../../data/README.md)
+
+Araştırma kaydı 1 · Yöntem ve gelişim raporu · 25 Ekim 2026 · Sürüm 0.1
+
+## Özet
+
+Bu araştırmaya, eklemeli üretilmiş paslanmaz çeliklerde yeni bir üretim koşuluna ait birkaç yorulma deneyiyle işe yarar ve güvenilir bir ömür kararı verilip verilemeyeceğini sorarak başladık. Özgün çalışmanın bütün verilerine erişemediğimiz için açık bir veri tabanı, kaynak denetimleri ve güçlü temel modeller üzerinden kendi karşılaştırmamızı kurduk. Üç deneyin dağılım tahmin skoruna katkı sağladığını gördük; ancak daha uzun ömür sınırı, sınırlı risk ve daha düşük deney maliyeti için koyduğumuz ortak koşullar geçilmedi. Sonraki XCT incelemesinde belirli altı numuneye geçişte olumlu skor kazancı bulduk. Eşleştirme kontrolü bu kazancın doğru bireysel numune bağını gerektirmediğini gösterdi. Bu rapor başlangıç sorusunu, kullanılan gerçek verileri, tamamlanan hesapları ve neden ölçülmüş tane/hücre bilgisinin ayırt edici katkısına yöneldiğimizi anlatır. Mikroyapıyla bağımsız yorulma tahmin kazancı henüz gösterilmiş değildir.
+
+Anahtar sözcükler: eklemeli üretim; 316L; 316H; yorulma; sansürlü veri; XCT; tane yönelimi; hücre yapısı.
+
+## 1. Başlangıç sorusu ve hedefin değişmesi
+
+Çıkış noktamız, AM316L için olasılıksal yorulma tahmini yapan Centola ve çalışma arkadaşlarının araştırmasıydı [1]. Yorulma ömrü aynı nominal yükte bile saçılabildiğinden, tek bir ömür sayısı yerine belirsizliği ve erken kırılma olasılığını da düşünmek gerekiyordu. İlk sorumuz şuydu: yeni bir koşulda az sayıda deney gördüğümüzde, mevcut bilgiden daha kullanışlı bir ömür sınırı elde edebilir miyiz?
+
+Özgün 518 satırlı veri ve model kodu elimize geçmedi. Dolayısıyla o çalışmayı birebir yeniden ürettiğimizi söylemiyoruz. Açık FatigueData-AM2022 verisini ve kaynakları izlenebilen ek kayıtları kullanarak ilişkili temel modelleri, deney seçimi kurallarını ve kendi önceden belirlenmiş karşılaştırmalarımızı sınadık [2, 3].
+
+İlerledikçe tahmin skorunu artırmanın, güvenilir bir mühendislik ömrü önermekle aynı şey olmadığını gördük. Araştırmanın önceliğini de buna göre değiştirdik. Bugünkü ana soru, üretim, yükleme, yüzey ve kusur bilgisinin açıklayamadığı davranışa hangi ölçülmüş başlangıç mikroyapısının bilgi katabileceğidir. Az deney ve hesaplama tasarrufu bu fiziksel sorunun yanında ikincil hedeflerdir.
+
+## 2. Hangi verilerle çalıştık?
+
+Bir dosyadaki satır sayısı, bağımsız numune ve bağımsız üretim sayısı farklıdır. Bu ayrımı korumak için çalışma girdisini, değerlendirmedeki sorguları ve fiziksel kimliği bağlı panelleri ayrı kaydettik. Tablo 1 temel veri gruplarını özetler. Küçük girdiler, sütun sözlüğü ve kaynak/hash kayıtları depoda bulunur [9].
+
+| Veri grubu | Kayıt / fiziksel kapsam | Temel kullanım ve sınır |
+| --- | --- | --- |
+| 316L çalışma kataloğu | 441 gözlem | Derlenmiş model girdisi; her satırın fiziksel kupon kimliği doğrulanmış değil. |
+| Eşli dış değerlendirme | 396 sorgu / 37 koşul / 12 kaynak ailesi | Aynı gözlem ve desteklerle yöntem karşılaştırması; bağımsız üretim garantisi yok. |
+| ORNL SS316H | 60 numune / tek üretim / Lot4 | 56 kırılma, 4 sağdan sansür; 316L panelinden ayrı. |
+
+Tablo 1. Bu raporda kullanılan veri kapsamı. Kaynak ailesi istatistiksel bir dışlama birimidir; tek başına bağımsız fiziksel üretim veya fabrika anlamına gelmez.
+
+316L model kataloğundaki 441 kayıt derlenmiş gözlemlerdir. V6/V7/V8r eşli karşılaştırmalarının sorgu tarafında aynı 396 gözlem, 37 istatistiksel koşul ve 12 kaynak ailesi bulunur. Bu sayılar her satırın fiziksel kupon barkoduyla doğrulandığı veya 12 bağımsız üretimle çalışıldığı anlamına gelmez. Metaveri alanlarında kaynakta bildirilen değerler ile bilinmeyen veya varsayılan alanlar ayrı işaretlidir [3, 4].
+
+ORNL paneli ise ayrı bir SS316H üretimine, AOP24 FP07 / Lot4 kaydına bağlı 60 yorulma numunesini içerir: 56 kırılma ve dört sağdan sansürlü duruş [5, 6]. P-numune kimliği ile HDF içindeki bölge ordinali aynı alan değildir. 316H panelini 316L literatür derlemesinin bağımsız doğrulaması gibi birleştirmedik. Aynı üretim içindeki çok sayıda bölge, çok sayıda bağımsız üretim oluşturmaz.
+
+## 3. Hesapları nasıl karşılaştırdık?
+
+Modelleri rastgele satır bölerek sınamak yerine kaynak ailesini dışarıda tutan değerlendirmeler kurduk. Ön işleme, özellik kodlama ve ayar seçimi eğitim tarafında yapıldı. Eşli karşılaştırmalarda yöntemler aynı sorguları, aynı açıklanan destek deneylerini ve aynı çevrim maliyetini gördü. Böylece yeni bir modelin kazancı ile farklı veya daha kolay bir test kümesinin etkisini ayırmaya çalıştık [3, 4].
+
+Kırılmadan duran bir numunenin gerçek kırılma zamanını bilmiyoruz. Bu nedenle event=0 kayıtlarını duruş çevriminde kırılmış gibi öğretmedik; sağdan sansürlü olarak koruduk. Örneğin ORNL panelindeki dört duruş, 10.005.000 çevrimde gerçekleşmiş bir kırılma değildir. Sansür hem öğrenme hem de ömür/risk yorumunda korunmalıdır.
+
+Başarıyı tek bir sayıya indirgemedik. Olasılık dağılımına ait proper logscore, önerilen alt ömür, erken kırılma riski, sonlu tahmin kapsamı ve deneylerin çevrim maliyeti ayrı ölçülerdi. Daha yüksek skor daha iyi bir olasılık tahmini anlamına gelir; kendiliğinden daha güvenli veya daha uzun kullanılabilir ömür anlamına gelmez. Kaynak-bootstrap aralıkları da fiziksel üretim bağımsızlığı veya R90C90 tasarım güvencesi yerine geçmez.
+
+## 4. Temel modeller ve yeni model denemeleri ne verdi?
+
+Tamamlanmış V6 denetiminde, yedi model ve dört deney seçimi yaklaşımının oluşturduğu 28 karşılaştırmanın tamamında üç açıklanan deneyin proper-score kazancının alt güven sınırı pozitifti. Bu sonuç hem bir milyon hem de on milyon çevrimlik analiz ufkunda görüldü. Ancak daha uzun alt ömür, sınırlı risk artışı, yeterli sonlu kapsam ve daha düşük çevrim maliyeti koşullarını birlikte geçen hücre sayısı her ufukta 0/476 kaldı [3]. Bunlar aynı veri üzerindeki hesap karşılaştırmalarıdır; 28 veya 476 bağımsız fiziksel deney değildir.
+
+Sonra mevcut yüzey, ısıl işlem ve baskı yönü metaverisini ekledik; PyTorch üzerinden yeni bir sinirsel aday da sınadık. V7’nin 40 kapı hücresinde ve V8r’nin 12 eşli girdi kapısında beklenen sağlam katkı desteklenmedi [4]. Bu, bütün sinir ağlarının başarısız olduğu veya fiziksel değişkenlerin önemsiz olduğu anlamına gelmez. Sınanan girdi, mimari ve ayarlar içinde ilan edilen koşulların birlikte geçmediği anlamına gelir. Bu eski girdilerde sonradan çıkarılan numuneye bağlı XCT bilgisi yoktu.
+
+Bu aşamanın dersi, yalnız daha fazla ayar arayarak fiziksel bilgi eksikliğini gideremeyeceğimizdi. Ölçülmemiş gözenek, artık gerilme veya ısıl alanı varmış gibi doldurmak yerine, hangi gerçek ölçümün yeni bilgi taşıyabileceğini sorgulamaya başladık.
+
+## 5. XCT bilgisi hangi koşulda yardımcı oldu?
+
+İlk ParaView pilotunda üç hacimden tanımlayıcı gözenek özellikleri çıkardık. Bu üç hacmin kendi yorulma numuneleriyle yeterli eşleşmesi kurulmadığı için bunu ömür tahmin kazancı saymadık. Sonraki ORNL paneli, aynı fiziksel numuneye bağlı iç ve dış kayıt özetlerini sınama olanağı verdi [5, 6].
+
+V12/V15 çalışması, kaynağın uint16 kusur alanındaki pozitif kayıt desteğini özetledi. Kod değerlerinin fiziksel sözlüğü tam çözülmediği için bu özetlere gözenek hacmi, çapı veya şiddeti demedik. Gerçek işlenmiş gage yüzeyi ile tarama arasındaki dönüşüm de eksik kaldı. Bu nedenle ölçümün son parçanın kritik kusurunu doğrudan temsil ettiği iddiası kurulmadı.
+
+V12’de aynı üretimin karışık numune ayrımlarında ek dış kayıt bilgisi genel fayda sağlamadı: sekiz skor hücresinin yedisi negatifti; kalan küçük pozitif sonuç da önceden sabit +0,02 nat eşiğinin altındaydı. V15’te nominal reçetede eğitip yüksek VED ve sol konumu birlikte taşıyan aynı altı numuneye geçince, dört model ve iki eğitim panelinin sekiz skor hücresi de eşiği geçti [6]. Şekil 1, V12/60 ve V15/54→6 sonuçlarını gösterir.
+
+![XCT skor karşılaştırması](xct-skor-karsilastirmasi.png)
+
+Şekil 1. Ek dış kayıt kolunun kapsam-kontrolü koluna göre proper logscore farkı. Birim nat; pozitif değer daha iyidir. V12/60 karışık ayrımdır; V15/54→6 ortak reçete+konum geçişidir. Grafik etiketleri üç ondalığa yuvarlanmıştır; tam 16 hücre ve değerler kaynak CSV’de korunur [6].
+
+Bu olumlu sonuç belirli bir görev ve tek üretimle sınırlıdır. Saf reçete etkisi veya bağımsız kampanyaya genelleme değildir. Üstelik q10 alt ömür tahmini, dış kayıt eklendikten sonra bile altı kırılmanın modele göre üç ile altısında fazla iyimser kaldı. Buradaki q10, modelin ömür dağılımındaki yüzde 10’luk niceliktir; bu altılıdaki gözlenen risk kendiliğinden yüzde 10 değildir. Dolayısıyla olumlu skor, güvenli tasarım ömrü sonucuna dönüşmedi.
+
+## 6. Olumlu skoru neden bireysel mikroyapı katkısı saymadık?
+
+V16 sonuç sonrası tanısı, medyan ömür hatasındaki azalmanın büyük bölümünün aynı yük grubunun ortak ortalama hatasının düzelmesinde toplandığını gösterdi. Sekiz model/eğitim bileşiminin hiçbirinde yük içi ikili sıralama uyumu artmadı [7]. Bu, proper logscore’un nedensel ayrıştırılması değildir; test sonuçları bilindikten sonra seçilmiş betimleyici bir hata tanısıdır.
+
+V17’de daha ayırt edici bir kontrol yaptık. Aynı yükü taşıyan iki üçlü içinde üç dış özelliği birlikte numuneler arasında değiştirdik; eğitim verisini ve önceki ayarları koruduk. Dört model ve iki eğitim panelinde, 36 eşlemenin tamamı eski skor eşiğini geçti. Hiçbir numunenin kendi dış kaydını almadığı eşlemeler de buna dahildi. En kötü eşlemede bile gerçek eşlemenin skor kazancının en az yüzde 99,35’i kaldı [8]. Bu sayı doğruluk veya ömür yüzdesi değildir.
+
+Böylece dar bir soruya hesapla cevap verdik: bu altılı ve bu skor kapısı için doğru bireysel bağ gerekli çıkmadı. Makul bir rakip açıklama, dış özelliklerin tek tek numuneleri ayırmaktan çok ortak üretim/konum farkını düzeltmesidir. Bunun tek açıklama olduğunu kanıtlamıyoruz. Sentetik donör kaydı, alıcının diğer fiziksel özellikleriyle uyumsuz birleşimler oluşturabilir; nedensel etki veya p değeri hesaplanmadı. Önceki olumsuz gözenek sonucu da korunur. Gözeneklerin genel olarak önemsiz olduğu sonucu çıkarılamaz.
+
+## 7. Neden tane yönelimi ve hücre yapısını ölçmeyi düşünüyoruz?
+
+Bu kontrol bizi daha net bir fiziksel soruya götürdü: benzer başlangıç tane yönelimi ve yükleme altında, doğrudan ölçülmüş başlangıç hücre duvarı düzeni çevrimsel kaymanın veya yerelleşmenin nerede oluştuğunu ayrıca açıklıyor mu? Tane yönelimi ile hücre yapısı farklı uzunluk ölçekleridir. Genel bir “kristalleşme yüzdesi” bu iki bilginin yerine geçmez [10].
+
+Başlangıç EBSD yönelimi, gerçek yük eksenine göre kaymanın geometrisini tarif eden bir adaydır. Nominal Schmid faktörü gerçek yerel gerilme, komşu tane etkisi veya kayma dayanımı değildir. Doğrudan hücre görüntüsünde görünür duvar aralığı ya da duvar kesişim yoğunluğu ise ayrı bir adaydır. Bunlar iki boyutlu ve çözünürlüğe bağlı ölçülerdir; duvar dayanımı, üç boyutlu engel aralığı veya dislokasyon yoğunluğuyla otomatik özdeş değildir. KAM/GOS/GND doğrudan hücre ölçümünün yerine gerekçesiz geçirilmez.
+
+Cui’nin çalışması, ortalama tane boyutu benzerken hücresel görünüm ve dislokasyonla ilişkili ölçülerin değişebildiği koşullar sunuyor [11]. Bu, yalnız ortalama tane boyuna bakmanın sınırlı olabileceğine gerekçe verir. Isıl işlem birden çok mikroyapı bileşenini birlikte etkilediği için saf hücre geometrisinin nedenselliği ayrılmış değildir.
+
+Lyu T4-2’de başlangıç ve son aynı alan gözlemleri vardır [12]. Figür 10c–d ve 10f–g tek numunedeki iki bölgedir; iki bağımsız kampanya değildir. Gerçek kayma izi ucunu görüntü kenarından, kontrast kaybından ve çizilmiş işaretin ucundan ayırmadan sayım yapılamaz. V45 kararı bu ölçülebilirlik kapısının henüz geçilmediğini kaydeder [13]. Mikropilar basma sonuçlarını yorulma doğrulaması veya dört karakterizasyon alanını dört yorulma numunesi saymıyoruz.
+
+## 8. Veri ve hesap dosyaları nasıl sunulacak?
+
+Okuyucu küçük gerçek girdileri görebilmeli. Bu nedenle 441 gözlemli model girdisi, köken işaretli metaveri, ORNL 60/54 sayısal girdileri ve küçük sonuç tabloları depo içinde katalog ve SHA256 bilgisiyle tutuluyor [9]. Büyük ham XCT dosyaları ve orijinal veri dosyaları ise sürümlü kaynak bağlantılarıyla gösteriliyor. Dosyanın internette bulunması, bütün yeniden dağıtım koşullarının çözüldüğü anlamına gelmez. Orijinal FatigueData-AM2022 manifestindeki CC BY 4.0 kaydını bütün ek karma kaynaklara otomatik aktarmıyoruz.
+
+Depo düzeninde kod, önceden belirlenen protokol, veri, sonuç ve yorum birbirine bağlanıyor. Dört büyük replay tahmin dosyası, korunan final tablolarıyla aynı Git blob kimliğine sahip olduğu doğrulanarak hazırlık dalından çıkarılıyor. Toplam yaklaşık 230 MB çalışma ağacı tekrarı azaltılıyor. Özgün sürüm ve olumsuz sonuçlar korunuyor. Bu işlem masaüstündeki araştırma klasöründe alan açıldığı veya Git geçmişinin küçültüldüğü anlamına gelmez [14].
+
+Bu raporun hazırlanması yeni eğitim veya simülasyon değildir. Seçilmiş tamamlanmış raporlar ile küçük CSV/JSON dosyaları okundu; modeller yeniden eğitilmedi. Her bilimsel iddia, kaynak tablo ve kapsam sınırıyla ayrı bir iddia–kanıt dizinine bağlandı. Depo private kalıyor; karma kaynakların paylaşım koşulları, eski geçmiş ve tam yedek arşivi için public incelemesi tamamlanmış değildir.
+
+## 9. İlk araştırmanın bilançosu ve sonraki soru
+
+Şu anda yalnız veri aramıyoruz. Mevcut veride birkaç deneyden öğrenme ile güvenli ömür kararının ayrıldığını ve belirli XCT skor kazancının doğru bireysel eşleşmeyi gerektirmediğini gösteren dar hesap sorularını cevapladık. Buna karşılık, başlangıç tane ve hücre bilgisinin yorulma tahminine ek katkısını sınayacak ayırt edici veri hâlâ eksik. Bu iki durumun aynı anda doğru olması çalışmanın bugünkü sınırıdır.
+
+Sonraki karşılaştırma, aynı numunelerde test öncesi yönelim G ve doğrudan hücre ölçüsü C bulunduğunda B, B+G, B+C ve B+G+C kollarını aynı eğitim–test ayrımlarında sınayabilir. B yalnız lazer ayarları değil, gerçekten bilinen yük, üretim, yüzey ve kusur bağlamını içermelidir. Ölçümün yeterliliği, belirsizliği, başarı ve başarısızlık ölçütleri sonuçlar görülmeden belirlenmelidir. Bu deney bu rapor kapsamında başlatılmadı.
+
+Yeni girdinin üretim reçetesini yeniden ifade etmesi ile numuneye özgü ek bilgi taşıması ayrı açıklamalardır. Yerel aynı-alan ilişkisi için dar bir görüntü çifti yeterli olabilir; bağımsız ömür tahmin katkısı için kendi başlangıç ölçümü ve yorulma sonucu bağlı numuneler ile uygun grup dışlaması gerekir. Eksik kusur bilgisi daha sınırlı tahmin ilişkisini incelemeyi her zaman engellemez, fakat “kusurun ötesinde” katkı veya nedensellik iddiasını sınırlar. Katkının varlığını baştan garanti etmiyoruz.
+
+## Kaynaklar ve hesap kanıtları
+
+[[1] Centola ve diğerleri. AM SS316L için olasılıksal yorulma tahmini; çıkış makalesi.](https://doi.org/10.1016/j.engfailanal.2024.109081)
+
+[[2] Zhang ve Xu. FatigueData-AM2022, sürüm 2; açık veri kaydı.](https://doi.org/10.6084/m9.figshare.22337629.v2)
+
+[[3] V6 tamamlanmış temel model ve karar kapısı denetimi.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/v6_methods/final_panel_audit_v1/report_tr_v1.md)
+
+[[4] V7/V8r tamamlanmış sonuçların bilimsel denetimi.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/v7_completed_readonly_science_audit_v1/rapor_tr_v1.txt)
+
+[[5] ORNL SS316H deney ve XCT veri kaydı.](https://doi.org/10.13139/ORNLNCCS/2524534)
+
+[[6] V12/V15 sonuç raporu ve tam skor tablosu.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/outer_region_signal_feasibility_v12/sonuc_ve_karar_tr_v1.txt)
+
+[[7] V16 hata kazancı ayrıştırması.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/shift_gain_decomposition_v16/yorum_tr_v1.txt)
+
+[[8] V17 numune eşleşmesi kontrolü.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/within_load_mapping_control_v17/kisa_karar_tr_v1.txt)
+
+[[9] Kullanılan küçük girdiler, veri kataloğu ve sütun sözlüğü.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/data/README.md)
+
+[[10] V44 fiziksel sorunun ve aday ölçülerin gerekçesi.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/microstructure_question_feasibility_v44/karar_notu_tr_v1.txt)
+
+[[11] Cui ve diğerleri. Tane/hücre ayrımı için incelenen birincil çalışma.](https://doi.org/10.1016/j.jmst.2021.10.006)
+
+[[12] Lyu ve diğerleri. Aynı-alan başlangıç/son gözlemleri içeren çalışma.](https://doi.org/10.1016/j.msea.2024.147652)
+
+[[13] V45 hücre duvarı/kayma izi ölçülebilirlik kararı.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/literature/physical_microstructure_route_gate_v45/sonuc_tr_v1.txt)
+
+[[14] Dosya envanteri ve kesin tekrarların karar kaydı.](https://github.com/denizybd/fatigue-ai-research/blob/public-prep/first-research-article/docs/inventory/README.md)
