@@ -1,3 +1,5 @@
+> **English report:** [Initial Research Report and Evidence Review](articles/01-baslangic/en/README.md) · [English A4 PDF](articles/01-baslangic/en/initial-research-report-en-a4.pdf)
+
 # AM316L yorulma araştırması
 
 Üretim, yükleme, yüzey ve kusur bilgisinin açıklayamadığı davranışa hangi ölçülmüş başlangıç mikroyapısı bilgi katabilir?
@@ -28,4 +30,4 @@ Rapor çıkış sorusunu, kullandığımız verileri, tamamlanan hesapların olu
 
 Küçük sayısal girdiler kaynak/hash bilgileriyle burada. Büyük ham XCT ve orijinal veri dosyaları sürümlü kaynak bağlantılarıyla gösterilir. Kaynak ortalaması aynı fiziksel numunede test öncesi ölçüm yerine geçmez. Runout kayıtları sağdan sansürlü kalır.
 
-Bu public hazırlık dalı private kalır. Karma veri kaynaklarının paylaşım koşulları, eski Git geçmişi ve tam yedek arşivi için inceleme bitmedi. [Public planı](docs/public-release-plan.md) ve [aktarımı etkinleştirme kuralı](docs/github-sync-policy.md) ayrı kayıttır. Otomatik push henüz kurulmadı.
+Depo 25 Ekim 2026 tarihinde proje sahibi tarafından publice açılmıştır. Karma veri kaynaklarının paylaşım koşulları, eski Git geçmişi ve tam yedek arşivi için inceleme bitmedi. [Public planı](docs/public-release-plan.md) ve [aktarımı etkinleştirme kuralı](docs/github-sync-policy.md) ayrı kayıttır. Otomatik push henüz kurulmadı.

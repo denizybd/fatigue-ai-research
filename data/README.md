@@ -14,4 +14,4 @@ Katalog verisi, değerlendirmedeki sorgu sayısı ve bağımsız fiziksel üreti
 
 [FatigueData-AM2022 v2](https://doi.org/10.6084/m9.figshare.22337629.v2) için [orijinal manifest](raw/manifest.json) dosya bağlantısı, boyut ve hash içerir. Manifestte orijinal verinin CC BY 4.0 kaydı bulunur. Bu koşul bütün ek karma kaynaklara otomatik aktarılmadı. [ORNL veri DOI'si](https://doi.org/10.13139/ORNLNCCS/2524534) büyük XCT dosyalarının erişim kaydıdır; bu dosyalar küçük Git paketine kopyalanmadı.
 
-Bu hazırlık dalı private. Karışık kaynaklardan türetilmiş tabloların ve ORNL türevlerinin public paylaşım koşulları ayrıca doğrulanacak. Üçüncü taraf makale PDF'leri ve izin durumu belirsiz görüntüler bu rapora eklenmedi. Veri dosyası mevcut olsa bile numune kimliği, ölçüm zamanı veya lisans bilinmiyorsa katalogda bu sınır korunur.
+Depo 25 Ekim 2026 itibarıyla publictir. Karışık kaynaklardan türetilmiş tabloların ve ORNL türevlerinin public paylaşım koşulları ayrıca doğrulanacak. Üçüncü taraf makale PDF'leri ve izin durumu belirsiz görüntüler bu rapora eklenmedi. Veri dosyası mevcut olsa bile numune kimliği, ölçüm zamanı veya lisans bilinmiyorsa katalogda bu sınır korunur.

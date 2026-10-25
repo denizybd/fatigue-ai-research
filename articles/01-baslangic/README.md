@@ -1,3 +1,5 @@
+[English companion report](en/README.md) · [English A4 PDF](en/initial-research-report-en-a4.pdf)
+
 # Açık veriden mikroyapıya: yorulma tahminine nasıl başladık?
 
 [A4 PDF](ilk-arastirma-a4.pdf) · [Google Dokümanı](https://docs.google.com/document/d/1ed0im9oY7-vSMolhR91PJGP3OwK-URp_A96bV0vTBTk) · [Veri rehberi](../../data/README.md)

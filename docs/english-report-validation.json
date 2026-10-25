@@ -1,0 +1,88 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3203,
+      "links": 3,
+      "start": "From  Open  Data  to  Microstructure:  Initial  \nResearch\n \nReport\n \nResearch  Record  1  ·  Ev",
+      "end": "tities.\n \nWe\n \nkept\n \nthe\n \nworking\n \ninputs,\n \nevaluation\n \nqueries,\n \nand\n \nphysically\n "
+    },
+    {
+      "page": 2,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3397,
+      "links": 7,
+      "start": "linked  specimen  panels  separate.  Table  1  summarizes  the  main  data  groups.  The  small",
+      "end": "oring\n \nmust\n \nbe\n \npreserved\n \nin\n \nboth\n \nlearning\n \nand\n \nlife/risk\n \ninterpretation.\n "
+    },
+    {
+      "page": 3,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 3969,
+      "links": 5,
+      "start": "We  did  not  reduce  success  to  one  metric.  Proper  log  score  for  the  predictive  dist",
+      "end": "odels\n \nand\n \ntwo\n \ntraining\n \npanels\n [6].  Figure  1  shows  V12/60  and  V15/54-to-6.  "
+    },
+    {
+      "page": 4,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 2704,
+      "links": 4,
+      "start": " Figure  1.  Proper  log-score  difference  between  the  outer-record  arm  and  the  coverage",
+      "end": "individual\n \nspecimens.\n \nWe\n \nhave\n \nnot\n \nestablished\n \nthat\n \nthis\n \nis\n \nthe\n \nonly\n \n"
+    },
+    {
+      "page": 5,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 4078,
+      "links": 6,
+      "start": "explanation.  A  synthetic  donor  record  may  be  physically  incompatible  with  the  recipi",
+      "end": "\n \ndataset,\n \nirrespective\n \nof\n \nwhether\n \na\n \nrepository\n \nis\n \npublicly\n \naccessible.\n "
+    },
+    {
+      "page": 6,
+      "width_pt": 596.0,
+      "height_pt": 842.0,
+      "characters": 2894,
+      "links": 14,
+      "start": "9.  Evidence  assessment  and  the  next  question  \nThe  completed  analyses  resolve  limited",
+      "end": " measurability  decision. [14]  File  inventory  and  exact-duplicate  decision  record.  "
+    }
+  ],
+  "sha256": "8867a4b1a479251ea291e8223516cc57b3e02c88dd1ee21ae838416963b09adc",
+  "bytes": 227729,
+  "document_url": "https://docs.google.com/document/d/1YQ0nykHUVAjsuiW9YJCuJalLc7dS3Rg69qCMtrIjVJc/edit?usp=drivesdk",
+  "visual_review_complete": true,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "visual_findings": 0,
+  "native_google_document": {
+    "documentId": "1YQ0nykHUVAjsuiW9YJCuJalLc7dS3Rg69qCMtrIjVJc",
+    "document_url": "https://docs.google.com/document/d/1YQ0nykHUVAjsuiW9YJCuJalLc7dS3Rg69qCMtrIjVJc/edit?usp=drivesdk",
+    "revisionId": "AHj4eMTL-vp0nPlpBkVv6RzfX4_fBhq-bFkoT6LLZlySuW0SYrjZkwZ8_oxJdnpXVQ582E24OwrTMWNm5pZBwCEbpAqahZJFyJWUkYtMb18",
+    "paragraphs_verified": 60,
+    "headings": 11,
+    "table_rows": 4,
+    "table_columns": 3,
+    "figures": 1,
+    "reference_links": 39,
+    "all_text_translated": true
+  },
+  "source_turkish_report": "articles/01-baslangic/ilk-arastirma-a4.pdf",
+  "new_training_runs": 0,
+  "new_physical_tests": 0,
+  "numeric_claims_preserved": true,
+  "repository_base_commit": "e7531cf7c99d907aefd9e8e1d00ada3e8cb8a94d"
+}
