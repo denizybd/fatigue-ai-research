@@ -1,0 +1,43 @@
+MİKROYAPI KONUSUNU GERÇEKÇİ BİÇİMDE DARALTMA
+25 Ekim 2026 / V44
+
+Karar: “Önce EBSD tane yönelimi” önerisi uygulanabilir bir adaydır; onu hücre hipotezinden bilimsel olarak daha güçlü ilan edemiyoruz. Erişim kolaylığı tek başına mekanizma seçme gerekçesi değildir. Henüz kullanıcıyla nihai araştırma yolu kararlaştırılmadı; e-posta yazılmadı, taslak oluşturulmadı veya gönderilmedi.
+
+ÖNERDİĞİMİZ ASIL FİZİKSEL SORU
+Benzer başlangıç tane yönelimi ve yükleme altında, doğrudan ölçülmüş başlangıç hücre duvarı düzeni çevrimsel kaymanın/yerelleşmenin nerede oluştuğunu ayrıca açıklıyor mu?
+
+Burada iki ayrı uzunluk ölçeği var. Tane yönelimi kaymanın geometrik olarak hangi sistemlerde kolaylaşabileceğini tarif eder. Bir tanenin içindeki daha küçük hücre duvarı ağı ise farklı bir başlangıç yapısıdır. Duvarların kaymaya engel olması ile kaymanın belirli duvarlarda yoğunlaşması rakip açıklamalardır; etkinin yönünü her koşul için önceden doğru kabul etmiyoruz. Bir “kristalleşme yüzdesi” bu iki ölçünün yerine geçmez.
+
+EN FAZLA İKİ ADAY ÖLÇÜ
+G — Başlangıç EBSD'sinden yük doğrultusuna göre yönelim. Somut bir aday, doğrulanmış FCC matris için 12 kayma sisteminin nominal maksimum Schmid faktörünün dağılımıdır. Bu standart geometrik bir göstergedir; gerçek yerel gerilme, komşu tane etkisi, kayma dayanımı veya yorulma ömrü değildir. Tek bir üst niceliğe indirgemek bilgi kaybettirebilir ve 0,5 tavanına yığılabilir; hangi özetin kullanılacağı sonuçlar görülmeden seçilmelidir.
+C — Başlangıçtaki doğrudan hücre görüntüsünde, önceden sabitlenmiş doğrultular boyunca hücre duvarı kesişim yoğunluğu N/L; birimi ters uzunluktur. Tamamlayıcı görünür aralık dağılımının değişkeni ise uzunluktur. Aynı görüntüleme ve segmentasyon kuralları gerekir. Bunlar iki boyutlu, çözünürlük ve kontrast tanımına bağlı ölçülerdir; üç boyutlu engel aralığı veya dislokasyon yoğunluğu değildir. EBSD-KAM, GOS veya GND otomatik olarak C'nin yerine geçmez.
+
+NEDEN HÜCREYİ ŞİMDİDEN BIRAKMIYORUZ?
+Cui'nin gerçek PDF'sinde as-built / 900°C10dk / 1050°C10dk için ortalama tane boyları17,9/17,5/18,1µm; başlangıç hücresel görünüm ve EBSD'den türetilen GND değişiyor. Bu, yalnız ortalama tane boyuna bakmanın sınırlı olabileceğini gösteren mekanizma dayanağıdır. Tane istatistiklerinin benzerliği istatistiksel eşdeğerlik veya aynı tane kimliği değildir. Isıl işlem, hücre duvarı/dislokasyon/kimyasal ayrışma paketini etkilediğinden saf hücre geometrisinin nedenselliği ayrılmış değildir. Kalıntı gerilme veya porozitenin mutlaka değiştiğini de varsaymıyoruz. “Cell-free” ifadesini ölçülmüş sıfır hücre hacim oranı olarak kodlamıyoruz.
+
+TRIDELLO'NUN VERİSİ NEYİ SAĞLIYOR?
+Özgün makalenin gerçek PDF'sinde orientation platformdaki baskı açısıdır; kristal yönelimi değildir. Belgelenmiş18 temel koşul girdisi üretim, ısıl/yüzey işlemi ve risk hacmini kapsar; BNN ayrıca gerilme genliğini kullanır. Başlangıç EBSD/hücre ölçüsü bu18'li listede yok. Table1,51 yazar-verigrubunun tablosudur; 518 ayrı numunenin bütün ölçümlerini yayımlamaz. Erişilemeyen özgün dosyada ek alan bulunmadığını veya17 kaynak çalışmanın hiç mikroyapı ölçmediğini buradan çıkaramayız.
+
+Önemli kontrol: Table1'de51 verigrubu, yayımlanmış hassasiyette49 farklı18'li vektöre indirgeniyor; yayımlanmamış eğitim matrisinin daha yüksek hassasiyette de aynı olduğu doğrulanmadı. Bilinen32/33 ve40/41 eşitliklerini yeni bulgu diye saymadık; fiziksel anlamını sorguladık. Yu2020'nin birincil metni ZZ'de0°, CH'de67° katmanlar arası lazer tarama dönüşü kullanıldığını doğruluyor; bu değişken18'li şemada ayrı yer almıyor. Tane ve kusur özellikleri birlikte değişiyor. Dolayısıyla aynı kayıtlı vektör, eksiksiz aynı üretim reçetesi demek değildir. Mikroyapı kazancı diye gördüğümüz şey eksik tarama stratejisinin yeniden gösterimi olabilir. Özgün518satır erişilemediğinden40/41'in CH/ZZ sırası veya bireysel numune bağı kurulmuş sayılmadı. Açık grafik noktalarının yaklaşık eşleşmesi de bu bağı sağlamaz.
+
+HANGİ İDDİAYI KURABİLİRİZ?
+Yerel soru için aynı fiziksel alanda gerçek N0 yönelim/hücre bilgisi ve sonraki gözlenmiş çevrimsel cevap gerekir. Yük ekseni, ölçüm sırası, çözünürlük ve kayıt belirsizliği tanımlı olmalıdır. Okunabilir yayımlanmış bir eşleşmiş şekil yeterli olabilir; her durumda tam ham arşiv, tam kopma ömrü veya özel barkod gerekmiyor. Çok piksel/tane bir alanı çok bağımsız numune yapmaz. Sonucu bilerek seçilmiş bir yayın alanı, nüfusu temsil eden kör örneklem sayılmaz.
+
+Bu küçük analiz bir alan içi ilişkiyi sınayabilir. Yeni üretimde ömür tahmininin iyileştiğini göstermez. O iddia için kendi başlangıç özellikleri ve yorulma sonuçları bağlı bağımsız numune/gruplar, aynı eğitim-test ayrımları ve güçlü sansürlü temel modeller gerekir. Başlangıç için karşılaştırma B, B+G, B+C, B+G+C olabilir; B yalnız birkaç lazer ayarını değil gerçekten bilinen tarama stratejisi, yükleme, ısıl/yüzey/kusur bağlamını kapsamalıdır. Eksik kusur verisi daha sınırlı tahmin ilişkisini yasaklamaz; kusurun ötesinde açıklama veya nedensellik iddiasını sınırlar.
+
+Koşul ortalaması her bireye kopyalanmayacak. Hücre etiketi sadece ısıl işlem etiketinin başka adıysa, aynı işlem içinde ek ölçüm bilgisi gösterilmiş olmaz. Reçetenin farklı bir gösterimi bazı modellerin tahminine yine yardım edebilir; bu tek başına bağımsız mikroyapı bilgisi veya nedensel mekanizma kanıtı değildir. Yalnız G eşleşmişse ayrı bir tane/yönelim sorusu değerlendirilebilir; hücre hipotezi çözülmüş sayılmaz.
+
+SONRAKİ KARAR İÇİN GEREKEN
+Önce hangi gerçek verinin bulunduğunu öğrenmeliyiz: bir numune veya korunmuş alan için test öncesi EBSD ve/veya doğrudan hücre ölçüsü, kendi çevrimsel sonucu ve aralarındaki eşleme. Tek bir örnek dosyanın yapısı bile hangi sorunun yapılabilir olduğunu ayırabilir. Derlenmiş ömür tablosu gelmesi mikroyapı sorusunu otomatik açmaz. Bu nedenle şu an bir algoritma veya performans vaadi değil, ölçülebilir fiziksel soru ve veri uygunluğu üzerinde anlaşmak gerekiyor. Bilimsel özgünlük ve başarı henüz kanıtlanmış değil.
+
+BUGÜN YAPILAN
+Mevcut birincil PDF'ler ve tablolar denetlendi; Yu'nun bilinen kaynağındaki eksik üretim tanımı hedefli olarak kontrol edildi. Kaynakların aynı kalması doğrulandı; yeni eğitim, simülasyon, ortam/PS5 hazırlığı, hesaplara müdahale veya yazışma yok. Ana Goal tamamlanmadı; kullanıcıyla görüşme sonrası yeniden etkinleşen çalışmanın ilk yeni engel denetimidir, V43 sayımı taşınmadı.
+
+Kaynaklar ve kanıt dosyaları:
+Centola vd.: https://doi.org/10.1016/j.engfailanal.2024.109081 — PDF§2.1/§3.1,Table1,Figs1–3.
+Cui vd.: https://doi.org/10.1016/j.jmst.2021.10.006 — PDF§2.2–2.4/§3.1–3.5,Fig3/4/9.
+Chenfan Yu vd.: https://www.jmst.org/EN/10.1016/j.jmst.2019.08.047 — birincil özet/metin ve Fig1/3/4/6 başlıkları; bu tur figür pikselleri incelenmedi.
+tridello_input_audit/documented_input_audit_v1.json
+cell_vs_grain/source_condition_and_confounding_audit_v1.json
+physical_question_referee/referee_v1.json
+root/input_collision_disposition_v1.json

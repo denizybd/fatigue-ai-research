@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25",
+  "base_commit": "2889a7b87d728df80a337a0e9bf4aea74bc9c3e1",
+  "mode": "one_time_curated_document_update",
+  "automation_installed": false,
+  "visibility_change": false,
+  "source_reports": [
+    {
+      "repository_path": "literature/microstructure_question_feasibility_v44/karar_notu_tr_v1.txt",
+      "sha256": "f20bc748632b9b005acd909a80b37f42dec93325ee61519bf10bc017f8e891f8",
+      "bytes": 7634,
+      "source_type": "completed decision report"
+    },
+    {
+      "repository_path": "literature/physical_microstructure_route_gate_v45/sonuc_tr_v1.txt",
+      "sha256": "40bf44055ded0446719a793f4fd67fe245b292fa889b927110b002f0680f6668",
+      "bytes": 5667,
+      "source_type": "completed decision report"
+    }
+  ],
+  "scope_exclusions": [
+    "unfinished V46 conclusions",
+    "full source evidence trees",
+    "raw downloads",
+    "running computations",
+    "historical result changes"
+  ]
+}

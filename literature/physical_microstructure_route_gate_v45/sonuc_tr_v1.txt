@@ -1,0 +1,36 @@
+V45 — HÜCRE DUVARI / KAYMA İZİ SORUSUNUN ÖLÇÜLEBİLİRLİĞİ
+25 Ekim 2026
+
+Karar: Lyu'nun T4-2 vakasında gerçek başlangıç/son hücre gözlemi ve çevrimsel kayma izleri var. Ancak “kayma izi uçlarının başlangıç hücre duvarına yakınlığını sayabiliriz” önerisi henüz ölçülebilirliği doğrulanmış bir deney değildir. Şekil açıklamaları bunu garanti etmiyor. İlk kapı sayım veya model değil, gerçek görüntüde hangi nesnenin ölçülebildiğini doğrulamak olmalı.
+
+KAYNAKTA HANGİ GÖZLEMLER VAR?
+Fig.10a başlangıç BSE; b test sonu BSE ve EBSD kalite haritasıdır. Sarı bölge için c→d, mavi bölge için f→g başlangıç–son ECCI eşleşmesi veriliyor. e ve h ise yalnız son durumdaki d ve g'nin büyütmeleridir. Bu iki bölge aynı T4-2 numunesine iç içe bağlıdır; iki bağımsız deney veya kampanya değildir. Kaynak 150MPa, R=0,1 ve yaklaşık1,25milyon çevrim bildiriyor. Başka numunelerin ara çevrim görüntülerini bu vakaya aktarmadık.
+
+Metin bazı ince kayma izlerinin hücre duvarlarında durduğunu yorumluyor; bu kaynak destekli bir fiziksel gözlemdir. Ancak işaretlemek için çizilen siyah/renkli kesik çizgilerin son noktaları gerçek fiziksel kayma uçları sayılamaz. Açıklamalar eksiksiz iz popülasyonu, uç koordinatları veya başlangıç duvarına kayıt hatası vermiyor. e/h'deki büyütülmüş son alanın başlangıçtaki karşılığı aynı ayrıntıyla çözülebiliyor mu, görüntüler olmadan bilinmiyor.
+
+Fig.12 yönelim haritaları ve bir boyutlu point-to-origin yönelim farkı profilini sağlar. Ölçülmüş yerel gerinim/DIC alanı değildir. Hücre duvarı–görünür iz sonu yakınlığı için Fig.12 her durumda zorunlu değil; Fig.10'un okunaklı eşleşmiş panelleri yeterli olabilir. Gerekli kanıt sorunun kapsamına bağlıdır.
+
+Operasyonel yorulma bitişi frekansta3Hz düşme/runout kuralıyla tanımlıdır. Yöntem ayrıca kırılma yüzeylerini incelemek için yorulma çatlaklı parçaların çekme yüküyle ayrıldığını söyler. Bu aşamaları tam kopma ömrüyle özdeşleştirmiyoruz. Ana metin öncesi/ara/son SEM sırasını bildirir; bütün alan haritalarının çekme açılmasından sonra alındığını veya çekmeyle bozulduğunu varsaymıyoruz. Nedensel yorumda ilgili son görüntünün yükleme aşaması açık olmalıdır.
+
+EN KÜÇÜK AYIRT EDİCİ ADIM
+Gerçek Fig.10a–h pikselleri veya kaynak destekli N0-duvar/son-iz koordinatları edinilirse önce şu ölçülebilirlik sorusu cevaplanacak: görünür iz sonunu görüntü kenarından, kontrast kaybından ve çizilmiş işaretin ucundan ayırabiliyor muyuz? Başlangıç duvarı, ölçek, büyütme kırpımı ve alan kaydı yeterli mi? Görüntü kenarında biten bir izi duvarda durmuş diye saymayacağız. Belirsiz nesneleri sıfır gözlem diye kodlamayacağız.
+
+Bu kapı geçilirse ancak o zaman, aynı tane içindeki uygun kontrol konumlarıyla görünür iz sonu–N0 duvar yakınlığı için küçük bir protokol dondurulabilir. Tane sınırı/çatlağa uzaklık ve gözlenebilirlik gibi rakip açıklamalar değerlendirilir. Böyle bir sonuç alan içi ilişki olur; tek başına saf hücre nedenselliği veya yeni üretimde ömür tahmin kazancı değildir. Tam ham arşiv, özel barkod ve tamNf evrensel şart yapılmadı. Hazır sayım, anlamlı etki veya başarı vaat edilmiyor.
+
+VERİYE ERİŞİMDE BUGÜN NE DEĞİŞTİ?
+İlgili üç eski kaynak ağacındaki242küçük kayıt dosyasında gerçek Fig.10/12 görüntü adresi bulunmadı. “Download high-res image” etiketleri gerçek dosya bağlantısı sayılmadı. Ayrı mikropilar makalesinin eki yorulma şekli yerine konmadı. İki hedefli görsel araması yapıldı; dönen görüntüler hedef Lyu şekilleri değildi, açılmadı/indirilmedi. Tahminî CDN adresi üretilmedi, yayıncı403'ü tekrar denenmedi. Bu sınırlı erişim sonucu internette görüntü yokluğu kanıtı değildir.
+
+YÜZEY KONTROLÜNÜN AYRI SINIRI
+Liang106843 için ham veri tabanında “polish simple” ve “polish total” etiketleri var. Bunların hangi yüzeyleri/kenarları veya ne kadar malzemeyi kapsadığı mevcut birincil gövdeyle doğrulanamadı. Farklı Liang13684 PDF'si ve eski eksenel tez tablosu, aranan eğilme gruplarının yerine kullanılmadı. Table1'in32/33 kodlarına kesin eşleme, fiziksel numune kimliği veya hücre etkisi iddiası kurulmadı. Bu dal aynı etiketleri yeniden bulmak üzere açık bırakılmadı.
+
+ANA HEDEFİN DURUMU
+Bu tur yeni bir mikroyapı etkisi ölçmedik; önerdiğimiz ölçümün henüz hazır olmadığını somut panel/nesne tanımlarıyla belirledik. Yeni eşleşmiş kampanya ve yeni eğitim yok. Ana yorulma tahmini/genelleme hedefi tamamlanmadı. Aynı kullanılabilir ölçüm/eşleme engeli, yeniden başlayan çalışmada ikinci turdur; eski blocked sayımı taşınmadı. Yeni bir gerçek görüntü/koordinat/eşleme gelmeden bu adayı hazır deney diye sunmayacağız.
+
+E-posta yazılmadı/taslak oluşturulmadı/gönderilmedi. Mevcut hesaplar veya süreçler taranmadı/kontrol edilmedi. Yeni model, simülasyon, kurulum, PS5 hazırlığı veya yayın yok. Kaynaklar, tamamlanmış sonuçlar ve önceki olumsuz gözenek pilotu korunuyor.
+
+KAYNAK VE KANIT
+Lyu vd.: https://doi.org/10.1016/j.msea.2024.147652 — §§2.2–2.3/3.2.2,Fig.10/12; eldeki önceki gerçek birincil metin, bu tur yeni figür pikselleri yok.
+measurement_identifiability/identifiability_v1.json
+lyu_asset_inventory/exact_asset_and_prior_access_audit_v1.json
+surface_control_audit/surface_control_audit_v1.json
+root/figure_image_query_actual_v1.json

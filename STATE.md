@@ -1,3 +1,5 @@
+> **Current status — 25 October 2026:** Read [the current research summary](docs/research-status.md), [public-release preparation plan](docs/public-release-plan.md) and [proposed GitHub sync policy](docs/github-sync-policy.md). The priority is initial grain/cell measurements and their defensible contribution to fatigue research. No validated new prediction gain is claimed. Automatic sync has not been installed. This is a curated one-time update; records below describe earlier phases.
+
 # Research state
 
 ## Latest checkpoint: reboot recovery, actual nested run and crossreport lineage
