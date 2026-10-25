@@ -1,3 +1,5 @@
+> **Current opening section:** [Introduction and study rationale](introduction/README.md) · [3-page A4 PDF](introduction/study-introduction-en-a4.pdf), aligned with V48 of the ongoing manuscript. The six-page evidence review below is retained as its historical companion.
+
 # Initial Research Report and Evidence Review
 
 [English A4 PDF](initial-research-report-en-a4.pdf) · [Editable Google Doc (owner access)](https://docs.google.com/document/d/1YQ0nykHUVAjsuiW9YJCuJalLc7dS3Rg69qCMtrIjVJc/edit?usp=drivesdk) · [Turkish companion](../README.md)

@@ -1,3 +1,5 @@
+> **Current manuscript opening (V48 alignment):** [English introduction and study rationale](articles/01-baslangic/en/introduction/README.md) · [3-page A4 PDF](articles/01-baslangic/en/introduction/study-introduction-en-a4.pdf). This section connects the preliminary evidence to the ongoing conditional microstructure study; measured grain/cell benefit remains untested.
+
 > **English report:** [Initial Research Report and Evidence Review](articles/01-baslangic/en/README.md) · [English A4 PDF](articles/01-baslangic/en/initial-research-report-en-a4.pdf)
 
 # AM316L yorulma araştırması

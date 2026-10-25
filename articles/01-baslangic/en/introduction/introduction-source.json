@@ -1,0 +1,139 @@
+{
+  "title": "Measured Microstructure for Conditional Fatigue-Life Prediction",
+  "date": "2026-10-25",
+  "document_url": "https://docs.google.com/document/d/1CoIB4oki7KhZZynexZeGaHpxS23ih6VJFcpiptqiicU/edit?usp=drivesdk",
+  "role": "Opening introduction for the ongoing manuscript; not a completed measured-microstructure validation.",
+  "aligned_research_state": "V48 / manuscript/v2_quantile_alignment",
+  "blocks": [
+    {
+      "style": "TITLE",
+      "text": "Measured Microstructure for Conditional Fatigue-Life Prediction"
+    },
+    {
+      "style": "SUBTITLE",
+      "text": "Introduction and study rationale - 25 October 2026"
+    },
+    {
+      "style": "HEADING_1",
+      "text": "1. Introduction"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Probabilistic fatigue models should support a stress-life design decision with explicit uncertainty. Figure 8 of Centola et al. [1] illustrates this objective through a Bayesian neural network (BNN) predicting a group-derived R90C90 life target from manufacturing, treatment, risk-volume and loading information. Our study asks whether measured initial microstructure adds information about individual fatigue life and, separately, improves the reliability and usefulness of a derived lower-life limit."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Production settings do not fully specify a specimen's initial state. Grain orientation, boundary context and cellular structure may vary within one nominal condition. Build direction does not identify an individual crystal's orientation. Solidification, recovery and recrystallization are distinct processes; a useful descriptor must identify the measured state, region and time."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Existing experiments motivate this question without resolving it. Cui et al. report similar mean grain sizes alongside different cellular and dislocation-related states and fatigue response [2]; concurrent heat-treatment changes prevent isolating cell geometry as the cause. Lyu et al. provide named initial/final and same-field fatigue observations [3], but these selected fields are not an independently replicated, multi-specimen descriptor-to-life panel. Our proposed contribution concerns information beyond recorded context, rather than the already established relevance of orientation and cellular structure. Recent transfer-learning and topology-optimization extensions [8,9] broaden engineering scope; our question concerns an additional specimen-linked measurement."
+    },
+    {
+      "style": "HEADING_2",
+      "text": "1.1 Why the preliminary results require a stricter test"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Our retrospective evidence uses 60 identified specimens from one ORNL SS316H build: 56 failures and four right-censored observations [4]. The models used positive-support summaries from processed, registered flaw images. Unresolved intensity coding and final-gauge registration prevent interpreting these as calibrated porosity or measured grain/cell state. The separate three-volume ParaView pilot does not supply this missing linkage [5]."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Expanded image support gave negative mean log-score gains in seven of eight specimen-held-out comparisons. A separate six-specimen test combining high energy input and shifted build location yielded gains of 0.896-2.744 nat per observation across four model families and two training panels. Yet predicted tenth-percentile lives exceeded observed lives for three to six of the six failures in every comparison [5]. These overlapping, single-build results do not establish design reliability."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Controls further limited the interpretation. Median-error reduction largely reflected load-stratum mean offsets; within-load ordering improved in none of eight comparisons [6]. All 36 within-load reassignments passed the earlier score criterion, including fully incorrect mappings; the worst retained 99.35% of the correctly mapped score gain [7]. Thus predictive benefit alone need not demonstrate useful individual linkage. This descriptive synthetic control supplies neither a causal effect nor a randomization p-value."
+    },
+    {
+      "style": "HEADING_2",
+      "text": "1.2 From measured initial state to a conditional life target"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "We hypothesize that correctly linked pre-test grain information G and directly measured cellular information C add specimen-level information beyond context X. X includes loading, geometry, recipe and scan strategy, treatment, justified position, and measured initial surface/defect observations. Condition averages, post-test images and unvalidated thermal indicators cannot establish this initial measurement channel."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "The target must also match the observation unit. Copying an unchanged group-derived design label across different initial states can suppress the within-group contrast of interest. We instead propose learning p(Y | X,G,C), with Y = log10 N, from failures and right-censored stops under an appropriate censoring model. The reference study already accounts for runouts [1]. Conditional scatter, estimation uncertainty and new-build transfer require separate assessment: a conditional q10 is not a calibrated R90C90 bound."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "FIGURE_PLACEHOLDER"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Figure 1. Proposed information chain and four-arm comparison. The arrows organize hypotheses, not an identified causal graph. Life-distribution learning precedes independent assessment of a design bound. W denotes cell-wall state only where independently measured."
+    },
+    {
+      "style": "HEADING_2",
+      "text": "1.3 Comparison strategy and scope of the present study"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "The arms B(X), B(X,G), B(X,C) and B(X,G,C) use identical eligible coupons, grouped splits and tuning budgets. Censored normal and Student-t accelerated-life models with linear and radial-basis predictors provide comparators for a conditional BNN. A recipe-predicted descriptor control tests whether measurement contributes beyond another representation of X. Linkage controls require comparable context, within-stratum variation and justified overlap. If only G or C is admissible, its narrower comparison can proceed without inventing the missing channel."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "Evaluation separates predictive fit, individual information and design reliability. Models share the marginal predictive q10 target; a lower model percentile of an inner q10 is reported separately. Equal q10 does not imply equal parameter confidence or an R90C90 guarantee. A common risk policy must specify its unit, assumptions and calibration-group count; a vacuous bound is not a success. Measurement support and registration uncertainty are documented. Calibration uses reserved data and practical thresholds are fixed before target-test inspection. Claims of transfer require held-out builds."
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "The current manuscript therefore combines a bounded retrospective finding with a prospective conditional-information test. The local implementation has passed synthetic software checks; measured grain/cell benefit and real-data design calibration remain untested. SS316H, SS316L and any aluminium measurement-method pilot remain separate material domains. The next result should determine whether correctly measured initial state adds useful information, with a negative result retained as evidence."
+    },
+    {
+      "style": "HEADING_2",
+      "text": "Selected sources and computational evidence"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[1] Centola A et al. Probabilistic Machine Learning for preventing fatigue failures in Additively Manufactured SS316L. Engineering Failure Analysis 168 (2025), 109081.",
+      "link": "https://doi.org/10.1016/j.engfailanal.2024.109081"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[2] Cui L et al. Superior low cycle fatigue property from cell structures in additively manufactured 316L stainless steel. JMST 111 (2022), 268-278.",
+      "link": "https://doi.org/10.1016/j.jmst.2021.10.006"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[3] Lyu X et al. High cycle fatigue in the hierarchical microstructure of LPBF 316L stainless steel. Materials Science and Engineering A, 147652.",
+      "link": "https://doi.org/10.1016/j.msea.2024.147652"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[4] Snow Z et al. Registered process-imaging, XCT and fatigue dataset. ORNL (2025).",
+      "link": "https://doi.org/10.13139/ORNLNCCS/2524534"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[5] Completed V12/V15 descriptor-expansion results and observation limits.",
+      "link": "https://github.com/denizybd/fatigue-ai-research/blob/main/literature/outer_region_signal_feasibility_v12/sonuc_ve_karar_tr_v1.txt"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[6] V16 post-result median-error decomposition.",
+      "link": "https://github.com/denizybd/fatigue-ai-research/blob/main/literature/shift_gain_decomposition_v16/yorum_tr_v1.txt"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[7] V17 descriptive specimen-mapping control.",
+      "link": "https://github.com/denizybd/fatigue-ai-research/blob/main/literature/within_load_mapping_control_v17/kisa_karar_tr_v1.txt"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[8] Centola A et al. Data scarcity in fatigue design of AM parts: A transfer learning framework to model the process-structure-property relationship. EFA 197 (2026), 111075.",
+      "link": "https://doi.org/10.1016/j.engfailanal.2026.111075"
+    },
+    {
+      "style": "NORMAL_TEXT",
+      "text": "[9] Centola A et al. Data driven topology optimization of AM parts accounting for process-affected fatigue performance. IJF 206 (2026), 109481.",
+      "link": "https://doi.org/10.1016/j.ijfatigue.2026.109481"
+    }
+  ],
+  "figure": {
+    "source": "manuscript/v2_quantile_alignment/figures/figure1_information_chain.png",
+    "sha256": "42f24eacd61dc66da76d901e9c1b3b7a0f5e9f8ca58ff9835f87cc06c28051b7",
+    "type": "Author-generated study-design schematic; not a causal graph or empirical result."
+  }
+}

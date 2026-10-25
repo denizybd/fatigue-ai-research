@@ -1,0 +1,51 @@
+{
+  "aligned_research_state": "V48",
+  "pages": 3,
+  "page_format": "A4",
+  "body_font_pt": 11,
+  "links": 25,
+  "all_nine_reference_urls_present": true,
+  "visual_review_complete": true,
+  "reviewed_pages": [
+    1,
+    2,
+    3
+  ],
+  "visual_findings": 0,
+  "role": "Opening introduction for the ongoing manuscript; not a completed measured-microstructure validation.",
+  "common_marginal_predictive_q10_and_separate_nested_quantile": true,
+  "common_risk_policy_limits_and_vacuous_bounds_explicit": true,
+  "single_admissible_microstructure_channel_can_support_narrower_test": true,
+  "new_training_runs": 0,
+  "new_physical_tests": 0,
+  "existing_report_preserved": true,
+  "main_manuscript_not_modified": true,
+  "source_snapshots": [
+    {
+      "path": "RESEARCH_CONTEXT.md",
+      "sha256": "e5e4aca1b838664dec824a0dff7aaf6af76fa0baaf5e18519a243a799f1e20eb"
+    },
+    {
+      "path": "STATE.md",
+      "sha256": "bbea4d5a4a79fa9e00c1ae1fd897d28aba2fc76a14176fd991b8a7e100287b0f"
+    },
+    {
+      "path": "manuscript/v2_quantile_alignment/OKUMA_REHBERI_TR.txt",
+      "sha256": "1ad6d199be03785eed0b63c9dec7d9acf6d0b254bd4c006ab917e712e9ec2dd0"
+    },
+    {
+      "path": "manuscript/v2_quantile_alignment/manuscript_text_en.txt",
+      "sha256": "15faff757cc13a96c762bb34545de42d789ab065dcde6d45fa98a9416a6d2493"
+    },
+    {
+      "path": "manuscript/v2_quantile_alignment/output/measured_microstructure_fatigue_manuscript.docx",
+      "sha256": "9ed092799b42f12f1299694f500891e409ac9a43824be5b139382154e92acbef"
+    },
+    {
+      "path": "manuscript/v2_quantile_alignment/figures/figure1_information_chain.png",
+      "sha256": "42f24eacd61dc66da76d901e9c1b3b7a0f5e9f8ca58ff9835f87cc06c28051b7"
+    }
+  ],
+  "pdf_sha256": "c081f0b672425a1ec0414f3db3795971e41812e58bc0b5848127e7b8872725fc",
+  "google_document_url": "https://docs.google.com/document/d/1CoIB4oki7KhZZynexZeGaHpxS23ih6VJFcpiptqiicU/edit?usp=drivesdk"
+}
